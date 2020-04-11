@@ -7,7 +7,7 @@
         </h3>
       </div>
       <div class="Vlt-card__content">
-        <form name="contact" netlify>
+        <form name="contact" method="POST" netlify>
           <p class="p-large">Subscribe to receive updates, tutorials, and news on Vonage communications APIs, libraries, SDKs, and developer tools.</p>
           <div class="Vlt-form__element Vlt-form__element--big">
             <div class="Vlt-composite">
