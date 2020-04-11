@@ -12,8 +12,8 @@ collections:
     label: 'Blog'
     format: 'frontmatter'
     folder: 'content/blog'
-    media_folder: 'static/content/images/{{slug}}/'
-    public_folder: '/content/images/{{slug}}/'
+    media_folder: '../../static/content/blog/{{slug}}/'
+    public_folder: '/content/blog/{{slug}}/'
     create: true
     slug: '{{slug}}'
     editor:
