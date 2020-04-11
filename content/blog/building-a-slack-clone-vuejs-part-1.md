@@ -140,7 +140,7 @@ npm start
 
 You can check it's working at the default URL, [localhost:3000](http://localhost:3000).
 
-![Screenshot of a basic Express.js server running](/content/images/building-a-slack-clone-using-vue-js-part-1/basic-express-server-running.png)
+![Screenshot of a basic Express.js server running](/content/blog/building-a-slack-clone-using-vue-js-part-1/basic-express-server-running.png)
 
 ## Routes and Controllers
 
