@@ -12,7 +12,7 @@
           <div class="Vlt-form__element Vlt-form__element--big">
             <div class="Vlt-composite">
               <div class="Vlt-composite__wrapper Vlt-input">
-                <input name="contact-email" type="text" placeholder="email@example.com" id="contact-email" value=""/>
+                <input name="contact-email" type="text" placeholder="email@example.com" id="contact-email" value="" />
                 <label for="contact-email">Email</label>
               </div>
               <div class="Vlt-composite__append">

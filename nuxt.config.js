@@ -93,7 +93,8 @@ export default async() => {
 
     loading: {
       color: '#871fff',
-      height: '3px'
+      height: '3px',
+      throttle: 0,
     },
 
     css: [
