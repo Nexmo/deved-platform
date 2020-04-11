@@ -80,3 +80,5 @@ dist
 # IDE
 .idea
 node_modules/webpack-log
+
+.DS_Store
