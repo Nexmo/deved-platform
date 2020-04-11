@@ -28,7 +28,6 @@ export default {
   },
   methods: {
     getPermalink(post) {
-      console.log(post.meta.resourcePath.split('/content/').pop().split('.')[0]);
       return  `https://www.youtube.com/watch?v=${post.attributes.youtube_id}`;
     }
   }

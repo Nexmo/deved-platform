@@ -14,12 +14,15 @@
     "@nuxt/http": "^0.3.0",
     "@toycode/markdown-it-class": "^1.2.3",
     "@vonagevolta/volta2": "0.0.37",
+    "algoliasearch": "^4.1.0",
     "frontmatter-markdown-loader": "3.1.0",
+    "instantsearch.css": "^7.4.2",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.7",
     "markdown-it-prism": "^2.0.5",
     "nuxt": "^2.5.1",
-    "vue-infinite-loading": "^2.4.5"
+    "vue-instantsearch": "^2.7.0",
+    "walkdir": "^0.4.1"
   },
   "keywords": [],
   "devDependencies": {}

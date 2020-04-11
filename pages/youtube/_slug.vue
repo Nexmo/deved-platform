@@ -17,6 +17,7 @@
     </div>
   </article>
 </template>
+
 <script>
 export default {
   head () {
@@ -25,18 +26,22 @@ export default {
     }
   },
 
-  async asyncData({ params, error }) {
-    try {
-      let post = await import(`~/content/youtube/${params.slug}.md`);
-
-      return {
-        title: post.attributes.title,
-        attributes: post.attributes,
-        postComponent: post.vue.component
-      };
-    } catch (err) {
-      error({ statusCode: 404, message: 'Post not found' })
+  data () {
+    return {
+      title: '',
+      attributes: {},
+      postContent: null
     }
+  },
+
+  created () {
+    this.postContent = () => import(`~/content/youtube/${this.$route.params.slug}.md`).then((post) => {
+      this.title = post.attributes.title,
+      this.attributes = post.attributes;
+      return {
+        extends: post.vue.component
+      };
+    });
   }
 };
 </script>
@@ -55,6 +60,7 @@ export default {
 }
 </style>
 
+
 <!-- 
     <iframe
       v-if="!!attributes.type && attributes.type=='youtube' && attributes.youtube_id"
@@ -64,11 +70,4 @@ export default {
       frameborder="0"
       allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
-    ></iframe>
-    <a
-      v-if="!!attributes.type && attributes.type=='twitch' && attributes.twitch_id"
-      target="_blank"
-      :href="'https://www.twitch.tv/videos/' + attributes.twitch_id"
-    >
-      Watch on Twitch Now.
-    </a> -->
+    ></iframe> -->

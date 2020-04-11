@@ -29,7 +29,7 @@ export default {
     CommunityUpdatesCard
   },
 
-  async asyncData() {
+  data () {
     const resolve = require.context("~/content/", true, /\.md$/);
     const imports = resolve.keys().map(key => {
       const [, name] = key.match(/\/(.+)\.md$/);

@@ -10,13 +10,14 @@
         </header>
         <div class="Vlt-grid__separator"></div>
         <main class="Vlt-col Vlt-col--2of3">
-          <component :is="postComponent" />
+          <component :is="postContent" />
         </main>
         <aside class="Vlt-col">other info</aside>
       </div>
     </div>
   </article>
 </template>
+
 <script>
 export default {
   head () {
@@ -25,18 +26,22 @@ export default {
     }
   },
 
-  async asyncData({ params, error }) {
-    try {
-      let post = await import(`~/content/twitch/${params.slug}.md`);
-
-      return {
-        title: post.attributes.title,
-        attributes: post.attributes,
-        postComponent: post.vue.component
-      };
-    } catch (err) {
-      error({ statusCode: 404, message: 'Post not found' })
+  data () {
+    return {
+      title: '',
+      attributes: {},
+      postContent: null
     }
+  },
+
+  created () {
+    this.postContent = () => import(`~/content/twitch/${this.$route.params.slug}.md`).then((post) => {
+      this.title = post.attributes.title,
+      this.attributes = post.attributes;
+      return {
+        extends: post.vue.component
+      };
+    });
   }
 };
 </script>
@@ -56,15 +61,6 @@ export default {
 </style>
 
 <!-- 
-    <iframe
-      v-if="!!attributes.type && attributes.type=='youtube' && attributes.youtube_id"
-      width="791"
-      height="445"
-      :src="'https://www.youtube.com/embed/' + attributes.youtube_id"
-      frameborder="0"
-      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
     <a
       v-if="!!attributes.type && attributes.type=='twitch' && attributes.twitch_id"
       target="_blank"

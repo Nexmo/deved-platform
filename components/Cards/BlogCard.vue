@@ -23,7 +23,6 @@ export default {
   },
   methods: {
     getPermalink(post) {
-      console.log(post.meta.resourcePath.split('/content/').pop().split('.')[0]);
       return  `${post.meta.resourcePath.split('/content/').pop().split('.')[0]}`;
     }
   }
