@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-blog-frontmatter-markdown-loader",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Nuxt.js Team",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/http": "^0.3.0",
+    "@toycode/markdown-it-class": "^1.2.3",
+    "@vonagevolta/volta2": "0.0.37",
+    "frontmatter-markdown-loader": "3.1.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^5.2.7",
+    "markdown-it-prism": "^2.0.5",
+    "nuxt": "^2.5.1",
+    "vue-infinite-loading": "^2.4.5"
+  },
+  "keywords": [],
+  "devDependencies": {}
+}
