@@ -1,32 +1,33 @@
 ---
 title: Building a Slack Clone Using Vue.js - Part 1
-description: Have you ever wanted to create a chat application? Learn how to make your own Slack in this multi-part Vue.js series
+description: Have you ever wanted to create a chat application? Learn how to
+  make your own Slack in this multi-part Vue.js series
+thumbnail: /content/images/building-a-slack-clone-using-vue-js-part-1/purplewhiteblog-artboard.png
 author: lukeoliff
 published: true
-published_at: 2020-04-10T10:30:00
+published_at: 2020-04-10T10:30:00.000Z
 tags:
   - vuejs
   - slack
   - conversation-api
 ---
-
 Have you ever wanted to create a chat application, but get stuck on features to add, or just how to make it generally? In this post, you get to build a clone of everyone's favourite chat software, Slack. Using Vue.js, everyone's favourite framework. And, Vonage Conversation API, everyone's favourite conversation service.
 
 This post is part 1 of a multi-part tutorial series that's going to go from an empty directory to a real-world application featuring many of Slacks genre-defining features.
 
 Here are some of the things you'll learn in this post:
 
-- [Generate an Express.js Server](#generate-an-express.js-server)
-- [Express.js Routes and Controllers](#routes-and-controllers)
-- [Hot Reloading the Express.js Server Files](#hot-reloading-the-expressjs-server-files)
-- [Generate a Vue.js Client](#generate-a-vuejs-client)
-- [Run the Server and Client Concurrently](#run-the-server-and-client-concurrently)
-- [Proxy API Requests to the Express.js Server](#proxy-api-requests-to-the-express.js-server)
-- [Loading Screens with Tailwind and FontAwesome](#loading-screens-with-tailwind-and-fontawesome)
-- [Handle Server Errors in the Client](#handle-server-errors-in-the-client)
-- [Use Dotenv Environment Files](#use-dotenv-environment-files)
-- [Connect to Vonage Conversation API](#connect-to-vonage-conversation-api)
-- [Create the Chat Components](#create-the-chat-components)
+* [Generate an Express.js Server](#generate-an-express.js-server)
+* [Express.js Routes and Controllers](#routes-and-controllers)
+* [Hot Reloading the Express.js Server Files](#hot-reloading-the-expressjs-server-files)
+* [Generate a Vue.js Client](#generate-a-vuejs-client)
+* [Run the Server and Client Concurrently](#run-the-server-and-client-concurrently)
+* [Proxy API Requests to the Express.js Server](#proxy-api-requests-to-the-express.js-server)
+* [Loading Screens with Tailwind and FontAwesome](#loading-screens-with-tailwind-and-fontawesome)
+* [Handle Server Errors in the Client](#handle-server-errors-in-the-client)
+* [Use Dotenv Environment Files](#use-dotenv-environment-files)
+* [Connect to Vonage Conversation API](#connect-to-vonage-conversation-api)
+* [Create the Chat Components](#create-the-chat-components)
 
 If you're interested in the demo app complete, skipping the guide completely, please check out the [GitHub repo for my Vue.js Slack clone](https://github.com/nexmo-community/vuejs-slack-clone/tree/part-1) so far.
 
@@ -36,7 +37,7 @@ If you're interested in the demo app complete, skipping the guide completely, pl
 
 To get started, you're going to need Node and NPM installed. This guide uses Node 8 and NPM 6. Check they're installed and up-to-date.
 
-```bash
+```shell
 node --version
 npm --version
 ```
@@ -47,19 +48,19 @@ npm --version
 
 To set up your application, you'll need to install [our CLI](https://www.npmjs.com/package/nexmo-cli). Install it using NPM in the terminal.
 
-```bash
+```shell
 npm install -g nexmo-cli@beta
 ```
 
 You can check you have the correct version with this command. At the time of writing, I was using version `0.4.9-beta-3`.
 
-```bash
+```shell
 nexmo --version
 ```
 
 To follow along with the steps in this article, remember to [sign up for a free Vonage account](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=https://github.com/nexmo-community/vuejs-slack-clone) and configure the CLI with the API key and secret found on your dashboard.
 
-```bash
+```shell
 nexmo setup <your_api_key> <your_api_secret>
 ```
 
@@ -67,13 +68,13 @@ nexmo setup <your_api_key> <your_api_secret>
 
 Install [Express Generator](https://expressjs.com/en/starter/generator.html). You will use this library to generate a basic Express.js server.
 
-```bash
+```shell
 npm install -g express-generator
 ```
 
 You can check you have the correct version with this command. At the time of writing, I was using version `4.16.1`.
 
-```bash
+```shell
 express --version
 ```
 
@@ -81,13 +82,13 @@ express --version
 
 Install the [Vue CLI](https://cli.vuejs.org/). You will use this library to generate a basic Vue.js client application.
 
-```bash
+```shell
 npm install -g @vue/cli
 ```
 
 You can check you have the correct version with this command. At the time of writing, I was using version `4.1.2` of `@vue/cli`.
 
-```bash
+```shell
 vue --version
 ```
 
@@ -99,13 +100,13 @@ This series is going to take you from a blank directory right through to a real-
 
 First thing first, create a directory for your work.
 
-```bash
+```shell
 mkdir vuejs-slack-clone
 ```
 
 And, change into the new directory.
 
-```bash
+```shell
 cd vuejs-slack-clone
 ```
 
@@ -119,13 +120,13 @@ If you plan on using `git` as your version-control system, you should consider u
 
 Because you're already in the project directory, specify the `--force` option and use `.` as the directory. Then, the tool will generate the application in the current directory without issue.
 
-```bash
+```shell
 express --git --no-view --force .
 ```
 
 Then, install dependencies.
 
-```bash
+```shell
 npm install
 ```
 
@@ -133,13 +134,13 @@ npm install
 
 Once the server has been created and the dependencies installed, you can go ahead and start it to make sure everything is working as expected.
 
-```bash
+```shell
 npm start
 ```
 
 You can check it's working at the default URL, [localhost:3000](http://localhost:3000).
 
-![Screenshot of a basic Express.js server running](basic-express-server-running.png)
+![Screenshot of a basic Express.js server running](/content/images/building-a-slack-clone-using-vue-js-part-1/basic-express-server-running.png)
 
 ## Routes and Controllers
 
@@ -999,7 +1000,7 @@ nexmo conversation:create display_name="general"
 
 Now, create a user for yourself.
 
-> ***Note:*** In this demo, you won't chat between two users. [Other guides]() [show you]() how to [create conversations]() between [multiple users](). This guide focusses on styling your message UI in a simple, yet appealing, way.
+> ***Note:*** In this demo, you won't chat between two users. [Other guides](<>) [show you](<>) how to [create conversations](<>) between [multiple users](<>). This guide focusses on styling your message UI in a simple, yet appealing, way.
 
 ```bash
 nexmo user:create name=USER_NAME display_name=DISPLAY_NAME
@@ -1216,7 +1217,7 @@ Now, after your "Connecting..." loading screen, you'll see a "Logging you in..."
 ![Screenshot of client logging into the Conversation API](client-logging-in-to-service.png)
 
 > ***Note:*** You'll only reach the Hello World if your application has successfully connected to the server, got an "OK" status, requested the user session and then used the user's token to connect to the Conversation API using the `nexmo-client` library.
- 
+
 ## Create the Chat Components
 
 Now you're connected to the Conversation API; you can start creating your messaging UI. First, start with the basic structure of your application, the Chat Window.
@@ -1552,33 +1553,33 @@ rm src/components/HelloWorld.vue
 
 Part 1, complete! You've built a chat client that is starting to resemble Slack. Here's a list of what you've done so far:
 
-- Made an Express.js app to use as an API
-- Made a Vue.js app to use as a client
-- Created API endpoints in Express.js
-- Consumed API endpoints in Vue.js
-- Added hot reloading of Express.js files
-- Added concurrently to Express.js and Vue.js with one command
-- Proxied API requests from Vue.js to Express.js
-- Styled Vue.js with Tailwind CSS
-- Animated icons with FontAwesome
-- Made a full-screen loading component
-- Connected to the Vonage Conversation API
-- Created a Messaging UI
+* Made an Express.js app to use as an API
+* Made a Vue.js app to use as a client
+* Created API endpoints in Express.js
+* Consumed API endpoints in Vue.js
+* Added hot reloading of Express.js files
+* Added concurrently to Express.js and Vue.js with one command
+* Proxied API requests from Vue.js to Express.js
+* Styled Vue.js with Tailwind CSS
+* Animated icons with FontAwesome
+* Made a full-screen loading component
+* Connected to the Vonage Conversation API
+* Created a Messaging UI
 
 If you're interested in the demo app complete, please check out the [GitHub repo for my Vue.js Slack clone](https://github.com/nexmo-community/vuejs-slack-clone/tree/part-1) so far.
 
 Stay tuned for part 2, where we tackle the following user experience must-haves.
 
-- Infinite scrolling history
-- Sticky scroll positions when scrolling history
-- Ping to bottom on sending messages
-- Unread message notifications
-- Mark-as-read button
-- Number of channel members
-- Message deletion
-- User typing events notification (several people are typing)
-- Multi-line messages
-- Slack style Markdown
+* Infinite scrolling history
+* Sticky scroll positions when scrolling history
+* Ping to bottom on sending messages
+* Unread message notifications
+* Mark-as-read button
+* Number of channel members
+* Message deletion
+* User typing events notification (several people are typing)
+* Multi-line messages
+* Slack style Markdown
 
 By the end of Part 2, you'll have something that looks more like this!
 
@@ -1588,10 +1589,10 @@ By the end of Part 2, you'll have something that looks more like this!
 
 Here are some more articles you may find helpful in your journey to create a web-based chat app.
 
-- [Adding Voice Functionality to an Existing Chat Application](https://www.nexmo.com/blog/2019/10/11/adding-voice-functionality-to-an-existing-chat-application-dr)
-- [Register to Chat with Typeform](https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr)
-- [JavaScript Client SDK Overview](https://developer.nexmo.com/client-sdk/overview)
-- [Create a Simple Messaging UI with Bootstrap](https://www.nexmo.com/blog/2019/12/18/create-a-simple-messaging-ui-with-bootstrap-dr)
-- [Chat Pagination with Infinite Scrolling](https://www.nexmo.com/blog/2020/02/03/chat-pagination-with-infinite-scrolling-dr)
+* [Adding Voice Functionality to an Existing Chat Application](https://www.nexmo.com/blog/2019/10/11/adding-voice-functionality-to-an-existing-chat-application-dr)
+* [Register to Chat with Typeform](https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr)
+* [JavaScript Client SDK Overview](https://developer.nexmo.com/client-sdk/overview)
+* [Create a Simple Messaging UI with Bootstrap](https://www.nexmo.com/blog/2019/12/18/create-a-simple-messaging-ui-with-bootstrap-dr)
+* [Chat Pagination with Infinite Scrolling](https://www.nexmo.com/blog/2020/02/03/chat-pagination-with-infinite-scrolling-dr)
 
 And don’t forget, if you have any questions, advice or ideas you’d like to share with the community, then please feel free to jump on our [Community Slack workspace](https://developer.nexmo.com/community/slack) or pop a reply below 👇
