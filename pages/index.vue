@@ -48,7 +48,14 @@ export default {
       latest: latest,
       posts: imports
     };
-  }
+  },
+
+  head () {
+    return {
+      title: 'Vonage Developer Blog',
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
 };
 </script>
 
