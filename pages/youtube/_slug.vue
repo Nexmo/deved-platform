@@ -10,7 +10,7 @@
         </header>
         <div class="Vlt-grid__separator"></div>
         <main class="Vlt-col Vlt-col--2of3">
-          <component :is="postComponent" />
+          <component :is="postContent" />
         </main>
         <aside class="Vlt-col">other info</aside>
       </div>
