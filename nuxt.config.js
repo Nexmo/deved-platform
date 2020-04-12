@@ -1,15 +1,42 @@
-import path from 'path'
-import Mode from 'frontmatter-markdown-loader/mode'
+import * as fs from 'fs'
+import glob from 'glob'
 import markdownIt from 'markdown-it'
-import markdownItPrism from 'markdown-it-prism'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItClass from '@toycode/markdown-it-class'
-import walk from 'walkdir'
+import markdownItFrontmatter from 'markdown-it-front-matter'
+import markdownItPrism from 'markdown-it-prism'
+import Mode from 'frontmatter-markdown-loader/mode'
+import path from 'path'
+import yaml from 'yaml'
 
 const builtAt = new Date().toISOString()
+const routes = []
+const posts = []
+const dynamicContent = glob.sync('**/*.md', { cwd: 'content' })
 
-export default async() => {
+dynamicContent.forEach(local => {
+  const [ type, file ] = local.split('/')
+  const [ name ] = file.split('.md')
+  const post = {}
+
+  const data = fs.readFileSync(path.resolve('content', local), 'utf8')
+  const md = markdownIt().use(markdownItFrontmatter, (info) => {
+    const attributes = yaml.parse(info)
+    Object.assign(post, attributes)
+  })
+
+  post.permalink = `/${type}/${name}`
+  post.html = md.render(data)
+  post.raw = data
+  posts.push(post)
+
+  routes.push(post.permalink)
+})
+
+export default () => {
   return {
+    mode: 'spa',
+
     /*
     ** Headers of the page
     ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
@@ -72,23 +99,28 @@ export default async() => {
     */
     modules: [
       // Doc: https://http.nuxtjs.org
-      "@nuxt/http"
+      '@nuxt/http',
+      '@nuxtjs/feed',
+      '@nuxtjs/sitemap'
+    ],
+
+    sitemap: {
+      hostname: 'https://vonage.dev',
+      gzip: true,
+      lastmod: builtAt,
+      exclude: [
+        '/search',
+        '/admin/**'
+      ],
+      routes: routes
+    },
+
+    feed: [
+      // Your feeds here
     ],
 
     generate: {
-      routes () {
-        var files = walk.sync('./content/')
-          .filter(file => {
-            return !!file.match(/.*\/content(.*)\.md$/);
-          })
-          .map(file => {
-            const [, name] = file.match(/.*\/content(.*)\.md$/);
-
-            return name;
-          });
-
-        return files;
-      }
+      routes: routes
     },
 
     loading: {
@@ -105,7 +137,8 @@ export default async() => {
     ],
 
     plugins: [
-      { src: '@/plugins/vue-instantsearch.js', ssr: false },
+      { src: '@/plugins/vue-moment.js' },
+      { src: '@/plugins/vue-fragment.js' },
       { src: '@/plugins/filters.js' }
     ],
 
@@ -114,6 +147,7 @@ export default async() => {
     ** Doc: https://nuxtjs.org/api/configuration-build
     */
     build: {
+      transpile: ['vue-instantsearch', 'instantsearch.js/es'],
       extend(config) {
         const classMap = { blockquote: 'Vlt-callout Vlt-callout--tip', ul: 'Vlt-list Vlt-list--simple' }
         // add frontmatter-markdown-loader
@@ -128,8 +162,8 @@ export default async() => {
               .use(markdownItAnchor)
               .use(markdownItClass, classMap)
           }
-        });
+        })
       }
     }
   }
-};
+}

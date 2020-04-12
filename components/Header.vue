@@ -9,6 +9,7 @@
         class="Vlt-S-only"
         src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg"
       />
+      <div class="Vlt-badge Vlt-badge--small Vlt-badge--transparent" style="margin: 8px">Developer Blog</div>
     </a>
     <div class="Vlt-header__menu">
       <div class="Vlt-tabs">

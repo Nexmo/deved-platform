@@ -6,21 +6,25 @@
         {{ post.attributes.title | truncate(60, '...') }}
       </h3>
     </div>
-    <div class="Vlt-card__content">
-      <small>Published April 09, 2020 by Lorna Mitchell</small>
-      <p v-if="!!post.attributes.description">{{ post.attributes.description | truncate(120, '...') }}</p>
-    </div>
+    <CardMeta :post="post" />
   </NLink>
 </template>
 
 <script>
+import CardMeta from '~/components/CardMeta'
+
 export default {
+  components: {
+    CardMeta
+  },
+
   props: {
     post: {
       type: Object,
       required: true
     }
   },
+
   methods: {
     getPermalink(post) {
       return  `${post.meta.resourcePath.split('/content/').pop().split('.')[0]}`;

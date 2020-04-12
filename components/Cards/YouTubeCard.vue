@@ -11,15 +11,18 @@
         {{ post.attributes.title | truncate(62, '...') }}
       </h3>
     </div>
-    <div class="Vlt-card__content">
-      <small>Published April 09, 2020 by Lorna Mitchell</small>
-      <p v-if="!!post.attributes.description">{{ post.attributes.description | truncate(120, '...') }}</p>
-    </div>
+    <CardMeta :post="post" />
   </a>
 </template>
 
 <script>
+import CardMeta from '~/components/CardMeta'
+
 export default {
+  components: {
+    CardMeta
+  },
+
   props: {
     post: {
       type: Object,

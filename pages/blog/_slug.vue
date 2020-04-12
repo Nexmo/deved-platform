@@ -1,7 +1,15 @@
 <template>
   <article class="Blog__post Vlt-grid">
     <div class="Vlt-col">
-      author info
+      <div class="Vlt-grid">
+        <div class="Vlt-col">
+          <Breadcrumbs />
+        </div>
+        <div class="Vlt-grid__separator"></div>
+        <div class="Vlt-col">
+          <Author :authorName="attributes.author" type="card" />
+        </div>
+      </div>
     </div>
     <div class="Vlt-col Vlt-col--3of4">
       <div class="Vlt-grid">
@@ -10,16 +18,33 @@
         </header>
         <div class="Vlt-grid__separator"></div>
         <main class="Vlt-col Vlt-col--2of3">
+          <img :src="attributes.thumbnail" width="100%" class="Vlt-margin--bottom4 Vlt-margin--M-bottom3 Vlt-margin--S-bottom2" />
           <component :is="postContent" />
         </main>
-        <aside class="Vlt-col">other info</aside>
+        <aside class="Vlt-col">
+          <div class="Vlt-grid">
+            <div class="Vlt-col">
+              <Tags :tags="attributes.tags" />
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   </article>
 </template>
 
 <script>
+import Author from '~/components/Author'
+import Breadcrumbs from '~/components/Breadcrumbs'
+import Tags from '~/components/Tags'
+
 export default {
+  components: {
+    Author,
+    Breadcrumbs,
+    Tags
+  },
+
   head () {
     return {
       title: `${this.title} - Vonage Developer Blog`

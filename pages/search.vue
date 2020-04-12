@@ -1,33 +1,91 @@
 <template>
-  <ais-instant-search :search-client="searchClient" index-name="demo_ecommerce">
+  <ais-instant-search-ssr>
     <ais-search-box />
+    <ais-stats />
+    <!-- <ais-refinement-list attribute="brand" /> -->
     <ais-hits>
-      <div slot="item" slot-scope="{ item }">
-        <h2>{{ item.name }}</h2>
-      </div>
+      <template
+        slot="item"
+        slot-scope="{ item }"
+      >
+        <p>
+          <ais-highlight
+            attribute="name"
+            :hit="item"
+          />
+        </p>
+        <!-- <p>
+          <ais-highlight
+            attribute="brand"
+            :hit="item"
+          />
+        </p> -->
+      </template>
     </ais-hits>
-  </ais-instant-search>
+    <ais-pagination />
+  </ais-instant-search-ssr>
 </template>
 
 <script>
+import {
+  AisInstantSearchSsr,
+  AisRefinementList,
+  AisHits,
+  AisHighlight,
+  AisSearchBox,
+  AisStats,
+  AisPagination,
+  createInstantSearch
+} from 'vue-instantsearch';
 import algoliasearch from 'algoliasearch/lite';
-import 'instantsearch.css/themes/algolia-min.css';
+
+const searchClient = algoliasearch(
+  'latency',
+  '6be0576ff61c053d5f9a3225e2a90f76'
+);
+
+const { instantsearch, rootMixin } = createInstantSearch({
+  searchClient,
+  indexName: 'instant_search'
+});
 
 export default {
-  data() {
-    return {
-      searchClient: algoliasearch(
-        'B1G2GM9NG0',
-        'aadef574be1f9252bb48d4ea09b5cfe5'
-      ),
-    };
+  asyncData() {
+    return instantsearch
+      .findResultsState({
+        // find out which parameters to use here using ais-state-results
+        query: '',
+        hitsPerPage: 5,
+        disjunctiveFacets: ['brand'],
+        // disjunctiveFacetsRefinements: { brand: ['Apple'] }
+      })
+      .then(() => ({
+        instantSearchState: instantsearch.getState()
+      }));
   },
+  beforeMount() {
+    instantsearch.hydrate(this.instantSearchState);
+  },
+  mixins: [rootMixin],
+  components: {
+    AisInstantSearchSsr,
+    AisRefinementList,
+    AisHits,
+    AisHighlight,
+    AisSearchBox,
+    AisStats,
+    AisPagination
+  },
+  head() {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href:
+            'https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css'
+        }
+      ]
+    };
+  }
 };
 </script>
-
-<style>
-body {
-  font-family: sans-serif;
-  padding: 1em;
-}
-</style>
