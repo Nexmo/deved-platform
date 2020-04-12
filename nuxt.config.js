@@ -64,6 +64,18 @@ export default () => {
       ],
       link: [
         {
+          rel: 'alternative',
+          type: 'application/rss+xml',
+          href: '/feed.xml',
+          title: 'RSS',
+        },
+        {
+          rel: 'alternative',
+          type: 'application/json',
+          href: '/feed.json',
+          title: 'JSON Feed',
+        },
+        {
           rel: 'icon',
           type: 'image/png',
           href: '/favicon-16x16.png',
@@ -116,7 +128,48 @@ export default () => {
     },
 
     feed: [
-      // Your feeds here
+      {
+        path: '/feed.xml',
+        async create(feed) {
+          feed.options = {
+            title: 'Vonage Developer Blog',
+            description: 'Vonage Developer Blog feed!'
+          }
+
+          posts.forEach(post => {
+            feed.addItem({
+              title: post.title,
+              description: !!post.description ? post.description : '',
+              id: post.permalink,
+              link: post.permalink,
+              content: post.html
+            })
+          })
+        },
+        cacheTime: 1000 * 60 * 15,
+        type: 'rss2'
+      },
+      {
+        path: '/feed.json',
+        async create(feed) {
+          feed.options = {
+            title: 'Vonage Developer Blog',
+            description: 'Vonage Developer Blog feed!'
+          }
+
+          posts.forEach(post => {
+            feed.addItem({
+              title: post.title,
+              description: !!post.description ? post.description : '',
+              id: post.permalink,
+              link: post.permalink,
+              content: post.html
+            })
+          })
+        },
+        cacheTime: 1000 * 60 * 15,
+        type: 'json1'
+      }
     ],
 
     generate: {

@@ -2,7 +2,7 @@
 title: Building a Slack Clone Using Vue.js - Part 1
 description: Have you ever wanted to create a chat application? Learn how to
   make your own Slack in this multi-part Vue.js series
-thumbnail: /content/blog/building-a-slack-clone-using-vue-js-part-1/purplewhiteblog-artboard.png
+thumbnail: /content/blog/building-a-slack-clone-using-vue-js-part-1/thumbnail.png
 author: lukeoliff
 published: true
 published_at: 2020-04-10T10:30:00.000Z
