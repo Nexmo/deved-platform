@@ -1,6 +1,7 @@
 <template>
-  <NLink :to="getPermalink(post)" class="Vlt-card Blog__Blog-card Vlt-card--clickable">
-	  <div class="Vlt-card__image" style="background-image: url('https://pokemongohub.net/wp-content/uploads/2018/11/Pokemon-Lets-Go.jpg'); background-size: cover"></div>
+  <NLink :to="getPermalink(post)" class="Vlt-card Blog-card Vlt-card--clickable">
+	  <div v-if="post.attributes.thumbnail" class="Vlt-card__image" :style="`background-image: url('${post.attributes.thumbnail}');`"></div>
+	  <div v-else class="Vlt-card__image"></div>
     <div class="Vlt-card__header">
       <h3 class="Vlt-title">
         {{ post.attributes.title | truncate(60, '...') }}
@@ -27,8 +28,22 @@ export default {
 
   methods: {
     getPermalink(post) {
-      return  `${post.meta.resourcePath.split('/content/').pop().split('.')[0]}`;
+      if (post.permalink) {
+        return  post.permalink;
+      } else {
+        return  `${post.meta.resourcePath.split('/content/').pop().split('.')[0]}`;
+      }
     }
   }
 };
 </script>
+
+<style scoped>
+.Vlt-card__image {
+  background: url('https://pokemongohub.net/wp-content/uploads/2018/11/Pokemon-Lets-Go.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>

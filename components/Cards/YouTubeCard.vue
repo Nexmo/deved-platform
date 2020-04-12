@@ -1,6 +1,11 @@
 <template>
-  <a :href="getPermalink(post)" target="_blank" class="Vlt-card Blog__Blog-card Vlt-card--clickable">
-	  <div class="Vlt-card__image" :style="`background-image: url('http://i3.ytimg.com/vi/` + post.attributes.youtube_id + `/maxresdefault.jpg'); background-size: cover`">
+  <a :href="getPermalink(post)" target="_blank" class="Vlt-card Blog-card Vlt-card--clickable">
+	  <div v-if="post.attributes.thumbnail" class="Vlt-card__image" :style="`background-image: url('${post.attributes.thumbnail}');`">
+      <div class="Vlt-card__image__icon">
+        <svg class="Vlt-black"><use xlink:href="../../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-youtube" /></svg>
+      </div>
+    </div>
+	  <div v-else class="Vlt-card__image" :style="`background-image: url('http://i3.ytimg.com/vi/${post.attributes.youtube_id}/maxresdefault.jpg');`">
       <div class="Vlt-card__image__icon">
         <svg class="Vlt-black"><use xlink:href="../../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-youtube" /></svg>
       </div>
@@ -36,3 +41,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.Vlt-card__image {
+  background: url('/images/twitch-thumbnail.png') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>

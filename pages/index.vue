@@ -6,7 +6,22 @@
       </div>
 	    <div class="Vlt-grid__separator"></div>
       <Card :post="latest" featured />
-      <CommunityUpdatesCard />
+      <div class="Vlt-col">
+        <div class="Vlt-grid">
+          <CommunityUpdatesCard class="Blog-card__community" />
+	        <div class="Vlt-grid__separator"></div>
+          <div class="Vlt-col Blog-card__slack">
+            <a href="https://developer.nexmo.com/community/slack?utm_source=blog&utm_medium=deved&utm_campaign=join-slack-link" class="Vlt-card Blog-card Vlt-card--border-top-blue">
+              <div class="Vlt-card__header" style="text-align: center;">
+                <h3 class="Vlt-title--icon">
+                  <svg><use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-slack-color" /></svg>
+                  Join us on the Vonage Developer Community Slack
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="Vlt-grid">
       <div class="Vlt-col">
@@ -58,12 +73,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.Blog header >>> .Vlt-card.Blog__Blog-card {
-  min-height: 350px;
-}
-.Blog main >>> .Vlt-card.Blog__Blog-card {
-  min-height: 400px;
-}
-</style>

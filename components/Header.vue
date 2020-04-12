@@ -1,6 +1,6 @@
 <template>
   <header class="Vlt-header Vlt-margin--bottom4 Vlt-margin--M-bottom3 Vlt-margin--S-bottom2">
-    <a href="/" class="Vlt-header__logo">
+    <NLink to="/" class="Vlt-header__logo">
       <img
         class="Vlt-M-plus"
         src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
@@ -10,7 +10,7 @@
         src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg"
       />
       <div class="Vlt-badge Vlt-badge--small Vlt-badge--transparent" style="margin: 8px">Developer Blog</div>
-    </a>
+    </NLink>
     <div class="Vlt-header__menu">
       <div class="Vlt-tabs">
         <ul class="Vlt-tabs__header">
@@ -39,22 +39,26 @@
       </div>
     </div>
     <div class="Vlt-header__menu Vlt-header__menu--right">
-      <div class="Vlt-composite">
-        <div class="Vlt-composite__prepend Vlt-composite__prepend--icon">
-          <svg>
-            <use
-              xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-search"
+      <form action="/search" method="GET" name="quick-search" class="Blog-search__form">
+        <div class="Vlt-composite">
+          <div class="Vlt-composite__prepend Vlt-composite__prepend--icon">
+            <svg>
+              <use
+                xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-search"
+              />
+            </svg>
+          </div>
+          <div class="Vlt-input Vlt-input--round">
+            <input
+              name="q"
+              id="example-input-icon-button"
+              type="text"
+              placeholder="Search"
+              :value="search"
             />
-          </svg>
+          </div>
         </div>
-        <div class="Vlt-input Vlt-input--round">
-          <input
-            id="example-input-icon-button"
-            type="text"
-            placeholder="Search"
-          />
-        </div>
-      </div>
+      </form>
       <a
         href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
         class="Vlt-btn Vlt-btn--small Vlt-btn--primary"
@@ -75,10 +79,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      search: this.$route.query.q
+    }
+  }
+}
 </script>
 
 <style scoped>
+.Blog-search__form {
+  display: inline-block;
+}
+
 .Vlt-tabs__header {
   border-bottom: none;
 }
