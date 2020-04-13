@@ -1,6 +1,7 @@
 const algoliasearch = require('algoliasearch')
 const request = require('request')
 const StreamArray = require('stream-json/streamers/StreamArray')
+const jwt = require('jsonwebtoken')
 
 const errorHandler = (err, callback) => {
   console.error(err)
@@ -12,6 +13,13 @@ const errorHandler = (err, callback) => {
 
 exports.handler = async (event, context, callback) => {
   try {
+    const decoded = jwt.verify(
+      event.headers["X-Webhook-Signature"],
+      process.env.ALGOLIA_JWS_SECRET,
+      { issuer: "netlify", verify_iss: true, algorithms: ["HS256"] }
+    );
+    console.log(decoded)
+
     const client = algoliasearch(process.env.ALGOLIA_ID, process.env.ALGOLIA_KEY)
     const index = client.initIndex(process.env.ALGOLIA_INDEX)
     
