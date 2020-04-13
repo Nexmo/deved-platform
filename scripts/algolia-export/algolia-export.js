@@ -13,6 +13,7 @@ const errorHandler = (err, callback) => {
 
 exports.handler = async (event, context, callback) => {
   try {
+    console.log(event.headers)
     const decoded = jwt.verify(
       event.headers["X-Webhook-Signature"],
       process.env.ALGOLIA_JWS_SECRET,
