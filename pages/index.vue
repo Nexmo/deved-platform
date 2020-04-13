@@ -14,7 +14,7 @@
             <a href="https://developer.nexmo.com/community/slack?utm_source=blog&utm_medium=deved&utm_campaign=join-slack-link" class="Vlt-card Blog-card Vlt-card--border-top-blue">
               <div class="Vlt-card__header" style="text-align: center;">
                 <h3 class="Vlt-title--icon">
-                  <svg><use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-slack-color" /></svg>
+                  <svg><use xlink:href="../node_modules/@vonagevolta/volta2/images/brand-icons/Brand-icon-slack-color.svg#Brand-icon-slack-color" /></svg>
                   Join us on the Vonage Developer Community Slack
                 </h3>
               </div>

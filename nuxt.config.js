@@ -255,7 +255,9 @@ export default () => {
     */
     build: {
       transpile: ['vue-instantsearch', 'instantsearch.js/es'],
-      extend(config) {
+      maxChunkSize: 100000,
+      extractCSS: true,
+      extend(config, ctx) {
         const classMap = { blockquote: 'Vlt-callout Vlt-callout--tip', ul: 'Vlt-list Vlt-list--simple' }
         // add frontmatter-markdown-loader
         config.module.rules.push({

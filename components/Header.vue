@@ -21,7 +21,7 @@
       <form action="/search" method="GET" name="quick-search" class="Blog-search__form">
         <div class="Vlt-composite">
           <div class="Vlt-composite__prepend Vlt-composite__prepend--icon">
-            <svg><use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-search" /></svg>
+            <svg><use xlink:href="../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-search.svg#Layer_1" /></svg>
           </div>
           <div class="Vlt-input Vlt-input--round">
             <input name="q" id="example-input-icon-button" type="text" placeholder="Search" />
@@ -31,7 +31,7 @@
       <NLink to="/search" class="Vlt-btn Vlt-btn--small Vlt-btn--tertiary Blog-search__button">Search</NLink>
       <a href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">Sign up</a>
       <a href="https://twitter.com/VonageDev" class="Vlt-btn Vlt-btn--small Vlt-btn--white">
-        <svg><use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-twitter-color" /></svg>
+        <svg><use xlink:href="../node_modules/@vonagevolta/volta2/images/brand-icons/Brand-icon-twitter-color.svg#Brand-icon-twitter-color" /></svg>
       </a>
     </div>
   </header>

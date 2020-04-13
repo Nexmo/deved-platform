@@ -2,17 +2,17 @@
   <a :href="getPermalink(post)" target="_blank" class="Vlt-card Blog-card Vlt-card--clickable">
 	  <div v-if="post.attributes.thumbnail" class="Vlt-card__image" :style="`background-image: url('${post.attributes.thumbnail}');`">
       <div class="Vlt-card__image__icon">
-        <svg class="Vlt-black"><use xlink:href="../../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-youtube" /></svg>
+        <svg><image width="40" height="40" viewBox="0 0 40 40" xlink:href="../../node_modules/@vonagevolta/volta2/images/brand-icons/Brand-icon-youtube.svg" /></svg>
       </div>
     </div>
 	  <div v-else class="Vlt-card__image" :style="`background-image: url('http://i3.ytimg.com/vi/${post.attributes.youtube_id}/maxresdefault.jpg');`">
       <div class="Vlt-card__image__icon">
-        <svg class="Vlt-black"><use xlink:href="../../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-youtube" /></svg>
+        <svg><image width="40" height="40" viewBox="0 0 40 40" xlink:href="../../node_modules/@vonagevolta/volta2/images/brand-icons/Brand-icon-youtube.svg" /></svg>
       </div>
     </div>
     <div class="Vlt-card__header">
       <h3 class="Vlt-title--icon">
-        <svg><use xlink:href="../../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-open" /></svg>
+        <svg><image width="16" height="16" viewBox="0 0 16 16" xlink:href="../../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-open.svg" /></svg>
         {{ post.attributes.title | truncate(62, '...') }}
       </h3>
     </div>
