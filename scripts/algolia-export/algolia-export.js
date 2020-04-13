@@ -14,12 +14,20 @@ const errorHandler = (err, callback) => {
 exports.handler = async (event, context, callback) => {
   try {
     const { "x-webhook-signature": webhookSignature } = event.headers;
+
+    if (!webhookSignature) { 
+      throw 'missing webhook signature';
+    }
+
     const decoded = jwt.verify(
       webhookSignature,
       process.env.ALGOLIA_JWS_SECRET,
       { issuer: "netlify", verify_iss: true, algorithms: ["HS256"] }
     );
-    console.log(decoded)
+
+    if (typeof decoded !== 'object') {
+      throw 'unknown jwt error';
+    }
 
     const client = algoliasearch(process.env.ALGOLIA_ID, process.env.ALGOLIA_KEY)
     const index = client.initIndex(process.env.ALGOLIA_INDEX)
