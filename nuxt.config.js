@@ -231,7 +231,7 @@ export default () => {
 
     loading: {
       color: '#06ba77',
-      height: '3px',
+      height: '4px',
       throttle: 0,
     },
 
