@@ -2,11 +2,15 @@ const algoliasearch = require('algoliasearch')
 const request = require('request')
 const StreamArray = require('stream-json/streamers/StreamArray')
 
-const errorHandler = (err) => {
-  context.fail(err)
+const errorHandler = (err, callback) => {
+  console.log(err)
+  callback(null, {
+    statusCode: 500,
+    body: "Error: check logs"
+  })
 }
 
-exports.handler = async (event, context) => {
+exports.handler = async (event, context, callback) => {
   try {
     const client = algoliasearch(process.env.ALGOLIA_ID, process.env.ALGOLIA_SECRET)
     const index = client.initIndex(process.env.ALGOLIA_INDEX)
@@ -25,19 +29,23 @@ exports.handler = async (event, context) => {
               chunks = []
               stream.resume()
             })
-            .catch(errorHandler)
+            .catch(err => errorHandler(err, callback))
         }
       })
       .on('end', () => {
         if (chunks.length) {
           index.saveObjects(chunks, { 
             autoGenerateObjectIDIfNotExist: true
-          }).catch(errorHandler)
-          context.succeed()
+          }).catch(err => errorHandler(err, callback))
         }
       })
-      .on('error', err => errorHandler(err))
+      .on('error', err => errorHandler(err, callback))
+
+      callback(null, {
+        statusCode: 200,
+        body: "Success"
+      })
   } catch (err) {
-    errorHandler(err)
+    errorHandler(err, callback)
   }
 }
