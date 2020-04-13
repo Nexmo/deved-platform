@@ -3,7 +3,7 @@ const request = require('request')
 const StreamArray = require('stream-json/streamers/StreamArray')
 
 const errorHandler = (err, callback) => {
-  console.log(err)
+  console.error(err)
   callback(null, {
     statusCode: 500,
     body: "Error: check logs"
@@ -12,7 +12,7 @@ const errorHandler = (err, callback) => {
 
 exports.handler = async (event, context, callback) => {
   try {
-    const client = algoliasearch(process.env.ALGOLIA_ID, process.env.ALGOLIA_SECRET)
+    const client = algoliasearch(process.env.ALGOLIA_ID, process.env.ALGOLIA_KEY)
     const index = client.initIndex(process.env.ALGOLIA_INDEX)
     
     const stream = request(`${process.env.URL}/output.json`).pipe(StreamArray.withParser())
