@@ -9,13 +9,13 @@ function installDeps(functionDir, cb) {
 
 (async () => {
   const findJSFiles = ['*/package.json', '!node_modules', '!**/node_modules']
-  const directory = path.join(__dirname, '..', 'functions')
+  const directory = path.join(__dirname, '..', 'scripts')
 	const foldersWithDeps = await globby(findJSFiles, { cwd: directory })
 
   const folders = foldersWithDeps.map(fnFolder => {
     return fnFolder.substring(0, fnFolder.indexOf("package.json"))
   }).map((folder) => {
-    installDeps(path.join(__dirname, '..', 'functions', folder), () => {
+    installDeps(path.join(__dirname, '..', 'scripts', folder), () => {
       console.log(`${folder} dependencies installed`)
     })
   })
