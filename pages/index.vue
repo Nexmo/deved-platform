@@ -30,6 +30,9 @@
 	    <div class="Vlt-grid__separator"></div>
       <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
     </main>
+    <footer class="Vlt-center">
+      <NLink to="/archive" class="Vlt-btn Vlt-btn--quaternary">View Older Posts</NLink>
+    </footer>
   </section>
 </template>
 

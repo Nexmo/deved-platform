@@ -1,15 +1,9 @@
 <template>
   <header class="Vlt-header Vlt-margin--bottom4 Vlt-margin--M-bottom3 Vlt-margin--S-bottom2">
     <NLink to="/" class="Vlt-header__logo">
-      <img
-        class="Vlt-M-plus"
-        src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
-      />
-      <img
-        class="Vlt-S-only"
-        src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg"
-      />
-      <div class="Vlt-badge Vlt-badge--small Vlt-badge--transparent" style="margin: 8px">Developer Blog</div>
+      <img class="Vlt-M-plus" src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg" />
+      <div class="Vlt-M-plus Vlt-badge Vlt-badge--small Vlt-badge--transparent" style="margin: 8px">Developer Blog</div>
+      <img class="Vlt-S-only" src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg" />
     </NLink>
     <div class="Vlt-header__menu">
       <div class="Vlt-tabs">
@@ -27,36 +21,17 @@
       <form action="/search" method="GET" name="quick-search" class="Blog-search__form">
         <div class="Vlt-composite">
           <div class="Vlt-composite__prepend Vlt-composite__prepend--icon">
-            <svg>
-              <use
-                xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-search"
-              />
-            </svg>
+            <svg><use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-search" /></svg>
           </div>
           <div class="Vlt-input Vlt-input--round">
-            <input
-              name="q"
-              id="example-input-icon-button"
-              type="text"
-              placeholder="Search"
-            />
+            <input name="q" id="example-input-icon-button" type="text" placeholder="Search" />
           </div>
         </div>
       </form>
-      <a
-        href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
-        class="Vlt-btn Vlt-btn--small Vlt-btn--secondary"
-        >Sign up</a
-      >
-      <a
-        href="https://twitter.com/VonageDev"
-        class="Vlt-btn Vlt-btn--small Vlt-btn--white"
-      >
-        <svg>
-          <use
-            xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-twitter-color"
-          />
-        </svg>
+      <NLink to="/search" class="Vlt-btn Vlt-btn--small Vlt-btn--tertiary Blog-search__button">Search</NLink>
+      <a href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">Sign up</a>
+      <a href="https://twitter.com/VonageDev" class="Vlt-btn Vlt-btn--small Vlt-btn--white">
+        <svg><use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-twitter-color" /></svg>
       </a>
     </div>
   </header>
@@ -67,10 +42,6 @@ export default {}
 </script>
 
 <style scoped>
-.Blog-search__form {
-  display: inline-block;
-}
-
 .Vlt-tabs__header {
   border-bottom: none;
 }
@@ -157,10 +128,24 @@ li a:hover:not([class]) {
   padding: 8px 12px;
 }
 
-.Vlt-header .Vlt-composite {
-  display: inline-block !important;
-  cursor: pointer;
-  vertical-align: middle;
+.Blog-search__form {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1099px) {
+  .Blog-search__form {
+    display: none !important;
+  }
+}
+
+.Blog-search__button {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1099px) {
+  .Blog-search__button {
+    display: inline-block !important;
+  }
 }
 
 .Vlt-header .Vlt-composite input {
