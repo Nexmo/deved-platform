@@ -52,7 +52,7 @@ export default () => {
       algoliaIndex: process.env.ALGOLIA_INDEX
     },
 
-    mode: 'universal',
+    mode: 'spa',
 
     /*
     ** Headers of the page
