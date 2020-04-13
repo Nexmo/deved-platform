@@ -30,11 +30,11 @@ exports.handler = async (event, context, callback) => {
     }
 
     const client = algoliasearch(process.env.ALGOLIA_ID, process.env.ALGOLIA_KEY)
-    const index = client.initIndex(process.env.ALGOLIA_INDEX)
+    const index = client.initIndex(`${process.env.NODE_ENV || 'development'}_BLOG`)
     
     const stream = request(`${process.env.URL}/output.json`).pipe(StreamArray.withParser())
     let chunks = []
-    
+
     stream
       .on('data', ({ value }) => {
         console.info(value)
