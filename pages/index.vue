@@ -2,10 +2,10 @@
   <section class="Blog">
     <header class="Vlt-grid">
       <div class="Vlt-col">
-        <h3>Featured</h3>
+        <h3>Featured Post</h3>
       </div>
 	    <div class="Vlt-grid__separator"></div>
-      <Card :post="latest" featured />
+      <Card :post="featured" featured />
       <div class="Vlt-col">
         <div class="Vlt-grid">
           <CommunityUpdatesCard class="Blog-card__community" />
@@ -25,7 +25,7 @@
     </header>
     <main class="Vlt-grid">
       <div class="Vlt-col">
-        <h3>Posts</h3>
+        <h3>Latest Posts</h3>
       </div>
 	    <div class="Vlt-grid__separator"></div>
       <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
@@ -57,11 +57,11 @@ export default {
       return bPublishedDate - aPublishedDate;
     });
 
-    const latest = imports.shift()
+    const featured = imports.shift()
 
     return {
-      latest: latest,
-      posts: imports
+      featured: featured,
+      posts: imports.slice(0,6) // limit to 6 "latest posts"
     };
   },
 
