@@ -1,15 +1,12 @@
 <template>
   <section class="Blog">
     <AisInstantSearchSsr>
-      <header class="Vlt-grid">
-        <div class="Vlt-col">
-          <h3>Search Results</h3>
-          <AisSearchBox />
-          <AisStats />
-        </div>
-      </header>
       <AisHits>
         <main class="Vlt-grid" slot-scope="{ items }">
+          <div class="Vlt-col">
+            <h3>.NET Posts</h3>
+          </div>
+          <div class="Vlt-grid__separator"></div>
           <Card v-for="item in items" :key="item.objectID" :post="item" />
         </main>
       </AisHits>
@@ -43,11 +40,7 @@
 import Card from '~/components/Card'
 import {
   AisInstantSearchSsr,
-  AisRefinementList,
   AisHits,
-  AisHighlight,
-  AisSearchBox,
-  AisStats,
   AisPagination,
   createInstantSearch
 } from 'vue-instantsearch';
@@ -63,11 +56,11 @@ const { instantsearch, rootMixin } = createInstantSearch({
 });
 
 export default {
-  asyncData({ query }) {
+  asyncData() {
     return instantsearch
       .findResultsState({
         // find out which parameters to use here using ais-state-results
-        query: query.q || '',
+        query: 'dotnet .net',
         hitsPerPage: 6
       })
       .then(() => ({
@@ -81,23 +74,8 @@ export default {
   components: {
     Card,
     AisInstantSearchSsr,
-    AisRefinementList,
     AisHits,
-    AisHighlight,
-    AisSearchBox,
-    AisStats,
     AisPagination
-  },
-  head() {
-    return {
-      link: [
-        {
-          rel: 'stylesheet',
-          href:
-            'https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css'
-        }
-      ]
-    };
   }
 };
 </script>

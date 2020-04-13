@@ -54,7 +54,6 @@
               id="example-input-icon-button"
               type="text"
               placeholder="Search"
-              :value="search"
             />
           </div>
         </div>
@@ -79,13 +78,7 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      search: this.$route.query.q
-    }
-  }
-}
+export default {}
 </script>
 
 <style scoped>

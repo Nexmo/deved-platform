@@ -52,7 +52,7 @@ const searchClient = algoliasearch(
 
 const { instantsearch, rootMixin } = createInstantSearch({
   searchClient,
-  indexName: 'dev_BLOG'
+  indexName: `${process.env.NODE_ENV || 'development'}_BLOG`
 });
 
 export default {
@@ -60,8 +60,8 @@ export default {
     return instantsearch
       .findResultsState({
         // find out which parameters to use here using ais-state-results
-        query: 'nodejs',
-        hitsPerPage: 5
+        query: 'nodejs node',
+        hitsPerPage: 6
       })
       .then(() => ({
         instantSearchState: instantsearch.getState()
