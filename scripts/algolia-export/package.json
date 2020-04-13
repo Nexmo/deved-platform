@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "algoliasearch": "^4.1.0"
+    "algoliasearch": "^4.1.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "stream-json": "^1.3.3"
   }
 }
