@@ -20,6 +20,7 @@ exports.handler = async (event, context, callback) => {
     
     stream
       .on('data', ({ value }) => {
+        console.info(value)
         chunks.push(value)
         if (chunks.length === 10000) {
           stream.pause()
