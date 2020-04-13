@@ -13,9 +13,9 @@ const errorHandler = (err, callback) => {
 
 exports.handler = async (event, context, callback) => {
   try {
-    console.log(event.headers)
+    const { "x-webhook-signature": webhookSignature } = event.headers;
     const decoded = jwt.verify(
-      event.headers["X-Webhook-Signature"],
+      webhookSignature,
       process.env.ALGOLIA_JWS_SECRET,
       { issuer: "netlify", verify_iss: true, algorithms: ["HS256"] }
     );
@@ -39,17 +39,16 @@ exports.handler = async (event, context, callback) => {
               chunks = []
               stream.resume()
             })
-            .catch(err => errorHandler(err, callback))
         }
       })
       .on('end', () => {
         if (chunks.length) {
           index.saveObjects(chunks, { 
             autoGenerateObjectIDIfNotExist: true
-          }).catch(err => errorHandler(err, callback))
+          })
         }
       })
-      .on('error', err => errorHandler(err, callback))
+      .on('error', err => {throw err})
 
       callback(null, {
         statusCode: 200,
