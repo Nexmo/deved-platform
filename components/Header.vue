@@ -14,12 +14,12 @@
     <div class="Vlt-header__menu">
       <div class="Vlt-tabs">
         <ul class="Vlt-tabs__header">
-          <NLink to="/nodejs" class="Vlt-tabs__link Tabs__Node" exact-active-class="Vlt-tabs__link_active" tag="li"><a>Node.js</a></NLink>
-          <NLink to="/dotnet" class="Vlt-tabs__link Tabs__DotNet" exact-active-class="Vlt-tabs__link_active" tag="li"><a>.NET</a></NLink>
-          <NLink to="/ruby" class="Vlt-tabs__link Tabs__Ruby" exact-active-class="Vlt-tabs__link_active" tag="li"><a>Ruby</a></NLink>
-          <NLink to="/python" class="Vlt-tabs__link Tabs__Python" exact-active-class="Vlt-tabs__link_active" tag="li"><a>Python</a></NLink>
-          <NLink to="/php" class="Vlt-tabs__link Tabs__PHP" exact-active-class="Vlt-tabs__link_active" tag="li"><a>PHP</a></NLink>
-          <NLink to="/java" class="Vlt-tabs__link Tabs__Java" exact-active-class="Vlt-tabs__link_active" tag="li"><a>Java</a></NLink>
+          <NLink to="/nodejs" class="Vlt-tabs__link Tabs__Node" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Node.js</span></NLink>
+          <NLink to="/dotnet" class="Vlt-tabs__link Tabs__DotNet" exact-active-class="Vlt-tabs__link_active" tag="li"><span>.NET</span></NLink>
+          <NLink to="/ruby" class="Vlt-tabs__link Tabs__Ruby" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Ruby</span></NLink>
+          <NLink to="/python" class="Vlt-tabs__link Tabs__Python" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Python</span></NLink>
+          <NLink to="/php" class="Vlt-tabs__link Tabs__PHP" exact-active-class="Vlt-tabs__link_active" tag="li"><span>PHP</span></NLink>
+          <NLink to="/java" class="Vlt-tabs__link Tabs__Java" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Java</span></NLink>
         </ul>
       </div>
     </div>
@@ -86,20 +86,20 @@ li a:hover:not([class]) {
   color: #131415;
 }
 
-.Vlt-tabs__link_active a {
+.Vlt-tabs__link_active span {
   background: 0 0;
   color: #131415;
   font-weight: 600;
   font-size: 15px;
 }
 
-.Vlt-tabs__link:not(.Vlt-tabs__link_active) a {
+.Vlt-tabs__link:not(.Vlt-tabs__link_active) span {
   font-size: 15px;
   color: #616266;
 }
 
 @media only screen and (min-width: 768px) {
-  .Vlt-tabs__link:hover:not(.Vlt-tabs__link_active) a {
+  .Vlt-tabs__link:hover:not(.Vlt-tabs__link_active) span {
     background: 0 0;
     color: #131415;
   }

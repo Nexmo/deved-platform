@@ -236,6 +236,7 @@ export default () => {
     },
 
     css: [
+      '@/assets/css/main.css',
       '@vonagevolta/volta2/dist/css/volta.min.css',
       '@vonagevolta/volta2/dist/css/volta-error-page.min.css',
       '@vonagevolta/volta2/dist/css/volta-templates.min.css',
