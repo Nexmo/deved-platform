@@ -52,7 +52,7 @@ export default () => {
       algoliaIndex: process.env.ALGOLIA_INDEX
     },
 
-    mode: 'spa',
+    mode: 'universal',
 
     /*
     ** Headers of the page
@@ -230,7 +230,7 @@ export default () => {
     },
 
     loading: {
-      color: '#871fff',
+      color: '#06ba77',
       height: '3px',
       throttle: 0,
     },

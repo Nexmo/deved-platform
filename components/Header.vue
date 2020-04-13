@@ -14,27 +14,12 @@
     <div class="Vlt-header__menu">
       <div class="Vlt-tabs">
         <ul class="Vlt-tabs__header">
-          <!-- <li class="Vlt-tabs__link Tabs__Latest Vlt-tabs__link_active">
-            <NLink to="/">Latest</NLink>
-          </li> -->
-          <li class="Vlt-tabs__link Tabs__Node">
-            <NLink to="/nodejs">Node.js</NLink>
-          </li>
-          <li class="Vlt-tabs__link Tabs__DotNet">
-            <NLink to="/dotnet">.NET</NLink>
-          </li>
-          <li class="Vlt-tabs__link Tabs__Ruby">
-            <NLink to="/ruby">Ruby</NLink>
-          </li>
-          <li class="Vlt-tabs__link Tabs__Python">
-            <NLink to="/python">Python</NLink>
-          </li>
-          <li class="Vlt-tabs__link Tabs__PHP">
-            <NLink to="/php">PHP</NLink>
-          </li>
-          <li class="Vlt-tabs__link Tabs__Java">
-            <NLink to="/java">Java</NLink>
-          </li>
+          <NLink to="/nodejs" class="Vlt-tabs__link Tabs__Node" exact-active-class="Vlt-tabs__link_active" tag="li"><a>Node.js</a></NLink>
+          <NLink to="/dotnet" class="Vlt-tabs__link Tabs__DotNet" exact-active-class="Vlt-tabs__link_active" tag="li"><a>.NET</a></NLink>
+          <NLink to="/ruby" class="Vlt-tabs__link Tabs__Ruby" exact-active-class="Vlt-tabs__link_active" tag="li"><a>Ruby</a></NLink>
+          <NLink to="/python" class="Vlt-tabs__link Tabs__Python" exact-active-class="Vlt-tabs__link_active" tag="li"><a>Python</a></NLink>
+          <NLink to="/php" class="Vlt-tabs__link Tabs__PHP" exact-active-class="Vlt-tabs__link_active" tag="li"><a>PHP</a></NLink>
+          <NLink to="/java" class="Vlt-tabs__link Tabs__Java" exact-active-class="Vlt-tabs__link_active" tag="li"><a>Java</a></NLink>
         </ul>
       </div>
     </div>
@@ -60,7 +45,7 @@
       </form>
       <a
         href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
-        class="Vlt-btn Vlt-btn--small Vlt-btn--primary"
+        class="Vlt-btn Vlt-btn--small Vlt-btn--secondary"
         >Sign up</a
       >
       <a
@@ -92,6 +77,13 @@ export default {}
 
 .Vlt-header__menu .Vlt-btn svg:only-child {
   margin-right: 0;
+}
+
+li a:visited,
+li a:visited:hover:not([class]),
+li a:hover:not([class]) {
+  text-decoration: none;
+  color: #131415;
 }
 
 .Vlt-tabs__link_active a {
