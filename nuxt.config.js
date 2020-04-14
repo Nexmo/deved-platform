@@ -22,10 +22,13 @@ dynamicContent.forEach(local => {
   const [ name ] = file.split('.md')
   const post = {}
 
-  post.permalink = `/${type}/${name}`
 
   const content = fm(fs.readFileSync(path.resolve('content', local), 'utf8'))
   const md = markdownIt();
+
+  const date = new Date(content.attributes.published_at)
+
+  post.permalink = `/${type}/${date.getFullYear()}/${("0" + (date.getMonth() + 1)).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`
 
   Object.assign(post, content.attributes)
   post.attributes = content.attributes

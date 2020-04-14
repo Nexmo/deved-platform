@@ -8,10 +8,9 @@
 </template>
 
 <script>
-import Authors from '../data/authors.json'
 import AuthorName from '~/components/Authors/AuthorName.vue'
 import AuthorMiniCard from '~/components/Authors/AuthorMiniCard.vue'
-import AuthorCard from '~/components/Authors/AuthorCard.vue'
+import AuthorCard from '~/components/Authors/AuthorCard2.vue'
 import AuthorPage from '~/components/Authors/AuthorPage.vue'
 
 export default {
@@ -37,7 +36,8 @@ export default {
 
   methods: {
     author () {
-      return Authors.hasOwnProperty(this.authorName) ? Authors[this.authorName] : { name: this.authorName };
+      const authors = require('../data/authors.json');
+      return authors.hasOwnProperty(this.authorName) ? authors[this.authorName] : { name: this.authorName };
     }
   }
 };

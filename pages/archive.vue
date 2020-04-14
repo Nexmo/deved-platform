@@ -59,13 +59,13 @@ export default {
   asyncData({ query }) {
     return instantsearch
       .findResultsState({
-        // find out which parameters to use here using ais-state-results
+        page: 1, // first 6 are shown on the homepage, this is "page 2"
         query: '',
         hitsPerPage: 6
       })
-      .then(() => ({
-        instantSearchState: instantsearch.getState()
-      }));
+      .then(() => {
+        return { instantSearchState: instantsearch.getState()}
+      });
   },
   beforeMount() {
     instantsearch.hydrate(this.instantSearchState);

@@ -31,7 +31,10 @@ export default {
       if (post.permalink) {
         return  post.permalink;
       } else {
-        return  `${post.meta.resourcePath.split('/content/').pop().split('.')[0]}`;
+        const [ type, name ] = post.meta.resourcePath.split('/content/').pop().split('.')[0].split('/');
+        const date = new Date(post.attributes.published_at);
+
+        return  `/${type}/${date.getFullYear()}/${("0" + (date.getMonth() + 1)).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`;
       }
     }
   }
