@@ -3,6 +3,7 @@
     <BlogCard v-if="!post.attributes.type || post.attributes.type == 'blog'" :post="post" />
     <YouTubeCard v-else-if="post.attributes.type == 'youtube' && !!post.attributes.youtube_id" :post="post" />
     <TwitchCard v-else-if="post.attributes.type == 'twitch' && !!post.attributes.twitch_id" :post="post" />
+    <div v-else></div>
   </div>
 </template>
 

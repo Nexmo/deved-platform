@@ -7,12 +7,18 @@
         </h3>
       </div>
       <div class="Vlt-card__content">
-        <form name="contact" method="POST" netlify>
+        <form 
+          name="community-updates"
+          method="POST" 
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          >
+          <input type="hidden" name="form-name" value="community-updates">
           <p class="p-large">Subscribe to receive updates, tutorials, and news on Vonage communications APIs, libraries, SDKs, and developer tools.</p>
           <div class="Vlt-form__element Vlt-form__element--big">
             <div class="Vlt-composite">
               <div class="Vlt-composite__wrapper Vlt-input">
-                <input name="contact-email" type="text" placeholder="email@example.com" id="contact-email" value="" />
+                <input name="contact-email" type="text" placeholder="email@example.com" id="contact-email" value="">
                 <label for="contact-email">Email</label>
               </div>
               <div class="Vlt-composite__append">

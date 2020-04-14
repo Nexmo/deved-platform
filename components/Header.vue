@@ -24,7 +24,7 @@
             <svg><use xlink:href="../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-search.svg#Layer_1" /></svg>
           </div>
           <div class="Vlt-input Vlt-input--round">
-            <input name="q" id="example-input-icon-button" type="text" placeholder="Search" />
+            <input name="q" id="example-input-icon-button" type="text" placeholder="Search">
           </div>
         </div>
       </form>
@@ -134,6 +134,7 @@ li a:hover:not([class]) {
 
 .Blog-search__form {
   display: inline-block;
+  padding: 8px 0;
 }
 
 @media only screen and (max-width: 1099px) {
