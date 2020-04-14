@@ -1,5 +1,5 @@
 <template>
-  <NLink :to="getPermalink(post)" class="Vlt-card Blog-card Vlt-card--clickable">
+  <NLink :to="getPermalink(post)" no-prefetch class="Vlt-card Blog-card Vlt-card--clickable">
 	  <div v-if="post.attributes.thumbnail" class="Vlt-card__image" :style="`background-image: url('${post.attributes.thumbnail}');`"></div>
 	  <div v-else class="Vlt-card__image"></div>
     <div class="Vlt-card__header">

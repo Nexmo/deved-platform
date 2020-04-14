@@ -1,6 +1,6 @@
 <template>
   <header class="Vlt-header Vlt-margin--bottom4 Vlt-margin--M-bottom3 Vlt-margin--S-bottom2">
-    <NLink to="/" class="Vlt-header__logo">
+    <NLink to="/" no-prefetch class="Vlt-header__logo">
       <img class="Vlt-M-plus" src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg" />
       <div class="Vlt-M-plus Vlt-badge Vlt-badge--small Vlt-badge--transparent" style="margin: 8px">Developer Blog</div>
       <img class="Vlt-S-only" src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg" />
@@ -8,12 +8,12 @@
     <div class="Vlt-header__menu">
       <div class="Vlt-tabs">
         <ul class="Vlt-tabs__header">
-          <NLink to="/nodejs" class="Vlt-tabs__link Tabs__Node" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Node.js</span></NLink>
-          <NLink to="/dotnet" class="Vlt-tabs__link Tabs__DotNet" exact-active-class="Vlt-tabs__link_active" tag="li"><span>.NET</span></NLink>
-          <NLink to="/ruby" class="Vlt-tabs__link Tabs__Ruby" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Ruby</span></NLink>
-          <NLink to="/python" class="Vlt-tabs__link Tabs__Python" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Python</span></NLink>
-          <NLink to="/php" class="Vlt-tabs__link Tabs__PHP" exact-active-class="Vlt-tabs__link_active" tag="li"><span>PHP</span></NLink>
-          <NLink to="/java" class="Vlt-tabs__link Tabs__Java" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Java</span></NLink>
+          <NLink to="/nodejs" no-prefetch class="Vlt-tabs__link Tabs__Node" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Node.js</span></NLink>
+          <NLink to="/dotnet" no-prefetch class="Vlt-tabs__link Tabs__DotNet" exact-active-class="Vlt-tabs__link_active" tag="li"><span>.NET</span></NLink>
+          <NLink to="/ruby" no-prefetch class="Vlt-tabs__link Tabs__Ruby" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Ruby</span></NLink>
+          <NLink to="/python" no-prefetch class="Vlt-tabs__link Tabs__Python" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Python</span></NLink>
+          <NLink to="/php" no-prefetch class="Vlt-tabs__link Tabs__PHP" exact-active-class="Vlt-tabs__link_active" tag="li"><span>PHP</span></NLink>
+          <NLink to="/java" no-prefetch class="Vlt-tabs__link Tabs__Java" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Java</span></NLink>
         </ul>
       </div>
     </div>
@@ -28,17 +28,21 @@
           </div>
         </div>
       </form>
-      <NLink to="/search" class="Vlt-btn Vlt-btn--small Vlt-btn--tertiary Blog-search__button">Search</NLink>
+      <NLink to="/search" no-prefetch class="Vlt-btn Vlt-btn--small Vlt-btn--tertiary Blog-search__button">Search</NLink>
       <a href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">Sign up</a>
-      <a href="https://twitter.com/VonageDev" class="Vlt-btn Vlt-btn--small Vlt-btn--white">
-        <svg><use xlink:href="../node_modules/@vonagevolta/volta2/images/brand-icons/Brand-icon-twitter-color.svg#Brand-icon-twitter-color" /></svg>
-      </a>
+      <TwitterSocialButton link="https://twitter.com/VonageDev" class="Vlt-btn--small" />
     </div>
   </header>
 </template>
 
 <script>
-export default {}
+import TwitterSocialButton from '~/components/SocialButtons/TwitterSocialButton'
+
+export default {
+  components: {
+    TwitterSocialButton
+  }
+};
 </script>
 
 <style scoped>

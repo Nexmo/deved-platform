@@ -1,6 +1,7 @@
 <template>
   <fragment v-if="!!authorName">
     <AuthorName v-if="type == 'name'" :author="author()" />
+    <AuthorMiniCard v-else-if="type == 'minicard'" :author="author()" />
     <AuthorCard v-else-if="type == 'card'" :author="author()" />
     <AuthorPage v-else-if="type == 'page'" :author="author()" />
   </fragment>
@@ -8,13 +9,15 @@
 
 <script>
 import Authors from '../data/authors.json'
-import AuthorName from '~/components/AuthorName.vue'
-import AuthorCard from '~/components/AuthorCard.vue'
-import AuthorPage from '~/components/AuthorPage.vue'
+import AuthorName from '~/components/Authors/AuthorName.vue'
+import AuthorMiniCard from '~/components/Authors/AuthorMiniCard.vue'
+import AuthorCard from '~/components/Authors/AuthorCard.vue'
+import AuthorPage from '~/components/Authors/AuthorPage.vue'
 
 export default {
   components: {
     AuthorName,
+    AuthorMiniCard,
     AuthorCard,
     AuthorPage,
   },
@@ -27,7 +30,7 @@ export default {
       type: String,
       default: 'name',
       validator: function (value) {
-        return ['name', 'card', 'page'].indexOf(value) !== -1
+        return ['name', 'minicard', 'card', 'page'].indexOf(value) !== -1
       }
     }
   },

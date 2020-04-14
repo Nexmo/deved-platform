@@ -6,7 +6,7 @@
         You've reached the edge of the ocean. <br />
         The page you requested could not be found.
       </p>
-      <NLink to="/" class="Vlt-btn Vlt-btn--app Vlt-btn--secondary">Home page</NLink>
+      <NLink to="/" no-prefetch class="Vlt-btn Vlt-btn--app Vlt-btn--secondary">Home page</NLink>
     </div>
     
     <div class="Vlt-col Blog-error">

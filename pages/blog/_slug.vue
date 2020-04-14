@@ -7,7 +7,7 @@
         </div>
         <div class="Vlt-grid__separator"></div>
         <div class="Vlt-col">
-          <Author :authorName="attributes.author" type="card" />
+          <Author :authorName="attributes.author" type="minicard" />
         </div>
       </div>
     </div>
@@ -20,6 +20,17 @@
         <main class="Vlt-col Vlt-col--2of3">
           <img :src="attributes.thumbnail" width="100%" class="Vlt-margin--bottom4 Vlt-margin--M-bottom3 Vlt-margin--S-bottom2" />
           <component :is="postContent" />
+          <div class="Vlt-card Vlt-margin--A-top4">
+            <div class="Vlt-card__image Vlt-gradient--purple-to-peach">
+              <div class="Vlt-card__image__icon">
+                <svg class="Vlt-blue-dark"><use xlink:href="../../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-heart.svg#Layer_1" /></svg>
+              </div>
+            </div>
+            <div class="Vlt-card__content">
+              DISQUS
+            </div>
+          </div>
+          <Author :authorName="attributes.author" type="card" class="Vlt-margin--A-top4" />
         </main>
         <aside class="Vlt-col">
           <div class="Vlt-grid">
