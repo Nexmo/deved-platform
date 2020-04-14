@@ -3,7 +3,7 @@ title: How to Send SMS Confirmations for New Stripe Charges with Zapier
 description: This step-by-step tutorial will show you how to send SMS payment
   confirmations (with receipt) for every new Stripe charge with our Zapier
   integration
-thumbnail: /content/blog/blog_sms-confirmation_1200x600.png
+thumbnail: /content/blog/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier/blog_sms-confirmation_1200x600.png
 author: nahrinjalal
 published: true
 published_at: 2020-04-03T22:40:45.338Z
