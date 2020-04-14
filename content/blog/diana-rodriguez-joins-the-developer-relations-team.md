@@ -2,7 +2,7 @@
 title: Diana Rodriguez Joins the Developer Relations Team
 description: Diana Rodriguez is joining the Developer Relations Team as Python
   Developer Advocate. We are very excited to have her on board!
-thumbnail: /content/blog/colin-rowley-v1ind_4qfqk-unsplash-1.jpg
+thumbnail: /content/blog/diana-rodriguez-joins-the-developer-relations-team/thumbnail.jpg
 author: dianarodriguez
 published: true
 published_at: 2020-03-19T18:52:39.194Z
