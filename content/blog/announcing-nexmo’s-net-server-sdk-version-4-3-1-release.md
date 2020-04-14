@@ -6,7 +6,7 @@ description: Announcing the latest Nexmo .NET server SDK release fixing issues
 thumbnail: /content/blog/announcing-nexmo’s-net-server-sdk-version-4-3-1-release/e_dotnet-sdk-update_1200x600.png
 author: stevelorello
 published: true
-published_at: 2020-04-14T20:51:52.337Z
+published_at: 2020-02-24T21:51:52.337Z
 tags:
   - dotnet
   - .net
