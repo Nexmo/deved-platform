@@ -60,7 +60,7 @@ export default {
     return instantsearch
       .findResultsState({
         // find out which parameters to use here using ais-state-results
-        query: 'java spark',
+        query: 'java',
         hitsPerPage: 6
       })
       .then(() => ({

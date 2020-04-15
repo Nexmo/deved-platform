@@ -60,7 +60,7 @@ export default {
     return instantsearch
       .findResultsState({
         // find out which parameters to use here using ais-state-results
-        query: 'python django',
+        query: 'python',
         hitsPerPage: 6
       })
       .then(() => ({

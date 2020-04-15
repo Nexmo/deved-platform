@@ -4,7 +4,7 @@
 	  <div v-else class="Vlt-card__image"></div>
     <div class="Vlt-card__header">
       <h3 class="Vlt-title">
-        {{ post.attributes.title | truncate(60, '...') }}
+        {{ post.attributes.title | truncate(55, '...') }}
       </h3>
     </div>
     <CardMeta :post="post" />
