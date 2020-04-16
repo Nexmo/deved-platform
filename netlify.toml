@@ -6,7 +6,7 @@
   functions = "scripts/"
 
 [[redirects]]
-  from = "/admin#/"
-  to = "/admin/#/"
+  from = "/admin"
+  to = "/admin/"
   status = 301
-  force = false
+  force = true
