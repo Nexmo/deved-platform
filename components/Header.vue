@@ -1,5 +1,6 @@
 <template>
   <header class="Blog-header">
+    <UtilityHeader />
     <div class="Vlt-header">
       <NLink to="/" no-prefetch class="Vlt-header__logo">
         <img class="Vlt-M-plus" src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg" />
@@ -68,10 +69,12 @@
 </template>
 
 <script>
+import UtilityHeader from '~/components/UtilityHeader'
 import TwitterSocialButton from '~/components/SocialButtons/TwitterSocialButton'
 
 export default {
   components: {
+    UtilityHeader,
     TwitterSocialButton
   },
   data () { 
