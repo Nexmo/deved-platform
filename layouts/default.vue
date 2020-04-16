@@ -1,7 +1,7 @@
 <template>
   <div class="Vlt-template">
     <Header />
-    <div class="Vlt-container">
+    <div class="Vlt-container Blog-body">
       <Nuxt />
     </div>
     <Footer />
@@ -20,3 +20,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.Blog-body {
+  margin: 0 12px
+}
+</style>

@@ -1,6 +1,7 @@
 <template>
-  <a v-if="!!link" class="Vlt-btn Vlt-btn--icon Vlt-btn--tertiary" :href="`${link}?utm_source=blog&utm_medium=deved&utm_campaign=linkedin-social-link`" target="_blank">
+  <a v-if="!!link" class="Vlt-btn Vlt-btn--tertiary" v-bind:class="{'Vlt-btn--icon': !hasDefaultSlot}" :href="`${link}?utm_source=blog&utm_medium=deved&utm_campaign=linkedin-social-link`" target="_blank">
     <svg><image width="16" height="16" viewBox="0 0 16 16" xlink:href="../../node_modules/@vonagevolta/volta2/images/brand-icons/Brand-icon-linkedin-color.svg" /></svg>
+    <slot></slot>
   </a>
 </template>
 
@@ -10,6 +11,11 @@ export default {
     link: {
       type: String,
       default: ''
+    }
+  },
+  computed: {
+    hasDefaultSlot () {
+      return !!this.$slots.default
     }
   }
 };

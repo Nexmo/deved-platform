@@ -4,3 +4,9 @@
   command = "npm run generate"
 
   functions = "scripts/"
+
+[[redirects]]
+  from = "/admin#/"
+  to = "/admin/#/"
+  status = 301
+  force = false
