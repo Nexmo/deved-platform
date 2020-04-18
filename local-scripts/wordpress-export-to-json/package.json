@@ -1,0 +1,16 @@
+{
+  "name": "wordpress-export-to-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^3.7.0",
+    "consola": "^2.11.3",
+    "wpapi": "^1.2.1"
+  }
+}
