@@ -6,11 +6,9 @@ import h2t from 'html-to-text'
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItClass from '@toycode/markdown-it-class'
-import markdownItFrontmatter from 'markdown-it-front-matter'
 import markdownItPrism from 'markdown-it-prism'
 import Mode from 'frontmatter-markdown-loader/mode'
 import path from 'path'
-import yaml from 'yaml'
 
 const builtAt = new Date().toISOString()
 const routes = []
