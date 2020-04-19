@@ -1,5 +1,6 @@
 const cliProgress = require('cli-progress')
 const consola = require('consola')
+const download = require('image-downloader')
 const fs = require('fs')
 const WPAPI = require( 'wpapi' )
 
@@ -17,11 +18,8 @@ const wpExportToJson = async () => {
   consola.info(`Starting process`)
   const apiPosts = await getPostsFromPages() 
   const { posts: formattedPosts, images } = await formatPosts(apiPosts)
-
-  console.log(images);
-
   await Promise.all([writePostFiles(formattedPosts), saveImages(images)])
-  consola.success(`Finished process`)
+  consola.success(`Finishing up...`)
 }
 
 const getPostsFromPages = async () => {
@@ -41,7 +39,7 @@ const getPostsFromPages = async () => {
       if (!pageBarStarted) {
         pageBarStarted = true
         // pageBar.start(data._paging.totalPages,page)
-        pageBar.start(1, page)
+        pageBar.start(5, page)
       } else {
         pageBar.update(page)
       }
@@ -52,7 +50,7 @@ const getPostsFromPages = async () => {
       batchErrors.push(`Error fetching pages from ${config.wpInstance}: ${err.message}`)
     }
   // } while (!!data._paging.links.next)
-  } while (page < 2)
+  } while (page < 6)
 
   pageBar.stop()
 
@@ -118,13 +116,12 @@ const formatPost = (wpPost) => {
     published_at: wpPost.date_gmt,
     tags: wpPost.tags,
     body: wpPost.content.rendered
-  }, images: { imageSlug: slug, postfiles: images } }
+  }, images: { imageSlug: slug, imagePaths: images } }
 }
 
 const writePostFiles = async (posts) => {
   const contentDir = '../../content-historic/blog'
 
-  consola.info(`Writing JSON files out to ${contentDir}`)
   const fileBar = new cliProgress.SingleBar({}, cliProgress.Presets.rect)
   fileBar.start(posts.length, 0)
 
@@ -135,17 +132,16 @@ const writePostFiles = async (posts) => {
 
     fs.mkdir(`${contentDir}/${path}`, { recursive: true }, (err) => {
       if (err) {
-        console.error(err)
-        process.exit()
+        batchErrors.push(`Error creating directory for ${post._filedata.slug}: ${err.message}`)
       }
 
       fs.writeFile(`${contentDir}/${path}/${post._filedata.slug}.json`, JSON.stringify(post), 'utf8', (err) => {
         if (err) {
-          console.error(err)
-          process.exit()
+          batchErrors.push(`Error writing file for ${post._filedata.slug}: ${err.message}`)
         }
       })
     })
+
     fileBar.increment()
   })
 
@@ -156,12 +152,43 @@ const writePostFiles = async (posts) => {
     batchErrors = []
     process.exit()
   } else {
-    consola.success(`${posts.length} JSON files saved to ${contentDir}`)
+    return true;
   }
 }
 
-const saveImages = async (images) => {
+const saveImages = (imageBatches) => {
+  const imageDir = '../../static/content/blog'
 
+  const imageBatchesBar = new cliProgress.SingleBar({}, cliProgress.Presets.rect)
+  imageBatchesBar.start(imageBatches.length, 0)
+
+  imageBatches.forEach(imageBatch => {
+    const { imageSlug, imagePaths } = imageBatch
+
+    fs.mkdir(`${imageDir}/${imageSlug}`, { recursive: true }, (err) => {
+      if (err) {
+        batchErrors.push(`Error creating directory for ${imageSlug}: ${err.message}`)
+      }
+
+      imagePaths.forEach(imagePath => {
+        download.image({ url: imagePath, dest: `${imageDir}/${imageSlug}` })
+          .then(() => {})
+          .catch((err) => console.error(err))
+      })
+    })
+
+    imageBatchesBar.increment()
+  })
+
+  imageBatchesBar.stop()
+
+  if (Array.isArray(batchErrors) && batchErrors.length) {
+    consola.error(`${batchErrors.length} errors downloading images\n`, ...batchErrors)
+    batchErrors = []
+    process.exit()
+  } else {
+    return true;
+  }
 }
 
 wpExportToJson()
