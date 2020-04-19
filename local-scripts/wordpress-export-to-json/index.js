@@ -17,6 +17,9 @@ const wpExportToJson = async () => {
   consola.info(`Starting process`)
   const apiPosts = await getPostsFromPages() 
   const { posts: formattedPosts, images } = await formatPosts(apiPosts)
+
+  console.log(images);
+
   await Promise.all([writePostFiles(formattedPosts), saveImages(images)])
   consola.success(`Finished process`)
 }
@@ -75,7 +78,7 @@ const formatPosts = async (wpPosts) => {
   wpPosts.forEach(wpPost => {
     const { post, images: postImages } = formatPost(wpPost)
     posts.push(post)
-    images.push(...postImages)
+    images.push(postImages)
     postBar.increment()
   })
 
@@ -92,25 +95,30 @@ const formatPosts = async (wpPosts) => {
   return { posts: posts, images: images }
 }
 
-const formatPost = (page) => {
-  const slug = page.slug || null
+const formatPost = (wpPost) => {
+  const slug = wpPost.slug || null
   const images = []
 
-  images.push(page.jetpack_featured_media_url)
+  images.push(wpPost.jetpack_featured_media_url)
 
-  // find other images in the post
+  const postImageRegex = /(https?:\/\/www.nexmo.com\/wp-content\/uploads\/[^\s\"]+)/g
+  const bodyImages = wpPost.content.rendered.match(postImageRegex)
+
+  if (bodyImages) {
+    images.push(...new Set(bodyImages))
+  }
 
   return { post: {
     _filedata: { slug: slug },
-    title: page.title.rendered,
+    title: wpPost.title.rendered,
     description: '',
-    thumbnail: page.jetpack_featured_media_url,
-    author: page.author,
-    published: page.status === 'publish',
-    published_at: page.date_gmt,
-    tags: page.tags,
-    body: page.content.rendered
-  }, images: images }
+    thumbnail: wpPost.jetpack_featured_media_url,
+    author: wpPost.author,
+    published: wpPost.status === 'publish',
+    published_at: wpPost.date_gmt,
+    tags: wpPost.tags,
+    body: wpPost.content.rendered
+  }, images: { imageSlug: slug, postfiles: images } }
 }
 
 const writePostFiles = async (posts) => {
