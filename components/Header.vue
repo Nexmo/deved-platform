@@ -1,6 +1,6 @@
 <template>
   <header class="Blog-header">
-    <UtilityHeader />
+    <!-- <UtilityHeader /> -->
     <div class="Vlt-header">
       <NLink to="/" no-prefetch class="Vlt-header__logo">
         <img class="Vlt-M-plus" src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg" />
