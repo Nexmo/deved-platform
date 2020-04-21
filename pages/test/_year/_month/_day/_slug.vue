@@ -6,9 +6,6 @@
           <Breadcrumbs />
         </div>
         <div class="Vlt-grid__separator"></div>
-        <div class="Vlt-col">
-          <Author :authorName="attributes.author" type="minicard" />
-        </div>
       </div>
     </div>
     <div class="Vlt-col Vlt-col--3of4">
@@ -19,16 +16,8 @@
         <div class="Vlt-grid__separator"></div>
         <main class="Vlt-col Vlt-col--2of3">
           <img :src="attributes.thumbnail" width="100%" class="Vlt-card Vlt-margin--bottom4 Vlt-margin--M-bottom3 Vlt-margin--S-bottom2" />
-          <component :is="postContent" />
-          <Author :authorName="attributes.author" type="card" class="Vlt-margin--A-top4" />
+          <div v-html="postContent"></div>
         </main>
-        <aside class="Vlt-col">
-          <div class="Vlt-grid">
-            <div class="Vlt-col">
-              <Tags :tags="attributes.tags" />
-            </div>
-          </div>
-        </aside>
       </div>
     </div>
   </article>
@@ -53,23 +42,22 @@ export default {
   },
 
   async asyncData ({ params, error, payload }) {
-    return {
-      title: '',
-      attributes: {},
-      postContent: null
-    }
-  },
+    const post = require(`~/content-historic/blog/${params.slug}.json`);
 
-  created () {
-    this.postContent = () => import(`~/content/blog/${this.$route.params.slug}.md`).then((post) => {
-      this.title = post.attributes.title
-      this.attributes = post.attributes
-      return {
-        extends: post.vue.component
-      }
-    })
+    return {
+      title: post.title,
+      attributes: {
+        description: post.description,
+        thumbnail: post.thumbnail,
+        author: post.author,
+        published: post.published,
+        published_at: post.published_at,
+        tags: post.tags
+      },
+      postContent: post.body
+    }
   }
-}
+};
 </script>
 
 <style scoped>

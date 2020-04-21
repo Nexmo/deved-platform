@@ -1,8 +1,11 @@
+const TurndownService = require('turndown')
+const TurndownPluginGfm = require('turndown-plugin-gfm')
 const cliProgress = require('cli-progress')
 const consola = require('consola')
 const download = require('image-downloader')
 const fs = require('fs')
 const WPAPI = require( 'wpapi' )
+const { gfm, tables, strikethrough } = TurndownPluginGfm
 
 const config = {
   wpInstance: 'https://www.nexmo.com/wp-json',
@@ -18,7 +21,8 @@ const wpExportToJson = async () => {
   consola.info(`Starting process`)
   const apiPosts = await getPostsFromPages() 
   const { posts: formattedPosts, images } = await formatPosts(apiPosts)
-  await Promise.all([writePostFiles(formattedPosts), saveImages(images)])
+  // await Promise.all([writePostFiles(formattedPosts), saveImages(images)])
+  await Promise.all([writePostFiles(formattedPosts)])
   consola.success(`Finishing up...`)
 }
 
@@ -106,6 +110,16 @@ const formatPost = (wpPost) => {
     images.push(...new Set(bodyImages))
   }
 
+  const turndownService = new TurndownService({ 
+    headingStyle:'atx', 
+    codeBlockStyle: 'fenced', 
+    fence: '```'
+  })
+
+  turndownService.keep(['textarea'])
+
+  turndownService.use([gfm, tables, strikethrough])
+
   return { post: {
     _filedata: { slug: slug },
     title: wpPost.title.rendered,
@@ -115,7 +129,7 @@ const formatPost = (wpPost) => {
     published: wpPost.status === 'publish',
     published_at: wpPost.date_gmt,
     tags: wpPost.tags,
-    body: wpPost.content.rendered
+    body: turndownService.turndown(wpPost.content.rendered)
   }, images: { imageSlug: slug, imagePaths: images } }
 }
 
@@ -126,9 +140,7 @@ const writePostFiles = async (posts) => {
   fileBar.start(posts.length, 0)
 
   await posts.forEach(post => {
-    const date = new Date(post.published_at)
-    const contentDir = '../../content-historic/blog'
-    const path = `${date.getFullYear()}/${("0" + (date.getMonth() + 1)).slice(-2)}/${("0" + date.getDate()).slice(-2)}`
+    const path = ``
 
     fs.mkdir(`${contentDir}/${path}`, { recursive: true }, (err) => {
       if (err) {

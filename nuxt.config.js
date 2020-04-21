@@ -20,9 +20,8 @@ dynamicContent.forEach(local => {
   const [ name ] = file.split('.md')
   const post = {}
 
-
   const content = fm(fs.readFileSync(path.resolve('content', local), 'utf8'))
-  const md = markdownIt();
+  const md = markdownIt()
 
   const date = new Date(content.attributes.published_at)
 
@@ -36,14 +35,14 @@ dynamicContent.forEach(local => {
 
   posts.push(post)
 
-  routes.push(post.permalink)
+  routes.push({ route: post.permalink, payload: { local: path.resolve('content', local) } })
 })
 
 const customStopWords = [ 
   'so', 'far', 'now', 'ever', 'wanted', 
   'stuck', 'and', 'just', 'very', 'easy',
   ...sw.en 
-];
+]
 
 export default () => {
   return {
@@ -141,7 +140,7 @@ export default () => {
 
     jsonOutput: {
       items: () => {
-        const trimPosts = [];
+        const trimPosts = []
 
         posts.forEach(post => {
           trimPosts.push({
@@ -164,9 +163,9 @@ export default () => {
               customStopWords
             ).join(' ')
           })
-        });
+        })
 
-        return trimPosts;
+        return trimPosts
       }
     },
 
@@ -259,8 +258,6 @@ export default () => {
       maxChunkSize: 100000,
       extractCSS: true,
       extend(config, ctx) {
-        const classMap = { blockquote: 'Vlt-callout Vlt-callout--tip', ul: 'Vlt-list Vlt-list--simple' }
-        // add frontmatter-markdown-loader
         config.module.rules.push({
           test: /\.md$/,
           include: path.resolve(__dirname, "content"),
@@ -270,8 +267,15 @@ export default () => {
             markdownIt: markdownIt({ html: true })
               .use(markdownItPrism)
               .use(markdownItAnchor)
-              .use(markdownItClass, classMap)
+              .use(markdownItClass, { 
+                blockquote: 'Vlt-callout Vlt-callout--tip',
+                ul: 'Vlt-list Vlt-list--simple'
+              })
           }
+        })
+        config.module.rules.push({
+          test: /\.json$/,
+          include: path.resolve(__dirname, "content-historic")
         })
       }
     }

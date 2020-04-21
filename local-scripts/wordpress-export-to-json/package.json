@@ -12,6 +12,7 @@
     "cli-progress": "^3.7.0",
     "consola": "^2.11.3",
     "image-downloader": "^3.5.0",
+    "turndown-plugin-gfm": "^1.0.2",
     "wpapi": "^1.2.1"
   }
 }
