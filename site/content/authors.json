@@ -8,6 +8,15 @@
       "twitter": "lukeocodes",
       "facebook": "lukeocodes",
       "github": "lukeocodes"
+    },
+    {
+      "username": "gregholmes",
+      "name": "Greg Holmes",
+      "email": "greg.holmes@vonage.com",
+      "twitter": "greggles",
+      "facebook": "greggles",
+      "github": "greggles",
+      "image": "/content/images/github.png"
     }
   ]
 }
