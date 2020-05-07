@@ -8,9 +8,9 @@ media_folder: static/content/images/
 public_folder: /content/images/
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    format: 'frontmatter'
+  - name: blog
+    label: Blog
+    format: frontmatter
     folder: 'content/blog'
     media_folder: '../../static/content/blog/{{slug}}/'
     public_folder: '/content/blog/{{slug}}/'
@@ -19,11 +19,37 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image', allow_multiple: false }
-      - { label: 'Author', name: 'author', widget: 'string' }
-      - { label: 'Published', name: 'published', widget: 'boolean', default: true }
-      - { label: 'Published At', name: 'published_at', widget: 'datetime' }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string }
+      - { label: 'Featured Image', name: thumbnail, widget: image, allow_multiple: false }
+      - { label: Author, name: author, widget: string }
+      - { label: Published, name: published, widget: boolean, default: true }
+      - { label: 'Published At', name: published_at, widget: datetime }
+      - { label: Tags, name: tags, widget: list }
+      - { label: Body, name: body, widget: markdown }
+  - name: pages
+    label: Pages
+    files:
+      - label: 'Authors'
+        name: authors
+        file: 'content/authors.json'
+        fields:
+          - label: Authors
+            name: authors
+            identifier_field: username
+            widget: list
+            fields:
+              - { label: Username, name: username, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: Bio, name: bio, widget: text }
+              - { label: 'User Image', name: 'image_url', widget: 'image', allow_multiple: false }
+              - { label: Email, name: email, widget: string }
+              - { label: 'Twitter Url', name: twitter_url, widget: string }
+              - { label: 'Facebook Url', name: facebook_url, widget: string }
+              - { label: 'GitHub Url', name: github_url, widget: string }
+              - { label: 'StackOverflow Url', name: stackoverflow_url, widget: string }
+              - { label: 'LinkedIn Url', name: linkedin_url, widget: string }
+              - { label: 'Twitch Url', name: twitch_url, widget: string }
+              - { label: 'YouTube Url', name: youtube_url, widget: string }
+              - { label: 'Website Url', name: website_url, widget: string }

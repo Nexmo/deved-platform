@@ -10,7 +10,7 @@
 <script>
 import AuthorName from '~/components/Authors/AuthorName.vue'
 import AuthorMiniCard from '~/components/Authors/AuthorMiniCard.vue'
-import AuthorCard from '~/components/Authors/AuthorCard2.vue'
+import AuthorCard from '~/components/Authors/AuthorCard.vue'
 import AuthorPage from '~/components/Authors/AuthorPage.vue'
 
 export default {
@@ -36,8 +36,12 @@ export default {
 
   methods: {
     author () {
-      const authors = require('../data/authors.json');
-      return authors.hasOwnProperty(this.authorName) ? authors[this.authorName] : { name: this.authorName };
+      const { authors } = require('../content/authors.json')
+      const author = authors.find(author => {
+        return author.username === this.authorName
+      });
+      
+      return author || { name: this.authorName, username: this.authorName }
     }
   }
 };

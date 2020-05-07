@@ -1,13 +1,15 @@
 <template>
-    <div class="Vlt-card Vlt-bg-white Blog-author__card">
-      <div class="Vlt-card__image Blog-author__image--bg Vlt-gradient--blue-to-purple">
-        <div class="Blog-author__image" :style="`background-image: url('${author.image_url}'); background-size: cover`"></div>
+    <div class="Vlt-card Vlt-bg-white">
+      <div class="Vlt-card__image Vlt-gradient--blue-to-purple" v-if="author.image_url">
+        <div class="Vlt-card__image__icon" :style="`background-image: url('${author.image_url}'); background-size: cover`"></div>
       </div>
-      <div class="Blog-author__bio">
-        <h3>{{ author.name }}</h3>
-
-        {{ author.bio }} <br /><br />
-
+	    <div class="Vlt-card__header">
+        <h3>{{ author.name }} <small class="Vlt-grey-dark">{{ author.title }}</small></h3>
+      </div>
+	    <div class="Vlt-card__content" v-if="author.bio">
+        {{ author.bio }}
+      </div>
+      <div class="Vlt-card__footer Vlt-card__footer--short Vlt-center">
         <TwitterSocialButton :link="author.twitter_url" class="Vlt-btn--small" />
         <FacebookSocialButton :link="author.facebook_url" class="Vlt-btn--small" />
         <GitHubSocialButton :link="author.github_url" class="Vlt-btn--small" />
@@ -15,7 +17,7 @@
         <LinkedInSocialButton :link="author.linkedin_url" class="Vlt-btn--small" />
         <TwitchSocialButton :link="author.twitch_url" class="Vlt-btn--small" />
         <YouTubeSocialButton :link="author.youtube_url" class="Vlt-btn--small" />
-        <WebsiteSocialButton :link="author.website_url" class="Vlt-btn--small" />
+        <WebsiteSocialButton :link="author.website_url || `/authors/${author.username}`" class="Vlt-btn--small" />
       </div>
     </div>
 </template>
@@ -51,35 +53,11 @@ export default {
 </script>
 
 <style scoped>
-.Blog-author__card {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: [col] 25% [col] 25% [col] 25% [col] 25%;
-  background-color: #fff;
-  color: #444;
+.Vlt-card__image {
+  height: 120px;
 }
-
-.Blog-author__image--bg {
-  height: calc(100% + 48px);
-  margin: -24px 0 -24px -24px;
-  grid-column: col;
-}
-
-.Blog-author__bio {
-  padding-left: 12px;
-  padding-right: 24px;
-  grid-column: col 2 / span 3 ;
-}
-
-.Blog-author__image {
-  border-radius: 50%;
+.Vlt-card__image__icon {
   height: 100px;
   width: 100px;
-  border: 1px solid #232425;
-}
-
-.Vlt-card__image.Blog-author__image--bg {
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 8px;
 }
 </style>

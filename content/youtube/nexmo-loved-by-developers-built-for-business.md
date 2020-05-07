@@ -2,7 +2,7 @@
 title: "Nexmo: Loved by developers - Built for business"
 description: Vonage Video API (formerly TokBox OpenTok) and what you can build with it. The Video API is very robust and highly customisable, and in each post we’ll show how to implement it.
 author: vonagedev
-published: true
+published: false
 published_at: 2020-04-11T12:04:00
 type: youtube
 youtube_id: INnu1pRFAeA

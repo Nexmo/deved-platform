@@ -1,0 +1,22 @@
+{
+  "authors": [
+    {
+      "name": "Luke Oliff",
+      "email": "luke.oliff@vonage.com",
+      "username": "lukeoliff",
+      "image_url": "/content/images/93838219_10218954304783282_5908264021487779840_o.jpg",
+      "twitter_url": "https://twitter.com/lukeocodes",
+      "facebook_url": "https://twitter.com/lukeocodes",
+      "github_url": "https://twitter.com/lukeocodes"
+    },
+    {
+      "username": "gregholmes",
+      "name": "Greg Holmes",
+      "email": "greg.holmes2@vonage.com",
+      "twitter_url": "https://twitter.com/greggles",
+      "facebook_url": "https://twitter.com/greggles",
+      "github_url": "https://twitter.com/greggles",
+      "image_url": "/content/images/github.png"
+    }
+  ]
+}
