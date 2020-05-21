@@ -57,7 +57,8 @@
 </template>
 
 <script>
-import algoliasearch from 'algoliasearch/lite';
+import Author from '~/components/Author'
+import algoliasearch from 'algoliasearch/lite'
 
 const algoliaClient = algoliasearch(
   'UG4W1PA1SN',
@@ -77,15 +78,18 @@ const searchClient = {
       });
     }
 
-    return algoliaClient.search(requests);
+    return algoliaClient.search(requests)
   },
 }
 
 export default {
+  components: {
+    Author
+  },
   data() {
     return {
       searchClient: searchClient
-    };
+    }
   },
 }
 </script>
