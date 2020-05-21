@@ -1,5 +1,5 @@
 <template>
-  <div class="Vlt-col" v-bind:class="{ 'Blog-card__featured': featured, 'Vlt-col--1of3': !featured, 'Vlt-col--S-1of2': !featured }">
+  <div class="Vlt-col Vlt-col--1of3">
     <BlogCard v-if="!post.attributes.type || post.attributes.type == 'blog'" :post="post" />
     <YouTubeCard v-else-if="post.attributes.type == 'youtube' && !!post.attributes.youtube_id" :post="post" />
     <TwitchCard v-else-if="post.attributes.type == 'twitch' && !!post.attributes.twitch_id" :post="post" />

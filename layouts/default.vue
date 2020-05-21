@@ -1,13 +1,10 @@
 <template>
-  <div class="Vlt-template">
+  <div class="Vlt-template Vlt-bg-grey-lighter">
     <Header />
-    <div class="Vlt-container Blog-body">
-      <Nuxt />
-    </div>
+    <Nuxt />
     <Footer />
   </div>
 </template>
-
 
 <script>
 import Footer from '~/components/Footer'
@@ -20,9 +17,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.Blog-body {
-  margin: 0 12px
-}
-</style>

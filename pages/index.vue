@@ -1,33 +1,10 @@
 <template>
   <section class="Blog">
-    <header class="Vlt-grid">
-      <div class="Vlt-col">
-        <h3>Featured Post</h3>
-      </div>
-	    <div class="Vlt-grid__separator"></div>
-      <Card :post="featured" featured />
-      <div class="Vlt-col">
-        <div class="Vlt-grid">
-          <CommunityUpdatesCard class="Blog-card__community" />
-	        <div class="Vlt-grid__separator"></div>
-          <div class="Vlt-col Blog-card__slack">
-            <a href="https://developer.nexmo.com/community/slack?utm_source=blog&utm_medium=deved&utm_campaign=join-slack-link" class="Vlt-card Blog-card Vlt-card--border-top-blue">
-              <div class="Vlt-card__header" style="text-align: center;">
-                <h3 class="Vlt-title--icon">
-                  <svg><use xlink:href="../node_modules/@vonagevolta/volta2/images/brand-icons/Brand-icon-slack-color.svg#Brand-icon-slack-color" /></svg>
-                  Join us on the Vonage Developer Community Slack
-                </h3>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+    <header>
+      <SearchHero />
+      <!-- <Categories /> -->
     </header>
     <main class="Vlt-grid">
-      <div class="Vlt-col">
-        <h3>Latest Posts</h3>
-      </div>
-	    <div class="Vlt-grid__separator"></div>
       <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
     </main>
     <footer class="Vlt-center">
@@ -37,14 +14,16 @@
 </template>
 
 <script>
-import CommunityUpdatesCard from '~/components/CommunityUpdatesCard'
+import SearchHero from '~/components/SearchHero'
+// import Categories from '~/components/Categories'
 import Card from '~/components/Card'
 import path from 'path'
 
 export default {
   components: {
     Card,
-    CommunityUpdatesCard
+    // Categories,
+    SearchHero
   },
 
   data () {
@@ -60,10 +39,7 @@ export default {
       return bPublishedDate - aPublishedDate;
     });
 
-    const featured = imports.shift()
-
     return {
-      featured: featured,
       posts: imports.slice(0,6) // limit to 6 "latest posts"
     };
   },

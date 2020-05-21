@@ -1,5 +1,5 @@
 <template>
-  <NLink :to="getPermalink(post)" no-prefetch class="Vlt-card Blog-card Vlt-card--clickable">
+  <div class="Vlt-card">
 	  <div v-if="post.attributes.thumbnail" class="Vlt-card__image" :style="`background-image: url('${post.attributes.thumbnail}');`"></div>
 	  <div v-else class="Vlt-card__image"></div>
     <div class="Vlt-card__header">
@@ -8,7 +8,8 @@
       </h3>
     </div>
     <CardMeta :post="post" />
-  </NLink>
+    <NLink :to="getPermalink(post)">{{ post.attributes.title }}</NLink>
+  </div>
 </template>
 
 <script>

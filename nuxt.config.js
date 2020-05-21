@@ -249,7 +249,8 @@ export default () => {
     plugins: [
       { src: '@/plugins/vue-moment.js' },
       { src: '@/plugins/vue-fragment.js' },
-      { src: '@/plugins/filters.js' }
+      { src: '@/plugins/filters.js' },
+      { src: '@/plugins/vue-instantsearch.js' }
     ],
 
     /*

@@ -8,33 +8,7 @@
         <div class="Vlt-badge Vlt-M-plus Vlt-badge--small Vlt-badge--transparent" style="margin: 8px">Developer Blog</div>
         <div class="Vlt-badge Vlt-S-only Vlt-badge--small Vlt-badge--transparent" style="margin: 8px">Dev Blog</div>
       </NLink>
-      <div class="Vlt-header__menu Vlt-M-plus">
-        <div class="Vlt-tabs">
-          <ul class="Vlt-tabs__header">
-            <NLink to="/nodejs" no-prefetch class="Vlt-tabs__link Tabs__Node" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Node.js</span></NLink>
-            <NLink to="/dotnet" no-prefetch class="Vlt-tabs__link Tabs__DotNet" exact-active-class="Vlt-tabs__link_active" tag="li"><span>.NET</span></NLink>
-            <NLink to="/ruby" no-prefetch class="Vlt-tabs__link Tabs__Ruby" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Ruby</span></NLink>
-            <NLink to="/python" no-prefetch class="Vlt-tabs__link Tabs__Python" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Python</span></NLink>
-            <NLink to="/php" no-prefetch class="Vlt-tabs__link Tabs__PHP" exact-active-class="Vlt-tabs__link_active" tag="li"><span>PHP</span></NLink>
-            <NLink to="/java" no-prefetch class="Vlt-tabs__link Tabs__Java" exact-active-class="Vlt-tabs__link_active" tag="li"><span>Java</span></NLink>
-          </ul>
-        </div>
-      </div>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
-        <form action="/search" method="GET" name="quick-search" class="Blog-search__form">
-          <div class="Vlt-composite">
-            <div class="Vlt-composite__prepend Vlt-composite__prepend--icon">
-              <svg><use xlink:href="../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-search.svg#Layer_1" /></svg>
-            </div>
-            <div class="Vlt-input Vlt-input--round">
-              <input name="q" id="example-input-icon-button" type="text" placeholder="Search">
-            </div>
-          </div>
-        </form>
-        <NLink to="/search" no-prefetch class="Vlt-btn Vlt-btn--small Vlt-btn--tertiary Blog-search__button">
-            <svg><image width="16" height="16" viewBox="0 0 16 16" xlink:href="../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-search.svg" /></svg>
-            Search
-        </NLink>
         <a href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">Sign up</a>
         <TwitterSocialButton link="https://twitter.com/VonageDev" class="Vlt-btn--small" />
       </div>
@@ -49,17 +23,8 @@
     }">
       <ul class="Blog-nav__list">
         <li class="Blog-nav__item Vlt-center">
-          <NLink v-on:click.native="isOpen = false" to="/search" no-prefetch class="Vlt-btn Vlt-btn--tertiary">
-            <svg><image width="16" height="16" viewBox="0 0 16 16" xlink:href="../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-search.svg" /></svg>
-            Search
-          </NLink>
+            <a href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link" class="Vlt-btn Vlt-btn--secondary Vlt-text-white">Sign up</a>
         </li>
-        <NLink v-on:click.native="isOpen = false" to="/nodejs" no-prefetch class="Blog-nav__item Blog-nav__item--Node" tag="li"><span>Node.js</span></NLink>
-        <NLink v-on:click.native="isOpen = false" to="/dotnet" no-prefetch class="Blog-nav__item Blog-nav__item--DotNet" tag="li"><span>.NET</span></NLink>
-        <NLink v-on:click.native="isOpen = false" to="/ruby" no-prefetch class="Blog-nav__item Blog-nav__item--Ruby" tag="li"><span>Ruby</span></NLink>
-        <NLink v-on:click.native="isOpen = false" to="/python" no-prefetch class="Blog-nav__item Blog-nav__item--Python" tag="li"><span>Python</span></NLink>
-        <NLink v-on:click.native="isOpen = false" to="/php" no-prefetch class="Blog-nav__item Blog-nav__item--PHP" tag="li"><span>PHP</span></NLink>
-        <NLink v-on:click.native="isOpen = false" to="/java" no-prefetch class="Blog-nav__item Blog-nav__item--Java" tag="li"><span>Java</span></NLink>
         <li class="Blog-nav__item Vlt-center">
           <TwitterSocialButton link="https://twitter.com/VonageDev">Follow us</TwitterSocialButton>
         </li>
@@ -87,9 +52,9 @@ export default {
 
 <style scoped>
 .Blog-header {
-  width: 100vw;
+  width: 100%;
   min-height: 64px;
-  /* box-shadow: 0 4px 4px rgba(19,20,21,.1); */
+  box-shadow: 0 4px 4px rgba(19,20,21,.1);
   margin-bottom: 12px;
 }
 
@@ -104,49 +69,19 @@ export default {
 
 .Blog-nav__list {
   display: block;
-  width: 100vw;
   margin-bottom: 12px;
 }
 
 .Blog-nav__item {
   display: block;
-  width: 100vw;
   font-size: 1.1em;
   font-weight: 600;
   line-height: 48px;
   border-left: 5px solid white;
 }
 
-.Blog-nav__item span {
-  padding-left: 24px;
-}
-
 .Blog-nav__item .Vlt-btn {
   width: 80vw;
-}
-
-.Blog-nav__item--Node {
-  border-color: rgba(61, 136, 54, 0.5);
-}
-
-.Blog-nav__item--DotNet {
-  border-color: rgba(93, 37, 144, 0.5);
-}
-
-.Blog-nav__item--Ruby {
-  border-color: rgba(204, 52, 45, 0.5);
-}
-
-.Blog-nav__item--Python {
-  border-color: rgba(30, 56, 187, 0.5);
-}
-
-.Blog-nav__item--PHP {
-  border-color: rgba(35, 161, 170, 0.5);
-}
-
-.Blog-nav__item--Java {
-  border-color: rgba(1, 71, 110, 0.5);
 }
 
 @media only screen and (max-width: 575px) {
@@ -161,13 +96,6 @@ export default {
 
 .Vlt-header__menu .Vlt-btn svg:only-child {
   margin-right: 0;
-}
-
-li a:visited,
-li a:visited:hover:not([class]),
-li a:hover:not([class]) {
-  text-decoration: none;
-  color: #131415;
 }
 
 .Vlt-tabs__link_active span {
