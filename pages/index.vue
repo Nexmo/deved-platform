@@ -1,13 +1,15 @@
 <template>
-  <section class="Blog">
-    <header>
+  <section>
+    <header class="Blog__Full-width">
       <SearchHero />
       <!-- <Categories /> -->
     </header>
-    <main class="Vlt-grid">
-      <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
+    <main class="Vlt-container">
+      <div class="Vlt-grid Blog__Card-container">
+        <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
+      </div>
     </main>
-    <footer class="Vlt-center">
+    <footer class="Blog__Full-width Vlt-center">
       <NLink to="/archive" no-prefetch class="Vlt-btn Vlt-btn--quaternary">View Older Posts</NLink>
     </footer>
   </section>
@@ -52,3 +54,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.Vlt-container {
+  margin: auto;
+}
+
+.Blog__Card-container {
+  margin-top: 24px;
+  padding: 12px;
+}
+</style>
