@@ -3,8 +3,11 @@
       <div class="Vlt-card__image Vlt-gradient--blue-to-purple" v-if="author.image_url">
         <div class="Vlt-card__image__icon" :style="`background-image: url('${author.image_url}'); background-size: cover`"></div>
       </div>
-	    <div class="Vlt-card__header">
-        <h3>{{ author.name }} <small class="Vlt-grey-dark">{{ author.title }}</small></h3>
+      <div class="Vlt-card__header">
+        <h3>{{ author.name }} <small v-if="!author.spotlight" class="Vlt-grey-dark">{{ author.title }}</small></h3>
+      </div>
+      <div v-if="author.spotlight" class="Vlt-card__header">
+        Spotlight
       </div>
 	    <div class="Vlt-card__content" v-if="author.bio">
         {{ author.bio }}

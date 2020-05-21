@@ -42,6 +42,7 @@ collections:
             widget: list
             fields:
               - { label: Username, name: username, widget: string }
+              - { label: Spotlight, name: spotlight, widget: boolean, default: false }
               - { label: Title, name: title, widget: string }
               - { label: Name, name: name, widget: string }
               - { label: Bio, name: bio, widget: text }

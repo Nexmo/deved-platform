@@ -1,7 +1,7 @@
 ---
 title: Greg Holmes Joins the Vonage Developer Education Team
 description: Greg Holmes joins the Vonage Developer Education team as a
-  Developer Educator. We couldn&#039;t be more thrilled!
+  Developer Educator. We couldn't be more thrilled!
 thumbnail: /content/blog/greg-holmes-joins-the-vonage-developer-education-team/greg_1200_x_600_1.png
 author: gregholmes
 published: true

@@ -2,9 +2,11 @@
   "authors": [
     {
       "name": "Luke Oliff",
+      "title": "Vonage Developer Educator",
       "email": "luke.oliff@vonage.com",
       "username": "lukeoliff",
-      "image_url": "/content/images/93838219_10218954304783282_5908264021487779840_o.jpg",
+      "bio": "Friendly tech educator, family man, diversity champion, probably argue a bit too much. Formerly a backend engineer. Talk to me about JavaScript (frontend or backend), the amazing Vue.js, DevOps, DevSecOps, anything JamStack. Writer on DEV.to",
+      "image_url": "https://github.com/lukeocodes.png",
       "twitter_url": "https://twitter.com/lukeocodes",
       "facebook_url": "https://twitter.com/lukeocodes",
       "github_url": "https://twitter.com/lukeocodes"
