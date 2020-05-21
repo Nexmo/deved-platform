@@ -65,7 +65,7 @@ export default {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  margin: 1rem 2rem;
+  margin: 1rem auto;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.6%;
   background: #fff;
@@ -74,7 +74,7 @@ export default {
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
-  min-height: 125px;
+  min-height: 322px;
 }
 .blog-card .photo-container {
   position: relative;
@@ -99,7 +99,7 @@ export default {
 .blog-card .description h2 {
   line-height: 1;
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 .blog-card .description .read-more {
   text-align: right;
@@ -123,42 +123,5 @@ export default {
   width: 35px;
   top: -0.75rem;
   border-radius: 3px;
-}
-@media (min-width: 576px) {
-  .blog-card {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    max-width: 700px;
-    margin: 1rem auto;
-  }
-  .blog-card .photo-container {
-    flex-basis: 40%;
-    height: auto;
-  }
-  .blog-card .description {
-    flex-basis: 60%;
-  }
-  .blog-card .description:before {
-    content: "";
-    background: #fff;
-    width: 30px;
-    position: absolute;
-    left: -10px;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  .blog-card.alt {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-            flex-direction: row-reverse;
-  }
-  .blog-card.alt .description:before {
-    left: inherit;
-    right: -10px;
-    -webkit-transform: skew(3deg);
-            transform: skew(3deg);
-  }
 }
 </style>
