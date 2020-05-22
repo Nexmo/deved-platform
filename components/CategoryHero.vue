@@ -1,7 +1,9 @@
 <template>
   <div class="Blog-hero">
     <div class="Blog-hero__content">
-      <h3>Developer <strong>{{ title }}</strong> content from the team at Vonage.</h3>
+      <h3>
+        Developer <strong>{{ title }}</strong> content from the team at Vonage.
+      </h3>
     </div>
   </div>
 </template>
@@ -11,22 +13,24 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
 }
 </script>
 
 <style scoped>
 .Blog-hero {
-  background: white url('../assets/images/illustrations/Brand-mobile-apis-services.png') no-repeat scroll 12px 24px;
+  background: white
+    url("../assets/images/illustrations/Brand-mobile-apis-services.png")
+    no-repeat scroll 12px 24px;
   background-size: 150px;
   width: 100wh;
   height: 200px;
   display: -webkit-box;
   display: flex;
   margin-top: -12px;
-  box-shadow: 0 4px 4px rgba(19,20,21,.1);
+  box-shadow: 0 4px 4px rgba(19, 20, 21, 0.1);
   margin-bottom: 12px;
 }
 
@@ -36,9 +40,9 @@ export default {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   margin: auto;
 }
 

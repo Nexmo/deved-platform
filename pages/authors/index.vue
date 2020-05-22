@@ -4,26 +4,31 @@
       <div class="Vlt-col">
         <h3>All Our Authors</h3>
       </div>
-	    <div class="Vlt-grid__separator"></div>
-      <Author v-for="author in authors" :key="author.username" :authorName="author.username" type="card" />
+      <div class="Vlt-grid__separator" />
+      <Author
+        v-for="author in authors"
+        :key="author.username"
+        :author-name="author.username"
+        type="card"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import Author from '~/components/Author'
+import Author from "~/components/Author"
 
 export default {
   components: {
     Author,
   },
 
-  data () {
-    const { authors } = require('~/content/authors.json')
+  data() {
+    const { authors } = require("~/content/authors.json")
 
     return {
-      authors: authors
-    };
+      authors: authors,
+    }
   },
-};
+}
 </script>

@@ -8,18 +8,18 @@
 </template>
 
 <script>
-import Error404 from '~/components/Errors/Error404.vue'
-import Error400 from '~/components/Errors/Error400.vue'
+import Error404 from "~/components/Errors/Error404.vue"
+import Error400 from "~/components/Errors/Error400.vue"
 
 export default {
   components: { Error404, Error400 },
   props: {
     error: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
-  layout: 'default' // you can set a custom layout for the error page
+  layout: "default", // you can set a custom layout for the error page
 }
 </script>
 

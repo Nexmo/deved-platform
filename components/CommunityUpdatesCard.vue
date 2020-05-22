@@ -7,25 +7,40 @@
         </h3>
       </div>
       <div class="Vlt-card__content">
-        <form 
+        <form
           name="community-updates"
-          method="POST" 
+          method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          >
+        >
           <input type="hidden" name="form-name" value="community-updates">
-          <p class="p-large">Subscribe to receive updates, tutorials, and news on Vonage communications APIs, libraries, SDKs, and developer tools.</p>
+          <p class="p-large">
+            Subscribe to receive updates, tutorials, and news on Vonage
+            communications APIs, libraries, SDKs, and developer tools.
+          </p>
           <div class="Vlt-form__element Vlt-form__element--big">
             <div class="Vlt-composite">
               <div class="Vlt-composite__wrapper Vlt-input">
-                <input name="contact-email" type="text" placeholder="email@example.com" id="contact-email" value="">
+                <input
+                  id="contact-email"
+                  name="contact-email"
+                  type="text"
+                  placeholder="email@example.com"
+                  value=""
+                >
                 <label for="contact-email">Email</label>
               </div>
               <div class="Vlt-composite__append">
-                <button class="Vlt-btn Vlt-btn--secondary" type="submit">Subscribe</button>
+                <button class="Vlt-btn Vlt-btn--secondary" type="submit">
+                  Subscribe
+                </button>
               </div>
             </div>
-            <small class="Vlt-form__element__hint">By signing up to our communications blog, you accept our <a href="https://www.nexmo.com/privacy-policy" target="_blank">privacy policy</a>, which sets out how we use your data and the rights you have in respect of your data. You can opt out of receiving our updates by clicking the unsubscribe link in the email or by emailing us at <a href="mailto:privacy@nexmo.com" target="_blank">privacy@nexmo.com</a>.</small>
+            <small class="Vlt-form__element__hint">By signing up to our communications blog, you accept our
+              <a href="https://www.nexmo.com/privacy-policy" target="_blank">privacy policy</a>, which sets out how we use your data and the rights you have in
+              respect of your data. You can opt out of receiving our updates by
+              clicking the unsubscribe link in the email or by emailing us at
+              <a href="mailto:privacy@nexmo.com" target="_blank">privacy@nexmo.com</a>.</small>
           </div>
         </form>
       </div>

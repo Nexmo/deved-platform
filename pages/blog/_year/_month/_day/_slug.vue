@@ -2,104 +2,118 @@
   <section class="Blog__Full-width">
     <article class="Blog__post Vlt-container">
       <div class="Vlt-grid Vlt-grid--stack-flush">
-        <div class="Vlt-col">
-        </div>
+        <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <Breadcrumbs />
         </div>
-        <div class="Vlt-col">
-        </div>
-        <div class="Vlt-grid__separator"></div>
-        <div class="Vlt-col">
-        </div>
+        <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-card--lesspadding">
-            <img :src="attributes.thumbnail" width="100%" />
+            <img :src="attributes.thumbnail" width="100%">
             <h1>{{ title }}</h1>
             <div class="Vlt-margin--A-bottom3">
               <div class="Vlt-col">
-                <NLink :to="`/blog/category/${attributes.category}`" class="Blog__Category Vlt-purple-dark">&lt;/ {{ attributes.category }} &gt;</NLink>
-                <Author :authorName="attributes.author" type="minicard" />
-                <span v-if="attributes.published_at">Published <strong>{{ attributes.published_at | moment("dddd, MMMM Do YYYY") }}</strong></span>
+                <NLink
+                  :to="`/blog/category/${attributes.category}`"
+                  class="Blog__Category Vlt-purple-dark"
+                >
+                  &lt;/ {{ attributes.category }} &gt;
+                </NLink>
+                <Author :author-name="attributes.author" type="minicard" />
+                <span v-if="attributes.published_at">Published
+                  <strong>{{
+                    attributes.published_at | moment("dddd, MMMM Do YYYY")
+                  }}</strong></span>
                 <Tags :tags="attributes.tags" />
               </div>
             </div>
             <component :is="postContent" />
           </div>
         </div>
-        <div class="Vlt-col">
-        </div>
-        <div class="Vlt-grid__separator"></div>
-        <div class="Vlt-col">
-        </div>
+        <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-bg-white">
             <div class="Vlt-card__content">
-              <vue-disqus :shortname="disqusShortname" :identifier="`${baseUrl}${route}`" :url="`${baseUrl}${route}`"></vue-disqus>
+              <vue-disqus
+                :shortname="disqusShortname"
+                :identifier="`${baseUrl}${route}`"
+                :url="`${baseUrl}${route}`"
+              />
             </div>
           </div>
-          <Author :authorName="attributes.author" type="card" />
+          <Author :author-name="attributes.author" type="card" />
         </div>
-        <div class="Vlt-col">
-        </div>
+        <div class="Vlt-col" />
       </div>
     </article>
   </section>
 </template>
 
 <script>
-import Author from '~/components/Author'
-import Breadcrumbs from '~/components/Breadcrumbs'
-import Tags from '~/components/Tags'
+import Author from "~/components/Author"
+import Breadcrumbs from "~/components/Breadcrumbs"
+import Tags from "~/components/Tags"
 
 export default {
   components: {
     Author,
     Breadcrumbs,
-    Tags
+    Tags,
   },
 
-  head () {
-    return {
-      title: `${this.title} - Vonage Developer Blog`
-    }
-  },
-
-  data () {
+  data() {
     return {
       disqusShortname: process.env.disqusShortname,
       baseUrl: process.env.baseUrl,
-      route: '',
-      title: '',
+      route: "",
+      title: "",
       attributes: {},
       postContent: null,
-      author: {}
+      author: {},
     }
   },
 
-  created () {
-    this.postContent = () => import(`~/content/blog/${this.$route.params.slug}.md`).then((post) => {
-      this.route = this.getPermalink(post)
-      this.title = post.attributes.title
-      this.attributes = post.attributes
-      return {
-        extends: post.vue.component
-      }
-    })
+  created() {
+    this.postContent = () =>
+      import(`~/content/blog/${this.$route.params.slug}.md`).then((post) => {
+        this.route = this.getPermalink(post)
+        this.title = post.attributes.title
+        this.attributes = post.attributes
+        return {
+          extends: post.vue.component,
+        }
+      })
   },
 
   methods: {
     getPermalink(post) {
       if (post.permalink) {
-        return  post.permalink
+        return post.permalink
       } else {
-        const [ type, name ] = post.meta.resourcePath.split('/content/').pop().split('.')[0].split('/')
+        const [type, name] = post.meta.resourcePath
+          .split("/content/")
+          .pop()
+          .split(".")[0]
+          .split("/")
         const date = new Date(post.attributes.published_at)
 
-        return  `/${type}/${date.getFullYear()}/${("0" + (date.getMonth() + 1)).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`
+        return `/${type}/${date.getFullYear()}/${(
+          "0" +
+          (date.getMonth() + 1)
+        ).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`
       }
+    },
+  },
+
+  head() {
+    return {
+      title: `${this.title} - Vonage Developer Blog`,
     }
-  }
+  },
 }
 </script>
 
@@ -134,7 +148,7 @@ export default {
   line-height: 1.6;
 }
 
-.Blog__post .frontmatter-markdown >>> pre[class*=language-] {
+.Blog__post .frontmatter-markdown >>> pre[class*="language-"] {
   margin: 24px -50px;
   font-size: 16px;
   line-height: 1.4;
@@ -181,7 +195,7 @@ export default {
 }
 
 @media only screen and (max-width: 767px) {
-  .Blog__post .frontmatter-markdown >>> pre[class*=language-] {
+  .Blog__post .frontmatter-markdown >>> pre[class*="language-"] {
     margin: 24px 10px;
     padding-left: 12px;
   }

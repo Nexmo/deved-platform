@@ -3,8 +3,8 @@
     <div class="Blog-hero__content">
       <h3>Developer content from the team at Vonage.</h3>
       <client-only>
-        <AisInstantSearch 
-          :search-client="searchClient" 
+        <AisInstantSearch
+          :search-client="searchClient"
           index-name="BLOG"
           :class-names="{
             'ais-InstantSearch': 'Blog-hero__search-wrapper',
@@ -15,16 +15,19 @@
               'ais-SearchBox': 'Blog-hero__search-box-wrapper',
             }"
           >
-            <div class="Vlt-form__element Vlt-form__element--big Blog-hero__search"  slot-scope="{ currentRefinement, isSearchStalled, refine }">
+            <div
+              slot-scope="{ currentRefinement, isSearchStalled, refine }"
+              class="Vlt-form__element Vlt-form__element--big Blog-hero__search"
+            >
               <div class="Vlt-input">
                 <input
+                  id="hero-search"
                   type="search"
                   placeholder="Send SMS in Node.js"
-                  id="hero-search"
                   name="hero-search"
                   :value="currentRefinement"
                   @input="refine($event.currentTarget.value)"
-                />
+                >
                 <label for="hero-search">Search our existing content...</label>
               </div>
               <small v-if="isSearchStalled" class="Vlt-form__element__hint">Search is taking longer than usual...</small>
@@ -32,7 +35,7 @@
           </AisSearchBox>
           <AisStateResults>
             <template slot-scope="{ hits }">
-              <AisHits 
+              <AisHits
                 v-if="hits.length > 0"
                 :class-names="{
                   'ais-Hits': 'Hero-search__results',
@@ -42,12 +45,24 @@
               >
                 <template slot="item" slot-scope="{ item }">
                   <img :src="item.attributes.thumbnail" alt="">
-                  <h2><nuxt-link :to="item.permalink" no-prefetch>{{ item.title }}</nuxt-link></h2>
-                  <span>Published <strong>{{ item.attributes.published_at | moment("dddd, MMMM Do YYYY") }}</strong> by <strong><Author :authorName="item.attributes.author" type="name" /></strong></span>
+                  <h2>
+                    <nuxt-link :to="item.permalink" no-prefetch>
+                      {{ item.title }}
+                    </nuxt-link>
+                  </h2>
+                  <span>Published
+                    <strong>{{
+                      item.attributes.published_at
+                        | moment("dddd, MMMM Do YYYY")
+                    }}</strong>
+                    by
+                    <strong><Author
+                      :author-name="item.attributes.author"
+                      type="name"
+                    /></strong></span>
                 </template>
               </AisHits>
-              <div v-else>
-              </div>
+              <div v-else />
             </template>
           </AisStateResults>
         </AisInstantSearch>
@@ -57,15 +72,15 @@
 </template>
 
 <script>
-import Author from '~/components/Author'
-import algoliasearch from 'algoliasearch/lite'
+import Author from "~/components/Author"
+import algoliasearch from "algoliasearch/lite"
 
 const algoliaClient = algoliasearch(
-  'UG4W1PA1SN',
-  '0edbf51d45ad8226c199017566b3d5fd'
+  "UG4W1PA1SN",
+  "0edbf51d45ad8226c199017566b3d5fd"
 )
 
-const filters = 'NOT attributes.published:false'
+const filters = "NOT attributes.published:false"
 
 const searchClient = {
   search(requests) {
@@ -77,12 +92,12 @@ const searchClient = {
           nbPages: 0,
           processingTimeMS: 0,
         })),
-      });
+      })
     }
 
-    requests.forEach(request => {
+    requests.forEach((request) => {
       request.params.filters = filters
-    });
+    })
 
     return algoliaClient.search(requests)
   },
@@ -90,11 +105,11 @@ const searchClient = {
 
 export default {
   components: {
-    Author
+    Author,
   },
   data() {
     return {
-      searchClient: searchClient
+      searchClient: searchClient,
     }
   },
 }
@@ -102,14 +117,16 @@ export default {
 
 <style scoped>
 .Blog-hero {
-  background: white url('../assets/images/illustrations/Brand-activate-conversations.png') no-repeat scroll 12px 24px;
+  background: white
+    url("../assets/images/illustrations/Brand-activate-conversations.png")
+    no-repeat scroll 12px 24px;
   background-size: 250px;
   width: 100wh;
   height: 300px;
   display: -webkit-box;
   display: flex;
   margin-top: -12px;
-  box-shadow: 0 4px 4px rgba(19,20,21,.1);
+  box-shadow: 0 4px 4px rgba(19, 20, 21, 0.1);
   margin-bottom: 12px;
 }
 
@@ -119,9 +136,9 @@ export default {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   margin: auto;
 }
 

@@ -2,47 +2,67 @@
   <div class="Vlt-col Vlt-col--1of2">
     <div class="blog-card">
       <div class="photo-container">
-        <div class="photo" :style="`background-image: url('${post.attributes.thumbnail}');`"></div>
+        <div
+          class="photo"
+          :style="`background-image: url('${post.attributes.thumbnail}');`"
+        />
       </div>
       <div class="description">
         <h2>{{ post.attributes.title }}</h2>
-        <p v-if="post.attributes.published_at"><small>Published <strong>{{ post.attributes.published_at | moment("dddd, MMMM Do YYYY") }}</strong> <span v-if="post.attributes.author"> by <Author :authorName="post.attributes.author" type="name" /></span></small></p>
+        <p v-if="post.attributes.published_at">
+          <small>Published
+            <strong>{{
+              post.attributes.published_at | moment("dddd, MMMM Do YYYY")
+            }}</strong>
+            <span v-if="post.attributes.author">
+              by
+              <Author :author-name="post.attributes.author" type="name" /></span></small>
+        </p>
       </div>
       <div class="footer">
-        <NLink :to="getPermalink(post)">Read More</NLink>
+        <NLink :to="getPermalink(post)">
+          Read More
+        </NLink>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Author from '~/components/Author'
+import Author from "~/components/Author"
 
 export default {
   components: {
-    Author
+    Author,
   },
 
   props: {
     post: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
 
   methods: {
     getPermalink(post) {
       if (post.permalink) {
-        return  post.permalink;
+        return post.permalink
       } else {
-        const [ type, name ] = post.meta.resourcePath.split('/content/').pop().split('.')[0].split('/');
-        const date = new Date(post.attributes.published_at);
+        const [type, name] = post.meta.resourcePath
+          .split("/content/")
+          .pop()
+          .split(".")[0]
+          .split("/")
+        const date = new Date(post.attributes.published_at)
 
-        return  `/${type}/${date.getFullYear()}/${("0" + (date.getMonth() + 1)).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`;
+        return `/${type}/${date.getFullYear()}/${(
+          "0" +
+          (date.getMonth() + 1)
+        ).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`
       }
-    }
-  }
-};
+    },
+  },
+}
 </script>
 
 <style scoped>
@@ -51,7 +71,7 @@ export default {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   margin: 1rem auto;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.6%;

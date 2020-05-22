@@ -1,32 +1,72 @@
 <template>
   <header class="Blog-header">
-    <!-- <UtilityHeader /> -->
     <div class="Vlt-header">
       <NLink to="/" no-prefetch class="Vlt-header__logo">
-        <img class="Vlt-M-plus" src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg" />
-        <img class="Vlt-S-only" src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg" />
-        <div class="Vlt-badge Vlt-M-plus Vlt-badge--small Vlt-badge--transparent" style="margin: 8px">Developer Blog</div>
-        <div class="Vlt-badge Vlt-S-only Vlt-badge--small Vlt-badge--transparent" style="margin: 8px">Dev Blog</div>
+        <img
+          class="Vlt-M-plus"
+          src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
+        >
+        <img
+          class="Vlt-S-only"
+          src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg"
+        >
+        <div
+          class="Vlt-badge Vlt-M-plus Vlt-badge--small Vlt-badge--transparent"
+          style="margin: 8px;"
+        >
+          Developer Blog
+        </div>
+        <div
+          class="Vlt-badge Vlt-S-only Vlt-badge--small Vlt-badge--transparent"
+          style="margin: 8px;"
+        >
+          Dev Blog
+        </div>
       </NLink>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
-        <a href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">Sign up</a>
-        <TwitterSocialButton link="https://twitter.com/VonageDev" class="Vlt-btn--small" />
+        <a
+          href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
+          class="Vlt-btn Vlt-btn--small Vlt-btn--secondary"
+        >Sign up</a>
+        <TwitterSocialButton
+          link="https://twitter.com/VonageDev"
+          class="Vlt-btn--small"
+        />
       </div>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-S-only">
-        <a href="#" v-on:click="isOpen = !isOpen" class="Vlt-btn Vlt-btn--small Vlt-btn--white">
-          <svg><image width="16" height="16" viewBox="0 0 16 16" xlink:href="../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-menu.svg" /></svg>
+        <a
+          href="#"
+          class="Vlt-btn Vlt-btn--small Vlt-btn--white"
+          @click="isOpen = !isOpen"
+        >
+          <svg>
+            <image
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              xlink:href="../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-menu.svg"
+            />
+          </svg>
         </a>
       </div>
     </div>
-    <nav class="Blog-nav Blog-nav__elevation--1 " v-bind:class="{
-      'Blog-nav__expandable': !isOpen
-    }">
+    <nav
+      class="Blog-nav Blog-nav__elevation--1"
+      :class="{
+        'Blog-nav__expandable': !isOpen,
+      }"
+    >
       <ul class="Blog-nav__list">
         <li class="Blog-nav__item Vlt-center">
-            <a href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link" class="Vlt-btn Vlt-btn--secondary Vlt-text-white">Sign up</a>
+          <a
+            href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
+            class="Vlt-btn Vlt-btn--secondary Vlt-text-white"
+          >Sign up</a>
         </li>
         <li class="Blog-nav__item Vlt-center">
-          <TwitterSocialButton link="https://twitter.com/VonageDev">Follow us</TwitterSocialButton>
+          <TwitterSocialButton link="https://twitter.com/VonageDev">
+            Follow us
+          </TwitterSocialButton>
         </li>
       </ul>
     </nav>
@@ -34,27 +74,25 @@
 </template>
 
 <script>
-import UtilityHeader from '~/components/UtilityHeader'
-import TwitterSocialButton from '~/components/SocialButtons/TwitterSocialButton'
+import TwitterSocialButton from "~/components/SocialButtons/TwitterSocialButton"
 
 export default {
   components: {
-    UtilityHeader,
-    TwitterSocialButton
+    TwitterSocialButton,
   },
-  data () { 
-    return { 
-      isOpen: false 
-    } 
-  }
-};
+  data() {
+    return {
+      isOpen: false,
+    }
+  },
+}
 </script>
 
 <style scoped>
 .Blog-header {
   width: 100%;
   min-height: 64px;
-  box-shadow: 0 4px 4px rgba(19,20,21,.1);
+  box-shadow: 0 4px 4px rgba(19, 20, 21, 0.1);
   margin-bottom: 12px;
 }
 
@@ -86,7 +124,7 @@ export default {
 
 @media only screen and (max-width: 575px) {
   .Vlt-header__logo {
-      flex: 0 0 120px;
+    flex: 0 0 120px;
   }
 }
 

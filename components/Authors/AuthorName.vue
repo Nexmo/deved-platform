@@ -7,8 +7,8 @@ export default {
   props: {
     author: {
       type: Object,
-      required: true
-    }
-  }
-};
+      required: true,
+    },
+  },
+}
 </script>

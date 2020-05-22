@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import AuthorName from '~/components/Authors/AuthorName.vue'
-import AuthorMiniCard from '~/components/Authors/AuthorMiniCard.vue'
-import AuthorCard from '~/components/Authors/AuthorCard.vue'
-import AuthorPage from '~/components/Authors/AuthorPage.vue'
+import AuthorName from "~/components/Authors/AuthorName.vue"
+import AuthorMiniCard from "~/components/Authors/AuthorMiniCard.vue"
+import AuthorCard from "~/components/Authors/AuthorCard.vue"
+import AuthorPage from "~/components/Authors/AuthorPage.vue"
 
 export default {
   components: {
@@ -23,26 +23,27 @@ export default {
 
   props: {
     authorName: {
-      type: String
+      type: String,
+      required: true,
     },
     type: {
       type: String,
-      default: 'name',
+      default: "name",
       validator: function (value) {
-        return ['name', 'minicard', 'card', 'page'].indexOf(value) !== -1
-      }
-    }
+        return ["name", "minicard", "card", "page"].indexOf(value) !== -1
+      },
+    },
   },
 
   methods: {
-    author () {
-      const { authors } = require('../content/authors.json')
-      const author = authors.find(author => {
+    author() {
+      const { authors } = require("../content/authors.json")
+      const author = authors.find((author) => {
         return author.username === this.authorName
-      });
-      
+      })
+
       return author || { name: this.authorName, username: this.authorName }
-    }
-  }
-};
+    },
+  },
+}
 </script>

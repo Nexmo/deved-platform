@@ -2,8 +2,12 @@
   <NLink :to="`/authors/${author.username}`" class="block">
     <img :src="author.image_url" alt="">
     <h3>{{ author.name }}</h3>
-    <p v-if="author.spotlight">**** Developer Spotlight ****</p>
-    <p v-else>{{ author.title }}</p>
+    <p v-if="author.spotlight">
+      **** Developer Spotlight ****
+    </p>
+    <p v-else>
+      {{ author.title }}
+    </p>
   </NLink>
 </template>
 
@@ -12,10 +16,10 @@ export default {
   props: {
     author: {
       type: Object,
-      required: true
-    }
-  }
-};
+      required: true,
+    },
+  },
+}
 </script>
 
 <style scoped>
