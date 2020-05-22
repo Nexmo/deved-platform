@@ -1,8 +1,12 @@
 <template>
-  <section class="Blog">
-    <main class="Vlt-grid">
+  <section class="Blog__Full-width">
+    <header class="Blog__Full-width">
       <Author :authorName="author" type="page" />
-      <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
+    </header>
+    <main class="Vlt-container">
+      <div class="Vlt-grid Blog__Card-container">
+        <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
+      </div>
     </main>
   </section>
 </template>

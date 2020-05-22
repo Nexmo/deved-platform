@@ -1,7 +1,5 @@
-<template>
-  <div class="Vlt-card Vlt-bg-white">
+  <!-- <div class="Vlt-card Vlt-bg-white">
     <div class="Vlt-card__image Vlt-gradient--blue-to-purple" v-if="author.image_url">
-      <div class="Vlt-card__image__icon" :style="`background-image: url('${author.image_url}'); background-size: cover`"></div>
     </div>
     <div class="Vlt-card__header">
       <h3>{{ author.name }} <small v-if="!author.spotlight" class="Vlt-grey-dark">{{ author.title }}</small></h3>
@@ -21,6 +19,30 @@
       <TwitchSocialButton :link="author.twitch_url" class="Vlt-btn--small" />
       <YouTubeSocialButton :link="author.youtube_url" class="Vlt-btn--small" />
       <WebsiteSocialButton :link="author.website_url || `/authors/${author.username}`" class="Vlt-btn--small" />
+    </div>
+  </div> -->
+
+<template>
+  <div class="Blog-hero">
+    <div class="Blog-hero__content">
+      <img :src="author.image_url" />
+      <h3>{{ author.name }}<br /><small v-if="!author.spotlight" class="Vlt-grey-dark">{{ author.title }}</small></h3>
+      <div v-if="author.spotlight">
+        Spotlight
+      </div>
+      <div v-if="author.bio">
+        {{ author.bio }}
+      </div>
+      <div class="Vlt-center">
+        <TwitterSocialButton :link="author.twitter_url" class="Vlt-btn--small" />
+        <FacebookSocialButton :link="author.facebook_url" class="Vlt-btn--small" />
+        <GitHubSocialButton :link="author.github_url" class="Vlt-btn--small" />
+        <StackOverflowSocialButton :link="author.stackoverflow_url" class="Vlt-btn--small" />
+        <LinkedInSocialButton :link="author.linkedin_url" class="Vlt-btn--small" />
+        <TwitchSocialButton :link="author.twitch_url" class="Vlt-btn--small" />
+        <YouTubeSocialButton :link="author.youtube_url" class="Vlt-btn--small" />
+        <WebsiteSocialButton :link="author.website_url || `/authors/${author.username}`" class="Vlt-btn--small" />
+      </div>
     </div>
   </div>
 </template>
@@ -56,11 +78,56 @@ export default {
 </script>
 
 <style scoped>
-.Vlt-card__image {
-  height: 120px;
+.Blog-hero {
+  background: white;
+  width: 100wh;
+  display: -webkit-box;
+  display: flex;
+  margin-top: -12px;
+  box-shadow: 0 4px 4px rgba(19,20,21,.1);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
-.Vlt-card__image__icon {
-  height: 100px;
-  width: 100px;
+
+.Blog-hero img {
+  border-radius: 6px;
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  float: left;
+  margin-bottom: 1rem;
+}
+
+.Blog-hero__content {
+  width: 500px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 575px) {
+  .Blog-hero__content {
+    width: 90%;
+  }
+
+  .Blog-hero__content h3 {
+    background-color: rgba(255, 255, 255, 0.623);
+  }
+}
+
+.Blog-hero__content h3 {
+  text-align: center;
+  color: black;
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+  font-weight: normal;
 }
 </style>
