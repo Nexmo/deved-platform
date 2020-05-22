@@ -7,7 +7,7 @@
       <div class="Vlt-text-separator">
         <span>Recent posts</span>
       </div>
-      <div class="Vlt-grid Blog__Card-container">
+      <div class="Vlt-grid">
         <Card
           v-for="post in posts"
           :key="post.meta.resourcepath"
@@ -17,7 +17,7 @@
       <div class="Vlt-text-separator">
         <span>Tutorials</span>
       </div>
-      <div class="Vlt-grid Blog__Card-container">
+      <div class="Vlt-grid">
         <Card
           v-for="post in posts"
           :key="post.meta.resourcepath"
@@ -27,7 +27,7 @@
       <div class="Vlt-text-separator">
         <span>Videos</span>
       </div>
-      <div class="Vlt-grid Blog__Card-container">
+      <div class="Vlt-grid">
         <Card
           v-for="post in posts"
           :key="post.meta.resourcepath"

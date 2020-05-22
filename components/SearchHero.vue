@@ -121,7 +121,7 @@ export default {
     url("../assets/images/illustrations/Brand-activate-conversations.png")
     no-repeat scroll 12px 24px;
   background-size: 250px;
-  width: 100wh;
+  width: 100vw;
   height: 300px;
   display: -webkit-box;
   display: flex;

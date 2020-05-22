@@ -1,10 +1,15 @@
 <template>
-  <div class="Vlt-col Vlt-col--1of3">
-    <NLink class="Vlt-card" :to="getPermalink(post)">
-      <div class="Vlt-card__header">
-        <h3>{{ post.attributes.title }}</h3>
+  <div class="Vlt-col Vlt-col--1of3 Vlt-col--M-1of2">
+    <div class="Vlt-card--gradient-wrapper Vlt-gradient--blue-to-pink">
+      <div class="Vlt-card">
+        <NLink class="Vlt-card__content" :to="getPermalink(post)">
+          <h3 :class="`Category-color__${post.attributes.category}`">
+            &lt;/ {{ post.attributes.category }} &gt;
+          </h3>
+          <h2>{{ post.attributes.title }}</h2>
+        </NLink>
       </div>
-    </NLink>
+    </div>
   </div>
 </template>
 
@@ -40,74 +45,60 @@ export default {
 </script>
 
 <style scoped>
-.blog-card {
+.Vlt-card--gradient-wrapper {
+  padding: 0px 6px 6px 0;
+}
+
+.Vlt-card {
+  width: 100%;
+  min-height: 175px;
+  display: -webkit-box;
+  display: flex;
+  margin-top: -12px;
+  box-shadow: 0 4px 4px rgba(19, 20, 21, 0.1);
+}
+
+.Vlt-card__content {
+  width: 100%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  margin: 1rem auto;
-  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.6%;
-  background: #fff;
-  line-height: 1.4;
-  font-family: sans-serif;
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 0;
-  min-height: 322px;
-}
-.blog-card .photo-container {
-  position: relative;
-  z-index: 0;
-  height: 200px;
-}
-.blog-card .photo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-}
-.blog-card .description {
-  padding: 1rem;
-  position: relative;
-  z-index: 1;
-}
-.blog-card .description h2 {
-  line-height: 1;
-  margin: 0;
-  font-size: 2.2rem;
-}
-.blog-card .description .read-more {
-  text-align: right;
-}
-.blog-card .description .read-more a {
-  display: inline-block;
-  position: relative;
-}
-.blog-card p {
-  position: relative;
-  margin: 1rem 0 0;
-}
-.blog-card p:first-of-type {
-  margin-top: 1.25rem;
-}
-.blog-card p:first-of-type:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  background: black;
-  width: 35px;
-  top: -0.75rem;
-  border-radius: 3px;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: auto;
 }
 
-.blog-card .footer {
-  bottom: 15px;
-  position: absolute;
-  right: 30px;
+h2 {
+  margin-bottom: 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.Category-color__tutorial {
+  color: #d6219c;
+}
+.Category-color__release {
+  color: #b779ff;
+}
+.Category-color__new-starter {
+  color: #06ba77;
 }
 </style>

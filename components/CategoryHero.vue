@@ -25,7 +25,7 @@ export default {
     url("../assets/images/illustrations/Brand-mobile-apis-services.png")
     no-repeat scroll 12px 24px;
   background-size: 150px;
-  width: 100wh;
+  width: 100vw;
   height: 200px;
   display: -webkit-box;
   display: flex;
