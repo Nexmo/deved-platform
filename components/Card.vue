@@ -1,15 +1,4 @@
 <template>
-  <!-- <div class="Vlt-col Vlt-col--1of2">
-    <NLink :to="getPermalink(post)" class="Vlt-card Vlt-card--clickable">
-      <div v-if="post.attributes.thumbnail" class="Vlt-card__image" :style="`background-image: url('${post.attributes.thumbnail}');`"></div>
-      <div v-else class="Vlt-card__image"></div>
-      <div class="Vlt-card__header">
-        <h3 class="Vlt-title">
-          {{ post.attributes.title | truncate(55, '...') }}
-        </h3>
-      </div>
-    </NLink>
-  </div> -->
   <div class="Vlt-col Vlt-col--1of2">
     <div class="blog-card">
       <div class="photo-container">

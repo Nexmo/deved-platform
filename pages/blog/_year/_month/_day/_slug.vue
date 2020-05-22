@@ -1,5 +1,5 @@
 <template>
-  <article class="Blog__post Vlt-grid">
+  <!-- <article class="Blog__post Vlt-grid">
     <div class="Vlt-col">
       <div class="Vlt-grid">
         <div class="Vlt-col">
@@ -31,6 +31,32 @@
         </aside>
       </div>
     </div>
+  </article> -->
+  <article class="Blog__post Vlt-container">
+    <header class="Vlt-grid">
+      <div class="Vlt-col">
+        <Breadcrumbs />
+      </div>
+      <div class="Vlt-grid__separator"></div>
+      <div class="Vlt-col">
+        <img :src="attributes.thumbnail" width="100%" />
+      </div>
+      <div class="Vlt-col">
+        <div class="Vlt-grid">
+          <div class="Vlt-col">
+            <h1>{{ title }}</h1>
+          </div>
+          <div class="Vlt-grid__separator"></div>
+          <div class="Vlt-col">
+            <Author :authorName="attributes.author" type="minicard" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="Vlt-col Vlt-prism--dark">
+      <component :is="postContent" />
+      <Author :authorName="attributes.author" type="card" class="Vlt-margin--A-top4" />
+    </main>
   </article>
 </template>
 
@@ -74,18 +100,64 @@ export default {
 </script>
 
 <style scoped>
-img.Vlt-card {
-  padding: 0;
+.Vlt-container {
+  margin: auto;
 }
-.Blog__post >>> .frontmatter-markdown p {
-  font-size: 1.2em;
+
+.Blog__post header {
+  margin-bottom: 24px;
+}
+
+.Blog__post .frontmatter-markdown >>> li,
+.Blog__post .frontmatter-markdown >>> p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.Blog__post .frontmatter-markdown >>> pre[class*=language-] {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.Blog__post .frontmatter-markdown >>> p {
   text-align: justify;
-  line-height: 1.3em;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: normal;
+  word-break: normal;
 }
-.Blog__post >>> .frontmatter-markdown blockquote.Vlt-callout.Vlt-callout--tip {
-  margin: 24px auto ;
+
+.Blog__post .frontmatter-markdown >>> pre[class*=language-],
+.Blog__post .frontmatter-markdown >>> blockquote.Vlt-callout.Vlt-callout--tip {
+  margin: 24px auto;
 }
-.Blog__post >>> .frontmatter-markdown pre[class*=language-] {
-  margin: 24px auto ;
+
+.Blog__post .frontmatter-markdown >>> p code {
+  border: 1px solid silver;
+  background: #f9f9fa;
+}
+
+.Blog__post .frontmatter-markdown >>> pre[class*=language-] {
+  border: 1px solid silver;
+  background: #f9f9fa;
+}
+
+.Blog__post .frontmatter-markdown >>> .language-diff .token {
+  width: 100%;
+  display: inherit;
+  white-space: pre-wrap;
+}
+
+.Blog__post .frontmatter-markdown >>> .language-diff .token.inserted {
+  background: rgb(236, 238, 231);
+}
+
+.Blog__post .frontmatter-markdown >>> .language-diff .token.deleted {
+  background: rgb(247, 236, 242);
+}
+
+.Blog__post .frontmatter-markdown >>> p img {
+  width: 100%;
 }
 </style>
