@@ -6,12 +6,10 @@
       </div>
       <div class="description">
         <h2>{{ post.attributes.title }}</h2>
-        <p>
-          <small>Published <strong>{{ post.attributes.published_at | moment("dddd, MMMM Do YYYY") }}</strong> by <strong><Author :authorName="post.attributes.author" type="name" /></strong></small>
-        </p>
-        <p class="read-more">
-          <NLink :to="getPermalink(post)">Read More</NLink>
-        </p>
+        <p v-if="post.attributes.published_at"><small>Published <strong>{{ post.attributes.published_at | moment("dddd, MMMM Do YYYY") }}</strong> <span v-if="post.attributes.author"> by <Author :authorName="post.attributes.author" type="name" /></span></small></p>
+      </div>
+      <div class="footer">
+        <NLink :to="getPermalink(post)">Read More</NLink>
       </div>
     </div>
   </div>
@@ -81,7 +79,6 @@ export default {
 }
 .blog-card .description {
   padding: 1rem;
-  background: #fff;
   position: relative;
   z-index: 1;
 }
@@ -112,5 +109,11 @@ export default {
   width: 35px;
   top: -0.75rem;
   border-radius: 3px;
+}
+
+.blog-card .footer {
+  bottom: 15px;
+  position: absolute;
+  right: 30px;
 }
 </style>

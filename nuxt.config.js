@@ -199,11 +199,10 @@ export default () => {
     },
 
     sitemap: {
-      hostname: 'https://vonage.dev',
+      hostname: 'https://vonage-dev-blog.netlify.app',
       gzip: true,
       lastmod: builtAt,
       exclude: [
-        '/search',
         '/admin/**'
       ],
       routes: routes

@@ -5,7 +5,7 @@
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid Blog__Card-container">
-        <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
+        <Card v-for="post in posts" :key="post.meta.resourcepath" :post="post" />
       </div>
     </main>
     <footer class="Blog__Full-width Vlt-center">
@@ -50,16 +50,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.Vlt-container {
-  margin: auto;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.Blog__Card-container {
-  margin-top: 24px;
-  padding: 12px;
-}
-</style>

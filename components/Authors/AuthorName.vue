@@ -1,5 +1,5 @@
 <template>
-  <fragment>{{ author.name }}</fragment>
+  <strong>{{ author.name }}</strong>
 </template>
 
 <script>

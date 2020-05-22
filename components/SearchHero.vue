@@ -3,14 +3,14 @@
     <div class="Blog-hero__content">
       <h3>Developer content from the team at Vonage.</h3>
       <client-only>
-        <ais-instant-search 
+        <AisInstantSearch 
           :search-client="searchClient" 
-          index-name="development_BLOG"
+          index-name="BLOG"
           :class-names="{
             'ais-InstantSearch': 'Blog-hero__search-wrapper',
           }"
         >
-          <ais-search-box
+          <AisSearchBox
             :class-names="{
               'ais-SearchBox': 'Blog-hero__search-box-wrapper',
             }"
@@ -29,10 +29,10 @@
               </div>
               <small v-if="isSearchStalled" class="Vlt-form__element__hint">Search is taking longer than usual...</small>
             </div>
-          </ais-search-box>
-          <ais-state-results>
+          </AisSearchBox>
+          <AisStateResults>
             <template slot-scope="{ hits }">
-              <ais-hits 
+              <AisHits 
                 v-if="hits.length > 0"
                 :class-names="{
                   'ais-Hits': 'Hero-search__results',
@@ -45,12 +45,12 @@
                   <h2><nuxt-link :to="item.permalink" no-prefetch>{{ item.title }}</nuxt-link></h2>
                   <span>Published <strong>{{ item.attributes.published_at | moment("dddd, MMMM Do YYYY") }}</strong> by <strong><Author :authorName="item.attributes.author" type="name" /></strong></span>
                 </template>
-              </ais-hits>
+              </AisHits>
               <div v-else>
               </div>
             </template>
-          </ais-state-results>
-        </ais-instant-search>
+          </AisStateResults>
+        </AisInstantSearch>
       </client-only>
     </div>
   </div>
@@ -65,6 +65,8 @@ const algoliaClient = algoliasearch(
   '0edbf51d45ad8226c199017566b3d5fd'
 )
 
+const filters = 'NOT attributes.published:false'
+
 const searchClient = {
   search(requests) {
     if (requests.every(({ params }) => params.query.length < 3)) {
@@ -77,6 +79,10 @@ const searchClient = {
         })),
       });
     }
+
+    requests.forEach(request => {
+      request.params.filters = filters
+    });
 
     return algoliaClient.search(requests)
   },

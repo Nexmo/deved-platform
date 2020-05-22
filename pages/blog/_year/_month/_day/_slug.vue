@@ -35,7 +35,7 @@
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-bg-white">
             <div class="Vlt-card__content">
-              <vue-disqus :shortname="disqusShortname" :identifier="route" :url="baseUrl"></vue-disqus>
+              <vue-disqus :shortname="disqusShortname" :identifier="`${baseUrl}${route}`" :url="`${baseUrl}${route}`"></vue-disqus>
             </div>
           </div>
           <Author :authorName="attributes.author" type="card" />
