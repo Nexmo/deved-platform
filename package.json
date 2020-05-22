@@ -26,6 +26,7 @@
     "markdown-it-prism": "^2.0.5",
     "nuxt": "^2.5.1",
     "stopword": "^1.0.0",
+    "vue-disqus": "^3.0.5",
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^2.7.0",
     "vue-moment": "^4.1.0",

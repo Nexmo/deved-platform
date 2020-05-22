@@ -55,8 +55,15 @@
     </header>
     <main class="Vlt-col Vlt-prism--dark">
       <component :is="postContent" />
-      <Author :authorName="attributes.author" type="card" class="Vlt-margin--A-top4" />
     </main>
+    <footer>
+      <div class="Vlt-card Vlt-bg-white Vlt-margin--A-top4">
+        <div class="Vlt-card__content">
+          <vue-disqus :shortname="disqusShortname" :identifier="route" :url="baseUrl"></vue-disqus>
+        </div>
+      </div>
+      <Author :authorName="attributes.author" type="card" class="Vlt-margin--A-top4" />
+    </footer>
   </article>
 </template>
 
@@ -80,6 +87,9 @@ export default {
 
   data () {
     return {
+      disqusShortname: process.env.disqusShortname,
+      baseUrl: process.env.baseUrl,
+      route: '',
       title: '',
       attributes: {},
       postContent: null,
@@ -89,14 +99,28 @@ export default {
 
   created () {
     this.postContent = () => import(`~/content/blog/${this.$route.params.slug}.md`).then((post) => {
-      this.title = post.attributes.title,
-      this.attributes = post.attributes;
+      this.route = this.getPermalink(post)
+      this.title = post.attributes.title
+      this.attributes = post.attributes
       return {
         extends: post.vue.component
-      };
-    });
+      }
+    })
+  },
+
+  methods: {
+    getPermalink(post) {
+      if (post.permalink) {
+        return  post.permalink
+      } else {
+        const [ type, name ] = post.meta.resourcePath.split('/content/').pop().split('.')[0].split('/')
+        const date = new Date(post.attributes.published_at)
+
+        return  `/${type}/${date.getFullYear()}/${("0" + (date.getMonth() + 1)).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`
+      }
+    }
   }
-};
+}
 </script>
 
 <style scoped>
@@ -158,6 +182,7 @@ export default {
 }
 
 .Blog__post .frontmatter-markdown >>> p img {
-  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 </style>

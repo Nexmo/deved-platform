@@ -50,9 +50,8 @@ const customStopWords = [
 export default () => {
   return {
     env: {
-      algoliaId: process.env.ALGOLIA_ID,
-      algoliaSearchKey: process.env.ALGOLIA_SEARCH_KEY,
-      algoliaIndex: process.env.ALGOLIA_INDEX
+      disqusShortname: process.env.DISQUS_SHORTNAME || 'vonage-dev-blog-dev',
+      baseUrl: process.env.BASE_URL || 'http://localhost:3000'
     },
 
     mode: 'universal',
@@ -250,7 +249,8 @@ export default () => {
       { src: '@/plugins/vue-moment.js' },
       { src: '@/plugins/vue-fragment.js' },
       { src: '@/plugins/filters.js' },
-      { src: '@/plugins/vue-instantsearch.js' }
+      { src: '@/plugins/vue-instantsearch.js' },
+      { src: '@/plugins/vue-disqus.js' }
     ],
 
     /*

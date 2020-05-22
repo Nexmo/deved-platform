@@ -2,7 +2,6 @@
   <section>
     <header class="Blog__Full-width">
       <SearchHero />
-      <!-- <Categories /> -->
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid Blog__Card-container">
@@ -17,14 +16,12 @@
 
 <script>
 import SearchHero from '~/components/SearchHero'
-// import Categories from '~/components/Categories'
 import Card from '~/components/Card'
 import path from 'path'
 
 export default {
   components: {
     Card,
-    // Categories,
     SearchHero
   },
 
