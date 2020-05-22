@@ -68,6 +68,13 @@ posts.forEach(post => {
   }
 })
 
+for (let page = 1; page <= posts.filter(post => post.attributes.published !== false).length / 6; page++) {
+  const route = `/archive/${page}`
+  if(routes.indexOf(route) === -1) {
+    routes.push(route);
+  }
+}
+
 const customStopWords = [ 
   'so', 'far', 'now', 'ever', 'wanted', 
   'stuck', 'and', 'just', 'very', 'easy',
