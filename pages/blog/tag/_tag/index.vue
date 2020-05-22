@@ -1,7 +1,7 @@
 <template>
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
-      <CategoryHero :title="tag" />
+      <CategoryHero :title="`#${tag}`" />
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid Blog__Card-container">
