@@ -1,6 +1,8 @@
 <template>
   <div class="Vlt-badge-group">
-    <div v-for="tag in tags" :key="tag" class="Vlt-badge Vlt-badge--grey Vlt-badge--transparent" v-bind:class="'Blog-badge--' + tag">{{ tag }}</div>
+    <NLink v-for="tag in tags" :key="tag" :to="`/blog/tag/${tag}`" class="Vlt-badge Vlt-badge--small Vlt-badge--grey Vlt-badge--transparent" v-bind:class="'Blog-badge--' + tag">
+      #{{ tag }}
+    </NLink>
   </div>
 </template>
 
@@ -15,3 +17,20 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.Blog-badge--slack {
+  background: #871fff20;
+  color: #871fff;
+}
+
+.Blog-badge--vuejs {
+  background: #41B88320;
+  color: #41B883;
+}
+
+.Blog-badge--ruby {
+  background: #a9150120;
+  color: #a91401;
+}
+</style>
