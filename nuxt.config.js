@@ -22,7 +22,6 @@ dynamicContent.forEach(local => {
   const [ name ] = file.split('.md')
   const post = {}
 
-
   const content = fm(fs.readFileSync(path.resolve('content', local), 'utf8'))
   const md = markdownIt();
 
@@ -39,6 +38,34 @@ dynamicContent.forEach(local => {
   posts.push(post)
 
   routes.push(post.permalink)
+})
+
+posts.forEach(post => {
+  if (post.attributes.category) {
+    const route = `/${post.attributes.type}/category/${post.attributes.category}`
+
+    if(routes.indexOf(route) === -1) {
+      routes.push(route);
+    }
+  }
+
+  if (post.attributes.author) {
+    const route = `/authors/${post.attributes.author}`
+
+    if(routes.indexOf(route) === -1) {
+      routes.push(route);
+    }
+  }
+
+  if (post.attributes.tags) {
+    post.attributes.tags.forEach(tag => {
+      const route = `/${post.attributes.type}/tag/${tag}`
+
+      if(routes.indexOf(route) === -1) {
+        routes.push(route);
+      }
+    });
+  }
 })
 
 const customStopWords = [ 
