@@ -7,6 +7,7 @@ thumbnail: /content/blog/nexmo-ruby-v6-3-0-release-static-type-checking-and-host
 author: bengreenberg
 published: true
 published_at: 2020-02-26T21:56:46.770Z
+category: release
 tags:
   - ruby
   - sdk

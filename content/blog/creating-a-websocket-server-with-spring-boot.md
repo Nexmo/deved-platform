@@ -7,6 +7,7 @@ thumbnail: /content/blog/creating-a-websocket-server-with-spring-boot/websocket-
 author: stevecrow
 published: true
 published_at: 2018-10-08T22:22:20.153Z
+category: tutorial
 tags:
   - java
   - websocket

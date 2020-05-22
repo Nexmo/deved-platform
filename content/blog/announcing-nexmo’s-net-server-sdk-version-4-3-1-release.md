@@ -7,9 +7,9 @@ thumbnail: /content/blog/announcing-nexmo’s-net-server-sdk-version-4-3-1-relea
 author: stevelorello
 published: true
 published_at: 2020-02-24T21:51:52.337Z
+category: tutorial
 tags:
   - dotnet
-  - .net
   - sdk
 ---
 Hello again! This week we are releasing a new version of the .NET SDK – 4.3.1. This version contains two bug fixes.

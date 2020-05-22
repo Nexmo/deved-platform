@@ -6,8 +6,9 @@ thumbnail: /content/blog/diana-rodriguez-joins-the-developer-relations-team/thum
 author: dianarodriguez
 published: true
 published_at: 2020-03-19T18:52:39.194Z
+category: new-starter
 tags:
-  - new starter
+  - new-starter
 ---
 ## Hola Mundo!!/Hello World!
 

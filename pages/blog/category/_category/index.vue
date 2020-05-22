@@ -1,27 +1,24 @@
 <template>
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
-      <SearchHero />
+      <CategoryHero :title="category" />
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid Blog__Card-container">
         <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
       </div>
     </main>
-    <footer class="Blog__Full-width Vlt-center">
-      <NLink to="/archive" no-prefetch class="Vlt-btn Vlt-btn--quaternary">View Older Posts</NLink>
-    </footer>
   </section>
 </template>
 
 <script>
-import SearchHero from '~/components/SearchHero'
+import CategoryHero from '~/components/CategoryHero'
 import Card from '~/components/Card'
 
 export default {
   components: {
     Card,
-    SearchHero
+    CategoryHero
   },
 
   data () {
@@ -29,7 +26,10 @@ export default {
     const imports = resolve.keys().map(key => {
       const [, name] = key.match(/\/(.+)\.md$/);
       return resolve(key);
-    }).filter(content => content.attributes.published != false);
+    }).filter(content => {
+      return content.attributes.category == this.$route.params.category
+        && content.attributes.published != false
+    });
 
     imports.sort((a, b) => {
       const aPublishedDate = new Date(a.attributes.published_at);
@@ -38,28 +38,9 @@ export default {
     });
 
     return {
-      posts: imports.slice(0,6) // limit to 6 "latest posts"
+      category: this.$route.params.category,
+      posts: imports.slice(0,12) // limit to 12 "latest posts"
     };
-  },
-
-  head () {
-    return {
-      title: 'Vonage Developer Blog',
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-    };
-  },
+  }
 };
 </script>
-
-<style scoped>
-.Vlt-container {
-  margin: auto;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.Blog__Card-container {
-  margin-top: 24px;
-  padding: 12px;
-}
-</style>

@@ -1,18 +1,4 @@
 <template>
-  <!-- <div class="Vlt-card Vlt-card--plain Vlt-bg-grey-lighter Vlt-card--lesspadding">
-    <div class="Vlt-card__content">
-      <NLink :to="`/authors/${author.username}`">
-      </NLink>
-    </div>
-  </div> -->
-  <!-- <div class="Vlt-grid">
-    <div class="Vlt-col Vlt-col--A-1of4">
-      <img class="Author__Mini-card-image" :src="author.image_url" />
-    </div>
-    <div class="Vlt-col Vlt-col--A-3of4">
-      <span class="Author__Mini-card-title">{{ author.name }} <br/><small v-if="!author.spotlight" class="Vlt-grey-dark">{{ author.title }}</small></span>
-    </div>
-  </div> -->
   <NLink :to="`/authors/${author.username}`" class="block">
     <img :src="author.image_url" alt="">
     <h3>{{ author.name }}</h3>

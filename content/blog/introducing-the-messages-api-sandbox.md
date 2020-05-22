@@ -6,9 +6,10 @@ thumbnail: /content/blog/introducing-the-messages-api-sandbox/e_messaging-api-sa
 author: martyndavies
 published: true
 published_at: 2020-04-08T17:45:13.602Z
+category: tutorial
 tags:
-  - messages api
-  - messages api sandbox
+  - messages-api
+  - messages-api-sandbox
 ---
 The Messages API Sandbox is a new way of developing and testing any application you want to build using [WhatsApp](https://www.whatsapp.com/), [Viber](https://www.viber.com/), or [Facebook Messenger](https://www.messenger.com/) via our[Messages API](https://developer.nexmo.com/messages/overview).
 

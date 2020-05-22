@@ -25,6 +25,7 @@ collections:
       - { label: Author, name: author, widget: string }
       - { label: Published, name: published, widget: boolean, default: true }
       - { label: 'Published At', name: published_at, widget: datetime }
+      - { label: Category, name: category, widget: "list", default: ['new-starter', 'release', 'tutorial'] }
       - { label: Tags, name: tags, widget: list }
       - { label: Body, name: body, widget: markdown }
   - name: pages

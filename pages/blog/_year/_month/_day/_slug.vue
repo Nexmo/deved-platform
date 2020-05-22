@@ -1,37 +1,4 @@
 <template>
-  <!-- <article class="Blog__post Vlt-grid">
-    <div class="Vlt-col">
-      <div class="Vlt-grid">
-        <div class="Vlt-col">
-          <Breadcrumbs />
-        </div>
-        <div class="Vlt-grid__separator"></div>
-        <div class="Vlt-col">
-          <Author :authorName="attributes.author" type="minicard" />
-        </div>
-      </div>
-    </div>
-    <div class="Vlt-col Vlt-col--3of4">
-      <div class="Vlt-grid">
-        <header class="Vlt-col">
-          <h1>{{ title }}</h1>
-        </header>
-        <div class="Vlt-grid__separator"></div>
-        <main class="Vlt-col Vlt-col--2of3">
-          <img :src="attributes.thumbnail" width="100%" class="Vlt-card Vlt-margin--bottom4 Vlt-margin--M-bottom3 Vlt-margin--S-bottom2" />
-          <component :is="postContent" />
-          <Author :authorName="attributes.author" type="card" class="Vlt-margin--A-top4" />
-        </main>
-        <aside class="Vlt-col">
-          <div class="Vlt-grid">
-            <div class="Vlt-col">
-              <Tags :tags="attributes.tags" />
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </article> -->
   <section class="Blog__Full-width">
     <article class="Blog__post Vlt-container">
       <div class="Vlt-grid Vlt-grid--stack-flush">
@@ -51,8 +18,9 @@
             <h1>{{ title }}</h1>
             <div class="Vlt-margin--A-bottom3">
               <div class="Vlt-col">
+                <NLink :to="`/blog/category/${attributes.category}`" class="Blog__Category Vlt-purple-dark">&lt;/ {{ attributes.category }} &gt;</NLink>
                 <Author :authorName="attributes.author" type="minicard" />
-                Published <strong>{{ attributes.published_at | moment("dddd, MMMM Do YYYY") }}</strong>
+                <span v-if="attributes.published_at">Published <strong>{{ attributes.published_at | moment("dddd, MMMM Do YYYY") }}</strong></span>
                 <Tags :tags="attributes.tags" />
               </div>
             </div>
@@ -136,6 +104,13 @@ export default {
 </script>
 
 <style scoped>
+.Blog__Category {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1rem auto;
+  display: inline-block;
+}
+
 .Blog__post h1 {
   margin: 1rem auto;
   font-size: 3rem;

@@ -6,6 +6,7 @@ thumbnail: /content/blog/how-to-send-and-receive-sms-messages-with-node-js-and-a
 author: alexlakatos
 published: true
 published_at: 2020-01-29T22:02:21.849Z
+category: tutorial
 tags:
   - azure
   - nodejs

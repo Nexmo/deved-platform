@@ -6,6 +6,7 @@ thumbnail: /content/blog/building-a-slack-clone-using-vue-js-part-1/thumbnail.pn
 author: lukeoliff
 published: true
 published_at: 2020-04-10T10:30:00.000Z
+category: tutorial
 tags:
   - vuejs
   - slack

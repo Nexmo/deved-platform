@@ -6,6 +6,7 @@ thumbnail: /content/blog/nexmo-ruby-v7-0-0-release/ruby-sdk-release.png
 author: bengreenberg
 published: true
 published_at: 2020-04-06T18:14:04.193Z
+category: release
 tags:
   - ruby
   - sdk
