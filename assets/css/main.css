@@ -3,5 +3,17 @@ div.nuxt-progress {
 }
 
 .Blog__Full-width {
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
+}
+
+.Vlt-container {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.Vlt-container .Vlt-grid {
+  margin-left: 0;
+  margin-right: 0;
 }

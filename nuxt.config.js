@@ -242,7 +242,7 @@ export default () => {
       '@vonagevolta/volta2/dist/css/volta.min.css',
       '@vonagevolta/volta2/dist/css/volta-error-page.min.css',
       '@vonagevolta/volta2/dist/css/volta-templates.min.css',
-      '@vonagevolta/volta2/dist/css/addons/volta-prism.min.css'
+      '@/assets/css/volta-prism-dark.css',
     ],
 
     plugins: [

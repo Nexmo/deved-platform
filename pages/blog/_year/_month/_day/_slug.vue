@@ -32,39 +32,51 @@
       </div>
     </div>
   </article> -->
-  <article class="Blog__post Vlt-container">
-    <header class="Vlt-grid">
-      <div class="Vlt-col">
-        <Breadcrumbs />
-      </div>
-      <div class="Vlt-grid__separator"></div>
-      <div class="Vlt-col">
-        <img :src="attributes.thumbnail" width="100%" />
-      </div>
-      <div class="Vlt-col">
-        <div class="Vlt-grid">
-          <div class="Vlt-col">
+  <section class="Blog__Full-width">
+    <article class="Blog__post Vlt-container">
+      <div class="Vlt-grid Vlt-grid--stack-flush">
+        <div class="Vlt-col">
+        </div>
+        <div class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs />
+        </div>
+        <div class="Vlt-col">
+        </div>
+        <div class="Vlt-grid__separator"></div>
+        <div class="Vlt-col">
+        </div>
+        <div class="Vlt-col Vlt-col--2of3">
+          <div class="Vlt-card Vlt-card--lesspadding">
+            <img :src="attributes.thumbnail" width="100%" />
             <h1>{{ title }}</h1>
-          </div>
-          <div class="Vlt-grid__separator"></div>
-          <div class="Vlt-col">
-            <Author :authorName="attributes.author" type="minicard" />
+            <div class="Vlt-margin--A-bottom3">
+              <div class="Vlt-col">
+                <Author :authorName="attributes.author" type="minicard" />
+                Published <strong>{{ attributes.published_at | moment("dddd, MMMM Do YYYY") }}</strong>
+                <Tags :tags="attributes.tags" />
+              </div>
+            </div>
+            <component :is="postContent" />
           </div>
         </div>
-      </div>
-    </header>
-    <main class="Vlt-col Vlt-prism--dark">
-      <component :is="postContent" />
-    </main>
-    <footer>
-      <div class="Vlt-card Vlt-bg-white Vlt-margin--A-top4">
-        <div class="Vlt-card__content">
-          <vue-disqus :shortname="disqusShortname" :identifier="route" :url="baseUrl"></vue-disqus>
+        <div class="Vlt-col">
+        </div>
+        <div class="Vlt-grid__separator"></div>
+        <div class="Vlt-col">
+        </div>
+        <div class="Vlt-col Vlt-col--2of3">
+          <div class="Vlt-card Vlt-bg-white">
+            <div class="Vlt-card__content">
+              <vue-disqus :shortname="disqusShortname" :identifier="route" :url="baseUrl"></vue-disqus>
+            </div>
+          </div>
+          <Author :authorName="attributes.author" type="card" />
+        </div>
+        <div class="Vlt-col">
         </div>
       </div>
-      <Author :authorName="attributes.author" type="card" class="Vlt-margin--A-top4" />
-    </footer>
-  </article>
+    </article>
+  </section>
 </template>
 
 <script>
@@ -124,12 +136,21 @@ export default {
 </script>
 
 <style scoped>
-.Vlt-container {
-  margin: auto;
+.Blog__post h1 {
+  margin: 1rem auto;
+  font-size: 3rem;
 }
 
 .Blog__post header {
   margin-bottom: 24px;
+}
+
+.Blog__post .frontmatter-markdown {
+  padding: auto 50px;
+}
+
+.Blog__post img {
+  border-radius: 6px;
 }
 
 .Blog__post .frontmatter-markdown >>> li,
@@ -139,8 +160,10 @@ export default {
 }
 
 .Blog__post .frontmatter-markdown >>> pre[class*=language-] {
-  font-size: 18px;
-  line-height: 1.6;
+  margin: 24px -50px;
+  font-size: 16px;
+  line-height: 1.4;
+  padding-left: 47px;
 }
 
 .Blog__post .frontmatter-markdown >>> p {
@@ -152,17 +175,11 @@ export default {
   word-break: normal;
 }
 
-.Blog__post .frontmatter-markdown >>> pre[class*=language-],
 .Blog__post .frontmatter-markdown >>> blockquote.Vlt-callout.Vlt-callout--tip {
   margin: 24px auto;
 }
 
 .Blog__post .frontmatter-markdown >>> p code {
-  border: 1px solid silver;
-  background: #f9f9fa;
-}
-
-.Blog__post .frontmatter-markdown >>> pre[class*=language-] {
   border: 1px solid silver;
   background: #f9f9fa;
 }
@@ -174,15 +191,24 @@ export default {
 }
 
 .Blog__post .frontmatter-markdown >>> .language-diff .token.inserted {
-  background: rgb(236, 238, 231);
+  color: #e84545;
+  background: #270404;
 }
 
 .Blog__post .frontmatter-markdown >>> .language-diff .token.deleted {
-  background: rgb(247, 236, 242);
+  color: #86d8b9;
+  background: #021a10;
 }
 
 .Blog__post .frontmatter-markdown >>> p img {
   display: block;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .Blog__post .frontmatter-markdown >>> pre[class*=language-] {
+    margin: 24px 10px;
+    padding-left: 12px;
+  }
 }
 </style>

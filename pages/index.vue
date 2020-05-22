@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="Blog__Full-width">
     <header class="Blog__Full-width">
       <SearchHero />
     </header>
@@ -55,6 +55,8 @@ export default {
 <style scoped>
 .Vlt-container {
   margin: auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .Blog__Card-container {
