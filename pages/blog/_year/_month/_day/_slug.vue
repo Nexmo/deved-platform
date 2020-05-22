@@ -21,7 +21,7 @@
                 >
                   &lt;/ {{ attributes.category }} &gt;
                 </NLink>
-                <Author :author-name="attributes.author" type="minicard" />
+                <Author v-if="attributes.author" :author-name="attributes.author" type="minicard" />
                 <span v-if="attributes.published_at">Published
                   <strong>{{
                     attributes.published_at | moment("dddd, MMMM Do YYYY")
