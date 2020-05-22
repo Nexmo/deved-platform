@@ -9,13 +9,7 @@
 </template>
 
 <script>
-import Author from "~/components/Author"
-
 export default {
-  components: {
-    Author,
-  },
-
   props: {
     post: {
       type: Object,
