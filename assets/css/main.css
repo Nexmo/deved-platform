@@ -17,3 +17,9 @@ div.nuxt-progress {
   margin-left: 0;
   margin-right: 0;
 }
+
+.Vlt-grid.Blog__Card-container {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+}

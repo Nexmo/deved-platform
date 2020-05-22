@@ -4,6 +4,29 @@
       <SearchHero />
     </header>
     <main class="Vlt-container">
+      <div class="Vlt-text-separator">
+        <span>Recent posts</span>
+      </div>
+      <div class="Vlt-grid Blog__Card-container">
+        <Card
+          v-for="post in posts"
+          :key="post.meta.resourcepath"
+          :post="post"
+        />
+      </div>
+      <div class="Vlt-text-separator">
+        <span>Tutorials</span>
+      </div>
+      <div class="Vlt-grid Blog__Card-container">
+        <Card
+          v-for="post in posts"
+          :key="post.meta.resourcepath"
+          :post="post"
+        />
+      </div>
+      <div class="Vlt-text-separator">
+        <span>Videos</span>
+      </div>
       <div class="Vlt-grid Blog__Card-container">
         <Card
           v-for="post in posts"
@@ -22,7 +45,7 @@
 
 <script>
 import SearchHero from "~/components/SearchHero"
-import Card from "~/components/Card"
+import Card from "~/components/Card2"
 
 export default {
   components: {
@@ -61,3 +84,16 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.Vlt-text-separator {
+  margin: 50px;
+}
+.Vlt-text-separator span {
+  text-transform: uppercase;
+  color: #868994;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+</style>
