@@ -4,7 +4,7 @@
       <Author :author-name="author" type="page" />
     </header>
     <main class="Vlt-container">
-      <div class="Vlt-grid Blog__Card-container">
+      <div class="Vlt-grid">
         <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
       </div>
     </main>

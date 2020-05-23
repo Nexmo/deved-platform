@@ -4,7 +4,7 @@
       <SearchHero />
     </header>
     <main class="Vlt-container">
-      <div class="Vlt-grid Blog__Card-container">
+      <div class="Vlt-grid Vlt-margin--A-top4">
         <Card
           v-for="post in posts"
           :key="post.meta.resourcepath"
@@ -14,7 +14,7 @@
     </main>
     <footer class="Blog__Full-width Vlt-center">
       <NLink to="/archive" no-prefetch class="Vlt-btn Vlt-btn--quaternary">
-        View Older Posts
+        View older posts
       </NLink>
     </footer>
   </section>

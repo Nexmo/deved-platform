@@ -3,7 +3,7 @@
     <main class="Vlt-container">
       <AisInstantSearchSsr>
         <AisHits>
-          <div slot-scope="{ items }" class="Vlt-grid Blog__Card-container">
+          <div slot-scope="{ items }" class="Vlt-grid">
             <Card v-for="item in items" :key="item.objectID" :post="item" />
           </div>
         </AisHits>
