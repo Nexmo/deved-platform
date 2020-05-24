@@ -8,7 +8,7 @@ author: stevelorello
 published: true
 published_at: 2020-02-24T21:51:52.337Z
 comments: true
-category: tutorial
+category: release
 tags:
   - dotnet
   - sdk

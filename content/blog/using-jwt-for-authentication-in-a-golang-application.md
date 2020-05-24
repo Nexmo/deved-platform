@@ -11,7 +11,6 @@ category: tutorial
 tags:
   - spotlight
   - jwt
-  - golang
   - go
 ---
 ![Developer Spotlight Programme](https://www.nexmo.com/wp-content/uploads/2019/08/blog-spotlight-banner.png "Developer Spotlight Programme")

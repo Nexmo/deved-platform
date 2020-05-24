@@ -5,7 +5,7 @@
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid Vlt-margin--A-top4">
-        <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
+        <MiniCard v-for="post in posts" :key="post.attributes.title" :post="post" />
       </div>
     </main>
   </section>
@@ -13,11 +13,11 @@
 
 <script>
 import Author from "~/components/Author.vue"
-import Card from "~/components/Card"
+import MiniCard from "~/components/MiniCard"
 
 export default {
   components: {
-    Card,
+    MiniCard,
     Author,
   },
   data() {

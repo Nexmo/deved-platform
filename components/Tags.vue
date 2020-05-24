@@ -25,17 +25,62 @@ export default {
 
 <style scoped>
 .Blog-badge--slack {
-  background: #871fff20;
-  color: #871fff;
+  background: #4a154b;
+  color: #fff;
 }
 
 .Blog-badge--vuejs {
-  background: #41b88320;
-  color: #41b883;
+  background-color: #41b883;
+  color: #35495e;
 }
 
 .Blog-badge--ruby {
-  background: #a9150120;
-  color: #a91401;
+  background-color: #cc342d;
+  color: #fff;
+}
+
+.Blog-badge--javascript {
+  background-color: #f7df1e;
+  color: #000000;
+}
+
+.Blog-badge--dotnet {
+  background-color: #5d2590;
+  color: #fff;
+}
+
+.Blog-badge--nodejs {
+  background-color: #3d8836;
+  color: #fff;
+}
+
+.Blog-badge--azure {
+  background-color: #007fff;
+  color: #fff;
+}
+
+.Blog-badge--zapier {
+  background-color: #ff4a00;
+  color: #fff;
+}
+
+.Blog-badge--go {
+  background-color: #e0ebf5;
+  color: #043c6f;
+}
+
+.Blog-badge--spotlight {
+  background-color: #871fff;
+  color: #fff;
+}
+
+.Blog-badge--php {
+  background-color: #23a1aa;
+  color: #fff;
+}
+
+.Blog-badge--aws {
+  background-color: #212b3a;
+  color: #faaf34;
 }
 </style>

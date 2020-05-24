@@ -1,13 +1,16 @@
 <template>
   <div class="Vlt-col Vlt-col--1of3 Vlt-col--M-1of2">
     <div class="Vlt-card--gradient-wrapper Vlt-gradient--blue-to-pink">
-      <div class="Vlt-card">
+      <div class="Vlt-card Vlt-center">
         <div class="Vlt-card__header">
           <Category :category="post.attributes.category" />
         </div>
         <NLink class="Vlt-card__content" :to="getPermalink(post)">
-          <h2>{{ post.attributes.title }}</h2>
+          <h2>{{ post.attributes.title | truncate(73, '...') }}</h2>
         </NLink>
+        <div class="Vlt-card__footer Vlt-card__footer--short Vlt-card__footer--noborder">
+          <Tags :tags="post.attributes.tags" />
+        </div>
       </div>
     </div>
   </div>
@@ -15,10 +18,12 @@
 
 <script>
 import Category from "~/components/Category"
+import Tags from "~/components/Tags"
 
 export default {
   components: {
     Category,
+    Tags,
   },
 
   props: {
@@ -51,25 +56,10 @@ export default {
 </script>
 
 <style scoped>
-.Vlt-card {
-  min-height: 175px;
-}
-
 .Vlt-card__content {
-  width: 100%;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-}
-
-.Vlt-card__header {
-  text-align: center;
+  display: block;
+  height: 75px;
+  overflow: hidden;
 }
 
 h2 {

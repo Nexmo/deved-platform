@@ -22,7 +22,10 @@
           <Author :author-name="post.attributes.author" type="name" />
         </small>
       </div>
-      <div class="Vlt-card__footer Vlt-card__footer--short Vlt-right">
+      <div class="Vlt-card__footer Vlt-card__footer--short Vlt-left">
+        <Tags :tags="post.attributes.tags" />
+      </div>
+      <div class="Vlt-card__footer Vlt-card__footer--short Vlt-card__footer--noborder Vlt-right">
         <NLink :to="getPermalink(post)" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">
           Read more
         </NLink>
@@ -32,6 +35,7 @@
 </template>
 
 <script>
+import Tags from "~/components/Tags"
 import Category from "~/components/Category"
 import Author from "~/components/Author"
 
@@ -39,6 +43,7 @@ export default {
   components: {
     Category,
     Author,
+    Tags,
   },
 
   props: {
@@ -71,6 +76,21 @@ export default {
 </script>
 
 <style scoped>
+.Vlt-card__footer {
+  line-height: 30px;
+}
+
+.Vlt-card__footer + .Vlt-card__footer--noborder {
+  margin-top: -37px;
+}
+
+.Vlt-card__footer >>> .Vlt-badge-group {
+  width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .Vlt-card__corner {
   padding: 0;
 }
