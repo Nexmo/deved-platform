@@ -2,7 +2,7 @@
   <div class="Blog-hero">
     <div class="Blog-hero__content">
       <h3>
-        Developer <strong>{{ title }}</strong> content from the team at Vonage.
+        <strong>{{ title }}</strong> content from the team at Vonage.
       </h3>
     </div>
   </div>
@@ -46,6 +46,19 @@ export default {
   margin: auto;
 }
 
+.Blog-hero__content h3 {
+  text-align: center;
+  color: black;
+  line-height: 1;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.Blog-hero__content h3 strong {
+  text-transform: capitalize;
+}
+
 @media only screen and (max-width: 775px) {
   .Blog-hero {
     background-position-x: -34px;
@@ -70,16 +83,8 @@ export default {
   }
 
   .Blog-hero__content h3 {
-    background-color: rgba(255, 255, 255, 0.623);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
   }
-}
-
-.Blog-hero__content h3 {
-  text-align: center;
-  color: black;
-  line-height: 1;
-  margin-bottom: 40px;
-  font-size: 1.5em;
-  font-weight: normal;
 }
 </style>

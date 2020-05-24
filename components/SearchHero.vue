@@ -117,8 +117,9 @@ export default {
 
 <style scoped>
 .Logo__inline {
-  height: 24px;
+  height: 26px;
   vertical-align: middle;
+  margin-left: 6px;
 }
 
 .Blog-hero {
@@ -145,6 +146,19 @@ export default {
   -webkit-box-align: center;
   align-items: center;
   margin: auto;
+}
+
+.Blog-hero__content h3 {
+  text-align: center;
+  color: black;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.Blog-hero__search {
+  width: 100%;
 }
 
 .Blog-hero__search-wrapper,
@@ -214,16 +228,13 @@ export default {
   }
 }
 
-.Blog-hero__content h3 {
-  text-align: center;
-  color: black;
-  line-height: 1;
-  margin-bottom: 40px;
-  font-size: 1.5em;
-  font-weight: normal;
-}
+@media only screen and (max-width: 495px) {
+  .Blog-hero__content h3 {
+    line-height: 1.7;
+  }
 
-.Blog-hero__search {
-  width: 100%;
+  .Logo__inline {
+    height: 36px;
+  }
 }
 </style>
