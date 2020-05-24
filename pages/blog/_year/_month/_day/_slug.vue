@@ -4,7 +4,7 @@
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs />
+          <Breadcrumbs v-if="title" :title="title" :route="route" />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
