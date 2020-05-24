@@ -32,6 +32,7 @@
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^2.7.0",
     "vue-moment": "^4.1.0",
+    "vue-pluralize": "0.0.2",
     "yaml": "^1.8.3"
   },
   "keywords": [],

@@ -18,7 +18,7 @@
         <div :key="`${category}-separator`" class="Vlt-text-separator">
           <span>
             <NLink :to="`/blog/category/${category}`">
-              {{ category }}
+              {{ category | pluralize(2) }}
             </NLink>
           </span>
         </div>

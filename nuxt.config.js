@@ -297,6 +297,7 @@ export default () => {
       { src: "@/plugins/filters.js" },
       { src: "@/plugins/vue-instantsearch.js" },
       { src: "@/plugins/vue-disqus.js" },
+      { src: "@/plugins/vue-pluralize.js" },
     ],
 
     /*
