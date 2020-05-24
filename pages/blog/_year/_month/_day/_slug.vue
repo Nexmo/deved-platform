@@ -15,12 +15,7 @@
             <h1>{{ title }}</h1>
             <div class="Vlt-margin--A-bottom3">
               <div class="Vlt-col">
-                <NLink
-                  :to="`/blog/category/${attributes.category}`"
-                  class="Blog__Category Vlt-purple-dark"
-                >
-                  &lt;/ {{ attributes.category }} &gt;
-                </NLink>
+                <Category v-if="attributes.category" :category="attributes.category" />
                 <Author v-if="attributes.author" :author-name="attributes.author" type="minicard" />
                 <span v-if="attributes.published_at">Published
                   <strong>{{
@@ -29,6 +24,7 @@
                 <Tags :tags="attributes.tags" />
               </div>
             </div>
+            <BackToTop />
             <component :is="postContent" />
           </div>
         </div>
@@ -45,7 +41,6 @@
               />
             </div>
           </div>
-          <Author :author-name="attributes.author" type="card" />
         </div>
         <div class="Vlt-col" />
       </div>
@@ -54,12 +49,16 @@
 </template>
 
 <script>
+import BackToTop from "~/components/BackToTop"
+import Category from "~/components/Category"
 import Author from "~/components/Author"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import Tags from "~/components/Tags"
 
 export default {
   components: {
+    BackToTop,
+    Category,
     Author,
     Breadcrumbs,
     Tags,
