@@ -6,6 +6,7 @@ thumbnail: /content/blog/using-jwt-for-authentication-in-a-golang-application/e_
 author: victorsteven
 published: true
 published_at: 2020-03-13T22:13:07.421Z
+comments: true
 category: tutorial
 tags:
   - spotlight

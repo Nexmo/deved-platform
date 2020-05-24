@@ -6,6 +6,7 @@ thumbnail: /content/blog/introducing-the-messages-api-sandbox/e_messaging-api-sa
 author: martyndavies
 published: true
 published_at: 2020-04-08T17:45:13.602Z
+comments: true
 category: tutorial
 tags:
   - messages-api

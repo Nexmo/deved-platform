@@ -4,6 +4,7 @@ description: Vonage Video API (formerly TokBox OpenTok) and what you can build w
 author: joebloggs
 published: false
 published_at: 2020-04-11T10:30:00
+comments: true
 category: misc
 tags:
   - post

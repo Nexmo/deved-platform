@@ -6,6 +6,7 @@ thumbnail: /content/blog/greg-holmes-joins-the-vonage-developer-education-team/g
 author: gregholmes
 published: true
 published_at: 2020-03-24T19:06:41.798Z
+comments: false
 category: new-starter
 tags:
   - new-starter

@@ -7,6 +7,7 @@ thumbnail: /content/blog/deploying-an-aws-lambda-function-for-vonage-voice-callb
 author: adamculp
 published: true
 published_at: 2020-04-02T22:36:24.811Z
+comments: true
 category: tutorial
 tags:
   - php

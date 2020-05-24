@@ -7,6 +7,7 @@ thumbnail: /content/blog/how-to-send-sms-confirmations-for-new-stripe-charges-wi
 author: nahrinjalal
 published: true
 published_at: 2020-04-03T22:40:45.338Z
+comments: true
 category: tutorial
 tags:
   - zapier
