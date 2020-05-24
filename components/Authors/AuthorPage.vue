@@ -79,7 +79,7 @@ export default {
 <style scoped>
 .Blog-hero {
   background: white;
-  width: 100wh;
+  width: 100%;
   display: -webkit-box;
   display: flex;
   margin-top: -12px;

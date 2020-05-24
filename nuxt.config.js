@@ -14,6 +14,7 @@ const builtAt = new Date().toISOString()
 const routes = []
 const posts = []
 const dynamicContent = glob.sync("**/*.md", { cwd: "content" })
+const itemsPerArchivePage = 12
 
 dynamicContent.forEach((local) => {
   const [type, file] = local.split("/")
@@ -72,7 +73,7 @@ posts.forEach((post) => {
 for (
   let page = 1;
   page <=
-  posts.filter((post) => post.attributes.published !== false).length / 6;
+  posts.filter((post) => post.attributes.published !== false).length / itemsPerArchivePage;
   page++
 ) {
   const route = `/archive/${page}`
@@ -100,6 +101,7 @@ export default () => {
     env: {
       disqusShortname: process.env.DISQUS_SHORTNAME || "vonage-dev-blog-dev",
       baseUrl: process.env.BASE_URL || "http://localhost:3000",
+      itemsPerArchivePage: itemsPerArchivePage
     },
 
     mode: "universal",

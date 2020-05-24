@@ -3,7 +3,7 @@
     <main class="Vlt-container">
       <AisInstantSearchSsr>
         <AisHits>
-          <div slot-scope="{ items }" class="Vlt-grid">
+          <div slot-scope="{ items }" class="Vlt-grid Vlt-margin--A-top4">
             <Card v-for="item in items" :key="item.objectID" :post="item" />
           </div>
         </AisHits>
@@ -86,7 +86,7 @@ export default {
       .findResultsState({
         page: route.params.page - 1,
         filters: filters,
-        hitsPerPage: 6,
+        hitsPerPage: process.env.itemsPerArchivePage,
       })
       .then(() => ({
         instantSearchState: instantsearch.getState(),

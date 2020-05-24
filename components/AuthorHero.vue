@@ -2,7 +2,7 @@
   <div class="Blog-hero">
     <div class="Blog-hero__content">
       <h3>
-        Developer <strong>{{ title }}</strong> content from the team at Vonage.
+        All the amazing people who contribute to our content.
       </h3>
     </div>
   </div>

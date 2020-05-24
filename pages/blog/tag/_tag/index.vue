@@ -4,7 +4,7 @@
       <CategoryHero :title="`#${tag}`" />
     </header>
     <main class="Vlt-container">
-      <div class="Vlt-grid">
+      <div class="Vlt-grid Vlt-margin--A-top4">
         <Card v-for="post in posts" :key="post.attributes.title" :post="post" />
       </div>
     </main>
