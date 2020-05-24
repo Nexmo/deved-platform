@@ -306,8 +306,6 @@ export default () => {
      */
     build: {
       transpile: ["vue-instantsearch", "instantsearch.js/es"],
-      maxChunkSize: 100000,
-      extractCSS: true,
       extend(config) {
         const classMap = {
           blockquote: "Vlt-callout Vlt-callout--tip",

@@ -83,4 +83,14 @@ export default {
   background-color: #212b3a;
   color: #faaf34;
 }
+
+.Blog-badge--java {
+  background-color:#01476e;
+  color:#ff8f8f;
+}
+
+.Blog-badge--python {
+  background-color:#1e38bb;
+  color:#ffdf5b;
+}
 </style>
