@@ -109,7 +109,7 @@ export default {
 
 <style scoped>
 .Vlt-text-separator {
-  margin: 50px 0;
+  margin: 50px 5%;
 }
 
 .Vlt-grid + .Vlt-text-separator {
