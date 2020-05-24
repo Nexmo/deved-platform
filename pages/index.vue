@@ -8,7 +8,7 @@
         <span>Featured posts</span>
       </div>
       <div class="Vlt-grid">
-        <FeatureCard
+        <Card
           v-for="post in featuredPosts"
           :key="post.meta.resourcepath"
           :post="post"
@@ -23,7 +23,7 @@
           </span>
         </div>
         <div :key="`${category}-grid`" class="Vlt-grid">
-          <Card
+          <MiniCard
             v-for="post in getCategoryPosts(category)"
             :key="post.meta.resourcepath"
             :post="post"
@@ -41,13 +41,13 @@
 
 <script>
 import SearchHero from "~/components/SearchHero"
-import FeatureCard from "~/components/FeatureCard"
 import Card from "~/components/Card"
+import MiniCard from "~/components/MiniCard"
 
 export default {
   components: {
-    FeatureCard,
     Card,
+    MiniCard,
     SearchHero,
   },
 

@@ -8,23 +8,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-  },
-}
-</script>
-
 <style scoped>
 .Blog-hero {
   background: white
-    url("../assets/images/illustrations/Brand-mobile-apis-services.png")
-    no-repeat scroll 12px 24px;
-  background-size: 150px;
+    url("../assets/images/illustrations/Brand-celebration.png")
+    no-repeat scroll 12px 100%;
+  background-size: 250px;
   width: 100%;
   height: 200px;
   display: -webkit-box;
@@ -59,12 +48,6 @@ export default {
 }
 
 @media only screen and (max-width: 575px) {
-  .Blog-hero {
-    background-position-y: calc(100% - 24px);
-    background-position-x: 24px;
-    background-size: 200px;
-  }
-
   .Blog-hero__content {
     width: 90%;
   }
