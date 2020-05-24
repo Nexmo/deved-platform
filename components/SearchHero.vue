@@ -1,7 +1,7 @@
 <template>
   <div class="Blog-hero">
     <div class="Blog-hero__content">
-      <h3>Developer content from the team at Vonage.</h3>
+      <h3>Developer content from the team at <img src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg" class="Logo__inline"></h3>
       <client-only>
         <AisInstantSearch
           :search-client="searchClient"
@@ -116,6 +116,11 @@ export default {
 </script>
 
 <style scoped>
+.Logo__inline {
+  height: 24px;
+  vertical-align: middle;
+}
+
 .Blog-hero {
   background: white
     url("../assets/images/illustrations/Brand-activate-conversations.png")
@@ -201,9 +206,7 @@ export default {
 
 @media only screen and (max-width: 575px) {
   .Blog-hero {
-    background-position-y: calc(100% - 24px);
-    background-position-x: 24px;
-    background-size: 200px;
+    background: white;
   }
 
   .Blog-hero__content {
