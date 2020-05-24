@@ -11,21 +11,31 @@
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-card--lesspadding">
-            <img :src="attributes.thumbnail" width="100%">
-            <h1>{{ title }}</h1>
-            <div class="Vlt-margin--A-bottom3">
-              <div class="Vlt-col">
-                <Category v-if="attributes.category" :category="attributes.category" />
-                <Author v-if="attributes.author" :author-name="attributes.author" type="minicard" />
-                <span v-if="attributes.published_at">Published
-                  <strong>{{
-                    attributes.published_at | moment("dddd, MMMM Do YYYY")
-                  }}</strong></span>
-                <Tags :tags="attributes.tags" />
-              </div>
+            <div class="Vlt-card__header">
+              <img :src="attributes.thumbnail" width="100%">
             </div>
-            <BackToTop />
-            <component :is="postContent" />
+            <div v-if="attributes.category" class="Vlt-card__corner Vlt-margin--A-top3">
+              <Category :category="attributes.category" />
+            </div>
+            <div class="Vlt-card__header Vlt-margin--A-top3">
+              <h1>{{ title }}</h1>
+              <BackToTop />
+            </div>
+            <div v-if="attributes.author" class="Vlt-card__content Vlt-margin--A-top3">
+              <Author :author-name="attributes.author" type="minicard" />
+            </div>
+            <div v-if="attributes.published_at" class="Vlt-card__content Vlt-margin--A-top1">
+              <span>Published
+                <strong>{{
+                  attributes.published_at | moment("dddd, MMMM Do YYYY")
+                }}</strong></span>
+            </div>
+            <div v-if="attributes.tags" class="Vlt-card__content Vlt-margin--A-top1">
+              <Tags :tags="attributes.tags" />
+            </div>
+            <div class="Vlt-card__content Vlt-margin--A-top3">
+              <component :is="postContent" />
+            </div>
           </div>
         </div>
         <div class="Vlt-col" />
