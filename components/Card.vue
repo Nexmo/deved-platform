@@ -1,30 +1,5 @@
 <template>
   <div class="Vlt-col Vlt-col--1of2">
-    <!-- <div class="blog-card">
-      <div class="photo-container">
-        <div
-          class="photo"
-          :style="`background-image: url('${post.attributes.thumbnail}');`"
-        />
-      </div>
-      <div class="description">
-        <h2>{{ post.attributes.title }}</h2>
-        <p v-if="post.attributes.published_at">
-          <small>Published
-            <strong>{{
-              post.attributes.published_at | moment("dddd, MMMM Do YYYY")
-            }}</strong>
-            <span v-if="post.attributes.author">
-              by
-              <Author :author-name="post.attributes.author" type="name" /></span></small>
-        </p>
-      </div>
-      <div class="footer">
-        <NLink :to="getPermalink(post)">
-          Read More
-        </NLink>
-      </div>
-    </div> -->
     <div class="Vlt-card Vlt-bg-white">
       <div class="Vlt-card__image" :style="`background-image: url('${post.attributes.thumbnail}'); background-size: cover; background-position: center; height: 200px`" />
       <div class="Vlt-card__corner">
@@ -40,14 +15,17 @@
           {{ post.attributes.title }}
         </h4>
       </div>
-      <div class="Vlt-card__content">
-        <small>Published
+      <div class="Vlt-card__content Vlt-grey-dark">
+        <small v-if="post.attributes.published_at">
+          Published
           <strong>{{
             post.attributes.published_at | moment("dddd, MMMM Do YYYY")
           }}</strong>
-          <span v-if="post.attributes.author">
-            by
-            <Author :author-name="post.attributes.author" type="name" /></span></small>
+        </small>
+        <small v-if="post.attributes.author">
+          by
+          <Author :author-name="post.attributes.author" type="name" />
+        </small>
       </div>
       <div class="Vlt-card__footer Vlt-card__footer--short Vlt-right">
         <NLink :to="getPermalink(post)" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">
@@ -119,5 +97,18 @@ export default {
 
 .Category-color__new-starter {
   color: #06ba77;
+}
+
+.Vlt-card__content small >>> a.Author__Name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.Vlt-card__content small >>> a.Author__Name:visited {
+  color: #202020;
+}
+
+.Vlt-card__header {
+  padding-bottom: 8px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="Vlt-card Vlt-bg-white">
+  <div class="Vlt-card Vlt-bg-white Author__Card">
     <div
       v-if="author.image_url"
       class="Vlt-card__image Vlt-gradient--blue-to-purple"

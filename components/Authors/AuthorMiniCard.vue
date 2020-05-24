@@ -1,5 +1,5 @@
 <template>
-  <NLink :to="`/authors/${author.username}`" class="block">
+  <NLink :to="`/authors/${author.username}`" class="block Author__Mini-card">
     <img :src="author.image_url" alt="">
     <h3>{{ author.name }}</h3>
     <p v-if="author.spotlight">

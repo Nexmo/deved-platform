@@ -1,5 +1,5 @@
 <template>
-  <div class="Blog-hero">
+  <div class="Blog-hero Author__Page">
     <div class="Blog-hero__content">
       <img :src="author.image_url">
       <h3>

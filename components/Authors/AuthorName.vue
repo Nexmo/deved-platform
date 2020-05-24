@@ -1,5 +1,7 @@
 <template>
-  <strong>{{ author.name }}</strong>
+  <NLink :to="`/authors/${author.username}`" class="Author__Name">
+    {{ author.name }}
+  </NLink>
 </template>
 
 <script>
