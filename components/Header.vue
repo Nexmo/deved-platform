@@ -24,14 +24,20 @@
         </div>
       </NLink>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
-        <a
-          href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
-          class="Vlt-btn Vlt-btn--small Vlt-btn--secondary"
-        >Sign up</a>
+        <SlackSocialButton
+          link="https://developer.nexmo.com/community/slack"
+          class="Vlt-btn--small"
+        >
+          Join our Slack
+        </SlackSocialButton>
         <TwitterSocialButton
           link="https://twitter.com/VonageDev"
           class="Vlt-btn--small"
         />
+        <a
+          href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
+          class="Vlt-btn Vlt-btn--small Vlt-btn--secondary"
+        >Sign up</a>
       </div>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-S-only">
         <a
@@ -58,6 +64,11 @@
     >
       <ul class="Blog-nav__list">
         <li class="Blog-nav__item Vlt-center">
+          <SlackSocialButton link="https://developer.nexmo.com/community/slack">
+            Join us on Slack
+          </SlackSocialButton>
+        </li>
+        <li class="Blog-nav__item Vlt-center">
           <a
             href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
             class="Vlt-btn Vlt-btn--secondary Vlt-text-white"
@@ -75,10 +86,12 @@
 
 <script>
 import TwitterSocialButton from "~/components/SocialButtons/TwitterSocialButton"
+import SlackSocialButton from "~/components/SocialButtons/SlackSocialButton"
 
 export default {
   components: {
     TwitterSocialButton,
+    SlackSocialButton
   },
   data() {
     return {
