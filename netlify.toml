@@ -1,8 +1,6 @@
 [build]
-  publish = "dist/"
-
+  publish = "dist"
   command = "npm run generate"
-
   functions = "scripts"
 
 [[plugins]]
@@ -12,6 +10,17 @@
   package = "netlify-plugin-algolia-index"
     [plugins.inputs]
       exclude = ['/admin', '/200.html', '/archive', '/blog/tag', '/blog/category']
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+    [plugins.inputs]
+      buildDir = "dist"
+
+[[plugins]]
+  package = "netlify-plugin-no-more-404"
+    [plugins.inputs]
+      on404 = "warn" 
+      cacheKey = "vonage-dev-blog"
 
 [[redirects]]
   from = "/admin"
