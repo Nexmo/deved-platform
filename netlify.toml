@@ -9,13 +9,12 @@
   package = "@netlify/plugin-functions-install-core"
 
 [[plugins]]
-  package = "./plugins/netlify-plugin-algolia-index"
+  package = "netlify-plugin-algolia-index"
     [plugins.inputs]
-      exclude = ['/admin']
+      exclude = ['/admin', '/200.html', '/archive', '/blog/tag', '/blog/category']
 
 [[redirects]]
   from = "/admin"
   to = "/admin/"
   status = 301
   force = true
-  
