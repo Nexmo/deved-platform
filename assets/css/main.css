@@ -17,3 +17,35 @@ div.nuxt-progress {
   margin-left: 0;
   margin-right: 0;
 }
+
+@font-face {
+  font-family: 'Spezia';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-SemiBold.woff2") format("woff2"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-SemiBold.woff") format("woff"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spezia';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-WideMedium.eot?#iefix") format("embedded-opentype"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-WideMedium.woff2") format("woff2"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-WideMedium.woff") format("woff"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-WideMedium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spezia';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-WideMedium.eot?#iefix") format("embedded-opentype"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-WideMedium.woff2") format("woff2"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-WideMedium.woff") format("woff"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-WideMedium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spezia';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-Regular.eot?#iefix") format("embedded-opentype"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-Regular.woff2") format("woff2"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-Regular.woff") format("woff"), url("../../node_modules/@vonagevolta/volta2/fonts/Spezia-Regular.ttf") format("truetype");
+  font-display: swap;
+}

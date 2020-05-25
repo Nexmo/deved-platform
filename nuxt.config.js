@@ -128,7 +128,7 @@ export default () => {
 
     head: {
       title: indexTitle,
-      titleTemplate: `%s >> ${baseTitle}`,
+      titleTemplate: `%s :: ${baseTitle}`,
       meta: [
         { charset: "utf-8" },
         { name: 'keywords', content: 'developer tutorials, developer content, node sdk, java sdk, vonage, nexmo, python sdk, ruby sdk, go sdk, send sms, make calls, apis, communication apis'},
@@ -198,7 +198,7 @@ export default () => {
         path: '/feed.xml',
         create (feed) {
           feed.options = {
-            title: `${indexTitle} >> ${baseTitle}`,
+            title: `${indexTitle} :: ${baseTitle}`,
             link: `${baseUrl}/feed.xml`,
             description: baseDescription,
           }
@@ -245,11 +245,11 @@ export default () => {
     },
 
     css: [
-      "@/assets/css/main.css",
       "@vonagevolta/volta2/dist/css/volta.min.css",
       "@vonagevolta/volta2/dist/css/volta-error-page.min.css",
       "@vonagevolta/volta2/dist/css/volta-templates.min.css",
       "@/assets/css/volta-prism-dark.css",
+      "@/assets/css/main.css",
     ],
 
     plugins: [

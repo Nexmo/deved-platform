@@ -37,6 +37,7 @@
         <a
           href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
           class="Vlt-btn Vlt-btn--small Vlt-btn--secondary"
+          rel="noreferrer"
         >Sign up</a>
       </div>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-S-only">
@@ -72,6 +73,7 @@
           <a
             href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
             class="Vlt-btn Vlt-btn--secondary Vlt-text-white"
+            rel="noreferrer"
           >Sign up</a>
         </li>
         <li class="Blog-nav__item Vlt-center">

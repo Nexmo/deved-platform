@@ -77,7 +77,7 @@ export default {
 
   head() {
     return {
-      title: `${this.author.name} >> ${this.spotlight ? 'Spotlight Contributor' : this.author.title}`
+      title: `${this.author.name} :: ${this.spotlight ? 'Spotlight Contributor' : this.author.title}`
     }
   },
 }

@@ -98,9 +98,9 @@ export default {
 
   head() {
     return {
-      title: "Vonage Developer Blog",
+      title: "We <3 Content :: Developer content from the team at Vonage",
       script: [
-        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
+        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js", defer: true },
       ],
     }
   },

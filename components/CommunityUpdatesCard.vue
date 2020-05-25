@@ -37,10 +37,14 @@
               </div>
             </div>
             <small class="Vlt-form__element__hint">By signing up to our communications blog, you accept our
-              <a href="https://www.nexmo.com/privacy-policy" target="_blank">privacy policy</a>, which sets out how we use your data and the rights you have in
+              <a href="https://www.nexmo.com/privacy-policy" 
+                 rel="noreferrer" target="_blank"
+              >privacy policy</a>, which sets out how we use your data and the rights you have in
               respect of your data. You can opt out of receiving our updates by
               clicking the unsubscribe link in the email or by emailing us at
-              <a href="mailto:privacy@nexmo.com" target="_blank">privacy@nexmo.com</a>.</small>
+              <a href="mailto:privacy@nexmo.com" 
+                 rel="noreferrer"target="_blank"
+              >privacy@nexmo.com</a>.</small>
           </div>
         </form>
       </div>

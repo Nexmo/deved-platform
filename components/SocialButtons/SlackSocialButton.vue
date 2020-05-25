@@ -5,6 +5,7 @@
     :class="{ 'Vlt-btn--icon': !hasDefaultSlot }"
     :href="`${link}?utm_source=blog&utm_medium=deved&utm_campaign=slack-social-link`"
     target="_blank"
+    rel="noreferrer"
   >
     <svg>
       <image
