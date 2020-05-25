@@ -5,10 +5,12 @@
         <img
           class="Vlt-M-plus"
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
+          alt="Vonage Logo :: Now we're talking"
         >
         <img
           class="Vlt-S-only"
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg"
+          alt="Vonage Logo :: Now we're talking"
         >
         <div
           class="Vlt-badge Vlt-M-plus Vlt-badge--small Vlt-badge--transparent"

@@ -44,7 +44,7 @@
                 }"
               >
                 <template slot="item" slot-scope="{ item }">
-                  <img :src="item.attributes.thumbnail" alt="">
+                  <img :src="item.attributes.thumbnail" :alt="item.title">
                   <h2>
                     <nuxt-link :to="item.permalink" no-prefetch>
                       {{ item.title }}

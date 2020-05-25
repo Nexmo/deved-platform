@@ -14,6 +14,7 @@
     <div class="Vlt-col Blog-error">
       <img
         src="../../node_modules/@vonagevolta/volta2/demo/templates/assets/img/error-404.svg"
+        alt="An image showing that an error has occured"
       >
     </div>
   </div>

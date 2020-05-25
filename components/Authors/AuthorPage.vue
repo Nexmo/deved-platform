@@ -1,7 +1,7 @@
 <template>
   <div class="Blog-hero Author__Page">
     <div class="Blog-hero__content">
-      <img :src="author.image_url">
+      <img :src="author.image_url" :alt="author.name">
       <h3>
         {{ author.name }}<br><small
           v-if="!author.spotlight"

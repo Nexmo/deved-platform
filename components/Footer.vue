@@ -7,6 +7,7 @@
             <img
               src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark--white.svg"
               width="100"
+              alt="Vonage Logo :: Now we're talking"
             >
           </h2>
           <ul>
