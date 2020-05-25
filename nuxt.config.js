@@ -1,6 +1,5 @@
 import fm from "front-matter"
 import * as fs from "fs"
-import * as sw from "stopword"
 import glob from "glob"
 import h2t from "html-to-text"
 import markdownIt from "markdown-it"
@@ -81,20 +80,6 @@ for (
     routes.push(route)
   }
 }
-
-const customStopWords = [
-  "so",
-  "far",
-  "now",
-  "ever",
-  "wanted",
-  "stuck",
-  "and",
-  "just",
-  "very",
-  "easy",
-  ...sw.en,
-]
 
 export default () => {
   return {
@@ -181,96 +166,7 @@ export default () => {
     modules: [
       // Doc: https://http.nuxtjs.org
       "@nuxtjs/dotenv",
-      "@nuxt/http",
-      "~/modules/json-output.js",
-    ],
-
-    buildModules: ["@nuxtjs/feed", "@nuxtjs/sitemap"],
-
-    jsonOutput: {
-      items: () => {
-        const trimPosts = []
-
-        posts.forEach((post) => {
-          trimPosts.push({
-            objectID: post.permalink,
-            title: post.title,
-            attributes: post.attributes,
-            description: post.description,
-            thumbnail: post.thumbnail,
-            tags: post.tags,
-            published_at: post.published_at,
-            permalink: post.permalink,
-            keywords: sw
-              .removeStopwords(
-                post.raw
-                  .replace(/[^A-Za-z0-9\s]/g, " ") // replace punctuation
-                  .replace(/[\r\n]+/g, " ") // replace newlines
-                  .replace(/\s{2,}/g, " ") // replace whitespace
-                  .slice(0, 9000) // limit length overall
-                  .toLowerCase() // lowcase for consistency
-                  .split(" "),
-                customStopWords
-              )
-              .join(" "),
-          })
-        })
-
-        return trimPosts
-      },
-    },
-
-    sitemap: {
-      hostname: "https://vonage-dev-blog.netlify.app",
-      gzip: true,
-      lastmod: builtAt,
-      exclude: ["/admin/**"],
-      routes: routes,
-    },
-
-    feed: [
-      {
-        path: "/feed.xml",
-        async create(feed) {
-          feed.options = {
-            title: "Vonage Developer Blog",
-            description: "Vonage Developer Blog feed!",
-          }
-
-          posts.forEach((post) => {
-            feed.addItem({
-              title: post.title,
-              description: post.description ? post.description : "",
-              id: post.permalink,
-              link: post.permalink,
-              content: post.html,
-            })
-          })
-        },
-        cacheTime: 1000 * 60 * 15,
-        type: "rss2",
-      },
-      {
-        path: "/feed.json",
-        async create(feed) {
-          feed.options = {
-            title: "Vonage Developer Blog",
-            description: "Vonage Developer Blog feed!",
-          }
-
-          posts.forEach((post) => {
-            feed.addItem({
-              title: post.title,
-              description: post.description ? post.description : "",
-              id: post.permalink,
-              link: post.permalink,
-              content: post.html,
-            })
-          })
-        },
-        cacheTime: 1000 * 60 * 15,
-        type: "json1",
-      },
+      "@nuxt/http"
     ],
 
     generate: {

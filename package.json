@@ -27,7 +27,6 @@
     "markdown-it-front-matter": "^0.2.1",
     "markdown-it-prism": "^2.0.5",
     "nuxt": "^2.5.1",
-    "stopword": "^1.0.0",
     "vue-disqus": "^3.0.5",
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^2.7.0",
@@ -37,8 +36,6 @@
   },
   "keywords": [],
   "devDependencies": {
-    "@nuxtjs/feed": "^1.1.0",
-    "@nuxtjs/sitemap": "^2.2.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.0.0",
     "eslint-loader": "^4.0.2",
