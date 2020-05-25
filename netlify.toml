@@ -9,7 +9,7 @@
 [[plugins]]
   package = "netlify-plugin-algolia-index"
     [plugins.inputs]
-      exclude = ['/admin', '/200.html', '/archive', '/blog/tag', '/blog/category']
+      exclude = ['/admin', '/404.html', '/archive', '/blog/tag', '/blog/category']
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
