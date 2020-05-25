@@ -47,5 +47,11 @@ export default {
       posts: imports
     }
   },
+
+  head() {
+    return {
+      title: `${this.tag} content from the team at Vonage`
+    }
+  },
 }
 </script>

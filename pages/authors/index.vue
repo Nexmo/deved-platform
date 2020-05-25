@@ -39,5 +39,11 @@ export default {
       authors: authors,
     }
   },
+
+  head() {
+    return {
+      title: `All the amazing people who contribute to our content`
+    }
+  },
 }
 </script>

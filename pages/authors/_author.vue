@@ -46,5 +46,11 @@ export default {
       posts: imports,
     }
   },
+
+  head() {
+    return {
+      title: `We <3 our contributors`
+    }
+  },
 }
 </script>

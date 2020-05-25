@@ -47,5 +47,11 @@ export default {
       posts: imports
     }
   },
+
+  head() {
+    return {
+      title: `${this.category} content from the team at Vonage`
+    }
+  },
 }
 </script>

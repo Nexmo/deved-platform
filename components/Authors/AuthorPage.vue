@@ -67,11 +67,18 @@ export default {
     WebsiteSocialButton,
     YouTubeSocialButton,
   },
+
   props: {
     author: {
       type: Object,
       required: true,
     },
+  },
+
+  head() {
+    return {
+      title: `${this.author.name} >> ${this.spotlight ? 'Spotlight Contributor' : this.author.title}`
+    }
   },
 }
 </script>

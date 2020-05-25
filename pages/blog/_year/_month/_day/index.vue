@@ -52,5 +52,11 @@ export default {
       posts: imports
     }
   },
+
+  head() {
+    return {
+      title: `Vonage developer content from ${this.monthName} ${this.dayTh}, ${this.year}`
+    }
+  },
 }
 </script>

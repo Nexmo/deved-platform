@@ -80,7 +80,9 @@ export default {
   components: {
     Card,
   },
+
   mixins: [rootMixin],
+
   asyncData({ route }) {
     return instantsearch
       .findResultsState({
@@ -92,8 +94,15 @@ export default {
         instantSearchState: instantsearch.getState(),
       }))
   },
+
   beforeMount() {
     instantsearch.hydrate(this.instantSearchState)
+  },
+
+  head() {
+    return {
+      title: `All our great content from the archives`
+    }
   },
 }
 </script>
