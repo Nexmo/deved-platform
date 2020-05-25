@@ -8,6 +8,11 @@
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
 
+[[plugins]]
+  package = "./plugins/netlify-plugin-algolia-index"
+    [plugins.inputs]
+      exclude = ['/admin']
+
 [[redirects]]
   from = "/admin"
   to = "/admin/"
