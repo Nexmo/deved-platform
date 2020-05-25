@@ -9,9 +9,13 @@ import markdownItPrism from "markdown-it-prism"
 import Mode from "frontmatter-markdown-loader/mode"
 import path from "path"
 import moment from "moment"
+import { authors } from "./content/authors.json"
 
 const builtAt = new Date().toISOString()
-const baseUrl = 'http://localhost:3000'
+const baseUrl = process.env.BASE_URL || 'http://localhost:3000'
+const indexTitle = 'Developer content from the team at Vonage'
+const baseTitle = 'Vonage Developer Blog'
+const baseDescription = 'Great developer and spotlight content from the team at Vonage, including posts on our Java, Node.js, Python, DotNet, Ruby and Go SDKs'
 const routes = []
 const posts = []
 const dynamicContent = glob.sync("**/*.md", { cwd: "content" })
@@ -43,8 +47,14 @@ dynamicContent.forEach((local) => {
   routes.push(post.permalink)
 })
 
+const categories = []
+
 posts.forEach((post) => {
   if (post.attributes.category) {
+    if (categories.indexOf(post.attributes.category) === -1) {
+      categories.push(post.attributes.category)
+    }
+
     const route = `/${post.attributes.type}/category/${post.attributes.category}`
 
     if (routes.indexOf(route) === -1) {
@@ -109,16 +119,20 @@ export default () => {
   return {
     env: {
       disqusShortname: process.env.DISQUS_SHORTNAME || "vonage-dev-blog-dev",
-      baseUrl: process.env.BASE_URL || baseUrl,
+      baseTitle: baseTitle,
+      baseUrl: baseUrl,
       itemsPerArchivePage: itemsPerArchivePage
     },
 
     mode: "universal",
 
     head: {
-      title: "Vonage Developer Blog",
+      title: indexTitle,
+      titleTemplate: `%s >> ${baseTitle}`,
       meta: [
         { charset: "utf-8" },
+        { name: 'keywords', content: 'developer tutorials, developer content, node sdk, java sdk, vonage, nexmo, python sdk, ruby sdk, go sdk, send sms, make calls, apis, communication apis'},
+        { hid: 'description', name: 'description', content: baseDescription},  
         {
           name: "viewport",
           content:
@@ -184,18 +198,33 @@ export default () => {
         path: '/feed.xml',
         create (feed) {
           feed.options = {
-            title: 'My blog',
+            title: `${indexTitle} >> ${baseTitle}`,
             link: `${baseUrl}/feed.xml`,
-            description: 'Vonage Developer Blog',
+            description: baseDescription,
           }
 
           posts.forEach(post => {
             feed.addItem({
-              title: post.title,
               id: post.permalink,
-              link: post.permalink,
+              title: post.title,
+              pubDate: moment(post.attributes.published_at).format('ddd, DD MMM YYYY HH:mm:ss ZZ'),
+              link: `${baseUrl}${post.permalink}`,
+              category: post.attributes.category,
               description: post.attributes.description,
-              content: post.html
+              content: post.html,
+              comments: `${baseUrl}${post.permalink}`
+            })
+          })
+
+          categories.forEach(category => {
+            feed.addCategory(category)
+          })
+
+          authors.forEach(author => {
+            feed.addContributor({
+              name: author.name,
+              email: author.email,
+              link: `${baseUrl}/authors/${author.username}`
             })
           })
         },

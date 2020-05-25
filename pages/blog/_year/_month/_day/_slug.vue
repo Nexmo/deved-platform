@@ -43,7 +43,7 @@
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <div v-if="attributes.comments" class="Vlt-card Vlt-bg-white">
-            <div class="Vlt-card__content">
+            <div id="comments" class="Vlt-card__content">
               <vue-disqus
                 :shortname="disqusShortname"
                 :identifier="`${baseUrl}${route}`"
