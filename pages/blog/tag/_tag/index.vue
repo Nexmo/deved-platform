@@ -44,7 +44,7 @@ export default {
 
     return {
       tag: this.$route.params.tag,
-      posts: imports.slice(0, 12), // limit to 12 "latest posts"
+      posts: imports
     }
   },
 }

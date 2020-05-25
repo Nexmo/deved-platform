@@ -44,7 +44,7 @@ export default {
 
     return {
       category: this.$route.params.category,
-      posts: imports.slice(0, 12), // limit to 12 "latest posts"
+      posts: imports
     }
   },
 }
