@@ -11,7 +11,7 @@
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-card--lesspadding">
-            <div class="Vlt-card__header">
+            <div v-if="attributes.thumbnail" class="Vlt-card__header">
               <img :src="attributes.thumbnail" :alt="title" width="100%">
             </div>
             <div v-if="attributes.category" class="Vlt-card__corner Vlt-margin--A-top3">

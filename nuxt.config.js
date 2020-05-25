@@ -12,10 +12,10 @@ import moment from "moment"
 import { authors } from "./content/authors.json"
 
 const builtAt = new Date().toISOString()
-const baseUrl = process.env.BASE_URL || 'http://localhost:3000'
-const indexTitle = 'Developer content from the team at Vonage'
-const baseTitle = 'Vonage Developer Blog'
-const baseDescription = 'Great developer and spotlight content from the team at Vonage, including posts on our Java, Node.js, Python, DotNet, Ruby and Go SDKs'
+const baseUrl = process.env.BASE_URL || "http://localhost:3000"
+const indexTitle = "Developer content from the team at Vonage"
+const baseTitle = "Vonage Developer Blog"
+const baseDescription = "Great developer and spotlight content from the team at Vonage, including posts on our Java, Node.js, Python, DotNet, Ruby and Go SDKs"
 const routes = []
 const posts = []
 const dynamicContent = glob.sync("**/*.md", { cwd: "content" })
@@ -81,9 +81,9 @@ posts.forEach((post) => {
   }
 
   if (post.attributes.published_at) {
-    const yearString = moment(post.attributes.published_at).format('YYYY')
-    const monthString = moment(post.attributes.published_at).format('YYYY/MM')
-    const dayString = moment(post.attributes.published_at).format('YYYY/MM/DD')
+    const yearString = moment(post.attributes.published_at).format("YYYY")
+    const monthString = moment(post.attributes.published_at).format("YYYY/MM")
+    const dayString = moment(post.attributes.published_at).format("YYYY/MM/DD")
 
     const yearRoute = `/${post.attributes.type}/${yearString}`
     const monthRoute = `/${post.attributes.type}/${monthString}`
@@ -131,8 +131,8 @@ export default () => {
       titleTemplate: `%s :: ${baseTitle}`,
       meta: [
         { charset: "utf-8" },
-        { name: 'keywords', content: 'developer tutorials, developer content, node sdk, java sdk, vonage, nexmo, python sdk, ruby sdk, go sdk, send sms, make calls, apis, communication apis'},
-        { hid: 'description', name: 'description', content: baseDescription},  
+        { name: "keywords", content: "developer tutorials, developer content, node sdk, java sdk, vonage, nexmo, python sdk, ruby sdk, go sdk, send sms, make calls, apis, communication apis"},
+        { hid: "description", name: "description", content: baseDescription},
         {
           name: "viewport",
           content:
@@ -195,7 +195,7 @@ export default () => {
 
     feed: [
       {
-        path: '/feed.xml',
+        path: "/feed.xml",
         create (feed) {
           feed.options = {
             title: `${indexTitle} :: ${baseTitle}`,
@@ -207,7 +207,7 @@ export default () => {
             feed.addItem({
               id: post.permalink,
               title: post.title,
-              pubDate: moment(post.attributes.published_at).format('ddd, DD MMM YYYY HH:mm:ss ZZ'),
+              pubDate: moment(post.attributes.published_at).format("ddd, DD MMM YYYY HH:mm:ss ZZ"),
               link: `${baseUrl}${post.permalink}`,
               category: post.attributes.category,
               description: post.attributes.description,
@@ -229,17 +229,9 @@ export default () => {
           })
         },
         cacheTime: 1000 * 60 * 15,
-        type: 'rss2',
+        type: "rss2",
       }
     ],
-
-    buildModules: [
-      '@aceforth/nuxt-optimized-images',
-    ],
-  
-    optimizedImages: {
-      optimizeImages: true
-    },
 
     generate: {
       fallback: true,
