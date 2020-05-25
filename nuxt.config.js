@@ -11,6 +11,7 @@ import path from "path"
 import moment from "moment"
 
 const builtAt = new Date().toISOString()
+const baseUrl = 'http://localhost:3000'
 const routes = []
 const posts = []
 const dynamicContent = glob.sync("**/*.md", { cwd: "content" })
@@ -108,16 +109,12 @@ export default () => {
   return {
     env: {
       disqusShortname: process.env.DISQUS_SHORTNAME || "vonage-dev-blog-dev",
-      baseUrl: process.env.BASE_URL || "http://localhost:3000",
+      baseUrl: process.env.BASE_URL || baseUrl,
       itemsPerArchivePage: itemsPerArchivePage
     },
 
     mode: "universal",
 
-    /*
-     ** Headers of the page
-     ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
-     */
     head: {
       title: "Vonage Developer Blog",
       meta: [
@@ -145,12 +142,6 @@ export default () => {
           type: "application/rss+xml",
           href: "/feed.xml",
           title: "RSS",
-        },
-        {
-          rel: "alternative",
-          type: "application/json",
-          href: "/feed.json",
-          title: "JSON Feed",
         },
         {
           rel: "icon",
@@ -182,14 +173,35 @@ export default () => {
       ],
     },
 
-    /*
-     ** Nuxt.js modules
-     ** Doc: https://nuxtjs.org/guide/modules
-     */
     modules: [
-      // Doc: https://http.nuxtjs.org
       "@nuxtjs/dotenv",
+      "@nuxtjs/feed",
       "@nuxt/http"
+    ],
+
+    feed: [
+      {
+        path: '/feed.xml',
+        create (feed) {
+          feed.options = {
+            title: 'My blog',
+            link: `${baseUrl}/feed.xml`,
+            description: 'Vonage Developer Blog',
+          }
+
+          posts.forEach(post => {
+            feed.addItem({
+              title: post.title,
+              id: post.permalink,
+              link: post.permalink,
+              description: post.attributes.description,
+              content: post.html
+            })
+          })
+        },
+        cacheTime: 1000 * 60 * 15,
+        type: 'rss2',
+      }
     ],
 
     generate: {

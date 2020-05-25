@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxt/http": "^0.3.0",
     "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/feed": "^1.1.0",
     "@toycode/markdown-it-class": "^1.2.3",
     "@vonagevolta/volta2": "0.0.37",
     "algoliasearch": "^4.2.0",
