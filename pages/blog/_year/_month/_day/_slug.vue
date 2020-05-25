@@ -120,7 +120,7 @@ export default {
 
   head() {
     return {
-      title: `${this.title} - Vonage Developer Blog`,
+      title: `${this.title}`
     }
   },
 }
