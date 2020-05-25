@@ -8,6 +8,7 @@ import markdownItClass from "@toycode/markdown-it-class"
 import markdownItPrism from "markdown-it-prism"
 import Mode from "frontmatter-markdown-loader/mode"
 import path from "path"
+import moment from "moment"
 
 const builtAt = new Date().toISOString()
 const routes = []
@@ -66,6 +67,28 @@ posts.forEach((post) => {
         routes.push(route)
       }
     })
+  }
+
+  if (post.attributes.published_at) {
+    const yearString = moment(post.attributes.published_at).format('YYYY')
+    const monthString = moment(post.attributes.published_at).format('YYYY/MM')
+    const dayString = moment(post.attributes.published_at).format('YYYY/MM/DD')
+
+    const yearRoute = `/${post.attributes.type}/${yearString}`
+    const monthRoute = `/${post.attributes.type}/${monthString}`
+    const dayRoute = `/${post.attributes.type}/${dayString}`
+
+    if (routes.indexOf(yearRoute) === -1) {
+      routes.push(yearRoute)
+    }
+
+    if (routes.indexOf(monthRoute) === -1) {
+      routes.push(monthRoute)
+    }
+
+    if (routes.indexOf(dayRoute) === -1) {
+      routes.push(dayRoute)
+    }
   }
 })
 
