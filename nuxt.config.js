@@ -233,6 +233,14 @@ export default () => {
       }
     ],
 
+    buildModules: [
+      '@aceforth/nuxt-optimized-images',
+    ],
+  
+    optimizedImages: {
+      optimizeImages: true
+    },
+
     generate: {
       fallback: true,
       routes: routes,
