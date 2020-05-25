@@ -1,7 +1,7 @@
 <template>
   <div class="Blog-hero">
     <div class="Blog-hero__content">
-      <h3>Developer content from the team at <img src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg" class="Logo__inline"></h3>
+      <h3>Developer content from the team at <img src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg" alt="Vonage" class="Logo__inline"></h3>
       <client-only>
         <AisInstantSearch
           :search-client="searchClient"
