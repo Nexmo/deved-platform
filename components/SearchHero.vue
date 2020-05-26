@@ -20,15 +20,17 @@
               class="Vlt-form__element Vlt-form__element--big Blog-hero__search"
             >
               <div class="Vlt-input">
-                <input
-                  id="hero-search"
-                  type="search"
-                  placeholder="Send SMS in Node.js"
-                  name="hero-search"
-                  :value="currentRefinement"
-                  @input="refine($event.currentTarget.value)"
-                >
-                <label for="hero-search">Search our existing content...</label>
+                <form method="GET" action="/search">
+                  <input
+                    id="q"
+                    type="search"
+                    placeholder="Send SMS in Node.js"
+                    name="q"
+                    :value="currentRefinement"
+                    @input="refine($event.currentTarget.value)"
+                  >
+                  <label for="q">Search our existing content...</label>
+                </form>
               </div>
               <small v-if="isSearchStalled" class="Vlt-form__element__hint">Search is taking longer than usual...</small>
             </div>
