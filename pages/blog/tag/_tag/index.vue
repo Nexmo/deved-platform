@@ -30,8 +30,8 @@ export default {
     CategoryHero,
   },
 
-  data() {
-    const { tag } = this.$route.params
+  asyncData({ route, error }) {
+    const { tag } = route.params
 
     const resolve = require.context("~/content/", true, /\.md$/)
     const imports = resolve
@@ -52,6 +52,10 @@ export default {
       const bDate = moment(b.attributes.published_at)
       return bDate.diff(aDate)
     })
+
+    if (imports.length === 0) {
+      error({ statusCode: 404, message: 'Tag not found' })
+    }
 
     return {
       tag: tag,

@@ -30,8 +30,13 @@ export default {
     CategoryHero,
   },
 
-  data() {
-    const { year } = this.$route.params
+  asyncData({ route, error }) {
+    const { year } = route.params
+
+    if (isNaN(year)) {
+      error({ statusCode: 404, message: 'Page not found' })
+    }
+
     const pageDate = moment(`${year}`)
 
     const resolve = require.context("~/content/", true, /\.md$/)

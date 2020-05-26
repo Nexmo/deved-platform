@@ -75,39 +75,44 @@ export default {
     Tags,
   },
 
-  async asyncData ({ params }) {
-    const post = await import(`~/content/blog/${params.slug}.md`)
+  async asyncData ({ params, error }) {
+    try {
+      const post = await import(`~/content/blog/${params.slug}.md`)
 
-    const routeData = (post) => {
-      return post.meta.resourcePath
-          .split("/content/")
-          .pop()
-          .split(".")[0]
-          .split("/")
-    }
-
-    const postDate = moment(post.attributes.published_at)
-
-    const route = (post) => {
-      if (post.attributes.permalink) {
-        return post.attributes.permalink
-      } else {
-        const [, name] = routeData(post)
-
-        return `/blog/${postDate.format('YYYY/MM/DD')}/${name}`
+      const routeData = (post) => {
+        return post.meta.resourcePath
+            .split("/content/")
+            .pop()
+            .split(".")[0]
+            .split("/")
       }
-    }
 
-    return {
-      disqusShortname: process.env.disqusShortname,
-      baseUrl: process.env.baseUrl,
-      attributes: post.attributes,
-      routes: [
-        { route: `/blog/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
-        { route: `/blog/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
-        { route: `/blog/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
-        { route: route(post), title: post.attributes.title, current: true }
-      ]
+      const postDate = moment(post.attributes.published_at)
+
+      const route = (post) => {
+        if (post.attributes.permalink) {
+          return post.attributes.permalink
+        } else {
+          const [, name] = routeData(post)
+
+          return `/blog/${postDate.format('YYYY/MM/DD')}/${name}`
+        }
+      }
+
+      return {
+        disqusShortname: process.env.disqusShortname,
+        baseUrl: process.env.baseUrl,
+        attributes: post.attributes,
+        routes: [
+          { route: `/blog/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
+          { route: `/blog/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
+          { route: `/blog/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
+          { route: route(post), title: post.attributes.title, current: true }
+        ],
+        route: route(post)
+      }
+    } catch (e) {
+      error({ statusCode: 404, message: 'Post not found' })
     }
   },
 

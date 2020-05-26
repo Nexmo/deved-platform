@@ -30,8 +30,8 @@ export default {
     CategoryHero,
   },
 
-  data() {
-    const { category } = this.$route.params
+  asyncData({ route, error }) {
+    const { category } = route.params
 
     const resolve = require.context("~/content/", true, /\.md$/)
     const imports = resolve
@@ -52,6 +52,10 @@ export default {
       const bDate = moment(b.attributes.published_at)
       return bDate.diff(aDate)
     })
+
+    if (imports.length === 0) {
+      error({ statusCode: 404, message: 'Category not found' })
+    }
 
     return {
       category: category,
