@@ -9,9 +9,9 @@ published_at: 2020-03-13T22:13:07.421Z
 comments: true
 category: tutorial
 tags:
+  - go
   - spotlight
   - jwt
-  - go
 ---
 ![Developer Spotlight Programme](https://www.nexmo.com/wp-content/uploads/2019/08/blog-spotlight-banner.png "Developer Spotlight Programme")
 
