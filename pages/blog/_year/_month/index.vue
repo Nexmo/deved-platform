@@ -4,7 +4,13 @@
       <CategoryHero :title="`${monthName}, ${year}`" />
     </header>
     <main class="Vlt-container">
-      <div class="Vlt-grid Vlt-margin--A-top4">
+      <div class="Vlt-grid">
+        <div class="Vlt-col" />
+        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs :routes="routes" />
+        </div>
+        <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
         <MiniCard v-for="post in posts" :key="post.attributes.title" :post="post" />
       </div>
     </main>
@@ -14,15 +20,20 @@
 <script>
 import CategoryHero from "~/components/CategoryHero"
 import MiniCard from "~/components/MiniCard"
+import Breadcrumbs from "~/components/Breadcrumbs"
 import moment from 'moment'
 
 export default {
   components: {
+    Breadcrumbs,
     MiniCard,
     CategoryHero,
   },
 
   data() {
+    const { month, year } = this.$route.params
+    const pageDate = moment(`${year}/${month}`)
+
     const resolve = require.context("~/content/", true, /\.md$/)
     const imports = resolve
       .keys()
@@ -31,23 +42,28 @@ export default {
         return resolve(key)
       })
       .filter((content) => {
+        const contentDate = moment(content.attributes.published_at)
+
         return (
-          moment(content.attributes.published_at).format('YYYY') == this.$route.params.year &&
-          moment(content.attributes.published_at).format('MM') == this.$route.params.month &&
+          contentDate.format('YYYYMM') === pageDate.format('YYYYMM') &&
           content.attributes.published != false
         )
       })
 
     imports.sort((a, b) => {
-      const aPublishedDate = new Date(a.attributes.published_at)
-      const bPublishedDate = new Date(b.attributes.published_at)
-      return bPublishedDate - aPublishedDate
+      const aDate = moment(a.attributes.published_at)
+      const bDate = moment(b.attributes.published_at)
+      return bDate.diff(aDate)
     })
 
     return {
-      monthName: moment(this.$route.params.month, 'MM').format('MMMM'),
-      year: this.$route.params.year,
-      posts: imports
+      monthName: pageDate.format('MMMM'),
+      year: pageDate.format('YYYY'),
+      posts: imports,
+      routes: [
+        { route: `/blog/${pageDate.format('YYYY')}`, title: pageDate.format('YYYY') },
+        { route: `/blog/${pageDate.format('YYYY/MM')}`, title: pageDate.format('MMMM'), current: true },
+      ]
     }
   },
 

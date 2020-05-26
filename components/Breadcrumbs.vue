@@ -5,9 +5,9 @@
         <span itemprop="title">Vonage Developer Blog</span>
       </NLink>
     </li>
-    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="current">
-      <NLink :to="route" itemprop="url">
-        <span itemprop="title">{{ title }}</span>
+    <li v-for="route in routes" :key="route.route" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" :class="route.current ? 'current' : ''">
+      <NLink :to="route.route" itemprop="url">
+        <span itemprop="title">{{ route.title }}</span>
       </NLink>
     </li>  
   </ol>
@@ -16,14 +16,15 @@
 <script>
 export default {
   props: {
-    title: {
-      type: String,
+    routes: {
+      type: Array,
       required: true,
-    },
-    route: {
-      type: String,
-      required: true,
-    },
+      // validator: function(array) {
+      //   array.forEach(item => {
+      //     return 'title' in item && 'route' in item
+      //   })
+      // }
+    }
   },
 }
 </script>
@@ -32,6 +33,7 @@ export default {
 ol {
 	list-style: none;
 }
+
 li {
   display: inline;
 }
@@ -55,5 +57,9 @@ li a {
 
 li.current a {
   color: grey
+}
+
+span {
+  text-transform: capitalize;
 }
 </style>

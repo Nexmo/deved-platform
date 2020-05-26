@@ -3,7 +3,13 @@
     <main class="Vlt-container">
       <AisInstantSearchSsr>
         <AisHits>
-          <div slot-scope="{ items }" class="Vlt-grid Vlt-margin--A-top4">
+          <div slot-scope="{ items }" class="Vlt-grid">
+            <div class="Vlt-col" />
+            <div v-if="routes" class="Vlt-col Vlt-col--2of3">
+              <Breadcrumbs :routes="routes" />
+            </div>
+            <div class="Vlt-col" />
+            <div class="Vlt-grid__separator" />
             <Card v-for="item in items" :key="item.objectID" :post="item" />
           </div>
         </AisHits>
@@ -63,6 +69,7 @@
 import Card from "~/components/Card"
 import { createInstantSearch } from "vue-instantsearch"
 import algoliasearch from "algoliasearch/lite"
+import Breadcrumbs from "~/components/Breadcrumbs"
 
 const searchClient = algoliasearch(
   "UG4W1PA1SN",
@@ -78,6 +85,7 @@ const filters = "NOT attributes.published:false"
 
 export default {
   components: {
+    Breadcrumbs,
     Card,
   },
 
@@ -91,6 +99,9 @@ export default {
       })
       .then(() => ({
         instantSearchState: instantsearch.getState(),
+        routes: [
+          { route: `/archive`, title: `Content Archives`, current: true },
+        ]
       }))
   },
 

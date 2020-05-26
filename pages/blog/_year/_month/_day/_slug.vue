@@ -3,8 +3,8 @@
     <article class="Blog__post Vlt-container">
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
-        <div v-if="attributes.title" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :title="attributes.title" :route="route" />
+        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs :routes="routes" />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
@@ -64,6 +64,7 @@ import Category from "~/components/Category"
 import Author from "~/components/Author"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import Tags from "~/components/Tags"
+import moment from "moment"
 
 export default {
   components: {
@@ -77,21 +78,23 @@ export default {
   async asyncData ({ params }) {
     const post = await import(`~/content/blog/${params.slug}.md`)
 
-    const route = (post) => {
-      if (post.attributes.permalink) {
-        return post.attributes.permalink
-      } else {
-        const [type, name] = post.meta.resourcePath
+    const routeData = (post) => {
+      return post.meta.resourcePath
           .split("/content/")
           .pop()
           .split(".")[0]
           .split("/")
-        const date = new Date(post.attributes.published_at)
+    }
 
-        return `/${type}/${date.getFullYear()}/${(
-          "0" +
-          (date.getMonth() + 1)
-        ).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`
+    const postDate = moment(post.attributes.published_at)
+
+    const route = (post) => {
+      if (post.attributes.permalink) {
+        return post.attributes.permalink
+      } else {
+        const [, name] = routeData(post)
+
+        return `/blog/${postDate.format('YYYY/MM/DD')}/${name}`
       }
     }
 
@@ -99,7 +102,12 @@ export default {
       disqusShortname: process.env.disqusShortname,
       baseUrl: process.env.baseUrl,
       attributes: post.attributes,
-      route: route(post)
+      routes: [
+        { route: `/blog/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
+        { route: `/blog/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
+        { route: `/blog/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
+        { route: route(post), title: post.attributes.title, current: true }
+      ]
     }
   },
 

@@ -4,7 +4,13 @@
       <AuthorHero />
     </header>
     <main class="Vlt-container">
-      <div class="Vlt-grid Vlt-margin--A-top4">
+      <div class="Vlt-grid">
+        <div class="Vlt-col" />
+        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs :routes="routes" />
+        </div>
+        <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
         <Author
           v-for="author in authors"
           :key="author.username"
@@ -19,9 +25,11 @@
 <script>
 import AuthorHero from "~/components/AuthorHero"
 import Author from "~/components/Author"
+import Breadcrumbs from "~/components/Breadcrumbs"
 
 export default {
   components: {
+    Breadcrumbs,
     AuthorHero,
     Author,
   },
@@ -37,6 +45,9 @@ export default {
 
     return {
       authors: authors,
+      routes: [
+        { route: `/authors`, title: `All our authors`, current: true },
+      ]
     }
   },
 
