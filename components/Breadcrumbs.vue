@@ -39,9 +39,9 @@ li {
 }
 
 li:after {
-	content: ' ›› ';
+	content: ' » ';
 	display: inline;
-	font-size: 1.2em;
+	font-size: 0.9em;
 	color: #AAA;
 	
 	padding: 0 .0725em 0 .15em;
