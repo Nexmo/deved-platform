@@ -153,16 +153,6 @@
   </footer>
 </template>
 
-<script>
-export default {
-  computed: {
-    year() {
-      return new Date().getFullYear()
-    },
-  },
-}
-</script>
-
 <style scoped>
 .Vlt-footer {
   width: 100vw;
