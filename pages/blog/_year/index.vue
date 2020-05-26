@@ -37,7 +37,7 @@ export default {
       error({ statusCode: 404, message: 'Page not found' })
     }
 
-    const pageDate = moment(`${year}`)
+    const pageDate = moment(`${year}`, 'YYYY')
 
     const resolve = require.context("~/content/", true, /\.md$/)
     const imports = resolve
