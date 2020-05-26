@@ -69,7 +69,7 @@ using Microsoft.EntityFrameworkCore;
 
 With that added, let's create the database. Navigate to your project folder and execute the following:
 
-```sh
+```shell
 dotnet tool install --global dotnet-ef
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet ef migrations add InitialCreate
@@ -153,7 +153,7 @@ And a **Video** view that will contain the video call:
 
 First things first, navigate to the `ClientApp` directory in your terminal and run:
 
-```sh
+```shell
 npm install --save @opentok/client
 ```
 

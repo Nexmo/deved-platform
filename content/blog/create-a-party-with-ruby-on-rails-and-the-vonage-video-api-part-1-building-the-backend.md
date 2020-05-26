@@ -80,7 +80,7 @@ You now have access to your project's API key and secret. Keep them somewhere sa
 
 From your terminal initiate a new Rails application by executing the following:
 
-```sh
+```shell
 $ rails new video-watch-party --database=postgresql
 ```
 
@@ -101,7 +101,7 @@ Once that is done, we can run `bundle install` from the command line to install 
 
 Next, we will generate a model to hold and manipulate the video session information. From the command line execute the following:
 
-```sh
+```shell
 $ rails g model Session session_id:string expired:boolean
 ```
 
@@ -154,7 +154,7 @@ Lastly in this step, we will create the `VideoController`.
 
 In the next step, we will create methods for the controller. In this last Installation step, we will generate the controller file. From the command line execute the following:
 
-```sh
+```shell
 $ rails generate controller Video landing index screenshare name chat
 ```
 

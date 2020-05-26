@@ -329,7 +329,7 @@ sequelize init
 
 Inside your project directory, create a new file `.env`, and update the values below with the correct credentials for your database.
 
-```env
+```shell
 DB_NAME=<database name>
 DB_USERNAME=<database username>
 DB_PASSWORD=<database password>
@@ -455,7 +455,7 @@ Next, create a new Project. Once created, you will see your project's dashboard,
 
 Inside your `.env` file add the Vonage Video credentials as below (Updating the values inside `<` and `>` with your credentials):
 
-```env
+```shell
 VONAGE_VIDEO_API_KEY=<tokbox api key>
 VONAGE_VIDEO_API_SECRET=<tokbox api secret>
 ```
@@ -913,7 +913,7 @@ The `VONAGE_BRAND_NAME` doesn't get used in this project, but you are required t
 
 Finally, the `TO_NUMBER` is the recipient that receives the SMS notification.
 
-```env
+```shell
 VONAGE_API_KEY=
 VONAGE_API_SECRET=
 VONAGE_APPLICATION_PRIVATE_KEY_PATH=
