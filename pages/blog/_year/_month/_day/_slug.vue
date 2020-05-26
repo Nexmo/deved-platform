@@ -3,8 +3,8 @@
     <article class="Blog__post Vlt-container">
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs v-if="title" :title="title" :route="route" />
+        <div v-if="attributes.title" class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs :title="attributes.title" :route="route" />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
@@ -12,13 +12,13 @@
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-card--lesspadding">
             <div v-if="attributes.thumbnail" class="Vlt-card__header">
-              <img :src="attributes.thumbnail" :alt="title" width="100%">
+              <img :src="attributes.thumbnail" :alt="attributes.title" width="100%">
             </div>
             <div v-if="attributes.category" class="Vlt-card__corner Vlt-margin--A-top3">
               <Category :category="attributes.category" />
             </div>
             <div class="Vlt-card__header Vlt-margin--A-top3">
-              <h1>{{ title }}</h1>
+              <h1>{{ attributes.title }}</h1>
               <BackToTop />
             </div>
             <div v-if="attributes.author" class="Vlt-card__content Vlt-margin--A-top3">
@@ -34,7 +34,7 @@
               <Tags :tags="attributes.tags" />
             </div>
             <div class="Vlt-card__content Vlt-margin--A-top3">
-              <component :is="postContent" />
+              <component :is="markdownContent" />
             </div>
           </div>
         </div>
@@ -74,34 +74,12 @@ export default {
     Tags,
   },
 
-  data() {
-    return {
-      disqusShortname: process.env.disqusShortname,
-      baseUrl: process.env.baseUrl,
-      route: "",
-      title: "",
-      attributes: {},
-      postContent: null,
-      author: {},
-    }
-  },
+  async asyncData ({ params }) {
+    const post = await import(`~/content/blog/${params.slug}.md`)
 
-  created() {
-    this.postContent = () =>
-      import(`~/content/blog/${this.$route.params.slug}.md`).then((post) => {
-        this.route = this.getPermalink(post)
-        this.title = post.attributes.title
-        this.attributes = post.attributes
-        return {
-          extends: post.vue.component,
-        }
-      })
-  },
-
-  methods: {
-    getPermalink(post) {
-      if (post.permalink) {
-        return post.permalink
+    const route = (post) => {
+      if (post.attributes.permalink) {
+        return post.attributes.permalink
       } else {
         const [type, name] = post.meta.resourcePath
           .split("/content/")
@@ -115,12 +93,27 @@ export default {
           (date.getMonth() + 1)
         ).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`
       }
-    },
+    }
+
+    return {
+      disqusShortname: process.env.disqusShortname,
+      baseUrl: process.env.baseUrl,
+      attributes: post.attributes,
+      route: route(post)
+    }
+  },
+
+  async created () {
+    this.markdownContent = () => import(`~/content/blog/${this.$route.params.slug}.md`).then((md) => {
+      return {
+        extends: md.vue.component
+      }
+    })
   },
 
   head() {
     return {
-      title: `${this.title}`
+      title: `${this.attributes.title}`
     }
   },
 }
