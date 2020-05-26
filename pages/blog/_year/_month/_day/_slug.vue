@@ -53,6 +53,14 @@
           </div>
         </div>
         <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col" />
+        <Author
+          :author-name="attributes.author"
+          type="card"
+          bio
+        />
+        <div class="Vlt-col" />
       </div>
     </article>
   </section>
@@ -214,5 +222,10 @@ export default {
     margin: 24px 10px;
     padding-left: 12px;
   }
+}
+
+.Vlt-grid >>> .Author-col {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
 }
 </style>

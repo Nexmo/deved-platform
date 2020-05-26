@@ -58,3 +58,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.Vlt-grid >>> .Author-col {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+</style>

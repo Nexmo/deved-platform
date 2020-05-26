@@ -2,7 +2,7 @@
   <fragment v-if="!!authorName">
     <AuthorName v-if="type == 'name'" :author="author()" />
     <AuthorMiniCard v-else-if="type == 'minicard'" :author="author()" />
-    <AuthorCard v-else-if="type == 'card'" :author="author()" />
+    <AuthorCard v-else-if="type == 'card'" :author="author()" :bio="bio" />
     <AuthorPage v-else-if="type == 'page'" :author="author()" />
   </fragment>
 </template>
@@ -26,6 +26,9 @@ export default {
       type: String,
       required: true,
     },
+    bio: {
+      type: Boolean
+    },
     type: {
       type: String,
       default: "name",
@@ -42,7 +45,7 @@ export default {
         return author.username === this.authorName
       })
 
-      return author || { name: this.authorName, username: this.authorName }
+      return author || { name: this.authorName, username: this.authorName, error: true }
     },
   },
 }

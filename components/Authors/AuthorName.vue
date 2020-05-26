@@ -1,7 +1,10 @@
 <template>
-  <NLink :to="`/authors/${author.username}`" class="Author__Name">
-    {{ author.name }}
-  </NLink>
+  <fragment>
+    <span v-if="author.error">{{ author.name }}</span>
+    <NLink v-else :to="`/authors/${author.username}`" class="Author__Name">
+      {{ author.name }}
+    </NLink>
+  </fragment>
 </template>
 
 <script>

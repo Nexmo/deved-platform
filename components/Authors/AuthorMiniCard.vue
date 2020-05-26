@@ -1,14 +1,20 @@
 <template>
-  <NLink :to="`/authors/${author.username}`" class="block Author__Mini-card">
-    <img :src="author.image_url" :alt="author.name">
-    <h3>{{ author.name }}</h3>
-    <p v-if="author.spotlight">
-      **** Developer Spotlight ****
-    </p>
-    <p v-else>
-      {{ author.title }}
-    </p>
-  </NLink>
+  <fragment>
+    <div v-if="author.error" class="block Author__Mini-card">
+      <img src="../../assets/images/placeholder.png" :alt="author.name">
+      <h3>{{ author.name }}</h3>
+    </div>
+    <NLink v-else :to="`/authors/${author.username}`" class="block Author__Mini-card">
+      <img :src="author.image_url" :alt="author.name">
+      <h3>{{ author.name }}</h3>
+      <p v-if="author.spotlight">
+        **** Developer Spotlight ****
+      </p>
+      <p v-else>
+        {{ author.title }}
+      </p>
+    </NLink>
+  </fragment>
 </template>
 
 <script>

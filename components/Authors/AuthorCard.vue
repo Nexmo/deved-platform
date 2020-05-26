@@ -1,110 +1,69 @@
 <template>
-  <!-- <div class="Vlt-card Vlt-bg-white Author__Card">
-    <div
-      v-if="author.image_url"
-      class="Vlt-card__image Vlt-gradient--blue-to-purple"
-    >
-      <div
-        class="Vlt-card__image__icon"
-        :style="`background-image: url('${author.image_url}'); background-size: cover`"
-      />
-    </div>
-    <div class="Vlt-card__header">
-      <h3>
-        {{ author.name }}
-        <small v-if="!author.spotlight" class="Vlt-grey-dark">{{
-          author.title
-        }}</small>
-      </h3>
-    </div>
-    <div v-if="author.spotlight" class="Vlt-card__header">
-      Spotlight
-    </div>
-    <div v-if="author.bio" class="Vlt-card__content">
-      {{ author.bio }}
-    </div>
-    <div class="Vlt-card__footer Vlt-card__footer--short Vlt-center">
-      <TwitterSocialButton :link="author.twitter_url" class="Vlt-btn--small" />
-      <FacebookSocialButton
-        :link="author.facebook_url"
-        class="Vlt-btn--small"
-      />
-      <GitHubSocialButton :link="author.github_url" class="Vlt-btn--small" />
-      <StackOverflowSocialButton
-        :link="author.stackoverflow_url"
-        class="Vlt-btn--small"
-      />
-      <LinkedInSocialButton
-        :link="author.linkedin_url"
-        class="Vlt-btn--small"
-      />
-      <TwitchSocialButton :link="author.twitch_url" class="Vlt-btn--small" />
-      <YouTubeSocialButton :link="author.youtube_url" class="Vlt-btn--small" />
-      <WebsiteSocialButton
-        :link="author.website_url || `/authors/${author.username}`"
-        class="Vlt-btn--small"
-      />
-    </div>
-  </div> -->
-  <div class="Vlt-col Vlt-col--1of3">
-    <div class="Vlt-card Vlt-bg-white">
-      <div
-        v-if="author.image_url"
-        class="Vlt-card__image Vlt-gradient--blue-to-purple"
-      >
-        <div
-          class="Vlt-card__image__icon"
-          :style="`background-image: url('${author.image_url}'); background-size: cover`"
-        />
-      </div>
-      <!-- <div class="Vlt-card__corner">
-        <NLink
-          :to="`/blog/category/${post.attributes.category}`"
-          :class="`Vlt-badge Vlt-badge--white Vlt-badge--transparent Category-color__${post.attributes.category}`"
-        >
-          &lt;/ {{ post.attributes.category }} &gt;
-        </NLink>
-      </div> -->
-      <div class="Vlt-card__header">
-        <h4 class="Vlt-truncate">
-          {{ author.name }}
-          <small v-if="!author.spotlight" class="Vlt-grey-dark">{{
-            author.title
-          }}</small>
-        </h4>
-      </div>
-      <div v-if="author.spotlight" class="Vlt-card__content">
-        Spotlight
-      </div>
-      <div class="Vlt-card__content Vlt-center">
-        <TwitterSocialButton :link="author.twitter_url" class="Vlt-btn--small" />
-        <FacebookSocialButton
-          :link="author.facebook_url"
-          class="Vlt-btn--small"
-        />
-        <GitHubSocialButton :link="author.github_url" class="Vlt-btn--small" />
-        <StackOverflowSocialButton
-          :link="author.stackoverflow_url"
-          class="Vlt-btn--small"
-        />
-        <LinkedInSocialButton
-          :link="author.linkedin_url"
-          class="Vlt-btn--small"
-        />
-        <TwitchSocialButton :link="author.twitch_url" class="Vlt-btn--small" />
-        <YouTubeSocialButton :link="author.youtube_url" class="Vlt-btn--small" />
-        <WebsiteSocialButton
-          :link="author.website_url || `/authors/${author.username}`"
-          class="Vlt-btn--small"
-        />
-      </div>
-      <div class="Vlt-card__footer Vlt-card__footer--short Vlt-right">
-        <NLink :to="`/authors/${author.username}`" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">
-          Author page
-        </NLink>
+  <fragment>
+    <div v-if="author.error" class="Vlt-col Author-col">
+      <div class="Vlt-card Vlt-bg-white">
+        <div class="Vlt-card__image Vlt-gradient--blue-to-purple">
+          <img class="Vlt-card__image__icon" src="../../assets/images/placeholder.png" :alt="author.name">
+        </div>
+        <div class="Vlt-card__header">
+          <h4 class="Vlt-truncate">
+            {{ author.name }}
+          </h4>
+        </div>
+        <div class="Vlt-card__content">
+          This author has yet to make a profile!
+        </div>
       </div>
     </div>
-  </div>
+    <div v-else class="Vlt-col Author-col">
+      <div class="Vlt-card Vlt-bg-white">
+        <div v-if="author.image_url" class="Vlt-card__image Vlt-gradient--blue-to-purple">
+          <img class="Vlt-card__image__icon" :src="author.image_url" :alt="author.name">
+        </div>
+        <div class="Vlt-card__header">
+          <h4 class="Vlt-truncate">
+            {{ author.name }}
+            <small v-if="!author.spotlight" class="Vlt-grey-dark">{{
+              author.title
+            }}</small>
+          </h4>
+        </div>
+        <div v-if="bio && author.bio" class="Vlt-card__content">
+          {{ author.bio }}
+        </div>
+        <div v-if="author.spotlight" class="Vlt-card__content">
+          Spotlight
+        </div>
+        <div class="Vlt-card__content Vlt-center">
+          <TwitterSocialButton :link="author.twitter_url" class="Vlt-btn--small" />
+          <FacebookSocialButton
+            :link="author.facebook_url"
+            class="Vlt-btn--small"
+          />
+          <GitHubSocialButton :link="author.github_url" class="Vlt-btn--small" />
+          <StackOverflowSocialButton
+            :link="author.stackoverflow_url"
+            class="Vlt-btn--small"
+          />
+          <LinkedInSocialButton
+            :link="author.linkedin_url"
+            class="Vlt-btn--small"
+          />
+          <TwitchSocialButton :link="author.twitch_url" class="Vlt-btn--small" />
+          <YouTubeSocialButton :link="author.youtube_url" class="Vlt-btn--small" />
+          <WebsiteSocialButton
+            :link="author.website_url || `/authors/${author.username}`"
+            class="Vlt-btn--small"
+          />
+        </div>
+        <div class="Vlt-card__footer Vlt-card__footer--short Vlt-right">
+          <NLink :to="`/authors/${author.username}`" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">
+            Author page
+          </NLink>
+        </div>
+      </div>
+    </div>
+  </fragment>
 </template>
 
 <script>
@@ -128,12 +87,16 @@ export default {
     WebsiteSocialButton,
     YouTubeSocialButton,
   },
+
   props: {
     author: {
       type: Object,
       required: true,
     },
-  },
+    bio: {
+      type: Boolean
+    },
+  }
 }
 </script>
 
