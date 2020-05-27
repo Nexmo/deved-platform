@@ -4,13 +4,15 @@
       <img src="../../assets/images/placeholder.png" :alt="author.name">
       <h3>{{ author.name }}</h3>
     </div>
-    <NLink v-else :to="`/authors/${author.username}`" class="block Author__Mini-card">
-      <img :src="author.image_url" :alt="author.name">
-      <h3>{{ author.name }}</h3>
+    <NLink v-else :to="`/authors/${author.username}`" class="block Author__Mini-card" vocab="http://schema.org/" typeof="Person">
+      <img :src="author.image_url" :alt="`Profile pic of ${author.name}`" property="image">
+      <h3 property="name">
+        {{ author.name }}
+      </h3>
       <p v-if="author.spotlight">
         **** Developer Spotlight ****
       </p>
-      <p v-else>
+      <p v-else property="jobTitle">
         {{ author.title }}
       </p>
     </NLink>

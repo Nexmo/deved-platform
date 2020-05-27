@@ -1,6 +1,6 @@
 <template>
   <section class="Blog__Full-width">
-    <article class="Blog__post Vlt-container">
+    <article class="Blog__post Vlt-container" vocab="http://schema.org/" typeof="BlogPosting">
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
         <div v-if="routes" class="Vlt-col Vlt-col--2of3">
@@ -18,14 +18,16 @@
               <Category :category="attributes.category" />
             </div>
             <div class="Vlt-card__header Vlt-margin--A-top3">
-              <h1>{{ attributes.title }}</h1>
+              <h1 property="headline">
+                {{ attributes.title }}
+              </h1>
               <BackToTop />
             </div>
             <div v-if="attributes.author" class="Vlt-card__content Vlt-margin--A-top3">
-              <Author :author-name="attributes.author" type="minicard" />
+              <Author :author-name="attributes.author" type="minicard" property="author" />
             </div>
             <div v-if="attributes.published_at" class="Vlt-card__content Vlt-margin--A-top1">
-              <span>Published
+              <span property="datePublished" :content="attributes.published_at">Published
                 <strong>{{
                   attributes.published_at | moment("dddd, MMMM Do YYYY")
                 }}</strong></span>
@@ -33,7 +35,7 @@
             <div v-if="attributes.tags" class="Vlt-card__content Vlt-margin--A-top1">
               <Tags :tags="attributes.tags" />
             </div>
-            <div class="Vlt-card__content Vlt-margin--A-top3">
+            <div class="Vlt-card__content Vlt-margin--A-top3" property="articleBody">
               <component :is="markdownContent" />
             </div>
           </div>

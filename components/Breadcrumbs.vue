@@ -1,14 +1,16 @@
 <template>
-  <ol class="breadcrumb Vlt-margin--A-top1 Vlt-margin--A-bottom2">
-    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-      <NLink to="/" itemprop="url">
-        <span itemprop="title">Vonage Developer Blog</span>
+  <ol class="breadcrumb Vlt-margin--A-top1 Vlt-margin--A-bottom2" vocab="http://schema.org/" typeof="BreadcrumbList">
+    <li property="itemListElement" typeof="ListItem">
+      <NLink property="item" typeof="WebPage" to="/">
+        <span property="name">Vonage Developer Blog</span>
       </NLink>
+      <meta itemprop="position" content="1">
     </li>
-    <li v-for="route in routes" :key="route.route" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" :class="route.current ? 'current' : ''">
-      <NLink :to="route.route" itemprop="url">
-        <span itemprop="title">{{ route.title }}</span>
+    <li v-for="(route, index) in routes" :key="route.route" property="itemListElement" typeof="ListItem" :class="route.current ? 'current' : ''">
+      <NLink property="item" typeof="WebPage" :to="route.route">
+        <span property="name">{{ route.title }}</span>
       </NLink>
+      <meta itemprop="position" :content="index + 2">
     </li>  
   </ol>
 </template>

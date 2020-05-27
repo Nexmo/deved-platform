@@ -15,20 +15,20 @@
         </div>
       </div>
     </div>
-    <div v-else class="Vlt-col Author-col">
+    <div v-else class="Vlt-col Author-col" vocab="http://schema.org/" typeof="Person">
       <div class="Vlt-card Vlt-bg-white">
         <div v-if="author.image_url" class="Vlt-card__image Vlt-gradient--blue-to-purple">
-          <img class="Vlt-card__image__icon" :src="author.image_url" :alt="author.name">
+          <img class="Vlt-card__image__icon" :src="author.image_url" property="image" :alt="`Profile pic of ${author.name}`">
         </div>
         <div class="Vlt-card__header">
           <h4 class="Vlt-truncate">
-            {{ author.name }}
-            <small v-if="!author.spotlight" class="Vlt-grey-dark">{{
+            <span property="name">{{ author.name }}</span>
+            <small v-if="!author.spotlight" class="Vlt-grey-dark" property="jobTitle">{{
               author.title
             }}</small>
           </h4>
         </div>
-        <div v-if="bio && author.bio" class="Vlt-card__content">
+        <div v-if="bio && author.bio" class="Vlt-card__content" property="description">
           {{ author.bio }}
         </div>
         <div v-if="author.spotlight" class="Vlt-card__content">

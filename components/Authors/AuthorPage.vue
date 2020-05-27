@@ -1,17 +1,18 @@
 <template>
-  <div class="Blog-hero Author__Page">
+  <div class="Blog-hero Author__Page" vocab="http://schema.org/" typeof="Person">
     <div class="Blog-hero__content">
-      <img :src="author.image_url" :alt="author.name">
+      <img :src="author.image_url" :alt="`Profile pic of ${author.name}`" property="image">
       <h3>
-        {{ author.name }}<br><small
+        <span property="name">{{ author.name }}</span><br><small
           v-if="!author.spotlight"
           class="Vlt-grey-dark"
+          property="jobTitle"
         >{{ author.title }}</small>
       </h3>
       <div v-if="author.spotlight">
         Spotlight
       </div>
-      <div v-if="author.bio">
+      <div v-if="author.bio" property="description">
         {{ author.bio }}
       </div>
       <div class="Vlt-center">
