@@ -212,10 +212,10 @@ export default {
 }
 
 .Blog__post .frontmatter-markdown >>> pre[class*="language-"] {
-  margin: 24px -50px;
+  margin: 24px -30px;
   font-size: 16px;
   line-height: 1.4;
-  padding-left: 47px;
+  padding-left: 27px;
 }
 
 .Blog__post .frontmatter-markdown >>> p {
