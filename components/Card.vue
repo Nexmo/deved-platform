@@ -6,9 +6,11 @@
         <Category :category="post.attributes.category" />
       </div>
       <div class="Vlt-card__header">
-        <h4 class="Vlt-truncate">
-          {{ post.attributes.title }}
-        </h4>
+        <NLink :to="getPermalink(post)" :title="post.attributes.title">
+          <h4 class="Vlt-truncate">
+            {{ post.attributes.title }}
+          </h4>
+        </NLink>
       </div>
       <div class="Vlt-card__content Vlt-grey-dark">
         <small v-if="post.attributes.published_at">

@@ -146,6 +146,13 @@
                 rel="noreferrer"
               >YouTube</a>
             </li>
+            <li>
+              <a href="/feed.xml" class="">
+                <svg class="Vlt-icon Vlt-icon--smaller Vlt-white">
+                  <use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-rss" />
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

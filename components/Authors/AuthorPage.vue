@@ -41,6 +41,10 @@
           :link="author.website_url || `/authors/${author.username}`"
           class="Vlt-btn--small"
         />
+        <RssSocialButton
+          :link="`/authors/${author.username}/feed.xml`"
+          class="Vlt-btn--small"
+        />
       </div>
     </div>
   </div>
@@ -55,6 +59,7 @@ import TwitchSocialButton from "~/components/SocialButtons/TwitchSocialButton"
 import TwitterSocialButton from "~/components/SocialButtons/TwitterSocialButton"
 import WebsiteSocialButton from "~/components/SocialButtons/WebsiteSocialButton"
 import YouTubeSocialButton from "~/components/SocialButtons/YouTubeSocialButton"
+import RssSocialButton from "~/components/SocialButtons/RssSocialButton"
 
 export default {
   components: {
@@ -66,6 +71,7 @@ export default {
     TwitterSocialButton,
     WebsiteSocialButton,
     YouTubeSocialButton,
+    RssSocialButton,
   },
 
   props: {
