@@ -7,7 +7,7 @@
       </div>
       <div class="Vlt-card__header">
         <NLink :to="getPermalink(post)" :title="post.attributes.title">
-          <h4 class="Vlt-truncate">
+          <h4 class="Blog-truncate">
             {{ post.attributes.title }}
           </h4>
         </NLink>
@@ -108,5 +108,15 @@ export default {
 
 .Vlt-card__header {
   padding-bottom: 8px;
+}
+
+@media only screen and (min-width: 575px) {
+  .Vlt-card__header h4.Blog-truncate {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 </style>
