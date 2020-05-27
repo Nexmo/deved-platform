@@ -59,7 +59,7 @@ export default {
 
     return {
       author: author,
-      posts: imports,
+      posts: imports.map(({ attributes, permalink, meta }) => ({ attributes, permalink, meta })),
       routes: [
         { route: `/authors`, title: `All our authors` },
         { route: `/authors/${imports}`, title: `One of our amazing authors`, current: true },

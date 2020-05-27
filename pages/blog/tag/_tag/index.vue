@@ -59,7 +59,7 @@ export default {
 
     return {
       tag: tag,
-      posts: imports,
+      posts: imports.map(({ attributes, permalink, meta }) => ({ attributes, permalink, meta })),
       routes: [
         { route: `/blog/tag/${tag}`, title: `${tag}`, current: true },
       ]

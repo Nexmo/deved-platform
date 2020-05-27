@@ -65,7 +65,7 @@ export default {
       dayTh: pageDate.format('Do'),
       monthName: pageDate.format('MMMM'),
       year: pageDate.format('YYYY'),
-      posts: imports,
+      posts: imports.map(({ attributes, permalink, meta }) => ({ attributes, permalink, meta })),
       routes: [
         { route: `/blog/${pageDate.format('YYYY')}`, title: pageDate.format('YYYY') },
         { route: `/blog/${pageDate.format('YYYY/MM')}`, title: pageDate.format('MMMM') },

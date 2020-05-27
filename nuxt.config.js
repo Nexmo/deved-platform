@@ -98,7 +98,7 @@ Object.keys(categories).forEach(function (type) {
 
 Object.keys(tags).forEach(function (type) {
   tags[type].forEach(tag => {
-    addRoute(`/${type}/category/${tag}`)
+    addRoute(`/${type}/tag/${tag}`)
   })
 })
 

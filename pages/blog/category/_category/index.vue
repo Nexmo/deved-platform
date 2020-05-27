@@ -59,7 +59,7 @@ export default {
 
     return {
       category: category,
-      posts: imports,
+      posts: imports.map(({ attributes, permalink, meta }) => ({ attributes, permalink, meta })),
       routes: [
         { route: `/blog/category/${category}`, title: `${category}`, current: true },
       ]
