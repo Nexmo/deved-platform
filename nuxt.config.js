@@ -188,12 +188,16 @@ export default () => {
         // Twitter Only
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:site", content: "@VonageDev" },
+        { name: "twitter:url", content: baseUrl },
+        { name: "twitter:title", content: `${indexTitle} » ${baseTitle}` },
+        { name: "twitter:description", content: baseDescription },
+        { name: "twitter:image", content: `${baseUrl}/images/generic-social-card.png` },
         // Twitter and Open Graph / Facebook
+        // Open Graph / Facebook Only
         { property: "og:url", content: baseUrl },
         { property: "og:title", content: `${indexTitle} » ${baseTitle}` },
         { property: "og:description", content: baseDescription },
         { property: "og:image", content: `${baseUrl}/images/generic-social-card.png` },
-        // Open Graph / Facebook Only
         { property: "og:updated_time", content: builtAt },
       ],
       link: [
