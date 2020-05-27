@@ -43,7 +43,7 @@
               respect of your data. You can opt out of receiving our updates by
               clicking the unsubscribe link in the email or by emailing us at
               <a href="mailto:privacy@nexmo.com" 
-                 rel="noreferrer"target="_blank"
+                 rel="noreferrer" target="_blank"
               >privacy@nexmo.com</a>.</small>
           </div>
         </form>
