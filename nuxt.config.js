@@ -21,6 +21,12 @@ const posts = []
 const dynamicContent = glob.sync("**/*.md", { cwd: "content" })
 const itemsPerArchivePage = 12
 
+const addRoute = (route) => {
+  if (routes.indexOf(route) === -1) {
+    routes.push(route)
+  }
+}
+
 dynamicContent.forEach((local) => {
   const [type, file] = local.split("/")
   const [name] = file.split(".md")
@@ -47,35 +53,28 @@ dynamicContent.forEach((local) => {
   routes.push(post.permalink)
 })
 
-const categories = []
+const categories = {}
+const tags = {}
 
 posts.forEach((post) => {
-  if (post.attributes.category) {
-    if (categories.indexOf(post.attributes.category) === -1) {
-      categories.push(post.attributes.category)
-    }
-
-    const route = `/${post.attributes.type}/category/${post.attributes.category}`
-
-    if (routes.indexOf(route) === -1) {
-      routes.push(route)
-    }
+  if (!categories[post.attributes.type]) {
+    categories[post.attributes.type] = []
   }
 
-  if (post.attributes.author) {
-    const route = `/authors/${post.attributes.author}`
+  if (!tags[post.attributes.type]) {
+    tags[post.attributes.type] = []
+  }
 
-    if (routes.indexOf(route) === -1) {
-      routes.push(route)
+  if (post.attributes.category) {
+    if (categories[post.attributes.type].indexOf(post.attributes.category) === -1) {
+      categories[post.attributes.type].push(post.attributes.category)
     }
   }
 
   if (post.attributes.tags) {
     post.attributes.tags.forEach((tag) => {
-      const route = `/${post.attributes.type}/tag/${tag}`
-
-      if (routes.indexOf(route) === -1) {
-        routes.push(route)
+      if (tags[post.attributes.type].indexOf(tag) === -1) {
+        tags[post.attributes.type].push(tag)
       }
     })
   }
@@ -85,22 +84,26 @@ posts.forEach((post) => {
     const monthString = moment(post.attributes.published_at).format("YYYY/MM")
     const dayString = moment(post.attributes.published_at).format("YYYY/MM/DD")
 
-    const yearRoute = `/${post.attributes.type}/${yearString}`
-    const monthRoute = `/${post.attributes.type}/${monthString}`
-    const dayRoute = `/${post.attributes.type}/${dayString}`
-
-    if (routes.indexOf(yearRoute) === -1) {
-      routes.push(yearRoute)
-    }
-
-    if (routes.indexOf(monthRoute) === -1) {
-      routes.push(monthRoute)
-    }
-
-    if (routes.indexOf(dayRoute) === -1) {
-      routes.push(dayRoute)
-    }
+    addRoute(`/${post.attributes.type}/${yearString}`)
+    addRoute(`/${post.attributes.type}/${monthString}`)
+    addRoute(`/${post.attributes.type}/${dayString}`)
   }
+})
+
+Object.keys(categories).forEach(function (type) {
+  categories[type].forEach(category => {
+    addRoute(`/${type}/category/${category}`)
+  })
+})
+
+Object.keys(tags).forEach(function (type) {
+  tags[type].forEach(tag => {
+    addRoute(`/${type}/category/${tag}`)
+  })
+})
+
+authors.forEach((author) => {
+  addRoute(`/authors/${author.username}`)
 })
 
 for (
@@ -109,9 +112,46 @@ for (
   posts.filter((post) => post.attributes.published !== false).length / itemsPerArchivePage;
   page++
 ) {
-  const route = `/archive/${page}`
-  if (routes.indexOf(route) === -1) {
-    routes.push(route)
+  addRoute(`/archive/${page}`)
+}
+
+const generateFeed = (path, filter) => {
+  return {
+    path: path,
+    create (feed) {
+      feed.options = {
+        title: `${indexTitle} :: ${baseTitle}`,
+        link: `${baseUrl}/feed.xml`,
+        description: baseDescription,
+      }
+
+      let feedPosts = posts
+
+      if (filter) {
+        feedPosts = feedPosts.filter(filter)
+      } else {
+        feedPosts = feedPosts.filter((content) => {
+          return (
+            content.attributes.published != false
+          )
+        })
+      }
+
+      feedPosts.forEach(post => {
+        feed.addItem({
+          id: post.permalink,
+          title: post.title,
+          pubDate: moment(post.attributes.published_at).format("ddd, DD MMM YYYY HH:mm:ss ZZ"),
+          link: `${baseUrl}${post.permalink}`,
+          category: post.attributes.category,
+          description: post.attributes.description,
+          content: post.html,
+          comments: `${baseUrl}${post.permalink}`
+        })
+      })
+    },
+    cacheTime: 1000 * 60 * 15,
+    type: "rss2",
   }
 }
 
@@ -194,43 +234,13 @@ export default () => {
     ],
 
     feed: [
-      {
-        path: "/feed.xml",
-        create (feed) {
-          feed.options = {
-            title: `${indexTitle} :: ${baseTitle}`,
-            link: `${baseUrl}/feed.xml`,
-            description: baseDescription,
-          }
-
-          posts.forEach(post => {
-            feed.addItem({
-              id: post.permalink,
-              title: post.title,
-              pubDate: moment(post.attributes.published_at).format("ddd, DD MMM YYYY HH:mm:ss ZZ"),
-              link: `${baseUrl}${post.permalink}`,
-              category: post.attributes.category,
-              description: post.attributes.description,
-              content: post.html,
-              comments: `${baseUrl}${post.permalink}`
-            })
-          })
-
-          categories.forEach(category => {
-            feed.addCategory(category)
-          })
-
-          authors.forEach(author => {
-            feed.addContributor({
-              name: author.name,
-              email: author.email,
-              link: `${baseUrl}/authors/${author.username}`
-            })
-          })
-        },
-        cacheTime: 1000 * 60 * 15,
-        type: "rss2",
-      }
+      generateFeed("/feed.xml"),
+      ...authors.map(author => generateFeed(`/authors/${author.username}/feed.xml`, (content) => {
+        return (
+          content.attributes.author == author.username &&
+          content.attributes.published != false
+        )
+      }))
     ],
 
     generate: {
