@@ -1,7 +1,7 @@
 <template>
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
-      <CategoryHero :title="year" />
+      <PageHero>Developer content from {{ year }}.</PageHero>
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import CategoryHero from "~/components/CategoryHero"
+import PageHero from "~/components/PageHero"
 import MiniCard from "~/components/MiniCard"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import moment from 'moment'
@@ -27,7 +27,7 @@ export default {
   components: {
     Breadcrumbs,
     MiniCard,
-    CategoryHero,
+    PageHero,
   },
 
   asyncData({ route, error }) {

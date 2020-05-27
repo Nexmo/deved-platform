@@ -2,22 +2,11 @@
   <div class="Blog-hero">
     <div class="Blog-hero__content">
       <h3>
-        <strong>{{ title }}</strong> content from the team at Vonage.
+        <slot />
       </h3>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-  },
-}
-</script>
 
 <style scoped>
 .Blog-hero {
@@ -47,16 +36,11 @@ export default {
 }
 
 .Blog-hero__content h3 {
-  text-align: center;
-  color: black;
-  line-height: 1;
   margin-bottom: 40px;
-  font-size: 1.5em;
+  text-align: center;
+  line-height: 1;
+  font-size: 21px;
   font-weight: normal;
-}
-
-.Blog-hero__content h3 strong {
-  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 775px) {

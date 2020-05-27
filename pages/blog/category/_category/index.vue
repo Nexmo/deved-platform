@@ -1,7 +1,9 @@
 <template>
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
-      <CategoryHero :title="category" />
+      <PageHero class="Category-hero">
+        <Category :category="$route.params.category" /> posts from the team at Vonage.
+      </PageHero>
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
@@ -18,16 +20,18 @@
 </template>
 
 <script>
-import CategoryHero from "~/components/CategoryHero"
+import Category from "~/components/Category"
+import PageHero from "~/components/PageHero"
 import MiniCard from "~/components/MiniCard"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import moment from 'moment'
 
 export default {
   components: {
+    Category,
     MiniCard,
     Breadcrumbs,
-    CategoryHero,
+    PageHero,
   },
 
   asyncData({ route, error }) {
@@ -61,7 +65,7 @@ export default {
       category: category,
       posts: imports.map(({ attributes, permalink, meta }) => ({ attributes, permalink, meta })),
       routes: [
-        { route: `/blog/category/${category}`, title: `${category}`, current: true },
+        { route: `/blog/category/${category}`, title: `Category: ${category}`, current: true },
       ]
     }
   },
@@ -73,3 +77,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.Category-hero >>> .Blog-hero__content h3 .Vlt-badge {
+  font-size: 21px;
+  padding: 0 4px 0 0;
+  line-height: 1;
+}
+</style>

@@ -1,7 +1,9 @@
 <template>
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
-      <CategoryHero :title="`#${tag}`" />
+      <PageHero class="Tag-hero">
+        <Tag :tag="$route.params.tag" /> posts from the team at Vonage.
+      </PageHero>
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
@@ -18,16 +20,18 @@
 </template>
 
 <script>
-import CategoryHero from "~/components/CategoryHero"
+import Tag from "~/components/Tag"
+import PageHero from "~/components/PageHero"
 import MiniCard from "~/components/MiniCard"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import moment from 'moment'
 
 export default {
   components: {
+    Tag,
     MiniCard,
     Breadcrumbs,
-    CategoryHero,
+    PageHero,
   },
 
   asyncData({ route, error }) {
@@ -61,7 +65,7 @@ export default {
       tag: tag,
       posts: imports.map(({ attributes, permalink, meta }) => ({ attributes, permalink, meta })),
       routes: [
-        { route: `/blog/tag/${tag}`, title: `${tag}`, current: true },
+        { route: `/blog/tag/${tag}`, title: `Tag: ${tag}`, current: true },
       ]
     }
   },
@@ -73,3 +77,12 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.Tag-hero >>> .Blog-hero__content h3 .Vlt-badge {
+  font-size: 21px;
+  line-height: 1;
+  border-radius: 12px;
+  margin-bottom: -2px;
+}
+</style>
