@@ -186,19 +186,18 @@ export default () => {
         { name: "theme-color", content: "#ffffff" },
         { name: "robots", content: "index, follow" },
         // Twitter Only
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:site", content: "@VonageDev" },
-        { name: "twitter:url", content: baseUrl },
-        { name: "twitter:title", content: `${indexTitle} » ${baseTitle}` },
-        { name: "twitter:description", content: baseDescription },
-        { name: "twitter:image", content: `${baseUrl}/images/generic-social-card.png` },
-        // Twitter and Open Graph / Facebook
+        { hid: "twitter:card", name: "twitter:card", content: "summary_large_image" },
+        { hid: "twitter:site", name: "twitter:site", content: "@VonageDev" },
+        { hid: "twitter:url", name: "twitter:url", content: baseUrl },
+        { hid: "twitter:title", name: "twitter:title", content: `${indexTitle} » ${baseTitle}` },
+        { hid: "twitter:description", name: "twitter:description", content: baseDescription },
+        { hid: "twitter:image", name: "twitter:image", content: `${baseUrl}/images/generic-social-card.png` },
         // Open Graph / Facebook Only
-        { property: "og:url", content: baseUrl },
-        { property: "og:title", content: `${indexTitle} » ${baseTitle}` },
-        { property: "og:description", content: baseDescription },
-        { property: "og:image", content: `${baseUrl}/images/generic-social-card.png` },
-        { property: "og:updated_time", content: builtAt },
+        { hid: "og:url", property: "og:url", content: baseUrl },
+        { hid: "og:title", property: "og:title", content: `${indexTitle} » ${baseTitle}` },
+        { hid: "og:description", property: "og:description", content: baseDescription },
+        { hid: "og:image", property: "og:image", content: `${baseUrl}/images/generic-social-card.png` },
+        { hid: "og:updated_time", property: "og:updated_time", content: builtAt },
       ],
       link: [
         {

@@ -76,6 +76,29 @@ import Breadcrumbs from "~/components/Breadcrumbs"
 import Tags from "~/components/Tags"
 import moment from "moment"
 
+const getRouteData = (post) => {
+  return post.meta.resourcePath
+      .split("/content/")
+      .pop()
+      .split(".")[0]
+      .split("/")
+}
+
+const getPostDate = (post) => {
+  return moment(post.attributes.published_at)
+}
+
+const getRoute = (post) => {
+  if (post.attributes.permalink) {
+    return post.attributes.permalink
+  } else {
+    const [, name] = getRouteData(post)
+    const postDate = getPostDate(post)
+
+    return `/blog/${postDate.format('YYYY/MM/DD')}/${name}`
+  }
+}
+
 export default {
   components: {
     BackToTop,
@@ -88,26 +111,7 @@ export default {
   async asyncData ({ params, error }) {
     try {
       const post = await import(`~/content/blog/${params.slug}.md`)
-
-      const routeData = (post) => {
-        return post.meta.resourcePath
-            .split("/content/")
-            .pop()
-            .split(".")[0]
-            .split("/")
-      }
-
-      const postDate = moment(post.attributes.published_at)
-
-      const route = (post) => {
-        if (post.attributes.permalink) {
-          return post.attributes.permalink
-        } else {
-          const [, name] = routeData(post)
-
-          return `/blog/${postDate.format('YYYY/MM/DD')}/${name}`
-        }
-      }
+      const postDate = getPostDate(post)
 
       return {
         disqusShortname: process.env.disqusShortname,
@@ -117,11 +121,12 @@ export default {
           { route: `/blog/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
           { route: `/blog/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
           { route: `/blog/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
-          { route: route(post), title: post.attributes.title, current: true }
+          { route: getRoute(post), title: post.attributes.title, current: true }
         ],
-        route: route(post)
+        route: getRoute(post)
       }
     } catch (e) {
+      console.log(e)
       error({ statusCode: 404, message: 'Post not found' })
     }
   },
@@ -134,12 +139,41 @@ export default {
     })
   },
 
+  methods: {
+    postMeta() {
+      const meta = [
+        // Twitter Only
+        { hid: "twitter:url", name: "twitter:url", content: `${process.env.baseUrl}${this.route}` },
+        { hid: "twitter:title", name: "twitter:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
+        { hid: "twitter:description", name: "twitter:description", content: this.attributes.description },
+        // Open Graph / Facebook Only
+        { hid: "og:url", name: "og:url", content: `${process.env.baseUrl}${this.route}` },
+        { hid: "og:title", name: "og:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
+        { hid: "og:description", name: "og:description", content: this.attributes.description },
+      ]
+
+      if (this.attributes.thumbnail) {
+        let url = this.attributes.thumbnail
+
+        if (!url.startsWith('http')) {
+          url = `${process.env.baseUrl}${url}`
+        }
+
+        meta.push({ hid: "twitter:image", name: "twitter:image", content: `${url}` })
+        meta.push({ hid: "og:image", name: "og:image", content: `${url}` })
+      }
+
+      return meta
+    }
+  },
+
   head() {
     return {
       title: `${this.attributes.title}`,
       meta: [
         { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.attributes.category}, ${this.attributes.tags.join(', ')}`},
         { hid: "description", name: "description", content: this.attributes.description},
+        ...this.postMeta()
       ]
     }
   },
