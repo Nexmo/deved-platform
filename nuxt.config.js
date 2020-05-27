@@ -13,7 +13,7 @@ import { authors } from "./content/authors.json"
 
 const builtAt = new Date().toISOString()
 const baseUrl = process.env.BASE_URL || "http://localhost:3000"
-const indexTitle = "We <3 content"
+const indexTitle = "We ♥ content"
 const baseTitle = "Developer content from Vonage"
 const baseDescription = "Developer content from the team at Vonage, including posts on our Java, Node.js, Python, DotNet, Ruby and Go SDKs"
 const routes = []

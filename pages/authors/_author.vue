@@ -69,7 +69,7 @@ export default {
 
   head() {
     return {
-      title: `We <3 our contributors`
+      title: `All our authors`
     }
   },
 }

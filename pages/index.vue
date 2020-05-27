@@ -98,7 +98,7 @@ export default {
 
   head() {
     return {
-      title: "We <3 content"
+      title: "We ♥ content"
     }
   },
 }
