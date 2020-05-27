@@ -49,7 +49,7 @@ collections:
               - { label: Bio, name: bio, widget: text }
               - { label: 'User Image', name: 'image_url', widget: 'image', allow_multiple: false }
               - { label: Email, name: email, widget: string }
-              - { label: 'Twitter Url', name: twitter_url, widget: string }
+              - { label: 'Twitter *Username*', name: twitter, widget: string }
               - { label: 'Facebook Url', name: facebook_url, widget: string }
               - { label: 'GitHub Url', name: github_url, widget: string }
               - { label: 'StackOverflow Url', name: stackoverflow_url, widget: string }

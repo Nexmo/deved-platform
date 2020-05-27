@@ -35,7 +35,7 @@
           Spotlight
         </div>
         <div class="Vlt-card__content Vlt-center">
-          <TwitterSocialButton :link="author.twitter_url" class="Vlt-btn--small" />
+          <TwitterSocialButton :link="`https://twitter.com/${author.twitter}`" class="Vlt-btn--small" />
           <FacebookSocialButton
             :link="author.facebook_url"
             class="Vlt-btn--small"

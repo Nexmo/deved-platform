@@ -27,6 +27,24 @@ export default {
       required: true,
     },
   },
+
+  methods: {
+    twitterMeta() {
+      if (this.author.twitter) {
+        return { name: "twitter:creator", content: `@${this.author.twitter}` }
+      } else {
+        return {}
+      }
+    }
+  },
+
+  head () {
+    return {
+      meta: [
+        this.twitterMeta()
+      ]
+    }
+  }
 }
 </script>
 

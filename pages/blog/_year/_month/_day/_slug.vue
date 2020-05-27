@@ -138,8 +138,7 @@ export default {
     return {
       title: `${this.attributes.title}`,
       meta: [
-        { charset: "utf-8" },
-        { name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.attributes.category}, ${this.attributes.tags.join(', ')}`},
+        { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.attributes.category}, ${this.attributes.tags.join(', ')}`},
         { hid: "description", name: "description", content: this.attributes.description},
       ]
     }

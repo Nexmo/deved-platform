@@ -13,9 +13,9 @@ import { authors } from "./content/authors.json"
 
 const builtAt = new Date().toISOString()
 const baseUrl = process.env.BASE_URL || "http://localhost:3000"
-const indexTitle = "Developer content from the team at Vonage"
-const baseTitle = "Vonage Developer Blog"
-const baseDescription = "Great developer and spotlight content from the team at Vonage, including posts on our Java, Node.js, Python, DotNet, Ruby and Go SDKs"
+const indexTitle = "We <3 content"
+const baseTitle = "Developer content from Vonage"
+const baseDescription = "Developer content from the team at Vonage, including posts on our Java, Node.js, Python, DotNet, Ruby and Go SDKs"
 const routes = []
 const posts = []
 const dynamicContent = glob.sync("**/*.md", { cwd: "content" })
@@ -168,10 +168,10 @@ export default () => {
 
     head: {
       title: indexTitle,
-      titleTemplate: `%s :: ${baseTitle}`,
+      titleTemplate: `%s » ${baseTitle}`,
       meta: [
         { charset: "utf-8" },
-        { name: "keywords", content: "developer tutorials, developer content, node sdk, java sdk, vonage, nexmo, python sdk, ruby sdk, go sdk, send sms, make calls, apis, communication apis"},
+        { hid: "keywords", name: "keywords", content: "developer tutorials, developer content, node sdk, java sdk, vonage, nexmo, python sdk, ruby sdk, go sdk, send sms, make calls, apis, communication apis"},
         { hid: "description", name: "description", content: baseDescription},
         {
           name: "viewport",
@@ -185,9 +185,15 @@ export default () => {
         },
         { name: "theme-color", content: "#ffffff" },
         { name: "robots", content: "index, follow" },
+        // Twitter Only
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:site", content: "@VonageDev" },
-        { property: "og:type", content: "profile" },
+        // Twitter and Open Graph / Facebook
+        { property: "og:url", content: baseUrl },
+        { property: "og:title", content: `${indexTitle} » ${baseTitle}` },
+        { property: "og:description", content: baseDescription },
+        { property: "og:image", content: `${baseUrl}/images/generic-social-card.png` },
+        // Open Graph / Facebook Only
         { property: "og:updated_time", content: builtAt },
       ],
       link: [

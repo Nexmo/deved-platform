@@ -98,7 +98,7 @@ export default {
 
   head() {
     return {
-      title: "We <3 Content :: Developer content from the team at Vonage"
+      title: "We <3 content"
     }
   },
 }

@@ -17,7 +17,7 @@
       </div>
       <div class="Vlt-center">
         <TwitterSocialButton
-          :link="author.twitter_url"
+          :link="`https://twitter.com/${author.twitter}`"
           class="Vlt-btn--small"
         />
         <FacebookSocialButton
