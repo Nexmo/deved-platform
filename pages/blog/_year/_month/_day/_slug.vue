@@ -10,9 +10,9 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
-          <div class="Vlt-card Vlt-card--lesspadding">
+          <div class="Vlt-card Vlt-card--lesspadding" property="mainEntityOfPage">
             <div v-if="attributes.thumbnail" class="Vlt-card__header">
-              <img :src="attributes.thumbnail" :alt="attributes.title" width="100%">
+              <img property="image" :src="attributes.thumbnail" :alt="attributes.title" width="100%">
             </div>
             <div v-if="attributes.category" class="Vlt-card__corner Vlt-margin--A-top3">
               <Category :category="attributes.category" />
@@ -25,12 +25,14 @@
             </div>
             <div v-if="attributes.author" class="Vlt-card__content Vlt-margin--A-top3">
               <Author :author-name="attributes.author" type="minicard" property="author" />
+              <meta property="publisher" content="@VonageDev">
             </div>
             <div v-if="attributes.published_at" class="Vlt-card__content Vlt-margin--A-top1">
               <span property="datePublished" :content="attributes.published_at">Published
                 <strong>{{
-                  attributes.published_at | moment("dddd, MMMM Do YYYY")
+                  (attributes.updated_at || attributes.published_at) | moment("dddd, MMMM Do YYYY")
                 }}</strong></span>
+              <meta property="dateModified" :content="attributes.updated_at || attributes.published_at">
             </div>
             <div v-if="attributes.tags" class="Vlt-card__content Vlt-margin--A-top1">
               <Tags :tags="attributes.tags" />
@@ -151,7 +153,7 @@ export default {
         { hid: "twitter:title", name: "twitter:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
         { hid: "twitter:description", name: "twitter:description", content: this.attributes.description },
         { hid: "twitter:image", name: "twitter:image", content: `${this.attributes.thumbnail || '/images/generic-social-card.png'}` },
-// Open Graph / Facebook Only
+        // Open Graph / Facebook Only
         { hid: "og:url", property: "og:url", content: `${process.env.baseUrl}${this.route}` },
         { hid: "og:title", property: "og:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
         { hid: "og:description", property: "og:description", content: this.attributes.description },
