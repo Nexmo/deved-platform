@@ -7,7 +7,7 @@ author: martyndavies
 published: true
 published_at: 2020-04-08T17:45:13.602Z
 comments: true
-category: tutorial
+category: announcement
 tags:
   - messages-api
   - messages-api-sandbox

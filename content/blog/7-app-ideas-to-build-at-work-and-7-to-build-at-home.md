@@ -6,7 +6,7 @@ author: nahrinjalal
 published: true
 published_at: 2020-05-05T10:30:00.000Z
 comments: true
-category: tutorial
+category: inspiration
 tags:
   - dotnet
   - javascript

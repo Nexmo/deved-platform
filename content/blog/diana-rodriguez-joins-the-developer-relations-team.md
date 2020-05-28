@@ -7,9 +7,9 @@ author: dianarodriguez
 published: true
 published_at: 2020-03-19T18:52:39.194Z
 comments: false
-category: new-starter
+category: team
 tags:
-  - new-starter
+  - python
 ---
 ## Hola Mundo!!/Hello World!
 

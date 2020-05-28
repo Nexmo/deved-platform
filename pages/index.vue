@@ -89,10 +89,18 @@ export default {
       return this.getPublishedPosts().slice(0, 2)
     },
 
+    categorySizeMap(category) {
+      if (category ==='tutorial') { 
+        return 6
+      } else {
+        return 3
+      }
+    },
+
     getCategoryPosts(category) {
       return this.getPublishedPosts()
         .filter((post) => post.attributes.category === category)
-        .slice(0, 6)
+        .slice(0, this.categorySizeMap(category))
     }
   },
 

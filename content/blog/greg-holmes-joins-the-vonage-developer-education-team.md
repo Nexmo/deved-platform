@@ -7,9 +7,9 @@ author: gregholmes
 published: true
 published_at: 2020-03-24T19:06:41.798Z
 comments: false
-category: new-starter
+category: team
 tags:
-  - new-starter
+  - php
 ---
 Hi! My name is Greg Holmes, and I’m excited to be joining the Vonage team as a Developer Educator. For the last two months, I have been painfully containing my excitement while working my notice period for my former employer. But, now the time has come!
 
