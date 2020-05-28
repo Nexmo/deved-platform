@@ -4,13 +4,13 @@
       <NLink property="item" typeof="WebPage" to="/">
         <span property="name">Vonage Developer Blog</span>
       </NLink>
-      <meta itemprop="position" content="1">
+      <meta property="position" content="1">
     </li>
     <li v-for="(route, index) in routes" :key="route.route" property="itemListElement" typeof="ListItem" :class="route.current ? 'current' : ''">
       <NLink property="item" typeof="WebPage" :to="route.route">
         <span property="name">{{ route.title }}</span>
       </NLink>
-      <meta itemprop="position" :content="index + 2">
+      <meta property="position" :content="index + 2">
     </li>  
   </ol>
 </template>
