@@ -81,12 +81,6 @@ export default {
       required: true,
     },
   },
-
-  head() {
-    return {
-      title: `${this.author.name} :: ${this.spotlight ? 'Spotlight Contributor' : this.author.title}`
-    }
-  },
 }
 </script>
 

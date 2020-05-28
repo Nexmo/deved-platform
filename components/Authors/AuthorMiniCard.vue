@@ -31,7 +31,7 @@ export default {
   methods: {
     twitterMeta() {
       if (this.author.twitter) {
-        return { name: "twitter:creator", content: `@${this.author.twitter}` }
+        return { hid: "twitter:creator", name: "twitter:creator", content: `@${this.author.twitter}` }
       } else {
         return {}
       }

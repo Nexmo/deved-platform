@@ -141,27 +141,23 @@ export default {
 
   methods: {
     postMeta() {
+      if (typeof this.attributes.thumbnail !== 'undefined' && !this.attributes.thumbnail.startsWith('http')) {
+        this.attributes.thumbnail = `${process.env.baseUrl}${this.attributes.thumbnail}`
+      }
+  
       const meta = [
         // Twitter Only
         { hid: "twitter:url", name: "twitter:url", content: `${process.env.baseUrl}${this.route}` },
         { hid: "twitter:title", name: "twitter:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
         { hid: "twitter:description", name: "twitter:description", content: this.attributes.description },
-        // Open Graph / Facebook Only
-        { hid: "og:url", name: "og:url", content: `${process.env.baseUrl}${this.route}` },
-        { hid: "og:title", name: "og:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
-        { hid: "og:description", name: "og:description", content: this.attributes.description },
+        { hid: "twitter:image", name: "twitter:image", content: `${this.attributes.thumbnail || '/images/generic-social-card.png'}` },
+// Open Graph / Facebook Only
+        { hid: "og:url", property: "og:url", content: `${process.env.baseUrl}${this.route}` },
+        { hid: "og:title", property: "og:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
+        { hid: "og:description", property: "og:description", content: this.attributes.description },
+        { hid: "og:image", property: "og:image", content: `${this.attributes.thumbnail || '/images/generic-social-card.png'}` },
+        { hid: "og:type", property: "og:type", content: 'article' },
       ]
-
-      if (this.attributes.thumbnail) {
-        let url = this.attributes.thumbnail
-
-        if (!url.startsWith('http')) {
-          url = `${process.env.baseUrl}${url}`
-        }
-
-        meta.push({ hid: "twitter:image", name: "twitter:image", content: `${url}` })
-        meta.push({ hid: "og:image", name: "og:image", content: `${url}` })
-      }
 
       return meta
     }
