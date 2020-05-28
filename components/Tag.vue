@@ -89,4 +89,24 @@ export default {
   background-color:#1e38bb;
   color:#ffdf5b;
 }
+
+.Blog-badge--netlify {
+  background: linear-gradient(to bottom, #23c2b8, #37afbc);
+  color: white;
+}
+
+.Blog-badge--vuejs {
+  background: #4fc08d;
+  color: white;
+}
+
+.Blog-badge--reactjs {
+  background: #61dafb;
+  color: black;
+}
+
+.Blog-badge--community {
+  background: linear-gradient(to top right, #d83b9e, #ffa48e);
+  color: white;
+}
 </style>
