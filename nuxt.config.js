@@ -35,22 +35,24 @@ dynamicContent.forEach((local) => {
   const content = fm(fs.readFileSync(path.resolve("content", local), "utf8"))
   const md = markdownIt()
 
-  const date = new Date(content.attributes.published_at)
+  if (content.attributes.published !== false) {
+    const date = new Date(content.attributes.published_at)
 
-  post.permalink = `/${type}/${date.getFullYear()}/${(
-    "0" +
-    (date.getMonth() + 1)
-  ).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`
+    post.permalink = `/${type}/${date.getFullYear()}/${(
+      "0" +
+      (date.getMonth() + 1)
+    ).slice(-2)}/${("0" + date.getDate()).slice(-2)}/${name}`
 
-  Object.assign(post, content.attributes)
-  post.attributes = content.attributes
-  post.attributes.type = type
-  post.html = md.render(content.body)
-  post.raw = h2t.fromString(post.html)
+    Object.assign(post, content.attributes)
+    post.attributes = content.attributes
+    post.attributes.type = type
+    post.html = md.render(content.body)
+    post.raw = h2t.fromString(post.html)
 
-  posts.push(post)
+    posts.push(post)
 
-  routes.push(post.permalink)
+    routes.push(post.permalink)
+  }
 })
 
 const categories = {}
