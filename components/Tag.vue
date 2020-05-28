@@ -95,18 +95,8 @@ export default {
   color: white;
 }
 
-.Blog-badge--vuejs {
-  background: #4fc08d;
-  color: white;
-}
-
 .Blog-badge--reactjs {
   background: #61dafb;
   color: black;
-}
-
-.Blog-badge--community {
-  background: linear-gradient(to top right, #d83b9e, #ffa48e);
-  color: white;
 }
 </style>
