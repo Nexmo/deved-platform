@@ -7,7 +7,7 @@
             <div class="Search-hero__search-box-wrapper">
               <div class="Vlt-form__element Vlt-form__element--big Search-hero__search">
                 <div class="Vlt-input">
-                  <form method="GET" action="/search">
+                  <form method="GET" action="/search" @submit="checkForm">
                     <input
                       id="q"
                       v-model="q"
@@ -24,17 +24,56 @@
         </div>
       </header>
       <main class="Vlt-container">
-        <AisHits>
-          <div slot-scope="{ items }" class="Vlt-grid">
+        <AisStateResults :class-names="{ 'ais-StateResults': 'Vlt-grid' }">
+          <template slot-scope="{ hits }">
             <div class="Vlt-col" />
             <div v-if="routes" class="Vlt-col Vlt-col--2of3">
               <Breadcrumbs :routes="routes" />
             </div>
             <div class="Vlt-col" />
             <div class="Vlt-grid__separator" />
-            <Card v-for="item in items" :key="item.objectID" :post="item" />
-          </div>
-        </AisHits>
+            <div class="Vlt-col" />
+            <AisHits
+              v-if="hits.length > 0"
+              :class-names="{
+                'ais-Hits': 'Vlt-col Vlt-col--2of3',
+                'ais-Hits-list': 'Vlt-card',
+                'ais-Hits-item': 'Search-item'
+              }"
+            >
+              <template slot="item" slot-scope="{ item }">
+                <NLink :to="`/${item.path}`" no-prefetch>
+                  <p class="Vlt-truncate Meta-path">
+                    {{ prettyPath(item.path) }}
+                  </p>
+                  <h3 class="Vlt-truncate Vlt-text-link" :title="item.title">
+                    <ais-highlight
+                      :hit="item"
+                      attribute="title"
+                    />
+                  </h3>
+                  <p class="Meta-description">
+                    <ais-highlight
+                      :hit="item"
+                      attribute="description"
+                    />
+                  </p>
+                </NLink>
+              </template>
+            </AisHits>
+            <div v-else class="Vlt-col Vlt-col--2of3">
+              <div class="Vlt-card">
+                <h3>
+                  No results found
+                </h3>
+                <p>
+                  Try refining your search :)
+                </p>
+              </div>
+            </div>
+            <div class="Vlt-col" />
+          </template>
+        </AisStateResults>
         <footer>
           <AisPagination
             :class-names="{ 'ais-Pagination': 'Vlt-table__pagination' }"
@@ -88,7 +127,6 @@
 </template>
 
 <script>
-import Card from "~/components/Card"
 import { createInstantSearch } from "vue-instantsearch"
 import algoliasearch from "algoliasearch/lite"
 import Breadcrumbs from "~/components/Breadcrumbs"
@@ -103,12 +141,11 @@ const { instantsearch, rootMixin } = createInstantSearch({
   indexName: "BLOG",
 })
 
-const filters = "NOT attributes.published:false"
+const filters = ""
 
 export default {
   components: {
-    Breadcrumbs,
-    Card,
+    Breadcrumbs
   },
 
   mixins: [rootMixin],
@@ -125,7 +162,7 @@ export default {
           q: q,
           instantSearchState: instantsearch.getState(),
           routes: [
-            { route: `/archive`, title: `Search Results: ${q}`, current: true },
+            { route: `/search`, title: `Search Results${q ? ` » ${q}` : ''}`, current: true },
           ]
         }
       })
@@ -142,6 +179,19 @@ export default {
 
   beforeMount() {
     instantsearch.hydrate(this.instantSearchState)
+  },
+
+  methods:{
+    prettyPath(path) {
+      return `${process.env.baseUrl.replace(/https?:\/\//i, "")}/${path}`.split('/').join(' » ')
+    },
+    checkForm(e) {
+      if (this.q) {
+        return true
+      }
+
+      e.preventDefault()
+    }
   },
 
   head() {
@@ -175,6 +225,31 @@ export default {
   -webkit-box-align: center;
   align-items: center;
   margin: auto;
+}
+
+.ais-Hits >>> .Search-item {
+  margin: 0px 0px 28px 0px;
+  padding: 0px;
+}
+
+.ais-Hits >>> .Search-item h3 {
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 0px 0px 3px 0px;
+  margin: 0px;
+  max-width: 500px;
+}
+
+.ais-Hits >>> .Search-item .Meta-path {
+  max-width: 400px;
+  padding: 0px 0px 3px 0px;
+  margin: 0px;
+}
+
+.ais-Hits >>> .Search-item .Meta-description {
+  max-width: 600px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .Search-hero__search-wrapper,

@@ -20,9 +20,10 @@
               class="Vlt-form__element Vlt-form__element--big Blog-hero__search"
             >
               <div class="Vlt-input">
-                <form method="GET" action="/search">
+                <form method="GET" action="/search" @submit="checkForm">
                   <input
                     id="q"
+                    ref="q"
                     type="search"
                     placeholder="Send SMS in Node.js"
                     name="q"
@@ -46,22 +47,20 @@
                 }"
               >
                 <template slot="item" slot-scope="{ item }">
-                  <img :src="item.attributes.thumbnail" :alt="item.title">
-                  <h2>
-                    <nuxt-link :to="item.permalink" no-prefetch>
-                      {{ item.title }}
-                    </nuxt-link>
-                  </h2>
-                  <span>Published
-                    <strong>{{
-                      item.attributes.published_at
-                        | moment("dddd, MMMM Do YYYY")
-                    }}</strong>
-                    by
-                    <strong><Author
-                      :author-name="item.attributes.author"
-                      type="name"
-                    /></strong></span>
+                  <NLink :to="`/${item.path}`" no-prefetch>
+                    <h3 class="Vlt-truncate Vlt-text-link" :title="item.title">
+                      <ais-highlight
+                        :hit="item"
+                        attribute="title"
+                      />
+                    </h3>
+                    <p>
+                      <ais-highlight
+                        :hit="item"
+                        attribute="description"
+                      />
+                    </p>
+                  </NLink>
                 </template>
               </AisHits>
               <div v-else />
@@ -82,7 +81,7 @@ const algoliaClient = algoliasearch(
   "0edbf51d45ad8226c199017566b3d5fd"
 )
 
-const filters = "NOT attributes.published:false"
+const filters = ""
 
 const searchClient = {
   search(requests) {
@@ -106,14 +105,22 @@ const searchClient = {
 }
 
 export default {
-  components: {
-    Author,
-  },
   data() {
     return {
+      baseTitle: process.env.baseTitle,
       searchClient: searchClient,
     }
   },
+
+  methods:{
+    checkForm: function (e) {
+      if (this.$refs.q.value) {
+        return true
+      }
+
+      e.preventDefault()
+    }
+  }
 }
 </script>
 
@@ -152,7 +159,6 @@ export default {
 
 .Blog-hero__content h3 {
   text-align: center;
-  color: black;
   line-height: 1.4;
   margin-bottom: 40px;
   font-size: 1.5em;
@@ -179,33 +185,24 @@ export default {
   border: 1px solid #c2c4cc;
   border-radius: 6px;
   background: white;
-  overflow-y: auto;
-  max-height: 300px;
+  padding: 0 6px;
+}
+
+.Hero-search__results >>> .Hero-search__results-list {
+  display: block;
+  overflow-y: scroll;
+  max-height: 400px;
 }
 
 .Hero-search__results >>> .Hero-search__results-item {
   overflow: hidden;
-  padding: 1rem;
-  width: calc(100% - 2rem);
-  margin-top: 1rem;
-  line-height: 18px;
+  padding: 1em 2em;
 }
 
-.Hero-search__results-item img {
-  height: 75px;
-  float: left;
-  margin: -1rem 1rem 0 0;
-}
-
-.Hero-search__results-item h2 {
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: bold;
-}
-
-.Hero-search__results-item span {
-  font-size: 10px;
-  line-height: 10px;
+.Hero-search__results >>> .Hero-search__results-item h3 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 775px) {
