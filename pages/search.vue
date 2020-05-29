@@ -183,7 +183,16 @@ export default {
 
   methods:{
     prettyPath(path) {
-      return `${process.env.baseUrl.replace(/https?:\/\//i, "")}/${path}`.split('/').join(' » ')
+      const dateExp = /\d{4}\/\d{2}\/\d{2}/
+      const pathDateMatch = path.match(new RegExp(dateExp.source))
+
+      let split = '/'
+
+      if (pathDateMatch) {
+        split = new RegExp(`\/(${dateExp.source})\/`)
+      }
+
+      return `${process.env.baseUrl.replace(/https?:\/\//i, "")} » ${path.split(split).join(' » ')}`
     },
     checkForm(e) {
       if (this.q) {
@@ -241,7 +250,8 @@ export default {
 }
 
 .ais-Hits >>> .Search-item .Meta-path {
-  max-width: 400px;
+  color: #2d966f;
+  max-width: 500px;
   padding: 0px 0px 3px 0px;
   margin: 0px;
 }
