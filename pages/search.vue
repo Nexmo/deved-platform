@@ -37,28 +37,11 @@
               v-if="hits.length > 0"
               :class-names="{
                 'ais-Hits': 'Vlt-col Vlt-col--2of3',
-                'ais-Hits-list': 'Vlt-card',
-                'ais-Hits-item': 'Search-item'
+                'ais-Hits-list': 'Vlt-card'
               }"
             >
               <template slot="item" slot-scope="{ item }">
-                <NLink :to="`/${item.path}`" no-prefetch>
-                  <p class="Vlt-truncate Meta-path">
-                    {{ prettyPath(item.path) }}
-                  </p>
-                  <h3 class="Vlt-truncate Vlt-text-link" :title="item.title">
-                    <ais-highlight
-                      :hit="item"
-                      attribute="title"
-                    />
-                  </h3>
-                  <p class="Meta-description">
-                    <ais-highlight
-                      :hit="item"
-                      attribute="description"
-                    />
-                  </p>
-                </NLink>
+                <SearchResult :item="item" thumb />
               </template>
             </AisHits>
             <div v-else class="Vlt-col Vlt-col--2of3">
@@ -127,6 +110,7 @@
 </template>
 
 <script>
+import SearchResult from "~/components/SearchResult"
 import { createInstantSearch } from "vue-instantsearch"
 import algoliasearch from "algoliasearch/lite"
 import Breadcrumbs from "~/components/Breadcrumbs"
@@ -145,6 +129,7 @@ const filters = ""
 
 export default {
   components: {
+    SearchResult,
     Breadcrumbs
   },
 
@@ -182,18 +167,6 @@ export default {
   },
 
   methods:{
-    prettyPath(path) {
-      const dateExp = /\d{4}\/\d{2}\/\d{2}/
-      const pathDateMatch = path.match(new RegExp(dateExp.source))
-
-      let split = '/'
-
-      if (pathDateMatch) {
-        split = new RegExp(`\/(${dateExp.source})\/`)
-      }
-
-      return `${process.env.baseUrl.replace(/https?:\/\//i, "")} » ${path.split(split).join(' » ')}`
-    },
     checkForm(e) {
       if (this.q) {
         return true
@@ -234,32 +207,6 @@ export default {
   -webkit-box-align: center;
   align-items: center;
   margin: auto;
-}
-
-.ais-Hits >>> .Search-item {
-  margin: 0px 0px 28px 0px;
-  padding: 0px;
-}
-
-.ais-Hits >>> .Search-item h3 {
-  font-size: 16px;
-  line-height: 1.3;
-  padding: 0px 0px 3px 0px;
-  margin: 0px;
-  max-width: 500px;
-}
-
-.ais-Hits >>> .Search-item .Meta-path {
-  color: #2d966f;
-  max-width: 500px;
-  padding: 0px 0px 3px 0px;
-  margin: 0px;
-}
-
-.ais-Hits >>> .Search-item .Meta-description {
-  max-width: 600px;
-  padding: 0px;
-  margin: 0px;
 }
 
 .Search-hero__search-wrapper,

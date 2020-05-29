@@ -47,20 +47,7 @@
                 }"
               >
                 <template slot="item" slot-scope="{ item }">
-                  <NLink :to="`/${item.path}`" no-prefetch>
-                    <h3 class="Vlt-truncate Vlt-text-link" :title="item.title">
-                      <ais-highlight
-                        :hit="item"
-                        attribute="title"
-                      />
-                    </h3>
-                    <p>
-                      <ais-highlight
-                        :hit="item"
-                        attribute="description"
-                      />
-                    </p>
-                  </NLink>
+                  <SearchResult :item="item" />
                 </template>
               </AisHits>
               <div v-else />
@@ -73,7 +60,7 @@
 </template>
 
 <script>
-import Author from "~/components/Author"
+import SearchResult from "~/components/SearchResult"
 import algoliasearch from "algoliasearch/lite"
 
 const algoliaClient = algoliasearch(
@@ -105,6 +92,10 @@ const searchClient = {
 }
 
 export default {
+  components: {
+    SearchResult
+  },
+
   data() {
     return {
       baseTitle: process.env.baseTitle,
@@ -196,13 +187,11 @@ export default {
 
 .Hero-search__results >>> .Hero-search__results-item {
   overflow: hidden;
-  padding: 1em 2em;
+  padding: 0 1em;
 }
 
-.Hero-search__results >>> .Hero-search__results-item h3 {
-  text-align: left;
-  margin-bottom: 10px;
-  font-weight: 500;
+.Hero-search__results >>> .Hero-search__results-item:first-child {
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 775px) {
