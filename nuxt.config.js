@@ -235,6 +235,12 @@ export default () => {
           href: "/safari-pinned-tab.svg",
           color: "#c1c1c1",
         },
+        {
+          rel: 'search',
+          type: 'application/opensearchdescription+xml',
+          href: '/search.xml',
+          title: 'Vonage Dev'
+        }
       ],
     },
 
