@@ -1,0 +1,210 @@
+​
+┌─────────────────────────────┐
+│        Netlify Build        │
+└─────────────────────────────┘
+​
+❯ Version
+  @netlify/build 0.4.47
+​
+❯ Flags
+  mode: cli
+​
+❯ Current directory
+  /Users/luke/Projects/nexmo/dev-education-poc
+​
+❯ Config file
+  /Users/luke/Projects/nexmo/dev-education-poc/netlify.toml
+​
+❯ Context
+  production
+​
+❯ Loading plugins
+   - @netlify/plugin-functions-install-core@0.4.47 from core
+   - @netlify/plugin-functions-core@0.4.47 from core
+   - netlify-plugin-algolia-index@0.3.0 from netlify.toml
+   - @netlify/plugin-sitemap@0.3.4 from netlify.toml
+   - netlify-plugin-no-more-404@0.0.15 from netlify.toml
+​
+┌───────────────────────────────────────────────────────────────────┐
+│ 1. onPreBuild command from @netlify/plugin-functions-install-core │
+└───────────────────────────────────────────────────────────────────┘
+​
+Installing functions dependencies
+​
+(@netlify/plugin-functions-install-core onPreBuild completed in 1.2s)
+​
+┌────────────────────────────────────┐
+│ 2. build.command from netlify.toml │
+└────────────────────────────────────┘
+​
+$ npm run generate
+
+> vonage-dev-blog@0.0.0 generate /Users/luke/Projects/nexmo/dev-education-poc
+> nuxt generate
+
+ℹ Production build
+✔ Builder initialized
+✔ Nuxt files generated
+ℹ Compiling Client
+✔ Client: Compiled successfully in 45.47s
+ℹ Compiling Server
+✔ Server: Compiled successfully in 39.54s
+ℹ Generating pages
+✔ Generated /
+✔ Generated /authors
+✔ Generated /authors/lukeoliff
+✔ Generated /authors/greg-holmes
+✔ Generated /blog/2018/10/08
+✔ Generated /blog/2020/04/02
+✔ Generated /blog/2020/03/19
+✔ Generated /blog/2020/01/29
+✔ Generated /blog/2020/02/26
+✔ Generated /blog/tag/dotnet
+✔ Generated /blog/category/inspiration
+✔ Generated /blog/2020/05/21
+✔ Generated /blog/2020
+✔ Generated /blog/2018/10
+✔ Generated /blog/2020/04
+✔ Generated /blog/2020/03/24
+✔ Generated /blog/2020/05/18
+✔ Generated /blog/2020/05/19
+✔ Generated /blog/2020/05/11
+✔ Generated /blog/2020/04/03
+✔ Generated /blog/2020/05/06
+✔ Generated /blog/2020/04/08
+✔ Generated /blog/2020/04/29
+✔ Generated /blog/2020/05/15
+✔ Generated /blog/2020/03/13
+✔ Generated /blog/category/release
+✔ Generated /blog/2020/05/04
+✔ Generated /blog/2020/04/30
+✔ Generated /blog/2020/04/06
+✔ Generated /blog/2020/05/20
+✔ Generated /blog/category/tutorial
+✔ Generated /blog/category/team
+✔ Generated /blog/tag/node-red
+✔ Generated /blog/tag/php
+✔ Generated /blog/tag/glitch
+✔ Generated /blog/tag/sdk
+✔ Generated /blog/tag/video-api
+✔ Generated /blog/tag/messages-api
+✔ Generated /blog/category/announcement
+✔ Generated /blog/tag/voice-api
+✔ Generated /blog/tag/javascript
+✔ Generated /blog/tag/slack
+✔ Generated /blog/tag/vuejs
+✔ Generated /blog/tag/sandbox
+✔ Generated /blog/tag/angular
+✔ Generated /blog/tag/netlify
+✔ Generated /blog/tag/nodejs
+✔ Generated /blog/tag/conversation-api
+✔ Generated /blog/tag/ruby
+✔ Generated /blog/tag/rails
+✔ Generated /blog/tag/java
+✔ Generated /blog/tag/websocket
+✔ Generated /blog/tag/aws
+✔ Generated /blog/tag/python
+✔ Generated /blog/tag/voice
+✔ Generated /blog/tag/azure
+✔ Generated /blog/tag/sms
+✔ Generated /blog/tag/zapier
+✔ Generated /blog/tag/messages-api-sandbox
+✔ Generated /blog/tag/go
+✔ Generated /blog/tag/android
+✔ Generated /blog/tag/opentok-sdk
+✔ Generated /blog/tag/opentok
+✔ Generated /blog/tag/spotlight
+✔ Generated /blog/tag/web-components
+✔ Generated /blog/tag/web-standards
+✔ Generated /blog/tag/iot
+✔ Generated /blog/tag/raspberry-pi
+✔ Generated /blog/tag/jwt
+✔ Generated /blog/2018
+✔ Generated /blog/2020/03
+✔ Generated /blog/tag/fauna-db
+✔ Generated /blog/2020/01
+✔ Generated /blog/2020/02/24/announcing-nexmo’s-net-server-sdk-version-4-3-1-release
+✔ Generated /blog/2020/05/01/build-a-google-authenticator-from-a-landline-with-vonage
+✔ Generated /blog/2020/05/08/create-a-basic-video-chat-app-with-asp-net-and-angular
+✔ Generated /blog/2020/05/05/7-app-ideas-to-build-at-work-and-7-to-build-at-home
+✔ Generated /blog/2020/05/14/broadcast-video-chat-with-javascript-and-vonage
+✔ Generated /blog/2020/05/22/build-a-basic-video-call-platform-with-netlify-functions
+✔ Generated /blog/2020/05/13/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-2-building-the-frontend
+✔ Generated /blog/2020/05/07/automated-orders-with-whatsapp-and-node
+✔ Generated /blog/2020/04/10/building-a-slack-clone-vuejs-part-1
+✔ Generated /blog/2020/05/12/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-1-building-the-backend
+✔ Generated /blog/2020/05/21/creating-a-video-session-in-aws-lambda-with-python
+✔ Generated /blog/2020/05/18/download-vonage-voice-api-recordings-with-golang
+✔ Generated /blog/2020/05/19/home-surveillance-system-with-node-and-a-raspberry-pi
+✔ Generated /blog/2020/05/11/how-to-send-a-facebook-messenger-message-with-node-js
+✔ Generated /blog/2020/04/02/deploying-an-aws-lambda-function-for-vonage-voice-callbacks-with-php
+✔ Generated /blog/2020/01/29/how-to-send-and-receive-sms-messages-with-node-js-and-azure-functions
+✔ Generated /blog/2018/10/08/creating-a-websocket-server-with-spring-boot
+✔ Generated /blog/2020/03/19/diana-rodriguez-joins-the-developer-relations-team
+✔ Generated /blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
+✔ Generated /blog/2020/02/26/nexmo-ruby-v6-3-0-release-static-type-checking-and-host-overriding
+✔ Generated /blog/2020/04/08/introducing-the-messages-api-sandbox
+✔ Generated /blog/2020/05/06/number-verification-in-python-with-aws-lambda-and-vonage
+✔ Generated /blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10
+✔ Generated /blog/2020/04/06/nexmo-ruby-v7-0-0-release
+✔ Generated /blog/2020/05/04/stream-video-chat-with-texting-using-vonage-video-api
+✔ Generated /blog/2020/05/15/opentok-version-2-17-whats-new-and-how-you-can-use-it
+✔ Generated /blog/2020/04/29/share-your-screen-with-the-vonage-video-api
+✔ Generated /blog/2020/03/13/using-jwt-for-authentication-in-a-golang-application
+✔ Generated /blog/2020/05/20/web-components-tools-a-comparison
+✔ Generated /blog/2020/05
+✔ Generated /blog/2020/05/05
+✔ Generated /blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
+✔ Generated /blog/2020/02
+✔ Generated /blog/2020/02/24
+✔ Generated /blog/2020/05/07
+✔ Generated /blog/2020/05/14
+✔ Generated /blog/2020/05/22
+✔ Generated /blog/2020/04/10
+✔ Generated /blog/2020/05/13
+✔ Generated /blog/2020/05/12
+✔ Generated /blog/2020/05/01
+✔ Generated /blog/2020/05/08
+​
+(build.command completed in 1m 43s)
+​
+┌────────────────────────────────────────────────────────────┐
+│ 3. onPostBuild command from @netlify/plugin-functions-core │
+└────────────────────────────────────────────────────────────┘
+​
+Packaging functions from scripts
+Functions packaged in .netlify/functions/
+ - algolia-export.zip
+​
+(@netlify/plugin-functions-core onPostBuild completed in 1.3s)
+​
+┌──────────────────────────────────────────────────────────┐
+│ 4. onPostBuild command from netlify-plugin-algolia-index │
+└──────────────────────────────────────────────────────────┘
+​
+Search Index JSON generated at /searchIndex.json!
+​
+(netlify-plugin-algolia-index onPostBuild completed in 3.6s)
+​
+┌─────────────────────────────────────────────────────┐
+│ 5. onPostBuild command from @netlify/plugin-sitemap │
+└─────────────────────────────────────────────────────┘
+​
+Creating sitemap from files...
+Sitemap Built! sitemap.xml
+​
+(@netlify/plugin-sitemap onPostBuild completed in 77ms)
+​
+┌────────────────────────────────────────────────────────┐
+│ 6. onPostBuild command from netlify-plugin-no-more-404 │
+└────────────────────────────────────────────────────────┘
+​
+html manifest saved for next run
+​
+(netlify-plugin-no-more-404 onPostBuild completed in 87ms)
+​
+┌─────────────────────────────┐
+│   Netlify Build Complete    │
+└─────────────────────────────┘
+​
+(Netlify Build completed in 1m 53.1s)
