@@ -128,7 +128,7 @@ export default {
     no-repeat scroll 12px 24px;
   background-size: 250px;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   display: -webkit-box;
   display: flex;
   margin-top: -12px;
@@ -207,6 +207,25 @@ export default {
 }
 
 @media only screen and (max-width: 575px) {
+  .Hero-search__results {
+    border: none;
+    position: relative;
+    padding: 0;
+  }
+
+  .Hero-search__results >>> .Hero-search__results-list {
+    overflow-y: visible;
+    max-height: none;
+  }
+
+  .Hero-search__results >>> .Hero-search__results-item {
+    padding: 0;
+  }
+
+  .Blog-hero  > * {
+    transition: all 0.5s ease;
+  }
+
   .Blog-hero {
     background: white;
   }
