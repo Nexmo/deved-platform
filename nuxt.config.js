@@ -298,6 +298,11 @@ export default () => {
         const classMap = {
           blockquote: "Vlt-callout Vlt-callout--tip",
           ul: "Vlt-list Vlt-list--simple",
+          ol: "Vlt-list Vlt-list--simple",
+          h1: "Clickable-header",
+          h2: "Clickable-header",
+          h3: "Clickable-header",
+          h4: "Clickable-header"
         }
         // add frontmatter-markdown-loader
         config.module.rules.push({

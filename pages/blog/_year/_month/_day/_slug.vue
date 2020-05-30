@@ -8,7 +8,9 @@
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
+        <div class="Vlt-col">
+          {{ headings }}
+        </div>
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-card--lesspadding" property="mainEntityOfPage">
             <div v-if="attributes.thumbnail" class="Vlt-card__header">
@@ -119,6 +121,7 @@ export default {
         disqusShortname: process.env.disqusShortname,
         baseUrl: process.env.baseUrl,
         attributes: post.attributes,
+        headings: [],
         routes: [
           { route: `/blog/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
           { route: `/blog/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
@@ -138,6 +141,30 @@ export default {
       return {
         extends: md.vue.component
       }
+    })
+  },
+
+  updated() {
+    this.$nextTick(function () {
+      const clickableHeaders = Object.values(document.getElementsByClassName('Clickable-header'))
+
+      clickableHeaders.forEach(element => {
+        const link = document.createElement("a")
+        const text = document.createTextNode("#")
+        link.className = "Clickable-header__Link"
+        link.setAttribute("href", `#${element.id}`)
+        link.prepend(text)
+
+        element.addEventListener("mouseenter", e => {
+          e.target.appendChild(link)
+        })
+
+        element.addEventListener("mouseleave", e => {
+          if (e.target.contains(link)) {
+            e.target.removeChild(link)
+          }
+        })
+      })
     })
   },
 
@@ -205,15 +232,36 @@ export default {
 
 .Blog__post .frontmatter-markdown >>> li,
 .Blog__post .frontmatter-markdown >>> p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
-.Blog__post .frontmatter-markdown >>> pre[class*="language-"] {
-  margin: 24px -30px;
+.Blog__post .frontmatter-markdown >>> .Vlt-list {
+  margin-left: 16px;
+}
+
+.Blog__post .frontmatter-markdown >>> h2 {
+  margin-top: 45px;
+}
+
+.Blog__post .frontmatter-markdown >>> h3 {
+  margin-top: 35px;
+}
+
+.Blog__post .frontmatter-markdown >>> pre {
+  border-radius: 8px;
+  padding: 1em;
+  background: #131415;
+  color: #c2c4cc;
+  margin: 35px -30px;
   font-size: 16px;
   line-height: 1.4;
   padding-left: 27px;
+}
+
+.Blog__post .frontmatter-markdown >>> pre code {
+  background: #131415;
+  color: #c2c4cc;
 }
 
 .Blog__post .frontmatter-markdown >>> p {
