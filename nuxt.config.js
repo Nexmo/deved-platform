@@ -2,13 +2,6 @@ import { getRoutes } from "./modules/contenter"
 import config from "./modules/config"
 
 export default {
-  env: {
-    disqusShortname: process.env.DISQUS_SHORTNAME || "vonage-dev-blog-dev",
-    baseTitle: config.baseTitle,
-    baseUrl: config.baseUrl,
-    itemsPerArchivePage: config.postsPerPage
-  },
-
   mode: "universal",
 
   head: {

@@ -77,25 +77,7 @@ import Author from "~/components/Author"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import Tags from "~/components/Tags"
 import moment from "moment"
-
-// const getRouteData = (post) => {
-//   return post.meta.resourcePath
-//       .split("/content/")
-//       .pop()
-//       .split(".")[0]
-//       .split("/")
-// }
-
-// const getRoute = (post) => {
-//   if (post.attributes.permalink) {
-//     return post.attributes.permalink
-//   } else {
-//     const [, name] = getRouteData(post)
-//     const postDate = getPostDate(post)
-
-//     return `/blog/${postDate.format('YYYY/MM/DD')}/${name}`
-//   }
-// }
+import config from "~/modules/config"
 
 export default {
   components: {
@@ -114,110 +96,56 @@ export default {
       })
 
     const date = moment(page.published_at)
+    const route = `/blog/${date.format('YYYY/MM/DD')}/${page.slug}`
 
     return {
-      disqusShortname: process.env.disqusShortname,
-      baseUrl: process.env.baseUrl,
       page,
-      route: `/blog/${date.format('YYYY/MM/DD')}/${page.slug}`,
+      baseUrl: config.baseUrl,
+      disqusShortname: config.disqusShortname,
+      route: route,
       routes: [
         { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY') },
         { route: `/blog/${date.format('YYYY/MM')}`, title: date.format('MMMM') },
         { route: `/blog/${date.format('YYYY/MM/DD')}`, title: date.format('Do') },
-        { route: `/blog/${date.format('YYYY/MM/DD')}/${page.slug}`, title: page.title, current: true },
+        { route: route, title: page.title, current: true },
       ],
     }
-  }
+  },
 
-  // async asyncData ({ params, error }) {
-  //   try {
-  //     const post = await import(`~/content/blog/${params.slug}.md`)
-
-  //     return {
-  //       disqusShortname: process.env.disqusShortname,
-  //       baseUrl: process.env.baseUrl,
-  //       attributes: post.attributes,
-  //       headings: [],
-  //       routes: [
-  //         { route: `/blog/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
-  //         { route: `/blog/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
-  //         { route: `/blog/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
-  //         { route: getRoute(post), title: post.attributes.title, current: true }
-  //       ],
-  //       route: getRoute(post)
-  //     }
-  //   } catch (e) {
-  //     console.log(e)
-  //     error({ statusCode: 404, message: 'Post not found' })
-  //   }
-  // },
-
-  // async created () {
-  //   this.markdownContent = () => import(`~/content/blog/${this.$route.params.slug}.md`).then((md) => {
-  //     return {
-  //       extends: md.vue.component
-  //     }
-  //   })
-  // },
-
-  // updated() {
-  //   this.$nextTick(function () {
-  //     const clickableHeaders = Object.values(document.getElementsByClassName('Clickable-header'))
-
-  //     clickableHeaders.forEach(element => {
-  //       const link = document.createElement("a")
-  //       const text = document.createTextNode("#")
-  //       link.className = "Clickable-header__Link"
-  //       link.setAttribute("href", `#${element.id}`)
-  //       link.prepend(text)
-
-  //       element.addEventListener("mouseenter", e => {
-  //         e.target.appendChild(link)
-  //       })
-
-  //       element.addEventListener("mouseleave", e => {
-  //         if (e.target.contains(link)) {
-  //           e.target.removeChild(link)
-  //         }
-  //       })
-  //     })
-  //   })
-  // },
-
-  // methods: {
-  //   postMeta() {
-  //     if (typeof this.attributes.thumbnail !== 'undefined' && !this.attributes.thumbnail.startsWith('http')) {
-  //       this.attributes.thumbnail = `${process.env.baseUrl}${this.attributes.thumbnail}`
-  //     }
+  methods: {
+    postMeta() {
+      if (typeof this.page.thumbnail !== 'undefined' && !this.page.thumbnail.startsWith('http')) {
+        this.page.thumbnail = `${this.baseUrl}${this.page.thumbnail}`
+      }
   
-  //     const meta = [
-  //       // Twitter Only
-  //       { hid: "twitter:url", name: "twitter:url", content: `${process.env.baseUrl}${this.route}` },
-  //       { hid: "twitter:title", name: "twitter:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
-  //       { hid: "twitter:description", name: "twitter:description", content: this.attributes.description },
-  //       { hid: "twitter:image", name: "twitter:image", content: `${this.attributes.thumbnail || '/images/generic-social-card.png'}` },
-  //       // Open Graph / Facebook Only
-  //       { hid: "og:url", property: "og:url", content: `${process.env.baseUrl}${this.route}` },
-  //       { hid: "og:title", property: "og:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
-  //       { hid: "og:description", property: "og:description", content: this.attributes.description },
-  //       { hid: "og:image", property: "og:image", content: `${this.attributes.thumbnail || '/images/generic-social-card.png'}` },
-  //       { hid: "og:type", property: "og:type", content: 'article' },
-  //     ]
+      const meta = [
+        // Twitter Only
+        { hid: "twitter:url", name: "twitter:url", content: `${this.baseUrl}${this.route}` },
+        { hid: "twitter:title", name: "twitter:title", content: `${this.page.title} » ${config.baseTitle}` },
+        { hid: "twitter:description", name: "twitter:description", content: this.page.description },
+        { hid: "twitter:image", name: "twitter:image", content: `${this.page.thumbnail || '/images/generic-social-card.png'}` },
+        // Open Graph / Facebook Only
+        { hid: "og:url", property: "og:url", content: `${this.baseUrl}${this.route}` },
+        { hid: "og:title", property: "og:title", content: `${this.page.title} » ${this.baseTitle}` },
+        { hid: "og:description", property: "og:description", content: this.page.description },
+        { hid: "og:image", property: "og:image", content: `${this.page.thumbnail || '/images/generic-social-card.png'}` },
+        { hid: "og:type", property: "og:type", content: 'article' },
+      ]
 
-  //     return meta
-  //   }
-  // },
+      return meta
+    }
+  },
 
-  // head() {
-  //   return {
-  //     title: `${this.attributes.title}`,
-  //     meta: [
-  //       { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.attributes.category}, ${this.attributes.tags.join(', ')}`},
-  //       { hid: "description", name: "description", content: this.attributes.description},
-  //       ...this.postMeta()
-  //     ]
-  //   }
-  // },
+  head() {
+    return {
+      title: `${this.page.title}`,
+      meta: [
+        { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.page.category}, ${this.page.tags.join(', ')}`},
+        { hid: "description", name: "description", content: this.page.description},
+        ...this.postMeta()
+      ]
+    }
+  },
 }
 </script>
 

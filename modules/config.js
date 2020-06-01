@@ -1,6 +1,6 @@
 const config = {
   builtAt: new Date().toISOString(),
-  baseUrl: process.env.BASE_URL || "http://localhost:3000",
+  baseUrl: process.env.URL || "http://localhost:3000",
   indexTitle: "We ♥ content",
   baseTitle: "Developer content from Vonage",
   baseDescription: "Developer content from the team at Vonage, including posts on our Java, Node.js, Python, DotNet, Ruby and Go SDKs",
@@ -14,6 +14,8 @@ const config = {
     "apis", 
     "communication apis"
   ],
+  postsPerPage: 12,
+  disqusShortname: process.env.DISQUS_SHORTNAME || "vonage-dev-blog-dev",
   get headMeta() {
     return [
       { charset: "utf-8" },
@@ -88,8 +90,7 @@ const config = {
         title: this.baseTitle
       }
     ]
-  },
-  postsPerPage: 12,
+  }
 }
 
 export default config
