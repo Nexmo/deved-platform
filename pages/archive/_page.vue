@@ -1,7 +1,7 @@
 <template>
   <section class="Blog__Full-width">
     <main class="Vlt-container">
-      <AisInstantSearchSsr>
+      <!-- <AisInstantSearchSsr>
         <AisHits>
           <div slot-scope="{ items }" class="Vlt-grid">
             <div class="Vlt-col" />
@@ -60,60 +60,60 @@
             </ul>
           </AisPagination>
         </footer>
-      </AisInstantSearchSsr>
+      </AisInstantSearchSsr> -->
     </main>
   </section>
 </template>
 
 <script>
-import Card from "~/components/Card"
-import { createInstantSearch } from "vue-instantsearch"
-import algoliasearch from "algoliasearch/lite"
-import Breadcrumbs from "~/components/Breadcrumbs"
+// import Card from "~/components/Card"
+// import { createInstantSearch } from "vue-instantsearch"
+// import algoliasearch from "algoliasearch/lite"
+// import Breadcrumbs from "~/components/Breadcrumbs"
 
-const searchClient = algoliasearch(
-  "UG4W1PA1SN",
-  "0edbf51d45ad8226c199017566b3d5fd"
-)
+// const searchClient = algoliasearch(
+//   "UG4W1PA1SN",
+//   "0edbf51d45ad8226c199017566b3d5fd"
+// )
 
-const { instantsearch, rootMixin } = createInstantSearch({
-  searchClient,
-  indexName: "BLOG",
-})
+// const { instantsearch, rootMixin } = createInstantSearch({
+//   searchClient,
+//   indexName: "BLOG",
+// })
 
-const filters = "NOT attributes.published:false"
+// const filters = "NOT attributes.published:false"
 
-export default {
-  components: {
-    Breadcrumbs,
-    Card,
-  },
+// export default {
+//   components: {
+//     Breadcrumbs,
+//     Card,
+//   },
 
-  mixins: [rootMixin],
+//   mixins: [rootMixin],
 
-  asyncData({ route }) {
-    return instantsearch
-      .findResultsState({
-        page: route.params.page - 1,
-        filters: filters,
-        hitsPerPage: process.env.itemsPerArchivePage,
-      })
-      .then(() => ({
-        instantSearchState: instantsearch.getState(),
-        routes: [
-          { route: `/archive`, title: `Content Archives`, current: true },
-        ]
-      }))
-  },
+//   asyncData({ route }) {
+//     return instantsearch
+//       .findResultsState({
+//         page: route.params.page - 1,
+//         filters: filters,
+//         hitsPerPage: process.env.itemsPerArchivePage,
+//       })
+//       .then(() => ({
+//         instantSearchState: instantsearch.getState(),
+//         routes: [
+//           { route: `/archive`, title: `Content Archives`, current: true },
+//         ]
+//       }))
+//   },
 
-  beforeMount() {
-    instantsearch.hydrate(this.instantSearchState)
-  },
+//   beforeMount() {
+//     instantsearch.hydrate(this.instantSearchState)
+//   },
 
-  head() {
-    return {
-      title: `All our great content from the archives`
-    }
-  },
-}
+//   head() {
+//     return {
+//       title: `All our great content from the archives`
+//     }
+//   },
+// }
 </script>

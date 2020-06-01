@@ -1,6 +1,6 @@
 <template>
   <section class="Blog__Full-width">
-    <AisInstantSearchSsr>
+    <!-- <AisInstantSearchSsr>
       <header class="Blog__Full-width">
         <div class="Search-hero">
           <div class="Search-hero__content">
@@ -105,83 +105,83 @@
           </AisPagination>
         </footer>
       </main>
-    </AisInstantSearchSsr>
+    </AisInstantSearchSsr> -->
   </section>
 </template>
 
 <script>
-import SearchResult from "~/components/SearchResult"
-import { createInstantSearch } from "vue-instantsearch"
-import algoliasearch from "algoliasearch/lite"
-import Breadcrumbs from "~/components/Breadcrumbs"
+// import SearchResult from "~/components/SearchResult"
+// import { createInstantSearch } from "vue-instantsearch"
+// import algoliasearch from "algoliasearch/lite"
+// import Breadcrumbs from "~/components/Breadcrumbs"
 
-const searchClient = algoliasearch(
-  "UG4W1PA1SN",
-  "0edbf51d45ad8226c199017566b3d5fd"
-)
+// const searchClient = algoliasearch(
+//   "UG4W1PA1SN",
+//   "0edbf51d45ad8226c199017566b3d5fd"
+// )
 
-const { instantsearch, rootMixin } = createInstantSearch({
-  searchClient,
-  indexName: "BLOG",
-})
+// const { instantsearch, rootMixin } = createInstantSearch({
+//   searchClient,
+//   indexName: "BLOG",
+// })
 
-const filters = ""
+// const filters = ""
 
-export default {
-  components: {
-    SearchResult,
-    Breadcrumbs
-  },
+// export default {
+//   components: {
+//     SearchResult,
+//     Breadcrumbs
+//   },
 
-  mixins: [rootMixin],
+//   mixins: [rootMixin],
 
-  asyncData({ query: { q } }) {
-    return instantsearch
-      .findResultsState({
-        query: q,
-        filters: filters,
-        hitsPerPage: process.env.itemsPerArchivePage,
-      })
-      .then(() => { 
-        return {
-          q: q,
-          instantSearchState: instantsearch.getState(),
-          routes: [
-            { route: `/search`, title: `Search Results${q ? ` » ${q}` : ''}`, current: true },
-          ]
-        }
-      })
-  },
+//   asyncData({ query: { q } }) {
+//     return instantsearch
+//       .findResultsState({
+//         query: q,
+//         filters: filters,
+//         hitsPerPage: process.env.itemsPerArchivePage,
+//       })
+//       .then(() => { 
+//         return {
+//           q: q,
+//           instantSearchState: instantsearch.getState(),
+//           routes: [
+//             { route: `/search`, title: `Search Results${q ? ` » ${q}` : ''}`, current: true },
+//           ]
+//         }
+//       })
+//   },
 
-  watch: {
-    q(q) {
-      this.$router.push({ query: { ...this.$route.query, q: q } })
-    },
-    '$route.query.q': function(q) {
-      this.q = q
-    }
-  },
+//   watch: {
+//     q(q) {
+//       this.$router.push({ query: { ...this.$route.query, q: q } })
+//     },
+//     '$route.query.q': function(q) {
+//       this.q = q
+//     }
+//   },
 
-  beforeMount() {
-    instantsearch.hydrate(this.instantSearchState)
-  },
+//   beforeMount() {
+//     instantsearch.hydrate(this.instantSearchState)
+//   },
 
-  methods:{
-    checkForm(e) {
-      if (this.q) {
-        return true
-      }
+//   methods:{
+//     checkForm(e) {
+//       if (this.q) {
+//         return true
+//       }
 
-      e.preventDefault()
-    }
-  },
+//       e.preventDefault()
+//     }
+//   },
 
-  head() {
-    return {
-      title: `All our great content from the archives`
-    }
-  },
-}
+//   head() {
+//     return {
+//       title: `All our great content from the archives`
+//     }
+//   },
+// }
 </script>
 
 <style scoped>

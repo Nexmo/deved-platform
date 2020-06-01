@@ -1,6 +1,6 @@
 <template>
   <section class="Blog__Full-width">
-    <header class="Blog__Full-width">
+    <!-- <header class="Blog__Full-width">
       <PageHero>Developer content from {{ monthName }} {{ dayTh }}, {{ year }}.</PageHero>
     </header>
     <main class="Vlt-container">
@@ -13,71 +13,71 @@
         <div class="Vlt-grid__separator" />
         <MiniCard v-for="post in posts" :key="post.attributes.title" :post="post" />
       </div>
-    </main>
+    </main> -->
   </section>
 </template>
 
 <script>
-import PageHero from "~/components/PageHero"
-import MiniCard from "~/components/MiniCard"
-import Breadcrumbs from "~/components/Breadcrumbs"
-import moment from 'moment'
+// import PageHero from "~/components/PageHero"
+// import MiniCard from "~/components/MiniCard"
+// import Breadcrumbs from "~/components/Breadcrumbs"
+// import moment from 'moment'
 
-export default {
-  components: {
-    Breadcrumbs,
-    MiniCard,
-    PageHero,
-  },
+// export default {
+//   components: {
+//     Breadcrumbs,
+//     MiniCard,
+//     PageHero,
+//   },
 
-  asyncData({ route, error }) {
-    const { day, month, year } = route.params
+//   asyncData({ route, error }) {
+//     const { day, month, year } = route.params
 
-    if (isNaN(year) || isNaN(month) || isNaN(day)) {
-      error({ statusCode: 404, message: 'Page not found' })
-    }
+//     if (isNaN(year) || isNaN(month) || isNaN(day)) {
+//       error({ statusCode: 404, message: 'Page not found' })
+//     }
 
-    const pageDate = moment(`${year}/${month}/${day}`, 'YYYY/MM/DD')
+//     const pageDate = moment(`${year}/${month}/${day}`, 'YYYY/MM/DD')
 
-    const resolve = require.context("~/content/", true, /\.md$/)
-    const imports = resolve
-      .keys()
-      .map((key) => {
-        const [, name] = key.match(/\/(.+)\.md$/) // eslint-disable-line no-unused-vars
-        return resolve(key)
-      })
-      .filter((content) => {
-        const contentDate = moment(content.attributes.published_at)
+//     const resolve = require.context("~/content/", true, /\.md$/)
+//     const imports = resolve
+//       .keys()
+//       .map((key) => {
+//         const [, name] = key.match(/\/(.+)\.md$/) // eslint-disable-line no-unused-vars
+//         return resolve(key)
+//       })
+//       .filter((content) => {
+//         const contentDate = moment(content.attributes.published_at)
 
-        return (
-          contentDate.format('YYYYMMDD') === pageDate.format('YYYYMMDD') &&
-          content.attributes.published != false
-        )
-      })
+//         return (
+//           contentDate.format('YYYYMMDD') === pageDate.format('YYYYMMDD') &&
+//           content.attributes.published != false
+//         )
+//       })
 
-    imports.sort((a, b) => {
-      const aDate = moment(a.attributes.published_at)
-      const bDate = moment(b.attributes.published_at)
-      return bDate.diff(aDate)
-    })
+//     imports.sort((a, b) => {
+//       const aDate = moment(a.attributes.published_at)
+//       const bDate = moment(b.attributes.published_at)
+//       return bDate.diff(aDate)
+//     })
 
-    return {
-      dayTh: pageDate.format('Do'),
-      monthName: pageDate.format('MMMM'),
-      year: pageDate.format('YYYY'),
-      posts: imports.map(({ attributes, permalink, meta }) => ({ attributes, permalink, meta })),
-      routes: [
-        { route: `/blog/${pageDate.format('YYYY')}`, title: pageDate.format('YYYY') },
-        { route: `/blog/${pageDate.format('YYYY/MM')}`, title: pageDate.format('MMMM') },
-        { route: `/blog/${pageDate.format('YYYY/MM/DD')}`, title: pageDate.format('Do'), current: true },
-      ]
-    }
-  },
+//     return {
+//       dayTh: pageDate.format('Do'),
+//       monthName: pageDate.format('MMMM'),
+//       year: pageDate.format('YYYY'),
+//       posts: imports.map(({ attributes, permalink, meta }) => ({ attributes, permalink, meta })),
+//       routes: [
+//         { route: `/blog/${pageDate.format('YYYY')}`, title: pageDate.format('YYYY') },
+//         { route: `/blog/${pageDate.format('YYYY/MM')}`, title: pageDate.format('MMMM') },
+//         { route: `/blog/${pageDate.format('YYYY/MM/DD')}`, title: pageDate.format('Do'), current: true },
+//       ]
+//     }
+//   },
 
-  head() {
-    return {
-      title: `Vonage developer content from ${this.monthName} ${this.dayTh}, ${this.year}`
-    }
-  },
-}
+//   head() {
+//     return {
+//       title: `Vonage developer content from ${this.monthName} ${this.dayTh}, ${this.year}`
+//     }
+//   },
+// }
 </script>
