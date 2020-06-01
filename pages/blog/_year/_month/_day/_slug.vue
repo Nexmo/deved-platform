@@ -3,45 +3,42 @@
     <article class="Blog__post Vlt-container" vocab="http://schema.org/" typeof="BlogPosting">
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
-        <!-- <div v-if="routes" class="Vlt-col Vlt-col--2of3">
+        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
           <Breadcrumbs :routes="routes" />
-        </div> -->
+        </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
-        <div class="Vlt-col">
-          <!-- {{ headings }} -->
-        </div>
+        <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-card--lesspadding" property="mainEntityOfPage">
-            <!-- <div v-if="attributes.thumbnail" class="Vlt-card__header">
-              <img property="image" :src="attributes.thumbnail" :alt="attributes.title" width="100%">
-            </div> -->
-            <!-- <div v-if="attributes.category" class="Vlt-card__corner Vlt-margin--A-top3">
-              <Category :category="attributes.category" />
-            </div> -->
+            <div v-if="page.thumbnail" class="Vlt-card__header">
+              <img property="image" :src="page.thumbnail" :alt="page.title" width="100%">
+            </div>
+            <div v-if="page.category" class="Vlt-card__corner Vlt-margin--A-top3">
+              <Category :category="page.category" />
+            </div>
             <div class="Vlt-card__header Vlt-margin--A-top3">
               <h1 property="headline">
-                <!-- {{ page.title }} -->
+                {{ page.title }}
               </h1>
               <BackToTop />
             </div>
-            <!-- <div v-if="attributes.author" class="Vlt-card__content Vlt-margin--A-top3">
-              <Author :author-name="attributes.author" type="minicard" property="author" />
+            <div v-if="page.author" class="Vlt-card__content Vlt-margin--A-top3">
+              <Author :author-name="page.author" type="minicard" property="author" />
               <meta property="publisher" content="@VonageDev">
-            </div> -->
-            <!-- <div v-if="attributes.published_at" class="Vlt-card__content Vlt-margin--A-top1">
-              <span property="datePublished" :content="attributes.published_at">Published
+            </div>
+            <div v-if="page.published_at" class="Vlt-card__content Vlt-margin--A-top1">
+              <span property="datePublished" :content="page.published_at">Published
                 <strong>{{
-                  (attributes.updated_at || attributes.published_at) | moment("dddd, MMMM Do YYYY")
+                  (page.updated_at || page.published_at) | moment("dddd, MMMM Do YYYY")
                 }}</strong></span>
-              <meta property="dateModified" :content="attributes.updated_at || attributes.published_at">
-            </div> -->
-            <!-- <div v-if="attributes.tags" class="Vlt-card__content Vlt-margin--A-top1">
-              <Tags :tags="attributes.tags" />
-            </div> -->
+              <meta property="dateModified" :content="page.updated_at || page.published_at">
+            </div>
+            <div v-if="page.tags" class="Vlt-card__content Vlt-margin--A-top1">
+              <Tags :tags="page.tags" />
+            </div>
             <div class="Vlt-card__content Vlt-margin--A-top3" property="articleBody">
               <nuxt-content :document="page" />
-              <!-- <component :is="markdownContent" /> -->
             </div>
           </div>
         </div>
@@ -49,7 +46,7 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
-          <!-- <div v-if="attributes.comments" class="Vlt-card Vlt-bg-white">
+          <div v-if="page.comments" class="Vlt-card Vlt-bg-white">
             <div id="comments" class="Vlt-card__content">
               <vue-disqus
                 :shortname="disqusShortname"
@@ -57,16 +54,16 @@
                 :url="`${baseUrl}${route}`"
               />
             </div>
-          </div> -->
+          </div>
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
-        <!-- <Author
-          :author-name="attributes.author"
+        <Author
+          :author-name="page.author"
           type="card"
           bio
-        /> -->
+        />
         <div class="Vlt-col" />
       </div>
     </article>
@@ -74,12 +71,12 @@
 </template>
 
 <script>
-// import BackToTop from "~/components/BackToTop"
-// import Category from "~/components/Category"
-// import Author from "~/components/Author"
-// import Breadcrumbs from "~/components/Breadcrumbs"
-// import Tags from "~/components/Tags"
-// import moment from "moment"
+import BackToTop from "~/components/BackToTop"
+import Category from "~/components/Category"
+import Author from "~/components/Author"
+import Breadcrumbs from "~/components/Breadcrumbs"
+import Tags from "~/components/Tags"
+import moment from "moment"
 
 // const getRouteData = (post) => {
 //   return post.meta.resourcePath
@@ -87,10 +84,6 @@
 //       .pop()
 //       .split(".")[0]
 //       .split("/")
-// }
-
-// const getPostDate = (post) => {
-//   return moment(post.attributes.published_at)
 // }
 
 // const getRoute = (post) => {
@@ -105,13 +98,13 @@
 // }
 
 export default {
-  // components: {
-  //   BackToTop,
-  //   Category,
-  //   Author,
-  //   Breadcrumbs,
-  //   Tags,
-  // },
+  components: {
+    BackToTop,
+    Category,
+    Author,
+    Breadcrumbs,
+    Tags,
+  },
 
   async asyncData({ $content, params, error }) {
     const page = await $content('blog', params.slug)
@@ -120,15 +113,25 @@ export default {
         error({ statusCode: 404, message: "Page not found" })
       })
 
+    const date = moment(page.published_at)
+
     return {
-      page
+      disqusShortname: process.env.disqusShortname,
+      baseUrl: process.env.baseUrl,
+      page,
+      route: `/blog/${date.format('YYYY/MM/DD')}/${page.slug}`,
+      routes: [
+        { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY') },
+        { route: `/blog/${date.format('YYYY/MM')}`, title: date.format('MMMM') },
+        { route: `/blog/${date.format('YYYY/MM/DD')}`, title: date.format('Do') },
+        { route: `/blog/${date.format('YYYY/MM/DD')}/${page.slug}`, title: page.title, current: true },
+      ],
     }
   }
 
   // async asyncData ({ params, error }) {
   //   try {
   //     const post = await import(`~/content/blog/${params.slug}.md`)
-  //     const postDate = getPostDate(post)
 
   //     return {
   //       disqusShortname: process.env.disqusShortname,
@@ -219,7 +222,7 @@ export default {
 </script>
 
 <style scoped>
-/* .Blog__Category {
+.Blog__Category {
   text-transform: uppercase;
   font-weight: 600;
   margin: 1rem auto;
@@ -235,12 +238,12 @@ export default {
   margin-bottom: 24px;
 }
 
-.Blog__post .frontmatter-markdown {
-  padding: auto 50px;
-}
-
 .Blog__post img {
   border-radius: 6px;
+}
+
+/* .Blog__post .frontmatter-markdown {
+  padding: auto 50px;
 }
 
 .Blog__post .frontmatter-markdown >>> li,
@@ -321,10 +324,10 @@ export default {
     margin: 24px 10px;
     padding-left: 12px;
   }
-}
+} */
 
 .Vlt-grid >>> .Author-col {
   flex: 0 0 66.66%;
   max-width: 66.66%;
-} */
+}
 </style>
