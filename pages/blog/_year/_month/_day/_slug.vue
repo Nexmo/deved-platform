@@ -3,6 +3,12 @@
     <article class="Blog__post Vlt-container" vocab="http://schema.org/" typeof="BlogPosting">
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
+        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs :routes="routes" />
+        </div>
+        <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-card--lesspadding" property="mainEntityOfPage">
             <div v-if="post.thumbnail" class="Vlt-card__header">
@@ -37,23 +43,48 @@
           </div>
         </div>
         <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col" />
+        <div class="Vlt-col Vlt-col--2of3">
+          <div v-if="post.comments" class="Vlt-card Vlt-bg-white">
+            <div id="comments" class="Vlt-card__content">
+              <vue-disqus
+                :shortname="disqusShortname"
+                :identifier="`${baseUrl}${post.route}`"
+                :url="`${baseUrl}${post.route}`"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col" />
+        <Author
+          :author-name="post.author"
+          type="card"
+          bio
+        />
+        <div class="Vlt-col" />
       </div>
     </article>
   </section>
 </template>
 
 <script>
-import BackToTop from "~/components/BackToTop"
-import Category from "~/components/Category"
 import Author from "~/components/Author"
+import BackToTop from "~/components/BackToTop"
+import Breadcrumbs from "~/components/Breadcrumbs"
+import Category from "~/components/Category"
 import Tags from "~/components/Tags"
 import config from "~/modules/config"
+import moment from "moment"
 
 export default {
   components: {
-    BackToTop,
-    Category,
     Author,
+    BackToTop,
+    Breadcrumbs,
+    Category,
     Tags,
   },
 
@@ -64,10 +95,19 @@ export default {
         console.error(err)
         error({ statusCode: 404, message: "Page not found" })
       })
+  
+    const postDate = moment(post.published_at)
 
     return {
       post,
+      disqusShortname: config.disqusShortname,
       baseUrl: config.baseUrl,
+      routes: [
+        { route: `/${post.type}/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
+        { route: `/${post.type}/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
+        { route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
+        { route: post.route, title: post.title, current: true }
+      ],
     }
   },
 
