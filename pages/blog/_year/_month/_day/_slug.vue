@@ -3,67 +3,39 @@
     <article class="Blog__post Vlt-container" vocab="http://schema.org/" typeof="BlogPosting">
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-card--lesspadding" property="mainEntityOfPage">
-            <div v-if="page.thumbnail" class="Vlt-card__header">
-              <img property="image" :src="page.thumbnail" :alt="page.title" width="100%">
+            <div v-if="post.thumbnail" class="Vlt-card__header">
+              <img property="image" :src="post.thumbnail" :alt="post.title" width="100%">
             </div>
-            <div v-if="page.category" class="Vlt-card__corner Vlt-margin--A-top3">
-              <Category :category="page.category" />
+            <div v-if="post.category" class="Vlt-card__corner Vlt-margin--A-top3">
+              <Category :category="post.category" />
             </div>
             <div class="Vlt-card__header Vlt-margin--A-top3">
               <h1 property="headline">
-                {{ page.title }}
+                {{ post.title }}
               </h1>
               <BackToTop />
             </div>
-            <div v-if="page.author" class="Vlt-card__content Vlt-margin--A-top3">
-              <Author :author-name="page.author" type="minicard" property="author" />
+            <div v-if="post.author" class="Vlt-card__content Vlt-margin--A-top3">
+              <Author :author-name="post.author" type="minicard" property="author" />
               <meta property="publisher" content="@VonageDev">
             </div>
-            <div v-if="page.published_at" class="Vlt-card__content Vlt-margin--A-top1">
-              <span property="datePublished" :content="page.published_at">Published
+            <div v-if="post.published_at" class="Vlt-card__content Vlt-margin--A-top1">
+              <span property="datePublished" :content="post.published_at">Published
                 <strong>{{
-                  (page.updated_at || page.published_at) | moment("dddd, MMMM Do YYYY")
+                  (post.updated_at || post.published_at) | moment("dddd, MMMM Do YYYY")
                 }}</strong></span>
-              <meta property="dateModified" :content="page.updated_at || page.published_at">
+              <meta property="dateModified" :content="post.updated_at || post.published_at">
             </div>
-            <div v-if="page.tags" class="Vlt-card__content Vlt-margin--A-top1">
-              <Tags :tags="page.tags" />
+            <div v-if="post.tags" class="Vlt-card__content Vlt-margin--A-top1">
+              <Tags :tags="post.tags" />
             </div>
             <div class="Vlt-card__content Vlt-margin--A-top3" property="articleBody">
-              <nuxt-content :document="page" />
+              <nuxt-content :document="post" />
             </div>
           </div>
         </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <div v-if="page.comments" class="Vlt-card Vlt-bg-white">
-            <div id="comments" class="Vlt-card__content">
-              <vue-disqus
-                :shortname="disqusShortname"
-                :identifier="`${baseUrl}${route}`"
-                :url="`${baseUrl}${route}`"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <Author
-          :author-name="page.author"
-          type="card"
-          bio
-        />
         <div class="Vlt-col" />
       </div>
     </article>
@@ -74,9 +46,7 @@
 import BackToTop from "~/components/BackToTop"
 import Category from "~/components/Category"
 import Author from "~/components/Author"
-import Breadcrumbs from "~/components/Breadcrumbs"
 import Tags from "~/components/Tags"
-import moment from "moment"
 import config from "~/modules/config"
 
 export default {
@@ -84,51 +54,40 @@ export default {
     BackToTop,
     Category,
     Author,
-    Breadcrumbs,
     Tags,
   },
 
   async asyncData({ $content, params, error }) {
-    const page = await $content('blog', params.slug)
+    const post = await $content('blog', params.slug)
       .fetch()
       .catch(err => {
+        console.error(err)
         error({ statusCode: 404, message: "Page not found" })
       })
 
-    const date = moment(page.published_at)
-    const route = `/blog/${date.format('YYYY/MM/DD')}/${page.slug}`
-
     return {
-      page,
+      post,
       baseUrl: config.baseUrl,
-      disqusShortname: config.disqusShortname,
-      route: route,
-      routes: [
-        { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY') },
-        { route: `/blog/${date.format('YYYY/MM')}`, title: date.format('MMMM') },
-        { route: `/blog/${date.format('YYYY/MM/DD')}`, title: date.format('Do') },
-        { route: route, title: page.title, current: true },
-      ],
     }
   },
 
   methods: {
     postMeta() {
-      if (typeof this.page.thumbnail !== 'undefined' && !this.page.thumbnail.startsWith('http')) {
-        this.page.thumbnail = `${this.baseUrl}${this.page.thumbnail}`
+      if (typeof this.post.thumbnail !== 'undefined' && !this.post.thumbnail.startsWith('http')) {
+        this.post.thumbnail = `${this.baseUrl}${this.post.thumbnail}`
       }
   
       const meta = [
         // Twitter Only
-        { hid: "twitter:url", name: "twitter:url", content: `${this.baseUrl}${this.route}` },
-        { hid: "twitter:title", name: "twitter:title", content: `${this.page.title} » ${config.baseTitle}` },
-        { hid: "twitter:description", name: "twitter:description", content: this.page.description },
-        { hid: "twitter:image", name: "twitter:image", content: `${this.page.thumbnail || '/images/generic-social-card.png'}` },
+        { hid: "twitter:url", name: "twitter:url", content: `${this.baseUrl}${this.post.route}` },
+        { hid: "twitter:title", name: "twitter:title", content: `${this.post.title} » ${config.baseTitle}` },
+        { hid: "twitter:description", name: "twitter:description", content: this.post.description },
+        { hid: "twitter:image", name: "twitter:image", content: `${this.post.thumbnail || '/images/generic-social-card.png'}` },
         // Open Graph / Facebook Only
-        { hid: "og:url", property: "og:url", content: `${this.baseUrl}${this.route}` },
-        { hid: "og:title", property: "og:title", content: `${this.page.title} » ${this.baseTitle}` },
-        { hid: "og:description", property: "og:description", content: this.page.description },
-        { hid: "og:image", property: "og:image", content: `${this.page.thumbnail || '/images/generic-social-card.png'}` },
+        { hid: "og:url", property: "og:url", content: `${this.baseUrl}${this.post.route}` },
+        { hid: "og:title", property: "og:title", content: `${this.post.title} » ${this.baseTitle}` },
+        { hid: "og:description", property: "og:description", content: this.post.description },
+        { hid: "og:image", property: "og:image", content: `${this.post.thumbnail || '/images/generic-social-card.png'}` },
         { hid: "og:type", property: "og:type", content: 'article' },
       ]
 
@@ -138,10 +97,10 @@ export default {
 
   head() {
     return {
-      title: `${this.page.title}`,
+      title: `${this.post.title}`,
       meta: [
-        { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.page.category}, ${this.page.tags.join(', ')}`},
-        { hid: "description", name: "description", content: this.page.description},
+        { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.post.category}, ${this.post.tags.join(', ')}`},
+        { hid: "description", name: "description", content: this.post.description},
         ...this.postMeta()
       ]
     }

@@ -1,5 +1,9 @@
-import { getRoutes } from "./modules/contenter"
 import config from "./modules/config"
+import {
+  getRoutes,
+  getPostRoute,
+  getPostRoutes
+} from "./modules/contenter"
 
 export default {
   mode: "universal",
@@ -38,6 +42,20 @@ export default {
     "@nuxt/content",
     // "@nuxtjs/feed"
   ],
+
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        document.type = document.dir.replace(/(^\/|\/$)/, "")
+
+        const { time } = require('reading-time')(document.text)
+        document.readingTime = time
+
+        document.route = getPostRoute(document)
+        document.routes = getPostRoutes(document)
+      }
+    }
+  },
 
   generate: {
     fallback: true,

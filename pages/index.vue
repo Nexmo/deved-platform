@@ -1,115 +1,74 @@
 <template>
   <section class="Blog__Full-width">
-    <!-- <header class="Blog__Full-width">
-      <SearchHero />
-    </header>
     <main class="Vlt-container">
       <div class="Vlt-text-separator">
-        <span>Featured posts</span>
+        <span>Latest posts</span>
       </div>
       <div class="Vlt-grid">
-        <Card
-          v-for="post in featuredPosts"
-          :key="post.meta.resourcepath"
+        <CardFeatured
+          v-for="post in latestPosts"
+          :key="`featured-${post.route}`"
           :post="post"
         />
       </div>
       <template v-for="category in categories">
-        <div :key="`${category}-separator`" class="Vlt-text-separator">
-          <span>
-            <NLink :to="`/blog/category/${category}`">
-              {{ category | pluralize(2) }}
-            </NLink>
-          </span>
-        </div>
-        <div :key="`${category}-grid`" class="Vlt-grid">
-          <MiniCard
-            v-for="post in getCategoryPosts(category)"
-            :key="post.meta.resourcepath"
-            :post="post"
-          />
-        </div>
+        <template v-if="category.posts.length > 0">
+          <div :key="`${category.slug}-separator`" class="Vlt-text-separator">
+            <span>
+              <NLink :to="`/category/${category.slug}`">
+                {{ category.plural }}
+              </NLink>
+            </span>
+          </div>
+          <div :key="`${category.slug}-grid`" class="Vlt-grid">
+            <Card
+              v-for="post in category.posts"
+              :key="`${category.slug}-${post.route}`"
+              :post="post"
+            />
+          </div>
+        </template>
       </template>
     </main>
-    <footer class="Blog__Full-width Vlt-center">
-      <NLink to="/archive" no-prefetch class="Vlt-btn Vlt-btn--quaternary">
-        View older posts
-      </NLink>
-    </footer> -->
   </section>
 </template>
 
 <script>
-// import SearchHero from "~/components/SearchHero"
-// import Card from "~/components/Card"
-// import MiniCard from "~/components/MiniCard"
+import CardFeatured from "~/components/CardFeatured"
+import Card from "~/components/Card"
+const postMap = { 'tutorial': 6 }
 
-// export default {
-//   components: {
-//     Card,
-//     MiniCard,
-//     SearchHero,
-//   },
+export default {
+  components: {
+    CardFeatured,
+    Card
+  },
 
-//   data() {
-//     return {
-//       featuredPosts: this.getFeaturedPosts(), // limit to 2 "latest posts"
-//       categories: this.getCategories(),
-//       posts: this.getPublishedPosts().slice(0, 6), // limit to 6 "latest posts"
-//     }
-//   },
+  async asyncData({ $content }) {
+    const latestPosts = await $content('blog')
+        .sortBy('published_at', 'desc')
+        .limit(2)
+        .fetch()
 
-//   methods: {
-//     getPublishedPosts() {
-//       const resolve = require.context("~/content/", true, /\.md$/)
-//       const imports = resolve
-//         .keys()
-//         .map((key) => {
-//           const [, name] = key.match(/\/(.+)\.md$/) // eslint-disable-line no-unused-vars
-//           return resolve(key)
-//         })
-//         .filter((content) => content.attributes.published != false)
+    const { categories } = await $content('categories').fetch()
 
-//       imports.sort((a, b) => {
-//         const aPublishedDate = new Date(a.attributes.published_at)
-//         const bPublishedDate = new Date(b.attributes.published_at)
-//         return bPublishedDate - aPublishedDate
-//       })
+    categories.forEach(async (category, index, array) => {
+      array[index].posts = await $content('blog')
+        .sortBy('published_at', 'desc')
+        .where({ '$and': [
+          { 'category': category.slug},
+          { 'route' : { '$nin' : latestPosts.map(f => f.route) } }
+        ] })
+        .limit(postMap[category.slug] ? postMap[category.slug] : 3)
+        .fetch()
+    })
 
-//       return imports
-//     },
-
-//     getCategories() {
-//       const posts = this.getPublishedPosts()
-
-//       return Array.from(new Set(posts.map((post) => post.attributes.category)))
-//     },
-
-//     getFeaturedPosts() {
-//       return this.getPublishedPosts().slice(0, 2)
-//     },
-
-//     categorySizeMap(category) {
-//       if (category ==='tutorial') { 
-//         return 6
-//       } else {
-//         return 3
-//       }
-//     },
-
-//     getCategoryPosts(category) {
-//       return this.getPublishedPosts()
-//         .filter((post) => post.attributes.category === category)
-//         .slice(0, this.categorySizeMap(category))
-//     }
-//   },
-
-//   head() {
-//     return {
-//       title: "We ♥ content"
-//     }
-//   },
-// }
+    return {
+      categories,
+      latestPosts
+    }
+  }
+}
 </script>
 
 <style scoped>

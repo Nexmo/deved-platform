@@ -1,6 +1,6 @@
 <template>
   <NLink
-    :to="`/blog/tag/${tag}`"
+    :to="`/tag/${tag}`"
     class="Vlt-badge Vlt-badge--small Vlt-badge--grey Vlt-badge--transparent"
     :class="'Blog-badge--' + tag"
   >

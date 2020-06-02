@@ -19,7 +19,7 @@ import config from "./config"
 const _process = (path, options) => {
   const rawFile = fs.readFileSync(resolve(options.dir, path), options.charType)
   const processed = fm(rawFile)
-  const [ type, slug ] = path.split('/')
+  const [ type, slug ] = path.split('.').shift().split('/')
   processed.attributes.type = type
   processed.attributes.slug = slug
 
@@ -89,44 +89,6 @@ const _meta = (options) => {
 }
 
 /**
- * Return the routes generated from the attributes of a post, including 
- *   dated archive routes and the post route itself.
- * 
- * @param {object} postAttr Object containing the attributes of a post
- * 
- * @return {array}
- */
-const postRoutes = (postAttr) => {
-  const postDate = moment(postAttr.published_at)
-
-  return [
-    `/${postAttr.type}/${postDate.format('YYYY/MM/DD')}/${postAttr.slug}`,
-    `/${postAttr.type}/${postDate.format('YYYY/MM/DD')}`,
-    `/${postAttr.type}/${postDate.format('YYYY/MM')}`,
-    `/${postAttr.type}/${postDate.format('YYYY')}`,
-  ]
-}
-
-/**
- * Takes an array post posts and returns a unique array of all routes for all
- *   posts including their dated archive routes.
- *
- * @param {array} posts An array of posts to get the routes for
- * @param {object} options Global options.
- * 
- * @return {array}
- */
-const getPostRoutes = (posts, options) => {
-  const routes = []
-
-  posts.forEach(post => {
-    routes.push(...postRoutes(post.attributes))
-  })
-
-  return routes.filter(uniqueValues)
-}
-
-/**
  * Takes a meta data object and returns a route.
  *
  * @param {string} type A string to map how to format the route
@@ -138,7 +100,7 @@ const getPostRoutes = (posts, options) => {
 const metaRouteMap = (type, object) => {
   const map = {
     archives: `/${type}/${object}`,
-    categories: `/${type}/${object}`,
+    categories: `/${type}/${object.slug}`,
     tags: `/${type}/${object}`,
     authors: `/${type}/${object.username}`
   }
@@ -239,6 +201,49 @@ const generateArchivePages = (posts, options) => {
 }
 
 /**
+ * Return the routes generated from the attributes of a post, including 
+ *   dated archive routes and the post route itself.
+ * 
+ * @param {object} postAttr Object containing the attributes of a post
+ * 
+ * @return {array}
+ */
+export const getPostRoutes = (postAttr) => {
+  const postDate = moment(postAttr.published_at)
+
+  return [
+    `/${postAttr.type}/${postDate.format('YYYY/MM/DD')}`,
+    `/${postAttr.type}/${postDate.format('YYYY/MM')}`,
+    `/${postAttr.type}/${postDate.format('YYYY')}`,
+  ]
+}
+
+export const getPostRoute = (postAttr) => {
+  const postDate = moment(postAttr.published_at)
+
+  return `/${postAttr.type}/${postDate.format('YYYY/MM/DD')}/${postAttr.slug}`
+}
+
+/**
+ * Takes an array post posts and returns a unique array of all routes for all
+ *   posts including their dated archive routes.
+ *
+ * @param {array} posts An array of posts to get the routes for
+ * @param {object} options Global options.
+ * 
+ * @return {array}
+ */
+const getPostsRoutes = (posts, options) => {
+  const routes = []
+
+  posts.forEach(post => {
+    routes.push(...[getPostRoute(post.attributes)])//, ...getPostRoutes(post.attributes)])
+  })
+
+  return routes.filter(uniqueValues)
+}
+
+/**
  * Get all possible routes for server-side rendering
  * 
  * @param {object} options Options passed in to modify how content is generated
@@ -255,11 +260,11 @@ export const getRoutes = (options) => {
   const posts = _posts(options)
 
   return [
-    ...getPostRoutes(posts, options),
-    ...getMetaRoutes(meta, options),
-    ...getMetaRoutes(generateArchivePages(posts, options), options),
-    ...getMetaRoutes(extractCategories(posts, options), options),
-    ...getMetaRoutes(extractTags(posts, options), options)
+    ...getPostsRoutes(posts, options),
+    // ...getMetaRoutes(meta, options),
+    // ...getMetaRoutes(generateArchivePages(posts, options), options),
+    // ...getMetaRoutes(extractCategories(posts, options), options),
+    // ...getMetaRoutes(extractTags(posts, options), options)
   ]
 }
 

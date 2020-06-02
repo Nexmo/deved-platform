@@ -1,6 +1,6 @@
 <template>
   <NLink
-    :to="`/blog/category/${category}`"
+    :to="`/category/${category}`"
     :class="`Vlt-badge Vlt-badge--white Vlt-badge--transparent Category Category__color--${category}`"
   >
     &lt; {{ category }} /&gt;

@@ -23,6 +23,7 @@
     "front-matter": "^4.0.2",
     "instantsearch.css": "^7.4.2",
     "nuxt": "^2.5.1",
+    "reading-time": "^1.2.0",
     "vue-disqus": "^3.0.5",
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^2.7.0",
