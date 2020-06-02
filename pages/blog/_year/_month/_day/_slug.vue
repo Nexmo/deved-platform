@@ -99,8 +99,6 @@ export default {
         console.error(err)
         error({ statusCode: 404, message: "Page not found" })
       })
-      
-      console.log(process.env, post)
 
     const postDate = moment(post.published_at)
 

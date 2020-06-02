@@ -155,29 +155,6 @@ const extractTags = (posts, options) => {
 }
 
 /**
- * Extracts a unique array of categories from an array of posts
- *
- * @param {array} posts An array of posts to extract a unique array of categories from
- * @param {object} options Global options.
- * 
- * @return {array}
- */
-const extractCategories = (posts, options) => {
-  const allCategories = {}
-
-  posts.forEach(({ attributes: { category } }) => {
-    if (!allCategories.categories)  {
-      allCategories.categories = []
-    }
-
-    allCategories.categories.push(category)
-    allCategories.categories = allCategories.categories.filter(uniqueValues)
-  })
-
-  return allCategories
-}
-
-/**
  * Generates a unique array of archive pages from an array of posts
  * 
  * @param {array} posts An array of posts to generate a unique array of archive pages from
@@ -261,9 +238,8 @@ export const getRoutes = (options) => {
 
   return [
     ...getPostsRoutes(posts, options),
-    // ...getMetaRoutes(meta, options),
+    ...getMetaRoutes(meta, options),
     // ...getMetaRoutes(generateArchivePages(posts, options), options),
-    // ...getMetaRoutes(extractCategories(posts, options), options),
     // ...getMetaRoutes(extractTags(posts, options), options)
   ]
 }

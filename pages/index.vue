@@ -15,7 +15,7 @@
         <template v-if="category.posts && category.posts.length > 0">
           <div :key="`${category.slug}-separator`" class="Vlt-text-separator">
             <span>
-              <NLink :to="`/category/${category.slug}`">
+              <NLink :to="`/categories/${category.slug}`">
                 {{ category.plural }}
               </NLink>
             </span>

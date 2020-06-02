@@ -44,7 +44,7 @@ export default {
         category: category,
         posts,
         routes: [
-          { route: `/category/${category.slug}`, title: `Category: ${category.plural}`, current: true },
+          { route: `/categories/${category.slug}`, title: `Category: ${category.plural}`, current: true },
         ]
       }
     } catch (e) {
