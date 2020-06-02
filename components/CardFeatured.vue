@@ -21,7 +21,7 @@
         </small>
         <small v-if="post.author">
           by
-          <Author :author-name="post.author" type="name" />
+          <Author :author="post.author" type="name" />
         </small>
       </div>
       <div class="Vlt-card__footer Vlt-card__footer--short Vlt-left">

@@ -1,52 +1,66 @@
 <template>
-  <fragment v-if="!!authorName">
-    <AuthorName v-if="type == 'name'" :author="author()" />
-    <AuthorMiniCard v-else-if="type == 'minicard'" :author="author()" />
-    <AuthorCard v-else-if="type == 'card'" :author="author()" :bio="bio" />
-    <AuthorPage v-else-if="type == 'page'" :author="author()" />
+  <fragment v-if="!!authorData">
+    <AuthorBubble v-if="type == 'bubble'" :author="authorData" />
+    <AuthorCard v-else-if="type == 'card'" :author="authorData" />
+    <AuthorMiniCard v-else-if="type == 'minicard'" :author="authorData" />
+    <AuthorName v-else-if="type == 'name'" :author="authorData" />
+    <AuthorPage v-else-if="type == 'page'" :author="authorData" />
   </fragment>
 </template>
 
 <script>
-import AuthorName from "~/components/Authors/AuthorName.vue"
-import AuthorMiniCard from "~/components/Authors/AuthorMiniCard.vue"
+import AuthorBubble from "~/components/Authors/AuthorBubble.vue"
 import AuthorCard from "~/components/Authors/AuthorCard.vue"
+import AuthorMiniCard from "~/components/Authors/AuthorMiniCard.vue"
+import AuthorName from "~/components/Authors/AuthorName.vue"
 import AuthorPage from "~/components/Authors/AuthorPage.vue"
 
 export default {
   components: {
-    AuthorName,
-    AuthorMiniCard,
+    AuthorBubble,
     AuthorCard,
+    AuthorMiniCard,
+    AuthorName,
     AuthorPage,
   },
 
   props: {
-    authorName: {
-      type: String,
+    author: {
+      type: [String, Object],
       required: true,
-    },
-    bio: {
-      type: Boolean
     },
     type: {
       type: String,
       default: "name",
       validator: function (value) {
-        return ["name", "minicard", "card", "page"].indexOf(value) !== -1
+        return ["name", "minicard", "card", "page", "bubble"].indexOf(value) !== -1
       },
     },
   },
 
-  methods: {
-    author() {
-      const { authors } = require("../content/authors.json")
-      const author = authors.find((author) => {
-        return author.username === this.authorName
-      })
+  data() {
+    let authorData = this.$props.author
 
-      return author || { name: this.authorName, username: this.authorName, error: true }
-    },
+    if (typeof authorData === "string") {
+      authorData = this.getAuthor(authorData)
+    }
+
+    if (typeof authorData === "undefined") {
+      authorData = { name: this.$props.author, username: this.$props.author, error: true }
+    }
+
+    return {
+      authorData
+    }
+  },
+
+  methods: {
+    getAuthor(authorName) {
+      const { authors } = require("../content/authors.json")
+      return authors.find((a) => {
+        return a.username === authorName
+      })
+    }
   },
 }
 </script>

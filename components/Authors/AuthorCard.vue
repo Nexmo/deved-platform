@@ -28,7 +28,7 @@
             }}</small>
           </h4>
         </div>
-        <div v-if="bio && author.bio" class="Vlt-card__content" property="description">
+        <div v-if="author.bio" class="Vlt-card__content" property="description">
           {{ author.bio }}
         </div>
         <div v-if="author.spotlight" class="Vlt-card__content">
@@ -92,10 +92,7 @@ export default {
     author: {
       type: Object,
       required: true,
-    },
-    bio: {
-      type: Boolean
-    },
+    }
   }
 }
 </script>

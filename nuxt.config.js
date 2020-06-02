@@ -8,6 +8,11 @@ import {
 export default {
   mode: "universal",
 
+  env: {
+    repoUrl: config.repoUrl,
+    repoBranch: config.repoBranch
+  },
+
   head: {
     title: config.indexTitle,
     titleTemplate: `%s » ${config.baseTitle}`,

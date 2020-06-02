@@ -24,7 +24,7 @@
               <BackToTop />
             </div>
             <div v-if="post.author" class="Vlt-card__content Vlt-margin--A-top3">
-              <Author :author-name="post.author" type="minicard" property="author" />
+              <Author :author="post.author" type="minicard" property="author" />
               <meta property="publisher" content="@VonageDev">
             </div>
             <div v-if="post.published_at" class="Vlt-card__content Vlt-margin--A-top1">
@@ -33,6 +33,7 @@
                   (post.updated_at || post.published_at) | moment("dddd, MMMM Do YYYY")
                 }}</strong></span>
               <meta property="dateModified" :content="post.updated_at || post.published_at">
+              <RevisionsLink :post="post" /><ImproveLink :post="post" />
             </div>
             <div v-if="post.tags" class="Vlt-card__content Vlt-margin--A-top1">
               <Tags :tags="post.tags" />
@@ -60,9 +61,8 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <Author
-          :author-name="post.author"
+          :author="post.author"
           type="card"
-          bio
         />
         <div class="Vlt-col" />
       </div>
@@ -75,6 +75,8 @@ import Author from "~/components/Author"
 import BackToTop from "~/components/BackToTop"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import Category from "~/components/Category"
+import ImproveLink from "~/components/ImproveLink"
+import RevisionsLink from "~/components/RevisionsLink"
 import Tags from "~/components/Tags"
 import config from "~/modules/config"
 import moment from "moment"
@@ -85,6 +87,8 @@ export default {
     BackToTop,
     Breadcrumbs,
     Category,
+    ImproveLink,
+    RevisionsLink,
     Tags,
   },
 
@@ -95,7 +99,9 @@ export default {
         console.error(err)
         error({ statusCode: 404, message: "Page not found" })
       })
-  
+      
+      console.log(process.env, post)
+
     const postDate = moment(post.published_at)
 
     return {

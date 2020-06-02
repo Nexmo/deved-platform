@@ -16,6 +16,8 @@ const config = {
   ],
   postsPerPage: 12,
   disqusShortname: process.env.DISQUS_SHORTNAME || "vonage-dev-blog-dev",
+  repoUrl: process.env.REPOSITORY_URL || "https://github.com/Nexmo/dev-blog-next",
+  repoBranch: process.env.BRANCH || "master",
   get headMeta() {
     return [
       { charset: "utf-8" },

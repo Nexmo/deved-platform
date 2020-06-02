@@ -12,7 +12,7 @@
         />
       </div>
       <template v-for="category in categories">
-        <template v-if="category.posts.length > 0">
+        <template v-if="category.posts && category.posts.length > 0">
           <div :key="`${category.slug}-separator`" class="Vlt-text-separator">
             <span>
               <NLink :to="`/category/${category.slug}`">
@@ -36,6 +36,7 @@
 <script>
 import CardFeatured from "~/components/CardFeatured"
 import Card from "~/components/Card"
+
 const postMap = { 'tutorial': 6 }
 
 export default {
@@ -56,7 +57,7 @@ export default {
       array[index].posts = await $content('blog')
         .sortBy('published_at', 'desc')
         .where({ '$and': [
-          { 'category': category.slug},
+          { 'category': category.slug },
           { 'route' : { '$nin' : latestPosts.map(f => f.route) } }
         ] })
         .limit(postMap[category.slug] ? postMap[category.slug] : 3)
