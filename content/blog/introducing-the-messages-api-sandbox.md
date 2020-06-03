@@ -3,16 +3,17 @@ title: Introducing the Messages API Sandbox
 description: The Messages API Sandbox helps you to get up and running building
   applications with WhatsApp, Viber and Facebook Messenger.
 thumbnail: /content/blog/introducing-the-messages-api-sandbox/e_messaging-api-sandbox_1200x600.png
-author: martyndavies
+author: martyn
 published: true
 published_at: 2020-04-08T17:45:13.602Z
 comments: true
+updated_at: 2020-06-03T10:54:16.488Z
 category: announcement
 tags:
   - messages-api
   - messages-api-sandbox
 ---
-The Messages API Sandbox is a new way of developing and testing any application you want to build using [WhatsApp](https://www.whatsapp.com/), [Viber](https://www.viber.com/), or [Facebook Messenger](https://www.messenger.com/) via our[Messages API](https://developer.nexmo.com/messages/overview).
+The Messages API Sandbox is a new way of developing and testing any application you want to build using [WhatsApp](https://www.whatsapp.com/), [Viber](https://www.viber.com/), or [Facebook Messenger](https://www.messenger.com/) via our [Messages API](https://developer.nexmo.com/messages/overview).
 
 The [Sandbox](https://dashboard.nexmo.com/messages/sandbox) allows you to link your own WhatsApp, Viber, or Facebook Messenger accounts so you can start sending and receiving test messages on your own devices as you build.
 
