@@ -5,6 +5,48 @@
       "plural": "Tutorials",
       "slug": "tutorial",
       "color": "#d6219c"
+    },
+    {
+      "name": "Release",
+      "plural": "Releases",
+      "slug": "release",
+      "color": "#b779ff"
+    },
+    {
+      "name": "Team",
+      "plural": "Team Posts",
+      "slug": "team",
+      "color": "#06ba77"
+    },
+    {
+      "name": "Announcement",
+      "plural": "Announcements",
+      "slug": "announcement",
+      "color": "#4cc3d2"
+    },
+    {
+      "name": "Community",
+      "plural": "Community Posts",
+      "slug": "community",
+      "color": "#fa7454"
+    },
+    {
+      "name": "Inspiration",
+      "plural": "Ideas & Inspiration",
+      "slug": "inspiration",
+      "color": "#3298c4"
+    },
+    {
+      "name": "#devlife",
+      "plural": "#devlife Posts",
+      "slug": "devlife",
+      "color": "#e84545"
+    },
+    {
+      "name": "Event",
+      "plural": "Events",
+      "slug": "event",
+      "color": "#ffc100"
     }
   ]
 }
