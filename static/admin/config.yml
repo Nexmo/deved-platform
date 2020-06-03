@@ -4,30 +4,72 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: static/content/images/
-public_folder: /content/images/
+media_folder: '/static/content/images/'
+public_folder: '/content/images/'
 
 collections:
   - name: blog
-    label: Blog
+    label: 'Blog Post'
     format: frontmatter
-    folder: 'content/blog'
-    media_folder: '../../static/content/blog/{{slug}}/'
+    folder: '/content/blog'
+    media_folder: '/static/content/blog/{{slug}}/'
     public_folder: '/content/blog/{{slug}}/'
     create: true
     slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Description, name: description, widget: string }
-      - { label: 'Featured Image', name: thumbnail, widget: image, allow_multiple: false }
-      - { label: Author, name: author, widget: string }
-      - { label: Published, name: published, widget: boolean, default: true }
-      - { label: 'Published At', name: published_at, widget: datetime }
-      - { label: Category, name: category, widget: "list", default: ['new-starter', 'release', 'tutorial'] }
-      - { label: Tags, name: tags, widget: list }
-      - { label: Body, name: body, widget: markdown }
+      - label: Title
+        name: title
+        widget: string
+        hint: "Post title and meta title. Soft limit 60 characters, hard limit 70 characters."
+      - label: Description
+        name: description
+        widget: string
+        hint: "Post meta description. Soft limit 120 characters, hard limit 160 characters."
+      - label: 'Featured Image'
+        name: thumbnail
+        widget: image
+        allow_multiple: false
+        hint: "Featured image that appears at the top of the post."
+      - label: Author
+        name: author
+        widget: relation
+        collection: pages
+        file: authors
+        searchFields: ["authors.*.username", "authors.*.name", "authors.*.twitter"]
+        valueField: "authors.*.username"
+        displayFields: ["authors.*.name", "authors.*.twitter"]
+      - label: Published
+        name: published
+        widget: boolean
+        default: true
+      - label: 'Published At'
+        name: published_at
+        widget: datetime
+      - label: 'Updated At'
+        name: updated_at
+        widget: datetime
+        required: false
+      - label: Category
+        name: category
+        widget: relation
+        collection: pages
+        file: categories
+        searchFields: ["categories.*.name", "categories.*.slug", "categories.*.plural"]
+        valueField: "categories.*.slug"
+        displayFields: ["categories.*.plural"]
+      - label: Tags
+        name: tags
+        widget: list
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Spotlight
+        name: spotlight
+        widget: boolean
+        default: false
+        required: false
   - name: pages
     label: Pages
     editor:
@@ -42,18 +84,82 @@ collections:
             identifier_field: username
             widget: list
             fields:
-              - { label: Username, name: username, widget: string }
-              - { label: Spotlight, name: spotlight, widget: boolean, default: false }
-              - { label: Title, name: title, widget: string }
-              - { label: Name, name: name, widget: string }
-              - { label: Bio, name: bio, widget: text }
-              - { label: 'User Image', name: 'image_url', widget: 'image', allow_multiple: false }
-              - { label: Email, name: email, widget: string }
-              - { label: 'Twitter *Username*', name: twitter, widget: string }
-              - { label: 'Facebook Url', name: facebook_url, widget: string }
-              - { label: 'GitHub Url', name: github_url, widget: string }
-              - { label: 'StackOverflow Url', name: stackoverflow_url, widget: string }
-              - { label: 'LinkedIn Url', name: linkedin_url, widget: string }
-              - { label: 'Twitch Url', name: twitch_url, widget: string }
-              - { label: 'YouTube Url', name: youtube_url, widget: string }
-              - { label: 'Website Url', name: website_url, widget: string }
+              - label: Username
+                name: username
+                widget: string
+              - label: Name
+                name: name
+                widget: string
+              - label: 'User Image'
+                name: 'image_url'
+                widget: 'image'
+                allow_multiple: false
+              - label: 'Twitter'
+                name: twitter
+                widget: string
+              - label: Bio
+                name: bio
+                widget: text
+                required: false
+              - label: Spotlight
+                name: spotlight
+                widget: boolean
+                default: false
+                required: false
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: Email
+                name: email
+                widget: string
+                required: false
+              - label: 'Facebook Url'
+                name: facebook_url
+                widget: string
+                required: false
+              - label: 'GitHub Url'
+                name: github_url
+                widget: string
+                required: false
+              - label: 'StackOverflow Url'
+                name: stackoverflow_url
+                widget: string
+                required: false
+              - label: 'LinkedIn Url'
+                name: linkedin_url
+                widget: string
+                required: false
+              - label: 'Twitch Url'
+                name: twitch_url
+                widget: string
+                required: false
+              - label: 'YouTube Url'
+                name: youtube_url
+                widget: string
+                required: false
+              - label: 'Website Url'
+                name: website_url
+                widget: string
+                required: false
+      - label: 'Categories'
+        name: categories
+        file: 'content/categories.json'
+        fields:
+          - label: Categories
+            name: categories
+            identifier_field: slug
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Plural
+                name: plural
+                widget: string
+              - label: 'URL Slug'
+                name: slug
+                widget: string
+              - label: 'Hex Color Code'
+                name: color
+                widget: string
