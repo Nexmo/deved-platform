@@ -1,0 +1,10 @@
+{
+  "categories": [
+    {
+      "name": "Tutorial",
+      "plural": "Tutorials",
+      "slug": "tutorial",
+      "color": "#d6219c"
+    }
+  ]
+}
