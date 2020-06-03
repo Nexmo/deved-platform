@@ -29,6 +29,16 @@
       "bio": "Lorna is a software engineer with an incurable blogging habit. She works on the Developer Relations team at Nexmo and tries to tame words and code in equal measure.",
       "twitter": "lornajane",
       "image_url": "/content/images/lornajane.jpg"
+    },
+    {
+      "spotlight": false,
+      "username": "nahrinjalal",
+      "twitter": "nahrinjalal",
+      "name": "Nahrin Jalal",
+      "image_url": "/content/images/headshot-nahrin.jpg",
+      "bio": "Nahrin is a Developer Educator for Nexmo, the Vonage API Platform. She is passionate about building inclusive communities, pragmatic software solutions, and creating technical content that is accessible to all skill levels. ",
+      "title": "Developer Educator",
+      "linkedin_url": "https://ca.linkedin.com/in/nahrin-jalal-39336a41"
     }
   ]
 }
