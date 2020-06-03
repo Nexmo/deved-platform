@@ -1,24 +1,34 @@
 {
   "authors": [
     {
-      "name": "Luke Oliff",
-      "title": "Vonage Developer Educator",
-      "email": "luke.oliff@vonage.com",
-      "username": "lukeoliff",
       "bio": "Friendly tech educator, family man, diversity champion, probably argue a bit too much. Formerly a backend engineer. Talk to me about JavaScript (frontend or backend), the amazing Vue.js, DevOps, DevSecOps, anything JamStack. Writer on DEV.to",
       "image_url": "https://github.com/lukeocodes.png",
+      "name": "Luke Oliff",
       "twitter": "lukeocodes",
+      "github_url": "https://twitter.com/lukeocodes",
       "facebook_url": "https://twitter.com/lukeocodes",
-      "github_url": "https://twitter.com/lukeocodes"
+      "username": "lukeoliff",
+      "title": "Vonage Developer Educator",
+      "email": "luke.oliff@vonage.com"
     },
     {
-      "username": "greg-holmes",
+      "bio": "Greg is a Developer Educator @Vonage. Coming from a PHP background, but not restricted to one language. An avid gamer and a Raspberry pi enthusiast. Often found bouldering at indoor climbing venues.",
+      "image_url": "/content/images/greg-holmes.jpg",
       "name": "Greg Holmes",
-      "email": "greg.holmes2@vonage.com",
-      "twitter": "greggles",
-      "facebook_url": "https://twitter.com/greggles",
-      "github_url": "https://twitter.com/greggles",
-      "image_url": "/content/images/github.png"
+      "linkedin_url": "https://www.linkedin.com/in/greg-holmes-php/",
+      "twitter": "Greg__Holmes",
+      "github_url": "",
+      "facebook_url": "",
+      "username": "greg-holmes",
+      "email": ""
+    },
+    {
+      "spotlight": false,
+      "username": "lornajane",
+      "name": "Lorna Mitchell",
+      "bio": "Lorna is a software engineer with an incurable blogging habit. She works on the Developer Relations team at Nexmo and tries to tame words and code in equal measure.",
+      "twitter": "lornajane",
+      "image_url": "/content/images/lornajane.jpg"
     }
   ]
 }
