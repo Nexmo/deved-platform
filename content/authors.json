@@ -1,24 +1,53 @@
 {
   "authors": [
     {
-      "name": "Luke Oliff",
-      "title": "Developer Educator",
-      "email": "luke.oliff@vonage.com",
-      "username": "lukeoliff",
       "bio": "Friendly tech educator, family man, diversity champion, probably argue a bit too much. Formerly a backend engineer. Talk to me about JavaScript (frontend or backend), the amazing Vue.js, DevOps, DevSecOps, anything JamStack. Writer on DEV.to",
       "image_url": "https://github.com/lukeocodes.png",
+      "name": "Luke Oliff",
       "twitter": "lukeocodes",
+      "github_url": "https://twitter.com/lukeocodes",
       "facebook_url": "https://twitter.com/lukeocodes",
-      "github_url": "https://twitter.com/lukeocodes"
+      "username": "lukeoliff",
+      "title": "Vonage Developer Educator",
+      "email": "luke.oliff@vonage.com"
     },
     {
-      "username": "greg-holmes",
+      "bio": "Greg is a Developer Educator @Vonage. Coming from a PHP background, but not restricted to one language. An avid gamer and a Raspberry pi enthusiast. Often found bouldering at indoor climbing venues.",
+      "image_url": "/content/images/greg-holmes.jpg",
       "name": "Greg Holmes",
-      "email": "greg.holmes2@vonage.com",
-      "twitter": "greggles",
-      "facebook_url": "https://twitter.com/greggles",
-      "github_url": "https://twitter.com/greggles",
-      "image_url": "/content/images/github.png"
+      "linkedin_url": "https://www.linkedin.com/in/greg-holmes-php/",
+      "twitter": "Greg__Holmes",
+      "github_url": "",
+      "facebook_url": "",
+      "username": "greg-holmes",
+      "email": ""
+    },
+    {
+      "spotlight": false,
+      "username": "lornajane",
+      "name": "Lorna Mitchell",
+      "bio": "Lorna is a software engineer with an incurable blogging habit. She works on the Developer Relations team at Nexmo and tries to tame words and code in equal measure.",
+      "twitter": "lornajane",
+      "image_url": "/content/images/lornajane.jpg"
+    },
+    {
+      "spotlight": false,
+      "username": "nahrinjalal",
+      "twitter": "nahrinjalal",
+      "name": "Nahrin Jalal",
+      "image_url": "/content/images/headshot-nahrin.jpg",
+      "bio": "Nahrin is a Developer Educator for Nexmo, the Vonage API Platform. She is passionate about building inclusive communities, pragmatic software solutions, and creating technical content that is accessible to all skill levels. ",
+      "title": "Developer Educator",
+      "linkedin_url": "https://ca.linkedin.com/in/nahrin-jalal-39336a41"
+    },
+    {
+      "spotlight": false,
+      "username": "martyn",
+      "name": "Martyn Davies",
+      "bio": "Head of Developer Education at Vonage. With a background as a creative developer, product manager, and hack day organizer, Martyn has been working as a technology advocate since 2012 having previously spent time in broadcasting, major record companies and educating and empowering developers all over the world.",
+      "title": "Head of Developer Education",
+      "twitter": "martynd",
+      "image_url": "/content/images/2020.jpg"
     }
   ]
 }
