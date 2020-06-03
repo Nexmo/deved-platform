@@ -99,7 +99,7 @@ const _meta = (options) => {
  */
 const metaRouteMap = (type, object) => {
   const map = {
-    archives: `/${type}/${object}`,
+    archives: `/${type}?p=${object}`,
     categories: `/${type}/${object.slug}`,
     tags: `/${type}/${object}`,
     authors: `/${type}/${object.username}`
@@ -152,29 +152,6 @@ const extractTags = (posts, options) => {
   })
   
   return allTags
-}
-
-/**
- * Generates a unique array of archive pages from an array of posts
- * 
- * @param {array} posts An array of posts to generate a unique array of archive pages from
- * @param {object} options Global options.
- * 
- * @return {array}
- */
-const generateArchivePages = (posts, options) => {
-  const allArchives = {}
-
-  for (let page = 1; page <= Math.ceil(posts.length / options.postsPerPage); page++) {
-    if (!allArchives.archives)  {
-      allArchives.archives = []
-    }
-
-    allArchives.archives.push(page)
-    allArchives.archives = allArchives.archives.filter(uniqueValues)
-  }
-  
-  return allArchives
 }
 
 /**
@@ -240,7 +217,6 @@ export const getRoutes = (options) => {
     ...getPostsRoutes(posts, options),
     ...getMetaRoutes(meta, options),
     ...getMetaRoutes(extractTags(posts, options), options),
-    // ...getMetaRoutes(generateArchivePages(posts, options), options),
   ]
 }
 

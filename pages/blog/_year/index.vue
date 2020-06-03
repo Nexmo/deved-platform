@@ -49,6 +49,7 @@ export default {
       return {
         posts,
         routes: [
+          { route: `/blog`, title: `Blog` },
           { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY'), current: true },
         ]
       }
