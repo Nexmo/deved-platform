@@ -18,6 +18,7 @@
 import Card from "~/components/Card"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import config from "~/modules/config"
+import moment from 'moment'
 
 export default {
   components: {
@@ -26,22 +27,29 @@ export default {
   },
 
   async asyncData({ $content, params, error }) {
+    const { year } = params
+
+    if (isNaN(year)) {
+      error({ statusCode: 404, message: 'Page not found' })
+    }
+
+    const date = moment(`${year}`, 'YYYY')
+
     try {
       const posts = await $content('blog')
         .sortBy('published_at', 'desc')
-        .where({ 'tags' : { '$contains' : params.tag } })
+        .where({ 'routes' : { '$contains' : `/blog/${date.format('YYYY')}` }})
         .limit(config.postsPerPage)
         .fetch()
 
       if (posts.length === 0) {
-        throw { statusCode: 404, message: 'Tag not found' }
+        error({ statusCode: 404, message: 'Page not found' })
       }
 
       return {
-        tag: params.tag,
         posts,
         routes: [
-          { route: `/tag/${params.tag}`, title: `Tag: #${params.tag}`, current: true },
+          { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY'), current: true },
         ]
       }
     } catch (e) {
@@ -51,16 +59,8 @@ export default {
 
   head() {
     return {
-      title: `#${this.tag} posts from the team at Vonage`
+      title: `Vonage developer content from ${this.year}`
     }
   },
 }
 </script>
-
-<style scoped>
-.Category-hero >>> .Blog-hero__content h3 .Vlt-badge {
-  font-size: 21px;
-  padding: 0 4px 0 0;
-  line-height: 1;
-}
-</style>

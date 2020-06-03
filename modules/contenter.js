@@ -214,7 +214,7 @@ const getPostsRoutes = (posts, options) => {
   const routes = []
 
   posts.forEach(post => {
-    routes.push(...[getPostRoute(post.attributes)])//, ...getPostRoutes(post.attributes)])
+    routes.push(...[getPostRoute(post.attributes), ...getPostRoutes(post.attributes)])
   })
 
   return routes.filter(uniqueValues)
@@ -239,8 +239,8 @@ export const getRoutes = (options) => {
   return [
     ...getPostsRoutes(posts, options),
     ...getMetaRoutes(meta, options),
+    ...getMetaRoutes(extractTags(posts, options), options),
     // ...getMetaRoutes(generateArchivePages(posts, options), options),
-    // ...getMetaRoutes(extractTags(posts, options), options)
   ]
 }
 
