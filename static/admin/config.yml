@@ -39,7 +39,7 @@ collections:
         file: authors
         searchFields: ["authors.*.username", "authors.*.name", "authors.*.twitter"]
         valueField: "authors.*.username"
-        displayFields: ["{{authors.*.name}} (@{{authors.*.twitter}})"]
+        displayFields: ["authors.*.name"]
         hint: "Search for the post author. If not found, go add them at *Pages* » *Authors* first."
       - label: Published
         name: published
@@ -184,7 +184,7 @@ collections:
               - label: 'URL Slug'
                 name: slug
                 widget: string
-                hint: "Slug for URLs like /categories/{slug} i.e. 'inspiration' or 'tutorial'"
+                hint: "Slug for URLs like /categories/[slug] i.e. 'inspiration' or 'tutorial'"
               - label: 'Hex Color Code'
                 name: color
                 widget: string
