@@ -3,10 +3,11 @@ title: Introducing the Messages API Sandbox
 description: The Messages API Sandbox helps you to get up and running building
   applications with WhatsApp, Viber and Facebook Messenger.
 thumbnail: /content/blog/introducing-the-messages-api-sandbox/e_messaging-api-sandbox_1200x600.png
-author: martyndavies
+author: martyn
 published: true
 published_at: 2020-04-08T17:45:13.602Z
 comments: true
+updated_at: 2020-06-03T10:54:16.488Z
 category: announcement
 tags:
   - messages-api
