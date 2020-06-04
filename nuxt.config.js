@@ -47,8 +47,7 @@ export default {
   ],
 
   modules: [
-    "@nuxt/content",
-    // "@nuxtjs/feed"
+    "@nuxt/content"
   ],
 
   hooks: {

@@ -225,20 +225,3 @@ export const getRoutes = (options) => {
     ...getMetaRoutes(extractTags(posts, options), options),
   ]
 }
-
-/**
- * Get all possible feeds (rss, json-feed, atom) for @nuxtjs/feeds
- * 
- * @param {object} options Options passed in to modify how content is generated
- * 
- * @return {array}
- */
-export const getFeeds = (options) => {
-  options = defu(
-    _defaults,
-    options,
-  )
-
-  const posts = _posts(options)
-  console.log(posts)
-}
