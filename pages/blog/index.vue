@@ -2,7 +2,7 @@
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
       <PageHero class="Category-hero">
-        Developer content from {{ year }}.
+        Developer content from the archives.
       </PageHero>
     </header>
     <main class="Vlt-container">
@@ -14,6 +14,10 @@
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
         <Card v-for="post in posts" :key="post.route" :post="post" />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col Vlt-center">
+          <Pagination route="/blog" :page="page" :post-count="postCount" />
+        </div>
       </div>
     </main>
   </section>
@@ -23,42 +27,39 @@
 import Breadcrumbs from "~/components/Breadcrumbs"
 import Card from "~/components/Card"
 import PageHero from "~/components/PageHero"
+import Pagination from "~/components/Pagination"
 import config from "~/modules/config"
-import moment from 'moment'
 
 export default {
   components: {
     Breadcrumbs,
     Card,
-    PageHero
+    PageHero,
+    Pagination
   },
 
-  async asyncData({ $content, params, error }) {
-    const { year } = params
-
-    if (isNaN(year)) {
-      error({ statusCode: 404, message: 'Page not found' })
-    }
-
-    const date = moment(`${year}`, 'YYYY')
-
+  async asyncData({ $content, error, query: { p } }) {
     try {
-      const posts = await $content('blog')
-        .sortBy('published_at', 'desc')
-        .where({ 'routes' : { '$contains' : `/blog/${date.format('YYYY')}` }})
-        .limit(config.postsPerPage)
-        .fetch()
+      const page = parseInt(p, 10) || 1
 
-      if (posts.length === 0) {
-        error({ statusCode: 404, message: 'Page not found' })
-      }
+      const postCount = (await $content('blog')
+        .sortBy('published_at', 'desc')
+        .only(['title'])
+        .fetch()).length
+
+      const postsQuery = $content('blog')
+        .sortBy('published_at', 'desc')
+        .skip(config.postsPerPage * (page  - 1))
+        .limit(config.postsPerPage)
+
+      const posts = await postsQuery.fetch()
 
       return {
-        year: date.format('YYYY'),
+        page,
+        postCount,
         posts,
         routes: [
-          { route: `/blog`, title: `Blog` },
-          { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY'), current: true },
+          { route: `/blog`, title: `Blog`, current: true },
         ]
       }
     } catch (e) {
@@ -68,8 +69,16 @@ export default {
 
   head() {
     return {
-      title: `Vonage developer content from ${this.year}`
+      title: `All content from the team at Vonage`
     }
   },
 }
 </script>
+
+<style scoped>
+.Category-hero >>> .Blog-hero__content h3 .Vlt-badge {
+  font-size: 21px;
+  padding: 0 4px 0 0;
+  line-height: 1;
+}
+</style>

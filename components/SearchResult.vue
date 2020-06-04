@@ -2,7 +2,7 @@
   <NLink :to="`/${item.path}`" no-prefetch class="Search-result">
     <img v-if="thumb" style="float: left; width: 220px; margin-right: 1em" :src="item.image" :alt="item.title">
     <p class="Vlt-truncate Meta-path">
-      {{ prettyPath(item.path) }}
+      {{ meta }}
     </p>
     <h3 class="Vlt-truncate Vlt-text-link" :title="item.title">
       {{ item.title }}
@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import config from "~/modules/config"
+
 export default {
   props: {
     item: {
@@ -26,10 +28,10 @@ export default {
     },
   },
 
-  methods:{
-    prettyPath(path) {
+  computed: {
+    meta() {
       const dateExp = /\d{4}\/\d{2}\/\d{2}/
-      const pathDateMatch = path.match(new RegExp(dateExp.source))
+      const pathDateMatch = this.item.path.match(new RegExp(dateExp.source))
 
       let split = '/'
 
@@ -37,7 +39,7 @@ export default {
         split = new RegExp(`\/(${dateExp.source})\/`)
       }
 
-      return `${process.env.baseUrl.replace(/https?:\/\//i, "")} » ${path.split(split).join(' » ')}`
+      return `${config.baseUrl.replace(/https?:\/\//i, "")} » ${this.item.path.split(split).join(' » ')}`
     }
   },
 }

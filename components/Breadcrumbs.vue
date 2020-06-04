@@ -60,8 +60,4 @@ li a {
 li.current a {
   color: grey
 }
-
-span {
-  text-transform: capitalize;
-}
 </style>

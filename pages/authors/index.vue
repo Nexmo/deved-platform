@@ -14,8 +14,8 @@
         <Author
           v-for="author in authors"
           :key="author.username"
-          :author-name="author.username"
-          type="card"
+          :author="author"
+          type="bubble"
         />
       </div>
     </main>
@@ -34,8 +34,8 @@ export default {
     Author,
   },
 
-  data() {
-    const { authors } = require("~/content/authors.json")
+  async asyncData({ $content }) {
+    const { authors } = await $content('authors').fetch()
 
     authors.sort((a, b) => {
       const nameA = a.name.toUpperCase()

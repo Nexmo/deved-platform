@@ -35,7 +35,7 @@ exports.handler = async (event, context, callback) => {
     )
     const index = client.initIndex(process.env.ALGOLIA_INDEX)
 
-    const stream = request(`${process.env.BASE_URL}/searchIndex.json`).pipe(
+    const stream = request(`${process.env.URL}/searchIndex.json`).pipe(
       StreamArray.withParser()
     )
     let chunks = []

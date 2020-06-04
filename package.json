@@ -13,35 +13,28 @@
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxt/http": "^0.3.0",
+    "@nuxt/content": "^1.2.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/feed": "^1.1.0",
-    "@toycode/markdown-it-class": "^1.2.3",
     "@vonagevolta/volta2": "0.0.37",
     "algoliasearch": "^4.2.0",
-    "front-matter": "^3.1.0",
-    "frontmatter-markdown-loader": "3.1.0",
-    "html-to-text": "^5.1.1",
+    "defu": "^2.0.4",
+    "dotenv": "^8.2.0",
+    "front-matter": "^4.0.2",
     "instantsearch.css": "^7.4.2",
-    "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.2.7",
-    "markdown-it-front-matter": "^0.2.1",
-    "markdown-it-prism": "^2.0.5",
     "nuxt": "^2.5.1",
+    "reading-time": "^1.2.0",
     "vue-disqus": "^3.0.5",
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^2.7.0",
-    "vue-moment": "^4.1.0",
-    "vue-pluralize": "0.0.2",
-    "yaml": "^1.8.3"
+    "vue-moment": "^4.1.0"
   },
   "keywords": [],
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.0.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-vue": "^6.2.2",
-    "prettier": "^2.0.5",
+    "eslint": "^7.0.0",
     "stream-json": "^1.3.3"
   }
 }

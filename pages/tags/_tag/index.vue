@@ -1,7 +1,9 @@
 <template>
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
-      <Author :author="author" type="page" />
+      <PageHero class="Tag-hero">
+        <Tag :tag="tag" /> posts from the team at Vonage.
+      </PageHero>
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
@@ -18,39 +20,37 @@
 </template>
 
 <script>
-import Author from "~/components/Author.vue"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import Card from "~/components/Card"
+import PageHero from "~/components/PageHero"
+import Tag from "~/components/Tag"
 import config from "~/modules/config"
 
 export default {
   components: {
-    Author,
     Breadcrumbs,
     Card,
+    PageHero,
+    Tag
   },
 
   async asyncData({ $content, params, error }) {
     try {
-      const { authors } = await $content('authors').fetch()
-      const author = authors.find(a => a.username === params.author)
-
-      if (!author) {
-        throw { statusCode: 404, message: "Page not found" }
-      }
-
       const posts = await $content('blog')
         .sortBy('published_at', 'desc')
-        .where({ 'author': author.username })
+        .where({ 'tags' : { '$contains' : params.tag } })
         .limit(config.postsPerPage)
         .fetch()
 
+      if (posts.length === 0) {
+        throw { statusCode: 404, message: 'Tag not found' }
+      }
+
       return {
-        author: author,
+        tag: params.tag,
         posts,
         routes: [
-          { route: `/authors`, title: `All our authors` },
-          { route: `/authors/${author.username}`, title: `${author.name}`, current: true },
+          { route: `/tags/${params.tag}`, title: `Tag: #${params.tag}`, current: true },
         ]
       }
     } catch (e) {
@@ -60,15 +60,17 @@ export default {
 
   head() {
     return {
-      title: `All the amazing people who contribute to our content`
+      title: `#${this.tag} posts from the team at Vonage`
     }
   },
 }
 </script>
 
 <style scoped>
-.Vlt-grid >>> .Author-col {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+.Tag-hero >>> .Blog-hero__content h3 .Vlt-badge {
+  font-size: 21px;
+  line-height: 1;
+  border-radius: 12px;
+  margin-bottom: -2px;
 }
 </style>

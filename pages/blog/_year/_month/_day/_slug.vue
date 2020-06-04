@@ -8,39 +8,38 @@
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
-        <div class="Vlt-col">
-          {{ headings }}
-        </div>
+        <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
           <div class="Vlt-card Vlt-card--lesspadding" property="mainEntityOfPage">
-            <div v-if="attributes.thumbnail" class="Vlt-card__header">
-              <img property="image" :src="attributes.thumbnail" :alt="attributes.title" width="100%">
+            <div v-if="post.thumbnail" class="Vlt-card__header">
+              <img property="image" :src="post.thumbnail" :alt="post.title" width="100%">
             </div>
-            <div v-if="attributes.category" class="Vlt-card__corner Vlt-margin--A-top3">
-              <Category :category="attributes.category" />
+            <div v-if="post.categoryObject" class="Vlt-card__corner Vlt-margin--A-top3">
+              <Category :category="post.categoryObject" />
             </div>
             <div class="Vlt-card__header Vlt-margin--A-top3">
               <h1 property="headline">
-                {{ attributes.title }}
+                {{ post.title }}
               </h1>
               <BackToTop />
             </div>
-            <div v-if="attributes.author" class="Vlt-card__content Vlt-margin--A-top3">
-              <Author :author-name="attributes.author" type="minicard" property="author" />
+            <div v-if="post.author" class="Vlt-card__content Vlt-margin--A-top3">
+              <Author :author="post.author" type="minicard" property="author" />
               <meta property="publisher" content="@VonageDev">
             </div>
-            <div v-if="attributes.published_at" class="Vlt-card__content Vlt-margin--A-top1">
-              <span property="datePublished" :content="attributes.published_at">Published
+            <div v-if="post.published_at" class="Vlt-card__content Vlt-margin--A-top1">
+              <span property="datePublished" :content="post.published_at">Published
                 <strong>{{
-                  (attributes.updated_at || attributes.published_at) | moment("dddd, MMMM Do YYYY")
+                  (post.updated_at || post.published_at) | moment("dddd, MMMM Do YYYY")
                 }}</strong></span>
-              <meta property="dateModified" :content="attributes.updated_at || attributes.published_at">
+              <meta property="dateModified" :content="post.updated_at || post.published_at">
+              <RevisionsLink :post="post" /><ImproveLink :post="post" />
             </div>
-            <div v-if="attributes.tags" class="Vlt-card__content Vlt-margin--A-top1">
-              <Tags :tags="attributes.tags" />
+            <div v-if="post.tags" class="Vlt-card__content Vlt-margin--A-top1">
+              <Tags :tags="post.tags" />
             </div>
             <div class="Vlt-card__content Vlt-margin--A-top3" property="articleBody">
-              <component :is="markdownContent" />
+              <nuxt-content :document="post" />
             </div>
           </div>
         </div>
@@ -48,12 +47,12 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
-          <div v-if="attributes.comments" class="Vlt-card Vlt-bg-white">
+          <div v-if="post.comments" class="Vlt-card Vlt-bg-white">
             <div id="comments" class="Vlt-card__content">
               <vue-disqus
                 :shortname="disqusShortname"
-                :identifier="`${baseUrl}${route}`"
-                :url="`${baseUrl}${route}`"
+                :identifier="`${baseUrl}${post.route}`"
+                :url="`${baseUrl}${post.route}`"
               />
             </div>
           </div>
@@ -62,9 +61,8 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <Author
-          :author-name="attributes.author"
+          :author="post.author"
           type="card"
-          bio
         />
         <div class="Vlt-col" />
       </div>
@@ -73,118 +71,68 @@
 </template>
 
 <script>
-import BackToTop from "~/components/BackToTop"
-import Category from "~/components/Category"
 import Author from "~/components/Author"
+import BackToTop from "~/components/BackToTop"
 import Breadcrumbs from "~/components/Breadcrumbs"
+import Category from "~/components/Category"
+import ImproveLink from "~/components/ImproveLink"
+import RevisionsLink from "~/components/RevisionsLink"
 import Tags from "~/components/Tags"
+import config from "~/modules/config"
 import moment from "moment"
-
-const getRouteData = (post) => {
-  return post.meta.resourcePath
-      .split("/content/")
-      .pop()
-      .split(".")[0]
-      .split("/")
-}
-
-const getPostDate = (post) => {
-  return moment(post.attributes.published_at)
-}
-
-const getRoute = (post) => {
-  if (post.attributes.permalink) {
-    return post.attributes.permalink
-  } else {
-    const [, name] = getRouteData(post)
-    const postDate = getPostDate(post)
-
-    return `/blog/${postDate.format('YYYY/MM/DD')}/${name}`
-  }
-}
 
 export default {
   components: {
-    BackToTop,
-    Category,
     Author,
+    BackToTop,
     Breadcrumbs,
+    Category,
+    ImproveLink,
+    RevisionsLink,
     Tags,
   },
 
-  async asyncData ({ params, error }) {
-    try {
-      const post = await import(`~/content/blog/${params.slug}.md`)
-      const postDate = getPostDate(post)
-
-      return {
-        disqusShortname: process.env.disqusShortname,
-        baseUrl: process.env.baseUrl,
-        attributes: post.attributes,
-        headings: [],
-        routes: [
-          { route: `/blog/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
-          { route: `/blog/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
-          { route: `/blog/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
-          { route: getRoute(post), title: post.attributes.title, current: true }
-        ],
-        route: getRoute(post)
-      }
-    } catch (e) {
-      console.log(e)
-      error({ statusCode: 404, message: 'Post not found' })
-    }
-  },
-
-  async created () {
-    this.markdownContent = () => import(`~/content/blog/${this.$route.params.slug}.md`).then((md) => {
-      return {
-        extends: md.vue.component
-      }
-    })
-  },
-
-  updated() {
-    this.$nextTick(function () {
-      const clickableHeaders = Object.values(document.getElementsByClassName('Clickable-header'))
-
-      clickableHeaders.forEach(element => {
-        const link = document.createElement("a")
-        const text = document.createTextNode("#")
-        link.className = "Clickable-header__Link"
-        link.setAttribute("href", `#${element.id}`)
-        link.prepend(text)
-
-        element.addEventListener("mouseenter", e => {
-          e.target.appendChild(link)
-        })
-
-        element.addEventListener("mouseleave", e => {
-          if (e.target.contains(link)) {
-            e.target.removeChild(link)
-          }
-        })
+  async asyncData({ $content, params, error }) {
+    const post = await $content('blog', params.slug)
+      .fetch()
+      .catch(err => {
+        console.error(err)
+        error({ statusCode: 404, message: "Page not found" })
       })
-    })
+
+    const postDate = moment(post.published_at)
+
+    return {
+      post,
+      disqusShortname: config.disqusShortname,
+      baseUrl: config.baseUrl,
+      routes: [
+        { route: `/${post.type}`, title: `Blog` },
+        { route: `/${post.type}/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
+        { route: `/${post.type}/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
+        { route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
+        { route: post.route, title: post.title, current: true }
+      ],
+    }
   },
 
   methods: {
     postMeta() {
-      if (typeof this.attributes.thumbnail !== 'undefined' && !this.attributes.thumbnail.startsWith('http')) {
-        this.attributes.thumbnail = `${process.env.baseUrl}${this.attributes.thumbnail}`
+      if (typeof this.post.thumbnail !== 'undefined' && !this.post.thumbnail.startsWith('http')) {
+        this.post.thumbnail = `${this.baseUrl}${this.post.thumbnail}`
       }
   
       const meta = [
         // Twitter Only
-        { hid: "twitter:url", name: "twitter:url", content: `${process.env.baseUrl}${this.route}` },
-        { hid: "twitter:title", name: "twitter:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
-        { hid: "twitter:description", name: "twitter:description", content: this.attributes.description },
-        { hid: "twitter:image", name: "twitter:image", content: `${this.attributes.thumbnail || '/images/generic-social-card.png'}` },
+        { hid: "twitter:url", name: "twitter:url", content: `${this.baseUrl}${this.post.route}` },
+        { hid: "twitter:title", name: "twitter:title", content: `${this.post.title} » ${config.baseTitle}` },
+        { hid: "twitter:description", name: "twitter:description", content: this.post.description },
+        { hid: "twitter:image", name: "twitter:image", content: `${this.post.thumbnail || '/images/generic-social-card.png'}` },
         // Open Graph / Facebook Only
-        { hid: "og:url", property: "og:url", content: `${process.env.baseUrl}${this.route}` },
-        { hid: "og:title", property: "og:title", content: `${this.attributes.title} » ${process.env.baseTitle}` },
-        { hid: "og:description", property: "og:description", content: this.attributes.description },
-        { hid: "og:image", property: "og:image", content: `${this.attributes.thumbnail || '/images/generic-social-card.png'}` },
+        { hid: "og:url", property: "og:url", content: `${this.baseUrl}${this.post.route}` },
+        { hid: "og:title", property: "og:title", content: `${this.post.title} » ${this.baseTitle}` },
+        { hid: "og:description", property: "og:description", content: this.post.description },
+        { hid: "og:image", property: "og:image", content: `${this.post.thumbnail || '/images/generic-social-card.png'}` },
         { hid: "og:type", property: "og:type", content: 'article' },
       ]
 
@@ -194,10 +142,10 @@ export default {
 
   head() {
     return {
-      title: `${this.attributes.title}`,
+      title: `${this.post.title}`,
       meta: [
-        { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.attributes.category}, ${this.attributes.tags.join(', ')}`},
-        { hid: "description", name: "description", content: this.attributes.description},
+        { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.post.category}, ${this.post.tags.join(', ')}`},
+        { hid: "description", name: "description", content: this.post.description},
         ...this.postMeta()
       ]
     }
@@ -222,12 +170,12 @@ export default {
   margin-bottom: 24px;
 }
 
-.Blog__post .frontmatter-markdown {
-  padding: auto 50px;
-}
-
 .Blog__post img {
   border-radius: 6px;
+}
+
+/* .Blog__post .frontmatter-markdown {
+  padding: auto 50px;
 }
 
 .Blog__post .frontmatter-markdown >>> li,
@@ -308,7 +256,7 @@ export default {
     margin: 24px 10px;
     padding-left: 12px;
   }
-}
+} */
 
 .Vlt-grid >>> .Author-col {
   flex: 0 0 66.66%;

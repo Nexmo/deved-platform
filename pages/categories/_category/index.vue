@@ -1,7 +1,9 @@
 <template>
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
-      <Author :author="author" type="page" />
+      <PageHero class="Category-hero">
+        <Category :category="category" plural /> from the team at Vonage.
+      </PageHero>
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
@@ -18,39 +20,40 @@
 </template>
 
 <script>
-import Author from "~/components/Author.vue"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import Card from "~/components/Card"
+import Category from "~/components/Category"
+import PageHero from "~/components/PageHero"
 import config from "~/modules/config"
 
 export default {
   components: {
-    Author,
     Breadcrumbs,
     Card,
+    Category,
+    PageHero
   },
 
   async asyncData({ $content, params, error }) {
     try {
-      const { authors } = await $content('authors').fetch()
-      const author = authors.find(a => a.username === params.author)
+      const { categories } = await $content('categories').fetch()
+      const category = categories.find(c => c.slug === params.category)
 
-      if (!author) {
+      if (!category) {
         throw { statusCode: 404, message: "Page not found" }
       }
 
       const posts = await $content('blog')
         .sortBy('published_at', 'desc')
-        .where({ 'author': author.username })
+        .where({ 'category': category.slug })
         .limit(config.postsPerPage)
         .fetch()
 
       return {
-        author: author,
+        category: category,
         posts,
         routes: [
-          { route: `/authors`, title: `All our authors` },
-          { route: `/authors/${author.username}`, title: `${author.name}`, current: true },
+          { route: `/categories/${category.slug}`, title: `Category: ${category.plural}`, current: true },
         ]
       }
     } catch (e) {
@@ -60,15 +63,16 @@ export default {
 
   head() {
     return {
-      title: `All the amazing people who contribute to our content`
+      title: `${this.category.plural} from the team at Vonage`
     }
   },
 }
 </script>
 
 <style scoped>
-.Vlt-grid >>> .Author-col {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+.Category-hero >>> .Blog-hero__content h3 .Vlt-badge {
+  font-size: 21px;
+  padding: 0 4px 0 0;
+  line-height: 1;
 }
 </style>

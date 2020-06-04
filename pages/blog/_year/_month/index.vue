@@ -1,7 +1,9 @@
 <template>
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
-      <PageHero>Developer content from {{ monthName }}, {{ year }}.</PageHero>
+      <PageHero class="Category-hero">
+        Developer content from {{ monthName }}, {{ year }}.
+      </PageHero>
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
@@ -11,70 +13,64 @@
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
-        <MiniCard v-for="post in posts" :key="post.attributes.title" :post="post" />
+        <Card v-for="post in posts" :key="post.route" :post="post" />
       </div>
     </main>
   </section>
 </template>
 
 <script>
-import PageHero from "~/components/PageHero"
-import MiniCard from "~/components/MiniCard"
 import Breadcrumbs from "~/components/Breadcrumbs"
+import Card from "~/components/Card"
+import PageHero from "~/components/PageHero"
+import config from "~/modules/config"
 import moment from 'moment'
 
 export default {
   components: {
     Breadcrumbs,
-    MiniCard,
-    PageHero,
+    Card,
+    PageHero
   },
 
-  asyncData({ route, error }) {
-    const { month, year } = route.params
+  async asyncData({ $content, params, error }) {
+    const { month, year } = params
 
     if (isNaN(year) || isNaN(month)) {
       error({ statusCode: 404, message: 'Page not found' })
     }
 
-    const pageDate = moment(`${year}/${month}`, 'YYYY/MM')
+    const date = moment(`${year}/${month}`, 'YYYY/MM')
 
-    const resolve = require.context("~/content/", true, /\.md$/)
-    const imports = resolve
-      .keys()
-      .map((key) => {
-        const [, name] = key.match(/\/(.+)\.md$/) // eslint-disable-line no-unused-vars
-        return resolve(key)
-      })
-      .filter((content) => {
-        const contentDate = moment(content.attributes.published_at)
+    try {
+      const posts = await $content('blog')
+        .sortBy('published_at', 'desc')
+        .where({ 'routes' : { '$contains' : `/blog/${date.format('YYYY/MM')}` }})
+        .limit(config.postsPerPage)
+        .fetch()
 
-        return (
-          contentDate.format('YYYYMM') === pageDate.format('YYYYMM') &&
-          content.attributes.published != false
-        )
-      })
+      if (posts.length === 0) {
+        error({ statusCode: 404, message: 'Page not found' })
+      }
 
-    imports.sort((a, b) => {
-      const aDate = moment(a.attributes.published_at)
-      const bDate = moment(b.attributes.published_at)
-      return bDate.diff(aDate)
-    })
-
-    return {
-      monthName: pageDate.format('MMMM'),
-      year: pageDate.format('YYYY'),
-      posts: imports.map(({ attributes, permalink, meta }) => ({ attributes, permalink, meta })),
-      routes: [
-        { route: `/blog/${pageDate.format('YYYY')}`, title: pageDate.format('YYYY') },
-        { route: `/blog/${pageDate.format('YYYY/MM')}`, title: pageDate.format('MMMM'), current: true },
-      ]
+      return {
+        monthName: date.format('MMMM'),
+        year: date.format('YYYY'),
+        posts,
+        routes: [
+          { route: `/blog`, title: `Blog` },
+          { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY') },
+          { route: `/blog/${date.format('YYYY/MM')}`, title: date.format('MMMM'), current: true },
+        ]
+      }
+    } catch (e) {
+      error(e)
     }
   },
 
   head() {
     return {
-      title: `Vonage developer content from ${this.monthName}, ${this.year}`
+      title: `Vonage developer content from ${this.year}`
     }
   },
 }
