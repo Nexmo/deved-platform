@@ -1,5 +1,10 @@
 <template>
   <section class="Blog__Full-width">
+    <header class="Blog__Full-width">
+      <PageHero class="Tag-hero">
+        <Tag :tag="tag" /> posts from the team at Vonage.
+      </PageHero>
+    </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
         <div class="Vlt-col" />
@@ -15,14 +20,18 @@
 </template>
 
 <script>
-import Card from "~/components/Card"
 import Breadcrumbs from "~/components/Breadcrumbs"
+import Card from "~/components/Card"
+import PageHero from "~/components/PageHero"
+import Tag from "~/components/Tag"
 import config from "~/modules/config"
 
 export default {
   components: {
+    Breadcrumbs,
     Card,
-    Breadcrumbs
+    PageHero,
+    Tag
   },
 
   async asyncData({ $content, params, error }) {
@@ -58,9 +67,10 @@ export default {
 </script>
 
 <style scoped>
-.Category-hero >>> .Blog-hero__content h3 .Vlt-badge {
+.Tag-hero >>> .Blog-hero__content h3 .Vlt-badge {
   font-size: 21px;
-  padding: 0 4px 0 0;
   line-height: 1;
+  border-radius: 12px;
+  margin-bottom: -2px;
 }
 </style>
