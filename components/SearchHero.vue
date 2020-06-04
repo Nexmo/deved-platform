@@ -77,7 +77,6 @@
 <script>
 import SearchResult from "~/components/SearchResult"
 import algoliasearch from "algoliasearch/lite"
-import config from "~/modules/config"
 
 export default {
   components: {
@@ -86,7 +85,7 @@ export default {
 
   data() {
     return {
-      algoliaIndex: config.algoliaIndex,
+      algoliaIndex: process.env.algoliaIndex,
       searchClient: {
         search(requests) {
           if (requests.every(({ params }) => params.query.length < 3)) {
@@ -105,8 +104,8 @@ export default {
           // })
 
           return (algoliasearch(
-            config.algoliaApplicationId,
-            config.algoliaSearchKey
+            process.env.algoliaApplicationId,
+            process.env.algoliaSearchKey
           )).search(requests)
         },
       },

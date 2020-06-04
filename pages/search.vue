@@ -123,7 +123,6 @@ import SearchResult from "~/components/SearchResult"
 import algoliasearch from "algoliasearch/lite"
 import { history } from 'instantsearch.js/es/lib/routers'
 import { simple } from 'instantsearch.js/es/lib/stateMappings'
-import config from "~/modules/config"
 
 export default {
   components: {
@@ -133,10 +132,10 @@ export default {
 
   data() {
     return {
-      algoliaIndex: config.algoliaIndex,
+      algoliaIndex: process.env.algoliaIndex,
       searchClient: algoliasearch(
-        config.algoliaApplicationId,
-        config.algoliaSearchKey
+        process.env.algoliaApplicationId,
+        process.env.algoliaSearchKey
       ),
       routes: [
         { route: `/search`, title: `Search Results`, current: true },

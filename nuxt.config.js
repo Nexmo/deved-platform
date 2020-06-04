@@ -11,7 +11,10 @@ export default {
 
   env: {
     repoUrl: config.repoUrl,
-    repoBranch: config.repoBranch
+    repoBranch: config.repoBranch,
+    algoliaIndex: config.algoliaIndex,
+    algoliaApplicationId: config.algoliaApplicationId,
+    algoliaSearchKey: config.algoliaSearchKey
   },
 
   head: {
@@ -74,6 +77,11 @@ export default {
   ],
 
   build: {
-    transpile: ["vue-instantsearch", "instantsearch.js/es"]
+    transpile: ["vue-instantsearch", "instantsearch.js/es"],
+    extend (config) {
+      config.node = {
+        fs: 'empty'
+      }
+    }
   }
 }
