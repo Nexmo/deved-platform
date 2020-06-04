@@ -20,7 +20,6 @@ const config = {
   repoBranch: process.env.BRANCH || "master",
   algoliaApplicationId: process.env.ALGOLIA_APPLICATION_ID,
   algoliaSearchKey: process.env.ALGOLIA_SEARCH_KEY,
-  algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
   algoliaIndex: process.env.ALGOLIA_INDEX,
   get headMeta() {
     return [
