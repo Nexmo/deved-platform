@@ -2,9 +2,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/00bdc529-eecc-4b9b-9fa7-915f5c3717a4/deploy-status)](https://app.netlify.com/sites/vonage-dev-blog/deploys)
 
-Challenger blog for the new Dev blog.
-
->>> ***Note:*** You'll need Algolia keys to make the search work. See `.env.example` and use it to make a `.env` file. `ALGOLIA_INDEX` and public keys are also hardcoded as `BLOG` amongst the code.
+- Zero configuration local builds (without search)
+- `nuxt/content` for loading of markdown and json files
+- Algolia search with `vue-instantsearch` and `algoliasearch` (requires some configuration)
+- RSS and author RSS feeds using `nuxtjs/feeds`
+- DISQUS comments on post pages using `vue-disqus`
+- Netlify CMS for content management
 
 ## Install Dependencies
 
@@ -18,7 +21,7 @@ npm install
 npm run dev
 ```
 
-## Deployment
+## Deployment Production Build
 
 Generate as a universal ssr nuxt application using `generate`.
 
@@ -26,7 +29,7 @@ Generate as a universal ssr nuxt application using `generate`.
 npm run generate
 ```
 
-## Run A Build Locally
+## Run A Production Build Locally
 
 You can run `generate` locally and then serve it
 
