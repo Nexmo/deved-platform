@@ -1,8 +1,8 @@
 <template>
   <section class="Blog__Full-width">
-    <client-only>
+    <client-only v-if="algoliaIndex">
       <ais-instant-search
-        index-name="BLOG"
+        :index-name="algoliaIndex"
         :search-client="searchClient"
         :routing="routing"
       >
@@ -81,6 +81,39 @@
         </main>
       </ais-instant-search>
     </client-only>
+    <div v-else>
+      <header class="Blog__Full-width">
+        <div class="Search-hero">
+          <div class="Search-hero__content">
+            <div class="Search-hero__search-box-wrapper Vlt-center">
+              <h3>Search disabled.</h3>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="Vlt-container">
+        <div class="Vlt-grid">
+          <div class="Vlt-col" />
+          <div v-if="routes" class="Vlt-col Vlt-col--2of3">
+            <Breadcrumbs :routes="routes" />
+          </div>
+          <div class="Vlt-col" />
+          <div class="Vlt-grid__separator" />
+          <div class="Vlt-col" />
+          <div class="Vlt-col Vlt-col--2of3">
+            <div class="Vlt-card">
+              <h3>
+                Search is disabled.
+              </h3>
+              <p>
+                Please edit provide your <code>env</code> with an <code>ALGOLIA_APPLICATION_ID</code>, <code>ALGOLIA_SEARCH_KEY</code>, and <code>ALGOLIA_INDEX</code>.
+              </p>
+            </div>
+          </div>
+          <div class="Vlt-col" />
+        </div>
+      </main>
+    </div>
   </section>
 </template>
 
@@ -90,6 +123,7 @@ import SearchResult from "~/components/SearchResult"
 import algoliasearch from "algoliasearch/lite"
 import { history } from 'instantsearch.js/es/lib/routers'
 import { simple } from 'instantsearch.js/es/lib/stateMappings'
+import config from "~/modules/config"
 
 export default {
   components: {
@@ -99,9 +133,10 @@ export default {
 
   data() {
     return {
+      algoliaIndex: config.algoliaIndex,
       searchClient: algoliasearch(
-        "UG4W1PA1SN",
-        "0edbf51d45ad8226c199017566b3d5fd"
+        config.algoliaApplicationId,
+        config.algoliaSearchKey
       ),
       routes: [
         { route: `/search`, title: `Search Results`, current: true },

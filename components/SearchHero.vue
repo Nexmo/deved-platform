@@ -1,11 +1,18 @@
 <template>
   <div class="Blog-hero">
     <div class="Blog-hero__content">
-      <h3>Developer content from the team at <img src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg" alt="Vonage" class="Logo__inline"></h3>
-      <client-only>
+      <h3>
+        Developer content from the team at 
+        <img 
+          src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
+          alt="Vonage"
+          class="Logo__inline"
+        >
+      </h3>
+      <client-only v-if="algoliaIndex">
         <AisInstantSearch
+          :index-name="algoliaIndex"
           :search-client="searchClient"
-          index-name="BLOG"
           :class-names="{
             'ais-InstantSearch': 'Blog-hero__search-wrapper',
           }"
@@ -22,15 +29,15 @@
               <div class="Vlt-input">
                 <form method="GET" action="/search" @submit="checkForm">
                   <input
-                    id="q"
-                    ref="q"
+                    id="query"
+                    ref="query"
                     type="search"
-                    placeholder="Send SMS in Node.js"
-                    name="q"
+                    placeholder="e.g. Send SMS in Node.js"
+                    name="query"
                     :value="currentRefinement"
                     @input="refine($event.currentTarget.value)"
                   >
-                  <label for="q">Search our existing content...</label>
+                  <label for="query">Search our existing content...</label>
                 </form>
               </div>
               <small v-if="isSearchStalled" class="Vlt-form__element__hint">Search is taking longer than usual...</small>
@@ -55,6 +62,14 @@
           </AisStateResults>
         </AisInstantSearch>
       </client-only>
+      <div v-else class="Vlt-center">
+        <h4>
+          Search is disabled.
+        </h4>
+        <p>
+          Please edit provide your <code>env</code> with an <code>ALGOLIA_APPLICATION_ID</code>, <code>ALGOLIA_SEARCH_KEY</code>, and <code>ALGOLIA_INDEX</code>.
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -62,34 +77,7 @@
 <script>
 import SearchResult from "~/components/SearchResult"
 import algoliasearch from "algoliasearch/lite"
-
-const algoliaClient = algoliasearch(
-  "UG4W1PA1SN",
-  "0edbf51d45ad8226c199017566b3d5fd"
-)
-
-const filters = ""
-
-const searchClient = {
-  search(requests) {
-    if (requests.every(({ params }) => params.query.length < 3)) {
-      return Promise.resolve({
-        results: requests.map(() => ({
-          hits: [],
-          nbHits: 0,
-          nbPages: 0,
-          processingTimeMS: 0,
-        })),
-      })
-    }
-
-    requests.forEach((request) => {
-      request.params.filters = filters
-    })
-
-    return algoliaClient.search(requests)
-  },
-}
+import config from "~/modules/config"
 
 export default {
   components: {
@@ -98,14 +86,36 @@ export default {
 
   data() {
     return {
-      baseTitle: process.env.baseTitle,
-      searchClient: searchClient,
+      algoliaIndex: config.algoliaIndex,
+      searchClient: {
+        search(requests) {
+          if (requests.every(({ params }) => params.query.length < 3)) {
+            return Promise.resolve({
+              results: requests.map(() => ({
+                hits: [],
+                nbHits: 0,
+                nbPages: 0,
+                processingTimeMS: 0,
+              })),
+            })
+          }
+
+          // requests.forEach((request) => {
+          //   request.params.filters = filters
+          // })
+
+          return (algoliasearch(
+            config.algoliaApplicationId,
+            config.algoliaSearchKey
+          )).search(requests)
+        },
+      },
     }
   },
 
   methods:{
     checkForm: function (e) {
-      if (this.$refs.q.value) {
+      if (this.$refs.query.value) {
         return true
       }
 

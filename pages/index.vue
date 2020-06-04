@@ -1,5 +1,8 @@
 <template>
   <section class="Blog__Full-width">
+    <header class="Blog__Full-width">
+      <SearchHero />
+    </header>
     <main class="Vlt-container">
       <div class="Vlt-text-separator">
         <span>Latest posts</span>
@@ -39,15 +42,17 @@
 </template>
 
 <script>
-import CardFeatured from "~/components/CardFeatured"
 import Card from "~/components/Card"
+import CardFeatured from "~/components/CardFeatured"
+import SearchHero from "~/components/SearchHero"
 
 const postMap = { 'tutorial': 6 }
 
 export default {
   components: {
+    Card,
     CardFeatured,
-    Card
+    SearchHero
   },
 
   async asyncData({ $content }) {

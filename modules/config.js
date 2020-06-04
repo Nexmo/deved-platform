@@ -18,6 +18,10 @@ const config = {
   disqusShortname: process.env.DISQUS_SHORTNAME || "vonage-dev-blog-dev",
   repoUrl: process.env.REPOSITORY_URL || "https://github.com/Nexmo/dev-blog-next",
   repoBranch: process.env.BRANCH || "master",
+  algoliaApplicationId: process.env.ALGOLIA_APPLICATION_ID,
+  algoliaSearchKey: process.env.ALGOLIA_SEARCH_KEY,
+  algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
+  algoliaIndex: process.env.ALGOLIA_INDEX,
   get headMeta() {
     return [
       { charset: "utf-8" },
