@@ -2,7 +2,7 @@
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
       <PageHero class="Category-hero">
-        <Category :category="category" plural /> posts from the team at Vonage.
+        <Category :category="category" plural /> from the team at Vonage.
       </PageHero>
     </header>
     <main class="Vlt-container">

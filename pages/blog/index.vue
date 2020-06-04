@@ -1,5 +1,10 @@
 <template>
   <section class="Blog__Full-width">
+    <header class="Blog__Full-width">
+      <PageHero class="Category-hero">
+        Developer content from the archives.
+      </PageHero>
+    </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
         <div class="Vlt-col" />
@@ -21,6 +26,7 @@
 <script>
 import Breadcrumbs from "~/components/Breadcrumbs"
 import Card from "~/components/Card"
+import PageHero from "~/components/PageHero"
 import Pagination from "~/components/Pagination"
 import config from "~/modules/config"
 
@@ -28,6 +34,7 @@ export default {
   components: {
     Breadcrumbs,
     Card,
+    PageHero,
     Pagination
   },
 

@@ -1,5 +1,10 @@
 <template>
   <section class="Blog__Full-width">
+    <header class="Blog__Full-width">
+      <PageHero class="Category-hero">
+        Developer content from {{ year }}.
+      </PageHero>
+    </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
         <div class="Vlt-col" />
@@ -15,15 +20,17 @@
 </template>
 
 <script>
-import Card from "~/components/Card"
 import Breadcrumbs from "~/components/Breadcrumbs"
+import Card from "~/components/Card"
+import PageHero from "~/components/PageHero"
 import config from "~/modules/config"
 import moment from 'moment'
 
 export default {
   components: {
+    Breadcrumbs,
     Card,
-    Breadcrumbs
+    PageHero
   },
 
   async asyncData({ $content, params, error }) {
@@ -47,6 +54,7 @@ export default {
       }
 
       return {
+        year: date.format('YYYY'),
         posts,
         routes: [
           { route: `/blog`, title: `Blog` },
