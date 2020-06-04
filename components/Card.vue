@@ -3,7 +3,7 @@
     <div class="Vlt-card--gradient-wrapper Vlt-gradient--blue-to-pink">
       <div class="Vlt-card Vlt-center">
         <div class="Vlt-card__header">
-          <Category :category="post.category" />
+          <Category :category="post.categoryObject" />
         </div>
         <NLink class="Vlt-card__content" :to="post.route">
           <h2>{{ post.title | truncate(73, '...') }}</h2>
@@ -31,7 +31,7 @@ export default {
       type: Object,
       required: true,
     },
-  }
+  },
 }
 </script>
 

@@ -3,7 +3,7 @@
     <div class="Vlt-card Vlt-bg-white">
       <div class="Vlt-card__image" :style="`background-image: url('${post.thumbnail}'); background-size: cover; background-position: center; height: 200px`" />
       <div class="Vlt-card__corner">
-        <Category :category="post.category" />
+        <Category :category="post.categoryObject" />
       </div>
       <div class="Vlt-card__header">
         <NLink :to="post.route" :title="post.title">

@@ -2,7 +2,8 @@ import config from "./modules/config"
 import {
   getRoutes,
   getPostRoute,
-  getPostRoutes
+  getPostRoutes,
+  getCategory
 } from "./modules/contenter"
 
 export default {
@@ -56,6 +57,7 @@ export default {
         const { time } = require('reading-time')(document.text)
         document.readingTime = time
 
+        document.categoryObject = getCategory(document.category)
         document.route = getPostRoute(document)
         document.routes = getPostRoutes(document)
       }

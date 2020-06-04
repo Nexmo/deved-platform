@@ -197,6 +197,12 @@ const getPostsRoutes = (posts, options) => {
   return routes.filter(uniqueValues)
 }
 
+export const getCategory = (slug) => {
+  const meta = _meta(_defaults)
+
+  return meta.categories.find(c => c.slug === slug)
+}
+
 /**
  * Get all possible routes for server-side rendering
  * 

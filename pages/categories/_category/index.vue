@@ -1,5 +1,10 @@
 <template>
   <section class="Blog__Full-width">
+    <header class="Blog__Full-width">
+      <PageHero class="Category-hero">
+        <Category :category="category" plural /> posts from the team at Vonage.
+      </PageHero>
+    </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
         <div class="Vlt-col" />
@@ -15,14 +20,18 @@
 </template>
 
 <script>
-import Card from "~/components/Card"
 import Breadcrumbs from "~/components/Breadcrumbs"
+import Card from "~/components/Card"
+import Category from "~/components/Category"
+import PageHero from "~/components/PageHero"
 import config from "~/modules/config"
 
 export default {
   components: {
+    Breadcrumbs,
     Card,
-    Breadcrumbs
+    Category,
+    PageHero
   },
 
   async asyncData({ $content, params, error }) {

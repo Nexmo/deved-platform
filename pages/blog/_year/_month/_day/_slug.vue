@@ -14,8 +14,8 @@
             <div v-if="post.thumbnail" class="Vlt-card__header">
               <img property="image" :src="post.thumbnail" :alt="post.title" width="100%">
             </div>
-            <div v-if="post.category" class="Vlt-card__corner Vlt-margin--A-top3">
-              <Category :category="post.category" />
+            <div v-if="post.categoryObject" class="Vlt-card__corner Vlt-margin--A-top3">
+              <Category :category="post.categoryObject" />
             </div>
             <div class="Vlt-card__header Vlt-margin--A-top3">
               <h1 property="headline">
