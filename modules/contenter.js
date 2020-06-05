@@ -1,30 +1,10 @@
 import { resolve } from "path"
 import defu from "defu"
-import fm from "front-matter"
-import fs from "fs"
 import glob from "glob"
 import moment from "moment"
+import showdown from "showdown"
 import config from "./config"
-
-/**
- * Process the file from a path using the options provided. Extracts frontmatter
- *   attributes, content type and file slug.
- *
- * @param {string} path Path to content file.
- * @param {object} options Options to use when processing the file.
- * 
- * @return {object} This returns an object containing the post attributes, type
- *   and slug.
- */
-const _process = (path, options) => {
-  const rawFile = fs.readFileSync(resolve(options.dir, path), options.charType)
-  const processed = fm(rawFile)
-  const [ type, slug ] = path.split('.').shift().split('/')
-  processed.attributes.type = type
-  processed.attributes.slug = slug
-
-  return processed
-}
+import process from "./process"
 
 /**
  * Default options for processing a file.
@@ -43,7 +23,7 @@ const _defaults = defu(
  * Finds files using content glob and returns processed objects.
  * 
  * @param {object} options Options to use when finding files to process.
- * @see _process
+ * @see process
  * 
  * @return {object} The returns the processed files.
  */
@@ -54,7 +34,7 @@ const _posts = (options) => {
   const files = []
 
   paths.forEach(path => {
-    const file = _process(path, options)
+    const file = process(path, options)
     if (file.attributes.published !== false) {
       files.push(file)
     }
@@ -224,4 +204,92 @@ export const getRoutes = (options) => {
     ...getMetaRoutes(meta, options),
     ...getMetaRoutes(extractTags(posts, options), options),
   ]
+}
+
+/**
+ * Get all possible feeds (rss, json-feed, atom) for @nuxtjs/feeds
+ * 
+ * @param {object} options Options passed in to modify how content is generated
+ * 
+ * @return {array}
+ */
+export const getFeeds = (posts, options) => {
+  options = defu(
+    _defaults,
+    options,
+  )
+
+  // const posts = _posts(options)
+  const meta = _meta(options)
+  const callbacks = (item) => ({
+    authors: (post) => {
+      return post.author === item.username
+    },
+    categories: (post) => {
+      return post.category === item.slug
+    }
+  })
+
+  const feeds = Object.keys(meta).flatMap(type => {
+    return meta[type].map((item, key, array) => {
+      array[key].type = type
+      array[key].posts = posts.filter(callbacks(item)[type]).slice(0,5)
+      return array[key]
+    })
+  })
+
+  const converter = new showdown.Converter()
+
+  const output = feeds.map(f => {
+    const route = `${metaRouteMap(f.type, f)}/feed.xml`
+
+    return {
+      path: route, // The route to your feed.
+      create(feed) {
+        feed.options = {
+          title: `${options.indexTitle} » ${options.baseTitle}`,
+          link: `${options.baseUrl}${route}.xml`,
+          description: options.baseDescription
+        }
+
+        
+        f.posts.forEach(post => {
+          feed.addItem({
+            title: post.title,
+            id: post.slug,
+            link: `${options.baseUrl}${post.route}`,
+            description: post.description,
+            content: converter.makeHtml(post.raw)
+          })
+        })
+      },
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2'
+    }
+  })
+
+  output.push({
+    path: '/feed.xml', // The route to your feed.
+    create(feed) {
+      feed.options = {
+        title: `${options.indexTitle} » ${options.baseTitle}`,
+        link: `${options.baseUrl}/feed.xml`,
+        description: options.baseDescription
+      }
+
+      posts.slice(0, 5).forEach(post => {
+        feed.addItem({
+          title: post.title,
+          id: post.slug,
+          link: `${options.baseUrl}${post.route}`,
+          description: post.description,
+          content: converter.makeHtml(post.raw)
+        })
+      })
+    },
+    cacheTime: 1000 * 60 * 15,
+    type: 'rss2'
+  })
+
+  return output
 }

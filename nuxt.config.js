@@ -3,7 +3,8 @@ import {
   getRoutes,
   getPostRoute,
   getPostRoutes,
-  getCategory
+  getCategory,
+  getFeeds,
 } from "./modules/contenter"
 
 export default {
@@ -47,8 +48,18 @@ export default {
   ],
 
   modules: [
-    "@nuxt/content"
+    "@nuxt/content",
+    "@nuxtjs/feed"
   ],
+
+  feed: async () => {
+    const { $content } = require('@nuxt/content')
+    const posts = await $content('blog')
+    .only(['author', 'category', 'title', 'slug', 'description', 'route', 'raw'])
+    .fetch()
+
+    return getFeeds(posts)
+  },
 
   hooks: {
     'content:file:beforeInsert': (document) => {
@@ -57,6 +68,7 @@ export default {
 
         const { time } = require('reading-time')(document.text)
         document.readingTime = time
+        document.raw = document.text
 
         document.categoryObject = getCategory(document.category)
         document.route = getPostRoute(document)
