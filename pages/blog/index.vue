@@ -43,11 +43,13 @@ export default {
       const page = parseInt(p, 10) || 1
 
       const postCount = (await $content('blog')
+        .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')
         .only(['title'])
         .fetch()).length
 
       const postsQuery = $content('blog')
+        .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')
         .skip(config.postsPerPage * (page  - 1))
         .limit(config.postsPerPage)

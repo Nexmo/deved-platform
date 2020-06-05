@@ -57,6 +57,7 @@ export default {
 
   async asyncData({ $content }) {
     const latestPosts = await $content('blog')
+        .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')
         .limit(2)
         .fetch()
@@ -65,11 +66,12 @@ export default {
 
     categories.forEach(async (category, index, array) => {
       array[index].posts = await $content('blog')
-        .sortBy('published_at', 'desc')
         .where({ '$and': [
           { 'category': category.slug },
-          { 'route' : { '$nin' : latestPosts.map(f => f.route) } }
+          { 'route' : { '$nin' : latestPosts.map(f => f.route) } },
+          { 'published': { '$ne': false } }
         ] })
+        .sortBy('published_at', 'desc')
         .limit(postMap[category.slug] ? postMap[category.slug] : 3)
         .fetch()
     })

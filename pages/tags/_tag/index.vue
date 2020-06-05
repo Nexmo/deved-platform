@@ -37,8 +37,11 @@ export default {
   async asyncData({ $content, params, error }) {
     try {
       const posts = await $content('blog')
+        .where({ '$and': [
+          { 'tags' : { '$contains' : params.tag } },
+          { 'published': { '$ne': false } }
+        ] })
         .sortBy('published_at', 'desc')
-        .where({ 'tags' : { '$contains' : params.tag } })
         .limit(config.postsPerPage)
         .fetch()
 

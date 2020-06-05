@@ -44,8 +44,11 @@ export default {
       }
 
       const posts = await $content('blog')
+        .where({ '$and': [
+          { 'category': category.slug },
+          { 'published': { '$ne': false } }
+        ] })
         .sortBy('published_at', 'desc')
-        .where({ 'category': category.slug })
         .limit(config.postsPerPage)
         .fetch()
 

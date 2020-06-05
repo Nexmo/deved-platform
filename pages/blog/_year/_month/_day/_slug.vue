@@ -94,6 +94,7 @@ export default {
 
   async asyncData({ $content, params, error }) {
     const post = await $content('blog', params.slug)
+      .where({ 'published': { '$ne': false } })
       .fetch()
       .catch(err => {
         console.error(err)

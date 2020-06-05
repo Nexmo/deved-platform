@@ -44,8 +44,11 @@ export default {
 
     try {
       const posts = await $content('blog')
+        .where({ '$and': [
+          { 'routes' : { '$contains' : `/blog/${date.format('YYYY/MM/DD')}` } },
+          { 'published': { '$ne': false } }
+        ] })
         .sortBy('published_at', 'desc')
-        .where({ 'routes' : { '$contains' : `/blog/${date.format('YYYY/MM/DD')}` }})
         .limit(config.postsPerPage)
         .fetch()
 
