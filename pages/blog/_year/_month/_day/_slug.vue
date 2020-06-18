@@ -77,6 +77,7 @@ import Breadcrumbs from "~/components/Breadcrumbs"
 import Category from "~/components/Category"
 import ImproveLink from "~/components/ImproveLink"
 import RevisionsLink from "~/components/RevisionsLink"
+import SignUp from "~/components/SignUp"
 import Tags from "~/components/Tags"
 import config from "~/modules/config"
 import moment from "moment"
@@ -89,6 +90,7 @@ export default {
     Category,
     ImproveLink,
     RevisionsLink,
+    SignUp,
     Tags,
   },
 
@@ -224,11 +226,11 @@ export default {
 }
 
 .Blog__post .nuxt-content >>> h2 {
-  margin-top: 45px;
+  margin-top: 25px;
 }
 
 .Blog__post .nuxt-content >>> h3 {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .Blog__post .nuxt-content >>> pre {
