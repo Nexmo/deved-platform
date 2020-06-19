@@ -31,6 +31,10 @@ import Pagination from "~/components/Pagination"
 import config from "~/modules/config"
 
 export default {
+  validate ({ params: { page } }) {
+    return /^\d+$/.test(page)
+  },
+
   components: {
     Breadcrumbs,
     Card,
@@ -38,10 +42,10 @@ export default {
     Pagination
   },
 
-  async asyncData({ $content, error }) {
-    const page = 1
-
+  async asyncData({ $content, error, params: { page } }) {
     try {
+      page = parseInt(page, 10) || 1
+
       const postCount = (await $content('blog')
         .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')

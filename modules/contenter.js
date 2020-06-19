@@ -79,7 +79,7 @@ const _meta = (options) => {
  */
 const metaRouteMap = (type, object) => {
   const map = {
-    archives: `/${type}?p=${object}`,
+    archives: `/${type}/p/${object}`,
     categories: `/${type}/${object.slug}`,
     tags: `/${type}/${object}`,
     authors: `/${type}/${object.username}`

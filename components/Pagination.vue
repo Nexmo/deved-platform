@@ -3,21 +3,21 @@
     <ul>
       <li class="Vlt-table__pagination__prev">
         <span v-if="page === first">Previous</span>
-        <a v-else :href="`${route}?p=${page - 1}`">
+        <nuxt-link v-else :to="`${route}/p/${page - 1}`">
           Previous
-        </a>
+        </nuxt-link>
       </li>
       <li v-for="p in pages" :key="`page-${p}`" :class="{ 'Vlt-table__pagination__current': p === page }">
         <span v-if="p === page">{{ p }}</span>
-        <a v-else :href="`${route}?p=${p}`">
+        <nuxt-link v-else :to="`${route}/p/${p}`">
           {{ p }}
-        </a>
+        </nuxt-link>
       </li>
       <li class="Vlt-table__pagination__next">
         <span v-if="page === last">Next</span>
-        <a v-else :href="`${route}?p=${page + 1}`">
+        <nuxt-link v-else :to="`${route}/p/${page + 1}`">
           Next
-        </a>
+        </nuxt-link>
       </li>
     </ul>
   </div>

@@ -27,19 +27,17 @@ import config from "~/modules/config"
 import moment from 'moment'
 
 export default {
+  validate ({ params: { year } }) {
+    return /^\d{4}$/.test(year)
+  },
+
   components: {
     Breadcrumbs,
     Card,
     PageHero
   },
 
-  async asyncData({ $content, params, error }) {
-    const { year } = params
-
-    if (isNaN(year)) {
-      error({ statusCode: 404, message: 'Page not found' })
-    }
-
+  async asyncData({ $content, error, params: { year } }) {
     const date = moment(`${year}`, 'YYYY')
 
     try {
@@ -49,7 +47,6 @@ export default {
           { 'published': { '$ne': false } }
         ] })
         .sortBy('published_at', 'desc')
-        .limit(config.postsPerPage)
         .fetch()
 
       if (posts.length === 0) {
