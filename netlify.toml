@@ -1,10 +1,7 @@
 [build]
   publish = "dist"
   command = "npm run generate"
-  # functions = "scripts"
-
-[[plugins]]
-  package = "@netlify/plugin-local-install-core"
+  functions = "scripts"
 
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
