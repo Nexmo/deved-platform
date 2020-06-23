@@ -22,7 +22,6 @@
     "dotenv": "^8.2.0",
     "front-matter": "^4.0.2",
     "instantsearch.css": "^7.4.2",
-    "netlify-plugin-algolia-index": "^1.0.0",
     "netlify-plugin-opensearch": "^1.0.2",
     "nuxt": "^2.5.1",
     "reading-time": "^1.2.0",
