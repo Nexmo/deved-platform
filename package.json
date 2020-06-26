@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxt/content": "^1.2.0",
     "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/feed": "^1.1.0",
+    "@nuxtjs/feed": "^2.0.0",
     "@vonagevolta/volta2": "0.0.37",
     "algoliasearch": "^4.2.0",
     "defu": "^2.0.4",
