@@ -24,7 +24,7 @@
     "instantsearch.css": "^7.4.2",
     "netlify-plugin-algolia-export": "^1.0.2",
     "netlify-plugin-opensearch": "^1.0.4",
-    "nuxt": "^2.5.1",
+    "nuxt": "^2.13.1",
     "reading-time": "^1.2.0",
     "showdown": "^1.9.1",
     "vue-disqus": "^3.0.5",
