@@ -35,9 +35,8 @@
   "keywords": [],
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-vue": "^6.2.2",
     "eslint": "^7.0.0",
-    "stream-json": "^1.3.3"
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-vue": "^6.2.2"
   }
 }
