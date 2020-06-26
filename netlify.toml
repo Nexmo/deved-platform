@@ -4,9 +4,6 @@
   functions = "scripts"
 
 [[plugins]]
-  package = "@netlify/plugin-functions-install-core"
-
-[[plugins]]
   package = "netlify-plugin-opensearch"
     [plugins.inputs]
       siteShortName = "Vonage Dev"
