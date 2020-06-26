@@ -38,7 +38,7 @@
             <li>
               <a
                 class="Vlt-text-link Vlt-white"
-                href="https://www.vonage.com/content/vonage/language-masters/en/about-us/patents"
+                href="https://www.vonage.com/about-us/patents/"
                 target="_blank"
                 rel="noreferrer"
               >Patents</a>

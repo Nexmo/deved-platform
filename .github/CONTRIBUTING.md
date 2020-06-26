@@ -14,6 +14,8 @@ Please take the time to review the [Code of Conduct][coc], which all contributor
 
 **Table of Contents**
 
+- [Writing a Post](#writing-a-post)
+  - [Example Blog Post](#example-blog-post)
 - [Reporting Bugs](#reporting-bugs)
   - [Before Submitting A Bug Report](#before-submitting-a-bug-report)
   - [How Do I Submit A (Good) Bug Report?](#how-do-i-submit-a-good-bug-report)
@@ -22,6 +24,42 @@ Please take the time to review the [Code of Conduct][coc], which all contributor
   - [How Do I Submit A (Good) Enhancement Suggestion?](#how-do-i-submit-a-good-enhancement-suggestion)
 - [Your First Code Contribution](#your-first-code-contribution)
 - [Pull Requests](#pull-requests)
+
+## Writing a Post
+
+If you've been given a login, you can access the CMS and write your content there.
+
+Otherwise, you can create the markdown file and send it as a pull request manually.
+
+### Example Blog Post
+
+For author and categories values, see [content/authors.json](../content/authors.json) and [content/categories.json](../content/categories.json).
+
+```markdown
+---
+title: Your title
+description: A description
+thumbnail: https://url.to.post.image.jpg
+author: lukeoliff
+published: true
+published_at: 2020-06-25T10:30:00.000Z
+comments: true
+category: tutorial
+tags:
+  - tags
+  - list
+---
+
+tldr or intro
+ 
+## title
+
+some text
+
+## conclusion
+
+some text
+```
 
 ## Reporting Bugs
 
@@ -113,7 +151,7 @@ Alternatively, you can raise an issue on the project.
 [coc]: CODE_OF_CONDUCT.md "Code of Conduct"
 [contributing]: CONTRIBUTING.md "Contributing"
 [license]: LICENSE "MIT License"
-[pullrequest]: PULL_REQUEST_TEMPLATE.md "Pull Request template"
+[pullrequest]: PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md "Pull Request template"
 
 [community]: https://developer.nexmo.com/community "Vonage Community"
 [signup]: https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=lukeocodes
