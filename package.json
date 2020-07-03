@@ -27,7 +27,7 @@
     "nuxt": "^2.5.1",
     "reading-time": "^1.2.0",
     "showdown": "^1.9.1",
-    "vue-disqus": "^3.0.5",
+    "vue-disqus": "^4.0.1",
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^2.7.0",
     "vue-moment": "^4.1.0"
