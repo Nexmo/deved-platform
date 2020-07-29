@@ -18,7 +18,7 @@
     "@nuxtjs/feed": "^1.1.0",
     "@vonagevolta/volta2": "0.0.37",
     "algoliasearch": "^4.2.0",
-    "defu": "^2.0.4",
+    "defu": "^3.0.1",
     "dotenv": "^8.2.0",
     "front-matter": "^4.0.2",
     "instantsearch.css": "^7.4.2",
