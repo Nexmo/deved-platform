@@ -13,7 +13,7 @@
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxt/content": "^1.2.0",
+    "@nuxt/content": "^1.5.3",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/feed": "^1.1.0",
     "@vonagevolta/volta2": "0.0.37",
