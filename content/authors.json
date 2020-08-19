@@ -60,6 +60,17 @@
       "username": "laurenlee",
       "title": "Developer Education Manager",
       "email": "lauren.lee@vonage.com"
+    },
+    {
+      "bio": "I'm a JavaScript developer and a Developer Educator at Vonage. Over the years I’ve been really excited about templates, Node.js, progressive web apps, and offline-first strategies, but what I’ve always really loved is a useful, well-documented API. My goal is to make your experience using our APIs the very best I can help it be.",
+      "image_url": "/content/images/img_0842.jpg",
+      "name": "Garann Means",
+      "twitter": "garannm",
+      "github_url": "github.com/garann",
+      "spotlight": false,
+      "username": "garann-means",
+      "title": "Developer Educator",
+      "email": "garann.means@vonage.com"
     }
   ]
 }
