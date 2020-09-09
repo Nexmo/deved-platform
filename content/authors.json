@@ -71,6 +71,14 @@
       "username": "garann-means",
       "title": "Developer Educator",
       "email": "garann.means@vonage.com"
+    },
+    {
+      "spotlight": true,
+      "username": "dotun",
+      "name": "Dotun Jolaoso",
+      "bio": "Software Developer who loves building awesome tools and products. I currently work with Laravel, PHP and Vue.",
+      "twitter": "dotunj_",
+      "image_url": "/content/images/dotun.jpeg"
     }
   ]
 }
