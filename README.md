@@ -22,6 +22,7 @@
 - [Components](#components)
 - [Writing Style](#writing-style)
 - [Tools](#tools)
+  - [Legacy Content Importer](#legacy-content-importer)
 - [License](#license)
 
 ## Installation
@@ -44,7 +45,15 @@ Taken from our developer education writing styleguide, we've included our [writi
 
 ## Tools
 
-`tbc`
+### Legacy Content Importer
+
+Imports content from a WordPress WP API instance.
+
+```bash
+WP_USERNAME={username} WP_PASSWORD={password} node bin/exporter
+```
+
+Shouldn't be used unless importing content from WordPress.
 
 ## License
 
