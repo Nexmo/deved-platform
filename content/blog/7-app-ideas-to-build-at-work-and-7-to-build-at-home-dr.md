@@ -10,7 +10,7 @@ author: nahrinjalal
 published: true
 published_at: 2020-05-05T13:32:58
 comments: true
-category: tutorial
+category: inspiration
 tags:
   - video-api
   - voice-api
