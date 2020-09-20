@@ -11,11 +11,7 @@ published: true
 published_at: 2020-05-05T13:32:58
 comments: true
 category: tutorial
-old_categories:
-  - developer
 tags:
-  - api
-  - sms
   - video-api
   - voice-api
 canonical: 7-app-ideas-to-build-at-work-and-7-to-build-at-home-dr

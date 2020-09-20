@@ -11,14 +11,9 @@ published: true
 published_at: 2020-08-11T13:28:42
 comments: true
 category: tutorial
-old_categories:
-  - developer
 tags:
   - express
-  - hapi
-  - koa
   - nodejs
-  - restify
 canonical: 5-ways-to-build-a-node-js-api
 slugs:
   - 5-ways-to-build-a-node-js-api
