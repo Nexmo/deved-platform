@@ -8,7 +8,7 @@ const fs = require('fs')
 const slugify = require('slugify')
 const WPAPI = require('wpapi')
 const yaml = require('yaml')
- 
+
 const categories = []
 const tags = []
 const users = []
@@ -166,17 +166,19 @@ const savingPosts = () => {
   bar.start(posts.length, null)
 
   posts.forEach((post, index) => {
-    fs.writeFile(`content/blog/${post.slug}.md`, post.frontmatter, function (err) {
+    const filename = `content/blog/${post.slug}.md`
+
+    fs.open(filename, 'r', (err) => {
       if (err) {
-        console.log(err)
+        fs.writeFile(filename, post.frontmatter, () => {
+          bar.update(index+1)
+        })
       }
     })
-
-    bar.update(index+1)
   })
 
   bar.stop()
-  consola.success(`${posts.length} files created...`)
+  consola.success(`New files created...`)
 }
 
 const init = async () => {
