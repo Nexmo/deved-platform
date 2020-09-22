@@ -1,0 +1,27 @@
+---
+title: Welcoming Myrsini to the Nexmo Developer Relations Team
+description: Hello! I’m Myrsini and I’ve recently joined the Developer Relations
+  team at Nexmo. As a Community Manager, I will be helping our team support and
+  engage with developers around the world. My background spans from events to
+  content and everything in between. I’ve worked for an NGO, a tech company, a
+  startup, a communications agency […]
+thumbnail: https://www.nexmo.com/wp-content/uploads/2018/08/113.jpg
+author: myrsini
+published: true
+published_at: 2018-08-27T16:55:42
+comments: true
+category: tutorial
+old_categories:
+  - developer
+tags:
+  - community
+  - developer
+  - developer-relations
+  - devrel
+slugs:
+  - welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
+  - welcoming-myrsini-to-the-nexmo-developer-relations-team
+canonical: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
+redirect: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
+---
+Content to be migrated...
