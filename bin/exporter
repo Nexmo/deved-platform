@@ -60,6 +60,8 @@ const formatPostStub = (post) => {
   const author = users.filter(u => u.id === post.author)[0]
   const postCategories = categories.filter(c => post.categories.includes(c.id)).map(c => c.slug)
   const postTags = tags.filter(t => post.tags.includes(t.id)).map(t => t.slug)
+  // const legacyUrl = post.link.replace('https://www.nexmo.com/blog', 'https://developer.vonage.com/legacy-blog')
+  const legacyUrl = post.link.replace('https://www.nexmo.com/blog', 'https://www.nexmo.com/blog')
 
   const output = {
     title: entities.decode(post.title.rendered),
@@ -72,13 +74,12 @@ const formatPostStub = (post) => {
     category: 'tutorial',
     old_categories: postCategories,
     tags: postTags,
-    canonical: post.slug,
     slugs: _.uniq([ post.slug, slugify(post.title.rendered, slugifyOpt) ]),
-    // redirect: post.link.replace('https://www.nexmo.com/blog', 'https://developer.vonage.com/legacy-blog') 
-    redirect: post.link.replace('https://www.nexmo.com/blog', 'https://www.nexmo.com/blog') 
+    canonical: legacyUrl,
+    redirect: legacyUrl
   }
 
-  return '---\n' + yaml.stringify(output) + '\n---\nContent to be migrated...'
+  return '---\n' + yaml.stringify(output) + '---\nContent to be migrated...'
 }
 
 const getAllUsers = async () => {
