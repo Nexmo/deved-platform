@@ -79,6 +79,1154 @@
       "bio": "Software Developer who loves building awesome tools and products. I currently work with Laravel, PHP and Vue.",
       "twitter": "dotunj_",
       "image_url": "/content/images/dotun.jpeg"
+    },
+    {
+      "username": "aaron",
+      "name": "Aaron Bassett",
+      "image_url": "https://secure.gravatar.com/avatar/e02607acd63200d0fe5a676ffdbfd882?s=96&d=mm&r=g",
+      "bio": "Aaron was a developer advocate at Nexmo. A seasoned software engineer and wannabe digital artist Aaron is frequently found creating things with code, or electronics; sometimes both. You can customarily tell when he's working on something new by the smell of burning components in the air.",
+      "website_url": "https://aaronbassett.com"
+    },
+    {
+      "username": "abdul-ajetunmobi",
+      "name": "Abdul Ajetunmobi",
+      "image_url": "https://secure.gravatar.com/avatar/0a6de64d6ba47d754ae3d0c20c8308b8?s=96&d=mm&r=g",
+      "bio": "Abdul is a Developer Advocate for Vonage. He has a background working in consumer products as an iOS Engineer. In his spare time, he enjoys biking, listening to music and mentoring those who are just beginning their journey in tech",
+      "website_url": ""
+    },
+    {
+      "username": "labfoo",
+      "name": "Adam Butler",
+      "image_url": "https://secure.gravatar.com/avatar/0b1019f30f289731bd36ede4d8f2f16c?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "adamculp",
+      "name": "Adam Culp",
+      "image_url": "https://secure.gravatar.com/avatar/858bf49594a583cd481421e4087a722f?s=96&d=mm&r=g",
+      "bio": "Adam is a developer and consultant who enjoys ultra-running, blogging/vlogging, and helping others tame technology to accomplish amazing things with an insatiable desire to mentor and help.",
+      "website_url": "https://geekyboy.com"
+    },
+    {
+      "username": "adam-duvander",
+      "name": "Adam DuVander",
+      "image_url": "https://secure.gravatar.com/avatar/a79b72514f481a24d5ffcf287070a720?s=96&d=mm&r=g",
+      "bio": "Adam DuVander loves APIs and the people behind them. He leads Zapier's developer marketing, connecting 2+ million people to more than 1,000 APIs. Previously he led developer communications at SendGrid and was the first editor of ProgrammableWeb, the journal of the API economy.",
+      "website_url": "http://www.adamduvander.com/"
+    },
+    {
+      "username": "adam-ullman",
+      "name": "Adam Ullman",
+      "image_url": "https://secure.gravatar.com/avatar/2496e28f8c5afb8a6a0c3e8dc6b23dbf?s=96&d=mm&r=g",
+      "bio": "Based in Australia, Adam and his team lead Client Platform Engineering for OpenTok Client SDKs, including iOS, Android, Windows, and web-based (Javascript) SDKs. From a very young age, Adam has always been passionate about technology. This early love continues to influence him, fueling his drive to build APIs and applications that are both elegant and easy-to-use.",
+      "website_url": ""
+    },
+    {
+      "username": "adrian-francis",
+      "name": "Adrian Francis",
+      "image_url": "https://secure.gravatar.com/avatar/ae666ea3e6e7929ad0df9e1a4575a351?s=96&d=mm&r=g",
+      "bio": "Adrian is a problem solver and Python developer advocate. He works with various programming languages to solve engineering problems. Introduced to programming at age 16, Adrian has spent the last 8 years oscillating between backend development and automation. He lives in Nairobi and when not writing code he is most likely playing Call Of Duty or NBA 2K on his PlayStation, riding his bicycle or binge watching the latest series on Netflix.",
+      "website_url": ""
+    },
+    {
+      "username": "adrianrichardson",
+      "name": "adrianrichardson",
+      "image_url": "https://secure.gravatar.com/avatar/660b13f265968355e5d6a9670ed9873d?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "laka",
+      "name": "Alex Lakatos",
+      "image_url": "https://secure.gravatar.com/avatar/8b741b1086d786e41e800ce89b050344?s=96&d=mm&r=g",
+      "bio": "Alex Lakatos is a JavaScript Developer Advocate for Nexmo. In his spare time he volunteers at Mozilla as a Tech Speaker and a Reps Mentor. JavaScript developer building on the open web, he has been pushing its boundaries every day. You can check out his <a target=\"_blank\" href=\"http://github.com/alexlakatos/\" rel=\"noopener noreferrer\">github profile</a> or get in touch on <a target=\"_blank\" href=\"http://twitter.com/lakatos88\" rel=\"noopener noreferrer\">twitter</a>. When he’s not programming in London, he likes to travel the world, so it’s likely you’ll bump into him in an airport lounge.",
+      "website_url": ""
+    },
+    {
+      "username": "alexandros-dimas",
+      "name": "Alexandros Dimas",
+      "image_url": "https://secure.gravatar.com/avatar/661eb8963329d4f9fcfb59ac66e7fe69?s=96&d=mm&r=g",
+      "bio": "Alexandros is a Product Manager at Nexmo, the Vonage API Platform, responsible for the customer-facing Nexmo Dashboard and related services. In his free time, he enjoys the outdoors as well as traveling around the world.",
+      "website_url": ""
+    },
+    {
+      "username": "alyssa-mazzina",
+      "name": "Alyssa Mazzina",
+      "image_url": "https://secure.gravatar.com/avatar/5bdc98045d9de8c23621e27edb725503?s=96&d=mm&r=g",
+      "bio": "Alyssa is a writer and editor specializing in technology and the software development space. She lives in central California with her husband, kids, and three rescue dogs.",
+      "website_url": ""
+    },
+    {
+      "username": "amanda",
+      "name": "Amanda Folson",
+      "image_url": "https://secure.gravatar.com/avatar/7f381f42df8b9bf9925bf324ce279354?s=96&d=mm&r=g",
+      "bio": "From humble beginnings as a PHP4 web developer in grade school, Amanda now works as a Developer Relations Manager at Nexmo where she gets to share her passion for technology and education with others. In addition to consuming APIs and IPAs, she currently serves as a co-host for the PHPTownHall Podcast and is involved in Open Sourcing Mental Illness. In her spare time you’ll find her in a hammock with a guitar.",
+      "website_url": ""
+    },
+    {
+      "username": "amandafrancoeur",
+      "name": "Amanda Francoeur",
+      "image_url": "https://secure.gravatar.com/avatar/0dcb5f91c7f3c6a2ae479db29d2b1694?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "amy-goldsmith",
+      "name": "Amy Goldsmith",
+      "image_url": "https://secure.gravatar.com/avatar/184fa30e4b35982fb7daab8fda0d6341?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "andrea-chiarelli",
+      "name": "Andrea Chiarelli",
+      "image_url": "https://secure.gravatar.com/avatar/0058e1acdb8e572fbe0ceee16d1248c9?s=96&d=mm&r=g",
+      "bio": "Andrea Chiarelli has over 20 years of experience as a software engineer and technical writer. Throughout his career, he has used various technologies for the projects he was involved in.\r\nCurrently, he is a software architect at the Italian office of Apparound and contributes to a few online magazines and blogs.",
+      "website_url": ""
+    },
+    {
+      "username": "andy",
+      "name": "andy",
+      "image_url": "https://secure.gravatar.com/avatar/?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "anushasu",
+      "name": "Anusha Su",
+      "image_url": "https://secure.gravatar.com/avatar/1ba3ee2b8623cdb9f68b9f83a59c83c5?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "assaf-and-roy",
+      "name": "Assaf Passal and Roy Ben Shushan",
+      "image_url": "https://secure.gravatar.com/avatar/3b1492b990feba7adb538f6b4ed19f60?s=96&d=mm&r=g",
+      "bio": "Assaf is a developer that enjoys hiking, working with wood, raising his five children, use and develop technology to make communication between people better and safer.\r\nRoy is a solution engineer for the Vonage APIs. He is passionate about improving customer experience and creating solutions that enhance our APIs.",
+      "website_url": ""
+    },
+    {
+      "username": "avital-tzubelivonage-com",
+      "name": "Avital Tzubeli",
+      "image_url": "https://secure.gravatar.com/avatar/c4fa0b461da586a7084b72403f44ad76?s=96&d=mm&r=g",
+      "bio": "Avital Tzubeli is a Developer Advocate at Vonage, where she’ll be building the local Vonage community in Tel Aviv. She’s originally from Miami Beach, and first spoke Spanish and Hebrew, before learning all her English from Harry Potter books. She studied CS and wrote some Java in NYC, then moved to Tel Aviv in search of better weather… where she fortunately also discovered the world of Developer Relations. Avital considers herself a storyteller, and loves the challenge of turning technical content into magical fairytales.",
+      "website_url": ""
+    },
+    {
+      "username": "badri-rajasekar",
+      "name": "Badri Rajasekar",
+      "image_url": "https://secure.gravatar.com/avatar/86da8231c7eb48a9cad4cfa9c10bf8d9?s=96&d=mm&r=g",
+      "bio": "Badri Rajasekar is the SVP of Engineering at Vonage - Video Engineering. He leads the core engineering and operations teams and is responsible for end-to-end service delivery, including product development, quality engineering, and customer solutions. Stanford football fan and alumni, start-up aficionado, artist and photographer, Badri is excited about the pursuit of insights.",
+      "website_url": ""
+    },
+    {
+      "username": "ben-greenberg",
+      "name": "Ben Greenberg",
+      "image_url": "https://secure.gravatar.com/avatar/52a5da3b2369e06eedd3fb9c6d625109?s=96&d=mm&r=g",
+      "bio": "Ben is a second career developer who previously spent a decade in the fields of adult education, community organizing and non-profit management. He works as a developer advocate for Nexmo, the Vonage API Platform by day and experiments with open source projects at night. He writes regularly on the intersection of community development and tech. Originally from Southern California and a long time resident of New York City, Ben now resides near Tel Aviv, Israel.",
+      "website_url": "https://www.bengreenberg.org"
+    },
+    {
+      "username": "benita_kenn",
+      "name": "Benita Kenn",
+      "image_url": "https://secure.gravatar.com/avatar/2900c31296bf360c255b4a1325e0d540?s=96&d=mm&r=g",
+      "bio": "Benita Kenn is Customer Reference Marketing Manager at Nexmo, The Vonage API Platform. She has worked for companies such as Facebook, SanDisk, Vidyo, Cisco and Apple over the course of the past two decades.  Benita is a seasoned writer with a strong public relations background.  In her spare time, she is a performing musician and composer.",
+      "website_url": ""
+    },
+    {
+      "username": "benjamin-aronov",
+      "name": "Benjamin Aronov",
+      "image_url": "https://secure.gravatar.com/avatar/005cdba1cbc6dc18ee2b1fedeeab12bf?s=96&d=mm&r=g",
+      "bio": "Benjamin Aronov is an online community manager at Vonage based in Tel Aviv, Israel.",
+      "website_url": ""
+    },
+    {
+      "username": "bethanyloft",
+      "name": "Bethany Loft",
+      "image_url": "https://secure.gravatar.com/avatar/7c06039d3ef8319ad96f1c9fbc030e04?s=96&d=mm&r=g",
+      "bio": "Bethany is a Junior Developer Community Event Manager who has a background in running student hackathons. She's passionate about environmentalism and discovering new bookshops, her favourite genre to read is digital anthropology.",
+      "website_url": ""
+    },
+    {
+      "username": "brittbarak",
+      "name": "Britt Barak",
+      "image_url": "https://secure.gravatar.com/avatar/98aebf0037659c7b0bc29845940a5513?s=96&d=mm&r=g",
+      "bio": "Britt Barak is a Product Manager at Nexmo, for Nexmo Conversation API and Client SDKs.",
+      "website_url": "http://www.brittbarak.com"
+    },
+    {
+      "username": "calebikhuohon",
+      "name": "Caleb Ikhuohon",
+      "image_url": "https://secure.gravatar.com/avatar/687d5dc5c2668c50057f04264c313ebe?s=96&d=mm&r=g",
+      "bio": "Caleb is a software developer who loves learning, teaching, building, and collaborating on distributed software systems that provide amazing value to its users",
+      "website_url": ""
+    },
+    {
+      "username": "charlescosta",
+      "name": "Charles Costa",
+      "image_url": "https://secure.gravatar.com/avatar/d901ff832ea6194b68a739232b4b084f?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "charlesrummelein",
+      "name": "Charles Rummelein",
+      "image_url": "https://secure.gravatar.com/avatar/410f0ef3426f0de6b8a3bccfb658b143?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "chrisguzman",
+      "name": "Chris Guzman",
+      "image_url": "https://secure.gravatar.com/avatar/91fe61f666fa97fc56d52a0e5b9ad2dd?s=96&d=mm&r=g",
+      "bio": "Chris is a Developer Advocate at Nexmo where he helps developers use their global communications platform. When he’s not at conferences you can find him roaming the world.",
+      "website_url": ""
+    },
+    {
+      "username": "chrismoore",
+      "name": "Chris Moore",
+      "image_url": "https://secure.gravatar.com/avatar/ba02885834000df112e2f5f5a90c2bd6?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "christankersley",
+      "name": "Chris Tankersley",
+      "image_url": "https://secure.gravatar.com/avatar/7af53bf95c651de93ac76d5a3e742e2e?s=96&d=mm&r=g",
+      "bio": "Chris is the Senior PHP Developer Advocate and Server SDK Initiative Lead.  He has been programming for more than 15 years across various languages and types of projects from client work all the way up to big-data, large scale systems. He lives in Ohio, spending his time with his family and playing video and TTRPG games.",
+      "website_url": ""
+    },
+    {
+      "username": "clarisse-ng",
+      "name": "Clarisse Ng",
+      "image_url": "https://secure.gravatar.com/avatar/b11f7f3dae83ee5df58a7bd165f6b60b?s=96&d=mm&r=g",
+      "bio": "Clarisse is a community manager who enjoys doing yoga, baking and creating activities to help others develop their products/solutions through the use of technology",
+      "website_url": ""
+    },
+    {
+      "username": "corbin-crutchley",
+      "name": "Corbin Crutchley",
+      "image_url": "https://secure.gravatar.com/avatar/6bd309fa665f813424cb4e6afd0f5a57?s=96&d=mm&r=g",
+      "bio": "Corbin in a passionate developer, teacher, and retro game enthusiast. Driven to help others, they started a site called Unicorn Utterances to help engage the community and provide a place for learning CS topics.",
+      "website_url": "https://unicorn-utterances.com"
+    },
+    {
+      "username": "cyprien",
+      "name": "Cyprien Godard",
+      "image_url": "https://secure.gravatar.com/avatar/1b13177f9eaf633d7b81cb83003a4b0f?s=96&d=mm&r=g",
+      "bio": "Cyprien Godard has 20 years+ of experience in IT, software and internet, on payment, communication, healthcare medical imaging. He had Marketing and Sales roles at GE Healthcare, iPIN(intel), PlanView, Ni2, PayXX, Approach. Cyprien holds a Masters in Engineering from HEI in France and Masters of Science in Computer Science from Stanford University",
+      "website_url": ""
+    },
+    {
+      "username": "daniel-mallory",
+      "name": "Daniel Mallory",
+      "image_url": "https://secure.gravatar.com/avatar/107bc91fc31a031d754eee6a3708b95c?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "daniela-facchinetti",
+      "name": "Daniela Facchinetti",
+      "image_url": "https://secure.gravatar.com/avatar/7ce05bbc91e525feaf545707e828088d?s=96&d=mm&r=g",
+      "bio": "Daniela has been working in content for the e-commerce industry since 2012 and has landed at Vonage as Developer Education Coordinator after completing a course of Front End Development.",
+      "website_url": ""
+    },
+    {
+      "username": "dannyobrian",
+      "name": "Danny O'Brian",
+      "image_url": "https://secure.gravatar.com/avatar/aef1b9e56442d02d2f610548d791b232?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "davidvigar",
+      "name": "David Vigar",
+      "image_url": "https://secure.gravatar.com/avatar/885dcce6352714ff1a61ce0ba1ae4b71?s=96&d=mm&r=g",
+      "bio": "David joined Nexmo during its early days having been a customer in his previous role as Carrier Relations Manager for iBasis/KPN. David built the Carrier Team and the Carrier Network which we use today to provide the best-in-class service we pride ourselves on. During his time as Director of Carrier Relations, David was also responsible for wholesale sales, pricing, routing, carrier accounts payabale, two office moves and quite a bit in addition. David is a keen wine collector, plays the Flute and Piccolo with the Kew Wind Orchestra and lives in Berkhamsted, Hertfordshire with his wife and two boys.",
+      "website_url": ""
+    },
+    {
+      "username": "derek-handova",
+      "name": "Derek Handova",
+      "image_url": "https://secure.gravatar.com/avatar/a1125d83f6ded1bdae996bc3342ed96f?s=96&d=mm&r=g",
+      "bio": "Derek Handova is an enthusiastic white paper writer and brand journalist in the B2B and technology spaces. In the past, he has led content creation efforts at prominent companies such as Altera, Solectron Corporation, BearingPoint Inc. and other Silicon Valley icons. He currently works in content at Nexmo, the Vonage API platform.",
+      "website_url": "https://www.nexmo.com/blog/author/derek-handova/"
+    },
+    {
+      "username": "devrelnexmo",
+      "name": "Dev Rel @ Nexmo",
+      "image_url": "https://secure.gravatar.com/avatar/44ec5d72ee16ff4ae920612cd58d594e?s=96&d=mm&r=g",
+      "bio": "Our mission is to build a world-class open source documentation platform to help developers build connected products.",
+      "website_url": ""
+    },
+    {
+      "username": "diana-rodriguez",
+      "name": "Diana Rodriguez",
+      "image_url": "https://secure.gravatar.com/avatar/05f8a207295a58e8f0bb29659acf9b25?s=96&d=mm&r=g",
+      "bio": "🐍 Pythonista | Python Developer Advocate @ Vonage. Full-time nerd. Humorous when serious and serious when humorous. 20 years of nerding between infrastructure, backend and automation. Lover of board games.",
+      "website_url": "https://superdi.dev"
+    },
+    {
+      "username": "donovan-rose",
+      "name": "Donovan Rose",
+      "image_url": "https://secure.gravatar.com/avatar/0fa814d67bd5e3128ab168e9b46bd454?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "douglaskendyson",
+      "name": "Douglas Kendyson",
+      "image_url": "https://secure.gravatar.com/avatar/c40c37ef82ba3bead871a4551eceebb9?s=96&d=mm&r=g",
+      "bio": "Douglas is a full stack software engineer with a keen interest to marketing, customer growth and data analytics. When he’s not coding, he’s probably watching way too many TV shows.",
+      "website_url": "https://github.com/kendysond%20https://medium.com/@KendysonD%20"
+    },
+    {
+      "username": "dwanehemmings",
+      "name": "Dwane Hemmings",
+      "image_url": "https://secure.gravatar.com/avatar/4f5f7fdb5f989a3104e6717efa793548?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": "https://lifelong.dev"
+    },
+    {
+      "username": "edwin-carvalho",
+      "name": "Edwin Carvalho",
+      "image_url": "https://secure.gravatar.com/avatar/4dac98cafed56c673b10bdad5bd27d44?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "elie",
+      "name": "Elie Kiwan",
+      "image_url": "https://secure.gravatar.com/avatar/894a20bb1f60e6538b1b45630f27591d?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "elishahoffman",
+      "name": "Elisha Hoffman",
+      "image_url": "https://secure.gravatar.com/avatar/bffc6dcf223842bb100f09b6c81bce55?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "enrico-portolan",
+      "name": "Enrico Portolan",
+      "image_url": "https://secure.gravatar.com/avatar/f97b5a47325ec72ff695ce0b35201dd6?s=96&d=mm&r=g",
+      "bio": "Enrico is passionate about cloud, startups and new technologies. Co-Founder of a WebRTC Startup in Italy. \r\nNow he works as a Solutions Engineer at Nexmo, helping the sales team with his technical expertise.\r\n\r\nOut of work, he likes to travel and taste as many weird foods as possible.",
+      "website_url": ""
+    },
+    {
+      "username": "roy-and-enrico",
+      "name": "Enrico Portolan and Roy Ben Shushan",
+      "image_url": "https://secure.gravatar.com/avatar/23afceb1a0be4096892ced850563082f?s=96&d=mm&r=g",
+      "bio": "Enrico is passionate about cloud, startups and new technologies. Co-Founder of a WebRTC Startup in Italy. Now he works as a Solutions Engineer at Vonage, helping the sales team with his technical expertise.\r\nRoy is a solution engineer for the Vonage APIs. He is passionate about improving customer experience and creating solutions that enhance our APIs.",
+      "website_url": ""
+    },
+    {
+      "username": "eric_giannini",
+      "name": "Eric Giannini",
+      "image_url": "https://secure.gravatar.com/avatar/6382115829110db51dc679eb556fb316?s=96&d=mm&r=g",
+      "bio": "Eric Giannini is the iOS developer advocate at Nexmo. He is really passionate about both Objective-C and Swift, especially the latter. Eric blogs often about this, that or the other iOS thing, hacking apps, building SDKs, or rapidly prototyping. He also meets with iOS developers or other strongly typed Swift types at conferences, Meetups, and other variadic functions.",
+      "website_url": ""
+    },
+    {
+      "username": "eric",
+      "name": "Eric Nadalin",
+      "image_url": "https://secure.gravatar.com/avatar/6946c10ec054385bcb15bcf1d9de189e?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "fabianrodiguez",
+      "name": "Fabian Rodriguez",
+      "image_url": "https://secure.gravatar.com/avatar/42d7e5a383f74f796cdb8dd609c2f72d?s=96&d=mm&r=g",
+      "bio": "Fabian is part of the Developer Experience Team at Nexmo. He is a passionate software engineer who loves open source, machine learning and coffee.  When he isn't working on making our docs better you can find him cycling, reading or rooting for the Club Nacional de Football.",
+      "website_url": ""
+    },
+    {
+      "username": "fernardo",
+      "name": "Fernando San Martin",
+      "image_url": "https://secure.gravatar.com/avatar/52d97f46cc72bffddb44979721224b29?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "francisco-kattan",
+      "name": "Francisco Kattan",
+      "image_url": "https://secure.gravatar.com/avatar/3ee64889f700f75a5c421235603a10e0?s=96&d=mm&r=g",
+      "bio": "Francisco Kattan is the Head of Platform Marketing at Nexmo, The Vonage API Platform. As a leader in Marketing, he has worked with high growth, innovative software companies to help them disrupt entrenched incumbents in traditional industries. Francisco holds MS degrees in Electrical Engineering and Engineering Management from Stanford University. In his free time, he enjoys sailing in San Francisco Bay and volunteers to introduce people of all economic backgrounds to the sport.",
+      "website_url": ""
+    },
+    {
+      "username": "glenkunene",
+      "name": "Glen Kunene",
+      "image_url": "https://secure.gravatar.com/avatar/dc70c858f572eda05aa24a2eed51e078?s=96&d=mm&r=g",
+      "bio": "Glen Kunene works with a team of talented storytellers to educate product managers and developers about the power of programmable communications to transform how brands interact with their customers. He has been a professional chronicler of technology and business in the Silicon Valley since the pre-iPhone era. When he's not enjoying time with his family, he is training for his next road race or making excuses to avoid it.",
+      "website_url": ""
+    },
+    {
+      "username": "glen-kunene",
+      "name": "Glen Kunene",
+      "image_url": "https://secure.gravatar.com/avatar/020a317dd72924e964ca5943c0f74391?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "guillermo-quintero",
+      "name": "Guillermo Quintero",
+      "image_url": "https://secure.gravatar.com/avatar/9bf03f9ce516db08a9313ceb8ac724e1?s=96&d=mm&r=g",
+      "bio": "Guillermo is responsible for bringing new and exiciting technologies to market. He's currently an expat living in London with his wife, daughter, and Australian cattledog.",
+      "website_url": ""
+    },
+    {
+      "username": "hugh-hopkins",
+      "name": "Hugh Hopkins",
+      "image_url": "https://secure.gravatar.com/avatar/0577adf80b248f3bf0fae19360c8465e?s=96&d=mm&r=g",
+      "bio": "Messaging Product Manager",
+      "website_url": ""
+    },
+    {
+      "username": "huijing",
+      "name": "Hui Jing Chen",
+      "image_url": "https://secure.gravatar.com/avatar/cf208cd3e8866964c46c9ccffa304a66?s=96&d=mm&r=g",
+      "bio": "Hui Jing is a Developer Advocate at Nexmo. She has an inordinate love of CSS and typography, and is generally passionate about all things web.",
+      "website_url": "https://www.chenhuijing.com"
+    },
+    {
+      "username": "iain-cox",
+      "name": "Iain Cox",
+      "image_url": "https://secure.gravatar.com/avatar/150a6d6ffb409fbfdc183130df282bb0?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "igor-wojda",
+      "name": "Igor Wojda",
+      "image_url": "https://secure.gravatar.com/avatar/e3d0e7cb05bbef18235d581ea8d3c337?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "ioannis-stoilis",
+      "name": "Ioannis Stoilis",
+      "image_url": "https://secure.gravatar.com/avatar/66b2a5e5c021f9da49f8d0265deef2d4?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "jackmardack",
+      "name": "Jack Mardack",
+      "image_url": "https://secure.gravatar.com/avatar/7660ca71bd5baca11658726ddef2e37c?s=96&d=mm&r=g",
+      "bio": "Before Vonage, Jack helped launch and scale several Bay Area startups, including Eventbrite and Prezi. He's from Queens.",
+      "website_url": ""
+    },
+    {
+      "username": "jackshirazi",
+      "name": "Jack Shirazi",
+      "image_url": "https://secure.gravatar.com/avatar/4d90fca367e0670f249fb92a2e78229b?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "james-hickey",
+      "name": "James Hickey",
+      "image_url": "https://secure.gravatar.com/avatar/359ea7e3dd4ccd4f7669dc221196f5a8?s=96&d=mm&r=g",
+      "bio": "James is a Microsoft MVP with a background in fintech &amp; insurance industries building web and mobile applications. He's the author of Refactoring TypeScript and the creator of some open-source tools for .NET called Coravel. He lives in eastern Canada and is a 10-minute drive from the highest tides in the world!",
+      "website_url": ""
+    },
+    {
+      "username": "jameswinter",
+      "name": "James Winter",
+      "image_url": "https://secure.gravatar.com/avatar/5d0dbb561ca0ddf01f10bd6da0f629a1?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "javier-molina-sanz",
+      "name": "Javier Molina Sanz",
+      "image_url": "https://secure.gravatar.com/avatar/742eb3b506dd56477e0c1b554e891ae2?s=96&d=mm&r=g",
+      "bio": "Javier studied Industrial Engineering back in Madrid where he’s from. He is now one of our Tech Support Engineers, so if you get into trouble using our APIs he may be the one that gives you a hand. Out of work he loves playing football and travelling as much as he can.",
+      "website_url": ""
+    },
+    {
+      "username": "javiermolinasanz-svetlananazareno",
+      "name": "Javier Molina Sanz and Svetlana Nazarenko",
+      "image_url": "https://secure.gravatar.com/avatar/b3868b08d5872569a9407bbb082443da?s=96&d=mm&r=g",
+      "bio": "--- Javier studied Industrial Engineering back in Madrid where he’s from. He is now one of our Tech Support Engineers, so if you get into trouble using our APIs he may be the one that gives you a hand. Out of work he loves playing football and travelling as much as he can.\r\n\r\n--- Svetlana is a Software Engineer at Vonage, where she focuses on developing tools for internal usage within the company.\r\nPrior to that role, she was an SDK Support Engineer at Vonage for 2 years, focusing on specifically the Client SDK for JS, Android and iOS support.\r\nShe enjoys working with developers, learning new stuff and building useful tools. When she is not developing things, you can find her travelling, reading and running.",
+      "website_url": ""
+    },
+    {
+      "username": "jonvu",
+      "name": "Johnny Vu",
+      "image_url": "https://secure.gravatar.com/avatar/e927b347e1644ac9eefb1c8bdba04c93?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": "http://Gr0wthT34m"
+    },
+    {
+      "username": "jose-antonio",
+      "name": "Jose Antonio Olivera Ortega",
+      "image_url": "https://secure.gravatar.com/avatar/9e95920856ec9769a2dfe680b31f6c0a?s=96&d=mm&r=g",
+      "bio": "Based in Madrid, Spain, Jose Antonio is a Sr. Software Engineer at Nexmo, contributing to the OpenTok Client SDKs and native codebase. He loves cross-platform and test-driven development, but hates pair programming. As an avid learner and programmer, Jose Antonio enjoys discovering more ways to create and innovate with technology, including mobile operating systems, WebRTC apps, Web APIs, IoT, and more.",
+      "website_url": ""
+    },
+    {
+      "username": "julia",
+      "name": "Julia Biro",
+      "image_url": "https://secure.gravatar.com/avatar/3cbdb9af0cc762d013b5e58f688c9bde?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "juliagiona",
+      "name": "juliagiona",
+      "image_url": "https://secure.gravatar.com/avatar/050593686993d50bea27df7641a90f85?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "karl-hughes",
+      "name": "Karl Hughes",
+      "image_url": "https://secure.gravatar.com/avatar/972cd1bf439680cd8845b3d13ca8326e?s=96&d=mm&r=g",
+      "bio": "Karl is a writer, speaker, and technology team lead. He’s currently the Chief Technology Officer at The Graide Network and runs CFP Land in his spare time.",
+      "website_url": "https://www.karllhughes.com"
+    },
+    {
+      "username": "katherine-procopiou",
+      "name": "Katherine Procopiou",
+      "image_url": "https://secure.gravatar.com/avatar/ac15801e80291db33d57065ea2f7d904?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "glasnt",
+      "name": "Katie McLaughlin",
+      "image_url": "https://secure.gravatar.com/avatar/5421328b370c2f255357ed4fe52ea584?s=96&d=mm&r=g",
+      "bio": "`cat` Lady. Adorkable. Verifiable Cutie. She/Her",
+      "website_url": "https://glasnt.com/"
+    },
+    {
+      "username": "kellyjandrews",
+      "name": "Kelly J Andrews",
+      "image_url": "https://secure.gravatar.com/avatar/bc436bcf29b8137fa1b9b9c9733bb2af?s=96&d=mm&r=g",
+      "bio": "Kelly J Andrews is a developer advocate for Nexmo and has been tinkering with computers for over 30 years, using BASIC for the first time at the age of 5.\r\n\r\nIt wasn't until building his first webpage in 1997, and trying out JavaScript for the first time that he found a true calling. Kelly now fights for JavaScript, testable code, and fast delivery.\r\n\r\nYou can find him singing karaoke, performing magic, or cheering for the Cubs and Fighting Irish.",
+      "website_url": "http://www.kellyjandrews.com/"
+    },
+    {
+      "username": "kevin-alwell",
+      "name": "Kevin Alwell",
+      "image_url": "https://secure.gravatar.com/avatar/1af38f3cadeb6e8dcb2f9b4d7de5c9ca?s=96&d=mm&r=g",
+      "bio": "Kevin Alwell is a PreSales Engineer for Nexmo, the Vonage API Platform.",
+      "website_url": ""
+    },
+    {
+      "username": "kevinlewis",
+      "name": "Kevin Lewis",
+      "image_url": "https://secure.gravatar.com/avatar/73b5fb8202326568ecb3f13988ca2a8f?s=96&d=mm&r=g",
+      "bio": "Kevin Lewis is a Developer Advocate for Vonage, where his role is to support the local tech community in London. He’s an experienced events organiser, boardgamer and dad to a cute little dog called Moo. He’s also the lead organizer for You Got This - a network of events on the core skills needed for a happy, healthy work life.",
+      "website_url": ""
+    },
+    {
+      "username": "kiana-afshar",
+      "name": "Kiana Afshar",
+      "image_url": "https://secure.gravatar.com/avatar/dc3043c441f4c9c48d71800157aab90a?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "kyle-riordan",
+      "name": "Kyle Riordan",
+      "image_url": "https://secure.gravatar.com/avatar/1e0cf50c756f8f4afa882d9cf8d4a39a?s=96&d=mm&r=g",
+      "bio": "Kyle joined the Nexmo team to be the Product Marketing Manager for the Voice API and comes with a background focused on productizing APIs. In his spare time, Kyle enjoys analyzing the deep philosophical questions like “Does anyone ever read these writer bios and if not were they written?”",
+      "website_url": ""
+    },
+    {
+      "username": "laura-czajkowski",
+      "name": "Laura Czajkowski",
+      "image_url": "https://secure.gravatar.com/avatar/a49a5e093b76b68afe60637e708ac0fc?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "laurenteixeira",
+      "name": "Lauren Teixeira",
+      "image_url": "https://secure.gravatar.com/avatar/16c9ab8baabb9fbf72f008a2d53a00f7?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "lawrence-bryd",
+      "name": "Lawrence Bryd",
+      "image_url": "https://secure.gravatar.com/avatar/cf4f16c791cf214912b993982e3a0a4d?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "liamhackett",
+      "name": "Liam Hackett",
+      "image_url": "https://secure.gravatar.com/avatar/697f6f26032359e923b75a9d964f9089?s=96&d=mm&r=g",
+      "bio": "Liam is a full-stack engineer who primarily focuses on PHP and Javascript. He loves to learn and tinker with new tools and technology.",
+      "website_url": "https://github.com/liamh101"
+    },
+    {
+      "username": "lisa-roskam",
+      "name": "Lisa Roskam",
+      "image_url": "https://secure.gravatar.com/avatar/71506cb7a3f096017bc4ca649a8f996c?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "lori-belton",
+      "name": "Lori Belton",
+      "image_url": "https://secure.gravatar.com/avatar/3ddd35d2aa6abf65928afd7fda4e619e?s=96&d=mm&r=g",
+      "bio": "Lori is a writer and content marketer. She lives in the Bay Area with her husband, kids, and two dogs.",
+      "website_url": ""
+    },
+    {
+      "username": "manik",
+      "name": "Manik Sachdeva",
+      "image_url": "https://secure.gravatar.com/avatar/8bf0b8440ba5918d5cac6d35eb4ae879?s=96&d=mm&r=g",
+      "bio": "Manik is a Senior Software Engineer at Nexmo where he focuses on building OpenTok Client SDKs for iOS, Android, Web, and Windows. He enjoys working with developers and crafting APIs. When he's not building APIs or SDKs, you can find him speaking at conferences and meetups.",
+      "website_url": ""
+    },
+    {
+      "username": "manik-sachdeva",
+      "name": "Manik Sachdeva",
+      "image_url": "https://secure.gravatar.com/avatar/1cb297ac974e7734a8ae92a13dee0e94?s=96&d=mm&r=g",
+      "bio": "Manik is an Engineering Manager at Vonage where he and his team focus on building Video Client SDKs for iOS, Android, Web, Windows, Linux, and Unity. He enjoys working with developers, WebRTC, and crafting APIs. When he's not building APIs or SDKs, you can find him speaking at conferences and meetups.",
+      "website_url": ""
+    },
+    {
+      "username": "marco-londero",
+      "name": "Marco Londero",
+      "image_url": "https://secure.gravatar.com/avatar/6ebb821fb0ea380b0131cf0b5cac11a7?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "mariacarlina-hernandez",
+      "name": "Maria Carlina Hernández",
+      "image_url": "https://secure.gravatar.com/avatar/ece66ef8a8652c89fc5f11c6fa71091f?s=96&d=mm&r=g",
+      "bio": "Maria is a passionate maker currently working as IoT Developer focused on System Integration &amp; Hardware Development. Also, she is an organizer of IoT Medellin - a tech community that brings together IoT enthusiasts to share knowledge in LATAM.",
+      "website_url": ""
+    },
+    {
+      "username": "mariatta",
+      "name": "Mariatta",
+      "image_url": "https://secure.gravatar.com/avatar/30cf4a2683774549d8458c761af341fa?s=96&d=mm&r=g",
+      "bio": "??? Femail core developer • ??⛏️? • ??? • ??? • I am not open, parts of me are broken",
+      "website_url": "https://mariatta.ca/"
+    },
+    {
+      "username": "marklewin",
+      "name": "Mark Lewin",
+      "image_url": "https://secure.gravatar.com/avatar/7d0aec7fad5bd1aa361e411049ba5c3e?s=96&d=mm&r=g",
+      "bio": "Technical writer at Nexmo. Loves playing with and documenting APIs.",
+      "website_url": ""
+    },
+    {
+      "username": "judy2k",
+      "name": "Mark Smith",
+      "image_url": "https://secure.gravatar.com/avatar/092806afba64c78f9a86dd03f2308348?s=96&d=mm&r=g",
+      "bio": "Mark was nominally responsible for Nexmo's client libraries (although he only writes the Python and Java libraries). He was originally a Java developer, has been a Python developer for 18 years, and is increasingly dabbling with Go and Rust. He likes pushing programming languages to the limit and then teaching these techniques to other programmers. He has a Viking hat, but he isn't a Viking, and he's Judy2k on Twitter for reasons he won't discuss.",
+      "website_url": ""
+    },
+    {
+      "username": "mark-summerson",
+      "name": "Mark Summerson",
+      "image_url": "https://secure.gravatar.com/avatar/78f77593bf7b19bc644cd1914401c7bc?s=96&d=mm&r=g",
+      "bio": "Mark’s responsible for the Partner Ecosystem at Nexmo and a good day for him is when partners get together to create stuff that he couldn’t have imagined in the first place.",
+      "website_url": "https://www.nexmo.com/partners/become-a-partner"
+    },
+    {
+      "username": "meizhen-ang",
+      "name": "Meizhen Ang",
+      "image_url": "https://secure.gravatar.com/avatar/8cf2f3f176512f13e3da75798a948174?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "mheap",
+      "name": "Michael Heap",
+      "image_url": "https://secure.gravatar.com/avatar/cc991ff8b2f92b2328ab0f74911fe4d4?s=96&d=mm&r=g",
+      "bio": "Michael is a polyglot software engineer, committed to reducing complexity in systems and making them more predictable. Working with a variety of languages and tools, he shares his technical expertise to audiences all around the world at user groups and conferences. Day to day, Michael is a developer advocate at Nexmo, where he spends his time learning, teaching and writing about all kinds of technology.",
+      "website_url": ""
+    },
+    {
+      "username": "michaeljolley",
+      "name": "Michael Jolley",
+      "image_url": "https://secure.gravatar.com/avatar/6576b6137b164a0bd0c932b0ef614929?s=96&d=mm&r=g",
+      "bio": "Michael is the bald, bearded builder. Using his 20 years experience in software development and DevOps, this follicly challenged developer spends his days focused on helping others succeed.",
+      "website_url": "https://baldbeardedbuilder.com"
+    },
+    {
+      "username": "michaelludden",
+      "name": "Michael Ludden",
+      "image_url": "https://secure.gravatar.com/avatar/62effe96b664474ad200bf4be642476b?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "michael-piccuirro",
+      "name": "Michael Piccuirro",
+      "image_url": "https://secure.gravatar.com/avatar/00df5ec9552ca3c636d8a37ccc27f1f2?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "michal-raz",
+      "name": "Michal Raz",
+      "image_url": "https://secure.gravatar.com/avatar/da48e6660ee649a2d9155cb447ecaa7a?s=96&d=mm&r=g",
+      "bio": "Michal is the Vice President of Strategic Global Partnerships for Nexmo, The Vonage API Platform.",
+      "website_url": ""
+    },
+    {
+      "username": "mike-de-la-victoria",
+      "name": "Mike de la Victoria",
+      "image_url": "https://secure.gravatar.com/avatar/f3e9afad48ddb6a1abb0ab74bffe5df7?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "misha-behei",
+      "name": "Misha Behei",
+      "image_url": "https://secure.gravatar.com/avatar/6df5c533ec5be78ed32e5b080a725d65?s=96&d=mm&r=g",
+      "bio": "Misha is a Developer Support Engineer at Vonage where he works with the customers utilizing the Video API platform. In his free time, Misha enjoys exploring new coffee shops around San Francisco Bay Area as well as puts some time into learning new frameworks and languages.",
+      "website_url": ""
+    },
+    {
+      "username": "my",
+      "name": "My Truong",
+      "image_url": "https://secure.gravatar.com/avatar/7adcc79a29b35633db517219703ef013?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "myrsini",
+      "name": "Myrsini Koukiasa",
+      "image_url": "https://secure.gravatar.com/avatar/39f6fc009167ebe8ec75fe87e947e6cf?s=96&d=mm&r=g",
+      "bio": "Myrsini is a Senior Community Programs Manager at Vonage. She helps the Developer Relations team support, engage and connect with developer communities where they are.",
+      "website_url": ""
+    },
+    {
+      "username": "naomi-pentrel",
+      "name": "Naomi Pentrel",
+      "image_url": "https://secure.gravatar.com/avatar/a97eacac73e1d640c5572baf445f1e27?s=96&d=mm&r=g",
+      "bio": "Naomi Pentrel is a Software Engineer with a passion for organizing and attending hackathons. She has worked at companies such as Google, Microsoft, and Palantir. In her free time, she occasionally blogs about her side projects.",
+      "website_url": ""
+    },
+    {
+      "username": "nathan-rodriguez",
+      "name": "Nathan Rodriguez",
+      "image_url": "https://secure.gravatar.com/avatar/fc8215f864565fec51e70050655db7a4?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "navroop-singh",
+      "name": "Navroop Singh",
+      "image_url": "https://secure.gravatar.com/avatar/0631ca317812073de0129056f88b46f0?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "neena-thomas",
+      "name": "Neena Thomas",
+      "image_url": "https://secure.gravatar.com/avatar/be6695fc51b99ac9efc2614bc9c6ab46?s=96&d=mm&r=g",
+      "bio": "Neena Thomas is the Head of Product Management, leading the Developer Experience and Ecosystem for the industry-leading OpenTok live video API at Nexmo, the Vonage API Platform. Based in the California Bay Area, Neena is passionate about exploring new technologies and markets.",
+      "website_url": ""
+    },
+    {
+      "username": "nexmo-noreply",
+      "name": "Nexmo-noreply",
+      "image_url": "https://secure.gravatar.com/avatar/4922f6655a780181868ad052f4fd0b76?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "nexmowpadmin",
+      "name": "NexmoWPAdmin",
+      "image_url": "https://secure.gravatar.com/avatar/2ccea84245aff4cb5a043ef76c69b1a8?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "nraboy",
+      "name": "Nic Raboy",
+      "image_url": "https://secure.gravatar.com/avatar/7d55990e9cc9544ca2f435aa3a690490?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "nick-iati",
+      "name": "Nick Iati",
+      "image_url": "https://secure.gravatar.com/avatar/74d49c80868aec387284306f89e72ab3?s=96&d=mm&r=g",
+      "bio": "Nick Iati is a technical writer at Vonage based in Rochester, New York.",
+      "website_url": ""
+    },
+    {
+      "username": "oleksandr-bodriagov",
+      "name": "Oleksandr Bodriagov",
+      "image_url": "https://secure.gravatar.com/avatar/41c63aeceb029a7846921062020061d8?s=96&d=mm&r=g",
+      "bio": "Oleksandr Bodriagov is a Product Manager focused on security at Nexmo, The Vonage API Platform.",
+      "website_url": ""
+    },
+    {
+      "username": "olia",
+      "name": "Olia Dukova",
+      "image_url": "https://secure.gravatar.com/avatar/c360e7bde86eb36a345b35ad33ce8fec?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": "https://www.nexmo.com"
+    },
+    {
+      "username": "oliver-schlieben",
+      "name": "Oliver Schlieben",
+      "image_url": "https://secure.gravatar.com/avatar/0aa054022185cd0444bdd045ed157614?s=96&d=mm&r=g",
+      "bio": "Oliver Schlieben is Senior Director of Product Management for the Communications Portfolio at Nexmo, the Vonage API Platform.",
+      "website_url": ""
+    },
+    {
+      "username": "omar-javaid",
+      "name": "Omar Javaid",
+      "image_url": "https://secure.gravatar.com/avatar/b0468760871cccede9d96019e9b38b2e?s=96&d=mm&r=g",
+      "bio": "Omar Javaid is Chief Product Officer and President of the API Platform Group at Vonage.",
+      "website_url": ""
+    },
+    {
+      "username": "oscar-rodriguez",
+      "name": "Oscar Rodriguez",
+      "image_url": "https://secure.gravatar.com/avatar/30a566ccf66d85a8b96428ae6294d2a0?s=96&d=mm&r=g",
+      "bio": "Oscar Rodriguez is the Director Global Solution Engineering at Nexmo, the Vonage API Platform",
+      "website_url": ""
+    },
+    {
+      "username": "parthawasthi",
+      "name": "Parth Awasthi",
+      "image_url": "https://secure.gravatar.com/avatar/38ea00ff0de97af102d704736300e5e2?s=96&d=mm&r=g",
+      "bio": "A passionate technologist with a background in web and mobile products, Parth joined the Nexmo product team in 2014. At Nexmo, Parth shipped the first few value-added service APIs at Nexmo such as Number Insight and Verify and is now responsible for the Messaging API portfolio for Vonage. He obsesses over creating a platform which enables Business Messaging experiences that put customers first. Outside of work, Parth is an avid cyclist, photographer, theatre enthusiast, and loves to read autobiographies and literary fiction. Parth has a bachelors in Information and Communication Technology, and an MBA with a dual major in Finance and Strategy &amp; Leadership.",
+      "website_url": ""
+    },
+    {
+      "username": "paul-ardeleanu",
+      "name": "Paul Ardeleanu",
+      "image_url": "https://secure.gravatar.com/avatar/689487ff9f0777129ffb4874ea615500?s=96&d=mm&r=g",
+      "bio": "Paul is an iOS Developer Advocate at Nexmo. A seasoned software engineer, trainer and speaker, he specialised in data-driven solutions on Apple platforms with an emphasis on prototyping, best practices and balance with agility.",
+      "website_url": ""
+    },
+    {
+      "username": "paulcook",
+      "name": "Paul Cook",
+      "image_url": "https://secure.gravatar.com/avatar/02e6e4286e187c15a4519a8e940aa87e?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "peter-bleickardt",
+      "name": "Peter Bleickardt",
+      "image_url": "https://secure.gravatar.com/avatar/6cc847585b8d27f7a6eb42250b55ac63?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "leggetter",
+      "name": "Phil Leggetter",
+      "image_url": "https://secure.gravatar.com/avatar/cd0d59c44ca653cfd1368658f3a1cdd1?s=96&d=mm&r=g",
+      "bio": "Phil is Head of Developer Relations at Nexmo. He's been working with real-time technologies since 2001 and has a background in building real-time SDKs and web browser-based trading apps. He spends most of his time working on developer relations and community at Nexmo and sharing those experiences. He also continues to share ideas of how real-time technologies can be used to enhance the features and performance of apps, and the experiences that they deliver to users.\r\n\r\nPhil's interests include developer community, JavaScript, architecture, real-time communications, APIs, developer tools and workflows, and developer experience.",
+      "website_url": "http://www.nexmo.com"
+    },
+    {
+      "username": "bibi",
+      "name": "Rabeb Othmani",
+      "image_url": "https://secure.gravatar.com/avatar/d1e2e1c028d1ad0cf0346e663cb63ec6?s=96&d=mm&r=g",
+      "bio": "Rabeb was a Developer Advocate at Nexmo focusing on cloud communication APIs and helping developers get the best experience possible when building their apps. Other than writing code for a living, Rabeb advocates for bringing more women and minorities into tech, thus her involvement with Women Who Code and different tech communities. She leads the Women Who Code Network in Bristol.",
+      "website_url": ""
+    },
+    {
+      "username": "reuven-shirazi",
+      "name": "Reuven Shirazi",
+      "image_url": "https://secure.gravatar.com/avatar/5efbc552137d20f66b08d22250ede769?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "richard-fox",
+      "name": "Richard Fox",
+      "image_url": "https://secure.gravatar.com/avatar/1f18bc9c533cd0eca3d18d1accba2cd3?s=96&d=mm&r=g",
+      "bio": "Richard Fox has 8 years experience in supporting the customer communication and verification needs of the leading global web properties and digital native organisations across EMEA. Using cloud-based APIs to deliver better business outcomes, have partnered with hundreds of SMB's and Enterprises across Travel, Financial Services, iGaming, eCommerce and SAAS verticals to build more intuitive and efficient communication experiences with end users.",
+      "website_url": ""
+    },
+    {
+      "username": "roberto-perez-cubero",
+      "name": "Roberto Perez Cubero",
+      "image_url": "https://secure.gravatar.com/avatar/34fb2399c9492ec66cf6d053f1bf0abb?s=96&d=mm&r=g",
+      "bio": "Roberto is a Full Stack Engineer on the OpenTok Client SDK team. He loves learning new bits of Android, iOS, Linux, Windows, you name it! In his free time, he is very passionate about programming languages, computer graphics, and video game development for current and old platforms like ZX Spectrum and Commodore 64.",
+      "website_url": ""
+    },
+    {
+      "username": "roland-selmer",
+      "name": "Roland Selmer",
+      "image_url": "https://secure.gravatar.com/avatar/f23713c8acdb98706a80f5ea2e4aef79?s=96&d=mm&r=g",
+      "bio": "Roland Selmer is VP of Product Management for the API Platform Group at Vonage. He leads product management for Nexmo, the Vonage API Platform. He has vast experience around building products for various startups and telcos, mainly in the communications space.",
+      "website_url": ""
+    },
+    {
+      "username": "roy-benshushan",
+      "name": "Roy Ben Shushan",
+      "image_url": "https://secure.gravatar.com/avatar/87870bc1c9e482f6d0f2d0dea8658290?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "royandfrans",
+      "name": "Roy Ben Shushan and Frans Siswanto",
+      "image_url": "https://secure.gravatar.com/avatar/ac732e6c1149cc5d20783ecf67200395?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "russ-williams",
+      "name": "Russ Williams",
+      "image_url": "https://secure.gravatar.com/avatar/c08aca09014b5fc206ce4188d90f3a8a?s=96&d=mm&r=g",
+      "bio": "Russ has been arguing with computers since 1985, and now mostly wins the fights. He has worked in video games, defence and investment banking, and joined the Vonage team four days before the Coronavirus lockdown. He enjoys travel, poker, games of all sorts, science fiction, and is easily dist... ooh, squirrel!",
+      "website_url": ""
+    },
+    {
+      "username": "ryan-yee",
+      "name": "Ryan Yee",
+      "image_url": "https://secure.gravatar.com/avatar/477685f66cb1eed54b40fb456121eae8?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "sammachin",
+      "name": "Sam Machin",
+      "image_url": "https://secure.gravatar.com/avatar/17adcbf620ec9975ec000d20868cabfe?s=96&d=mm&r=g",
+      "bio": "Sam Machin has nearly 20 years of experience in the communications industry and a strong track record of innovation. His role as a developer advocate  enables him to attend events where he loves to chat with developers about their projects, His personal projects mostly revolve around Amazon Alexa, Sam created the AlexaPi project allowing developers to build thier own Alexa powered devices and he is recognised by Amazon as an Alexa Champion.",
+      "website_url": "http://www.nexmo.com"
+    },
+    {
+      "username": "sara-bine",
+      "name": "Sara Bine",
+      "image_url": "https://secure.gravatar.com/avatar/dff331b6019d8095c1d18f99240317ae?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "sassan-saedi",
+      "name": "Sassan Saedi",
+      "image_url": "https://secure.gravatar.com/avatar/af7994954d4165ff7c74e799c8cd5461?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "sheri-atienza",
+      "name": "Sheri Atienza",
+      "image_url": "https://secure.gravatar.com/avatar/2d6aa58e4cb906e6a6b3842a4ae6c799?s=96&d=mm&r=g",
+      "bio": "Sheri Atienza is the Director of Marketing for Nexmo, the Vonage API Platform.",
+      "website_url": ""
+    },
+    {
+      "username": "shilpi",
+      "name": "Shilpi Joshi",
+      "image_url": "https://secure.gravatar.com/avatar/151b6bd1dd20cb8c1747643c20425bcd?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "shyam-purkayastha",
+      "name": "Shyam Purkayastha",
+      "image_url": "https://secure.gravatar.com/avatar/4da783a91080996084fb2c4e94708052?s=96&d=mm&r=g",
+      "bio": "Shyam is the Founder of Radiostud.io, a content-lead innovation studio, focusing on showcasing use cases of emerging technologies. He  is an entrepreneur, a technology evangelist, author, and mentor with a deep passion for nurturing ideas and building things around emerging and futuristic trends in Computing, Information Technology, and Telecommunications.",
+      "website_url": ""
+    },
+    {
+      "username": "sidharth-sharma",
+      "name": "Sidharth Sharma",
+      "image_url": "https://secure.gravatar.com/avatar/ba7f01640f0bf0519a6c0a20360c9191?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "solomon-soh",
+      "name": "Solomon Soh",
+      "image_url": "https://secure.gravatar.com/avatar/c34b52403efd96ffe52052f673636815?s=96&d=mm&r=g",
+      "bio": "Solomon Soh is a Alteryx and Alibaba Cloud Certified practitioner who focus on developing AI solutions for ad-tech, fintech, and operational business problems.",
+      "website_url": ""
+    },
+    {
+      "username": "srisri",
+      "name": "Srivatsan Srinivasan",
+      "image_url": "https://secure.gravatar.com/avatar/f17e9b24e1f29cf3bc65c04259b67fdb?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "stephanschirrecker",
+      "name": "Stephan Schirrecker",
+      "image_url": "https://secure.gravatar.com/avatar/db67ae83a2937cdff5709f3f33cfe7da?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "cr0wst",
+      "name": "Steve Crow",
+      "image_url": "https://secure.gravatar.com/avatar/bf82785caee4c87daabd65befb2d0c11?s=96&d=mm&r=g",
+      "bio": "Steve is a self-proclaimed Mathlete, and King of Snark. He is also a lover of Greyhounds, twisty puzzles, and European Board Games.  When not talking math to non-math people, and Java to non-Java people, he can be found sipping coffee and hacking on code.",
+      "website_url": "https://developer.nexmo.com"
+    },
+    {
+      "username": "stevelorello",
+      "name": "Steve Lorello",
+      "image_url": "https://secure.gravatar.com/avatar/e48b9590389d377fa77996f833a1cd59?s=96&d=mm&r=g",
+      "bio": ".NET Developer Advocate @Nexmo, full-stack polyglottic Software Engineer, AI/ML Grad Student, avid runner, and an even more avid traveler.",
+      "website_url": "https://github.com/slorello89"
+    },
+    {
+      "username": "sumit-suman",
+      "name": "Sumit Suman",
+      "image_url": "https://secure.gravatar.com/avatar/465380a8836d02d31facaae2b083fea2?s=96&d=mm&r=g",
+      "bio": "Sumit Suman is a product lead at Nexmo and heads up the Chat App API product. Chat App API is his baby -- he has been on the team since fall of 2014 when Nexmo first decided to build the API. Sumit has also launched multiple messaging and collaboration products, including a company of his own. He is a computer science engineer and an MBA (which he hides under the carpet since moving to San Francisco).",
+      "website_url": ""
+    },
+    {
+      "username": "tamir-tuch",
+      "name": "Tamir Tuch",
+      "image_url": "https://secure.gravatar.com/avatar/e949fc5af8720e2acb1852d8704ada4e?s=96&d=mm&r=g",
+      "bio": "iOS Developer @Vonage, with a large interest in software development, hiking, machine learning, and fighting Muay Thai. In love with solving problems, everything in between solving a differential equation to defeating an opponent in a fight.",
+      "website_url": ""
+    },
+    {
+      "username": "taylorotwell",
+      "name": "Taylor Otwell",
+      "image_url": "https://secure.gravatar.com/avatar/010f8f4a703469053e0d98b5687edf27?s=96&d=mm&r=g",
+      "bio": "Husband to <a href=\"https://twitter.com/abigailotwell\">@abigailotwell</a>. Web Developer. Founder of Laravel, Forge, Envoyer, Spark, and more.",
+      "website_url": "https://laravel.com/"
+    },
+    {
+      "username": "thomas-soulez",
+      "name": "Thomas Soulez",
+      "image_url": "https://secure.gravatar.com/avatar/75480bf9f33ce13c6d9f6bc78c8e1b08?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "tjlytle",
+      "name": "Tim Lytle",
+      "image_url": "https://secure.gravatar.com/avatar/7ff0a19a80e00169c13e3b1b48ad2f0e?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "tom",
+      "name": "Tom Morris",
+      "image_url": "https://secure.gravatar.com/avatar/ddea4317847eafccd60f8a4e10b195bc?s=96&d=mm&r=g",
+      "bio": "Polyglot hacker and lifelong student trying a little bit of everything and documenting the experience.",
+      "website_url": ""
+    },
+    {
+      "username": "tomomi",
+      "name": "Tomomi Imura",
+      "image_url": "https://secure.gravatar.com/avatar/35a7bcf2132723fa0d9ef4f65ee007bb?s=96&d=mm&r=g",
+      "bio": "Open web &amp; technology ? HTML5, JavaScript, Node.js. Cat hacks ?, and Internet of Blings ✨ (that slightly more than LED blinks ?). Developer Advocate at Nexmo San Francisco.",
+      "website_url": ""
+    },
+    {
+      "username": "tony-bedford",
+      "name": "Tony Bedford",
+      "image_url": "https://secure.gravatar.com/avatar/64f3854fc5391501f131afd8e3246980?s=96&d=mm&r=g",
+      "bio": "Experienced technical writer who loves nothing more than writing docs and code.",
+      "website_url": ""
+    },
+    {
+      "username": "abedford",
+      "name": "Tony Bedford",
+      "image_url": "https://secure.gravatar.com/avatar/45f920dd2922a7a4bd3c10c1e4763f3d?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "tony-hung",
+      "name": "Tony Hung",
+      "image_url": "https://secure.gravatar.com/avatar/8788a00f333ed9ce6d7e5b9cefd4a1c4?s=96&d=mm&r=g",
+      "bio": "IOS Developer turned Data Science / Machine Learning enthusiast. I want people to understand what machine learning is and how we can use it in our applications.",
+      "website_url": ""
+    },
+    {
+      "username": "tonyjamous",
+      "name": "Tony Jamous",
+      "image_url": "https://secure.gravatar.com/avatar/43b7a2459de3db33942da74661ac2936?s=96&d=mm&r=g",
+      "bio": "Tony Jamous has over 14 years of leadership experience in cloud, communication, and mobile industries. At mBlox and Boku, Tony opened up global messaging and payment services. Tony holds a Masters in Computer Science from Grenoble Institute of Technology in France and an MBA from the International Institute for Management Development in Switzerland, with a focus on leadership development and organization behavior.",
+      "website_url": ""
+    },
+    {
+      "username": "vanessaperez",
+      "name": "Vanessa Perez",
+      "image_url": "https://secure.gravatar.com/avatar/c1e940bf9d774cba5ac2105ca094294f?s=96&d=mm&r=g",
+      "bio": "Vanessa Perez is a Carrier Operations Manager at Nexmo, The Vonage API Platform. She manages relationships with and provisioning activities for SMS vendors in the US and Canada. In her free time, she enjoys the outdoors and rooting for her favorite bay area sports teams.",
+      "website_url": ""
+    },
+    {
+      "username": "victorshisterov",
+      "name": "Victor Shisterov",
+      "image_url": "https://secure.gravatar.com/avatar/a562b2dc70ccd7a1fbec62dd7555c53f?s=96&d=mm&r=g",
+      "bio": "Victor is a product manager for Vonage Voice API with seven years of experience in the telecom industry, and a software developer since his childhood. He is passionate about making technically complex things easy to understand and to use, by keeping powerful API self-descriptive and consistent. When not inventing and coding, he builds scale models and plays folk musical instruments.",
+      "website_url": ""
+    },
+    {
+      "username": "victor-steven",
+      "name": "Victor Steven",
+      "image_url": "https://secure.gravatar.com/avatar/6956903d90abf1baf2b5fe9e9509ad67?s=96&d=mm&r=g",
+      "bio": "Victor Steven is a self-taught full-stack developer that loves researching about doing things differently. He has a degree in Engineering and over 5 years of experience as a software developer. Steven is very interested in designing and building scalable APIs and he enjoys writing about his discoveries in software development.",
+      "website_url": ""
+    },
+    {
+      "username": "wes-kashiwagi",
+      "name": "Wes Kashiwagi",
+      "image_url": "https://secure.gravatar.com/avatar/d5497defcfbcc349f63a85800b8424ec?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "yonatan-mevorach",
+      "name": "Yonatan Mevorach",
+      "image_url": "https://secure.gravatar.com/avatar/b86623b5cc7ae359337ae06ea92b70d4?s=96&d=mm&r=g",
+      "bio": "Yonatan Mevorach is a Web Developer, blogger, and open-source contributor.",
+      "website_url": "https://blog.yonatan.dev"
+    },
+    {
+      "username": "yuriydybskiy",
+      "name": "Yuriy Dybskiy",
+      "image_url": "https://secure.gravatar.com/avatar/e011cce1ee882fa85ba43920b83b00e8?s=96&d=mm&r=g",
+      "bio": "Yuriy is a Developer Advocate at Nexmo working on integrations with other excellent cloud providers such as Google, Microsoft and IBM. He lives in San Francisco and has previously worked on code and advocacy for Meteor, Lyft, Unbounce, Cloudant and many others.",
+      "website_url": ""
+    },
+    {
+      "username": "yvonne-allen",
+      "name": "Yvonne Allen",
+      "image_url": "https://secure.gravatar.com/avatar/8e5144156b62b7eee673e65fd7a90ed8?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "zachwalchuk",
+      "name": "Zach Walchuk",
+      "image_url": "https://secure.gravatar.com/avatar/67848d7e882a75db5f173aeb8da8e8ea?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
+    },
+    {
+      "username": "zining-wang",
+      "name": "Zining Wang",
+      "image_url": "https://secure.gravatar.com/avatar/8745c759edf4c04bddac92c9e63d611e?s=96&d=mm&r=g",
+      "bio": "Zining is a Product Manager at Vonage focused on developer tooling. With a background in engineering, he is passionate about building products that make life easier, especially ones that help people better connect with one another. Outside of work you can find him tinkering with ARKit or playing guitar.",
+      "website_url": ""
+    },
+    {
+      "username": "99robots",
+      "name": "99 Robots",
+      "image_url": "https://secure.gravatar.com/avatar/239e05fdd87972089aef74278a4d9aa9?s=96&d=mm&r=g",
+      "bio": "",
+      "website_url": ""
     }
   ]
 }
