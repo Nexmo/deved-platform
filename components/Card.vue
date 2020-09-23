@@ -39,6 +39,13 @@ export default {
 </script>
 
 <style scoped>
+.Vlt-card__footer >>> .Vlt-badge-group {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .Vlt-card__content {
   display: block;
   height: 75px;
