@@ -5,7 +5,10 @@
         <div class="Vlt-card__header">
           <Category :category="post.categoryObject" />
         </div>
-        <NLink class="Vlt-card__content" :to="post.route">
+        <a v-if="post.redirect" class="Vlt-card__content" :href="post.redirect" :title="post.title">
+          <h2>{{ post.title | truncate(73, '...') }}</h2>
+        </a>
+        <NLink v-else class="Vlt-card__content" :to="post.route" :title="post.title">
           <h2>{{ post.title | truncate(73, '...') }}</h2>
         </NLink>
         <div class="Vlt-card__footer Vlt-card__footer--short Vlt-card__footer--noborder">

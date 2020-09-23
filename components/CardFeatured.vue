@@ -6,7 +6,12 @@
         <Category :category="post.categoryObject" />
       </div>
       <div class="Vlt-card__header">
-        <NLink :to="post.route" :title="post.title">
+        <a v-if="post.redirect" :href="post.redirect" :title="post.title">
+          <h4 class="Blog-truncate">
+            {{ post.title }}
+          </h4>
+        </a>
+        <NLink v-else :to="post.route" :title="post.title">
           <h4 class="Blog-truncate">
             {{ post.title }}
           </h4>
