@@ -30,7 +30,7 @@
     "showdown": "^1.9.1",
     "vue-disqus": "^3.0.5",
     "vue-fragment": "^1.5.1",
-    "vue-instantsearch": "^2.7.0",
+    "vue-instantsearch": "^3.2.0",
     "vue-moment": "^4.1.0"
   },
   "keywords": [],
