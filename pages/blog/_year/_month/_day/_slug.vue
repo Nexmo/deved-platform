@@ -101,7 +101,7 @@ export default {
     Category,
     ImproveLink,
     RevisionsLink,
-    SignUp,
+    SignUp, // unused so it can be embedded in post content
     Tags,
   },
 
