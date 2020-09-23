@@ -127,6 +127,7 @@
       "website_url": ""
     },
     {
+      "team": true,
       "username": "alyssa-mazzina",
       "name": "Alyssa Mazzina",
       "image_url": "https://secure.gravatar.com/avatar/5bdc98045d9de8c23621e27edb725503?s=96&d=mm&r=g",
@@ -257,6 +258,7 @@
       "website_url": ""
     },
     {
+      "team": true,
       "username": "enrico-portolan",
       "name": "Enrico Portolan",
       "image_url": "https://secure.gravatar.com/avatar/f97b5a47325ec72ff695ce0b35201dd6?s=96&d=mm&r=g",
