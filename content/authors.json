@@ -112,6 +112,7 @@
       "website_url": "https://geekyboy.com"
     },
     {
+      "spotlight": true,
       "username": "adrian-francis",
       "name": "Adrian Francis",
       "image_url": "https://secure.gravatar.com/avatar/ae666ea3e6e7929ad0df9e1a4575a351?s=96&d=mm&r=g",
@@ -143,6 +144,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "andrea-chiarelli",
       "name": "Andrea Chiarelli",
       "image_url": "https://secure.gravatar.com/avatar/0058e1acdb8e572fbe0ceee16d1248c9?s=96&d=mm&r=g",
@@ -190,6 +192,7 @@
       "website_url": "http://www.brittbarak.com"
     },
     {
+      "spotlight": true,
       "username": "calebikhuohon",
       "name": "Caleb Ikhuohon",
       "image_url": "https://secure.gravatar.com/avatar/687d5dc5c2668c50057f04264c313ebe?s=96&d=mm&r=g",
@@ -221,6 +224,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "corbin-crutchley",
       "name": "Corbin Crutchley",
       "image_url": "https://secure.gravatar.com/avatar/6bd309fa665f813424cb4e6afd0f5a57?s=96&d=mm&r=g",
@@ -236,6 +240,7 @@
       "website_url": "https://superdi.dev"
     },
     {
+      "spotlight": true,
       "username": "douglaskendyson",
       "name": "Douglas Kendyson",
       "image_url": "https://secure.gravatar.com/avatar/c40c37ef82ba3bead871a4551eceebb9?s=96&d=mm&r=g",
@@ -318,6 +323,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "james-hickey",
       "name": "James Hickey",
       "image_url": "https://secure.gravatar.com/avatar/359ea7e3dd4ccd4f7669dc221196f5a8?s=96&d=mm&r=g",
@@ -354,6 +360,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "karl-hughes",
       "name": "Karl Hughes",
       "image_url": "https://secure.gravatar.com/avatar/972cd1bf439680cd8845b3d13ca8326e?s=96&d=mm&r=g",
@@ -361,6 +368,7 @@
       "website_url": "https://www.karllhughes.com"
     },
     {
+      "spotlight": true,
       "username": "glasnt",
       "name": "Katie McLaughlin",
       "image_url": "https://secure.gravatar.com/avatar/5421328b370c2f255357ed4fe52ea584?s=96&d=mm&r=g",
@@ -392,6 +400,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "liamhackett",
       "name": "Liam Hackett",
       "image_url": "https://secure.gravatar.com/avatar/697f6f26032359e923b75a9d964f9089?s=96&d=mm&r=g",
@@ -407,6 +416,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "mariacarlina-hernandez",
       "name": "Maria Carlina Hernández",
       "image_url": "https://secure.gravatar.com/avatar/ece66ef8a8652c89fc5f11c6fa71091f?s=96&d=mm&r=g",
@@ -414,6 +424,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "mariatta",
       "name": "Mariatta",
       "image_url": "https://secure.gravatar.com/avatar/30cf4a2683774549d8458c761af341fa?s=96&d=mm&r=g",
@@ -460,6 +471,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "mike-de-la-victoria",
       "name": "Mike de la Victoria",
       "image_url": "https://secure.gravatar.com/avatar/f3e9afad48ddb6a1abb0ab74bffe5df7?s=96&d=mm&r=g",
@@ -489,6 +501,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "nraboy",
       "name": "Nic Raboy",
       "image_url": "https://secure.gravatar.com/avatar/7d55990e9cc9544ca2f435aa3a690490?s=96&d=mm&r=g",
@@ -617,6 +630,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "solomon-soh",
       "name": "Solomon Soh",
       "image_url": "https://secure.gravatar.com/avatar/c34b52403efd96ffe52052f673636815?s=96&d=mm&r=g",
@@ -647,6 +661,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "noteworthy": true,
       "username": "taylorotwell",
       "name": "Taylor Otwell",
@@ -663,6 +678,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "tom",
       "name": "Tom Morris",
       "image_url": "https://secure.gravatar.com/avatar/ddea4317847eafccd60f8a4e10b195bc?s=96&d=mm&r=g",
@@ -707,6 +723,7 @@
       "website_url": ""
     },
     {
+      "spotlight": true,
       "username": "yonatan-mevorach",
       "name": "Yonatan Mevorach",
       "image_url": "https://secure.gravatar.com/avatar/b86623b5cc7ae359337ae06ea92b70d4?s=96&d=mm&r=g",

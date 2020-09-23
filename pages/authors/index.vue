@@ -102,6 +102,10 @@ export default {
       return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0
     })
 
+    authors.sort((a, b) => {
+      return (a.noteworthy === b.noteworthy)? 0 : a.noteworthy? -1 : 1
+    })
+
     const team = authors.filter(a => a.team === true)
     authors = authors.filter(a => a.team !== true) // remove team from authors pool
 
@@ -110,10 +114,6 @@ export default {
 
     const spotlight = authors.filter(a => a.spotlight === true)
     authors = authors.filter(a => a.spotlight !== true) // remove spotlight from authors pool
-  
-    authors.sort((a, b) => {
-      return (a.noteworthy === b.noteworthy)? 0 : a.noteworthy? -1 : 1
-    })
 
     return {
       team,
