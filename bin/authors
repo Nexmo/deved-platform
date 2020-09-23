@@ -1,0 +1,116 @@
+#!/usr/bin/env node
+
+const _ = require('lodash')
+const cliProgress = require('cli-progress')
+const consola = require('consola')
+// const entities = new require('html-entities').AllHtmlEntities
+const fs = require('fs')
+const path = require("path")
+// const slugify = require('slugify')
+const WPAPI = require('wpapi')
+// const yaml = require('yaml')
+
+const authorFile = path.resolve(__dirname, '../content/authors.json')
+const authors = require(authorFile)
+
+// const categories = []
+// const tags = []
+const users = []
+// const posts = []
+
+const config = {
+  wpInstance: 'https://www.nexmo.com/wp-json'
+}
+
+// const slugifyOpt = {
+//   replacement: '-',
+//   lower: true,
+//   strict: true
+// }
+
+consola.success(`WordPress author fetcher v0.0.1`)
+const wp = new WPAPI({ 
+  endpoint: config.wpInstance,
+  username: process.env.WP_USERNAME,
+  password: process.env.WP_PASSWORD,
+  auth: true
+})
+
+const getItems = (request, bar, page, pages) => {
+  return request.then(function(response) {
+    if (pages === null) {
+      pages = response._paging.totalPages
+      bar.start(pages, page)
+    } else {
+      bar.update(page)
+    }
+
+    if (!response._paging || !response._paging.next) {
+      return response
+    }
+
+    page++
+
+    return Promise.all([
+      // response
+      response, getItems(response._paging.next, bar, page, pages)
+    ]).then(function(responses) {
+      return _.flatten(responses)
+    })
+  })
+}
+
+const formatAuthor = (user) => {
+  return {
+    username: user.slug,
+    name: user.name,
+    image_url: user.avatar_urls['96'] || '',
+    bio: user.description || '',
+    website_url: user.url || ''
+  }
+}
+
+const getAllUsers = async () => {
+  const userBar = new cliProgress.SingleBar({ clearOnComplete: true, emptyOnZero: true }, cliProgress.Presets.rect)
+  consola.info(`Fetching users...`)
+  userBar.start(1, null)
+
+  await getItems(wp.users().perPage(50), userBar, 1, null).then((allUsers) => {
+    userBar.stop()
+
+    allUsers.forEach(user => {
+      users.push(user)
+    })
+
+    consola.success(`Fetched ${users.length} users...`)
+  })
+}
+
+const processUsers = () => {
+  const authorNames = authors['authors'].map(a => a.username)
+
+  authors['authors']
+    .push(...users.filter(u => !authorNames.includes(u.slug))
+    .map(u => formatAuthor(u)))
+}
+
+const savingUsers = () => {
+  const content = JSON.stringify(authors, null, 2)
+  consola.info(`Saving authors...`)
+
+  fs.writeFile(authorFile, content, (err) => {
+    if (!err) {
+      consola.success(`Saved new authors...`)
+    } else {
+      console.error(err)
+    }
+  })
+}
+
+const init = async () => {
+  await getAllUsers()
+  processUsers()
+  savingUsers()
+}
+
+init()
