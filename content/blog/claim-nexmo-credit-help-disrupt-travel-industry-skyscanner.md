@@ -1,0 +1,26 @@
+---
+title: Claim Nexmo Credit and Disrupt the Travel Industry with Skyscanner
+description: Our friends at Skyscanner are challenging all start-ups, developers
+  and aspiring entrepreneurs to build a game-changing new travel search website
+  or app using the powerful Skyscanner Travel APIs. Participants have four
+  months to build the next big thing in travel and will be in with a chance to
+  win one week working in Skyscanner’s office […]
+thumbnail: https://www.nexmo.com/wp-content/uploads/2016/06/build-with-skyscanner.png
+author: leggetter
+published: true
+published_at: 2016-06-02T18:23:36
+comments: true
+category: tutorial
+old_categories:
+  - developer
+  - developers
+tags:
+  - skyscanner
+  - startups
+slugs:
+  - claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
+  - claim-nexmo-credit-and-disrupt-the-travel-industry-with-skyscanner
+canonical: https://www.nexmo.com/blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
+redirect: https://www.nexmo.com/blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
+---
+Content to be migrated...

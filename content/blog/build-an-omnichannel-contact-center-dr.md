@@ -1,0 +1,27 @@
+---
+title: Combine In-App Voice and In-App Messaging to Build an Omnichannel Contact
+  Center
+description: Nexmo’s various communication APIs and SDKs allow you to provide a
+  wonderful and rich communication experience for your users. If you are one of
+  the numerous companies who wish to provide an excellent and customizable
+  contact center application, Nexmo has all the tools you need to build that!
+  Nexmo Client SDKs allow you to build […]
+thumbnail: https://www.nexmo.com/wp-content/uploads/2019/06/Build-An-Omnichannel-Contact-Center_1200x675.jpg
+author: brittbarak
+published: true
+published_at: 2019-06-24T16:00:31
+comments: true
+category: tutorial
+old_categories:
+  - developer
+  - developers
+  - omnichannel
+  - real-time-communications
+tags: []
+slugs:
+  - build-an-omnichannel-contact-center-dr
+  - combine-in-app-voice-and-in-app-messaging-to-build-an-omnichannel-contact-center
+canonical: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
+redirect: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
+---
+Content to be migrated...

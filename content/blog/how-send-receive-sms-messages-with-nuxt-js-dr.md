@@ -1,0 +1,32 @@
+---
+title: How to Send and Receive SMS Messages with Nuxt.js and the Nexmo SMS API
+description: Vue.js is one of the new progressive JavaScript frameworks making
+  the rounds of the front-end world. It is one of the most approachable,
+  versatile and performant frameworks out there, and here at Nexmo, we’ve
+  recently switched our Nexmo Developer Portal to using Vue.js. In 2018 we
+  (em)powered EMF Camp using Vue.js applications in conjunction with […]
+thumbnail: https://www.nexmo.com/wp-content/uploads/2020/02/E_SMS_Nuxt-js_1200x600.png
+author: laka
+published: true
+published_at: 2020-02-19T09:53:24
+comments: true
+category: tutorial
+old_categories:
+  - developer
+  - tutorial
+tags:
+  - javascript
+  - messaging
+  - node
+  - nuxt
+  - nuxtjs
+  - sms
+  - vue
+  - vuejs
+slugs:
+  - how-send-receive-sms-messages-with-nuxt-js-dr
+  - how-to-send-and-receive-sms-messages-with-nuxtjs-and-the-nexmo-sms-api
+canonical: https://www.nexmo.com/blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
+redirect: https://www.nexmo.com/blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
+---
+Content to be migrated...

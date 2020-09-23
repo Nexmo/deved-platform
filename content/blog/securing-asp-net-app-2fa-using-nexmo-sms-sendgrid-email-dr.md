@@ -1,0 +1,31 @@
+---
+title: Securing Your ASP.NET App with 2FA Using Nexmo SMS and SendGrid Email
+description: "2FA (2 Factor Authentication) is a must nowadays to increase the
+  security within your application. It is seen in all kinds of apps: from the
+  signup process to user action verification. The most common types of 2FA are
+  phone verification and email verification. In this tutorial we’ll show how to
+  set up 2FA in your […]"
+thumbnail: https://www.nexmo.com/wp-content/uploads/2016/08/2fa-with-sms-or-email.png
+author: sidharth-sharma
+published: true
+published_at: 2016-08-10T22:34:18
+comments: true
+category: tutorial
+old_categories:
+  - developer
+  - developers
+  - tutorial
+tags:
+  - net
+  - 2fa
+  - asp-net
+  - c
+  - sendgrid
+  - x-with-y
+slugs:
+  - securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
+  - securing-your-aspnet-app-with-2fa-using-nexmo-sms-and-sendgrid-email
+canonical: https://www.nexmo.com/blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
+redirect: https://www.nexmo.com/blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
+---
+Content to be migrated...

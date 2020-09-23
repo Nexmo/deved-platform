@@ -1,0 +1,28 @@
+---
+title: Send Your Friends to Whamhalla by Streaming Last Christmas Into a Phone Call
+description: "Christmas is an expensive time, but I can help save you a fortune
+  on gifts by ensuring no-one is speaking to you on Christmas day by sending
+  them all to Whamhalla! Every year my friends and I compete in Whamageddon, the
+  rules are simple: The objective is to go as long as possible without hearing
+  […]"
+thumbnail: https://www.nexmo.com/wp-content/uploads/2018/12/Streaming-Last-Christmas-into-a-Phone-Call.png
+author: aaron
+published: true
+published_at: 2018-12-12T00:57:19
+comments: true
+category: tutorial
+old_categories:
+  - developer
+  - tutorial
+tags:
+  - advent
+  - devrel
+  - python
+  - voice-api
+slugs:
+  - whamageddon-streaming-last-christmas-into-a-phone-call-dr
+  - send-your-friends-to-whamhalla-by-streaming-last-christmas-into-a-phone-call
+canonical: https://www.nexmo.com/blog/2018/12/11/whamageddon-streaming-last-christmas-into-a-phone-call-dr
+redirect: https://www.nexmo.com/blog/2018/12/11/whamageddon-streaming-last-christmas-into-a-phone-call-dr
+---
+Content to be migrated...

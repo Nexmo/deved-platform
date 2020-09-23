@@ -1,0 +1,29 @@
+---
+title: Laracon 2017 New York City – Conference Report
+description: I recently attended Laracon in New York City for the 4th year in a
+  row. This year the conference was held at New World Stages in Hell’s Kitchen,
+  with 500 people in attendance (and a waiting list of over 1000!) making it the
+  biggest one yet. While the conference focuses on the Laravel PHP framework,
+  […]
+thumbnail: https://www.nexmo.com/wp-content/uploads/2017/08/laracon.jpg
+author: sara-bine
+published: true
+published_at: 2017-08-15T20:29:48
+comments: true
+category: tutorial
+old_categories:
+  - developer
+  - developers
+  - events
+tags:
+  - devrel
+  - laracon
+  - laracon-us
+  - laravel
+slugs:
+  - laracon-2017-nyc-conference-report-dr
+  - laracon-2017-new-york-city-and8211-conference-report
+canonical: https://www.nexmo.com/blog/2017/08/15/laracon-2017-nyc-conference-report-dr
+redirect: https://www.nexmo.com/blog/2017/08/15/laracon-2017-nyc-conference-report-dr
+---
+Content to be migrated...

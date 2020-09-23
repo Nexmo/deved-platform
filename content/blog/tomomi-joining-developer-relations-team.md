@@ -1,0 +1,27 @@
+---
+title: Tomomi Is Joining Developer Relations Team!
+description: Hello World! Hello, my name is Tomomi, a.k.a. girlie_mac on Twitter
+  and other social media (but girliemac, sans underscore on GitHub and my domain
+  name, girliemac.com). I am very excited to join the Developer Relations team
+  at Nexmo! I live in foggy San Francisco and have been here since well before
+  the tech Gold Rush. […]
+thumbnail: https://www.nexmo.com/wp-content/uploads/2016/08/dx-jamie-comic.jpg
+author: tomomi
+published: true
+published_at: 2016-08-31T12:13:05
+comments: true
+category: tutorial
+old_categories:
+  - developer
+  - developers
+tags:
+  - community
+  - developer-relations
+  - devrel
+slugs:
+  - tomomi-joining-developer-relations-team
+  - tomomi-is-joining-developer-relations-team
+canonical: https://www.nexmo.com/blog/2016/08/31/tomomi-joining-developer-relations-team
+redirect: https://www.nexmo.com/blog/2016/08/31/tomomi-joining-developer-relations-team
+---
+Content to be migrated...
