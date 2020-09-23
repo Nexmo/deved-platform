@@ -22,6 +22,7 @@
 - [Components](#components)
 - [Writing Style](#writing-style)
 - [Tools](#tools)
+  - [New Post](#new-post)
   - [Legacy Content Importer](#legacy-content-importer)
   - [Legacy Author Importer](#legacy-author-importer)
 - [License](#license)
@@ -45,6 +46,24 @@ Check out the Nuxt.js `@nuxt/content` module [documentation for writing content 
 Taken from our developer education writing styleguide, we've included our [writing style guide](././.github/WRITING_STYLE.md) to help with contributing content.
 
 ## Tools
+
+### New Post
+
+Create a new post using a CLI.
+
+```bash
+npm run new
+
+# node bin/new-post
+
+# ? What's the title for this post? <max 70 chars> Your post title goes here!
+# ? What's the description? <max 240 chars> A post description that shouod be less than 240 characters
+# ? What's the category? Tutorial
+# ? Who's the author? Luke Oliff
+# ? Enable comments? Yes
+# ? By spotlight author? No
+# ✔ Saved demo file to content/blog/your-post-title-goes-here.md...    
+```
 
 ### Legacy Content Importer
 
