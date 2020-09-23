@@ -1,10 +1,8 @@
 <template>
   <div class="Vlt-col Vlt-col--1of2">
     <div class="Vlt-card Vlt-bg-white">
-      <div class="Vlt-card__image" :style="`background-image: url('${post.thumbnail}'); background-size: cover; background-position: center; height: 200px`" />
-      <div class="Vlt-card__corner">
-        <Category :category="post.categoryObject" />
-      </div>
+      <a v-if="post.redirect" :href="post.redirect" :title="post.title" class="Vlt-card__image" :style="`background-image: url('${post.thumbnail}'); background-size: cover; background-position: center; height: 200px`" />
+      <NLink v-else :to="post.route" :title="post.title" class="Vlt-card__image" :style="`background-image: url('${post.thumbnail}'); background-size: cover; background-position: center; height: 200px`" />
       <div class="Vlt-card__header">
         <a v-if="post.redirect" :href="post.redirect" :title="post.title">
           <h4 class="Blog-truncate">
@@ -33,9 +31,7 @@
         <Tags :tags="post.tags" />
       </div>
       <div class="Vlt-card__footer Vlt-card__footer--short Vlt-card__footer--noborder Vlt-right">
-        <NLink :to="post.route" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">
-          Read more
-        </NLink>
+        <Category :category="post.categoryObject" class="Category--border" />
       </div>
     </div>
   </div>
@@ -93,6 +89,10 @@ export default {
 
 .Vlt-card__header {
   padding-bottom: 8px;
+}
+
+.Category--border {
+  border: 1px solid rgba(19,20,21,.2);
 }
 
 @media only screen and (min-width: 575px) {
