@@ -23,6 +23,7 @@
 - [Writing Style](#writing-style)
 - [Tools](#tools)
   - [Legacy Content Importer](#legacy-content-importer)
+  - [Legacy Author Importer](#legacy-author-importer)
 - [License](#license)
 
 ## Installation
@@ -54,6 +55,16 @@ WP_USERNAME={username} WP_PASSWORD={password} node bin/exporter
 ```
 
 Shouldn't be used unless importing content from WordPress.
+
+### Legacy Author Importer
+
+Imports authors from a WordPress WP API instance.
+
+```bash
+WP_USERNAME={username} WP_PASSWORD={password} node bin/authors
+```
+
+Shouldn't be used unless importing authors from WordPress.
 
 ## License
 
