@@ -20,9 +20,6 @@ tags:
   - amazon-lex
   - hackathon
   - lyft
-slugs:
-  - princeton-coders-lyft-nexmo-apis
-  - princeton-coders-integrate-lyft-and-nexmo-apis-for-prize-winning-voice-bot-hack
 canonical: https://www.nexmo.com/blog/2018/01/11/princeton-coders-lyft-nexmo-apis
 redirect: https://www.nexmo.com/blog/2018/01/11/princeton-coders-lyft-nexmo-apis
 ---

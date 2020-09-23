@@ -18,9 +18,6 @@ tags:
   - asp-net
   - delivery-receipts
   - sms
-slugs:
-  - how-to-receive-sms-delivery-receipts-with-asp-net-core-mvc-dr
-  - how-to-receive-sms-delivery-receipts-with-aspnet-core-mvc
 canonical: https://www.nexmo.com/blog/2020/07/28/how-to-receive-sms-delivery-receipts-with-asp-net-core-mvc-dr
 redirect: https://www.nexmo.com/blog/2020/07/28/how-to-receive-sms-delivery-receipts-with-asp-net-core-mvc-dr
 ---

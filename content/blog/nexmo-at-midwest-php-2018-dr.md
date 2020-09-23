@@ -17,9 +17,6 @@ old_categories:
 tags:
   - events
   - php
-slugs:
-  - nexmo-at-midwest-php-2018-dr
-  - nexmo-at-midwest-php-2018
 canonical: https://www.nexmo.com/blog/2018/03/16/nexmo-at-midwest-php-2018-dr
 redirect: https://www.nexmo.com/blog/2018/03/16/nexmo-at-midwest-php-2018-dr
 ---

@@ -22,9 +22,6 @@ tags:
   - sentiment-analysis
   - video
   - video-api
-slugs:
-  - sentiment-analysis-with-opentok-and-azure-face-api-dr
-  - i-see-what-youand8217re-saying-sentiment-analysis-with-azure-face-api-and-vonage
 canonical: https://www.nexmo.com/blog/2020/01/27/sentiment-analysis-with-opentok-and-azure-face-api-dr
 redirect: https://www.nexmo.com/blog/2020/01/27/sentiment-analysis-with-opentok-and-azure-face-api-dr
 ---

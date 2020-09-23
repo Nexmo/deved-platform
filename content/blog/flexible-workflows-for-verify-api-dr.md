@@ -16,9 +16,6 @@ tags:
   - 2fa
   - verify
   - verify-api
-slugs:
-  - flexible-workflows-for-verify-api-dr
-  - flexible-workflows-for-verify-api
 canonical: https://www.nexmo.com/blog/2019/10/02/flexible-workflows-for-verify-api-dr
 redirect: https://www.nexmo.com/blog/2019/10/02/flexible-workflows-for-verify-api-dr
 ---

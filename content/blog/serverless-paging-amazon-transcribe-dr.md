@@ -23,9 +23,6 @@ tags:
   - serverless
   - tutorial
   - voice
-slugs:
-  - serverless-paging-amazon-transcribe-dr
-  - building-a-serverless-paging-application-with-amazon-transcribe
 canonical: https://www.nexmo.com/blog/2018/11/27/serverless-paging-amazon-transcribe-dr
 redirect: https://www.nexmo.com/blog/2018/11/27/serverless-paging-amazon-transcribe-dr
 ---

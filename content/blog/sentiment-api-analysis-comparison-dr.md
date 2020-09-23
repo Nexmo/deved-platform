@@ -22,9 +22,6 @@ tags:
   - ibm-watson
   - microsoft-azure
   - sentiment-analysis
-slugs:
-  - sentiment-api-analysis-comparison-dr
-  - sentiment-analysis-api-comparison
 canonical: https://www.nexmo.com/blog/2019/10/17/sentiment-api-analysis-comparison-dr
 redirect: https://www.nexmo.com/blog/2019/10/17/sentiment-api-analysis-comparison-dr
 ---

@@ -19,9 +19,6 @@ tags:
   - aws-lambda
   - text-to-speech
   - voice-api
-slugs:
-  - text-speech-prompt-calls-using-python-aws-lambda-dr
-  - text-to-speech-with-prompt-calls-using-python-on-aws-lambda
 canonical: https://www.nexmo.com/blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
 ---

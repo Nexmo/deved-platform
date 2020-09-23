@@ -14,8 +14,6 @@ old_categories:
   - developers
   - developers-corner
 tags: []
-slugs:
-  - whats-different-now
 canonical: https://www.nexmo.com/blog/2014/11/18/whats-different-now
 redirect: https://www.nexmo.com/blog/2014/11/18/whats-different-now
 ---

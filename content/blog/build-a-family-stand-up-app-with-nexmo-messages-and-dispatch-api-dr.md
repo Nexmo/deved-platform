@@ -23,9 +23,6 @@ tags:
   - messages
   - nexmo
   - standup
-slugs:
-  - build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
-  - build-a-family-stand-up-app-with-vonage
 canonical: https://www.nexmo.com/blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
 redirect: https://www.nexmo.com/blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
 ---

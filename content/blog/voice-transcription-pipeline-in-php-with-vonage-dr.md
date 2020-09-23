@@ -20,9 +20,6 @@ tags:
   - php
   - serverless
   - transcription
-slugs:
-  - voice-transcription-pipeline-in-php-with-vonage-dr
-  - voice-transcription-pipeline-in-php-with-vonage
 canonical: https://www.nexmo.com/blog/2020/06/19/voice-transcription-pipeline-in-php-with-vonage-dr
 redirect: https://www.nexmo.com/blog/2020/06/19/voice-transcription-pipeline-in-php-with-vonage-dr
 ---

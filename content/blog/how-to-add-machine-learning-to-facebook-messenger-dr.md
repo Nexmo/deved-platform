@@ -26,9 +26,6 @@ tags:
   - ml-net
   - neural-network
   - tensorflow
-slugs:
-  - how-to-add-machine-learning-to-facebook-messenger-dr
-  - and8220hey-facebook-what-type-of-dog-is-thatand8221-and8211-adding-machine-learning-to-messenger
 canonical: https://www.nexmo.com/blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
 redirect: https://www.nexmo.com/blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
 ---

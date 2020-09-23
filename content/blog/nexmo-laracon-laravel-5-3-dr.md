@@ -17,9 +17,6 @@ old_categories:
 tags:
   - laravel
   - php
-slugs:
-  - nexmo-laracon-laravel-5-3-dr
-  - nexmo-at-laracon-and-in-laravel-53
 canonical: https://www.nexmo.com/blog/2016/07/29/nexmo-laracon-laravel-5-3-dr
 redirect: https://www.nexmo.com/blog/2016/07/29/nexmo-laracon-laravel-5-3-dr
 ---

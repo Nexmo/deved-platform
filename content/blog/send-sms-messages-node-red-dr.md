@@ -23,9 +23,6 @@ tags:
   - nodejs
   - nodered
   - sms
-slugs:
-  - send-sms-messages-node-red-dr
-  - how-to-send-sms-messages-with-node-red
 canonical: https://www.nexmo.com/blog/2019/04/17/send-sms-messages-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/04/17/send-sms-messages-node-red-dr
 ---

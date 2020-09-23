@@ -20,9 +20,6 @@ tags:
   - ncco
   - python
   - voice-api
-slugs:
-  - how-to-play-an-audio-stream-into-a-call-with-python-dr
-  - how-to-play-an-audio-stream-into-a-phone-call-with-python
 canonical: https://www.nexmo.com/blog/2019/04/03/how-to-play-an-audio-stream-into-a-call-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/04/03/how-to-play-an-audio-stream-into-a-call-with-python-dr
 ---

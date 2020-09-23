@@ -21,9 +21,6 @@ tags:
   - phone
   - voice
   - vue
-slugs:
-  - how-make-receive-phone-calls-with-nuxt-js-dr
-  - how-to-make-and-receive-phone-calls-with-nuxtjs
 canonical: https://www.nexmo.com/blog/2020/03/02/how-make-receive-phone-calls-with-nuxt-js-dr
 redirect: https://www.nexmo.com/blog/2020/03/02/how-make-receive-phone-calls-with-nuxt-js-dr
 ---

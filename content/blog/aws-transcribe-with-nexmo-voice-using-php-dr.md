@@ -27,9 +27,6 @@ tags:
   - tutorials
   - voice
   - voice-api
-slugs:
-  - aws-transcribe-with-nexmo-voice-using-php-dr
-  - aws-transcribe-with-nexmo-voice-using-php
 canonical: https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr
 redirect: https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr
 ---

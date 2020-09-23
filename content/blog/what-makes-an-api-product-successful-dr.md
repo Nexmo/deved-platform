@@ -17,9 +17,6 @@ tags:
   - api
   - api-design
   - best-practice
-slugs:
-  - what-makes-an-api-product-successful-dr
-  - what-makes-an-api-product-successful
 canonical: https://www.nexmo.com/blog/2019/12/06/what-makes-an-api-product-successful-dr
 redirect: https://www.nexmo.com/blog/2019/12/06/what-makes-an-api-product-successful-dr
 ---

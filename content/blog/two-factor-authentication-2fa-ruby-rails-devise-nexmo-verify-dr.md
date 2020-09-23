@@ -24,9 +24,6 @@ tags:
   - ruby-on-rails
   - verify
   - x-with-y
-slugs:
-  - two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify-dr
-  - two-factor-authentication-2fa-in-a-ruby-on-rails-app-with-devise-and-nexmo-verify
 canonical: https://www.nexmo.com/blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify-dr
 redirect: https://www.nexmo.com/blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify-dr
 ---

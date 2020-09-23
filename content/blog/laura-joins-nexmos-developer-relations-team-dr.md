@@ -17,9 +17,6 @@ tags:
   - dev-rel
   - devrel
   - nexmo
-slugs:
-  - laura-joins-nexmos-developer-relations-team-dr
-  - laura-joins-nexmoand8217s-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/08/15/laura-joins-nexmos-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/08/15/laura-joins-nexmos-developer-relations-team-dr
 ---

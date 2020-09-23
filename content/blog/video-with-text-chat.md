@@ -21,9 +21,6 @@ tags:
   - opentok
   - video
   - video-api
-slugs:
-  - video-with-text-chat
-  - add-texting-functionality-to-a-video-chat-with-vonage-video-api
 canonical: https://www.nexmo.com/blog/2020/04/21/video-with-text-chat
 redirect: https://www.nexmo.com/blog/2020/04/21/video-with-text-chat
 ---

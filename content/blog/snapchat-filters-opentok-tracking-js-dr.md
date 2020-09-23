@@ -20,9 +20,6 @@ tags:
   - opentok
   - toxbox
   - video-api
-slugs:
-  - snapchat-filters-opentok-tracking-js-dr
-  - snapchat-style-filters-with-trackingjs-and-vonage
 canonical: https://www.nexmo.com/blog/2019/04/03/snapchat-filters-opentok-tracking-js-dr
 redirect: https://www.nexmo.com/blog/2019/04/03/snapchat-filters-opentok-tracking-js-dr
 ---

@@ -20,9 +20,6 @@ tags:
   - real-time-translation
   - sms
   - translation
-slugs:
-  - translating-sms-messages-with-azure-translator-text-dr
-  - translating-sms-messages-with-azure-translator-text
 canonical: https://www.nexmo.com/blog/2019/11/25/translating-sms-messages-with-azure-translator-text-dr
 redirect: https://www.nexmo.com/blog/2019/11/25/translating-sms-messages-with-azure-translator-text-dr
 ---

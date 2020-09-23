@@ -21,9 +21,6 @@ tags:
   - java
   - number-insight
   - sms
-slugs:
-  - track-santa-sms-java-dr
-  - tracking-santa-with-sms-and-java
 canonical: https://www.nexmo.com/blog/2018/12/07/track-santa-sms-java-dr
 redirect: https://www.nexmo.com/blog/2018/12/07/track-santa-sms-java-dr
 ---

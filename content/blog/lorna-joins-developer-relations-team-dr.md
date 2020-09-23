@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - devrel
-slugs:
-  - lorna-joins-developer-relations-team-dr
-  - lorna-joins-nexmoand8217s-developer-relations-team
 canonical: https://www.nexmo.com/blog/2018/07/12/lorna-joins-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/07/12/lorna-joins-developer-relations-team-dr
 ---

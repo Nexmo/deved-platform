@@ -17,9 +17,6 @@ old_categories:
 tags:
   - skyscanner
   - startups
-slugs:
-  - claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
-  - claim-nexmo-credit-and-disrupt-the-travel-industry-with-skyscanner
 canonical: https://www.nexmo.com/blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
 redirect: https://www.nexmo.com/blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
 ---

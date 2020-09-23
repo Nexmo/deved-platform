@@ -18,9 +18,6 @@ old_categories:
   - omnichannel
   - real-time-communications
 tags: []
-slugs:
-  - build-an-omnichannel-contact-center-dr
-  - combine-in-app-voice-and-in-app-messaging-to-build-an-omnichannel-contact-center
 canonical: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
 redirect: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
 ---

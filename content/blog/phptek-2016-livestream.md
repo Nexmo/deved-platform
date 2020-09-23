@@ -18,9 +18,6 @@ tags:
   - community
   - livestream
   - php
-slugs:
-  - phptek-2016-livestream
-  - phptek-2016-live-stream
 canonical: https://www.nexmo.com/blog/2016/05/23/phptek-2016-livestream
 redirect: https://www.nexmo.com/blog/2016/05/23/phptek-2016-livestream
 ---

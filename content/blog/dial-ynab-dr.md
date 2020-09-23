@@ -21,9 +21,6 @@ tags:
   - budgeting
   - voice-api
   - ynab
-slugs:
-  - dial-ynab-dr
-  - keep-track-of-your-budget-with-dial-ynab
 canonical: https://www.nexmo.com/blog/2019/07/18/dial-ynab-dr
 redirect: https://www.nexmo.com/blog/2019/07/18/dial-ynab-dr
 ---

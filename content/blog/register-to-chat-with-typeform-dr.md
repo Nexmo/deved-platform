@@ -21,9 +21,6 @@ tags:
   - live-chat
   - node-js
   - typeform
-slugs:
-  - register-to-chat-with-typeform-dr
-  - register-to-chat-with-typeform
 canonical: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr
 redirect: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr
 ---

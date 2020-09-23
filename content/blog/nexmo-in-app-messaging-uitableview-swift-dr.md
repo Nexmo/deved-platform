@@ -16,9 +16,6 @@ old_categories:
   - real-time-communications
   - tutorial
 tags: []
-slugs:
-  - nexmo-in-app-messaging-uitableview-swift-dr
-  - build-a-conversational-ui-in-a-uitableview-with-nexmo-in-app-messaging-in-swift
 canonical: https://www.nexmo.com/blog/2018/07/18/nexmo-in-app-messaging-uitableview-swift-dr
 redirect: https://www.nexmo.com/blog/2018/07/18/nexmo-in-app-messaging-uitableview-swift-dr
 ---

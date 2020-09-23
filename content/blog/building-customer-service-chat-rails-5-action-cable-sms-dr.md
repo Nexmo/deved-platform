@@ -23,9 +23,6 @@ tags:
   - ruby
   - ruby-on-rails
   - sms
-slugs:
-  - building-customer-service-chat-rails-5-action-cable-sms-dr
-  - building-a-customer-service-chat-app-with-rails-5-action-cable-and-sms
 canonical: https://www.nexmo.com/blog/2016/07/14/building-customer-service-chat-rails-5-action-cable-sms-dr
 redirect: https://www.nexmo.com/blog/2016/07/14/building-customer-service-chat-rails-5-action-cable-sms-dr
 ---

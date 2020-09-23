@@ -21,9 +21,6 @@ tags:
   - voice-api
   - voice-proxy
   - x-with-y
-slugs:
-  - make-private-phone-call-node-js-dr
-  - how-to-make-a-private-phone-call-with-nodejs
 canonical: https://www.nexmo.com/blog/2017/03/21/make-private-phone-call-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/03/21/make-private-phone-call-node-js-dr
 ---

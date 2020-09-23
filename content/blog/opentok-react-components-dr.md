@@ -20,9 +20,6 @@ tags:
   - opentok
   - react
   - tokbox
-slugs:
-  - opentok-react-components-dr
-  - create-custom-video-chat-with-opentok-and-react-components
 canonical: https://www.nexmo.com/blog/2019/07/16/opentok-react-components-dr
 redirect: https://www.nexmo.com/blog/2019/07/16/opentok-react-components-dr
 ---

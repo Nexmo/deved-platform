@@ -17,9 +17,6 @@ old_categories:
 tags:
   - devrel
   - welcome
-slugs:
-  - welcoming-mark-smith-nexmo-developer-relations-team
-  - welcoming-mark-smith-to-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
 redirect: https://www.nexmo.com/blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
 ---

@@ -20,9 +20,6 @@ tags:
   - javascript
   - nodejs
   - react
-slugs:
-  - full-stack-nexmo-with-express-react-dr
-  - build-a-full-stack-nexmo-app-with-express-and-react
 canonical: https://www.nexmo.com/blog/2019/03/15/full-stack-nexmo-with-express-react-dr
 redirect: https://www.nexmo.com/blog/2019/03/15/full-stack-nexmo-with-express-react-dr
 ---

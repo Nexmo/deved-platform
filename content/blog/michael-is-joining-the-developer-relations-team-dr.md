@@ -16,9 +16,6 @@ old_categories:
   - developers
 tags:
   - devrel
-slugs:
-  - michael-is-joining-the-developer-relations-team-dr
-  - michael-is-joining-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2017/07/07/michael-is-joining-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2017/07/07/michael-is-joining-the-developer-relations-team-dr
 ---

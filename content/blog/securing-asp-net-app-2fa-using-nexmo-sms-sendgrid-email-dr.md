@@ -22,9 +22,6 @@ tags:
   - c
   - sendgrid
   - x-with-y
-slugs:
-  - securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
-  - securing-your-aspnet-app-with-2fa-using-nexmo-sms-and-sendgrid-email
 canonical: https://www.nexmo.com/blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
 redirect: https://www.nexmo.com/blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
 ---

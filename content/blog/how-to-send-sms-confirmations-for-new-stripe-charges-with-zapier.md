@@ -20,8 +20,6 @@ tags:
   - devrel
   - sms
   - zapier
-slugs:
-  - how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
 canonical: https://www.nexmo.com/blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
 redirect: https://www.nexmo.com/blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
 ---

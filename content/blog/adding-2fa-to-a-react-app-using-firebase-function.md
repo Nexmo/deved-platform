@@ -16,8 +16,6 @@ tags:
   - firebase
   - javascript
   - verify-api
-slugs:
-  - adding-2fa-to-a-react-app-using-firebase-function
 canonical: https://www.nexmo.com/blog/2020/04/01/adding-2fa-to-a-react-app-using-firebase-function
 redirect: https://www.nexmo.com/blog/2020/04/01/adding-2fa-to-a-react-app-using-firebase-function
 ---

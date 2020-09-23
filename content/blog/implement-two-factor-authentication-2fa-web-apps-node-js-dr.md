@@ -23,9 +23,6 @@ tags:
   - sms
   - two-factor-authentication
   - x-with-y
-slugs:
-  - implement-two-factor-authentication-2fa-web-apps-node-js-dr
-  - how-to-add-two-factor-authentication-2fa-to-your-nodejs-web-apps
 canonical: https://www.nexmo.com/blog/2017/04/11/implement-two-factor-authentication-2fa-web-apps-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/04/11/implement-two-factor-authentication-2fa-web-apps-node-js-dr
 ---

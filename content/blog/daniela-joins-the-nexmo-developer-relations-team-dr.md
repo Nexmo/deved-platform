@@ -17,9 +17,6 @@ tags:
   - daniela-facchinetti
   - devrel
   - nexmo
-slugs:
-  - daniela-joins-the-nexmo-developer-relations-team-dr
-  - daniela-joins-the-nexmo-developer-education-team
 canonical: https://www.nexmo.com/blog/2020/01/14/daniela-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2020/01/14/daniela-joins-the-nexmo-developer-relations-team-dr
 ---

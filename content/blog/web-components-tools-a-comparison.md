@@ -24,8 +24,6 @@ tags:
   - web-components
   - web-platform-apis
   - web-standards
-slugs:
-  - web-components-tools-a-comparison
 canonical: https://www.nexmo.com/blog/2020/05/20/web-components-tools-a-comparison
 redirect: https://www.nexmo.com/blog/2020/05/20/web-components-tools-a-comparison
 ---

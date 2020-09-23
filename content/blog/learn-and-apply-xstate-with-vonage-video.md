@@ -16,8 +16,6 @@ tags:
   - javasript
   - state-machines
   - xstate
-slugs:
-  - learn-and-apply-xstate-with-vonage-video
 canonical: https://www.nexmo.com/blog/2020/07/01/learn-and-apply-xstate-with-vonage-video
 redirect: https://www.nexmo.com/blog/2020/07/01/learn-and-apply-xstate-with-vonage-video
 ---

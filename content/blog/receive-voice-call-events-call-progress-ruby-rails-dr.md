@@ -23,9 +23,6 @@ tags:
   - voice
   - voice-api
   - x-with-y
-slugs:
-  - receive-voice-call-events-call-progress-ruby-rails-dr
-  - how-to-receive-voice-call-events-for-a-call-in-progress-with-ruby-on-rails
 canonical: https://www.nexmo.com/blog/2017/12/19/receive-voice-call-events-call-progress-ruby-rails-dr
 redirect: https://www.nexmo.com/blog/2017/12/19/receive-voice-call-events-call-progress-ruby-rails-dr
 ---

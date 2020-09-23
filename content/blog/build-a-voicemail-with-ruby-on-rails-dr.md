@@ -20,9 +20,6 @@ tags:
   - tutorial
   - voice-api
   - x-with-y
-slugs:
-  - build-a-voicemail-with-ruby-on-rails-dr
-  - build-a-voicemail-with-ruby-on-rails
 canonical: https://www.nexmo.com/blog/2019/06/17/build-a-voicemail-with-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2019/06/17/build-a-voicemail-with-ruby-on-rails-dr
 ---

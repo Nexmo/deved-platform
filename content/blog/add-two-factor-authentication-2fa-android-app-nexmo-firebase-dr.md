@@ -19,9 +19,6 @@ old_categories:
   - verify
 tags:
   - x-with-y
-slugs:
-  - add-two-factor-authentication-2fa-android-app-nexmo-firebase-dr
-  - add-two-factor-authentication-2fa-to-an-android-app-with-nexmo-and-firebase-login
 canonical: https://www.nexmo.com/blog/2017/01/30/add-two-factor-authentication-2fa-android-app-nexmo-firebase-dr
 redirect: https://www.nexmo.com/blog/2017/01/30/add-two-factor-authentication-2fa-android-app-nexmo-firebase-dr
 ---

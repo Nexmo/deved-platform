@@ -19,9 +19,6 @@ tags:
   - javascript
   - node-js
   - video-api
-slugs:
-  - stream-a-video-chat-with-vonage-video-api-dr
-  - stream-a-video-chat-with-vonage-video-api
 canonical: https://www.nexmo.com/blog/2020/04/28/stream-a-video-chat-with-vonage-video-api-dr
 redirect: https://www.nexmo.com/blog/2020/04/28/stream-a-video-chat-with-vonage-video-api-dr
 ---

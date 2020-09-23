@@ -19,8 +19,6 @@ tags:
   - open-srouce
   - openapi
   - station
-slugs:
-  - arriving-at-station-the-evolution-of-our-api-documentation-platform
 canonical: https://www.nexmo.com/blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform
 redirect: https://www.nexmo.com/blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform
 ---

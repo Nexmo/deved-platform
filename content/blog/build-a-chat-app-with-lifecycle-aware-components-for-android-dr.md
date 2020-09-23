@@ -18,9 +18,6 @@ old_categories:
   - tutorial
 tags:
   - android
-slugs:
-  - build-a-chat-app-with-lifecycle-aware-components-for-android-dr
-  - build-a-chat-app-with-lifecycle-aware-components-for-android
 canonical: https://www.nexmo.com/blog/2018/03/28/build-a-chat-app-with-lifecycle-aware-components-for-android-dr
 redirect: https://www.nexmo.com/blog/2018/03/28/build-a-chat-app-with-lifecycle-aware-components-for-android-dr
 ---

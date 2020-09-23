@@ -20,9 +20,6 @@ tags:
   - stream
   - texting
   - video
-slugs:
-  - stream-video-chat-with-texting-using-vonage-video-api-dr
-  - stream-video-chat-with-texting-using-vonage-video-api
 canonical: https://www.nexmo.com/blog/2020/05/04/stream-video-chat-with-texting-using-vonage-video-api-dr
 redirect: https://www.nexmo.com/blog/2020/05/04/stream-video-chat-with-texting-using-vonage-video-api-dr
 ---

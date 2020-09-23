@@ -19,9 +19,6 @@ tags:
   - contact-center
   - contextual-communications
   - in-app-video
-slugs:
-  - nexmo-introduces-in-app-video-developer-preview
-  - nexmo-introduces-in-app-video-in-developer-preview
 canonical: https://www.nexmo.com/blog/2018/07/24/nexmo-introduces-in-app-video-developer-preview
 redirect: https://www.nexmo.com/blog/2018/07/24/nexmo-introduces-in-app-video-developer-preview
 ---

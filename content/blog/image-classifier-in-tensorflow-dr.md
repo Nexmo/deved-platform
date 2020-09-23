@@ -22,9 +22,6 @@ tags:
   - machine-learning
   - tensorflow
   - tutorial
-slugs:
-  - image-classifier-in-tensorflow-dr
-  - building-an-image-classifier-in-tensorflow
 canonical: https://www.nexmo.com/blog/2018/10/02/image-classifier-in-tensorflow-dr
 redirect: https://www.nexmo.com/blog/2018/10/02/image-classifier-in-tensorflow-dr
 ---

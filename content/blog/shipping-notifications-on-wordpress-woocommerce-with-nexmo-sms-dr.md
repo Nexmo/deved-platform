@@ -22,9 +22,6 @@ tags:
   - sms
   - woocommerce
   - wordpress
-slugs:
-  - shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr
-  - shipping-notifications-on-wordpress-woocommerce-powered-by-nexmo-sms
 canonical: https://www.nexmo.com/blog/2020/01/11/shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr
 redirect: https://www.nexmo.com/blog/2020/01/11/shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr
 ---

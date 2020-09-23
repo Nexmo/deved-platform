@@ -17,9 +17,6 @@ tags:
   - net
   - sdk
   - sdk-announcements
-slugs:
-  - announcing-net-sdk-version-5-0-0
-  - announcing-net-sdk-version-500
 canonical: https://www.nexmo.com/blog/2020/06/22/announcing-net-sdk-version-5-0-0
 redirect: https://www.nexmo.com/blog/2020/06/22/announcing-net-sdk-version-5-0-0
 ---

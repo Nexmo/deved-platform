@@ -19,8 +19,6 @@ tags:
   - opentok
   - python-3
   - vonage-video
-slugs:
-  - creating-a-video-session-in-aws-lambda-with-python
 canonical: https://www.nexmo.com/blog/2020/05/21/creating-a-video-session-in-aws-lambda-with-python
 redirect: https://www.nexmo.com/blog/2020/05/21/creating-a-video-session-in-aws-lambda-with-python
 ---

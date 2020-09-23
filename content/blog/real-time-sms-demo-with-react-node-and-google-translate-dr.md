@@ -19,9 +19,6 @@ tags:
   - node-js
   - sms
   - websockets
-slugs:
-  - real-time-sms-demo-with-react-node-and-google-translate-dr
-  - real-time-sms-demo-with-react-node-and-google-translate
 canonical: https://www.nexmo.com/blog/2020/03/11/real-time-sms-demo-with-react-node-and-google-translate-dr
 redirect: https://www.nexmo.com/blog/2020/03/11/real-time-sms-demo-with-react-node-and-google-translate-dr
 ---

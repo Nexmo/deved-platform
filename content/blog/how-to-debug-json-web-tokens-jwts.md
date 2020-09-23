@@ -21,8 +21,6 @@ tags:
   - jwt
   - security
   - tips-and-tricks
-slugs:
-  - how-to-debug-json-web-tokens-jwts
 canonical: https://www.nexmo.com/blog/2020/08/26/how-to-debug-json-web-tokens-jwts
 redirect: https://www.nexmo.com/blog/2020/08/26/how-to-debug-json-web-tokens-jwts
 ---

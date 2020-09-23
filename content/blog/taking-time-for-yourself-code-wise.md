@@ -19,8 +19,6 @@ tags:
   - developer-relations
   - developer-experience
   - sdk
-slugs:
-  - taking-time-for-yourself-code-wise
 canonical: https://www.nexmo.com/blog/2020/07/22/taking-time-for-yourself-code-wise
 redirect: https://www.nexmo.com/blog/2020/07/22/taking-time-for-yourself-code-wise
 ---

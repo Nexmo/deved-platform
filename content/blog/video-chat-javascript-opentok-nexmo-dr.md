@@ -19,9 +19,6 @@ tags:
   - javascript
   - opentok
   - video
-slugs:
-  - video-chat-javascript-opentok-nexmo-dr
-  - creating-a-video-chat-application-with-opentok-and-nexmo-in-app-messaging
 canonical: https://www.nexmo.com/blog/2019/01/08/video-chat-javascript-opentok-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/01/08/video-chat-javascript-opentok-nexmo-dr
 ---

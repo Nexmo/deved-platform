@@ -18,9 +18,6 @@ tags:
   - node-js
   - opentok
   - tokbox
-slugs:
-  - javascript-hotline-with-opentok-and-nodejs-dr
-  - building-a-javascript-hotline-with-opentok-and-nodejs
 canonical: https://www.nexmo.com/blog/2019/07/05/javascript-hotline-with-opentok-and-nodejs-dr
 redirect: https://www.nexmo.com/blog/2019/07/05/javascript-hotline-with-opentok-and-nodejs-dr
 ---

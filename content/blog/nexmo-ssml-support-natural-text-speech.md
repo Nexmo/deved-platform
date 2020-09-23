@@ -18,9 +18,6 @@ old_categories:
   - voice
 tags:
   - text-to-speech
-slugs:
-  - nexmo-ssml-support-natural-text-speech
-  - nexmo-launches-ssml-support-for-more-natural-text-to-speech
 canonical: https://www.nexmo.com/blog/2018/01/04/nexmo-ssml-support-natural-text-speech
 redirect: https://www.nexmo.com/blog/2018/01/04/nexmo-ssml-support-natural-text-speech
 ---

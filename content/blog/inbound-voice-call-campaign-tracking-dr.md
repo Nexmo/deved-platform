@@ -21,9 +21,6 @@ tags:
   - devrel
   - python
   - voice-api
-slugs:
-  - inbound-voice-call-campaign-tracking-dr
-  - inbound-voice-call-campaign-tracking-with-nexmo-virtual-numbers-and-mixpanel
 canonical: https://www.nexmo.com/blog/2017/08/03/inbound-voice-call-campaign-tracking-dr
 redirect: https://www.nexmo.com/blog/2017/08/03/inbound-voice-call-campaign-tracking-dr
 ---

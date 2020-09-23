@@ -18,9 +18,6 @@ tags:
   - devrel
   - javascript
   - tutorial
-slugs:
-  - santa-delivery-notifications-via-facebook-messenger-dr
-  - santa-delivery-notifications-via-facebook-messenger
 canonical: https://www.nexmo.com/blog/2018/12/19/santa-delivery-notifications-via-facebook-messenger-dr
 redirect: https://www.nexmo.com/blog/2018/12/19/santa-delivery-notifications-via-facebook-messenger-dr
 ---

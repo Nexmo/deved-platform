@@ -18,9 +18,6 @@ tags:
   - devx
   - github
   - standards
-slugs:
-  - using-github-repository-guidelines-to-enhance-developer-experience-dr
-  - using-github-repository-guidelines-to-enhance-developer-experience
 canonical: https://www.nexmo.com/blog/2020/01/17/using-github-repository-guidelines-to-enhance-developer-experience-dr
 redirect: https://www.nexmo.com/blog/2020/01/17/using-github-repository-guidelines-to-enhance-developer-experience-dr
 ---

@@ -19,9 +19,6 @@ old_categories:
 tags:
   - devrel
   - documentation
-slugs:
-  - introducing-nexmo-developer-dr
-  - introducing-nexmo-developer
 canonical: https://www.nexmo.com/blog/2017/07/25/introducing-nexmo-developer-dr
 redirect: https://www.nexmo.com/blog/2017/07/25/introducing-nexmo-developer-dr
 ---

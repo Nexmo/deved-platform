@@ -17,9 +17,6 @@ tags:
   - devrel
   - message-signing
   - security
-slugs:
-  - using-message-signatures-to-ensure-secure-incoming-webhooks-dr
-  - using-message-signatures-to-ensure-secure-incoming-webhooks
 canonical: https://www.nexmo.com/blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
 redirect: https://www.nexmo.com/blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
 ---

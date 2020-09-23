@@ -17,9 +17,6 @@ old_categories:
 tags:
   - devrel
   - tooling
-slugs:
-  - local-development-nexmo-ngrok-tunnel-dr
-  - connect-your-local-development-server-to-the-nexmo-api-using-an-ngrok-tunnel
 canonical: https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr
 redirect: https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr
 ---

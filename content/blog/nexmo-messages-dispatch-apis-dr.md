@@ -21,9 +21,6 @@ tags:
   - sms
   - viber
   - whatsapp
-slugs:
-  - nexmo-messages-dispatch-apis-dr
-  - first-look-at-the-nexmo-messages-and-dispatch-apis
 canonical: https://www.nexmo.com/blog/2018/10/10/nexmo-messages-dispatch-apis-dr
 redirect: https://www.nexmo.com/blog/2018/10/10/nexmo-messages-dispatch-apis-dr
 ---

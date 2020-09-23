@@ -19,8 +19,6 @@ tags:
   - sandbox
   - viber
   - whatsapp
-slugs:
-  - introducing-the-messages-api-sandbox
 canonical: https://www.nexmo.com/blog/2020/04/08/introducing-the-messages-api-sandbox
 redirect: https://www.nexmo.com/blog/2020/04/08/introducing-the-messages-api-sandbox
 ---

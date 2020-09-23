@@ -19,9 +19,6 @@ tags:
   - dtmf
   - java
   - voice
-slugs:
-  - handle-keypad-input-dtmf-with-java-dr
-  - handle-keypad-input-dtmf-with-java
 canonical: https://www.nexmo.com/blog/2018/08/15/handle-keypad-input-dtmf-with-java-dr
 redirect: https://www.nexmo.com/blog/2018/08/15/handle-keypad-input-dtmf-with-java-dr
 ---

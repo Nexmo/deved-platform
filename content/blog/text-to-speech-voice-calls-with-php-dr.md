@@ -23,9 +23,6 @@ tags:
   - tutorial
   - voice
   - x-with-y
-slugs:
-  - text-to-speech-voice-calls-with-php-dr
-  - text-to-speech-voice-calls-with-php
 canonical: https://www.nexmo.com/blog/2017/10/20/text-to-speech-voice-calls-with-php-dr
 redirect: https://www.nexmo.com/blog/2017/10/20/text-to-speech-voice-calls-with-php-dr
 ---

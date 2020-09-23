@@ -18,9 +18,6 @@ tags:
   - hackathon
   - health
   - wellness
-slugs:
-  - 7-wellness-tips-for-hackathons
-  - 7-tips-to-incorporate-wellness-into-your-hackathon
 canonical: https://www.nexmo.com/blog/2018/11/29/7-wellness-tips-for-hackathons
 redirect: https://www.nexmo.com/blog/2018/11/29/7-wellness-tips-for-hackathons
 ---

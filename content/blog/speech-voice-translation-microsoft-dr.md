@@ -24,9 +24,6 @@ tags:
   - translation
   - voice-api
   - websockets
-slugs:
-  - speech-voice-translation-microsoft-dr
-  - build-a-babel-fish-with-nexmo-and-the-microsoft-translator-speech-api
 canonical: https://www.nexmo.com/blog/2018/03/14/speech-voice-translation-microsoft-dr
 redirect: https://www.nexmo.com/blog/2018/03/14/speech-voice-translation-microsoft-dr
 ---

@@ -20,9 +20,6 @@ tags:
   - speech-to-text
   - split-recording
   - voice-api
-slugs:
-  - multitrack-call-transcription-split-recording-voice-dr
-  - multitrack-call-transcription-with-split-recording
 canonical: https://www.nexmo.com/blog/2018/12/03/multitrack-call-transcription-split-recording-voice-dr
 redirect: https://www.nexmo.com/blog/2018/12/03/multitrack-call-transcription-split-recording-voice-dr
 ---

@@ -21,9 +21,6 @@ tags:
   - golang
   - message-api
   - nexmo
-slugs:
-  - send-messages-with-nexmo-through-golang-and-aws-lambda-dr
-  - send-messages-with-nexmo-through-golang-and-aws-lambda
 canonical: https://www.nexmo.com/blog/2019/11/25/send-messages-with-nexmo-through-golang-and-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2019/11/25/send-messages-with-nexmo-through-golang-and-aws-lambda-dr
 ---

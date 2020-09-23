@@ -18,9 +18,6 @@ tags:
   - developer
   - developer-relations
   - devrel
-slugs:
-  - welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
-  - welcoming-myrsini-to-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
 ---

@@ -23,9 +23,6 @@ tags:
   - sms
   - webhooks
   - x-with-y
-slugs:
-  - getting-a-sms-delivery-receipt-from-a-mobile-carrier-with-node-js-dr
-  - how-to-receive-an-sms-delivery-receipt-from-a-mobile-carrier-with-nodejs
 canonical: https://www.nexmo.com/blog/2016/11/23/getting-a-sms-delivery-receipt-from-a-mobile-carrier-with-node-js-dr
 redirect: https://www.nexmo.com/blog/2016/11/23/getting-a-sms-delivery-receipt-from-a-mobile-carrier-with-node-js-dr
 ---

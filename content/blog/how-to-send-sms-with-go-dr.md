@@ -18,9 +18,6 @@ tags:
   - go
   - sdk
   - sms
-slugs:
-  - how-to-send-sms-with-go-dr
-  - how-to-send-sms-with-go
 canonical: https://www.nexmo.com/blog/2019/08/28/how-to-send-sms-with-go-dr
 redirect: https://www.nexmo.com/blog/2019/08/28/how-to-send-sms-with-go-dr
 ---

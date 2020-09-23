@@ -17,9 +17,6 @@ old_categories:
   - developers
   - messaging
 tags: []
-slugs:
-  - how-to-build-sms-2fa-that-wont-scare-away-your-users
-  - how-to-build-sms-2fa-that-wonand8217t-scare-away-your-users
 canonical: https://www.nexmo.com/blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users
 redirect: https://www.nexmo.com/blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users
 ---

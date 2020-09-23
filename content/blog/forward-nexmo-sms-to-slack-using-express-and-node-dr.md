@@ -22,9 +22,6 @@ tags:
   - node
   - slack
   - sms
-slugs:
-  - forward-nexmo-sms-to-slack-using-express-and-node-dr
-  - forward-nexmo-sms-to-slack-using-express-and-node
 canonical: https://www.nexmo.com/blog/2020/01/01/forward-nexmo-sms-to-slack-using-express-and-node-dr
 redirect: https://www.nexmo.com/blog/2020/01/01/forward-nexmo-sms-to-slack-using-express-and-node-dr
 ---

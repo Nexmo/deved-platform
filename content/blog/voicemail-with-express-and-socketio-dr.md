@@ -21,9 +21,6 @@ tags:
   - javascript
   - voice
   - websockets
-slugs:
-  - voicemail-with-express-and-socketio-dr
-  - create-custom-voicemail-with-nodejs-express-and-socketio
 canonical: https://www.nexmo.com/blog/2019/04/02/voicemail-with-express-and-socketio-dr
 redirect: https://www.nexmo.com/blog/2019/04/02/voicemail-with-express-and-socketio-dr
 ---

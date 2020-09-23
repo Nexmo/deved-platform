@@ -20,9 +20,6 @@ tags:
   - ruby
   - ruby-on-rails
   - sms
-slugs:
-  - receive-sms-delivery-receipt-ruby-on-rails-dr
-  - how-to-receive-an-sms-delivery-receipt-from-a-mobile-carrier-with-ruby-on-rails
 canonical: https://www.nexmo.com/blog/2017/10/19/receive-sms-delivery-receipt-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2017/10/19/receive-sms-delivery-receipt-ruby-on-rails-dr
 ---

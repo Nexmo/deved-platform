@@ -22,9 +22,6 @@ tags:
   - voice
   - voice-api
   - voice-proxy
-slugs:
-  - forward-a-call-via-voice-proxy-with-ruby-on-rails-dr
-  - forward-a-call-via-voice-proxy-with-ruby-on-rails
 canonical: https://www.nexmo.com/blog/2019/04/16/forward-a-call-via-voice-proxy-with-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2019/04/16/forward-a-call-via-voice-proxy-with-ruby-on-rails-dr
 ---

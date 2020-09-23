@@ -20,9 +20,6 @@ tags:
   - ibm-watson
   - microsoft-azure
   - streaming-transcription
-slugs:
-  - extending-nexmo-streaming-transcription-dr
-  - extending-nexmo-and8211-streaming-transcription-comparison
 canonical: https://www.nexmo.com/blog/2019/09/10/extending-nexmo-streaming-transcription-dr
 redirect: https://www.nexmo.com/blog/2019/09/10/extending-nexmo-streaming-transcription-dr
 ---

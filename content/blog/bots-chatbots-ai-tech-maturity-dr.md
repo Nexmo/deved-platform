@@ -21,9 +21,6 @@ tags:
   - artificial-intelligence
   - bots
   - chatbots
-slugs:
-  - bots-chatbots-ai-tech-maturity-dr
-  - bots-and-ai-the-current-state-of-technical-maturity
 canonical: https://www.nexmo.com/blog/2017/08/24/bots-chatbots-ai-tech-maturity-dr
 redirect: https://www.nexmo.com/blog/2017/08/24/bots-chatbots-ai-tech-maturity-dr
 ---

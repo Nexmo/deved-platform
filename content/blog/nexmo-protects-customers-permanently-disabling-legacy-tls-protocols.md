@@ -19,9 +19,6 @@ tags:
   - http
   - security
   - tls
-slugs:
-  - nexmo-protects-customers-permanently-disabling-legacy-tls-protocols
-  - nexmo-protects-customers-by-permanently-disabling-legacy-tls-protocols
 canonical: https://www.nexmo.com/blog/2018/07/25/nexmo-protects-customers-permanently-disabling-legacy-tls-protocols
 redirect: https://www.nexmo.com/blog/2018/07/25/nexmo-protects-customers-permanently-disabling-legacy-tls-protocols
 ---

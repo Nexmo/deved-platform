@@ -21,9 +21,6 @@ tags:
   - asp-net-mvc
   - receiving-sms
   - x-with-y
-slugs:
-  - recieve-sms-messages-with-asp-net-mvc-framework-dr
-  - how-to-receive-sms-messages-with-aspnet-mvc-framework
 canonical: https://www.nexmo.com/blog/2017/03/31/recieve-sms-messages-with-asp-net-mvc-framework-dr
 redirect: https://www.nexmo.com/blog/2017/03/31/recieve-sms-messages-with-asp-net-mvc-framework-dr
 ---

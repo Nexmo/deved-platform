@@ -17,8 +17,6 @@ tags:
   - blazor
   - dotnet
   - webassembly
-slugs:
-  - build-an-sms-dashboard-with-blazor-webassembly
 canonical: https://www.nexmo.com/blog/2020/08/20/build-an-sms-dashboard-with-blazor-webassembly
 redirect: https://www.nexmo.com/blog/2020/08/20/build-an-sms-dashboard-with-blazor-webassembly
 ---

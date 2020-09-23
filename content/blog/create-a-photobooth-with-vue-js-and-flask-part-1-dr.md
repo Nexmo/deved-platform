@@ -21,9 +21,6 @@ tags:
   - messaging-api
   - photoboot
   - video-api
-slugs:
-  - create-a-photobooth-with-vue-js-and-flask-part-1-dr
-  - create-a-photo-booth-with-vuejs-and-flask-part-1
 canonical: https://www.nexmo.com/blog/2020/06/25/create-a-photobooth-with-vue-js-and-flask-part-1-dr
 redirect: https://www.nexmo.com/blog/2020/06/25/create-a-photobooth-with-vue-js-and-flask-part-1-dr
 ---

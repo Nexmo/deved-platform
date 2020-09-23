@@ -20,9 +20,6 @@ tags:
   - devrel
   - rails
   - ruby
-slugs:
-  - nexmo-at-birmingham-on-rails-dr
-  - nexmo-at-birmingham-on-rails
 canonical: https://www.nexmo.com/blog/2020/01/22/nexmo-at-birmingham-on-rails-dr
 redirect: https://www.nexmo.com/blog/2020/01/22/nexmo-at-birmingham-on-rails-dr
 ---

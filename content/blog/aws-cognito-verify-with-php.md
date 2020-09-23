@@ -18,8 +18,6 @@ tags:
   - aws
   - cognito-verify
   - php
-slugs:
-  - aws-cognito-verify-with-php
 canonical: https://www.nexmo.com/blog/2020/07/10/aws-cognito-verify-with-php
 redirect: https://www.nexmo.com/blog/2020/07/10/aws-cognito-verify-with-php
 ---

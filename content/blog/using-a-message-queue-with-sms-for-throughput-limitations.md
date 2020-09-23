@@ -20,8 +20,6 @@ tags:
   - node-js
   - python
   - sms
-slugs:
-  - using-a-message-queue-with-sms-for-throughput-limitations
 canonical: https://www.nexmo.com/blog/2020/05/28/using-a-message-queue-with-sms-for-throughput-limitations
 redirect: https://www.nexmo.com/blog/2020/05/28/using-a-message-queue-with-sms-for-throughput-limitations
 ---

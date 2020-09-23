@@ -20,9 +20,6 @@ tags:
   - sms
   - viber
   - whatsapp
-slugs:
-  - messaging-everywhere-with-node-dr
-  - messaging-everywhere-with-nodejs
 canonical: https://www.nexmo.com/blog/2020/05/27/messaging-everywhere-with-node-dr
 redirect: https://www.nexmo.com/blog/2020/05/27/messaging-everywhere-with-node-dr
 ---

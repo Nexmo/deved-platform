@@ -20,9 +20,6 @@ tags:
   - php
   - sms
   - text-messaging
-slugs:
-  - building-text-message-group-chat-nexmo-sms-api-php-dr
-  - building-text-message-group-chat-with-the-nexmo-sms-api-and-php
 canonical: https://www.nexmo.com/blog/2016/06/02/building-text-message-group-chat-nexmo-sms-api-php-dr
 redirect: https://www.nexmo.com/blog/2016/06/02/building-text-message-group-chat-nexmo-sms-api-php-dr
 ---

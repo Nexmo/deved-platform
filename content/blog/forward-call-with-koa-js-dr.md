@@ -23,9 +23,6 @@ tags:
   - voice
   - voice-api
   - voice-proxy
-slugs:
-  - forward-call-with-koa-js-dr
-  - forward-a-call-via-voice-proxy-with-koajs
 canonical: https://www.nexmo.com/blog/2019/02/05/forward-call-with-koa-js-dr
 redirect: https://www.nexmo.com/blog/2019/02/05/forward-call-with-koa-js-dr
 ---

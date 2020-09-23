@@ -16,9 +16,6 @@ old_categories:
 tags:
   - conversation-api
   - vuejs
-slugs:
-  - building-a-slack-clone-using-vue-js-part-1-dr
-  - building-a-slack-clone-using-vuejs-and8211-part-1
 canonical: https://www.nexmo.com/blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
 redirect: https://www.nexmo.com/blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
 ---

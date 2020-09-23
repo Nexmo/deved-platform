@@ -19,9 +19,6 @@ tags:
   - inbound-calls
   - python
   - voice-api
-slugs:
-  - handling-inbound-calls-with-python-dr
-  - handle-an-inbound-phone-call-with-python
 canonical: https://www.nexmo.com/blog/2019/03/28/handling-inbound-calls-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/03/28/handling-inbound-calls-with-python-dr
 ---

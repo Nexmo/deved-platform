@@ -19,9 +19,6 @@ tags:
   - python
   - twitter
   - voice
-slugs:
-  - twitter-interactive-voice-response-dr
-  - building-a-twitter-ivr-with-text-to-speech-and-the-nexmo-voice-api
 canonical: https://www.nexmo.com/blog/2018/06/26/twitter-interactive-voice-response-dr
 redirect: https://www.nexmo.com/blog/2018/06/26/twitter-interactive-voice-response-dr
 ---

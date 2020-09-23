@@ -18,9 +18,6 @@ tags:
   - audio
   - java
   - voice-call
-slugs:
-  - play-an-audio-file-into-a-voice-call-with-java-and-spark-dr
-  - play-an-audio-file-into-a-voice-call-with-java-and-spark
 canonical: https://www.nexmo.com/blog/2019/08/02/play-an-audio-file-into-a-voice-call-with-java-and-spark-dr
 redirect: https://www.nexmo.com/blog/2019/08/02/play-an-audio-file-into-a-voice-call-with-java-and-spark-dr
 ---

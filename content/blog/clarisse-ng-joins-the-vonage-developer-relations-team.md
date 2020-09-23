@@ -18,8 +18,6 @@ tags:
   - developer-community-manager
   - introduction
   - new-joiner
-slugs:
-  - clarisse-ng-joins-the-vonage-developer-relations-team
 canonical: https://www.nexmo.com/blog/2020/07/03/clarisse-ng-joins-the-vonage-developer-relations-team
 redirect: https://www.nexmo.com/blog/2020/07/03/clarisse-ng-joins-the-vonage-developer-relations-team
 ---

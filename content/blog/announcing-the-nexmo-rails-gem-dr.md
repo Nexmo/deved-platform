@@ -19,9 +19,6 @@ tags:
   - events
   - ruby
   - ruby-on-rails
-slugs:
-  - announcing-the-nexmo-rails-gem-dr
-  - announcing-the-nexmo-rails-gem
 canonical: https://www.nexmo.com/blog/2019/04/30/announcing-the-nexmo-rails-gem-dr
 redirect: https://www.nexmo.com/blog/2019/04/30/announcing-the-nexmo-rails-gem-dr
 ---

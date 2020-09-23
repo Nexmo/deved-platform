@@ -19,9 +19,6 @@ tags:
   - devrel
   - nexmo
   - nexmo-extend
-slugs:
-  - adam-culp-joins-the-nexmo-developer-relations-team-dr
-  - adam-culp-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/06/24/adam-culp-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/06/24/adam-culp-joins-the-nexmo-developer-relations-team-dr
 ---

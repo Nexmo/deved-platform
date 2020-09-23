@@ -19,9 +19,6 @@ tags:
   - messaging
   - mulesoft-anypoint
   - whatsapp
-slugs:
-  - nexmo-brings-whatsapp-business-solution-mulesoft
-  - nexmo-brings-whatsapp-business-solution-to-mulesoft
 canonical: https://www.nexmo.com/blog/2018/09/26/nexmo-brings-whatsapp-business-solution-mulesoft
 redirect: https://www.nexmo.com/blog/2018/09/26/nexmo-brings-whatsapp-business-solution-mulesoft
 ---

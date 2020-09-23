@@ -18,9 +18,6 @@ tags:
   - conversation-api
   - node-js
   - voice-api
-slugs:
-  - adding-voice-functionality-to-an-existing-chat-application-dr
-  - adding-voice-functionality-to-an-existing-chat-application
 canonical: https://www.nexmo.com/blog/2019/10/11/adding-voice-functionality-to-an-existing-chat-application-dr
 redirect: https://www.nexmo.com/blog/2019/10/11/adding-voice-functionality-to-an-existing-chat-application-dr
 ---

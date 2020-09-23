@@ -25,9 +25,6 @@ tags:
   - messages-api
   - node-js
   - sms
-slugs:
-  - break-awkward-silences-with-terrible-festive-jokes-via-sms-dr
-  - break-awkward-silences-with-terrible-festive-jokes-via-sms
 canonical: https://www.nexmo.com/blog/2018/12/18/break-awkward-silences-with-terrible-festive-jokes-via-sms-dr
 redirect: https://www.nexmo.com/blog/2018/12/18/break-awkward-silences-with-terrible-festive-jokes-via-sms-dr
 ---

@@ -22,8 +22,6 @@ tags:
   - online-event
   - remo
   - vonage-virtual-event-space
-slugs:
-  - supporting-communities-to-go-online
 canonical: https://www.nexmo.com/blog/2020/04/08/supporting-communities-to-go-online
 redirect: https://www.nexmo.com/blog/2020/04/08/supporting-communities-to-go-online
 ---

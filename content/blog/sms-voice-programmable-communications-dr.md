@@ -21,9 +21,6 @@ tags:
   - programmable-communications
   - sms
   - voice
-slugs:
-  - sms-voice-programmable-communications-dr
-  - getting-started-with-sms-and-voice-programmable-communications
 canonical: https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr
 redirect: https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr
 ---

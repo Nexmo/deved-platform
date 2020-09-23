@@ -20,9 +20,6 @@ tags:
   - javascript
   - sms
   - tutorial
-slugs:
-  - how-to-send-sms-from-a-spreadsheet-dr
-  - solving-kellyand8217s-dilemma-and8211-how-to-send-sms-from-a-spreadsheet
 canonical: https://www.nexmo.com/blog/2019/01/23/how-to-send-sms-from-a-spreadsheet-dr
 redirect: https://www.nexmo.com/blog/2019/01/23/how-to-send-sms-from-a-spreadsheet-dr
 ---

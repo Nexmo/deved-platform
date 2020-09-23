@@ -18,9 +18,6 @@ tags:
   - devrel
   - sms
   - zapier
-slugs:
-  - how-to-send-sms-reminders-of-google-calendar-events-with-zapier-dr
-  - how-to-send-sms-reminders-of-google-calendar-events-with-zapier
 canonical: https://www.nexmo.com/blog/2020/03/04/how-to-send-sms-reminders-of-google-calendar-events-with-zapier-dr
 redirect: https://www.nexmo.com/blog/2020/03/04/how-to-send-sms-reminders-of-google-calendar-events-with-zapier-dr
 ---

@@ -19,9 +19,6 @@ tags:
   - devrel
   - ruby
   - sdk
-slugs:
-  - nexmo-ruby-new-release-host-overriding-dr
-  - nexmo-ruby-v630-release-static-type-checking-and-host-overriding
 canonical: https://www.nexmo.com/blog/2020/02/26/nexmo-ruby-new-release-host-overriding-dr
 redirect: https://www.nexmo.com/blog/2020/02/26/nexmo-ruby-new-release-host-overriding-dr
 ---

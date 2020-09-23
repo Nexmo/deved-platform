@@ -21,9 +21,6 @@ tags:
   - node-js
   - security
   - two-factor-authentication
-slugs:
-  - how-to-add-two-factor-authentication-with-node-js-dr
-  - how-to-add-two-factor-authentication-with-nodejs-and-koajs
 canonical: https://www.nexmo.com/blog/2019/04/15/how-to-add-two-factor-authentication-with-node-js-dr
 redirect: https://www.nexmo.com/blog/2019/04/15/how-to-add-two-factor-authentication-with-node-js-dr
 ---

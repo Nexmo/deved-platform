@@ -18,9 +18,6 @@ tags:
   - ruby
   - sdk-updates
   - sdk-announcements
-slugs:
-  - nexmo-ruby-v7-0-0-release-dr
-  - nexmo-ruby-v700-release
 canonical: https://www.nexmo.com/blog/2020/04/06/nexmo-ruby-v7-0-0-release-dr
 redirect: https://www.nexmo.com/blog/2020/04/06/nexmo-ruby-v7-0-0-release-dr
 ---

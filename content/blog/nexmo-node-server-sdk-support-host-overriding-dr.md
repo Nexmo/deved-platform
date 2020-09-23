@@ -21,9 +21,6 @@ tags:
   - node
   - release
   - sdk
-slugs:
-  - nexmo-node-server-sdk-support-host-overriding-dr
-  - nexmoand8217s-nodejs-server-sdk-added-support-for-host-overriding
 canonical: https://www.nexmo.com/blog/2020/01/17/nexmo-node-server-sdk-support-host-overriding-dr
 redirect: https://www.nexmo.com/blog/2020/01/17/nexmo-node-server-sdk-support-host-overriding-dr
 ---

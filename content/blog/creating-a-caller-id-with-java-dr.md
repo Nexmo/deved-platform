@@ -25,9 +25,6 @@ tags:
   - number-insight
   - sparkjava
   - tutorial
-slugs:
-  - creating-a-caller-id-with-java-dr
-  - creating-a-caller-id-with-number-insight-and-java
 canonical: https://www.nexmo.com/blog/2018/09/04/creating-a-caller-id-with-java-dr
 redirect: https://www.nexmo.com/blog/2018/09/04/creating-a-caller-id-with-java-dr
 ---

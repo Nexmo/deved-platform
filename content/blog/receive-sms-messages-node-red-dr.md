@@ -22,9 +22,6 @@ tags:
   - node-js
   - nodered
   - receiving-sms
-slugs:
-  - receive-sms-messages-node-red-dr
-  - how-to-receive-sms-messages-with-node-red
 canonical: https://www.nexmo.com/blog/2019/04/24/receive-sms-messages-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/04/24/receive-sms-messages-node-red-dr
 ---

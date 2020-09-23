@@ -21,9 +21,6 @@ tags:
   - artificial-intelligence
   - bots
   - chatbots
-slugs:
-  - ai-bot-platform
-  - bots-and-ai-what-is-a-bot-platform-exactly
 canonical: https://www.nexmo.com/blog/2017/10/05/ai-bot-platform
 redirect: https://www.nexmo.com/blog/2017/10/05/ai-bot-platform
 ---

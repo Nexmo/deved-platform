@@ -15,8 +15,6 @@ old_categories:
   - developer
 tags:
   - vonage-voyagers
-slugs:
-  - introducing-the-vonage-voyagers-developer-champions-program
 canonical: https://www.nexmo.com/blog/2020/07/15/introducing-the-vonage-voyagers-developer-champions-program
 redirect: https://www.nexmo.com/blog/2020/07/15/introducing-the-vonage-voyagers-developer-champions-program
 ---

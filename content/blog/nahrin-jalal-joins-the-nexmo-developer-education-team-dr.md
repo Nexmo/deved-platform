@@ -17,9 +17,6 @@ tags:
   - dev-rel
   - devrel
   - nexmo
-slugs:
-  - nahrin-jalal-joins-the-nexmo-developer-education-team-dr
-  - nahrin-jalal-joins-the-nexmo-developer-education-team
 canonical: https://www.nexmo.com/blog/2020/01/16/nahrin-jalal-joins-the-nexmo-developer-education-team-dr
 redirect: https://www.nexmo.com/blog/2020/01/16/nahrin-jalal-joins-the-nexmo-developer-education-team-dr
 ---

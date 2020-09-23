@@ -25,9 +25,6 @@ tags:
   - pbx
   - talk
   - voice-api
-slugs:
-  - interactive-voice-response-node-red-dr
-  - how-to-build-an-ivr-using-node-red-and-the-nexmo-apis
 canonical: https://www.nexmo.com/blog/2020/01/08/interactive-voice-response-node-red-dr
 redirect: https://www.nexmo.com/blog/2020/01/08/interactive-voice-response-node-red-dr
 ---

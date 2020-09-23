@@ -23,9 +23,6 @@ tags:
   - javascript
   - nodejs
   - sms
-slugs:
-  - how-to-send-and-receive-sms-messages-with-node-js-and-express-dr
-  - how-to-send-and-receive-sms-messages-with-nodejs-and-express
 canonical: https://www.nexmo.com/blog/2019/09/16/how-to-send-and-receive-sms-messages-with-node-js-and-express-dr
 redirect: https://www.nexmo.com/blog/2019/09/16/how-to-send-and-receive-sms-messages-with-node-js-and-express-dr
 ---

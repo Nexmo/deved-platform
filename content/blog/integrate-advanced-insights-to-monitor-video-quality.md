@@ -20,8 +20,6 @@ tags:
   - graphql
   - insights-api
   - video
-slugs:
-  - integrate-advanced-insights-to-monitor-video-quality
 canonical: https://www.nexmo.com/blog/2020/06/30/integrate-advanced-insights-to-monitor-video-quality
 redirect: https://www.nexmo.com/blog/2020/06/30/integrate-advanced-insights-to-monitor-video-quality
 ---

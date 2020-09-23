@@ -21,9 +21,6 @@ tags:
   - java
   - voice
   - voice-api
-slugs:
-  - full-voice-api-support-coming-nexmo-java-client-v2-0-dr
-  - full-voice-api-support-coming-in-nexmo-java-client-v20
 canonical: https://www.nexmo.com/blog/2017/02/06/full-voice-api-support-coming-nexmo-java-client-v2-0-dr
 redirect: https://www.nexmo.com/blog/2017/02/06/full-voice-api-support-coming-nexmo-java-client-v2-0-dr
 ---

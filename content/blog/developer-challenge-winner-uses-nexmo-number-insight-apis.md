@@ -21,8 +21,6 @@ tags:
   - developer
   - developer-challenge
   - number-insight
-slugs:
-  - developer-challenge-winner-uses-nexmo-number-insight-apis
 canonical: https://www.nexmo.com/blog/2015/08/14/developer-challenge-winner-uses-nexmo-number-insight-apis
 redirect: https://www.nexmo.com/blog/2015/08/14/developer-challenge-winner-uses-nexmo-number-insight-apis
 ---

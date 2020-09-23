@@ -21,9 +21,6 @@ tags:
   - java
   - sms
   - x-with-y
-slugs:
-  - send-sms-messages-with-java-dr
-  - how-to-send-sms-messages-with-java
 canonical: https://www.nexmo.com/blog/2017/05/03/send-sms-messages-with-java-dr
 redirect: https://www.nexmo.com/blog/2017/05/03/send-sms-messages-with-java-dr
 ---

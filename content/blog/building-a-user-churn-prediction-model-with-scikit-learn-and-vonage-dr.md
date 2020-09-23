@@ -24,9 +24,6 @@ tags:
   - ml
   - prediction
   - user-churn
-slugs:
-  - building-a-user-churn-prediction-model-with-scikit-learn-and-vonage-dr
-  - building-a-user-churn-prediction-model-with-scikit-learn-and-vonage
 canonical: https://www.nexmo.com/blog/2020/04/27/building-a-user-churn-prediction-model-with-scikit-learn-and-vonage-dr
 redirect: https://www.nexmo.com/blog/2020/04/27/building-a-user-churn-prediction-model-with-scikit-learn-and-vonage-dr
 ---

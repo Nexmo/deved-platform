@@ -21,9 +21,6 @@ tags:
   - nodejs
   - voice-api
   - x-with-y
-slugs:
-  - handle-inbound-text-speech-phone-call-node-js-dr
-  - how-to-handle-inbound-phone-calls-with-nodejs
 canonical: https://www.nexmo.com/blog/2017/01/26/handle-inbound-text-speech-phone-call-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/01/26/handle-inbound-text-speech-phone-call-node-js-dr
 ---

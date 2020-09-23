@@ -16,9 +16,6 @@ old_categories:
   - developer
   - developers
 tags: []
-slugs:
-  - welcome-newest-developer-advocate-nexmo-devrel-team-chris-guzman-dr
-  - welcoming-the-newest-developer-advocate-to-the-nexmo-devrel-team-chris-guzman
 canonical: https://www.nexmo.com/blog/2016/12/05/welcome-newest-developer-advocate-nexmo-devrel-team-chris-guzman-dr
 redirect: https://www.nexmo.com/blog/2016/12/05/welcome-newest-developer-advocate-nexmo-devrel-team-chris-guzman-dr
 ---

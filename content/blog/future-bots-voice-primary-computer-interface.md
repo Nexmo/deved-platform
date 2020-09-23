@@ -20,9 +20,6 @@ tags:
   - artificial-intelligence
   - bots
   - voice-bots
-slugs:
-  - future-bots-voice-primary-computer-interface
-  - the-future-of-bots-voice-as-the-primary-computer-interface
 canonical: https://www.nexmo.com/blog/2017/11/30/future-bots-voice-primary-computer-interface
 redirect: https://www.nexmo.com/blog/2017/11/30/future-bots-voice-primary-computer-interface
 ---

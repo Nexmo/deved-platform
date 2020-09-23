@@ -19,9 +19,6 @@ tags:
   - asp-net
   - number-insight
   - tutorial
-slugs:
-  - getting-started-with-nexmo-number-insight-apis-and-asp-net-dr
-  - getting-started-with-nexmo-number-insight-apis-and-aspnet
 canonical: https://www.nexmo.com/blog/2018/05/22/getting-started-with-nexmo-number-insight-apis-and-asp-net-dr
 redirect: https://www.nexmo.com/blog/2018/05/22/getting-started-with-nexmo-number-insight-apis-and-asp-net-dr
 ---

@@ -20,9 +20,6 @@ tags:
   - javascript
   - live-video
   - video-api
-slugs:
-  - broadcast-video-chat-with-javascript-and-vonage-dr
-  - broadcast-video-chat-with-javascript-and-vonage
 canonical: https://www.nexmo.com/blog/2020/05/14/broadcast-video-chat-with-javascript-and-vonage-dr
 redirect: https://www.nexmo.com/blog/2020/05/14/broadcast-video-chat-with-javascript-and-vonage-dr
 ---

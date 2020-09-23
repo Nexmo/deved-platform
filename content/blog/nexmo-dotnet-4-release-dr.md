@@ -19,9 +19,6 @@ tags:
   - c
   - csharp
   - nexmo
-slugs:
-  - nexmo-dotnet-4-release-dr
-  - nexmo-net-client-sdk-v400-is-now-ready-for-installs
 canonical: https://www.nexmo.com/blog/2019/06/25/nexmo-dotnet-4-release-dr
 redirect: https://www.nexmo.com/blog/2019/06/25/nexmo-dotnet-4-release-dr
 ---

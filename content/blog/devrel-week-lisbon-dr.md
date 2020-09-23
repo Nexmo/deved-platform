@@ -16,9 +16,6 @@ old_categories:
   - events
 tags:
   - developer-relations
-slugs:
-  - devrel-week-lisbon-dr
-  - devrel-week-in-lisbon
 canonical: https://www.nexmo.com/blog/2018/02/02/devrel-week-lisbon-dr
 redirect: https://www.nexmo.com/blog/2018/02/02/devrel-week-lisbon-dr
 ---

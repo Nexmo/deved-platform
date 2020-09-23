@@ -23,9 +23,6 @@ tags:
   - swift
   - user-authentication
   - x-with-y
-slugs:
-  - adding-phone-sms-tts-biometric-verification-ios-application-dr
-  - adding-phone-smstts-and-biometric-verification-to-your-ios-application
 canonical: https://www.nexmo.com/blog/2017/01/18/adding-phone-sms-tts-biometric-verification-ios-application-dr
 redirect: https://www.nexmo.com/blog/2017/01/18/adding-phone-sms-tts-biometric-verification-ios-application-dr
 ---

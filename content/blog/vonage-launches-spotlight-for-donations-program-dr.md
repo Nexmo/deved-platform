@@ -20,9 +20,6 @@ tags:
   - donations
   - spotlight
   - write
-slugs:
-  - vonage-launches-spotlight-for-donations-program-dr
-  - vonage-launches-spotlight-for-donations-program
 canonical: https://www.nexmo.com/blog/2019/09/04/vonage-launches-spotlight-for-donations-program-dr
 redirect: https://www.nexmo.com/blog/2019/09/04/vonage-launches-spotlight-for-donations-program-dr
 ---

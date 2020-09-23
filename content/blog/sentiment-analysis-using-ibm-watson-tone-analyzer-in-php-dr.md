@@ -24,9 +24,6 @@ tags:
   - sms
   - tone-analysis
   - tutorial
-slugs:
-  - sentiment-analysis-using-ibm-watson-tone-analyzer-in-php-dr
-  - sentiment-analysis-using-ibm-watson-tone-analyzer-in-php
 canonical: https://www.nexmo.com/blog/2020/01/13/sentiment-analysis-using-ibm-watson-tone-analyzer-in-php-dr
 redirect: https://www.nexmo.com/blog/2020/01/13/sentiment-analysis-using-ibm-watson-tone-analyzer-in-php-dr
 ---

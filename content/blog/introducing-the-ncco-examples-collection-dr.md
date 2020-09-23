@@ -18,9 +18,6 @@ tags:
   - examples
   - ncco
   - voice-api
-slugs:
-  - introducing-the-ncco-examples-collection-dr
-  - introducing-the-ncco-examples-collection
 canonical: https://www.nexmo.com/blog/2019/10/25/introducing-the-ncco-examples-collection-dr
 redirect: https://www.nexmo.com/blog/2019/10/25/introducing-the-ncco-examples-collection-dr
 ---

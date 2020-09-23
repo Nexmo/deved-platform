@@ -18,8 +18,6 @@ tags:
   - node-js
   - speech-recognition
   - voice-api
-slugs:
-  - introducing-voice-api-speech-recognition
 canonical: https://www.nexmo.com/blog/2020/06/02/introducing-voice-api-speech-recognition
 redirect: https://www.nexmo.com/blog/2020/06/02/introducing-voice-api-speech-recognition
 ---

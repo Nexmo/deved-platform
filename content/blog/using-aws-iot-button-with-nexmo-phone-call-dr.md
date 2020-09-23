@@ -18,9 +18,6 @@ old_categories:
   - tutorial
   - voice
 tags: []
-slugs:
-  - using-aws-iot-button-with-nexmo-phone-call-dr
-  - using-aws-iot-button-and-nexmo-to-make-a-phone-call
 canonical: https://www.nexmo.com/blog/2017/06/14/using-aws-iot-button-with-nexmo-phone-call-dr
 redirect: https://www.nexmo.com/blog/2017/06/14/using-aws-iot-button-with-nexmo-phone-call-dr
 ---

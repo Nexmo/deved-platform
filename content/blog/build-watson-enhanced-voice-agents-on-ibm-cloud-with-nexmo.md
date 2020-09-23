@@ -22,8 +22,6 @@ tags:
   - ibm-watson
   - iva
   - vapi
-slugs:
-  - build-watson-enhanced-voice-agents-on-ibm-cloud-with-nexmo
 canonical: https://www.nexmo.com/blog/2019/02/25/build-watson-enhanced-voice-agents-on-ibm-cloud-with-nexmo
 redirect: https://www.nexmo.com/blog/2019/02/25/build-watson-enhanced-voice-agents-on-ibm-cloud-with-nexmo
 ---

@@ -22,8 +22,6 @@ tags:
   - php
   - sms
   - voice
-slugs:
-  - building-a-phone-powered-photo-booth-with-nexmos-voice-and-sms-apis
 canonical: https://www.nexmo.com/blog/2015/09/01/building-a-phone-powered-photo-booth-with-nexmos-voice-and-sms-apis
 redirect: https://www.nexmo.com/blog/2015/09/01/building-a-phone-powered-photo-booth-with-nexmos-voice-and-sms-apis
 ---

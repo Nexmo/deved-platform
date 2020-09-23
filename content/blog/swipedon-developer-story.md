@@ -19,8 +19,6 @@ tags:
   - api
   - customer-experience
   - sms
-slugs:
-  - swipedon-developer-story
 canonical: https://www.nexmo.com/blog/2018/07/12/swipedon-developer-story
 redirect: https://www.nexmo.com/blog/2018/07/12/swipedon-developer-story
 ---

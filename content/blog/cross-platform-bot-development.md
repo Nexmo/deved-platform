@@ -20,9 +20,6 @@ old_categories:
 tags:
   - chatbots
   - voice-bots
-slugs:
-  - cross-platform-bot-development
-  - bots-and-ai-the-promise-and-challenge-of-cross-platform-bot-development
 canonical: https://www.nexmo.com/blog/2017/10/13/cross-platform-bot-development
 redirect: https://www.nexmo.com/blog/2017/10/13/cross-platform-bot-development
 ---

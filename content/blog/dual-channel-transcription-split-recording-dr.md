@@ -18,9 +18,6 @@ old_categories:
 tags:
   - call-recording
   - transcription
-slugs:
-  - dual-channel-transcription-split-recording-dr
-  - dual-channel-transcription-with-split-recording
 canonical: https://www.nexmo.com/blog/2018/04/17/dual-channel-transcription-split-recording-dr
 redirect: https://www.nexmo.com/blog/2018/04/17/dual-channel-transcription-split-recording-dr
 ---

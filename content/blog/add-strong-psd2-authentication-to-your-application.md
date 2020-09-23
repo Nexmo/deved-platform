@@ -21,8 +21,6 @@ tags:
   - psd2
   - security
   - verify
-slugs:
-  - add-strong-psd2-authentication-to-your-application
 canonical: https://www.nexmo.com/blog/2020/06/23/add-strong-psd2-authentication-to-your-application
 redirect: https://www.nexmo.com/blog/2020/06/23/add-strong-psd2-authentication-to-your-application
 ---

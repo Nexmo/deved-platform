@@ -20,9 +20,6 @@ tags:
   - sinatra
   - voice
   - voice-api
-slugs:
-  - play-streaming-audio-to-a-call-with-ruby-dr
-  - play-streaming-audio-to-a-phone-call-with-ruby
 canonical: https://www.nexmo.com/blog/2019/01/24/play-streaming-audio-to-a-call-with-ruby-dr
 redirect: https://www.nexmo.com/blog/2019/01/24/play-streaming-audio-to-a-call-with-ruby-dr
 ---

@@ -18,9 +18,6 @@ tags:
   - ibm-watson
   - sms
   - translate
-slugs:
-  - translate-sms-messages-with-ibm-watson-dr
-  - translate-sms-messages-with-ibm-watson-and-vonage
 canonical: https://www.nexmo.com/blog/2019/11/12/translate-sms-messages-with-ibm-watson-dr
 redirect: https://www.nexmo.com/blog/2019/11/12/translate-sms-messages-with-ibm-watson-dr
 ---

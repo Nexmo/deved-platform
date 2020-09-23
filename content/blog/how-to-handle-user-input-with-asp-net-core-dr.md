@@ -21,9 +21,6 @@ tags:
   - dtmf
   - nancyfx
   - voice-api
-slugs:
-  - how-to-handle-user-input-with-asp-net-core-dr
-  - how-to-handle-user-input-with-aspnet-core
 canonical: https://www.nexmo.com/blog/2019/01/10/how-to-handle-user-input-with-asp-net-core-dr
 redirect: https://www.nexmo.com/blog/2019/01/10/how-to-handle-user-input-with-asp-net-core-dr
 ---

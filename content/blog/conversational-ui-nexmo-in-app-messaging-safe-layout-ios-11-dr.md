@@ -19,9 +19,6 @@ tags:
   - devrel
   - ios
   - tutorial
-slugs:
-  - conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
-  - build-a-conversational-ui-with-nexmo-in-app-messaging-and-safe-layout-for-ios-11
 canonical: https://www.nexmo.com/blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
 redirect: https://www.nexmo.com/blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
 ---

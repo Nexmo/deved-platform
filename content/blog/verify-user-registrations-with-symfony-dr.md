@@ -19,9 +19,6 @@ tags:
   - symfony
   - symfony-5
   - verify-api
-slugs:
-  - verify-user-registrations-with-symfony-dr
-  - verify-user-registrations-with-symfony
 canonical: https://www.nexmo.com/blog/2020/04/20/verify-user-registrations-with-symfony-dr
 redirect: https://www.nexmo.com/blog/2020/04/20/verify-user-registrations-with-symfony-dr
 ---

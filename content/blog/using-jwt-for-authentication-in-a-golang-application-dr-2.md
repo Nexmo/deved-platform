@@ -15,9 +15,6 @@ tags:
   - go
   - jwt
   - messages-api
-slugs:
-  - using-jwt-for-authentication-in-a-golang-application-dr-2
-  - golang-jwt
 canonical: https://www.nexmo.com/blog/2020/09/07/using-jwt-for-authentication-in-a-golang-application-dr-2
 redirect: https://www.nexmo.com/blog/2020/09/07/using-jwt-for-authentication-in-a-golang-application-dr-2
 ---

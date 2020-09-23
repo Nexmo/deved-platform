@@ -22,9 +22,6 @@ tags:
   - notifications
   - sms
   - stripe
-slugs:
-  - stripe-sms-laravel-dotun
-  - stripe-sms-notifications-using-laravel-and-nexmo
 canonical: https://www.nexmo.com/blog/2019/04/11/stripe-sms-laravel-dotun
 redirect: https://www.nexmo.com/blog/2019/04/11/stripe-sms-laravel-dotun
 ---

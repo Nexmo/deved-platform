@@ -18,9 +18,6 @@ tags:
   - community
   - developer-relations
   - devrel
-slugs:
-  - developer-relations-at-nexmo
-  - hello-world-from-the-growing-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2016/05/03/developer-relations-at-nexmo
 redirect: https://www.nexmo.com/blog/2016/05/03/developer-relations-at-nexmo
 ---

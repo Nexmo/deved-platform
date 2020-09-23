@@ -18,9 +18,6 @@ old_categories:
 tags:
   - alexa
   - voice-bots
-slugs:
-  - bots-ai-mastering-invocation-names-alexa-skills
-  - bots-and-ai-mastering-invocation-names-for-alexa-skills
 canonical: https://www.nexmo.com/blog/2017/11/02/bots-ai-mastering-invocation-names-alexa-skills
 redirect: https://www.nexmo.com/blog/2017/11/02/bots-ai-mastering-invocation-names-alexa-skills
 ---

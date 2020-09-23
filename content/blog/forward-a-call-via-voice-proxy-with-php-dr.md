@@ -16,9 +16,6 @@ old_categories:
   - tutorial
   - voice
 tags: []
-slugs:
-  - forward-a-call-via-voice-proxy-with-php-dr
-  - forward-a-call-via-voice-proxy-with-php
 canonical: https://www.nexmo.com/blog/2019/05/15/forward-a-call-via-voice-proxy-with-php-dr
 redirect: https://www.nexmo.com/blog/2019/05/15/forward-a-call-via-voice-proxy-with-php-dr
 ---

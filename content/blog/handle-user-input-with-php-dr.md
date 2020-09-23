@@ -19,9 +19,6 @@ tags:
   - inbound-call
   - input
   - php
-slugs:
-  - handle-user-input-with-php-dr
-  - handle-keypad-input-dtmf-with-php
 canonical: https://www.nexmo.com/blog/2018/08/10/handle-user-input-with-php-dr
 redirect: https://www.nexmo.com/blog/2018/08/10/handle-user-input-with-php-dr
 ---

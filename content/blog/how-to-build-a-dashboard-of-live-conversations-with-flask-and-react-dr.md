@@ -17,9 +17,6 @@ old_categories:
   - product
 tags:
   - conversation-api
-slugs:
-  - how-to-build-a-dashboard-of-live-conversations-with-flask-and-react-dr
-  - how-to-build-a-dashboard-of-live-conversations-with-flask-and-react
 canonical: https://www.nexmo.com/blog/2019/09/24/how-to-build-a-dashboard-of-live-conversations-with-flask-and-react-dr
 redirect: https://www.nexmo.com/blog/2019/09/24/how-to-build-a-dashboard-of-live-conversations-with-flask-and-react-dr
 ---

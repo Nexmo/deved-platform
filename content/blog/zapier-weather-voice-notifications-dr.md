@@ -22,9 +22,6 @@ tags:
   - sms
   - voice
   - zapier
-slugs:
-  - zapier-weather-voice-notifications-dr
-  - get-a-and8220beautiful-morning-weatherand8221-alert-with-zapier-and-vonage
 canonical: https://www.nexmo.com/blog/2020/07/13/zapier-weather-voice-notifications-dr
 redirect: https://www.nexmo.com/blog/2020/07/13/zapier-weather-voice-notifications-dr
 ---

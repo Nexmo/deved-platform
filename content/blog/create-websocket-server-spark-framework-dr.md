@@ -18,9 +18,6 @@ tags:
   - java
   - sparkjava
   - websocket
-slugs:
-  - create-websocket-server-spark-framework-dr
-  - creating-a-websocket-server-with-the-spark-framework
 canonical: https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr
 redirect: https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr
 ---

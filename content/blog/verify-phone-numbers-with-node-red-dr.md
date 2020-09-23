@@ -20,9 +20,6 @@ tags:
   - phone-number-authentication
   - two-factor-authentication
   - verify
-slugs:
-  - verify-phone-numbers-with-node-red-dr
-  - verify-phone-numbers-with-node-red
 canonical: https://www.nexmo.com/blog/2019/09/25/verify-phone-numbers-with-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/09/25/verify-phone-numbers-with-node-red-dr
 ---

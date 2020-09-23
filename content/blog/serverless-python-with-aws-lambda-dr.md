@@ -21,9 +21,6 @@ tags:
   - python
   - serverless
   - tutorial
-slugs:
-  - serverless-python-with-aws-lambda-dr
-  - serverless-python-with-aws-lambda
 canonical: https://www.nexmo.com/blog/2020/03/20/serverless-python-with-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2020/03/20/serverless-python-with-aws-lambda-dr
 ---

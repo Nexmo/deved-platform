@@ -18,9 +18,6 @@ old_categories:
 tags:
   - asp-net-core-mvc
   - sms
-slugs:
-  - how-to-send-an-sms-with-asp-net-core-mvc
-  - how-to-send-an-sms-with-aspnet-core-mvc
 canonical: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
 redirect: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
 ---

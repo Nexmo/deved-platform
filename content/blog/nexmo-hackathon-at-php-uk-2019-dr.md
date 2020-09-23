@@ -18,9 +18,6 @@ tags:
   - hackathon
   - php
   - phpuk19
-slugs:
-  - nexmo-hackathon-at-php-uk-2019-dr
-  - nexmo-hackathon-at-php-uk-2019
 canonical: https://www.nexmo.com/blog/2019/03/07/nexmo-hackathon-at-php-uk-2019-dr
 redirect: https://www.nexmo.com/blog/2019/03/07/nexmo-hackathon-at-php-uk-2019-dr
 ---

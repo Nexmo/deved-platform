@@ -22,9 +22,6 @@ tags:
   - devops
   - php
   - serverless
-slugs:
-  - aws-lambda-with-php-using-bref-and-serverless-framework-dr
-  - aws-lambda-with-php-using-bref-and-serverless-framework
 canonical: https://www.nexmo.com/blog/2020/03/16/aws-lambda-with-php-using-bref-and-serverless-framework-dr
 redirect: https://www.nexmo.com/blog/2020/03/16/aws-lambda-with-php-using-bref-and-serverless-framework-dr
 ---

@@ -22,9 +22,6 @@ tags:
   - javascript
   - nodejs
   - notifications
-slugs:
-  - building-interactive-delivery-notifications-system-using-expressjs-dr
-  - building-an-interactive-sms-delivery-notifications-system-using-expressjs
 canonical: https://www.nexmo.com/blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr
 redirect: https://www.nexmo.com/blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr
 ---

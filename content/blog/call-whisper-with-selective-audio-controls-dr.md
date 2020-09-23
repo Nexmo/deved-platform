@@ -20,9 +20,6 @@ tags:
   - call-centers
   - customer-experience
   - voice-api
-slugs:
-  - call-whisper-with-selective-audio-controls-dr
-  - call-whisper-with-selective-audio-controls
 canonical: https://www.nexmo.com/blog/2018/12/13/call-whisper-with-selective-audio-controls-dr
 redirect: https://www.nexmo.com/blog/2018/12/13/call-whisper-with-selective-audio-controls-dr
 ---

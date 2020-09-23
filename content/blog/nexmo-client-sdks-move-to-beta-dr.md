@@ -23,9 +23,6 @@ tags:
   - conversation-api
   - omnichannel-communications
   - programmable-conversations
-slugs:
-  - nexmo-client-sdks-move-to-beta-dr
-  - nexmo-client-sdks-move-to-beta
 canonical: https://www.nexmo.com/blog/2019/09/19/nexmo-client-sdks-move-to-beta-dr
 redirect: https://www.nexmo.com/blog/2019/09/19/nexmo-client-sdks-move-to-beta-dr
 ---

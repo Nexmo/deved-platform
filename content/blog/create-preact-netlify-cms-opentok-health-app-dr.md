@@ -23,9 +23,6 @@ tags:
   - preact
   - react
   - video
-slugs:
-  - create-preact-netlify-cms-opentok-health-app-dr
-  - build-a-health-blog-with-video-coaching-using-preactjs-and-vonage
 canonical: https://www.nexmo.com/blog/2020/02/28/create-preact-netlify-cms-opentok-health-app-dr
 redirect: https://www.nexmo.com/blog/2020/02/28/create-preact-netlify-cms-opentok-health-app-dr
 ---

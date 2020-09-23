@@ -24,9 +24,6 @@ tags:
   - tutorial
   - voice-api
   - voice-call
-slugs:
-  - make-text-to-speech-phone-calls-node-red-dr
-  - how-to-make-text-to-speech-phone-calls-with-node-red
 canonical: https://www.nexmo.com/blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
 ---

@@ -16,8 +16,6 @@ old_categories:
   - developers
   - events
 tags: []
-slugs:
-  - memories-of-confoo
 canonical: https://www.nexmo.com/blog/2015/02/26/memories-of-confoo
 redirect: https://www.nexmo.com/blog/2015/02/26/memories-of-confoo
 ---

@@ -20,9 +20,6 @@ tags:
   - computer-vision
   - machinelearning
   - opencv
-slugs:
-  - real-time-face-detection-in-net-with-opentok-and-opencv-dr
-  - real-time-face-detection-in-net-with-opentok-and-opencv
 canonical: https://www.nexmo.com/blog/2020/03/18/real-time-face-detection-in-net-with-opentok-and-opencv-dr
 redirect: https://www.nexmo.com/blog/2020/03/18/real-time-face-detection-in-net-with-opentok-and-opencv-dr
 ---

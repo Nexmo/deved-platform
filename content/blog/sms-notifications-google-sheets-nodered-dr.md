@@ -20,9 +20,6 @@ tags:
   - node-red
   - nodered
   - sms
-slugs:
-  - sms-notifications-google-sheets-nodered-dr
-  - sending-group-notifications-with-google-sheets-and-node-red
 canonical: https://www.nexmo.com/blog/2020/03/06/sms-notifications-google-sheets-nodered-dr
 redirect: https://www.nexmo.com/blog/2020/03/06/sms-notifications-google-sheets-nodered-dr
 ---

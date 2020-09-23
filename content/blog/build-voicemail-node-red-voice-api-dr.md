@@ -23,9 +23,6 @@ tags:
   - record-call
   - recorded-message
   - voicemail
-slugs:
-  - build-voicemail-node-red-voice-api-dr
-  - build-your-own-voicemail-with-node-red-and-the-nexmo-voice-api
 canonical: https://www.nexmo.com/blog/2019/11/14/build-voicemail-node-red-voice-api-dr
 redirect: https://www.nexmo.com/blog/2019/11/14/build-voicemail-node-red-voice-api-dr
 ---

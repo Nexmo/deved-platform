@@ -24,9 +24,6 @@ tags:
   - scavenger-hunt
   - sms
   - voice
-slugs:
-  - how-to-create-an-interactive-scavenger-hunt-with-nexmos-sms-and-voice-api-dr
-  - how-to-create-an-interactive-scavenger-hunt-with-nexmoand8217s-sms-and-voice-api
 canonical: https://www.nexmo.com/blog/2019/08/14/how-to-create-an-interactive-scavenger-hunt-with-nexmos-sms-and-voice-api-dr
 redirect: https://www.nexmo.com/blog/2019/08/14/how-to-create-an-interactive-scavenger-hunt-with-nexmos-sms-and-voice-api-dr
 ---

@@ -20,9 +20,6 @@ old_categories:
   - verify
   - voice
 tags: []
-slugs:
-  - announcing-v1-0-0-nexmo-php-client-dr
-  - announcing-v100-of-the-nexmo-php-client-library
 canonical: https://www.nexmo.com/blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
 redirect: https://www.nexmo.com/blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
 ---

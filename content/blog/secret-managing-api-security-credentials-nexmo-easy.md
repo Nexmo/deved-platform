@@ -20,9 +20,6 @@ tags:
   - secret-management-api
   - secret-rotation
   - security
-slugs:
-  - secret-managing-api-security-credentials-nexmo-easy
-  - its-no-secret-managing-api-security-credentials-with-nexmo-is-easy
 canonical: https://www.nexmo.com/blog/2018/10/05/secret-managing-api-security-credentials-nexmo-easy
 redirect: https://www.nexmo.com/blog/2018/10/05/secret-managing-api-security-credentials-nexmo-easy
 ---

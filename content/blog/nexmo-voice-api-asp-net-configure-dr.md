@@ -22,9 +22,6 @@ tags:
   - nexmo-api-platform
   - text-to-speech
   - voice-api
-slugs:
-  - nexmo-voice-api-asp-net-configure-dr
-  - nexmo-voice-api-with-aspnet-before-you-start
 canonical: https://www.nexmo.com/blog/2017/07/28/nexmo-voice-api-asp-net-configure-dr
 redirect: https://www.nexmo.com/blog/2017/07/28/nexmo-voice-api-asp-net-configure-dr
 ---

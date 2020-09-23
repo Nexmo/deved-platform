@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - dev-rel
-slugs:
-  - luke-oliff-joins-the-nexmo-developer-relations-team-dr
-  - luke-oliff-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/02/03/luke-oliff-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/02/03/luke-oliff-joins-the-nexmo-developer-relations-team-dr
 ---

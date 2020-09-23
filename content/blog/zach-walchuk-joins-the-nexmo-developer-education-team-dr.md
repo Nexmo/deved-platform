@@ -14,9 +14,6 @@ category: tutorial
 old_categories:
   - developer
 tags: []
-slugs:
-  - zach-walchuk-joins-the-nexmo-developer-education-team-dr
-  - zach-walchuk-joins-the-nexmo-developer-education-team
 canonical: https://www.nexmo.com/blog/2019/12/13/zach-walchuk-joins-the-nexmo-developer-education-team-dr
 redirect: https://www.nexmo.com/blog/2019/12/13/zach-walchuk-joins-the-nexmo-developer-education-team-dr
 ---

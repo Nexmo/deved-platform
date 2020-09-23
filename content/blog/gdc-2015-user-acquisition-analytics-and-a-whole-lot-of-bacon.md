@@ -15,8 +15,6 @@ old_categories:
   - developers
   - events
 tags: []
-slugs:
-  - gdc-2015-user-acquisition-analytics-and-a-whole-lot-of-bacon
 canonical: https://www.nexmo.com/blog/2015/03/11/gdc-2015-user-acquisition-analytics-and-a-whole-lot-of-bacon
 redirect: https://www.nexmo.com/blog/2015/03/11/gdc-2015-user-acquisition-analytics-and-a-whole-lot-of-bacon
 ---

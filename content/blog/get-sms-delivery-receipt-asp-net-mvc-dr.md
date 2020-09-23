@@ -21,9 +21,6 @@ tags:
   - asp-net-mvc
   - sms
   - x-with-y
-slugs:
-  - get-sms-delivery-receipt-asp-net-mvc-dr
-  - how-to-get-an-sms-delivery-receipt-in-asp-net-mvc
 canonical: https://www.nexmo.com/blog/2017/07/21/get-sms-delivery-receipt-asp-net-mvc-dr
 redirect: https://www.nexmo.com/blog/2017/07/21/get-sms-delivery-receipt-asp-net-mvc-dr
 ---

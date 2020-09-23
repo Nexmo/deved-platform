@@ -21,9 +21,6 @@ old_categories:
 tags:
   - hackathon
   - techcrunch-disrupt
-slugs:
-  - techcrunch-disrupt-hackathon-focus-rescue
-  - techcrunch-disrupt-hackathon-100-hacks-1-focus-on-rescue
 canonical: https://www.nexmo.com/blog/2017/10/12/techcrunch-disrupt-hackathon-focus-rescue
 redirect: https://www.nexmo.com/blog/2017/10/12/techcrunch-disrupt-hackathon-focus-rescue
 ---

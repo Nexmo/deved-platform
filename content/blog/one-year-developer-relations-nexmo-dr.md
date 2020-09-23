@@ -19,9 +19,6 @@ tags:
   - developer-experience
   - devex
   - devrel
-slugs:
-  - one-year-developer-relations-nexmo-dr
-  - one-year-of-developer-relations-at-nexmo
 canonical: https://www.nexmo.com/blog/2017/03/14/one-year-developer-relations-nexmo-dr
 redirect: https://www.nexmo.com/blog/2017/03/14/one-year-developer-relations-nexmo-dr
 ---

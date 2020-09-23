@@ -22,9 +22,6 @@ tags:
   - sip
   - tokbox
   - voice-api
-slugs:
-  - connecting-webrtc-and-pstn-with-opentok-and-nexmo-dr
-  - connecting-webrtc-and-pstn-with-opentok-and-nexmo
 canonical: https://www.nexmo.com/blog/2019/04/23/connecting-webrtc-and-pstn-with-opentok-and-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/04/23/connecting-webrtc-and-pstn-with-opentok-and-nexmo-dr
 ---

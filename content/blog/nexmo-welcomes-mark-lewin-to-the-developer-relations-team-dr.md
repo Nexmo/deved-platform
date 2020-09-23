@@ -14,9 +14,6 @@ old_categories:
   - developer
 tags:
   - devrel
-slugs:
-  - nexmo-welcomes-mark-lewin-to-the-developer-relations-team-dr
-  - nexmo-welcomes-mark-lewin-to-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2018/12/06/nexmo-welcomes-mark-lewin-to-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/12/06/nexmo-welcomes-mark-lewin-to-the-developer-relations-team-dr
 ---

@@ -20,9 +20,6 @@ tags:
   - text-to-speech
   - tutorial
   - voice
-slugs:
-  - christmas-poetry-reading-using-text-to-speech-dr
-  - christmas-poetry-reading-using-text-to-speech-and-ssml
 canonical: https://www.nexmo.com/blog/2018/12/05/christmas-poetry-reading-using-text-to-speech-dr
 redirect: https://www.nexmo.com/blog/2018/12/05/christmas-poetry-reading-using-text-to-speech-dr
 ---

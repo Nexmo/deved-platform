@@ -21,9 +21,6 @@ tags:
   - ruby-on-rails
   - tutorial
   - x-with-y
-slugs:
-  - getting-started-with-the-nexmo-number-insight-api-and-rails-dr
-  - getting-started-with-the-nexmo-number-insight-api-and-rails
 canonical: https://www.nexmo.com/blog/2019/03/25/getting-started-with-the-nexmo-number-insight-api-and-rails-dr
 redirect: https://www.nexmo.com/blog/2019/03/25/getting-started-with-the-nexmo-number-insight-api-and-rails-dr
 ---

@@ -20,8 +20,6 @@ tags:
   - ruby
   - voice-api
   - websockets
-slugs:
-  - record-a-call-in-ruby-with-vonage-voice-api-websockets
 canonical: https://www.nexmo.com/blog/2020/08/04/record-a-call-in-ruby-with-vonage-voice-api-websockets
 redirect: https://www.nexmo.com/blog/2020/08/04/record-a-call-in-ruby-with-vonage-voice-api-websockets
 ---

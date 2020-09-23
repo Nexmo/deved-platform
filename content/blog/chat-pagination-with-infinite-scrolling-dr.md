@@ -16,9 +16,6 @@ old_categories:
 tags:
   - client-sdk
   - conversation-api
-slugs:
-  - chat-pagination-with-infinite-scrolling-dr
-  - chat-pagination-with-infinite-scrolling
 canonical: https://www.nexmo.com/blog/2020/02/03/chat-pagination-with-infinite-scrolling-dr
 redirect: https://www.nexmo.com/blog/2020/02/03/chat-pagination-with-infinite-scrolling-dr
 ---

@@ -18,8 +18,6 @@ tags:
   - developer-educator
   - devrel
   - vonage
-slugs:
-  - greg-holmes-joins-the-vonage-developer-education-team
 canonical: https://www.nexmo.com/blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
 redirect: https://www.nexmo.com/blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
 ---

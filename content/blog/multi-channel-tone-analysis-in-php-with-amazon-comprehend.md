@@ -20,8 +20,6 @@ tags:
   - multi-channel
   - tone-analysis
   - voice-api
-slugs:
-  - multi-channel-tone-analysis-in-php-with-amazon-comprehend
 canonical: https://www.nexmo.com/blog/2020/07/02/multi-channel-tone-analysis-in-php-with-amazon-comprehend
 redirect: https://www.nexmo.com/blog/2020/07/02/multi-channel-tone-analysis-in-php-with-amazon-comprehend
 ---

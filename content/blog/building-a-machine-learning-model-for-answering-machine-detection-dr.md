@@ -20,9 +20,6 @@ tags:
   - machine-learning
   - tutorial
   - vapi
-slugs:
-  - building-a-machine-learning-model-for-answering-machine-detection-dr
-  - building-a-machine-learning-model-for-answering-machine-detection
 canonical: https://www.nexmo.com/blog/2019/03/20/building-a-machine-learning-model-for-answering-machine-detection-dr
 redirect: https://www.nexmo.com/blog/2019/03/20/building-a-machine-learning-model-for-answering-machine-detection-dr
 ---

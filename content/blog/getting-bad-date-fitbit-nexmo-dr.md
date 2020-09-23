@@ -19,9 +19,6 @@ tags:
   - fitbit
   - javascript
   - voice
-slugs:
-  - getting-bad-date-fitbit-nexmo-dr
-  - getting-out-of-a-bad-date-with-fitbit-and-nexmo
 canonical: https://www.nexmo.com/blog/2018/03/02/getting-bad-date-fitbit-nexmo-dr
 redirect: https://www.nexmo.com/blog/2018/03/02/getting-bad-date-fitbit-nexmo-dr
 ---

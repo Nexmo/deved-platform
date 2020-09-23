@@ -16,9 +16,6 @@ old_categories:
   - developers
   - voice
 tags: []
-slugs:
-  - will-bots-give-rise-voice-seo-bidding-spoken-queries
-  - will-bots-give-rise-to-voice-seo-and-bidding-on-spoken-queries
 canonical: https://www.nexmo.com/blog/2017/11/09/will-bots-give-rise-voice-seo-bidding-spoken-queries
 redirect: https://www.nexmo.com/blog/2017/11/09/will-bots-give-rise-voice-seo-bidding-spoken-queries
 ---

@@ -22,9 +22,6 @@ tags:
   - ruby-on-rails
   - voice-api
   - voice-application
-slugs:
-  - how-to-build-a-magic-8-ball-voice-app-with-ruby-dr
-  - how-to-build-a-magic-8-ball-voice-app-with-ruby
 canonical: https://www.nexmo.com/blog/2019/06/11/how-to-build-a-magic-8-ball-voice-app-with-ruby-dr
 redirect: https://www.nexmo.com/blog/2019/06/11/how-to-build-a-magic-8-ball-voice-app-with-ruby-dr
 ---

@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - devrel
-slugs:
-  - garann-means-is-joining-the-developer-relations-team-dr
-  - garann-means-is-joining-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/01/11/garann-means-is-joining-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/01/11/garann-means-is-joining-the-developer-relations-team-dr
 ---

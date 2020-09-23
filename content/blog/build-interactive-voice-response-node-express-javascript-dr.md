@@ -19,9 +19,6 @@ tags:
   - inbound-call
   - ivr
   - pbx
-slugs:
-  - build-interactive-voice-response-node-express-javascript-dr
-  - build-an-interactive-voice-response-menu-using-nodejs-and-express
 canonical: https://www.nexmo.com/blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
 redirect: https://www.nexmo.com/blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
 ---

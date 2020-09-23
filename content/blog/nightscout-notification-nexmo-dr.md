@@ -23,9 +23,6 @@ tags:
   - messages
   - nightscout
   - python
-slugs:
-  - nightscout-notification-nexmo-dr
-  - how-to-build-a-nexmo-notifier-with-nexmo-messages-and-python-and8211-part-one
 canonical: https://www.nexmo.com/blog/2020/02/24/nightscout-notification-nexmo-dr
 redirect: https://www.nexmo.com/blog/2020/02/24/nightscout-notification-nexmo-dr
 ---

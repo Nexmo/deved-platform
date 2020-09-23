@@ -20,9 +20,6 @@ tags:
   - nlp
   - python
   - voice-api
-slugs:
-  - voice-classification-nlp-google-cloud-dr
-  - automatically-classify-your-call-recordings-using-natural-language-processing
 canonical: https://www.nexmo.com/blog/2018/07/10/voice-classification-nlp-google-cloud-dr
 redirect: https://www.nexmo.com/blog/2018/07/10/voice-classification-nlp-google-cloud-dr
 ---

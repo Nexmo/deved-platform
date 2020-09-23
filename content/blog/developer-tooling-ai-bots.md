@@ -19,9 +19,6 @@ tags:
   - bots
   - chatbots
   - voice-bots
-slugs:
-  - developer-tooling-ai-bots
-  - developer-tooling-for-ai-bots-where-are-we
 canonical: https://www.nexmo.com/blog/2017/10/25/developer-tooling-ai-bots
 redirect: https://www.nexmo.com/blog/2017/10/25/developer-tooling-ai-bots
 ---

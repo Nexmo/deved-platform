@@ -22,9 +22,6 @@ tags:
   - spark-framework
   - sparkjava
   - two-factor-authentication
-slugs:
-  - how-to-add-two-factor-authentication-using-java-and-spark
-  - how-to-add-two-factor-authentication-2fa-using-java-and-spark
 canonical: https://www.nexmo.com/blog/2020/08/18/how-to-add-two-factor-authentication-using-java-and-spark
 redirect: https://www.nexmo.com/blog/2020/08/18/how-to-add-two-factor-authentication-using-java-and-spark
 ---

@@ -21,9 +21,6 @@ tags:
   - ruby
   - ruby-on-rails
   - sms
-slugs:
-  - receive-sms-messages-ruby-on-rails-dr
-  - how-to-receive-sms-messages-with-ruby-on-rails
 canonical: https://www.nexmo.com/blog/2017/10/23/receive-sms-messages-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2017/10/23/receive-sms-messages-ruby-on-rails-dr
 ---

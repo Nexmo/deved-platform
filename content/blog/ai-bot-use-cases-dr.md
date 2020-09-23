@@ -19,9 +19,6 @@ old_categories:
   - real-time-communications
   - voice
 tags: []
-slugs:
-  - ai-bot-use-cases-dr
-  - bots-and-ai-great-bot-use-cases-in-production-today
 canonical: https://www.nexmo.com/blog/2017/09/07/ai-bot-use-cases-dr
 redirect: https://www.nexmo.com/blog/2017/09/07/ai-bot-use-cases-dr
 ---

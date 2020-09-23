@@ -19,9 +19,6 @@ tags:
   - java
   - text-to-speech
   - voice
-slugs:
-  - make-text-to-speech-phone-call-java-dr
-  - make-text-to-speech-phone-call-with-java
 canonical: https://www.nexmo.com/blog/2019/03/21/make-text-to-speech-phone-call-java-dr
 redirect: https://www.nexmo.com/blog/2019/03/21/make-text-to-speech-phone-call-java-dr
 ---

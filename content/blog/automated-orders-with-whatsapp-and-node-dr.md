@@ -19,9 +19,6 @@ tags:
   - node-js
   - sandbox
   - whatsapp
-slugs:
-  - automated-orders-with-whatsapp-and-node-dr
-  - how-to-allow-automated-ordering-with-whatsapp-and-nodejs
 canonical: https://www.nexmo.com/blog/2020/05/07/automated-orders-with-whatsapp-and-node-dr
 redirect: https://www.nexmo.com/blog/2020/05/07/automated-orders-with-whatsapp-and-node-dr
 ---

@@ -14,9 +14,6 @@ old_categories:
   - developer
   - tutorial
 tags: []
-slugs:
-  - stream-audio-into-a-phone-call-with-node-js
-  - stream-audio-into-a-phone-call-with-nodejs
 canonical: https://www.nexmo.com/blog/2019/01/30/stream-audio-into-a-phone-call-with-node-js
 redirect: https://www.nexmo.com/blog/2019/01/30/stream-audio-into-a-phone-call-with-node-js
 ---

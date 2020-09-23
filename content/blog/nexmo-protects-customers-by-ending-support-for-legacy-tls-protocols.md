@@ -19,8 +19,6 @@ tags:
   - http
   - security
   - tls
-slugs:
-  - nexmo-protects-customers-by-ending-support-for-legacy-tls-protocols
 canonical: https://www.nexmo.com/blog/2018/06/13/nexmo-protects-customers-by-ending-support-for-legacy-tls-protocols
 redirect: https://www.nexmo.com/blog/2018/06/13/nexmo-protects-customers-by-ending-support-for-legacy-tls-protocols
 ---

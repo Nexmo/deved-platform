@@ -21,9 +21,6 @@ tags:
   - sms
   - tutorial
   - webhooks
-slugs:
-  - serverless-sms-nexmo-ibm-dr
-  - serverless-sms-fortune-cookies-with-nexmo-and-ibm
 canonical: https://www.nexmo.com/blog/2018/08/14/serverless-sms-nexmo-ibm-dr
 redirect: https://www.nexmo.com/blog/2018/08/14/serverless-sms-nexmo-ibm-dr
 ---

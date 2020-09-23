@@ -17,9 +17,6 @@ tags:
   - android
   - developer-advocates
   - team
-slugs:
-  - igor-wojda-joins-the-vonage-developer-relations-team-dr
-  - igor-wojda-joins-the-vonage-developer-relations-team
 canonical: https://www.nexmo.com/blog/2020/03/11/igor-wojda-joins-the-vonage-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2020/03/11/igor-wojda-joins-the-vonage-developer-relations-team-dr
 ---

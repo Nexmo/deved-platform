@@ -16,9 +16,6 @@ old_categories:
 tags:
   - hacktoberfest
   - nextoberfest
-slugs:
-  - join-nextoberfest-tis-the-season-to-be-hacking-dr
-  - join-nextoberfest-and8211-tis-the-season-to-be-hacking
 canonical: https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr
 redirect: https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr
 ---

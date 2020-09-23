@@ -18,9 +18,6 @@ old_categories:
 tags:
   - android
   - devrel
-slugs:
-  - nexmo-at-android-summit-dr
-  - nexmo-at-android-summit
 canonical: https://www.nexmo.com/blog/2017/09/05/nexmo-at-android-summit-dr
 redirect: https://www.nexmo.com/blog/2017/09/05/nexmo-at-android-summit-dr
 ---

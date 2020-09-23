@@ -18,9 +18,6 @@ tags:
   - ngrok
   - node-red
   - nodered
-slugs:
-  - ngrok-in-node-red-dr
-  - getting-started-with-ngrok-in-node-red
 canonical: https://www.nexmo.com/blog/2019/07/03/ngrok-in-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/07/03/ngrok-in-node-red-dr
 ---

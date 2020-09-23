@@ -17,9 +17,6 @@ tags:
   - oas
   - open-api
   - postman
-slugs:
-  - evaluate-apis-quickly-and-easily-with-openapi-dr
-  - evaluate-apis-quickly-and-easily-with-openapi
 canonical: https://www.nexmo.com/blog/2019/09/13/evaluate-apis-quickly-and-easily-with-openapi-dr
 redirect: https://www.nexmo.com/blog/2019/09/13/evaluate-apis-quickly-and-easily-with-openapi-dr
 ---

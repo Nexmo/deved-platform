@@ -19,9 +19,6 @@ tags:
   - devrel
   - off-site
   - teams
-slugs:
-  - running-off-sites-remote-teams-dr
-  - running-an-off-site-for-remote-teams
 canonical: https://www.nexmo.com/blog/2020/03/03/running-off-sites-remote-teams-dr
 redirect: https://www.nexmo.com/blog/2020/03/03/running-off-sites-remote-teams-dr
 ---

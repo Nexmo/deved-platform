@@ -17,9 +17,6 @@ tags:
   - devrel
   - hackathon
   - onehack
-slugs:
-  - onehack-devrel-internal-hackathon-dr
-  - onehack-our-devrel-internal-hackathon
 canonical: https://www.nexmo.com/blog/2018/12/14/onehack-devrel-internal-hackathon-dr
 redirect: https://www.nexmo.com/blog/2018/12/14/onehack-devrel-internal-hackathon-dr
 ---

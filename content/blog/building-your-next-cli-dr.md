@@ -18,9 +18,6 @@ tags:
   - cli
   - clis
   - requirements
-slugs:
-  - building-your-next-cli-dr
-  - building-your-next-cli
 canonical: https://www.nexmo.com/blog/2020/06/05/building-your-next-cli-dr
 redirect: https://www.nexmo.com/blog/2020/06/05/building-your-next-cli-dr
 ---

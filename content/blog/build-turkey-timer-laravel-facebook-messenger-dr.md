@@ -20,9 +20,6 @@ tags:
   - laravel
   - messaging
   - php
-slugs:
-  - build-turkey-timer-laravel-facebook-messenger-dr
-  - building-a-turkey-timer-with-laravel-facebook-messenger-and-vonage
 canonical: https://www.nexmo.com/blog/2018/12/14/build-turkey-timer-laravel-facebook-messenger-dr
 redirect: https://www.nexmo.com/blog/2018/12/14/build-turkey-timer-laravel-facebook-messenger-dr
 ---

@@ -24,8 +24,6 @@ tags:
   - pastel
   - react
   - typescript
-slugs:
-  - comparing-cli-building-libraries
 canonical: https://www.nexmo.com/blog/2020/06/12/comparing-cli-building-libraries
 redirect: https://www.nexmo.com/blog/2020/06/12/comparing-cli-building-libraries
 ---

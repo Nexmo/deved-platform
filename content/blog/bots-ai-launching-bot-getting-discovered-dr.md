@@ -18,9 +18,6 @@ old_categories:
   - user-acquisition
   - voice
 tags: []
-slugs:
-  - bots-ai-launching-bot-getting-discovered-dr
-  - bots-and-ai-launching-a-bot-and-getting-it-discovered
 canonical: https://www.nexmo.com/blog/2017/08/31/bots-ai-launching-bot-getting-discovered-dr
 redirect: https://www.nexmo.com/blog/2017/08/31/bots-ai-launching-bot-getting-discovered-dr
 ---

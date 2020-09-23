@@ -22,9 +22,6 @@ tags:
   - sms-notifications
   - text-to-speech
   - voice-api
-slugs:
-  - fast-voice-broadcast-python-dr
-  - super-fast-voice-broadcast-with-asynchronous-python-and-sanic
 canonical: https://www.nexmo.com/blog/2017/10/05/fast-voice-broadcast-python-dr
 redirect: https://www.nexmo.com/blog/2017/10/05/fast-voice-broadcast-python-dr
 ---

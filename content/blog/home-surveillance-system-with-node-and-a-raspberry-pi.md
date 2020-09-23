@@ -20,8 +20,6 @@ tags:
   - messages
   - raspberry-pi-4
   - video
-slugs:
-  - home-surveillance-system-with-node-and-a-raspberry-pi
 canonical: https://www.nexmo.com/blog/2020/05/19/home-surveillance-system-with-node-and-a-raspberry-pi
 redirect: https://www.nexmo.com/blog/2020/05/19/home-surveillance-system-with-node-and-a-raspberry-pi
 ---

@@ -22,9 +22,6 @@ tags:
   - nodejs
   - opentok
   - video-api
-slugs:
-  - using-apollo-to-query-graphql-from-node-js-dr
-  - using-apollo-to-query-graphql-from-nodejs
 canonical: https://www.nexmo.com/blog/2020/03/12/using-apollo-to-query-graphql-from-node-js-dr
 redirect: https://www.nexmo.com/blog/2020/03/12/using-apollo-to-query-graphql-from-node-js-dr
 ---

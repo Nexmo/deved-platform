@@ -19,9 +19,6 @@ tags:
   - ruby
   - ruby-sdk
   - sdk
-slugs:
-  - nexmo-ruby-v7-2-0-release
-  - nexmo-ruby-v720-release
 canonical: https://www.nexmo.com/blog/2020/07/27/nexmo-ruby-v7-2-0-release
 redirect: https://www.nexmo.com/blog/2020/07/27/nexmo-ruby-v7-2-0-release
 ---

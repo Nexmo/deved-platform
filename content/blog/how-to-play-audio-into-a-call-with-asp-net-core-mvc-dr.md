@@ -19,9 +19,6 @@ tags:
   - asp-net-core-mvc
   - play-audio
   - voice-api
-slugs:
-  - how-to-play-audio-into-a-call-with-asp-net-core-mvc-dr
-  - how-to-play-audio-into-a-call-with-aspnet-core-mvc
 canonical: https://www.nexmo.com/blog/2020/08/07/how-to-play-audio-into-a-call-with-asp-net-core-mvc-dr
 redirect: https://www.nexmo.com/blog/2020/08/07/how-to-play-audio-into-a-call-with-asp-net-core-mvc-dr
 ---

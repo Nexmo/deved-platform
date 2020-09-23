@@ -16,9 +16,6 @@ old_categories:
   - developers
 tags:
   - devrel
-slugs:
-  - amanda-joins-nexmos-devrel-team-dr
-  - amanda-joins-nexmoand8217s-devrel-team
 canonical: https://www.nexmo.com/blog/2017/07/06/amanda-joins-nexmos-devrel-team-dr
 redirect: https://www.nexmo.com/blog/2017/07/06/amanda-joins-nexmos-devrel-team-dr
 ---

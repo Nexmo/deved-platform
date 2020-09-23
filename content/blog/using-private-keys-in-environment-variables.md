@@ -18,8 +18,6 @@ tags:
   - environment-variables
   - private-keys
   - security
-slugs:
-  - using-private-keys-in-environment-variables
 canonical: https://www.nexmo.com/blog/2020/07/29/using-private-keys-in-environment-variables
 redirect: https://www.nexmo.com/blog/2020/07/29/using-private-keys-in-environment-variables
 ---

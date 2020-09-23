@@ -21,9 +21,6 @@ tags:
   - java
   - library
   - release
-slugs:
-  - big-changes-for-nexmos-java-client-library-dr
-  - big-changes-for-nexmoand8217s-java-client-library
 canonical: https://www.nexmo.com/blog/2017/03/23/big-changes-for-nexmos-java-client-library-dr
 redirect: https://www.nexmo.com/blog/2017/03/23/big-changes-for-nexmos-java-client-library-dr
 ---

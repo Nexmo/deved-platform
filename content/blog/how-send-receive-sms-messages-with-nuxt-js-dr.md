@@ -23,9 +23,6 @@ tags:
   - sms
   - vue
   - vuejs
-slugs:
-  - how-send-receive-sms-messages-with-nuxt-js-dr
-  - how-to-send-and-receive-sms-messages-with-nuxtjs-and-the-nexmo-sms-api
 canonical: https://www.nexmo.com/blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
 redirect: https://www.nexmo.com/blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
 ---

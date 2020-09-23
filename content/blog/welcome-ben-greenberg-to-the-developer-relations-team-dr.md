@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - devrel
-slugs:
-  - welcome-ben-greenberg-to-the-developer-relations-team-dr
-  - welcome-ben-greenberg-to-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/01/15/welcome-ben-greenberg-to-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/01/15/welcome-ben-greenberg-to-the-developer-relations-team-dr
 ---

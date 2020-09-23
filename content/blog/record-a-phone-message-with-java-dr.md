@@ -19,9 +19,6 @@ tags:
   - java
   - voice
   - voice-api
-slugs:
-  - record-a-phone-message-with-java-dr
-  - record-a-phone-message-with-java
 canonical: https://www.nexmo.com/blog/2019/02/19/record-a-phone-message-with-java-dr
 redirect: https://www.nexmo.com/blog/2019/02/19/record-a-phone-message-with-java-dr
 ---

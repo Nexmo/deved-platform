@@ -18,9 +18,6 @@ tags:
   - events
   - ios
   - swift
-slugs:
-  - day-three-nexmo-rwdevcon-2018-dr
-  - day-three-recap-nexmo-rwdevcon-2018
 canonical: https://www.nexmo.com/blog/2018/04/16/day-three-nexmo-rwdevcon-2018-dr
 redirect: https://www.nexmo.com/blog/2018/04/16/day-three-nexmo-rwdevcon-2018-dr
 ---

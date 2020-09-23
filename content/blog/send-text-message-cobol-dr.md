@@ -19,9 +19,6 @@ tags:
   - devrel
   - sms
   - text-messaging
-slugs:
-  - send-text-message-cobol-dr
-  - send-a-text-message-with-cobol
 canonical: https://www.nexmo.com/blog/2019/04/01/send-text-message-cobol-dr
 redirect: https://www.nexmo.com/blog/2019/04/01/send-text-message-cobol-dr
 ---

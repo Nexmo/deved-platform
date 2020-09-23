@@ -16,9 +16,6 @@ tags:
   - net
   - sdk
   - sdk-updates
-slugs:
-  - net-sdk-update-dr
-  - net-sdk-update
 canonical: https://www.nexmo.com/blog/2019/11/19/net-sdk-update-dr
 redirect: https://www.nexmo.com/blog/2019/11/19/net-sdk-update-dr
 ---

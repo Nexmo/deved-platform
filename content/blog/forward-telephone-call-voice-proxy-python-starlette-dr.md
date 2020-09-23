@@ -17,9 +17,6 @@ tags:
   - devrel
   - python
   - voice
-slugs:
-  - forward-telephone-call-voice-proxy-python-starlette-dr
-  - forward-a-telephone-call-via-voice-proxy-with-python-and-starlette
 canonical: https://www.nexmo.com/blog/2019/08/09/forward-telephone-call-voice-proxy-python-starlette-dr
 redirect: https://www.nexmo.com/blog/2019/08/09/forward-telephone-call-voice-proxy-python-starlette-dr
 ---

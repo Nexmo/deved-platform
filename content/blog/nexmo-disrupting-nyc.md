@@ -16,8 +16,6 @@ old_categories:
   - developers-corner
   - events
 tags: []
-slugs:
-  - nexmo-disrupting-nyc
 canonical: https://www.nexmo.com/blog/2015/05/12/nexmo-disrupting-nyc
 redirect: https://www.nexmo.com/blog/2015/05/12/nexmo-disrupting-nyc
 ---

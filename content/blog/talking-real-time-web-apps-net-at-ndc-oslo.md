@@ -22,9 +22,6 @@ tags:
   - real-time
   - signalr
   - xsockets
-slugs:
-  - talking-real-time-web-apps-net-at-ndc-oslo
-  - talking-real-time-web-apps-and-net-at-ndc-oslo
 canonical: https://www.nexmo.com/blog/2016/06/23/talking-real-time-web-apps-net-at-ndc-oslo
 redirect: https://www.nexmo.com/blog/2016/06/23/talking-real-time-web-apps-net-at-ndc-oslo
 ---

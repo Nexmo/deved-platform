@@ -18,9 +18,6 @@ tags:
   - node-js
   - sandbox
   - viber
-slugs:
-  - send-a-viber-message-with-node-dr
-  - how-to-send-a-viber-message-with-nodejs
 canonical: https://www.nexmo.com/blog/2020/04/22/send-a-viber-message-with-node-dr
 redirect: https://www.nexmo.com/blog/2020/04/22/send-a-viber-message-with-node-dr
 ---

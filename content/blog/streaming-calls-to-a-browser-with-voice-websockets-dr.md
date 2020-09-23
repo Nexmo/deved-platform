@@ -21,9 +21,6 @@ tags:
   - iot
   - webaudio
   - websocket
-slugs:
-  - streaming-calls-to-a-browser-with-voice-websockets-dr
-  - streaming-calls-to-a-browser-with-voice-websockets
 canonical: https://www.nexmo.com/blog/2016/12/19/streaming-calls-to-a-browser-with-voice-websockets-dr
 redirect: https://www.nexmo.com/blog/2016/12/19/streaming-calls-to-a-browser-with-voice-websockets-dr
 ---

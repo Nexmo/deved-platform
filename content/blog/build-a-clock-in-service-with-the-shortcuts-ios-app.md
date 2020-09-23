@@ -19,9 +19,6 @@ tags:
   - low-code
   - no-code
   - shortcuts
-slugs:
-  - build-a-clock-in-service-with-the-shortcuts-ios-app
-  - build-a-and8216clock-inand8217-service-with-the-shortcuts-ios-app
 canonical: https://www.nexmo.com/blog/2020/08/27/build-a-clock-in-service-with-the-shortcuts-ios-app
 redirect: https://www.nexmo.com/blog/2020/08/27/build-a-clock-in-service-with-the-shortcuts-ios-app
 ---

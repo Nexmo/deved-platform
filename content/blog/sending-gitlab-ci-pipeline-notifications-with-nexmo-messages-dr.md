@@ -20,9 +20,6 @@ tags:
   - gitlab
   - messages
   - nexmo
-slugs:
-  - sending-gitlab-ci-pipeline-notifications-with-nexmo-messages-dr
-  - sending-gitlab-ci-pipeline-notifications-with-nexmo-messages
 canonical: https://www.nexmo.com/blog/2019/09/30/sending-gitlab-ci-pipeline-notifications-with-nexmo-messages-dr
 redirect: https://www.nexmo.com/blog/2019/09/30/sending-gitlab-ci-pipeline-notifications-with-nexmo-messages-dr
 ---

@@ -24,9 +24,6 @@ tags:
   - voice
   - watson
   - websockets
-slugs:
-  - real-time-call-transcription-ibm-watson-python-dr
-  - real-time-call-transcription-using-ibm-watson-and-python
 canonical: https://www.nexmo.com/blog/2017/10/03/real-time-call-transcription-ibm-watson-python-dr
 redirect: https://www.nexmo.com/blog/2017/10/03/real-time-call-transcription-ibm-watson-python-dr
 ---

@@ -22,9 +22,6 @@ tags:
   - inbound-call
   - nancyfx
   - voice-api
-slugs:
-  - how-to-receive-a-phone-call-with-nexmo-voice-api-asp-core-core-and-nancyfx-dr
-  - how-to-receive-a-phone-call-with-nexmo-voice-api-aspnet-core-and-nancyfx
 canonical: https://www.nexmo.com/blog/2018/11/21/how-to-receive-a-phone-call-with-nexmo-voice-api-asp-core-core-and-nancyfx-dr
 redirect: https://www.nexmo.com/blog/2018/11/21/how-to-receive-a-phone-call-with-nexmo-voice-api-asp-core-core-and-nancyfx-dr
 ---

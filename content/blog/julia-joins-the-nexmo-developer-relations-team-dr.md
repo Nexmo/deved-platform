@@ -16,9 +16,6 @@ old_categories:
   - developers
 tags:
   - devrel
-slugs:
-  - julia-joins-the-nexmo-developer-relations-team-dr
-  - julia-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2018/07/16/julia-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/07/16/julia-joins-the-nexmo-developer-relations-team-dr
 ---

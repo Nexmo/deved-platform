@@ -20,9 +20,6 @@ tags:
   - interactive-voice-response
   - ivr
   - java
-slugs:
-  - ivr-java-spark-framework-dr
-  - how-to-build-a-simple-ivr-with-java-and-the-spark-framework
 canonical: https://www.nexmo.com/blog/2019/07/02/ivr-java-spark-framework-dr
 redirect: https://www.nexmo.com/blog/2019/07/02/ivr-java-spark-framework-dr
 ---

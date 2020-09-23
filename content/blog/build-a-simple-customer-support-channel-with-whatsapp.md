@@ -22,8 +22,6 @@ tags:
   - messages-api
   - real-time-communications
   - whatsapp
-slugs:
-  - build-a-simple-customer-support-channel-with-whatsapp
 canonical: https://www.nexmo.com/blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
 redirect: https://www.nexmo.com/blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
 ---

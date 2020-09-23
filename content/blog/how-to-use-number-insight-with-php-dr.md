@@ -16,9 +16,6 @@ old_categories:
 tags:
   - number-insight
   - php
-slugs:
-  - how-to-use-number-insight-with-php-dr
-  - how-to-use-the-number-insight-api-with-php
 canonical: https://www.nexmo.com/blog/2019/03/29/how-to-use-number-insight-with-php-dr
 redirect: https://www.nexmo.com/blog/2019/03/29/how-to-use-number-insight-with-php-dr
 ---

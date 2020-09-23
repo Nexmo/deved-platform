@@ -22,9 +22,6 @@ tags:
   - text-to-speech
   - voice-api
   - voice-application
-slugs:
-  - receive-phone-calls-node-red-dr
-  - how-to-receive-phone-calls-with-node-red
 canonical: https://www.nexmo.com/blog/2019/05/09/receive-phone-calls-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/05/09/receive-phone-calls-node-red-dr
 ---

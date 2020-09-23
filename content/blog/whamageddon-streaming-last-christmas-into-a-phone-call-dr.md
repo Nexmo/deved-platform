@@ -19,9 +19,6 @@ tags:
   - devrel
   - python
   - voice-api
-slugs:
-  - whamageddon-streaming-last-christmas-into-a-phone-call-dr
-  - send-your-friends-to-whamhalla-by-streaming-last-christmas-into-a-phone-call
 canonical: https://www.nexmo.com/blog/2018/12/11/whamageddon-streaming-last-christmas-into-a-phone-call-dr
 redirect: https://www.nexmo.com/blog/2018/12/11/whamageddon-streaming-last-christmas-into-a-phone-call-dr
 ---

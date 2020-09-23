@@ -23,9 +23,6 @@ tags:
   - artificial-intelligence
   - bots
   - chatbots
-slugs:
-  - voice-text-ai-bot-interface
-  - bots-and-ai-voice-vs-text-for-your-ai-bot-interface
 canonical: https://www.nexmo.com/blog/2017/09/21/voice-text-ai-bot-interface
 redirect: https://www.nexmo.com/blog/2017/09/21/voice-text-ai-bot-interface
 ---

@@ -21,9 +21,6 @@ tags:
   - koa
   - node-js
   - number-insight
-slugs:
-  - getting-started-with-nexmos-number-insight-apis-on-koa-js-dr
-  - getting-started-with-nexmoand8217s-number-insight-apis-on-koajs
 canonical: https://www.nexmo.com/blog/2019/02/21/getting-started-with-nexmos-number-insight-apis-on-koa-js-dr
 redirect: https://www.nexmo.com/blog/2019/02/21/getting-started-with-nexmos-number-insight-apis-on-koa-js-dr
 ---

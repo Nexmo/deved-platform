@@ -19,9 +19,6 @@ tags:
   - node-js
   - sms
   - verify
-slugs:
-  - trusted-group-auth-with-sms-and-express-dr
-  - trusted-group-authentication-with-sms-and-express
 canonical: https://www.nexmo.com/blog/2019/06/18/trusted-group-auth-with-sms-and-express-dr
 redirect: https://www.nexmo.com/blog/2019/06/18/trusted-group-auth-with-sms-and-express-dr
 ---

@@ -21,9 +21,6 @@ tags:
   - luis
   - nlp
   - sms
-slugs:
-  - sms-language-understanding-with-luis-and-net-dr
-  - sms-language-understanding-with-luis-and-net
 canonical: https://www.nexmo.com/blog/2020/04/09/sms-language-understanding-with-luis-and-net-dr
 redirect: https://www.nexmo.com/blog/2020/04/09/sms-language-understanding-with-luis-and-net-dr
 ---

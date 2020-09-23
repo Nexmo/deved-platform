@@ -17,9 +17,6 @@ tags:
   - javascript
   - react
   - vuejs
-slugs:
-  - migrating-react-components-to-vue-js-dr
-  - migrating-react-components-to-vuejs
 canonical: https://www.nexmo.com/blog/2020/02/20/migrating-react-components-to-vue-js-dr
 redirect: https://www.nexmo.com/blog/2020/02/20/migrating-react-components-to-vue-js-dr
 ---

@@ -18,9 +18,6 @@ tags:
   - ruby-on-rails
   - video-api
   - video-chat
-slugs:
-  - create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-2-building-the-frontend-dr
-  - create-a-party-with-ruby-on-rails-and-the-vonage-video-api-and8211-part-2
 canonical: https://www.nexmo.com/blog/2020/05/13/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-2-building-the-frontend-dr
 redirect: https://www.nexmo.com/blog/2020/05/13/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-2-building-the-frontend-dr
 ---

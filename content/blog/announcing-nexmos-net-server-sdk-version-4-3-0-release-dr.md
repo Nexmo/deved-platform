@@ -18,9 +18,6 @@ tags:
   - asp-net
   - devrel
   - jwts
-slugs:
-  - announcing-nexmos-net-server-sdk-version-4-3-0-release-dr
-  - announcing-nexmoand8217s-net-server-sdk-version-430-release
 canonical: https://www.nexmo.com/blog/2020/01/15/announcing-nexmos-net-server-sdk-version-4-3-0-release-dr
 redirect: https://www.nexmo.com/blog/2020/01/15/announcing-nexmos-net-server-sdk-version-4-3-0-release-dr
 ---

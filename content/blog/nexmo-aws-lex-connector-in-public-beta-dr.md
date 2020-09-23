@@ -21,9 +21,6 @@ tags:
   - amazon-lex
   - bots
   - voice-api
-slugs:
-  - nexmo-aws-lex-connector-in-public-beta-dr
-  - nexmo-amazon-lex-connector-in-public-beta
 canonical: https://www.nexmo.com/blog/2017/05/11/nexmo-aws-lex-connector-in-public-beta-dr
 redirect: https://www.nexmo.com/blog/2017/05/11/nexmo-aws-lex-connector-in-public-beta-dr
 ---

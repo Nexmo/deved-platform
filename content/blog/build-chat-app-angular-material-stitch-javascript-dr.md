@@ -23,9 +23,6 @@ tags:
   - javascript
   - stitch
   - typescript
-slugs:
-  - build-chat-app-angular-material-stitch-javascript-dr
-  - build-a-chat-application-with-angular-material-and-the-nexmo-in-app-javascript-sdk
 canonical: https://www.nexmo.com/blog/2018/03/28/build-chat-app-angular-material-stitch-javascript-dr
 redirect: https://www.nexmo.com/blog/2018/03/28/build-chat-app-angular-material-stitch-javascript-dr
 ---

@@ -26,9 +26,6 @@ tags:
   - voice-api
   - watson
   - websockets
-slugs:
-  - extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api-dr
-  - extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api
 canonical: https://www.nexmo.com/blog/2017/01/04/extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api-dr
 redirect: https://www.nexmo.com/blog/2017/01/04/extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api-dr
 ---

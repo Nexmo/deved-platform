@@ -19,9 +19,6 @@ tags:
   - spy-thrillers
   - voice
   - voicemail
-slugs:
-  - how-to-build-a-voicemail-with-python-flask-dr
-  - how-to-build-a-voicemail-dead-drop-with-python-and-flask
 canonical: https://www.nexmo.com/blog/2019/04/05/how-to-build-a-voicemail-with-python-flask-dr
 redirect: https://www.nexmo.com/blog/2019/04/05/how-to-build-a-voicemail-with-python-flask-dr
 ---

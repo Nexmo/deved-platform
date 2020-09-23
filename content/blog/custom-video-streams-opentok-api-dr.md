@@ -21,9 +21,6 @@ tags:
   - tokbox
   - tutorial
   - video
-slugs:
-  - custom-video-streams-opentok-api-dr
-  - publishing-custom-video-streams-with-the-opentok-api
 canonical: https://www.nexmo.com/blog/2018/12/20/custom-video-streams-opentok-api-dr
 redirect: https://www.nexmo.com/blog/2018/12/20/custom-video-streams-opentok-api-dr
 ---

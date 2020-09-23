@@ -20,9 +20,6 @@ tags:
   - messages-api
   - salesforce
   - whatsapp
-slugs:
-  - integrating-multichannel-messaging-into-salesforce-with-nexmo-messages-api
-  - integrating-multichannel-messaging-into-salesforce-with-the-nexmo-messages-api
 canonical: https://www.nexmo.com/blog/2019/04/17/integrating-multichannel-messaging-into-salesforce-with-nexmo-messages-api
 redirect: https://www.nexmo.com/blog/2019/04/17/integrating-multichannel-messaging-into-salesforce-with-nexmo-messages-api
 ---

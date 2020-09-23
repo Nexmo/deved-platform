@@ -23,9 +23,6 @@ tags:
   - messages-api
   - sms
   - ubidots
-slugs:
-  - track-device-data-in-real-time-with-vonage-messages-api-and-ubidots-dr
-  - track-device-data-in-real-time-with-vonage-messages-api-and-ubidots
 canonical: https://www.nexmo.com/blog/2020/08/06/track-device-data-in-real-time-with-vonage-messages-api-and-ubidots-dr
 redirect: https://www.nexmo.com/blog/2020/08/06/track-device-data-in-real-time-with-vonage-messages-api-and-ubidots-dr
 ---

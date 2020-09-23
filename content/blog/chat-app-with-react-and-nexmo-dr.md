@@ -17,9 +17,6 @@ tags:
   - client
   - javascript
   - reactjs
-slugs:
-  - chat-app-with-react-and-nexmo-dr
-  - create-a-chat-app-with-react-and-nexmo
 canonical: https://www.nexmo.com/blog/2019/08/30/chat-app-with-react-and-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/08/30/chat-app-with-react-and-nexmo-dr
 ---

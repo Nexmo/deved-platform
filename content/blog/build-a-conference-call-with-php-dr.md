@@ -18,9 +18,6 @@ tags:
   - conference-call
   - php
   - voice
-slugs:
-  - build-a-conference-call-with-php-dr
-  - build-a-conference-call-with-the-nexmo-voice-api-and-php
 canonical: https://www.nexmo.com/blog/2019/05/08/build-a-conference-call-with-php-dr
 redirect: https://www.nexmo.com/blog/2019/05/08/build-a-conference-call-with-php-dr
 ---

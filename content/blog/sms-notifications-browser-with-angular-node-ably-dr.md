@@ -19,9 +19,6 @@ tags:
   - javascript
   - node
   - sms
-slugs:
-  - sms-notifications-browser-with-angular-node-ably-dr
-  - how-to-show-sms-notifications-in-the-browser-with-angular-nodejs-and-ably
 canonical: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
 redirect: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
 ---

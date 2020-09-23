@@ -15,8 +15,6 @@ old_categories:
   - developers
 tags:
   - hackathon
-slugs:
-  - nexmo-at-the-capital-one-hackathon
 canonical: https://www.nexmo.com/blog/2015/04/10/nexmo-at-the-capital-one-hackathon
 redirect: https://www.nexmo.com/blog/2015/04/10/nexmo-at-the-capital-one-hackathon
 ---

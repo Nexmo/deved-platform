@@ -21,9 +21,6 @@ tags:
   - javascript
   - messaging
   - tutorial
-slugs:
-  - nearest-postbox-with-node-js-nexmo-messages-api-dr
-  - christmas-card-dash-locate-your-nearest-postbox-with-nodejs-and-the-messages-api
 canonical: https://www.nexmo.com/blog/2018/12/06/nearest-postbox-with-node-js-nexmo-messages-api-dr
 redirect: https://www.nexmo.com/blog/2018/12/06/nearest-postbox-with-node-js-nexmo-messages-api-dr
 ---

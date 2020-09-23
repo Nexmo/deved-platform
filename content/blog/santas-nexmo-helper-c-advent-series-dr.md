@@ -23,9 +23,6 @@ tags:
   - chatbots
   - machine-learning
   - qnamaker
-slugs:
-  - santas-nexmo-helper-c-advent-series-dr
-  - santaand8217s-nexmo-helper-and8211-c-advent-series
 canonical: https://www.nexmo.com/blog/2019/12/19/santas-nexmo-helper-c-advent-series-dr
 redirect: https://www.nexmo.com/blog/2019/12/19/santas-nexmo-helper-c-advent-series-dr
 ---

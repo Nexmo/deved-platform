@@ -18,9 +18,6 @@ tags:
   - community
   - library
   - python
-slugs:
-  - developer-new-nexmo-python-library-released-pycon
-  - new-nexmo-python-library-released-for-pycon
 canonical: https://www.nexmo.com/blog/2016/05/30/developer-new-nexmo-python-library-released-pycon
 redirect: https://www.nexmo.com/blog/2016/05/30/developer-new-nexmo-python-library-released-pycon
 ---

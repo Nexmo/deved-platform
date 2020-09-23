@@ -20,9 +20,6 @@ tags:
   - tutorial
   - voice
   - voice-api
-slugs:
-  - how-to-play-audio-to-a-caller-in-asp-net-core-dr
-  - how-to-play-audio-to-a-caller-in-aspnet-core
 canonical: https://www.nexmo.com/blog/2017/11/29/how-to-play-audio-to-a-caller-in-asp-net-core-dr
 redirect: https://www.nexmo.com/blog/2017/11/29/how-to-play-audio-to-a-caller-in-asp-net-core-dr
 ---

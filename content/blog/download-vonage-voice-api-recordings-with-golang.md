@@ -18,8 +18,6 @@ tags:
   - golang
   - voice-api
   - voice-recordings
-slugs:
-  - download-vonage-voice-api-recordings-with-golang
 canonical: https://www.nexmo.com/blog/2020/05/18/download-vonage-voice-api-recordings-with-golang
 redirect: https://www.nexmo.com/blog/2020/05/18/download-vonage-voice-api-recordings-with-golang
 ---

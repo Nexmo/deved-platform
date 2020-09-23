@@ -19,8 +19,6 @@ tags:
   - green-screen
   - javascript
   - video-api
-slugs:
-  - use-a-green-screen-in-javascript-with-vonage-video
 canonical: https://www.nexmo.com/blog/2020/06/24/use-a-green-screen-in-javascript-with-vonage-video
 redirect: https://www.nexmo.com/blog/2020/06/24/use-a-green-screen-in-javascript-with-vonage-video
 ---

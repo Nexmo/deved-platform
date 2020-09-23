@@ -23,9 +23,6 @@ tags:
   - phone-number-authentication
   - two-factor-authentication
   - verify
-slugs:
-  - nexmo-verify-api-implementation-guide-dr
-  - nexmo-verify-api-implementation-guide
 canonical: https://www.nexmo.com/blog/2018/05/10/nexmo-verify-api-implementation-guide-dr
 redirect: https://www.nexmo.com/blog/2018/05/10/nexmo-verify-api-implementation-guide-dr
 ---

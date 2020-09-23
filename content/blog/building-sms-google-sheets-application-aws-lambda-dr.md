@@ -19,9 +19,6 @@ tags:
   - aws-lambda
   - python
   - sms
-slugs:
-  - building-sms-google-sheets-application-aws-lambda-dr
-  - building-an-sms-to-google-sheets-application-with-aws-lambda
 canonical: https://www.nexmo.com/blog/2016/05/31/building-sms-google-sheets-application-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2016/05/31/building-sms-google-sheets-application-aws-lambda-dr
 ---

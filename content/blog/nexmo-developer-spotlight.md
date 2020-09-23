@@ -20,9 +20,6 @@ tags:
   - community
   - developer-spotlight
   - tutorials
-slugs:
-  - nexmo-developer-spotlight
-  - youre-invited-nexmo-developer-spotlight
 canonical: https://www.nexmo.com/blog/2018/10/11/nexmo-developer-spotlight
 redirect: https://www.nexmo.com/blog/2018/10/11/nexmo-developer-spotlight
 ---

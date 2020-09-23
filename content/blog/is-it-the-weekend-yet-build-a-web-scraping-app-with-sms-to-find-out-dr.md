@@ -21,9 +21,6 @@ tags:
   - ruby-on-rails
   - sms
   - tutorial
-slugs:
-  - is-it-the-weekend-yet-build-a-web-scraping-app-with-sms-to-find-out-dr
-  - scrape-the-web-for-updates-and-send-sms-alerts-with-ruby
 canonical: https://www.nexmo.com/blog/2020/03/27/is-it-the-weekend-yet-build-a-web-scraping-app-with-sms-to-find-out-dr
 redirect: https://www.nexmo.com/blog/2020/03/27/is-it-the-weekend-yet-build-a-web-scraping-app-with-sms-to-find-out-dr
 ---

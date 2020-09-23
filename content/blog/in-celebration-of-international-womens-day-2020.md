@@ -18,9 +18,6 @@ tags:
   - inclusion
   - international-womens-day
   - iwd2020
-slugs:
-  - in-celebration-of-international-womens-day-2020
-  - in-celebration-of-international-womenand8217s-day-2020
 canonical: https://www.nexmo.com/blog/2020/03/10/in-celebration-of-international-womens-day-2020
 redirect: https://www.nexmo.com/blog/2020/03/10/in-celebration-of-international-womens-day-2020
 ---

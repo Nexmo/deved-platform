@@ -17,9 +17,6 @@ tags:
   - cloud-communications
   - devrel
   - javascript
-slugs:
-  - nexmo-node-red-package-dr
-  - announcing-the-nexmo-node-red-package
 canonical: https://www.nexmo.com/blog/2019/02/21/nexmo-node-red-package-dr
 redirect: https://www.nexmo.com/blog/2019/02/21/nexmo-node-red-package-dr
 ---

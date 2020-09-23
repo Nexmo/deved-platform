@@ -22,9 +22,6 @@ tags:
   - nodered
   - stream
   - voice-api
-slugs:
-  - stream-audio-node-red-dr
-  - how-to-stream-audio-into-a-call-with-node-red
 canonical: https://www.nexmo.com/blog/2019/07/15/stream-audio-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/07/15/stream-audio-node-red-dr
 ---

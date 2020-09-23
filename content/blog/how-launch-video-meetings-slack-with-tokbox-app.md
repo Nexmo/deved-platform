@@ -22,9 +22,6 @@ tags:
   - slack
   - tokbox
   - video-api
-slugs:
-  - how-launch-video-meetings-slack-with-tokbox-app
-  - how-to-launch-video-meetings-in-slack-with-vonage
 canonical: https://www.nexmo.com/blog/2019/02/01/how-launch-video-meetings-slack-with-tokbox-app
 redirect: https://www.nexmo.com/blog/2019/02/01/how-launch-video-meetings-slack-with-tokbox-app
 ---

@@ -23,9 +23,6 @@ tags:
   - bots
   - chatbots
   - marketing
-slugs:
-  - ai-bot-messaging-push-notifications-sms-dr
-  - bots-and-ai-bot-messaging-vs-push-notifications-vs-sms
 canonical: https://www.nexmo.com/blog/2017/09/14/ai-bot-messaging-push-notifications-sms-dr
 redirect: https://www.nexmo.com/blog/2017/09/14/ai-bot-messaging-push-notifications-sms-dr
 ---

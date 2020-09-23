@@ -16,9 +16,6 @@ old_categories:
   - developers
 tags:
   - devrel
-slugs:
-  - nexmo-latest-devrel-aaron-bassett-dr
-  - aaron-is-joining-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2017/06/08/nexmo-latest-devrel-aaron-bassett-dr
 redirect: https://www.nexmo.com/blog/2017/06/08/nexmo-latest-devrel-aaron-bassett-dr
 ---

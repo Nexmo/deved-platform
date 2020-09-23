@@ -19,9 +19,6 @@ old_categories:
   - voice
 tags:
   - websockets
-slugs:
-  - nexmo-voice-api-demo-telephony-ai-platforms-websockets
-  - nexmo-voice-api-demo-bridging-telephony-and-ai-platforms-with-websockets
 canonical: https://www.nexmo.com/blog/2016/11/30/nexmo-voice-api-demo-telephony-ai-platforms-websockets
 redirect: https://www.nexmo.com/blog/2016/11/30/nexmo-voice-api-demo-telephony-ai-platforms-websockets
 ---

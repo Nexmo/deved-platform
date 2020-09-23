@@ -15,9 +15,6 @@ old_categories:
 tags:
   - php
   - php-sdk
-slugs:
-  - announcing-the-php-server-sdk-version-2-2-0-release
-  - announcing-the-php-server-sdk-version-220-release
 canonical: https://www.nexmo.com/blog/2020/08/03/announcing-the-php-server-sdk-version-2-2-0-release
 redirect: https://www.nexmo.com/blog/2020/08/03/announcing-the-php-server-sdk-version-2-2-0-release
 ---

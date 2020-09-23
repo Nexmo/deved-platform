@@ -23,9 +23,6 @@ old_categories:
 tags:
   - google-cloud
   - python
-slugs:
-  - sending-sms-from-python-with-google-cloud-functions-dr-2
-  - google-cloud-functions-python
 canonical: https://www.nexmo.com/blog/2020/09/07/sending-sms-from-python-with-google-cloud-functions-dr-2
 redirect: https://www.nexmo.com/blog/2020/09/07/sending-sms-from-python-with-google-cloud-functions-dr-2
 ---

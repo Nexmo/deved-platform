@@ -18,9 +18,6 @@ tags:
   - node-js
   - sandbox
   - whatsapp
-slugs:
-  - send-a-whatsapp-message-with-node-dr
-  - how-to-send-a-whatsapp-message-with-nodejs
 canonical: https://www.nexmo.com/blog/2020/04/15/send-a-whatsapp-message-with-node-dr
 redirect: https://www.nexmo.com/blog/2020/04/15/send-a-whatsapp-message-with-node-dr
 ---

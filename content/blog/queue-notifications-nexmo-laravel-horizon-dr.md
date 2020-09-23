@@ -22,9 +22,6 @@ tags:
   - laravel
   - php
   - tutorial
-slugs:
-  - queue-notifications-nexmo-laravel-horizon-dr
-  - queue-wait-time-notifications-with-nexmo-and-laravel-horizon
 canonical: https://www.nexmo.com/blog/2018/11/13/queue-notifications-nexmo-laravel-horizon-dr
 redirect: https://www.nexmo.com/blog/2018/11/13/queue-notifications-nexmo-laravel-horizon-dr
 ---

@@ -17,9 +17,6 @@ old_categories:
   - developers
   - hack-worthy
 tags: []
-slugs:
-  - nexmo-ride-hailing-chatbot
-  - nexmo-powers-innovative-ride-hailing-chatbot
 canonical: https://www.nexmo.com/blog/2017/04/03/nexmo-ride-hailing-chatbot
 redirect: https://www.nexmo.com/blog/2017/04/03/nexmo-ride-hailing-chatbot
 ---

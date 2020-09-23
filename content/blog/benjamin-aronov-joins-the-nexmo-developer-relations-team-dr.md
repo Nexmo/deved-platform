@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - team
-slugs:
-  - benjamin-aronov-joins-the-nexmo-developer-relations-team-dr
-  - benjamin-aronov-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2020/02/21/benjamin-aronov-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2020/02/21/benjamin-aronov-joins-the-nexmo-developer-relations-team-dr
 ---

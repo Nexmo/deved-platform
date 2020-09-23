@@ -16,9 +16,6 @@ old_categories:
   - developers
 tags:
   - devrel
-slugs:
-  - welcoming-bibi-nexmo-developer-relations-team-dr
-  - welcoming-bibi-to-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2017/06/07/welcoming-bibi-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2017/06/07/welcoming-bibi-nexmo-developer-relations-team-dr
 ---

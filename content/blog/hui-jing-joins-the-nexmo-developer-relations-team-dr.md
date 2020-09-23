@@ -16,9 +16,6 @@ old_categories:
 tags:
   - devrel
   - singapore
-slugs:
-  - hui-jing-joins-the-nexmo-developer-relations-team-dr
-  - hui-jing-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2018/09/27/hui-jing-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/09/27/hui-jing-joins-the-nexmo-developer-relations-team-dr
 ---

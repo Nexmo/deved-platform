@@ -20,9 +20,6 @@ tags:
   - messagesapi
   - mms
   - nodejs
-slugs:
-  - how-to-send-mms-with-node-js-dr
-  - how-to-send-mms-messages-with-nodejs
 canonical: https://www.nexmo.com/blog/2019/03/26/how-to-send-mms-with-node-js-dr
 redirect: https://www.nexmo.com/blog/2019/03/26/how-to-send-mms-with-node-js-dr
 ---

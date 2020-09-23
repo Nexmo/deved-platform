@@ -18,9 +18,6 @@ tags:
   - docker
   - python
   - sms
-slugs:
-  - dockerize-python-queue-manager-project-for-easy-deployment-dr
-  - dockerize-python-queue-manager-project-for-easy-deployment
 canonical: https://www.nexmo.com/blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr
 redirect: https://www.nexmo.com/blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr
 ---

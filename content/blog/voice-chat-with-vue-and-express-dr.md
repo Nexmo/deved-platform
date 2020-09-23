@@ -20,9 +20,6 @@ tags:
   - javascript
   - node-js
   - vue
-slugs:
-  - voice-chat-with-vue-and-express-dr
-  - creating-a-voice-chat-application-with-vuejs-and-express
 canonical: https://www.nexmo.com/blog/2019/08/05/voice-chat-with-vue-and-express-dr
 redirect: https://www.nexmo.com/blog/2019/08/05/voice-chat-with-vue-and-express-dr
 ---

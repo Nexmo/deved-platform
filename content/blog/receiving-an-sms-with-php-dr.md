@@ -17,9 +17,6 @@ old_categories:
 tags:
   - php
   - sms
-slugs:
-  - receiving-an-sms-with-php-dr
-  - receiving-an-sms-with-php
 canonical: https://www.nexmo.com/blog/2018/06/19/receiving-an-sms-with-php-dr
 redirect: https://www.nexmo.com/blog/2018/06/19/receiving-an-sms-with-php-dr
 ---

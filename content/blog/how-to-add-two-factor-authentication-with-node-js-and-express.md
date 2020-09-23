@@ -21,9 +21,6 @@ tags:
   - node
   - two-factor-auth
   - verify
-slugs:
-  - how-to-add-two-factor-authentication-with-node-js-and-express
-  - how-to-add-two-factor-authentication-with-nodejs-and-express
 canonical: https://www.nexmo.com/blog/2020/07/17/how-to-add-two-factor-authentication-with-node-js-and-express
 redirect: https://www.nexmo.com/blog/2020/07/17/how-to-add-two-factor-authentication-with-node-js-and-express
 ---

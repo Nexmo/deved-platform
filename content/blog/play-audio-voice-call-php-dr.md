@@ -21,9 +21,6 @@ tags:
   - rick-astley
   - voice-api
   - voice-call
-slugs:
-  - play-audio-voice-call-php-dr
-  - play-an-audio-file-into-a-voice-call-with-php
 canonical: https://www.nexmo.com/blog/2019/04/12/play-audio-voice-call-php-dr
 redirect: https://www.nexmo.com/blog/2019/04/12/play-audio-voice-call-php-dr
 ---

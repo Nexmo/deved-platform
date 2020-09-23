@@ -18,9 +18,6 @@ tags:
   - no-code
   - sms
   - zapier
-slugs:
-  - text-when-you-get-home-safely-with-zapier-dr
-  - text-when-you-get-home-safely-with-zapier
 canonical: https://www.nexmo.com/blog/2020/04/09/text-when-you-get-home-safely-with-zapier-dr
 redirect: https://www.nexmo.com/blog/2020/04/09/text-when-you-get-home-safely-with-zapier-dr
 ---

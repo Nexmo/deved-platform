@@ -18,9 +18,6 @@ tags:
   - devrel
   - firebase
   - sms
-slugs:
-  - send-and-receive-sms-messages-with-firebase-functions-dr
-  - send-and-receive-sms-messages-with-firebase-functions
 canonical: https://www.nexmo.com/blog/2020/01/24/send-and-receive-sms-messages-with-firebase-functions-dr
 redirect: https://www.nexmo.com/blog/2020/01/24/send-and-receive-sms-messages-with-firebase-functions-dr
 ---

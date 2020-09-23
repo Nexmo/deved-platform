@@ -19,9 +19,6 @@ tags:
   - dispatch-api
   - one-time-password
   - otp
-slugs:
-  - build-an-otp-service-dr
-  - build-a-one-time-password-otp-service-using-the-dispatch-api
 canonical: https://www.nexmo.com/blog/2019/02/07/build-an-otp-service-dr
 redirect: https://www.nexmo.com/blog/2019/02/07/build-an-otp-service-dr
 ---

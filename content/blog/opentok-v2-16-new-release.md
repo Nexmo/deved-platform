@@ -17,9 +17,6 @@ old_categories:
 tags:
   - scalable-video
   - simulcast
-slugs:
-  - opentok-v2-16-new-release
-  - opentok-version-216-whats-new-and-how-you-can-use-it
 canonical: https://www.nexmo.com/blog/2019/07/02/opentok-v2-16-new-release
 redirect: https://www.nexmo.com/blog/2019/07/02/opentok-v2-16-new-release
 ---

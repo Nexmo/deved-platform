@@ -21,9 +21,6 @@ tags:
   - python
   - verify
   - x-with-y
-slugs:
-  - 2-factor-authentication-sms-voice-django-dr
-  - add-two-factor-authentication-to-your-django-app-with-nexmo
 canonical: https://www.nexmo.com/blog/2017/07/13/2-factor-authentication-sms-voice-django-dr
 redirect: https://www.nexmo.com/blog/2017/07/13/2-factor-authentication-sms-voice-django-dr
 ---

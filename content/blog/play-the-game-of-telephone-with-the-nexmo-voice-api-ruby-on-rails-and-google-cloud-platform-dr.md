@@ -20,9 +20,6 @@ tags:
   - google-cloud-platform
   - ruby-on-rails
   - voice-api
-slugs:
-  - play-the-game-of-telephone-with-the-nexmo-voice-api-ruby-on-rails-and-google-cloud-platform-dr
-  - play-the-game-of-telephone-with-the-nexmo-voice-api
 canonical: https://www.nexmo.com/blog/2019/06/13/play-the-game-of-telephone-with-the-nexmo-voice-api-ruby-on-rails-and-google-cloud-platform-dr
 redirect: https://www.nexmo.com/blog/2019/06/13/play-the-game-of-telephone-with-the-nexmo-voice-api-ruby-on-rails-and-google-cloud-platform-dr
 ---

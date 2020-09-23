@@ -21,9 +21,6 @@ tags:
   - number-insight
   - react
   - real-time
-slugs:
-  - real-time-number-insight-dashboard-dr
-  - last-christmas-i-gave-you-my-charts-a-real-time-number-insight-dashboard
 canonical: https://www.nexmo.com/blog/2018/12/12/real-time-number-insight-dashboard-dr
 redirect: https://www.nexmo.com/blog/2018/12/12/real-time-number-insight-dashboard-dr
 ---

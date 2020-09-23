@@ -20,9 +20,6 @@ tags:
   - nexmo
   - verify-api
   - wordpress
-slugs:
-  - adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr
-  - adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api
 canonical: https://www.nexmo.com/blog/2019/10/09/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr
 redirect: https://www.nexmo.com/blog/2019/10/09/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr
 ---

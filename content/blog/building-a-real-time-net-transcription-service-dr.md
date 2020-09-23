@@ -20,9 +20,6 @@ tags:
   - azure
   - machine-learning
   - transcription
-slugs:
-  - building-a-real-time-net-transcription-service-dr
-  - building-a-real-time-net-transcription-service
 canonical: https://www.nexmo.com/blog/2019/12/30/building-a-real-time-net-transcription-service-dr
 redirect: https://www.nexmo.com/blog/2019/12/30/building-a-real-time-net-transcription-service-dr
 ---

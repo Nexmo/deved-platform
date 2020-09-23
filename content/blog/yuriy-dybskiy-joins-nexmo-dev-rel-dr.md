@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - dev-rel
-slugs:
-  - yuriy-dybskiy-joins-nexmo-dev-rel-dr
-  - yuriy-dybskiy-joins-the-nexmo-dev-rel-team-in-sf
 canonical: https://www.nexmo.com/blog/2019/02/04/yuriy-dybskiy-joins-nexmo-dev-rel-dr
 redirect: https://www.nexmo.com/blog/2019/02/04/yuriy-dybskiy-joins-nexmo-dev-rel-dr
 ---

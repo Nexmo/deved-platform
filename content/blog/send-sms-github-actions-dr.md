@@ -19,9 +19,6 @@ tags:
   - continuous-integration
   - devrel
   - sms
-slugs:
-  - send-sms-github-actions-dr
-  - send-sms-with-github-actions
 canonical: https://www.nexmo.com/blog/2019/02/08/send-sms-github-actions-dr
 redirect: https://www.nexmo.com/blog/2019/02/08/send-sms-github-actions-dr
 ---

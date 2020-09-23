@@ -21,9 +21,6 @@ tags:
   - tts
   - voice-api
   - x-with-y
-slugs:
-  - text-to-speech-phone-call-with-django-dr
-  - making-a-text-to-speech-phone-call-with-django
 canonical: https://www.nexmo.com/blog/2017/08/14/text-to-speech-phone-call-with-django-dr
 redirect: https://www.nexmo.com/blog/2017/08/14/text-to-speech-phone-call-with-django-dr
 ---

@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - dev-rel
-slugs:
-  - fabian-joins-the-nexmo-developer-experience-team-dr
-  - fabian-joins-the-nexmo-developer-experience-team
 canonical: https://www.nexmo.com/blog/2019/06/13/fabian-joins-the-nexmo-developer-experience-team-dr
 redirect: https://www.nexmo.com/blog/2019/06/13/fabian-joins-the-nexmo-developer-experience-team-dr
 ---

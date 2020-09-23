@@ -19,9 +19,6 @@ tags:
   - getting-started
   - number-insight
   - tutorial
-slugs:
-  - how-to-get-standard-number-insights-within-an-asp-net-app-dr
-  - how-to-get-standard-number-insights-within-an-aspnet-app
 canonical: https://www.nexmo.com/blog/2018/05/24/how-to-get-standard-number-insights-within-an-asp-net-app-dr
 redirect: https://www.nexmo.com/blog/2018/05/24/how-to-get-standard-number-insights-within-an-asp-net-app-dr
 ---

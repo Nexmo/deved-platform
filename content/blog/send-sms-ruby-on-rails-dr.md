@@ -20,9 +20,6 @@ tags:
   - ruby
   - ruby-on-rails
   - sms
-slugs:
-  - send-sms-ruby-on-rails-dr
-  - how-to-send-sms-messages-with-ruby-on-rails
 canonical: https://www.nexmo.com/blog/2017/10/16/send-sms-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2017/10/16/send-sms-ruby-on-rails-dr
 ---

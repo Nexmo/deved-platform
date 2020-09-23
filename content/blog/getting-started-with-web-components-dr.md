@@ -24,9 +24,6 @@ tags:
   - web-components
   - web-platform-apis
   - web-standards
-slugs:
-  - getting-started-with-web-components-dr
-  - getting-started-with-web-components
 canonical: https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr
 redirect: https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr
 ---

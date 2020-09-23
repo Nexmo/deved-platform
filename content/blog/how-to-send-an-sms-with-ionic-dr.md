@@ -20,9 +20,6 @@ tags:
   - hapi
   - ionic
   - sms
-slugs:
-  - how-to-send-an-sms-with-ionic-dr
-  - how-to-send-an-sms-with-ionic
 canonical: https://www.nexmo.com/blog/2020/08/19/how-to-send-an-sms-with-ionic-dr
 redirect: https://www.nexmo.com/blog/2020/08/19/how-to-send-an-sms-with-ionic-dr
 ---

@@ -23,9 +23,6 @@ tags:
   - security
   - verify
   - verify-api
-slugs:
-  - building-a-check-in-app-with-nexmos-verify-api-dr
-  - building-a-check-in-app-with-nexmoand8217s-verify-api-and-koajs
 canonical: https://www.nexmo.com/blog/2019/06/27/building-a-check-in-app-with-nexmos-verify-api-dr
 redirect: https://www.nexmo.com/blog/2019/06/27/building-a-check-in-app-with-nexmos-verify-api-dr
 ---

@@ -20,8 +20,6 @@ tags:
   - oas
   - oas3
   - open-api
-slugs:
-  - openapi-makes-easier-integrations
 canonical: https://www.nexmo.com/blog/2020/06/03/openapi-makes-easier-integrations
 redirect: https://www.nexmo.com/blog/2020/06/03/openapi-makes-easier-integrations
 ---

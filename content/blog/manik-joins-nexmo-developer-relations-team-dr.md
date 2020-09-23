@@ -17,9 +17,6 @@ tags:
   - community
   - developer
   - devrel
-slugs:
-  - manik-joins-nexmo-developer-relations-team-dr
-  - manik-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2018/11/07/manik-joins-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/11/07/manik-joins-nexmo-developer-relations-team-dr
 ---

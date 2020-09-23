@@ -23,9 +23,6 @@ tags:
   - voice
   - voice-api
   - voice-proxy
-slugs:
-  - forward-a-call-via-voice-proxy-with-asp-net-core-dr
-  - forward-a-call-via-voice-proxy-with-aspnet-core
 canonical: https://www.nexmo.com/blog/2019/04/18/forward-a-call-via-voice-proxy-with-asp-net-core-dr
 redirect: https://www.nexmo.com/blog/2019/04/18/forward-a-call-via-voice-proxy-with-asp-net-core-dr
 ---

@@ -20,9 +20,6 @@ tags:
   - flask
   - python
   - sms
-slugs:
-  - use-python-and-flask-to-manage-queues-via-sms-dr
-  - use-python-and-flask-to-manage-queues-via-sms
 canonical: https://www.nexmo.com/blog/2020/01/03/use-python-and-flask-to-manage-queues-via-sms-dr
 redirect: https://www.nexmo.com/blog/2020/01/03/use-python-and-flask-to-manage-queues-via-sms-dr
 ---

@@ -18,8 +18,6 @@ tags:
   - microservices
   - python
   - verify
-slugs:
-  - number-verification-in-python-with-aws-lambda-and-vonage
 canonical: https://www.nexmo.com/blog/2020/05/06/number-verification-in-python-with-aws-lambda-and-vonage
 redirect: https://www.nexmo.com/blog/2020/05/06/number-verification-in-python-with-aws-lambda-and-vonage
 ---

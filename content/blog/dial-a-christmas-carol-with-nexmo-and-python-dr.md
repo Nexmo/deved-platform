@@ -21,9 +21,6 @@ tags:
   - dev-rel
   - python
   - voice
-slugs:
-  - dial-a-christmas-carol-with-nexmo-and-python-dr
-  - dial-a-christmas-carol-with-nexmo-and-python
 canonical: https://www.nexmo.com/blog/2018/12/03/dial-a-christmas-carol-with-nexmo-and-python-dr
 redirect: https://www.nexmo.com/blog/2018/12/03/dial-a-christmas-carol-with-nexmo-and-python-dr
 ---

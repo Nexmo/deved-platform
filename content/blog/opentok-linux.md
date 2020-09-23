@@ -21,9 +21,6 @@ tags:
   - opentok-linux-sdk
   - video-game-console
   - video4linux
-slugs:
-  - opentok-linux
-  - how-to-add-streaming-video-on-linux-with-opentok-linux-sdk
 canonical: https://www.nexmo.com/blog/2019/08/14/opentok-linux
 redirect: https://www.nexmo.com/blog/2019/08/14/opentok-linux
 ---

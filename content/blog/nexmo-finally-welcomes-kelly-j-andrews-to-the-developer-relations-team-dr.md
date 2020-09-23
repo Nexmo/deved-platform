@@ -14,9 +14,6 @@ old_categories:
   - developer
 tags:
   - dev-rel
-slugs:
-  - nexmo-finally-welcomes-kelly-j-andrews-to-the-developer-relations-team-dr
-  - nexmo-finally-welcomes-kelly-j-andrews-to-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/02/02/nexmo-finally-welcomes-kelly-j-andrews-to-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/02/02/nexmo-finally-welcomes-kelly-j-andrews-to-the-developer-relations-team-dr
 ---

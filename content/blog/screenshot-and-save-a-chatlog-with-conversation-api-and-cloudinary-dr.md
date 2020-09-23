@@ -20,9 +20,6 @@ tags:
   - conversation-api
   - nexmo
   - screenshot
-slugs:
-  - screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary-dr
-  - screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary
 canonical: https://www.nexmo.com/blog/2019/11/29/screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary-dr
 redirect: https://www.nexmo.com/blog/2019/11/29/screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary-dr
 ---

@@ -20,9 +20,6 @@ tags:
   - devrel
   - java
   - voice-api
-slugs:
-  - create-a-conference-call-with-java-dr
-  - how-to-create-a-conference-call-with-java
 canonical: https://www.nexmo.com/blog/2019/08/23/create-a-conference-call-with-java-dr
 redirect: https://www.nexmo.com/blog/2019/08/23/create-a-conference-call-with-java-dr
 ---

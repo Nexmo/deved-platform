@@ -19,9 +19,6 @@ tags:
   - ibm-watson
   - nexmo-extend
   - sentiment-analysis
-slugs:
-  - adding-sentiment-analysis-to-sms-ibm-watson-dr
-  - adding-sentiment-analysis-to-sms-with-ibm-watson
 canonical: https://www.nexmo.com/blog/2019/04/04/adding-sentiment-analysis-to-sms-ibm-watson-dr
 redirect: https://www.nexmo.com/blog/2019/04/04/adding-sentiment-analysis-to-sms-ibm-watson-dr
 ---

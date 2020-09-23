@@ -18,9 +18,6 @@ tags:
   - java
   - tomcat
   - websocket
-slugs:
-  - create-websocket-server-java-api-dr
-  - creating-a-websocket-server-with-the-java-api-for-websockets
 canonical: https://www.nexmo.com/blog/2018/10/22/create-websocket-server-java-api-dr
 redirect: https://www.nexmo.com/blog/2018/10/22/create-websocket-server-java-api-dr
 ---

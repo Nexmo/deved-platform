@@ -21,9 +21,6 @@ tags:
   - devrel
   - firebase
   - kotlin
-slugs:
-  - make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase-dr
-  - make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase
 canonical: https://www.nexmo.com/blog/2018/07/03/make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase-dr
 redirect: https://www.nexmo.com/blog/2018/07/03/make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase-dr
 ---

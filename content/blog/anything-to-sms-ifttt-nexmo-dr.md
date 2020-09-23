@@ -20,9 +20,6 @@ tags:
   - php
   - serverless
   - sms
-slugs:
-  - anything-to-sms-ifttt-nexmo-dr
-  - anything-to-sms-with-ifttt-and-nexmo
 canonical: https://www.nexmo.com/blog/2018/09/18/anything-to-sms-ifttt-nexmo-dr
 redirect: https://www.nexmo.com/blog/2018/09/18/anything-to-sms-ifttt-nexmo-dr
 ---

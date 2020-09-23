@@ -21,9 +21,6 @@ tags:
   - ruby
   - sdk
   - static-typing
-slugs:
-  - lessons-learned-along-the-way-with-static-type-checking-in-ruby-dr
-  - insights-from-incorporating-static-type-checking-in-ruby
 canonical: https://www.nexmo.com/blog/2020/03/23/lessons-learned-along-the-way-with-static-type-checking-in-ruby-dr
 redirect: https://www.nexmo.com/blog/2020/03/23/lessons-learned-along-the-way-with-static-type-checking-in-ruby-dr
 ---

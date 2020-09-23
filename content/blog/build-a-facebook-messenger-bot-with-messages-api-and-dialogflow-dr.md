@@ -20,9 +20,6 @@ tags:
   - javascript
   - messaging
   - tutorial
-slugs:
-  - build-a-facebook-messenger-bot-with-messages-api-and-dialogflow-dr
-  - build-a-facebook-messenger-bot-with-messages-api-and-dialogflow
 canonical: https://www.nexmo.com/blog/2018/10/16/build-a-facebook-messenger-bot-with-messages-api-and-dialogflow-dr
 redirect: https://www.nexmo.com/blog/2018/10/16/build-a-facebook-messenger-bot-with-messages-api-and-dialogflow-dr
 ---

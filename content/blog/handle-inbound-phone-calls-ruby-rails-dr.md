@@ -25,9 +25,6 @@ tags:
   - voice
   - voice-api
   - x-with-y
-slugs:
-  - handle-inbound-phone-calls-ruby-rails-dr
-  - how-to-handle-inbound-phone-calls-with-ruby-on-rails
 canonical: https://www.nexmo.com/blog/2017/12/21/handle-inbound-phone-calls-ruby-rails-dr
 redirect: https://www.nexmo.com/blog/2017/12/21/handle-inbound-phone-calls-ruby-rails-dr
 ---

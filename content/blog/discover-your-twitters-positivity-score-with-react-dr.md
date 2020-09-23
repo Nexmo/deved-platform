@@ -22,9 +22,6 @@ tags:
   - reactjs
   - sentiment-analysis
   - twitter
-slugs:
-  - discover-your-twitters-positivity-score-with-react-dr
-  - discover-your-twitters-positivity-score-with-react
 canonical: https://www.nexmo.com/blog/2019/07/01/discover-your-twitters-positivity-score-with-react-dr
 redirect: https://www.nexmo.com/blog/2019/07/01/discover-your-twitters-positivity-score-with-react-dr
 ---

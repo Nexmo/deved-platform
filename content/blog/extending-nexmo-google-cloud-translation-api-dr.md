@@ -19,9 +19,6 @@ tags:
   - node-js
   - sms
   - translation
-slugs:
-  - extending-nexmo-google-cloud-translation-api-dr
-  - translating-sms-messages-using-google-cloudand8217s-translation-api
 canonical: https://www.nexmo.com/blog/2019/10/24/extending-nexmo-google-cloud-translation-api-dr
 redirect: https://www.nexmo.com/blog/2019/10/24/extending-nexmo-google-cloud-translation-api-dr
 ---

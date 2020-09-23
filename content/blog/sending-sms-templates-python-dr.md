@@ -19,9 +19,6 @@ tags:
   - python
   - sms
   - tutorial
-slugs:
-  - sending-sms-templates-python-dr
-  - sending-sms-templates-with-jinja2-and-python
 canonical: https://www.nexmo.com/blog/2018/12/17/sending-sms-templates-python-dr
 redirect: https://www.nexmo.com/blog/2018/12/17/sending-sms-templates-python-dr
 ---

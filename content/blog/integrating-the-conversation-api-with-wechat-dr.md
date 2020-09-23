@@ -21,9 +21,6 @@ tags:
   - node-js
   - programmable-conversations
   - wechat
-slugs:
-  - integrating-the-conversation-api-with-wechat-dr
-  - integrating-the-conversation-api-with-wechat
 canonical: https://www.nexmo.com/blog/2019/11/01/integrating-the-conversation-api-with-wechat-dr
 redirect: https://www.nexmo.com/blog/2019/11/01/integrating-the-conversation-api-with-wechat-dr
 ---

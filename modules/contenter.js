@@ -252,7 +252,6 @@ export const getFeeds = (posts, options) => {
           description: options.baseDescription
         }
 
-        
         f.posts.forEach(post => {
           feed.addItem({
             title: post.title,

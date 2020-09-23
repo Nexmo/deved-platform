@@ -18,9 +18,6 @@ tags:
   - competition
   - emf-camp
   - events
-slugs:
-  - win-tickets-electromagnetic-field-2016
-  - win-tickets-to-electromagnetic-field-2016
 canonical: https://www.nexmo.com/blog/2016/07/01/win-tickets-electromagnetic-field-2016
 redirect: https://www.nexmo.com/blog/2016/07/01/win-tickets-electromagnetic-field-2016
 ---

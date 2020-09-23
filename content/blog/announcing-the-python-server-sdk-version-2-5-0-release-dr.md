@@ -16,9 +16,6 @@ old_categories:
 tags:
   - python
   - sdk
-slugs:
-  - announcing-the-python-server-sdk-version-2-5-0-release-dr
-  - announcing-the-python-server-sdk-version-25x-release
 canonical: https://www.nexmo.com/blog/2020/08/24/announcing-the-python-server-sdk-version-2-5-0-release-dr
 redirect: https://www.nexmo.com/blog/2020/08/24/announcing-the-python-server-sdk-version-2-5-0-release-dr
 ---

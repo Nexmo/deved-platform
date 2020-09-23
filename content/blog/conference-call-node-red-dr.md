@@ -27,9 +27,6 @@ tags:
   - record-incoming-calls
   - recorded-proxy-call
   - voice-api
-slugs:
-  - conference-call-node-red-dr
-  - build-a-conference-call-with-node-red
 canonical: https://www.nexmo.com/blog/2019/10/07/conference-call-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/10/07/conference-call-node-red-dr
 ---

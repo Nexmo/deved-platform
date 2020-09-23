@@ -20,9 +20,6 @@ tags:
   - javascript
   - voice-api
   - voice-proxy
-slugs:
-  - voice-proxy-node-javascript-express-dr
-  - proxy-voice-calls-anonymously-with-express-the-nexmo-voice-api-and-a-virtual-number
 canonical: https://www.nexmo.com/blog/2018/05/22/voice-proxy-node-javascript-express-dr
 redirect: https://www.nexmo.com/blog/2018/05/22/voice-proxy-node-javascript-express-dr
 ---

@@ -17,9 +17,6 @@ tags:
   - events
   - server-side-swift
   - swift
-slugs:
-  - day-one-nexmo-rwdevcon-2018-dr
-  - day-one-recap-nexmo-rwdevcon-2018
 canonical: https://www.nexmo.com/blog/2018/04/06/day-one-nexmo-rwdevcon-2018-dr
 redirect: https://www.nexmo.com/blog/2018/04/06/day-one-nexmo-rwdevcon-2018-dr
 ---

@@ -27,9 +27,6 @@ tags:
   - nexmo-api-platform
   - sms
   - watson
-slugs:
-  - ibm-bluemix-nexmo-api-platform-available
-  - nexmo-apis-now-available-on-ibm-bluemix
 canonical: https://www.nexmo.com/blog/2017/05/16/ibm-bluemix-nexmo-api-platform-available
 redirect: https://www.nexmo.com/blog/2017/05/16/ibm-bluemix-nexmo-api-platform-available
 ---

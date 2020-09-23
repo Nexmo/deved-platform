@@ -22,9 +22,6 @@ tags:
   - developer-spotlight
   - whatsapp
   - whatsapp-sandbox
-slugs:
-  - build-a-whatsapp-currency-conversion-bot-with-node-js
-  - build-a-whatsapp-currency-conversion-bot-with-nodejs
 canonical: https://www.nexmo.com/blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
 redirect: https://www.nexmo.com/blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
 ---

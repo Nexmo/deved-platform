@@ -20,9 +20,6 @@ tags:
   - javascript
   - messaging
   - sms
-slugs:
-  - sms-bot-glitch-hapi-js-nexmo-messages-api-dr
-  - build-an-sms-bot-on-glitch-with-hapijs-and-the-nexmo-messages-api
 canonical: https://www.nexmo.com/blog/2018/12/13/sms-bot-glitch-hapi-js-nexmo-messages-api-dr
 redirect: https://www.nexmo.com/blog/2018/12/13/sms-bot-glitch-hapi-js-nexmo-messages-api-dr
 ---

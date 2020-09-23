@@ -23,9 +23,6 @@ tags:
   - real-time
   - signalr
   - xsockets
-slugs:
-  - real-time-web-apps-net-options
-  - real-time-web-apps-and-net-what-are-your-options
 canonical: https://www.nexmo.com/blog/2016/05/19/real-time-web-apps-net-options
 redirect: https://www.nexmo.com/blog/2016/05/19/real-time-web-apps-net-options
 ---

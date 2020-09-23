@@ -19,9 +19,6 @@ tags:
   - devrel
   - tutorial
   - voice-api
-slugs:
-  - receive-call-swift-dr
-  - receive-a-phone-call-with-voice-api-and-swift
 canonical: https://www.nexmo.com/blog/2019/02/07/receive-call-swift-dr
 redirect: https://www.nexmo.com/blog/2019/02/07/receive-call-swift-dr
 ---

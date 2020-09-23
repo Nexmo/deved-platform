@@ -18,9 +18,6 @@ old_categories:
 tags:
   - java
   - voice
-slugs:
-  - receive-a-phone-call-with-java-dr
-  - receive-a-phone-call-with-java
 canonical: https://www.nexmo.com/blog/2018/08/09/receive-a-phone-call-with-java-dr
 redirect: https://www.nexmo.com/blog/2018/08/09/receive-a-phone-call-with-java-dr
 ---

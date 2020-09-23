@@ -19,8 +19,6 @@ tags:
   - blazor
   - signalr
   - sms
-slugs:
-  - how-to-receive-an-sms-with-blazor-and-signalr
 canonical: https://www.nexmo.com/blog/2020/07/14/how-to-receive-an-sms-with-blazor-and-signalr
 redirect: https://www.nexmo.com/blog/2020/07/14/how-to-receive-an-sms-with-blazor-and-signalr
 ---

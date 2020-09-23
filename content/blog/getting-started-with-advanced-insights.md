@@ -19,8 +19,6 @@ tags:
   - insights
   - opentok
   - video
-slugs:
-  - getting-started-with-advanced-insights
 canonical: https://www.nexmo.com/blog/2020/04/07/getting-started-with-advanced-insights
 redirect: https://www.nexmo.com/blog/2020/04/07/getting-started-with-advanced-insights
 ---

@@ -22,9 +22,6 @@ tags:
   - messaging
   - sms
   - tutorial
-slugs:
-  - curl-https-nexmo-sms-api-behind-the-scenes-dr
-  - curl-https-and-the-nexmo-sms-api-and8211-behind-the-scenes
 canonical: https://www.nexmo.com/blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr
 redirect: https://www.nexmo.com/blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr
 ---

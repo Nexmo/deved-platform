@@ -22,9 +22,6 @@ tags:
   - developer-relations
   - microsoft-bot
   - verify
-slugs:
-  - add-two-factor-authentication-to-a-microsoft-bot-with-nexmos-verify-api-dr
-  - add-two-factor-authentication-to-a-microsoft-bot-with-nexmoand8217s-verify-api
 canonical: https://www.nexmo.com/blog/2018/07/11/add-two-factor-authentication-to-a-microsoft-bot-with-nexmos-verify-api-dr
 redirect: https://www.nexmo.com/blog/2018/07/11/add-two-factor-authentication-to-a-microsoft-bot-with-nexmos-verify-api-dr
 ---

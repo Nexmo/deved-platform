@@ -20,9 +20,6 @@ tags:
   - speech-recognition
   - speech-to-text
   - voice-api
-slugs:
-  - speech-to-text-with-nexmo-and-azure-speech-dr
-  - speech-to-text-with-nexmo-and-microsoft-azure
 canonical: https://www.nexmo.com/blog/2019/03/18/speech-to-text-with-nexmo-and-azure-speech-dr
 redirect: https://www.nexmo.com/blog/2019/03/18/speech-to-text-with-nexmo-and-azure-speech-dr
 ---

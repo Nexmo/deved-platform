@@ -25,9 +25,6 @@ tags:
   - omnichannel
   - react
   - tokbox
-slugs:
-  - how-to-add-video-to-react-chat-app-with-nexmo-dr
-  - how-to-add-video-to-your-react-chat-app-with-nexmo
 canonical: https://www.nexmo.com/blog/2019/10/04/how-to-add-video-to-react-chat-app-with-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/10/04/how-to-add-video-to-react-chat-app-with-nexmo-dr
 ---

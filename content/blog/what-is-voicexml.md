@@ -16,8 +16,6 @@ old_categories:
   - developers
   - voice
 tags: []
-slugs:
-  - what-is-voicexml
 canonical: https://www.nexmo.com/blog/2015/02/21/what-is-voicexml
 redirect: https://www.nexmo.com/blog/2015/02/21/what-is-voicexml
 ---

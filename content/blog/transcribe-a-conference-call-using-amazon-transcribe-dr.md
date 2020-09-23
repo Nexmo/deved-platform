@@ -20,9 +20,6 @@ tags:
   - conference-calls
   - transcribe
   - voice-api
-slugs:
-  - transcribe-a-conference-call-using-amazon-transcribe-dr
-  - transcribe-a-conference-call-using-amazon-transcribe-and-vonage
 canonical: https://www.nexmo.com/blog/2019/08/26/transcribe-a-conference-call-using-amazon-transcribe-dr
 redirect: https://www.nexmo.com/blog/2019/08/26/transcribe-a-conference-call-using-amazon-transcribe-dr
 ---

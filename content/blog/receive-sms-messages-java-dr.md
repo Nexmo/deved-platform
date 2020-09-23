@@ -19,9 +19,6 @@ old_categories:
 tags:
   - java
   - x-with-y
-slugs:
-  - receive-sms-messages-java-dr
-  - how-to-receive-sms-messages-with-java
 canonical: https://www.nexmo.com/blog/2017/05/31/receive-sms-messages-java-dr
 redirect: https://www.nexmo.com/blog/2017/05/31/receive-sms-messages-java-dr
 ---

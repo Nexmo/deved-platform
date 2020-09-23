@@ -19,9 +19,6 @@ tags:
   - asp-net
   - csharp
   - voice-api
-slugs:
-  - how-to-build-a-voicemail-with-asp-net-core-and-nancyfx-dr
-  - how-to-build-a-voicemail-with-aspnet-core-and-nancyfx
 canonical: https://www.nexmo.com/blog/2019/07/08/how-to-build-a-voicemail-with-asp-net-core-and-nancyfx-dr
 redirect: https://www.nexmo.com/blog/2019/07/08/how-to-build-a-voicemail-with-asp-net-core-and-nancyfx-dr
 ---

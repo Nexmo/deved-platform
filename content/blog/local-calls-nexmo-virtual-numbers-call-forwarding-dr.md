@@ -22,9 +22,6 @@ tags:
   - geographical
   - phone-number
   - voice
-slugs:
-  - local-calls-nexmo-virtual-numbers-call-forwarding-dr
-  - local-calls-for-friends-and-family-this-christmas-with-nexmo-virtual-numbers-and-call-forwarding
 canonical: https://www.nexmo.com/blog/2018/12/10/local-calls-nexmo-virtual-numbers-call-forwarding-dr
 redirect: https://www.nexmo.com/blog/2018/12/10/local-calls-nexmo-virtual-numbers-call-forwarding-dr
 ---

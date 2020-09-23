@@ -23,9 +23,6 @@ tags:
   - python
   - sms
   - voice
-slugs:
-  - how-to-build-a-nightscout-notifier-with-nexmo-messages-and-python-part-two-dr
-  - how-to-build-a-nightscout-notifier-with-nexmo-messages-and-python-and8211-part-two
 canonical: https://www.nexmo.com/blog/2020/02/27/how-to-build-a-nightscout-notifier-with-nexmo-messages-and-python-part-two-dr
 redirect: https://www.nexmo.com/blog/2020/02/27/how-to-build-a-nightscout-notifier-with-nexmo-messages-and-python-part-two-dr
 ---

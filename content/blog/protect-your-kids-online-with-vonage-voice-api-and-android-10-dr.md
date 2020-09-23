@@ -20,9 +20,6 @@ tags:
   - node-js
   - voice-api
   - voice-proxy
-slugs:
-  - protect-your-kids-online-with-vonage-voice-api-and-android-10-dr
-  - protect-your-kids-online-with-vonage-voice-api-and-android-10
 canonical: https://www.nexmo.com/blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10-dr
 redirect: https://www.nexmo.com/blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10-dr
 ---

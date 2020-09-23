@@ -18,9 +18,6 @@ old_categories:
   - tutorial
 tags:
   - x-with-y
-slugs:
-  - send-sms-messages-asp-net-mvc-framework-dr
-  - how-to-send-sms-messages-with-aspnet-mvc-framework
 canonical: https://www.nexmo.com/blog/2017/03/23/send-sms-messages-asp-net-mvc-framework-dr
 redirect: https://www.nexmo.com/blog/2017/03/23/send-sms-messages-asp-net-mvc-framework-dr
 ---

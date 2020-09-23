@@ -19,9 +19,6 @@ tags:
   - libraries
   - railconf
   - ruby
-slugs:
-  - ruby-gem
-  - announcing-the-official-nexmo-ruby-gem
 canonical: https://www.nexmo.com/blog/2016/05/04/ruby-gem
 redirect: https://www.nexmo.com/blog/2016/05/04/ruby-gem
 ---

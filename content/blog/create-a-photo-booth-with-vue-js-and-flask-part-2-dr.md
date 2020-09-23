@@ -21,9 +21,6 @@ tags:
   - sms
   - video-api
   - vuejs
-slugs:
-  - create-a-photo-booth-with-vue-js-and-flask-part-2-dr
-  - create-a-photo-booth-with-vuejs-and-flask-part-2
 canonical: https://www.nexmo.com/blog/2020/06/26/create-a-photo-booth-with-vue-js-and-flask-part-2-dr
 redirect: https://www.nexmo.com/blog/2020/06/26/create-a-photo-booth-with-vue-js-and-flask-part-2-dr
 ---

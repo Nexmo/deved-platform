@@ -23,9 +23,6 @@ tags:
   - node-js
   - sms
   - text-translation
-slugs:
-  - text-translation-api-comparison-dr
-  - text-translation-api-comparison
 canonical: https://www.nexmo.com/blog/2019/12/10/text-translation-api-comparison-dr
 redirect: https://www.nexmo.com/blog/2019/12/10/text-translation-api-comparison-dr
 ---

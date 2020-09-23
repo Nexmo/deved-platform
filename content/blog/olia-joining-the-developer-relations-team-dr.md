@@ -16,9 +16,6 @@ old_categories:
   - developers
 tags:
   - devrel
-slugs:
-  - olia-joining-the-developer-relations-team-dr
-  - olia-joining-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2016/11/22/olia-joining-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2016/11/22/olia-joining-the-developer-relations-team-dr
 ---

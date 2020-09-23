@@ -24,9 +24,6 @@ tags:
   - nodejs
   - sms
   - x-with-y
-slugs:
-  - how-to-send-sms-messages-with-node-js-and-express-dr
-  - how-to-send-sms-messages-with-nodejs-and-express
 canonical: https://www.nexmo.com/blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr
 redirect: https://www.nexmo.com/blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr
 ---

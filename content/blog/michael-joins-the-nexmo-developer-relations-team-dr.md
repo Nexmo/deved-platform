@@ -14,9 +14,6 @@ category: tutorial
 old_categories:
   - developer
 tags: []
-slugs:
-  - michael-joins-the-nexmo-developer-relations-team-dr
-  - michael-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/10/28/michael-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/10/28/michael-joins-the-nexmo-developer-relations-team-dr
 ---

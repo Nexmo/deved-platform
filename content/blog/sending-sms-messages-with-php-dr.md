@@ -21,9 +21,6 @@ tags:
   - php
   - slimphp
   - x-with-y
-slugs:
-  - sending-sms-messages-with-php-dr
-  - sending-sms-messages-with-php
 canonical: https://www.nexmo.com/blog/2017/09/20/sending-sms-messages-with-php-dr
 redirect: https://www.nexmo.com/blog/2017/09/20/sending-sms-messages-with-php-dr
 ---

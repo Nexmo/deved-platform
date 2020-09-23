@@ -23,9 +23,6 @@ tags:
   - react-native
   - sms
   - verify
-slugs:
-  - add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr
-  - add-sms-verification-in-a-react-native-app-using-nodejs-and-express
 canonical: https://www.nexmo.com/blog/2020/05/26/add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr
 redirect: https://www.nexmo.com/blog/2020/05/26/add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr
 ---

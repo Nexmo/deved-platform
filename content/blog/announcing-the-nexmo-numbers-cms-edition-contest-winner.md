@@ -14,8 +14,6 @@ old_categories:
   - developer
   - developers
 tags: []
-slugs:
-  - announcing-the-nexmo-numbers-cms-edition-contest-winner
 canonical: https://www.nexmo.com/blog/2015/04/29/announcing-the-nexmo-numbers-cms-edition-contest-winner
 redirect: https://www.nexmo.com/blog/2015/04/29/announcing-the-nexmo-numbers-cms-edition-contest-winner
 ---

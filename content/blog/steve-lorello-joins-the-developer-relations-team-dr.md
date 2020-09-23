@@ -14,9 +14,6 @@ category: tutorial
 old_categories:
   - developer
 tags: []
-slugs:
-  - steve-lorello-joins-the-developer-relations-team-dr
-  - steve-lorello-joins-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/11/13/steve-lorello-joins-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/11/13/steve-lorello-joins-the-developer-relations-team-dr
 ---

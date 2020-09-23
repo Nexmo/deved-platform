@@ -22,8 +22,6 @@ tags:
   - video-api
   - video-recording
   - zendesk
-slugs:
-  - add-video-capabilities-to-zendesk-with-vonage-video-api
 canonical: https://www.nexmo.com/blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api
 redirect: https://www.nexmo.com/blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api
 ---

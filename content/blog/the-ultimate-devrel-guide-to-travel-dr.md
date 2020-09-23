@@ -17,9 +17,6 @@ tags:
   - developer-relations
   - devrel
   - travel
-slugs:
-  - the-ultimate-devrel-guide-to-travel-dr
-  - the-ultimate-devrel-guide-to-travel
 canonical: https://www.nexmo.com/blog/2019/11/27/the-ultimate-devrel-guide-to-travel-dr
 redirect: https://www.nexmo.com/blog/2019/11/27/the-ultimate-devrel-guide-to-travel-dr
 ---

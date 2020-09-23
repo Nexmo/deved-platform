@@ -17,9 +17,6 @@ old_categories:
   - tutorial
 tags:
   - x-with-y
-slugs:
-  - send-sms-messages-python-flask-dr
-  - how-to-send-sms-messages-with-python-flask-and-vonage
 canonical: https://www.nexmo.com/blog/2017/06/22/send-sms-messages-python-flask-dr
 redirect: https://www.nexmo.com/blog/2017/06/22/send-sms-messages-python-flask-dr
 ---

@@ -22,9 +22,6 @@ tags:
   - net
   - community
   - release
-slugs:
-  - nexmo-dotnet-client-library-new-release-dr
-  - nexmo-releases-new-version-of-net-client-library
 canonical: https://www.nexmo.com/blog/2018/02/28/nexmo-dotnet-client-library-new-release-dr
 redirect: https://www.nexmo.com/blog/2018/02/28/nexmo-dotnet-client-library-new-release-dr
 ---

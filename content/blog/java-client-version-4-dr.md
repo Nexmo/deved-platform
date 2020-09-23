@@ -17,9 +17,6 @@ tags:
   - client
   - java
   - release
-slugs:
-  - java-client-version-4-dr
-  - version-4-of-the-nexmo-java-client-library-is-here
 canonical: https://www.nexmo.com/blog/2018/11/16/java-client-version-4-dr
 redirect: https://www.nexmo.com/blog/2018/11/16/java-client-version-4-dr
 ---

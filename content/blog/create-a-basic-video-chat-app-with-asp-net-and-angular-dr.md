@@ -20,9 +20,6 @@ tags:
   - asp-net
   - video-api
   - video-chat
-slugs:
-  - create-a-basic-video-chat-app-with-asp-net-and-angular-dr
-  - create-a-basic-video-chat-app-with-aspnet-and-angular
 canonical: https://www.nexmo.com/blog/2020/05/08/create-a-basic-video-chat-app-with-asp-net-and-angular-dr
 redirect: https://www.nexmo.com/blog/2020/05/08/create-a-basic-video-chat-app-with-asp-net-and-angular-dr
 ---

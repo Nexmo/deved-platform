@@ -19,9 +19,6 @@ tags:
   - rest
   - smpp
   - sms
-slugs:
-  - build-rest-implementation-scales-better-smpp
-  - how-to-build-a-rest-implementation-that-scales-better-than-smpp
 canonical: https://www.nexmo.com/blog/2016/03/25/build-rest-implementation-scales-better-smpp
 redirect: https://www.nexmo.com/blog/2016/03/25/build-rest-implementation-scales-better-smpp
 ---

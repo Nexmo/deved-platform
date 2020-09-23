@@ -24,9 +24,6 @@ tags:
   - nodejs
   - sms
   - x-with-y
-slugs:
-  - receive-sms-messages-node-js-express-dr
-  - how-to-receive-sms-messages-with-nodejs-and-express
 canonical: https://www.nexmo.com/blog/2016/10/27/receive-sms-messages-node-js-express-dr
 redirect: https://www.nexmo.com/blog/2016/10/27/receive-sms-messages-node-js-express-dr
 ---

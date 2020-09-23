@@ -22,9 +22,6 @@ tags:
   - javascript
   - sms
   - tutorial
-slugs:
-  - sms-in-the-browser-an-adventure-in-websockets-and-the-nexmo-messages-api-dr
-  - sms-in-the-browser-an-adventure-in-websockets
 canonical: https://www.nexmo.com/blog/2019/01/15/sms-in-the-browser-an-adventure-in-websockets-and-the-nexmo-messages-api-dr
 redirect: https://www.nexmo.com/blog/2019/01/15/sms-in-the-browser-an-adventure-in-websockets-and-the-nexmo-messages-api-dr
 ---

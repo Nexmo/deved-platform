@@ -22,9 +22,6 @@ tags:
   - rack
   - ruby
   - sms
-slugs:
-  - introducing-nexmo-rack-middleware-dr
-  - introducing-nexmo-rack-middleware
 canonical: https://www.nexmo.com/blog/2019/12/04/introducing-nexmo-rack-middleware-dr
 redirect: https://www.nexmo.com/blog/2019/12/04/introducing-nexmo-rack-middleware-dr
 ---

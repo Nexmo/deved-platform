@@ -19,9 +19,6 @@ tags:
   - developer-relations
   - nuxt
   - verify
-slugs:
-  - add-2fa-to-nuxt-with-nexmo-verify-dr
-  - add-2fa-to-your-nuxt-application-with-nexmo-verify
 canonical: https://www.nexmo.com/blog/2018/09/11/add-2fa-to-nuxt-with-nexmo-verify-dr
 redirect: https://www.nexmo.com/blog/2018/09/11/add-2fa-to-nuxt-with-nexmo-verify-dr
 ---

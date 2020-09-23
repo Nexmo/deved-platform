@@ -21,9 +21,6 @@ tags:
   - mongodb
   - netlify
   - number-insights-api
-slugs:
-  - build-a-serverless-eurovision-voting-system-with-node-js-and-vonage
-  - build-a-serverless-eurovision-voting-system-with-nodejs-and-vonage
 canonical: https://www.nexmo.com/blog/2020/06/17/build-a-serverless-eurovision-voting-system-with-node-js-and-vonage
 redirect: https://www.nexmo.com/blog/2020/06/17/build-a-serverless-eurovision-voting-system-with-node-js-and-vonage
 ---

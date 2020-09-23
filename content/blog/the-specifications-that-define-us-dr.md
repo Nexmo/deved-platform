@@ -16,9 +16,6 @@ tags:
   - community
   - developer
   - devrel
-slugs:
-  - the-specifications-that-define-us-dr
-  - the-specifications-that-define-us
 canonical: https://www.nexmo.com/blog/2020/03/09/the-specifications-that-define-us-dr
 redirect: https://www.nexmo.com/blog/2020/03/09/the-specifications-that-define-us-dr
 ---

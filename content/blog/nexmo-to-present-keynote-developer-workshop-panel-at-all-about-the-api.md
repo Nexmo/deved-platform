@@ -20,9 +20,6 @@ tags:
   - api-economy
   - event
   - keynote
-slugs:
-  - nexmo-to-present-keynote-developer-workshop-panel-at-all-about-the-api
-  - nexmo-to-present-keynote-developer-workshop-and-panel-at-all-about-the-api
 canonical: https://www.nexmo.com/blog/2016/07/12/nexmo-to-present-keynote-developer-workshop-panel-at-all-about-the-api
 redirect: https://www.nexmo.com/blog/2016/07/12/nexmo-to-present-keynote-developer-workshop-panel-at-all-about-the-api
 ---

@@ -16,9 +16,6 @@ old_categories:
 tags:
   - events
   - vonage-campus
-slugs:
-  - announcing-the-vonage-campus-developer-track-dr
-  - announcing-the-vonage-campus-developer-track
 canonical: https://www.nexmo.com/blog/2019/09/11/announcing-the-vonage-campus-developer-track-dr
 redirect: https://www.nexmo.com/blog/2019/09/11/announcing-the-vonage-campus-developer-track-dr
 ---

@@ -23,8 +23,6 @@ tags:
   - raspberry-pi
   - sms
   - whatsapp
-slugs:
-  - send-raspberry-pi-ip-address-on-boot-in-node-with-messages
 canonical: https://www.nexmo.com/blog/2020/08/05/send-raspberry-pi-ip-address-on-boot-in-node-with-messages
 redirect: https://www.nexmo.com/blog/2020/08/05/send-raspberry-pi-ip-address-on-boot-in-node-with-messages
 ---

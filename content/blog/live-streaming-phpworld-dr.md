@@ -15,9 +15,6 @@ old_categories:
   - developer
   - developers
 tags: []
-slugs:
-  - live-streaming-phpworld-dr
-  - live-streaming-phpworld
 canonical: https://www.nexmo.com/blog/2016/11/16/live-streaming-phpworld-dr
 redirect: https://www.nexmo.com/blog/2016/11/16/live-streaming-phpworld-dr
 ---

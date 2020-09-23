@@ -20,9 +20,6 @@ tags:
   - live-video
   - unity3d
   - video-api
-slugs:
-  - video-gaming-unity-opentok
-  - unity-and-opentok-take-two
 canonical: https://www.nexmo.com/blog/2019/08/12/video-gaming-unity-opentok
 redirect: https://www.nexmo.com/blog/2019/08/12/video-gaming-unity-opentok
 ---

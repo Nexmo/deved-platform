@@ -19,9 +19,6 @@ old_categories:
 tags:
   - ai
   - bots
-slugs:
-  - bots-ai-user-privacy-environments-bots-listening
-  - bots-and-ai-user-privacy-in-environments-where-bots-are-listening
 canonical: https://www.nexmo.com/blog/2017/09/28/bots-ai-user-privacy-environments-bots-listening
 redirect: https://www.nexmo.com/blog/2017/09/28/bots-ai-user-privacy-environments-bots-listening
 ---

@@ -19,9 +19,6 @@ tags:
   - devrel
   - machine-learning
   - python
-slugs:
-  - dog-breed-detector-using-machine-learning-dr
-  - building-a-dog-breed-detector-using-machine-learning
 canonical: https://www.nexmo.com/blog/2018/12/04/dog-breed-detector-using-machine-learning-dr
 redirect: https://www.nexmo.com/blog/2018/12/04/dog-breed-detector-using-machine-learning-dr
 ---

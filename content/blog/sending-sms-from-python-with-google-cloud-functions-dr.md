@@ -19,9 +19,6 @@ tags:
   - python
   - serverless
   - sms
-slugs:
-  - sending-sms-from-python-with-google-cloud-functions-dr
-  - sending-sms-from-python-with-google-cloud-functions
 canonical: https://www.nexmo.com/blog/2019/03/21/sending-sms-from-python-with-google-cloud-functions-dr
 redirect: https://www.nexmo.com/blog/2019/03/21/sending-sms-from-python-with-google-cloud-functions-dr
 ---

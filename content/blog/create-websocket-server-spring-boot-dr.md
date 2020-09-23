@@ -19,9 +19,6 @@ tags:
   - server
   - spring
   - websocket
-slugs:
-  - create-websocket-server-spring-boot-dr
-  - creating-a-websocket-server-with-spring-boot
 canonical: https://www.nexmo.com/blog/2018/10/08/create-websocket-server-spring-boot-dr
 redirect: https://www.nexmo.com/blog/2018/10/08/create-websocket-server-spring-boot-dr
 ---

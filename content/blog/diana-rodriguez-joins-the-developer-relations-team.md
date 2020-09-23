@@ -18,8 +18,6 @@ tags:
   - developer-advocates
   - devrel
   - vonage
-slugs:
-  - diana-rodriguez-joins-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2020/03/19/diana-rodriguez-joins-the-developer-relations-team
 redirect: https://www.nexmo.com/blog/2020/03/19/diana-rodriguez-joins-the-developer-relations-team
 ---

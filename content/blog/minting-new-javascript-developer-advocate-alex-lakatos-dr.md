@@ -16,9 +16,6 @@ old_categories:
   - developers
 tags:
   - devrel
-slugs:
-  - minting-new-javascript-developer-advocate-alex-lakatos-dr
-  - minting-a-new-javascript-developer-advocate-and8211-alex-lakatos
 canonical: https://www.nexmo.com/blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
 redirect: https://www.nexmo.com/blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
 ---

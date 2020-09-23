@@ -22,9 +22,6 @@ tags:
   - sms
   - tutorial
   - x-with-y
-slugs:
-  - how-to-send-sms-messages-with-elixir-dr
-  - how-to-send-sms-messages-with-elixir
 canonical: https://www.nexmo.com/blog/2020/02/12/how-to-send-sms-messages-with-elixir-dr
 redirect: https://www.nexmo.com/blog/2020/02/12/how-to-send-sms-messages-with-elixir-dr
 ---

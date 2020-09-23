@@ -17,9 +17,6 @@ old_categories:
 tags:
   - javascript
   - voice
-slugs:
-  - connect-phone-call-to-stitch-in-app-voice-dr
-  - how-to-connect-a-phone-call-to-nexmo-in-app-voice
 canonical: https://www.nexmo.com/blog/2018/05/13/connect-phone-call-to-stitch-in-app-voice-dr
 redirect: https://www.nexmo.com/blog/2018/05/13/connect-phone-call-to-stitch-in-app-voice-dr
 ---

@@ -21,9 +21,6 @@ tags:
   - python
   - tutorial
   - voice-api
-slugs:
-  - next-web-voice-journal-python-vue-javascript-dr
-  - creating-a-voice-journal-for-the-next-web
 canonical: https://www.nexmo.com/blog/2018/06/19/next-web-voice-journal-python-vue-javascript-dr
 redirect: https://www.nexmo.com/blog/2018/06/19/next-web-voice-journal-python-vue-javascript-dr
 ---

@@ -22,8 +22,6 @@ tags:
   - opentok
   - swift
   - video-api
-slugs:
-  - create-custom-ar-filters-with-vonage-video-api-and-deepar
 canonical: https://www.nexmo.com/blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
 redirect: https://www.nexmo.com/blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
 ---

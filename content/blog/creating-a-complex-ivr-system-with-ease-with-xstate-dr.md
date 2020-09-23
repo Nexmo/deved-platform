@@ -18,9 +18,6 @@ old_categories:
 tags:
   - developer-spotlight
   - ivr
-slugs:
-  - creating-a-complex-ivr-system-with-ease-with-xstate-dr
-  - creating-a-complex-ivr-system-with-ease-with-xstate
 canonical: https://www.nexmo.com/blog/2019/06/20/creating-a-complex-ivr-system-with-ease-with-xstate-dr
 redirect: https://www.nexmo.com/blog/2019/06/20/creating-a-complex-ivr-system-with-ease-with-xstate-dr
 ---

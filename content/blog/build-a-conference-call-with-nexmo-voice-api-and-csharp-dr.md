@@ -20,9 +20,6 @@ tags:
   - csharp
   - voice
   - voice-api
-slugs:
-  - build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
-  - build-a-conference-call-with-the-nexmo-voice-api-and-aspnet-core
 canonical: https://www.nexmo.com/blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
 redirect: https://www.nexmo.com/blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
 ---

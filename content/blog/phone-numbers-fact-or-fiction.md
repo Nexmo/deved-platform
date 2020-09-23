@@ -19,9 +19,6 @@ tags:
   - numbers
   - phone-numbers
   - trivia
-slugs:
-  - phone-numbers-fact-or-fiction
-  - phone-numbers-and8211-fact-or-fiction
 canonical: https://www.nexmo.com/blog/2016/06/22/phone-numbers-fact-or-fiction
 redirect: https://www.nexmo.com/blog/2016/06/22/phone-numbers-fact-or-fiction
 ---

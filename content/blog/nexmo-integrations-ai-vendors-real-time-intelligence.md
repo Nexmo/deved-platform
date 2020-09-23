@@ -20,9 +20,6 @@ tags:
   - ai
   - contextual-communications
   - voice-api
-slugs:
-  - nexmo-integrations-ai-vendors-real-time-intelligence
-  - nexmo-integrations-with-ai-vendors-for-real-time-intelligence
 canonical: https://www.nexmo.com/blog/2018/06/20/nexmo-integrations-ai-vendors-real-time-intelligence
 redirect: https://www.nexmo.com/blog/2018/06/20/nexmo-integrations-ai-vendors-real-time-intelligence
 ---

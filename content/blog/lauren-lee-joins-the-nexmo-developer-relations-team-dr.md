@@ -16,9 +16,6 @@ old_categories:
 tags:
   - dev-rel
   - devrel
-slugs:
-  - lauren-lee-joins-the-nexmo-developer-relations-team-dr
-  - lauren-lee-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
 ---

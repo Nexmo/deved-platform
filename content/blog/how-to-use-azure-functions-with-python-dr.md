@@ -18,9 +18,6 @@ tags:
   - azure-functions
   - microsoft-azure
   - python
-slugs:
-  - how-to-use-azure-functions-with-python-dr
-  - how-to-use-azure-functions-with-python
 canonical: https://www.nexmo.com/blog/2019/09/27/how-to-use-azure-functions-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/09/27/how-to-use-azure-functions-with-python-dr
 ---

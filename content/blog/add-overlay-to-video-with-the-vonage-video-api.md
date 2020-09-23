@@ -19,8 +19,6 @@ tags:
   - css
   - html
   - video-overlay
-slugs:
-  - add-overlay-to-video-with-the-vonage-video-api
 canonical: https://www.nexmo.com/blog/2020/08/25/add-overlay-to-video-with-the-vonage-video-api
 redirect: https://www.nexmo.com/blog/2020/08/25/add-overlay-to-video-with-the-vonage-video-api
 ---

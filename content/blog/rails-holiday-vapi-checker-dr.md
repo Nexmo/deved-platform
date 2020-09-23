@@ -22,9 +22,6 @@ tags:
   - tutorial
   - voice
   - voice-api
-slugs:
-  - rails-holiday-vapi-checker-dr
-  - are-your-colleagues-on-holiday-find-out-with-rails-and-the-nexmo-voice-api
 canonical: https://www.nexmo.com/blog/2019/02/27/rails-holiday-vapi-checker-dr
 redirect: https://www.nexmo.com/blog/2019/02/27/rails-holiday-vapi-checker-dr
 ---

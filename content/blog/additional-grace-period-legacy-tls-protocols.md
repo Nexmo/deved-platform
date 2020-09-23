@@ -19,9 +19,6 @@ tags:
   - http
   - security
   - tls
-slugs:
-  - additional-grace-period-legacy-tls-protocols
-  - additional-grace-period-for-legacy-tls-protocols
 canonical: https://www.nexmo.com/blog/2018/08/09/additional-grace-period-legacy-tls-protocols
 redirect: https://www.nexmo.com/blog/2018/08/09/additional-grace-period-legacy-tls-protocols
 ---

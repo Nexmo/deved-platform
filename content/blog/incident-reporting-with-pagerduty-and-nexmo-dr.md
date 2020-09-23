@@ -23,9 +23,6 @@ tags:
   - nexmo
   - pager-duty
   - whatsapp
-slugs:
-  - incident-reporting-with-pagerduty-and-nexmo-dr
-  - incident-reporting-with-pagerduty-and-nexmo
 canonical: https://www.nexmo.com/blog/2019/08/21/incident-reporting-with-pagerduty-and-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/08/21/incident-reporting-with-pagerduty-and-nexmo-dr
 ---

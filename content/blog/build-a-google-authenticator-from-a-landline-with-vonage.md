@@ -19,9 +19,6 @@ tags:
   - 2fa
   - javascript
   - voice-api
-slugs:
-  - build-a-google-authenticator-from-a-landline-with-vonage
-  - build-a-and8220google-authenticatorand8221-from-a-landline-with-vonage
 canonical: https://www.nexmo.com/blog/2020/05/01/build-a-google-authenticator-from-a-landline-with-vonage
 redirect: https://www.nexmo.com/blog/2020/05/01/build-a-google-authenticator-from-a-landline-with-vonage
 ---

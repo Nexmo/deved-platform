@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - devrel
-slugs:
-  - paul-ardeleanu-joins-the-nexmo-developer-relations-team-dr
-  - paul-ardeleanu-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2019/02/01/paul-ardeleanu-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/02/01/paul-ardeleanu-joins-the-nexmo-developer-relations-team-dr
 ---

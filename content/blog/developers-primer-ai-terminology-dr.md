@@ -19,9 +19,6 @@ tags:
   - ai
   - bots
   - machine-learning
-slugs:
-  - developers-primer-ai-terminology-dr
-  - a-developers-primer-on-ai-terminology
 canonical: https://www.nexmo.com/blog/2018/11/12/developers-primer-ai-terminology-dr
 redirect: https://www.nexmo.com/blog/2018/11/12/developers-primer-ai-terminology-dr
 ---

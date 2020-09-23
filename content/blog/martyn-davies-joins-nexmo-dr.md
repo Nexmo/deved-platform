@@ -14,9 +14,6 @@ old_categories:
   - developer
 tags:
   - devrel
-slugs:
-  - martyn-davies-joins-nexmo-dr
-  - martyn-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2018/07/03/martyn-davies-joins-nexmo-dr
 redirect: https://www.nexmo.com/blog/2018/07/03/martyn-davies-joins-nexmo-dr
 ---

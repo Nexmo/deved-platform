@@ -17,9 +17,6 @@ tags:
   - net
   - logging
   - microsoft-extensions-logging
-slugs:
-  - adaptive-library-logging-with-microsoft-extensions-logging-dr
-  - adaptive-library-logging-with-microsoftextensionslogging
 canonical: https://www.nexmo.com/blog/2020/02/10/adaptive-library-logging-with-microsoft-extensions-logging-dr
 redirect: https://www.nexmo.com/blog/2020/02/10/adaptive-library-logging-with-microsoft-extensions-logging-dr
 ---

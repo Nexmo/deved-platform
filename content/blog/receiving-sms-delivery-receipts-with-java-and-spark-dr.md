@@ -19,9 +19,6 @@ tags:
   - delivery-receipts
   - java
   - sms
-slugs:
-  - receiving-sms-delivery-receipts-with-java-and-spark-dr
-  - receiving-sms-delivery-receipts-with-java-and-spark
 canonical: https://www.nexmo.com/blog/2019/07/26/receiving-sms-delivery-receipts-with-java-and-spark-dr
 redirect: https://www.nexmo.com/blog/2019/07/26/receiving-sms-delivery-receipts-with-java-and-spark-dr
 ---

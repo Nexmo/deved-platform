@@ -18,9 +18,6 @@ tags:
   - beta
   - client-library
   - php
-slugs:
-  - official-php-client-lib
-  - announcing-an-official-php-client-library
 canonical: https://www.nexmo.com/blog/2016/05/25/official-php-client-lib
 redirect: https://www.nexmo.com/blog/2016/05/25/official-php-client-lib
 ---

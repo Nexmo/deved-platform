@@ -17,9 +17,6 @@ tags:
   - devrel
   - devrelcon
   - hackathon
-slugs:
-  - nexmo-goes-to-devrelcon-tokyo-2019-dr
-  - nexmo-goes-to-devrelcon-tokyo
 canonical: https://www.nexmo.com/blog/2019/03/19/nexmo-goes-to-devrelcon-tokyo-2019-dr
 redirect: https://www.nexmo.com/blog/2019/03/19/nexmo-goes-to-devrelcon-tokyo-2019-dr
 ---

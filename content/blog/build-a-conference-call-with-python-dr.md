@@ -15,9 +15,6 @@ old_categories:
   - developer
   - tutorial
 tags: []
-slugs:
-  - build-a-conference-call-with-python-dr
-  - build-a-conference-call-system-with-python
 canonical: https://www.nexmo.com/blog/2019/05/29/build-a-conference-call-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/05/29/build-a-conference-call-with-python-dr
 ---

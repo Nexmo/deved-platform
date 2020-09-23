@@ -22,9 +22,6 @@ tags:
   - sms
   - tfl
   - tube-status
-slugs:
-  - checking-the-tube-status-with-nexmo-and-tfl-apis-dr
-  - checking-the-london-tube-status-with-nexmoand8217s-sms-api
 canonical: https://www.nexmo.com/blog/2019/07/31/checking-the-tube-status-with-nexmo-and-tfl-apis-dr
 redirect: https://www.nexmo.com/blog/2019/07/31/checking-the-tube-status-with-nexmo-and-tfl-apis-dr
 ---

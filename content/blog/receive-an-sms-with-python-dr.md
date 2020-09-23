@@ -15,9 +15,6 @@ old_categories:
   - developer
   - tutorial
 tags: []
-slugs:
-  - receive-an-sms-with-python-dr
-  - receive-an-sms-with-python
 canonical: https://www.nexmo.com/blog/2019/05/31/receive-an-sms-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/05/31/receive-an-sms-with-python-dr
 ---

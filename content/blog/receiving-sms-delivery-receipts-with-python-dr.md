@@ -15,9 +15,6 @@ old_categories:
   - developer
   - tutorial
 tags: []
-slugs:
-  - receiving-sms-delivery-receipts-with-python-dr
-  - receiving-sms-delivery-receipts-with-python
 canonical: https://www.nexmo.com/blog/2019/06/03/receiving-sms-delivery-receipts-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/06/03/receiving-sms-delivery-receipts-with-python-dr
 ---

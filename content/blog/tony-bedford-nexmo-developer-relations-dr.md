@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - devrel
-slugs:
-  - tony-bedford-nexmo-developer-relations-dr
-  - tony-has-joined-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2018/07/11/tony-bedford-nexmo-developer-relations-dr
 redirect: https://www.nexmo.com/blog/2018/07/11/tony-bedford-nexmo-developer-relations-dr
 ---

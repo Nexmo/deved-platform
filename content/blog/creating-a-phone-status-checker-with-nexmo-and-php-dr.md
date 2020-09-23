@@ -18,9 +18,6 @@ tags:
   - api
   - php
   - voice
-slugs:
-  - creating-a-phone-status-checker-with-nexmo-and-php-dr
-  - creating-a-phone-status-checker-with-nexmo-and-php
 canonical: https://www.nexmo.com/blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
 redirect: https://www.nexmo.com/blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
 ---

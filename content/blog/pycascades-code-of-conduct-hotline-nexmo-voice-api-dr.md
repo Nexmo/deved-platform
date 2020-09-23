@@ -22,9 +22,6 @@ tags:
   - python
   - tutorial
   - voice
-slugs:
-  - pycascades-code-of-conduct-hotline-nexmo-voice-api-dr
-  - enhancing-pycascades-code-of-conduct-hotline-with-nexmo-voice-api
 canonical: https://www.nexmo.com/blog/2018/11/15/pycascades-code-of-conduct-hotline-nexmo-voice-api-dr
 redirect: https://www.nexmo.com/blog/2018/11/15/pycascades-code-of-conduct-hotline-nexmo-voice-api-dr
 ---

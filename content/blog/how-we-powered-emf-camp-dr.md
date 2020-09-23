@@ -18,9 +18,6 @@ tags:
   - developer
   - emfcamp
   - event
-slugs:
-  - how-we-powered-emf-camp-dr
-  - how-we-empowered-emf-camp
 canonical: https://www.nexmo.com/blog/2018/09/11/how-we-powered-emf-camp-dr
 redirect: https://www.nexmo.com/blog/2018/09/11/how-we-powered-emf-camp-dr
 ---

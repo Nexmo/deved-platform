@@ -19,9 +19,6 @@ old_categories:
 tags:
   - number-insights-api
   - python
-slugs:
-  - use-python-and-the-number-insights-api-to-analyze-leads-dr
-  - use-python-and-the-number-insights-api-to-analyze-leads
 canonical: https://www.nexmo.com/blog/2020/09/17/use-python-and-the-number-insights-api-to-analyze-leads-dr
 redirect: https://www.nexmo.com/blog/2020/09/17/use-python-and-the-number-insights-api-to-analyze-leads-dr
 ---

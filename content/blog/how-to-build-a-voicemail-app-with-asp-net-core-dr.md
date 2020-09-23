@@ -20,9 +20,6 @@ tags:
   - asp-net-core
   - voice-api
   - voicemail
-slugs:
-  - how-to-build-a-voicemail-app-with-asp-net-core-dr
-  - how-to-build-a-voicemail-app-with-aspnet-core
 canonical: https://www.nexmo.com/blog/2020/08/10/how-to-build-a-voicemail-app-with-asp-net-core-dr
 redirect: https://www.nexmo.com/blog/2020/08/10/how-to-build-a-voicemail-app-with-asp-net-core-dr
 ---

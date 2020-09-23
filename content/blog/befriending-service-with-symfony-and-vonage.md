@@ -19,8 +19,6 @@ tags:
   - symfony
   - verify
   - voice
-slugs:
-  - befriending-service-with-symfony-and-vonage
 canonical: https://www.nexmo.com/blog/2020/06/08/befriending-service-with-symfony-and-vonage
 redirect: https://www.nexmo.com/blog/2020/06/08/befriending-service-with-symfony-and-vonage
 ---

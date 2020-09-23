@@ -21,9 +21,6 @@ tags:
   - devrel
   - phone-number-authentication
   - verify
-slugs:
-  - add-two-factor-authentication-to-android-apps-with-nexmos-verify-api-dr
-  - add-two-factor-authentication-to-android-apps-with-nexmoand8217s-verify-api
 canonical: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-android-apps-with-nexmos-verify-api-dr
 redirect: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-android-apps-with-nexmos-verify-api-dr
 ---

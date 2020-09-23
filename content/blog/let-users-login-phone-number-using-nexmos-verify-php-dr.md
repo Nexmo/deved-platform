@@ -21,9 +21,6 @@ tags:
   - php
   - tutorial
   - verify
-slugs:
-  - let-users-login-phone-number-using-nexmos-verify-php-dr
-  - let-your-users-login-with-a-phone-number-using-nexmo-verify-and-php
 canonical: https://www.nexmo.com/blog/2016/06/28/let-users-login-phone-number-using-nexmos-verify-php-dr
 redirect: https://www.nexmo.com/blog/2016/06/28/let-users-login-phone-number-using-nexmos-verify-php-dr
 ---

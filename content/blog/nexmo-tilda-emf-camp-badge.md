@@ -19,9 +19,6 @@ tags:
   - events
   - iot
   - micropython
-slugs:
-  - nexmo-tilda-emf-camp-badge
-  - nexmo-and-tilda-the-emf-camp-badge
 canonical: https://www.nexmo.com/blog/2016/08/03/nexmo-tilda-emf-camp-badge
 redirect: https://www.nexmo.com/blog/2016/08/03/nexmo-tilda-emf-camp-badge
 ---

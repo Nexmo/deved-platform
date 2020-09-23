@@ -17,9 +17,6 @@ old_categories:
 tags:
   - devrel
   - twitter
-slugs:
-  - hello-nexmodev-dr
-  - say-hello-to-nexmodev
 canonical: https://www.nexmo.com/blog/2017/09/14/hello-nexmodev-dr
 redirect: https://www.nexmo.com/blog/2017/09/14/hello-nexmodev-dr
 ---

@@ -19,9 +19,6 @@ tags:
   - number-insight
   - python
   - tutorial
-slugs:
-  - validate-telephone-number-python-dr
-  - validate-telephone-numbers-with-nexmo-number-insights-and-python
 canonical: https://www.nexmo.com/blog/2019/06/26/validate-telephone-number-python-dr
 redirect: https://www.nexmo.com/blog/2019/06/26/validate-telephone-number-python-dr
 ---

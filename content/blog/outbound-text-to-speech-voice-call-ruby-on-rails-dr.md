@@ -23,9 +23,6 @@ tags:
   - voice
   - voice-api
   - x-with-y
-slugs:
-  - outbound-text-to-speech-voice-call-ruby-on-rails-dr
-  - make-an-outbound-text-to-speech-phone-call-with-ruby-on-rails
 canonical: https://www.nexmo.com/blog/2017/11/02/outbound-text-to-speech-voice-call-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2017/11/02/outbound-text-to-speech-voice-call-ruby-on-rails-dr
 ---

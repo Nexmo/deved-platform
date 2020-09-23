@@ -19,9 +19,6 @@ old_categories:
   - verify
 tags:
   - x-with-y
-slugs:
-  - sending-receiving-sms-node-js
-  - all-you-need-to-know-about-sendingreceiving-sms-with-nodejs
 canonical: https://www.nexmo.com/blog/2017/02/28/sending-receiving-sms-node-js
 redirect: https://www.nexmo.com/blog/2017/02/28/sending-receiving-sms-node-js
 ---

@@ -19,8 +19,6 @@ tags:
   - community
   - elephpants
   - php
-slugs:
-  - nexmo-elephpants-at-zendcon
 canonical: https://www.nexmo.com/blog/2016/11/08/nexmo-elephpants-at-zendcon
 redirect: https://www.nexmo.com/blog/2016/11/08/nexmo-elephpants-at-zendcon
 ---

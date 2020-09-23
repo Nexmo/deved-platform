@@ -15,9 +15,6 @@ old_categories:
   - developer
 tags:
   - net-useragent-voiceapi-nexmo
-slugs:
-  - announcing-nexmos-net-server-sdk-version-4-3-1-release-dr
-  - announcing-nexmoand8217s-net-server-sdk-version-431-release
 canonical: https://www.nexmo.com/blog/2020/02/24/announcing-nexmos-net-server-sdk-version-4-3-1-release-dr
 redirect: https://www.nexmo.com/blog/2020/02/24/announcing-nexmos-net-server-sdk-version-4-3-1-release-dr
 ---

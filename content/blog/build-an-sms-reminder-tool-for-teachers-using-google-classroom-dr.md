@@ -22,9 +22,6 @@ tags:
   - messages-api
   - node-js
   - sms
-slugs:
-  - build-an-sms-reminder-tool-for-teachers-using-google-classroom-dr
-  - build-an-sms-reminder-tool-for-teachers-using-google-classroom
 canonical: https://www.nexmo.com/blog/2020/06/04/build-an-sms-reminder-tool-for-teachers-using-google-classroom-dr
 redirect: https://www.nexmo.com/blog/2020/06/04/build-an-sms-reminder-tool-for-teachers-using-google-classroom-dr
 ---

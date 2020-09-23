@@ -20,9 +20,6 @@ tags:
   - node-js
   - opentok
   - video-api
-slugs:
-  - basic-video-chat
-  - create-a-basic-video-chat-with-vonage-video-api
 canonical: https://www.nexmo.com/blog/2020/03/30/basic-video-chat
 redirect: https://www.nexmo.com/blog/2020/03/30/basic-video-chat
 ---

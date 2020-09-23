@@ -20,9 +20,6 @@ tags:
   - laravel
   - php
   - x-with-y
-slugs:
-  - 2fa-logins-laravel-nexmo-dr
-  - 2fa-login-with-laravel-and-nexmo
 canonical: https://www.nexmo.com/blog/2017/07/26/2fa-logins-laravel-nexmo-dr
 redirect: https://www.nexmo.com/blog/2017/07/26/2fa-logins-laravel-nexmo-dr
 ---

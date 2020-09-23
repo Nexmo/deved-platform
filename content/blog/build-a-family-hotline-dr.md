@@ -21,9 +21,6 @@ tags:
   - python
   - tutorial
   - voice
-slugs:
-  - build-a-family-hotline-dr
-  - build-a-family-hotline-with-vonage
 canonical: https://www.nexmo.com/blog/2018/11/20/build-a-family-hotline-dr
 redirect: https://www.nexmo.com/blog/2018/11/20/build-a-family-hotline-dr
 ---

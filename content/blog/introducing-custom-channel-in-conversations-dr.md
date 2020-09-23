@@ -20,9 +20,6 @@ tags:
   - conversations
   - custom-channels
   - sdk-announcements
-slugs:
-  - introducing-custom-channel-in-conversations-dr
-  - introducing-custom-channels-in-conversations
 canonical: https://www.nexmo.com/blog/2020/02/05/introducing-custom-channel-in-conversations-dr
 redirect: https://www.nexmo.com/blog/2020/02/05/introducing-custom-channel-in-conversations-dr
 ---

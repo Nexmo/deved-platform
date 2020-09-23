@@ -20,9 +20,6 @@ tags:
   - laracon
   - laracon-us
   - laravel
-slugs:
-  - laracon-2017-nyc-conference-report-dr
-  - laracon-2017-new-york-city-and8211-conference-report
 canonical: https://www.nexmo.com/blog/2017/08/15/laracon-2017-nyc-conference-report-dr
 redirect: https://www.nexmo.com/blog/2017/08/15/laracon-2017-nyc-conference-report-dr
 ---

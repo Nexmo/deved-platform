@@ -22,9 +22,6 @@ tags:
   - sinatra
   - text-to-speech
   - tts
-slugs:
-  - building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api-dr
-  - building-a-voice-alerts-broadcast-system-using-ruby-and-the-nexmo-text-to-speech-api
 canonical: https://www.nexmo.com/blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api-dr
 redirect: https://www.nexmo.com/blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api-dr
 ---

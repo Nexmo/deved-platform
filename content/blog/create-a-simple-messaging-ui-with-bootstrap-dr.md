@@ -20,9 +20,6 @@ tags:
   - conversation-api
   - javascript
   - messaging-ui
-slugs:
-  - create-a-simple-messaging-ui-with-bootstrap-dr
-  - create-a-simple-messaging-ui-with-bootstrap
 canonical: https://www.nexmo.com/blog/2019/12/18/create-a-simple-messaging-ui-with-bootstrap-dr
 redirect: https://www.nexmo.com/blog/2019/12/18/create-a-simple-messaging-ui-with-bootstrap-dr
 ---

@@ -18,9 +18,6 @@ tags:
   - audit-api
   - dev-rel
   - python
-slugs:
-  - get-nexmo-audit-events-with-python-dr
-  - monitor-your-applications-with-the-nexmo-audit-events-api-and-python
 canonical: https://www.nexmo.com/blog/2018/10/09/get-nexmo-audit-events-with-python-dr
 redirect: https://www.nexmo.com/blog/2018/10/09/get-nexmo-audit-events-with-python-dr
 ---

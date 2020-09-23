@@ -24,9 +24,6 @@ tags:
   - record-call
   - record-incoming-calls
   - recorded-proxy-call
-slugs:
-  - forward-call-via-voice-proxy-node-red-dr
-  - forward-a-call-via-a-voice-proxy-with-node-red
 canonical: https://www.nexmo.com/blog/2019/10/17/forward-call-via-voice-proxy-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/10/17/forward-call-via-voice-proxy-node-red-dr
 ---

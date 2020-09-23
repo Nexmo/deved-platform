@@ -22,9 +22,6 @@ tags:
   - firebase
   - messages-api
   - node-js
-slugs:
-  - using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr
-  - using-dialogflow-with-firebase-and-the-vonage-messages-sandbox
 canonical: https://www.nexmo.com/blog/2020/06/01/using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr
 redirect: https://www.nexmo.com/blog/2020/06/01/using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr
 ---

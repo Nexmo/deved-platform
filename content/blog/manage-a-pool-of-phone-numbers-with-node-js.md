@@ -19,9 +19,6 @@ tags:
   - number-management
   - number-management-api
   - number-pools
-slugs:
-  - manage-a-pool-of-phone-numbers-with-node-js
-  - manage-a-pool-of-phone-numbers-with-nodejs
 canonical: https://www.nexmo.com/blog/2020/04/23/manage-a-pool-of-phone-numbers-with-node-js
 redirect: https://www.nexmo.com/blog/2020/04/23/manage-a-pool-of-phone-numbers-with-node-js
 ---

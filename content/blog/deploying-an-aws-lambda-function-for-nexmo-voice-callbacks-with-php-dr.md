@@ -17,9 +17,6 @@ tags:
   - aws
   - aws-lambda
   - developer
-slugs:
-  - deploying-an-aws-lambda-function-for-nexmo-voice-callbacks-with-php-dr
-  - deploying-an-aws-lambda-function-for-vonage-voice-callbacks-with-php
 canonical: https://www.nexmo.com/blog/2020/04/02/deploying-an-aws-lambda-function-for-nexmo-voice-callbacks-with-php-dr
 redirect: https://www.nexmo.com/blog/2020/04/02/deploying-an-aws-lambda-function-for-nexmo-voice-callbacks-with-php-dr
 ---

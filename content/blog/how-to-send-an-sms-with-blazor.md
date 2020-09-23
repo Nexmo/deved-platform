@@ -19,8 +19,6 @@ tags:
   - net
   - blazor
   - sms
-slugs:
-  - how-to-send-an-sms-with-blazor
 canonical: https://www.nexmo.com/blog/2020/07/08/how-to-send-an-sms-with-blazor
 redirect: https://www.nexmo.com/blog/2020/07/08/how-to-send-an-sms-with-blazor
 ---

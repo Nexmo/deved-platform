@@ -20,9 +20,6 @@ tags:
   - devrel
   - security
   - voice
-slugs:
-  - forward-phone-call-voice-proxy-java-dr
-  - forward-a-phone-call-via-voice-proxy-with-java
 canonical: https://www.nexmo.com/blog/2019/04/10/forward-phone-call-voice-proxy-java-dr
 redirect: https://www.nexmo.com/blog/2019/04/10/forward-phone-call-voice-proxy-java-dr
 ---

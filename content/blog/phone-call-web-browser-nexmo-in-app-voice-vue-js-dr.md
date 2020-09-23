@@ -19,9 +19,6 @@ tags:
   - javascript
   - tutorial
   - voice-api
-slugs:
-  - phone-call-web-browser-nexmo-in-app-voice-vue-js-dr
-  - making-phone-calls-from-a-web-browser-with-vuejs-and-nexmo-in-app-voice
 canonical: https://www.nexmo.com/blog/2018/08/21/phone-call-web-browser-nexmo-in-app-voice-vue-js-dr
 redirect: https://www.nexmo.com/blog/2018/08/21/phone-call-web-browser-nexmo-in-app-voice-vue-js-dr
 ---

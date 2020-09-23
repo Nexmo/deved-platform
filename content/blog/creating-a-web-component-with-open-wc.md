@@ -19,8 +19,6 @@ tags:
   - npm
   - open-wc
   - web-components
-slugs:
-  - creating-a-web-component-with-open-wc
 canonical: https://www.nexmo.com/blog/2020/08/13/creating-a-web-component-with-open-wc
 redirect: https://www.nexmo.com/blog/2020/08/13/creating-a-web-component-with-open-wc
 ---

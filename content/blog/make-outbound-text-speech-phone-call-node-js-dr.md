@@ -25,9 +25,6 @@ tags:
   - tutorial
   - voice
   - x-with-y
-slugs:
-  - make-outbound-text-speech-phone-call-node-js-dr
-  - how-to-make-an-outbound-text-to-speech-phone-call-with-nodejs
 canonical: https://www.nexmo.com/blog/2017/01/12/make-outbound-text-speech-phone-call-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/01/12/make-outbound-text-speech-phone-call-node-js-dr
 ---

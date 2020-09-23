@@ -16,9 +16,6 @@ old_categories:
 tags:
   - devrel
   - nexmo
-slugs:
-  - nick-iati-joins-the-nexmo-developer-relations-team-dr
-  - nick-iati-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2020/02/11/nick-iati-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2020/02/11/nick-iati-joins-the-nexmo-developer-relations-team-dr
 ---

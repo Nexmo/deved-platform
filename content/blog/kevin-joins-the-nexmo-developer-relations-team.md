@@ -16,8 +16,6 @@ old_categories:
 tags:
   - devrel
   - nexmo
-slugs:
-  - kevin-joins-the-nexmo-developer-relations-team
 canonical: https://www.nexmo.com/blog/2020/02/06/kevin-joins-the-nexmo-developer-relations-team
 redirect: https://www.nexmo.com/blog/2020/02/06/kevin-joins-the-nexmo-developer-relations-team
 ---

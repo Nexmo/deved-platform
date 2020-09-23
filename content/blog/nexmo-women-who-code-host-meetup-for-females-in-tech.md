@@ -20,9 +20,6 @@ tags:
   - coding
   - event
   - women-in-tech
-slugs:
-  - nexmo-women-who-code-host-meetup-for-females-in-tech
-  - nexmo-and-women-who-code-host-meetup-for-females-in-tech
 canonical: https://www.nexmo.com/blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
 redirect: https://www.nexmo.com/blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
 ---

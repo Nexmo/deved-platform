@@ -25,9 +25,6 @@ tags:
   - tutorial
   - voice
   - x-with-y
-slugs:
-  - text-to-speech-phone-call-dr
-  - how-to-make-a-text-to-speech-phone-call-in-aspnet
 canonical: https://www.nexmo.com/blog/2017/07/28/text-to-speech-phone-call-dr
 redirect: https://www.nexmo.com/blog/2017/07/28/text-to-speech-phone-call-dr
 ---

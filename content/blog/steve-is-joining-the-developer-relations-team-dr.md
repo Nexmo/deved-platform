@@ -17,9 +17,6 @@ old_categories:
 tags:
   - devrel
   - welcome
-slugs:
-  - steve-is-joining-the-developer-relations-team-dr
-  - steve-is-joining-the-developer-relations-team
 canonical: https://www.nexmo.com/blog/2018/05/02/steve-is-joining-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/05/02/steve-is-joining-the-developer-relations-team-dr
 ---

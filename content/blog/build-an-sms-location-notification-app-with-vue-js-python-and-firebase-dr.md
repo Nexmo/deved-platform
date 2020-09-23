@@ -21,9 +21,6 @@ tags:
   - python
   - sms
   - vuejs
-slugs:
-  - build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
-  - build-an-sms-location-notification-app-with-vuejs-python-and-firebase
 canonical: https://www.nexmo.com/blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
 redirect: https://www.nexmo.com/blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
 ---

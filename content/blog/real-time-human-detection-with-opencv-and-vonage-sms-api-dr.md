@@ -18,9 +18,6 @@ old_categories:
 tags:
   - opencv
   - sms
-slugs:
-  - real-time-human-detection-with-opencv-and-vonage-sms-api-dr
-  - real-time-human-detection-with-opencv-and-vonage-sms-api
 canonical: https://www.nexmo.com/blog/2020/04/15/real-time-human-detection-with-opencv-and-vonage-sms-api-dr
 redirect: https://www.nexmo.com/blog/2020/04/15/real-time-human-detection-with-opencv-and-vonage-sms-api-dr
 ---

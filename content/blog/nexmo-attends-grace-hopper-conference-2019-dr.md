@@ -15,9 +15,6 @@ old_categories:
   - developer
   - events
 tags: []
-slugs:
-  - nexmo-attends-grace-hopper-conference-2019-dr
-  - nexmo-attends-grace-hopper-celebration-2019
 canonical: https://www.nexmo.com/blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
 redirect: https://www.nexmo.com/blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
 ---

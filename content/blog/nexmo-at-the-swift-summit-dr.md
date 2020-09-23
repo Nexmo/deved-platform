@@ -21,9 +21,6 @@ tags:
   - server-side-swift
   - swift
   - swift-summit
-slugs:
-  - nexmo-at-the-swift-summit-dr
-  - nexmo-at-the-swift-summit
 canonical: https://www.nexmo.com/blog/2017/11/08/nexmo-at-the-swift-summit-dr
 redirect: https://www.nexmo.com/blog/2017/11/08/nexmo-at-the-swift-summit-dr
 ---

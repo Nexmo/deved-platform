@@ -18,9 +18,6 @@ old_categories:
 tags:
   - webinar
   - websockets
-slugs:
-  - webinar-getting-started-nexmo-voice-websockets-dr
-  - webinar-getting-started-with-nexmo-voice-and-websockets
 canonical: https://www.nexmo.com/blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
 redirect: https://www.nexmo.com/blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
 ---

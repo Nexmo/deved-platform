@@ -18,9 +18,6 @@ tags:
   - aws
   - aws-lambda
   - developer
-slugs:
-  - how-permissions-work-in-aws-lambda-dr
-  - how-permissions-work-in-aws-lambda
 canonical: https://www.nexmo.com/blog/2020/03/25/how-permissions-work-in-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2020/03/25/how-permissions-work-in-aws-lambda-dr
 ---

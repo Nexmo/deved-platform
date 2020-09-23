@@ -19,9 +19,6 @@ tags:
   - php
   - sms
   - tutorial
-slugs:
-  - send-sms-from-php-with-failover-dr
-  - sending-sms-from-php-with-failover-the-cupcake-bakery
 canonical: https://www.nexmo.com/blog/2018/10/23/send-sms-from-php-with-failover-dr
 redirect: https://www.nexmo.com/blog/2018/10/23/send-sms-from-php-with-failover-dr
 ---

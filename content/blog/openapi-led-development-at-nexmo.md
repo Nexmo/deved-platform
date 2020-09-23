@@ -18,8 +18,6 @@ old_categories:
 tags:
   - developer-experience
   - openapi
-slugs:
-  - openapi-led-development-at-nexmo
 canonical: https://www.nexmo.com/blog/2018/11/05/openapi-led-development-at-nexmo
 redirect: https://www.nexmo.com/blog/2018/11/05/openapi-led-development-at-nexmo
 ---

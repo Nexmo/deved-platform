@@ -22,9 +22,6 @@ tags:
   - tutorial
   - voice
   - voice-api
-slugs:
-  - build-an-ivr-with-ruby-on-rails-dr
-  - how-to-build-a-simple-ivr-with-ruby-on-rails
 canonical: https://www.nexmo.com/blog/2019/07/04/build-an-ivr-with-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2019/07/04/build-an-ivr-with-ruby-on-rails-dr
 ---

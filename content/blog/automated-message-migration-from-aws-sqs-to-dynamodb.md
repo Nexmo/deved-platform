@@ -21,8 +21,6 @@ tags:
   - lamda
   - message-queues
   - php
-slugs:
-  - automated-message-migration-from-aws-sqs-to-dynamodb
 canonical: https://www.nexmo.com/blog/2020/06/15/automated-message-migration-from-aws-sqs-to-dynamodb
 redirect: https://www.nexmo.com/blog/2020/06/15/automated-message-migration-from-aws-sqs-to-dynamodb
 ---

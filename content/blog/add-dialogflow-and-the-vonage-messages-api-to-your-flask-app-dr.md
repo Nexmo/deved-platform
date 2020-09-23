@@ -18,9 +18,6 @@ tags:
   - dialogflow
   - flask-app
   - sms
-slugs:
-  - add-dialogflow-and-the-vonage-messages-api-to-your-flask-app-dr
-  - add-dialogflow-and-the-vonage-sms-api-to-your-flask-app
 canonical: https://www.nexmo.com/blog/2020/07/30/add-dialogflow-and-the-vonage-messages-api-to-your-flask-app-dr
 redirect: https://www.nexmo.com/blog/2020/07/30/add-dialogflow-and-the-vonage-messages-api-to-your-flask-app-dr
 ---

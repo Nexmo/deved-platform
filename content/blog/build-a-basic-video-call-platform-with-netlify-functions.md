@@ -20,8 +20,6 @@ tags:
   - netlify
   - serverless
   - video-api
-slugs:
-  - build-a-basic-video-call-platform-with-netlify-functions
 canonical: https://www.nexmo.com/blog/2020/05/22/build-a-basic-video-call-platform-with-netlify-functions
 redirect: https://www.nexmo.com/blog/2020/05/22/build-a-basic-video-call-platform-with-netlify-functions
 ---

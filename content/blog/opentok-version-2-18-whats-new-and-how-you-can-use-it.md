@@ -20,9 +20,6 @@ tags:
   - opentok
   - sdk-update
   - windows-sdk
-slugs:
-  - opentok-version-2-18-whats-new-and-how-you-can-use-it
-  - vonage-video-api-version-218-whatand8217s-new-and-how-you-can-use-it
 canonical: https://www.nexmo.com/blog/2020/09/03/opentok-version-2-18-whats-new-and-how-you-can-use-it
 redirect: https://www.nexmo.com/blog/2020/09/03/opentok-version-2-18-whats-new-and-how-you-can-use-it
 ---
