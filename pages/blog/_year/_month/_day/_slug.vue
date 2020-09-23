@@ -116,7 +116,7 @@ export default {
 
     if (process.browser) {
       if (post.redirect) {
-        window.location.href = post.redirect
+        // window.location.href = post.redirect
       }
     }
 
@@ -161,12 +161,20 @@ export default {
   },
 
   head() {
+    const canonicalUrl = this.post.canonical || `${this.baseUrl}${this.post.route}`
+
     return {
       title: `${this.post.title}`,
       meta: [
         { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.post.category}, ${this.post.tags.join(', ')}`},
         { hid: "description", name: "description", content: this.post.description},
         ...this.postMeta()
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: canonicalUrl
+        }
       ]
     }
   },
