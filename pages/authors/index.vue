@@ -13,7 +13,7 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--3of4">
-          <h3 class="Vlt-center Vlt-margin--A-top3">
+          <h3 id="team-authors" class="Vlt-center Vlt-margin--A-top3">
             Vonage Team Members
           </h3>
           <div class="Vlt-grid Authors-grid">
@@ -29,7 +29,7 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--3of4">
-          <h3 class="Vlt-center Vlt-margin--A-top3">
+          <h3 id="spotlight-authors" class="Vlt-center Vlt-margin--A-top3">
             Spotlight Authors
           </h3>
           <div class="Vlt-grid Authors-grid">
@@ -45,7 +45,7 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--3of4">
-          <h3 class="Vlt-center Vlt-margin--A-top3">
+          <h3 id="alumni-authors" class="Vlt-center Vlt-margin--A-top3">
             Vonage Alumni
           </h3>
           <div class="Vlt-grid Authors-grid">
@@ -61,7 +61,7 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--3of4">
-          <h3 class="Vlt-center Vlt-margin--A-top3">
+          <h3 id="other-authors" class="Vlt-center Vlt-margin--A-top3">
             Other Writers
           </h3>
           <div class="Vlt-grid Authors-grid">
