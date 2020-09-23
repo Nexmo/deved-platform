@@ -17,7 +17,7 @@
     "@nuxt/content": "^1.2.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/feed": "^1.1.0",
-    "@vonagevolta/volta2": "0.0.37",
+    "@vonagevolta/volta2": "0.0.56",
     "algoliasearch": "^4.5.1",
     "defu": "^3.1.0",
     "dotenv": "^8.2.0",
