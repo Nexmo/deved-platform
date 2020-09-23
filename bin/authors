@@ -3,30 +3,18 @@
 const _ = require('lodash')
 const cliProgress = require('cli-progress')
 const consola = require('consola')
-// const entities = new require('html-entities').AllHtmlEntities
 const fs = require('fs')
 const path = require("path")
-// const slugify = require('slugify')
 const WPAPI = require('wpapi')
-// const yaml = require('yaml')
 
 const authorFile = path.resolve(__dirname, '../content/authors.json')
 const authors = require(authorFile)
 
-// const categories = []
-// const tags = []
 const users = []
-// const posts = []
 
 const config = {
   wpInstance: 'https://www.nexmo.com/wp-json'
 }
-
-// const slugifyOpt = {
-//   replacement: '-',
-//   lower: true,
-//   strict: true
-// }
 
 consola.success(`WordPress author fetcher v0.0.1`)
 const wp = new WPAPI({ 
@@ -52,7 +40,6 @@ const getItems = (request, bar, page, pages) => {
     page++
 
     return Promise.all([
-      // response
       response, getItems(response._paging.next, bar, page, pages)
     ]).then(function(responses) {
       return _.flatten(responses)
