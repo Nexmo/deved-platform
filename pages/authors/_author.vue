@@ -52,7 +52,7 @@ export default {
         author: author,
         posts,
         routes: [
-          { route: `/authors`, title: `All our authors` },
+          { route: `/authors`, title: `All of our authors` },
           { route: `/authors/${author.username}`, title: `${author.name}`, current: true },
         ]
       }

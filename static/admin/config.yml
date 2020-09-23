@@ -113,12 +113,6 @@ collections:
                 widget: text
                 required: false
                 hint: "About you, your bio."
-              - label: Spotlight
-                name: spotlight
-                widget: boolean
-                default: false
-                required: false
-                hint: "Is this user part of the Spotlight programme?"
               - label: 'Job Title'
                 name: title
                 widget: string
@@ -129,6 +123,30 @@ collections:
                 widget: string
                 required: false
                 hint: "Email address (not required, but also not public)"
+              - label: Team Member
+                name: team
+                widget: boolean
+                default: false
+                required: false
+                hint: "Is this user part of the Vonage team?"
+              - label: Team Alumni (former member)
+                name: alumni
+                widget: boolean
+                default: false
+                required: false
+                hint: "Was this user part of the Vonage or Nexmo team in the past?"
+              - label: Spotlight
+                name: spotlight
+                widget: boolean
+                default: false
+                required: false
+                hint: "Is this user part of the Spotlight programme?"
+              - label: Noteworthy
+                name: noteworthy
+                widget: boolean
+                default: false
+                required: false
+                hint: "If not Spotlight or team, is this author otherwise noteworthy?"
               - label: 'Website Url'
                 name: website_url
                 widget: string
@@ -164,6 +182,12 @@ collections:
                 widget: string
                 required: false
                 hint: "Public profile URL (without UTMs we add those)"
+              - label: HIDDEN From Authors Page
+                name: hidden
+                widget: boolean
+                default: false
+                required: false
+                hint: "Do you want to hide this author profile from the authors page"
       - label: 'Categories'
         name: categories
         file: 'content/categories.json'

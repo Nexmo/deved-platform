@@ -9,14 +9,24 @@
           <span property="name">{{ author.name }}</span>
         </h4>
       </div>
-      <div class="Vlt-card__content">
-        <p v-if="!author.spotlight" class="Vlt-grey-dark" property="jobTitle">
-          {{ author.title || 'Team Member' }}
+      <div v-if="author.team" class="Vlt-card__content">
+        <p class="Vlt-grey-dark" property="jobTitle">
+          {{ author.title || 'Vonage Team Member' }}
         </p>
       </div>
-      <div class="Vlt-card__footer Vlt-card__footer--noborder">
-        <p v-if="!author.spotlight" class="Vlt-grey-dark" property="jobTitle">
-          @{{ author.twitter }}
+      <div v-else-if="author.alumni" class="Vlt-card__content">
+        <p class="Vlt-grey-dark" property="jobTitle">
+          Vonage Alumni
+        </p>
+      </div>
+      <div v-else-if="author.spotlight" class="Vlt-card__content">
+        <p class="Vlt-grey-dark" property="jobTitle">
+          Spotlight Author
+        </p>
+      </div>
+      <div v-else class="Vlt-card__content">
+        <p class="Vlt-grey-dark" property="jobTitle">
+          Guest Writer
         </p>
       </div>
     </nuxt-link>
@@ -24,34 +34,11 @@
 </template>
 
 <script>
-// import FacebookSocialButton from "~/components/SocialButtons/FacebookSocialButton"
-// import GitHubSocialButton from "~/components/SocialButtons/GitHubSocialButton"
-// import LinkedInSocialButton from "~/components/SocialButtons/LinkedInSocialButton"
-// import StackOverflowSocialButton from "~/components/SocialButtons/StackOverflowSocialButton"
-// import TwitchSocialButton from "~/components/SocialButtons/TwitchSocialButton"
-// import TwitterSocialButton from "~/components/SocialButtons/TwitterSocialButton"
-// import WebsiteSocialButton from "~/components/SocialButtons/WebsiteSocialButton"
-// import YouTubeSocialButton from "~/components/SocialButtons/YouTubeSocialButton"
-
 export default {
-  components: {
-    // FacebookSocialButton,
-    // GitHubSocialButton,
-    // LinkedInSocialButton,
-    // StackOverflowSocialButton,
-    // TwitchSocialButton,
-    // TwitterSocialButton,
-    // WebsiteSocialButton,
-    // YouTubeSocialButton,
-  },
-
   props: {
     author: {
       type: Object,
       required: true,
-    },
-    bio: {
-      type: Boolean
     },
   }
 }
@@ -59,8 +46,8 @@ export default {
 
 <style scoped>
 .Vlt-col {
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
 }
 
 .Vlt-card__image img {
