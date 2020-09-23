@@ -116,7 +116,7 @@ export default {
 
     if (process.browser) {
       if (post.redirect) {
-        // window.location.href = post.redirect
+        window.location.href = post.redirect
       }
     }
 
