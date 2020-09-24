@@ -16,13 +16,13 @@
           class="Vlt-badge Vlt-M-plus Vlt-badge--small Vlt-badge--transparent"
           style="margin: 8px;"
         >
-          Developer Blog
+          Learn
         </div>
         <div
           class="Vlt-badge Vlt-S-only Vlt-badge--small Vlt-badge--transparent"
           style="margin: 8px;"
         >
-          Dev Blog
+          Learn
         </div>
       </NLink>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
