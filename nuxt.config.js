@@ -58,15 +58,18 @@ export default {
     locales: [
       {
         code: 'en',
-        iso: 'en-US'
+        iso: 'en-US',
+        name: 'English'
       },
       {
         code: 'it',
-        iso: 'it'
+        iso: 'it',
+        name: 'Italian'
       },
       {
         code: 'cn',
-        iso: 'zh-CN'
+        iso: 'zh-CN',
+        name: 'Chinese'
       }
     ],
     defaultLocale: 'en',
