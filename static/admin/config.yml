@@ -1,6 +1,11 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: multi-language-support-i18n
+
+i18n:
+  structure: multiple_folders
+  locales: [en, it, cn]
+  default_locale: en
 
 publish_mode: editorial_workflow
 
@@ -9,6 +14,7 @@ public_folder: '/content/images/'
 
 collections:
   - name: blog
+    i18n: true
     label: 'Blog Post'
     format: frontmatter
     folder: '/content/blog'
@@ -23,10 +29,12 @@ collections:
         name: title
         widget: string
         hint: "Post title and meta title. Soft limit 60 characters, hard limit 70 characters."
+        i18n: true
       - label: Description
         name: description
         widget: string
         hint: "Post meta description. Soft limit 120 characters, hard limit 160 characters."
+        i18n: true
       - label: 'Featured Image'
         name: thumbnail
         widget: image
@@ -77,6 +85,7 @@ collections:
       - label: Body
         name: body
         widget: markdown
+        i18n: true
   - name: pages
     label: Pages
     editor:

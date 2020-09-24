@@ -48,9 +48,32 @@ export default {
   ],
 
   modules: [
+    "nuxt-i18n",
     "@nuxt/content",
     "@nuxtjs/feed"
   ],
+
+  i18n: {
+    strategy: 'prefix_except_default',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US'
+      },
+      {
+        code: 'it',
+        iso: 'it'
+      },
+      {
+        code: 'cn',
+        iso: 'zh-CN'
+      }
+    ],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
+  },
 
   feed: async () => {
     const { $content } = require('@nuxt/content')

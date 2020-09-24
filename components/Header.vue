@@ -26,6 +26,13 @@
         </div>
       </NLink>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
+        <nuxt-link
+          v-for="locale in availableLocales"
+          :key="locale.code"
+          :to="switchLocalePath(locale.code)"
+        >
+          {{ locale.name }}
+        </nuxt-link>
         <SlackSocialButton
           link="https://developer.nexmo.com/community/slack"
           class="Vlt-btn--small"
@@ -97,11 +104,18 @@ export default {
     TwitterSocialButton,
     SlackSocialButton
   },
+
   data() {
     return {
       isOpen: false,
     }
   },
+
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  }
 }
 </script>
 
