@@ -10,7 +10,7 @@ author: judy2k
 published: true
 published_at: 2017-03-23T20:48:33
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
   - developers

@@ -10,7 +10,7 @@ author: brittbarak
 published: true
 published_at: 2020-02-05T08:28:27
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - developers

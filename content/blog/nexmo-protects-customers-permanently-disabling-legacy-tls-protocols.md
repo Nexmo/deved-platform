@@ -10,7 +10,7 @@ author: oleksandr-bodriagov
 published: true
 published_at: 2018-07-25T16:00:54
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - nexmo-news

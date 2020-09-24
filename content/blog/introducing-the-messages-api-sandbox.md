@@ -10,7 +10,7 @@ author: martyn
 published: true
 published_at: 2020-04-08T15:50:34
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
 tags:

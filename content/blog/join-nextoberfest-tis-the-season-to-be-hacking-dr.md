@@ -10,7 +10,7 @@ author: devrelnexmo
 published: true
 published_at: 2018-10-09T15:23:17
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
 tags:

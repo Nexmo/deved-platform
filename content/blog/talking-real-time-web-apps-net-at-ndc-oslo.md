@@ -10,7 +10,7 @@ author: leggetter
 published: true
 published_at: 2016-06-23T20:22:18
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

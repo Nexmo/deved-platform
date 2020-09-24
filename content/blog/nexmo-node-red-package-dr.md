@@ -10,7 +10,7 @@ author: sammachin
 published: true
 published_at: 2019-02-21T17:16:35
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
 tags:

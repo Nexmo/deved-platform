@@ -12,7 +12,7 @@ author: mheap
 published: true
 published_at: 2017-08-29T09:42:30
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
   - developers

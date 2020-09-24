@@ -11,7 +11,7 @@ author: devrelnexmo
 published: true
 published_at: 2018-09-11T12:09:56
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
 tags:

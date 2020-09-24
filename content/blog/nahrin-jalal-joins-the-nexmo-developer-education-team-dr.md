@@ -10,7 +10,7 @@ author: nahrinjalal
 published: true
 published_at: 2020-01-16T14:22:51
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

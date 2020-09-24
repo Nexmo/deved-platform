@@ -10,7 +10,7 @@ author: manik-sachdeva
 published: true
 published_at: 2020-09-03T13:16:58
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
   - video

@@ -11,7 +11,7 @@ author: chrisguzman
 published: true
 published_at: 2016-12-05T10:46:49
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers

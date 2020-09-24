@@ -10,7 +10,7 @@ author: myrsini
 published: true
 published_at: 2020-04-08T12:00:20
 comments: true
-category: tutorial
+category: community
 old_categories:
   - developer
   - developer-relations

@@ -10,7 +10,7 @@ author: julia
 published: true
 published_at: 2018-07-16T09:05:17
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers

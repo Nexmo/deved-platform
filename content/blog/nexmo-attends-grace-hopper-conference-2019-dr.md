@@ -10,11 +10,13 @@ author: laurenlee
 published: true
 published_at: 2019-09-30T15:58:26
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - events
-tags: []
+tags:
+  - event
+  - inclusion
 canonical: https://www.nexmo.com/blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
 redirect: https://www.nexmo.com/blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
 ---

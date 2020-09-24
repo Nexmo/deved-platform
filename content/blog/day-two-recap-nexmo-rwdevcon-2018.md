@@ -10,7 +10,7 @@ author: eric_giannini
 published: true
 published_at: 2018-04-11T13:00:24
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
 tags:

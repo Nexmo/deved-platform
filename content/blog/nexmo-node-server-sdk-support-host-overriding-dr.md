@@ -10,7 +10,7 @@ author: laka
 published: true
 published_at: 2020-01-17T18:14:46
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
   - developers

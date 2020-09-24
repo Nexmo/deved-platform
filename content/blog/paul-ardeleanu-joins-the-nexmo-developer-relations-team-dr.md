@@ -10,7 +10,7 @@ author: paul-ardeleanu
 published: true
 published_at: 2019-02-01T12:23:50
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

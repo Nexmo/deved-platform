@@ -10,7 +10,7 @@ author: martyn
 published: true
 published_at: 2018-10-10T13:01:50
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - messaging

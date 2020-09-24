@@ -10,7 +10,7 @@ author: tjlytle
 published: true
 published_at: 2016-11-08T15:07:36
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

@@ -10,7 +10,7 @@ author: sammachin
 published: true
 published_at: 2016-08-03T10:16:49
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

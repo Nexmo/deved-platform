@@ -10,7 +10,7 @@ author: lornajane
 published: true
 published_at: 2019-10-25T08:00:57
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
 tags:

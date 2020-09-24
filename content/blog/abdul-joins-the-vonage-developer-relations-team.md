@@ -10,7 +10,7 @@ author: abdul-ajetunmobi
 published: true
 published_at: 2020-07-03T12:40:57
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

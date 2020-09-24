@@ -10,7 +10,7 @@ author: cr0wst
 published: true
 published_at: 2018-11-16T22:33:39
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
 tags:

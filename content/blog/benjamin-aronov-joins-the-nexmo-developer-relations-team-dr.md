@@ -10,7 +10,7 @@ author: benjamin-aronov
 published: true
 published_at: 2020-02-21T15:57:23
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

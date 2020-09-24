@@ -10,7 +10,7 @@ author: alyssa-mazzina
 published: true
 published_at: 2018-11-28T17:00:14
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - award
   - developer

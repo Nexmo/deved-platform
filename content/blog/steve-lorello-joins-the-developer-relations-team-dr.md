@@ -10,7 +10,7 @@ author: stevelorello
 published: true
 published_at: 2019-11-13T14:09:23
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags: []

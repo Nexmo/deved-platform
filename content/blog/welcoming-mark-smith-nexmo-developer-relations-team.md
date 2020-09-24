@@ -10,7 +10,7 @@ author: judy2k
 published: true
 published_at: 2016-10-18T16:01:48
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers

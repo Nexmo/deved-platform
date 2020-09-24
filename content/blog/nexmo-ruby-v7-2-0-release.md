@@ -10,7 +10,7 @@ author: ben-greenberg
 published: true
 published_at: 2020-07-27T12:29:47
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
 tags:

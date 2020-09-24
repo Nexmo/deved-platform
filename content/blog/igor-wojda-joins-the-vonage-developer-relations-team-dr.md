@@ -10,7 +10,7 @@ author: igor-wojda
 published: true
 published_at: 2020-03-11T17:00:36
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

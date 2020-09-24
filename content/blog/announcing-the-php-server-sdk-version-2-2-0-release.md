@@ -9,7 +9,7 @@ author: christankersley
 published: true
 published_at: 2020-08-03T15:26:51
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
 tags:

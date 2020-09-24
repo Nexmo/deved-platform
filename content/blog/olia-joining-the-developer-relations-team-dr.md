@@ -10,7 +10,7 @@ author: olia
 published: true
 published_at: 2016-11-22T13:16:13
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers

@@ -10,7 +10,7 @@ author: daniela-facchinetti
 published: true
 published_at: 2020-01-14T14:51:53
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

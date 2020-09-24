@@ -10,7 +10,7 @@ author: chrisguzman
 published: true
 published_at: 2017-09-05T09:21:31
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

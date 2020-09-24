@@ -11,7 +11,7 @@ author: alyssa-mazzina
 published: true
 published_at: 2018-10-11T16:38:50
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - nexmo-news

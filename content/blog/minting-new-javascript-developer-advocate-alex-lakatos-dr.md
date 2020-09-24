@@ -10,7 +10,7 @@ author: laka
 published: true
 published_at: 2017-06-05T10:21:16
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers

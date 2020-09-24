@@ -10,7 +10,7 @@ author: diana-rodriguez
 published: true
 published_at: 2020-03-19T15:57:56
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

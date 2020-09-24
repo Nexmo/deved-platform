@@ -11,7 +11,7 @@ author: brittbarak
 published: true
 published_at: 2019-09-19T08:58:06
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - developers

@@ -10,7 +10,7 @@ author: yuriydybskiy
 published: true
 published_at: 2019-02-04T11:19:28
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

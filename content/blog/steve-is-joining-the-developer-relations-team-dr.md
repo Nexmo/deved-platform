@@ -10,7 +10,7 @@ author: cr0wst
 published: true
 published_at: 2018-05-02T16:30:43
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers

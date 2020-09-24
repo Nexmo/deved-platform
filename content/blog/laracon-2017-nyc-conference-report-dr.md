@@ -10,7 +10,7 @@ author: sara-bine
 published: true
 published_at: 2017-08-15T20:29:48
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

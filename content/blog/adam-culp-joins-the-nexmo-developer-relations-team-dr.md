@@ -10,7 +10,7 @@ author: adamculp
 published: true
 published_at: 2019-06-24T11:59:02
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

@@ -10,7 +10,7 @@ author: alyssa-mazzina
 published: true
 published_at: 2018-11-05T17:01:25
 comments: true
-category: tutorial
+category: community
 old_categories:
   - compliance
   - developer

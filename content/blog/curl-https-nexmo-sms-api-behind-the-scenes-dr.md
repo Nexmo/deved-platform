@@ -10,7 +10,7 @@ author: julia
 published: true
 published_at: 2018-11-06T17:09:17
 comments: true
-category: tutorial
+category: inspiration
 old_categories:
   - developer
   - tutorial

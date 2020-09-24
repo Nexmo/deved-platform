@@ -10,7 +10,7 @@ author: mheap
 published: true
 published_at: 2017-07-07T11:44:14
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers

@@ -10,7 +10,7 @@ author: manik
 published: true
 published_at: 2019-07-02T20:58:34
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
   - video

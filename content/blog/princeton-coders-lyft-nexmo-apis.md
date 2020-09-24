@@ -10,7 +10,7 @@ author: glenkunene
 published: true
 published_at: 2018-01-11T14:07:07
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

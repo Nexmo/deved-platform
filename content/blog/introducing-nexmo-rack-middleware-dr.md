@@ -10,7 +10,7 @@ author: ben-greenberg
 published: true
 published_at: 2019-12-04T09:00:56
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - messaging

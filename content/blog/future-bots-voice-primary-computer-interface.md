@@ -10,7 +10,7 @@ author: sammachin
 published: true
 published_at: 2017-12-01T07:12:24
 comments: true
-category: tutorial
+category: inspiration
 old_categories:
   - developer
   - developers

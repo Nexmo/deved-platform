@@ -10,7 +10,7 @@ author: michaeljolley
 published: true
 published_at: 2019-10-28T19:03:27
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags: []

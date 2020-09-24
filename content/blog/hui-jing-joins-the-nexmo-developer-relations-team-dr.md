@@ -10,7 +10,7 @@ author: huijing
 published: true
 published_at: 2018-09-27T12:00:38
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

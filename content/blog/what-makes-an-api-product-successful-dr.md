@@ -10,7 +10,7 @@ author: lornajane
 published: true
 published_at: 2019-12-06T09:00:46
 comments: true
-category: tutorial
+category: inspiration
 old_categories:
   - developer
 tags:

@@ -10,7 +10,7 @@ author: amanda
 published: true
 published_at: 2017-07-06T16:41:05
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers

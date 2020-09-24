@@ -10,11 +10,10 @@ author: myrsini
 published: true
 published_at: 2018-11-29T14:23:19
 comments: true
-category: tutorial
+category: devlife
 old_categories:
   - developer
 tags:
-  - devrel
   - hackathon
   - health
   - wellness

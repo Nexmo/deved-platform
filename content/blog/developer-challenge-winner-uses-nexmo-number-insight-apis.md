@@ -10,7 +10,7 @@ author: tjlytle
 published: true
 published_at: 2015-08-14T15:45:51
 comments: true
-category: tutorial
+category: community
 old_categories:
   - developer
   - developer-challenge

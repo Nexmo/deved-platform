@@ -10,7 +10,7 @@ author: laurenlee
 published: true
 published_at: 2019-09-04T21:57:28
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - developer-spotlight

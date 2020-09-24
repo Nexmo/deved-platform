@@ -10,7 +10,7 @@ author: garann-means
 published: true
 published_at: 2019-01-11T09:40:17
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

@@ -10,7 +10,7 @@ author: labfoo
 published: true
 published_at: 2017-07-25T13:53:37
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - developers

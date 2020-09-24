@@ -10,7 +10,7 @@ author: avital-tzubelivonage-com
 published: true
 published_at: 2020-07-24T13:29:55
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

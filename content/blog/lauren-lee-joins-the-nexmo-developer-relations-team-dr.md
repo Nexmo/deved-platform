@@ -10,7 +10,7 @@ author: laurenlee
 published: true
 published_at: 2019-05-20T21:23:33
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

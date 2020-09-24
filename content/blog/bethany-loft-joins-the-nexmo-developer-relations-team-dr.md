@@ -10,7 +10,7 @@ author: bethanyloft
 published: true
 published_at: 2019-09-10T09:44:49
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

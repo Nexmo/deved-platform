@@ -9,7 +9,7 @@ author: kellyjandrews
 published: true
 published_at: 2020-07-01T13:55:12
 comments: true
-category: tutorial
+category: inspiration
 old_categories:
   - developer
 tags:

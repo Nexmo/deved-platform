@@ -10,7 +10,7 @@ author: julia
 published: true
 published_at: 2020-09-16T10:53:56
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
 tags:

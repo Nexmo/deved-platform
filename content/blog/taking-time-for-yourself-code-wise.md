@@ -10,7 +10,7 @@ author: christankersley
 published: true
 published_at: 2020-07-22T14:54:13
 comments: true
-category: tutorial
+category: devlife
 old_categories:
   - developer
   - developer-relations

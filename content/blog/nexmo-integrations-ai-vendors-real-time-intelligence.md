@@ -11,7 +11,7 @@ author: alyssa-mazzina
 published: true
 published_at: 2018-06-20T15:00:34
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - partners

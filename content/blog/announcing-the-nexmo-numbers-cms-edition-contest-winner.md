@@ -9,7 +9,7 @@ author: tjlytle
 published: true
 published_at: 2015-04-29T17:55:05
 comments: true
-category: tutorial
+category: community
 old_categories:
   - developer
   - developers

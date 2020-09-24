@@ -12,7 +12,7 @@ author: bibi
 published: true
 published_at: 2019-06-25T16:59:26
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
 tags:

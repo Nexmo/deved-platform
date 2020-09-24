@@ -10,7 +10,7 @@ author: zachwalchuk
 published: true
 published_at: 2019-12-13T17:25:31
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags: []

@@ -10,7 +10,7 @@ author: bibi
 published: true
 published_at: 2018-02-02T13:52:46
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - events

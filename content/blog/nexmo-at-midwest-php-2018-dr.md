@@ -10,7 +10,7 @@ author: mheap
 published: true
 published_at: 2018-03-16T20:30:48
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers-corner

@@ -10,7 +10,7 @@ author: kevinlewis
 published: true
 published_at: 2020-02-06T16:59:04
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

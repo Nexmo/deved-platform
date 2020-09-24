@@ -10,7 +10,7 @@ author: tomomi
 published: true
 published_at: 2016-08-31T12:13:05
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers

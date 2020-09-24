@@ -10,7 +10,7 @@ author: stevelorello
 published: true
 published_at: 2020-01-15T15:21:50
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
 tags:

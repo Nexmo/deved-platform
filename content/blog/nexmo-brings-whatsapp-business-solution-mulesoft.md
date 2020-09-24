@@ -10,7 +10,7 @@ author: oscar-rodriguez
 published: true
 published_at: 2018-09-26T15:45:31
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
   - messaging

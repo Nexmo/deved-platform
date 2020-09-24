@@ -10,7 +10,7 @@ author: manik
 published: true
 published_at: 2018-11-07T19:39:49
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

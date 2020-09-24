@@ -10,7 +10,7 @@ author: fabianrodiguez
 published: true
 published_at: 2019-06-13T15:00:41
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

@@ -10,7 +10,7 @@ author: laura-czajkowski
 published: true
 published_at: 2019-08-15T13:00:05
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

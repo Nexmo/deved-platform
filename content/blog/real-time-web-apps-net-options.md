@@ -11,7 +11,7 @@ author: leggetter
 published: true
 published_at: 2016-05-19T15:55:16
 comments: true
-category: tutorial
+category: inspiration
 old_categories:
   - developer
   - developers

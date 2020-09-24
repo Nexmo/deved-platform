@@ -9,7 +9,7 @@ author: jameswinter
 published: true
 published_at: 2015-03-11T20:04:43
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

@@ -11,7 +11,7 @@ author: lornajane
 published: true
 published_at: 2020-06-03T07:31:23
 comments: true
-category: tutorial
+category: community
 old_categories:
   - developer
   - developers

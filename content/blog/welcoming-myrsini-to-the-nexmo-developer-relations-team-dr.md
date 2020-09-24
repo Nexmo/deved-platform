@@ -10,7 +10,7 @@ author: myrsini
 published: true
 published_at: 2018-08-27T16:55:42
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
 tags:

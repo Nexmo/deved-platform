@@ -10,7 +10,7 @@ author: elishahoffman
 published: true
 published_at: 2016-07-12T14:12:12
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

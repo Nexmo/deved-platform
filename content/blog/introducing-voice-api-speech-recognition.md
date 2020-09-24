@@ -10,7 +10,7 @@ author: victorshisterov
 published: true
 published_at: 2020-06-02T14:03:46
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - developer
 tags:

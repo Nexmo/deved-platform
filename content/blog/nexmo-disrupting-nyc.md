@@ -9,7 +9,7 @@ author: michaelludden
 published: true
 published_at: 2015-05-12T17:08:04
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

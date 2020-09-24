@@ -10,7 +10,7 @@ author: aaron
 published: true
 published_at: 2017-07-04T15:29:57
 comments: true
-category: tutorial
+category: inspiration
 old_categories:
   - developer
   - developers

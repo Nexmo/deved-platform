@@ -10,7 +10,7 @@ author: sheri-atienza
 published: true
 published_at: 2018-07-24T16:00:23
 comments: true
-category: tutorial
+category: announcement
 old_categories:
   - customer-support
   - developer

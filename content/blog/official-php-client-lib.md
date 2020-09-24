@@ -10,7 +10,7 @@ author: tjlytle
 published: true
 published_at: 2016-05-25T18:36:30
 comments: true
-category: tutorial
+category: release
 old_categories:
   - developer
   - developers

@@ -10,7 +10,7 @@ author: myrsini
 published: true
 published_at: 2018-12-15T01:00:25
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
 tags:

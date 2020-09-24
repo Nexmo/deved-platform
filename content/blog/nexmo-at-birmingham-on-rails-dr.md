@@ -11,7 +11,7 @@ author: ben-greenberg
 published: true
 published_at: 2020-01-22T14:02:06
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

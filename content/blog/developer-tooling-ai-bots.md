@@ -10,7 +10,7 @@ author: sammachin
 published: true
 published_at: 2017-10-26T02:30:08
 comments: true
-category: tutorial
+category: inspiration
 old_categories:
   - chat-app
   - developer

@@ -10,14 +10,13 @@ author: nahrinjalal
 published: true
 published_at: 2020-09-23T13:24:24
 comments: true
-category: tutorial
+category: inspiration
 old_categories:
   - developer
   - tutorial
 tags:
   - http
-  - http-requests
-  - node-js
+  - nodejs
 canonical: https://www.nexmo.com/blog/2020/09/23/5-ways-to-make-http-requests-in-node-js-2020-edition
 redirect: https://www.nexmo.com/blog/2020/09/23/5-ways-to-make-http-requests-in-node-js-2020-edition
 ---

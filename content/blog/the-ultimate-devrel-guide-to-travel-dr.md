@@ -10,7 +10,7 @@ author: lukeoliff
 published: true
 published_at: 2019-11-27T14:31:12
 comments: true
-category: tutorial
+category: devlife
 old_categories:
   - developer
 tags:

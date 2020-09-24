@@ -10,7 +10,7 @@ author: fernardo
 published: true
 published_at: 2015-02-26T23:52:51
 comments: true
-category: tutorial
+category: event
 old_categories:
   - developer
   - developers

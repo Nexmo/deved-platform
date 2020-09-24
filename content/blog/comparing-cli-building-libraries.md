@@ -9,7 +9,7 @@ author: laka
 published: true
 published_at: 2020-06-12T12:30:15
 comments: true
-category: tutorial
+category: inspiration
 old_categories:
   - developer
   - tutorial

@@ -10,7 +10,7 @@ author: clarisse-ng
 published: true
 published_at: 2020-07-03T11:44:24
 comments: true
-category: tutorial
+category: team
 old_categories:
   - developer
   - developers
