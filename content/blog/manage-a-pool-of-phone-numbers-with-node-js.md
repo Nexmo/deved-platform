@@ -15,7 +15,7 @@ old_categories:
   - developer
   - tutorial
 tags:
-  - node-js
+  - nodejs
   - number-management
   - number-management-api
   - number-pools

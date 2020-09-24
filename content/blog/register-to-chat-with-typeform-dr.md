@@ -19,7 +19,7 @@ tags:
   - client-sdk
   - conversation-api
   - live-chat
-  - node-js
+  - nodejs
   - typeform
 canonical: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr
 redirect: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr

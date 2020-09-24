@@ -18,7 +18,7 @@ old_categories:
 tags:
   - conversation-api
   - javascript
-  - node-js
+  - nodejs
   - programmable-conversations
   - wechat
 canonical: https://www.nexmo.com/blog/2019/11/01/integrating-the-conversation-api-with-wechat-dr

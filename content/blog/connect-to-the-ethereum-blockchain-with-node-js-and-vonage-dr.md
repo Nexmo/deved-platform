@@ -19,7 +19,7 @@ tags:
   - blockchain
   - conversation-api
   - ethereum
-  - node-js
+  - nodejs
 canonical: https://www.nexmo.com/blog/2020/04/24/connect-to-the-ethereum-blockchain-with-node-js-and-vonage-dr
 redirect: https://www.nexmo.com/blog/2020/04/24/connect-to-the-ethereum-blockchain-with-node-js-and-vonage-dr
 ---

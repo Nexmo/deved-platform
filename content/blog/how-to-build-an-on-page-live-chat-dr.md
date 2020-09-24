@@ -19,7 +19,7 @@ tags:
   - glitch
   - javascript
   - live-chat
-  - node-js
+  - nodejs
 canonical: https://www.nexmo.com/blog/2019/10/18/how-to-build-an-on-page-live-chat-dr
 redirect: https://www.nexmo.com/blog/2019/10/18/how-to-build-an-on-page-live-chat-dr
 ---

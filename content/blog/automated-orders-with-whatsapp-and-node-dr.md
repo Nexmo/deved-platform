@@ -16,7 +16,7 @@ old_categories:
 tags:
   - glitch
   - messages-api
-  - node-js
+  - nodejs
   - sandbox
   - whatsapp
 canonical: https://www.nexmo.com/blog/2020/05/07/automated-orders-with-whatsapp-and-node-dr

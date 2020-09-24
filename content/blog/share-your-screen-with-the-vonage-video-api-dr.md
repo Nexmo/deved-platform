@@ -17,7 +17,7 @@ old_categories:
   - video
 tags:
   - javascript
-  - node-js
+  - nodejs
   - video-api
 canonical: https://www.nexmo.com/blog/2020/04/29/share-your-screen-with-the-vonage-video-api-dr
 redirect: https://www.nexmo.com/blog/2020/04/29/share-your-screen-with-the-vonage-video-api-dr

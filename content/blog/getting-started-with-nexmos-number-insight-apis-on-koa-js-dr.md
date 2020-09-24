@@ -19,7 +19,7 @@ tags:
   - developer
   - devrel
   - koa
-  - node-js
+  - nodejs
   - number-insight
 canonical: https://www.nexmo.com/blog/2019/02/21/getting-started-with-nexmos-number-insight-apis-on-koa-js-dr
 redirect: https://www.nexmo.com/blog/2019/02/21/getting-started-with-nexmos-number-insight-apis-on-koa-js-dr

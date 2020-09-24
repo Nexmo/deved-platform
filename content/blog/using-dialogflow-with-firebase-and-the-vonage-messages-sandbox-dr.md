@@ -21,7 +21,7 @@ tags:
   - facebook-messenger
   - firebase
   - messages-api
-  - node-js
+  - nodejs
 canonical: https://www.nexmo.com/blog/2020/06/01/using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr
 redirect: https://www.nexmo.com/blog/2020/06/01/using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr
 ---

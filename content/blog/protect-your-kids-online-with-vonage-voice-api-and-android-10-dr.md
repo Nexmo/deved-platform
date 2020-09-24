@@ -17,7 +17,7 @@ old_categories:
   - voice
 tags:
   - android
-  - node-js
+  - nodejs
   - voice-api
   - voice-proxy
 canonical: https://www.nexmo.com/blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10-dr

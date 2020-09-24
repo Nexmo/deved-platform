@@ -18,7 +18,7 @@ old_categories:
 tags:
   - express
   - javascript
-  - node-js
+  - nodejs
   - vue
 canonical: https://www.nexmo.com/blog/2019/08/05/voice-chat-with-vue-and-express-dr
 redirect: https://www.nexmo.com/blog/2019/08/05/voice-chat-with-vue-and-express-dr

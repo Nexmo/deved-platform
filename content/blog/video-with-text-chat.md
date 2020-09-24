@@ -17,7 +17,7 @@ old_categories:
   - tutorial
   - video
 tags:
-  - node-js
+  - nodejs
   - opentok
   - video
   - video-api

@@ -18,7 +18,7 @@ old_categories:
 tags:
   - jwt
   - messages-api
-  - node-js
+  - nodejs
   - webhooks
 canonical: https://www.nexmo.com/blog/2020/07/06/validating-inbound-messages-from-the-vonage-messages-api-dr
 redirect: https://www.nexmo.com/blog/2020/07/06/validating-inbound-messages-from-the-vonage-messages-api-dr

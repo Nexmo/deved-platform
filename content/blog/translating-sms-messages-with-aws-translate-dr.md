@@ -17,7 +17,7 @@ tags:
   - api
   - aws
   - nexmo-extend
-  - node-js
+  - nodejs
   - translation
 canonical: https://www.nexmo.com/blog/2019/11/04/translating-sms-messages-with-aws-translate-dr
 redirect: https://www.nexmo.com/blog/2019/11/04/translating-sms-messages-with-aws-translate-dr

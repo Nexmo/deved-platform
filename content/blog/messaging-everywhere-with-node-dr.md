@@ -16,7 +16,7 @@ old_categories:
 tags:
   - facebook-messenger
   - messages-api
-  - node-js
+  - nodejs
   - sms
   - viber
   - whatsapp

@@ -15,7 +15,7 @@ old_categories:
   - developer
 tags:
   - asr
-  - node-js
+  - nodejs
   - speech-recognition
   - voice-api
 canonical: https://www.nexmo.com/blog/2020/06/02/introducing-voice-api-speech-recognition

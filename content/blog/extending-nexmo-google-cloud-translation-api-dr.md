@@ -16,7 +16,7 @@ old_categories:
 tags:
   - api
   - nexmo-extend
-  - node-js
+  - nodejs
   - sms
   - translation
 canonical: https://www.nexmo.com/blog/2019/10/24/extending-nexmo-google-cloud-translation-api-dr

@@ -19,7 +19,7 @@ tags:
   - inbound-sms
   - messaging
   - node-red
-  - node-js
+  - nodejs
   - nodered
   - receiving-sms
 canonical: https://www.nexmo.com/blog/2019/04/24/receive-sms-messages-node-red-dr

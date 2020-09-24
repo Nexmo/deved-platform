@@ -19,7 +19,7 @@ old_categories:
   - verify
 tags:
   - express
-  - node-js
+  - nodejs
   - react-native
   - sms
   - verify

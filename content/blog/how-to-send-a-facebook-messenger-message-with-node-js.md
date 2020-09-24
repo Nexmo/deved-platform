@@ -18,7 +18,7 @@ old_categories:
 tags:
   - facebook-messenger
   - messages-api
-  - node-js
+  - nodejs
 canonical: https://www.nexmo.com/blog/2020/05/11/how-to-send-a-facebook-messenger-message-with-node-js
 redirect: https://www.nexmo.com/blog/2020/05/11/how-to-send-a-facebook-messenger-message-with-node-js
 ---

@@ -17,7 +17,7 @@ old_categories:
   - tutorial
   - video
 tags:
-  - node-js
+  - nodejs
   - opentok
   - video-api
 canonical: https://www.nexmo.com/blog/2020/03/30/basic-video-chat

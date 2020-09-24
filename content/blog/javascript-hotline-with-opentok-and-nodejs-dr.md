@@ -15,7 +15,7 @@ old_categories:
   - developer
 tags:
   - javascript
-  - node-js
+  - nodejs
   - opentok
   - tokbox
 canonical: https://www.nexmo.com/blog/2019/07/05/javascript-hotline-with-opentok-and-nodejs-dr

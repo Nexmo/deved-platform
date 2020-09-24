@@ -17,7 +17,7 @@ old_categories:
   - tutorial
 tags:
   - aws-lambda
-  - node-js
+  - nodejs
   - python
   - sms
 canonical: https://www.nexmo.com/blog/2020/05/28/using-a-message-queue-with-sms-for-throughput-limitations

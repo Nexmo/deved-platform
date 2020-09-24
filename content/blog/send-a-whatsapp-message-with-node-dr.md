@@ -15,7 +15,7 @@ old_categories:
   - developer
 tags:
   - messages-api
-  - node-js
+  - nodejs
   - sandbox
   - whatsapp
 canonical: https://www.nexmo.com/blog/2020/04/15/send-a-whatsapp-message-with-node-dr

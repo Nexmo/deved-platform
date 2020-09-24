@@ -18,7 +18,7 @@ old_categories:
 tags:
   - code-of-conduct-incident-line
   - conference-call
-  - node-js
+  - nodejs
   - voice-api
 canonical: https://www.nexmo.com/blog/2020/07/21/create-a-code-of-conduct-incident-line-with-node-js
 redirect: https://www.nexmo.com/blog/2020/07/21/create-a-code-of-conduct-incident-line-with-node-js

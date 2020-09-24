@@ -18,7 +18,7 @@ old_categories:
 tags:
   - 2fa
   - glitch
-  - node-js
+  - nodejs
   - security
   - two-factor-authentication
 canonical: https://www.nexmo.com/blog/2019/04/15/how-to-add-two-factor-authentication-with-node-js-dr

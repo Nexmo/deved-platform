@@ -15,7 +15,7 @@ old_categories:
   - developer
 tags:
   - messages-api
-  - node-js
+  - nodejs
   - sandbox
   - viber
 canonical: https://www.nexmo.com/blog/2020/04/22/send-a-viber-message-with-node-dr

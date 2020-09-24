@@ -15,7 +15,7 @@ old_categories:
   - tutorial
 tags:
   - azure
-  - node-js
+  - nodejs
   - sms
 canonical: https://www.nexmo.com/blog/2020/01/29/how-send-receive-sms-messages-with-node-js-azure-functions-dr
 redirect: https://www.nexmo.com/blog/2020/01/29/how-send-receive-sms-messages-with-node-js-azure-functions-dr

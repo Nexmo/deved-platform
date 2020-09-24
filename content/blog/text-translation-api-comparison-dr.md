@@ -20,7 +20,7 @@ tags:
   - ibm-watson
   - javascript
   - microsoft-azure
-  - node-js
+  - nodejs
   - sms
   - text-translation
 canonical: https://www.nexmo.com/blog/2019/12/10/text-translation-api-comparison-dr
