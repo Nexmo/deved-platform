@@ -85,8 +85,7 @@ inquirer
       thumbnail: 'tbc',
       published: true,
       published_at: (new Date).toISOString(),
-      tags: ['your', 'tags', 'here'],
-      slugs: [ slug ]
+      tags: ['your', 'tags', 'here']
     }
 
     const markdown = '---\n' + yaml.stringify(output) + '---\n\n' + styleGuide

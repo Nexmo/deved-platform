@@ -15,9 +15,6 @@ tags:
   - express
   - nodejs
 canonical: 5-ways-to-build-a-node-js-api
-slugs:
-  - 5-ways-to-build-a-node-js-api
-  - 5-ways-to-build-a-nodejs-api
 redirect: https://www.nexmo.com/blog/2020/08/11/5-ways-to-build-a-node-js-api
 
 ---

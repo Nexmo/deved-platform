@@ -15,9 +15,6 @@ tags:
   - video-api
   - voice-api
 canonical: 7-app-ideas-to-build-at-work-and-7-to-build-at-home-dr
-slugs:
-  - 7-app-ideas-to-build-at-work-and-7-to-build-at-home-dr
-  - 7-app-ideas-to-build-at-work-and-7-to-build-at-home
 redirect: https://www.nexmo.com/blog/2020/05/05/7-app-ideas-to-build-at-work-and-7-to-build-at-home-dr
 
 ---
