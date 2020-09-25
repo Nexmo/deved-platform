@@ -74,7 +74,7 @@ inquirer
   ])
   .then(answers => {
     const slug = slugify(answers.title, slugifyOpt)
-    const filename = `content/blog/${slug}.md`
+    const filename = `content/blog/en/${slug}.md`
     const output = {
       title: answers.title,
       description: answers.description,

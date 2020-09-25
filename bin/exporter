@@ -165,7 +165,7 @@ const savingPosts = () => {
   bar.start(posts.length, null)
 
   posts.forEach((post, index) => {
-    const filename = `content/blog/${post.slug}.md`
+    const filename = `content/blog/en/${post.slug}.md`
 
     fs.open(filename, 'r', (err) => {
       if (err) {
