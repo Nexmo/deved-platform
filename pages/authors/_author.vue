@@ -39,7 +39,7 @@ export default {
         throw { statusCode: 404, message: "Page not found" }
       }
 
-      const posts = await $content('blog')
+      const posts = await $content(`blog`, { deep: true })
         .where({ '$and': [
           { 'author': author.username },
           { 'published': { '$ne': false } }

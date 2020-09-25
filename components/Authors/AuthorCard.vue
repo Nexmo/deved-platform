@@ -52,12 +52,12 @@
           <TwitchSocialButton :link="author.twitch_url" class="Vlt-btn--small" />
           <YouTubeSocialButton :link="author.youtube_url" class="Vlt-btn--small" />
           <WebsiteSocialButton
-            :link="author.website_url || `/authors/${author.username}`"
+            :link="author.website_url || `${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}/authors/${author.username}`"
             class="Vlt-btn--small"
           />
         </div>
         <div class="Vlt-card__footer Vlt-card__footer--short Vlt-right">
-          <NLink :to="`/authors/${author.username}`" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">
+          <NLink :to="`${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}/authors/${author.username}`" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">
             Author page
           </NLink>
         </div>

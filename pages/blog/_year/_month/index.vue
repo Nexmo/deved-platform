@@ -33,7 +33,7 @@ export default {
     PageHero
   },
 
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, app, params, error }) {
     const { month, year } = params
 
     if (isNaN(year) || isNaN(month)) {
@@ -43,7 +43,7 @@ export default {
     const date = moment(`${year}/${month}`, 'YYYY/MM')
 
     try {
-      const posts = await $content('blog')
+      const posts = await $content(`blog/${app.i18n.locale}`)
         .where({ '$and': [
           { 'routes' : { '$contains' : `/blog/${date.format('YYYY/MM')}` } },
           { 'published': { '$ne': false } }

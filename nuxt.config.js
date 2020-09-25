@@ -48,13 +48,39 @@ export default {
   ],
 
   modules: [
+    "nuxt-i18n",
     "@nuxt/content",
     "@nuxtjs/feed"
   ],
 
+  i18n: {
+    strategy: 'prefix_except_default',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English'
+      },
+      {
+        code: 'it',
+        iso: 'it',
+        name: 'Italiano'
+      },
+      {
+        code: 'cn',
+        iso: 'zh-CN',
+        name: '中文'
+      }
+    ],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
+  },
+
   feed: async () => {
     const { $content } = require('@nuxt/content')
-    const posts = await $content('blog')
+    const posts = await $content('blog/en')
     .only(['author', 'category', 'title', 'slug', 'description', 'route', 'raw'])
     .fetch()
 
@@ -64,7 +90,11 @@ export default {
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
-        document.type = document.dir.replace(/(^\/|\/$)/, "")
+        const path = document.dir.replace(/^\/+|\/+$/g, '')
+        const [ type, locale ] = path.split('/')
+
+        document.type = type
+        document.locale = locale
 
         const { time } = require('reading-time')(document.text)
         document.readingTime = time

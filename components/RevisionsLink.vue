@@ -1,6 +1,6 @@
 <template>
   <span>
-    | <a :href="`${repoUrl}/commits/${repoBranch}/content${post.path}${post.extension}`">
+    | <a :href="`${repoUrl}/commits/${repoBranch}/content${post.path}${post.extension}`" target="_blank">
       View revision history
     </a>
   </span>

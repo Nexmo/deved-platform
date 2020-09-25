@@ -1,6 +1,6 @@
 <template>
   <NLink
-    :to="`/categories/${category.slug}`"
+    :to="`${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}/categories/${category.slug}`"
     :class="`Vlt-badge Vlt-badge--white Vlt-badge--transparent Category`"
     :style="`color: ${category.color ? category.color : '#000'}`"
   >

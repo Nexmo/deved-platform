@@ -1,7 +1,7 @@
 <template>
   <header class="Blog-header">
     <div class="Vlt-header">
-      <NLink to="/" no-prefetch class="Vlt-header__logo">
+      <NLink :to="`${$i18n.locale === 'en' ? '/' : `/${$i18n.locale}`}`" no-prefetch class="Vlt-header__logo">
         <img
           class="Vlt-M-plus"
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
@@ -26,6 +26,21 @@
         </div>
       </NLink>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
+        <div class="Vlt-native-dropdown Vlt-native-dropdown--small">
+          <select v-model="selectedLocale" @change="switchLocale(selectedLocale)">
+            <option :value="currentLocale.code" selected="selected">
+              {{ currentLocale.name }}
+            </option>
+            <option
+              v-for="(locale, index) in availableLocales"
+              :key="index"
+              :value="locale.code"
+            >
+              {{ locale.name }}
+            </option>
+          </select>
+        </div>
+
         <SlackSocialButton
           link="https://developer.nexmo.com/community/slack"
           class="Vlt-btn--small"
@@ -97,11 +112,28 @@ export default {
     TwitterSocialButton,
     SlackSocialButton
   },
+
   data() {
     return {
+      selectedLocale: this.$i18n.locale,
       isOpen: false,
     }
   },
+
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    },
+    currentLocale() {
+      return this.$i18n.locales.filter(l => l.code === this.$i18n.locale)[0]
+    },
+  },
+
+  methods: {
+    switchLocale(event) {
+      this.$router.replace(this.switchLocalePath(event))
+    }
+  }
 }
 </script>
 
@@ -272,5 +304,15 @@ export default {
   font-weight: 600;
   color: #131415;
   line-height: 1.6rem;
+}
+
+.Vlt-native-dropdown--small {
+  margin-right: 8px;
+}
+.Vlt-native-dropdown--small select {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  min-height: 32px;
+  min-width: 32px;
 }
 </style>

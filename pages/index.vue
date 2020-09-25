@@ -18,7 +18,7 @@
         <template v-if="category.posts && category.posts.length > 0">
           <div :key="`${category.slug}-separator`" class="Vlt-text-separator">
             <span>
-              <NLink :to="`/categories/${category.slug}`">
+              <NLink :to="`${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}/categories/${category.slug}`">
                 {{ category.plural }}
               </NLink>
             </span>
@@ -34,7 +34,7 @@
       </template>
     </main>
     <footer class="Blog__Full-width Vlt-center">
-      <NLink to="/blog" no-prefetch class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small">
+      <NLink :to="`/${$i18n.locale === 'en' ? '' : `${$i18n.locale}/`}blog`" no-prefetch class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small">
         View all blog posts
       </NLink>
     </footer>
@@ -55,8 +55,8 @@ export default {
     SearchHero
   },
 
-  async asyncData({ $content }) {
-    const latestPosts = await $content('blog')
+  async asyncData({ $content, app }) {
+    const latestPosts = await $content(`blog/${app.i18n.locale}`)
         .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')
         .limit(2)
@@ -65,7 +65,7 @@ export default {
     const { categories } = await $content('categories').fetch()
 
     categories.forEach(async (category, index, array) => {
-      array[index].posts = await $content('blog')
+      array[index].posts = await $content(`blog/${app.i18n.locale}`)
         .where({ '$and': [
           { 'category': category.slug },
           { 'route' : { '$nin' : latestPosts.map(f => f.route) } },
