@@ -18,7 +18,7 @@
         <template v-if="category.posts && category.posts.length > 0">
           <div :key="`${category.slug}-separator`" class="Vlt-text-separator">
             <span>
-              <NLink :to="`/categories/${category.slug}`">
+              <NLink :to="`${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}/categories/${category.slug}`">
                 {{ category.plural }}
               </NLink>
             </span>
