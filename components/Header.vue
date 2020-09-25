@@ -1,7 +1,7 @@
 <template>
   <header class="Blog-header">
     <div class="Vlt-header">
-      <NLink to="/" no-prefetch class="Vlt-header__logo">
+      <NLink :to="`${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}`" no-prefetch class="Vlt-header__logo">
         <img
           class="Vlt-M-plus"
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
@@ -115,7 +115,7 @@ export default {
 
   data() {
     return {
-      selectedLocale: 'en',
+      selectedLocale: this.$i18n.locale,
       isOpen: false,
     }
   },

@@ -34,7 +34,7 @@
       </template>
     </main>
     <footer class="Blog__Full-width Vlt-center">
-      <NLink to="/blog" no-prefetch class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small">
+      <NLink :to="`/${$i18n.locale === 'en' ? '' : `${$i18n.locale}/`}blog`" no-prefetch class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small">
         View all blog posts
       </NLink>
     </footer>
