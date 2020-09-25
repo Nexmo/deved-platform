@@ -42,17 +42,17 @@ export default {
     Pagination
   },
 
-  async asyncData({ $content, error, params: { page } }) {
+  async asyncData({ $content, app, error, params: { page } }) {
     try {
       page = parseInt(page, 10) || 1
 
-      const postCount = (await $content('blog')
+      const postCount = (await $content(`blog/${app.i18n.locale}`)
         .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')
         .only(['title'])
         .fetch()).length
 
-      const postsQuery = $content('blog')
+      const postsQuery = $content(`blog/${app.i18n.locale}`)
         .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')
         .skip(config.postsPerPage * (page  - 1))

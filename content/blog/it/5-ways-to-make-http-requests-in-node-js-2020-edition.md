@@ -1,10 +1,8 @@
 ---
-title: 5 Ways To Make HTTP Requests In Node.js – 2020 Edition
-description: Learning how to make HTTP requests can feel overwhelming as there
-  are dozens of libraries available, with each solution claiming to be more
-  efficient than the last. Some libraries offer cross-platform support, while
-  others focus on bundle size or developer experience. In this post, we’ll
-  explore five of the most popular ways to achieve this […]
+title: 5 Modi Per Effettuare Richieste HTTP in Node.js - Edizione 2020
+description: Imparare a eseguire richieste HTTP può sembrare opprimente in quanto lì
+  sono disponibili dozzine di librerie, con ogni soluzione che dichiara di essere di più
+  efficiente del precedente.
 thumbnail: https://www.nexmo.com/wp-content/uploads/2020/09/Blog_HTTP-Request_Node-js_1200x600.png
 author: nahrinjalal
 published: true
@@ -18,4 +16,5 @@ tags:
   - http
   - nodejs
 ---
-Content to be migrated...
+
+5 Modi Per Effettuare Richieste HTTP in Node.js - Edizione 2020

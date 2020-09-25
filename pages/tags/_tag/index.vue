@@ -34,9 +34,9 @@ export default {
     Tag
   },
 
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, app, params, error }) {
     try {
-      const posts = await $content('blog')
+      const posts = await $content(`blog/${app.i18n.locale}`)
         .where({ '$and': [
           { 'tags' : { '$contains' : params.tag } },
           { 'published': { '$ne': false } }

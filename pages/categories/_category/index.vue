@@ -34,7 +34,7 @@ export default {
     PageHero
   },
 
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, app, params, error }) {
     try {
       const { categories } = await $content('categories').fetch()
       const category = categories.find(c => c.slug === params.category)
@@ -43,7 +43,7 @@ export default {
         throw { statusCode: 404, message: "Page not found" }
       }
 
-      const posts = await $content('blog')
+      const posts = await $content(`blog/${app.i18n.locale}`)
         .where({ '$and': [
           { 'category': category.slug },
           { 'published': { '$ne': false } }

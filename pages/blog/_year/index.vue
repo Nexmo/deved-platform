@@ -37,11 +37,11 @@ export default {
     PageHero
   },
 
-  async asyncData({ $content, error, params: { year } }) {
+  async asyncData({ $content, app, error, params: { year } }) {
     const date = moment(`${year}`, 'YYYY')
 
     try {
-      const posts = await $content('blog')
+      const posts = await $content(`blog/${app.i18n.locale}`)
         .where({ '$and': [
           { 'routes' : { '$contains' : `/blog/${date.format('YYYY')}` } },
           { 'published': { '$ne': false } }

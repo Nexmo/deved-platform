@@ -26,13 +26,21 @@
         </div>
       </NLink>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
-        <nuxt-link
-          v-for="locale in availableLocales"
-          :key="locale.code"
-          :to="switchLocalePath(locale.code)"
-        >
-          {{ locale.name }}
-        </nuxt-link>
+        <div class="Vlt-native-dropdown Vlt-native-dropdown--small">
+          <select v-model="selectedLocale" @change="switchLocale(selectedLocale)">
+            <option :value="currentLocale.code" selected="selected">
+              {{ currentLocale.name }}
+            </option>
+            <option
+              v-for="(locale, index) in availableLocales"
+              :key="index"
+              :value="locale.code"
+            >
+              {{ locale.name }}
+            </option>
+          </select>
+        </div>
+
         <SlackSocialButton
           link="https://developer.nexmo.com/community/slack"
           class="Vlt-btn--small"
@@ -107,6 +115,7 @@ export default {
 
   data() {
     return {
+      selectedLocale: 'en',
       isOpen: false,
     }
   },
@@ -114,6 +123,15 @@ export default {
   computed: {
     availableLocales () {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    },
+    currentLocale() {
+      return this.$i18n.locales.filter(l => l.code === this.$i18n.locale)[0]
+    },
+  },
+
+  methods: {
+    switchLocale(event) {
+      this.$router.replace(this.switchLocalePath(event))
     }
   }
 }
@@ -286,5 +304,15 @@ export default {
   font-weight: 600;
   color: #131415;
   line-height: 1.6rem;
+}
+
+.Vlt-native-dropdown--small {
+  margin-right: 8px;
+}
+.Vlt-native-dropdown--small select {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  min-height: 32px;
+  min-width: 32px;
 }
 </style>

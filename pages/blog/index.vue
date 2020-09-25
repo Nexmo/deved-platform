@@ -38,17 +38,17 @@ export default {
     Pagination
   },
 
-  async asyncData({ $content, error }) {
+  async asyncData({ $content, app, error }) {
     const page = 1
 
     try {
-      const postCount = (await $content('blog')
+      const postCount = (await $content(`blog/${app.i18n.locale}`)
         .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')
         .only(['title'])
         .fetch()).length
 
-      const postsQuery = $content('blog')
+      const postsQuery = $content(`blog/${app.i18n.locale}`)
         .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')
         .skip(config.postsPerPage * (page  - 1))

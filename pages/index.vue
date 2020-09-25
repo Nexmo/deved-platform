@@ -55,8 +55,8 @@ export default {
     SearchHero
   },
 
-  async asyncData({ $content }) {
-    const latestPosts = await $content('blog')
+  async asyncData({ $content, app }) {
+    const latestPosts = await $content(`blog/${app.i18n.locale}`)
         .where({ 'published': { '$ne': false } })
         .sortBy('published_at', 'desc')
         .limit(2)
@@ -65,7 +65,7 @@ export default {
     const { categories } = await $content('categories').fetch()
 
     categories.forEach(async (category, index, array) => {
-      array[index].posts = await $content('blog')
+      array[index].posts = await $content(`blog/${app.i18n.locale}`)
         .where({ '$and': [
           { 'category': category.slug },
           { 'route' : { '$nin' : latestPosts.map(f => f.route) } },

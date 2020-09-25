@@ -64,12 +64,12 @@ export default {
       {
         code: 'it',
         iso: 'it',
-        name: 'Italian'
+        name: 'Italiano'
       },
       {
         code: 'cn',
         iso: 'zh-CN',
-        name: 'Chinese'
+        name: '中文'
       }
     ],
     defaultLocale: 'en',
@@ -80,7 +80,7 @@ export default {
 
   feed: async () => {
     const { $content } = require('@nuxt/content')
-    const posts = await $content('blog')
+    const posts = await $content('blog/en')
     .only(['author', 'category', 'title', 'slug', 'description', 'route', 'raw'])
     .fetch()
 
@@ -90,7 +90,11 @@ export default {
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
-        document.type = document.dir.replace(/(^\/|\/$)/, "")
+        const path = document.dir.replace(/^\/+|\/+$/g, '')
+        const [ type, locale ] = path.split('/')
+
+        document.type = type
+        document.locale = locale
 
         const { time } = require('reading-time')(document.text)
         document.readingTime = time

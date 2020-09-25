@@ -105,14 +105,16 @@ export default {
     Tags,
   },
 
-  async asyncData({ $content, params, error }) {
-    const post = await $content('blog', params.slug)
+  async asyncData({ $content, app, params, error }) {
+    const post = await $content(`blog/${app.i18n.locale}`, params.slug)
       .where({ 'published': { '$ne': false } })
       .fetch()
       .catch(err => {
         console.error(err)
         error({ statusCode: 404, message: "Page not found" })
       })
+
+    console.log(post)
 
     if (process.browser) {
       if (post.redirect) {

@@ -30,7 +30,7 @@ export default {
     Card,
   },
 
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, app, params, error }) {
     try {
       const { authors } = await $content('authors').fetch()
       const author = authors.find(a => a.username === params.author)
@@ -39,7 +39,7 @@ export default {
         throw { statusCode: 404, message: "Page not found" }
       }
 
-      const posts = await $content('blog')
+      const posts = await $content(`blog/${app.i18n.locale}`)
         .where({ '$and': [
           { 'author': author.username },
           { 'published': { '$ne': false } }

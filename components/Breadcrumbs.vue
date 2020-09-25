@@ -2,7 +2,7 @@
   <ol class="breadcrumb Vlt-margin--A-top1 Vlt-margin--A-bottom2" vocab="http://schema.org/" typeof="BreadcrumbList">
     <li property="itemListElement" typeof="ListItem">
       <NLink property="item" typeof="WebPage" to="/">
-        <span property="name">Vonage Developer Blog</span>
+        <span property="name">Vonage Learn</span>
       </NLink>
       <meta property="position" content="1">
     </li>
