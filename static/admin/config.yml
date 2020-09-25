@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: multi-language-support-i18n
+  branch: main
 
 i18n:
   structure: multiple_folders
