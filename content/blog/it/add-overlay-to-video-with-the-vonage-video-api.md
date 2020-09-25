@@ -1,23 +1,10 @@
 ---
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/08/Blog_Overlay_VideoAPI_1200x600.png
+title: Aggiungi Overlay al Video Con l'API Vonage Video
+description: Quando si crea un editore Vonage Video, il flusso video può essere
+  acquisito direttamente dalla videocamera di un utente, da un elemento o da un
+  elemento HTML.
 author: kevinlewis
-published: true
-published_at: 2020-08-25T13:33:30
-canonical: https://www.nexmo.com/blog/2020/08/25/add-overlay-to-video-with-the-vonage-video-api
-comments: true
-old_categories:
-  - developer
-  - tutorial
-  - video
-title: Add Overlay To Video With the Vonage Video API
-description: When creating a Vonage Video publisher, the video stream can be
-  sourced directly from a user camera, from a element, or a HTML element.
-updated_at: 2020-09-25T19:43:22.001Z
-tags:
-  - css
-  - html
-  - video-overlay
-redirect: https://www.nexmo.com/blog/2020/08/25/add-overlay-to-video-with-the-vonage-video-api
+updated_at: 2020-09-25T19:43:22.022Z
 category: tutorial
 ---
 When creating a Vonage Video publisher, the video stream can be sourced directly from a user camera, from a element, or a HTML element. Once pixels get drawn to the canvas, they can be easily manipulated before being used in a Video API session.
