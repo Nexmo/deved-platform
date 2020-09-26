@@ -1,7 +1,7 @@
 <template>
   <header class="Blog-header">
     <div class="Vlt-header">
-      <NLink :to="`${$i18n.locale === 'en' ? '/' : `/${$i18n.locale}`}`" no-prefetch class="Vlt-header__logo">
+      <NLink :to="localePath('index')" no-prefetch class="Vlt-header__logo">
         <img
           class="Vlt-M-plus"
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
@@ -97,6 +97,19 @@
           <TwitterSocialButton link="https://twitter.com/VonageDev">
             Follow us
           </TwitterSocialButton>
+        </li>
+        <li class="Blog-nav__item Vlt-center">
+          <nuxt-link :to="switchLocalePath(currentLocale.code)">
+            &gt; {{ currentLocale.name }} &lt;
+          </nuxt-link>
+        </li>
+        <li v-for="(locale, index) in availableLocales"
+            :key="index"
+            class="Blog-nav__item Vlt-center"
+        >
+          <nuxt-link :to="switchLocalePath(locale.code)">
+            {{ locale.name }}
+          </nuxt-link>
         </li>
       </ul>
     </nav>
