@@ -46,7 +46,7 @@ export default {
         .fetch()
 
       if (posts.length === 0) {
-        throw { statusCode: 404, message: 'Tag not found' }
+        error({ statusCode: 404, message: "Page not found" })
       }
 
       return {

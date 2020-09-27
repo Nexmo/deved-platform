@@ -40,7 +40,7 @@ export default {
       const category = categories.find(c => c.slug === params.category)
 
       if (!category) {
-        throw { statusCode: 404, message: "Page not found" }
+        error({ statusCode: 404, message: "Page not found" })
       }
 
       const posts = await $content(`blog/${app.i18n.locale}`)

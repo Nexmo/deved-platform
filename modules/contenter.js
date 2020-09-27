@@ -155,7 +155,7 @@ export const getPostRoutes = (postAttr) => {
 export const getPostRoute = (postAttr) => {
   const postDate = moment(postAttr.published_at)
 
-  return `${postAttr.locale === 'en' ? '' : `/${postAttr.locale}`}/${postAttr.type}/${postDate.format('YYYY/MM/DD')}/${postAttr.slug}`
+  return `/${postAttr.type}/${postDate.format('YYYY/MM/DD')}/${postAttr.slug}`
 }
 
 /**
