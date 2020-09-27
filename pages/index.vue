@@ -18,7 +18,7 @@
         <template v-if="category.posts && category.posts.length > 0">
           <div :key="`${category.slug}-separator`" class="Vlt-text-separator">
             <span>
-              <NLink :to="`${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}/categories/${category.slug}`">
+              <NLink :to="localePath(`/categories/${category.slug}`)">
                 {{ category.plural }}
               </NLink>
             </span>
@@ -34,7 +34,7 @@
       </template>
     </main>
     <footer class="Blog__Full-width Vlt-center">
-      <NLink :to="`/${$i18n.locale === 'en' ? '' : `${$i18n.locale}/`}blog`" no-prefetch class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small">
+      <NLink :to="localePath('blog')" no-prefetch class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small">
         View all blog posts
       </NLink>
     </footer>

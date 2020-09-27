@@ -4,7 +4,7 @@
       <img src="../../assets/images/placeholder.png" :alt="author.name">
       <h3>{{ author.name }}</h3>
     </div>
-    <NLink v-else :to="`${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}/authors/${author.username}`" class="block Author__Mini-card" vocab="http://schema.org/" typeof="Person">
+    <NLink v-else :to="localePath(`/authors/${author.username}`)" class="block Author__Mini-card" vocab="http://schema.org/" typeof="Person">
       <img :src="author.image_url" :alt="`Profile pic of ${author.name}`" property="image">
       <h3 property="name">
         {{ author.name }}

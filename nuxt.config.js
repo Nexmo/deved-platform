@@ -1,11 +1,5 @@
 import config from "./modules/config"
-import {
-  getRoutes,
-  getPostRoute,
-  getPostRoutes,
-  getCategory,
-  getFeeds,
-} from "./modules/contenter"
+import { getPostRoute, getPostRoutes, getCategory } from "./modules/contenter"
 
 export default {
   mode: "universal",

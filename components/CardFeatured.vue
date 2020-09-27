@@ -2,14 +2,14 @@
   <div class="Vlt-col Vlt-col--1of2">
     <div class="Vlt-card Vlt-bg-white">
       <a v-if="post.redirect" :href="post.redirect" :title="post.title" class="Vlt-card__image" :style="`background-image: url('${post.thumbnail}'); background-size: cover; background-position: center; height: 200px`" />
-      <NLink v-else :to="post.route" :title="post.title" class="Vlt-card__image" :style="`background-image: url('${post.thumbnail}'); background-size: cover; background-position: center; height: 200px`" />
+      <NLink v-else :to="localePath(post.route)" :title="post.title" class="Vlt-card__image" :style="`background-image: url('${post.thumbnail}'); background-size: cover; background-position: center; height: 200px`" />
       <div class="Vlt-card__header">
         <a v-if="post.redirect" :href="post.redirect" :title="post.title">
           <h4 class="Blog-truncate">
             {{ post.title }}
           </h4>
         </a>
-        <NLink v-else :to="post.route" :title="post.title">
+        <NLink v-else :to="localePath(post.route)" :title="post.title">
           <h4 class="Blog-truncate">
             {{ post.title }}
           </h4>

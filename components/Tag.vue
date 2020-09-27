@@ -1,6 +1,6 @@
 <template>
   <NLink
-    :to="`${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}/tags/${tag}`"
+    :to="localePath(`/tags/${tag}`)"
     class="Vlt-badge Vlt-badge--small Vlt-badge--grey Vlt-badge--transparent"
     :class="'Blog-badge--' + tag"
   >

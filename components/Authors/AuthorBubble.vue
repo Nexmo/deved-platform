@@ -1,6 +1,6 @@
 <template>
   <div class="Vlt-col" vocab="http://schema.org/" typeof="Person">
-    <nuxt-link :to="`${$i18n.locale === 'en' ? '' : `/${$i18n.locale}`}/authors/${author.username}`" class="Vlt-card Vlt-bg-white Vlt-center">
+    <nuxt-link :to="localePath(`/authors/${author.username}`)" class="Vlt-card Vlt-bg-white Vlt-center">
       <div class="Vlt-card__image Vlt-bg-white">
         <img :src="author.image_url" property="image" :alt="`Profile pic of ${author.name}`">
       </div>
