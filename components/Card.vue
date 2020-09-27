@@ -17,7 +17,7 @@
             {{ post.title | truncate(73, '...') }}
           </h2>
         </a>
-        <NLink v-else class="Vlt-card__content" :to="localePath(post.route)" :title="post.title">
+        <NLink v-else class="Vlt-card__content" :to="localePath(post.route, post.locale)" :title="post.title">
           <h2>
             {{ post.title | truncate(73, '...') }}
           </h2>
