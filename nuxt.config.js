@@ -50,7 +50,7 @@ export default {
   modules: [
     "nuxt-i18n",
     "@nuxt/content",
-    "@nuxtjs/feed"
+    // "@nuxtjs/feed"
   ],
 
   i18n: {
@@ -78,14 +78,14 @@ export default {
     }
   },
 
-  feed: async () => {
-    const { $content } = require('@nuxt/content')
-    const posts = await $content('blog/en')
-    .only(['author', 'category', 'title', 'slug', 'description', 'route', 'raw'])
-    .fetch()
+  // feed: async () => {
+  //   const { $content } = require('@nuxt/content')
+  //   const posts = await $content('blog/en')
+  //   .only(['author', 'category', 'title', 'slug', 'description', 'route', 'raw'])
+  //   .fetch()
 
-    return getFeeds(posts)
-  },
+  //   return getFeeds(posts)
+  // },
 
   hooks: {
     'content:file:beforeInsert': (document) => {
@@ -107,10 +107,10 @@ export default {
     }
   },
 
-  generate: {
-    fallback: true,
-    routes: getRoutes(),
-  },
+  // generate: {
+  //   fallback: true,
+  //   routes: getRoutes(),
+  // },
 
   buildModules: [
     '@nuxtjs/dotenv'
