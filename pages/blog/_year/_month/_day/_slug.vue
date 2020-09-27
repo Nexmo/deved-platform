@@ -114,8 +114,6 @@ export default {
         error({ statusCode: 404, message: "Page not found" })
       })
 
-    console.log(post)
-
     if (process.browser) {
       if (post.redirect) {
         window.location.href = post.redirect
