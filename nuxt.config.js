@@ -107,11 +107,6 @@ export default {
     }
   },
 
-  // generate: {
-  //   fallback: true,
-  //   routes: getRoutes(),
-  // },
-
   buildModules: [
     '@nuxtjs/dotenv'
   ],
