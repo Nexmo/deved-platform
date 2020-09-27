@@ -12,6 +12,12 @@
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
         <Card v-for="(post, index) in posts" :key="index" :post="post" show-language />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col" />
+        <div class="Vlt-col Vlt-col--2of3">
+          <SpotlightFooter />
+        </div>
+        <div class="Vlt-col" />
       </div>
     </main>
   </section>
@@ -20,6 +26,7 @@
 <script>
 import Author from "~/components/Author.vue"
 import Breadcrumbs from "~/components/Breadcrumbs"
+import SpotlightFooter from "~/components/SpotlightFooter"
 import Card from "~/components/Card"
 import config from "~/modules/config"
 
@@ -27,6 +34,7 @@ export default {
   components: {
     Author,
     Breadcrumbs,
+    SpotlightFooter,
     Card,
   },
 

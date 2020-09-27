@@ -3,15 +3,20 @@
     <div class="Blog-hero__content">
       <img :src="author.image_url" :alt="`Profile pic of ${author.name}`" property="image">
       <h3>
-        <span property="name">{{ author.name }}</span><br><small
-          v-if="!author.spotlight"
-          class="Vlt-grey-dark"
-          property="jobTitle"
-        >{{ author.title }}</small>
+        <span property="name">{{ author.name }}</span>
       </h3>
-      <div v-if="author.spotlight">
-        Spotlight
-      </div>
+      <h3 v-if="author.team" class="Vlt-grey-dark" property="jobTitle">
+        <small>{{ author.title || 'Vonage Team Member' }}</small>
+      </h3>
+      <h3 v-else-if="author.alumni" class="Vlt-grey-dark" property="jobTitle">
+        <small>Vonage Alumni</small>
+      </h3>
+      <h3 v-else-if="author.spotlight" class="Vlt-grey-dark" property="jobTitle">
+        <small>Spotlight Author</small>
+      </h3>
+      <h3 v-else class="Vlt-grey-dark" property="jobTitle">
+        <small>Guest Writer</small>
+      </h3>
       <div v-if="author.bio" property="description">
         {{ author.bio }}
       </div>

@@ -82,6 +82,12 @@ collections:
         default: false
         required: false
         hint: "Whether the post is part of the Spotlight programme."
+      - label: Outdated
+        name: outdated
+        widget: string
+        default: false
+        required: false
+        hint: "Mark the post as outdated. You can type "true" or a URL. Adds a banner. If you add a URL, the banner will show the users a link to find a newer version."
       - label: Body
         name: body
         widget: markdown

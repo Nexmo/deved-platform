@@ -18,9 +18,8 @@ tags:
   - python
   - serverless
   - sms
+spotlight: true
 ---
-
-<a href="https://developer.nexmo.com/spotlight" target="_blank" rel="noopener noreferrer"><img src="https://www.nexmo.com/wp-content/uploads/2020/09/Banner_Dev_Spotlight_CN.png" alt="博客聚焦横幅 " width="810" height="150" class="alignnone size-full wp-image-29837" /></a>
 
 以下教程展示了如何使用 <a href="https://cloud.google.com/">Python 3.7</a>，在 <a href="https://www.python.org/">Google Cloud Platform</a> 上部署函数。
 

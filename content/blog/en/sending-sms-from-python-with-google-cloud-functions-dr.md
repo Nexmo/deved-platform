@@ -18,9 +18,8 @@ tags:
   - python
   - serverless
   - sms
+spotlight: true
 ---
-
-<a href="https://developer.nexmo.com/spotlight" target="_blank" rel="noopener noreferrer"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/Developer-Spotlight_Banner.png" alt="blog spotlight banner " width="810" height="150" class="alignnone size-full wp-image-29837" /></a>
 
 The tutorial below shows how to deploy a function on [Google Cloud Platform](https://cloud.google.com/) using [Python 3.7](https://www.python.org/).
 

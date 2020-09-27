@@ -9,11 +9,17 @@
       <h3 property="name">
         {{ author.name }}
       </h3>
-      <p v-if="author.spotlight">
-        **** Developer Spotlight ****
+      <p v-if="author.team" class="Vlt-grey-dark" property="jobTitle">
+        {{ author.title || 'Vonage Team Member' }}
       </p>
-      <p v-else property="jobTitle">
-        {{ author.title }}
+      <p v-else-if="author.alumni" class="Vlt-grey-dark" property="jobTitle">
+        Vonage Alumni
+      </p>
+      <p v-else-if="author.spotlight" class="Vlt-grey-dark" property="jobTitle">
+        Spotlight Author
+      </p>
+      <p v-else class="Vlt-grey-dark" property="jobTitle">
+        Guest Writer
       </p>
     </NLink>
   </fragment>

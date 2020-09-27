@@ -23,16 +23,22 @@
         <div class="Vlt-card__header">
           <h4 class="Vlt-truncate">
             <span property="name">{{ author.name }}</span>
-            <small v-if="!author.spotlight" class="Vlt-grey-dark" property="jobTitle">{{
-              author.title
-            }}</small>
+            <small v-if="author.team" class="Vlt-grey-dark" property="jobTitle">
+              {{ author.title || 'Vonage Team Member' }}
+            </small>
+            <small v-else-if="author.alumni" class="Vlt-grey-dark" property="jobTitle">
+              Vonage Alumni
+            </small>
+            <small v-else-if="author.spotlight" class="Vlt-grey-dark" property="jobTitle">
+              Spotlight Author
+            </small>
+            <small v-else class="Vlt-grey-dark" property="jobTitle">
+              Guest Writer
+            </small>
           </h4>
         </div>
         <div v-if="author.bio" class="Vlt-card__content" property="description">
           {{ author.bio }}
-        </div>
-        <div v-if="author.spotlight" class="Vlt-card__content">
-          Spotlight
         </div>
         <div class="Vlt-card__content Vlt-center">
           <TwitterSocialButton :link="`https://twitter.com/${author.twitter}`" class="Vlt-btn--small" />
@@ -60,6 +66,9 @@
           <NLink :to="localePath(`/authors/${author.username}`)" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">
             Author page
           </NLink>
+          <a v-if="author.spotlight" href="https://developer.nexmo.com/spotlight?utm_source=blog&utm_medium=deved&utm_campaign=spotlight" target="_blank" class="Vlt-btn Vlt-btn--small Vlt-btn--secondary">
+            Learn more about the Spotlight Programme
+          </a>
         </div>
       </div>
     </div>

@@ -38,6 +38,13 @@
             <div v-if="post.tags" class="Vlt-card__content Vlt-margin--A-top1">
               <Tags :tags="post.tags" />
             </div>
+            <hr class="hr--short Vlt-gradient--blue-to-pink">
+            <div v-if="post.spotlight" class="Vlt-card__content Vlt-margin--A-top1">
+              <Spotlight />
+            </div>
+            <div v-if="post.outdated" class="Vlt-card__content Vlt-margin--A-top1">
+              <Outdated :outdated="post.outdated" />
+            </div>
             <div class="Vlt-card__content Vlt-margin--A-top3" property="articleBody">
               <nuxt-content :document="post" />
             </div>
@@ -56,6 +63,12 @@
               />
             </div>
           </div>
+        </div>
+        <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col" />
+        <div class="Vlt-col Vlt-col--2of3">
+          <SpotlightFooter />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
@@ -87,8 +100,11 @@ import BackToTop from "~/components/BackToTop"
 import Breadcrumbs from "~/components/Breadcrumbs"
 import Category from "~/components/Category"
 import ImproveLink from "~/components/ImproveLink"
+import Outdated from "~/components/Outdated"
 import RevisionsLink from "~/components/RevisionsLink"
 import SignUp from "~/components/SignUp"
+import Spotlight from "~/components/Spotlight"
+import SpotlightFooter from "~/components/SpotlightFooter"
 import Tags from "~/components/Tags"
 import config from "~/modules/config"
 import moment from "moment"
@@ -100,8 +116,11 @@ export default {
     Breadcrumbs,
     Category,
     ImproveLink,
+    Outdated,
     RevisionsLink,
     SignUp, // unused so it can be embedded in post content
+    Spotlight,
+    SpotlightFooter,
     Tags,
   },
 
