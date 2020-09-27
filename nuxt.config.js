@@ -53,17 +53,20 @@ export default {
       {
         code: 'en',
         iso: 'en-US',
-        name: 'English'
+        name: 'English',
+        color: 'grey'
       },
       {
         code: 'it',
         iso: 'it',
-        name: 'Italiano'
+        name: 'Italiano',
+        color: 'blue'
       },
       {
         code: 'cn',
         iso: 'zh-CN',
-        name: '中文'
+        name: '中文',
+        color: 'red'
       }
     ],
     defaultLocale: 'en',

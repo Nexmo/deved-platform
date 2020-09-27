@@ -11,7 +11,7 @@
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
-        <Card v-for="post in posts" :key="post.route" :post="post" />
+        <Card v-for="(post, index) in posts" :key="index" :post="post" show-language />
       </div>
     </main>
   </section>
