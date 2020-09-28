@@ -147,7 +147,7 @@
               >YouTube</a>
             </li>
             <li>
-              <a href="/feed.xml" class="">
+              <a href="/feed.xml" title="RSS Feed" class="">
                 <svg class="Vlt-icon Vlt-icon--smaller Vlt-white">
                   <use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-rss" />
                 </svg>
