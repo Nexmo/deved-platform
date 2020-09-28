@@ -104,6 +104,10 @@ export default {
     }
   },
 
+  generate: {
+    fallback: true
+  },
+
   buildModules: [
     '@nuxtjs/dotenv'
   ],
