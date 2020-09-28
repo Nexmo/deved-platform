@@ -60,12 +60,6 @@ export default {
       error(e)
     }
   },
-
-  head() {
-    return {
-      title: `#${this.tag} posts from the team at Vonage`
-    }
-  },
 }
 </script>
 

@@ -76,12 +76,6 @@ export default {
       error(e)
     }
   },
-
-  head() {
-    return {
-      title: `All content from the team at Vonage`
-    }
-  },
 }
 </script>
 
