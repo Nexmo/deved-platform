@@ -87,7 +87,7 @@ collections:
         widget: string
         default: false
         required: false
-        hint: "Mark the post as outdated. You can type "true" or a URL. Adds a banner. If you add a URL, the banner will show the users a link to find a newer version."
+        hint: "Mark the post as outdated. You can type 'true' or a URL. Adds a banner. If you add a URL, the banner will show the users a link to find a newer version."
       - label: Body
         name: body
         widget: markdown
