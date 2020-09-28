@@ -9,6 +9,19 @@ export default {
   page_search_no_results_title: 'No results found',
   page_search_no_results_message: 'Try refining your search :)',
 
+  page_authors_title: 'All of Our Authors',
+  page_authors_team: 'Vonage Team Members',
+  page_authors_spotlight: 'Spotlight Authors',
+  page_authors_alumni: 'Vonage Alumni',
+  page_authors_other: 'Other Writers',
+  
+  page_blog_title: 'Developer Content From the Archives',
+  page_blog_breadcrumb: 'Blog',
+
+  page_blog_yearmonthday_title: 'Developer Content From',
+
+  page_categorytag_title: '  Posts From the Team at Vonage',
+
   component_search_hero_title: 'Developer content from the team at',
   component_search_hero_placeholder: 'e.g. Send SMS in Node.js',
   component_search_hero_label: 'Search our existing content...',

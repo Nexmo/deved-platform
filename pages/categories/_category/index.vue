@@ -63,12 +63,6 @@ export default {
       error(e)
     }
   },
-
-  head() {
-    return {
-      title: `${this.category.plural} from the team at Vonage`
-    }
-  },
 }
 </script>
 

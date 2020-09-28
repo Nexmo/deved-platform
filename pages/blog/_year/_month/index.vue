@@ -70,11 +70,5 @@ export default {
       error(e)
     }
   },
-
-  head() {
-    return {
-      title: `Vonage developer content from ${this.year}`
-    }
-  },
 }
 </script>
