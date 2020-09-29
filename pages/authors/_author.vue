@@ -13,11 +13,13 @@
         <div class="Vlt-grid__separator" />
         <Card v-for="(post, index) in posts" :key="index" :post="post" show-language />
         <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <SpotlightFooter />
-        </div>
-        <div class="Vlt-col" />
+        <template v-if="author.spotlight">
+          <div class="Vlt-col" />
+          <div class="Vlt-col Vlt-col--2of3">
+            <SpotlightFooter />
+          </div>
+          <div class="Vlt-col" />
+        </template>
       </div>
     </main>
   </section>
