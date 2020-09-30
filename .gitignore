@@ -87,3 +87,5 @@ feed.json
 
 # Local Netlify folder
 .netlify
+
+.vscode/*
