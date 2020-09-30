@@ -27,15 +27,15 @@
                               id="query"
                               ref="query"
                               type="search"
-                              placeholder="e.g. Send SMS in Node.js"
+                              :placeholder="$t('page_search_placeholder')"
                               name="query"
                               :value="currentRefinement"
                               @input="refine($event.currentTarget.value)"
                             >
-                            <label for="query">Search our existing content...</label>
+                            <label for="query">{{ $t('page_search_label') }}</label>
                           </form>
                         </div>
-                        <small v-if="isSearchStalled" class="Vlt-form__element__hint">Search is taking longer than usual...</small>
+                        <small v-if="isSearchStalled" class="Vlt-form__element__hint">{{ $t('page_search_stalled_hint') }}</small>
                       </div>
                     </ais-search-box>
                   </div>
@@ -68,10 +68,10 @@
               <div v-else class="Vlt-col Vlt-col--2of3">
                 <div class="Vlt-card">
                   <h3>
-                    No results found
+                    {{ $t('page_search_no_results_title') }}
                   </h3>
                   <p>
-                    Try refining your search :)
+                    {{ $t('page_search_no_results_message') }}
                   </p>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default {
         process.env.algoliaSearchKey
       ),
       routes: [
-        { route: `/search`, title: `Search Results`, current: true },
+        { route: `/search`, title: this.$t('page_search_title'), current: true },
       ],
       routing: {
         router: history(),

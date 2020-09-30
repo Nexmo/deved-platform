@@ -2,7 +2,7 @@
   <div class="Blog-hero">
     <div class="Blog-hero__content">
       <h3>
-        Developer content from the team at 
+        {{ $t('component_search_hero_title') }}
         <img 
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
           alt="Vonage"
@@ -32,15 +32,15 @@
                     id="query"
                     ref="query"
                     type="search"
-                    placeholder="e.g. Send SMS in Node.js"
+                    :placeholder="$t('component_search_hero_placeholder')"
                     name="query"
                     :value="currentRefinement"
                     @input="refine($event.currentTarget.value)"
                   >
-                  <label for="query">Search our existing content...</label>
+                  <label for="query">{{ $t('component_search_hero_label') }}</label>
                 </form>
               </div>
-              <small v-if="isSearchStalled" class="Vlt-form__element__hint">Search is taking longer than usual...</small>
+              <small v-if="isSearchStalled" class="Vlt-form__element__hint">{{ $t('component_search_hero_stalled_hint') }}</small>
             </div>
           </AisSearchBox>
           <AisStateResults>

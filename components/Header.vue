@@ -5,24 +5,24 @@
         <img
           class="Vlt-M-plus"
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
-          alt="Vonage Logo :: Now we're talking"
+          :alt="$t('component_header_strapline')"
         >
         <img
           class="Vlt-S-only"
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg"
-          alt="Vonage Logo :: Now we're talking"
+          :alt="$t('component_header_strapline')"
         >
         <div
           class="Vlt-badge Vlt-M-plus Vlt-badge--small Vlt-badge--transparent"
           style="margin: 8px;"
         >
-          Learn
+          {{ $t('component_header_badge') }}
         </div>
         <div
           class="Vlt-badge Vlt-S-only Vlt-badge--small Vlt-badge--transparent"
           style="margin: 8px;"
         >
-          Learn
+          {{ $t('component_header_badge') }}
         </div>
       </NLink>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
@@ -45,7 +45,7 @@
           link="https://developer.nexmo.com/community/slack"
           class="Vlt-btn--small"
         >
-          Join our Slack
+          {{ $t('component_header_slack_button') }}
         </SlackSocialButton>
         <TwitterSocialButton
           link="https://twitter.com/VonageDev"
@@ -55,7 +55,7 @@
           href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
           class="Vlt-btn Vlt-btn--small Vlt-btn--secondary"
           rel="noreferrer"
-        >Sign up</a>
+        >{{ $t('component_header_signup_button') }}</a>
       </div>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-S-only">
         <a
@@ -83,7 +83,7 @@
       <ul class="Blog-nav__list">
         <li class="Blog-nav__item Vlt-center">
           <SlackSocialButton link="https://developer.nexmo.com/community/slack">
-            Join us on Slack
+            {{ $t('component_header_slack_button') }}
           </SlackSocialButton>
         </li>
         <li class="Blog-nav__item Vlt-center">
@@ -91,11 +91,11 @@
             href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
             class="Vlt-btn Vlt-btn--secondary Vlt-text-white"
             rel="noreferrer"
-          >Sign up</a>
+          >{{ $t('component_header_signup_button') }}</a>
         </li>
         <li class="Blog-nav__item Vlt-center">
           <TwitterSocialButton link="https://twitter.com/VonageDev">
-            Follow us
+            {{ $t('component_header_follow_button') }}
           </TwitterSocialButton>
         </li>
         <li class="Blog-nav__item Vlt-center">

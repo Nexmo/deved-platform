@@ -7,7 +7,7 @@
             <img
               src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark--white.svg"
               width="100"
-              alt="Vonage Logo :: Now we're talking"
+              :alt="$t('component_footer_strapline')"
             >
           </h2>
           <ul>
@@ -17,7 +17,7 @@
                 href="https://www.vonage.com/legal/"
                 target="_blank"
                 rel="noreferrer"
-              >Legal</a>
+              >{{ $t('component_footer_legal') }}</a>
             </li>
             <li>
               <a
@@ -25,7 +25,7 @@
                 href="https://www.vonage.com/legal/privacy-policy/"
                 target="_blank"
                 rel="noreferrer"
-              >Privacy</a>
+              >{{ $t('component_footer_privacy') }}</a>
             </li>
             <li>
               <a
@@ -33,7 +33,7 @@
                 href="https://www.vonage.com/copyright-policy"
                 target="_blank"
                 rel="noreferrer"
-              >Copyright</a>
+              >{{ $t('component_footer_copyright') }}</a>
             </li>
             <li>
               <a
@@ -41,12 +41,12 @@
                 href="https://www.vonage.com/about-us/patents/"
                 target="_blank"
                 rel="noreferrer"
-              >Patents</a>
+              >{{ $t('component_footer_patents') }}</a>
             </li>
           </ul>
         </div>
         <div class="Vlt-col">
-          <h2>Service</h2>
+          <h2>{{ $t('component_footer_service') }}</h2>
           <ul>
             <li>
               <a
@@ -54,7 +54,7 @@
                 href="https://www.vonage.com/partners/"
                 target="_blank"
                 rel="noreferrer"
-              >Partners</a>
+              >{{ $t('component_footer_partners') }}</a>
             </li>
             <li>
               <a
@@ -62,7 +62,7 @@
                 href="https://www.vonage.com/system-status/"
                 target="_blank"
                 rel="noreferrer"
-              >System status</a>
+              >{{ $t('component_footer_systemstatus') }}</a>
             </li>
             <li>
               <a
@@ -70,7 +70,7 @@
                 href="https://www.vonage.com/support/"
                 target="_blank"
                 rel="noreferrer"
-              >Support</a>
+              >{{ $t('component_footer_support') }}</a>
             </li>
             <li>
               <a
@@ -78,12 +78,12 @@
                 href="https://rewards.vonagebusiness.com/index.html"
                 target="_blank"
                 rel="noreferrer"
-              >Referrals</a>
+              >{{ $t('component_footer_referrals') }}</a>
             </li>
           </ul>
         </div>
         <div class="Vlt-col">
-          <h2>Corporate</h2>
+          <h2>{{ $t('component_footer_corporate') }}</h2>
           <ul>
             <li>
               <a
@@ -91,7 +91,7 @@
                 href="https://ir.vonage.com/"
                 target="_blank"
                 rel="noreferrer"
-              >Investors</a>
+              >{{ $t('component_footer_investors') }}</a>
             </li>
             <li>
               <a
@@ -99,7 +99,7 @@
                 href="https://www.vonage.com/events/?icmp=footer_corporate_events"
                 target="_blank"
                 rel="noreferrer"
-              >Events</a>
+              >{{ $t('component_footer_events') }}</a>
             </li>
             <li>
               <a
@@ -107,12 +107,12 @@
                 href="https://www.vonage.com/careers/?icmp=footer_corporate_careers"
                 target="_blank"
                 rel="noreferrer"
-              >Careers</a>
+              >{{ $t('component_footer_careers') }}</a>
             </li>
           </ul>
         </div>
         <div class="Vlt-col">
-          <h2>Social</h2>
+          <h2>{{ $t('component_footer_social') }}</h2>
           <ul>
             <li>
               <a
@@ -120,7 +120,7 @@
                 href="https://facebook.com/vonage"
                 target="_blank"
                 rel="noreferrer"
-              >Facebook</a>
+              >{{ $t('component_footer_facebook') }}</a>
             </li>
             <li>
               <a
@@ -128,7 +128,7 @@
                 href="https://www.linkedin.com/company/vonage"
                 target="_blank"
                 rel="noreferrer"
-              >LinkedIn</a>
+              >{{ $t('component_footer_linkedin') }}</a>
             </li>
             <li>
               <a
@@ -136,7 +136,7 @@
                 href="https://twitter.com/Vonage"
                 target="_blank"
                 rel="noreferrer"
-              >Twitter</a>
+              >{{ $t('component_footer_twitter') }}</a>
             </li>
             <li>
               <a
@@ -144,10 +144,10 @@
                 href="https://www.youtube.com/channel/UCHQnbTiun_Wn7nDxkQavrYQ"
                 target="_blank"
                 rel="noreferrer"
-              >YouTube</a>
+              >{{ $t('component_footer_youtube') }}</a>
             </li>
             <li>
-              <a href="/feed.xml" title="RSS Feed" class="">
+              <a href="/feed.xml" :title="$t('component_footer_rssfeed')" class="">
                 <svg class="Vlt-icon Vlt-icon--smaller Vlt-white">
                   <use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-rss" />
                 </svg>

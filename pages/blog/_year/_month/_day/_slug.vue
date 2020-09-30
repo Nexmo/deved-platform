@@ -150,7 +150,7 @@ export default {
       disqusShortname: config.disqusShortname,
       baseUrl: config.baseUrl,
       routes: [
-        { route: `/${post.type}`, title: `Blog` },
+        { route: `/${post.type}`, title: this.$t('page_blog_breadcrumb') },
         { route: `/${post.type}/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
         { route: `/${post.type}/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
         { route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },

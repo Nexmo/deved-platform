@@ -14,7 +14,7 @@
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--3of4">
           <h3 id="team-authors" class="Vlt-center Vlt-margin--A-top3">
-            Vonage Team Members
+            {{ $t('page_authors_team') }}
           </h3>
           <div class="Vlt-grid Authors-grid">
             <Author
@@ -30,7 +30,7 @@
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--3of4">
           <h3 id="spotlight-authors" class="Vlt-center Vlt-margin--A-top3">
-            Spotlight Authors
+            {{ $t('page_authors_spotlight') }}
           </h3>
           <div class="Vlt-grid Authors-grid">
             <Author
@@ -46,7 +46,7 @@
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--3of4">
           <h3 id="alumni-authors" class="Vlt-center Vlt-margin--A-top3">
-            Vonage Alumni
+            {{ $t('page_authors_alumni') }}
           </h3>
           <div class="Vlt-grid Authors-grid">
             <Author
@@ -62,7 +62,7 @@
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--3of4">
           <h3 id="other-authors" class="Vlt-center Vlt-margin--A-top3">
-            Other Writers
+            {{ $t('page_authors_other') }}
           </h3>
           <div class="Vlt-grid Authors-grid">
             <Author
@@ -121,7 +121,7 @@ export default {
       spotlight,
       authors,
       routes: [
-        { route: `/authors`, title: `All of our authors`, current: true },
+        { route: `/authors`, title: this.$t('page_authors_title'), current: true },
       ]
     }
   },
