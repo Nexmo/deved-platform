@@ -5,7 +5,7 @@
     </header>
     <main class="Vlt-container">
       <div class="Vlt-text-separator">
-        <span>Latest posts</span>
+        <span>{{ $t('page_index_latest_posts') }}</span>
       </div>
       <div class="Vlt-grid">
         <CardFeatured
@@ -35,7 +35,7 @@
     </main>
     <footer class="Blog__Full-width Vlt-center">
       <NLink :to="localePath('blog')" no-prefetch class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small">
-        View all blog posts
+        {{ $t('page_index_view_all_posts') }}
       </NLink>
     </footer>
   </section>

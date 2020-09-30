@@ -30,7 +30,8 @@ export default {
   component_header_strapline: 'Vonage :: Now we\'re talking',
   component_header_badge: 'Learn',
   component_header_slack_button: '加入我们的Slack',
-  component_header_signup_button: 'Sign up',
+  component_header_signup_button: '注册',
+  component_header_follow_button: '跟着我们',
 
   component_footer_strapline: 'Vonage :: Now we\'re talking',
   component_footer_legal: '法律',

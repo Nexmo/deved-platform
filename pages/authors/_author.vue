@@ -60,7 +60,7 @@ export default {
         author: author,
         posts,
         routes: [
-          { route: `/authors`, title: `All of our authors` },
+          { route: `/authors`, title: this.$t('page_authors_title') },
           { route: `/authors/${author.username}`, title: `${author.name}`, current: true },
         ]
       }

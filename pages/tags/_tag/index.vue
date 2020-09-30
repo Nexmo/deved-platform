@@ -2,7 +2,7 @@
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
       <PageHero class="Tag-hero">
-        <Tag :tag="tag" /> posts from the team at Vonage.
+        <Tag :tag="tag" /> {{ $t('page_categorytag_title' ) }}
       </PageHero>
     </header>
     <main class="Vlt-container">

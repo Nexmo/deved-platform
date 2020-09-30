@@ -2,7 +2,7 @@
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
       <PageHero class="Category-hero">
-        Developer content from {{ year }}.
+        {{ $t('page_blog_yearmonthday_title') }} {{ year }}.
       </PageHero>
     </header>
     <main class="Vlt-container">
@@ -57,7 +57,7 @@ export default {
         year: date.format('YYYY'),
         posts,
         routes: [
-          { route: `/blog`, title: `Blog` },
+          { route: `/blog`, title: this.$t('page_blog_breadcrumb') },
           { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY'), current: true },
         ]
       }

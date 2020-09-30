@@ -31,6 +31,7 @@ export default {
   component_header_badge: 'Learn',
   component_header_slack_button: 'Unisciti a noi su Slack',
   component_header_signup_button: 'Iscriviti',
+  component_header_follow_button: 'Seguici',
 
   component_footer_strapline: 'Vonage :: Now we\'re talking',
   component_footer_legal: 'Legale',

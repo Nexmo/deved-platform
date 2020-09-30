@@ -2,7 +2,7 @@
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
       <PageHero class="Category-hero">
-        Developer content from the archives.
+        {{ $t('page_blog_title') }}
       </PageHero>
     </header>
     <main class="Vlt-container">
@@ -69,7 +69,7 @@ export default {
         postCount,
         posts,
         routes: [
-          { route: `/blog`, title: `Blog`, current: true },
+          { route: `/blog`, title: this.$t('page_blog_breadcrumb'), current: true },
         ]
       }
     } catch (e) {
