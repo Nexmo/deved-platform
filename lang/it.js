@@ -1,3 +1,55 @@
 export default {
-  welcome: 'Welcome'
+  page_index_view_all_posts: 'Visualizza tutti i post del blog',
+  page_index_latest_posts: 'Ultimi post',
+
+  page_search_title: 'Risultati di Ricerca',
+  page_search_placeholder: 'e.g. Invia SMS in Node.js',
+  page_search_label: 'Cerca nel nostro contenuto esistente...',
+  page_search_stalled_hint: 'La ricerca sta impiegando più tempo del solito...',
+  page_search_no_results_title: 'Nessun risultato trovato',
+  page_search_no_results_message: 'Prova a perfezionare la tua ricerca :)',
+
+  page_authors_title: 'Tutti i nostri autori',
+  page_authors_team: 'Membri del team Vonage',
+  page_authors_spotlight: 'Autori Spotlight',
+  page_authors_alumni: 'Vonage Alumni',
+  page_authors_other: 'Altri Scrittori',
+  
+  page_blog_title: 'Contenuti per sviluppatori dagli archivi',
+  page_blog_breadcrumb: 'Blog',
+
+  page_blog_yearmonthday_title: 'Contenuti per sviluppatori da',
+
+  page_categorytag_title: 'Post dal team di Vonage',
+
+  component_search_hero_title: 'Contenuti per sviluppatori del team di',
+  component_search_hero_placeholder: 'e.g. Invia SMS in Node.js',
+  component_search_hero_label: 'Cerca nel nostro contenuto esistente...',
+  component_search_hero_stalled_hint: 'La ricerca sta impiegando più tempo del solito...',
+
+  component_header_strapline: 'Vonage :: Now we\'re talking',
+  component_header_badge: 'Learn',
+  component_header_slack_button: 'Unisciti a noi su Slack',
+  component_header_signup_button: 'Iscriviti',
+
+  component_footer_strapline: 'Vonage :: Now we\'re talking',
+  component_footer_legal: 'Legale',
+  component_footer_privacy: 'Privacy',
+  component_footer_copyright: 'Diritto d\'autore',
+  component_footer_patents: 'Brevetti',
+  component_footer_service: 'SERVIZIO',
+  component_footer_partners: 'Partner',
+  component_footer_systemstatus: 'Stato del sistema',
+  component_footer_support: 'Supporto',
+  component_footer_referrals: 'Referral',
+  component_footer_corporate: 'AZIENDALE',
+  component_footer_investors: 'Investitori',
+  component_footer_events: 'Eventi',
+  component_footer_careers: 'Carriere',
+  component_footer_social: 'SOCIALE',
+  component_footer_facebook: 'Facebook',
+  component_footer_linkedin: 'LinkedIn',
+  component_footer_twitter: 'Twitter',
+  component_footer_youtube: 'YouTube',
+  component_footer_rssfeed: 'RSS Feed',
 }

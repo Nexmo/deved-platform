@@ -20,7 +20,7 @@ export default {
 
   page_blog_yearmonthday_title: 'Developer Content From',
 
-  page_categorytag_title: '  Posts From the Team at Vonage',
+  page_categorytag_title: 'Posts From the Team at Vonage',
 
   component_search_hero_title: 'Developer content from the team at',
   component_search_hero_placeholder: 'e.g. Send SMS in Node.js',
