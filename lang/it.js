@@ -4,7 +4,7 @@ export default {
 
   page_search_title: 'Risultati di Ricerca',
   page_search_placeholder: 'e.g. Invia SMS in Node.js',
-  page_search_label: 'Cerca nel nostro contenuto esistente...',
+  page_search_label: 'Cerca tra i nostri contenuti...',
   page_search_stalled_hint: 'La ricerca sta impiegando più tempo del solito...',
   page_search_no_results_title: 'Nessun risultato trovato',
   page_search_no_results_message: 'Prova a perfezionare la tua ricerca :)',
@@ -22,9 +22,9 @@ export default {
 
   page_categorytag_title: 'Post dal team di Vonage',
 
-  component_search_hero_title: 'Contenuti per sviluppatori del team di',
+  component_search_hero_title: 'Contenuti per sviluppatori dal team di',
   component_search_hero_placeholder: 'e.g. Invia SMS in Node.js',
-  component_search_hero_label: 'Cerca nel nostro contenuto esistente...',
+  component_search_hero_label: 'Cerca tra i nostri contenuti...',
   component_search_hero_stalled_hint: 'La ricerca sta impiegando più tempo del solito...',
 
   component_header_strapline: 'Vonage :: Now we\'re talking',
@@ -34,7 +34,7 @@ export default {
   component_header_follow_button: 'Seguici',
 
   component_footer_strapline: 'Vonage :: Now we\'re talking',
-  component_footer_legal: 'Legale',
+  component_footer_legal: 'Informazioni legali',
   component_footer_privacy: 'Privacy',
   component_footer_copyright: 'Diritto d\'autore',
   component_footer_patents: 'Brevetti',
@@ -46,7 +46,7 @@ export default {
   component_footer_corporate: 'AZIENDALE',
   component_footer_investors: 'Investitori',
   component_footer_events: 'Eventi',
-  component_footer_careers: 'Carriere',
+  component_footer_careers: 'Opportunità di lavoro',
   component_footer_social: 'SOCIALE',
   component_footer_facebook: 'Facebook',
   component_footer_linkedin: 'LinkedIn',
