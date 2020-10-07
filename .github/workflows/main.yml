@@ -1,18 +1,8 @@
 name: reviewdog
 on: [pull_request]
 jobs:
-  misspell:
-    name: runner / misspell
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: reviewdog/action-misspell@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          locale: "US"
-          ignore: 'colour,flavour,humour,labour,neighbour'
   alex:
-    name: runner / alex
+    name: Alex
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,3 +14,10 @@ jobs:
           # Change reporter level if you need.
           # GitHub Status Check won't become failure with warning.
           level: warning
+  spellcheck:
+    name: Spellcheck
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: rojopolis/spellcheck-github-actions@0.5.0
+      name: Spellcheck
