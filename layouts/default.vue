@@ -15,8 +15,10 @@ export default {
     Footer,
     Header,
   },
-  
+
   head() {
+    console.log("YOU SHOULDNT BE HERE... But, as you are, we're hiring folks who know there way around a console. Find a career at https://developer.nexmo.com/careers")
+
     return {
       script: [
         { src: "https://identity.netlify.com/v1/netlify-identity-widget.js", defer: true },
@@ -25,3 +27,4 @@ export default {
   },
 }
 </script>
+
