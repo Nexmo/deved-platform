@@ -11,8 +11,11 @@ const yaml = require('yaml')
 inquirer.registerPrompt('autocomplete', autocomplete)
 
 const styleGuide = String(fs.readFileSync(path.resolve(__dirname, '../.github/WRITING_STYLE.md')))
+const locales = require('../lang.config.js')['locales']
 const categories = require('../content/categories.json')['categories']
 const authors = require('../content/authors.json')['authors']
+
+console.log(locales)
 
 const slugifyOpt = {
   replacement: '-',
@@ -26,6 +29,20 @@ inquirer
       type: 'input',
       name: 'title',
       message: 'What\'s the title for this post? <max 70 chars>'
+    },
+    {
+      type: 'list',
+      name: 'language',
+      message: 'What language would you like to create a post in?',
+      choices: () => {
+        return locales.map(l => {
+          return {
+            name: `${l.name} (${l.code})`,
+            value: l.code,
+            short: l.name
+          }
+        })
+      }
     },
     {
       type: 'input',
@@ -74,7 +91,7 @@ inquirer
   ])
   .then(answers => {
     const slug = slugify(answers.title, slugifyOpt)
-    const filename = `content/blog/en/${slug}.md`
+    const filename = `content/blog/${answers.language}/${slug}.md`
     const output = {
       title: answers.title,
       description: answers.description,
