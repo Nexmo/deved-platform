@@ -15,7 +15,6 @@ const locales = require('../lang.config.js')['locales']
 const categories = require('../content/categories.json')['categories']
 const authors = require('../content/authors.json')['authors']
 
-console.log(locales)
 
 const slugifyOpt = {
   replacement: '-',
