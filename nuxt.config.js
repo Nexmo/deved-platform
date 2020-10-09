@@ -1,7 +1,7 @@
 import config from "./modules/config"
 import { getPostRoute, getPostRoutes, getCategory } from "./modules/contenter"
 
-export default {
+module.exports = {
   mode: "universal",
 
   env: {
