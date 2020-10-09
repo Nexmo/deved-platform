@@ -29,7 +29,6 @@
     "nuxt-i18n": "^6.15.1",
     "reading-time": "^1.2.0",
     "showdown": "^1.9.1",
-    "terminal-link": "^2.1.1",
     "vue-disqus": "^3.0.5",
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^3.4.1",
