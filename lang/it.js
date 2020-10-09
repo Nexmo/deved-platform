@@ -14,7 +14,7 @@ export default {
   page_authors_spotlight: 'Autori Spotlight',
   page_authors_alumni: 'Vonage Alumni',
   page_authors_other: 'Altri Scrittori',
-  
+
   page_blog_title: 'Contenuti per sviluppatori dagli archivi',
   page_blog_breadcrumb: 'Blog',
 
@@ -53,4 +53,5 @@ export default {
   component_footer_twitter: 'Twitter',
   component_footer_youtube: 'YouTube',
   component_footer_rssfeed: 'RSS Feed',
+  career_log: "NON DOVRESTI ESSERE QUI ... Ma per il momento stiamo assumendo persone che sanno come aggirare una console trovano una carriera su https://developer.nexmo.com/careers",
 }
