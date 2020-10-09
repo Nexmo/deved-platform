@@ -22,7 +22,7 @@
 - [Components](#components)
 - [Writing Style](#writing-style)
 - [Tools](#tools)
-  - [New Post](#new-post)
+  - [Blog Posts](#blog-posts)
   - [Legacy Content Importer](#legacy-content-importer)
   - [Legacy Author Importer](#legacy-author-importer)
 - [License](#license)
@@ -47,14 +47,14 @@ Taken from our developer education writing styleguide, we've included our [writi
 
 ## Tools
 
-### New Post
+### Blog Posts
 
-Create a new post using a CLI.
+Create a new blog post using the CLI.
 
 ```bash
-npm run new
+npm run blog
 
-# node bin/new-post
+# node bin/blog
 
 # ? What's the title for this post? <max 70 chars> Your post title goes here!
 # ? What's the description? <max 240 chars> A post description that shouod be less than 240 characters
