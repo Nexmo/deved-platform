@@ -14,7 +14,7 @@ export default {
   page_authors_spotlight: 'Spotlight作者',
   page_authors_alumni: 'Vonage校友',
   page_authors_other: '其他作家',
-  
+
   page_blog_title: '存档中的开发人员内容',
   page_blog_breadcrumb: '博客',
 
@@ -53,4 +53,5 @@ export default {
   component_footer_twitter: 'Twitter',
   component_footer_youtube: 'YouTube',
   component_footer_rssfeed: 'RSS Feed',
+  career_log: "您不应该在这里……但是，由于您的身份，我们正在聘请熟悉控制台的人员在 https://developer.nexmo.com/careers 上找到职业",
 }

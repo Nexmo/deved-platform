@@ -2,7 +2,7 @@ import config from "./modules/config"
 import { getPostRoute, getPostRoutes, getCategory } from "./modules/contenter"
 import { locales } from "./lang.config.js"
 
-export default {
+module.exports = {
   mode: "universal",
 
   env: {
