@@ -3,7 +3,7 @@ export default {
    * Layout strings
    */
   layout_default_careers_title: "该区域的注意事项",
-  layout_default_careers_body: "但是，就像您一样，我们正在招聘熟悉控制台的人员。",
+  layout_default_careers_body: "但是，正如您在这里，我们正在聘请熟悉控制台的人员。",
   layout_default_careers_link: "在找到工作 https://developer.nexmo.com/careers",
 
   /**

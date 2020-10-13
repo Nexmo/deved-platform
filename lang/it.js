@@ -3,7 +3,7 @@ export default {
    * Layout strings
    */
   layout_default_careers_title: "ATTENZIONE IN QUESTA AREA",
-  layout_default_careers_body: "Ma, come te, stiamo assumendo persone che sanno come aggirare una console.",
+  layout_default_careers_body: "Ma, visto che sei qui, stiamo assumendo persone che sanno come aggirare una console.",
   layout_default_careers_link: "Trova una carriera in https://developer.nexmo.com/careers",
 
   /**
