@@ -1,4 +1,14 @@
 export default {
+  /**
+   * Layout strings
+   */
+  layout_default_careers_title: "ATTENZIONE IN QUESTA AREA",
+  layout_default_careers_body: "Ma, come te, stiamo assumendo persone che sanno come aggirare una console.",
+  layout_default_careers_link: "Trova una carriera in https://developer.nexmo.com/careers",
+
+  /**
+   * Page strings
+   */
   page_index_view_all_posts: 'Visualizza tutti i post del blog',
   page_index_latest_posts: 'Ultimi post',
 
@@ -22,6 +32,9 @@ export default {
 
   page_categorytag_title: 'Post dal team di Vonage',
 
+  /**
+   * Component strings
+   */
   component_search_hero_title: 'Contenuti per sviluppatori dal team di',
   component_search_hero_placeholder: 'e.g. Invia SMS in Node.js',
   component_search_hero_label: 'Cerca tra i nostri contenuti...',
@@ -53,5 +66,4 @@ export default {
   component_footer_twitter: 'Twitter',
   component_footer_youtube: 'YouTube',
   component_footer_rssfeed: 'RSS Feed',
-  career_log: "NON DOVRESTI ESSERE QUI ... Ma per il momento stiamo assumendo persone che sanno come aggirare una console trovano una carriera su https://developer.nexmo.com/careers",
 }

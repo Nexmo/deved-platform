@@ -1,4 +1,14 @@
 export default {
+  /**
+   * Layout strings
+   */
+  layout_default_careers_title: "该区域的注意事项",
+  layout_default_careers_body: "但是，就像您一样，我们正在招聘熟悉控制台的人员。",
+  layout_default_careers_link: "在找到工作 https://developer.nexmo.com/careers",
+
+  /**
+   * Page strings
+   */
   page_index_view_all_posts: '查看所有博客文章',
   page_index_latest_posts: '最新的帖子',
 
@@ -22,6 +32,9 @@ export default {
 
   page_categorytag_title: 'Vonage团队的帖子',
 
+  /**
+   * Component strings
+   */
   component_search_hero_title: '来自以下团队的开发人员内容：',
   component_search_hero_placeholder: 'e.g. 在Node.js中发送短信',
   component_search_hero_label: '搜索我们现有的内容...',
@@ -53,5 +66,4 @@ export default {
   component_footer_twitter: 'Twitter',
   component_footer_youtube: 'YouTube',
   component_footer_rssfeed: 'RSS Feed',
-  career_log: "您不应该在这里……但是，由于您的身份，我们正在聘请熟悉控制台的人员在 https://developer.nexmo.com/careers 上找到职业",
 }
