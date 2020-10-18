@@ -65,7 +65,7 @@ export default {
         postCount,
         posts,
         routes: [
-          { route: `/blog`, title: this.$t('page_blog_breadcrumb'), current: true },
+          { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb'), current: true },
         ]
       }
     } catch (e) {

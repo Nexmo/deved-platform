@@ -91,7 +91,7 @@ export default {
     Author,
   },
 
-  async asyncData({ $content }) {
+  async asyncData({ $content, app }) {
     let { authors } = await $content('authors').fetch()
 
     authors = authors.filter(a => a.hidden !== true)
@@ -121,7 +121,7 @@ export default {
       spotlight,
       authors,
       routes: [
-        { route: `/authors`, title: this.$t('page_authors_title'), current: true },
+        { route: `/authors`, title: app.i18n.t('page_authors_title'), current: true },
       ]
     }
   },
