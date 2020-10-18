@@ -31,15 +31,15 @@ import Pagination from "~/components/Pagination"
 import config from "~/modules/config"
 
 export default {
-  validate ({ params: { page } }) {
-    return /^\d+$/.test(page)
-  },
 
   components: {
     Breadcrumbs,
     Card,
     PageHero,
     Pagination
+  },
+  validate ({ params: { page } }) {
+    return /^\d+$/.test(page)
   },
 
   async asyncData({ $content, app, error, params: { page } }) {
@@ -69,7 +69,7 @@ export default {
         postCount,
         posts,
         routes: [
-          { route: `/blog`, title: this.$t('page_blog_breadcrumb'), current: true },
+          { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb'), current: true },
         ]
       }
     } catch (e) {

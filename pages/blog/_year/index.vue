@@ -27,14 +27,14 @@ import config from "~/modules/config"
 import moment from 'moment'
 
 export default {
-  validate ({ params: { year } }) {
-    return /^\d{4}$/.test(year)
-  },
 
   components: {
     Breadcrumbs,
     Card,
     PageHero
+  },
+  validate ({ params: { year } }) {
+    return /^\d{4}$/.test(year)
   },
 
   async asyncData({ $content, app, error, params: { year } }) {
@@ -57,7 +57,7 @@ export default {
         year: date.format('YYYY'),
         posts,
         routes: [
-          { route: `/blog`, title: this.$t('page_blog_breadcrumb') },
+          { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb') },
           { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY'), current: true },
         ]
       }

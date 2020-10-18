@@ -61,7 +61,7 @@ export default {
         year: date.format('YYYY'),
         posts,
         routes: [
-          { route: `/blog`, title: this.$t('page_blog_breadcrumb') },
+          { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb') },
           { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY') },
           { route: `/blog/${date.format('YYYY/MM')}`, title: date.format('MMMM'), current: true },
         ]

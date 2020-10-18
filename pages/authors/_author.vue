@@ -40,7 +40,7 @@ export default {
     Card,
   },
 
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, params, error, app }) {
     try {
       const { authors } = await $content('authors').fetch()
       const author = authors.find(a => a.username === params.author)
@@ -62,7 +62,7 @@ export default {
         author: author,
         posts,
         routes: [
-          { route: `/authors`, title: this.$t('page_authors_title') },
+          { route: `/authors`, title: app.i18n.t('page_authors_title') },
           { route: `/authors/${author.username}`, title: `${author.name}`, current: true },
         ]
       }

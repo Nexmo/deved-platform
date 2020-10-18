@@ -150,12 +150,31 @@ export default {
       disqusShortname: config.disqusShortname,
       baseUrl: config.baseUrl,
       routes: [
-        { route: `/${post.type}`, title: this.$t('page_blog_breadcrumb') },
+        { route: `/${post.type}`, title: app.i18n.t('page_blog_breadcrumb') },
         { route: `/${post.type}/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
         { route: `/${post.type}/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
         { route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
         { route: post.route, title: post.title, current: true }
       ],
+    }
+  },
+
+  head() {
+    const canonicalUrl = this.post.canonical || `${this.baseUrl}${this.post.route}`
+
+    return {
+      title: `${this.post.title}`,
+      meta: [
+        { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.post.category}, ${this.post.tags.join(', ')}`},
+        { hid: "description", name: "description", content: this.post.description},
+        ...this.postMeta()
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: canonicalUrl
+        }
+      ]
     }
   },
 
@@ -180,25 +199,6 @@ export default {
       ]
 
       return meta
-    }
-  },
-
-  head() {
-    const canonicalUrl = this.post.canonical || `${this.baseUrl}${this.post.route}`
-
-    return {
-      title: `${this.post.title}`,
-      meta: [
-        { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.post.category}, ${this.post.tags.join(', ')}`},
-        { hid: "description", name: "description", content: this.post.description},
-        ...this.postMeta()
-      ],
-      link: [
-        {
-          rel: 'canonical',
-          href: canonicalUrl
-        }
-      ]
     }
   },
 }
