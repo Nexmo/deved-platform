@@ -1,6 +1,6 @@
 const categories = require('../../../content/categories.json')['categories']
 
-module.exports = {
+module.exports = () => ({
   type: 'list',
   name: 'category',
   message: 'What\'s the category?',
@@ -13,4 +13,4 @@ module.exports = {
       }
     })
   }
-}
+})
