@@ -1,6 +1,6 @@
 const authors = require('../../../content/authors.json')['authors']
 
-module.exports = {
+module.exports = () => ({
   type: 'autocomplete',
   name: 'author',
   message: 'Who\'s the author?',
@@ -13,4 +13,4 @@ module.exports = {
 
     return [{ name: 'Other', value: 'tbc' }, ...opts]
   }
-}
+})

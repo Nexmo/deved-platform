@@ -31,7 +31,7 @@
     "showdown": "^1.9.1",
     "vue-disqus": "^3.0.5",
     "vue-fragment": "^1.5.1",
-    "vue-instantsearch": "^3.4.1",
+    "vue-instantsearch": "^3.4.2",
     "vue-moment": "^4.1.0"
   },
   "keywords": [],
@@ -46,6 +46,7 @@
     "inquirer": "^7.3.3",
     "inquirer-autocomplete-prompt": "^1.2.0",
     "lodash": "^4.17.20",
+    "lokijs": "^1.5.11",
     "slugify": "^1.4.5",
     "wpapi": "^1.2.1",
     "yaml": "^1.10.0"
