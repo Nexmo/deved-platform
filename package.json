@@ -31,7 +31,7 @@
     "showdown": "^1.9.1",
     "vue-disqus": "^3.0.5",
     "vue-fragment": "^1.5.1",
-    "vue-instantsearch": "^3.4.1",
+    "vue-instantsearch": "^3.4.2",
     "vue-moment": "^4.1.0"
   },
   "keywords": [],
