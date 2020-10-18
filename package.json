@@ -14,7 +14,7 @@
     "blog": "node bin/blog"
   },
   "dependencies": {
-    "@nuxt/content": "^1.9.0",
+    "@nuxt/content": "^1.10.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/feed": "^1.1.0",
     "@vonagevolta/volta2": "0.0.56",
