@@ -2,11 +2,6 @@ backend:
   name: git-gateway
   branch: main
 
-i18n:
-  structure: multiple_folders
-  locales: [en, it, cn]
-  default_locale: en
-
 publish_mode: editorial_workflow
 
 media_folder: '/static/content/images/'
@@ -17,7 +12,7 @@ collections:
     i18n: true
     label: 'Blog Post'
     format: frontmatter
-    folder: '/content/blog'
+    folder: '/content/blog/en'
     media_folder: '/static/content/blog/{{slug}}/'
     public_folder: '/content/blog/{{slug}}/'
     create: true
