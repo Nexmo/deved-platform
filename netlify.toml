@@ -3,30 +3,6 @@
   command = "npm run generate"
   functions = "scripts"
 
-[[plugins]]
-  package = "netlify-plugin-opensearch"
-    [plugins.inputs]
-      siteShortName = "Vonage Dev"
-      siteDescription = "Find developer content from Vonage"
-      siteTags = "software development"
-      siteContact = "community@vonage.com"
-
-[[plugins]]
-  package = "netlify-plugin-algolia-export"
-    [plugins.inputs]
-      exclude = ['''^\/(?!blog\/[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/(?!index.html)).*''']
-
-[[plugins]]
-  package = "@netlify/plugin-sitemap"
-    [plugins.inputs]
-      buildDir = "dist"
-
-[[plugins]]
-  package = "netlify-plugin-no-more-404"
-    [plugins.inputs]
-      on404 = "warn" 
-      cacheKey = "vonage-dev-blog"
-
 [[redirects]]
   from = "/admin"
   to = "/admin/"
