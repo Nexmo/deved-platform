@@ -12,12 +12,7 @@
             {{ language.name }}
           </span>
         </div>
-        <a v-if="post.redirect" class="Vlt-card__content" :href="post.redirect" :title="post.title">
-          <h2>
-            {{ post.title | truncate(73, '...') }}
-          </h2>
-        </a>
-        <NLink v-else class="Vlt-card__content" :to="localePath(post.route, post.locale)" :title="post.title">
+        <NLink class="Vlt-card__content" :to="localePath(post.route, post.locale)" :title="post.title">
           <h2>
             {{ post.title | truncate(73, '...') }}
           </h2>
