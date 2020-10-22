@@ -39,9 +39,9 @@ The code for this tutorial can be found on [GitHub](https://github.com/nexmo-com
 
 Before you begin, make  sure you have:
 
-- [Node.js](https://nodejs.org/en/download/) installed on your machine
-- [ngrok](https://ngrok.com/) to make the code on our local machine accessible to the outside world
-- The [Nexmo CLI](https://developer.nexmo.com/tools): `npm install -g nexmo-cli`
+* [Node.js](https://nodejs.org/en/download/) installed on your machine
+* [ngrok](https://ngrok.com/) to make the code on our local machine accessible to the outside world
+* The [Nexmo CLI](https://developer.nexmo.com/tools): `npm install -g nexmo-cli`
 
 ## Vonage API Account
 
@@ -50,7 +50,6 @@ To complete this tutorial, you will need a [Vonage API account](http://developer
 This tutorial also uses a virtual phone number. To purchase one, go to *Numbers* > *Buy Numbers* and search for one that meets your needs. If you’ve just signed up, the initial cost of a number will be easily covered by your available credit.
 
 <a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2019-09-16-how-to-send-and-receive-sms-messages-with-node-js-and-express-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
-
 
 ## Send an SMS Message With the SMS API
 
@@ -64,6 +63,7 @@ First off, initialize an NPM package, otherwise, older versions of NPM will comp
 $ npm init
 $ npm install @vonage/server-sdk
 ```
+
 ### Initialize Dependencies
 
 We'll create a new JavaScript file, let's call it `index.js`.
@@ -153,11 +153,9 @@ Use the ngrok URL you got in the previous step and fill in the fields, appending
 
 ![Create Vonage Messages Application](https://www.nexmo.com/wp-content/uploads/2019/09/create-messages-application.gif)
 
-
 #### Initialize Dependencies
 
 Let's replace the contents of the file we created earlier. We need to initialize the Nexmo node library we installed earlier, in the `index.js` file you created:
-
 
 ```javascript
 const Nexmo = require('nexmo')
@@ -171,7 +169,6 @@ const nexmo = new Nexmo({
 ```
 
 Replace the values in there with your actual API key and secret, the application id for the application you just created earlier, and the path to the private key you saved.
-
 
 ### Send the Same SMS Message
 
@@ -263,6 +260,6 @@ $ node server.js
 
 Now send an SMS message from your phone to your Vonage number. You should see the message being logged in the terminal window where you ran the code. It looks similar to this:
 
-<img style="border: none;" src="https://www.nexmo.com/wp-content/uploads/2019/09/receive-sms-terminal.png" alt="Received SMS message with Vonage" width="2004" height="1326" class="alignnone size-full wp-image-30040" />
+![Terminal output](/content/blog/how-to-send-and-receive-sms-messages-with-node-js-and-express/receive-sms-terminal.png "Terminal output")
 
 I hope it worked and you've just learned how to send and receive SMS messages with the Vonage APIs and Node.js.
