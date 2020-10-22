@@ -49,10 +49,6 @@ export default {
         .sortBy('published_at', 'desc')
         .fetch()
 
-      if (posts.length === 0) {
-        error({ statusCode: 404, message: 'Page not found' })
-      }
-
       return {
         year: date.format('YYYY'),
         posts,
@@ -62,7 +58,7 @@ export default {
         ]
       }
     } catch (e) {
-      error(e)
+      return error(e)
     }
   },
 }

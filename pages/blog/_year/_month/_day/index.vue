@@ -37,7 +37,7 @@ export default {
     const { day, month, year } = params
 
     if (isNaN(year) || isNaN(month) || isNaN(day)) {
-      error({ statusCode: 404, message: 'Page not found' })
+      return error({ statusCode: 404, message: 'Page not found' })
     }
 
     const date = moment(`${year}/${month}/${day}`, 'YYYY/MM/DD')
@@ -52,10 +52,6 @@ export default {
         .limit(config.postsPerPage)
         .fetch()
 
-      if (posts.length === 0) {
-        error({ statusCode: 404, message: 'Page not found' })
-      }
-
       return {
         dayTh: date.format('Do'),
         monthName: date.format('MMMM'),
@@ -69,7 +65,7 @@ export default {
         ]
       }
     } catch (e) {
-      error(e)
+      return error(e)
     }
   },
 }

@@ -46,7 +46,7 @@ export default {
       const author = authors.find(a => a.username === params.author)
 
       if (!author) {
-        error({ statusCode: 404, message: "Page not found" })
+        return error({ statusCode: 404, message: "Page not found" })
       }
 
       const posts = await $content(`blog`, { deep: true })
@@ -67,7 +67,7 @@ export default {
         ]
       }
     } catch (e) {
-      error(e)
+      return error(e)
     }
   },
 }
