@@ -14,10 +14,6 @@
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
         <Card v-for="post in posts" :key="post.route" :post="post" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col Vlt-center">
-          <Pagination route="/blog" :page="page" :post-count="postCount" />
-        </div>
       </div>
     </main>
   </section>
