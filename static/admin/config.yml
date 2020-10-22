@@ -77,12 +77,30 @@ collections:
         default: false
         required: false
         hint: "Whether the post is part of the Spotlight programme."
+      - label: Redirect
+        name: redirect
+        widget: string
+        default: ""
+        required: false
+        hint: "WARNING: Blocks a post from being viewed. If a post is accessed, it will direct to this URL."
+      - label: "Canonical Link"
+        name: canonical
+        widget: string
+        default: ""
+        required: false
+        hint: "WARNING: May have negative impact on SEO. Modifies the rel-canonical link to this URL. "
       - label: Outdated
         name: outdated
-        widget: string
+        widget: boolean
         default: false
         required: false
-        hint: "Mark the post as outdated. You can type 'true' or a URL. Adds a banner. If you add a URL, the banner will show the users a link to find a newer version."
+        hint: "WARNING: Mark the post as outdated. Adds an outdated banner to say the post is outdated."
+      - label: "Outdated Link"
+        name: outdated_url
+        widget: string
+        default: ""
+        required: false
+        hint: "WARNING: Mark the post as outdated. Adds an outdated banner with a link to this URL for the newer version."
       - label: Body
         name: body
         widget: markdown
