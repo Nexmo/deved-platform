@@ -61,7 +61,7 @@ export default {
         ]
       }
     } catch (e) {
-      return error(e)
+      error(e)
     }
   },
 }

@@ -37,7 +37,7 @@ export default {
     const { month, year } = params
 
     if (isNaN(year) || isNaN(month)) {
-      return error({ statusCode: 404, message: 'Page not found' })
+      error({ statusCode: 404, message: 'Page not found' })
     }
 
     const date = moment(`${year}/${month}`, 'YYYY/MM')
@@ -53,7 +53,7 @@ export default {
         .fetch()
 
       if (posts.length === 0) {
-        return error({ statusCode: 404, message: "Page not found" })
+        error({ statusCode: 404, message: "Page not found" })
       }
 
       return {
@@ -67,7 +67,7 @@ export default {
         ]
       }
     } catch (e) {
-      return error(e)
+      error(e)
     }
   },
 }

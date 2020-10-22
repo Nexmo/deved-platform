@@ -50,7 +50,7 @@ export default {
         .fetch()
 
       if (posts.length === 0) {
-        return error({ statusCode: 404, message: "Page not found" })
+        error({ statusCode: 404, message: "Page not found" })
       }
 
       return {
@@ -62,7 +62,7 @@ export default {
         ]
       }
     } catch (e) {
-      return error(e)
+      error(e)
     }
   },
 }

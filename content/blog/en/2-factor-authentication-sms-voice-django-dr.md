@@ -17,9 +17,7 @@ old_categories:
   - verify
 tags:
   - 2fa
-  - devrel
   - python
-  - verify
   - x-with-y
 canonical: https://www.nexmo.com/blog/2017/07/13/2-factor-authentication-sms-voice-django-dr
 redirect: https://www.nexmo.com/blog/2017/07/13/2-factor-authentication-sms-voice-django-dr
