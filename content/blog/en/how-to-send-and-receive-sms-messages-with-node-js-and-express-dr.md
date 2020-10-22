@@ -3,7 +3,6 @@ thumbnail: https://www.nexmo.com/wp-content/uploads/2019/09/SMS-Node-Express_120
 author: laka
 published: true
 published_at: 2019-09-16T08:00:45
-canonical: https://www.nexmo.com/blog/2019/09/16/how-to-send-and-receive-sms-messages-with-node-js-and-express-dr
 comments: true
 old_categories:
   - developer
@@ -22,7 +21,6 @@ tags:
   - javascript
   - nodejs
   - sms
-redirect: https://www.nexmo.com/blog/2019/09/16/how-to-send-and-receive-sms-messages-with-node-js-and-express-dr
 category: tutorial
 ---
 Vonage has a couple of APIs that allow you to send and receive a high volume of SMS anywhere in the world. Once you get your virtual phone number, you can use the APIs to manage outbound messages (“sending”) and inbound messages (“receiving”). In this article, you will learn how to send and receive SMS messages with [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/).
