@@ -151,7 +151,7 @@ We'll also save a keyfile on disk. Applications work on a public / private key s
 
 Use the ngrok URL you got in the previous step and fill in the fields, appending `/webhooks/status` and `/webhooks/inbound`, for the respective fields. When a message is coming to the Messages API, the data about the message is sent to the inbound URL. When you send a message with the API, the data about the message status gets sent to the status URL.
 
-![Create Vonage Messages Application](https://www.nexmo.com/wp-content/uploads/2019/09/create-messages-application.gif)
+![Create Vonage Messages Application](/content/blog/how-to-send-and-receive-sms-messages-with-node-js-and-express/create-messages-application.gif)
 
 #### Initialize Dependencies
 
@@ -210,7 +210,7 @@ That's it, you've sent the same SMS message using two different Vonage APIs. You
 
 When a Vonage phone number receives an SMS message, Vonage will pass that message to a Webhook you have specified in the Vonage API dashboard. In order to set up the webhook URL, go to the little gear icon next to [your phone numbers in the Vonage API Dashboard](https://dashboard.nexmo.com/your-numbers) and fill in the "Inbound Webhook URL" field with `YOUR_NGROK_URL/webhooks/inbound`. Don't forget to replace your actual ngrok URL.
 
-![Set Inbound Webhook URL on the Vonage API Dashboard](https://www.nexmo.com/wp-content/uploads/2019/09/set-inbound-webhook.gif)
+![Set Inbound Webhook URL on the Vonage API Dashboard](/content/blog/how-to-send-and-receive-sms-messages-with-node-js-and-express/set-inbound-webhook.gif)
 
 ### Create a Web Server
 
