@@ -119,6 +119,12 @@ module.exports = {
       config.node = {
         fs: 'empty'
       }
+    },
+    html: {
+      minify: {
+        minifyCSS: false,
+        minifyJS: false,
+      }
     }
   }
 }
