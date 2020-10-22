@@ -129,13 +129,8 @@ export default {
       .where({ 'published': { '$ne': false } })
       .fetch()
       .catch(err => {
-        console.error(err)
-        error({ statusCode: 404, message: "Page not found" })
+        return error({ statusCode: 404, message: "Page not found", err })
       })
-
-    if (!post) {
-      error({ statusCode: 404, message: "Page not found" })
-    }
 
     if (process.browser) {
       if (post.redirect) {

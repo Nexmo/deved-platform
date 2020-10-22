@@ -3,8 +3,10 @@ import { getPostRoute, getPostRoutes, getCategory } from "./modules/contenter"
 import { locales } from "./lang.config.js"
 
 module.exports = {
-  mode: "universal",
+  // Target (https://go.nuxtjs.dev/config-target)
+  target: 'static',
 
+  // Env (https://nuxtjs.org/api/configuration-env/)
   env: {
     repoUrl: config.repoUrl,
     repoBranch: config.repoBranch,
@@ -13,6 +15,7 @@ module.exports = {
     algoliaSearchKey: config.algoliaSearchKey
   },
 
+  // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: config.indexTitle,
     titleTemplate: `%s » ${config.baseTitle}`,
@@ -26,6 +29,7 @@ module.exports = {
     throttle: 0,
   },
 
+  // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     "@vonagevolta/volta2/dist/css/volta.min.css",
     "@vonagevolta/volta2/dist/css/volta-error-page.min.css",
@@ -34,6 +38,7 @@ module.exports = {
     "@/assets/css/main.css",
   ],
 
+  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     { src: "@/plugins/vue-moment.js" },
     { src: "@/plugins/vue-fragment.js" },
@@ -42,6 +47,12 @@ module.exports = {
     { src: "@/plugins/vue-disqus.js" },
   ],
 
+  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
+  buildModules: [
+    '@nuxtjs/dotenv'
+  ],
+
+  // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     "nuxt-i18n",
     "@nuxt/content",
@@ -97,9 +108,10 @@ module.exports = {
     fallback: true
   },
 
-  buildModules: [
-    '@nuxtjs/dotenv'
-  ],
+  // Content module configuration (https://go.nuxtjs.dev/config-content)
+  content: {
+    liveEdit: false,
+  },
 
   build: {
     transpile: ["vue-instantsearch", "instantsearch.js/es"],

@@ -17,9 +17,11 @@ export default {
   },
 
   head() {
-    console.log(`%c${this.$t('layout_default_careers_title')}`, "font-family: Gill Sans, sans-serif; font-size: 40px; color: #dd0d00")
-    console.log(`%c${this.$t('layout_default_careers_body')}`, "font-family: Gill Sans, sans-serif; font-size: 16px;")
-    console.log(`%c${this.$t('layout_default_careers_link')}`, "font-family: Gill Sans, sans-serif;")
+    if (process.client) {
+      console.log(`%c${this.$t('layout_default_careers_title')}`, "font-family: Gill Sans, sans-serif; font-size: 40px; color: #dd0d00")
+      console.log(`%c${this.$t('layout_default_careers_body')}`, "font-family: Gill Sans, sans-serif; font-size: 16px;")
+      console.log(`%c${this.$t('layout_default_careers_link')}`, "font-family: Gill Sans, sans-serif;")
+    }
 
     return {
       script: [

@@ -56,10 +56,6 @@ export default {
 
       const posts = await postsQuery.fetch()
 
-      if (posts.length === 0) {
-        error({ statusCode: 404, message: "Page not found" })
-      }
-
       return {
         page,
         postCount,
@@ -69,7 +65,7 @@ export default {
         ]
       }
     } catch (e) {
-      error(e)
+      return error(e)
     }
   },
 }
