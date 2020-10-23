@@ -11,15 +11,7 @@ published: true
 published_at: 2019-08-12T16:01:19
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - video
-tags:
-  - gaming
-  - live-video
-  - unity3d
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/12/video-gaming-unity-opentok
 redirect: https://www.nexmo.com/blog/2019/08/12/video-gaming-unity-opentok
 ---

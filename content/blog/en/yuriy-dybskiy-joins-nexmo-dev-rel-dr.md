@@ -11,10 +11,8 @@ published: true
 published_at: 2019-02-04T11:19:28
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - dev-rel
+  - careers
 canonical: https://www.nexmo.com/blog/2019/02/04/yuriy-dybskiy-joins-nexmo-dev-rel-dr
 redirect: https://www.nexmo.com/blog/2019/02/04/yuriy-dybskiy-joins-nexmo-dev-rel-dr
 ---

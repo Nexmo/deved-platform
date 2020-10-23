@@ -11,14 +11,7 @@ published: true
 published_at: 2019-02-19T19:15:41
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - java
-  - voice
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/02/19/record-a-phone-message-with-java-dr
 redirect: https://www.nexmo.com/blog/2019/02/19/record-a-phone-message-with-java-dr
 ---

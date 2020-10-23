@@ -11,13 +11,9 @@ published: true
 published_at: 2017-11-02T19:05:07
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - voice
 tags:
   - alexa
-  - voice-bots
+  - bots
 canonical: https://www.nexmo.com/blog/2017/11/02/bots-ai-mastering-invocation-names-alexa-skills
 redirect: https://www.nexmo.com/blog/2017/11/02/bots-ai-mastering-invocation-names-alexa-skills
 ---

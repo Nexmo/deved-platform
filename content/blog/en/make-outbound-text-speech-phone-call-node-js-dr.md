@@ -11,20 +11,7 @@ published: true
 published_at: 2017-01-12T21:29:05
 comments: true
 category: tutorial
-old_categories:
-  - cloud-communications
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - api
-  - call
-  - nodejs
-  - outbound-phone-call
-  - tutorial
-  - voice
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/01/12/make-outbound-text-speech-phone-call-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/01/12/make-outbound-text-speech-phone-call-node-js-dr
 ---

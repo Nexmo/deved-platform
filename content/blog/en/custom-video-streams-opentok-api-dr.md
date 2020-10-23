@@ -11,16 +11,7 @@ published: true
 published_at: 2018-12-20T16:10:26
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - devrel
-  - javascript
-  - tokbox
-  - tutorial
-  - video
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/20/custom-video-streams-opentok-api-dr
 redirect: https://www.nexmo.com/blog/2018/12/20/custom-video-streams-opentok-api-dr
 ---

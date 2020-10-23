@@ -11,16 +11,7 @@ published: true
 published_at: 2019-01-10T10:06:55
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - asp-net
-  - dtmf
-  - nancyfx
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/01/10/how-to-handle-user-input-with-asp-net-core-dr
 redirect: https://www.nexmo.com/blog/2019/01/10/how-to-handle-user-input-with-asp-net-core-dr
 ---

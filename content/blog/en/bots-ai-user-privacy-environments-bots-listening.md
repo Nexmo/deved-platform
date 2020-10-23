@@ -11,13 +11,7 @@ published: true
 published_at: 2017-09-28T16:30:33
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - real-time-communications
-  - voice
 tags:
-  - ai
   - bots
 canonical: https://www.nexmo.com/blog/2017/09/28/bots-ai-user-privacy-environments-bots-listening
 redirect: https://www.nexmo.com/blog/2017/09/28/bots-ai-user-privacy-environments-bots-listening

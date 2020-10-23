@@ -11,13 +11,8 @@ published: true
 published_at: 2020-07-03T11:44:24
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - developer-community-manager
-  - introduction
-  - new-joiner
+  - careers
 canonical: https://www.nexmo.com/blog/2020/07/03/clarisse-ng-joins-the-vonage-developer-relations-team
 redirect: https://www.nexmo.com/blog/2020/07/03/clarisse-ng-joins-the-vonage-developer-relations-team
 ---

@@ -12,14 +12,7 @@ published: true
 published_at: 2018-10-11T16:38:50
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - nexmo-news
-  - partners
-tags:
-  - community
-  - developer-spotlight
-  - tutorials
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/11/nexmo-developer-spotlight
 redirect: https://www.nexmo.com/blog/2018/10/11/nexmo-developer-spotlight
 ---

@@ -11,14 +11,7 @@ published: true
 published_at: 2018-06-26T15:03:34
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - devrel
-  - ivr
-  - python
-  - twitter
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2018/06/26/twitter-interactive-voice-response-dr
 redirect: https://www.nexmo.com/blog/2018/06/26/twitter-interactive-voice-response-dr
 ---

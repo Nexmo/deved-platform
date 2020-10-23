@@ -11,11 +11,8 @@ published: true
 published_at: 2016-11-22T13:16:13
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2016/11/22/olia-joining-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2016/11/22/olia-joining-the-developer-relations-team-dr
 ---

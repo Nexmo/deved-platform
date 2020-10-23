@@ -11,16 +11,7 @@ published: true
 published_at: 2017-03-21T13:30:33
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - anonymous-call
-  - voice-api
-  - voice-proxy
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/03/21/make-private-phone-call-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/03/21/make-private-phone-call-node-js-dr
 ---

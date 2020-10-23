@@ -11,15 +11,7 @@ published: true
 published_at: 2019-12-18T13:42:52
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - real-time-communications
-tags:
-  - bootstrap
-  - client-sdks
-  - conversation-api
-  - javascript
-  - messaging-ui
+tags: []
 canonical: https://www.nexmo.com/blog/2019/12/18/create-a-simple-messaging-ui-with-bootstrap-dr
 redirect: https://www.nexmo.com/blog/2019/12/18/create-a-simple-messaging-ui-with-bootstrap-dr
 ---

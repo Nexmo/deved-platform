@@ -11,13 +11,7 @@ published: true
 published_at: 2020-04-15T14:08:48
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - opencv
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/15/real-time-human-detection-with-opencv-and-vonage-sms-api-dr
 redirect: https://www.nexmo.com/blog/2020/04/15/real-time-human-detection-with-opencv-and-vonage-sms-api-dr
 ---

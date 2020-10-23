@@ -11,12 +11,7 @@ published: true
 published_at: 2017-02-23T21:53:43
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - voice
-tags:
-  - call-control
+tags: []
 canonical: https://www.nexmo.com/blog/2017/02/23/eliminate-failed-calls-with-dynamic-connection-capabilities
 redirect: https://www.nexmo.com/blog/2017/02/23/eliminate-failed-calls-with-dynamic-connection-capabilities
 ---

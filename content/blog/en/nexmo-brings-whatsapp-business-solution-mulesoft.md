@@ -11,14 +11,7 @@ published: true
 published_at: 2018-09-26T15:45:31
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - messaging
-  - nexmo-news
-tags:
-  - messaging
-  - mulesoft-anypoint
-  - whatsapp
+tags: []
 canonical: https://www.nexmo.com/blog/2018/09/26/nexmo-brings-whatsapp-business-solution-mulesoft
 redirect: https://www.nexmo.com/blog/2018/09/26/nexmo-brings-whatsapp-business-solution-mulesoft
 ---

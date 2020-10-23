@@ -11,14 +11,7 @@ published: true
 published_at: 2017-10-26T02:30:08
 comments: true
 category: inspiration
-old_categories:
-  - chat-app
-  - developer
-  - developers
-tags:
-  - bots
-  - chatbots
-  - voice-bots
+tags: []
 canonical: https://www.nexmo.com/blog/2017/10/25/developer-tooling-ai-bots
 redirect: https://www.nexmo.com/blog/2017/10/25/developer-tooling-ai-bots
 ---

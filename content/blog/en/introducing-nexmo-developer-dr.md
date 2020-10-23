@@ -11,14 +11,7 @@ published: true
 published_at: 2017-07-25T13:53:37
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - developers
-  - nexmo-news
-  - product
-tags:
-  - devrel
-  - documentation
+tags: []
 canonical: https://www.nexmo.com/blog/2017/07/25/introducing-nexmo-developer-dr
 redirect: https://www.nexmo.com/blog/2017/07/25/introducing-nexmo-developer-dr
 ---

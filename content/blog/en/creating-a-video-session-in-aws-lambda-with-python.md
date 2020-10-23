@@ -11,14 +11,7 @@ published: true
 published_at: 2020-05-21T07:53:03
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - aws-lambda
-  - opentok
-  - python-3
-  - vonage-video
+tags: []
 canonical: https://www.nexmo.com/blog/2020/05/21/creating-a-video-session-in-aws-lambda-with-python
 redirect: https://www.nexmo.com/blog/2020/05/21/creating-a-video-session-in-aws-lambda-with-python
 ---

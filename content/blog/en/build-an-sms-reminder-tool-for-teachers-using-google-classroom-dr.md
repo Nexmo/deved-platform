@@ -11,17 +11,8 @@ published: true
 published_at: 2020-06-04T13:50:15
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - sms
-  - tutorial
 tags:
-  - express
-  - google-classroom
-  - messages-api
-  - nodejs
-  - sms
+  - node
 canonical: https://www.nexmo.com/blog/2020/06/04/build-an-sms-reminder-tool-for-teachers-using-google-classroom-dr
 redirect: https://www.nexmo.com/blog/2020/06/04/build-an-sms-reminder-tool-for-teachers-using-google-classroom-dr
 ---

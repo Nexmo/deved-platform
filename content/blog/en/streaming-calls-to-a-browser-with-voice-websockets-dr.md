@@ -11,16 +11,7 @@ published: true
 published_at: 2016-12-19T19:31:19
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-tags:
-  - api
-  - audio
-  - browser
-  - iot
-  - webaudio
-  - websocket
+tags: []
 canonical: https://www.nexmo.com/blog/2016/12/19/streaming-calls-to-a-browser-with-voice-websockets-dr
 redirect: https://www.nexmo.com/blog/2016/12/19/streaming-calls-to-a-browser-with-voice-websockets-dr
 ---

@@ -11,10 +11,6 @@ published: true
 published_at: 2015-02-26T23:52:51
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - events
 tags: []
 canonical: https://www.nexmo.com/blog/2015/02/26/memories-of-confoo
 redirect: https://www.nexmo.com/blog/2015/02/26/memories-of-confoo

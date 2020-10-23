@@ -11,19 +11,7 @@ published: true
 published_at: 2020-05-20T07:04:56
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - custom-elements
-  - developer
-  - developer-relations
-  - devrel
-  - html-template
-  - shadow-dom
-  - web-component-standards
-  - web-components
-  - web-platform-apis
-  - web-standards
+tags: []
 canonical: https://www.nexmo.com/blog/2020/05/20/web-components-tools-a-comparison
 redirect: https://www.nexmo.com/blog/2020/05/20/web-components-tools-a-comparison
 ---

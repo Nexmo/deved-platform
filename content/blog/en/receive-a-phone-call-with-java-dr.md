@@ -11,13 +11,7 @@ published: true
 published_at: 2018-08-09T19:44:59
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - java
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2018/08/09/receive-a-phone-call-with-java-dr
 redirect: https://www.nexmo.com/blog/2018/08/09/receive-a-phone-call-with-java-dr
 ---

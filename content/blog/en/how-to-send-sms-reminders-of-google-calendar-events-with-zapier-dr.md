@@ -11,13 +11,7 @@ published: true
 published_at: 2020-03-04T18:22:53
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-tags:
-  - devrel
-  - sms
-  - zapier
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/04/how-to-send-sms-reminders-of-google-calendar-events-with-zapier-dr
 redirect: https://www.nexmo.com/blog/2020/03/04/how-to-send-sms-reminders-of-google-calendar-events-with-zapier-dr
 ---

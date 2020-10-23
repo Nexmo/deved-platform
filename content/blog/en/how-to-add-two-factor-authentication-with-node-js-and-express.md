@@ -11,16 +11,7 @@ published: true
 published_at: 2020-07-17T13:33:55
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - verify
-tags:
-  - 2fa
-  - express
-  - node
-  - two-factor-auth
-  - verify
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/17/how-to-add-two-factor-authentication-with-node-js-and-express
 redirect: https://www.nexmo.com/blog/2020/07/17/how-to-add-two-factor-authentication-with-node-js-and-express
 ---

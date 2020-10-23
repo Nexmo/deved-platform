@@ -11,18 +11,7 @@ published: true
 published_at: 2017-09-21T19:12:09
 comments: true
 category: tutorial
-old_categories:
-  - chat-app
-  - developer
-  - developers
-  - messaging
-  - real-time-communications
-  - voice
-tags:
-  - ai
-  - artificial-intelligence
-  - bots
-  - chatbots
+tags: []
 canonical: https://www.nexmo.com/blog/2017/09/21/voice-text-ai-bot-interface
 redirect: https://www.nexmo.com/blog/2017/09/21/voice-text-ai-bot-interface
 ---

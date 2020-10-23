@@ -11,16 +11,7 @@ published: true
 published_at: 2020-03-23T16:02:04
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-relations
-  - developers
-  - thought-leadership
-tags:
-  - devrel
-  - ruby
-  - sdk
-  - static-typing
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/23/lessons-learned-along-the-way-with-static-type-checking-in-ruby-dr
 redirect: https://www.nexmo.com/blog/2020/03/23/lessons-learned-along-the-way-with-static-type-checking-in-ruby-dr
 ---

@@ -11,9 +11,8 @@ published: true
 published_at: 2019-10-28T19:03:27
 comments: true
 category: team
-old_categories:
-  - developer
-tags: []
+tags:
+  - careers
 canonical: https://www.nexmo.com/blog/2019/10/28/michael-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/10/28/michael-joins-the-nexmo-developer-relations-team-dr
 ---

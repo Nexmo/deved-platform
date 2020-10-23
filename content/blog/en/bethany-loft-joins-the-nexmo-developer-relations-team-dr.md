@@ -11,10 +11,8 @@ published: true
 published_at: 2019-09-10T09:44:49
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - team
+  - careers
 canonical: https://www.nexmo.com/blog/2019/09/10/bethany-loft-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/09/10/bethany-loft-joins-the-nexmo-developer-relations-team-dr
 ---

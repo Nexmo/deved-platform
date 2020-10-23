@@ -11,14 +11,7 @@ published: true
 published_at: 2018-10-23T10:14:46
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - php
-  - sms
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/23/send-sms-from-php-with-failover-dr
 redirect: https://www.nexmo.com/blog/2018/10/23/send-sms-from-php-with-failover-dr
 ---

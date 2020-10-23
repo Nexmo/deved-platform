@@ -11,15 +11,7 @@ published: true
 published_at: 2019-08-05T22:14:01
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - tutorial
-tags:
-  - express
-  - javascript
-  - nodejs
-  - vue
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/05/voice-chat-with-vue-and-express-dr
 redirect: https://www.nexmo.com/blog/2019/08/05/voice-chat-with-vue-and-express-dr
 ---

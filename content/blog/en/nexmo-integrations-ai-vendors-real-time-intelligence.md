@@ -12,14 +12,7 @@ published: true
 published_at: 2018-06-20T15:00:34
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - partners
-  - real-time-communications
-tags:
-  - ai
-  - contextual-communications
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2018/06/20/nexmo-integrations-ai-vendors-real-time-intelligence
 redirect: https://www.nexmo.com/blog/2018/06/20/nexmo-integrations-ai-vendors-real-time-intelligence
 ---

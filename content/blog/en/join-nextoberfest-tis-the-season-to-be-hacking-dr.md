@@ -11,11 +11,7 @@ published: true
 published_at: 2018-10-09T15:23:17
 comments: true
 category: event
-old_categories:
-  - developer
-tags:
-  - hacktoberfest
-  - nextoberfest
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr
 redirect: https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr
 ---

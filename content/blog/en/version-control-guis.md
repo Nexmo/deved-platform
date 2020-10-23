@@ -11,13 +11,7 @@ published: true
 published_at: 2020-10-02T07:25:52
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - git
-  - gui
-  - open-source
-  - version-control
+tags: []
 canonical: https://www.nexmo.com/blog/2020/10/02/version-control-guis
 redirect: https://www.nexmo.com/blog/2020/10/02/version-control-guis
 ---

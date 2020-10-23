@@ -11,10 +11,6 @@ published: true
 published_at: 2017-11-09T21:48:30
 comments: true
 category: inspiration
-old_categories:
-  - developer
-  - developers
-  - voice
 tags: []
 canonical: https://www.nexmo.com/blog/2017/11/09/will-bots-give-rise-voice-seo-bidding-spoken-queries
 redirect: https://www.nexmo.com/blog/2017/11/09/will-bots-give-rise-voice-seo-bidding-spoken-queries

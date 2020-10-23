@@ -11,16 +11,7 @@ published: true
 published_at: 2020-03-20T13:00:43
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - aws
-  - aws-lambda
-  - developer
-  - python
-  - serverless
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/20/serverless-python-with-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2020/03/20/serverless-python-with-aws-lambda-dr
 ---

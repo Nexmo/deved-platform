@@ -11,14 +11,7 @@ published: true
 published_at: 2020-04-28T13:30:17
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
-tags:
-  - javascript
-  - nodejs
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/28/stream-a-video-chat-with-vonage-video-api-dr
 redirect: https://www.nexmo.com/blog/2020/04/28/stream-a-video-chat-with-vonage-video-api-dr
 ---

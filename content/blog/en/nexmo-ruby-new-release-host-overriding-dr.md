@@ -11,14 +11,7 @@ published: true
 published_at: 2020-02-26T12:01:14
 comments: true
 category: release
-old_categories:
-  - developer
-  - developers
-  - nexmo-news
-tags:
-  - devrel
-  - ruby
-  - sdk
+tags: []
 canonical: https://www.nexmo.com/blog/2020/02/26/nexmo-ruby-new-release-host-overriding-dr
 redirect: https://www.nexmo.com/blog/2020/02/26/nexmo-ruby-new-release-host-overriding-dr
 ---

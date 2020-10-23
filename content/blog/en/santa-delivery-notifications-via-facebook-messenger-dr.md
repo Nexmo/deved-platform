@@ -10,14 +10,7 @@ published: true
 published_at: 2018-12-19T14:38:39
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - devrel
-  - javascript
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/19/santa-delivery-notifications-via-facebook-messenger-dr
 redirect: https://www.nexmo.com/blog/2018/12/19/santa-delivery-notifications-via-facebook-messenger-dr
 ---

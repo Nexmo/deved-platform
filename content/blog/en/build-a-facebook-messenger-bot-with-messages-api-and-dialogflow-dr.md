@@ -11,15 +11,10 @@ published: true
 published_at: 2018-10-16T14:46:18
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
 tags:
   - chatbots
-  - devrel
   - javascript
-  - messaging
-  - tutorial
+  - messaging-api
 canonical: https://www.nexmo.com/blog/2018/10/16/build-a-facebook-messenger-bot-with-messages-api-and-dialogflow-dr
 redirect: https://www.nexmo.com/blog/2018/10/16/build-a-facebook-messenger-bot-with-messages-api-and-dialogflow-dr
 ---

@@ -11,14 +11,7 @@ published: true
 published_at: 2020-07-27T12:29:47
 comments: true
 category: release
-old_categories:
-  - developer
-tags:
-  - release
-  - release-announcement
-  - ruby
-  - ruby-sdk
-  - sdk
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/27/nexmo-ruby-v7-2-0-release
 redirect: https://www.nexmo.com/blog/2020/07/27/nexmo-ruby-v7-2-0-release
 ---

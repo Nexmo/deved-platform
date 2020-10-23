@@ -11,14 +11,10 @@ published: true
 published_at: 2020-09-29T13:42:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags:
   - git
   - github
-  - hacktoberfest-2020
-  - version-control
+  - hacktoberfest
 canonical: https://www.nexmo.com/blog/2020/09/29/an-introduction-to-git-dr
 redirect: https://www.nexmo.com/blog/2020/09/29/an-introduction-to-git-dr
 ---

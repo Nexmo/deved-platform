@@ -12,14 +12,7 @@ published: true
 published_at: 2020-06-03T07:31:23
 comments: true
 category: community
-old_categories:
-  - developer
-  - developers
-tags:
-  - documentation
-  - oas
-  - oas3
-  - open-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/06/03/openapi-makes-easier-integrations
 redirect: https://www.nexmo.com/blog/2020/06/03/openapi-makes-easier-integrations
 ---

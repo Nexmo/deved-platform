@@ -11,17 +11,7 @@ published: true
 published_at: 2017-10-05T13:45:07
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - devrel
-  - python
-  - sms-notifications
-  - text-to-speech
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2017/10/05/fast-voice-broadcast-python-dr
 redirect: https://www.nexmo.com/blog/2017/10/05/fast-voice-broadcast-python-dr
 ---

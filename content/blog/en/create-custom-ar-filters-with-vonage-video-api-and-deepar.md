@@ -11,17 +11,7 @@ published: true
 published_at: 2020-09-01T12:24:51
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
-tags:
-  - augmented-reality
-  - deepar
-  - ios
-  - opentok
-  - swift
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
 redirect: https://www.nexmo.com/blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
 ---

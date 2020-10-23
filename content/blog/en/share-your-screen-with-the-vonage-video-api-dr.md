@@ -11,14 +11,7 @@ published: true
 published_at: 2020-04-29T13:35:20
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
-tags:
-  - javascript
-  - nodejs
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/29/share-your-screen-with-the-vonage-video-api-dr
 redirect: https://www.nexmo.com/blog/2020/04/29/share-your-screen-with-the-vonage-video-api-dr
 ---

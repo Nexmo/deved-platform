@@ -10,15 +10,7 @@ published: true
 published_at: 2018-12-17T19:19:26
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - devrel
-  - python
-  - sms
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/17/sending-sms-templates-python-dr
 redirect: https://www.nexmo.com/blog/2018/12/17/sending-sms-templates-python-dr
 ---

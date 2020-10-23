@@ -11,15 +11,7 @@ published: true
 published_at: 2016-07-12T14:12:12
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - events
-tags:
-  - all-about-the-api
-  - api-economy
-  - event
-  - keynote
+tags: []
 canonical: https://www.nexmo.com/blog/2016/07/12/nexmo-to-present-keynote-developer-workshop-panel-at-all-about-the-api
 redirect: https://www.nexmo.com/blog/2016/07/12/nexmo-to-present-keynote-developer-workshop-panel-at-all-about-the-api
 ---

@@ -11,15 +11,7 @@ published: true
 published_at: 2019-10-18T12:06:38
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - client-sdk
-  - conversation-api
-  - glitch
-  - javascript
-  - live-chat
-  - nodejs
+tags: []
 canonical: https://www.nexmo.com/blog/2019/10/18/how-to-build-an-on-page-live-chat-dr
 redirect: https://www.nexmo.com/blog/2019/10/18/how-to-build-an-on-page-live-chat-dr
 ---

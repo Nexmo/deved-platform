@@ -11,12 +11,7 @@ published: true
 published_at: 2020-05-22T14:04:25
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
 tags:
-  - faunadb
   - netlify
   - serverless
   - video-api

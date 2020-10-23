@@ -11,13 +11,7 @@ published: true
 published_at: 2020-07-28T13:27:54
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - asp-net
-  - delivery-receipts
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/28/how-to-receive-sms-delivery-receipts-with-asp-net-core-mvc-dr
 redirect: https://www.nexmo.com/blog/2020/07/28/how-to-receive-sms-delivery-receipts-with-asp-net-core-mvc-dr
 ---

@@ -11,17 +11,7 @@ published: true
 published_at: 2020-01-01T09:00:24
 comments: true
 category: tutorial
-old_categories:
-  - carriers
-  - developer
-  - developer-spotlight
-  - tutorial
-tags:
-  - express
-  - nexmo
-  - node
-  - slack
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/01/01/forward-nexmo-sms-to-slack-using-express-and-node-dr
 redirect: https://www.nexmo.com/blog/2020/01/01/forward-nexmo-sms-to-slack-using-express-and-node-dr
 ---

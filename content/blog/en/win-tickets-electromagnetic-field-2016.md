@@ -11,13 +11,7 @@ published: true
 published_at: 2016-07-01T14:01:32
 comments: true
 category: community
-old_categories:
-  - developer
-  - developers
-tags:
-  - competition
-  - emf-camp
-  - events
+tags: []
 canonical: https://www.nexmo.com/blog/2016/07/01/win-tickets-electromagnetic-field-2016
 redirect: https://www.nexmo.com/blog/2016/07/01/win-tickets-electromagnetic-field-2016
 ---

@@ -11,10 +11,8 @@ published: true
 published_at: 2015-04-17T17:23:01
 comments: true
 category: community
-old_categories:
-  - developer
-  - developers
-tags: []
+tags:
+  - contest
 canonical: https://www.nexmo.com/blog/2015/04/17/announcing-the-nexmo-numbers-crm-edition-contest-winner
 redirect: https://www.nexmo.com/blog/2015/04/17/announcing-the-nexmo-numbers-crm-edition-contest-winner
 ---

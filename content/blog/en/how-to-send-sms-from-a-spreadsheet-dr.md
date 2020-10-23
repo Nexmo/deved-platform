@@ -11,15 +11,7 @@ published: true
 published_at: 2019-01-23T21:39:18
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - tutorial
-tags:
-  - devrel
-  - javascript
-  - sms
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2019/01/23/how-to-send-sms-from-a-spreadsheet-dr
 redirect: https://www.nexmo.com/blog/2019/01/23/how-to-send-sms-from-a-spreadsheet-dr
 ---

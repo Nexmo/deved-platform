@@ -11,15 +11,7 @@ published: true
 published_at: 2020-05-04T15:53:35
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - product
-  - video
-tags:
-  - chat
-  - stream
-  - texting
-  - video
+tags: []
 canonical: https://www.nexmo.com/blog/2020/05/04/stream-video-chat-with-texting-using-vonage-video-api-dr
 redirect: https://www.nexmo.com/blog/2020/05/04/stream-video-chat-with-texting-using-vonage-video-api-dr
 ---

@@ -11,16 +11,7 @@ published: true
 published_at: 2017-08-03T12:10:05
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - call-tracking
-  - devrel
-  - python
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2017/08/03/inbound-voice-call-campaign-tracking-dr
 redirect: https://www.nexmo.com/blog/2017/08/03/inbound-voice-call-campaign-tracking-dr
 ---

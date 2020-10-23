@@ -11,18 +11,7 @@ published: true
 published_at: 2016-07-14T07:33:23
 comments: true
 category: tutorial
-old_categories:
-  - chat-app
-  - developer
-  - developers
-  - tutorial
-tags:
-  - actioncable
-  - customer-service
-  - real-time
-  - ruby
-  - ruby-on-rails
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2016/07/14/building-customer-service-chat-rails-5-action-cable-sms-dr
 redirect: https://www.nexmo.com/blog/2016/07/14/building-customer-service-chat-rails-5-action-cable-sms-dr
 ---

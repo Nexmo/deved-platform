@@ -11,16 +11,7 @@ published: true
 published_at: 2018-12-03T21:27:21
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - carols
-  - christmas
-  - dev-rel
-  - python
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/03/dial-a-christmas-carol-with-nexmo-and-python-dr
 redirect: https://www.nexmo.com/blog/2018/12/03/dial-a-christmas-carol-with-nexmo-and-python-dr
 ---

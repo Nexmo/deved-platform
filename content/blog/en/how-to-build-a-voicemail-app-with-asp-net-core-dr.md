@@ -11,15 +11,7 @@ published: true
 published_at: 2020-08-10T18:10:07
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - net-core-sdk
-  - asp-net-core
-  - voice-api
-  - voicemail
+tags: []
 canonical: https://www.nexmo.com/blog/2020/08/10/how-to-build-a-voicemail-app-with-asp-net-core-dr
 redirect: https://www.nexmo.com/blog/2020/08/10/how-to-build-a-voicemail-app-with-asp-net-core-dr
 ---

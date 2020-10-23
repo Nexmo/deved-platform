@@ -11,14 +11,7 @@ published: true
 published_at: 2020-10-05T13:21:52
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - ai
-  - artificial-intelligence
-  - gpt3
-  - machine-learning
-  - recurrent-neural-networks
+tags: []
 canonical: https://www.nexmo.com/blog/2020/10/05/introduction-to-gpt-3
 redirect: https://www.nexmo.com/blog/2020/10/05/introduction-to-gpt-3
 ---

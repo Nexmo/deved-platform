@@ -11,13 +11,7 @@ published: true
 published_at: 2019-03-08T07:10:24
 comments: true
 category: event
-old_categories:
-  - developer
-tags:
-  - elephpants
-  - hackathon
-  - php
-  - phpuk19
+tags: []
 canonical: https://www.nexmo.com/blog/2019/03/07/nexmo-hackathon-at-php-uk-2019-dr
 redirect: https://www.nexmo.com/blog/2019/03/07/nexmo-hackathon-at-php-uk-2019-dr
 ---

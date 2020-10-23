@@ -11,16 +11,7 @@ published: true
 published_at: 2019-11-20T13:46:48
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - real-time-communications
-  - tutorial
-tags:
-  - client-sdk
-  - conversation-api
-  - live-chat
-  - nodejs
-  - typeform
+tags: []
 canonical: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr
 redirect: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr
 ---

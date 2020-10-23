@@ -11,13 +11,9 @@ published: true
 published_at: 2019-05-08T10:27:52
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags:
-  - conference-call
   - php
-  - voice
+  - voice-api
 canonical: https://www.nexmo.com/blog/2019/05/08/build-a-conference-call-with-php-dr
 redirect: https://www.nexmo.com/blog/2019/05/08/build-a-conference-call-with-php-dr
 ---

@@ -13,11 +13,8 @@ old_categories:
   - developer
   - verify
 tags:
-  - authentication
-  - curl
-  - psd2
   - security
-  - verify
+  - verify-api
 ---
 
 Con l’aumento del numero degli acquisti effettuati online, cresce il pericolo di frodi e pagamenti non autorizzati.

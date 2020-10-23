@@ -11,17 +11,7 @@ published: true
 published_at: 2019-04-16T09:58:17
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - call-forwarding
-  - rails
-  - ruby
-  - voice
-  - voice-api
-  - voice-proxy
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/16/forward-a-call-via-voice-proxy-with-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2019/04/16/forward-a-call-via-voice-proxy-with-ruby-on-rails-dr
 ---

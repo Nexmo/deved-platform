@@ -11,14 +11,10 @@ published: true
 published_at: 2020-05-07T15:20:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
 tags:
-  - glitch
   - messages-api
-  - nodejs
-  - sandbox
-  - whatsapp
+  - node
+  - messages-api-sandbox
 canonical: https://www.nexmo.com/blog/2020/05/07/automated-orders-with-whatsapp-and-node-dr
 redirect: https://www.nexmo.com/blog/2020/05/07/automated-orders-with-whatsapp-and-node-dr
 ---

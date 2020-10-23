@@ -9,15 +9,10 @@ published: true
 published_at: 2019-03-21T20:21:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
 tags:
-  - cloud-functions
-  - google-cloud-functions
   - python
   - serverless
-  - sms
+  - sms-api
 spotlight: true
 ---
 

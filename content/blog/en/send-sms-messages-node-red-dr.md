@@ -11,18 +11,7 @@ published: true
 published_at: 2019-04-17T08:46:47
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - api
-  - delivery-receipt
-  - javascript
-  - messaging
-  - node-red
-  - nodejs
-  - nodered
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/17/send-sms-messages-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/04/17/send-sms-messages-node-red-dr
 ---

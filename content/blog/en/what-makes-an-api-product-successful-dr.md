@@ -11,12 +11,7 @@ published: true
 published_at: 2019-12-06T09:00:46
 comments: true
 category: inspiration
-old_categories:
-  - developer
-tags:
-  - api
-  - api-design
-  - best-practice
+tags: []
 canonical: https://www.nexmo.com/blog/2019/12/06/what-makes-an-api-product-successful-dr
 redirect: https://www.nexmo.com/blog/2019/12/06/what-makes-an-api-product-successful-dr
 ---

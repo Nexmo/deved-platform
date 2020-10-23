@@ -11,9 +11,6 @@ published: true
 published_at: 2019-05-31T09:57:29
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/05/31/receive-an-sms-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/05/31/receive-an-sms-with-python-dr

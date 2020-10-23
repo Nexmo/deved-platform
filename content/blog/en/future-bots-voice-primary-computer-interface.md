@@ -11,15 +11,7 @@ published: true
 published_at: 2017-12-01T07:12:24
 comments: true
 category: inspiration
-old_categories:
-  - developer
-  - developers
-  - voice
-tags:
-  - ai
-  - artificial-intelligence
-  - bots
-  - voice-bots
+tags: []
 canonical: https://www.nexmo.com/blog/2017/11/30/future-bots-voice-primary-computer-interface
 redirect: https://www.nexmo.com/blog/2017/11/30/future-bots-voice-primary-computer-interface
 ---

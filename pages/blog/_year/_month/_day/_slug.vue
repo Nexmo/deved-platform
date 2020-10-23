@@ -125,32 +125,37 @@ export default {
   },
 
   async asyncData({ $content, app, params, error }) {
-    const post = await $content(`blog/${app.i18n.locale}`, params.slug)
-      .where({ 'published': { '$ne': false } })
-      .fetch()
-      .catch(err => {
-        return error({ statusCode: 404, message: "Page not found", err })
-      })
+    try {
+      const post = await $content(`blog/${app.i18n.locale}`, params.slug)
+        .where({ 'published': { '$ne': false } })
+        .fetch()
+        .catch(err => {
+          error({ statusCode: 404, message: "Page not found", err })
+        })
 
-    if (process.browser) {
-      if (post.redirect) {
-        window.location.href = post.redirect
+      if (process.browser) {
+        if (post.redirect) {
+          window.location.href = post.redirect
+        }
       }
-    }
 
-    const postDate = moment(post.published_at)
+      const postDate = moment(post.published_at)
 
-    return {
-      post,
-      disqusShortname: config.disqusShortname,
-      baseUrl: config.baseUrl,
-      routes: [
-        { route: `/${post.type}`, title: app.i18n.t('page_blog_breadcrumb') },
-        { route: `/${post.type}/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
-        { route: `/${post.type}/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
-        { route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
-        { route: post.route, title: post.title, current: true }
-      ],
+      return {
+        post,
+        disqusShortname: config.disqusShortname,
+        baseUrl: config.baseUrl,
+        routes: [
+          { route: `/${post.type}`, title: app.i18n.t('page_blog_breadcrumb') },
+          { route: `/${post.type}/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
+          { route: `/${post.type}/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
+          { route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
+          { route: post.route, title: post.title, current: true }
+        ],
+      }
+    } catch (e) {
+      error(e)
+      return false
     }
   },
 

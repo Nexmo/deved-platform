@@ -11,16 +11,7 @@ published: true
 published_at: 2016-06-28T15:21:43
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - verify
-tags:
-  - client-library
-  - php
-  - tutorial
-  - verify
+tags: []
 canonical: https://www.nexmo.com/blog/2016/06/28/let-users-login-phone-number-using-nexmos-verify-php-dr
 redirect: https://www.nexmo.com/blog/2016/06/28/let-users-login-phone-number-using-nexmos-verify-php-dr
 ---

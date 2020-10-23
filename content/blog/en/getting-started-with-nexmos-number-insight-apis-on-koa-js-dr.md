@@ -11,16 +11,7 @@ published: true
 published_at: 2019-02-21T09:00:32
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - number-insight
-  - tutorial
-tags:
-  - developer
-  - devrel
-  - koa
-  - nodejs
-  - number-insight
+tags: []
 canonical: https://www.nexmo.com/blog/2019/02/21/getting-started-with-nexmos-number-insight-apis-on-koa-js-dr
 redirect: https://www.nexmo.com/blog/2019/02/21/getting-started-with-nexmos-number-insight-apis-on-koa-js-dr
 ---

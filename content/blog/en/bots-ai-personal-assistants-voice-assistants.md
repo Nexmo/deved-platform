@@ -12,15 +12,8 @@ published: true
 published_at: 2017-11-16T14:35:31
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - voice
 tags:
-  - ai
-  - artificial-intelligence
   - bots
-  - voice-bots
 canonical: https://www.nexmo.com/blog/2017/11/16/bots-ai-personal-assistants-voice-assistants
 redirect: https://www.nexmo.com/blog/2017/11/16/bots-ai-personal-assistants-voice-assistants
 ---

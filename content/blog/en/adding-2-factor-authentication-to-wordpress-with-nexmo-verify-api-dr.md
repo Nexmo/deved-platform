@@ -11,13 +11,7 @@ published: true
 published_at: 2019-10-09T21:06:04
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - tutorial
-  - verify
 tags:
-  - nexmo
   - verify-api
   - wordpress
 canonical: https://www.nexmo.com/blog/2019/10/09/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr

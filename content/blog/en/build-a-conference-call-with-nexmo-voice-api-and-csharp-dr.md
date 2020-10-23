@@ -11,14 +11,8 @@ published: true
 published_at: 2019-05-16T09:46:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
 tags:
-  - asp-net
-  - csharp
-  - voice
+  - dotnet
   - voice-api
 canonical: https://www.nexmo.com/blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
 redirect: https://www.nexmo.com/blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr

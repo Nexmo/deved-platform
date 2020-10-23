@@ -11,11 +11,7 @@ published: true
 published_at: 2019-03-29T09:00:52
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - number-insight
-  - php
+tags: []
 canonical: https://www.nexmo.com/blog/2019/03/29/how-to-use-number-insight-with-php-dr
 redirect: https://www.nexmo.com/blog/2019/03/29/how-to-use-number-insight-with-php-dr
 ---

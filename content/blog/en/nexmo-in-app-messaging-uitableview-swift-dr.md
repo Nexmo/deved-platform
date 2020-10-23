@@ -11,10 +11,6 @@ published: true
 published_at: 2018-07-18T19:31:47
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - real-time-communications
-  - tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/07/18/nexmo-in-app-messaging-uitableview-swift-dr
 redirect: https://www.nexmo.com/blog/2018/07/18/nexmo-in-app-messaging-uitableview-swift-dr

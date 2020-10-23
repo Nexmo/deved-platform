@@ -10,14 +10,7 @@ published: true
 published_at: 2019-08-02T18:01:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - audio
-  - java
-  - voice-call
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/02/play-an-audio-file-into-a-voice-call-with-java-and-spark-dr
 redirect: https://www.nexmo.com/blog/2019/08/02/play-an-audio-file-into-a-voice-call-with-java-and-spark-dr
 ---

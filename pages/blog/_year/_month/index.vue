@@ -52,6 +52,10 @@ export default {
         .limit(config.postsPerPage)
         .fetch()
 
+      if (posts.length === 0) {
+        error({ statusCode: 404, message: "Page not found" })
+      }
+
       return {
         monthName: date.format('MMMM'),
         year: date.format('YYYY'),

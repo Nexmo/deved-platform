@@ -10,14 +10,7 @@ published: true
 published_at: 2020-05-12T09:21:47
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - ruby
-  - ruby-on-rails
-  - video-api
-  - video-chat
+tags: []
 canonical: https://www.nexmo.com/blog/2020/05/12/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-1-building-the-backend-dr
 redirect: https://www.nexmo.com/blog/2020/05/12/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-1-building-the-backend-dr
 ---

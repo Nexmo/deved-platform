@@ -12,18 +12,7 @@ published: true
 published_at: 2020-04-27T13:14:29
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - omnichannel
-  - tutorial
-tags:
-  - api
-  - conversation
-  - customer-churn
-  - machine-learning
-  - ml
-  - prediction
-  - user-churn
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/27/building-a-user-churn-prediction-model-with-scikit-learn-and-vonage-dr
 redirect: https://www.nexmo.com/blog/2020/04/27/building-a-user-churn-prediction-model-with-scikit-learn-and-vonage-dr
 ---

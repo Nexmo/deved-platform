@@ -11,15 +11,7 @@ published: true
 published_at: 2020-08-19T16:11:02
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - sms
-  - tutorial
-tags:
-  - hapi
-  - ionic
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/08/19/how-to-send-an-sms-with-ionic-dr
 redirect: https://www.nexmo.com/blog/2020/08/19/how-to-send-an-sms-with-ionic-dr
 ---

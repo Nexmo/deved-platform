@@ -11,15 +11,7 @@ published: true
 published_at: 2020-01-03T18:44:28
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - api
-  - flask
-  - python
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/01/03/use-python-and-flask-to-manage-queues-via-sms-dr
 redirect: https://www.nexmo.com/blog/2020/01/03/use-python-and-flask-to-manage-queues-via-sms-dr
 ---

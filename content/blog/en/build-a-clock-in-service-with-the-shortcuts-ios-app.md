@@ -11,14 +11,10 @@ published: true
 published_at: 2020-08-27T13:27:54
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags:
   - ios
   - low-code
   - no-code
-  - shortcuts
 canonical: https://www.nexmo.com/blog/2020/08/27/build-a-clock-in-service-with-the-shortcuts-ios-app
 redirect: https://www.nexmo.com/blog/2020/08/27/build-a-clock-in-service-with-the-shortcuts-ios-app
 ---

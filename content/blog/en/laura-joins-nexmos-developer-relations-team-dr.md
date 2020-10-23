@@ -11,12 +11,8 @@ published: true
 published_at: 2019-08-15T13:00:05
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - dev-rel
-  - devrel
-  - nexmo
+  - careers
 canonical: https://www.nexmo.com/blog/2019/08/15/laura-joins-nexmos-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/08/15/laura-joins-nexmos-developer-relations-team-dr
 ---

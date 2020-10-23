@@ -12,13 +12,7 @@ published: true
 published_at: 2016-11-30T21:23:41
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - hack-worthy
-  - voice
-tags:
-  - websockets
+tags: []
 canonical: https://www.nexmo.com/blog/2016/11/30/nexmo-voice-api-demo-telephony-ai-platforms-websockets
 redirect: https://www.nexmo.com/blog/2016/11/30/nexmo-voice-api-demo-telephony-ai-platforms-websockets
 ---

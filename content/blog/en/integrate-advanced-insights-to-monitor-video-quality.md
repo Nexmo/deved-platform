@@ -11,15 +11,7 @@ published: true
 published_at: 2020-06-30T13:39:26
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
-tags:
-  - advanced-insights
-  - graphql
-  - insights-api
-  - video
+tags: []
 canonical: https://www.nexmo.com/blog/2020/06/30/integrate-advanced-insights-to-monitor-video-quality
 redirect: https://www.nexmo.com/blog/2020/06/30/integrate-advanced-insights-to-monitor-video-quality
 ---

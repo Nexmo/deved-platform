@@ -11,17 +11,7 @@ published: true
 published_at: 2019-04-24T17:01:45
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - api
-  - inbound-sms
-  - messaging
-  - node-red
-  - nodejs
-  - nodered
-  - receiving-sms
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/24/receive-sms-messages-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/04/24/receive-sms-messages-node-red-dr
 ---

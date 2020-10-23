@@ -11,14 +11,7 @@ published: true
 published_at: 2018-07-25T16:00:54
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - nexmo-news
-  - security
-tags:
-  - http
-  - security
-  - tls
+tags: []
 canonical: https://www.nexmo.com/blog/2018/07/25/nexmo-protects-customers-permanently-disabling-legacy-tls-protocols
 redirect: https://www.nexmo.com/blog/2018/07/25/nexmo-protects-customers-permanently-disabling-legacy-tls-protocols
 ---

@@ -11,11 +11,6 @@ published: true
 published_at: 2017-04-03T13:55:00
 comments: true
 category: tutorial
-old_categories:
-  - chat-app
-  - developer
-  - developers
-  - hack-worthy
 tags: []
 canonical: https://www.nexmo.com/blog/2017/04/03/nexmo-ride-hailing-chatbot
 redirect: https://www.nexmo.com/blog/2017/04/03/nexmo-ride-hailing-chatbot

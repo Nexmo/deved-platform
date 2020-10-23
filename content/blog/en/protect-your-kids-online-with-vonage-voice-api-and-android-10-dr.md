@@ -11,15 +11,7 @@ published: true
 published_at: 2020-04-30T13:37:52
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - android
-  - nodejs
-  - voice-api
-  - voice-proxy
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10-dr
 redirect: https://www.nexmo.com/blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10-dr
 ---

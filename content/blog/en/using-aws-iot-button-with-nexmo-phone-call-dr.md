@@ -10,13 +10,6 @@ published: true
 published_at: 2017-06-14T18:31:46
 comments: true
 category: tutorial
-old_categories:
-  - cloud-communications
-  - developer
-  - developers
-  - hack-worthy
-  - tutorial
-  - voice
 tags: []
 canonical: https://www.nexmo.com/blog/2017/06/14/using-aws-iot-button-with-nexmo-phone-call-dr
 redirect: https://www.nexmo.com/blog/2017/06/14/using-aws-iot-button-with-nexmo-phone-call-dr

@@ -11,15 +11,7 @@ published: true
 published_at: 2020-03-06T13:16:53
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - google
-  - group-notifications
-  - node-red
-  - nodered
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/06/sms-notifications-google-sheets-nodered-dr
 redirect: https://www.nexmo.com/blog/2020/03/06/sms-notifications-google-sheets-nodered-dr
 ---

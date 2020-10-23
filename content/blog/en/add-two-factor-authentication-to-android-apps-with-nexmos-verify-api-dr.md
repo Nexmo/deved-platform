@@ -11,16 +11,10 @@ published: true
 published_at: 2018-05-10T16:08:22
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - verify
 tags:
   - 2fa
   - android
-  - devrel
-  - phone-number-authentication
-  - verify
+  - verify-api
 canonical: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-android-apps-with-nexmos-verify-api-dr
 redirect: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-android-apps-with-nexmos-verify-api-dr
 ---

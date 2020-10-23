@@ -11,13 +11,8 @@ published: true
 published_at: 2020-09-02T07:18:22
 comments: true
 category: tutorial
-old_categories:
-  - developer
 tags:
-  - best-practices
-  - documentation
-  - open-srouce
-  - openapi
+  - open-api
   - station
 canonical: https://www.nexmo.com/blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform
 redirect: https://www.nexmo.com/blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform

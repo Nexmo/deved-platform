@@ -10,14 +10,7 @@ published: true
 published_at: 2019-09-27T08:00:37
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - azure
-  - azure-functions
-  - microsoft-azure
-  - python
+tags: []
 canonical: https://www.nexmo.com/blog/2019/09/27/how-to-use-azure-functions-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/09/27/how-to-use-azure-functions-with-python-dr
 ---

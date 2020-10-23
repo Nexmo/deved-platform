@@ -11,13 +11,7 @@ published: true
 published_at: 2020-07-29T13:23:45
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - best-practice
-  - environment-variables
-  - private-keys
-  - security
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/29/using-private-keys-in-environment-variables
 redirect: https://www.nexmo.com/blog/2020/07/29/using-private-keys-in-environment-variables
 ---

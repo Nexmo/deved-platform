@@ -11,15 +11,10 @@ published: true
 published_at: 2017-07-26T13:15:16
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - user-acquisition
-  - verify
 tags:
+  - 2fa
   - laravel
   - php
-  - x-with-y
 canonical: https://www.nexmo.com/blog/2017/07/26/2fa-logins-laravel-nexmo-dr
 redirect: https://www.nexmo.com/blog/2017/07/26/2fa-logins-laravel-nexmo-dr
 ---

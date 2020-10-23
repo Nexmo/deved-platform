@@ -11,12 +11,7 @@ published: true
 published_at: 2020-02-20T18:50:31
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - javascript
-  - react
-  - vuejs
+tags: []
 canonical: https://www.nexmo.com/blog/2020/02/20/migrating-react-components-to-vue-js-dr
 redirect: https://www.nexmo.com/blog/2020/02/20/migrating-react-components-to-vue-js-dr
 ---

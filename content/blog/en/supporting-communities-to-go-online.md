@@ -11,17 +11,7 @@ published: true
 published_at: 2020-04-08T12:00:20
 comments: true
 category: community
-old_categories:
-  - developer
-  - developer-relations
-tags:
-  - developer
-  - developer-community
-  - developer-relations
-  - online-community
-  - online-event
-  - remo
-  - vonage-virtual-event-space
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/08/supporting-communities-to-go-online
 redirect: https://www.nexmo.com/blog/2020/04/08/supporting-communities-to-go-online
 ---

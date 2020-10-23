@@ -11,14 +11,7 @@ published: true
 published_at: 2016-03-25T15:31:25
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - sms
-tags:
-  - rest
-  - smpp
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2016/03/25/build-rest-implementation-scales-better-smpp
 redirect: https://www.nexmo.com/blog/2016/03/25/build-rest-implementation-scales-better-smpp
 ---

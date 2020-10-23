@@ -11,12 +11,8 @@ published: true
 published_at: 2020-04-08T12:02:42
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - video
 tags:
-  - nuxt-js
-  - opentok
+  - nuxt
   - video-api
 canonical: https://www.nexmo.com/blog/2020/04/08/build-a-video-conversation-platform-for-online-gatherings-with-nuxt-js-dr
 redirect: https://www.nexmo.com/blog/2020/04/08/build-a-video-conversation-platform-for-online-gatherings-with-nuxt-js-dr

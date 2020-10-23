@@ -11,13 +11,7 @@ published: true
 published_at: 2020-04-06T11:34:05
 comments: true
 category: release
-old_categories:
-  - developer
-tags:
-  - devrel
-  - ruby
-  - sdk-updates
-  - sdk-announcements
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/06/nexmo-ruby-v7-0-0-release-dr
 redirect: https://www.nexmo.com/blog/2020/04/06/nexmo-ruby-v7-0-0-release-dr
 ---

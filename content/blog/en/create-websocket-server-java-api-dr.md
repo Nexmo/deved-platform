@@ -11,13 +11,7 @@ published: true
 published_at: 2018-10-22T14:54:57
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - java
-  - tomcat
-  - websocket
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/22/create-websocket-server-java-api-dr
 redirect: https://www.nexmo.com/blog/2018/10/22/create-websocket-server-java-api-dr
 ---

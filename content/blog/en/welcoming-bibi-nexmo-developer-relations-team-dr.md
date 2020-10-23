@@ -11,11 +11,8 @@ published: true
 published_at: 2017-06-07T18:06:48
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2017/06/07/welcoming-bibi-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2017/06/07/welcoming-bibi-nexmo-developer-relations-team-dr
 ---

@@ -11,10 +11,7 @@ published: true
 published_at: 2019-09-11T17:28:38
 comments: true
 category: community
-old_categories:
-  - developer
 tags:
-  - events
   - vonage-campus
 canonical: https://www.nexmo.com/blog/2019/09/11/announcing-the-vonage-campus-developer-track-dr
 redirect: https://www.nexmo.com/blog/2019/09/11/announcing-the-vonage-campus-developer-track-dr

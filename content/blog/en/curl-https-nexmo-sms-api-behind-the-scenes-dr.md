@@ -11,17 +11,7 @@ published: true
 published_at: 2018-11-06T17:09:17
 comments: true
 category: inspiration
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - api
-  - curl
-  - devrel
-  - http
-  - messaging
-  - sms
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr
 redirect: https://www.nexmo.com/blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr
 ---

@@ -11,10 +11,6 @@ published: true
 published_at: 2020-05-01T13:30:25
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
 tags:
   - 2fa
   - javascript

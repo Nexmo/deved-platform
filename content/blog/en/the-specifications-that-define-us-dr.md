@@ -10,12 +10,7 @@ published: true
 published_at: 2020-03-09T13:09:44
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - community
-  - developer
-  - devrel
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/09/the-specifications-that-define-us-dr
 redirect: https://www.nexmo.com/blog/2020/03/09/the-specifications-that-define-us-dr
 ---

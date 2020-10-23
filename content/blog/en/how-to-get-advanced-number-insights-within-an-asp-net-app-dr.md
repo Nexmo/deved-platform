@@ -11,14 +11,7 @@ published: true
 published_at: 2018-05-25T11:22:55
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-tags:
-  - getting-started
-  - number-insight
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/05/25/how-to-get-advanced-number-insights-within-an-asp-net-app-dr
 redirect: https://www.nexmo.com/blog/2018/05/25/how-to-get-advanced-number-insights-within-an-asp-net-app-dr
 ---

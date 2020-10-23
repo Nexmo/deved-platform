@@ -11,17 +11,7 @@ published: true
 published_at: 2017-02-06T14:00:17
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - es6
-  - javascript
-  - nodejs
-  - voice-api
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/02/06/how-to-record-audio-from-phone-call-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/02/06/how-to-record-audio-from-phone-call-node-js-dr
 ---

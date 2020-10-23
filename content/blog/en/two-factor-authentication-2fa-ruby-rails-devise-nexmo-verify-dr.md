@@ -12,18 +12,7 @@ published: true
 published_at: 2016-06-07T22:25:29
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - verify
-tags:
-  - 2fa
-  - devise
-  - ruby
-  - ruby-on-rails
-  - verify
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify-dr
 redirect: https://www.nexmo.com/blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify-dr
 ---

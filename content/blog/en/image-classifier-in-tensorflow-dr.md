@@ -11,17 +11,7 @@ published: true
 published_at: 2018-10-02T16:24:26
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - artificial-intelligence
-  - coreml
-  - developer
-  - ios
-  - machine-learning
-  - tensorflow
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/02/image-classifier-in-tensorflow-dr
 redirect: https://www.nexmo.com/blog/2018/10/02/image-classifier-in-tensorflow-dr
 ---

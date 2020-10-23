@@ -11,13 +11,7 @@ published: true
 published_at: 2020-02-07T18:33:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - docker
-  - python
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr
 redirect: https://www.nexmo.com/blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr
 ---

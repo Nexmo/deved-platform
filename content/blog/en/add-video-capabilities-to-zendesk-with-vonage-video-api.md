@@ -11,16 +11,8 @@ published: true
 published_at: 2020-09-08T13:27:09
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags:
-  - customer-experience
-  - customer-support
-  - opentok-platform
-  - screen-sharing
   - video-api
-  - video-recording
   - zendesk
 canonical: https://www.nexmo.com/blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api
 redirect: https://www.nexmo.com/blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api

@@ -11,16 +11,7 @@ published: true
 published_at: 2020-06-25T07:32:27
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-  - video
-tags:
-  - azure
-  - messaging-api
-  - photoboot
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/06/25/create-a-photobooth-with-vue-js-and-flask-part-1-dr
 redirect: https://www.nexmo.com/blog/2020/06/25/create-a-photobooth-with-vue-js-and-flask-part-1-dr
 ---

@@ -12,16 +12,7 @@ published: true
 published_at: 2019-02-27T11:15:05
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - devrel
-  - ruby-on-rails
-  - tutorial
-  - voice
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/02/27/rails-holiday-vapi-checker-dr
 redirect: https://www.nexmo.com/blog/2019/02/27/rails-holiday-vapi-checker-dr
 ---

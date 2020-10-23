@@ -11,15 +11,7 @@ published: true
 published_at: 2020-07-21T13:29:30
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - code-of-conduct-incident-line
-  - conference-call
-  - nodejs
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/21/create-a-code-of-conduct-incident-line-with-node-js
 redirect: https://www.nexmo.com/blog/2020/07/21/create-a-code-of-conduct-incident-line-with-node-js
 ---

@@ -11,15 +11,7 @@ published: true
 published_at: 2018-07-10T16:55:46
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - google
-  - nlp
-  - python
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2018/07/10/voice-classification-nlp-google-cloud-dr
 redirect: https://www.nexmo.com/blog/2018/07/10/voice-classification-nlp-google-cloud-dr
 ---

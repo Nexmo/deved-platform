@@ -10,10 +10,8 @@ published: true
 published_at: 2018-12-06T17:13:31
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2018/12/06/nexmo-welcomes-mark-lewin-to-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/12/06/nexmo-welcomes-mark-lewin-to-the-developer-relations-team-dr
 ---

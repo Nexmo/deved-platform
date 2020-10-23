@@ -11,15 +11,7 @@ published: true
 published_at: 2019-11-29T13:50:18
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - omnichannel
-  - tutorial
-tags:
-  - cloudinary
-  - conversation-api
-  - nexmo
-  - screenshot
+tags: []
 canonical: https://www.nexmo.com/blog/2019/11/29/screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary-dr
 redirect: https://www.nexmo.com/blog/2019/11/29/screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary-dr
 ---

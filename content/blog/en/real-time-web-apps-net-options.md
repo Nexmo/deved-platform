@@ -12,17 +12,7 @@ published: true
 published_at: 2016-05-19T15:55:16
 comments: true
 category: inspiration
-old_categories:
-  - developer
-  - developers
-tags:
-  - net
-  - asp-net-mvc
-  - devweek
-  - dotnet
-  - real-time
-  - signalr
-  - xsockets
+tags: []
 canonical: https://www.nexmo.com/blog/2016/05/19/real-time-web-apps-net-options
 redirect: https://www.nexmo.com/blog/2016/05/19/real-time-web-apps-net-options
 ---

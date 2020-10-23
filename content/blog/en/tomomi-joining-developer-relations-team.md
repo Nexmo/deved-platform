@@ -11,13 +11,8 @@ published: true
 published_at: 2016-08-31T12:13:05
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - community
-  - developer-relations
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2016/08/31/tomomi-joining-developer-relations-team
 redirect: https://www.nexmo.com/blog/2016/08/31/tomomi-joining-developer-relations-team
 ---

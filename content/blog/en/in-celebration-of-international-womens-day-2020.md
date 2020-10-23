@@ -11,13 +11,7 @@ published: true
 published_at: 2020-03-10T13:05:12
 comments: true
 category: community
-old_categories:
-  - developer
-tags:
-  - equality
-  - inclusion
-  - international-womens-day
-  - iwd2020
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/10/in-celebration-of-international-womens-day-2020
 redirect: https://www.nexmo.com/blog/2020/03/10/in-celebration-of-international-womens-day-2020
 ---

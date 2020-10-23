@@ -11,10 +11,8 @@ published: true
 published_at: 2018-07-12T14:26:10
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2018/07/12/lorna-joins-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/07/12/lorna-joins-developer-relations-team-dr
 ---

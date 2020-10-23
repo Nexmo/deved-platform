@@ -12,21 +12,7 @@ published: true
 published_at: 2017-05-16T13:00:40
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - developers
-  - partners
-  - sms
-  - tutorial
-tags:
-  - ai
-  - artificial-intelligence
-  - bluemix
-  - ibm
-  - ibm-bluemix
-  - nexmo-api-platform
-  - sms
-  - watson
+tags: []
 canonical: https://www.nexmo.com/blog/2017/05/16/ibm-bluemix-nexmo-api-platform-available
 redirect: https://www.nexmo.com/blog/2017/05/16/ibm-bluemix-nexmo-api-platform-available
 ---

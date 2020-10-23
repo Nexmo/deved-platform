@@ -11,14 +11,7 @@ published: true
 published_at: 2020-05-15T09:12:29
 comments: true
 category: release
-old_categories:
-  - developer
-  - developers
-  - product
-  - video
-tags:
-  - opentok
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/05/15/opentok-version-2-17-whats-new-and-how-you-can-use-it-dr
 redirect: https://www.nexmo.com/blog/2020/05/15/opentok-version-2-17-whats-new-and-how-you-can-use-it-dr
 ---

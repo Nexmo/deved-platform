@@ -11,14 +11,7 @@ published: true
 published_at: 2017-02-28T14:00:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - events
-  - sms
-  - verify
-tags:
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/02/28/sending-receiving-sms-node-js
 redirect: https://www.nexmo.com/blog/2017/02/28/sending-receiving-sms-node-js
 ---

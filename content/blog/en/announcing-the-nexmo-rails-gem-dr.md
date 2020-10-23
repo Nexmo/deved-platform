@@ -11,12 +11,7 @@ published: true
 published_at: 2019-04-30T11:00:40
 comments: true
 category: release
-old_categories:
-  - developer
 tags:
-  - developer
-  - devrel
-  - events
   - ruby
   - ruby-on-rails
 canonical: https://www.nexmo.com/blog/2019/04/30/announcing-the-nexmo-rails-gem-dr

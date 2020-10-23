@@ -11,11 +11,8 @@ published: true
 published_at: 2017-07-07T11:44:14
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2017/07/07/michael-is-joining-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2017/07/07/michael-is-joining-the-developer-relations-team-dr
 ---

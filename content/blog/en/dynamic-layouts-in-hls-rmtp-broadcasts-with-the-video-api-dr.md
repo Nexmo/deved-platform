@@ -11,13 +11,7 @@ published: true
 published_at: 2020-09-22T13:00:32
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - dynamic-layouts
-  - opentok
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/09/22/dynamic-layouts-in-hls-rmtp-broadcasts-with-the-video-api-dr
 redirect: https://www.nexmo.com/blog/2020/09/22/dynamic-layouts-in-hls-rmtp-broadcasts-with-the-video-api-dr
 ---

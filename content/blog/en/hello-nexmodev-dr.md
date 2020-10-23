@@ -11,12 +11,7 @@ published: true
 published_at: 2017-09-14T12:42:54
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - developers
-tags:
-  - devrel
-  - twitter
+tags: []
 canonical: https://www.nexmo.com/blog/2017/09/14/hello-nexmodev-dr
 redirect: https://www.nexmo.com/blog/2017/09/14/hello-nexmodev-dr
 ---

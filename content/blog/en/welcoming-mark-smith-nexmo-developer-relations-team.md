@@ -11,12 +11,8 @@ published: true
 published_at: 2016-10-18T16:01:48
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - devrel
-  - welcome
+  - careers
 canonical: https://www.nexmo.com/blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
 redirect: https://www.nexmo.com/blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
 ---

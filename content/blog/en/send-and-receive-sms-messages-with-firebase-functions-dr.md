@@ -11,13 +11,7 @@ published: true
 published_at: 2020-01-24T13:03:31
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-tags:
-  - devrel
-  - firebase
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/01/24/send-and-receive-sms-messages-with-firebase-functions-dr
 redirect: https://www.nexmo.com/blog/2020/01/24/send-and-receive-sms-messages-with-firebase-functions-dr
 ---

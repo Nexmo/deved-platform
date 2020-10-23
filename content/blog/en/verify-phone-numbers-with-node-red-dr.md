@@ -11,15 +11,7 @@ published: true
 published_at: 2019-09-25T08:00:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - node-red
-  - nodered
-  - phone-number-authentication
-  - two-factor-authentication
-  - verify
+tags: []
 canonical: https://www.nexmo.com/blog/2019/09/25/verify-phone-numbers-with-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/09/25/verify-phone-numbers-with-node-red-dr
 ---

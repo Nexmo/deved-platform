@@ -11,13 +11,7 @@ published: true
 published_at: 2018-04-16T20:30:16
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-tags:
-  - events
-  - ios
-  - swift
+tags: []
 canonical: https://www.nexmo.com/blog/2018/04/16/day-three-nexmo-rwdevcon-2018-dr
 redirect: https://www.nexmo.com/blog/2018/04/16/day-three-nexmo-rwdevcon-2018-dr
 ---

@@ -11,14 +11,7 @@ published: true
 published_at: 2019-11-04T16:40:01
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - api
-  - aws
-  - nexmo-extend
-  - nodejs
-  - translation
+tags: []
 canonical: https://www.nexmo.com/blog/2019/11/04/translating-sms-messages-with-aws-translate-dr
 redirect: https://www.nexmo.com/blog/2019/11/04/translating-sms-messages-with-aws-translate-dr
 ---

@@ -11,12 +11,7 @@ published: true
 published_at: 2018-12-15T01:00:25
 comments: true
 category: event
-old_categories:
-  - developer
-tags:
-  - devrel
-  - hackathon
-  - onehack
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/14/onehack-devrel-internal-hackathon-dr
 redirect: https://www.nexmo.com/blog/2018/12/14/onehack-devrel-internal-hackathon-dr
 ---

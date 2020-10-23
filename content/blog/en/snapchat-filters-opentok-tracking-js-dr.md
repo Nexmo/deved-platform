@@ -11,15 +11,7 @@ published: true
 published_at: 2019-04-03T07:46:45
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - facial-recognition
-  - opentok
-  - toxbox
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/03/snapchat-filters-opentok-tracking-js-dr
 redirect: https://www.nexmo.com/blog/2019/04/03/snapchat-filters-opentok-tracking-js-dr
 ---

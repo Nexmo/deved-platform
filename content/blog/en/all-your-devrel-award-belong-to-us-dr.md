@@ -11,14 +11,8 @@ published: true
 published_at: 2018-11-28T17:00:14
 comments: true
 category: announcement
-old_categories:
-  - award
-  - developer
-  - developers
 tags:
   - awards
-  - developer-relations
-  - nexmo-developer
 canonical: https://www.nexmo.com/blog/2018/11/28/all-your-devrel-award-belong-to-us-dr
 redirect: https://www.nexmo.com/blog/2018/11/28/all-your-devrel-award-belong-to-us-dr
 ---

@@ -11,12 +11,7 @@ published: true
 published_at: 2017-07-04T15:29:57
 comments: true
 category: inspiration
-old_categories:
-  - developer
-  - developers
-tags:
-  - devrel
-  - tooling
+tags: []
 canonical: https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr
 redirect: https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr
 ---

@@ -11,12 +11,7 @@ published: true
 published_at: 2019-11-27T14:31:12
 comments: true
 category: devlife
-old_categories:
-  - developer
-tags:
-  - developer-relations
-  - devrel
-  - travel
+tags: []
 canonical: https://www.nexmo.com/blog/2019/11/27/the-ultimate-devrel-guide-to-travel-dr
 redirect: https://www.nexmo.com/blog/2019/11/27/the-ultimate-devrel-guide-to-travel-dr
 ---

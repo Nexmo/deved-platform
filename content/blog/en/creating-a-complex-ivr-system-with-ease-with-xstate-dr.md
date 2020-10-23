@@ -11,13 +11,7 @@ published: true
 published_at: 2019-06-20T18:33:17
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - tutorial
-tags:
-  - developer-spotlight
-  - ivr
+tags: []
 canonical: https://www.nexmo.com/blog/2019/06/20/creating-a-complex-ivr-system-with-ease-with-xstate-dr
 redirect: https://www.nexmo.com/blog/2019/06/20/creating-a-complex-ivr-system-with-ease-with-xstate-dr
 ---

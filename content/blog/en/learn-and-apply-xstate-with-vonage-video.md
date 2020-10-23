@@ -10,12 +10,7 @@ published: true
 published_at: 2020-07-01T13:55:12
 comments: true
 category: inspiration
-old_categories:
-  - developer
-tags:
-  - javasript
-  - state-machines
-  - xstate
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/01/learn-and-apply-xstate-with-vonage-video
 redirect: https://www.nexmo.com/blog/2020/07/01/learn-and-apply-xstate-with-vonage-video
 ---

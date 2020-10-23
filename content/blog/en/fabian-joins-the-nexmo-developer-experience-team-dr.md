@@ -11,10 +11,8 @@ published: true
 published_at: 2019-06-13T15:00:41
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - dev-rel
+  - careers
 canonical: https://www.nexmo.com/blog/2019/06/13/fabian-joins-the-nexmo-developer-experience-team-dr
 redirect: https://www.nexmo.com/blog/2019/06/13/fabian-joins-the-nexmo-developer-experience-team-dr
 ---

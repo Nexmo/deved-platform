@@ -11,16 +11,7 @@ published: true
 published_at: 2019-04-15T08:00:44
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - verify
-tags:
-  - 2fa
-  - glitch
-  - nodejs
-  - security
-  - two-factor-authentication
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/15/how-to-add-two-factor-authentication-with-node-js-dr
 redirect: https://www.nexmo.com/blog/2019/04/15/how-to-add-two-factor-authentication-with-node-js-dr
 ---

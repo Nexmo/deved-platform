@@ -11,18 +11,7 @@ published: true
 published_at: 2020-08-06T16:46:54
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - messaging
-  - sms
-  - tutorial
-tags:
-  - internet-of-things
-  - iot
-  - messages-api
-  - sms
-  - ubidots
+tags: []
 canonical: https://www.nexmo.com/blog/2020/08/06/track-device-data-in-real-time-with-vonage-messages-api-and-ubidots-dr
 redirect: https://www.nexmo.com/blog/2020/08/06/track-device-data-in-real-time-with-vonage-messages-api-and-ubidots-dr
 ---

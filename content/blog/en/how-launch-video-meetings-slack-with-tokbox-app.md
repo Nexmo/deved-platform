@@ -12,16 +12,7 @@ published: true
 published_at: 2019-02-01T18:21:58
 comments: true
 category: tutorial
-old_categories:
-  - chat-app
-  - developer
-  - nexmo-news
-tags:
-  - live-video-api
-  - opentok-platform
-  - slack
-  - tokbox
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/02/01/how-launch-video-meetings-slack-with-tokbox-app
 redirect: https://www.nexmo.com/blog/2019/02/01/how-launch-video-meetings-slack-with-tokbox-app
 ---

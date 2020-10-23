@@ -11,12 +11,7 @@ published: true
 published_at: 2019-02-21T17:16:35
 comments: true
 category: release
-old_categories:
-  - developer
-tags:
-  - cloud-communications
-  - devrel
-  - javascript
+tags: []
 canonical: https://www.nexmo.com/blog/2019/02/21/nexmo-node-red-package-dr
 redirect: https://www.nexmo.com/blog/2019/02/21/nexmo-node-red-package-dr
 ---

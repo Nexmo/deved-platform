@@ -11,14 +11,7 @@ published: true
 published_at: 2016-06-22T12:39:08
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-tags:
-  - "555"
-  - numbers
-  - phone-numbers
-  - trivia
+tags: []
 canonical: https://www.nexmo.com/blog/2016/06/22/phone-numbers-fact-or-fiction
 redirect: https://www.nexmo.com/blog/2016/06/22/phone-numbers-fact-or-fiction
 ---

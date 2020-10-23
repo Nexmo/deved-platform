@@ -11,14 +11,7 @@ published: true
 published_at: 2019-07-26T09:52:51
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - delivery-receipts
-  - java
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2019/07/26/receiving-sms-delivery-receipts-with-java-and-spark-dr
 redirect: https://www.nexmo.com/blog/2019/07/26/receiving-sms-delivery-receipts-with-java-and-spark-dr
 ---

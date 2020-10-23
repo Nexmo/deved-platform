@@ -11,15 +11,7 @@ published: true
 published_at: 2019-12-30T14:00:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - net
-  - azure
-  - machine-learning
-  - transcription
+tags: []
 canonical: https://www.nexmo.com/blog/2019/12/30/building-a-real-time-net-transcription-service-dr
 redirect: https://www.nexmo.com/blog/2019/12/30/building-a-real-time-net-transcription-service-dr
 ---

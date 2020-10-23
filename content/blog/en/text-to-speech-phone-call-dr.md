@@ -11,20 +11,7 @@ published: true
 published_at: 2017-07-28T13:13:24
 comments: true
 category: tutorial
-old_categories:
-  - cloud-communications
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - api
-  - aspnet
-  - call
-  - text-to-speech
-  - tutorial
-  - voice
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/07/28/text-to-speech-phone-call-dr
 redirect: https://www.nexmo.com/blog/2017/07/28/text-to-speech-phone-call-dr
 ---

@@ -11,12 +11,7 @@ published: true
 published_at: 2019-08-30T19:29:59
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - client
-  - javascript
-  - reactjs
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/30/chat-app-with-react-and-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/08/30/chat-app-with-react-and-nexmo-dr
 ---

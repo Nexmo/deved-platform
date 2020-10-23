@@ -11,19 +11,7 @@ published: true
 published_at: 2016-10-19T16:53:39
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - messaging
-  - sms
-  - tutorial
-tags:
-  - es6
-  - expressjs
-  - javascript
-  - nodejs
-  - sms
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr
 redirect: https://www.nexmo.com/blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr
 ---

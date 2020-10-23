@@ -11,12 +11,7 @@ published: true
 published_at: 2019-06-28T07:01:04
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - devrel
-  - message-signing
-  - security
+tags: []
 canonical: https://www.nexmo.com/blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
 redirect: https://www.nexmo.com/blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
 ---

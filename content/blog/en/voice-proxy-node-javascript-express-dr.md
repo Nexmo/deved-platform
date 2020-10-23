@@ -12,14 +12,7 @@ published: true
 published_at: 2018-05-22T14:53:51
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - javascript
-  - voice-api
-  - voice-proxy
+tags: []
 canonical: https://www.nexmo.com/blog/2018/05/22/voice-proxy-node-javascript-express-dr
 redirect: https://www.nexmo.com/blog/2018/05/22/voice-proxy-node-javascript-express-dr
 ---

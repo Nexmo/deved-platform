@@ -11,16 +11,7 @@ published: true
 published_at: 2018-08-14T10:59:40
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - sms
-  - tutorial
-tags:
-  - devrel
-  - sms
-  - tutorial
-  - webhooks
+tags: []
 canonical: https://www.nexmo.com/blog/2018/08/14/serverless-sms-nexmo-ibm-dr
 redirect: https://www.nexmo.com/blog/2018/08/14/serverless-sms-nexmo-ibm-dr
 ---

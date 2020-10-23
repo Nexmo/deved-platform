@@ -11,13 +11,7 @@ published: true
 published_at: 2019-11-12T15:18:17
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - extending-nexmo
-  - ibm-watson
-  - sms
-  - translate
+tags: []
 canonical: https://www.nexmo.com/blog/2019/11/12/translate-sms-messages-with-ibm-watson-dr
 redirect: https://www.nexmo.com/blog/2019/11/12/translate-sms-messages-with-ibm-watson-dr
 ---

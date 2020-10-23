@@ -12,16 +12,8 @@ published: true
 published_at: 2018-03-29T00:05:14
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
 tags:
   - angular
-  - angular-material
-  - devrel
-  - javascript
-  - stitch
   - typescript
 canonical: https://www.nexmo.com/blog/2018/03/28/build-chat-app-angular-material-stitch-javascript-dr
 redirect: https://www.nexmo.com/blog/2018/03/28/build-chat-app-angular-material-stitch-javascript-dr

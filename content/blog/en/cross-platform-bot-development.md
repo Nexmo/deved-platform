@@ -11,15 +11,7 @@ published: true
 published_at: 2017-10-13T17:12:16
 comments: true
 category: inspiration
-old_categories:
-  - developer
-  - developers
-  - messaging
-  - real-time-communications
-  - voice
-tags:
-  - chatbots
-  - voice-bots
+tags: []
 canonical: https://www.nexmo.com/blog/2017/10/13/cross-platform-bot-development
 redirect: https://www.nexmo.com/blog/2017/10/13/cross-platform-bot-development
 ---

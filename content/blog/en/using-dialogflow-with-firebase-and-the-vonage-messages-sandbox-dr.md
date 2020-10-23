@@ -11,17 +11,7 @@ published: true
 published_at: 2020-06-01T18:11:24
 comments: true
 category: tutorial
-old_categories:
-  - chat-app
-  - developer
-  - messaging
-  - tutorial
-tags:
-  - dialogflow
-  - facebook-messenger
-  - firebase
-  - messages-api
-  - nodejs
+tags: []
 canonical: https://www.nexmo.com/blog/2020/06/01/using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr
 redirect: https://www.nexmo.com/blog/2020/06/01/using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr
 ---

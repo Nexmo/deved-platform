@@ -11,13 +11,7 @@ published: true
 published_at: 2019-07-05T12:07:42
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - javascript
-  - nodejs
-  - opentok
-  - tokbox
+tags: []
 canonical: https://www.nexmo.com/blog/2019/07/05/javascript-hotline-with-opentok-and-nodejs-dr
 redirect: https://www.nexmo.com/blog/2019/07/05/javascript-hotline-with-opentok-and-nodejs-dr
 ---

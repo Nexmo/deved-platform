@@ -11,13 +11,7 @@ published: true
 published_at: 2020-06-05T13:30:58
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-tags:
-  - cli
-  - clis
-  - requirements
+tags: []
 canonical: https://www.nexmo.com/blog/2020/06/05/building-your-next-cli-dr
 redirect: https://www.nexmo.com/blog/2020/06/05/building-your-next-cli-dr
 ---

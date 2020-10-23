@@ -11,20 +11,10 @@ published: true
 published_at: 2018-12-18T21:51:52
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - sms
-  - tutorial
 tags:
-  - advent
-  - devrel
-  - glitch
-  - js
-  - koa
+  - javascript
   - messages-api
-  - nodejs
-  - sms
+  - node
 canonical: https://www.nexmo.com/blog/2018/12/18/break-awkward-silences-with-terrible-festive-jokes-via-sms-dr
 redirect: https://www.nexmo.com/blog/2018/12/18/break-awkward-silences-with-terrible-festive-jokes-via-sms-dr
 ---

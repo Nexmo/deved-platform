@@ -11,15 +11,9 @@ published: true
 published_at: 2019-05-10T07:30:09
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
 tags:
-  - devrel
   - ruby
   - ruby-on-rails
-  - voice
   - voice-api
 canonical: https://www.nexmo.com/blog/2019/05/10/build-a-conference-call-with-the-nexmo-voice-api-and-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2019/05/10/build-a-conference-call-with-the-nexmo-voice-api-and-ruby-on-rails-dr

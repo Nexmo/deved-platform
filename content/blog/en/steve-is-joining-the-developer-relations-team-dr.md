@@ -11,12 +11,8 @@ published: true
 published_at: 2018-05-02T16:30:43
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - devrel
-  - welcome
+  - careers
 canonical: https://www.nexmo.com/blog/2018/05/02/steve-is-joining-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/05/02/steve-is-joining-the-developer-relations-team-dr
 ---

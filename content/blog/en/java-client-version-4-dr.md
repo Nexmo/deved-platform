@@ -11,12 +11,7 @@ published: true
 published_at: 2018-11-16T22:33:39
 comments: true
 category: release
-old_categories:
-  - developer
-tags:
-  - client
-  - java
-  - release
+tags: []
 canonical: https://www.nexmo.com/blog/2018/11/16/java-client-version-4-dr
 redirect: https://www.nexmo.com/blog/2018/11/16/java-client-version-4-dr
 ---

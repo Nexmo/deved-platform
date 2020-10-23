@@ -11,15 +11,7 @@ published: true
 published_at: 2019-01-24T20:46:22
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - ruby
-  - sinatra
-  - voice
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/01/24/play-streaming-audio-to-a-call-with-ruby-dr
 redirect: https://www.nexmo.com/blog/2019/01/24/play-streaming-audio-to-a-call-with-ruby-dr
 ---

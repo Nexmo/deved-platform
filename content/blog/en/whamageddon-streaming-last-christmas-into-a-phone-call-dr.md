@@ -11,14 +11,7 @@ published: true
 published_at: 2018-12-12T00:57:19
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - devrel
-  - python
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/11/whamageddon-streaming-last-christmas-into-a-phone-call-dr
 redirect: https://www.nexmo.com/blog/2018/12/11/whamageddon-streaming-last-christmas-into-a-phone-call-dr
 ---

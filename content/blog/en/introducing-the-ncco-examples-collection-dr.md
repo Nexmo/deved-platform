@@ -11,13 +11,7 @@ published: true
 published_at: 2019-10-25T08:00:57
 comments: true
 category: announcement
-old_categories:
-  - developer
-tags:
-  - documentation
-  - examples
-  - ncco
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/10/25/introducing-the-ncco-examples-collection-dr
 redirect: https://www.nexmo.com/blog/2019/10/25/introducing-the-ncco-examples-collection-dr
 ---

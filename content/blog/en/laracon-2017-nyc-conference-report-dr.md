@@ -11,15 +11,7 @@ published: true
 published_at: 2017-08-15T20:29:48
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - events
-tags:
-  - devrel
-  - laracon
-  - laracon-us
-  - laravel
+tags: []
 canonical: https://www.nexmo.com/blog/2017/08/15/laracon-2017-nyc-conference-report-dr
 redirect: https://www.nexmo.com/blog/2017/08/15/laracon-2017-nyc-conference-report-dr
 ---

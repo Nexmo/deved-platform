@@ -11,17 +11,7 @@ published: true
 published_at: 2020-03-12T13:26:08
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
-tags:
-  - apollo
-  - devrel
-  - graphql
-  - nodejs
-  - opentok
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/12/using-apollo-to-query-graphql-from-node-js-dr
 redirect: https://www.nexmo.com/blog/2020/03/12/using-apollo-to-query-graphql-from-node-js-dr
 ---

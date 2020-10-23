@@ -10,11 +10,6 @@ published: true
 published_at: 2015-05-12T17:08:04
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - developers-corner
-  - events
 tags: []
 canonical: https://www.nexmo.com/blog/2015/05/12/nexmo-disrupting-nyc
 redirect: https://www.nexmo.com/blog/2015/05/12/nexmo-disrupting-nyc

@@ -11,10 +11,8 @@ published: true
 published_at: 2020-02-24T15:08:38
 comments: true
 category: release
-old_categories:
-  - developer
 tags:
-  - net-useragent-voiceapi-nexmo
+  - dotnet
 canonical: https://www.nexmo.com/blog/2020/02/24/announcing-nexmos-net-server-sdk-version-4-3-1-release-dr
 redirect: https://www.nexmo.com/blog/2020/02/24/announcing-nexmos-net-server-sdk-version-4-3-1-release-dr
 ---

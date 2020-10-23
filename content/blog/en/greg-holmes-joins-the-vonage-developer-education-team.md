@@ -11,13 +11,8 @@ published: true
 published_at: 2020-03-24T09:11:17
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - dev-rel
-  - developer-educator
-  - devrel
-  - vonage
+  - careers
 canonical: https://www.nexmo.com/blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
 redirect: https://www.nexmo.com/blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
 ---

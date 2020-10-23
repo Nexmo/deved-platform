@@ -11,12 +11,7 @@ published: true
 published_at: 2018-05-14T03:00:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - javascript
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2018/05/13/connect-phone-call-to-stitch-in-app-voice-dr
 redirect: https://www.nexmo.com/blog/2018/05/13/connect-phone-call-to-stitch-in-app-voice-dr
 ---

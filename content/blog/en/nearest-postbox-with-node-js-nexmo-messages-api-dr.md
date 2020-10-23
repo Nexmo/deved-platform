@@ -12,15 +12,7 @@ published: true
 published_at: 2018-12-06T17:29:19
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - devrel
-  - javascript
-  - messaging
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/06/nearest-postbox-with-node-js-nexmo-messages-api-dr
 redirect: https://www.nexmo.com/blog/2018/12/06/nearest-postbox-with-node-js-nexmo-messages-api-dr
 ---

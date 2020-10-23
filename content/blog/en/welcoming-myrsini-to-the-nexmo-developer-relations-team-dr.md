@@ -11,13 +11,8 @@ published: true
 published_at: 2018-08-27T16:55:42
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - community
-  - developer
-  - developer-relations
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
 ---

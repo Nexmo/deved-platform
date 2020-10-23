@@ -11,18 +11,7 @@ published: true
 published_at: 2018-05-10T16:06:53
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - verify
-tags:
-  - 2fa
-  - devrel
-  - javascript
-  - phone-number-authentication
-  - two-factor-authentication
-  - verify
+tags: []
 canonical: https://www.nexmo.com/blog/2018/05/10/nexmo-verify-api-implementation-guide-dr
 redirect: https://www.nexmo.com/blog/2018/05/10/nexmo-verify-api-implementation-guide-dr
 ---

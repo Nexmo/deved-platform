@@ -11,15 +11,8 @@ published: true
 published_at: 2017-10-05T16:00:18
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - messaging
-  - real-time-communications
 tags:
   - ai
-  - artificial-intelligence
-  - bots
   - chatbots
 canonical: https://www.nexmo.com/blog/2017/10/05/ai-bot-platform
 redirect: https://www.nexmo.com/blog/2017/10/05/ai-bot-platform

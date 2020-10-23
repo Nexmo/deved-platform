@@ -11,14 +11,7 @@ published: true
 published_at: 2020-04-20T16:53:59
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - php
-  - symfony
-  - symfony-5
-  - verify-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/20/verify-user-registrations-with-symfony-dr
 redirect: https://www.nexmo.com/blog/2020/04/20/verify-user-registrations-with-symfony-dr
 ---

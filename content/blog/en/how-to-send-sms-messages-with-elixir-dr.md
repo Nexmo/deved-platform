@@ -11,17 +11,7 @@ published: true
 published_at: 2020-02-12T09:51:46
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - sms
-  - tutorial
-tags:
-  - devrel
-  - elixir
-  - sms
-  - tutorial
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2020/02/12/how-to-send-sms-messages-with-elixir-dr
 redirect: https://www.nexmo.com/blog/2020/02/12/how-to-send-sms-messages-with-elixir-dr
 ---

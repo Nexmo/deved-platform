@@ -11,19 +11,7 @@ published: true
 published_at: 2020-01-13T20:40:39
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - devrel
-  - ibm-cloud
-  - nexmo
-  - php
-  - sentiment-analysis
-  - sms
-  - tone-analysis
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2020/01/13/sentiment-analysis-using-ibm-watson-tone-analyzer-in-php-dr
 redirect: https://www.nexmo.com/blog/2020/01/13/sentiment-analysis-using-ibm-watson-tone-analyzer-in-php-dr
 ---

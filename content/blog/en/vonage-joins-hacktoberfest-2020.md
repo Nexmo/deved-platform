@@ -10,13 +10,9 @@ author: nahrinjalal
 published: true
 published_at: 2020-09-28T09:53:28
 comments: true
-category: tutorial
-old_categories:
-  - developer
+category: event
 tags:
   - hacktoberfest
-  - hacktoberfest-2020
-  - open-source
 canonical: https://www.nexmo.com/blog/2020/09/28/vonage-joins-hacktoberfest-2020
 redirect: https://www.nexmo.com/blog/2020/09/28/vonage-joins-hacktoberfest-2020
 ---

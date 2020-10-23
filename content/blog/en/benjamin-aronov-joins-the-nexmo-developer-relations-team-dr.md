@@ -11,10 +11,8 @@ published: true
 published_at: 2020-02-21T15:57:23
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - team
+  - careers
 canonical: https://www.nexmo.com/blog/2020/02/21/benjamin-aronov-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2020/02/21/benjamin-aronov-joins-the-nexmo-developer-relations-team-dr
 ---

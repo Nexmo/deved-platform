@@ -11,14 +11,7 @@ published: true
 published_at: 2020-03-03T12:51:07
 comments: true
 category: community
-old_categories:
-  - developer
-  - developer-relations
-  - employee-engagement
-tags:
-  - devrel
-  - off-site
-  - teams
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/03/running-off-sites-remote-teams-dr
 redirect: https://www.nexmo.com/blog/2020/03/03/running-off-sites-remote-teams-dr
 ---

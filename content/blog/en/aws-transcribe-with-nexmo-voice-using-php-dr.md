@@ -12,20 +12,9 @@ published: true
 published_at: 2020-02-14T18:13:59
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
 tags:
   - aws
-  - aws-lambda
-  - devrel
-  - nexmo
   - php
-  - slimphp
-  - tutorial
-  - tutorials
-  - voice
   - voice-api
 canonical: https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr
 redirect: https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr

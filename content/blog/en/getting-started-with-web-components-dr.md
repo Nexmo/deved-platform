@@ -11,19 +11,7 @@ published: true
 published_at: 2020-03-24T14:13:02
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - custom-elements
-  - developer
-  - developer-relations
-  - devrel
-  - html-template
-  - shadow-dom
-  - web-component-standards
-  - web-components
-  - web-platform-apis
-  - web-standards
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr
 redirect: https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr
 ---

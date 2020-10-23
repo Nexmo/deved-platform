@@ -11,14 +11,7 @@ published: true
 published_at: 2016-05-31T21:07:32
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-tags:
-  - aws-lambda
-  - python
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2016/05/31/building-sms-google-sheets-application-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2016/05/31/building-sms-google-sheets-application-aws-lambda-dr
 ---

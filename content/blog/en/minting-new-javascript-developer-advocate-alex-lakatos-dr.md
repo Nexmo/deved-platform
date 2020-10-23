@@ -11,11 +11,8 @@ published: true
 published_at: 2017-06-05T10:21:16
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
 redirect: https://www.nexmo.com/blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
 ---

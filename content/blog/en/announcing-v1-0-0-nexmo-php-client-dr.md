@@ -13,13 +13,8 @@ published: true
 published_at: 2017-08-29T09:42:30
 comments: true
 category: release
-old_categories:
-  - developer
-  - developers
-  - sms
-  - verify
-  - voice
-tags: []
+tags:
+  - php
 canonical: https://www.nexmo.com/blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
 redirect: https://www.nexmo.com/blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
 ---

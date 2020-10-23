@@ -12,15 +12,7 @@ published: true
 published_at: 2018-10-30T16:07:40
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - hapi
-  - messages
-  - node
-  - sms
-  - typeform
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/30/send-sms-typeform-submitted-using-node-hapi-messages-api-dr
 redirect: https://www.nexmo.com/blog/2018/10/30/send-sms-typeform-submitted-using-node-hapi-messages-api-dr
 ---

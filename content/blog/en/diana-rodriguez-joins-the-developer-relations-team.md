@@ -11,13 +11,8 @@ published: true
 published_at: 2020-03-19T15:57:56
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - dev-rel
-  - developer-advocates
-  - devrel
-  - vonage
+  - careers
 canonical: https://www.nexmo.com/blog/2020/03/19/diana-rodriguez-joins-the-developer-relations-team
 redirect: https://www.nexmo.com/blog/2020/03/19/diana-rodriguez-joins-the-developer-relations-team
 ---

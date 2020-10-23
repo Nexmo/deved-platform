@@ -11,15 +11,7 @@ published: true
 published_at: 2020-07-02T13:30:32
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - amazon-comprehend
-  - multi-channel
-  - tone-analysis
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/02/multi-channel-tone-analysis-in-php-with-amazon-comprehend
 redirect: https://www.nexmo.com/blog/2020/07/02/multi-channel-tone-analysis-in-php-with-amazon-comprehend
 ---

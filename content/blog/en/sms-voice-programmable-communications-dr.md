@@ -11,16 +11,7 @@ published: true
 published_at: 2017-03-03T14:04:35
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - sms
-  - voice
-tags:
-  - api
-  - programmable-communications
-  - sms
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr
 redirect: https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr
 ---

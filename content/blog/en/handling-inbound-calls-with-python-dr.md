@@ -11,14 +11,7 @@ published: true
 published_at: 2019-03-28T16:41:32
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - inbound-calls
-  - python
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/03/28/handling-inbound-calls-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/03/28/handling-inbound-calls-with-python-dr
 ---

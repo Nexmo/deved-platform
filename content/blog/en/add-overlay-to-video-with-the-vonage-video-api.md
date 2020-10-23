@@ -11,14 +11,10 @@ published: true
 published_at: 2020-08-25T13:33:30
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
 tags:
   - css
   - html
-  - video-overlay
+  - video-api
 canonical: https://www.nexmo.com/blog/2020/08/25/add-overlay-to-video-with-the-vonage-video-api
 redirect: https://www.nexmo.com/blog/2020/08/25/add-overlay-to-video-with-the-vonage-video-api
 ---

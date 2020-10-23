@@ -11,16 +11,7 @@ published: true
 published_at: 2020-01-17T18:14:46
 comments: true
 category: release
-old_categories:
-  - developer
-  - developers
-  - nexmo-news
-tags:
-  - devrel
-  - javacript
-  - node
-  - release
-  - sdk
+tags: []
 canonical: https://www.nexmo.com/blog/2020/01/17/nexmo-node-server-sdk-support-host-overriding-dr
 redirect: https://www.nexmo.com/blog/2020/01/17/nexmo-node-server-sdk-support-host-overriding-dr
 ---

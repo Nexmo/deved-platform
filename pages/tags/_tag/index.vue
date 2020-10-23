@@ -45,6 +45,10 @@ export default {
         .limit(config.postsPerPage)
         .fetch()
 
+      if (posts.length === 0) {
+        error({ statusCode: 404, message: "Page not found" })
+      } 
+
       return {
         tag: params.tag,
         posts,

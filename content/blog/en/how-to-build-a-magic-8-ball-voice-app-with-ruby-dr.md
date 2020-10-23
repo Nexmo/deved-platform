@@ -11,17 +11,7 @@ published: true
 published_at: 2019-06-11T20:26:14
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - dev-rel
-  - devrel
-  - receive-calls
-  - ruby
-  - ruby-on-rails
-  - voice-api
-  - voice-application
+tags: []
 canonical: https://www.nexmo.com/blog/2019/06/11/how-to-build-a-magic-8-ball-voice-app-with-ruby-dr
 redirect: https://www.nexmo.com/blog/2019/06/11/how-to-build-a-magic-8-ball-voice-app-with-ruby-dr
 ---

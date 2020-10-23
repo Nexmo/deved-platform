@@ -11,12 +11,7 @@ published: true
 published_at: 2019-09-24T12:54:23
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - omnichannel
-  - product
-tags:
-  - conversation-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/09/24/how-to-build-a-dashboard-of-live-conversations-with-flask-and-react-dr
 redirect: https://www.nexmo.com/blog/2019/09/24/how-to-build-a-dashboard-of-live-conversations-with-flask-and-react-dr
 ---

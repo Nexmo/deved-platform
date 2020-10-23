@@ -11,14 +11,7 @@ published: true
 published_at: 2018-11-12T17:01:29
 comments: true
 category: inspiration
-old_categories:
-  - customers
-  - developer
-  - real-time-communications
-tags:
-  - ai
-  - bots
-  - machine-learning
+tags: []
 canonical: https://www.nexmo.com/blog/2018/11/12/developers-primer-ai-terminology-dr
 redirect: https://www.nexmo.com/blog/2018/11/12/developers-primer-ai-terminology-dr
 ---

@@ -11,14 +11,7 @@ published: true
 published_at: 2018-08-15T18:54:33
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - dtmf
-  - java
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2018/08/15/handle-keypad-input-dtmf-with-java-dr
 redirect: https://www.nexmo.com/blog/2018/08/15/handle-keypad-input-dtmf-with-java-dr
 ---

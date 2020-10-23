@@ -11,18 +11,7 @@ published: true
 published_at: 2017-12-19T21:44:18
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - devrel
-  - ruby
-  - ruby-on-rails
-  - voice
-  - voice-api
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/12/19/receive-voice-call-events-call-progress-ruby-rails-dr
 redirect: https://www.nexmo.com/blog/2017/12/19/receive-voice-call-events-call-progress-ruby-rails-dr
 ---

@@ -11,18 +11,9 @@ published: true
 published_at: 2017-09-14T15:30:00
 comments: true
 category: tutorial
-old_categories:
-  - chat-app
-  - developer
-  - developers
-  - messaging
-  - sms
 tags:
   - ai
-  - artificial-intelligence
-  - bots
   - chatbots
-  - marketing
 canonical: https://www.nexmo.com/blog/2017/09/14/ai-bot-messaging-push-notifications-sms-dr
 redirect: https://www.nexmo.com/blog/2017/09/14/ai-bot-messaging-push-notifications-sms-dr
 ---

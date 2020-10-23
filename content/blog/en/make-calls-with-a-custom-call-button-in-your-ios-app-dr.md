@@ -11,11 +11,7 @@ published: true
 published_at: 2020-04-17T10:10:33
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - ios
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/17/make-calls-with-a-custom-call-button-in-your-ios-app-dr
 redirect: https://www.nexmo.com/blog/2020/04/17/make-calls-with-a-custom-call-button-in-your-ios-app-dr
 ---

@@ -11,16 +11,7 @@ published: true
 published_at: 2018-12-07T19:11:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - number-insight
-  - sms
-  - tutorial
-tags:
-  - advent
-  - java
-  - number-insight
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/07/track-santa-sms-java-dr
 redirect: https://www.nexmo.com/blog/2018/12/07/track-santa-sms-java-dr
 ---

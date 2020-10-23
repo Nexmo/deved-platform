@@ -11,13 +11,8 @@ published: true
 published_at: 2020-07-24T13:29:55
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - avital-tzubeli
-  - hummus
-  - new-joiner
-  - tel-aviv
+  - careers
 canonical: https://www.nexmo.com/blog/2020/07/24/avital-tzubeli-joins-the-vonage-developer-relations-team
 redirect: https://www.nexmo.com/blog/2020/07/24/avital-tzubeli-joins-the-vonage-developer-relations-team
 ---

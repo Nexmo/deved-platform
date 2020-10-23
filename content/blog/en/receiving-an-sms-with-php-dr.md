@@ -11,12 +11,7 @@ published: true
 published_at: 2018-06-19T13:41:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - php
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2018/06/19/receiving-an-sms-with-php-dr
 redirect: https://www.nexmo.com/blog/2018/06/19/receiving-an-sms-with-php-dr
 ---

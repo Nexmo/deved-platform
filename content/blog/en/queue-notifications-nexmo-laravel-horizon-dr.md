@@ -12,16 +12,7 @@ published: true
 published_at: 2018-11-13T17:28:37
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - tutorial
-tags:
-  - devrel
-  - horizon
-  - laravel
-  - php
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/11/13/queue-notifications-nexmo-laravel-horizon-dr
 redirect: https://www.nexmo.com/blog/2018/11/13/queue-notifications-nexmo-laravel-horizon-dr
 ---

@@ -12,16 +12,7 @@ published: true
 published_at: 2018-12-10T14:04:04
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - cli
-  - devrel
-  - geographical
-  - phone-number
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/10/local-calls-nexmo-virtual-numbers-call-forwarding-dr
 redirect: https://www.nexmo.com/blog/2018/12/10/local-calls-nexmo-virtual-numbers-call-forwarding-dr
 ---

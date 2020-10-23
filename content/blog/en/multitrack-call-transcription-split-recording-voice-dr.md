@@ -11,15 +11,7 @@ published: true
 published_at: 2018-12-03T17:01:49
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - real-time-communications
-  - tutorial
-  - voice
-tags:
-  - speech-to-text
-  - split-recording
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/03/multitrack-call-transcription-split-recording-voice-dr
 redirect: https://www.nexmo.com/blog/2018/12/03/multitrack-call-transcription-split-recording-voice-dr
 ---

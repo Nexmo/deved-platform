@@ -11,15 +11,7 @@ published: true
 published_at: 2019-09-10T11:00:12
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - amazon-web-services
-  - extending-nexmo
-  - google-cloud-platform
-  - ibm-watson
-  - microsoft-azure
-  - streaming-transcription
+tags: []
 canonical: https://www.nexmo.com/blog/2019/09/10/extending-nexmo-streaming-transcription-dr
 redirect: https://www.nexmo.com/blog/2019/09/10/extending-nexmo-streaming-transcription-dr
 ---

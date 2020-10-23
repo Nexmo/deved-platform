@@ -11,14 +11,7 @@ published: true
 published_at: 2020-04-08T15:50:34
 comments: true
 category: announcement
-old_categories:
-  - developer
-tags:
-  - facebook-messenger
-  - messages-api
-  - sandbox
-  - viber
-  - whatsapp
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/08/introducing-the-messages-api-sandbox
 redirect: https://www.nexmo.com/blog/2020/04/08/introducing-the-messages-api-sandbox
 ---

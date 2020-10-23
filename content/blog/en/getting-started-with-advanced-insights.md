@@ -11,14 +11,7 @@ published: true
 published_at: 2020-04-07T12:13:19
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - advanced-insights
-  - graphql
-  - insights
-  - opentok
-  - video
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/07/getting-started-with-advanced-insights
 redirect: https://www.nexmo.com/blog/2020/04/07/getting-started-with-advanced-insights
 ---

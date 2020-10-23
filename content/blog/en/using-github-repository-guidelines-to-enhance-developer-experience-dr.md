@@ -11,13 +11,7 @@ published: true
 published_at: 2020-01-17T13:08:45
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - devrel
-  - devx
-  - github
-  - standards
+tags: []
 canonical: https://www.nexmo.com/blog/2020/01/17/using-github-repository-guidelines-to-enhance-developer-experience-dr
 redirect: https://www.nexmo.com/blog/2020/01/17/using-github-repository-guidelines-to-enhance-developer-experience-dr
 ---

@@ -11,11 +11,8 @@ published: true
 published_at: 2020-08-24T15:19:39
 comments: true
 category: release
-old_categories:
-  - developer
 tags:
   - python
-  - sdk
 canonical: https://www.nexmo.com/blog/2020/08/24/announcing-the-python-server-sdk-version-2-5-0-release-dr
 redirect: https://www.nexmo.com/blog/2020/08/24/announcing-the-python-server-sdk-version-2-5-0-release-dr
 ---

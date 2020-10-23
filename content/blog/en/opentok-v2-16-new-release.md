@@ -11,12 +11,7 @@ published: true
 published_at: 2019-07-02T20:58:34
 comments: true
 category: release
-old_categories:
-  - developer
-  - video
-tags:
-  - scalable-video
-  - simulcast
+tags: []
 canonical: https://www.nexmo.com/blog/2019/07/02/opentok-v2-16-new-release
 redirect: https://www.nexmo.com/blog/2019/07/02/opentok-v2-16-new-release
 ---

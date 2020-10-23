@@ -11,14 +11,7 @@ published: true
 published_at: 2018-08-21T08:59:47
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - javascript
-  - tutorial
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2018/08/21/phone-call-web-browser-nexmo-in-app-voice-vue-js-dr
 redirect: https://www.nexmo.com/blog/2018/08/21/phone-call-web-browser-nexmo-in-app-voice-vue-js-dr
 ---

@@ -11,14 +11,7 @@ published: true
 published_at: 2019-02-07T11:55:47
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - devrel
-  - tutorial
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/02/07/receive-call-swift-dr
 redirect: https://www.nexmo.com/blog/2019/02/07/receive-call-swift-dr
 ---

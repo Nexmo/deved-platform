@@ -11,14 +11,7 @@ published: true
 published_at: 2020-09-24T13:13:56
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-tags:
-  - best-practice
-  - inbound-messages
-  - messages-api
-  - node-js
+tags: []
 canonical: https://www.nexmo.com/blog/2020/09/24/handling-unsupported-inbound-messages-with-the-messages-api-dr
 redirect: https://www.nexmo.com/blog/2020/09/24/handling-unsupported-inbound-messages-with-the-messages-api-dr
 ---

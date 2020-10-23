@@ -11,12 +11,8 @@ published: true
 published_at: 2020-03-11T17:00:36
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - android
-  - developer-advocates
-  - team
+  - careers
 canonical: https://www.nexmo.com/blog/2020/03/11/igor-wojda-joins-the-vonage-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2020/03/11/igor-wojda-joins-the-vonage-developer-relations-team-dr
 ---

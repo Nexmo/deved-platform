@@ -11,8 +11,6 @@ published: true
 published_at: 2018-11-29T14:23:19
 comments: true
 category: devlife
-old_categories:
-  - developer
 tags:
   - hackathon
   - health

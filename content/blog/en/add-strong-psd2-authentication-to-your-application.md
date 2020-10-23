@@ -8,15 +8,9 @@ published: true
 published_at: 2020-06-23T07:53:47
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - verify
 tags:
-  - authentication
-  - curl
-  - psd2
   - security
-  - verify
+  - verify-api
 ---
 
 With more and more purchases made online, the dangers of fraud and unauthorized payments increase.
