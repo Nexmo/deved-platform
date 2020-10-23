@@ -4,7 +4,16 @@
     class="Vlt-badge Vlt-badge--small Vlt-badge--grey Vlt-badge--transparent"
     :class="'Blog-badge--' + tag"
   >
-    #{{ tag }}
+    <svg 
+      v-if="isProduct" 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="white" 
+      viewBox="0 0 24 24" 
+      style="width: 0.8em; margin: 0 4px -1px 0"
+    >
+      <path d="M9.3 11.6L4.7 1.5H0l6.8 15.3s.1.1.1 0l2.4-5.2zm9.9-10.1s-6.1 13.9-6.9 15.6c-1.8 4.1-3.2 5.1-4.6 5.3H12c1.9 0 3.2-1.3 5.1-5.3.6-1.4 6.9-15.6 6.9-15.6h-4.8z" />
+    </svg>
+    <span v-else>#</span>{{ tag }}
   </NLink>
 </template>
 
@@ -15,6 +24,37 @@ export default {
       type: String,
       required: true
     },
+  },
+
+  data() {
+    return {
+      products: [
+        'dispatch-api',
+        'messages-api',
+        'messages-api-sandbox',
+        'number-insight-api',
+        'number-api',
+        'reports-api',
+        'account-api',
+        'pricing-api',
+        'external-accounts-api',
+        'redact-api',
+        'audit-api',
+        'verify-api',
+        'media-api',
+        'voice-api',
+        'conversation-api',
+        'video-api',
+        'sms-api',
+        'station',
+      ]
+    }
+  },
+
+  computed: {
+    isProduct() {
+      return this.products.includes(this.tag) 
+    }
   },
 }
 </script>

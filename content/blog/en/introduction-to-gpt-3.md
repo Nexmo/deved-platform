@@ -11,7 +11,9 @@ published: true
 published_at: 2020-10-05T13:21:52
 comments: true
 category: tutorial
-tags: []
+tags: 
+  - messages-api
+  - vue
 canonical: https://www.nexmo.com/blog/2020/10/05/introduction-to-gpt-3
 redirect: https://www.nexmo.com/blog/2020/10/05/introduction-to-gpt-3
 ---
