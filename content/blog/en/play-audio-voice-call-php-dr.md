@@ -11,16 +11,7 @@ published: true
 published_at: 2019-04-12T08:25:54
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - audio
-  - hold-muzak
-  - rick-astley
-  - voice-api
-  - voice-call
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/12/play-audio-voice-call-php-dr
 redirect: https://www.nexmo.com/blog/2019/04/12/play-audio-voice-call-php-dr
 ---

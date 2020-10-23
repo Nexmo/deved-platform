@@ -11,17 +11,7 @@ published: true
 published_at: 2019-04-11T17:25:20
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - sms
-tags:
-  - developer-spotlight
-  - laravel
-  - nexmo
-  - notifications
-  - sms
-  - stripe
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/11/stripe-sms-laravel-dotun
 redirect: https://www.nexmo.com/blog/2019/04/11/stripe-sms-laravel-dotun
 ---

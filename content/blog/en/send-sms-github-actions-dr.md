@@ -11,14 +11,7 @@ published: true
 published_at: 2019-02-08T19:51:08
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - continuous-integration
-  - devrel
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2019/02/08/send-sms-github-actions-dr
 redirect: https://www.nexmo.com/blog/2019/02/08/send-sms-github-actions-dr
 ---

@@ -11,15 +11,7 @@ published: true
 published_at: 2020-04-24T13:29:51
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - tutorial
-tags:
-  - blockchain
-  - conversation-api
-  - ethereum
-  - nodejs
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/24/connect-to-the-ethereum-blockchain-with-node-js-and-vonage-dr
 redirect: https://www.nexmo.com/blog/2020/04/24/connect-to-the-ethereum-blockchain-with-node-js-and-vonage-dr
 ---

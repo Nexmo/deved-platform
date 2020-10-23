@@ -10,10 +10,6 @@ published: true
 published_at: 2015-03-11T20:04:43
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - events
 tags: []
 canonical: https://www.nexmo.com/blog/2015/03/11/gdc-2015-user-acquisition-analytics-and-a-whole-lot-of-bacon
 redirect: https://www.nexmo.com/blog/2015/03/11/gdc-2015-user-acquisition-analytics-and-a-whole-lot-of-bacon

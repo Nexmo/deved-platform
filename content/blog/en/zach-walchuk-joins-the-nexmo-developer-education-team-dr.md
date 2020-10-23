@@ -11,9 +11,8 @@ published: true
 published_at: 2019-12-13T17:25:31
 comments: true
 category: team
-old_categories:
-  - developer
-tags: []
+tags:
+  - careers
 canonical: https://www.nexmo.com/blog/2019/12/13/zach-walchuk-joins-the-nexmo-developer-education-team-dr
 redirect: https://www.nexmo.com/blog/2019/12/13/zach-walchuk-joins-the-nexmo-developer-education-team-dr
 ---

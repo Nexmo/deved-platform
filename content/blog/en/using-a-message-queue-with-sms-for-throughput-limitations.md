@@ -11,15 +11,7 @@ published: true
 published_at: 2020-05-28T13:32:21
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - aws-lambda
-  - nodejs
-  - python
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/05/28/using-a-message-queue-with-sms-for-throughput-limitations
 redirect: https://www.nexmo.com/blog/2020/05/28/using-a-message-queue-with-sms-for-throughput-limitations
 ---

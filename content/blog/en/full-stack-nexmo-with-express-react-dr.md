@@ -11,15 +11,7 @@ published: true
 published_at: 2019-03-15T12:04:59
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - client
-  - devrel
-  - express
-  - javascript
-  - nodejs
-  - react
+tags: []
 canonical: https://www.nexmo.com/blog/2019/03/15/full-stack-nexmo-with-express-react-dr
 redirect: https://www.nexmo.com/blog/2019/03/15/full-stack-nexmo-with-express-react-dr
 ---

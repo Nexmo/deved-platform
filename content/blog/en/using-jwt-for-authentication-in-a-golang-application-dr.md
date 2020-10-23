@@ -8,9 +8,6 @@ published: true
 published_at: 2020-03-13T13:00:25
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags:
   - go
   - jwt

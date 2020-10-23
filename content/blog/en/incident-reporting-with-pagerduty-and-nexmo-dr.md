@@ -11,18 +11,7 @@ published: true
 published_at: 2019-08-21T16:27:57
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - messaging
-  - product
-tags:
-  - dispatch
-  - facebook
-  - messenger
-  - nexmo
-  - pager-duty
-  - whatsapp
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/21/incident-reporting-with-pagerduty-and-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/08/21/incident-reporting-with-pagerduty-and-nexmo-dr
 ---

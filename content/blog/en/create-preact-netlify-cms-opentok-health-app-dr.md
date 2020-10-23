@@ -11,18 +11,7 @@ published: true
 published_at: 2020-02-28T18:06:06
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
-tags:
-  - devrel
-  - javascript
-  - netlify-cms
-  - opentok
-  - preact
-  - react
-  - video
+tags: []
 canonical: https://www.nexmo.com/blog/2020/02/28/create-preact-netlify-cms-opentok-health-app-dr
 redirect: https://www.nexmo.com/blog/2020/02/28/create-preact-netlify-cms-opentok-health-app-dr
 ---

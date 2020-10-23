@@ -11,18 +11,7 @@ published: true
 published_at: 2019-04-18T09:24:18
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - asp-net
-  - call-forwarding
-  - nancyfx
-  - voice
-  - voice-api
-  - voice-proxy
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/18/forward-a-call-via-voice-proxy-with-asp-net-core-dr
 redirect: https://www.nexmo.com/blog/2019/04/18/forward-a-call-via-voice-proxy-with-asp-net-core-dr
 ---

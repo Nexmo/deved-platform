@@ -11,17 +11,7 @@ published: true
 published_at: 2018-11-21T08:58:40
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - asp-net
-  - how-to
-  - inbound-call
-  - nancyfx
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2018/11/21/how-to-receive-a-phone-call-with-nexmo-voice-api-asp-core-core-and-nancyfx-dr
 redirect: https://www.nexmo.com/blog/2018/11/21/how-to-receive-a-phone-call-with-nexmo-voice-api-asp-core-core-and-nancyfx-dr
 ---

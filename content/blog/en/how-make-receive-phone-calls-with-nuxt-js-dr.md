@@ -10,17 +10,7 @@ published: true
 published_at: 2020-03-02T16:10:50
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - call
-  - javascript
-  - node
-  - nuxt
-  - phone
-  - voice
-  - vue
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/02/how-make-receive-phone-calls-with-nuxt-js-dr
 redirect: https://www.nexmo.com/blog/2020/03/02/how-make-receive-phone-calls-with-nuxt-js-dr
 ---

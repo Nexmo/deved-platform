@@ -11,13 +11,7 @@ published: true
 published_at: 2020-06-17T13:30:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - number-insight
-  - tutorial
 tags:
-  - messages-api
   - mongodb
   - netlify
   - number-insights-api

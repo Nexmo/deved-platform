@@ -11,19 +11,7 @@ published: true
 published_at: 2016-10-27T18:35:15
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - messaging
-  - sms
-  - tutorial
-tags:
-  - es6
-  - express
-  - javascript
-  - nodejs
-  - sms
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2016/10/27/receive-sms-messages-node-js-express-dr
 redirect: https://www.nexmo.com/blog/2016/10/27/receive-sms-messages-node-js-express-dr
 ---

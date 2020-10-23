@@ -11,16 +11,7 @@ published: true
 published_at: 2017-01-26T14:00:49
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - javascript
-  - nodejs
-  - voice-api
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/01/26/handle-inbound-text-speech-phone-call-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/01/26/handle-inbound-text-speech-phone-call-node-js-dr
 ---

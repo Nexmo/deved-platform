@@ -11,15 +11,7 @@ published: true
 published_at: 2019-08-23T08:33:03
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - conference-call
-  - devrel
-  - java
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/23/create-a-conference-call-with-java-dr
 redirect: https://www.nexmo.com/blog/2019/08/23/create-a-conference-call-with-java-dr
 ---

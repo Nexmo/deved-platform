@@ -11,14 +11,7 @@ published: true
 published_at: 2020-08-13T07:19:50
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - javascript
-  - npm
-  - open-wc
-  - web-components
+tags: []
 canonical: https://www.nexmo.com/blog/2020/08/13/creating-a-web-component-with-open-wc
 redirect: https://www.nexmo.com/blog/2020/08/13/creating-a-web-component-with-open-wc
 ---

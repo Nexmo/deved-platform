@@ -11,14 +11,7 @@ published: true
 published_at: 2019-04-01T10:30:40
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - cobol
-  - devrel
-  - sms
-  - text-messaging
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/01/send-text-message-cobol-dr
 redirect: https://www.nexmo.com/blog/2019/04/01/send-text-message-cobol-dr
 ---

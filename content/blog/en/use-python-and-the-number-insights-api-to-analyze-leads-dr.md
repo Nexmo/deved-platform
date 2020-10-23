@@ -11,14 +11,7 @@ published: true
 published_at: 2020-09-17T12:30:55
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - number-insight
-  - tutorial
-tags:
-  - number-insights-api
-  - python
+tags: []
 canonical: https://www.nexmo.com/blog/2020/09/17/use-python-and-the-number-insights-api-to-analyze-leads-dr
 redirect: https://www.nexmo.com/blog/2020/09/17/use-python-and-the-number-insights-api-to-analyze-leads-dr
 ---

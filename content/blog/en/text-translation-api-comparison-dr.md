@@ -12,17 +12,7 @@ published: true
 published_at: 2019-12-10T18:19:35
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - amazon-web-services
-  - google-cloud-platform
-  - ibm-watson
-  - javascript
-  - microsoft-azure
-  - nodejs
-  - sms
-  - text-translation
+tags: []
 canonical: https://www.nexmo.com/blog/2019/12/10/text-translation-api-comparison-dr
 redirect: https://www.nexmo.com/blog/2019/12/10/text-translation-api-comparison-dr
 ---

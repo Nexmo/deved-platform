@@ -11,10 +11,8 @@ published: true
 published_at: 2019-02-01T12:23:50
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2019/02/01/paul-ardeleanu-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/02/01/paul-ardeleanu-joins-the-nexmo-developer-relations-team-dr
 ---

@@ -11,14 +11,7 @@ published: true
 published_at: 2018-12-04T12:47:23
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - devrel
-  - machine-learning
-  - python
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/04/dog-breed-detector-using-machine-learning-dr
 redirect: https://www.nexmo.com/blog/2018/12/04/dog-breed-detector-using-machine-learning-dr
 ---

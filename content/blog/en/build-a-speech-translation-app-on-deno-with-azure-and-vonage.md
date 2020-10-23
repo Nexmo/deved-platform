@@ -11,14 +11,9 @@ published: true
 published_at: 2020-06-09T13:33:49
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
 tags:
-  - automatic-speech-recognition
   - deno
-  - microsoft-azure
+  - azure
   - voice-api
 canonical: https://www.nexmo.com/blog/2020/06/09/build-a-speech-translation-app-on-deno-with-azure-and-vonage
 redirect: https://www.nexmo.com/blog/2020/06/09/build-a-speech-translation-app-on-deno-with-azure-and-vonage

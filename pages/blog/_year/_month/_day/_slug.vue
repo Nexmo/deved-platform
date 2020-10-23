@@ -155,6 +155,7 @@ export default {
       }
     } catch (e) {
       error(e)
+      return false
     }
   },
 

@@ -11,10 +11,8 @@ published: true
 published_at: 2019-02-03T10:00:57
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - dev-rel
+  - careers
 canonical: https://www.nexmo.com/blog/2019/02/03/luke-oliff-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/02/03/luke-oliff-joins-the-nexmo-developer-relations-team-dr
 ---

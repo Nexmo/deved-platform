@@ -11,15 +11,7 @@ published: true
 published_at: 2018-12-05T14:09:43
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - devrel
-  - text-to-speech
-  - tutorial
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/05/christmas-poetry-reading-using-text-to-speech-dr
 redirect: https://www.nexmo.com/blog/2018/12/05/christmas-poetry-reading-using-text-to-speech-dr
 ---

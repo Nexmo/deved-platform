@@ -12,10 +12,6 @@ published: true
 published_at: 2019-08-07T17:05:38
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/08/07/nexmo-messages-api-integration-with-marketo-dr
 redirect: https://www.nexmo.com/blog/2019/08/07/nexmo-messages-api-integration-with-marketo-dr

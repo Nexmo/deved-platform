@@ -11,15 +11,7 @@ published: true
 published_at: 2020-09-30T13:44:24
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - go
-  - go-sdk
-  - golang
-  - sdk
-  - sdk-announcement
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/09/30/go-explore-the-vonage-apis-with-vonage-go-sdk
 redirect: https://www.nexmo.com/blog/2020/09/30/go-explore-the-vonage-apis-with-vonage-go-sdk
 ---

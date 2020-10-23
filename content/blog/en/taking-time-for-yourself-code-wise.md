@@ -11,14 +11,7 @@ published: true
 published_at: 2020-07-22T14:54:13
 comments: true
 category: devlife
-old_categories:
-  - developer
-  - developer-relations
-  - thought-leadership
-tags:
-  - developer-relations
-  - developer-experience
-  - sdk
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/22/taking-time-for-yourself-code-wise
 redirect: https://www.nexmo.com/blog/2020/07/22/taking-time-for-yourself-code-wise
 ---

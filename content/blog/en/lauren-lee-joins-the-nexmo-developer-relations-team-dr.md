@@ -11,11 +11,8 @@ published: true
 published_at: 2019-05-20T21:23:33
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - dev-rel
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
 ---

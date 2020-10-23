@@ -11,13 +11,7 @@ published: true
 published_at: 2016-05-25T18:36:30
 comments: true
 category: release
-old_categories:
-  - developer
-  - developers
-tags:
-  - beta
-  - client-library
-  - php
+tags: []
 canonical: https://www.nexmo.com/blog/2016/05/25/official-php-client-lib
 redirect: https://www.nexmo.com/blog/2016/05/25/official-php-client-lib
 ---

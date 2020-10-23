@@ -11,13 +11,7 @@ published: true
 published_at: 2018-10-09T16:02:27
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - audit-api
-  - dev-rel
-  - python
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/09/get-nexmo-audit-events-with-python-dr
 redirect: https://www.nexmo.com/blog/2018/10/09/get-nexmo-audit-events-with-python-dr
 ---

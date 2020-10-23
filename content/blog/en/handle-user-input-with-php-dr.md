@@ -11,14 +11,7 @@ published: true
 published_at: 2018-08-10T13:59:06
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - dtmf
-  - inbound-call
-  - input
-  - php
+tags: []
 canonical: https://www.nexmo.com/blog/2018/08/10/handle-user-input-with-php-dr
 redirect: https://www.nexmo.com/blog/2018/08/10/handle-user-input-with-php-dr
 ---

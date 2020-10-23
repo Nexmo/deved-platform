@@ -11,12 +11,8 @@ published: true
 published_at: 2018-11-07T19:39:49
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - community
-  - developer
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2018/11/07/manik-joins-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/11/07/manik-joins-nexmo-developer-relations-team-dr
 ---

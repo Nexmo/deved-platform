@@ -11,17 +11,7 @@ published: true
 published_at: 2018-11-15T16:58:53
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - tutorial
-tags:
-  - community
-  - developer-spotlight
-  - devrel
-  - python
-  - tutorial
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2018/11/15/pycascades-code-of-conduct-hotline-nexmo-voice-api-dr
 redirect: https://www.nexmo.com/blog/2018/11/15/pycascades-code-of-conduct-hotline-nexmo-voice-api-dr
 ---

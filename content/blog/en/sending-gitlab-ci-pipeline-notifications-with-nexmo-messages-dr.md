@@ -11,15 +11,7 @@ published: true
 published_at: 2019-09-30T08:00:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - messaging
-tags:
-  - api
-  - gitlab
-  - messages
-  - nexmo
+tags: []
 canonical: https://www.nexmo.com/blog/2019/09/30/sending-gitlab-ci-pipeline-notifications-with-nexmo-messages-dr
 redirect: https://www.nexmo.com/blog/2019/09/30/sending-gitlab-ci-pipeline-notifications-with-nexmo-messages-dr
 ---

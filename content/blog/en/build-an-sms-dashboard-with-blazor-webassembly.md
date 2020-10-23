@@ -11,8 +11,6 @@ published: true
 published_at: 2020-08-20T13:20:03
 comments: true
 category: tutorial
-old_categories:
-  - developer
 tags:
   - blazor
   - dotnet

@@ -11,18 +11,7 @@ published: true
 published_at: 2019-02-05T10:08:57
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - call-forwarding
-  - devrel
-  - koa
-  - nodejs
-  - voice
-  - voice-api
-  - voice-proxy
+tags: []
 canonical: https://www.nexmo.com/blog/2019/02/05/forward-call-with-koa-js-dr
 redirect: https://www.nexmo.com/blog/2019/02/05/forward-call-with-koa-js-dr
 ---

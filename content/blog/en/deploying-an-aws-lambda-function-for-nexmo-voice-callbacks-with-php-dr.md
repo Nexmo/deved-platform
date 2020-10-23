@@ -11,12 +11,7 @@ published: true
 published_at: 2020-04-02T12:12:27
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - aws
-  - aws-lambda
-  - developer
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/02/deploying-an-aws-lambda-function-for-nexmo-voice-callbacks-with-php-dr
 redirect: https://www.nexmo.com/blog/2020/04/02/deploying-an-aws-lambda-function-for-nexmo-voice-callbacks-with-php-dr
 ---

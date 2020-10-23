@@ -11,15 +11,7 @@ published: true
 published_at: 2015-08-06T13:49:37
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - events
-  - giving-back
-tags:
-  - coding
-  - event
-  - women-in-tech
+tags: []
 canonical: https://www.nexmo.com/blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
 redirect: https://www.nexmo.com/blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
 ---

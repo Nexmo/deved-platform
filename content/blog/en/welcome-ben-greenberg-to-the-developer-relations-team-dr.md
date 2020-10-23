@@ -11,10 +11,8 @@ published: true
 published_at: 2019-01-15T09:45:40
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2019/01/15/welcome-ben-greenberg-to-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/01/15/welcome-ben-greenberg-to-the-developer-relations-team-dr
 ---

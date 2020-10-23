@@ -10,19 +10,7 @@ published: true
 published_at: 2019-12-19T09:01:01
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - net
-  - artificial-intelligence
-  - asp-net
-  - azure
-  - bots
-  - c-advent
-  - chatbots
-  - machine-learning
-  - qnamaker
+tags: []
 canonical: https://www.nexmo.com/blog/2019/12/19/santas-nexmo-helper-c-advent-series-dr
 redirect: https://www.nexmo.com/blog/2019/12/19/santas-nexmo-helper-c-advent-series-dr
 ---

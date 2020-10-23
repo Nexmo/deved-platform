@@ -11,15 +11,7 @@ published: true
 published_at: 2019-06-13T10:21:06
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - devrel
-  - google-cloud-platform
-  - ruby-on-rails
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/06/13/play-the-game-of-telephone-with-the-nexmo-voice-api-ruby-on-rails-and-google-cloud-platform-dr
 redirect: https://www.nexmo.com/blog/2019/06/13/play-the-game-of-telephone-with-the-nexmo-voice-api-ruby-on-rails-and-google-cloud-platform-dr
 ---

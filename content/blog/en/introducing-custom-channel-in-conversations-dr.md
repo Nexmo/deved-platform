@@ -11,15 +11,7 @@ published: true
 published_at: 2020-02-05T08:28:27
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - developers
-  - product
-tags:
-  - client-sdk
-  - conversations
-  - custom-channels
-  - sdk-announcements
+tags: []
 canonical: https://www.nexmo.com/blog/2020/02/05/introducing-custom-channel-in-conversations-dr
 redirect: https://www.nexmo.com/blog/2020/02/05/introducing-custom-channel-in-conversations-dr
 ---

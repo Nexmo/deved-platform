@@ -11,13 +11,7 @@ published: true
 published_at: 2019-11-14T17:01:35
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-tags:
-  - api
-  - php
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
 redirect: https://www.nexmo.com/blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
 ---

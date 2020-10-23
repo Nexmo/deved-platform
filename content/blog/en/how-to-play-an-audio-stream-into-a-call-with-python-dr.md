@@ -11,15 +11,7 @@ published: true
 published_at: 2019-04-03T08:00:48
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - audio
-  - ncco
-  - python
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/03/how-to-play-an-audio-stream-into-a-call-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/04/03/how-to-play-an-audio-stream-into-a-call-with-python-dr
 ---

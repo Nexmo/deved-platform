@@ -11,15 +11,7 @@ published: true
 published_at: 2020-09-03T13:16:58
 comments: true
 category: release
-old_categories:
-  - developer
-  - video
-tags:
-  - android
-  - linux
-  - opentok
-  - sdk-update
-  - windows-sdk
+tags: []
 canonical: https://www.nexmo.com/blog/2020/09/03/opentok-version-2-18-whats-new-and-how-you-can-use-it
 redirect: https://www.nexmo.com/blog/2020/09/03/opentok-version-2-18-whats-new-and-how-you-can-use-it
 ---

@@ -11,14 +11,7 @@ published: true
 published_at: 2018-07-24T16:00:23
 comments: true
 category: announcement
-old_categories:
-  - customer-support
-  - developer
-  - nexmo-news
-tags:
-  - contact-center
-  - contextual-communications
-  - in-app-video
+tags: []
 canonical: https://www.nexmo.com/blog/2018/07/24/nexmo-introduces-in-app-video-developer-preview
 redirect: https://www.nexmo.com/blog/2018/07/24/nexmo-introduces-in-app-video-developer-preview
 ---

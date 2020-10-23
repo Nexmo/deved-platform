@@ -11,11 +11,8 @@ published: true
 published_at: 2018-09-27T12:00:38
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - devrel
-  - singapore
+  - careers
 canonical: https://www.nexmo.com/blog/2018/09/27/hui-jing-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/09/27/hui-jing-joins-the-nexmo-developer-relations-team-dr
 ---

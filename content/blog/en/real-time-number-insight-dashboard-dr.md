@@ -10,17 +10,7 @@ published: true
 published_at: 2018-12-12T15:43:05
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - advent
-  - dashboard
-  - nextjs
-  - node
-  - number-insight
-  - react
-  - real-time
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/12/real-time-number-insight-dashboard-dr
 redirect: https://www.nexmo.com/blog/2018/12/12/real-time-number-insight-dashboard-dr
 ---

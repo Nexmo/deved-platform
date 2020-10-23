@@ -12,20 +12,7 @@ published: true
 published_at: 2019-10-31T14:39:44
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - tutorial
-tags:
-  - net
-  - asp-net-core
-  - cnn
-  - convolutional-neural-networks
-  - image-classifier
-  - machine-learning
-  - ml-net
-  - neural-network
-  - tensorflow
+tags: []
 canonical: https://www.nexmo.com/blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
 redirect: https://www.nexmo.com/blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
 ---

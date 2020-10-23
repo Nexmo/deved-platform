@@ -11,14 +11,8 @@ published: true
 published_at: 2020-05-14T08:56:31
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
 tags:
-  - glitch
   - javascript
-  - live-video
   - video-api
 canonical: https://www.nexmo.com/blog/2020/05/14/broadcast-video-chat-with-javascript-and-vonage-dr
 redirect: https://www.nexmo.com/blog/2020/05/14/broadcast-video-chat-with-javascript-and-vonage-dr

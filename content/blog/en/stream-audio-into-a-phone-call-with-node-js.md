@@ -10,9 +10,6 @@ published: true
 published_at: 2019-01-30T13:56:29
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/01/30/stream-audio-into-a-phone-call-with-node-js
 redirect: https://www.nexmo.com/blog/2019/01/30/stream-audio-into-a-phone-call-with-node-js

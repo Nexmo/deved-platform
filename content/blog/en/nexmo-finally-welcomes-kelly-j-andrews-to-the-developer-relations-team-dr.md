@@ -10,10 +10,8 @@ published: true
 published_at: 2019-02-02T10:00:36
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - dev-rel
+  - careers
 canonical: https://www.nexmo.com/blog/2019/02/02/nexmo-finally-welcomes-kelly-j-andrews-to-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/02/02/nexmo-finally-welcomes-kelly-j-andrews-to-the-developer-relations-team-dr
 ---

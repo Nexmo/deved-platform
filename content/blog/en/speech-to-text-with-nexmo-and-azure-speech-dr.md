@@ -11,15 +11,7 @@ published: true
 published_at: 2019-03-18T09:25:41
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - real-time-communications
-tags:
-  - azure
-  - microsoft
-  - speech-recognition
-  - speech-to-text
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/03/18/speech-to-text-with-nexmo-and-azure-speech-dr
 redirect: https://www.nexmo.com/blog/2019/03/18/speech-to-text-with-nexmo-and-azure-speech-dr
 ---

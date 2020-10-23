@@ -11,15 +11,8 @@ published: true
 published_at: 2020-06-15T18:52:54
 comments: true
 category: tutorial
-old_categories:
-  - developer
 tags:
-  - amazon-aws
-  - amazon-sqs
   - aws
-  - dynamodb
-  - lamda
-  - message-queues
   - php
 canonical: https://www.nexmo.com/blog/2020/06/15/automated-message-migration-from-aws-sqs-to-dynamodb
 redirect: https://www.nexmo.com/blog/2020/06/15/automated-message-migration-from-aws-sqs-to-dynamodb

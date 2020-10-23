@@ -11,17 +11,8 @@ published: true
 published_at: 2020-08-12T07:30:50
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - omnichannel
-  - tutorial
 tags:
-  - customer-support
-  - emojis
   - messages-api
-  - real-time-communications
-  - whatsapp
 canonical: https://www.nexmo.com/blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
 redirect: https://www.nexmo.com/blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
 ---

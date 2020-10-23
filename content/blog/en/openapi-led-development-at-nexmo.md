@@ -11,13 +11,7 @@ published: true
 published_at: 2018-11-05T17:01:25
 comments: true
 category: community
-old_categories:
-  - compliance
-  - developer
-  - developers
-tags:
-  - developer-experience
-  - openapi
+tags: []
 canonical: https://www.nexmo.com/blog/2018/11/05/openapi-led-development-at-nexmo
 redirect: https://www.nexmo.com/blog/2018/11/05/openapi-led-development-at-nexmo
 ---

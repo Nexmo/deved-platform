@@ -11,12 +11,7 @@ published: true
 published_at: 2019-09-13T08:00:46
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - oas
-  - open-api
-  - postman
+tags: []
 canonical: https://www.nexmo.com/blog/2019/09/13/evaluate-apis-quickly-and-easily-with-openapi-dr
 redirect: https://www.nexmo.com/blog/2019/09/13/evaluate-apis-quickly-and-easily-with-openapi-dr
 ---

@@ -11,12 +11,7 @@ published: true
 published_at: 2020-07-20T13:42:14
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - net
-  - asp-net-core-mvc
-  - messages-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/20/how-to-receive-an-sms-message-with-asp-net-core-mvc-and-signalr
 redirect: https://www.nexmo.com/blog/2020/07/20/how-to-receive-an-sms-message-with-asp-net-core-mvc-and-signalr
 ---

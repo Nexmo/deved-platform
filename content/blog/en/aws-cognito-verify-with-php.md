@@ -11,12 +11,8 @@ published: true
 published_at: 2020-07-10T13:38:52
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags:
   - aws
-  - cognito-verify
   - php
 canonical: https://www.nexmo.com/blog/2020/07/10/aws-cognito-verify-with-php
 redirect: https://www.nexmo.com/blog/2020/07/10/aws-cognito-verify-with-php

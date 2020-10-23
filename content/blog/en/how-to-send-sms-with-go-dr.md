@@ -11,13 +11,7 @@ published: true
 published_at: 2019-08-28T07:05:49
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - go
-  - sdk
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/28/how-to-send-sms-with-go-dr
 redirect: https://www.nexmo.com/blog/2019/08/28/how-to-send-sms-with-go-dr
 ---

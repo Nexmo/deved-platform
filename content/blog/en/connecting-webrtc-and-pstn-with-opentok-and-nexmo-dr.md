@@ -11,17 +11,7 @@ published: true
 published_at: 2019-04-23T16:01:14
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - dial-in
-  - nexmo
-  - opentok
-  - sip
-  - tokbox
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/23/connecting-webrtc-and-pstn-with-opentok-and-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/04/23/connecting-webrtc-and-pstn-with-opentok-and-nexmo-dr
 ---

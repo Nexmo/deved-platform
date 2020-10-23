@@ -11,16 +11,7 @@ published: true
 published_at: 2018-10-10T13:01:50
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - messaging
-  - tutorial
-tags:
-  - messaging-api
-  - mms
-  - sms
-  - viber
-  - whatsapp
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/10/nexmo-messages-dispatch-apis-dr
 redirect: https://www.nexmo.com/blog/2018/10/10/nexmo-messages-dispatch-apis-dr
 ---

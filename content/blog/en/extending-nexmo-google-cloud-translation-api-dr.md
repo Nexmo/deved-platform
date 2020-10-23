@@ -11,14 +11,7 @@ published: true
 published_at: 2019-10-24T12:12:44
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - api
-  - nexmo-extend
-  - nodejs
-  - sms
-  - translation
+tags: []
 canonical: https://www.nexmo.com/blog/2019/10/24/extending-nexmo-google-cloud-translation-api-dr
 redirect: https://www.nexmo.com/blog/2019/10/24/extending-nexmo-google-cloud-translation-api-dr
 ---

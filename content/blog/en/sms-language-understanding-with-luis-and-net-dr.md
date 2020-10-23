@@ -10,17 +10,7 @@ published: true
 published_at: 2020-04-09T13:05:33
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - net
-  - azure
-  - c
-  - luis
-  - nlp
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/09/sms-language-understanding-with-luis-and-net-dr
 redirect: https://www.nexmo.com/blog/2020/04/09/sms-language-understanding-with-luis-and-net-dr
 ---

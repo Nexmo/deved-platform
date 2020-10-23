@@ -11,12 +11,7 @@ published: true
 published_at: 2018-03-16T20:30:48
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers-corner
-tags:
-  - events
-  - php
+tags: []
 canonical: https://www.nexmo.com/blog/2018/03/16/nexmo-at-midwest-php-2018-dr
 redirect: https://www.nexmo.com/blog/2018/03/16/nexmo-at-midwest-php-2018-dr
 ---

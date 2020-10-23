@@ -11,18 +11,7 @@ published: true
 published_at: 2020-02-19T09:53:24
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - javascript
-  - messaging
-  - node
-  - nuxt
-  - nuxtjs
-  - sms
-  - vue
-  - vuejs
+tags: []
 canonical: https://www.nexmo.com/blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
 redirect: https://www.nexmo.com/blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
 ---

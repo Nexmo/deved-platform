@@ -11,17 +11,7 @@ published: true
 published_at: 2016-06-23T20:22:18
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-tags:
-  - net
-  - dotnet
-  - ndc-oslo
-  - pubnub
-  - real-time
-  - signalr
-  - xsockets
+tags: []
 canonical: https://www.nexmo.com/blog/2016/06/23/talking-real-time-web-apps-net-at-ndc-oslo
 redirect: https://www.nexmo.com/blog/2016/06/23/talking-real-time-web-apps-net-at-ndc-oslo
 ---

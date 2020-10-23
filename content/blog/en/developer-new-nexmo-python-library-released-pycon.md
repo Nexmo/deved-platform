@@ -11,13 +11,7 @@ published: true
 published_at: 2016-05-30T18:59:38
 comments: true
 category: release
-old_categories:
-  - developer
-  - developers
-tags:
-  - community
-  - library
-  - python
+tags: []
 canonical: https://www.nexmo.com/blog/2016/05/30/developer-new-nexmo-python-library-released-pycon
 redirect: https://www.nexmo.com/blog/2016/05/30/developer-new-nexmo-python-library-released-pycon
 ---

@@ -11,20 +11,7 @@ published: true
 published_at: 2020-01-08T08:01:04
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - dtmf-menu
-  - events
-  - inbound-call
-  - input
-  - ivr
-  - node-red
-  - nodered
-  - pbx
-  - talk
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/01/08/interactive-voice-response-node-red-dr
 redirect: https://www.nexmo.com/blog/2020/01/08/interactive-voice-response-node-red-dr
 ---

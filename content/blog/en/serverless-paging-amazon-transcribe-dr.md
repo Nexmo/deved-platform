@@ -11,18 +11,7 @@ published: true
 published_at: 2018-11-27T18:15:47
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - aws
-  - chalice
-  - devrel
-  - messaging
-  - python
-  - serverless
-  - tutorial
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2018/11/27/serverless-paging-amazon-transcribe-dr
 redirect: https://www.nexmo.com/blog/2018/11/27/serverless-paging-amazon-transcribe-dr
 ---

@@ -11,16 +11,7 @@ published: true
 published_at: 2019-11-25T13:57:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - messaging
-  - tutorial
-tags:
-  - go
-  - golang
-  - message-api
-  - nexmo
+tags: []
 canonical: https://www.nexmo.com/blog/2019/11/25/send-messages-with-nexmo-through-golang-and-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2019/11/25/send-messages-with-nexmo-through-golang-and-aws-lambda-dr
 ---

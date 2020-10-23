@@ -12,19 +12,7 @@ published: true
 published_at: 2019-10-04T08:00:39
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - omnichannel
-  - tutorial
-  - video
-tags:
-  - client-sdk
-  - conversation-api
-  - glitch
-  - nexmo
-  - omnichannel
-  - react
-  - tokbox
+tags: []
 canonical: https://www.nexmo.com/blog/2019/10/04/how-to-add-video-to-react-chat-app-with-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/10/04/how-to-add-video-to-react-chat-app-with-nexmo-dr
 ---

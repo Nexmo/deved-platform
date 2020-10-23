@@ -10,19 +10,7 @@ published: true
 published_at: 2016-11-23T21:59:35
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - messaging
-  - sms
-  - tutorial
-tags:
-  - expressjs
-  - javascript
-  - nodejs
-  - sms
-  - webhooks
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2016/11/23/getting-a-sms-delivery-receipt-from-a-mobile-carrier-with-node-js-dr
 redirect: https://www.nexmo.com/blog/2016/11/23/getting-a-sms-delivery-receipt-from-a-mobile-carrier-with-node-js-dr
 ---

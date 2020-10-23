@@ -11,19 +11,7 @@ published: true
 published_at: 2019-06-14T10:14:23
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - javascript
-  - nexmo
-  - nexmo-extend
-  - node-red
-  - nodered
-  - outbound-phone-call
-  - tutorial
-  - voice-api
-  - voice-call
+tags: []
 canonical: https://www.nexmo.com/blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
 ---

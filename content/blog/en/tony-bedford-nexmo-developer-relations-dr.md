@@ -11,10 +11,7 @@ published: true
 published_at: 2018-07-11T11:27:04
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - devrel
+tags: []
 canonical: https://www.nexmo.com/blog/2018/07/11/tony-bedford-nexmo-developer-relations-dr
 redirect: https://www.nexmo.com/blog/2018/07/11/tony-bedford-nexmo-developer-relations-dr
 ---

@@ -12,12 +12,7 @@ published: true
 published_at: 2020-03-25T13:03:43
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - aws
-  - aws-lambda
-  - developer
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/25/how-permissions-work-in-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2020/03/25/how-permissions-work-in-aws-lambda-dr
 ---

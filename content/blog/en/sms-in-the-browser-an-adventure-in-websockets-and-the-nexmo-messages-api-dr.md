@@ -11,17 +11,7 @@ published: true
 published_at: 2019-01-15T21:04:35
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - real-time-communications
-  - sms
-  - tutorial
-tags:
-  - developer
-  - devrel
-  - javascript
-  - sms
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2019/01/15/sms-in-the-browser-an-adventure-in-websockets-and-the-nexmo-messages-api-dr
 redirect: https://www.nexmo.com/blog/2019/01/15/sms-in-the-browser-an-adventure-in-websockets-and-the-nexmo-messages-api-dr
 ---

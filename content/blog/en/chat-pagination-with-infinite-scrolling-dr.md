@@ -11,11 +11,7 @@ published: true
 published_at: 2020-02-03T15:53:58
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - client-sdk
-  - conversation-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/02/03/chat-pagination-with-infinite-scrolling-dr
 redirect: https://www.nexmo.com/blog/2020/02/03/chat-pagination-with-infinite-scrolling-dr
 ---

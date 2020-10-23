@@ -11,13 +11,7 @@ published: true
 published_at: 2018-10-15T15:16:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - java
-  - sparkjava
-  - websocket
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr
 redirect: https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr
 ---

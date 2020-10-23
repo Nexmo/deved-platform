@@ -11,16 +11,7 @@ published: true
 published_at: 2017-05-03T13:00:27
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - messaging
-  - sms
-  - tutorial
-tags:
-  - java
-  - sms
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/05/03/send-sms-messages-with-java-dr
 redirect: https://www.nexmo.com/blog/2017/05/03/send-sms-messages-with-java-dr
 ---

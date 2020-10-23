@@ -11,11 +11,8 @@ published: true
 published_at: 2020-02-06T16:59:04
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - devrel
-  - nexmo
+  - careers
 canonical: https://www.nexmo.com/blog/2020/02/06/kevin-joins-the-nexmo-developer-relations-team
 redirect: https://www.nexmo.com/blog/2020/02/06/kevin-joins-the-nexmo-developer-relations-team
 ---

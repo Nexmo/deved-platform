@@ -11,14 +11,8 @@ published: true
 published_at: 2020-03-30T15:49:49
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - real-time-communications
-  - tutorial
-  - video
 tags:
-  - nodejs
-  - opentok
+  - node
   - video-api
 canonical: https://www.nexmo.com/blog/2020/03/30/basic-video-chat
 redirect: https://www.nexmo.com/blog/2020/03/30/basic-video-chat

@@ -11,15 +11,7 @@ published: true
 published_at: 2020-05-08T15:46:21
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
-tags:
-  - angular
-  - asp-net
-  - video-api
-  - video-chat
+tags: []
 canonical: https://www.nexmo.com/blog/2020/05/08/create-a-basic-video-chat-app-with-asp-net-and-angular-dr
 redirect: https://www.nexmo.com/blog/2020/05/08/create-a-basic-video-chat-app-with-asp-net-and-angular-dr
 ---

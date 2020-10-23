@@ -11,16 +11,7 @@ published: true
 published_at: 2019-08-14T21:43:11
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - video
-tags:
-  - linux
-  - linux-devices
-  - linux-gaming
-  - opentok-linux-sdk
-  - video-game-console
-  - video4linux
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/14/opentok-linux
 redirect: https://www.nexmo.com/blog/2019/08/14/opentok-linux
 ---

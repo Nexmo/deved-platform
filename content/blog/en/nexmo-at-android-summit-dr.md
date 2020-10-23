@@ -11,13 +11,7 @@ published: true
 published_at: 2017-09-05T09:21:31
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - events
-tags:
-  - android
-  - devrel
+tags: []
 canonical: https://www.nexmo.com/blog/2017/09/05/nexmo-at-android-summit-dr
 redirect: https://www.nexmo.com/blog/2017/09/05/nexmo-at-android-summit-dr
 ---

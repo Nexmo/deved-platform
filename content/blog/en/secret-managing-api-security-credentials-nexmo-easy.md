@@ -11,15 +11,7 @@ published: true
 published_at: 2018-10-05T16:00:58
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - enterprise
-  - nexmo-news
-tags:
-  - secondary-accounts
-  - secret-management-api
-  - secret-rotation
-  - security
+tags: []
 canonical: https://www.nexmo.com/blog/2018/10/05/secret-managing-api-security-credentials-nexmo-easy
 redirect: https://www.nexmo.com/blog/2018/10/05/secret-managing-api-security-credentials-nexmo-easy
 ---

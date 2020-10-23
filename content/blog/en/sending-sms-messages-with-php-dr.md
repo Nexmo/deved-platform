@@ -11,16 +11,7 @@ published: true
 published_at: 2017-09-20T15:02:14
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - messaging
-  - sms
-  - tutorial
-tags:
-  - php
-  - slimphp
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/09/20/sending-sms-messages-with-php-dr
 redirect: https://www.nexmo.com/blog/2017/09/20/sending-sms-messages-with-php-dr
 ---

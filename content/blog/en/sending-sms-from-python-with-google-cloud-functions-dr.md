@@ -9,13 +9,7 @@ published: true
 published_at: 2019-03-21T20:21:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-tags:
-  - python
-  - serverless
-  - sms-api
+tags: []
 spotlight: true
 ---
 

@@ -12,17 +12,7 @@ published: true
 published_at: 2019-09-19T08:58:06
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - developers
-  - omnichannel
-  - product
-  - real-time-communications
-tags:
-  - client-sdks
-  - conversation-api
-  - omnichannel-communications
-  - programmable-conversations
+tags: []
 canonical: https://www.nexmo.com/blog/2019/09/19/nexmo-client-sdks-move-to-beta-dr
 redirect: https://www.nexmo.com/blog/2019/09/19/nexmo-client-sdks-move-to-beta-dr
 ---

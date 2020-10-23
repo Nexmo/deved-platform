@@ -11,16 +11,7 @@ published: true
 published_at: 2018-06-19T14:25:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - javascript
-  - p2p
-  - python
-  - tutorial
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2018/06/19/next-web-voice-journal-python-vue-javascript-dr
 redirect: https://www.nexmo.com/blog/2018/06/19/next-web-voice-journal-python-vue-javascript-dr
 ---

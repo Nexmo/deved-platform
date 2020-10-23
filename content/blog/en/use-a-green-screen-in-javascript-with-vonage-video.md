@@ -11,14 +11,7 @@ published: true
 published_at: 2020-06-24T07:20:24
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
-tags:
-  - green-screen
-  - javascript
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/06/24/use-a-green-screen-in-javascript-with-vonage-video
 redirect: https://www.nexmo.com/blog/2020/06/24/use-a-green-screen-in-javascript-with-vonage-video
 ---

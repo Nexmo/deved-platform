@@ -10,16 +10,7 @@ published: true
 published_at: 2018-12-14T17:46:54
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - tutorial
-tags:
-  - advent
-  - devrel
-  - laravel
-  - messaging
-  - php
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/14/build-turkey-timer-laravel-facebook-messenger-dr
 redirect: https://www.nexmo.com/blog/2018/12/14/build-turkey-timer-laravel-facebook-messenger-dr
 ---

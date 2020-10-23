@@ -11,14 +11,7 @@ published: true
 published_at: 2019-01-09T00:12:20
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - javascript
-  - opentok
-  - video
+tags: []
 canonical: https://www.nexmo.com/blog/2019/01/08/video-chat-javascript-opentok-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/01/08/video-chat-javascript-opentok-nexmo-dr
 ---

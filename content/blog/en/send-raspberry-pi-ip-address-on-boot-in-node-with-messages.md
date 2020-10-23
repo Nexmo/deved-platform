@@ -11,18 +11,7 @@ published: true
 published_at: 2020-08-05T13:45:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - product
-  - sms
-  - tutorial
-tags:
-  - messaging
-  - node
-  - raspberry-pi
-  - sms
-  - whatsapp
+tags: []
 canonical: https://www.nexmo.com/blog/2020/08/05/send-raspberry-pi-ip-address-on-boot-in-node-with-messages
 redirect: https://www.nexmo.com/blog/2020/08/05/send-raspberry-pi-ip-address-on-boot-in-node-with-messages
 ---

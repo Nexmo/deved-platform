@@ -9,10 +9,6 @@ published: true
 published_at: 2014-11-18T13:02:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - developers-corner
 tags: []
 canonical: https://www.nexmo.com/blog/2014/11/18/whats-different-now
 redirect: https://www.nexmo.com/blog/2014/11/18/whats-different-now

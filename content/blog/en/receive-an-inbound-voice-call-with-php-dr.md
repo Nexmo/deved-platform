@@ -11,9 +11,6 @@ published: true
 published_at: 2018-06-28T14:39:09
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/06/28/receive-an-inbound-voice-call-with-php-dr
 redirect: https://www.nexmo.com/blog/2018/06/28/receive-an-inbound-voice-call-with-php-dr

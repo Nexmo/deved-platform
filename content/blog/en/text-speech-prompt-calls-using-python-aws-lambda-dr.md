@@ -11,14 +11,7 @@ published: true
 published_at: 2018-02-16T14:14:06
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - aws-lambda
-  - text-to-speech
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
 ---

@@ -11,15 +11,7 @@ published: true
 published_at: 2020-05-19T13:31:31
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-  - video
-tags:
-  - messages
-  - raspberry-pi-4
-  - video
+tags: []
 canonical: https://www.nexmo.com/blog/2020/05/19/home-surveillance-system-with-node-and-a-raspberry-pi
 redirect: https://www.nexmo.com/blog/2020/05/19/home-surveillance-system-with-node-and-a-raspberry-pi
 ---

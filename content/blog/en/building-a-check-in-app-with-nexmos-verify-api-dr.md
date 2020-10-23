@@ -11,18 +11,7 @@ published: true
 published_at: 2019-06-27T07:01:59
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - verify
-tags:
-  - authentication
-  - javascript
-  - koa
-  - node
-  - security
-  - verify
-  - verify-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/06/27/building-a-check-in-app-with-nexmos-verify-api-dr
 redirect: https://www.nexmo.com/blog/2019/06/27/building-a-check-in-app-with-nexmos-verify-api-dr
 ---

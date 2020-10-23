@@ -11,16 +11,8 @@ published: true
 published_at: 2017-03-23T20:48:33
 comments: true
 category: release
-old_categories:
-  - developer
-  - developers
-  - product
 tags:
-  - client
-  - client-library
   - java
-  - library
-  - release
 canonical: https://www.nexmo.com/blog/2017/03/23/big-changes-for-nexmos-java-client-library-dr
 redirect: https://www.nexmo.com/blog/2017/03/23/big-changes-for-nexmos-java-client-library-dr
 ---

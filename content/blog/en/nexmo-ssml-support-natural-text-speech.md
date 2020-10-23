@@ -11,13 +11,7 @@ published: true
 published_at: 2018-01-04T17:38:04
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - product
-  - voice
-tags:
-  - text-to-speech
+tags: []
 canonical: https://www.nexmo.com/blog/2018/01/04/nexmo-ssml-support-natural-text-speech
 redirect: https://www.nexmo.com/blog/2018/01/04/nexmo-ssml-support-natural-text-speech
 ---

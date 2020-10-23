@@ -11,16 +11,7 @@ published: true
 published_at: 2017-03-31T13:00:30
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - sms
-  - tutorial
-tags:
-  - asp-net
-  - asp-net-mvc
-  - receiving-sms
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/03/31/recieve-sms-messages-with-asp-net-mvc-framework-dr
 redirect: https://www.nexmo.com/blog/2017/03/31/recieve-sms-messages-with-asp-net-mvc-framework-dr
 ---

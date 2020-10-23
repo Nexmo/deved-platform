@@ -11,14 +11,7 @@ published: true
 published_at: 2020-03-11T13:02:01
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - google-translate
-  - nodejs
-  - sms
-  - websockets
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/11/real-time-sms-demo-with-react-node-and-google-translate-dr
 redirect: https://www.nexmo.com/blog/2020/03/11/real-time-sms-demo-with-react-node-and-google-translate-dr
 ---

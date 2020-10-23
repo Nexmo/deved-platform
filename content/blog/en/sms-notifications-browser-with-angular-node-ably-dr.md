@@ -10,15 +10,7 @@ published: true
 published_at: 2018-08-07T10:17:39
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - ably
-  - angular
-  - angular-material
-  - javascript
-  - node
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
 redirect: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
 ---

@@ -11,16 +11,7 @@ published: true
 published_at: 2019-04-02T09:00:11
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - voice
-tags:
-  - call-recording
-  - devrel
-  - express
-  - javascript
-  - voice
-  - websockets
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/02/voicemail-with-express-and-socketio-dr
 redirect: https://www.nexmo.com/blog/2019/04/02/voicemail-with-express-and-socketio-dr
 ---

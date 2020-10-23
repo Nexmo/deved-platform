@@ -10,14 +10,7 @@ published: true
 published_at: 2018-02-28T14:58:49
 comments: true
 category: release
-old_categories:
-  - developer
-  - developers
-  - developers-corner
-tags:
-  - net
-  - community
-  - release
+tags: []
 canonical: https://www.nexmo.com/blog/2018/02/28/nexmo-dotnet-client-library-new-release-dr
 redirect: https://www.nexmo.com/blog/2018/02/28/nexmo-dotnet-client-library-new-release-dr
 ---

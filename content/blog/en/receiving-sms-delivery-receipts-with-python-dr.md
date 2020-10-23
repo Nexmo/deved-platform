@@ -11,9 +11,6 @@ published: true
 published_at: 2019-06-03T14:17:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/06/03/receiving-sms-delivery-receipts-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/06/03/receiving-sms-delivery-receipts-with-python-dr

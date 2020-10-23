@@ -11,16 +11,9 @@ published: true
 published_at: 2018-11-20T17:36:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
 tags:
-  - devrel
-  - ivr
   - python
-  - tutorial
-  - voice
+  - voice-api
 canonical: https://www.nexmo.com/blog/2018/11/20/build-a-family-hotline-dr
 redirect: https://www.nexmo.com/blog/2018/11/20/build-a-family-hotline-dr
 ---

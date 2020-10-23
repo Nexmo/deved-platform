@@ -11,12 +11,8 @@ published: true
 published_at: 2020-04-09T09:04:44
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags:
-  - nodejs
-  - video
+  - node
   - video-api
   - vue
 canonical: https://www.nexmo.com/blog/2020/04/09/build-a-secure-video-appointments-application-using-vonage-api-dr

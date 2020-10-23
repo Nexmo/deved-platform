@@ -11,16 +11,7 @@ published: true
 published_at: 2017-05-11T15:40:25
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - developers
-  - product
-  - voice
-tags:
-  - ai
-  - amazon-lex
-  - bots
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2017/05/11/nexmo-aws-lex-connector-in-public-beta-dr
 redirect: https://www.nexmo.com/blog/2017/05/11/nexmo-aws-lex-connector-in-public-beta-dr
 ---

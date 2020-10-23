@@ -12,10 +12,8 @@ published: true
 published_at: 2016-12-05T10:46:49
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
-tags: []
+tags:
+  - careers
 canonical: https://www.nexmo.com/blog/2016/12/05/welcome-newest-developer-advocate-nexmo-devrel-team-chris-guzman-dr
 redirect: https://www.nexmo.com/blog/2016/12/05/welcome-newest-developer-advocate-nexmo-devrel-team-chris-guzman-dr
 ---

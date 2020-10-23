@@ -12,16 +12,7 @@ published: true
 published_at: 2016-06-21T10:23:50
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - ruby
-  - sinatra
-  - text-to-speech
-  - tts
+tags: []
 canonical: https://www.nexmo.com/blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api-dr
 redirect: https://www.nexmo.com/blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api-dr
 ---

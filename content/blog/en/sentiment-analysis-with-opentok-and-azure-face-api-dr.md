@@ -11,17 +11,7 @@ published: true
 published_at: 2020-01-27T22:27:30
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - video
-tags:
-  - devrel
-  - face-api
-  - opentok
-  - sentiment-analysis
-  - video
-  - video-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/01/27/sentiment-analysis-with-opentok-and-azure-face-api-dr
 redirect: https://www.nexmo.com/blog/2020/01/27/sentiment-analysis-with-opentok-and-azure-face-api-dr
 ---

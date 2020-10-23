@@ -11,13 +11,7 @@ published: true
 published_at: 2018-04-17T10:00:54
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - voice
-tags:
-  - call-recording
-  - transcription
+tags: []
 canonical: https://www.nexmo.com/blog/2018/04/17/dual-channel-transcription-split-recording-dr
 redirect: https://www.nexmo.com/blog/2018/04/17/dual-channel-transcription-split-recording-dr
 ---

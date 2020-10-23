@@ -11,10 +11,8 @@ published: true
 published_at: 2019-05-29T12:18:27
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags: []
+tags:
+  - python
 canonical: https://www.nexmo.com/blog/2019/05/29/build-a-conference-call-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/05/29/build-a-conference-call-with-python-dr
 ---

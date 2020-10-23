@@ -11,14 +11,7 @@ published: true
 published_at: 2016-05-04T20:29:12
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-tags:
-  - community
-  - libraries
-  - railconf
-  - ruby
+tags: []
 canonical: https://www.nexmo.com/blog/2016/05/04/ruby-gem
 redirect: https://www.nexmo.com/blog/2016/05/04/ruby-gem
 ---

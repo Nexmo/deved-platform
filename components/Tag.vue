@@ -35,7 +35,8 @@ export default {
 .Blog-badge--media-api,
 .Blog-badge--voice-api,
 .Blog-badge--conversation-api,
-.Blog-badge--video-api {
+.Blog-badge--video-api,
+.Blog-badge--station {
   background: #000;
   color: #fff;
 }
@@ -45,29 +46,35 @@ export default {
   color: #fff;
 }
 
-.Blog-badge--fauna,
-.Blog-badge--fauna-db {
+.Blog-badge--faunadb {
   background: #323fcb;
   color: #fff;
 }
 
-.Blog-badge--vue,
-.Blog-badge--vuejs {
+.Blog-badge--vue {
   background-color: #41b883;
   color: #35495e;
 }
 
+.Blog-badge--nuxt {
+  background-color: #00c58e;
+  color: #ffffff;
+}
+
 .Blog-badge--ruby-on-rails,
-.Blog-badge--rails,
 .Blog-badge--ruby {
   background-color: #cc342d;
   color: #fff;
 }
 
-.Blog-badge--js,
 .Blog-badge--javascript {
   background-color: #f7df1e;
   color: #000000;
+}
+
+.Blog-badge--typescript {
+  background-color: #3178c6;
+  color: #fff;
 }
 
 .Blog-badge--dotnet {
@@ -77,6 +84,11 @@ export default {
 
 .Blog-badge--node {
   background-color: #3d8836;
+  color: #fff;
+}
+
+.Blog-badge--deno {
+  background: #161e2e;
   color: #fff;
 }
 
@@ -166,6 +178,11 @@ export default {
   color:#ffdf5b;
 }
 
+.Blog-badge--mongodb {
+  background-color: #13AA52;
+  color: #ffffff;
+}
+
 .Blog-badge--netlify {
   background: linear-gradient(to bottom, #23c2b8, #37afbc);
   color: white;
@@ -175,6 +192,11 @@ export default {
 .Blog-badge--react {
   background: #61dafb;
   color: black;
+}
+
+.Blog-badge--open-api {
+  background: #38b832;
+  color: #ffffff;
 }
 
 .Blog-badge--inclusion {

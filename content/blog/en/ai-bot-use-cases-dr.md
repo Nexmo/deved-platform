@@ -12,12 +12,6 @@ published: true
 published_at: 2017-09-07T15:30:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - enterprise
-  - real-time-communications
-  - voice
 tags:
   - ai
   - chatbots

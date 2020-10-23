@@ -11,19 +11,7 @@ published: true
 published_at: 2019-08-15T02:42:29
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - sms
-  - tutorial
-  - voice
-tags:
-  - api
-  - nexmo
-  - qr-code
-  - scavenger-hunt
-  - sms
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/14/how-to-create-an-interactive-scavenger-hunt-with-nexmos-sms-and-voice-api-dr
 redirect: https://www.nexmo.com/blog/2019/08/14/how-to-create-an-interactive-scavenger-hunt-with-nexmos-sms-and-voice-api-dr
 ---

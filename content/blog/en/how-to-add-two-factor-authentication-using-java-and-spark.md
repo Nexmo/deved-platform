@@ -11,17 +11,7 @@ published: true
 published_at: 2020-08-18T13:26:46
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - 2fa
-  - gradle
-  - java
-  - security
-  - spark-framework
-  - sparkjava
-  - two-factor-authentication
+tags: []
 canonical: https://www.nexmo.com/blog/2020/08/18/how-to-add-two-factor-authentication-using-java-and-spark
 redirect: https://www.nexmo.com/blog/2020/08/18/how-to-add-two-factor-authentication-using-java-and-spark
 ---

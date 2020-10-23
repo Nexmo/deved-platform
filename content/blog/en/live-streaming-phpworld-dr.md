@@ -11,9 +11,6 @@ published: true
 published_at: 2016-11-16T13:51:24
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
 tags: []
 canonical: https://www.nexmo.com/blog/2016/11/16/live-streaming-phpworld-dr
 redirect: https://www.nexmo.com/blog/2016/11/16/live-streaming-phpworld-dr

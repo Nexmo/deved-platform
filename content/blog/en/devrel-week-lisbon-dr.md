@@ -11,11 +11,7 @@ published: true
 published_at: 2018-02-02T13:52:46
 comments: true
 category: event
-old_categories:
-  - developer
-  - events
-tags:
-  - developer-relations
+tags: []
 canonical: https://www.nexmo.com/blog/2018/02/02/devrel-week-lisbon-dr
 redirect: https://www.nexmo.com/blog/2018/02/02/devrel-week-lisbon-dr
 ---

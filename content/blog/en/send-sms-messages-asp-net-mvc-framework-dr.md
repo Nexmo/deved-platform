@@ -11,13 +11,7 @@ published: true
 published_at: 2017-03-23T14:00:21
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - sms
-  - tutorial
-tags:
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/03/23/send-sms-messages-asp-net-mvc-framework-dr
 redirect: https://www.nexmo.com/blog/2017/03/23/send-sms-messages-asp-net-mvc-framework-dr
 ---

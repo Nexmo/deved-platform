@@ -11,12 +11,7 @@ published: true
 published_at: 2016-06-02T18:23:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-tags:
-  - skyscanner
-  - startups
+tags: []
 canonical: https://www.nexmo.com/blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
 redirect: https://www.nexmo.com/blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
 ---

@@ -11,16 +11,7 @@ published: true
 published_at: 2017-10-12T16:48:15
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - hack-worthy
-  - nexmo-news
-  - sms
-  - voice
-tags:
-  - hackathon
-  - techcrunch-disrupt
+tags: []
 canonical: https://www.nexmo.com/blog/2017/10/12/techcrunch-disrupt-hackathon-focus-rescue
 redirect: https://www.nexmo.com/blog/2017/10/12/techcrunch-disrupt-hackathon-focus-rescue
 ---

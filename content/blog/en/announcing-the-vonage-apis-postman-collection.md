@@ -11,10 +11,7 @@ published: true
 published_at: 2020-09-16T10:53:56
 comments: true
 category: release
-old_categories:
-  - developer
 tags:
-  - best-practice
   - open-api
   - postman
 canonical: https://www.nexmo.com/blog/2020/09/16/announcing-the-vonage-apis-postman-collection

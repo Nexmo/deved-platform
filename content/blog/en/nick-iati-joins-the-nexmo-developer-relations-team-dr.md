@@ -11,11 +11,8 @@ published: true
 published_at: 2020-02-11T09:45:06
 comments: true
 category: team
-old_categories:
-  - developer
 tags:
-  - devrel
-  - nexmo
+  - careers
 canonical: https://www.nexmo.com/blog/2020/02/11/nick-iati-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2020/02/11/nick-iati-joins-the-nexmo-developer-relations-team-dr
 ---

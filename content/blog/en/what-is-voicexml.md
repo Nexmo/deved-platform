@@ -11,10 +11,6 @@ published: true
 published_at: 2015-02-21T00:27:36
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - voice
 tags: []
 canonical: https://www.nexmo.com/blog/2015/02/21/what-is-voicexml
 redirect: https://www.nexmo.com/blog/2015/02/21/what-is-voicexml

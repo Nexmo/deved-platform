@@ -11,13 +11,7 @@ published: true
 published_at: 2020-04-15T12:06:53
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - messages-api
-  - nodejs
-  - sandbox
-  - whatsapp
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/15/send-a-whatsapp-message-with-node-dr
 redirect: https://www.nexmo.com/blog/2020/04/15/send-a-whatsapp-message-with-node-dr
 ---

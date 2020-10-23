@@ -11,16 +11,7 @@ published: true
 published_at: 2017-11-08T19:17:56
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - events
-tags:
-  - ibm
-  - kitura
-  - server-side-swift
-  - swift
-  - swift-summit
+tags: []
 canonical: https://www.nexmo.com/blog/2017/11/08/nexmo-at-the-swift-summit-dr
 redirect: https://www.nexmo.com/blog/2017/11/08/nexmo-at-the-swift-summit-dr
 ---

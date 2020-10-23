@@ -11,10 +11,7 @@ published: true
 published_at: 2020-07-15T13:16:59
 comments: true
 category: announcement
-old_categories:
-  - developer
-tags:
-  - vonage-voyagers
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/15/introducing-the-vonage-voyagers-developer-champions-program
 redirect: https://www.nexmo.com/blog/2020/07/15/introducing-the-vonage-voyagers-developer-champions-program
 ---

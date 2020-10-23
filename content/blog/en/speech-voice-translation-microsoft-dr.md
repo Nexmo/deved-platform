@@ -11,19 +11,7 @@ published: true
 published_at: 2018-03-14T11:51:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - hack-worthy
-  - real-time-communications
-  - tutorial
-tags:
-  - async
-  - devrel
-  - microsoft
-  - python
-  - translation
-  - voice-api
-  - websockets
+tags: []
 canonical: https://www.nexmo.com/blog/2018/03/14/speech-voice-translation-microsoft-dr
 redirect: https://www.nexmo.com/blog/2018/03/14/speech-voice-translation-microsoft-dr
 ---

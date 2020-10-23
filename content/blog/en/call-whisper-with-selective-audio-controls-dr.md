@@ -11,15 +11,7 @@ published: true
 published_at: 2018-12-13T17:01:23
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - real-time-communications
-  - tutorial
-  - voice
-tags:
-  - call-centers
-  - customer-experience
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2018/12/13/call-whisper-with-selective-audio-controls-dr
 redirect: https://www.nexmo.com/blog/2018/12/13/call-whisper-with-selective-audio-controls-dr
 ---

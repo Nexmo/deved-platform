@@ -12,14 +12,7 @@ published: true
 published_at: 2020-01-22T14:02:06
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-tags:
-  - community
-  - devrel
-  - rails
-  - ruby
+tags: []
 canonical: https://www.nexmo.com/blog/2020/01/22/nexmo-at-birmingham-on-rails-dr
 redirect: https://www.nexmo.com/blog/2020/01/22/nexmo-at-birmingham-on-rails-dr
 ---

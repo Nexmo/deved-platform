@@ -11,11 +11,7 @@ published: true
 published_at: 2020-04-16T13:25:04
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - conversation-api
-  - vuejs
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
 redirect: https://www.nexmo.com/blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
 ---

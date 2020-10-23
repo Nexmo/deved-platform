@@ -11,16 +11,7 @@ published: true
 published_at: 2020-08-26T13:13:19
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - best-practice
-  - debugging
-  - json-web-tokens
-  - jwt
-  - security
-  - tips-and-tricks
+tags: []
 canonical: https://www.nexmo.com/blog/2020/08/26/how-to-debug-json-web-tokens-jwts
 redirect: https://www.nexmo.com/blog/2020/08/26/how-to-debug-json-web-tokens-jwts
 ---

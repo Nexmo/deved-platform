@@ -11,14 +11,7 @@ published: true
 published_at: 2016-08-03T10:16:49
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-tags:
-  - emf-camp
-  - events
-  - iot
-  - micropython
+tags: []
 canonical: https://www.nexmo.com/blog/2016/08/03/nexmo-tilda-emf-camp-badge
 redirect: https://www.nexmo.com/blog/2016/08/03/nexmo-tilda-emf-camp-badge
 ---

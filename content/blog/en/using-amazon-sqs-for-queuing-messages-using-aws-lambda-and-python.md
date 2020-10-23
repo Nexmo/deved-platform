@@ -11,15 +11,7 @@ published: true
 published_at: 2020-06-10T13:31:59
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - lambda
-  - python
-  - sms
-  - sqs
+tags: []
 canonical: https://www.nexmo.com/blog/2020/06/10/using-amazon-sqs-for-queuing-messages-using-aws-lambda-and-python
 redirect: https://www.nexmo.com/blog/2020/06/10/using-amazon-sqs-for-queuing-messages-using-aws-lambda-and-python
 ---

@@ -11,14 +11,7 @@ published: true
 published_at: 2018-05-22T16:19:01
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-tags:
-  - asp-net
-  - number-insight
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/05/22/getting-started-with-nexmo-number-insight-apis-and-asp-net-dr
 redirect: https://www.nexmo.com/blog/2018/05/22/getting-started-with-nexmo-number-insight-apis-and-asp-net-dr
 ---

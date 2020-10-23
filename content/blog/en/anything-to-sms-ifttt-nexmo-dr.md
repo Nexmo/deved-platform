@@ -10,16 +10,9 @@ published: true
 published_at: 2018-09-18T16:45:47
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
 tags:
-  - devrel
-  - ifttt
   - php
-  - serverless
-  - sms
+  - sms-api
 canonical: https://www.nexmo.com/blog/2018/09/18/anything-to-sms-ifttt-nexmo-dr
 redirect: https://www.nexmo.com/blog/2018/09/18/anything-to-sms-ifttt-nexmo-dr
 ---

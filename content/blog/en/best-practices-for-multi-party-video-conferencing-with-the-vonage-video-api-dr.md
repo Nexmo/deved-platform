@@ -11,12 +11,7 @@ published: true
 published_at: 2020-07-23T13:28:56
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - product
-  - video
 tags:
-  - best-practice
   - video-api
 canonical: https://www.nexmo.com/blog/2020/07/23/best-practices-for-multi-party-video-conferencing-with-the-vonage-video-api-dr
 redirect: https://www.nexmo.com/blog/2020/07/23/best-practices-for-multi-party-video-conferencing-with-the-vonage-video-api-dr

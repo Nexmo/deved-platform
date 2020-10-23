@@ -10,11 +10,8 @@ published: true
 published_at: 2020-08-03T15:26:51
 comments: true
 category: release
-old_categories:
-  - developer
 tags:
   - php
-  - php-sdk
 canonical: https://www.nexmo.com/blog/2020/08/03/announcing-the-php-server-sdk-version-2-2-0-release
 redirect: https://www.nexmo.com/blog/2020/08/03/announcing-the-php-server-sdk-version-2-2-0-release
 ---

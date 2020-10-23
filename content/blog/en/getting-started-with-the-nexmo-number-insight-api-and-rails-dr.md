@@ -11,16 +11,7 @@ published: true
 published_at: 2019-03-25T15:37:11
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - developer
-  - devrel
-  - number-insight
-  - ruby
-  - ruby-on-rails
-  - tutorial
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2019/03/25/getting-started-with-the-nexmo-number-insight-api-and-rails-dr
 redirect: https://www.nexmo.com/blog/2019/03/25/getting-started-with-the-nexmo-number-insight-api-and-rails-dr
 ---

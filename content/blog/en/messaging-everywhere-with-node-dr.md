@@ -11,15 +11,7 @@ published: true
 published_at: 2020-05-27T14:35:10
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - facebook-messenger
-  - messages-api
-  - nodejs
-  - sms
-  - viber
-  - whatsapp
+tags: []
 canonical: https://www.nexmo.com/blog/2020/05/27/messaging-everywhere-with-node-dr
 redirect: https://www.nexmo.com/blog/2020/05/27/messaging-everywhere-with-node-dr
 ---

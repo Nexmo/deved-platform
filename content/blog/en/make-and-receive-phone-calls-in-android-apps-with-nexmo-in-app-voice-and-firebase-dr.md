@@ -12,15 +12,7 @@ published: true
 published_at: 2018-07-03T15:39:14
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-tags:
-  - android
-  - devrel
-  - firebase
-  - kotlin
+tags: []
 canonical: https://www.nexmo.com/blog/2018/07/03/make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase-dr
 redirect: https://www.nexmo.com/blog/2018/07/03/make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase-dr
 ---

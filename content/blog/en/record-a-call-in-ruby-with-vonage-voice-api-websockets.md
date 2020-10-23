@@ -12,14 +12,7 @@ published: true
 published_at: 2020-08-04T13:25:34
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - ruby
-  - voice-api
-  - websockets
+tags: []
 canonical: https://www.nexmo.com/blog/2020/08/04/record-a-call-in-ruby-with-vonage-voice-api-websockets
 redirect: https://www.nexmo.com/blog/2020/08/04/record-a-call-in-ruby-with-vonage-voice-api-websockets
 ---

@@ -11,18 +11,10 @@ published: true
 published_at: 2019-09-18T19:23:25
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - messaging
-  - tutorial
 tags:
-  - api
-  - dispatch
-  - family
   - glitch
-  - messages
-  - nexmo
-  - standup
+  - dispatch-api
+  - messages-api
 canonical: https://www.nexmo.com/blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
 redirect: https://www.nexmo.com/blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
 ---

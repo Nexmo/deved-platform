@@ -11,15 +11,7 @@ published: true
 published_at: 2019-03-20T17:43:20
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - real-time-communications
-  - tutorial
-tags:
-  - artificial-intelligence
-  - machine-learning
-  - tutorial
-  - vapi
+tags: []
 canonical: https://www.nexmo.com/blog/2019/03/20/building-a-machine-learning-model-for-answering-machine-detection-dr
 redirect: https://www.nexmo.com/blog/2019/03/20/building-a-machine-learning-model-for-answering-machine-detection-dr
 ---

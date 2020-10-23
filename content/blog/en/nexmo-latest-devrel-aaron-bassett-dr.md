@@ -11,11 +11,8 @@ published: true
 published_at: 2017-06-08T09:43:33
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2017/06/08/nexmo-latest-devrel-aaron-bassett-dr
 redirect: https://www.nexmo.com/blog/2017/06/08/nexmo-latest-devrel-aaron-bassett-dr
 ---

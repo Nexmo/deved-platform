@@ -11,14 +11,8 @@ published: true
 published_at: 2019-02-07T18:27:09
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - security
 tags:
   - dispatch-api
-  - one-time-password
-  - otp
 canonical: https://www.nexmo.com/blog/2019/02/07/build-an-otp-service-dr
 redirect: https://www.nexmo.com/blog/2019/02/07/build-an-otp-service-dr
 ---

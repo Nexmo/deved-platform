@@ -11,13 +11,7 @@ published: true
 published_at: 2019-07-03T15:34:57
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - ngrok
-  - node-red
-  - nodered
+tags: []
 canonical: https://www.nexmo.com/blog/2019/07/03/ngrok-in-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/07/03/ngrok-in-node-red-dr
 ---

@@ -11,16 +11,7 @@ published: true
 published_at: 2015-08-14T15:45:51
 comments: true
 category: community
-old_categories:
-  - developer
-  - developer-challenge
-  - developers
-  - number-insight
-tags:
-  - api
-  - developer
-  - developer-challenge
-  - number-insight
+tags: []
 canonical: https://www.nexmo.com/blog/2015/08/14/developer-challenge-winner-uses-nexmo-number-insight-apis
 redirect: https://www.nexmo.com/blog/2015/08/14/developer-challenge-winner-uses-nexmo-number-insight-apis
 ---

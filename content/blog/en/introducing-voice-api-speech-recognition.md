@@ -11,13 +11,7 @@ published: true
 published_at: 2020-06-02T14:03:46
 comments: true
 category: announcement
-old_categories:
-  - developer
-tags:
-  - asr
-  - nodejs
-  - speech-recognition
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2020/06/02/introducing-voice-api-speech-recognition
 redirect: https://www.nexmo.com/blog/2020/06/02/introducing-voice-api-speech-recognition
 ---

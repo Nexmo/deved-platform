@@ -11,15 +11,7 @@ published: true
 published_at: 2020-06-19T15:27:51
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - aws
-  - php
-  - serverless
-  - transcription
+tags: []
 canonical: https://www.nexmo.com/blog/2020/06/19/voice-transcription-pipeline-in-php-with-vonage-dr
 redirect: https://www.nexmo.com/blog/2020/06/19/voice-transcription-pipeline-in-php-with-vonage-dr
 ---

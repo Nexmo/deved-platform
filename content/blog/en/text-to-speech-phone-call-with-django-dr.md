@@ -11,16 +11,7 @@ published: true
 published_at: 2017-08-14T18:49:09
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - devrel
-  - tts
-  - voice-api
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/08/14/text-to-speech-phone-call-with-django-dr
 redirect: https://www.nexmo.com/blog/2017/08/14/text-to-speech-phone-call-with-django-dr
 ---

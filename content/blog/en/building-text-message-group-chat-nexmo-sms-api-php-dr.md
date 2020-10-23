@@ -10,16 +10,7 @@ published: true
 published_at: 2016-06-02T15:26:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-tags:
-  - chat
-  - group-chat
-  - php
-  - sms
-  - text-messaging
+tags: []
 canonical: https://www.nexmo.com/blog/2016/06/02/building-text-message-group-chat-nexmo-sms-api-php-dr
 redirect: https://www.nexmo.com/blog/2016/06/02/building-text-message-group-chat-nexmo-sms-api-php-dr
 ---

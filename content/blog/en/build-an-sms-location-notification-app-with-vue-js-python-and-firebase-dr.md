@@ -11,16 +11,10 @@ published: true
 published_at: 2020-07-16T16:54:44
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
 tags:
   - firebase
-  - google-cloud-functions
   - python
-  - sms
-  - vuejs
+  - vue
 canonical: https://www.nexmo.com/blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
 redirect: https://www.nexmo.com/blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
 ---

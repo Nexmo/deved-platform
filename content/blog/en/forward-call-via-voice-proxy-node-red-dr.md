@@ -10,20 +10,7 @@ published: true
 published_at: 2019-10-17T08:09:37
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - anonymous-call
-  - call-relay
-  - forward-call
-  - inbound-call
-  - node-red
-  - nodered
-  - proxy-call
-  - record-call
-  - record-incoming-calls
-  - recorded-proxy-call
+tags: []
 canonical: https://www.nexmo.com/blog/2019/10/17/forward-call-via-voice-proxy-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/10/17/forward-call-via-voice-proxy-node-red-dr
 ---

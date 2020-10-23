@@ -11,17 +11,7 @@ published: true
 published_at: 2019-12-04T09:00:56
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - messaging
-  - sms
-tags:
-  - devrel
-  - messaging
-  - middleware
-  - rack
-  - ruby
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2019/12/04/introducing-nexmo-rack-middleware-dr
 redirect: https://www.nexmo.com/blog/2019/12/04/introducing-nexmo-rack-middleware-dr
 ---

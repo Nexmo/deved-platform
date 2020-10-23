@@ -10,13 +10,7 @@ published: true
 published_at: 2017-06-22T13:30:08
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - sms
-  - tutorial
-tags:
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/06/22/send-sms-messages-python-flask-dr
 redirect: https://www.nexmo.com/blog/2017/06/22/send-sms-messages-python-flask-dr
 ---

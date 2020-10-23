@@ -11,21 +11,7 @@ published: true
 published_at: 2017-01-04T17:18:08
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - hack-worthy
-  - tutorial
-  - voice
-tags:
-  - ai
-  - bluemix
-  - ibm
-  - intu
-  - voice
-  - voice-api
-  - watson
-  - websockets
+tags: []
 canonical: https://www.nexmo.com/blog/2017/01/04/extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api-dr
 redirect: https://www.nexmo.com/blog/2017/01/04/extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api-dr
 ---

@@ -11,13 +11,7 @@ published: true
 published_at: 2020-07-09T13:53:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - asp-net-core-mvc
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
 redirect: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
 ---

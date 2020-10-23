@@ -11,20 +11,7 @@ published: true
 published_at: 2017-12-21T17:23:30
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - devrel
-  - ruby
-  - ruby-on-rails
-  - text-to-speech
-  - tutorial
-  - voice
-  - voice-api
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/12/21/handle-inbound-phone-calls-ruby-rails-dr
 redirect: https://www.nexmo.com/blog/2017/12/21/handle-inbound-phone-calls-ruby-rails-dr
 ---

@@ -11,15 +11,7 @@ published: true
 published_at: 2019-07-02T07:01:19
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - interactive-voice-response
-  - ivr
-  - java
+tags: []
 canonical: https://www.nexmo.com/blog/2019/07/02/ivr-java-spark-framework-dr
 redirect: https://www.nexmo.com/blog/2019/07/02/ivr-java-spark-framework-dr
 ---

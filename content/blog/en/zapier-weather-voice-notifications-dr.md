@@ -11,17 +11,7 @@ published: true
 published_at: 2020-07-13T13:31:34
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-  - voice
-tags:
-  - low-code
-  - notifications
-  - sms
-  - voice
-  - zapier
+tags: []
 canonical: https://www.nexmo.com/blog/2020/07/13/zapier-weather-voice-notifications-dr
 redirect: https://www.nexmo.com/blog/2020/07/13/zapier-weather-voice-notifications-dr
 ---

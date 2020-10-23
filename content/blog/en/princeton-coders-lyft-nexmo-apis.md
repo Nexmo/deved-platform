@@ -11,15 +11,7 @@ published: true
 published_at: 2018-01-11T14:07:07
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-  - hack-worthy
-  - voice
-tags:
-  - amazon-lex
-  - hackathon
-  - lyft
+tags: []
 canonical: https://www.nexmo.com/blog/2018/01/11/princeton-coders-lyft-nexmo-apis
 redirect: https://www.nexmo.com/blog/2018/01/11/princeton-coders-lyft-nexmo-apis
 ---

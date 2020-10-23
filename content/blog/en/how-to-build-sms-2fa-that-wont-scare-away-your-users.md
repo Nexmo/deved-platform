@@ -12,10 +12,6 @@ published: true
 published_at: 2015-03-06T03:24:34
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - messaging
 tags: []
 canonical: https://www.nexmo.com/blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users
 redirect: https://www.nexmo.com/blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users

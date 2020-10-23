@@ -11,17 +11,7 @@ published: true
 published_at: 2019-07-15T16:17:02
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - audio
-  - call
-  - nexmo
-  - node-red
-  - nodered
-  - stream
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/07/15/stream-audio-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/07/15/stream-audio-node-red-dr
 ---

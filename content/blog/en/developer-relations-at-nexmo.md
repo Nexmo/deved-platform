@@ -11,13 +11,7 @@ published: true
 published_at: 2016-05-03T11:23:28
 comments: true
 category: devlife
-old_categories:
-  - developer
-  - developers
-tags:
-  - community
-  - developer-relations
-  - devrel
+tags: []
 canonical: https://www.nexmo.com/blog/2016/05/03/developer-relations-at-nexmo
 redirect: https://www.nexmo.com/blog/2016/05/03/developer-relations-at-nexmo
 ---

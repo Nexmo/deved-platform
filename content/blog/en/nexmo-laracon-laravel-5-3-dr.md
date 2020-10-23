@@ -11,12 +11,7 @@ published: true
 published_at: 2016-07-29T22:22:07
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-tags:
-  - laravel
-  - php
+tags: []
 canonical: https://www.nexmo.com/blog/2016/07/29/nexmo-laracon-laravel-5-3-dr
 redirect: https://www.nexmo.com/blog/2016/07/29/nexmo-laracon-laravel-5-3-dr
 ---

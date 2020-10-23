@@ -11,16 +11,7 @@ published: true
 published_at: 2018-08-14T22:49:18
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - voice
-tags:
-  - devrel
-  - message
-  - php
-  - record
-  - voicemail
+tags: []
 canonical: https://www.nexmo.com/blog/2018/08/14/record-a-phone-message-with-php-dr
 redirect: https://www.nexmo.com/blog/2018/08/14/record-a-phone-message-with-php-dr
 ---

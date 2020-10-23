@@ -12,13 +12,7 @@ published: true
 published_at: 2018-02-27T20:23:26
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - ios
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
 redirect: https://www.nexmo.com/blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
 ---

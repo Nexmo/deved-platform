@@ -11,16 +11,7 @@ published: true
 published_at: 2019-11-01T17:53:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - omnichannel
-  - tutorial
-tags:
-  - conversation-api
-  - javascript
-  - nodejs
-  - programmable-conversations
-  - wechat
+tags: []
 canonical: https://www.nexmo.com/blog/2019/11/01/integrating-the-conversation-api-with-wechat-dr
 redirect: https://www.nexmo.com/blog/2019/11/01/integrating-the-conversation-api-with-wechat-dr
 ---

@@ -11,14 +11,7 @@ published: true
 published_at: 2019-04-08T08:00:29
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - dtmf-menu
-  - inbound-call
-  - ivr
-  - pbx
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
 redirect: https://www.nexmo.com/blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
 ---

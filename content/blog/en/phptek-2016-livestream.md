@@ -11,13 +11,7 @@ published: true
 published_at: 2016-05-23T15:08:03
 comments: true
 category: event
-old_categories:
-  - developer
-  - developers
-tags:
-  - community
-  - livestream
-  - php
+tags: []
 canonical: https://www.nexmo.com/blog/2016/05/23/phptek-2016-livestream
 redirect: https://www.nexmo.com/blog/2016/05/23/phptek-2016-livestream
 ---

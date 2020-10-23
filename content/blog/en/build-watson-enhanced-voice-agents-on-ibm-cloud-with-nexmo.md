@@ -11,17 +11,7 @@ published: true
 published_at: 2019-02-25T17:01:23
 comments: true
 category: tutorial
-old_categories:
-  - customer-support
-  - developer
-  - nexmo-news
-  - voice
-tags:
-  - call-centers
-  - contact-center
-  - ibm-watson
-  - iva
-  - vapi
+tags: []
 canonical: https://www.nexmo.com/blog/2019/02/25/build-watson-enhanced-voice-agents-on-ibm-cloud-with-nexmo
 redirect: https://www.nexmo.com/blog/2019/02/25/build-watson-enhanced-voice-agents-on-ibm-cloud-with-nexmo
 ---

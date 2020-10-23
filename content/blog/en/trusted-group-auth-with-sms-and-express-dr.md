@@ -11,14 +11,7 @@ published: true
 published_at: 2019-06-18T08:00:22
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - verify
-tags:
-  - express
-  - nodejs
-  - sms
-  - verify
+tags: []
 canonical: https://www.nexmo.com/blog/2019/06/18/trusted-group-auth-with-sms-and-express-dr
 redirect: https://www.nexmo.com/blog/2019/06/18/trusted-group-auth-with-sms-and-express-dr
 ---

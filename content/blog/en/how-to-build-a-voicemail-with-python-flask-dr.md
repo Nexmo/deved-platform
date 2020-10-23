@@ -10,15 +10,7 @@ published: true
 published_at: 2019-04-05T08:39:13
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - flask
-  - python
-  - spy-thrillers
-  - voice
-  - voicemail
+tags: []
 canonical: https://www.nexmo.com/blog/2019/04/05/how-to-build-a-voicemail-with-python-flask-dr
 redirect: https://www.nexmo.com/blog/2019/04/05/how-to-build-a-voicemail-with-python-flask-dr
 ---

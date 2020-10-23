@@ -11,14 +11,7 @@ published: true
 published_at: 2017-03-14T12:07:35
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - developers
-tags:
-  - developer-relations
-  - developer-experience
-  - devex
-  - devrel
+tags: []
 canonical: https://www.nexmo.com/blog/2017/03/14/one-year-developer-relations-nexmo-dr
 redirect: https://www.nexmo.com/blog/2017/03/14/one-year-developer-relations-nexmo-dr
 ---

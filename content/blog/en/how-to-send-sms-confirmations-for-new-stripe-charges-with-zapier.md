@@ -12,14 +12,7 @@ published: true
 published_at: 2020-04-03T12:13:28
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-tags:
-  - devrel
-  - sms
-  - zapier
+tags: []
 canonical: https://www.nexmo.com/blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
 redirect: https://www.nexmo.com/blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
 ---

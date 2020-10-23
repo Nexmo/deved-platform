@@ -11,14 +11,7 @@ published: true
 published_at: 2020-10-01T13:27:20
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - git
-  - github
-  - hacktoberfest
-  - open-source
+tags: []
 canonical: https://www.nexmo.com/blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop
 redirect: https://www.nexmo.com/blog/2020/10/01/how-to-create-a-pull-request-with-github-desktop
 ---

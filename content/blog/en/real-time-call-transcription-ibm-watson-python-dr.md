@@ -11,19 +11,7 @@ published: true
 published_at: 2017-10-03T15:30:10
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - partners
-  - tutorial
-  - voice
-tags:
-  - devrel
-  - ibm
-  - python
-  - voice
-  - watson
-  - websockets
+tags: []
 canonical: https://www.nexmo.com/blog/2017/10/03/real-time-call-transcription-ibm-watson-python-dr
 redirect: https://www.nexmo.com/blog/2017/10/03/real-time-call-transcription-ibm-watson-python-dr
 ---

@@ -11,17 +11,7 @@ published: true
 published_at: 2016-09-29T20:00:31
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - sms
-  - tutorial
-tags:
-  - delivery
-  - expressjs
-  - javascript
-  - nodejs
-  - notifications
+tags: []
 canonical: https://www.nexmo.com/blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr
 redirect: https://www.nexmo.com/blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr
 ---

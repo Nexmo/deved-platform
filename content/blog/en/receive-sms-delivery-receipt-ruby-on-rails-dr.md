@@ -10,16 +10,7 @@ published: true
 published_at: 2017-10-19T20:25:20
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - sms
-  - tutorial
-tags:
-  - devrel
-  - ruby
-  - ruby-on-rails
-  - sms
+tags: []
 canonical: https://www.nexmo.com/blog/2017/10/19/receive-sms-delivery-receipt-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2017/10/19/receive-sms-delivery-receipt-ruby-on-rails-dr
 ---

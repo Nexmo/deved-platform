@@ -11,18 +11,7 @@ published: true
 published_at: 2017-04-11T13:30:27
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - security
-  - tutorial
-  - verify
-tags:
-  - 2fa
-  - authentication
-  - sms
-  - two-factor-authentication
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/04/11/implement-two-factor-authentication-2fa-web-apps-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/04/11/implement-two-factor-authentication-2fa-web-apps-node-js-dr
 ---

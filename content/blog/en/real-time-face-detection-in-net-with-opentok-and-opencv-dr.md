@@ -12,14 +12,7 @@ published: true
 published_at: 2020-03-18T16:56:50
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - net
-  - c
-  - computer-vision
-  - machinelearning
-  - opencv
+tags: []
 canonical: https://www.nexmo.com/blog/2020/03/18/real-time-face-detection-in-net-with-opentok-and-opencv-dr
 redirect: https://www.nexmo.com/blog/2020/03/18/real-time-face-detection-in-net-with-opentok-and-opencv-dr
 ---

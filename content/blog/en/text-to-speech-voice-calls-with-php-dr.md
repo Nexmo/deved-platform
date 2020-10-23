@@ -11,18 +11,7 @@ published: true
 published_at: 2017-10-20T13:09:38
 comments: true
 category: tutorial
-old_categories:
-  - cloud-communications
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - php
-  - text-to-speech
-  - tutorial
-  - voice
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2017/10/20/text-to-speech-voice-calls-with-php-dr
 redirect: https://www.nexmo.com/blog/2017/10/20/text-to-speech-voice-calls-with-php-dr
 ---

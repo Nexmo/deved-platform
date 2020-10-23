@@ -11,15 +11,7 @@ published: true
 published_at: 2019-07-16T07:01:54
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - api
-  - components
-  - opentok
-  - react
-  - tokbox
+tags: []
 canonical: https://www.nexmo.com/blog/2019/07/16/opentok-react-components-dr
 redirect: https://www.nexmo.com/blog/2019/07/16/opentok-react-components-dr
 ---

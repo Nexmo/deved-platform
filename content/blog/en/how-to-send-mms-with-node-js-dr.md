@@ -11,15 +11,7 @@ published: true
 published_at: 2019-03-26T16:01:19
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - express
-  - javascript
-  - messagesapi
-  - mms
-  - nodejs
+tags: []
 canonical: https://www.nexmo.com/blog/2019/03/26/how-to-send-mms-with-node-js-dr
 redirect: https://www.nexmo.com/blog/2019/03/26/how-to-send-mms-with-node-js-dr
 ---

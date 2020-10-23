@@ -12,16 +12,7 @@ published: true
 published_at: 2019-10-17T09:20:06
 comments: true
 category: tutorial
-old_categories:
-  - developer
-tags:
-  - amazon-web-services
-  - api
-  - aws
-  - google-cloud-platform
-  - ibm-watson
-  - microsoft-azure
-  - sentiment-analysis
+tags: []
 canonical: https://www.nexmo.com/blog/2019/10/17/sentiment-api-analysis-comparison-dr
 redirect: https://www.nexmo.com/blog/2019/10/17/sentiment-api-analysis-comparison-dr
 ---

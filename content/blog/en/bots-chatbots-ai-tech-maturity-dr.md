@@ -10,15 +10,7 @@ published: true
 published_at: 2017-08-24T15:30:00
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - messaging
-  - real-time-communications
-  - voice
 tags:
-  - ai
-  - artificial-intelligence
   - bots
   - chatbots
 canonical: https://www.nexmo.com/blog/2017/08/24/bots-chatbots-ai-tech-maturity-dr

@@ -11,8 +11,6 @@ published: true
 published_at: 2020-06-22T12:31:04
 comments: true
 category: release
-old_categories:
-  - developer
 tags:
   - dotnet
 canonical: https://www.nexmo.com/blog/2020/06/22/announcing-net-sdk-version-5-0-0

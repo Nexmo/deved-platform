@@ -11,15 +11,7 @@ published: true
 published_at: 2019-08-26T14:55:53
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - amazon
-  - aws
-  - conference-calls
-  - transcribe
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2019/08/26/transcribe-a-conference-call-using-amazon-transcribe-dr
 redirect: https://www.nexmo.com/blog/2019/08/26/transcribe-a-conference-call-using-amazon-transcribe-dr
 ---

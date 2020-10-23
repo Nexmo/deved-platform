@@ -11,17 +11,7 @@ published: true
 published_at: 2015-09-01T16:33:02
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - hack-worthy
-  - messaging
-  - voice
-tags:
-  - developer
-  - php
-  - sms
-  - voice
+tags: []
 canonical: https://www.nexmo.com/blog/2015/09/01/building-a-phone-powered-photo-booth-with-nexmos-voice-and-sms-apis
 redirect: https://www.nexmo.com/blog/2015/09/01/building-a-phone-powered-photo-booth-with-nexmos-voice-and-sms-apis
 ---

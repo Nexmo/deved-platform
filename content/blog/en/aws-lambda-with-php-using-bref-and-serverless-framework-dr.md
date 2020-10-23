@@ -11,15 +11,8 @@ published: true
 published_at: 2020-03-16T13:12:07
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
 tags:
   - aws
-  - aws-lambda
-  - bref
-  - developer
-  - devops
   - php
   - serverless
 canonical: https://www.nexmo.com/blog/2020/03/16/aws-lambda-with-php-using-bref-and-serverless-framework-dr

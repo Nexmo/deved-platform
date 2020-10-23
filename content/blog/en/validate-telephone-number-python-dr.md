@@ -11,14 +11,7 @@ published: true
 published_at: 2019-06-26T07:01:01
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - devrel
-  - number-insight
-  - python
-  - tutorial
+tags: []
 canonical: https://www.nexmo.com/blog/2019/06/26/validate-telephone-number-python-dr
 redirect: https://www.nexmo.com/blog/2019/06/26/validate-telephone-number-python-dr
 ---

@@ -11,17 +11,7 @@ published: true
 published_at: 2019-07-01T07:01:39
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-tags:
-  - dev-rel
-  - devrel
-  - messages-api
-  - react
-  - reactjs
-  - sentiment-analysis
-  - twitter
+tags: []
 canonical: https://www.nexmo.com/blog/2019/07/01/discover-your-twitters-positivity-score-with-react-dr
 redirect: https://www.nexmo.com/blog/2019/07/01/discover-your-twitters-positivity-score-with-react-dr
 ---

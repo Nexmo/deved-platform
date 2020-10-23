@@ -11,17 +11,9 @@ published: true
 published_at: 2020-09-09T13:26:57
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
 tags:
-  - bot
-  - chatbot
-  - coinbase
-  - currency-conversion
-  - developer-spotlight
-  - whatsapp
-  - whatsapp-sandbox
+  - bots
+  - chatbots
 canonical: https://www.nexmo.com/blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
 redirect: https://www.nexmo.com/blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
 ---

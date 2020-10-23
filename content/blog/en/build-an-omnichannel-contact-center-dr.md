@@ -12,12 +12,8 @@ published: true
 published_at: 2019-06-24T16:00:31
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - omnichannel
-  - real-time-communications
-tags: []
+tags:
+  - conversation-api
 canonical: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
 redirect: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
 ---

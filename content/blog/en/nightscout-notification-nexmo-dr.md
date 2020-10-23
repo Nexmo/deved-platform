@@ -11,18 +11,7 @@ published: true
 published_at: 2020-02-24T18:09:04
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developer-spotlight
-  - tutorial
-tags:
-  - firebase
-  - firestore
-  - flask
-  - google-auth
-  - messages
-  - nightscout
-  - python
+tags: []
 canonical: https://www.nexmo.com/blog/2020/02/24/nightscout-notification-nexmo-dr
 redirect: https://www.nexmo.com/blog/2020/02/24/nightscout-notification-nexmo-dr
 ---

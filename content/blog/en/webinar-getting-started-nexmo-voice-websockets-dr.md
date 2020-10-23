@@ -11,13 +11,7 @@ published: true
 published_at: 2017-02-15T14:00:09
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - voice
-tags:
-  - webinar
-  - websockets
+tags: []
 canonical: https://www.nexmo.com/blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
 redirect: https://www.nexmo.com/blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
 ---

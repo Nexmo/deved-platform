@@ -11,17 +11,7 @@ published: true
 published_at: 2016-08-10T22:34:18
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
-tags:
-  - net
-  - 2fa
-  - asp-net
-  - c
-  - sendgrid
-  - x-with-y
+tags: []
 canonical: https://www.nexmo.com/blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
 redirect: https://www.nexmo.com/blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
 ---

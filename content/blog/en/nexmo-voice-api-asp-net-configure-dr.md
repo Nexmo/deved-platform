@@ -11,17 +11,7 @@ published: true
 published_at: 2017-07-28T13:13:43
 comments: true
 category: tutorial
-old_categories:
-  - cloud-communications
-  - developer
-  - developers
-  - tutorial
-  - voice
-tags:
-  - api
-  - nexmo-api-platform
-  - text-to-speech
-  - voice-api
+tags: []
 canonical: https://www.nexmo.com/blog/2017/07/28/nexmo-voice-api-asp-net-configure-dr
 redirect: https://www.nexmo.com/blog/2017/07/28/nexmo-voice-api-asp-net-configure-dr
 ---
