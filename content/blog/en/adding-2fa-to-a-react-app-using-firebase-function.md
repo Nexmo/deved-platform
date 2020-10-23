@@ -10,8 +10,6 @@ published: true
 published_at: 2020-04-01T12:06:34
 comments: true
 category: tutorial
-old_categories:
-  - developer
 tags:
   - firebase
   - javascript

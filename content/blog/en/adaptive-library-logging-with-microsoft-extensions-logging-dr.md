@@ -11,12 +11,8 @@ published: true
 published_at: 2020-02-10T13:47:01
 comments: true
 category: tutorial
-old_categories:
-  - developer
 tags:
-  - net
-  - logging
-  - microsoft-extensions-logging
+  - dotnet
 canonical: https://www.nexmo.com/blog/2020/02/10/adaptive-library-logging-with-microsoft-extensions-logging-dr
 redirect: https://www.nexmo.com/blog/2020/02/10/adaptive-library-logging-with-microsoft-extensions-logging-dr
 ---

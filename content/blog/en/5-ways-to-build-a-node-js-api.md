@@ -13,7 +13,7 @@ comments: true
 category: inspiration
 tags:
   - express
-  - nodejs
+  - node
 canonical: 5-ways-to-build-a-node-js-api
 redirect: https://www.nexmo.com/blog/2020/08/11/5-ways-to-build-a-node-js-api
 

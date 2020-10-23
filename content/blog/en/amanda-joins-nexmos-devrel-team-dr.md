@@ -11,11 +11,8 @@ published: true
 published_at: 2017-07-06T16:41:05
 comments: true
 category: team
-old_categories:
-  - developer
-  - developers
 tags:
-  - devrel
+  - careers
 canonical: https://www.nexmo.com/blog/2017/07/06/amanda-joins-nexmos-devrel-team-dr
 redirect: https://www.nexmo.com/blog/2017/07/06/amanda-joins-nexmos-devrel-team-dr
 ---

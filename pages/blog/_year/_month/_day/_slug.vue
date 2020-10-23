@@ -130,7 +130,7 @@ export default {
         .where({ 'published': { '$ne': false } })
         .fetch()
         .catch(err => {
-          throw { statusCode: 404, message: "Page not found", err }
+          error({ statusCode: 404, message: "Page not found", err })
         })
 
       if (process.browser) {
@@ -153,8 +153,8 @@ export default {
           { route: post.route, title: post.title, current: true }
         ],
       }
-    } catch (err) {
-      error(err)
+    } catch (e) {
+      error(e)
     }
   },
 

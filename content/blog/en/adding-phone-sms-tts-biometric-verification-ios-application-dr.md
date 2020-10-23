@@ -11,18 +11,10 @@ published: true
 published_at: 2017-01-18T12:00:16
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - security
-  - user-acquisition
-  - verify
 tags:
   - 2fa
-  - ios
   - swift
-  - user-authentication
-  - x-with-y
+  - verify-api
 canonical: https://www.nexmo.com/blog/2017/01/18/adding-phone-sms-tts-biometric-verification-ios-application-dr
 redirect: https://www.nexmo.com/blog/2017/01/18/adding-phone-sms-tts-biometric-verification-ios-application-dr
 ---

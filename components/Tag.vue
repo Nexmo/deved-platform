@@ -75,9 +75,13 @@ export default {
   color: #fff;
 }
 
-.Blog-badge--node,
-.Blog-badge--nodejs {
+.Blog-badge--node {
   background-color: #3d8836;
+  color: #fff;
+}
+
+.Blog-badge--node-red {
+  background-color: #8E0100;
   color: #fff;
 }
 
@@ -91,7 +95,6 @@ export default {
   color: #fff;
 }
 
-.Blog-badge--golang,
 .Blog-badge--go {
   background-color: #e0ebf5;
   color: #043c6f;
@@ -112,6 +115,47 @@ export default {
   color: #faaf34;
 }
 
+.Blog-badge--firebase {
+  background-color: #FFCA28;
+  color: #2C384A;
+}
+
+.Blog-badge--zendesk {
+  background-color: #03363D;
+  color: #F8F9F9;
+}
+
+.Blog-badge--zendesk {
+  background-color: #03363D;
+  color: #F8F9F9;
+}
+
+.Blog-badge--ibm-watson {
+  background-color: #0062ff;
+  color: #ffffff;
+}
+
+.Blog-badge--git {
+  background-color: #ffffff;
+  color: #f14e32;
+}
+
+.Blog-badge--github {
+  content: "GitHub";
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.Blog-badge--hacktoberfest {
+  background-color: #072540;
+  color: #ffffff;
+}
+
+.Blog-badge--digitalocean {
+  background-color: #0069ff;
+  color: #ffffff;
+}
+
 .Blog-badge--java {
   background-color:#01476e;
   color:#ff8f8f;
@@ -127,8 +171,8 @@ export default {
   color: white;
 }
 
-.Blog-badge--react,
-.Blog-badge--reactjs {
+.Blog-badge--react-native,
+.Blog-badge--react {
   background: #61dafb;
   color: black;
 }

@@ -10,10 +10,6 @@ published: true
 published_at: 2018-09-25T11:00:52
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
 tags:
   - android
   - firebase

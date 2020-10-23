@@ -14,9 +14,7 @@ category: release
 old_categories:
   - developer
 tags:
-  - net
-  - sdk
-  - sdk-announcements
+  - dotnet
 canonical: https://www.nexmo.com/blog/2020/06/22/announcing-net-sdk-version-5-0-0
 redirect: https://www.nexmo.com/blog/2020/06/22/announcing-net-sdk-version-5-0-0
 ---

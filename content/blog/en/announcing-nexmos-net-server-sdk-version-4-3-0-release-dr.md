@@ -11,13 +11,8 @@ published: true
 published_at: 2020-01-15T15:21:50
 comments: true
 category: release
-old_categories:
-  - developer
 tags:
-  - net
-  - asp-net
-  - devrel
-  - jwts
+  - dotnet
 canonical: https://www.nexmo.com/blog/2020/01/15/announcing-nexmos-net-server-sdk-version-4-3-0-release-dr
 redirect: https://www.nexmo.com/blog/2020/01/15/announcing-nexmos-net-server-sdk-version-4-3-0-release-dr
 ---

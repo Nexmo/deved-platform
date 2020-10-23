@@ -11,9 +11,6 @@ published: true
 published_at: 2020-09-23T13:24:24
 comments: true
 category: inspiration
-old_categories:
-  - developer
-  - tutorial
 tags:
   - http
   - nodejs

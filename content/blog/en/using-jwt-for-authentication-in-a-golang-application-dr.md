@@ -12,7 +12,6 @@ old_categories:
   - developer
   - tutorial
 tags:
-  - authentication
   - go
   - jwt
   - messages-api

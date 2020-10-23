@@ -11,18 +11,10 @@ published: true
 published_at: 2018-05-10T16:11:17
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - verify
 tags:
   - 2fa
-  - devrel
   - ios
-  - phone-number-authentication
-  - swift
-  - two-factor-authentication
-  - verify
+  - verify-api
 canonical: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-swift-ios-apps-dr
 redirect: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-swift-ios-apps-dr
 ---

@@ -11,14 +11,9 @@ published: true
 published_at: 2018-09-11T12:45:11
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - tutorial
-  - verify
 tags:
-  - developer-relations
   - nuxt
-  - verify
+  - verify-api
 canonical: https://www.nexmo.com/blog/2018/09/11/add-2fa-to-nuxt-with-nexmo-verify-dr
 redirect: https://www.nexmo.com/blog/2018/09/11/add-2fa-to-nuxt-with-nexmo-verify-dr
 ---

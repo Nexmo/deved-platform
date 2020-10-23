@@ -13,11 +13,9 @@ old_categories:
   - developer
   - developer-spotlight
 tags:
-  - cloud-functions
-  - google-cloud-functions
   - python
   - serverless
-  - sms
+  - sms-api
 spotlight: true
 ---
 

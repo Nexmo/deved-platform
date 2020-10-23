@@ -11,10 +11,6 @@ published: true
 published_at: 2018-08-09T16:03:36
 comments: true
 category: announcement
-old_categories:
-  - developer
-  - nexmo-news
-  - security
 tags:
   - http
   - security

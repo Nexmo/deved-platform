@@ -12,17 +12,10 @@ published: true
 published_at: 2020-05-26T14:15:26
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - sms
-  - tutorial
-  - verify
 tags:
-  - express
-  - nodejs
+  - node
   - react-native
-  - sms
-  - verify
+  - verify-api
 canonical: https://www.nexmo.com/blog/2020/05/26/add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr
 redirect: https://www.nexmo.com/blog/2020/05/26/add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr
 ---

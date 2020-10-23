@@ -11,14 +11,9 @@ published: true
 published_at: 2019-04-04T08:00:30
 comments: true
 category: tutorial
-old_categories:
-  - developer
-  - developers
-  - tutorial
 tags:
-  - ibm-watson
-  - nexmo-extend
   - sentiment-analysis
+  - ibm-watson
 canonical: https://www.nexmo.com/blog/2019/04/04/adding-sentiment-analysis-to-sms-ibm-watson-dr
 redirect: https://www.nexmo.com/blog/2019/04/04/adding-sentiment-analysis-to-sms-ibm-watson-dr
 ---

@@ -10,13 +10,9 @@ published: true
 published_at: 2019-10-11T10:42:17
 comments: true
 category: tutorial
-old_categories:
-  - developer
 tags:
-  - audio
-  - chat
   - conversation-api
-  - nodejs
+  - node
   - voice-api
 canonical: https://www.nexmo.com/blog/2019/10/11/adding-voice-functionality-to-an-existing-chat-application-dr
 redirect: https://www.nexmo.com/blog/2019/10/11/adding-voice-functionality-to-an-existing-chat-application-dr
