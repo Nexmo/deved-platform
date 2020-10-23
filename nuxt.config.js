@@ -2,6 +2,8 @@ import config from "./modules/config"
 import { getPostRoute, getPostRoutes, getCategory } from "./modules/contenter"
 import { locales } from "./lang.config.js"
 
+console.log(process.env.PULL_REQUEST, process.env.BRANCH)
+
 const isPreviewBuild = () => {
   return process.env.PULL_REQUEST && process.env.BRANCH.startsWith('cms/')
 }
