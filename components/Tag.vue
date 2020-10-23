@@ -36,6 +36,7 @@ export default {
 .Blog-badge--voice-api,
 .Blog-badge--conversation-api,
 .Blog-badge--video-api,
+.Blog-badge--sms-api,
 .Blog-badge--station {
   background: #000;
   color: #fff;
