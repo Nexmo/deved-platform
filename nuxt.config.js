@@ -3,11 +3,11 @@ import { getPostRoute, getPostRoutes, getCategory } from "./modules/contenter"
 import { locales } from "./lang.config.js"
 
 const isPreviewBuild = () => {
-  return process.env.PULL_REQUEST && process.env.BRANCH.startsWith('cms/')
+  return process.env.PULL_REQUEST && process.env.HEAD.startsWith('cms/')
 }
 
 const previewRoute = () => {
-  const [, type, slug] = process.env.BRANCH.split('/')
+  const [, type, slug] = process.env.HEAD.split('/')
 
   return [ `/${type}/${slug}` ]
 }
