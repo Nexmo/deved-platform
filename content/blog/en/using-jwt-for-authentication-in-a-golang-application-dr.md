@@ -15,7 +15,9 @@ tags:
   - jwt
   - messages-api
 ---
-A JSON Web Token (JWT) is a compact and self-contained way for securely transmitting information between parties as a JSON object, and they are commonly used by developers in their APIs. JWTs are popular because:
+A JSON Web Token (JWT) is a compact and self-contained way for securely transmitting information between parties as a JSON object, and they are commonly used by developers in their APIs.
+
+JWTs are popular because:
 
 1. A JWT is stateless. That is, it does not need to be stored in a database (persistence layer), unlike opaque tokens. 
 2. The signature of a JWT is never decoded once formed, thereby ensuring that the token is safe and secure.
@@ -31,25 +33,26 @@ This tutorial also uses a virtual phone number. To purchase one, go to *Numbers*
 
 <a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
 
-
 ### What Makes Up a JWT?
 
 A JWT is comprised of three parts:
 
-- Header: the type of token and the signing algorithm used.
-The type of token can be “JWT” while the Signing Algorithm can either be HMAC or SHA256.
-- Payload: the second part of the token which contains the claims. These claims include application specific data(e.g, user id, username), token expiration time(exp), issuer(iss), subject(sub), and so on.
-- Signature: the encoded header, encoded payload, and a secret you provide are used to create the signature.
+* Header: the type of token and the signing algorithm used.
+  The type of token can be “JWT” while the Signing Algorithm can either be HMAC or SHA256.
+* Payload: the second part of the token which contains the claims. These claims include application specific data(e.g, user id, username), token expiration time(exp), issuer(iss), subject(sub), and so on.
+* Signature: the encoded header, encoded payload, and a secret you provide are used to create the signature.
 
 Let’s use a simple token to understand the above concepts.
 
+```golang
 Token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX3V1aWQiOiIxZGQ5MDEwYy00MzI4LTRmZjMtYjllNi05NDRkODQ4ZTkzNzUiLCJhdXRob3JpemVkIjp0cnVlLCJ1c2VyX2lkIjo3fQ.Qy8l-9GUFsXQm4jqgswAYTAX9F4cngrl28WJVYNDwtM
+```
 
 Don’t worry, the token is invalid, so it won’t work on any production application.
 
 You can navigate to [jwt.to](https://jwt.io) and test the token signature if it is verified or not. Use “HS512” as the algorithm. You will get the message “Signature Verified”:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image9.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image9.png" alt="" width="1211" height="829" class="alignnone size-full wp-image-31629" /></a>
+![A JSON Web Token broken down using JWT.io](/content/blog/using-jwt-for-authentication-in-a-golang-application/image9.png "A JSON Web Token broken down using JWT.io")
 
 To make the signature, your application will need to provide a **key**. This key enables the signature to remain secure—even when the JWT is decoded the signature remains encrypted. It is highly recommended to always use a secret when creating a JWT.
 
@@ -57,12 +60,12 @@ To make the signature, your application will need to provide a **key**. This key
 
 Since a JWT can be set to expire (be invalidated) after a particular period of time, two tokens will be considered in this application:
 
-- Access Token: An access token is used for requests that require authentication. It is normally added in the header of the request. It is recommended that an access token have a short lifespan, say 15 minutes. Giving an access token a short time span can prevent any serious damage if a user’s token is tampered with, in the event that the token is hijacked. The hacker only has 15 minutes or less to carry out his operations before the token is invalidated.
-- Refresh Token: A refresh token has a longer lifespan, usually 7 days. This token is used to generate new access and refresh tokens. In the event that the access token expires, new sets of access and refresh tokens are created when the refresh token route is hit (from our application).
+* Access Token: An access token is used for requests that require authentication. It is normally added in the header of the request. It is recommended that an access token has a short lifespan, say 15 minutes. Giving an access token a short time span can prevent any serious damage if a user’s token is tampered with, in the event that the token is hijacked. The hacker only has 15 minutes or less to carry out his operations before the token is invalidated.
+* Refresh Token: A refresh token has a longer lifespan, usually 7 days. This token is used to generate new access and refresh tokens. In the event that the access token expires, new sets of access and refresh tokens are created when the refresh token route is hit (from our application).
 
 ### Where to Store a JWT
 
-For a production grade application, it is highly recommended to store JWTs in an `HttpOnly` cookie. To achieve this, while sending the cookie generated from the backend to the frontend (client), a `HttpOnly` flag is sent along the cookie, instructing the browser not to display the cookie through the client-side scripts. Doing this can prevent XSS (Cross Site Scripting) attacks.
+For a production grade application, it is highly recommended to store JWTs in an `HttpOnly` cookie. To achieve this, while sending the cookie generated from the backend to the frontend (client), a `HttpOnly` flag is sent along with the cookie, instructing the browser not to display the cookie through the client-side scripts. Doing this can prevent XSS (Cross Site Scripting) attacks.
 JWT can also be stored in browser local storage or session storage. Storing a JWT this way can expose it to several attacks such as XSS mentioned above, so it is generally less secure when compared to using `HttpOnly cookie technique.
 
 ## The Application
@@ -110,7 +113,7 @@ func main() {
 }
 ```
 
-In an ideal situation, the `/login` route takes a user’s credentials, checks them against some database, and  logs them in if the credentials are valid. But in this API, we will just use a sample user we will define in memory. Create a sample user in a struct. Add this to the `main.go` file:
+In an ideal situation, the `/login` route takes a user’s credentials, checks them against some database, and logs them in if the credentials are valid. But in this API, we will just use a sample user we will define in memory. Create a sample user in a struct. Add this to the `main.go` file:
 
 ```
 type User struct {
@@ -127,6 +130,7 @@ var user = User{
 ```
 
 ### Login Request
+
 When a user's details have been verified, they are logged in and a JWT is generated on their behalf. We will achieve this in the `Login()` function defined below:
 
 ```
@@ -180,7 +184,7 @@ func CreateToken(userid uint64) (string, error) {
 }
 ```
 
-We set the token to be valid only for 15 minutes, after which, it is invalid and cannot be used for any authenticated request. Also observe that we signed the JWT using  a **secret**(`ACCESS_SECRET`) obtained from our environmental variable. It is highly recommended that this secret is not exposed in your codebase, but rather called from the environment just like we did above. You can save it in a `.env`, `.yml` or whatever works for you.
+We set the token to be valid only for 15 minutes, after which, it is invalid and cannot be used for any authenticated request. Also, observe that we signed the JWT using  a **secret**(`ACCESS_SECRET`) obtained from our environmental variable. It is highly recommended that this secret is not exposed in your codebase, but rather called from the environment just like we did above. You can save it in a `.env`, `.yml` or whatever works for you.
 
 Thus far, our `main.go` file looks like this:
 
@@ -259,7 +263,7 @@ go run main.go
 
 Now we can try it out and see what we get! Fire up your favorite API tool and hit the `login`endpoint:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image8.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image8.png" alt="" width="1999" height="1145" class="alignnone size-full wp-image-31628" /></a>
+![Making a request using Postman](/content/blog/using-jwt-for-authentication-in-a-golang-application/image8.png "Making a request using Postman")
 
 As seen above, we have generated a JWT that will last for 15 minutes. 
 
@@ -268,19 +272,19 @@ As seen above, we have generated a JWT that will last for 15 minutes.
 Yes we can login a user a generate a JWT, but there is a lot wrong with the above implementation:
 
 1. The JWT can only be invalidated when it expires. A major limitation to this is: a user can login, then decide to logout immediately, but the user’s JWT remains valid until the expiration time is reached. 
-2. The JWT might be hijacked and used by a hacker without the user doing anything about it, until the token expires. 
-3. The user will need to relogin after the token expires, thereby leading to poor user experience.
+2. The JWT might be hijacked and used by a hacker without the user doing anything about it until the token expires. 
+3. The user will need to re-login after the token expires, thereby leading to a poor user experience.
 
 We can address the problems stated above in two ways:
 
 1. Using a persistence storage layer to store JWT metadata. This will enable us to invalidate a JWT the very second a the user logs out, thereby improving security.
-2. Using the concept of **refresh token** to generate a new **access token**, in the event that the **access token** expired, thereby improving the user experience.
+2. Using the concept of a **refresh token** to generate a new **access token**, in the event that the **access token** expired, thereby improving the user experience.
 
 ### Using Redis to Store JWT Metadata
 
-One of the solutions we proffered above is saving a JWT metadata in a persistence layer. This can be done in any persistence layer of choice, but **redis** is highly recommended. Since the JWTs we generate have expiry time, redis has a feature that automatically deletes data whose expiration time has reached. Redis can also handle a lot of writes and can scale horizontally.
+One of the solutions we proffered above is saving a JWT metadata in a persistence layer. This can be done in any persistence layer of choice, but Redis is highly recommended. Since the JWTs we generate have expiry time, Redis has a feature that automatically deletes data whose expiration time has reached. Redis can also handle a lot of writes and can scale horizontally.
 
-Since redis is a key-value storage, its keys need to be unique, to achieve this, we will use `uuid` as the key and use the user id as the value.
+Since Redis is a key-value storage, its keys need to be unique, to achieve this, we will use `uuid` as the key and use the user id as the value.
 
 So let's install two packages to use:
 
@@ -302,7 +306,7 @@ import (
 
 > Note: It is expected that you have redis installed in your local machine. If not, you can pause and do that, before continuing.
 
-Let’s now initialize redis:
+Let’s now initialize Redis:
 
 ```
 var  client *redis.Client
@@ -323,12 +327,12 @@ func init() {
 }
 ```
 
-The redis client is initialized in the `init()` function. This ensures that each time we run the `main.go` file,  redis is automatically connected.
-
+The Redis client is initialized in the `init()` function. This ensures that each time we run the `main.go` file,  Redis is automatically connected.
 
 When we create a token from this point forward, we will generate a `uuid` that will be used as one of the token claims, just as we used the user id as a claim in the previous implementation.
 
 ### Define the Metadata=
+
 In our proposed solution, instead of just creating one token, we will need to create two JWTs:
 
 1. The Access Token
@@ -389,6 +393,8 @@ func CreateToken(userid uint64) (*TokenDetails, error) {
 ```
 
 In the above function, the **Access Token** expires after 15 minutes and the **Refresh Token** expires after 7 days. You can also observe we added a uuid as a claim to each token.
+
+
 Since the uuid is unique each time it is created, a user can create more than one token. This happens when a user is logged in on different devices. The user can also logout from any of the devices without them being logged out from all devices. How cool!
 
 ### Saving JWTs metadata
@@ -413,11 +419,11 @@ func CreateAuth(userid uint64, td *TokenDetails) error {
 }
 ```
 
-We passed in the `TokenDetails` which have information about the expiration time of the JWTs and the uuids used when creating the JWTs. If the expiration time is reached for either the **refresh token** or the **access token**, the JWT is automatically deleted from redis.
+We passed in the `TokenDetails` which have information about the expiration time of the JWTs and the uuids used when creating the JWTs. If the expiration time is reached for either the **refresh token** or the **access token**, the JWT is automatically deleted from Redis.
 
-I personally use [Redily](https://www.redily.app), a redis GUI. Is a nice tool. You can take a look below to see how JWT metadata is stored in key-value pair.
+I personally use [Redily](https://www.redily.app), a Redis GUI. Is a nice tool. You can take a look below to see how JWT metadata is stored in key-value pair.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image2.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image2.png" alt="" width="1030" height="764" class="alignnone size-full wp-image-31622" /></a>
+![Using Readily to see the stored metadata in Redis](/content/blog/using-jwt-for-authentication-in-a-golang-application/image2.png "Using Readily to see the stored metadata in Redis")
 
 Before we test login again, we will need to call the `CreateAuth()` function in the `Login()` function. Update the Login function:
 
@@ -452,7 +458,7 @@ func Login(c *gin.Context) {
 
 We can try logging in again. Save the `main.g`o file and run it. When the login is hit from Postman, we should have:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image3.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image3.png" alt="" width="1999" height="1190" class="alignnone size-full wp-image-31623" /></a>
+![Checking the access and refresh token reponse in Postman](/content/blog/using-jwt-for-authentication-in-a-golang-application/image3.png "Checking the access and refresh token reponse in Postman")
 
 Excellent! We have both the **access_token** and the **refresh_token**, and also have token metadata persisted in redis. 
 
@@ -462,7 +468,7 @@ We can now proceed to make requests that require authentication using JWT.
 
 One of the unauthenticated requests in this API is the creation of **todo** request.
 
-First let’s define a `Todo` struct:
+First, let’s define a `Todo` struct:
 
 ```
 type Todo struct {
@@ -523,7 +529,7 @@ func TokenValid(r *http.Request) error {
 }
 ```
 
-We will also extract the token **metadata** that will lookup in our **redis** store we set up earlier. To extract the token, we define the `ExtractTokenMetadata` function:
+We will also extract the token **metadata** that will lookup in our Redis store we set up earlier. To extract the token, we define the `ExtractTokenMetadata` function:
 
 ```
 func ExtractTokenMetadata(r *http.Request) (*AccessDetails, error) {
@@ -550,7 +556,7 @@ func ExtractTokenMetadata(r *http.Request) (*AccessDetails, error) {
 }
 ```
 
-The `ExtractTokenMetadata`  function returns an `AccessDetails` (which is a struct). This struct contains the metadata (`access_uuid` and `user_id`)  that we will need to make a lookup in **redis**. If there is any reason we could not get the metadata from this token, the request is halted with an error message.
+The `ExtractTokenMetadata`  function returns an `AccessDetails` (which is a struct). This struct contains the metadata (`access_uuid` and `user_id`)  that we will need to make a lookup in Redis. If there is any reason we could not get the metadata from this token, the request is halted with an error message.
 
 The `AccessDetails` struct mentioned above looks like this:
 
@@ -561,7 +567,7 @@ type AccessDetails struct {
 }
 ```
 
-We also mentioned looking up the token metadata in redis. Let’s define a function that will enable us to do that:
+We also mentioned looking up the token metadata in Redis. Let’s define a function that will enable us to do that:
 
 ```
 func FetchAuth(authD *AccessDetails) (uint64, error) {
@@ -603,7 +609,7 @@ td.UserID = userId
 }
 ```
 
-As seen, we called the `ExtractTokenMetadata` to extract the JWT **metadata** which is used in `FetchAuth` to check if the metadata still exists in our redis store. If everything is good, the Todo can then be saved to the database, but we chose to return it to the caller.
+As seen, we called the `ExtractTokenMetadata` to extract the JWT **metadata** which is used in `FetchAuth` to check if the metadata still exists in our Redis store. If everything is good, the Todo can then be saved to the database, but we chose to return it to the caller.
 
 Let’s update `main()` to include the `CreateTodo` function:
 
@@ -618,15 +624,15 @@ func main() {
 
 To test `CreateTodo`, login and copy the `access_token` and add it to the **Authorization Bearer Token** field like this:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image6.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image6.png" alt="" width="1999" height="768" class="alignnone size-full wp-image-31626" /></a>
+![Testing the tokens using Postman](/content/blog/using-jwt-for-authentication-in-a-golang-application/image6.png "Testing the tokens using Postman")
 
 Then add a title to the request body to create a todo and make a POST request to the `/todo` endpoint, as shown below:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image4.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image4.png" alt="" width="1999" height="1050" class="alignnone size-full wp-image-31624" /></a>
+![Checking the response using Postman](/content/blog/using-jwt-for-authentication-in-a-golang-application/image4.png "Checking the response using Postman")
 
 Attempting to create a todo without an `access_token` will be unauthorized:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image5.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image5.png" alt="" width="1999" height="1062" class="alignnone size-full wp-image-31625" /></a>
+![Checking an unauthorised request in Postman](/content/blog/using-jwt-for-authentication-in-a-golang-application/image5.png "Checking an unauthorised request in Postman")
 
 ### Logout Request
 
@@ -680,7 +686,7 @@ func main() {
 
 Provide a valid `access_token` associated with a user, then logout the user. Remember to add the `access_token` to the `Authorization Bearer Token`, then hit the logout endpoint:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image1.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image1.png" alt="" width="1999" height="1069" class="alignnone size-full wp-image-31621" /></a>
+![Log out request using Postman](/content/blog/using-jwt-for-authentication-in-a-golang-application/image1.png "Log out request using Postman")
 
 Now the user is logged out, and no further request can be performed with that JWT again as it is immediately invalidated. This implementation is more secure than waiting for a JWT to expire after a user logs out.
 
@@ -718,6 +724,7 @@ func main() {
 ```
 
 ### Refreshing Tokens
+
 Thus far, we can create, use and revoke JWTs. In an application that will involve a user interface, what happens if the **access token** expires and the user needs to make an authenticated request? Will the user be unauthorized, and be made to login again? Unfortunately, that will be the case. But this can be averted using the concept of a **refresh token**.  The user does not need to relogin. 
 The **refresh token** created alongside the **access token** will be used to create new pairs of **access and refresh tokens**.
 
@@ -796,26 +803,26 @@ saveErr := CreateAuth(userId, ts)
 ```
 
 While a lot is going on in that function, let’s try and understand the flow.
-- We first took the `refresh_token` from the request body. 
-- We then verified the signing method of the token. 
-- Next, check if the token is still valid.
-- The `refresh_uuid` and the `user_id` are then extracted, which are metadata used as claims when creating the refresh token.
-- We then search for the metadata in redis store and delete it using the `refresh_uuid` as key.
-- We then create a new pair of access and refresh tokens that will now be used for future requests.
-- The metadata of the access and refresh tokens are saved in redis.
-- The created tokens are returned to the caller.
-- In the else statement, if the **refresh token** is not valid, the user will not be allowed to create a new pair of tokens. We will need to relogin to get new tokens.
+
+* We first took the `refresh_token` from the request body. 
+* We then verified the signing method of the token. 
+* Next, check if the token is still valid.
+* The `refresh_uuid` and the `user_id` are then extracted, which are metadata used as claims when creating the refresh token.
+* We then search for the metadata in redis store and delete it using the `refresh_uuid` as key.
+* We then create a new pair of access and refresh tokens that will now be used for future requests.
+* The metadata of the access and refresh tokens are saved in redis.
+* The created tokens are returned to the caller.
+* In the else statement, if the **refresh token** is not valid, the user will not be allowed to create a new pair of tokens. We will need to relogin to get new tokens.
 
 Next, add the refresh token route in the `main()` function:
 
 ```
   router.POST("/token/refresh", Refresh)
-
 ```
 
 Testing the endpoint with a valid `refresh_token`:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image7.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image7.png" alt="" width="1999" height="1180" class="alignnone size-full wp-image-31627" /></a>
+![Testing the endpoint with a valid refresh token in Postman](/content/blog/using-jwt-for-authentication-in-a-golang-application/image7.png "Testing the endpoint with a valid refresh token in Postman")
 
 And we have successfully created new token pairs. Great😎.
 
@@ -948,4 +955,6 @@ Ensure that a valid phone number is provided so that you can get the message whe
 
 ## Conclusion
 
-You have seen how you can create and invalidate a JWT. You also saw how you can integrate the Vonage Messages API in your Golang application to send notifications. For more information on best practices and using a JWT, be sure to check out this <a href="https://github.com/victorsteven/jwt-best-practices">GitHub repo</a>. You can extend this application and use a real database to persist users and todos, and you can also use a React or VueJS to build a frontend. That is where you will really appreciate the Refresh Token feature with the help of Axios Interceptors.
+You have seen how you can create and invalidate a JWT. You also saw how you can integrate the Vonage Messages API in your Golang application to send notifications. For more information on best practices and using a JWT, be sure to check out this <a href="https://github.com/victorsteven/jwt-best-practices">GitHub repo</a>.
+
+You can extend this application and use a real database to persist users and todos, and you can also use a React or VueJS to build a frontend. That is where you will really appreciate the Refresh Token feature with the help of Axios Interceptors.
