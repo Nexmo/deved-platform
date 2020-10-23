@@ -2,6 +2,16 @@ import config from "./modules/config"
 import { getPostRoute, getPostRoutes, getCategory } from "./modules/contenter"
 import { locales } from "./lang.config.js"
 
+const isPreviewBuild = () => {
+  return process.env.PULL_REQUEST && process.env.BRANCH.startsWith('cms/')
+}
+
+const previewRoute = () => {
+  const [, type, slug] = process.env.BRANCH.split('/')
+
+  return [ `/${type}/${slug}` ]
+}
+
 module.exports = {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -105,7 +115,11 @@ module.exports = {
   },
 
   generate: {
-    fallback: true
+    crawler: !isPreviewBuild(),
+    fallback: true,
+    routes() {
+      return isPreviewBuild() ? previewRoute() : []
+    }
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
