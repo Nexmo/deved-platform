@@ -14,8 +14,8 @@ export default {
   
     page_search_title: 'Sökresultat',
     page_search_placeholder: 'e.g. Skicka SMS i Node.js',
-    page_search_label: 'Sök i vårt befintliga innehåll ...',
-    page_search_stalled_hint: 'Sökningen tar längre tid än vanligt ...',
+    page_search_label: 'Sök i vårt befintliga innehåll...',
+    page_search_stalled_hint: 'Sökningen tar längre tid än vanligt...',
     page_search_no_results_title: 'Inga resultat hittades',
     page_search_no_results_message: 'Försök att göra en mer specifik sökning :)',
   
@@ -37,8 +37,8 @@ export default {
      */
     component_search_hero_title: 'Utvecklarinnehåll från teamet på',
     component_search_hero_placeholder: 'e.g. Skicka SMS i Node.js',
-    component_search_hero_label: 'Sök i vårt befintliga innehåll ...',
-    component_search_hero_stalled_hint: 'Sökningen tar längre tid än vanligt ...',
+    component_search_hero_label: 'Sök i vårt befintliga innehåll...',
+    component_search_hero_stalled_hint: 'Sökningen tar längre tid än vanligt...',
   
     component_header_strapline: 'Vonage :: Now we\'re talking',
     component_header_badge: 'Lära',
