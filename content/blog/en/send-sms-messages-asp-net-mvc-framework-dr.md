@@ -67,7 +67,7 @@ Next, under the **Tools** dropdown menu, locate **NuGet Package Manager** and cl
 
 ## Diving Into the ASP.NET Project Code
 
-Add a JSON file [appsettings.json](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/32a25f7dbf7f71e4af3181c872f208e41f726ea3/NexmoDotNetQuickStarts/appsettings.json)) to your project. Inside this file, add your Vonage API credentials.
+Add a JSON file [appsettings.json](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/32a25f7dbf7f71e4af3181c872f208e41f726ea3/NexmoDotNetQuickStarts/appsettings.json) to your project. Inside this file, add your Vonage API credentials.
 
 ```
 {
