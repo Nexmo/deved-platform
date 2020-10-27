@@ -1,8 +1,8 @@
 <template>
   <NLink
-    :to="localePath(`/tags/${tag}`)"
+    :to="localePath(`/tags/${slug}`)"
     class="Vlt-badge Vlt-badge--small Vlt-badge--grey Vlt-badge--transparent"
-    :class="'Blog-badge--' + tag"
+    :class="'Blog-badge--' + slug"
   >
     <svg 
       v-if="isProduct" 
@@ -13,11 +13,18 @@
     >
       <path d="M9.3 11.6L4.7 1.5H0l6.8 15.3s.1.1.1 0l2.4-5.2zm9.9-10.1s-6.1 13.9-6.9 15.6c-1.8 4.1-3.2 5.1-4.6 5.3H12c1.9 0 3.2-1.3 5.1-5.3.6-1.4 6.9-15.6 6.9-15.6h-4.8z" />
     </svg>
-    <span v-else>#</span>{{ tag }}
+    <span v-else>#</span>{{ slug }}
   </NLink>
 </template>
 
 <script>
+const tagMap = {
+  node: [ 'nodejs', 'node.js' ],
+  dotnet: [ 'dot-net', 'asp-dot-net', '.net' ],
+  go: [ 'go-lang', 'golang' ],
+  careers: [ 'career' ]
+}
+
 export default {
   props: {
     tag: {
@@ -54,6 +61,16 @@ export default {
   computed: {
     isProduct() {
       return this.products.includes(this.tag) 
+    },
+
+    slug() {
+      const match = Object.entries(tagMap).filter(([, value]) => value.includes(this.tag))
+
+      if (match[0]) {
+        return match[0][0]
+      }
+
+      return this.tag
     }
   },
 }
