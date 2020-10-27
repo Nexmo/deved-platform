@@ -227,5 +227,3 @@ The finished code for this tutorial can be found on the [nexmo-community/websock
 Did you know that you can use WebSocket as an endpoint in a [Nexmo Call Control Object](https://developer.nexmo.com/voice/voice-api/ncco-reference#websocket-the-websocket-to-connect-to)? Check out this post on [Real Time Call Transcription with IBM Watson](https://www.nexmo.com/blog/2017/10/03/real-time-call-transcription-ibm-watson-python-dr/) to learn how to use the [Vonage Voice API](https://developer.nexmo.com/voice/voice-api/overview), WebSockets, and [IBM Watson](https://console.bluemix.net/docs/services/speech-to-text/index.html#about) to perform real-time call transcription.
 
 Interested in reading more about WebSockets? Check out this post on [What are WebSockets? How Can They Enhance Digital Solutions?](https://www.nexmo.com/blog/2018/09/05/websockets-enhance-digital-solutions/)
-
-\[Creating a WebSocket Server with the Spark Framework]: https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr/Content to be migrated...
