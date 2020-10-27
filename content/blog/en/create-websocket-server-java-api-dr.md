@@ -12,7 +12,7 @@ category: tutorial
 tags: []
 redirect: ""
 canonical: ""
-outdated: true
+outdated: false
 comments: true
 ---
 [WebSocket](https://en.wikipedia.org/wiki/WebSocket) is a protocol which enables communication between the server and the browser. It has an advantage over RESTful HTTP because communications are both bi-directional and real-time. This allows for the server to notify the client at any time instead of the client polling on a regular interval for updates.
