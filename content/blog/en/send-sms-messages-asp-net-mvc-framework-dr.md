@@ -130,7 +130,7 @@ Run the app and navigate to the correct route localhost:PORT**/SMS/Send**. Enter
 
 ![Send SMS Messages](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/sendsms.png "Send SMS Messages")
 
-![SMS sent using C# Client Library](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/sms.jpg "SMS sent using C# Client Library")
+![SMS sent using C# Client Library](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/sms1.jpg "SMS sent using C# Client Library")
 
 There you have it! Sending an SMS in .NET using the Nexmo C# Client Library is that simple! Stay tuned for the next part of this series on how to receive an SMS in .NET Standard!
 
