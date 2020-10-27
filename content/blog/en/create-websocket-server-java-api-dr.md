@@ -181,7 +181,7 @@ Add the following to `index.html` inside of the `src/main/webapp` folder:
 
 ### Embed and Configure Tomcat
 
-Unlike [Creating a WebSocket Server with Spring Boot], or [Creating a WebSocket Server with the Spark Framework], there is initially no embedded server to run your application.
+Unlike [Creating a WebSocket Server with Spring Boot](https://www.nexmo.com/blog/2018/10/08/create-websocket-server-spring-boot-dr/), or \[Creating a WebSocket Server with the Spark Framework], there is initially no embedded server to run your application.
 
 The [Gretty](http://akhikhl.github.io/gretty-doc/Getting-started.html) plugin for Gradle can be used to embed a variety of containers.
 
@@ -210,13 +210,13 @@ Your WebSocket server is now complete. Start your application using the `gradle 
 
 You can access your application at <http://localhost:8080> where you will be greeted with the following page:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2018/10/2018-10-01-13-38-05.png"><img src="https://www.nexmo.com/wp-content/uploads/2018/10/2018-10-01-13-38-05.png" alt="Sample JavaScript-enabled client for testing the WebSocket server." width="1006" height="205" class="size-full wp-image-24085" /></a>
+![Application directory](/content/blog/creating-a-websocket-server-with-the-java-api-for-websockets/2018-10-01-13-38-05.png "Application directory")
 
 The "connected" message indicates that the JavaScript client was able to make a connection.
 
 Try sending a text message by typing into the input field and clicking on the send button. Also try uploading an image. In both instances, you should see the same message and image echoed back.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2018/10/2018-10-01-14-23-40.png"><img src="https://www.nexmo.com/wp-content/uploads/2018/10/2018-10-01-14-23-40.png" alt="Sample JavaScript-enabled client showing a text and binary message echoed back." width="1006" height="379" class="size-full wp-image-24088" /></a>
+![Sending a text message](/content/blog/creating-a-websocket-server-with-the-java-api-for-websockets/2018-10-01-14-23-40.png "Sending a text message")
 
 ## Conclusion
 
@@ -224,9 +224,8 @@ In this tutorial you learned how to create a WebSocket server using JSR 356 whic
 
 The finished code for this tutorial can be found on the [nexmo-community/websocket-java-api](https://github.com/nexmo-community/websocket-java-api) repository.
 
-Did you know that you can use WebSocket as an endpoint in a [Nexmo Call Control Object](https://developer.nexmo.com/voice/voice-api/ncco-reference#websocket-the-websocket-to-connect-to)? Check out this post on [Real Time Call Transcription with IBM Watson](https://www.nexmo.com/blog/2017/10/03/real-time-call-transcription-ibm-watson-python-dr/) to learn how to use the [Nexmo Voice API](https://developer.nexmo.com/voice/voice-api/overview), WebSockets, and [IBM Watson](https://console.bluemix.net/docs/services/speech-to-text/index.html#about) to perform real-time call transcription.
+Did you know that you can use WebSocket as an endpoint in a [Nexmo Call Control Object](https://developer.nexmo.com/voice/voice-api/ncco-reference#websocket-the-websocket-to-connect-to)? Check out this post on [Real Time Call Transcription with IBM Watson](https://www.nexmo.com/blog/2017/10/03/real-time-call-transcription-ibm-watson-python-dr/) to learn how to use the [Vonage Voice API](https://developer.nexmo.com/voice/voice-api/overview), WebSockets, and [IBM Watson](https://console.bluemix.net/docs/services/speech-to-text/index.html#about) to perform real-time call transcription.
 
 Interested in reading more about WebSockets? Check out this post on [What are WebSockets? How Can They Enhance Digital Solutions?](https://www.nexmo.com/blog/2018/09/05/websockets-enhance-digital-solutions/)
 
-[Creating a WebSocket Server with Spring Boot]: https://www.nexmo.com/blog/2018/10/08/create-websocket-server-spring-boot-dr/
-[Creating a WebSocket Server with the Spark Framework]: https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr/Content to be migrated...
+\[Creating a WebSocket Server with the Spark Framework]: https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr/Content to be migrated...
