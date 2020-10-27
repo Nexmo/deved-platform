@@ -20,14 +20,14 @@ outdated_url: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-
 ---
 The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api) lets you send and receive text messages around the world. This tutorial shows you how to use the [Nexmo C# Client Library](https://github.com/Nexmo/nexmo-dotnet) to send SMS messages from your ASP.NET MVC web app.
 
-<img [View the source code on GitHub](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/488a97c576c882aeef8a7cf327bade27750f4856/NexmoDotNetQuickStarts/Controllers/SMSController.cs#L20-L38)
+[View the source code on GitHub](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/488a97c576c882aeef8a7cf327bade27750f4856/NexmoDotNetQuickStarts/Controllers/SMSController.cs#L20-L38)
 
-##Prerequisites
+## Prerequisites
+
 To get started with the Nexmo Client Library for .NET, you will need:
-<ul>
- 	<li>Visual Studio 2017 RC</li>
- 	<li>Windows machine</li>
-</ul>
+
+* Visual Studio 2017 RC
+* Windows machine
 
 ## Vonage API Account
 
@@ -35,32 +35,40 @@ To complete this tutorial, you will need a [Vonage API account](http://developer
 
 This tutorial also uses a virtual phone number. To purchase one, go to *Numbers* > *Buy Numbers* and search for one that meets your needs. If you’ve just signed up, the initial cost of a number will be easily covered by your available credit.
 
-<a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2017-03-23-send-sms-messages-asp-net-mvc-framework-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
+![Start Building with Vonage](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/startbuilding_footer.png "Start Building with Vonage")
 
 ## ASP.NET Project Setup
+
 First, open up Visual Studio and create a new **ASP.NET Web Application (.NET Framework)** project.
 
-<img class="alignnone size-full wp-image-12457" src="https://www.nexmo.com/wp-content/uploads/2017/03/Newproj.png" alt="Create New Project" />
+![Create New Project](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/newproj.png "Create New Project")
 
 Select the **MVC Template** and ensure the Authentication type is set to **No Authentication**. Click **OK** to create the project.
 
-<img class="alignnone size-full wp-image-12460" src="https://www.nexmo.com/wp-content/uploads/2017/03/MVC.png" alt="MVC Template" width="80%" />
+![MVC Template](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/mvc.png "MVC Template")
 
 Next, install the Nexmo C# Client Library via the NuGet Package Manager Console.
+
 ```
 Install-Package Nexmo.Csharp.Client -Version 2.2.0’
 ```
-<img class="alignnone size-full wp-image-12454" src="https://www.nexmo.com/wp-content/uploads/2017/03/installCL.png" alt="Install Client Library" width="80%" />
+
+![Install Client Library](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/installcl.png "Install Client Library")
 
 Also, add the following package to enable debug logging in the output window via the Package Manager Console:
+
 ```
 Install-Package Microsoft.Extensions.Logging -Version 1.0.1
 ```
+
 Next, under the **Tools** dropdown menu, locate **NuGet Package Manager** and click **Manage NuGet Packages for Solution**. Under the Updates tab, select the **Update All Packages** box and click the **Update** button.
 
-<img class="alignnone size-full wp-image-12463" src="https://www.nexmo.com/wp-content/uploads/2017/03/updateNuget.png" alt="Update NuGet Packages" width="80%" />
-<h2>Diving Into the ASP.NET Project Code</h2>
-Add a JSON file ([appsettings.json](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/32a25f7dbf7f71e4af3181c872f208e41f726ea3/NexmoDotNetQuickStarts/appsettings.json)) to your project. Inside this file, add your Vonage API credentials.
+![Update NuGet Packages](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/updatenuget.png "Update NuGet Packages")
+
+## Diving Into the ASP.NET Project Code
+
+Add a JSON file [appsettings.json](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/32a25f7dbf7f71e4af3181c872f208e41f726ea3/NexmoDotNetQuickStarts/appsettings.json)) to your project. Inside this file, add your Vonage API credentials.
+
 ```
 {
 "appSettings": {
@@ -85,6 +93,7 @@ return View();
 ```
 
 Afterwards, click on the **Views** folder and add a new folder called **SMS**. Within this folder, create a new view. (`Send.cshtml'). Then, [add a form](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/42bf24b26e461d4c90283e823ab9a3e92a518cb9/NexmoDotNetQuickStarts/Views/SMS/Send.cshtml#L4-L10) to the view with two input tags (type = “text”) for the destination number and the message to be sent. Lastly, add an input tag (type = “submit”) to submit the form.
+
 ```
 @using (Html.BeginForm("Send", "SMS", FormMethod.Post))
 {
@@ -96,6 +105,7 @@ Afterwards, click on the **Views** folder and add a new folder called **SMS**. W
 ```
 
 Back in the `SMSController`, add the following using statement to the top of the file.
+
 ```
 using Nexmo.Api;
 ```
@@ -118,16 +128,16 @@ return View();
 
 Run the app and navigate to the correct route localhost:PORT**/SMS/Send**. Enter the message you wish to send and the destination number and click **Send**.
 
-<img class="alignnone size-full wp-image-12466" src="https://www.nexmo.com/wp-content/uploads/2017/03/sendSMS.png" alt="Send SMS Messages" width="80%" />
+![Send SMS Messages](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/sendsms.png "Send SMS Messages")
 
-<img class="alignnone size-full wp-image-12469" src="https://www.nexmo.com/wp-content/uploads/2017/03/sms.jpg" alt="SMS sent using C# Client Library" width="35%" />
+![SMS sent using C# Client Library](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/sms.jpg "SMS sent using C# Client Library")
 
 There you have it! Sending an SMS in .NET using the Nexmo C# Client Library is that simple! Stay tuned for the next part of this series on how to receive an SMS in .NET Standard!
 
 Feel free to reach out via [e-mail](mailto:sidharth.sharma@nexmo.com) or [Twitter](http://www.twitter.com/sidsharma27) if you have any questions!
-<h2>Helpful Links</h2>
-<ul>
- 	<li><a href="https://docs.nexmo.com/messaging/sms-api" target="_blank" rel="noopener noreferrer">Nexmo SMS REST API</a></li>
- 	<li><a href="https://github.com/Nexmo/nexmo-dotnet" target="_blank" rel="noopener noreferrer">Nexmo C# Client Library</a></li>
- 	<li><a href="https://github.com/nexmo-community/nexmo-dotnet-quickstart/" target="_blank" rel="noopener noreferrer">Nexmo ASP.NET MVC Quickstart</a></li>
-</ul>Content to be migrated...
+
+## Helpful Links
+
+* [Nexmo SMS REST API](https://docs.nexmo.com/messaging/sms-api)
+* [Nexmo C# Client Library](https://github.com/Nexmo/nexmo-dotnet)
+* [Nexmo ASP.NET MVC Quickstart](https://github.com/nexmo-community/nexmo-dotnet-quickstart)
