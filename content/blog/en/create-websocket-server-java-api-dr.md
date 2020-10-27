@@ -210,13 +210,13 @@ Your WebSocket server is now complete. Start your application using the `gradle 
 
 You can access your application at <http://localhost:8080> where you will be greeted with the following page:
 
-![Application directory](/content/blog/creating-a-websocket-server-with-the-java-api-for-websockets/2018-10-01-13-38-05.png "Application directory")
+![Sample JavaScript-enabled client for testing the WebSocket server](/content/blog/creating-a-websocket-server-with-the-java-api-for-websockets/2018-10-01-13-38-05.png "Sample JavaScript-enabled client for testing the WebSocket server")
 
 The "connected" message indicates that the JavaScript client was able to make a connection.
 
 Try sending a text message by typing into the input field and clicking on the send button. Also try uploading an image. In both instances, you should see the same message and image echoed back.
 
-![Sending a text message](/content/blog/creating-a-websocket-server-with-the-java-api-for-websockets/2018-10-01-14-23-40.png "Sending a text message")
+![Sample JavaScript-enabled client showing a text and binary message echoed back.](/content/blog/creating-a-websocket-server-with-the-java-api-for-websockets/2018-10-01-14-23-40.png "Sample JavaScript-enabled client showing a text and binary message echoed back.")
 
 ## Conclusion
 
