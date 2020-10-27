@@ -65,12 +65,14 @@
           </div>
         </div>
         <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <SpotlightFooter />
-        </div>
-        <div class="Vlt-col" />
+        <template v-if="post.spotlight">
+          <div class="Vlt-grid__separator" />
+          <div class="Vlt-col" />
+          <div class="Vlt-col Vlt-col--2of3">
+            <SpotlightFooter />
+          </div>
+          <div class="Vlt-col" />
+        </template>
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <Author

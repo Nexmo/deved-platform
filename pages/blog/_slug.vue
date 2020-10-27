@@ -65,12 +65,14 @@
           </div>
         </div>
         <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <SpotlightFooter />
-        </div>
-        <div class="Vlt-col" />
+        <template v-if="post.spotlight">
+          <div class="Vlt-grid__separator" />
+          <div class="Vlt-col" />
+          <div class="Vlt-col Vlt-col--2of3">
+            <SpotlightFooter />
+          </div>
+          <div class="Vlt-col" />
+        </template>
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <Author
@@ -107,6 +109,7 @@ import Spotlight from "~/components/Spotlight"
 import SpotlightFooter from "~/components/SpotlightFooter"
 import Tags from "~/components/Tags"
 import config from "~/modules/config"
+import moment from "moment"
 
 export default {
   components: {
@@ -138,12 +141,17 @@ export default {
         }
       }
 
+      const postDate = moment(post.published_at)
+
       return {
         post,
         disqusShortname: config.disqusShortname,
         baseUrl: config.baseUrl,
         routes: [
           { route: `/${post.type}`, title: app.i18n.t('page_blog_breadcrumb') },
+          { route: `/${post.type}/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
+          { route: `/${post.type}/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
+          { route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
           { route: post.route, title: post.title, current: true }
         ],
       }
