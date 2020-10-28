@@ -5,21 +5,21 @@ module.exports = {
       iso: 'en-US',
       name: 'English',
       color: 'grey',
-      file: 'en-US.js'
+      file: 'en-US.js',
     },
     {
       code: 'it',
       iso: 'it',
       name: 'Italiano',
       color: 'blue',
-      file: 'it.js'
+      file: 'it.js',
     },
     {
       code: 'cn',
       iso: 'zh-CN',
       name: '中文',
       color: 'red',
-      file: 'zh-CN.js'
-    }
-  ]
+      file: 'zh-CN.js',
+    },
+  ],
 }
