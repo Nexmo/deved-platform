@@ -21,38 +21,29 @@ export default {
     }
   },
 
-  created() {
-    if (!this.$isServer) {
-      window.addEventListener('scroll', this.handleScroll)
-    }
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
   },
 
-  destroyed() {
-    if (!this.$isServer) {
-      window.removeEventListener('scroll', this.handleScroll)
-    }
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
   },
 
   methods: {
     toTop() {
-      if (!this.$isServer) {
-        const increments = (0 - window.pageYOffset) / (500 / 16)
-        // Loop the animation function
-        const runAnimation = setInterval(() => {
-          window.scrollBy(0, increments)
-          if (window.pageYOffset <= document.body.offsetTop) {
-            clearInterval(runAnimation)
-          }
-        }, 16)
-      }
+      const increments = (0 - window.pageYOffset) / (500 / 16)
+      const runAnimation = setInterval(() => {
+        window.scrollBy(0, increments)
+        if (window.pageYOffset <= document.body.offsetTop) {
+          clearInterval(runAnimation)
+        }
+      }, 16)
     },
     handleScroll() {
-      if (!this.$isServer) {
-        if (window.pageYOffset > 200) {
-          this.showButton = true
-        } else {
-          this.showButton = false
-        }
+      if (window.pageYOffset > 200) {
+        this.showButton = true
+      } else {
+        this.showButton = false
       }
     },
   },

@@ -7,8 +7,6 @@
 </template>
 
 <script>
-/* eslint-disable no-console */
-
 export default {
   head() {
     if (process.client) {
@@ -38,7 +36,7 @@ export default {
 
   methods: {
     log(txt, format) {
-      console.log(txt, format)
+      console.log(txt, format) // eslint-disable-line no-console
     },
   },
 }
