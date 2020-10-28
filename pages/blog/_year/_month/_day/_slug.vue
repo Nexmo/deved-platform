@@ -385,6 +385,8 @@ export default {
 .Blog__post .nuxt-content >>> p img {
   display: block;
   margin: 24px auto;
+  max-height: 50vh;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
