@@ -28,12 +28,25 @@
               <meta property="publisher" content="@VonageDev">
             </div>
             <div v-if="post.published_at" class="Vlt-card__content Vlt-margin--A-top1">
-              <span property="datePublished" :content="post.published_at">Published
-                <strong>{{
-                  (post.updated_at || post.published_at) | moment("dddd, MMMM Do YYYY")
-                }}</strong></span>
-              <meta property="dateModified" :content="post.updated_at || post.published_at">
-              <RevisionsLink :post="post" /><ImproveLink :post="post" />
+              <template v-if="post.updated_at">
+                <span property="dateModified" :content="post.updated_at">Updated
+                  <strong>{{
+                    (post.updated_at) | moment("dddd, MMMM Do YYYY")
+                  }}</strong></span><br>
+                <small property="datePublished" :content="post.published_at">Originally Published
+                  <strong>{{
+                    (post.published_at) | moment("dddd, MMMM Do YYYY")
+                  }}</strong></small>
+              </template>
+              <template v-else>
+                <span property="datePublished" :content="post.published_at">Published
+                  <strong>{{
+                    (post.published_at) | moment("dddd, MMMM Do YYYY")
+                  }}</strong></span>
+              </template>
+            </div>
+            <div class="Vlt-card__content">
+              <small><ImproveLink :post="post" /> (<RevisionsLink :post="post" />)</small>
             </div>
             <div v-if="post.tags" class="Vlt-card__content Vlt-margin--A-top1">
               <Tags :tags="post.tags" />
