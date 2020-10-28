@@ -1,9 +1,9 @@
 <template>
-  <span>
-    | <a :href="`${repoUrl}/commits/${repoBranch}/content${post.path}${post.extension}`" target="_blank">
-      View revision history
-    </a>
-  </span>
+  <a
+    :href="`${repoUrl}/commits/${repoBranch}/content${post.path}${post.extension}`" 
+    target="_blank"
+    class="Vlt-text-link"
+  >View revision history</a>
 </template>
 
 <script>
@@ -23,16 +23,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-span {
-  margin-left: 6px;
-  font-size: 10px;
-}
-
-span a {
-  margin-left: 6px;
-  font-style: italic;
-  color: grey;
-}
-</style>
