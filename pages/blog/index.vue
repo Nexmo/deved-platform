@@ -20,20 +20,9 @@
 </template>
 
 <script>
-import Breadcrumbs from '~/components/Breadcrumbs'
-import Card from '~/components/Card'
-import PageHero from '~/components/PageHero'
-import Pagination from '~/components/Pagination'
 import config from '~/modules/config'
 
 export default {
-  components: {
-    Breadcrumbs,
-    Card,
-    PageHero,
-    Pagination,
-  },
-
   async asyncData({ $content, app, error }) {
     const page = 1
 

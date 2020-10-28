@@ -123,15 +123,7 @@
 </template>
 
 <script>
-import TwitterSocialButton from '~/components/SocialButtons/TwitterSocialButton'
-import SlackSocialButton from '~/components/SocialButtons/SlackSocialButton'
-
 export default {
-  components: {
-    TwitterSocialButton,
-    SlackSocialButton,
-  },
-
   data() {
     return {
       selectedLocale: this.$i18n.locale,

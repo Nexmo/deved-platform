@@ -7,26 +7,20 @@
 </template>
 
 <script>
-import Footer from '~/components/Footer'
-import Header from '~/components/Header'
+/* eslint-disable no-console */
 
 export default {
-  components: {
-    Footer,
-    Header,
-  },
-
   head() {
     if (process.client) {
-      console.log(
+      this.log(
         `%c${this.$t('layout_default_careers_title')}`,
         'font-family: Gill Sans, sans-serif; font-size: 40px; color: #dd0d00'
       )
-      console.log(
+      this.log(
         `%c${this.$t('layout_default_careers_body')}`,
         'font-family: Gill Sans, sans-serif; font-size: 16px;'
       )
-      console.log(
+      this.log(
         `%c${this.$t('layout_default_careers_link')}`,
         'font-family: Gill Sans, sans-serif;'
       )
@@ -40,6 +34,12 @@ export default {
         },
       ],
     }
+  },
+
+  methods: {
+    log(txt, format) {
+      console.log(txt, format)
+    },
   },
 }
 </script>

@@ -9,21 +9,7 @@
 </template>
 
 <script>
-import AuthorBubble from '~/components/Authors/AuthorBubble.vue'
-import AuthorCard from '~/components/Authors/AuthorCard.vue'
-import AuthorMiniCard from '~/components/Authors/AuthorMiniCard.vue'
-import AuthorName from '~/components/Authors/AuthorName.vue'
-import AuthorPage from '~/components/Authors/AuthorPage.vue'
-
 export default {
-  components: {
-    AuthorBubble,
-    AuthorCard,
-    AuthorMiniCard,
-    AuthorName,
-    AuthorPage,
-  },
-
   props: {
     author: {
       type: [String, Object],

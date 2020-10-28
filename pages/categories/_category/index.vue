@@ -21,20 +21,9 @@
 </template>
 
 <script>
-import Breadcrumbs from '~/components/Breadcrumbs'
-import Card from '~/components/Card'
-import Category from '~/components/Category'
-import PageHero from '~/components/PageHero'
 import config from '~/modules/config'
 
 export default {
-  components: {
-    Breadcrumbs,
-    Card,
-    Category,
-    PageHero,
-  },
-
   async asyncData({ $content, app, params, error }) {
     try {
       const { categories } = await $content('categories').fetch()

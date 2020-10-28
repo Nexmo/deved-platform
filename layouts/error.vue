@@ -8,11 +8,7 @@
 </template>
 
 <script>
-import Error404 from '~/components/Errors/Error404.vue'
-import Error400 from '~/components/Errors/Error400.vue'
-
 export default {
-  components: { Error404, Error400 },
   layout: 'default',
   props: {
     error: {

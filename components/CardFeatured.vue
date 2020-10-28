@@ -56,17 +56,7 @@
 </template>
 
 <script>
-import Tags from '~/components/Tags'
-import Category from '~/components/Category'
-import Author from '~/components/Author'
-
 export default {
-  components: {
-    Category,
-    Author,
-    Tags,
-  },
-
   props: {
     post: {
       type: Object,

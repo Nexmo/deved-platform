@@ -153,32 +153,9 @@
 
 <script>
 import moment from 'moment'
-import Author from '~/components/Author'
-import BackToTop from '~/components/BackToTop'
-import Breadcrumbs from '~/components/Breadcrumbs'
-import Category from '~/components/Category'
-import ImproveLink from '~/components/ImproveLink'
-import Outdated from '~/components/Outdated'
-import RevisionsLink from '~/components/RevisionsLink'
-import Spotlight from '~/components/Spotlight'
-import SpotlightFooter from '~/components/SpotlightFooter'
-import Tags from '~/components/Tags'
 import config from '~/modules/config'
 
 export default {
-  components: {
-    Author,
-    BackToTop,
-    Breadcrumbs,
-    Category,
-    ImproveLink,
-    Outdated,
-    RevisionsLink,
-    Spotlight,
-    SpotlightFooter,
-    Tags,
-  },
-
   async asyncData({ $content, app, params, error }) {
     try {
       const post = await $content(`blog/${app.i18n.locale}`, params.slug)

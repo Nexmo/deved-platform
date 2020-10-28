@@ -31,20 +31,9 @@
 </template>
 
 <script>
-import Author from '~/components/Author.vue'
-import Breadcrumbs from '~/components/Breadcrumbs'
-import SpotlightFooter from '~/components/SpotlightFooter'
-import Card from '~/components/Card'
 import config from '~/modules/config'
 
 export default {
-  components: {
-    Author,
-    Breadcrumbs,
-    SpotlightFooter,
-    Card,
-  },
-
   async asyncData({ $content, params, error, app }) {
     try {
       const { authors } = await $content('authors').fetch()

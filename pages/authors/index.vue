@@ -80,17 +80,7 @@
 </template>
 
 <script>
-import AuthorHero from '~/components/AuthorHero'
-import Author from '~/components/Author'
-import Breadcrumbs from '~/components/Breadcrumbs'
-
 export default {
-  components: {
-    Breadcrumbs,
-    AuthorHero,
-    Author,
-  },
-
   async asyncData({ $content, app }) {
     let { authors } = await $content('authors').fetch()
 

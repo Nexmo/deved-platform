@@ -21,16 +21,8 @@
 
 <script>
 import moment from 'moment'
-import Breadcrumbs from '~/components/Breadcrumbs'
-import Card from '~/components/Card'
-import PageHero from '~/components/PageHero'
 
 export default {
-  components: {
-    Breadcrumbs,
-    Card,
-    PageHero,
-  },
   validate({ params: { year } }) {
     return /^\d{4}$/.test(year)
   },
