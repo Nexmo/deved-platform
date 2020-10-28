@@ -15,9 +15,6 @@
 - DISQUS comments on post pages using `vue-disqus`
 - Netlify CMS for content management
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [Components](#components)

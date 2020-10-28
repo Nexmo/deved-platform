@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "remark-frontmatter",
+    "remark-preset-lint-recommended",
+    ["remark-lint-no-inline-html", false],
+    ["remark-lint-no-literal-urls", false],
+    ["remark-lint-list-item-indent", "space"]
+  ]
+}
