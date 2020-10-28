@@ -12,7 +12,7 @@ published_at: 2020-10-19T13:29:31
 comments: true
 category: tutorial
 tags:
-  - javacript
+  - javascript
   - postman
   - voice-api
 canonical: https://www.nexmo.com/blog/2020/10/19/variables-and-chaining-requests-in-postman
