@@ -27,4 +27,14 @@ jobs:
         run: npm ci
 
       - name: Lint Source Files
-        run: npm run lint
+        run: npm run lint:js
+    remark-lint:
+      name: Markdown
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1
+        - name: remark-lint
+          uses: prologic/action-remark-lint@v0.0.5
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            reporter: github-pr-check # Change reporter. (Only `github-pr-check` is supported at the moment).
