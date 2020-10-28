@@ -2,9 +2,11 @@ export default {
   /**
    * Layout strings
    */
-  layout_default_careers_title: "ATTENZIONE IN QUESTA AREA",
-  layout_default_careers_body: "Ma, visto che sei qui, stiamo assumendo persone che sanno come aggirare una console.",
-  layout_default_careers_link: "Trova una carriera in https://developer.nexmo.com/careers",
+  layout_default_careers_title: 'ATTENZIONE IN QUESTA AREA',
+  layout_default_careers_body:
+    'Ma, visto che sei qui, stiamo assumendo persone che sanno come aggirare una console.',
+  layout_default_careers_link:
+    'Trova una carriera in https://developer.nexmo.com/careers',
 
   /**
    * Page strings
@@ -38,18 +40,19 @@ export default {
   component_search_hero_title: 'Contenuti per sviluppatori dal team di',
   component_search_hero_placeholder: 'e.g. Invia SMS in Node.js',
   component_search_hero_label: 'Cerca tra i nostri contenuti...',
-  component_search_hero_stalled_hint: 'La ricerca sta impiegando più tempo del solito...',
+  component_search_hero_stalled_hint:
+    'La ricerca sta impiegando più tempo del solito...',
 
-  component_header_strapline: 'Vonage :: Now we\'re talking',
+  component_header_strapline: "Vonage :: Now we're talking",
   component_header_badge: 'Learn',
   component_header_slack_button: 'Unisciti a noi su Slack',
   component_header_signup_button: 'Iscriviti',
   component_header_follow_button: 'Seguici',
 
-  component_footer_strapline: 'Vonage :: Now we\'re talking',
+  component_footer_strapline: "Vonage :: Now we're talking",
   component_footer_legal: 'Informazioni legali',
   component_footer_privacy: 'Privacy',
-  component_footer_copyright: 'Diritto d\'autore',
+  component_footer_copyright: "Diritto d'autore",
   component_footer_patents: 'Brevetti',
   component_footer_service: 'SERVIZIO',
   component_footer_partners: 'Partner',

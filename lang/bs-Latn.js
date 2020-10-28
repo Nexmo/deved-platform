@@ -2,9 +2,11 @@ export default {
   /**
    * Layout strings
    */
-  layout_default_careers_title: "OPREZNO U OVOM PROSTORU",
-  layout_default_careers_body: "Ali, obzirom da ste tu, mi zapošljavamo ljude koji se znaju snaći u konzoli.",
-  layout_default_careers_link: "Pronađite karijeru na https://developer.nexmo.com/careers",
+  layout_default_careers_title: 'OPREZNO U OVOM PROSTORU',
+  layout_default_careers_body:
+    'Ali, obzirom da ste tu, mi zapošljavamo ljude koji se znaju snaći u konzoli.',
+  layout_default_careers_link:
+    'Pronađite karijeru na https://developer.nexmo.com/careers',
 
   /**
    * Page strings
@@ -40,13 +42,13 @@ export default {
   component_search_hero_label: 'Pretražite naš postojeći sadržaj...',
   component_search_hero_stalled_hint: 'Pretraga traje duže nego obično...',
 
-  component_header_strapline: 'Vonage :: Now we\'re talking',
+  component_header_strapline: "Vonage :: Now we're talking",
   component_header_badge: 'Nauči',
   component_header_slack_button: 'Pridružite nam se na Slack-u',
   component_header_signup_button: 'Prijavite se',
   component_header_follow_button: 'Pratite nas',
 
-  component_footer_strapline: 'Vonage :: Now we\'re talking',
+  component_footer_strapline: "Vonage :: Now we're talking",
   component_footer_legal: 'Prava',
   component_footer_privacy: 'Privatnost',
   component_footer_copyright: 'Autorska prava',
