@@ -1,9 +1,9 @@
-const fm = require('front-matter')
 const fs = require('fs')
-const loki = require('lokijs')
 const path = require('path')
+const fm = require('front-matter')
+const Loki = require('lokijs')
 
-const db = new loki('posts.db')
+const db = new Loki('posts.db')
 const posts = db.addCollection('posts')
 
 const directoryPath = path.join(__dirname, '../../../content/blog/en')

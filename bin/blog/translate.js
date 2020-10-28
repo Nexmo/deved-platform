@@ -6,17 +6,17 @@ const posts = require('./util/posts')
 const writeFile = require('./util/writeFile')
 const { title, description, post, language } = require('./prompts')
 
-const getPost = file => posts.findOne({ 'file': file })
+const getPost = (file) => posts.findOne({ file })
 
-module.exports = () => { 
+module.exports = () => {
   inquirer
     .prompt([
       post(posts),
       language(['en']),
       title(getPost),
-      description(getPost)
+      description(getPost),
     ])
-    .then(answers => {
+    .then((answers) => {
       const output = createPost(getPost(answers.post))
       const filename = `content/blog/${answers.language}/${answers.post}`
 
@@ -26,7 +26,7 @@ module.exports = () => {
 
       writeFile(filename, output)
     })
-    .catch(error => {
+    .catch((error) => {
       consola.error(error)
     })
 }
