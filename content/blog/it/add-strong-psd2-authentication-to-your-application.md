@@ -94,9 +94,9 @@ Se l’esito è positivo, la risposta mostrerà uno `status` pari a zero e puoi 
 
 In questo post, abbiamo spiegato cosa comporta la Secure Customer Authentication del cliente e abbiamo visto come è possibile implementarla nelle tue applicazioni. Ecco alcune risorse che potresti trovare utili per i passaggi successivi:
 
-- La sezione [Verifify API](https://developer.nexmo.com/verify) del nostro Portale per Developers
-- [La Documentazione API](https://developer.nexmo.com/api/verify) per la Verify API
-- [I post del nostro Blog che riguardano la Verify API](https://www.nexmo.com/blog/tag/verify), dai quali potresti trarre ispirazione per il tuo prossimo progetto
-- Contattaci su [Twitter](https://twitter.com/VonageDev) o sulla nostra [Community Slack](https://developer.nexmo.com/community/slack) per qualsiasi commento, suggerimento o domanda.
+  - La sezione [Verifify API](https://developer.nexmo.com/verify) del nostro Portale per Developers
+  - [La Documentazione API](https://developer.nexmo.com/api/verify) per la Verify API
+  - [I post del nostro Blog che riguardano la Verify API](https://www.nexmo.com/blog/tag/verify), dai quali potresti trarre ispirazione per il tuo prossimo progetto
+  - Contattaci su [Twitter](https://twitter.com/VonageDev) o sulla nostra [Community Slack](https://developer.nexmo.com/community/slack) per qualsiasi commento, suggerimento o domanda.
 
 [Puoi leggere il post originale in inglese qui](https://www.nexmo.com/blog/2020/06/23/add-strong-psd2-authentication-to-your-application)
