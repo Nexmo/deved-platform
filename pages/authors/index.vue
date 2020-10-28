@@ -80,9 +80,9 @@
 </template>
 
 <script>
-import AuthorHero from "~/components/AuthorHero"
-import Author from "~/components/Author"
-import Breadcrumbs from "~/components/Breadcrumbs"
+import AuthorHero from '~/components/AuthorHero'
+import Author from '~/components/Author'
+import Breadcrumbs from '~/components/Breadcrumbs'
 
 export default {
   components: {
@@ -94,26 +94,26 @@ export default {
   async asyncData({ $content, app }) {
     let { authors } = await $content('authors').fetch()
 
-    authors = authors.filter(a => a.hidden !== true)
+    authors = authors.filter((a) => a.hidden !== true)
 
     authors.sort((a, b) => {
       const nameA = a.name.toUpperCase()
       const nameB = b.name.toUpperCase()
-      return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0
+      return nameA < nameB ? -1 : nameA > nameB ? 1 : 0
     })
 
     authors.sort((a, b) => {
-      return (a.noteworthy === b.noteworthy)? 0 : a.noteworthy? -1 : 1
+      return a.noteworthy === b.noteworthy ? 0 : a.noteworthy ? -1 : 1
     })
 
-    const team = authors.filter(a => a.team === true)
-    authors = authors.filter(a => a.team !== true) // remove team from authors pool
+    const team = authors.filter((a) => a.team === true)
+    authors = authors.filter((a) => a.team !== true) // remove team from authors pool
 
-    const alumni = authors.filter(a => a.alumni === true)
-    authors = authors.filter(a => a.alumni !== true) // remove alumni from authors pool
+    const alumni = authors.filter((a) => a.alumni === true)
+    authors = authors.filter((a) => a.alumni !== true) // remove alumni from authors pool
 
-    const spotlight = authors.filter(a => a.spotlight === true)
-    authors = authors.filter(a => a.spotlight !== true) // remove spotlight from authors pool
+    const spotlight = authors.filter((a) => a.spotlight === true)
+    authors = authors.filter((a) => a.spotlight !== true) // remove spotlight from authors pool
 
     return {
       team,
@@ -121,8 +121,12 @@ export default {
       spotlight,
       authors,
       routes: [
-        { route: `/authors`, title: app.i18n.t('page_authors_title'), current: true },
-      ]
+        {
+          route: `/authors`,
+          title: app.i18n.t('page_authors_title'),
+          current: true,
+        },
+      ],
     }
   },
 }

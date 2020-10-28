@@ -2,7 +2,8 @@
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
       <PageHero class="Category-hero">
-        <Category :category="category" plural /> {{ $t('page_categorytag_title' ) }}
+        <Category :category="category" plural />
+        {{ $t('page_categorytag_title') }}
       </PageHero>
     </header>
     <main class="Vlt-container">
@@ -20,44 +21,47 @@
 </template>
 
 <script>
-import Breadcrumbs from "~/components/Breadcrumbs"
-import Card from "~/components/Card"
-import Category from "~/components/Category"
-import PageHero from "~/components/PageHero"
-import config from "~/modules/config"
+import Breadcrumbs from '~/components/Breadcrumbs'
+import Card from '~/components/Card'
+import Category from '~/components/Category'
+import PageHero from '~/components/PageHero'
+import config from '~/modules/config'
 
 export default {
   components: {
     Breadcrumbs,
     Card,
     Category,
-    PageHero
+    PageHero,
   },
 
   async asyncData({ $content, app, params, error }) {
     try {
       const { categories } = await $content('categories').fetch()
-      const category = categories.find(c => c.slug === params.category)
+      const category = categories.find((c) => c.slug === params.category)
 
       const posts = await $content(`blog/${app.i18n.locale}`)
-        .where({ '$and': [
-          { 'category': category.slug },
-          { 'published': { '$ne': false } }
-        ] })
+        .where({
+          $and: [{ category: category.slug }, { published: { $ne: false } }],
+        })
         .sortBy('published_at', 'desc')
         .limit(config.postsPerPage)
         .fetch()
 
       if (posts.length === 0) {
-        error({ statusCode: 404, message: "Page not found" })
-      } 
+        error({ statusCode: 404, message: 'Page not found' })
+      }
 
       return {
-        category: category,
+        category,
         posts,
         routes: [
-          { route: `/categories/${category.slug}`, title: `Category: ${category.plural}`, current: true },
-        ]
+          {
+            route: `/categories/${category.slug}`,
+            title: `Category: ${category.plural}`,
+            current: true,
+          },
+        ],
       }
     } catch (e) {
       return error(e)
