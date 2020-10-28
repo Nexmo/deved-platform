@@ -20,17 +20,17 @@
 </template>
 
 <script>
-import Breadcrumbs from "~/components/Breadcrumbs"
-import Card from "~/components/Card"
-import PageHero from "~/components/PageHero"
-import config from "~/modules/config"
 import moment from 'moment'
+import Breadcrumbs from '~/components/Breadcrumbs'
+import Card from '~/components/Card'
+import PageHero from '~/components/PageHero'
+import config from '~/modules/config'
 
 export default {
   components: {
     Breadcrumbs,
     Card,
-    PageHero
+    PageHero,
   },
 
   async asyncData({ $content, app, params, error }) {
@@ -44,16 +44,18 @@ export default {
 
     try {
       const posts = await $content(`blog/${app.i18n.locale}`)
-        .where({ '$and': [
-          { 'routes' : { '$contains' : `/blog/${date.format('YYYY/MM/DD')}` } },
-          { 'published': { '$ne': false } }
-        ] })
+        .where({
+          $and: [
+            { routes: { $contains: `/blog/${date.format('YYYY/MM/DD')}` } },
+            { published: { $ne: false } },
+          ],
+        })
         .sortBy('published_at', 'desc')
         .limit(config.postsPerPage)
         .fetch()
 
       if (posts.length === 0) {
-        error({ statusCode: 404, message: "Page not found" })
+        error({ statusCode: 404, message: 'Page not found' })
       }
 
       return {
@@ -64,9 +66,16 @@ export default {
         routes: [
           { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb') },
           { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY') },
-          { route: `/blog/${date.format('YYYY/MM')}`, title: date.format('MMMM') },
-          { route: `/blog/${date.format('YYYY/MM/DD')}`, title: date.format('Do'), current: true },
-        ]
+          {
+            route: `/blog/${date.format('YYYY/MM')}`,
+            title: date.format('MMMM'),
+          },
+          {
+            route: `/blog/${date.format('YYYY/MM/DD')}`,
+            title: date.format('Do'),
+            current: true,
+          },
+        ],
       }
     } catch (e) {
       return error(e)

@@ -3,11 +3,11 @@
     <div class="Blog-hero__content">
       <h3>
         {{ $t('component_search_hero_title') }}
-        <img 
+        <img
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
           alt="Vonage"
           class="Logo__inline"
-        >
+        />
       </h3>
       <client-only v-if="algoliaIndex">
         <AisInstantSearch
@@ -36,11 +36,15 @@
                     name="query"
                     :value="currentRefinement"
                     @input="refine($event.currentTarget.value)"
-                  >
-                  <label for="query">{{ $t('component_search_hero_label') }}</label>
+                  />
+                  <label for="query">{{
+                    $t('component_search_hero_label')
+                  }}</label>
                 </form>
               </div>
-              <small v-if="isSearchStalled" class="Vlt-form__element__hint">{{ $t('component_search_hero_stalled_hint') }}</small>
+              <small v-if="isSearchStalled" class="Vlt-form__element__hint">{{
+                $t('component_search_hero_stalled_hint')
+              }}</small>
             </div>
           </AisSearchBox>
           <AisStateResults>
@@ -63,11 +67,11 @@
         </AisInstantSearch>
       </client-only>
       <div v-else class="Vlt-center">
-        <h4>
-          Search is disabled.
-        </h4>
+        <h4>Search is disabled.</h4>
         <p>
-          Please edit provide your <code>env</code> with an <code>ALGOLIA_APPLICATION_ID</code>, <code>ALGOLIA_SEARCH_KEY</code>, and <code>ALGOLIA_INDEX</code>.
+          Please edit provide your <code>env</code> with an
+          <code>ALGOLIA_APPLICATION_ID</code>, <code>ALGOLIA_SEARCH_KEY</code>,
+          and <code>ALGOLIA_INDEX</code>.
         </p>
       </div>
     </div>
@@ -75,12 +79,12 @@
 </template>
 
 <script>
-import SearchResult from "~/components/SearchResult"
-import algoliasearch from "algoliasearch/lite"
+import algoliasearch from 'algoliasearch/lite'
+import SearchResult from '~/components/SearchResult'
 
 export default {
   components: {
-    SearchResult
+    SearchResult,
   },
 
   data() {
@@ -103,24 +107,24 @@ export default {
           //   request.params.filters = filters
           // })
 
-          return (algoliasearch(
+          return algoliasearch(
             process.env.algoliaApplicationId,
             process.env.algoliaSearchKey
-          )).search(requests)
+          ).search(requests)
         },
       },
     }
   },
 
-  methods:{
-    checkForm: function (e) {
+  methods: {
+    checkForm(e) {
       if (this.$refs.query.value) {
         return true
       }
 
       e.preventDefault()
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -133,7 +137,7 @@ export default {
 
 .Blog-hero {
   background: white
-    url("../assets/images/illustrations/Brand-activate-conversations.png")
+    url('../assets/images/illustrations/Brand-activate-conversations.png')
     no-repeat scroll 12px 24px;
   background-size: 250px;
   width: 100%;
@@ -231,7 +235,7 @@ export default {
     padding: 0;
   }
 
-  .Blog-hero  > * {
+  .Blog-hero > * {
     transition: all 0.5s ease;
   }
 

@@ -2,9 +2,11 @@ export default {
   /**
    * Layout strings
    */
-  layout_default_careers_title: "VÆR FORSIKTIG I DETTE OMRÅDET",
-  layout_default_careers_body: "Men, etter som du er her, vi ansetter folk som vet sin vei rundt konsollen.",
-  layout_default_careers_link: "Finn en karierre hos https://developer.nexmo.com/careers",
+  layout_default_careers_title: 'VÆR FORSIKTIG I DETTE OMRÅDET',
+  layout_default_careers_body:
+    'Men, etter som du er her, vi ansetter folk som vet sin vei rundt konsollen.',
+  layout_default_careers_link:
+    'Finn en karierre hos https://developer.nexmo.com/careers',
 
   /**
    * Page strings
@@ -40,13 +42,13 @@ export default {
   component_search_hero_label: 'Søk i vårt eksisterende innhold...',
   component_search_hero_stalled_hint: 'Søk tar lengre tid enn vanlig...',
 
-  component_header_strapline: 'Vonage :: Now we\'re talking',
+  component_header_strapline: "Vonage :: Now we're talking",
   component_header_badge: 'Lær',
   component_header_slack_button: 'Bli med i Slack-en væres',
   component_header_signup_button: 'Meld deg på',
   component_header_follow_button: 'Følg oss',
 
-  component_footer_strapline: 'Vonage :: Now we\'re talking',
+  component_footer_strapline: "Vonage :: Now we're talking",
   component_footer_legal: 'Lovlig',
   component_footer_privacy: 'Personvern',
   component_footer_copyright: 'Opphavsrett',

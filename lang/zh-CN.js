@@ -2,9 +2,10 @@ export default {
   /**
    * Layout strings
    */
-  layout_default_careers_title: "该区域的注意事项",
-  layout_default_careers_body: "但是，正如您在这里，我们正在聘请熟悉控制台的人员。",
-  layout_default_careers_link: "在找到工作 https://developer.nexmo.com/careers",
+  layout_default_careers_title: '该区域的注意事项',
+  layout_default_careers_body:
+    '但是，正如您在这里，我们正在聘请熟悉控制台的人员。',
+  layout_default_careers_link: '在找到工作 https://developer.nexmo.com/careers',
 
   /**
    * Page strings
@@ -40,13 +41,13 @@ export default {
   component_search_hero_label: '搜索我们现有的内容...',
   component_search_hero_stalled_hint: '搜索花费的时间比平时长...',
 
-  component_header_strapline: 'Vonage :: Now we\'re talking',
+  component_header_strapline: "Vonage :: Now we're talking",
   component_header_badge: 'Learn',
   component_header_slack_button: '加入我们的Slack',
   component_header_signup_button: '注册',
   component_header_follow_button: '跟着我们',
 
-  component_footer_strapline: 'Vonage :: Now we\'re talking',
+  component_footer_strapline: "Vonage :: Now we're talking",
   component_footer_legal: '法律',
   component_footer_privacy: '隐私',
   component_footer_copyright: '版权',

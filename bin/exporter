@@ -1,39 +1,34 @@
 #!/usr/bin/env node
 
+const fs = require('fs')
 const _ = require('lodash')
 const cliProgress = require('cli-progress')
 const consola = require('consola')
-const entities = new require('html-entities').AllHtmlEntities
-const fs = require('fs')
-const slugify = require('slugify')
+const AllHtmlEntities = require('html-entities').AllHtmlEntities
 const WPAPI = require('wpapi')
 const yaml = require('yaml')
 
+const entities = new AllHtmlEntities()
 const categories = []
 const tags = []
 const users = []
 const posts = []
 
 const config = {
-  wpInstance: 'https://www.nexmo.com/wp-json'
-}
-
-const slugifyOpt = {
-  replacement: '-',
-  lower: true,
-  strict: true
+  wpInstance: 'https://www.nexmo.com/wp-json',
 }
 
 consola.success(`WordPress post fetcher v0.0.3`)
-const wp = new WPAPI({ 
+
+const wp = new WPAPI({
   endpoint: config.wpInstance,
   username: process.env.WP_USERNAME,
   password: process.env.WP_PASSWORD,
-  auth: true
+  auth: true,
 })
 
 const getItems = (request, bar, page, pages) => {
-  return request.then(function(response) {
+  return request.then(function (response) {
     if (pages === null) {
       pages = response._paging.totalPages
       bar.start(pages, page)
@@ -49,23 +44,33 @@ const getItems = (request, bar, page, pages) => {
 
     return Promise.all([
       // response
-      response, getItems(response._paging.next, bar, page, pages)
-    ]).then(function(responses) {
+      response,
+      getItems(response._paging.next, bar, page, pages),
+    ]).then(function (responses) {
       return _.flatten(responses)
     })
   })
 }
 
 const formatPostStub = (post) => {
-  const author = users.filter(u => u.id === post.author)[0]
-  const postCategories = categories.filter(c => post.categories.includes(c.id)).map(c => c.slug)
-  const postTags = tags.filter(t => post.tags.includes(t.id)).map(t => t.slug)
+  const author = users.filter((u) => u.id === post.author)[0]
+  const postCategories = categories
+    .filter((c) => post.categories.includes(c.id))
+    .map((c) => c.slug)
+  const postTags = tags
+    .filter((t) => post.tags.includes(t.id))
+    .map((t) => t.slug)
   // const legacyUrl = post.link.replace('https://www.nexmo.com/blog', 'https://developer.vonage.com/legacy-blog')
-  const legacyUrl = post.link.replace('https://www.nexmo.com/blog', 'https://www.nexmo.com/blog')
+  const legacyUrl = post.link.replace(
+    'https://www.nexmo.com/blog',
+    'https://www.nexmo.com/blog'
+  )
 
   const output = {
     title: entities.decode(post.title.rendered),
-    description: entities.decode(post.excerpt.rendered.replace(/(<([^>]+)>)/gi, "")).replace(/(\r\n|\n|\r)/gm, ""),
+    description: entities
+      .decode(post.excerpt.rendered.replace(/(<([^>]+)>)/gi, ''))
+      .replace(/(\r\n|\n|\r)/gm, ''),
     thumbnail: post.jetpack_featured_media_url,
     author: author.slug,
     published: true,
@@ -75,21 +80,24 @@ const formatPostStub = (post) => {
     old_categories: postCategories,
     tags: postTags,
     canonical: legacyUrl,
-    redirect: legacyUrl
+    redirect: legacyUrl,
   }
 
   return '---\n' + yaml.stringify(output) + '---\nContent to be migrated...'
 }
 
 const getAllUsers = async () => {
-  const userBar = new cliProgress.SingleBar({ clearOnComplete: true, emptyOnZero: true }, cliProgress.Presets.rect)
+  const userBar = new cliProgress.SingleBar(
+    { clearOnComplete: true, emptyOnZero: true },
+    cliProgress.Presets.rect
+  )
   consola.info(`Fetching users...`)
   userBar.start(1, null)
 
   await getItems(wp.users().perPage(50), userBar, 1, null).then((allUsers) => {
     userBar.stop()
 
-    allUsers.forEach(user => {
+    allUsers.forEach((user) => {
       users.push(user)
     })
 
@@ -98,14 +106,17 @@ const getAllUsers = async () => {
 }
 
 const getAllTags = async () => {
-  const tagBar = new cliProgress.SingleBar({ clearOnComplete: true, emptyOnZero: true }, cliProgress.Presets.rect)
+  const tagBar = new cliProgress.SingleBar(
+    { clearOnComplete: true, emptyOnZero: true },
+    cliProgress.Presets.rect
+  )
   consola.info(`Fetching tags...`)
   tagBar.start(1, null)
 
   await getItems(wp.tags().perPage(50), tagBar, 1, null).then((allTags) => {
     tagBar.stop()
 
-    allTags.forEach(tag => {
+    allTags.forEach((tag) => {
       tags.push(tag)
     })
 
@@ -114,30 +125,43 @@ const getAllTags = async () => {
 }
 
 const getAllCategories = async () => {
-  const categoryBar = new cliProgress.SingleBar({ clearOnComplete: true, emptyOnZero: true }, cliProgress.Presets.rect)
+  const categoryBar = new cliProgress.SingleBar(
+    { clearOnComplete: true, emptyOnZero: true },
+    cliProgress.Presets.rect
+  )
   consola.info(`Fetching categories...`)
   categoryBar.start(1, null)
 
-  await getItems(wp.categories().perPage(50), categoryBar, 1, null).then((allCategories) => {
-    categoryBar.stop()
+  await getItems(wp.categories().perPage(50), categoryBar, 1, null).then(
+    (allCategories) => {
+      categoryBar.stop()
 
-    allCategories.forEach(category => {
-      categories.push(category)
-    })
+      allCategories.forEach((category) => {
+        categories.push(category)
+      })
 
-    consola.success(`Fetched ${categories.length} categories...`)
-  })
+      consola.success(`Fetched ${categories.length} categories...`)
+    }
+  )
 }
 
 const getAllPosts = async () => {
-  const postBar = new cliProgress.SingleBar({ clearOnComplete: true, emptyOnZero: true }, cliProgress.Presets.rect)
+  const postBar = new cliProgress.SingleBar(
+    { clearOnComplete: true, emptyOnZero: true },
+    cliProgress.Presets.rect
+  )
   consola.info(`Fetching posts...`)
   postBar.start(1, null)
 
-  await getItems(wp.posts().categories(1015).perPage(50), postBar, 1, null).then((allPosts) => {
+  await getItems(
+    wp.posts().categories(1015).perPage(50),
+    postBar,
+    1,
+    null
+  ).then((allPosts) => {
     postBar.stop()
 
-    allPosts.forEach(post => {
+    allPosts.forEach((post) => {
       posts.push(post)
     })
 
@@ -146,13 +170,16 @@ const getAllPosts = async () => {
 }
 
 const processPosts = () => {
-  const bar = new cliProgress.SingleBar({ clearOnComplete: true, emptyOnZero: true }, cliProgress.Presets.rect)
+  const bar = new cliProgress.SingleBar(
+    { clearOnComplete: true, emptyOnZero: true },
+    cliProgress.Presets.rect
+  )
   consola.info(`Processing posts...`)
   bar.start(posts.length, null)
 
   posts.forEach((post, index) => {
     posts[index].frontmatter = formatPostStub(post)
-    bar.update(index+1)
+    bar.update(index + 1)
   })
 
   bar.stop()
@@ -160,7 +187,10 @@ const processPosts = () => {
 }
 
 const savingPosts = () => {
-  const bar = new cliProgress.SingleBar({ clearOnComplete: true, emptyOnZero: true }, cliProgress.Presets.rect)
+  const bar = new cliProgress.SingleBar(
+    { clearOnComplete: true, emptyOnZero: true },
+    cliProgress.Presets.rect
+  )
   consola.info(`Writing posts to file...`)
   bar.start(posts.length, null)
 
@@ -170,7 +200,7 @@ const savingPosts = () => {
     fs.open(filename, 'r', (err) => {
       if (err) {
         fs.writeFile(filename, post.frontmatter, () => {
-          bar.update(index+1)
+          bar.update(index + 1)
         })
       }
     })

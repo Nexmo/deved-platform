@@ -10,7 +10,9 @@
           <div class="Search-hero">
             <div class="Search-hero__content">
               <div class="Search-hero__search-box-wrapper">
-                <div class="Vlt-form__element Vlt-form__element--big Search-hero__search">
+                <div
+                  class="Vlt-form__element Vlt-form__element--big Search-hero__search"
+                >
                   <div class="Vlt-input">
                     <ais-search-box
                       :class-names="{
@@ -18,11 +20,19 @@
                       }"
                     >
                       <div
-                        slot-scope="{ currentRefinement, isSearchStalled, refine }"
+                        slot-scope="{
+                          currentRefinement,
+                          isSearchStalled,
+                          refine,
+                        }"
                         class="Vlt-form__element Vlt-form__element--big Blog-hero__search"
                       >
                         <div class="Vlt-input">
-                          <form method="GET" action="/search" @submit="checkForm">
+                          <form
+                            method="GET"
+                            action="/search"
+                            @submit="checkForm"
+                          >
                             <input
                               id="query"
                               ref="query"
@@ -31,11 +41,17 @@
                               name="query"
                               :value="currentRefinement"
                               @input="refine($event.currentTarget.value)"
-                            >
-                            <label for="query">{{ $t('page_search_label') }}</label>
+                            />
+                            <label for="query">{{
+                              $t('page_search_label')
+                            }}</label>
                           </form>
                         </div>
-                        <small v-if="isSearchStalled" class="Vlt-form__element__hint">{{ $t('page_search_stalled_hint') }}</small>
+                        <small
+                          v-if="isSearchStalled"
+                          class="Vlt-form__element__hint"
+                          >{{ $t('page_search_stalled_hint') }}</small
+                        >
                       </div>
                     </ais-search-box>
                   </div>
@@ -58,7 +74,7 @@
                 v-if="hits.length > 0"
                 :class-names="{
                   'ais-Hits': 'Vlt-col Vlt-col--2of3',
-                  'ais-Hits-list': 'Vlt-card'
+                  'ais-Hits-list': 'Vlt-card',
                 }"
               >
                 <template slot="item" slot-scope="{ item }">
@@ -102,11 +118,11 @@
           <div class="Vlt-col" />
           <div class="Vlt-col Vlt-col--2of3">
             <div class="Vlt-card">
-              <h3>
-                Search is disabled.
-              </h3>
+              <h3>Search is disabled.</h3>
               <p>
-                Please edit provide your <code>env</code> with an <code>ALGOLIA_APPLICATION_ID</code>, <code>ALGOLIA_SEARCH_KEY</code>, and <code>ALGOLIA_INDEX</code>.
+                Please edit provide your <code>env</code> with an
+                <code>ALGOLIA_APPLICATION_ID</code>,
+                <code>ALGOLIA_SEARCH_KEY</code>, and <code>ALGOLIA_INDEX</code>.
               </p>
             </div>
           </div>
@@ -118,16 +134,16 @@
 </template>
 
 <script>
-import Breadcrumbs from "~/components/Breadcrumbs"
-import SearchResult from "~/components/SearchResult"
-import algoliasearch from "algoliasearch/lite"
+import algoliasearch from 'algoliasearch/lite'
 import { history } from 'instantsearch.js/es/lib/routers'
 import { simple } from 'instantsearch.js/es/lib/stateMappings'
+import SearchResult from '~/components/SearchResult'
+import Breadcrumbs from '~/components/Breadcrumbs'
 
 export default {
   components: {
     Breadcrumbs,
-    SearchResult
+    SearchResult,
   },
 
   data() {
@@ -138,7 +154,11 @@ export default {
         process.env.algoliaSearchKey
       ),
       routes: [
-        { route: `/search`, title: this.$t('page_search_title'), current: true },
+        {
+          route: `/search`,
+          title: this.$t('page_search_title'),
+          current: true,
+        },
       ],
       routing: {
         router: history(),
@@ -147,15 +167,15 @@ export default {
     }
   },
 
-  methods:{
-    checkForm: function (e) {
+  methods: {
+    checkForm(e) {
       if (this.$refs.query.value) {
         return true
       }
 
       e.preventDefault()
-    }
-  }
+    },
+  },
 }
 </script>
 

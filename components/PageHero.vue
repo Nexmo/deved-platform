@@ -11,7 +11,7 @@
 <style scoped>
 .Blog-hero {
   background: white
-    url("../assets/images/illustrations/Brand-mobile-apis-services.png")
+    url('../assets/images/illustrations/Brand-mobile-apis-services.png')
     no-repeat scroll 12px 24px;
   background-size: 150px;
   width: 100%;

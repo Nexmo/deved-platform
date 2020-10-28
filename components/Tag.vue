@@ -4,14 +4,16 @@
     class="Vlt-badge Vlt-badge--small Vlt-badge--grey Vlt-badge--transparent"
     :class="'Blog-badge--' + slug"
   >
-    <svg 
-      v-if="isProduct" 
-      xmlns="http://www.w3.org/2000/svg" 
-      fill="white" 
-      viewBox="0 0 24 24" 
+    <svg
+      v-if="isProduct"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="white"
+      viewBox="0 0 24 24"
       style="width: 0.8em; margin: 0 4px -1px 0"
     >
-      <path d="M9.3 11.6L4.7 1.5H0l6.8 15.3s.1.1.1 0l2.4-5.2zm9.9-10.1s-6.1 13.9-6.9 15.6c-1.8 4.1-3.2 5.1-4.6 5.3H12c1.9 0 3.2-1.3 5.1-5.3.6-1.4 6.9-15.6 6.9-15.6h-4.8z" />
+      <path
+        d="M9.3 11.6L4.7 1.5H0l6.8 15.3s.1.1.1 0l2.4-5.2zm9.9-10.1s-6.1 13.9-6.9 15.6c-1.8 4.1-3.2 5.1-4.6 5.3H12c1.9 0 3.2-1.3 5.1-5.3.6-1.4 6.9-15.6 6.9-15.6h-4.8z"
+      />
     </svg>
     <span v-else>#</span>{{ slug }}
   </NLink>
@@ -19,19 +21,19 @@
 
 <script>
 const tagMap = {
-  careers: [ 'career' ],
-  dotnet: [ 'dot-net', 'asp-dot-net', '.net', 'asp.net' ],
-  go: [ 'go-lang', 'golang' ],
-  javascript: [ 'js' ],
-  node: [ 'nodejs', 'node.js' ],
-  opensource: [ 'open-source' ],
+  careers: ['career'],
+  dotnet: ['dot-net', 'asp-dot-net', '.net', 'asp.net'],
+  go: ['go-lang', 'golang'],
+  javascript: ['js'],
+  node: ['nodejs', 'node.js'],
+  opensource: ['open-source'],
 }
 
 export default {
   props: {
     tag: {
       type: String,
-      required: true
+      required: true,
     },
   },
 
@@ -56,24 +58,26 @@ export default {
         'video-api',
         'sms-api',
         'station',
-      ]
+      ],
     }
   },
 
   computed: {
     isProduct() {
-      return this.products.includes(this.tag) 
+      return this.products.includes(this.tag)
     },
 
     slug() {
-      const match = Object.entries(tagMap).filter(([, value]) => value.includes(this.tag))
+      const match = Object.entries(tagMap).filter(([, value]) =>
+        value.includes(this.tag)
+      )
 
       if (match[0]) {
         return match[0][0]
       }
 
       return this.tag
-    }
+    },
   },
 }
 </script>
@@ -153,7 +157,7 @@ export default {
 }
 
 .Blog-badge--node-red {
-  background-color: #8E0100;
+  background-color: #8e0100;
   color: #fff;
 }
 
@@ -188,18 +192,18 @@ export default {
 }
 
 .Blog-badge--firebase {
-  background-color: #FFCA28;
-  color: #2C384A;
+  background-color: #ffca28;
+  color: #2c384a;
 }
 
 .Blog-badge--zendesk {
-  background-color: #03363D;
-  color: #F8F9F9;
+  background-color: #03363d;
+  color: #f8f9f9;
 }
 
 .Blog-badge--zendesk {
-  background-color: #03363D;
-  color: #F8F9F9;
+  background-color: #03363d;
+  color: #f8f9f9;
 }
 
 .Blog-badge--ibm-watson {
@@ -213,7 +217,7 @@ export default {
 }
 
 .Blog-badge--github {
-  content: "GitHub";
+  content: 'GitHub';
   background-color: #333333;
   color: #ffffff;
 }
@@ -229,17 +233,17 @@ export default {
 }
 
 .Blog-badge--java {
-  background-color:#01476e;
-  color:#ff8f8f;
+  background-color: #01476e;
+  color: #ff8f8f;
 }
 
 .Blog-badge--python {
-  background-color:#1e38bb;
-  color:#ffdf5b;
+  background-color: #1e38bb;
+  color: #ffdf5b;
 }
 
 .Blog-badge--mongodb {
-  background-color: #13AA52;
+  background-color: #13aa52;
   color: #ffffff;
 }
 
@@ -254,7 +258,7 @@ export default {
 }
 
 .Blog-badge--opensource {
-  background: #3DA639;
+  background: #3da639;
   color: white;
 }
 
@@ -270,14 +274,44 @@ export default {
 }
 
 .Blog-badge--inclusion {
-  background: linear-gradient(90deg, #00000080, #00000080 14.28%, #f0000080 14.28%, #f0000080 28.56%, #ff800080 28.56%, #ff80008e 42.84%, #ffff0080 42.84%, #ffff0080 57.12%, #00794080 57.12%, #00794080 71.4%, #4040ff80 71.4%, #4040ff80 85.68%, #a000c080 85.68%, #a000c080);
+  background: linear-gradient(
+    90deg,
+    #00000080,
+    #00000080 14.28%,
+    #f0000080 14.28%,
+    #f0000080 28.56%,
+    #ff800080 28.56%,
+    #ff80008e 42.84%,
+    #ffff0080 42.84%,
+    #ffff0080 57.12%,
+    #00794080 57.12%,
+    #00794080 71.4%,
+    #4040ff80 71.4%,
+    #4040ff80 85.68%,
+    #a000c080 85.68%,
+    #a000c080
+  );
   color: black;
-  text-shadow: 1px 1px 2px #ffffff80, -1px -1px 2px #ffffff80, -1px 1px 2px #ffffff80, 1px -1px 2px #ffffff80;
+  text-shadow: 1px 1px 2px #ffffff80, -1px -1px 2px #ffffff80,
+    -1px 1px 2px #ffffff80, 1px -1px 2px #ffffff80;
 }
 
 .Blog-badge--diversity {
-  background: linear-gradient(90deg, #55CDFC, #55CDFC 20%, #F7A8B8 20%, #F7A8B8 40%, #fff 40%, #fff 60%, #F7A8B8 60%, #F7A8B8 80%, #55CDFC 80%, #55CDFC 100%);
+  background: linear-gradient(
+    90deg,
+    #55cdfc,
+    #55cdfc 20%,
+    #f7a8b8 20%,
+    #f7a8b8 40%,
+    #fff 40%,
+    #fff 60%,
+    #f7a8b8 60%,
+    #f7a8b8 80%,
+    #55cdfc 80%,
+    #55cdfc 100%
+  );
   color: black;
-  text-shadow: 1px 1px 2px #ffffff80, -1px -1px 2px #ffffff80, -1px 1px 2px #ffffff80, 1px -1px 2px #ffffff80;
+  text-shadow: 1px 1px 2px #ffffff80, -1px -1px 2px #ffffff80,
+    -1px 1px 2px #ffffff80, 1px -1px 2px #ffffff80;
 }
 </style>

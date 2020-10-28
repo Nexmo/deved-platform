@@ -7,6 +7,6 @@ module.exports = (data) => ({
   spotlight: data.spotlight,
   thumbnail: data.thumbnail || 'tbc',
   published: data.published || true,
-  published_at: data.published_at || (new Date).toISOString(),
-  tags: data.tags || ['your', 'tags', 'here']
+  published_at: data.published_at || new Date().toISOString(),
+  tags: data.tags || ['your', 'tags', 'here'],
 })

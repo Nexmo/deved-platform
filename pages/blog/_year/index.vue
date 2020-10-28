@@ -20,20 +20,18 @@
 </template>
 
 <script>
-import Breadcrumbs from "~/components/Breadcrumbs"
-import Card from "~/components/Card"
-import PageHero from "~/components/PageHero"
-import config from "~/modules/config"
 import moment from 'moment'
+import Breadcrumbs from '~/components/Breadcrumbs'
+import Card from '~/components/Card'
+import PageHero from '~/components/PageHero'
 
 export default {
-
   components: {
     Breadcrumbs,
     Card,
-    PageHero
+    PageHero,
   },
-  validate ({ params: { year } }) {
+  validate({ params: { year } }) {
     return /^\d{4}$/.test(year)
   },
 
@@ -42,15 +40,17 @@ export default {
 
     try {
       const posts = await $content(`blog/${app.i18n.locale}`)
-        .where({ '$and': [
-          { 'routes' : { '$contains' : `/blog/${date.format('YYYY')}` } },
-          { 'published': { '$ne': false } }
-        ] })
+        .where({
+          $and: [
+            { routes: { $contains: `/blog/${date.format('YYYY')}` } },
+            { published: { $ne: false } },
+          ],
+        })
         .sortBy('published_at', 'desc')
         .fetch()
 
       if (posts.length === 0) {
-        error({ statusCode: 404, message: "Page not found" })
+        error({ statusCode: 404, message: 'Page not found' })
       }
 
       return {
@@ -58,8 +58,12 @@ export default {
         posts,
         routes: [
           { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb') },
-          { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY'), current: true },
-        ]
+          {
+            route: `/blog/${date.format('YYYY')}`,
+            title: date.format('YYYY'),
+            current: true,
+          },
+        ],
       }
     } catch (e) {
       return error(e)

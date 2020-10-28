@@ -1,6 +1,11 @@
 <template>
   <section class="Blog__Full-width">
-    <article v-if="!post.redirect" class="Blog__post Vlt-container" vocab="http://schema.org/" typeof="BlogPosting">
+    <article
+      v-if="!post.redirect"
+      class="Blog__post Vlt-container"
+      vocab="http://schema.org/"
+      typeof="BlogPosting"
+    >
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
         <div v-if="routes" class="Vlt-col Vlt-col--2of3">
@@ -10,11 +15,22 @@
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
-          <div class="Vlt-card Vlt-card--lesspadding" property="mainEntityOfPage">
+          <div
+            class="Vlt-card Vlt-card--lesspadding"
+            property="mainEntityOfPage"
+          >
             <div v-if="post.thumbnail" class="Vlt-card__header">
-              <img property="image" :src="post.thumbnail" :alt="post.title" width="100%">
+              <img
+                property="image"
+                :src="post.thumbnail"
+                :alt="post.title"
+                width="100%"
+              />
             </div>
-            <div v-if="post.categoryObject" class="Vlt-card__corner Vlt-margin--A-top3">
+            <div
+              v-if="post.categoryObject"
+              class="Vlt-card__corner Vlt-margin--A-top3"
+            >
               <Category :category="post.categoryObject" />
             </div>
             <div class="Vlt-card__header Vlt-margin--A-top3">
@@ -23,42 +39,67 @@
               </h1>
               <BackToTop />
             </div>
-            <div v-if="post.author" class="Vlt-card__content Vlt-margin--A-top3">
+            <div
+              v-if="post.author"
+              class="Vlt-card__content Vlt-margin--A-top3"
+            >
               <Author :author="post.author" type="minicard" property="author" />
-              <meta property="publisher" content="@VonageDev">
+              <meta property="publisher" content="@VonageDev" />
             </div>
-            <div v-if="post.published_at" class="Vlt-card__content Vlt-margin--A-top1">
+            <div
+              v-if="post.published_at"
+              class="Vlt-card__content Vlt-margin--A-top1"
+            >
               <template v-if="post.updated_at">
-                <span property="dateModified" :content="post.updated_at">Updated
+                <span property="dateModified" :content="post.updated_at"
+                  >Updated
                   <strong>{{
-                    (post.updated_at) | moment("dddd, MMMM Do YYYY")
-                  }}</strong></span><br>
-                <small property="datePublished" :content="post.published_at">Originally Published
+                    post.updated_at | moment('dddd, MMMM Do YYYY')
+                  }}</strong></span
+                ><br />
+                <small property="datePublished" :content="post.published_at"
+                  >Originally Published
                   <strong>{{
-                    (post.published_at) | moment("dddd, MMMM Do YYYY")
-                  }}</strong></small>
+                    post.published_at | moment('dddd, MMMM Do YYYY')
+                  }}</strong></small
+                >
               </template>
               <template v-else>
-                <span property="datePublished" :content="post.published_at">Published
+                <span property="datePublished" :content="post.published_at"
+                  >Published
                   <strong>{{
-                    (post.published_at) | moment("dddd, MMMM Do YYYY")
-                  }}</strong></span>
+                    post.published_at | moment('dddd, MMMM Do YYYY')
+                  }}</strong></span
+                >
               </template>
             </div>
             <div class="Vlt-card__content">
-              <small><ImproveLink :post="post" /> (<RevisionsLink :post="post" />)</small>
+              <small
+                ><ImproveLink :post="post" /> (<RevisionsLink
+                  :post="post"
+                />)</small
+              >
             </div>
             <div v-if="post.tags" class="Vlt-card__content Vlt-margin--A-top1">
               <Tags :tags="post.tags" />
             </div>
-            <hr class="hr--short Vlt-gradient--blue-to-pink">
-            <div v-if="post.spotlight" class="Vlt-card__content Vlt-margin--A-top1">
+            <hr class="hr--short Vlt-gradient--blue-to-pink" />
+            <div
+              v-if="post.spotlight"
+              class="Vlt-card__content Vlt-margin--A-top1"
+            >
               <Spotlight />
             </div>
-            <div v-if="post.outdated" class="Vlt-card__content Vlt-margin--A-top1">
+            <div
+              v-if="post.outdated"
+              class="Vlt-card__content Vlt-margin--A-top1"
+            >
               <Outdated :outdated="post.outdated" />
             </div>
-            <div class="Vlt-card__content Vlt-margin--A-top3" property="articleBody">
+            <div
+              class="Vlt-card__content Vlt-margin--A-top3"
+              property="articleBody"
+            >
               <nuxt-content :document="post" />
             </div>
           </div>
@@ -88,10 +129,7 @@
         </template>
         <div class="Vlt-grid__separator" />
         <div class="Vlt-col" />
-        <Author
-          :author="post.author"
-          type="card"
-        />
+        <Author :author="post.author" type="card" />
         <div class="Vlt-col" />
       </div>
     </article>
@@ -99,8 +137,12 @@
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
-          <div class="Vlt-card Vlt-card--lesspadding" property="mainEntityOfPage">
-            Redirecting... <a :href="post.redirect">Click here</a> to redirect now.
+          <div
+            class="Vlt-card Vlt-card--lesspadding"
+            property="mainEntityOfPage"
+          >
+            Redirecting... <a :href="post.redirect">Click here</a> to redirect
+            now.
           </div>
         </div>
         <div class="Vlt-col" />
@@ -110,19 +152,18 @@
 </template>
 
 <script>
-import Author from "~/components/Author"
-import BackToTop from "~/components/BackToTop"
-import Breadcrumbs from "~/components/Breadcrumbs"
-import Category from "~/components/Category"
-import ImproveLink from "~/components/ImproveLink"
-import Outdated from "~/components/Outdated"
-import RevisionsLink from "~/components/RevisionsLink"
-import SignUp from "~/components/SignUp"
-import Spotlight from "~/components/Spotlight"
-import SpotlightFooter from "~/components/SpotlightFooter"
-import Tags from "~/components/Tags"
-import config from "~/modules/config"
-import moment from "moment"
+import moment from 'moment'
+import Author from '~/components/Author'
+import BackToTop from '~/components/BackToTop'
+import Breadcrumbs from '~/components/Breadcrumbs'
+import Category from '~/components/Category'
+import ImproveLink from '~/components/ImproveLink'
+import Outdated from '~/components/Outdated'
+import RevisionsLink from '~/components/RevisionsLink'
+import Spotlight from '~/components/Spotlight'
+import SpotlightFooter from '~/components/SpotlightFooter'
+import Tags from '~/components/Tags'
+import config from '~/modules/config'
 
 export default {
   components: {
@@ -133,7 +174,6 @@ export default {
     ImproveLink,
     Outdated,
     RevisionsLink,
-    SignUp, // unused so it can be embedded in post content
     Spotlight,
     SpotlightFooter,
     Tags,
@@ -142,10 +182,10 @@ export default {
   async asyncData({ $content, app, params, error }) {
     try {
       const post = await $content(`blog/${app.i18n.locale}`, params.slug)
-        .where({ 'published': { '$ne': false } })
+        .where({ published: { $ne: false } })
         .fetch()
-        .catch(err => {
-          error({ statusCode: 404, message: "Page not found", err })
+        .catch((err) => {
+          error({ statusCode: 404, message: 'Page not found', err })
         })
 
       if (process.browser) {
@@ -162,10 +202,19 @@ export default {
         baseUrl: config.baseUrl,
         routes: [
           { route: `/${post.type}`, title: app.i18n.t('page_blog_breadcrumb') },
-          { route: `/${post.type}/${postDate.format('YYYY')}`, title: postDate.format('YYYY') },
-          { route: `/${post.type}/${postDate.format('YYYY/MM')}`, title: postDate.format('MMMM') },
-          { route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`, title: postDate.format('Do') },
-          { route: post.route, title: post.title, current: true }
+          {
+            route: `/${post.type}/${postDate.format('YYYY')}`,
+            title: postDate.format('YYYY'),
+          },
+          {
+            route: `/${post.type}/${postDate.format('YYYY/MM')}`,
+            title: postDate.format('MMMM'),
+          },
+          {
+            route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`,
+            title: postDate.format('Do'),
+          },
+          { route: post.route, title: post.title, current: true },
         ],
       }
     } catch (e) {
@@ -175,46 +224,96 @@ export default {
   },
 
   head() {
-    const canonicalUrl = this.post.canonical || `${this.baseUrl}${this.post.route}`
+    const canonicalUrl =
+      this.post.canonical || `${this.baseUrl}${this.post.route}`
 
     return {
       title: `${this.post.title}`,
       meta: [
-        { hid: "keywords", name: "keywords", content: `developer tutorials, developer content, apis, communication apis, ${this.post.category}, ${this.post.tags.join(', ')}`},
-        { hid: "description", name: "description", content: this.post.description},
-        ...this.postMeta()
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: `developer tutorials, developer content, apis, communication apis, ${
+            this.post.category
+          }, ${this.post.tags.join(', ')}`,
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.post.description,
+        },
+        ...this.postMeta(),
       ],
       link: [
         {
           rel: 'canonical',
-          href: canonicalUrl
-        }
-      ]
+          href: canonicalUrl,
+        },
+      ],
     }
   },
 
   methods: {
     postMeta() {
-      if (typeof this.post.thumbnail !== 'undefined' && !this.post.thumbnail.startsWith('http')) {
+      if (
+        typeof this.post.thumbnail !== 'undefined' &&
+        !this.post.thumbnail.startsWith('http')
+      ) {
         this.post.thumbnail = `${this.baseUrl}${this.post.thumbnail}`
       }
-  
+
       const meta = [
         // Twitter Only
-        { hid: "twitter:url", name: "twitter:url", content: `${this.baseUrl}${this.post.route}` },
-        { hid: "twitter:title", name: "twitter:title", content: `${this.post.title} » ${config.baseTitle}` },
-        { hid: "twitter:description", name: "twitter:description", content: this.post.description },
-        { hid: "twitter:image", name: "twitter:image", content: `${this.post.thumbnail || '/images/generic-social-card.png'}` },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: `${this.baseUrl}${this.post.route}`,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: `${this.post.title} » ${config.baseTitle}`,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.post.description,
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: `${
+            this.post.thumbnail || '/images/generic-social-card.png'
+          }`,
+        },
         // Open Graph / Facebook Only
-        { hid: "og:url", property: "og:url", content: `${this.baseUrl}${this.post.route}` },
-        { hid: "og:title", property: "og:title", content: `${this.post.title} » ${this.baseTitle}` },
-        { hid: "og:description", property: "og:description", content: this.post.description },
-        { hid: "og:image", property: "og:image", content: `${this.post.thumbnail || '/images/generic-social-card.png'}` },
-        { hid: "og:type", property: "og:type", content: 'article' },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `${this.baseUrl}${this.post.route}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: `${this.post.title} » ${this.baseTitle}`,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.post.description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: `${
+            this.post.thumbnail || '/images/generic-social-card.png'
+          }`,
+        },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
       ]
 
       return meta
-    }
+    },
   },
 }
 </script>
@@ -262,7 +361,6 @@ export default {
   padding-left: 16px;
 }
 
-
 .Blog__post .nuxt-content >>> ol {
   counter-reset: list;
   padding-left: 20px;
@@ -284,7 +382,7 @@ export default {
 
 .Blog__post .nuxt-content >>> ol li:before {
   color: #000;
-  content: counter(list) ".";
+  content: counter(list) '.';
   counter-increment: list;
   font-weight: 600;
   left: -20px;
@@ -390,7 +488,7 @@ export default {
 }
 
 @media only screen and (max-width: 767px) {
-  .Blog__post .nuxt-content >>> pre[class*="language-"] {
+  .Blog__post .nuxt-content >>> pre[class*='language-'] {
     margin: 24px 10px;
     padding-left: 12px;
   }

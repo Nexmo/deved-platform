@@ -2,9 +2,11 @@ export default {
   /**
    * Layout strings
    */
-  layout_default_careers_title: "CAUTION IN THIS AREA",
-  layout_default_careers_body: "But, as you are here, we're hiring folks who know their way around a console.",
-  layout_default_careers_link: "Find a career at https://developer.nexmo.com/careers",
+  layout_default_careers_title: 'CAUTION IN THIS AREA',
+  layout_default_careers_body:
+    "But, as you are here, we're hiring folks who know their way around a console.",
+  layout_default_careers_link:
+    'Find a career at https://developer.nexmo.com/careers',
 
   /**
    * Page strings
@@ -40,13 +42,13 @@ export default {
   component_search_hero_label: 'Search our existing content...',
   component_search_hero_stalled_hint: 'Search is taking longer than usual...',
 
-  component_header_strapline: 'Vonage :: Now we\'re talking',
+  component_header_strapline: "Vonage :: Now we're talking",
   component_header_badge: 'Learn',
   component_header_slack_button: 'Join us on Slack',
   component_header_signup_button: 'Sign up',
   component_header_follow_button: 'Follow us',
 
-  component_footer_strapline: 'Vonage :: Now we\'re talking',
+  component_footer_strapline: "Vonage :: Now we're talking",
   component_footer_legal: 'Legal',
   component_footer_privacy: 'Privacy',
   component_footer_copyright: 'Copyright',

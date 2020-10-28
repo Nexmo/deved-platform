@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
+const fs = require('fs')
+const path = require('path')
 const _ = require('lodash')
 const cliProgress = require('cli-progress')
 const consola = require('consola')
-const fs = require('fs')
-const path = require("path")
 const WPAPI = require('wpapi')
 
 const authorFile = path.resolve(__dirname, '../content/authors.json')
@@ -13,19 +13,19 @@ const authors = require(authorFile)
 const users = []
 
 const config = {
-  wpInstance: 'https://www.nexmo.com/wp-json'
+  wpInstance: 'https://www.nexmo.com/wp-json',
 }
 
 consola.success(`WordPress author fetcher v0.0.1`)
-const wp = new WPAPI({ 
+const wp = new WPAPI({
   endpoint: config.wpInstance,
   username: process.env.WP_USERNAME,
   password: process.env.WP_PASSWORD,
-  auth: true
+  auth: true,
 })
 
 const getItems = (request, bar, page, pages) => {
-  return request.then(function(response) {
+  return request.then(function (response) {
     if (pages === null) {
       pages = response._paging.totalPages
       bar.start(pages, page)
@@ -40,8 +40,9 @@ const getItems = (request, bar, page, pages) => {
     page++
 
     return Promise.all([
-      response, getItems(response._paging.next, bar, page, pages)
-    ]).then(function(responses) {
+      response,
+      getItems(response._paging.next, bar, page, pages),
+    ]).then(function (responses) {
       return _.flatten(responses)
     })
   })
@@ -53,19 +54,22 @@ const formatAuthor = (user) => {
     name: user.name,
     image_url: user.avatar_urls['96'] || '',
     bio: user.description || '',
-    website_url: user.url || ''
+    website_url: user.url || '',
   }
 }
 
 const getAllUsers = async () => {
-  const userBar = new cliProgress.SingleBar({ clearOnComplete: true, emptyOnZero: true }, cliProgress.Presets.rect)
+  const userBar = new cliProgress.SingleBar(
+    { clearOnComplete: true, emptyOnZero: true },
+    cliProgress.Presets.rect
+  )
   consola.info(`Fetching users...`)
   userBar.start(1, null)
 
   await getItems(wp.users().perPage(50), userBar, 1, null).then((allUsers) => {
     userBar.stop()
 
-    allUsers.forEach(user => {
+    allUsers.forEach((user) => {
       users.push(user)
     })
 
@@ -74,11 +78,13 @@ const getAllUsers = async () => {
 }
 
 const processUsers = () => {
-  const authorNames = authors['authors'].map(a => a.username)
+  const authorNames = authors.authors.map((a) => a.username)
 
-  authors['authors']
-    .push(...users.filter(u => !authorNames.includes(u.slug))
-    .map(u => formatAuthor(u)))
+  authors.authors.push(
+    ...users
+      .filter((u) => !authorNames.includes(u.slug))
+      .map((u) => formatAuthor(u))
+  )
 }
 
 const savingUsers = () => {

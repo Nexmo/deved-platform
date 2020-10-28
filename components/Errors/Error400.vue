@@ -15,7 +15,7 @@
       <img
         src="../../node_modules/@vonagevolta/volta2/demo/templates/assets/img/error-400.svg"
         alt="An image showing that an error has occured"
-      >
+      />
     </div>
   </div>
 </template>

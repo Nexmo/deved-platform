@@ -1,8 +1,15 @@
 <template>
   <div class="Vlt-col" vocab="http://schema.org/" typeof="Person">
-    <nuxt-link :to="localePath(`/authors/${author.username}`)" class="Vlt-card Vlt-bg-white Vlt-center">
+    <nuxt-link
+      :to="localePath(`/authors/${author.username}`)"
+      class="Vlt-card Vlt-bg-white Vlt-center"
+    >
       <div class="Vlt-card__image Vlt-bg-white">
-        <img :src="author.image_url" property="image" :alt="`Profile pic of ${author.name}`">
+        <img
+          :src="author.image_url"
+          property="image"
+          :alt="`Profile pic of ${author.name}`"
+        />
       </div>
       <div class="Vlt-card__header">
         <h4 class="Vlt-truncate">
@@ -15,19 +22,13 @@
         </p>
       </div>
       <div v-else-if="author.alumni" class="Vlt-card__content">
-        <p class="Vlt-grey-dark" property="jobTitle">
-          Vonage Alumni
-        </p>
+        <p class="Vlt-grey-dark" property="jobTitle">Vonage Alumni</p>
       </div>
       <div v-else-if="author.spotlight" class="Vlt-card__content">
-        <p class="Vlt-grey-dark" property="jobTitle">
-          Spotlight Author
-        </p>
+        <p class="Vlt-grey-dark" property="jobTitle">Spotlight Author</p>
       </div>
       <div v-else class="Vlt-card__content">
-        <p class="Vlt-grey-dark" property="jobTitle">
-          Guest Writer
-        </p>
+        <p class="Vlt-grey-dark" property="jobTitle">Guest Writer</p>
       </div>
     </nuxt-link>
   </div>
@@ -40,7 +41,7 @@ export default {
       type: Object,
       required: true,
     },
-  }
+  },
 }
 </script>
 
@@ -62,6 +63,6 @@ export default {
 .Vlt-card__content,
 .Vlt-card__footer {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 </style>

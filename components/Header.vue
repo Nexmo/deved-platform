@@ -6,28 +6,31 @@
           class="Vlt-M-plus"
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
           :alt="$t('component_header_strapline')"
-        >
+        />
         <img
           class="Vlt-S-only"
           src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg"
           :alt="$t('component_header_strapline')"
-        >
+        />
         <div
           class="Vlt-badge Vlt-M-plus Vlt-badge--small Vlt-badge--transparent"
-          style="margin: 8px;"
+          style="margin: 8px"
         >
           {{ $t('component_header_badge') }}
         </div>
         <div
           class="Vlt-badge Vlt-S-only Vlt-badge--small Vlt-badge--transparent"
-          style="margin: 8px;"
+          style="margin: 8px"
         >
           {{ $t('component_header_badge') }}
         </div>
       </NLink>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
         <div class="Vlt-native-dropdown Vlt-native-dropdown--small">
-          <select v-model="selectedLocale" @change="switchLocale(selectedLocale)">
+          <select
+            v-model="selectedLocale"
+            @change="switchLocale(selectedLocale)"
+          >
             <option :value="currentLocale.code" selected="selected">
               {{ currentLocale.name }}
             </option>
@@ -55,7 +58,8 @@
           href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
           class="Vlt-btn Vlt-btn--small Vlt-btn--secondary"
           rel="noreferrer"
-        >{{ $t('component_header_signup_button') }}</a>
+          >{{ $t('component_header_signup_button') }}</a
+        >
       </div>
       <div class="Vlt-header__menu Vlt-header__menu--right Vlt-S-only">
         <a
@@ -91,7 +95,8 @@
             href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
             class="Vlt-btn Vlt-btn--secondary Vlt-text-white"
             rel="noreferrer"
-          >{{ $t('component_header_signup_button') }}</a>
+            >{{ $t('component_header_signup_button') }}</a
+          >
         </li>
         <li class="Blog-nav__item Vlt-center">
           <TwitterSocialButton link="https://twitter.com/VonageDev">
@@ -103,9 +108,10 @@
             &gt; {{ currentLocale.name }} &lt;
           </nuxt-link>
         </li>
-        <li v-for="(locale, index) in availableLocales"
-            :key="index"
-            class="Blog-nav__item Vlt-center"
+        <li
+          v-for="(locale, index) in availableLocales"
+          :key="index"
+          class="Blog-nav__item Vlt-center"
         >
           <nuxt-link :to="switchLocalePath(locale.code)">
             {{ locale.name }}
@@ -117,13 +123,13 @@
 </template>
 
 <script>
-import TwitterSocialButton from "~/components/SocialButtons/TwitterSocialButton"
-import SlackSocialButton from "~/components/SocialButtons/SlackSocialButton"
+import TwitterSocialButton from '~/components/SocialButtons/TwitterSocialButton'
+import SlackSocialButton from '~/components/SocialButtons/SlackSocialButton'
 
 export default {
   components: {
     TwitterSocialButton,
-    SlackSocialButton
+    SlackSocialButton,
   },
 
   data() {
@@ -134,19 +140,19 @@ export default {
   },
 
   computed: {
-    availableLocales () {
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
     },
     currentLocale() {
-      return this.$i18n.locales.filter(l => l.code === this.$i18n.locale)[0]
+      return this.$i18n.locales.filter((l) => l.code === this.$i18n.locale)[0]
     },
   },
 
   methods: {
     switchLocale(event) {
       this.$router.replace(this.switchLocalePath(event))
-    }
-  }
+    },
+  },
 }
 </script>
 

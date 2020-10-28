@@ -34,7 +34,11 @@
       </template>
     </main>
     <footer class="Blog__Full-width Vlt-center">
-      <NLink :to="localePath('blog')" no-prefetch class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small">
+      <NLink
+        :to="localePath('blog')"
+        no-prefetch
+        class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small"
+      >
         {{ $t('page_index_view_all_posts') }}
       </NLink>
     </footer>
@@ -42,35 +46,37 @@
 </template>
 
 <script>
-import Card from "~/components/Card"
-import CardFeatured from "~/components/CardFeatured"
-import SearchHero from "~/components/SearchHero"
+import Card from '~/components/Card'
+import CardFeatured from '~/components/CardFeatured'
+import SearchHero from '~/components/SearchHero'
 
-const postMap = { 'tutorial': 6 }
+const postMap = { tutorial: 6 }
 
 export default {
   components: {
     Card,
     CardFeatured,
-    SearchHero
+    SearchHero,
   },
 
   async asyncData({ $content, app }) {
     const latestPosts = await $content(`blog/${app.i18n.locale}`)
-        .where({ 'published': { '$ne': false } })
-        .sortBy('published_at', 'desc')
-        .limit(2)
-        .fetch()
+      .where({ published: { $ne: false } })
+      .sortBy('published_at', 'desc')
+      .limit(2)
+      .fetch()
 
     const { categories } = await $content('categories').fetch()
 
     categories.forEach(async (category, index, array) => {
       array[index].posts = await $content(`blog/${app.i18n.locale}`)
-        .where({ '$and': [
-          { 'category': category.slug },
-          { 'route' : { '$nin' : latestPosts.map(f => f.route) } },
-          { 'published': { '$ne': false } }
-        ] })
+        .where({
+          $and: [
+            { category: category.slug },
+            { route: { $nin: latestPosts.map((f) => f.route) } },
+            { published: { $ne: false } },
+          ],
+        })
         .sortBy('published_at', 'desc')
         .limit(postMap[category.slug] ? postMap[category.slug] : 3)
         .fetch()
@@ -78,9 +84,9 @@ export default {
 
     return {
       categories,
-      latestPosts
+      latestPosts,
     }
-  }
+  },
 }
 </script>
 

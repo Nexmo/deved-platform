@@ -1,7 +1,11 @@
 <template>
   <fragment>
     <span v-if="author.error">{{ author.name }}</span>
-    <NLink v-else :to="localePath(`/authors/${author.username}`)" class="Author__Name Vlt-black">
+    <NLink
+      v-else
+      :to="localePath(`/authors/${author.username}`)"
+      class="Author__Name Vlt-black"
+    >
       {{ author.name }}
     </NLink>
   </fragment>

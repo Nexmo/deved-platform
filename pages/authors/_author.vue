@@ -11,7 +11,12 @@
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
-        <Card v-for="(post, index) in posts" :key="index" :post="post" show-language />
+        <Card
+          v-for="(post, index) in posts"
+          :key="index"
+          :post="post"
+          show-language
+        />
         <div class="Vlt-grid__separator" />
         <template v-if="author.spotlight">
           <div class="Vlt-col" />
@@ -26,11 +31,11 @@
 </template>
 
 <script>
-import Author from "~/components/Author.vue"
-import Breadcrumbs from "~/components/Breadcrumbs"
-import SpotlightFooter from "~/components/SpotlightFooter"
-import Card from "~/components/Card"
-import config from "~/modules/config"
+import Author from '~/components/Author.vue'
+import Breadcrumbs from '~/components/Breadcrumbs'
+import SpotlightFooter from '~/components/SpotlightFooter'
+import Card from '~/components/Card'
+import config from '~/modules/config'
 
 export default {
   components: {
@@ -43,28 +48,31 @@ export default {
   async asyncData({ $content, params, error, app }) {
     try {
       const { authors } = await $content('authors').fetch()
-      const author = authors.find(a => a.username === params.author)
+      const author = authors.find((a) => a.username === params.author)
 
       if (!author) {
-        return error({ statusCode: 404, message: "Page not found" })
+        return error({ statusCode: 404, message: 'Page not found' })
       }
 
       const posts = await $content(`blog`, { deep: true })
-        .where({ '$and': [
-          { 'author': author.username },
-          { 'published': { '$ne': false } }
-        ] })
+        .where({
+          $and: [{ author: author.username }, { published: { $ne: false } }],
+        })
         .sortBy('published_at', 'desc')
         .limit(config.postsPerPage)
         .fetch()
 
       return {
-        author: author,
+        author,
         posts,
         routes: [
           { route: `/authors`, title: app.i18n.t('page_authors_title') },
-          { route: `/authors/${author.username}`, title: `${author.name}`, current: true },
-        ]
+          {
+            route: `/authors/${author.username}`,
+            title: `${author.name}`,
+            current: true,
+          },
+        ],
       }
     } catch (e) {
       return error(e)

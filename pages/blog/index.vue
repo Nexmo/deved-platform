@@ -20,34 +20,36 @@
 </template>
 
 <script>
-import Breadcrumbs from "~/components/Breadcrumbs"
-import Card from "~/components/Card"
-import PageHero from "~/components/PageHero"
-import Pagination from "~/components/Pagination"
-import config from "~/modules/config"
+import Breadcrumbs from '~/components/Breadcrumbs'
+import Card from '~/components/Card'
+import PageHero from '~/components/PageHero'
+import Pagination from '~/components/Pagination'
+import config from '~/modules/config'
 
 export default {
   components: {
     Breadcrumbs,
     Card,
     PageHero,
-    Pagination
+    Pagination,
   },
 
   async asyncData({ $content, app, error }) {
     const page = 1
 
     try {
-      const postCount = (await $content(`blog/${app.i18n.locale}`)
-        .where({ 'published': { '$ne': false } })
-        .sortBy('published_at', 'desc')
-        .only(['title'])
-        .fetch()).length
+      const postCount = (
+        await $content(`blog/${app.i18n.locale}`)
+          .where({ published: { $ne: false } })
+          .sortBy('published_at', 'desc')
+          .only(['title'])
+          .fetch()
+      ).length
 
       const postsQuery = $content(`blog/${app.i18n.locale}`)
-        .where({ 'published': { '$ne': false } })
+        .where({ published: { $ne: false } })
         .sortBy('published_at', 'desc')
-        .skip(config.postsPerPage * (page  - 1))
+        .skip(config.postsPerPage * (page - 1))
         .limit(config.postsPerPage)
 
       const posts = await postsQuery.fetch()
@@ -57,8 +59,12 @@ export default {
         postCount,
         posts,
         routes: [
-          { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb'), current: true },
-        ]
+          {
+            route: `/blog`,
+            title: app.i18n.t('page_blog_breadcrumb'),
+            current: true,
+          },
+        ],
       }
     } catch (e) {
       return error(e)

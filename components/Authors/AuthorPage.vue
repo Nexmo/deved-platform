@@ -1,7 +1,15 @@
 <template>
-  <div class="Blog-hero Author__Page" vocab="http://schema.org/" typeof="Person">
+  <div
+    class="Blog-hero Author__Page"
+    vocab="http://schema.org/"
+    typeof="Person"
+  >
     <div class="Blog-hero__content">
-      <img :src="author.image_url" :alt="`Profile pic of ${author.name}`" property="image">
+      <img
+        :src="author.image_url"
+        :alt="`Profile pic of ${author.name}`"
+        property="image"
+      />
       <h3>
         <span property="name">{{ author.name }}</span>
       </h3>
@@ -11,7 +19,11 @@
       <h3 v-else-if="author.alumni" class="Vlt-grey-dark" property="jobTitle">
         <small>Vonage Alumni</small>
       </h3>
-      <h3 v-else-if="author.spotlight" class="Vlt-grey-dark" property="jobTitle">
+      <h3
+        v-else-if="author.spotlight"
+        class="Vlt-grey-dark"
+        property="jobTitle"
+      >
         <small>Spotlight Author</small>
       </h3>
       <h3 v-else class="Vlt-grey-dark" property="jobTitle">
@@ -57,15 +69,15 @@
 </template>
 
 <script>
-import FacebookSocialButton from "~/components/SocialButtons/FacebookSocialButton"
-import GitHubSocialButton from "~/components/SocialButtons/GitHubSocialButton"
-import LinkedInSocialButton from "~/components/SocialButtons/LinkedInSocialButton"
-import StackOverflowSocialButton from "~/components/SocialButtons/StackOverflowSocialButton"
-import TwitchSocialButton from "~/components/SocialButtons/TwitchSocialButton"
-import TwitterSocialButton from "~/components/SocialButtons/TwitterSocialButton"
-import WebsiteSocialButton from "~/components/SocialButtons/WebsiteSocialButton"
-import YouTubeSocialButton from "~/components/SocialButtons/YouTubeSocialButton"
-import RssSocialButton from "~/components/SocialButtons/RssSocialButton"
+import FacebookSocialButton from '~/components/SocialButtons/FacebookSocialButton'
+import GitHubSocialButton from '~/components/SocialButtons/GitHubSocialButton'
+import LinkedInSocialButton from '~/components/SocialButtons/LinkedInSocialButton'
+import StackOverflowSocialButton from '~/components/SocialButtons/StackOverflowSocialButton'
+import TwitchSocialButton from '~/components/SocialButtons/TwitchSocialButton'
+import TwitterSocialButton from '~/components/SocialButtons/TwitterSocialButton'
+import WebsiteSocialButton from '~/components/SocialButtons/WebsiteSocialButton'
+import YouTubeSocialButton from '~/components/SocialButtons/YouTubeSocialButton'
+import RssSocialButton from '~/components/SocialButtons/RssSocialButton'
 
 export default {
   components: {

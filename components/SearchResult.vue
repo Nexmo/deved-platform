@@ -1,6 +1,11 @@
 <template>
   <NLink :to="`/${item.path}`" no-prefetch class="Search-result">
-    <img v-if="thumb" style="float: left; width: 220px; margin-right: 1em" :src="item.image" :alt="item.title">
+    <img
+      v-if="thumb"
+      style="float: left; width: 220px; margin-right: 1em"
+      :src="item.image"
+      :alt="item.title"
+    />
     <p class="Vlt-truncate Meta-path">
       {{ meta }}
     </p>
@@ -14,17 +19,17 @@
 </template>
 
 <script>
-import config from "~/modules/config"
+import config from '~/modules/config'
 
 export default {
   props: {
     item: {
       type: Object,
-      required: true
+      required: true,
     },
     thumb: {
       type: Boolean,
-      default: false
+      default: false,
     },
   },
 
@@ -36,11 +41,14 @@ export default {
       let split = '/'
 
       if (pathDateMatch) {
-        split = new RegExp(`\/(${dateExp.source})\/`)
+        split = new RegExp(`/(${dateExp.source})/`)
       }
 
-      return `${config.baseUrl.replace(/https?:\/\//i, "")} » ${this.item.path.split(split).join(' » ')}`
-    }
+      return `${config.baseUrl.replace(
+        /https?:\/\//i,
+        ''
+      )} » ${this.item.path.split(split).join(' » ')}`
+    },
   },
 }
 </script>

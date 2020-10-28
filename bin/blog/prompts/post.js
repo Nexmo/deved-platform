@@ -7,14 +7,17 @@ module.exports = (posts) => ({
 
     if (input !== undefined && input !== '') {
       opts = posts.find({
-        '$or': [{ 
-          'title': { '$regex': [input, 'i'] }
-        },{
-          'file': { '$regex': [input, 'i'] }
-        }]
+        $or: [
+          {
+            title: { $regex: [input, 'i'] },
+          },
+          {
+            file: { $regex: [input, 'i'] },
+          },
+        ],
       })
     }
 
-    return opts.map(o => ({ name: o.title, value: o.file }))
-  }
+    return opts.map((o) => ({ name: o.title, value: o.file }))
+  },
 })

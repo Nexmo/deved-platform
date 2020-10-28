@@ -9,10 +9,10 @@ const { title, description, language, author, category } = require('./prompts')
 const slugifyOpt = {
   replacement: '-',
   lower: true,
-  strict: true
+  strict: true,
 }
 
-module.exports = () => { 
+module.exports = () => {
   inquirer
     .prompt([
       title(),
@@ -23,23 +23,23 @@ module.exports = () => {
       {
         type: 'confirm',
         name: 'comments',
-        message: 'Enable comments?'
+        message: 'Enable comments?',
       },
       {
         type: 'confirm',
         name: 'spotlight',
         message: 'By spotlight author?',
-        default: false
-      }
+        default: false,
+      },
     ])
-    .then(answers => {
+    .then((answers) => {
       const slug = slugify(answers.title, slugifyOpt)
       const filename = `content/blog/${answers.language}/${slug}.md`
       const output = createPost(answers)
 
       writeFile(filename, output)
     })
-    .catch(error => {
+    .catch((error) => {
       consola.error(error)
     })
 }
