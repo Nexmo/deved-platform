@@ -1,5 +1,5 @@
 name: Linting
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   js-lint:
@@ -27,6 +27,11 @@ jobs:
   remark-lint:
     name: Markdown
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
     steps:
       - name: Checkout Source Files
         uses: actions/checkout@v1
@@ -42,5 +47,6 @@ jobs:
       - name: remark-lint
         uses: prologic/action-remark-lint@v0.0.5
         with:
+          level: warning
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-check # Change reporter. (Only `github-pr-check` is supported at the moment).
