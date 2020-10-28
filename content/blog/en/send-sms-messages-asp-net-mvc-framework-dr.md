@@ -13,8 +13,8 @@ canonical: ""
 outdated: true
 comments: true
 tags:
-  - ASP.NET MVC
-  - Vonage SMS API
+  - dotnet
+  - sms-api
 redirect: ""
 outdated_url: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
 ---
