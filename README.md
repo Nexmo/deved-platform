@@ -1,6 +1,6 @@
 # Vonage Developer Education Content Platform
 
-![Netlify Build](https://img.shields.io/netlify/00bdc529-eecc-4b9b-9fa7-915f5c3717a4)
+![](https://img.shields.io/netlify/00bdc529-eecc-4b9b-9fa7-915f5c3717a4)
 ![Main !Master](https://img.shields.io/badge/main-not%20master-green)
 ![Made with <3](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
 ![Nubmer of Contributors](https://img.shields.io/github/contributors/Nexmo/deved-platform)
@@ -14,6 +14,8 @@
 - RSS and author RSS feeds using `nuxtjs/feeds`
 - DISQUS comments on post pages using `vue-disqus`
 - Netlify CMS for content management
+
+***Table of Contents***
 
 - [Installation](#installation)
 - [Contributing](#contributing)

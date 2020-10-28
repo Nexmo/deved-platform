@@ -2,8 +2,12 @@
   "plugins": [
     "remark-frontmatter",
     "remark-preset-lint-recommended",
-    ["remark-lint-no-inline-html", false],
-    ["remark-lint-no-literal-urls", false],
-    ["remark-lint-list-item-indent", "space"]
+    "remark-preset-lint-markdown-style-guide",
+    ["lint-no-literal-urls", false],
+    ["lint-unordered-list-marker-style", "consistent"],
+    ["lint-ordered-list-marker-value", false],
+    ["lint-maximum-line-length", 999999],
+    ["lint-list-item-indent", "space"],
+    ["lint-no-file-name-articles", false]
   ]
 }
