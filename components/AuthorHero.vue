@@ -1,17 +1,14 @@
 <template>
   <div class="Blog-hero">
     <div class="Blog-hero__content">
-      <h3>
-        All the amazing people who contribute to our content.
-      </h3>
+      <h3>All the amazing people who contribute to our content.</h3>
     </div>
   </div>
 </template>
 
 <style scoped>
 .Blog-hero {
-  background: white
-    url("../assets/images/illustrations/Brand-celebration.png")
+  background: white url('../assets/images/illustrations/Brand-celebration.png')
     no-repeat scroll 12px 100%;
   background-size: 250px;
   width: 100%;

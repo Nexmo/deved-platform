@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import AuthorBubble from "~/components/Authors/AuthorBubble.vue"
-import AuthorCard from "~/components/Authors/AuthorCard.vue"
-import AuthorMiniCard from "~/components/Authors/AuthorMiniCard.vue"
-import AuthorName from "~/components/Authors/AuthorName.vue"
-import AuthorPage from "~/components/Authors/AuthorPage.vue"
+import AuthorBubble from '~/components/Authors/AuthorBubble.vue'
+import AuthorCard from '~/components/Authors/AuthorCard.vue'
+import AuthorMiniCard from '~/components/Authors/AuthorMiniCard.vue'
+import AuthorName from '~/components/Authors/AuthorName.vue'
+import AuthorPage from '~/components/Authors/AuthorPage.vue'
 
 export default {
   components: {
@@ -31,9 +31,9 @@ export default {
     },
     type: {
       type: String,
-      default: "name",
-      validator: function (value) {
-        return ["name", "minicard", "card", "page", "bubble"].indexOf(value) !== -1
+      default: 'name',
+      validator(value) {
+        return ['name', 'minicard', 'card', 'page', 'bubble'].includes(value)
       },
     },
   },
@@ -41,26 +41,30 @@ export default {
   data() {
     let authorData = this.$props.author
 
-    if (typeof authorData === "string") {
+    if (typeof authorData === 'string') {
       authorData = this.getAuthor(authorData)
     }
 
-    if (typeof authorData === "undefined") {
-      authorData = { name: this.$props.author, username: this.$props.author, error: true }
+    if (typeof authorData === 'undefined') {
+      authorData = {
+        name: this.$props.author,
+        username: this.$props.author,
+        error: true,
+      }
     }
 
     return {
-      authorData
+      authorData,
     }
   },
 
   methods: {
     getAuthor(authorName) {
-      const { authors } = require("../content/authors.json")
+      const { authors } = require('../content/authors.json')
       return authors.find((a) => {
         return a.username === authorName
       })
-    }
+    },
   },
 }
 </script>

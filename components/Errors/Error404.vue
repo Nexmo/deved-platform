@@ -3,7 +3,7 @@
     <div class="Vlt-col Blog-error">
       <h1>Ooops, wrong way</h1>
       <p>
-        You've reached the edge of the ocean. <br>
+        You've reached the edge of the ocean. <br />
         The page you requested could not be found.
       </p>
       <NLink to="/" no-prefetch class="Vlt-btn Vlt-btn--app Vlt-btn--secondary">
@@ -15,7 +15,7 @@
       <img
         src="../../node_modules/@vonagevolta/volta2/demo/templates/assets/img/error-404.svg"
         alt="An image showing that an error has occured"
-      >
+      />
     </div>
   </div>
 </template>

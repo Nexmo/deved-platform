@@ -12,17 +12,29 @@
             {{ language.name }}
           </span>
         </div>
-        <a v-if="post.redirect" class="Vlt-card__content" :href="post.redirect" :title="post.title">
+        <a
+          v-if="post.redirect"
+          class="Vlt-card__content"
+          :href="post.redirect"
+          :title="post.title"
+        >
           <h2>
             {{ post.title | truncate(73, '...') }}
           </h2>
         </a>
-        <NLink v-else class="Vlt-card__content" :to="localePath(post.route, post.locale)" :title="post.title">
+        <NLink
+          v-else
+          class="Vlt-card__content"
+          :to="localePath(post.route, post.locale)"
+          :title="post.title"
+        >
           <h2>
             {{ post.title | truncate(73, '...') }}
           </h2>
         </NLink>
-        <div class="Vlt-card__footer Vlt-card__footer--short Vlt-card__footer--noborder">
+        <div
+          class="Vlt-card__footer Vlt-card__footer--short Vlt-card__footer--noborder"
+        >
           <Tags :tags="post.tags" />
         </div>
       </div>
@@ -31,8 +43,8 @@
 </template>
 
 <script>
-import Category from "~/components/Category"
-import Tags from "~/components/Tags"
+import Category from '~/components/Category'
+import Tags from '~/components/Tags'
 
 export default {
   components: {
@@ -53,9 +65,9 @@ export default {
 
   computed: {
     language() {
-      return this.$i18n.locales.filter(l => l.code === this.post.locale)[0]
-    }
-  }
+      return this.$i18n.locales.filter((l) => l.code === this.post.locale)[0]
+    },
+  },
 }
 </script>
 

@@ -13,11 +13,11 @@ export default {
   props: {
     category: {
       type: Object,
-      required: true
+      required: true,
     },
     plural: {
       type: Boolean,
-      default: false
+      default: false,
     },
   },
 }
@@ -30,11 +30,12 @@ a {
 }
 
 .Vlt-badge--transparent {
-  background: rgba(255,255,255,.85);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .Category {
   color: black;
-  text-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff, -1px 1px 2px #fff, 1px -1px 2px #fff;
+  text-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff, -1px 1px 2px #fff,
+    1px -1px 2px #fff;
 }
 </style>

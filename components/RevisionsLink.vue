@@ -1,6 +1,10 @@
 <template>
   <span>
-    | <a :href="`${repoUrl}/commits/${repoBranch}/content${post.path}${post.extension}`" target="_blank">
+    |
+    <a
+      :href="`${repoUrl}/commits/${repoBranch}/content${post.path}${post.extension}`"
+      target="_blank"
+    >
       View revision history
     </a>
   </span>
@@ -12,15 +16,15 @@ export default {
     post: {
       type: Object,
       required: true,
-    }
+    },
   },
 
   data() {
     return {
       repoUrl: process.env.repoUrl,
-      repoBranch: process.env.repoBranch
+      repoBranch: process.env.repoBranch,
     }
-  }
+  },
 }
 </script>
 

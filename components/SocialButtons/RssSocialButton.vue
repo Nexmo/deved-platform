@@ -8,7 +8,9 @@
     rel="noreferrer"
   >
     <svg class="Vlt-icon Vlt-white">
-      <use xlink:href="../../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-rss" />
+      <use
+        xlink:href="../../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-rss"
+      />
     </svg>
     <slot />
   </a>
@@ -19,7 +21,7 @@ export default {
   props: {
     link: {
       type: String,
-      default: "",
+      default: '',
     },
   },
   computed: {

@@ -1,10 +1,15 @@
 <template>
   <span>
-    | 
-    <a :href="`${repoUrl}/blob/${repoBranch}/content${post.path}${post.extension}`" target="_blank">
+    |
+    <a
+      :href="`${repoUrl}/blob/${repoBranch}/content${post.path}${post.extension}`"
+      target="_blank"
+    >
       Please help improve this article
       <svg class="Vlt-icon Vlt-icon--smaller Vlt-grey-darker">
-        <use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-github" />
+        <use
+          xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-brand-icons.svg#Brand-icon-github"
+        />
       </svg>
     </a>
   </span>
@@ -16,15 +21,15 @@ export default {
     post: {
       type: Object,
       required: true,
-    }
+    },
   },
 
   data() {
     return {
       repoUrl: process.env.repoUrl,
-      repoBranch: process.env.repoBranch
+      repoBranch: process.env.repoBranch,
     }
-  }
+  },
 }
 </script>
 

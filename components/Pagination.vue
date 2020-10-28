@@ -7,19 +7,15 @@
           Previous
         </nuxt-link>
       </li>
-      <li v-if="page-4 > first" class="Vlt-table__pagination__prev">
-        <nuxt-link :to="localePath(`${route}/p/${page - 5}`)">
-          ...
-        </nuxt-link>
+      <li v-if="page - 4 > first" class="Vlt-table__pagination__prev">
+        <nuxt-link :to="localePath(`${route}/p/${page - 5}`)"> ... </nuxt-link>
       </li>
-      <template
-        v-for="(p, index) in pages" 
-      >
+      <template v-for="(p, index) in pages">
         <li
           v-if="
             p === page ||
-              (p > (page-5) && p < page) ||
-              (p < (page+5) && p > page)
+            (p > page - 5 && p < page) ||
+            (p < page + 5 && p > page)
           "
           :key="index"
           :class="{ 'Vlt-table__pagination__current': p === page }"
@@ -30,10 +26,8 @@
           </nuxt-link>
         </li>
       </template>
-      <li v-if="page+4 < last" class="Vlt-table__pagination__prev">
-        <nuxt-link :to="localePath(`${route}/p/${page + 5}`)">
-          ...
-        </nuxt-link>
+      <li v-if="page + 4 < last" class="Vlt-table__pagination__prev">
+        <nuxt-link :to="localePath(`${route}/p/${page + 5}`)"> ... </nuxt-link>
       </li>
       <li class="Vlt-table__pagination__next">
         <span v-if="page === last">Next</span>
@@ -46,7 +40,7 @@
 </template>
 
 <script>
-import config from "~/modules/config"
+import config from '~/modules/config'
 
 export default {
   props: {
@@ -66,20 +60,23 @@ export default {
 
   data() {
     return {
-      postsPerPage: config.postsPerPage
+      postsPerPage: config.postsPerPage,
     }
   },
 
   computed: {
     pages() {
-      return Array.from(Array(Math.ceil(this.postCount / this.postsPerPage)), (x, i) => i + 1)
+      return Array.from(
+        Array(Math.ceil(this.postCount / this.postsPerPage)),
+        (x, i) => i + 1
+      )
     },
     first() {
       return this.pages[0]
     },
     last() {
-      return this.pages[this.pages.length-1]
-    }
-  }
+      return this.pages[this.pages.length - 1]
+    },
+  },
 }
 </script>

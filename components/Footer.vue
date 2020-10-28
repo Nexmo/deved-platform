@@ -8,7 +8,7 @@
               src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark--white.svg"
               width="100"
               :alt="$t('component_footer_strapline')"
-            >
+            />
           </h2>
           <ul>
             <li>
@@ -17,7 +17,8 @@
                 href="https://www.vonage.com/legal/"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_legal') }}</a>
+                >{{ $t('component_footer_legal') }}</a
+              >
             </li>
             <li>
               <a
@@ -25,7 +26,8 @@
                 href="https://www.vonage.com/legal/privacy-policy/"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_privacy') }}</a>
+                >{{ $t('component_footer_privacy') }}</a
+              >
             </li>
             <li>
               <a
@@ -33,7 +35,8 @@
                 href="https://www.vonage.com/copyright-policy"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_copyright') }}</a>
+                >{{ $t('component_footer_copyright') }}</a
+              >
             </li>
             <li>
               <a
@@ -41,7 +44,8 @@
                 href="https://www.vonage.com/about-us/patents/"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_patents') }}</a>
+                >{{ $t('component_footer_patents') }}</a
+              >
             </li>
           </ul>
         </div>
@@ -54,7 +58,8 @@
                 href="https://www.vonage.com/partners/"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_partners') }}</a>
+                >{{ $t('component_footer_partners') }}</a
+              >
             </li>
             <li>
               <a
@@ -62,7 +67,8 @@
                 href="https://www.vonage.com/system-status/"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_systemstatus') }}</a>
+                >{{ $t('component_footer_systemstatus') }}</a
+              >
             </li>
             <li>
               <a
@@ -70,7 +76,8 @@
                 href="https://www.vonage.com/support/"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_support') }}</a>
+                >{{ $t('component_footer_support') }}</a
+              >
             </li>
             <li>
               <a
@@ -78,7 +85,8 @@
                 href="https://rewards.vonagebusiness.com/index.html"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_referrals') }}</a>
+                >{{ $t('component_footer_referrals') }}</a
+              >
             </li>
           </ul>
         </div>
@@ -91,7 +99,8 @@
                 href="https://ir.vonage.com/"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_investors') }}</a>
+                >{{ $t('component_footer_investors') }}</a
+              >
             </li>
             <li>
               <a
@@ -99,7 +108,8 @@
                 href="https://www.vonage.com/events/?icmp=footer_corporate_events"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_events') }}</a>
+                >{{ $t('component_footer_events') }}</a
+              >
             </li>
             <li>
               <a
@@ -107,7 +117,8 @@
                 href="https://www.vonage.com/careers/?icmp=footer_corporate_careers"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_careers') }}</a>
+                >{{ $t('component_footer_careers') }}</a
+              >
             </li>
           </ul>
         </div>
@@ -120,7 +131,8 @@
                 href="https://facebook.com/vonage"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_facebook') }}</a>
+                >{{ $t('component_footer_facebook') }}</a
+              >
             </li>
             <li>
               <a
@@ -128,7 +140,8 @@
                 href="https://www.linkedin.com/company/vonage"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_linkedin') }}</a>
+                >{{ $t('component_footer_linkedin') }}</a
+              >
             </li>
             <li>
               <a
@@ -136,7 +149,8 @@
                 href="https://twitter.com/Vonage"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_twitter') }}</a>
+                >{{ $t('component_footer_twitter') }}</a
+              >
             </li>
             <li>
               <a
@@ -144,12 +158,19 @@
                 href="https://www.youtube.com/channel/UCHQnbTiun_Wn7nDxkQavrYQ"
                 target="_blank"
                 rel="noreferrer"
-              >{{ $t('component_footer_youtube') }}</a>
+                >{{ $t('component_footer_youtube') }}</a
+              >
             </li>
             <li>
-              <a href="/feed.xml" :title="$t('component_footer_rssfeed')" class="">
+              <a
+                href="/feed.xml"
+                :title="$t('component_footer_rssfeed')"
+                class=""
+              >
                 <svg class="Vlt-icon Vlt-icon--smaller Vlt-white">
-                  <use xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-rss" />
+                  <use
+                    xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-rss"
+                  />
                 </svg>
               </a>
             </li>

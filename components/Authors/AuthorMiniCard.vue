@@ -1,11 +1,21 @@
 <template>
   <fragment>
     <div v-if="author.error" class="block Author__Mini-card">
-      <img src="../../assets/images/placeholder.png" :alt="author.name">
+      <img src="../../assets/images/placeholder.png" :alt="author.name" />
       <h3>{{ author.name }}</h3>
     </div>
-    <NLink v-else :to="localePath(`/authors/${author.username}`)" class="block Author__Mini-card" vocab="http://schema.org/" typeof="Person">
-      <img :src="author.image_url" :alt="`Profile pic of ${author.name}`" property="image">
+    <NLink
+      v-else
+      :to="localePath(`/authors/${author.username}`)"
+      class="block Author__Mini-card"
+      vocab="http://schema.org/"
+      typeof="Person"
+    >
+      <img
+        :src="author.image_url"
+        :alt="`Profile pic of ${author.name}`"
+        property="image"
+      />
       <h3 property="name">
         {{ author.name }}
       </h3>
@@ -18,9 +28,7 @@
       <p v-else-if="author.spotlight" class="Vlt-grey-dark" property="jobTitle">
         Spotlight Author
       </p>
-      <p v-else class="Vlt-grey-dark" property="jobTitle">
-        Guest Writer
-      </p>
+      <p v-else class="Vlt-grey-dark" property="jobTitle">Guest Writer</p>
     </NLink>
   </fragment>
 </template>
@@ -34,23 +42,25 @@ export default {
     },
   },
 
-  methods: {
-    twitterMeta() {
-      if (this.author.twitter) {
-        return { hid: "twitter:creator", name: "twitter:creator", content: `@${this.author.twitter}` }
-      } else {
-        return {}
-      }
+  head() {
+    return {
+      meta: [this.twitterMeta()],
     }
   },
 
-  head () {
-    return {
-      meta: [
-        this.twitterMeta()
-      ]
-    }
-  }
+  methods: {
+    twitterMeta() {
+      if (this.author.twitter) {
+        return {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: `@${this.author.twitter}`,
+        }
+      } else {
+        return {}
+      }
+    },
+  },
 }
 </script>
 
