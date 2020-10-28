@@ -1,24 +1,24 @@
-import { resolve } from "path"
-import config from "./config"
-import defu from "defu"
-import glob from "glob"
+import { resolve } from 'path'
+import defu from 'defu'
+import glob from 'glob'
+import config from './config'
 
 /**
  * Default options for processing a file.
  */
 const options = defu(
   {
-    charType: "utf8",
-    metaGlob: "*.json",
-    dir: "content",
-    contentGlob: "**/*.md"
+    charType: 'utf8',
+    metaGlob: '*.json',
+    dir: 'content',
+    contentGlob: '**/*.md',
   },
   config
 )
 
 /**
  * Finds files using the meta glob and returns processed objects.
- * 
+ *
  * @param {object} options Options to use when finding files to process.
  * @see _process
  *
@@ -30,10 +30,10 @@ export const data = () => {
   const paths = glob.sync(options.metaGlob, { cwd: options.dir })
   const objects = {}
 
-  paths.forEach(path => {
+  paths.forEach((path) => {
     const data = require(resolve(options.dir, path))
 
-    Object.keys(data).forEach(key => {
+    Object.keys(data).forEach((key) => {
       objects[key] = data[key]
     })
   })
