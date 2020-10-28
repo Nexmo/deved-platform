@@ -1,12 +1,12 @@
-![](https://img.shields.io/netlify/00bdc529-eecc-4b9b-9fa7-915f5c3717a4)
-![](https://img.shields.io/badge/main-not%20master-green)
-![](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
-![](https://img.shields.io/github/contributors/Nexmo/deved-platform)
-![](https://img.shields.io/github/issues/Nexmo/deved-platform)
-
 # Vonage Developer Education Content Platform
 
-##### The source and content for the Vonage Developer Education Content Platform, based on Nuxt.js
+![Netlify Build](https://img.shields.io/netlify/00bdc529-eecc-4b9b-9fa7-915f5c3717a4)
+![Main !Master](https://img.shields.io/badge/main-not%20master-green)
+![Made with <3](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
+![Nubmer of Contributors](https://img.shields.io/github/contributors/Nexmo/deved-platform)
+![Number of Issues](https://img.shields.io/github/issues/Nexmo/deved-platform)
+
+***The source and content for the Vonage Developer Education Content Platform, based on Nuxt.js***
 
 - Zero configuration local builds (without search)
 - `nuxt/content` for loading of markdown and json files
@@ -15,8 +15,9 @@
 - DISQUS comments on post pages using `vue-disqus`
 - Netlify CMS for content management
 
-**Table of Contents**
+## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [Components](#components)
@@ -62,7 +63,7 @@ npm run blog
 # ? Who's the author? Luke Oliff
 # ? Enable comments? Yes
 # ? By spotlight author? No
-# ✔ Saved demo file to content/blog/your-post-title-goes-here.md...    
+# ✔ Saved demo file to content/blog/your-post-title-goes-here.md...
 ```
 
 ### Legacy Content Importer

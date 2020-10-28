@@ -40,7 +40,7 @@ spotlight: true
 
 <h2>预先设置</h2>
 
-Google Cloud Functions 可以编写为在 Node.js 或 Python 3 上运行。如果您使用的是 Node.js，Google 使用的是 <a href="https://expressjs.com/">Express</a> 库，而对于 Python，则使用 <a href="http://flask.pocoo.org/">Flask</a> 框架的 API 来处理请求和响应。每个传入请求都会以 https://expressjs.com/ 的形式传递给您的函数，并且您的函数需要以与在 Flask 应用程序中相同的方式返回响应。您需要处理的一件事是跨域资源共享 (CORS)。我们可以通过包含 <a href="https://flask-cors.readthedocs.io/en/latest/">Flask-CORS</a> 来解决此问题。
+Google Cloud Functions 可以编写为在 Node.js 或 Python 3 上运行。如果您使用的是 Node.js，Google 使用的是 <a href="https://expressjs.com/">Express</a> 库，而对于 Python，则使用 <a href="http://flask.pocoo.org/">Flask</a> 框架的 API 来处理请求和响应。每个传入请求都会以 <https://expressjs.com/> 的形式传递给您的函数，并且您的函数需要以与在 Flask 应用程序中相同的方式返回响应。您需要处理的一件事是跨域资源共享 (CORS)。我们可以通过包含 <a href="https://flask-cors.readthedocs.io/en/latest/">Flask-CORS</a> 来解决此问题。
 
 建立函数的第一步是在 Google Cloud Platform 控制台的“Cloud Functions”部分中单击“创建函数”。然后，系统会提示您设置函数名称并选择一些选项。
 
@@ -108,8 +108,8 @@ def send_sms(request):
 
 完成后，请按下“保存”，稍等片刻，让 Google 的神奇机器人部署该函数，然后就可以对其进行测试。
 
-<pre><code class="notranslate language-curl">curl -X "POST" "https://us-central1-youraccountname.cloudfunctions.net/app-sms" 
-     -H 'Content-Type: application/json; charset=utf-8' 
+<pre><code class="notranslate language-curl">curl -X "POST" "https://us-central1-youraccountname.cloudfunctions.net/app-sms"
+     -H 'Content-Type: application/json; charset=utf-8'
      -d $'{
   "phone": " 447700900000 ",
   "platform": "ios"
@@ -156,4 +156,4 @@ Google 的 Cloud Functions 与 Microsoft 的 Azure Functions 和 Amazon Web Serv
 
 构建第一个函数后，您就会开始意识到它们如何解决您正在处理的各种问题。
 
-<em>Originally published at <a href="https://www.nexmo.com/blog/2019/03/21/sending-sms-from-python-with-google-cloud-functions-dr">https://www.nexmo.com/blog/2019/03/21/sending-sms-from-python-with-google-cloud-functions-dr</a></em>
+<em>Originally published at <a href="<<<https://www.nexmo.com/blog/2019/03/21/sending-sms-from-python-with-google-cloud-functions-dr>>>">https://www.nexmo.com/blog/2019/03/21/sending-sms-from-python-with-google-cloud-functions-dr</a></em>

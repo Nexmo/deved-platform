@@ -396,8 +396,8 @@ function send(otp, recipientAdresses) {
         }
       }
     },
-    (err, data) =&gt; { 
-      console.log(data.dispatch_uuid); 
+    (err, data) =&gt; {
+      console.log(data.dispatch_uuid);
     }
   ])  
 }

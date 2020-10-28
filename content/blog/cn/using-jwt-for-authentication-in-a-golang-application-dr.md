@@ -239,7 +239,7 @@ func CreateToken(userId uint64) (string, error) {
   atClaims := jwt.MapClaims{}
   atClaims["authorized"] = true
   atClaims["user_id"] = userId
-  atClaims["exp"] = time.Now().Add(time.Minute * 15).Unix()
+atClaims["exp"] = time.Now().Add(time.Minute* 15).Unix()
   at := jwt.NewWithClaims(jwt.SigningMethodHS256, atClaims)
   token, err := at.SignedString([]byte(os.Getenv("ACCESS_SECRET")))
   if err != nil {
@@ -254,7 +254,7 @@ func CreateToken(userId uint64) (string, error) {
 <pre><code class="notranslate">go run main.go
 </code></pre>
 
-现在我们可以尝试一下，看看效果如何！启动您喜欢的 API 工具并点击 https://www.nexmo.com/wp-content/uploads/2020/03/image8.png端点：
+现在我们可以尝试一下，看看效果如何！启动您喜欢的 API 工具并点击 <https://www.nexmo.com/wp-content/uploads/2020/03/image8.png>端点：
 
 <a href="https://www.nexmo.com/wp-content/uploads/2020/03/image8.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image8.png" alt="" width="1999" height="1145" class="alignnone size-full wp-image-31628" /></a>
 
@@ -354,10 +354,10 @@ Redis 客户端在 {22} 函数中初始化。这样可以确保每次我们运�
 
 <pre><code class="notranslate">func CreateToken(userid uint64) (*TokenDetails, error) {
   td := &amp;TokenDetails{}
-  td.AtExpires = time.Now().Add(time.Minute * 15).Unix()
+td.AtExpires = time.Now().Add(time.Minute* 15).Unix()
   td.AccessUuid = uuid.NewV4().String()
 
-  td.RtExpires = time.Now().Add(time.Hour * 24 * 7).Unix()
+  td.RtExpires = time.Now().Add(time.Hour *24* 7).Unix()
   td.RefreshUuid = uuid.NewV4().String()
 
   var err error
@@ -412,7 +412,7 @@ Redis 客户端在 {22} 函数中初始化。这样可以确保每次我们运�
 }
 </code></pre>
 
-我们传入 https://www.redily.app ，其中包含有关 JWT 的到期时间和创建 JWT 时使用的 uuid 的信息。如果<strong>刷新token</strong>或<strong>访问token</strong>都达到了到期时间，则会从 redis 中自动删除 JWT。
+我们传入 <https://www.redily.app> ，其中包含有关 JWT 的到期时间和创建 JWT 时使用的 uuid 的信息。如果<strong>刷新token</strong>或<strong>访问token</strong>都达到了到期时间，则会从 redis 中自动删除 JWT。
 
 我个人使用 <a href="https://www.redily.app">Redily</a> (redis GUI)。这是一款很好的工具。您可以在下面查看如何在键值对中存储 JWT 元数据。
 
@@ -448,7 +448,7 @@ Redis 客户端在 {22} 函数中初始化。这样可以确保每次我们运�
 }
 </code></pre>
 
-我们可以尝试再次登录。保存 https://www.nexmo.com/wp-content/uploads/2020/03/image3.png 文件并将其运行。当邮递员点击登录时，我们应该具有：
+我们可以尝试再次登录。保存 <https://www.nexmo.com/wp-content/uploads/2020/03/image3.png> 文件并将其运行。当邮递员点击登录时，我们应该具有：
 
 <a href="https://www.nexmo.com/wp-content/uploads/2020/03/image3.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image3.png" alt="" width="1999" height="1190" class="alignnone size-full wp-image-31623" /></a>
 
@@ -570,7 +570,7 @@ Redis 客户端在 {22} 函数中初始化。这样可以确保每次我们运�
 最后，我们来连接 {43} 函数，以便更好地理解上述函数的实施：
 
 <pre><code class="notranslate">func CreateTodo(c *gin.Context) {
-  var td *Todo
+var td*Todo
   if err := c.ShouldBindJSON(&amp;td); err != nil {
      c.JSON(http.StatusUnprocessableEntity, "invalid json")
      return
@@ -605,15 +605,15 @@ td.UserID = userId
 }
 </code></pre>
 
-要测试 https://www.nexmo.com/wp-content/uploads/2020/03/image6.png，请登录并复制 https://www.nexmo.com/wp-content/uploads/2020/03/image6.png，然后将其添加到<strong>Authorization Bearer Token</strong> 字段，如下所示：
+要测试 <https://www.nexmo.com/wp-content/uploads/2020/03/image6.png>，请登录并复制 <https://www.nexmo.com/wp-content/uploads/2020/03/image6.png>，然后将其添加到<strong>Authorization Bearer Token</strong> 字段，如下所示：
 
 <a href="https://www.nexmo.com/wp-content/uploads/2020/03/image6.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image6.png" alt="" width="1999" height="768" class="alignnone size-full wp-image-31626" /></a>
 
-然后在请求正文中添加标题以创建待办事项并向 https://www.nexmo.com/wp-content/uploads/2020/03/image4.png 端点发出 POST 请求，如下所示：
+然后在请求正文中添加标题以创建待办事项并向 <https://www.nexmo.com/wp-content/uploads/2020/03/image4.png> 端点发出 POST 请求，如下所示：
 
 <a href="https://www.nexmo.com/wp-content/uploads/2020/03/image4.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image4.png" alt="" width="1999" height="1050" class="alignnone size-full wp-image-31624" /></a>
 
-在没有 https://www.nexmo.com/wp-content/uploads/2020/03/image5.png 的情况下尝试创建待办事项是未经授权的行为：
+在没有 <https://www.nexmo.com/wp-content/uploads/2020/03/image5.png> 的情况下尝试创建待办事项是未经授权的行为：
 
 <a href="https://www.nexmo.com/wp-content/uploads/2020/03/image5.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image5.png" alt="" width="1999" height="1062" class="alignnone size-full wp-image-31625" /></a>
 
@@ -664,7 +664,7 @@ td.UserID = userId
 }
 </code></pre>
 
-提供与用户关联的有效 https://www.nexmo.com/wp-content/uploads/2020/03/image1.png，然后注销该用户。记得将 https://www.nexmo.com/wp-content/uploads/2020/03/image1.png 添加到 https://www.nexmo.com/wp-content/uploads/2020/03/image1.png，然后单击注销端点：
+提供与用户关联的有效 <https://www.nexmo.com/wp-content/uploads/2020/03/image1.png>，然后注销该用户。记得将 <https://www.nexmo.com/wp-content/uploads/2020/03/image1.png> 添加到 <https://www.nexmo.com/wp-content/uploads/2020/03/image1.png>，然后单击注销端点：
 
 <a href="https://www.nexmo.com/wp-content/uploads/2020/03/image1.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image1.png" alt="" width="1999" height="1069" class="alignnone size-full wp-image-31621" /></a>
 
@@ -722,7 +722,7 @@ td.UserID = userId
   os.Setenv("REFRESH_SECRET", "mcmvmkmsdnfsdmfdsjf") //this should be in an env file
   token, err := jwt.Parse(refreshToken, func(token *jwt.Token) (interface{}, error) {
      //Make sure that the token method conform to "SigningMethodHMAC"
-     if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
+if_, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
         return nil, fmt.Errorf("unexpected signing method: %v", token.Header["alg"])
      }
      return []byte(os.Getenv("REFRESH_SECRET")), nil
@@ -780,6 +780,7 @@ saveErr := CreateAuth(userId, ts)
 </code></pre>
 
 虽然该函数中有大量工作，但我们来尝试了解一下流程。
+
 - 我们首先从请求正文中获取了 {66}。
 - 然后，我们验证了 token 的签名方法。
 - 接下来，检查 token 是否仍然有效。
@@ -796,7 +797,7 @@ saveErr := CreateAuth(userId, ts)
 
 </code></pre>
 
-使用有效的 https://www.nexmo.com/wp-content/uploads/2020/03/image7.png 测试端点：
+使用有效的 <https://www.nexmo.com/wp-content/uploads/2020/03/image7.png> 测试端点：
 
 <a href="https://www.nexmo.com/wp-content/uploads/2020/03/image7.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image7.png" alt="" width="1999" height="1180" class="alignnone size-full wp-image-31627" /></a>
 
@@ -882,14 +883,14 @@ type Message struct {
 }
 </code></pre>
 
-在以上函数中，https://dashboard.nexmo.com 号码为用户号码，而 https://dashboard.nexmo.com 号码必须通过您的 <a href="https://dashboard.nexmo.com">Vonage API Dashboard</a> 进行购买。
+在以上函数中，<https://dashboard.nexmo.com> 号码为用户号码，而 <https://dashboard.nexmo.com> 号码必须通过您的 <a href="https://dashboard.nexmo.com">Vonage API Dashboard</a> 进行购买。
 
 确保在环境变量文件中定义了 {1} 和 {1}。
 
 然后，我们更新 {1} 函数以包含刚刚定义的 {1} 函数，并传入所需的参数：
 
 <pre><code class="notranslate">func CreateTodo(c *gin.Context) {
-  var td *Todo
+var td*Todo
   if err := c.ShouldBindJSON(&amp;td); err != nil {
      c.JSON(http.StatusUnprocessableEntity, "invalid json")
      return
@@ -927,6 +928,6 @@ td.UserID = userId
 
 <h2>结语</h2>
 
-您已经了解了如何创建 JWT 并使 JWT 失效。您还了解了如何在 Golang 应用程序中集成 Vonage Messages API 来发送通知。有关最佳实践和使用 JWT 的更多信息，请务必查看此 <a href="https://github.com/victorsteven/jwt-best-practices">GitHub 存储库</a> 。您可以扩展此应用程序，并使用真实的数据库来保留用户和待办事项，还可以使用 React 或 VueJS 来构建前端。在那里，您将真正受益于 Axios 拦截器的刷新 token 功能。	
+您已经了解了如何创建 JWT 并使 JWT 失效。您还了解了如何在 Golang 应用程序中集成 Vonage Messages API 来发送通知。有关最佳实践和使用 JWT 的更多信息，请务必查看此 <a href="https://github.com/victorsteven/jwt-best-practices">GitHub 存储库</a> 。您可以扩展此应用程序，并使用真实的数据库来保留用户和待办事项，还可以使用 React 或 VueJS 来构建前端。在那里，您将真正受益于 Axios 拦截器的刷新 token 功能。
 
-<em>Originally published at <a href="https://www.nexmo.com/blog/2020/03/13/using-jwt-for-authentication-in-a-golang-application-dr">https://www.nexmo.com/blog/2020/03/13/using-jwt-for-authentication-in-a-golang-application-dr</a></em>
+<em>Originally published at <a href="<<<https://www.nexmo.com/blog/2020/03/13/using-jwt-for-authentication-in-a-golang-application-dr>>>">https://www.nexmo.com/blog/2020/03/13/using-jwt-for-authentication-in-a-golang-application-dr</a></em>

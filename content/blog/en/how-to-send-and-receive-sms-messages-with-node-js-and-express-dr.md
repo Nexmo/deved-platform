@@ -50,8 +50,8 @@ The SMS API is the first Nexmo API, and we'll use it to send an SMS message to y
 First off, initialize an NPM package, otherwise, older versions of NPM will complain about installing a package without having a `package.json` first. Just use the defaults for init, and then install the `@vonage/server-sdk` Node.js package.
 
 ```
-$ npm init
-$ npm install @vonage/server-sdk
+npm init
+npm install @vonage/server-sdk
 ```
 
 ### Initialize Dependencies
@@ -59,7 +59,7 @@ $ npm install @vonage/server-sdk
 We'll create a new JavaScript file, let's call it `index.js`.
 
 ```
-$ touch index.js
+touch index.js
 ```
 
 We need to initialize the Nexmo node library we installed earlier, in the `index.js` file you created:
@@ -106,13 +106,13 @@ If your carrier network supports alphanumeric sender IDs, `FROM` can be text ins
 [Depending on the country](https://help.nexmo.com/hc/en-us/sections/200622473-Country-Specific-Features-and-Restrictions) you're trying to send the SMS to, there are regulations that require you to own the phone number you're sending the SMS from, so you'll have to buy a phone number. You can do so in the [Vonage API Dashboard](https://dashboard.nexmo.com/buy-numbers) or via the CLI:
 
 ```
-$ nexmo number:buy  --country_code US --confirm
+nexmo number:buy  --country_code US --confirm
 ```
 
 You can run the code and receive the SMS message with:
 
 ```
-$ node index.js
+node index.js
 ```
 
 ## Send an SMS Message With the Messages API
@@ -120,7 +120,7 @@ $ node index.js
 There is a newer API that deals with sending text messages called the Vonage Messages API. It is a multi-channel API, that can send a message via different channels, such as SMS, Facebook Messenger, Viber, and Whatsapp. The API is in Beta right now, so if we want to use it to send the same SMS message, we'll need to install the beta version of the Nexmo Node.js SDK.
 
 ```
-$ npm install nexmo@beta
+npm install nexmo@beta
 ```
 
 ### Run ngrok
@@ -128,7 +128,7 @@ $ npm install nexmo@beta
 If you haven't used ngrok before, there is a [blog post](https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr) that explains how to use it. If you're familiar with ngrok, run it with `http` on the 3000 port.
 
 ```
-$ ngrok http 3000
+ngrok http 3000
 ```
 
 After ngrok runs, it will give you a random-looking URL, that we'll use as the base for our Webhooks later on. Mine looks like this: `http://5b5c1bd0.ngrok.io`.
@@ -191,7 +191,7 @@ nexmo.channel.send(
 You can run the code and receive the SMS message with:
 
 ```
-$ node index.js
+node index.js
 ```
 
 That's it, you've sent the same SMS message using two different Vonage APIs. You'll notice the Messages API is a lot more verbose in usage, while both APIs need just one method to accomplish the same thing.
@@ -207,13 +207,13 @@ When a Vonage phone number receives an SMS message, Vonage will pass that messag
 We'll be creating our webserver using `express` because it's one of the most popular and easy to use Node.js frameworks for this purpose. We'll also be looking at the request bodies for the inbound URL, so we'll need to install `body-parser` as well as `express` from npm.
 
 ```
-$ npm install express body-parser
+npm install express body-parser
 ```
 
 Let's create a new file for this, call it `server.js`:
 
 ```
-$ touch server.js
+touch server.js
 ```
 
 We'll create a basic `express` application, that uses the JSON parser from `bodyParser` and sets the `urlencoded` option to `true`. Let's fill out the `server.js` file we created. We'll use the port 3000 for the server to listen to, we already have ngrok running on port 3000.
@@ -243,7 +243,7 @@ app.post('/webhooks/inbound-message', (req, res) => {
 You can run the code with:
 
 ```
-$ node server.js
+node server.js
 ```
 
 ### Try It Out

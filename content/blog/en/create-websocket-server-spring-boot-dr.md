@@ -70,7 +70,7 @@ In order to use the `WebSocketHandler`, it must be registered in Spring's `WebSo
 1. It will register the `WebSocketHandler` on the `/socket` path.
 2. It will allow all browser clients to send messages to the server. They won't be required to have a specific origin.
 
-Create a new class called `WebSocketConfiguration` which implements the `WebSocketConfigurer` interface in the `com.example.websocketdemo` package. 
+Create a new class called `WebSocketConfiguration` which implements the `WebSocketConfigurer` interface in the `com.example.websocketdemo` package.
 
 Annotate `WebSocketConfiguration` with the `@Configuration` and `@EnableWebSocket` annotations.
 

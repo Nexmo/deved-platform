@@ -39,8 +39,7 @@ Authorization can be by text message, telephone call, or usually a combination o
 
 The user then provides the pin that they received; this is sent back to the Verify API to check if the pin code is correct. If it is, the request is confirmed, and you can proceed with the payment.
 
-
-## Implement Verify API PSD2 
+## Implement Verify API PSD2
 
 ### Vonage API Account
 
@@ -49,6 +48,7 @@ You will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&c
 We have [examples in a few different tech stacks](https://developer.nexmo.com/verify/code-snippets/send-verify-psd2-request) but to keep things very inclusive, these examples use [cURL](https://curl.haxx.se).
 
 <a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2020-06-23-add-strong-psd2-authentication-to-your-application"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
+
 ### Send a PIN Code to Confirm a Payment
 
 The first step is to send a code to the customer's phone to confirm their payment amount and who the payment is to. To ensure that the message did reach them, the message includes a PIN code.

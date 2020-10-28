@@ -19,7 +19,7 @@ A JSON Web Token (JWT) is a compact and self-contained way for securely transmit
 
 JWTs are popular because:
 
-1. A JWT is stateless. That is, it does not need to be stored in a database (persistence layer), unlike opaque tokens. 
+1. A JWT is stateless. That is, it does not need to be stored in a database (persistence layer), unlike opaque tokens.
 2. The signature of a JWT is never decoded once formed, thereby ensuring that the token is safe and secure.
 3. A JWT can be set to be invalid after a certain period of time. This helps minimize or totally eliminate any damage that can be done by a hacker, in the event that the token is hijacked.
 
@@ -33,7 +33,7 @@ This tutorial also uses a virtual phone number. To purchase one, go to *Numbers*
 
 <a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
 
-### What Makes Up a JWT?
+### What Makes Up a JWT
 
 A JWT is comprised of three parts:
 
@@ -100,7 +100,7 @@ Then update the `main.go` file:
 package main
 
 Import (
-	"github.com/gin-gonic/gin"
+ "github.com/gin-gonic/gin"
 )
 
 var (
@@ -118,14 +118,14 @@ In an ideal situation, the `/login` route takes a user’s credentials, checks t
 ```
 type User struct {
 ID uint64            `json:"id"`
-	Username string `json:"username"`
-	Password string `json:"password"`
+ Username string `json:"username"`
+ Password string `json:"password"`
 }
 //A sample use
 var user = User{
-	ID: 	        1,
-	Username: "username",
-	Password: "password",
+ ID:          1,
+ Username: "username",
+ Password: "password",
 }
 ```
 
@@ -265,14 +265,14 @@ Now we can try it out and see what we get! Fire up your favorite API tool and hi
 
 ![Making a request using Postman](/content/blog/using-jwt-for-authentication-in-a-golang-application/image8.png "Making a request using Postman")
 
-As seen above, we have generated a JWT that will last for 15 minutes. 
+As seen above, we have generated a JWT that will last for 15 minutes.
 
 ### Implementation Loopholes
 
 Yes we can login a user a generate a JWT, but there is a lot wrong with the above implementation:
 
-1. The JWT can only be invalidated when it expires. A major limitation to this is: a user can login, then decide to logout immediately, but the user’s JWT remains valid until the expiration time is reached. 
-2. The JWT might be hijacked and used by a hacker without the user doing anything about it until the token expires. 
+1. The JWT can only be invalidated when it expires. A major limitation to this is: a user can login, then decide to logout immediately, but the user’s JWT remains valid until the expiration time is reached.
+2. The JWT might be hijacked and used by a hacker without the user doing anything about it until the token expires.
 3. The user will need to re-login after the token expires, thereby leading to a poor user experience.
 
 We can address the problems stated above in two ways:
@@ -394,7 +394,6 @@ func CreateToken(userid uint64) (*TokenDetails, error) {
 
 In the above function, the **Access Token** expires after 15 minutes and the **Refresh Token** expires after 7 days. You can also observe we added a uuid as a claim to each token.
 
-
 Since the uuid is unique each time it is created, a user can create more than one token. This happens when a user is logged in on different devices. The user can also logout from any of the devices without them being logged out from all devices. How cool!
 
 ### Saving JWTs metadata
@@ -403,19 +402,19 @@ Let’s now wire up the function that will be used to save the JWTs metadata:
 
 ```
 func CreateAuth(userid uint64, td *TokenDetails) error {
-	at := time.Unix(td.AtExpires, 0) //converting Unix to UTC(to Time object)
-	rt := time.Unix(td.RtExpires, 0)
-	now := time.Now()
+ at := time.Unix(td.AtExpires, 0) //converting Unix to UTC(to Time object)
+ rt := time.Unix(td.RtExpires, 0)
+ now := time.Now()
 
-	errAccess := client.Set(td.AccessUuid, strconv.Itoa(int(userid)), at.Sub(now)).Err()
-	if errAccess != nil {
-		return errAccess
-	}
-	errRefresh := client.Set(td.RefreshUuid, strconv.Itoa(int(userid)), rt.Sub(now)).Err()
-	if errRefresh != nil {
-		return errRefresh
-	}
-	return nil
+ errAccess := client.Set(td.AccessUuid, strconv.Itoa(int(userid)), at.Sub(now)).Err()
+ if errAccess != nil {
+  return errAccess
+ }
+ errRefresh := client.Set(td.RefreshUuid, strconv.Itoa(int(userid)), rt.Sub(now)).Err()
+ if errRefresh != nil {
+  return errRefresh
+ }
+ return nil
 }
 ```
 
@@ -460,7 +459,7 @@ We can try logging in again. Save the `main.g`o file and run it. When the login 
 
 ![Checking the access and refresh token reponse in Postman](/content/blog/using-jwt-for-authentication-in-a-golang-application/image3.png "Checking the access and refresh token reponse in Postman")
 
-Excellent! We have both the **access_token** and the **refresh_token**, and also have token metadata persisted in redis. 
+Excellent! We have both the **access_token** and the **refresh_token**, and also have token metadata persisted in redis.
 
 ### Creating a Todo
 
@@ -477,7 +476,7 @@ type Todo struct {
 }
 ```
 
-When performing any authenticated request, we need to validate the token passed in the authentication header to see if it is valid. We need to define some helper functions that help with these. 
+When performing any authenticated request, we need to validate the token passed in the authentication header to see if it is valid. We need to define some helper functions that help with these.
 
 First we will need to extract the token from the request header using the `ExtractToken` function:
 
@@ -617,7 +616,7 @@ Let’s update `main()` to include the `CreateTodo` function:
 func main() {
   router.POST("/login", Login)
   router.POST("/todo", CreateTodo)
- 
+
   log.Fatal(router.Run(":8080"))
 }
 ```
@@ -710,7 +709,7 @@ func TokenAuthMiddleware() gin.HandlerFunc {
 }
 ```
 
-As seen above, we called the `TokenValid()` function (defined earlier) to check if the token is still valid or has expired. The function will be used in the authenticated routes to secure them. 
+As seen above, we called the `TokenValid()` function (defined earlier) to check if the token is still valid or has expired. The function will be used in the authenticated routes to secure them.
 Let’s now update `main.go` to include this middleware:
 
 ```
@@ -725,7 +724,7 @@ func main() {
 
 ### Refreshing Tokens
 
-Thus far, we can create, use and revoke JWTs. In an application that will involve a user interface, what happens if the **access token** expires and the user needs to make an authenticated request? Will the user be unauthorized, and be made to login again? Unfortunately, that will be the case. But this can be averted using the concept of a **refresh token**.  The user does not need to relogin. 
+Thus far, we can create, use and revoke JWTs. In an application that will involve a user interface, what happens if the **access token** expires and the user needs to make an authenticated request? Will the user be unauthorized, and be made to login again? Unfortunately, that will be the case. But this can be averted using the concept of a **refresh token**.  The user does not need to relogin.
 The **refresh token** created alongside the **access token** will be used to create new pairs of **access and refresh tokens**.
 
 Using JavaScript to consume our API endpoints, we can refresh the JWTs like a breeze using [axios interceptors](https://github.com/axios/axios). In our API, we will need to send a POST request with a `refresh_token` as the body to the `/token/refresh` endpoint.
@@ -779,17 +778,17 @@ func Refresh(c *gin.Context) {
         c.JSON(http.StatusUnauthorized, "unauthorized")
         return
      }
-	//Create new pairs of refresh and access tokens
+ //Create new pairs of refresh and access tokens
      ts, createErr := CreateToken(userId)
      if  createErr != nil {
         c.JSON(http.StatusForbidden, createErr.Error())
         return
      }
-	//save the tokens metadata to redis
+ //save the tokens metadata to redis
 saveErr := CreateAuth(userId, ts)
  if saveErr != nil {
         c.JSON(http.StatusForbidden, saveErr.Error())
-	   return
+    return
 }
  tokens := map[string]string{
        "access_token":  ts.AccessToken,
@@ -804,8 +803,8 @@ saveErr := CreateAuth(userId, ts)
 
 While a lot is going on in that function, let’s try and understand the flow.
 
-* We first took the `refresh_token` from the request body. 
-* We then verified the signing method of the token. 
+* We first took the `refresh_token` from the request body.
+* We then verified the signing method of the token.
 * Next, check if the token is still valid.
 * The `refresh_uuid` and the `user_id` are then extracted, which are metadata used as claims when creating the refresh token.
 * We then search for the metadata in redis store and delete it using the `refresh_uuid` as key.
@@ -911,7 +910,7 @@ func SendMessage(username, phone string) (*http.Response, error) {
 
 In the above function, the `To` number is the number of the user, while the `From` number must be purchased via your [Vonage API Dashboard](https://dashboard.nexmo.com).
 
-Ensure that you have your `NEXMO_API_KEY` and `NEXMO_API_SECRET` defined in your environment variable file. 
+Ensure that you have your `NEXMO_API_KEY` and `NEXMO_API_SECRET` defined in your environment variable file.
 
 We then update the `CreateTodo` function to include the `SendMessage` function just defined, passing in the required parameters:
 

@@ -54,28 +54,28 @@ This example uses Amazon Cognito User Pools to hold users. I set up a User Pool 
 * Navigate to the [Amazon Cognito Dashboard](https://console.aws.amazon.com/cognito/home) in the AWS Console.
 * Select `Manage User Pools`.
 * Create a new user pool.
-    * Give the pool a name, and click `Step through settings`
-    * Select `Email address or phone number` and pick `Allow email addresses`
-    * Click `Next step`
-    * Set the minimum password length, and desired complexity settings
-    * Make sure to `Allow users to sign themselves up`
-    * Click `Next step`
-    * Leave the next step as-is, for this example. We will use Vonage for 2FA
-    * Click `Next step`
-    * Select a `FROM email address ARN` from the dropdown. This assumes you've already created an idenity in [Amazon Simple Email Service(SES)](https://console.aws.amazon.com/ses/home#verified-senders-email:)
-    * Add a `FROM email address` as desired.
-    * Leave the rest of this page unchanged. However, I do recommend you remove the trailing periods from the email messages. This prevents the recipient from mistakenly using the period as part of the temporary password.
-    * Click `Next step`
-    * Skip adding tags by clicking `Next step`
-    * Skip devices by clicking `Next step`
-    * Click the link to `Add an app client`
-    * Give the app client a name
-    * Uncheck the box to `Generate client secret`
-    * Check the rest of the boxes
-    * Click `Create app client`
-    * Click `Next step`
-    * Skip triggers by clicking `Next step`
-    * Click `Create pool`
+  * Give the pool a name, and click `Step through settings`
+  * Select `Email address or phone number` and pick `Allow email addresses`
+  * Click `Next step`
+  * Set the minimum password length, and desired complexity settings
+  * Make sure to `Allow users to sign themselves up`
+  * Click `Next step`
+  * Leave the next step as-is, for this example. We will use Vonage for 2FA
+  * Click `Next step`
+  * Select a `FROM email address ARN` from the dropdown. This assumes you've already created an idenity in [Amazon Simple Email Service(SES)](https://console.aws.amazon.com/ses/home#verified-senders-email:)
+  * Add a `FROM email address` as desired.
+  * Leave the rest of this page unchanged. However, I do recommend you remove the trailing periods from the email messages. This prevents the recipient from mistakenly using the period as part of the temporary password.
+  * Click `Next step`
+  * Skip adding tags by clicking `Next step`
+  * Skip devices by clicking `Next step`
+  * Click the link to `Add an app client`
+  * Give the app client a name
+  * Uncheck the box to `Generate client secret`
+  * Check the rest of the boxes
+  * Click `Create app client`
+  * Click `Next step`
+  * Skip triggers by clicking `Next step`
+  * Click `Create pool`
 
 ### Update Environment
 
@@ -112,11 +112,11 @@ View the main landing page by going to `http://localhost:8080` in a web browser.
 The app flow is as follows:
 
 * From the main page, click either `Login` or `Register`.
-    * After registration (`user_register.php`) the user is redirected to a mandatory password change page. (`login_reset.php`) Here they should utilize the temporary password emailed to them.
-    * After updating the temporary password the user is redirected to the login page. (`login.php`)
-    * The login is where a new user, or an existing user can login.
-    * After successful login, the user is redirected to the 2FA verification page. (`login_verify.php`) Here they enter the 6 digit code sent to their mobile number.
-    * Upon successful 2FA verification, the user is then redirected back to the main page (`index.php`) where they see they are now logged in with an option to logout. (`logout.php`)
+  * After registration (`user_register.php`) the user is redirected to a mandatory password change page. (`login_reset.php`) Here they should utilize the temporary password emailed to them.
+  * After updating the temporary password the user is redirected to the login page. (`login.php`)
+  * The login is where a new user, or an existing user can login.
+  * After successful login, the user is redirected to the 2FA verification page. (`login_verify.php`) Here they enter the 6 digit code sent to their mobile number.
+  * Upon successful 2FA verification, the user is then redirected back to the main page (`index.php`) where they see they are now logged in with an option to logout. (`logout.php`)
 
 ## Next Steps
 
