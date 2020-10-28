@@ -80,13 +80,8 @@
 
 <script>
 import algoliasearch from 'algoliasearch/lite'
-import SearchResult from '~/components/SearchResult'
 
 export default {
-  components: {
-    SearchResult,
-  },
-
   data() {
     return {
       algoliaIndex: process.env.algoliaIndex,

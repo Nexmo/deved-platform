@@ -46,19 +46,9 @@
 </template>
 
 <script>
-import Card from '~/components/Card'
-import CardFeatured from '~/components/CardFeatured'
-import SearchHero from '~/components/SearchHero'
-
 const postMap = { tutorial: 6 }
 
 export default {
-  components: {
-    Card,
-    CardFeatured,
-    SearchHero,
-  },
-
   async asyncData({ $content, app }) {
     const latestPosts = await $content(`blog/${app.i18n.locale}`)
       .where({ published: { $ne: false } })

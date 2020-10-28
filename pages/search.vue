@@ -137,15 +137,8 @@
 import algoliasearch from 'algoliasearch/lite'
 import { history } from 'instantsearch.js/es/lib/routers'
 import { simple } from 'instantsearch.js/es/lib/stateMappings'
-import SearchResult from '~/components/SearchResult'
-import Breadcrumbs from '~/components/Breadcrumbs'
 
 export default {
-  components: {
-    Breadcrumbs,
-    SearchResult,
-  },
-
   data() {
     return {
       algoliaIndex: process.env.algoliaIndex,

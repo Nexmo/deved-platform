@@ -33,6 +33,9 @@ export default {
     link: config.headLinks,
   },
 
+  // Auto loading components (https://nuxtjs.org/guides/configuration-glossary/configuration-components)
+  components: true,
+
   loading: {
     color: '#06ba77',
     height: '4px',

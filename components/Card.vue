@@ -43,15 +43,7 @@
 </template>
 
 <script>
-import Category from '~/components/Category'
-import Tags from '~/components/Tags'
-
 export default {
-  components: {
-    Category,
-    Tags,
-  },
-
   props: {
     post: {
       type: Object,

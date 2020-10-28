@@ -21,18 +21,9 @@
 
 <script>
 import moment from 'moment'
-import Breadcrumbs from '~/components/Breadcrumbs'
-import Card from '~/components/Card'
-import PageHero from '~/components/PageHero'
 import config from '~/modules/config'
 
 export default {
-  components: {
-    Breadcrumbs,
-    Card,
-    PageHero,
-  },
-
   async asyncData({ $content, app, params, error }) {
     const { day, month, year } = params
 

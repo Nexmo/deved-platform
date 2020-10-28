@@ -20,20 +20,9 @@
 </template>
 
 <script>
-import Breadcrumbs from '~/components/Breadcrumbs'
-import Card from '~/components/Card'
-import PageHero from '~/components/PageHero'
-import Tag from '~/components/Tag'
 import config from '~/modules/config'
 
 export default {
-  components: {
-    Breadcrumbs,
-    Card,
-    PageHero,
-    Tag,
-  },
-
   async asyncData({ $content, app, params, error }) {
     try {
       const posts = await $content(`blog/${app.i18n.locale}`)
