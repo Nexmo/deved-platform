@@ -119,12 +119,18 @@ export default {
     },
   },
 
+  // https://nuxtjs.org/guides/configuration-glossary/configuration-generate
   generate: {
     crawler: !isPreviewBuild(),
     fallback: true,
     routes() {
       return isPreviewBuild() ? previewRoute() : []
     },
+  },
+
+  // https://nuxtjs.org/guides/configuration-glossary/configuration-router
+  router: {
+    middleware: 'stats',
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
