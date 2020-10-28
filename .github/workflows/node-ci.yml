@@ -1,9 +1,5 @@
 name: Linting
-on:
-  push:
-  pull_request:
-    branches:
-      - main
+on: [pull_request]
 
 jobs:
   js-lint:
@@ -28,7 +24,7 @@ jobs:
 
       - name: Lint Source Files
         run: npm run lint:js
-  md-lint:
+  remark-lint:
     name: Markdown
     runs-on: ubuntu-latest
 
@@ -38,7 +34,7 @@ jobs:
 
     steps:
       - name: Checkout Source Files
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
 
       - name: Use Node.js v${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -48,5 +44,9 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Lint Source Files
-        run: npm run lint:md
+      - name: remark-lint
+        uses: prologic/action-remark-lint@v0.0.5
+        with:
+          level: warning
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-check # Change reporter. (Only `github-pr-check` is supported at the moment).
