@@ -19,10 +19,12 @@
 
 <script>
 const tagMap = {
-  node: [ 'nodejs', 'node.js' ],
-  dotnet: [ 'dot-net', 'asp-dot-net', '.net' ],
+  careers: [ 'career' ],
+  dotnet: [ 'dot-net', 'asp-dot-net', '.net', 'asp.net' ],
   go: [ 'go-lang', 'golang' ],
-  careers: [ 'career' ]
+  javascript: [ 'js' ],
+  node: [ 'nodejs', 'node.js' ],
+  opensource: [ 'open-source' ],
 }
 
 export default {
@@ -243,6 +245,16 @@ export default {
 
 .Blog-badge--netlify {
   background: linear-gradient(to bottom, #23c2b8, #37afbc);
+  color: white;
+}
+
+.Blog-badge--postman {
+  background: rgb(255, 108, 55);
+  color: white;
+}
+
+.Blog-badge--opensource {
+  background: #3DA639;
   color: white;
 }
 
