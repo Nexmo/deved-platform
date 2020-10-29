@@ -4,11 +4,14 @@
       <div class="Vlt-grid">
         <div class="Vlt-col">
           <h2>
-            <img
-              src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark--white.svg"
-              width="100"
-              :alt="$t('component_footer_strapline')"
-            />
+            <client-only>
+              <img
+                v-if="!!token"
+                :src="`/Vonage-footer-logo.svg?token=${token}`"
+                width="100"
+                :alt="$t('component_footer_strapline')"
+              />
+            </client-only>
           </h2>
           <ul>
             <li>
@@ -180,6 +183,59 @@
     </div>
   </footer>
 </template>
+
+<script>
+import jwt from 'jsonwebtoken'
+
+export default {
+  data({ $router, $route }) {
+    return {
+      token: '',
+    }
+  },
+
+  watch: {
+    $route(route) {
+      this.token = this.getHash(route)
+    },
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.token = this.getHash(this.$route)
+    })
+  },
+
+  methods: {
+    getHash(route = {}) {
+      const data = {
+        dp: route.path,
+        dt: null,
+        dh: process.env.baseUrl,
+        dr: null,
+        ua: null,
+        cs: route.query.utm_source || null,
+        cm: route.query.utm_medium || null,
+        cn: route.query.utm_campaign || null,
+        ck: route.query.utm_term || null,
+        cc: route.query.utm_content || null,
+      }
+
+      if (process.client && window.document) {
+        data.dt = window.document.title || null
+        data.ua = window.navigator.userAgent || null
+        data.dr = window.document.referrer || window.document.referer || null
+      }
+
+      Object.keys(data).forEach(
+        (k) => !data[k] && data[k] !== undefined && delete data[k]
+      )
+
+      return jwt.sign(data, process.env.signer)
+    },
+  },
+}
+</script>
 
 <style scoped>
 .Vlt-footer {

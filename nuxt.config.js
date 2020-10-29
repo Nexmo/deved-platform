@@ -18,6 +18,8 @@ export default {
 
   // Env (https://nuxtjs.org/api/configuration-env/)
   env: {
+    signer: config.signer,
+    baseUrl: config.baseUrl,
     repoUrl: config.repoUrl,
     repoBranch: config.repoBranch,
     algoliaIndex: config.algoliaIndex,
@@ -119,6 +121,7 @@ export default {
     },
   },
 
+  // https://nuxtjs.org/guides/configuration-glossary/configuration-generate
   generate: {
     crawler: !isPreviewBuild(),
     fallback: true,
