@@ -14,6 +14,6 @@
 
 [[redirects]]
   from = "/Vonage-footer-logo.svg"
-  to = "/.netlify/functions/image.jpg"
+  to = "/.netlify/functions/image-svg"
   status = 200
   force = true
