@@ -30,10 +30,12 @@ exports.handler = (event, context, callback) => {
       const data = jwt.verify(token, process.env.SIGNING_SECRET || 'secret')
 
       // do a track
-      visitor.pageview({
-        uip: event.headers['client-ip'] || '',
-        ...data,
-      })
+      visitor
+        .pageview({
+          uip: event.headers['client-ip'] || '',
+          ...data,
+        })
+        .send()
     }
   } catch (error) {
     console.log(error) // eslint-disable-line
