@@ -26,13 +26,15 @@ exports.handler = (event, context, callback) => {
   })
 
   try {
-    const data = jwt.verify(token, process.env.SIGNING_SECRET || 'secret')
+    if (token) {
+      const data = jwt.verify(token, process.env.SIGNING_SECRET || 'secret')
 
-    // do a track
-    visitor.pageview({
-      uip: event.headers['client-ip'] || '',
-      ...data,
-    })
+      // do a track
+      visitor.pageview({
+        uip: event.headers['client-ip'] || '',
+        ...data,
+      })
+    }
   } catch (error) {
     console.log(error) // eslint-disable-line
   }
