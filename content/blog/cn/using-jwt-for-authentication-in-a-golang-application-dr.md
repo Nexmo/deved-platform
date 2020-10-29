@@ -28,11 +28,7 @@ JSON 网络 token (JWT) 是一种紧凑且独立的方法，以 JSON 对象的�
 
 在本教程中，我将使用 Golang 和 Vonage Messages API 通过简单的 RESTful API 演示 JWT 的创建、使用和失效。
 
-<h2>Vonage API 帐户</h2>
-
-要完成本教程，您将需要一个 <a href="http://developer.nexmo.com/ed?c=zh_blog_text&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr">Vonage API 帐户</a>。如果您还没有帐户，则可以<a href="http://developer.nexmo.com/ed?c=zh_blog_text&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr">立即注册</a>，并使用免费积分开始构建。拥有帐户后，您可以在 <a href="http://developer.nexmo.com/ed?c=zh_blog_text&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr">Vonage API Dashboard</a> 的顶部找到您的 API 密钥和 API 密码。本教程还使用到虚拟电话号码。如要购买，请转到“<em>号码</em>” &gt; “<em>购买号码</em>”并搜索满足您需求的号码。如果您刚刚注册，可使用可用积分轻松抵扣号码的初始费用。
-
-<a href="http://developer.nexmo.com/ed?c=zh_blog_banner&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/09/CTA_Dev_Spotlight_CN.png" alt="开始使用 Vonage 构建" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
+<sign-up number></sign-up>
 
 <h3>JWT 由什么组成？</h3>
 

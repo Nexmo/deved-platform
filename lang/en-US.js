@@ -68,4 +68,22 @@ export default {
   component_footer_twitter: 'Twitter',
   component_footer_youtube: 'YouTube',
   component_footer_rssfeed: 'RSS Feed',
+
+  /**
+   * Global strings
+   */
+  global_signup_title: 'Vonage API Account',
+  global_signup_text: `To complete this tutorial, you will need a 
+    <a href="http://developer.nexmo.com/ed?c={prefix}blog_text&amp;ct={slug}">Vonage
+    API account</a>. If you don’t have one already, you can 
+    <a href="http://developer.nexmo.com/ed?c={prefix}blog_text&amp;ct={slug}">sign up 
+    today</a> and start building with free credit. Once you have an account,
+    you can find your API Key and API Secret at the top of the
+    <a href="http://developer.nexmo.com/ed?c={prefix}blog_text&amp;ct={slug}">Vonage
+    API Dashboard</a>.`,
+  global_signup_number: `This tutorial also uses a virtual phone number. To 
+    purchase one, go to <em>Numbers</em> &gt; <em>Buy Numbers</em> and search
+    for one that meets your needs. If you’ve just signed up, the initial cost
+    of a number will be easily covered by your available credit.`,
+  global_signup_alt: 'Start building with Vonage',
 }

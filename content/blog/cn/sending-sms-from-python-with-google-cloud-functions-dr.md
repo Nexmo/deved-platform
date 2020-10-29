@@ -32,11 +32,7 @@ spotlight: true
 
 如果您以前从未使用过 Google Cloud Platform，那么他们会在第一年为您提供 300 美元（或等值的本地货币）的丰厚赠金。除非您的网站非常受欢迎，人们不断地点击您的网站，否则您可能不会使用超过免费层级允许的范围。
 
-<h2>Vonage API 帐户</h2>
-
-要完成本教程，您将需要一个 <a href="http://developer.nexmo.com/ed?c=zh_blog_text&ct=2019-03-21-sending-sms-from-python-with-google-cloud-functions-dr">Vonage API 帐户</a>。如果您还没有帐户，则可以<a href="http://developer.nexmo.com/ed?c=zh_blog_text&ct=2019-03-21-sending-sms-from-python-with-google-cloud-functions-dr">立即注册</a>，并使用免费积分开始构建。拥有帐户后，您可以在 <a href="http://developer.nexmo.com/ed?c=zh_blog_text&ct=2019-03-21-sending-sms-from-python-with-google-cloud-functions-dr">Vonage API Dashboard</a> 的顶部找到您的 API 密钥和 API 密码。
-
-<a href="http://developer.nexmo.com/ed?c=zh_blog_banner&ct=2019-03-21-sending-sms-from-python-with-google-cloud-functions-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/09/CTA_Dev_Spotlight_CN.png" alt="开始使用 Vonage 构建" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
+<sign-up></sign-up>
 
 <h2>预先设置</h2>
 

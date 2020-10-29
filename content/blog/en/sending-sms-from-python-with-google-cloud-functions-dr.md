@@ -29,9 +29,7 @@ To get started with Google Cloud Platform, go to [cloud.google.com](https://clou
 
 If you haven’t used Google Cloud Platform before, they give you a generous $300 (or equivalent in your local currency) worth of credit to use in your first year. Unless your site gets extremely popular and people are constantly hitting your site, you probably won’t use more than the free tier allows for.
 
-## Vonage API Account
-
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2019-03-21-sending-sms-from-python-with-google-cloud-functions-dr). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2019-03-21-sending-sms-from-python-with-google-cloud-functions-dr) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2019-03-21-sending-sms-from-python-with-google-cloud-functions-dr).
+<sign-up></sign-up>
 
 ## Setting Up Pre-Requisites
 
