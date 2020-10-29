@@ -14,7 +14,6 @@
           :post="post"
         />
       </div>
-      <a href="http://localhost:8888">Netlify Dev Home</a>
       <template v-for="category in categories">
         <template v-if="category.posts && category.posts.length > 0">
           <div :key="`${category.slug}-separator`" class="Vlt-text-separator">
