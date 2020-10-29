@@ -4,12 +4,14 @@
       <div class="Vlt-grid">
         <div class="Vlt-col">
           <h2>
-            <img
-              v-if="!!token"
-              :src="`/Vonage-footer-logo.svg?token=${token}`"
-              width="100"
-              :alt="$t('component_footer_strapline')"
-            />
+            <client-only>
+              <img
+                v-if="!!token"
+                :src="`/Vonage-footer-logo.svg?token=${token}`"
+                width="100"
+                :alt="$t('component_footer_strapline')"
+              />
+            </client-only>
           </h2>
           <ul>
             <li>
