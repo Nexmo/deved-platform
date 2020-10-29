@@ -25,6 +25,7 @@ const config = {
   algoliaApplicationId: process.env.ALGOLIA_APPLICATION_ID,
   algoliaSearchKey: process.env.ALGOLIA_SEARCH_KEY,
   algoliaIndex: process.env.ALGOLIA_INDEX,
+  signer: process.env.SIGNING_SECRET || 'secret',
   get headMeta() {
     return [
       { charset: 'utf-8' },

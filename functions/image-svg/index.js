@@ -1,7 +1,12 @@
-// const ua = require('universal-analytics')
-// const visitor = ua(process.env.GOOGLE_ANALYTICS_ID)
+const ua = require('universal-analytics')
+const visitor = ua(process.env.GOOGLE_ANALYTICS_ID)
+const jwt = require('jsonwebtoken')
 
 exports.handler = (event, context, callback) => {
+  const {
+    queryStringParameters: { token },
+  } = event
+
   // return image immediately
   callback(null, {
     statusCode: 200,
@@ -20,9 +25,15 @@ exports.handler = (event, context, callback) => {
 </svg>`,
   })
 
-  // do a track
-  const referrer = event.headers.referrer || event.headers.referer
-  setTimeout(() => {
-    console.log(referrer)
-  }, 5000)
+  try {
+    const data = jwt.verify(token, process.env.SIGNING_SECRET || 'secret')
+
+    // do a track
+    visitor.pageview({
+      uip: event.headers['client-ip'] || '',
+      ...data,
+    })
+  } catch (error) {
+    console.log(error) // eslint-disable-line
+  }
 }

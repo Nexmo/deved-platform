@@ -5,7 +5,8 @@
         <div class="Vlt-col">
           <h2>
             <img
-              :src="`/Vonage-footer-logo.svg?hash=${hash}`"
+              v-if="!!token"
+              :src="`/Vonage-footer-logo.svg?token=${token}`"
               width="100"
               :alt="$t('component_footer_strapline')"
             />
@@ -182,30 +183,53 @@
 </template>
 
 <script>
+import jwt from 'jsonwebtoken'
+
 export default {
   data({ $router, $route }) {
     return {
-      hash: '',
+      token: '',
     }
   },
 
   watch: {
-    $route(to) {
-      this.hash = this.getHash(to.path)
+    $route(route) {
+      this.token = this.getHash(route)
     },
   },
 
-  created() {
-    this.hash = this.getHash(this.$route.path)
+  mounted() {
+    this.$nextTick(() => {
+      this.token = this.getHash(this.$route)
+    })
   },
 
   methods: {
-    getHash(path = '') {
-      if (process.client && window.document) {
-        console.log(window.document.referrer, window.document.referer)
+    getHash(route = {}) {
+      const data = {
+        dp: route.path,
+        dt: null,
+        dh: process.env.baseUrl,
+        dr: null,
+        ua: null,
+        cs: route.query.utm_source || null,
+        cm: route.query.utm_medium || null,
+        cn: route.query.utm_campaign || null,
+        ck: route.query.utm_term || null,
+        cc: route.query.utm_content || null,
       }
 
-      return path
+      if (process.client && window.document) {
+        data.dt = window.document.title || null
+        data.ua = window.navigator.userAgent || null
+        data.dr = window.document.referrer || window.document.referer || null
+      }
+
+      Object.keys(data).forEach(
+        (k) => !data[k] && data[k] !== undefined && delete data[k]
+      )
+
+      return jwt.sign(data, process.env.signer)
     },
   },
 }
