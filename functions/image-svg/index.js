@@ -1,5 +1,5 @@
-const ua = require('universal-analytics')
-const visitor = ua(process.env.GOOGLE_ANALYTICS_ID)
+// const ua = require('universal-analytics')
+// const visitor = ua(process.env.GOOGLE_ANALYTICS_ID)
 
 exports.handler = (event, context, callback) => {
   // return image immediately
