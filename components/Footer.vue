@@ -5,7 +5,7 @@
         <div class="Vlt-col">
           <h2>
             <img
-              src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark--white.svg"
+              :src="`/Vonage-footer-logo.svg?hash=${hash}`"
               width="100"
               :alt="$t('component_footer_strapline')"
             />
@@ -180,6 +180,36 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  data({ $router, $route }) {
+    return {
+      hash: '',
+    }
+  },
+
+  watch: {
+    $route(to) {
+      this.hash = this.getHash(to.path)
+    },
+  },
+
+  created() {
+    this.hash = this.getHash(this.$route.path)
+  },
+
+  methods: {
+    getHash(path = '') {
+      if (process.client && window.document) {
+        console.log(window.document.referrer, window.document.referer)
+      }
+
+      return path
+    },
+  },
+}
+</script>
 
 <style scoped>
 .Vlt-footer {

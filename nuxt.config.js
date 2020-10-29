@@ -128,11 +128,6 @@ export default {
     },
   },
 
-  // https://nuxtjs.org/guides/configuration-glossary/configuration-router
-  router: {
-    middleware: 'stats',
-  },
-
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
     liveEdit: false,
