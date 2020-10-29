@@ -67,4 +67,19 @@ export default {
   component_footer_twitter: 'Twitter',
   component_footer_youtube: 'YouTube',
   component_footer_rssfeed: 'RSS Feed',
+
+  /**
+   * Global strings
+   */
+  global_signup_title: 'Vonage API 帐户',
+  global_signup_text: `要完成本教程，您将需要一个 
+    <a href="http://developer.nexmo.com/ed?c={prefix}blog_text&ct={slug}">Vonage 
+    API 帐户</a>。如果您还没有帐户，则可以
+    <a href="http://developer.nexmo.com/ed?c={prefix}blog_text&ct={slug}">立即注册</a>，
+    并使用免费积分开始构建。拥有帐户后，您可以在
+    <a href="http://developer.nexmo.com/ed?c={prefix}blog_text&ct={slug}">Vonage API
+    Dashboard</a> 的顶部找到您的 API 密钥和 API 密码。`,
+  global_signup_number: `本教程还使用到虚拟电话号码。如要购买，请转到“<em>号码</em>” &gt; 
+    “<em>购买号码</em>”并搜索满足您需求的号码。如果您刚刚注册，可使用可用积分轻松抵扣号码的初始费用。`,
+  global_signup_alt: '开始使用 Vonage 构建',
 }

@@ -45,13 +45,9 @@ L'utente fornisce quindi il PIN che ha ricevuto; questo viene inviato di nuovo a
 
 ## Come Implementare la Verify API PSD2
 
-### Account Vonage API
-
-Avrai bisogno di un [account Vonage API](http://developer.nexmo.com/ed?c=it_blog_text&ct=2020-06-23-add-strong-psd2-authentication-to-your-application). Se non ne hai già uno, puoi registrarti ora e iniziare subito a sviluppare, grazie al credito gratuito. Una volta creato l’account, troverai la tua API Key e il tuo API Secret nella parte superiore della Vonage API dashboard.
-
 Abbiamo [esempi in diversi stack tecnologici](https://developer.nexmo.com/verify/code-snippets/send-verify-psd2-request), ma per rendere le cose più omogenee, questi esempi usano [cURL](https://curl.haxx.se).
 
-<a href="http://developer.nexmo.com/ed?c=it_blog_banner&ct=2020-06-23-add-strong-psd2-authentication-to-your-application"><img src="https://www.nexmo.com/wp-content/uploads/2020/09/CTA_Italian.png" alt="Inizia a creare con Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
+<sign-up></sign-up>
 
 ## Invia un Codice PIN per Confermare un Pagamento
 

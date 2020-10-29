@@ -25,13 +25,7 @@ JWTs are popular because:
 
 In this tutorial, I will demonstrate the creation, use, and invalidation of a JWT with a simple RESTful API using Golang and the Vonage Messages API.
 
-## Vonage API Account
-
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr).
-
-This tutorial also uses a virtual phone number. To purchase one, go to *Numbers* > *Buy Numbers* and search for one that meets your needs. If you’ve just signed up, the initial cost of a number will be easily covered by your available credit.
-
-<a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2020-03-13-using-jwt-for-authentication-in-a-golang-application-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
+<sign-up number></sign-up>
 
 ### What Makes Up a JWT
 
