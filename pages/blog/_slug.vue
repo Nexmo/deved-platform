@@ -320,7 +320,7 @@ export default {
   border-radius: 6px;
 }
 
-.Blog__post .frontmatter-markdown {
+.Blog__post .nuxt-content {
   padding: auto 50px;
 }
 
