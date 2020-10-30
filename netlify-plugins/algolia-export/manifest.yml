@@ -1,0 +1,7 @@
+name: algolia-export
+
+inputs:
+  - name: exclude
+  - name: textLength
+  - name: stopwords
+  - name: debugMode
