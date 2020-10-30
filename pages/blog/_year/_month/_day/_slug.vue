@@ -1,7 +1,10 @@
 <template>
   <section class="Blog__Full-width">
+    <div v-if="post && post.redirect">
+      <Redirector :url="post.redirect" />
+    </div>
     <article
-      v-if="!post.redirect"
+      v-else
       class="Blog__post Vlt-container"
       vocab="http://schema.org/"
       typeof="BlogPosting"
@@ -133,21 +136,6 @@
         <div class="Vlt-col" />
       </div>
     </article>
-    <div v-else class="Redirect Vlt-container">
-      <div class="Vlt-grid Vlt-grid--stack-flush">
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <div
-            class="Vlt-card Vlt-card--lesspadding"
-            property="mainEntityOfPage"
-          >
-            Redirecting... <a :href="post.redirect">Click here</a> to redirect
-            now.
-          </div>
-        </div>
-        <div class="Vlt-col" />
-      </div>
-    </div>
   </section>
 </template>
 
@@ -164,12 +152,6 @@ export default {
         .catch((err) => {
           error({ statusCode: 404, message: 'Page not found', err })
         })
-
-      if (process.browser) {
-        if (post.redirect) {
-          window.location.href = post.redirect
-        }
-      }
 
       const postDate = moment(post.published_at)
 
