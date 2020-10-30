@@ -51,7 +51,7 @@ export default {
     countdown() {
       if (this.seconds === 0) {
         clearTimeout(this.timer)
-        // window.location.href = this.url
+        window.location.href = this.url
       } else {
         this.timer = window.setTimeout(() => {
           this.seconds = this.seconds - 1
