@@ -79,9 +79,9 @@ export default {
     Vonage API</a>. Se non ne hai già uno, puoi registrarti ora e iniziare subito a
     sviluppare, grazie al credito gratuito. Una volta creato l’account, troverai la
     tua API Key e il tuo API Secret nella parte superiore della Vonage API dashboard.`,
-  global_signup_number: `This tutorial also uses a virtual phone number. To 
-    purchase one, go to <em>Numbers</em> &gt; <em>Buy Numbers</em> and search
-    for one that meets your needs. If you’ve just signed up, the initial cost
-    of a number will be easily covered by your available credit.`,
+  global_signup_number: `Questo tutorial utilizza anche un numero di telefono virtuale. Per
+    acquistane uno, vai su <em> Numbers > &gt; <em> Buy Numbers </em> e cerca
+    quello che soddisfa le tue esigenze. Se ti sei appena registrato, il costo iniziale
+    di un numero sarà facilmente coperto dal tuo credito disponibile.`,
   global_signup_alt: 'Inizia a creare con Vonage',
 }
