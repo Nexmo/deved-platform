@@ -5,8 +5,7 @@ const chunk = (array, size) => {
   const tempArray = []
 
   for (index = 0; index < array.length; index += size) {
-    myChunk = array.slice(index, index + size)
-    tempArray.push(myChunk)
+    tempArray.push(array.slice(index, index + size))
   }
 
   return tempArray
