@@ -8,6 +8,12 @@ title: Contributing Guide
 
 ## Capitalize My Title
 
+uppercase words
+not-these though: “a,” “an,” “and,” “at,” “but,” “by,” “for,” “in,” “nor,” “of,” “on,” “or,” "out," “so,” “the,” “to,” “up,” and “yet.”
+unless "not-these" are first or last
+
+https://codereview.stackexchange.com/questions/217006/a-function-which-translates-a-sentence-to-title-case
+
 <title-maker></title-maker>
 
 ## Code Block Preview
