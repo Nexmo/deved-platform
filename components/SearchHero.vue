@@ -50,6 +50,10 @@ export default {
     }
   },
 
+  mounted() {
+    this.query = this.$route.query.query
+  },
+
   methods: {
     search() {
       this.$router.push({ path: 'search', query: { query: this.query } })

@@ -1,142 +1,110 @@
 <template>
   <section class="Blog__Full-width">
-    <client-only v-if="algoliaIndex">
-      <ais-instant-search
-        :index-name="algoliaIndex"
-        :search-client="searchClient"
-        :routing="routing"
-      >
-        <header class="Blog__Full-width">
-          <div class="Search-hero">
-            <div class="Search-hero__content">
-              <div class="Search-hero__search-box-wrapper">
-                <div
-                  class="Vlt-form__element Vlt-form__element--big Search-hero__search"
-                >
-                  <div class="Vlt-input">
-                    <ais-search-box
-                      :class-names="{
-                        'ais-SearchBox': 'Blog-hero__search-box-wrapper',
+    <main v-if="true" class="Vlt-container">
+      <client-only>
+        <ais-instant-search
+          :search-client="searchClient"
+          :index-name="algoliaIndex"
+          :routing="routing"
+        >
+          <div class="Vlt-grid Vlt-grid--stack-flush">
+            <div class="Vlt-col" />
+            <div v-if="routes" class="Vlt-col Vlt-col--2of3">
+              <Breadcrumbs :routes="routes" />
+            </div>
+            <div class="Vlt-col" />
+            <div class="Vlt-grid__separator" />
+            <div class="Vlt-col" />
+            <div class="Vlt-col Vlt-col--2of3">
+              <div class="Vlt-card Vlt-card--lesspadding">
+                <div class="Vlt-card__content">
+                  <ais-search-box>
+                    <div
+                      slot-scope="{
+                        currentRefinement,
+                        isSearchStalled,
+                        refine,
                       }"
+                      class="Vlt-form__element Vlt-form__element--big"
                     >
-                      <div
-                        slot-scope="{
-                          currentRefinement,
-                          isSearchStalled,
-                          refine,
-                        }"
-                        class="Vlt-form__element Vlt-form__element--big Blog-hero__search"
-                      >
-                        <div class="Vlt-input">
-                          <form
-                            method="GET"
-                            action="/search"
-                            @submit="checkForm"
-                          >
-                            <input
-                              id="query"
-                              ref="query"
-                              type="search"
-                              :placeholder="$t('page_search_placeholder')"
-                              name="query"
-                              :value="currentRefinement"
-                              @input="refine($event.currentTarget.value)"
-                            />
-                            <label for="query">{{
-                              $t('page_search_label')
-                            }}</label>
-                          </form>
+                      <div class="Vlt-composite">
+                        <div class="Vlt-composite__wrapper Vlt-input">
+                          <input
+                            id="search-input"
+                            v-model="currentRefinement"
+                            type="search"
+                            :placeholder="$t('page_search_placeholder')"
+                            @input="refine($event.currentTarget.value)"
+                          />
+                          <label for="search-input">{{
+                            $t('page_search_label')
+                          }}</label>
                         </div>
-                        <small
-                          v-if="isSearchStalled"
-                          class="Vlt-form__element__hint"
-                          >{{ $t('page_search_stalled_hint') }}</small
-                        >
+                        <div class="Vlt-composite__append">
+                          <button
+                            class="Vlt-btn Vlt-btn--white Vlt-btn--icon Vlt-btn--large"
+                          >
+                            <svg>
+                              <use
+                                xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-search"
+                              />
+                            </svg>
+                          </button>
+                        </div>
                       </div>
-                    </ais-search-box>
-                  </div>
+                      <small class="Vlt-form__element__hint"
+                        ><span v-if="isSearchStalled">
+                          {{ $t('page_search_stalled_hint') }}</span
+                        >&nbsp;</small
+                      >
+                    </div>
+                  </ais-search-box>
+                  <ais-state-results>
+                    <template slot-scope="{ hits }">
+                      <ais-hits v-if="hits.length > 0">
+                        <ul slot="item" slot-scope="{ item }">
+                          <SearchResult :item="item" thumb />
+                        </ul>
+                      </ais-hits>
+                      <div v-else>no results</div>
+                    </template>
+                  </ais-state-results>
                 </div>
               </div>
             </div>
-          </div>
-        </header>
-        <main class="Vlt-container">
-          <ais-state-results :class-names="{ 'ais-StateResults': 'Vlt-grid' }">
-            <template slot-scope="{ hits }">
-              <div class="Vlt-col" />
-              <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-                <Breadcrumbs :routes="routes" />
-              </div>
-              <div class="Vlt-col" />
-              <div class="Vlt-grid__separator" />
-              <div class="Vlt-col" />
-              <ais-hits
-                v-if="hits.length > 0"
+            <div class="Vlt-col" />
+            <div class="Vlt-grid__separator" />
+            <div class="Vlt-col" />
+            <div class="Vlt-col Vlt-col--2of3 Vlt-center">
+              <ais-pagination
                 :class-names="{
-                  'ais-Hits': 'Vlt-col Vlt-col--2of3',
-                  'ais-Hits-list': 'Vlt-card',
+                  'ais-Pagination': 'Vlt-table__pagination',
+                  'ais-Pagination-item--firstPage':
+                    'Vlt-table__pagination__prev',
+                  'ais-Pagination-item--lastPage':
+                    'Vlt-table__pagination__next',
+                  'ais-Pagination-item--previousPage':
+                    'Vlt-table__pagination__prev',
+                  'ais-Pagination-item--nextPage':
+                    'Vlt-table__pagination__next',
+                  'ais-Pagination-item--selected':
+                    'Vlt-table__pagination__current',
                 }"
-              >
-                <template slot="item" slot-scope="{ item }">
-                  <SearchResult :item="item" thumb />
-                </template>
-              </ais-hits>
-              <div v-else class="Vlt-col Vlt-col--2of3">
-                <div class="Vlt-card">
-                  <h3>
-                    {{ $t('page_search_no_results_title') }}
-                  </h3>
-                  <p>
-                    {{ $t('page_search_no_results_message') }}
-                  </p>
-                </div>
-              </div>
-              <div class="Vlt-col" />
-            </template>
-          </ais-state-results>
-        </main>
-      </ais-instant-search>
-    </client-only>
-    <div v-else>
-      <header class="Blog__Full-width">
-        <div class="Search-hero">
-          <div class="Search-hero__content">
-            <div class="Search-hero__search-box-wrapper Vlt-center">
-              <h3>Search disabled.</h3>
+              />
             </div>
+            <div class="Vlt-col" />
           </div>
-        </div>
-      </header>
-      <main class="Vlt-container">
-        <div class="Vlt-grid">
-          <div class="Vlt-col" />
-          <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-            <Breadcrumbs :routes="routes" />
-          </div>
-          <div class="Vlt-col" />
-          <div class="Vlt-grid__separator" />
-          <div class="Vlt-col" />
-          <div class="Vlt-col Vlt-col--2of3">
-            <div class="Vlt-card">
-              <h3>Search is disabled.</h3>
-              <p>
-                Please edit provide your <code>env</code> with an
-                <code>ALGOLIA_APPLICATION_ID</code>,
-                <code>ALGOLIA_SEARCH_KEY</code>, and <code>ALGOLIA_INDEX</code>.
-              </p>
-            </div>
-          </div>
-          <div class="Vlt-col" />
-        </div>
-      </main>
-    </div>
+        </ais-instant-search>
+      </client-only>
+    </main>
+    <main v-else class="Vlt-container">search disabled stuff</main>
   </section>
 </template>
 
 <script>
 import algoliasearch from 'algoliasearch/lite'
-import { history } from 'instantsearch.js/es/lib/routers'
-import { simple } from 'instantsearch.js/es/lib/stateMappings'
+import { history as historyRouter } from 'instantsearch.js/es/lib/routers'
+import { singleIndex as singleIndexMapping } from 'instantsearch.js/es/lib/stateMappings'
 
 export default {
   data() {
@@ -150,65 +118,37 @@ export default {
         {
           route: `/search`,
           title: this.$t('page_search_title'),
+        },
+        {
+          route: `/search?query=${this.$route.query.query}`,
+          title: this.$route.query.query
+            ? `${this.$t('page_search_title')}: ${this.$route.query.query}`
+            : 'All posts',
           current: true,
         },
       ],
       routing: {
-        router: history(),
-        stateMapping: simple(),
+        router: historyRouter(),
+        stateMapping: singleIndexMapping(process.env.algoliaIndex),
       },
+      query: '',
     }
   },
 
-  methods: {
-    checkForm(e) {
-      if (this.$refs.query.value) {
-        return true
-      }
-
-      e.preventDefault()
+  watch: {
+    '$route.query.query'(query) {
+      this.query = query
     },
+  },
+
+  mounted() {
+    this.query = this.$route.query.query
   },
 }
 </script>
 
 <style scoped>
-.Search-hero {
-  background: white;
-  background-size: 150px;
-  width: 100%;
-  height: 200px;
-  display: -webkit-box;
-  display: flex;
-  margin-top: -12px;
-  box-shadow: 0 4px 4px rgba(19, 20, 21, 0.1);
-  margin-bottom: 12px;
-}
-
-.Search-hero__content {
-  width: 500px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
-  margin: auto;
-}
-
-.Search-hero__search-wrapper,
-.Search-hero__search-box-wrapper {
-  width: 100%;
-}
-
-.Search-hero__search-wrapper {
-  position: relative;
-}
-
-@media only screen and (max-width: 575px) {
-  .Search-hero__content {
-    width: 90%;
-  }
+.Vlt-form__element {
+  padding: 0 0 8px 0;
 }
 </style>

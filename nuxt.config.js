@@ -31,7 +31,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: config.indexTitle,
-    titleTemplate: `%s » ${config.baseTitle}`,
+    titleTemplate: `%s${config.baseSplitter}${config.baseTitle}`,
     meta: config.headMeta,
     link: config.headLinks,
   },
