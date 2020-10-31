@@ -45,8 +45,6 @@ export default {
         split = new RegExp(`/(${dateExp.source})/`)
       }
 
-      console.log(path)
-
       return `${path.split(split).join(' » ')}`
     },
   },
