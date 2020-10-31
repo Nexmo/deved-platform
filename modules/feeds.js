@@ -1,14 +1,11 @@
-import { resolve } from 'path'
 import defu from 'defu'
-import glob from 'glob'
-import moment from 'moment'
-import showdown from 'showdown'
+import { data } from './data'
 import config from './config'
 
 /**
  * Default options for processing a file.
  */
-const _defaults = defu(
+const options = defu(
   {
     charType: 'utf8',
     metaGlob: '*.json',
@@ -17,31 +14,6 @@ const _defaults = defu(
   },
   config
 )
-
-/**
- * Finds files using the meta glob and returns processed objects.
- *
- * @param {object} options Options to use when finding files to process.
- * @see _process
- *
- * @return {object} The returns the processed files.
- */
-const _meta = (options) => {
-  options.dir = resolve(options.dir)
-
-  const paths = glob.sync(options.metaGlob, { cwd: options.dir })
-  const objects = {}
-
-  paths.forEach((path) => {
-    const data = require(resolve(options.dir, path))
-
-    Object.keys(data).forEach((key) => {
-      objects[key] = data[key]
-    })
-  })
-
-  return objects
-}
 
 /**
  * Takes a meta data object and returns a route.
@@ -54,7 +26,6 @@ const _meta = (options) => {
  */
 const metaRouteMap = (type, object) => {
   const map = {
-    archives: `/${type}/p/${object}`,
     categories: `/${type}/${object.slug}`,
     tags: `/${type}/${object}`,
     authors: `/${type}/${object.username}`,
@@ -64,47 +35,13 @@ const metaRouteMap = (type, object) => {
 }
 
 /**
- * Return the routes generated from the attributes of a post, including
- *   dated archive routes and the post route itself.
- *
- * @param {object} postAttr Object containing the attributes of a post
- *
- * @return {array}
- */
-export const getPostRoutes = (postAttr) => {
-  const postDate = moment(postAttr.published_at)
-
-  return [
-    `/${postAttr.type}/${postDate.format('YYYY/MM/DD')}`,
-    `/${postAttr.type}/${postDate.format('YYYY/MM')}`,
-    `/${postAttr.type}/${postDate.format('YYYY')}`,
-  ]
-}
-
-export const getPostRoute = (postAttr) => {
-  const postDate = moment(postAttr.published_at)
-
-  return `/${postAttr.type}/${postDate.format('YYYY/MM/DD')}/${postAttr.slug}`
-}
-
-export const getCategory = (slug) => {
-  const meta = _meta(_defaults)
-
-  return meta.categories.find((c) => c.slug === slug)
-}
-
-/**
  * Get all possible feeds (rss, json-feed, atom) for @nuxtjs/feeds
  *
- * @param {object} options Options passed in to modify how content is generated
- *
  * @return {array}
  */
-export const getFeeds = (posts, options) => {
-  options = defu(_defaults, options)
+export const getFeeds = (posts) => {
+  const meta = data(options)
 
-  // const posts = _posts(options)
-  const meta = _meta(options)
   const callbacks = (item) => ({
     authors: (post) => {
       return post.author === item.username
@@ -122,41 +59,74 @@ export const getFeeds = (posts, options) => {
     })
   })
 
-  const converter = new showdown.Converter()
+  const output = []
 
-  const output = feeds.map((f) => {
-    const route = `${metaRouteMap(f.type, f)}/feed.xml`
+  output.push(
+    ...feeds.map((f) => {
+      const route = `${metaRouteMap(f.type, f)}/rss.xml`
 
-    return {
-      path: route, // The route to your feed.
-      create(feed) {
-        feed.options = {
-          title: `${options.indexTitle} » ${options.baseTitle}`,
-          link: `${options.baseUrl}${route}.xml`,
-          description: options.baseDescription,
-        }
+      return {
+        path: route, // The route to your feed.
+        create(feed) {
+          feed.options = {
+            title: `${options.indexTitle} » ${options.baseTitle}`,
+            link: `${options.baseUrl}${route}`,
+            description: options.baseDescription,
+          }
 
-        f.posts.forEach((post) => {
-          feed.addItem({
-            title: post.title,
-            id: post.slug,
-            link: `${options.baseUrl}${post.route}`,
-            description: post.description,
-            content: converter.makeHtml(post.raw),
+          f.posts.forEach((post) => {
+            feed.addItem({
+              title: post.title,
+              id: post.slug,
+              date: new Date(post.updated_at || post.published_at),
+              link: `${options.baseUrl}${post.route}`,
+              description: post.description,
+              content: post.description,
+            })
           })
-        })
-      },
-      cacheTime: 1000 * 60 * 15,
-      type: 'rss2',
-    }
-  })
+        },
+        cacheTime: 1000 * 60 * 15,
+        type: 'rss2',
+      }
+    })
+  )
+
+  output.push(
+    ...feeds.map((f) => {
+      const route = `${metaRouteMap(f.type, f)}/feed.json`
+
+      return {
+        path: route, // The route to your feed.
+        create(feed) {
+          feed.options = {
+            title: `${options.indexTitle} » ${options.baseTitle}`,
+            link: `${options.baseUrl}${route}`,
+            description: options.baseDescription,
+          }
+
+          f.posts.forEach((post) => {
+            feed.addItem({
+              title: post.title,
+              id: post.slug,
+              date: new Date(post.updated_at || post.published_at),
+              link: `${options.baseUrl}${post.route}`,
+              description: post.description,
+              content: post.description,
+            })
+          })
+        },
+        cacheTime: 1000 * 60 * 15,
+        type: 'json1',
+      }
+    })
+  )
 
   output.push({
-    path: '/feed.xml', // The route to your feed.
+    path: '/blog/rss.xml', // The route to your feed.
     create(feed) {
       feed.options = {
         title: `${options.indexTitle} » ${options.baseTitle}`,
-        link: `${options.baseUrl}/feed.xml`,
+        link: `${options.baseUrl}/blog/rss.xml`,
         description: options.baseDescription,
       }
 
@@ -164,14 +134,39 @@ export const getFeeds = (posts, options) => {
         feed.addItem({
           title: post.title,
           id: post.slug,
+          date: new Date(post.updated_at || post.published_at),
           link: `${options.baseUrl}${post.route}`,
           description: post.description,
-          content: converter.makeHtml(post.raw),
+          content: post.description,
         })
       })
     },
     cacheTime: 1000 * 60 * 15,
     type: 'rss2',
+  })
+
+  output.push({
+    path: '/blog/feed.json', // The route to your feed.
+    create(feed) {
+      feed.options = {
+        title: `${options.indexTitle} » ${options.baseTitle}`,
+        link: `${options.baseUrl}/blog/feed.json`,
+        description: options.baseDescription,
+      }
+
+      posts.slice(0, 5).forEach((post) => {
+        feed.addItem({
+          title: post.title,
+          id: post.slug,
+          date: new Date(post.updated_at || post.published_at),
+          link: `${options.baseUrl}${post.route}`,
+          description: post.description,
+          content: post.description,
+        })
+      })
+    },
+    cacheTime: 1000 * 60 * 15,
+    type: 'json1',
   })
 
   return output

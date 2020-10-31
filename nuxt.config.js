@@ -1,6 +1,7 @@
 import config from './modules/config'
 import { getPostRoute, getPostRoutes, getCategory } from './modules/contenter'
-import { locales } from './lang.config.js'
+import { getFeeds } from './modules/feeds'
+import i18n from './i18n.config.js'
 
 const isPreviewBuild = () => {
   return process.env.PULL_REQUEST && process.env.HEAD.startsWith('cms/')
@@ -70,36 +71,28 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-    'nuxt-i18n',
-    '@nuxt/content',
-    // "@nuxtjs/feed"
-  ],
+  modules: ['nuxt-i18n', '@nuxt/content', '@nuxtjs/feed'],
 
-  i18n: {
-    strategy: 'prefix_except_default',
-    locales,
-    lazy: true,
-    langDir: 'lang/',
-    defaultLocale: 'en',
-    vueI18n: {
-      fallbackLocale: 'en',
-    },
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      onlyOnRoot: true,
-    },
+  i18n,
+
+  feed: async () => {
+    const { $content } = require('@nuxt/content')
+    const posts = await $content('blog/en')
+      .only([
+        'author',
+        'category',
+        'title',
+        'slug',
+        'description',
+        'route',
+        'published_at',
+        'updated_at',
+      ])
+      .sortBy('published_at', 'desc')
+      .fetch()
+
+    return getFeeds(posts)
   },
-
-  // feed: async () => {
-  //   const { $content } = require('@nuxt/content')
-  //   const posts = await $content('blog/en')
-  //   .only(['author', 'category', 'title', 'slug', 'description', 'route', 'raw'])
-  //   .fetch()
-
-  //   return getFeeds(posts)
-  // },
 
   hooks: {
     'content:file:beforeInsert': (document) => {
