@@ -5,14 +5,15 @@ description: We’re going to build an interactive voice response menu, going
   receive inbound calls and capture user input entered via the keypad. By
   following this tutorial you will end up with a simple application that can be
   extended to include more complex, […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/04/ivr-menu-node-express.png
+thumbnail: /content/blog/build-interactive-voice-response-node-express-javascript-dr/ivr-menu-node-express.png
 author: laka
 published: true
-published_at: 2019-04-08T08:00:29
+published_at: 2019-04-08T08:00:29.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
 redirect: https://www.nexmo.com/blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
 ---
+
 Content to be migrated...

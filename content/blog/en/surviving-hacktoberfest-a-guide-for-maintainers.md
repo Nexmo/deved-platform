@@ -5,10 +5,10 @@ description: Happy Hacktoberfest to one and all! Contributors, I hope you are
   can make a difference. Maintainers, today’s post is just for you. Hopefully,
   the rules changes mean a better quality of pull requests for your projects,
   but it can still be a lot […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/10/Blog_Survival-Guide_Hacktoberfest_1200x600.png
+thumbnail: /content/blog/surviving-hacktoberfest-a-guide-for-maintainers/Blog_Survival-Guide_Hacktoberfest_1200x600.png
 author: lornajane
 published: true
-published_at: 2020-10-13T13:28:53
+published_at: 2020-10-13T13:28:53.000Z
 comments: true
 category: tutorial
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/10/13/surviving-hacktoberfest-a-guide-for-maintainers
 redirect: https://www.nexmo.com/blog/2020/10/13/surviving-hacktoberfest-a-guide-for-maintainers
 ---
+
 Content to be migrated...

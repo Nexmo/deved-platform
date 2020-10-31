@@ -5,14 +5,15 @@ description: Building a Slack-like Vue.js Chat Application Have you ever wanted
   make it generally? In this post, you get to build a clone of everyone’s
   favourite chat software, Slack. Using Vue.js, everyone’s favourite framework.
   And, Vonage Conversation API, everyone’s favourite […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/04/Blog_Slack-Clone_1200x600.png
+thumbnail: /content/blog/building-a-slack-clone-using-vue-js-part-1-dr/Blog_Slack-Clone_1200x600.png
 author: lukeoliff
 published: true
-published_at: 2020-04-16T13:25:04
+published_at: 2020-04-16T13:25:04.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
 redirect: https://www.nexmo.com/blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
 ---
+
 Content to be migrated...

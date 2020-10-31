@@ -5,14 +5,15 @@ description: Previously in this series we covered what Web Components are and
   publishing it, and use it on a web page. What will we be making? A keypad
   component using Material Design Web Components. Building a Web Component made
   up of Web […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/08/Blog_Open_WC_1200x600.png
+thumbnail: /content/blog/creating-a-web-component-with-open-wc/Blog_Open_WC_1200x600.png
 author: dwanehemmings
 published: true
-published_at: 2020-08-13T07:19:50
+published_at: 2020-08-13T07:19:50.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/08/13/creating-a-web-component-with-open-wc
 redirect: https://www.nexmo.com/blog/2020/08/13/creating-a-web-component-with-open-wc
 ---
+
 Content to be migrated...

@@ -3,10 +3,10 @@ title: AWS Cognito Verify with PHP
 description: Use AWS Cognito and Vonage API to create a user management system
   allowing a user to register, update their credentials, validate their
   identity, and login.
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/07/Social_Amazon-Cognito_Verify_1200x627.png
+thumbnail: /content/blog/aws-cognito-verify-with-php/Social_Amazon-Cognito_Verify_1200x627.png
 author: adamculp
 published: true
-published_at: 2020-07-10T13:38:52
+published_at: 2020-07-10T13:38:52.000Z
 canonical: ""
 comments: true
 updated_at: 2020-10-26T14:43:39.855Z
@@ -16,6 +16,7 @@ tags:
   - php
 redirect: ""
 ---
+
 Doing user management the right way is hard work. Allowing users to register themselves, and verifying their identity can be difficult. However, using [Amazon Cognito](https://aws.amazon.com/cognito/) and the [Vonage Verify API](https://www.vonage.com/communications-apis/verify/) help make it a bit easier by doing the heavy lifting.
 
 With a few web forms, [Vonage SDK](https://github.com/Nexmo/nexmo-php), and [AWS SDK](https://aws.amazon.com/sdk-for-php/), you can create a standard user management system allowing a user to register, update their credentials, validate their identity, and login. You'll use the code from the [nexmo-community/verify-aws-cognito-php](https://github.com/nexmo-community/verify-aws-cognito-php) code repo.

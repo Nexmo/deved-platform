@@ -1,12 +1,12 @@
 ---
 title: Aggiungi l’Autenticazione Forte PSD2 alla Tua App
-description: Scopri come aggiungere alla tua app l'autenticazione dei 
-  pagamenti online "Secure Customer Authentication", noto anche come 
-  PSD2, con Vonage Verify API
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/06/Blog_Strong-Customer-Authentication_1200x600-2.png
+description: Scopri come aggiungere alla tua app l'autenticazione dei pagamenti
+  online "Secure Customer Authentication", noto anche come PSD2, con Vonage
+  Verify API
+thumbnail: /content/blog/add-strong-psd2-authentication-to-your-application/Blog_Strong-Customer-Authentication_1200x600-2.png
 author: lornajane
 published: true
-published_at: 2020-06-23T07:53:47
+published_at: 2020-06-23T07:53:47.000Z
 comments: true
 category: tutorial
 old_categories:

@@ -5,14 +5,15 @@ description: For years, making and receiving phone calls in your code was tough
   your laptop to serve as a gateway!). Fortunately, it’s not nearly as hard
   today thanks to services such as Vonage (Formerly Nexmo). Voice calls are an
   excellent communication method […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/10/Blog_Text-to-Speech_PHP_1200x600.png
+thumbnail: /content/blog/text-to-speech-voice-calls-with-php-dr/Blog_Text-to-Speech_PHP_1200x600.png
 author: mheap
 published: true
-published_at: 2017-10-20T13:09:38
+published_at: 2017-10-20T13:09:38.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2017/10/20/text-to-speech-voice-calls-with-php-dr
 redirect: https://www.nexmo.com/blog/2017/10/20/text-to-speech-voice-calls-with-php-dr
 ---
+
 Content to be migrated...

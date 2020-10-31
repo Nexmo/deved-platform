@@ -5,14 +5,15 @@ description: The Messages API Sandbox is a new way of developing and testing any
   our Messages API. The Sandbox allows you to link your own WhatsApp, Viber, or
   Facebook Messenger accounts so you can start sending and receiving test
   messages on your own devices […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/04/E_Messaging-API-Sandbox_1200x600.png
+thumbnail: /content/blog/introducing-the-messages-api-sandbox/E_Messaging-API-Sandbox_1200x600.png
 author: martyn
 published: true
-published_at: 2020-04-08T15:50:34
+published_at: 2020-04-08T15:50:34.000Z
 comments: true
 category: announcement
 tags: []
 canonical: https://www.nexmo.com/blog/2020/04/08/introducing-the-messages-api-sandbox
 redirect: https://www.nexmo.com/blog/2020/04/08/introducing-the-messages-api-sandbox
 ---
+
 Content to be migrated...

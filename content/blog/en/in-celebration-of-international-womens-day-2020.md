@@ -5,14 +5,15 @@ description: To celebrate International Women’s Day this year, we wanted to do
   support from our colleagues to do so. But this year, we really wanted to make
   a measured effort to celebrate the amazing journeys, stories and voices of our
   colleagues […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/03/E_International-Womens-Day_1200x600.png
+thumbnail: /content/blog/in-celebration-of-international-womens-day-2020/E_International-Womens-Day_1200x600.png
 author: lukeoliff
 published: true
-published_at: 2020-03-10T13:05:12
+published_at: 2020-03-10T13:05:12.000Z
 comments: true
 category: community
 tags: []
 canonical: https://www.nexmo.com/blog/2020/03/10/in-celebration-of-international-womens-day-2020
 redirect: https://www.nexmo.com/blog/2020/03/10/in-celebration-of-international-womens-day-2020
 ---
+
 Content to be migrated...

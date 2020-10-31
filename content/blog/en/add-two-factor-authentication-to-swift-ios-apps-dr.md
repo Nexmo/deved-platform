@@ -5,10 +5,10 @@ description: Two-factor authentication (2FA) adds an extra layer of security for
   of authenticating with something you know, are, or have, we will focus
   exclusively on the last. In this tutorial, we will cover how to implement
   two-factor authentication for a user’s phone number with Nexmo’s […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/05/nexmo-2fa_ios_swift.jpg
+thumbnail: /content/blog/add-two-factor-authentication-to-swift-ios-apps-dr/nexmo-2fa_ios_swift.jpg
 author: eric_giannini
 published: true
-published_at: 2018-05-10T16:11:17
+published_at: 2018-05-10T16:11:17.000Z
 comments: true
 category: tutorial
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-swift-ios-apps-dr
 redirect: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-swift-ios-apps-dr
 ---
+
 Content to be migrated...

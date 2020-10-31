@@ -5,14 +5,15 @@ description: Earlier in this series we showed you how to send an SMS. In this
   To receive inbound SMS, you need to create a publicly-accessible webhook and
   configure your Nexmo account to use it. We’ll cover that process in this post
   and […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/05/Receive-an-SMS-with-Python.png
+thumbnail: /content/blog/receive-an-sms-with-python-dr/Receive-an-SMS-with-Python.png
 author: marklewin
 published: true
-published_at: 2019-05-31T09:57:29
+published_at: 2019-05-31T09:57:29.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/05/31/receive-an-sms-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/05/31/receive-an-sms-with-python-dr
 ---
+
 Content to be migrated...

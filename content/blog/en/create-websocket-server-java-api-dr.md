@@ -3,10 +3,10 @@ title: Creating a WebSocket Server with the Java API for WebSockets
 description: In this tutorial, you will learn how to create a WebSocket server
   using the Java API for WebSockets and the Spark Framework, which can receive
   both binary and text messages.
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/10/websocket-server-java-api.png
+thumbnail: /content/blog/create-websocket-server-java-api-dr/websocket-server-java-api.png
 author: cr0wst
 published: true
-published_at: 2018-10-22T14:54:57
+published_at: 2018-10-22T14:54:57.000Z
 updated_at: 2020-10-27T08:53:09.102Z
 category: tutorial
 tags: []
@@ -15,6 +15,7 @@ canonical: ""
 outdated: false
 comments: true
 ---
+
 [WebSocket](https://en.wikipedia.org/wiki/WebSocket) is a protocol which enables communication between the server and the browser. It has an advantage over RESTful HTTP because communications are both bi-directional and real-time. This allows for the server to notify the client at any time instead of the client polling on a regular interval for updates.
 
 In this series of posts, I'm going to show you three different ways to create a WebSocket server in Java using [Spring Boot](http://spring.io/projects/spring-boot), the [Spark Framework](http://sparkjava.com/),  and the [Java API for WebSockets](https://www.oracle.com/technetwork/articles/java/jsr356-1937161.html).

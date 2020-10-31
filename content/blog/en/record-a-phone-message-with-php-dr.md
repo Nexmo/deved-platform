@@ -5,14 +5,15 @@ description: Recording a phone message is the key first step in building a fully
   required to set up a phone number with the ability to record an incoming call
   using PHP and the Nexmo command line interface. The code for this tutorial can
   be […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/08/record-a-phone-message.png
+thumbnail: /content/blog/record-a-phone-message-with-php-dr/record-a-phone-message.png
 author: martyn
 published: true
-published_at: 2018-08-14T22:49:18
+published_at: 2018-08-14T22:49:18.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/08/14/record-a-phone-message-with-php-dr
 redirect: https://www.nexmo.com/blog/2018/08/14/record-a-phone-message-with-php-dr
 ---
+
 Content to be migrated...

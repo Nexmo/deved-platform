@@ -5,14 +5,15 @@ description: "It never ceases to amaze me what builders can create when given
   science students from Princeton who won the Vonage-sponsored “Best Use of a
   Vonage/Nexmo API” prize at the Fall 2017 PennApps collegiate hackathon. Their
   hack (Lyff), a great combination of innovation […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/01/Team-Lyff.png
+thumbnail: /content/blog/princeton-coders-lyft-nexmo-apis/Team-Lyff.png
 author: glenkunene
 published: true
-published_at: 2018-01-11T14:07:07
+published_at: 2018-01-11T14:07:07.000Z
 comments: true
 category: event
 tags: []
 canonical: https://www.nexmo.com/blog/2018/01/11/princeton-coders-lyft-nexmo-apis
 redirect: https://www.nexmo.com/blog/2018/01/11/princeton-coders-lyft-nexmo-apis
 ---
+
 Content to be migrated...

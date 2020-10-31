@@ -5,14 +5,15 @@ description: Is there anything better than working on a project with your
   all meet up, and instead being able to collaborate online? Of course, in
   moving online you trade the overhead of conflicting real world schedules for
   that of having to find […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/06/Group-Authentication_1200x675-1.jpg
+thumbnail: /content/blog/trusted-group-auth-with-sms-and-express-dr/Group-Authentication_1200x675-1.jpg
 author: garann-means
 published: true
-published_at: 2019-06-18T08:00:22
+published_at: 2019-06-18T08:00:22.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/06/18/trusted-group-auth-with-sms-and-express-dr
 redirect: https://www.nexmo.com/blog/2019/06/18/trusted-group-auth-with-sms-and-express-dr
 ---
+
 Content to be migrated...

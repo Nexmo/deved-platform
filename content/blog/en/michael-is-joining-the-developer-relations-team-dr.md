@@ -5,10 +5,10 @@ description: Hello! I’m Michael and I’m the Nexmo DevRel team’s latest rec
   a developer working on all kinds of things, from point of sale systems for
   Subway to processing every like, comment, wall post and share on Facebook in
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/06/board-games.jpg
+thumbnail: /content/blog/michael-is-joining-the-developer-relations-team-dr/board-games.jpg
 author: mheap
 published: true
-published_at: 2017-07-07T11:44:14
+published_at: 2017-07-07T11:44:14.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2017/07/07/michael-is-joining-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2017/07/07/michael-is-joining-the-developer-relations-team-dr
 ---
+
 Content to be migrated...

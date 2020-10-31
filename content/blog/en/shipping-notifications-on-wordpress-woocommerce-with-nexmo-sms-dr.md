@@ -6,14 +6,15 @@ description: Introduction The customer experience following a purchase plays a
   These timely order status notifications keep customers happy, and they reduce
   the burden of back and forth conversations with customer service. In this
   tutorial, […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/01/E_Shipping-Notifications_1200x600.png
+thumbnail: /content/blog/shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr/E_Shipping-Notifications_1200x600.png
 author: douglaskendyson
 published: true
-published_at: 2020-01-11T13:03:13
+published_at: 2020-01-11T13:03:13.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/01/11/shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr
 redirect: https://www.nexmo.com/blog/2020/01/11/shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr
 ---
+
 Content to be migrated...

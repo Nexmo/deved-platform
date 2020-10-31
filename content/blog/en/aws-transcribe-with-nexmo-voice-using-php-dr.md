@@ -6,10 +6,10 @@ description: Use cases for voice transcription are becoming more and more
   message contents, speech-to-text capabilities are becoming essential for a
   wide variety of applications. In this tutorial, we’ll use a Nexmo Voice number
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/02/E_Voice-Transcription-PHP_1200x600.png
+thumbnail: /content/blog/aws-transcribe-with-nexmo-voice-using-php-dr/E_Voice-Transcription-PHP_1200x600.png
 author: adamculp
 published: true
-published_at: 2020-02-14T18:13:59
+published_at: 2020-02-14T18:13:59.000Z
 comments: true
 category: tutorial
 tags:
@@ -19,4 +19,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr
 redirect: https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr
 ---
+
 Content to be migrated...

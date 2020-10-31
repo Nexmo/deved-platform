@@ -5,10 +5,10 @@ description: Hi, I’m Alex Lakatos, but most people around the world call me
   Developer Relations team at Nexmo. And I’m super excited about that! Before
   joining I’ve done all things JavaScript for half a dozen companies around
   Europe, but eventually figured out I liked going to […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/06/alex-lakatos-featured.png
+thumbnail: /content/blog/minting-new-javascript-developer-advocate-alex-lakatos-dr/alex-lakatos-featured.png
 author: laka
 published: true
-published_at: 2017-06-05T10:21:16
+published_at: 2017-06-05T10:21:16.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
 redirect: https://www.nexmo.com/blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
 ---
+
 Content to be migrated...

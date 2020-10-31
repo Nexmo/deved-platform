@@ -5,10 +5,10 @@ description: In this tutorial, we’ll be looking at how to build a simple
   converting any given number of units in a base currency to the equivalent in
   the preferred currency. The bot will be built using Vonage’s Messages API
   along with Express, the […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/09/Blog_Node-js_WhatsApp_1200x600.png
+thumbnail: /content/blog/build-a-whatsapp-currency-conversion-bot-with-node-js/Blog_Node-js_WhatsApp_1200x600.png
 author: dotun
 published: true
-published_at: 2020-09-09T13:26:57
+published_at: 2020-09-09T13:26:57.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
 redirect: https://www.nexmo.com/blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
 ---
+
 Content to be migrated...

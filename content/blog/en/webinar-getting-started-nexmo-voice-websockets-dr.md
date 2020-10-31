@@ -5,14 +5,15 @@ description: With the recent addition of WebSocket support, the Nexmo Voice AP
   now push voice beyond the standard phone system and VoIP. WebSockets opens the
   door to new voice integration use cases, such as server-to-server
   communication between the Nexmo Voice API and speech AI […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2016/09/vapi_banner2.jpg
+thumbnail: /content/blog/webinar-getting-started-nexmo-voice-websockets-dr/vapi_banner2.jpg
 author: glenkunene
 published: true
-published_at: 2017-02-15T14:00:09
+published_at: 2017-02-15T14:00:09.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
 redirect: https://www.nexmo.com/blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
 ---
+
 Content to be migrated...

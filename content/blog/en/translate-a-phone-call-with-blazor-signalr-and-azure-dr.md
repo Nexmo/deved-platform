@@ -5,10 +5,10 @@ description: Machine Learning models enable us to do all sorts of neat things.
   to translate a call received on a Vonage Number. We’ll then translate the
   caller’s speech and send all of the translated text to our frontend. Using a
   .NET Core hosted Blazor […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/10/Blog_Translate_Phone-Call_1200x600.png
+thumbnail: /content/blog/translate-a-phone-call-with-blazor-signalr-and-azure-dr/Blog_Translate_Phone-Call_1200x600.png
 author: stevelorello
 published: true
-published_at: 2020-10-27T07:16:58
+published_at: 2020-10-27T07:16:58.000Z
 comments: true
 category: tutorial
 old_categories:
@@ -24,4 +24,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/10/27/translate-a-phone-call-with-blazor-signalr-and-azure-dr
 redirect: https://www.nexmo.com/blog/2020/10/27/translate-a-phone-call-with-blazor-signalr-and-azure-dr
 ---
+
 Content to be migrated...

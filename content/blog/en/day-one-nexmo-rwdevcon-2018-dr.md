@@ -5,14 +5,15 @@ description: "Ray Wenderlich’s “RWDevCon 2018: The Tutorial Conference”, h
   year’s RWDevCon offered a set of interactive workshops, one dedicated to Swift
   Algorithms and another to Machine Learning with CoreML. Here’s a recap of our
   first day at […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/04/RWDevCon-2018-banner.png
+thumbnail: /content/blog/day-one-nexmo-rwdevcon-2018-dr/RWDevCon-2018-banner.png
 author: eric_giannini
 published: true
-published_at: 2018-04-06T19:39:48
+published_at: 2018-04-06T19:39:48.000Z
 comments: true
 category: event
 tags: []
 canonical: https://www.nexmo.com/blog/2018/04/06/day-one-nexmo-rwdevcon-2018-dr
 redirect: https://www.nexmo.com/blog/2018/04/06/day-one-nexmo-rwdevcon-2018-dr
 ---
+
 Content to be migrated...

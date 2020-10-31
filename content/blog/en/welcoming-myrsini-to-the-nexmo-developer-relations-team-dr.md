@@ -5,10 +5,10 @@ description: Hello! I’m Myrsini and I’ve recently joined the Developer Relat
   engage with developers around the world. My background spans from events to
   content and everything in between. I’ve worked for an NGO, a tech company, a
   startup, a communications agency […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/08/113.jpg
+thumbnail: /content/blog/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr/113.jpg
 author: myrsini
 published: true
-published_at: 2018-08-27T16:55:42
+published_at: 2018-08-27T16:55:42.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
 ---
+
 Content to be migrated...

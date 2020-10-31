@@ -5,14 +5,15 @@ description: Have you ever wondered how to build a home surveillance system?
   or to be your home security system? This tutorial will guide you through how
   to the introductory process to build one. In this tutorial, you get to build a
   small and cheap home […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/05/Blog_Home-Surveillance_Node-RaspberryPi_1200x600.png
+thumbnail: /content/blog/home-surveillance-system-with-node-and-a-raspberry-pi/Blog_Home-Surveillance_Node-RaspberryPi_1200x600.png
 author: greg-holmes
 published: true
-published_at: 2020-05-19T13:31:31
+published_at: 2020-05-19T13:31:31.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/05/19/home-surveillance-system-with-node-and-a-raspberry-pi
 redirect: https://www.nexmo.com/blog/2020/05/19/home-surveillance-system-with-node-and-a-raspberry-pi
 ---
+
 Content to be migrated...

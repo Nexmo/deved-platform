@@ -5,10 +5,10 @@ description: "Introduction The Daily Stand Up: a brief meeting many Agile
   individual’s progress and/or surface any blocking issues. Each day, everyone
   stands in a circle and answers the same three questions: What did I do
   yesterday? What will I do today? Do I see […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/09/Blog_Family-Stand-Up-App_1200x600.png
+thumbnail: /content/blog/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr/Blog_Family-Stand-Up-App_1200x600.png
 author: laurenlee
 published: true
-published_at: 2019-09-18T19:23:25
+published_at: 2019-09-18T19:23:25.000Z
 comments: true
 category: tutorial
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
 redirect: https://www.nexmo.com/blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
 ---
+
 Content to be migrated...

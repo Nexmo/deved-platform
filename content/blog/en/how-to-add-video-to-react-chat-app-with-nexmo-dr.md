@@ -6,14 +6,15 @@ description: At Nexmo, we’re really excited about the ability to create custom
   video all within one experience but also maintains the context of those
   conversations to deliver a superior customer experience. The possibilities of
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/10/Elevate_AddVideotoChat-1.png
+thumbnail: /content/blog/how-to-add-video-to-react-chat-app-with-nexmo-dr/Elevate_AddVideotoChat-1.png
 author: laurenlee
 published: true
-published_at: 2019-10-04T08:00:39
+published_at: 2019-10-04T08:00:39.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/10/04/how-to-add-video-to-react-chat-app-with-nexmo-dr
 redirect: https://www.nexmo.com/blog/2019/10/04/how-to-add-video-to-react-chat-app-with-nexmo-dr
 ---
+
 Content to be migrated...

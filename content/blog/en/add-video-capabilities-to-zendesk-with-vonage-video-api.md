@@ -5,10 +5,10 @@ description: In this tutorial, we’re going to add video, screen sharing and
   offer a richer customer experience. You may be thinking that this is not for
   you as you don’t use Zendesk, but, in fact, there are many other ticketing
   systems where you […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/09/Blog_Zendesk_VideoAPI_1200x600.png
+thumbnail: /content/blog/add-video-capabilities-to-zendesk-with-vonage-video-api/Blog_Zendesk_VideoAPI_1200x600.png
 author: javiermolinasanz-svetlananazareno
 published: true
-published_at: 2020-09-08T13:27:09
+published_at: 2020-09-08T13:27:09.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api
 redirect: https://www.nexmo.com/blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api
 ---
+
 Content to be migrated...

@@ -5,14 +5,15 @@ description: The Nexmo Voice API offers great flexibility in the call scenarios
   interactions with the API. For some scenarios, you may want to have a single
   API call from your business logic that invokes a series of interactions with
   the Voice […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/02/ttsblog.jpeg
+thumbnail: /content/blog/text-speech-prompt-calls-using-python-aws-lambda-dr/ttsblog.jpeg
 author: sammachin
 published: true
-published_at: 2018-02-16T14:14:06
+published_at: 2018-02-16T14:14:06.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
 redirect: https://www.nexmo.com/blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
 ---
+
 Content to be migrated...

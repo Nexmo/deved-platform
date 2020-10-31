@@ -3,10 +3,10 @@ title: How to Send SMS Messages with ASP.NET MVC Framework
 description: The Vonage SMS API enables users to send and receive text messages.
   This tutorial will show you how to send an SMS with ASP.NET Core MVC and the
   Vonage API.
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/03/sms.png
+thumbnail: /content/blog/send-sms-messages-asp-net-mvc-framework-dr/sms.png
 author: sidharth-sharma
 published: true
-published_at: 2017-03-23T14:00:21
+published_at: 2017-03-23T14:00:21.000Z
 updated_at: 2020-10-27T15:23:54.148Z
 category: tutorial
 canonical: ""
@@ -18,6 +18,7 @@ tags:
 redirect: ""
 outdated_url: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
 ---
+
 The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api) lets you send and receive text messages around the world. This tutorial shows you how to use the [Nexmo C# Client Library](https://github.com/Nexmo/nexmo-dotnet) to send SMS messages from your ASP.NET MVC web app.
 
 [View the source code on GitHub](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/488a97c576c882aeef8a7cf327bade27750f4856/NexmoDotNetQuickStarts/Controllers/SMSController.cs#L20-L38)

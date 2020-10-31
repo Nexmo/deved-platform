@@ -2,10 +2,10 @@
 title: Creating a WebSocket Server with Spring Boot
 description: In this tutorial, you will learn how to create a WebSocket server
   using  using Spring Boot which can receive both binary and text messages.
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/10/websocket-server-spring-boot.png
+thumbnail: /content/blog/create-websocket-server-spring-boot-dr/websocket-server-spring-boot.png
 author: cr0wst
 published: true
-published_at: 2018-10-08T15:19:15
+published_at: 2018-10-08T15:19:15.000Z
 canonical: ""
 comments: true
 updated_at: 2020-10-27T13:58:34.137Z
@@ -15,6 +15,7 @@ tags:
   - WebSockets
 redirect: ""
 ---
+
 [WebSocket](https://en.wikipedia.org/wiki/WebSocket) is a protocol which enables communication between the server and the browser. It has an advantage over RESTful HTTP because communications are both bi-directional and real-time. This allows for the server to notify the client at any time instead of the client polling on a regular interval for updates.
 
 In this series of posts, I'm going to show you three different ways to create a WebSocket server in Java using [Spring Boot](http://spring.io/projects/spring-boot), the [Spark Framework](http://sparkjava.com/),  and the [Java API for WebSockets](https://www.oracle.com/technetwork/articles/java/jsr356-1937161.html).

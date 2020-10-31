@@ -6,14 +6,15 @@ description: As the hackings of high-profile companies, such as Apple or
   turning to SMS-based authentication and number verification in order to secure
   their platforms and protect their users. Two-factor authentication, or 2FA,
   works by combining multiple […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2015/03/Manyellingatcomputer-1.jpg
+thumbnail: /content/blog/how-to-build-sms-2fa-that-wont-scare-away-your-users/Manyellingatcomputer-1.jpg
 author: hugh-hopkins
 published: true
-published_at: 2015-03-06T03:24:34
+published_at: 2015-03-06T03:24:34.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users
 redirect: https://www.nexmo.com/blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users
 ---
+
 Content to be migrated...

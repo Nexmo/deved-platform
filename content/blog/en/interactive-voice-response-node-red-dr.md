@@ -5,14 +5,15 @@ description: An IVR or Interactive Voice Response is a menu of options presented
   send DTMF (Dual Tone Multi-Frequency) signals. Each option on the IVR can
   direct the call to a different path, for example forwarding the call to a
   specific destination, […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/01/ivr-featured-image.png
+thumbnail: /content/blog/interactive-voice-response-node-red-dr/ivr-featured-image.png
 author: julia
 published: true
-published_at: 2020-01-08T08:01:04
+published_at: 2020-01-08T08:01:04.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/01/08/interactive-voice-response-node-red-dr
 redirect: https://www.nexmo.com/blog/2020/01/08/interactive-voice-response-node-red-dr
 ---
+
 Content to be migrated...

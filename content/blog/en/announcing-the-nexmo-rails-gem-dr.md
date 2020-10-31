@@ -5,10 +5,10 @@ description: Back at RailsConf 2016, we adopted the community-driven Nexmo Ruby
   developers have been able to integrate Nexmo into their applications with more
   ease. Whether you were looking to create a Voice app, send or receive an SMS,
   obtain insights on numbers around the […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/04/announcing-the-nexmo-rails-gem.png
+thumbnail: /content/blog/announcing-the-nexmo-rails-gem-dr/announcing-the-nexmo-rails-gem.png
 author: ben-greenberg
 published: true
-published_at: 2019-04-30T11:00:40
+published_at: 2019-04-30T11:00:40.000Z
 comments: true
 category: release
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/04/30/announcing-the-nexmo-rails-gem-dr
 redirect: https://www.nexmo.com/blog/2019/04/30/announcing-the-nexmo-rails-gem-dr
 ---
+
 Content to be migrated...

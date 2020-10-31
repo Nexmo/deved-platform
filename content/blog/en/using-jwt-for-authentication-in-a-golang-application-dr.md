@@ -2,10 +2,10 @@
 title: Using JWT for Authentication in a Golang Application
 description: Learn how to create a Go application that creates and invalidates
   JWT tokens to bring authentication to protected routes.
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/03/Blog_JWT-Golang_Authentification_1200x600-2.png
+thumbnail: /content/blog/using-jwt-for-authentication-in-a-golang-application-dr/Blog_JWT-Golang_Authentification_1200x600-2.png
 author: victor-steven
 published: true
-published_at: 2020-03-13T13:00:25
+published_at: 2020-03-13T13:00:25.000Z
 spotlight: true
 comments: true
 updated_at: 2020-10-23T13:29:55.447Z
@@ -15,6 +15,7 @@ tags:
   - jwt
   - messages-api
 ---
+
 A JSON Web Token (JWT) is a compact and self-contained way for securely transmitting information between parties as a JSON object, and they are commonly used by developers in their APIs.
 
 JWTs are popular because:

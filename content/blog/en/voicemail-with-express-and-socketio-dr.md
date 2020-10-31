@@ -5,14 +5,15 @@ description: The most pleasant user experiences you’ve ever had have probably
   example, is fine except that before playing the message it reads every digit
   of the date, time, and phone number from whence it came as slowly as possible.
   Some people don’t like receiving […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/04/custom-voicemail-nodejs.png
+thumbnail: /content/blog/voicemail-with-express-and-socketio-dr/custom-voicemail-nodejs.png
 author: garann-means
 published: true
-published_at: 2019-04-02T09:00:11
+published_at: 2019-04-02T09:00:11.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/04/02/voicemail-with-express-and-socketio-dr
 redirect: https://www.nexmo.com/blog/2019/04/02/voicemail-with-express-and-socketio-dr
 ---
+
 Content to be migrated...

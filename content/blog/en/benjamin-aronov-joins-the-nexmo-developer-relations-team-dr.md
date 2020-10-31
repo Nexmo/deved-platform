@@ -5,10 +5,10 @@ description: Hello! שלום! Здравствуйте! I’m Benjamin Aronov, a
   🥑Ben Greenberg meetup at Vonage’s stunning Tel Aviv office, I knew that this
   was exactly where I wanted to work. From the 39th floor, not only are you
   surrounded by Tel Aviv’s skyline, shimmering […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/02/st-louis-1.jpg
+thumbnail: /content/blog/benjamin-aronov-joins-the-nexmo-developer-relations-team-dr/st-louis-1.jpg
 author: benjamin-aronov
 published: true
-published_at: 2020-02-21T15:57:23
+published_at: 2020-02-21T15:57:23.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/02/21/benjamin-aronov-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2020/02/21/benjamin-aronov-joins-the-nexmo-developer-relations-team-dr
 ---
+
 Content to be migrated...

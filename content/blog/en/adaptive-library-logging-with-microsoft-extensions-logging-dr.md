@@ -5,10 +5,10 @@ description: "How I Learned to Stop Worrying and Love to Log In my career, I’v
   project I saw a different type of logger, and typically all of them used more
   than one logger! Usually, the story goes something like this: “In the early
   […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/02/E_Love-the-Log_1200x600.png
+thumbnail: /content/blog/adaptive-library-logging-with-microsoft-extensions-logging-dr/E_Love-the-Log_1200x600.png
 author: stevelorello
 published: true
-published_at: 2020-02-10T13:47:01
+published_at: 2020-02-10T13:47:01.000Z
 comments: true
 category: tutorial
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/02/10/adaptive-library-logging-with-microsoft-extensions-logging-dr
 redirect: https://www.nexmo.com/blog/2020/02/10/adaptive-library-logging-with-microsoft-extensions-logging-dr
 ---
+
 Content to be migrated...

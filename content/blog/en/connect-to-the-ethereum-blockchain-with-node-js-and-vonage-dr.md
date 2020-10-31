@@ -5,14 +5,15 @@ description: Blockchain is a commonly used term that has many innovations
   where each block is a piece of information stored in a public database, the
   chain. One such blockchain is Ethereum, which takes the concept of a
   blockchain to a whole new level. Ethereum […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/04/Blog_Blockchain-Event_1200x600.png
+thumbnail: /content/blog/connect-to-the-ethereum-blockchain-with-node-js-and-vonage-dr/Blog_Blockchain-Event_1200x600.png
 author: calebikhuohon
 published: true
-published_at: 2020-04-24T13:29:51
+published_at: 2020-04-24T13:29:51.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/04/24/connect-to-the-ethereum-blockchain-with-node-js-and-vonage-dr
 redirect: https://www.nexmo.com/blog/2020/04/24/connect-to-the-ethereum-blockchain-with-node-js-and-vonage-dr
 ---
+
 Content to be migrated...

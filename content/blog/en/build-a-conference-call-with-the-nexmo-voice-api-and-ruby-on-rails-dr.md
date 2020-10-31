@@ -5,10 +5,10 @@ description: In this walkthrough, we are going to create a Ruby on Rails
   Nexmo documentation, a conference call is also referred to as a conversation,
   and we will be using these terms interchangeably. You can find the full
   working code for this sample on GitHub. […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/05/ruby-conference-call-1.png
+thumbnail: /content/blog/build-a-conference-call-with-the-nexmo-voice-api-and-ruby-on-rails-dr/ruby-conference-call-1.png
 author: ben-greenberg
 published: true
-published_at: 2019-05-10T07:30:09
+published_at: 2019-05-10T07:30:09.000Z
 comments: true
 category: tutorial
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/05/10/build-a-conference-call-with-the-nexmo-voice-api-and-ruby-on-rails-dr
 redirect: https://www.nexmo.com/blog/2019/05/10/build-a-conference-call-with-the-nexmo-voice-api-and-ruby-on-rails-dr
 ---
+
 Content to be migrated...

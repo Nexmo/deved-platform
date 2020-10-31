@@ -5,14 +5,15 @@ description: This series of tutorials will explore the Vonage Video API
   very robust and highly customizable, and in each post, we’ll show how to
   implement a specific feature using the API. This time we will look at how to
   add screen-sharing to […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/04/Blog_Share-Your-Screen_1200x600.png
+thumbnail: /content/blog/share-your-screen-with-the-vonage-video-api-dr/Blog_Share-Your-Screen_1200x600.png
 author: huijing
 published: true
-published_at: 2020-04-29T13:35:20
+published_at: 2020-04-29T13:35:20.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/04/29/share-your-screen-with-the-vonage-video-api-dr
 redirect: https://www.nexmo.com/blog/2020/04/29/share-your-screen-with-the-vonage-video-api-dr
 ---
+
 Content to be migrated...

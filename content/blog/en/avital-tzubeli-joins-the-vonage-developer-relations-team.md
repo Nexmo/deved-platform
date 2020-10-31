@@ -5,10 +5,10 @@ description: My story at Vonage begins with hummus, as most good stories do. It
   Francisco for DevRelCon SF; I was jet-lagged, painfully tired, and very
   nervous for my talk the next day, but I couldn’t surrender to my hotel room
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/07/Blog_Avital-Tzubeli_1200x600.png
+thumbnail: /content/blog/avital-tzubeli-joins-the-vonage-developer-relations-team/Blog_Avital-Tzubeli_1200x600.png
 author: avital-tzubelivonage-com
 published: true
-published_at: 2020-07-24T13:29:55
+published_at: 2020-07-24T13:29:55.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/07/24/avital-tzubeli-joins-the-vonage-developer-relations-team
 redirect: https://www.nexmo.com/blog/2020/07/24/avital-tzubeli-joins-the-vonage-developer-relations-team
 ---
+
 Content to be migrated...
