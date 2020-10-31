@@ -50,32 +50,40 @@ module.exports = {
       )
     }
 
-    // Walk publish directory for files to parse
-    const newManifest = await walk(PUBLISH_DIR, exclude)
+    if (process.env.CONTEXT === 'production') {
+      // Walk publish directory for files to parse
+      const newManifest = await walk(PUBLISH_DIR, exclude)
 
-    // Parse all files for their indexable content
-    const newIndex = []
-    await Promise.all(
-      newManifest.map(async (htmlFilePath) => {
-        const htmlFileContent = await readFile(htmlFilePath, 'utf8')
-        newIndex.push(
-          await parse(htmlFileContent, htmlFilePath, {
-            PUBLISH_DIR,
-            textLength,
-            stopwords,
-          })
-        )
-      })
-    )
+      // Parse all files for their indexable content
+      const newIndex = []
+      await Promise.all(
+        newManifest.map(async (htmlFilePath) => {
+          const htmlFileContent = await readFile(htmlFilePath, 'utf8')
+          newIndex.push(
+            await parse(htmlFileContent, htmlFilePath, {
+              PUBLISH_DIR,
+              textLength,
+              stopwords,
+            })
+          )
+        })
+      )
 
-    // Export content to Algolia
-    try {
-      const client = algoliasearch(algoliaAppId, algoliaAdminKey)
-      const index = client.initIndex(algoliaIndex)
-      await exporter(index, newIndex)
-    } catch (error) {
-      // Not exporting to search index doesn't fail the entire build
-      build.failPlugin('Export to Algolia failed', { error })
+      // Export content to Algolia
+      try {
+        const client = algoliasearch(algoliaAppId, algoliaAdminKey)
+        const index = client.initIndex(algoliaIndex)
+        await exporter(index, newIndex)
+      } catch (error) {
+        // Not exporting to search index doesn't fail the entire build
+        build.failPlugin('Export to Algolia failed', { error })
+      }
+    } else {
+      console.info(
+        `${chalk.green('@netlify/plugin-algolia-index:')} export skipped for '${
+          process.env.CONTEXT
+        }'`
+      )
     }
 
     console.info(
