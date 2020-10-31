@@ -3,12 +3,6 @@ import { getPostRoute, getPostRoutes, getCategory } from './modules/contenter'
 import { getFeeds } from './modules/feeds'
 import i18n from './i18n.config.js'
 
-console.log(
-  process.env.URL,
-  process.env.DEPLOY_URL,
-  process.env.DEPLOY_PRIME_URL
-)
-
 const isPreviewBuild = () => {
   return process.env.PULL_REQUEST && process.env.HEAD.startsWith('cms/')
 }

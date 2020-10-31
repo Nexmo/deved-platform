@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const config = {
   builtAt: new Date().toISOString(),
-  baseUrl: process.env.URL || 'http://localhost:3000',
+  baseUrl: process.env.DEPLOY_PRIME_URL || 'http://localhost:3000',
   indexTitle: 'We ♥ content',
   baseTitle: 'Developer content from Vonage',
   baseDescription:
