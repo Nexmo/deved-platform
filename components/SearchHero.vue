@@ -9,115 +9,50 @@
           class="Logo__inline"
         />
       </h3>
-      <client-only v-if="algoliaIndex">
-        <AisInstantSearch
-          :index-name="algoliaIndex"
-          :search-client="searchClient"
-          :class-names="{
-            'ais-InstantSearch': 'Blog-hero__search-wrapper',
-          }"
-        >
-          <AisSearchBox
-            :class-names="{
-              'ais-SearchBox': 'Blog-hero__search-box-wrapper',
-            }"
-          >
-            <div
-              slot-scope="{ currentRefinement, isSearchStalled, refine }"
-              class="Vlt-form__element Vlt-form__element--big Blog-hero__search"
-            >
-              <div class="Vlt-input">
-                <form method="GET" action="/search" @submit="checkForm">
-                  <input
-                    id="query"
-                    ref="query"
-                    type="search"
-                    :placeholder="$t('component_search_hero_placeholder')"
-                    name="query"
-                    :value="currentRefinement"
-                    @input="refine($event.currentTarget.value)"
-                  />
-                  <label for="query">{{
-                    $t('component_search_hero_label')
-                  }}</label>
-                </form>
-              </div>
-              <small v-if="isSearchStalled" class="Vlt-form__element__hint">{{
-                $t('component_search_hero_stalled_hint')
-              }}</small>
+      <form class="Blog-form__block" @submit.prevent="search()">
+        <div class="Vlt-form__element Vlt-form__element--big">
+          <div class="Vlt-composite">
+            <div class="Vlt-composite__wrapper Vlt-input">
+              <input
+                id="search-input"
+                v-model="query"
+                type="text"
+                :placeholder="$t('component_search_hero_placeholder')"
+              />
+              <label for="search-input">{{
+                $t('component_search_hero_label')
+              }}</label>
             </div>
-          </AisSearchBox>
-          <AisStateResults>
-            <template slot-scope="{ hits }">
-              <AisHits
-                v-if="hits.length > 0"
-                :class-names="{
-                  'ais-Hits': 'Hero-search__results',
-                  'ais-Hits-list': 'Hero-search__results-list',
-                  'ais-Hits-item': 'Hero-search__results-item',
-                }"
+            <div class="Vlt-composite__append">
+              <button
+                type="submit"
+                class="Vlt-btn Vlt-btn--white Vlt-btn--icon Vlt-btn--large"
               >
-                <template slot="item" slot-scope="{ item }">
-                  <SearchResult :item="item" />
-                </template>
-              </AisHits>
-              <div v-else />
-            </template>
-          </AisStateResults>
-        </AisInstantSearch>
-      </client-only>
-      <div v-else class="Vlt-center">
-        <h4>Search is disabled.</h4>
-        <p>
-          Please edit provide your <code>env</code> with an
-          <code>ALGOLIA_APPLICATION_ID</code>, <code>ALGOLIA_SEARCH_KEY</code>,
-          and <code>ALGOLIA_INDEX</code>.
-        </p>
-      </div>
+                <svg>
+                  <use
+                    xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-search"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </template>
 
 <script>
-import algoliasearch from 'algoliasearch/lite'
-
 export default {
   data() {
     return {
-      algoliaIndex: process.env.algoliaIndex,
-      searchClient: {
-        search(requests) {
-          if (requests.every(({ params }) => params.query.length < 3)) {
-            return Promise.resolve({
-              results: requests.map(() => ({
-                hits: [],
-                nbHits: 0,
-                nbPages: 0,
-                processingTimeMS: 0,
-              })),
-            })
-          }
-
-          // requests.forEach((request) => {
-          //   request.params.filters = filters
-          // })
-
-          return algoliasearch(
-            process.env.algoliaApplicationId,
-            process.env.algoliaSearchKey
-          ).search(requests)
-        },
-      },
+      query: '',
     }
   },
 
   methods: {
-    checkForm(e) {
-      if (this.$refs.query.value) {
-        return true
-      }
-
-      e.preventDefault()
+    search() {
+      this.$router.push({ path: 'search', query: { query: this.query } })
     },
   },
 }
@@ -164,42 +99,8 @@ export default {
   font-weight: normal;
 }
 
-.Blog-hero__search {
+.Blog-form__block {
   width: 100%;
-}
-
-.Blog-hero__search-wrapper,
-.Blog-hero__search-box-wrapper {
-  width: 100%;
-}
-
-.Blog-hero__search-wrapper {
-  position: relative;
-}
-
-.Hero-search__results {
-  width: 100%;
-  position: absolute;
-  z-index: 20;
-  border: 1px solid #c2c4cc;
-  border-radius: 6px;
-  background: white;
-  padding: 0 6px;
-}
-
-.Hero-search__results >>> .Hero-search__results-list {
-  display: block;
-  overflow-y: scroll;
-  max-height: 400px;
-}
-
-.Hero-search__results >>> .Hero-search__results-item {
-  overflow: hidden;
-  padding: 0 1em;
-}
-
-.Hero-search__results >>> .Hero-search__results-item:first-child {
-  margin-top: 1em;
 }
 
 @media only screen and (max-width: 775px) {
@@ -215,21 +116,6 @@ export default {
 }
 
 @media only screen and (max-width: 575px) {
-  .Hero-search__results {
-    border: none;
-    position: relative;
-    padding: 0;
-  }
-
-  .Hero-search__results >>> .Hero-search__results-list {
-    overflow-y: visible;
-    max-height: none;
-  }
-
-  .Hero-search__results >>> .Hero-search__results-item {
-    padding: 0;
-  }
-
   .Blog-hero > * {
     transition: all 0.5s ease;
   }
