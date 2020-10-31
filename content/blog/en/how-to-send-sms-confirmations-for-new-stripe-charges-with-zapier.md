@@ -6,14 +6,15 @@ description: Although Stripe can make collecting payments feel seamless, there
   customer experience and brand perception, automating paperless receipts is
   worth considering. While Stripe can send customers a standard email receipt
   for […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/03/Blog_SMS-Confirmation_1200x600.png
+thumbnail: /content/blog/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier/Blog_SMS-Confirmation_1200x600.png
 author: nahrinjalal
 published: true
-published_at: 2020-04-03T12:13:28
+published_at: 2020-04-03T12:13:28.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
 redirect: https://www.nexmo.com/blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
 ---
+
 Content to be migrated...

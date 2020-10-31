@@ -5,10 +5,10 @@ description: Using PHP in serverless environments has previously been
   providers. However, this has changed recently with added libraries and
   functionality, making the use of PHP more approachable. This example will
   create an AWS Lambda Function for PHP using Bref. The addition of AWS […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/03/E_AWS-Lambda_1200x600.png
+thumbnail: /content/blog/aws-lambda-with-php-using-bref-and-serverless-framework-dr/E_AWS-Lambda_1200x600.png
 author: adamculp
 published: true
-published_at: 2020-03-16T13:12:07
+published_at: 2020-03-16T13:12:07.000Z
 comments: true
 category: tutorial
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/03/16/aws-lambda-with-php-using-bref-and-serverless-framework-dr
 redirect: https://www.nexmo.com/blog/2020/03/16/aws-lambda-with-php-using-bref-and-serverless-framework-dr
 ---
+
 Content to be migrated...

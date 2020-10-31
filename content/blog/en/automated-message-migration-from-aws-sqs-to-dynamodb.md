@@ -5,10 +5,10 @@ description: Enterprise applications experience a very high volume of
   application, or constantly scaling up and down based on bursts of usage, using
   a message queue like AWS SQS can throttle the load. By adding messages to the
   queue, the application can handle them in a […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/06/Blog_Message-Migration_1200x600.png
+thumbnail: /content/blog/automated-message-migration-from-aws-sqs-to-dynamodb/Blog_Message-Migration_1200x600.png
 author: adamculp
 published: true
-published_at: 2020-06-15T18:52:54
+published_at: 2020-06-15T18:52:54.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/06/15/automated-message-migration-from-aws-sqs-to-dynamodb
 redirect: https://www.nexmo.com/blog/2020/06/15/automated-message-migration-from-aws-sqs-to-dynamodb
 ---
+
 Content to be migrated...

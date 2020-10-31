@@ -5,10 +5,10 @@ description: Hey! I’m Paul Ardeleanu and I’m thrilled to be joining the
   experience of our new Client SDK. It is an honour to join such an amazing
   crew! I started programming back in the days of Fortran, the programming
   language that screams at you, and […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/01/London.jpg
+thumbnail: /content/blog/paul-ardeleanu-joins-the-nexmo-developer-relations-team-dr/London.jpg
 author: paul-ardeleanu
 published: true
-published_at: 2019-02-01T12:23:50
+published_at: 2019-02-01T12:23:50.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/02/01/paul-ardeleanu-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/02/01/paul-ardeleanu-joins-the-nexmo-developer-relations-team-dr
 ---
+
 Content to be migrated...

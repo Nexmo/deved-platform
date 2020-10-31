@@ -5,14 +5,15 @@ description: "Great news for brands who engage customers with text to speech
   human speech. Thanks to the new Speech Synthesis Markup Language (SSML)
   feature in the Nexmo Voice API, TTS can sound like a human being, with the
   typical characteristics of natural spoken […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/01/Natural-Speech.jpg
+thumbnail: /content/blog/nexmo-ssml-support-natural-text-speech/Natural-Speech.jpg
 author: glenkunene
 published: true
-published_at: 2018-01-04T17:38:04
+published_at: 2018-01-04T17:38:04.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/01/04/nexmo-ssml-support-natural-text-speech
 redirect: https://www.nexmo.com/blog/2018/01/04/nexmo-ssml-support-natural-text-speech
 ---
+
 Content to be migrated...

@@ -5,14 +5,15 @@ description: In previous tutorials you’ve had a chance to get your feet wet in
   and hopefully also customizing these experiences. In today’s tutorial, we’ll
   take it a step further and build a voice-based conferencing service. The user
   calls a predefined virtual number […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/10/conference-call-node-red-featured.png
+thumbnail: /content/blog/conference-call-node-red-dr/conference-call-node-red-featured.png
 author: julia
 published: true
-published_at: 2019-10-07T21:52:57
+published_at: 2019-10-07T21:52:57.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/10/07/conference-call-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/10/07/conference-call-node-red-dr
 ---
+
 Content to be migrated...

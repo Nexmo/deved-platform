@@ -5,14 +5,15 @@ description: In this tutorial, we’re going to go through everything you need t
   user input entered via the keypad. By following this tutorial you will end up
   with a simple application that can be extended to include more complex,
   interactive elements and […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/08/keypad-input-php.png
+thumbnail: /content/blog/handle-user-input-with-php-dr/keypad-input-php.png
 author: martyn
 published: true
-published_at: 2018-08-10T13:59:06
+published_at: 2018-08-10T13:59:06.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/08/10/handle-user-input-with-php-dr
 redirect: https://www.nexmo.com/blog/2018/08/10/handle-user-input-with-php-dr
 ---
+
 Content to be migrated...

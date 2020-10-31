@@ -5,10 +5,10 @@ description: Hello! I’m Ben Greenberg and I am delighted to be joining the
   developer experience (i.e. our Nexmo Developer Platform) and on supporting the
   Ruby community. It is a real pleasure to be here! I am a second career
   developer who came to […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/01/IMG_20181218_154449.jpg
+thumbnail: /content/blog/welcome-ben-greenberg-to-the-developer-relations-team-dr/IMG_20181218_154449.jpg
 author: ben-greenberg
 published: true
-published_at: 2019-01-15T09:45:40
+published_at: 2019-01-15T09:45:40.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/01/15/welcome-ben-greenberg-to-the-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/01/15/welcome-ben-greenberg-to-the-developer-relations-team-dr
 ---
+
 Content to be migrated...

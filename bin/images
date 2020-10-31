@@ -16,7 +16,7 @@ const walk = async () => {
 const images = async () => {
   const files = await walk()
 
-  files.slice(0, 5).forEach((file) => {
+  files.slice(0, 10).forEach((file) => {
     const raw = fs.readFileSync(file, 'utf8')
     const { attributes, ...data } = fm(raw)
     const { thumbnail: url } = attributes

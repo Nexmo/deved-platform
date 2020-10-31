@@ -5,14 +5,15 @@ description: In this article, you’ll learn how to set up Typeform and capture
   Passport.js to authenticate a user, use Nexmo’s Node.js Server SDK to register
   a user, and generate a JWT to use with Nexmo’s JavaScript Client SDK. You’ll
   be starting from a pre-built chat […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/11/TW_Typeform_1200x675.png
+thumbnail: /content/blog/register-to-chat-with-typeform-dr/TW_Typeform_1200x675.png
 author: lukeoliff
 published: true
-published_at: 2019-11-20T13:46:48
+published_at: 2019-11-20T13:46:48.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr
 redirect: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr
 ---
+
 Content to be migrated...

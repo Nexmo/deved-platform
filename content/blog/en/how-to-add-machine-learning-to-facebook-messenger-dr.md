@@ -6,14 +6,15 @@ description: Convolutional Neural Networks (CNNs) provide a powerful and
   difficult to build, train, and tune from scratch, which is what makes tools
   like TensorFlow and the inception models so indispensable to improving our ML
   workflows. That said for us .NET folks running python scripts out of […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/10/What-Kind-of-Dog-Is-That.png
+thumbnail: /content/blog/how-to-add-machine-learning-to-facebook-messenger-dr/What-Kind-of-Dog-Is-That.png
 author: stevelorello
 published: true
-published_at: 2019-10-31T14:39:44
+published_at: 2019-10-31T14:39:44.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
 redirect: https://www.nexmo.com/blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
 ---
+
 Content to be migrated...

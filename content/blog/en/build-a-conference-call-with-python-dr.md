@@ -5,10 +5,10 @@ description: "Today’s post shows you how you can connect multiple parties to t
   receive inbound calls, you will see that this example is very similar: it
   defines a webhook endpoint that Nexmo’s APIs can make a request to when
   someone […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/05/Build-a-Conference-Call-with-Python.png
+thumbnail: /content/blog/build-a-conference-call-with-python-dr/Build-a-Conference-Call-with-Python.png
 author: marklewin
 published: true
-published_at: 2019-05-29T12:18:27
+published_at: 2019-05-29T12:18:27.000Z
 comments: true
 category: tutorial
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/05/29/build-a-conference-call-with-python-dr
 redirect: https://www.nexmo.com/blog/2019/05/29/build-a-conference-call-with-python-dr
 ---
+
 Content to be migrated...

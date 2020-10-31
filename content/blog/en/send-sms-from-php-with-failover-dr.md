@@ -5,14 +5,15 @@ description: Staying in touch with customers is key for any organisation. In
   sure that a business can get messages to its customers in a manner that suits
   them. The case study is an imaginary “Cupcake Bakery” business that needs the
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/10/sms-cupcake.png
+thumbnail: /content/blog/send-sms-from-php-with-failover-dr/sms-cupcake.png
 author: lornajane
 published: true
-published_at: 2018-10-23T10:14:46
+published_at: 2018-10-23T10:14:46.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/10/23/send-sms-from-php-with-failover-dr
 redirect: https://www.nexmo.com/blog/2018/10/23/send-sms-from-php-with-failover-dr
 ---
+
 Content to be migrated...

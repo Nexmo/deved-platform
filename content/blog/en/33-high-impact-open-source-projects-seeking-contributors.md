@@ -5,10 +5,10 @@ description: There is no shortage of open source projects dedicated to social
   often do not get the support and attention they deserve. This is unfortunate
   as the collaborative nature of open source can spark innovation and accelerate
   social good. Therefore, in the spirit of Hacktoberfest, […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/10/Blog_Impactful_OpenSource_Projects_1200x600.png
+thumbnail: /content/blog/33-high-impact-open-source-projects-seeking-contributors/Blog_Impactful_OpenSource_Projects_1200x600.png
 author: nahrinjalal
 published: true
-published_at: 2020-10-16T13:36:54
+published_at: 2020-10-16T13:36:54.000Z
 comments: true
 category: tutorial
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/10/16/33-high-impact-open-source-projects-seeking-contributors
 redirect: https://www.nexmo.com/blog/2020/10/16/33-high-impact-open-source-projects-seeking-contributors
 ---
+
 Content to be migrated...

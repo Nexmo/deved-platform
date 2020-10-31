@@ -5,10 +5,10 @@ description: Today’s post will show you how to set up a conference call using
   connected to the same conference call. It’s an ideal feature for a regular
   team meeting or another telephonic get-together. We’ll be using PHP for the
   code examples, […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/05/php-conference-call-1.png
+thumbnail: /content/blog/build-a-conference-call-with-php-dr/php-conference-call-1.png
 author: lornajane
 published: true
-published_at: 2019-05-08T10:27:52
+published_at: 2019-05-08T10:27:52.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/05/08/build-a-conference-call-with-php-dr
 redirect: https://www.nexmo.com/blog/2019/05/08/build-a-conference-call-with-php-dr
 ---
+
 Content to be migrated...

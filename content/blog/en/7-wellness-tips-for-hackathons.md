@@ -5,10 +5,10 @@ description: "Note from the editor: The timing of this article is especially apt
   practice at our internal #onehack Hackathon today in London. If you’d like to
   take part in our next #onehack or learn more about life at Nexmo check out our
   […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/11/7-tips-wellness-hackathons.png
+thumbnail: /content/blog/7-wellness-tips-for-hackathons/7-tips-wellness-hackathons.png
 author: myrsini
 published: true
-published_at: 2018-11-29T14:23:19
+published_at: 2018-11-29T14:23:19.000Z
 comments: true
 category: devlife
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2018/11/29/7-wellness-tips-for-hackathons
 redirect: https://www.nexmo.com/blog/2018/11/29/7-wellness-tips-for-hackathons
 ---
+
 Content to be migrated...

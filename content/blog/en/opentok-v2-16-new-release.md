@@ -5,14 +5,15 @@ description: Just in time to unlock the new features of Safari version 12.1, we
   wanted to update you on some of the great new features included and how you
   can use them. Safari VP8 Video Codec Support A key new feature of Safari v12.1
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/07/OpenTok-V2.16-Blog-1.png
+thumbnail: /content/blog/opentok-v2-16-new-release/OpenTok-V2.16-Blog-1.png
 author: manik
 published: true
-published_at: 2019-07-02T20:58:34
+published_at: 2019-07-02T20:58:34.000Z
 comments: true
 category: release
 tags: []
 canonical: https://www.nexmo.com/blog/2019/07/02/opentok-v2-16-new-release
 redirect: https://www.nexmo.com/blog/2019/07/02/opentok-v2-16-new-release
 ---
+
 Content to be migrated...

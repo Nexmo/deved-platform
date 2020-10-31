@@ -5,14 +5,15 @@ description: Now that you have successfully sent an SMS and received an SMS
   ensure it was delivered. To do this, we have to fetch the delivery receipt,
   which will return the delivery status of the message. Requirements A Visual
   Studio project Nexmo […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/03/sms-dlr-net.png
+thumbnail: /content/blog/get-sms-delivery-receipt-asp-net-mvc-dr/sms-dlr-net.png
 author: bibi
 published: true
-published_at: 2017-07-21T15:54:50
+published_at: 2017-07-21T15:54:50.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2017/07/21/get-sms-delivery-receipt-asp-net-mvc-dr
 redirect: https://www.nexmo.com/blog/2017/07/21/get-sms-delivery-receipt-asp-net-mvc-dr
 ---
+
 Content to be migrated...

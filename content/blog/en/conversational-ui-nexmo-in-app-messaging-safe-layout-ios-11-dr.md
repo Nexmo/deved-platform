@@ -6,14 +6,15 @@ description: In this tutorial we will review the brand new feature Apple
   out a basic conversational user interface with the Safe Area Layout, adding
   conversational functionality with Nexmo In-App Messaging! Safe Area Layout for
   iOS 11 What is the Safe Area Layout? […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/02/In-App-Blog-2.png
+thumbnail: /content/blog/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr/In-App-Blog-2.png
 author: eric_giannini
 published: true
-published_at: 2018-02-27T20:23:26
+published_at: 2018-02-27T20:23:26.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
 redirect: https://www.nexmo.com/blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
 ---
+
 Content to be migrated...

@@ -5,14 +5,15 @@ description: Introduction In this tutorial you will create an application that
   work through this tutorial, you will need a Nexmo account. Sign up now if you
   don’t already have an account. You will be using Gradle to manage your
   dependencies and run your […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/08/Receive-Call-With-Java.png
+thumbnail: /content/blog/receive-a-phone-call-with-java-dr/Receive-Call-With-Java.png
 author: cr0wst
 published: true
-published_at: 2018-08-09T19:44:59
+published_at: 2018-08-09T19:44:59.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/08/09/receive-a-phone-call-with-java-dr
 redirect: https://www.nexmo.com/blog/2018/08/09/receive-a-phone-call-with-java-dr
 ---
+
 Content to be migrated...

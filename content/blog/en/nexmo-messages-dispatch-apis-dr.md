@@ -5,14 +5,15 @@ description: Today we moved the Nexmo Messages API and Dispatch API out of
   it mean for you? Well, in short, we’re now able to offer you the ability to
   send messages via Facebook Messenger, WhatsApp, Viber, SMS and MMS using just
   one API. […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/10/Olympus-Beta-tech2-3.png
+thumbnail: /content/blog/nexmo-messages-dispatch-apis-dr/Olympus-Beta-tech2-3.png
 author: martyn
 published: true
-published_at: 2018-10-10T13:01:50
+published_at: 2018-10-10T13:01:50.000Z
 comments: true
 category: announcement
 tags: []
 canonical: https://www.nexmo.com/blog/2018/10/10/nexmo-messages-dispatch-apis-dr
 redirect: https://www.nexmo.com/blog/2018/10/10/nexmo-messages-dispatch-apis-dr
 ---
+
 Content to be migrated...

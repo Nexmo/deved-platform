@@ -1,11 +1,11 @@
 ---
 title: Add Strong PSD2 Authentication to Your Application
-description: Find out how you can bring your payment authorisations up to PSD2 
+description: Find out how you can bring your payment authorisations up to PSD2
   standards using the Vonage Verify API to confirm user identity
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/06/Blog_Strong-Customer-Authentication_1200x600-2.png
+thumbnail: /content/blog/add-strong-psd2-authentication-to-your-application/Blog_Strong-Customer-Authentication_1200x600-2.png
 author: lornajane
 published: true
-published_at: 2020-06-23T07:53:47
+published_at: 2020-06-23T07:53:47.000Z
 comments: true
 category: tutorial
 tags:

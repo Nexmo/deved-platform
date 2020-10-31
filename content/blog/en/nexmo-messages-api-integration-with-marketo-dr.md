@@ -6,14 +6,15 @@ description: Nexmo, Whatsapp, and SMS make it easy to leverage text messaging
   messaging—including video, audio, and geolocation—so your brand can deliver a
   more engaging user experience. You can use Messages API to help your business
   to get in […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/08/Nexmo-Messages-API_Marketo_1200x600.jpg
+thumbnail: /content/blog/nexmo-messages-api-integration-with-marketo-dr/Nexmo-Messages-API_Marketo_1200x600.jpg
 author: enrico-portolan
 published: true
-published_at: 2019-08-07T17:05:38
+published_at: 2019-08-07T17:05:38.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/08/07/nexmo-messages-api-integration-with-marketo-dr
 redirect: https://www.nexmo.com/blog/2019/08/07/nexmo-messages-api-integration-with-marketo-dr
 ---
+
 Content to be migrated...

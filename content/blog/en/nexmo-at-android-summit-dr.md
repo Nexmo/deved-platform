@@ -5,14 +5,15 @@ description: "Recently the Android team at Nexmo attended Android Summit in
   gathers speakers from around the globe to speak about designing, developing,
   and testing for Android. As a bonus, proceeds from ticket sales raised $6000
   for Women who Code. The conference covered three tracks: […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/09/android-summit.jpg
+thumbnail: /content/blog/nexmo-at-android-summit-dr/android-summit.jpg
 author: chrisguzman
 published: true
-published_at: 2017-09-05T09:21:31
+published_at: 2017-09-05T09:21:31.000Z
 comments: true
 category: event
 tags: []
 canonical: https://www.nexmo.com/blog/2017/09/05/nexmo-at-android-summit-dr
 redirect: https://www.nexmo.com/blog/2017/09/05/nexmo-at-android-summit-dr
 ---
+
 Content to be migrated...

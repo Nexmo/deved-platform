@@ -5,10 +5,10 @@ description: One-time passwords (OTPs) have become quite familiar in recent
   guarantee. While the protection of the traditional password is the
   responsibility of the user, who as we well know often does not care enough,
   the OTP is practically self-protected because it is generated randomly, […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/02/Build-a-One-Time-Password-OTP-Service-by-Using-the-Dispatch-API.png
+thumbnail: /content/blog/build-an-otp-service-dr/Build-a-One-Time-Password-OTP-Service-by-Using-the-Dispatch-API.png
 author: andrea-chiarelli
 published: true
-published_at: 2019-02-07T18:27:09
+published_at: 2019-02-07T18:27:09.000Z
 updated_at: 2020-10-23T14:16:58.643Z
 category: tutorial
 tags:
@@ -18,6 +18,7 @@ redirect: ""
 canonical: ""
 comments: true
 ---
+
 One-time passwords (OTPs) have become quite familiar in recent times, mainly due to a security requirement that traditional passwords do not guarantee. While the protection of the traditional password is the responsibility of the user, who as we well know often does not care enough, the OTP is practically self-protected because it is generated randomly, and its validity is limited in time.
 
 You can use OTPs instead of traditional passwords, or to reinforce the traditional authentication process with two-factor authentication (2FA) approach. Actually, you can use OTPs wherever you need a mechanism that ensures a user’s identity by relying on a communication medium owned by himself: a mailbox, a phone, a specific app, etc.

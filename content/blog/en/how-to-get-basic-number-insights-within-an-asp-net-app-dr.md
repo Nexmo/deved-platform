@@ -5,14 +5,15 @@ description: This is the second article in this step-by-step series about
   article, we walked through everything we need to know about the Number Insight
   API, setting up the ASP.NET application and getting ready to explore how to
   get insights about a phone number. In […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/05/Number-Insight-Nexmo-02.png
+thumbnail: /content/blog/how-to-get-basic-number-insights-within-an-asp-net-app-dr/Number-Insight-Nexmo-02.png
 author: bibi
 published: true
-published_at: 2018-05-22T16:19:25
+published_at: 2018-05-22T16:19:25.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/05/22/how-to-get-basic-number-insights-within-an-asp-net-app-dr
 redirect: https://www.nexmo.com/blog/2018/05/22/how-to-get-basic-number-insights-within-an-asp-net-app-dr
 ---
+
 Content to be migrated...

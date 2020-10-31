@@ -5,10 +5,10 @@ description: On the 7th of August 2018 at 09:40 UTC, Nexmo disabled support of
   support for TLSv1 and TLSv1.1 for a period of two weeks in order to mitigate
   adverse impact to your business and assist with your transition. On 21st of
   August at […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/08/TLS-Deprecation_1200x675.png
+thumbnail: /content/blog/additional-grace-period-legacy-tls-protocols/TLS-Deprecation_1200x675.png
 author: oliver-schlieben
 published: true
-published_at: 2018-08-09T16:03:36
+published_at: 2018-08-09T16:03:36.000Z
 comments: true
 category: announcement
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2018/08/09/additional-grace-period-legacy-tls-protocols
 redirect: https://www.nexmo.com/blog/2018/08/09/additional-grace-period-legacy-tls-protocols
 ---
+
 Content to be migrated...

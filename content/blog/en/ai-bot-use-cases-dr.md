@@ -6,10 +6,10 @@ description: Every bot developer must contend with the limitations that are
   Microsoft Technical Evangelist Martin Beeby and CTO/Co-Founder of Opearlo
   Oscar Merry to share examples of great use cases they’ve encountered or built
   for […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/09/eeacfb32-ea8a-420f-b719-e97e052098df_Bots-Clip3_800x300.jpg
+thumbnail: /content/blog/ai-bot-use-cases-dr/eeacfb32-ea8a-420f-b719-e97e052098df_Bots-Clip3_800x300.jpg
 author: sammachin
 published: true
-published_at: 2017-09-07T15:30:00
+published_at: 2017-09-07T15:30:00.000Z
 comments: true
 category: tutorial
 tags:
@@ -19,4 +19,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2017/09/07/ai-bot-use-cases-dr
 redirect: https://www.nexmo.com/blog/2017/09/07/ai-bot-use-cases-dr
 ---
+
 Content to be migrated...

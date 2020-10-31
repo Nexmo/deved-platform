@@ -5,14 +5,15 @@ description: The Vonage Video API team recently released a new version of the
   overview of the new features and how you can use them. I will cover the launch
   of our latest Linux SDK, IP Proxy feature, updates to WebRTC stats,
   improvements to […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/08/Blog_SDK-Updates_1200x600-1.png
+thumbnail: /content/blog/opentok-version-2-18-whats-new-and-how-you-can-use-it/Blog_SDK-Updates_1200x600-1.png
 author: manik-sachdeva
 published: true
-published_at: 2020-09-03T13:16:58
+published_at: 2020-09-03T13:16:58.000Z
 comments: true
 category: release
 tags: []
 canonical: https://www.nexmo.com/blog/2020/09/03/opentok-version-2-18-whats-new-and-how-you-can-use-it
 redirect: https://www.nexmo.com/blog/2020/09/03/opentok-version-2-18-whats-new-and-how-you-can-use-it
 ---
+
 Content to be migrated...

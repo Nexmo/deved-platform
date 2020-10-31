@@ -5,14 +5,15 @@ description: Augmentation using AI is the future of video calling. It will help
   interactive video, like shopping and remote assistance, and create entirely
   new experiences. Those experiences’ future inventors are probably “sitting” in
   a virtual classroom being shaped by virtual video like no generation […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/09/Blog_DeepAR_VideoAPI-2_1200x600.png
+thumbnail: /content/blog/create-custom-ar-filters-with-vonage-video-api-and-deepar/Blog_DeepAR_VideoAPI-2_1200x600.png
 author: roberto-perez-cubero
 published: true
-published_at: 2020-09-01T12:24:51
+published_at: 2020-09-01T12:24:51.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
 redirect: https://www.nexmo.com/blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
 ---
+
 Content to be migrated...

@@ -5,10 +5,10 @@ description: Good customer service interactions are made even better when the
   this is to use a communications platform that is familiar to them, and given
   the popularity of WhatsApp, it’s an excellent choice for customer support!
   Today’s post shows you the demo app […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/08/Blog_WhatsApp_CustomerService_1200x600.png
+thumbnail: /content/blog/build-a-simple-customer-support-channel-with-whatsapp/Blog_WhatsApp_CustomerService_1200x600.png
 author: lornajane
 published: true
-published_at: 2020-08-12T07:30:50
+published_at: 2020-08-12T07:30:50.000Z
 comments: true
 category: tutorial
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
 redirect: https://www.nexmo.com/blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
 ---
+
 Content to be migrated...

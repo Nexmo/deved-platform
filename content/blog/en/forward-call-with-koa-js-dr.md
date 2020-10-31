@@ -5,14 +5,15 @@ description: It’s easy to have an automated voice answer when people call your
   on to a real person. With a minimal configuration and one webhook on a Koa.js
   server, you can pass inbound calls to any number you choose. Set Up Ngrok and
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/01/Forward-a-call-via-voice-proxy-with-Koa.js.png
+thumbnail: /content/blog/forward-call-with-koa-js-dr/Forward-a-call-via-voice-proxy-with-Koa.js.png
 author: garann-means
 published: true
-published_at: 2019-02-05T10:08:57
+published_at: 2019-02-05T10:08:57.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/02/05/forward-call-with-koa-js-dr
 redirect: https://www.nexmo.com/blog/2019/02/05/forward-call-with-koa-js-dr
 ---
+
 Content to be migrated...

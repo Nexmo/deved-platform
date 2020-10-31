@@ -5,10 +5,10 @@ description: This is the sixth tutorial on how to use Voice APIs with ASP.NET
   proxy with ASP.NET Core. In today’s tutorial, we will learn how to setup a
   conference call so multiple people can join the same call. Learning objectives
   In this […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/05/csharp-conference-call-1.png
+thumbnail: /content/blog/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr/csharp-conference-call-1.png
 author: bibi
 published: true
-published_at: 2019-05-16T09:46:00
+published_at: 2019-05-16T09:46:00.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
 redirect: https://www.nexmo.com/blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
 ---
+
 Content to be migrated...

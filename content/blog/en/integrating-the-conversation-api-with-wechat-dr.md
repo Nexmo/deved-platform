@@ -5,14 +5,15 @@ description: In this blog post, we’ll show you how to use the Conversation API
   demonstrate how to do so using WeChat. We will use WeChat’s public API and
   connect it to the Conversation API to enable two-way messaging between a
   WeChat client and a Nexmo client, […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/10/E_WeChat-Conversation-API_1200x600-1.png
+thumbnail: /content/blog/integrating-the-conversation-api-with-wechat-dr/E_WeChat-Conversation-API_1200x600-1.png
 author: royandfrans
 published: true
-published_at: 2019-11-01T17:53:00
+published_at: 2019-11-01T17:53:00.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/11/01/integrating-the-conversation-api-with-wechat-dr
 redirect: https://www.nexmo.com/blog/2019/11/01/integrating-the-conversation-api-with-wechat-dr
 ---
+
 Content to be migrated...

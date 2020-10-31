@@ -5,14 +5,15 @@ description: This is the third tutorial in the “Getting Started with Nexmo and
   links to prior tutorials in these series at the bottom of the post. In the
   previous tutorial, you created a voice application and learned how to receive
   a text-to-voice call using […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/01/voice-record-call-node.png
+thumbnail: /content/blog/how-to-record-audio-from-phone-call-node-js-dr/voice-record-call-node.png
 author: tomomi
 published: true
-published_at: 2017-02-06T14:00:17
+published_at: 2017-02-06T14:00:17.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2017/02/06/how-to-record-audio-from-phone-call-node-js-dr
 redirect: https://www.nexmo.com/blog/2017/02/06/how-to-record-audio-from-phone-call-node-js-dr
 ---
+
 Content to be migrated...

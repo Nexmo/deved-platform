@@ -5,14 +5,15 @@ description: "Nexmo Developer is the new home for our documentation, API
   improve our developer experience: whether you’re new to Nexmo APIs or a well
   accustomed with our platform and tooling, the new Nexmo Developer site makes
   life easier for you to find what you […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/07/nexmo-developer-card-1.png
+thumbnail: /content/blog/introducing-nexmo-developer-dr/nexmo-developer-card-1.png
 author: labfoo
 published: true
-published_at: 2017-07-25T13:53:37
+published_at: 2017-07-25T13:53:37.000Z
 comments: true
 category: announcement
 tags: []
 canonical: https://www.nexmo.com/blog/2017/07/25/introducing-nexmo-developer-dr
 redirect: https://www.nexmo.com/blog/2017/07/25/introducing-nexmo-developer-dr
 ---
+
 Content to be migrated...

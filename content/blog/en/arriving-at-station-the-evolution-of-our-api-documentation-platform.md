@@ -5,10 +5,10 @@ description: Three years ago, our documentation platform was born. Little did we
   to have now. For example, we chose to build an open-source web application
   using Ruby on Rails instead of static site generators for markdown files,
   e.g., Jekyll, Middleman, etc. […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/09/Blog_Arriving-at-Station_1200x600.png
+thumbnail: /content/blog/arriving-at-station-the-evolution-of-our-api-documentation-platform/Blog_Arriving-at-Station_1200x600.png
 author: fabianrodiguez
 published: true
-published_at: 2020-09-02T07:18:22
+published_at: 2020-09-02T07:18:22.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform
 redirect: https://www.nexmo.com/blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform
 ---
+
 Content to be migrated...

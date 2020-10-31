@@ -5,10 +5,10 @@ description: This post will go over how to incorporate a Web Component into a
   Composition API. Version 3 was just released at the time of this writing. It’s
   so new that a little “New content is available.” notification frequently pops
   up in the documentation. […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/10/Blog_WebComponents_Vue_1200x600-1.png
+thumbnail: /content/blog/use-web-components-in-vue-2-and-3-composition-api-dr/Blog_WebComponents_Vue_1200x600-1.png
 author: dwanehemmings
 published: true
-published_at: 2020-10-30T14:30:54
+published_at: 2020-10-30T14:30:54.000Z
 comments: true
 category: tutorial
 old_categories:
@@ -27,4 +27,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/10/30/use-web-components-in-vue-2-and-3-composition-api-dr
 redirect: https://www.nexmo.com/blog/2020/10/30/use-web-components-in-vue-2-and-3-composition-api-dr
 ---
+
 Content to be migrated...

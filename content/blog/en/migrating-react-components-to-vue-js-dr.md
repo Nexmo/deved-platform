@@ -5,14 +5,15 @@ description: In this blog post, I’m going to share the journey we went through
   the reasons behind the change, how we did it, and a few lessons we learned
   along the way. The application The Nexmo Developer Platform is a Ruby on Rails
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/02/E_Migrating-to-Vue-js_1200x600.png
+thumbnail: /content/blog/migrating-react-components-to-vue-js-dr/E_Migrating-to-Vue-js_1200x600.png
 author: fabianrodiguez
 published: true
-published_at: 2020-02-20T18:50:31
+published_at: 2020-02-20T18:50:31.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/02/20/migrating-react-components-to-vue-js-dr
 redirect: https://www.nexmo.com/blog/2020/02/20/migrating-react-components-to-vue-js-dr
 ---
+
 Content to be migrated...

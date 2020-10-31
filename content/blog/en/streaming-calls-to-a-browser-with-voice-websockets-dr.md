@@ -5,14 +5,15 @@ description: We recently announced WebSocket support within our new Voice API.
   between the Nexmo Voice API and speech AI platforms such as IBM Watson or
   Amazon Alexa. However, I’d like to show you a little demo we built for our
   booth at AWS ReInvent that shows […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2016/12/audio-websockets.png
+thumbnail: /content/blog/streaming-calls-to-a-browser-with-voice-websockets-dr/audio-websockets.png
 author: sammachin
 published: true
-published_at: 2016-12-19T19:31:19
+published_at: 2016-12-19T19:31:19.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2016/12/19/streaming-calls-to-a-browser-with-voice-websockets-dr
 redirect: https://www.nexmo.com/blog/2016/12/19/streaming-calls-to-a-browser-with-voice-websockets-dr
 ---
+
 Content to be migrated...
