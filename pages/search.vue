@@ -31,7 +31,7 @@
                         <div class="Vlt-composite__wrapper Vlt-input">
                           <input
                             id="search-input"
-                            v-model="currentRefinement"
+                            :value="currentRefinement"
                             type="search"
                             :placeholder="$t('page_search_placeholder')"
                             @input="refine($event.currentTarget.value)"
