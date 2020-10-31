@@ -1,4 +1,5 @@
 module.exports = {
+  strategy: 'prefix_except_default',
   locales: [
     {
       code: 'en',
@@ -22,4 +23,15 @@ module.exports = {
       file: 'zh-CN.js',
     },
   ],
+  lazy: true,
+  langDir: 'lang/',
+  defaultLocale: 'en',
+  vueI18n: {
+    fallbackLocale: 'en',
+  },
+  detectBrowserLanguage: {
+    useCookie: true,
+    cookieKey: 'i18n_redirected',
+    onlyOnRoot: true,
+  },
 }
