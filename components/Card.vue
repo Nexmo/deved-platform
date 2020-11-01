@@ -17,8 +17,13 @@
           :to="localePath(post.route, post.locale)"
           :title="post.title"
         >
-          <h2>
-            {{ post.title | truncate(73, '...') }}
+          <h2 :class="{ 'Vlt-title--icon': post.redirect }">
+            <svg v-if="post.redirect">
+              <use
+                xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-open-full"
+              />
+            </svg>
+            {{ post.title | truncate(53, '...') }}
           </h2>
         </NLink>
         <div
@@ -67,6 +72,7 @@ export default {
 }
 
 h2 {
+  text-align: center;
   margin-bottom: 0;
   display: table-cell;
   vertical-align: middle;
@@ -77,13 +83,7 @@ h2 {
   margin-bottom: 8px;
 }
 
-h3 {
-  font-size: 1.5rem;
-  line-height: 1.6rem;
-  font-weight: 400;
-  letter-spacing: -1px;
-  margin-bottom: 16px;
-  text-align: left;
-  text-transform: uppercase;
+h2 svg {
+  width: 15px;
 }
 </style>

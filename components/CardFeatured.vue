@@ -9,9 +9,17 @@
       />
       <div class="Vlt-card__header">
         <NLink :to="localePath(post.route, post.locale)" :title="post.title">
-          <h4 class="Blog-truncate">
-            {{ post.title }}
-          </h4>
+          <h2
+            class="Blog-truncate"
+            :class="{ 'Vlt-title--icon': post.redirect }"
+          >
+            <svg v-if="post.redirect">
+              <use
+                xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-open-full"
+              />
+            </svg>
+            {{ post.title | truncate(73, '...') }}
+          </h2>
         </NLink>
       </div>
       <div class="Vlt-card__content Vlt-grey-dark">
@@ -87,12 +95,28 @@ export default {
 }
 
 @media only screen and (min-width: 575px) {
-  .Vlt-card__header h4.Blog-truncate {
+  .Vlt-card__header h2.Blog-truncate {
     display: block;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 0;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+h2 svg {
+  width: 15px;
 }
 </style>
