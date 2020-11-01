@@ -1,4 +1,4 @@
-const locales = require('../../../lang.config.js').locales
+const { locales } = require('../../../i18n.config.js')
 
 module.exports = (exclude = []) => ({
   type: 'list',
