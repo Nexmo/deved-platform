@@ -60,15 +60,40 @@ Create a new blog post using the CLI.
 ```bash
 npm run blog
 
-# node bin/blog
-
-# ? What's the title for this post? <max 70 chars> Your post title goes here!
-# ? What's the description? <max 240 chars> A post description that should be less than 240 characters
-# ? What's the category? Tutorial
+# > vonage-dev-blog@0.0.0 blog /Users/luke/Projects/nexmo/dev-education-poc
+# > node bin/blog
+# 
+# ℹ Vonage DevEd Post CLI
+# ℹ by @lukeocodes
+# 
+# ? Would you like to create or translate a blog post? Create
+# ? What's the title for this post? <max 70 chars> An awesome ...
+# ? What's the description? <max 240 chars> An awesome description ...
+# ? What language would you like to create a post in? English
 # ? Who's the author? Luke Oliff
+# ? What's the category? Tutorial
 # ? Enable comments? Yes
 # ? By spotlight author? No
-# ✔ Saved demo file to content/blog/your-post-title-goes-here.md...
+# ✔ Saved demo file to content/blog/en/an-awesome-title-for-your-post.md ...
+```
+
+You can also start a translation with the same tool.
+
+```bash
+npm run blog
+
+# > vonage-dev-blog@0.0.0 blog /Users/luke/Projects/nexmo/dev-education-poc
+# > node bin/blog
+# 
+# ℹ Vonage DevEd Post CLI
+# ℹ by @lukeocodes
+# 
+# ? Would you like to create or translate a blog post? Translate
+# ? What post would you like to translate? Add Strong PSD2 Authentication to Your Application
+# ? What language would you like to create a post in? Italiano
+# ? What's the title for this post? <max 70 chars> Aggiungi l’Autenticazione Forte PSD2 alla Tua App
+# ? What's the description? <max 240 chars> Scopri come aggiungere alla tua app l&#39;autenticazione dei pagamenti online "Secure Customer Authentication", noto anche come PSD2, con Vonage Verify API
+# ✔ Saved demo file to content/blog/it/add-strong-psd2-authentication-to-your-application.md ...
 ```
 
 ### Legacy Content Importer
