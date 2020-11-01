@@ -112,7 +112,6 @@ h2 {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 800;
-  letter-spacing: -1px;
   margin-bottom: 8px;
 }
 

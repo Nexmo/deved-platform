@@ -23,7 +23,7 @@
                 xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-open-full"
               />
             </svg>
-            {{ post.title | truncate(53, '...') }}
+            {{ post.title | truncate(48, '...') }}
           </h2>
         </NLink>
         <div
@@ -79,7 +79,6 @@ h2 {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 800;
-  letter-spacing: -1px;
   margin-bottom: 8px;
 }
 
