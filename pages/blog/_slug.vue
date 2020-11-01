@@ -176,15 +176,17 @@ export default {
           { route: post.route, title: post.title, current: true },
         ],
       }
-    } catch (e) {
-      error(e)
+    } catch (err) {
+      error({ statusCode: 404, message: 'Page not found', err })
+
       return false
     }
   },
 
   head() {
     const canonicalUrl =
-      this.post.canonical || `${this.baseUrl}${this.post.route}`
+      this.post.canonical ||
+      `${this.baseUrl}${this.localePath(this.post.route)}`
 
     return {
       title: `${this.post.title}`,
@@ -222,7 +224,6 @@ export default {
       }
 
       const meta = [
-        // Twitter Only
         {
           hid: 'twitter:url',
           name: 'twitter:url',
@@ -231,7 +232,7 @@ export default {
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: `${this.post.title} » ${config.baseTitle}`,
+          content: `${this.post.title}${config.baseSplitter}${config.baseTitle}`,
         },
         {
           hid: 'twitter:description',
@@ -245,7 +246,11 @@ export default {
             this.post.thumbnail || '/images/generic-social-card.png'
           }`,
         },
-        // Open Graph / Facebook Only
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: `${this.post.title}${config.baseSplitter}${config.baseBrand}`,
+        },
         {
           hid: 'og:url',
           property: 'og:url',
@@ -254,7 +259,7 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `${this.post.title} » ${this.baseTitle}`,
+          content: `${this.post.title}${config.baseSplitter}${config.baseTitle}`,
         },
         {
           hid: 'og:description',
@@ -268,7 +273,57 @@ export default {
             this.post.thumbnail || '/images/generic-social-card.png'
           }`,
         },
+        {
+          hid: 'og:image:alt',
+          name: 'og:image:alt',
+          content: `${this.post.title}${config.baseSplitter}${config.baseBrand}`,
+        },
+        {
+          hid: 'og:updated_time',
+          property: 'og:updated_time',
+          content: this.post.updated_at || this.post.published_at,
+        },
         { hid: 'og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'article:published_time',
+          property: 'article:published_time',
+          content: this.post.published_at,
+        },
+        {
+          hid: 'article:modified_time',
+          property: 'article:modified_time',
+          content: this.post.updated_at || this.post.published_at,
+        },
+        {
+          hid: 'article:author',
+          property: 'article:author',
+          content: this.post.author,
+        },
+        {
+          hid: 'profile:username',
+          property: 'profile:username',
+          content: this.post.author,
+        },
+        {
+          hid: 'article:section',
+          property: 'article:section',
+          content: this.post.category,
+        },
+        ...this.post.tags.map((tag) => ({
+          hid: `article:tag:${tag}`,
+          property: 'article:tag',
+          content: tag,
+        })),
+        ...this.$i18n.locales.map((l) => {
+          const type =
+            l.code === this.$i18n.locale ? 'og:locale' : 'og:locale:alternate'
+
+          return {
+            hid: `${type}${l.code === this.$i18n.locale ? '' : `:${l.code}`}`,
+            property: type,
+            content: l.iso,
+          }
+        }),
       ]
 
       return meta
