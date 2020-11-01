@@ -20,6 +20,24 @@
             </div>
             <hr class="hr--short Vlt-gradient--blue-to-pink" />
             <div
+              v-if="post.show_toc"
+              class="Vlt-card__header Vlt-margin--A-top3"
+            >
+              <h2>Table of Contents</h2>
+              <ul class="Vlt-list Vlt-list--simple Vlt-margin--A-top2">
+                <li
+                  v-for="link of post.toc"
+                  :key="link.id"
+                  :class="{
+                    'Vlt-list--item2': link.depth === 2,
+                    'Vlt-list--item3': link.depth === 3,
+                  }"
+                >
+                  <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
+                </li>
+              </ul>
+            </div>
+            <div
               class="Vlt-card__content Vlt-margin--A-top3"
               property="articleBody"
             >
@@ -83,6 +101,13 @@ export default {
   margin-bottom: 0.2em;
   position: relative;
   margin-left: 24px;
+}
+
+.Vlt-list li.Vlt-list--item2 {
+  margin-left: 10px;
+}
+.Vlt-list li.Vlt-list--item3 {
+  margin-left: 30px;
 }
 
 .Blog__post .nuxt-content >>> ul li:before {

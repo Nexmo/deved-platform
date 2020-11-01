@@ -56,11 +56,11 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '@/plugins/vue-moment.js' },
-    { src: '@/plugins/vue-fragment.js' },
     { src: '@/plugins/filters.js' },
-    { src: '@/plugins/vue-instantsearch.js' },
     { src: '@/plugins/vue-disqus.js' },
+    { src: '@/plugins/vue-fragment.js' },
+    { src: '@/plugins/vue-instantsearch.js' },
+    { src: '@/plugins/vue-moment.js' },
   ],
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)

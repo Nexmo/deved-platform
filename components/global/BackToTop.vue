@@ -1,16 +1,15 @@
 <template>
-  <a
+  <nuxt-link
     v-show="showButton"
-    href="#"
+    to=""
     class="Back-to-top Vlt-btn Vlt-btn--primary Vlt-btn--icon"
-    @click.prevent="toTop"
   >
     <svg class="Vlt-icon Vlt-icon--large Vlt-white">
       <use
-        xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-arrow-thin-up"
+        xlink:href="../../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-arrow-thin-up"
       />
     </svg>
-  </a>
+  </nuxt-link>
 </template>
 
 <script>
@@ -30,15 +29,6 @@ export default {
   },
 
   methods: {
-    toTop() {
-      const increments = (0 - window.pageYOffset) / (500 / 16)
-      const runAnimation = setInterval(() => {
-        window.scrollBy(0, increments)
-        if (window.pageYOffset <= document.body.offsetTop) {
-          clearInterval(runAnimation)
-        }
-      }, 16)
-    },
     handleScroll() {
       if (window.pageYOffset > 200) {
         this.showButton = true
