@@ -105,7 +105,6 @@ export default {
 }
 
 h2 {
-  text-align: center;
   margin-bottom: 0;
   display: table-cell;
   vertical-align: middle;
