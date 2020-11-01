@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+const consola = require('consola')
+const inquirer = require('inquirer')
+const ogs = require('open-graph-scraper')
+
+consola.info('`Vonage` DevEd Post CLI')
+consola.info('by `@lukeocodes`\n')
+
+inquirer
+  .prompt([
+    {
+      type: 'input',
+      name: 'url',
+      message: 'What URL would you like to inspect?',
+      default: 'http://127.0.0.1:3000',
+    },
+  ])
+  .then((answers) => {
+    const options = { url: answers.url }
+    ogs(options)
+      .then((data) => {
+        const { error, result } = data
+        if (error) console.log('error:', error)
+        console.log('result:', result)
+      })
+      .catch((error) => {
+        consola.error(error)
+      })
+  })
+  .catch((error) => {
+    consola.error(error)
+  })

@@ -67,6 +67,32 @@ export default {
       return error(e)
     }
   },
+
+  head() {
+    return {
+      title: `${this.author.name}`,
+      meta: this.authorMeta(),
+    }
+  },
+
+  methods: {
+    authorMeta() {
+      const meta = [
+        {
+          hid: 'article:author',
+          property: 'article:author',
+          content: this.author.username,
+        },
+        {
+          hid: 'profile:username',
+          property: 'profile:username',
+          content: this.author.username,
+        },
+      ]
+
+      return meta
+    },
+  },
 }
 </script>
 

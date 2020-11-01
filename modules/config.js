@@ -1,3 +1,4 @@
+import i18n from '../i18n.config'
 require('dotenv').config()
 
 const config = {
@@ -7,6 +8,7 @@ const config = {
       ? process.env.URL
       : process.env.DEPLOY_PRIME_URL) || 'http://localhost:3000',
   indexTitle: 'We ♥ content',
+  baseBrand: 'Vonage',
   baseTitle: 'Developer content from Vonage',
   baseSplitter: ' » ',
   baseDescription:
@@ -55,7 +57,6 @@ const config = {
       },
       { name: 'theme-color', content: '#ffffff' },
       { name: 'robots', content: 'index, follow' },
-      // Twitter Only
       {
         hid: 'twitter:card',
         name: 'twitter:card',
@@ -66,7 +67,7 @@ const config = {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: `${this.indexTitle} » ${this.baseTitle}`,
+        content: `${this.indexTitle}${this.baseSplitter}${this.baseTitle}`,
       },
       {
         hid: 'twitter:description',
@@ -78,12 +79,26 @@ const config = {
         name: 'twitter:image',
         content: `${this.baseUrl}/images/generic-social-card.png`,
       },
-      // Open Graph / Facebook Only
+      {
+        hid: 'twitter:image:width',
+        name: 'twitter:image:width',
+        content: '1200',
+      },
+      {
+        hid: 'twitter:image:height',
+        name: 'twitter:image:height',
+        content: '600',
+      },
+      {
+        hid: 'twitter:image:alt',
+        name: 'twitter:image:alt',
+        content: `${this.indexTitle}${this.baseSplitter}${this.baseTitle}`,
+      },
       { hid: 'og:url', property: 'og:url', content: this.baseUrl },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: `${this.indexTitle} » ${this.baseTitle}`,
+        content: `${this.indexTitle}${this.baseSplitter}${this.baseTitle}`,
       },
       {
         hid: 'og:description',
@@ -96,10 +111,41 @@ const config = {
         content: `${this.baseUrl}/images/generic-social-card.png`,
       },
       {
+        hid: 'og:image:width',
+        name: 'og:image:width',
+        content: '1200',
+      },
+      {
+        hid: 'og:image:height',
+        name: 'og:image:height',
+        content: '600',
+      },
+      {
+        hid: 'og:image:alt',
+        name: 'og:image:alt',
+        content: `${this.indexTitle}${this.baseSplitter}${this.baseTitle}`,
+      },
+      {
         hid: 'og:updated_time',
         property: 'og:updated_time',
         content: this.builtAt,
       },
+      ...i18n.locales.map((l) => {
+        const type =
+          l.code === i18n.defaultLocale ? 'og:locale' : 'og:locale:alternate'
+
+        return {
+          hid: `${type}${l.code === i18n.defaultLocale ? '' : `:${l.code}`}`,
+          property: type,
+          content: l.iso,
+        }
+      }),
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: `${this.indexTitle}${this.baseSplitter}${this.baseBrand}`,
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
     ]
   },
   get headLinks() {
