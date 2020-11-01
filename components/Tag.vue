@@ -1,6 +1,6 @@
 <template>
   <NLink
-    :to="localePath(`/tags/${slug}`)"
+    :to="link ? localePath(`/tags/${slug}`) : ''"
     class="Vlt-badge Vlt-badge--small Vlt-badge--grey Vlt-badge--transparent"
     :class="'Blog-badge--' + slug"
   >
@@ -34,6 +34,10 @@ export default {
     tag: {
       type: String,
       required: true,
+    },
+    link: {
+      type: Boolean,
+      default: true,
     },
   },
 
@@ -212,8 +216,8 @@ export default {
 }
 
 .Blog-badge--git {
-  background-color: #ffffff;
-  color: #f14e32;
+  background-color: #f14e32;
+  color: #ffffff;
 }
 
 .Blog-badge--github {
@@ -276,24 +280,26 @@ export default {
 .Blog-badge--inclusion {
   background: linear-gradient(
     90deg,
-    #00000080,
-    #00000080 14.28%,
-    #f0000080 14.28%,
-    #f0000080 28.56%,
-    #ff800080 28.56%,
-    #ff80008e 42.84%,
-    #ffff0080 42.84%,
-    #ffff0080 57.12%,
-    #00794080 57.12%,
-    #00794080 71.4%,
-    #4040ff80 71.4%,
-    #4040ff80 85.68%,
-    #a000c080 85.68%,
-    #a000c080
+    #000000,
+    #000000 12.5%,
+    #754d15 12.5%,
+    #754d15 25%,
+    #f00000 25%,
+    #f00000 37.5%,
+    #ff8000 37.5%,
+    #ff8000 50%,
+    #ffff00 50%,
+    #ffff00 62.5%,
+    #007940 62.5%,
+    #007940 75%,
+    #4040ff 75%,
+    #4040ff 87.5%,
+    #a000c0 87.5%,
+    #a000c0
   );
-  color: black;
-  text-shadow: 1px 1px 2px #ffffff80, -1px -1px 2px #ffffff80,
-    -1px 1px 2px #ffffff80, 1px -1px 2px #ffffff80;
+  color: white;
+  text-shadow: 1px 1px 2px #00000080, -1px -1px 2px #00000080,
+    -1px 1px 2px #00000080, 1px -1px 2px #00000080;
 }
 
 .Blog-badge--diversity {

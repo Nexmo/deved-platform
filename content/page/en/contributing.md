@@ -2,10 +2,6 @@
 title: Contributing Guide
 ---
 
-## Tag Creation Tool
-
-<tag-maker></tag-maker>
-
 ## Capitalize My Title
 
 uppercase words
@@ -15,6 +11,10 @@ unless "not-these" are first or last
 https://codereview.stackexchange.com/questions/217006/a-function-which-translates-a-sentence-to-title-case
 
 <title-maker></title-maker>
+
+## Tag Tester
+
+<tag-tester></tag-tester>
 
 ## Code Block Preview
 
