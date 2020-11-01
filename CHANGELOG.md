@@ -1,6 +1,6 @@
 # Changelog
 
-## OG Data, tag fixes, external link icons (01/11/2020)
+## v1.0.3 - OG Data, tag fixes, external link icons (01/11/2020)
 ### Fixes
 
 - Fix tag group height so no tags don't affect other components (#216)
@@ -11,7 +11,7 @@
 - Improve OG data on main site, post pages, author pages (#217)
 ---
 
-## Landing pages and public contributing guide (01/11/2020)
+## v1.0.2 - Landing pages and public contributing guide (01/11/2020)
 ### Fixes
 
 - Fix blog CLI, broken since renaming `lang.config.js` to `i18n.config.js`
@@ -28,13 +28,13 @@
   - Writing Style Guide (based on WRITING_GUIDE which was lifted from our confluence doc on writing style)
 ---
 
-## Resolve correct base URL when deploying production (31/10/2020)
+## v1.0.1 - Resolve correct base URL when deploying production (31/10/2020)
 ### Fixes
 
 - Resolve correct base URL when deploying production #215 
 ---
 
-## First release to start migration. (31/10/2020)
+## v1.0.0 - First release to start migration. (31/10/2020)
 ### Features
 
 - Nuxt framework
