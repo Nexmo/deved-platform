@@ -1,5 +1,16 @@
 # Changelog
 
+## OG Data, tag fixes, external link icons (01/11/2020)
+### Fixes
+
+- Fix tag group height so no tags don't affect other components (#216)
+- Add external link icon if the post has a redirect (#218)
+
+### Features
+
+- Improve OG data on main site, post pages, author pages (#217)
+---
+
 ## Landing pages and public contributing guide (01/11/2020)
 ### Fixes
 
