@@ -14,3 +14,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.Vlt-badge-group {
+  min-height: 27px;
+}
+</style>
