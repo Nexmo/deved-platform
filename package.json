@@ -9,9 +9,10 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "npm run lint:js && npm run lint:md",
+    "lint": "npm run lint:js",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:md": "remark .",
+    "changelog": "gren changelog --overwrite",
     "blog": "node bin/blog"
   },
   "dependencies": {
