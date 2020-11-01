@@ -2,15 +2,21 @@
 title: Contributing Guide
 ---
 
-## Capitalize My Title
+## Contributing
+
+some text here
+
+## Tools
+
+### Capitalize My Title
 
 <title-maker></title-maker>
 
-## Tag Tester
+### Tag Tester
 
 <tag-tester></tag-tester>
 
-## Code Block Preview
+### Code Block Preview
 
 <code-maker></code-maker>
 

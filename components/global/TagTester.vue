@@ -20,7 +20,9 @@
       </div>
 
       <div v-for="(tags, type) in tagTypes" :key="type">
-        <h3>{{ title(type.replace('Tags', ' Tags')) }}</h3>
+        <h4 class="Vlt-margin--A-top2">
+          {{ title(type.replace('Tags', ' Tags')) }}
+        </h4>
         <div class="Vlt-badge-group">
           <span v-for="(tag, i) in tags" :key="i" @click="setTag(tag)">
             <Tag :tag="tag" :link="false" />
@@ -60,6 +62,7 @@ export default {
           'sms-api',
           'station',
           'spotlight',
+          'voyagers',
         ],
         languageTags: [
           'vue',

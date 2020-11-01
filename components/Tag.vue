@@ -63,6 +63,7 @@ export default {
         'sms-api',
         'station',
         'spotlight',
+        'voyagers',
       ],
     }
   },
@@ -182,6 +183,11 @@ export default {
 }
 
 .Blog-badge--spotlight {
+  background-color: #871fff;
+  color: #fff;
+}
+
+.Blog-badge--voyagers {
   background-color: #871fff;
   color: #fff;
 }
