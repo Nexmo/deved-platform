@@ -1,10 +1,15 @@
 # Vonage Developer Education Content Platform
 
 ![Netlify Build](https://img.shields.io/netlify/00bdc529-eecc-4b9b-9fa7-915f5c3717a4)
-![Main !Master](https://img.shields.io/badge/main-not%20master-green)
+![GitHub](https://img.shields.io/github/license/Nexmo/deved-platform)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+![GitHub release](https://img.shields.io/github/v/release/Nexmo/deved-platform)
+![GitHub last commit](https://img.shields.io/github/last-commit/Nexmo/deved-platform)
+![GitHub release date](https://img.shields.io/github/release-date/Nexmo/deved-platform)
 ![Made with <3](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
-![Nubmer of Contributors](https://img.shields.io/github/contributors/Nexmo/deved-platform)
-![Number of Issues](https://img.shields.io/github/issues/Nexmo/deved-platform)
+![Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)
+![Twitch Status](https://img.shields.io/twitch/status/vonagedevs)
+[![Join us on Slack](https://img.shields.io/badge/chat-on_slack-informational?style=flat&color=6e33ba)](https://developer.nexmo.com/community/slack)
 
 ***The source and content for the Vonage Developer Education Content Platform, based on Nuxt.js***
 
