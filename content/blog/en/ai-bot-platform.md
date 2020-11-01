@@ -5,10 +5,10 @@ description: The major providers in the AI bot space—IBM Watson, Microsoft
   but each one has its own terminology. From bot platform to bot channel to bot
   framework, I asked Microsoft Technical Evangelist Martin Beeby and
   CEO/Co-Founder of The Bot Platform Syd Lawrence to help me […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/10/Bots-Clip7_800x300.jpg
+thumbnail: /content/blog/ai-bot-platform/Bots-Clip7_800x300.jpg
 author: sammachin
 published: true
-published_at: 2017-10-05T16:00:18
+published_at: 2017-10-05T16:00:18.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2017/10/05/ai-bot-platform
 redirect: https://www.nexmo.com/blog/2017/10/05/ai-bot-platform
 ---
+
 Content to be migrated...

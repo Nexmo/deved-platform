@@ -5,14 +5,15 @@ description: JavaScript frameworks and libraries, we can all agree there are a
   But, what do they all have in common? The answer is that they are used to
   build applications on the web, and they provide the ability to create reusable
   components. What […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/03/E_Web-Components_1200x600.png
+thumbnail: /content/blog/getting-started-with-web-components-dr/E_Web-Components_1200x600.png
 author: dwanehemmings
 published: true
-published_at: 2020-03-24T14:13:02
+published_at: 2020-03-24T14:13:02.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr
 redirect: https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr
 ---
+
 Content to be migrated...

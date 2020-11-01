@@ -5,10 +5,10 @@ description: Hi, my name’s Mark – although I’m known as Judy2k on GitHub,
   university, and I’m not going to explain it!) I’m excited to start my
   Developer Relations career at Nexmo! I’ve been a software developer for 20
   years, these days primarily Python, but […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2016/10/fireworks-700h.jpg
+thumbnail: /content/blog/welcoming-mark-smith-nexmo-developer-relations-team/fireworks-700h.jpg
 author: judy2k
 published: true
-published_at: 2016-10-18T16:01:48
+published_at: 2016-10-18T16:01:48.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
 redirect: https://www.nexmo.com/blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
 ---
+
 Content to be migrated...

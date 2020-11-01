@@ -5,14 +5,15 @@ description: This is the fourth article in a series of “Getting Started with
   send and receive SMS messages programatically using the Nexmo API and how to
   handle inbound calls. Next, you’ll be learning about outbound calls, and by
   the end of this article, you’ll […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/06/make-tts-calls-featured-1.png
+thumbnail: /content/blog/make-text-to-speech-phone-calls-node-red-dr/make-tts-calls-featured-1.png
 author: julia
 published: true
-published_at: 2019-06-14T10:14:23
+published_at: 2019-06-14T10:14:23.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
 redirect: https://www.nexmo.com/blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
 ---
+
 Content to be migrated...

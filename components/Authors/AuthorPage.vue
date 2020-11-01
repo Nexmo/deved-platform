@@ -60,7 +60,7 @@
           class="Vlt-btn--small"
         />
         <RssSocialButton
-          :link="`/authors/${author.username}/feed.xml`"
+          :link="`/authors/${author.username}/rss.xml`"
           class="Vlt-btn--small"
         />
       </div>

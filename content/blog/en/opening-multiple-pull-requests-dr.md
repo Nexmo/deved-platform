@@ -5,10 +5,10 @@ description: ‘Tis the season of many pull requests, so today I thought I’d s
   of date master branch. Becoming a repeat contributor of a project is one of
   the best things that can happen to anyone taking part in Hacktoberfest – but
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/10/Blog_Multiple-Pull-Requests_1200x600.png
+thumbnail: /content/blog/opening-multiple-pull-requests-dr/Blog_Multiple-Pull-Requests_1200x600.png
 author: lornajane
 published: true
-published_at: 2020-10-06T13:27:51
+published_at: 2020-10-06T13:27:51.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/10/06/opening-multiple-pull-requests-dr
 redirect: https://www.nexmo.com/blog/2020/10/06/opening-multiple-pull-requests-dr
 ---
+
 Content to be migrated...

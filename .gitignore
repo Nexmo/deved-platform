@@ -82,10 +82,12 @@ dist
 node_modules/webpack-log
 
 .DS_Store
-feed.xml
-feed.json
 
 # Local Netlify folder
 .netlify
 
 .vscode/*
+
+# build files
+rss.xml
+feed.json

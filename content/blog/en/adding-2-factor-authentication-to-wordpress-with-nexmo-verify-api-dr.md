@@ -5,10 +5,10 @@ description: Introduction With security breaches on the rise, protecting your
   you will set up 2FA (two-factor authentication) on WordPress using the Nexmo
   Verify API. With this setup, whenever a user tries to log in, they’ll get an
   SMS or call […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/10/E_2FA-WordPress_1200x600.jpg
+thumbnail: /content/blog/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr/E_2FA-WordPress_1200x600.jpg
 author: douglaskendyson
 published: true
-published_at: 2019-10-09T21:06:04
+published_at: 2019-10-09T21:06:04.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/10/09/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr
 redirect: https://www.nexmo.com/blog/2019/10/09/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr
 ---
+
 Content to be migrated...

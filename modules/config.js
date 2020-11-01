@@ -2,9 +2,13 @@ require('dotenv').config()
 
 const config = {
   builtAt: new Date().toISOString(),
-  baseUrl: process.env.URL || 'http://localhost:3000',
+  baseUrl:
+    (process.env.CONTEXT === 'production'
+      ? process.env.URL
+      : process.env.DEPLOY_PRIME_URL) || 'http://localhost:3000',
   indexTitle: 'We ♥ content',
   baseTitle: 'Developer content from Vonage',
+  baseSplitter: ' » ',
   baseDescription:
     'Developer content from the team at Vonage, including posts on our Java, Node.js, Python, DotNet, Ruby and Go SDKs',
   baseKeywords: [

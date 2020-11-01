@@ -5,14 +5,15 @@ description: The Nexmo DevRel team is beyond excited to attend Grace Hopper this
   the corner. October 1-4, attendees will flood the Orange County Convention
   Center in Orlando, FL to listen to keynote speakers, attend informative
   panels, and network with one another to build […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/09/nexmodevrelGHC.png
+thumbnail: /content/blog/nexmo-attends-grace-hopper-conference-2019-dr/nexmodevrelGHC.png
 author: laurenlee
 published: true
-published_at: 2019-09-30T15:58:26
+published_at: 2019-09-30T15:58:26.000Z
 comments: true
 category: event
 tags: []
 canonical: https://www.nexmo.com/blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
 redirect: https://www.nexmo.com/blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
 ---
+
 Content to be migrated...

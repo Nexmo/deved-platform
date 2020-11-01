@@ -5,14 +5,15 @@ description: "Building speech to text transcription services has never been
   real-time transcription service in ASP.NET using the Vonage .NET SDK and
   Microsoft Azure’s Speech SDK. Prerequisites Visual Studio 2019 version 16.3 or
   higher A Vonage account Sign up here An Azure Account Optional: […]"
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/12/Blog_Real-Time_NET-Transcription_1200x600-1.png
+thumbnail: /content/blog/building-a-real-time-net-transcription-service-dr/Blog_Real-Time_NET-Transcription_1200x600-1.png
 author: stevelorello
 published: true
-published_at: 2019-12-30T14:00:13
+published_at: 2019-12-30T14:00:13.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/12/30/building-a-real-time-net-transcription-service-dr
 redirect: https://www.nexmo.com/blog/2019/12/30/building-a-real-time-net-transcription-service-dr
 ---
+
 Content to be migrated...

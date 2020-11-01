@@ -1,0 +1,21 @@
+{
+  "name": "algolia-export",
+  "version": "2.0.0",
+  "main": "index.js",
+  "author": "Luke Oliff <luke@lukeoliff.com> (https://lukeoliff.com)",
+  "dependencies": {
+    "algoliasearch": "^4.3.0",
+    "chalk": "^4.1.0",
+    "globby": "^11.0.0",
+    "hast-util-is-element": "^1.0.4",
+    "hast-util-to-nlcst": "^1.2.7",
+    "nlcst-to-string": "^2.0.4",
+    "parse-latin": "^4.2.1",
+    "rehype-parse": "^7.0.1",
+    "stopword": "^1.0.1",
+    "unified": "^9.0.0",
+    "unist-util-remove": "^2.0.0",
+    "unist-util-visit": "^2.0.2",
+    "vfile": "^4.1.0"
+  }
+}

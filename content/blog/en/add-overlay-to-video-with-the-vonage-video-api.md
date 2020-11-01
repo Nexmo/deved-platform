@@ -5,10 +5,10 @@ description: When creating a Vonage Video publisher, the video stream can be
   pixels get drawn to the canvas, they can be easily manipulated before being
   used in a Video API session. In this tutorial, you’ll learn how to add a text
   or […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/08/Blog_Overlay_VideoAPI_1200x600.png
+thumbnail: /content/blog/add-overlay-to-video-with-the-vonage-video-api/Blog_Overlay_VideoAPI_1200x600.png
 author: kevinlewis
 published: true
-published_at: 2020-08-25T13:33:30
+published_at: 2020-08-25T13:33:30.000Z
 comments: true
 category: tutorial
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/08/25/add-overlay-to-video-with-the-vonage-video-api
 redirect: https://www.nexmo.com/blog/2020/08/25/add-overlay-to-video-with-the-vonage-video-api
 ---
+
 Content to be migrated...

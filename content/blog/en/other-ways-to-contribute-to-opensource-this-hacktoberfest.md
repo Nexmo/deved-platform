@@ -6,10 +6,10 @@ description: There are other ways to contribute to open source this
   can address the most pressing accessibility barriers for open source projects.
   Vonage is thrilled to be a Hacktoberfest 2020 partner. We’re no strangers to
   […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/10/Blog_Not-a-Programmer_1200x600.png
+thumbnail: /content/blog/other-ways-to-contribute-to-opensource-this-hacktoberfest/Blog_Not-a-Programmer_1200x600.png
 author: lukeoliff
 published: true
-published_at: 2020-10-09T07:28:56
+published_at: 2020-10-09T07:28:56.000Z
 comments: true
 category: tutorial
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/10/09/other-ways-to-contribute-to-opensource-this-hacktoberfest
 redirect: https://www.nexmo.com/blog/2020/10/09/other-ways-to-contribute-to-opensource-this-hacktoberfest
 ---
+
 Content to be migrated...

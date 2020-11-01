@@ -6,10 +6,10 @@ description: Nexmo’s various communication APIs and SDKs allow you to provide 
   the numerous companies who wish to provide an excellent and customizable
   contact center application, Nexmo has all the tools you need to build that!
   Nexmo Client SDKs allow you to build […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/06/Build-An-Omnichannel-Contact-Center_1200x675.jpg
+thumbnail: /content/blog/build-an-omnichannel-contact-center-dr/Build-An-Omnichannel-Contact-Center_1200x675.jpg
 author: brittbarak
 published: true
-published_at: 2019-06-24T16:00:31
+published_at: 2019-06-24T16:00:31.000Z
 comments: true
 category: tutorial
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
 redirect: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
 ---
+
 Content to be migrated...

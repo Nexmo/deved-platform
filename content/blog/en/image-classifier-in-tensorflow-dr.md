@@ -5,14 +5,15 @@ description: In this post, you are going to build a basic image classification
   integrated with Nexmo In-App Messaging. After a user uploads an image, a
   caption describing the image will be displayed. We’re going to use Python to
   build our image classification […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/10/tensorflow-image-classifier.png
+thumbnail: /content/blog/image-classifier-in-tensorflow-dr/tensorflow-image-classifier.png
 author: tony-hung
 published: true
-published_at: 2018-10-02T16:24:26
+published_at: 2018-10-02T16:24:26.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2018/10/02/image-classifier-in-tensorflow-dr
 redirect: https://www.nexmo.com/blog/2018/10/02/image-classifier-in-tensorflow-dr
 ---
+
 Content to be migrated...

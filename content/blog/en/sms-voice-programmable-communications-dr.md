@@ -5,14 +5,15 @@ description: We recently ran a webinar with David Leary from Intuit Developer to
   to attend the upcoming Intuit Small Business Hack and want a heads-up of
   what’s possible, or if you’re just interested in getting a quick overview of
   SMS […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/03/programmable-sms-and-voice.png
+thumbnail: /content/blog/sms-voice-programmable-communications-dr/programmable-sms-and-voice.png
 author: leggetter
 published: true
-published_at: 2017-03-03T14:04:35
+published_at: 2017-03-03T14:04:35.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr
 redirect: https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr
 ---
+
 Content to be migrated...

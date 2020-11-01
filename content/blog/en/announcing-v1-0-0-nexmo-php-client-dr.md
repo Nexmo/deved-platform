@@ -7,10 +7,10 @@ description: After a heroic effort from Tim and some work from Michael to get it
   nexmo/client																					12										composer require
   nexmo/client 														 The Tech Built on top of Zend Diactoros and
   Guzzle, it’s a PSR-7 compliant […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/08/nexmo-php-release.png
+thumbnail: /content/blog/announcing-v1-0-0-nexmo-php-client-dr/nexmo-php-release.png
 author: mheap
 published: true
-published_at: 2017-08-29T09:42:30
+published_at: 2017-08-29T09:42:30.000Z
 comments: true
 category: release
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
 redirect: https://www.nexmo.com/blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
 ---
+
 Content to be migrated...

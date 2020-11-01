@@ -1,11 +1,11 @@
 ---
 title: 在 Golang 应用程序中使用 JWT 进行身份验证
-description: Learn how to create a Go application that creates and invalidates 
+description: Learn how to create a Go application that creates and invalidates
   JWT tokens to bring authentication to protected routes.
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/03/Blog_JWT-Golang_Authentification_1200x600-2.png
+thumbnail: /content/blog/using-jwt-for-authentication-in-a-golang-application-dr/Blog_JWT-Golang_Authentification_1200x600-2.png
 author: victor-steven
 published: true
-published_at: 2020-03-13T13:00:25
+published_at: 2020-03-13T13:00:25.000Z
 comments: true
 category: tutorial
 tags:

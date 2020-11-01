@@ -5,14 +5,15 @@ description: One-way conversations are no fun – at Vonage we’re all about
   you call our API. To receive an SMS reply, your application will need to
   handle an incoming webhook. Webhooks are brilliant for using HTTP to notify of
   events, but they require […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/06/Secure-Webhooks.png
+thumbnail: /content/blog/using-message-signatures-to-ensure-secure-incoming-webhooks-dr/Secure-Webhooks.png
 author: lornajane
 published: true
-published_at: 2019-06-28T07:01:04
+published_at: 2019-06-28T07:01:04.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
 redirect: https://www.nexmo.com/blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
 ---
+
 Content to be migrated...

@@ -5,14 +5,15 @@ description: Angular is by far the most popular single-page application (SPA)
   since before it dropped the JS from its name. Consequentially, I was excited
   to try my hat at it again, this time using it to show off Vonage’s Video API.
   You can follow […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/05/Blog_ASP-NET_Angular_1200x600.png
+thumbnail: /content/blog/create-a-basic-video-chat-app-with-asp-net-and-angular-dr/Blog_ASP-NET_Angular_1200x600.png
 author: stevelorello
 published: true
-published_at: 2020-05-08T15:46:21
+published_at: 2020-05-08T15:46:21.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/05/08/create-a-basic-video-chat-app-with-asp-net-and-angular-dr
 redirect: https://www.nexmo.com/blog/2020/05/08/create-a-basic-video-chat-app-with-asp-net-and-angular-dr
 ---
+
 Content to be migrated...

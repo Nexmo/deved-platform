@@ -5,14 +5,15 @@ description: How do you decide whether your AI bot should be a chatbot or a
   should it be the deciding factor or should you make both channels available to
   users? Microsoft Technical Evangelist Martin Beeby, CEO/Co-Founder of The Bot
   Platform Syd Lawrence, […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/09/722483e8-a628-441d-a6cf-08356a5beb3a_Bots-Clip5_800x300.jpg
+thumbnail: /content/blog/voice-text-ai-bot-interface/722483e8-a628-441d-a6cf-08356a5beb3a_Bots-Clip5_800x300.jpg
 author: sammachin
 published: true
-published_at: 2017-09-21T19:12:09
+published_at: 2017-09-21T19:12:09.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2017/09/21/voice-text-ai-bot-interface
 redirect: https://www.nexmo.com/blog/2017/09/21/voice-text-ai-bot-interface
 ---
+
 Content to be migrated...

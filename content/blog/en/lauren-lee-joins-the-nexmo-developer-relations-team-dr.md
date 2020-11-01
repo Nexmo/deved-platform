@@ -5,10 +5,10 @@ description: Hello World! My name is Lauren, and I’m thrilled to be joining th
   ice hockey and loving deep dish pizza. Now living in Seattle, WA, I try to
   spend as much time outside in the mountains or underwater scuba diving as
   possible. I […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/05/seattle.jpg
+thumbnail: /content/blog/lauren-lee-joins-the-nexmo-developer-relations-team-dr/seattle.jpg
 author: laurenlee
 published: true
-published_at: 2019-05-20T21:23:33
+published_at: 2019-05-20T21:23:33.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
 redirect: https://www.nexmo.com/blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
 ---
+
 Content to be migrated...

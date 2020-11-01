@@ -19,6 +19,17 @@ collections:
     slug: '{{slug}}'
     editor:
       preview: false
+    sortable_fields: ['title', 'author', 'published_at', 'updated_at']
+    view_filters: 
+      - label: "Spotlight Posts"
+        field: spotlight
+        pattern: true
+      - label: "Unpublished"
+        field: published
+        pattern: false
+      - label: "Outdated"
+        field: outdated
+        pattern: false
     fields:
       - label: Title
         name: title

@@ -55,7 +55,7 @@ npm run blog
 # node bin/blog
 
 # ? What's the title for this post? <max 70 chars> Your post title goes here!
-# ? What's the description? <max 240 chars> A post description that shouod be less than 240 characters
+# ? What's the description? <max 240 chars> A post description that should be less than 240 characters
 # ? What's the category? Tutorial
 # ? Who's the author? Luke Oliff
 # ? Enable comments? Yes

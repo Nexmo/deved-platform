@@ -5,10 +5,10 @@ description: Hello! My name is Nahrin, and I’m delighted to be joining the Nex
   privilege of living in some truly spectacular countries, including Sudan,
   Mali, Djibouti, Kenya, Pakistan, Bangladesh, Tajikistan, and Haiti. Although I
   still enjoy exploring new places, I’m now happy […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/01/toronto-1.jpg
+thumbnail: /content/blog/nahrin-jalal-joins-the-nexmo-developer-education-team-dr/toronto-1.jpg
 author: nahrinjalal
 published: true
-published_at: 2020-01-16T14:22:51
+published_at: 2020-01-16T14:22:51.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/01/16/nahrin-jalal-joins-the-nexmo-developer-education-team-dr
 redirect: https://www.nexmo.com/blog/2020/01/16/nahrin-jalal-joins-the-nexmo-developer-education-team-dr
 ---
+
 Content to be migrated...

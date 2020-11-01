@@ -5,14 +5,15 @@ description: Using Dialogflow to build a chatbot to interact with your customer
   FAQs, and initial support. When you combine Dialogflow with Firebase and
   Vonage Messages API, things start to heat up. Prerequisites For this tutorial,
   you are connecting a Dialogflow agent with the Vonage […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/06/Blog_Dialogflow-Firebase_Messaging_1200x600.png
+thumbnail: /content/blog/using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr/Blog_Dialogflow-Firebase_Messaging_1200x600.png
 author: kellyjandrews
 published: true
-published_at: 2020-06-01T18:11:24
+published_at: 2020-06-01T18:11:24.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2020/06/01/using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr
 redirect: https://www.nexmo.com/blog/2020/06/01/using-dialogflow-with-firebase-and-the-vonage-messages-sandbox-dr
 ---
+
 Content to be migrated...

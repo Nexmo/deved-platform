@@ -5,14 +5,15 @@ description: My previous tutorial explained how to use the Nexmo C# Client
   follow-up, I continue exploring the Nexmo Platform by showing how to receive
   SMS messages on a Nexmo phone number using the C# Client Library. Requirements
   Visual Studio 2017 RC […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2017/03/sms-receive.png
+thumbnail: /content/blog/recieve-sms-messages-with-asp-net-mvc-framework-dr/sms-receive.png
 author: sidharth-sharma
 published: true
-published_at: 2017-03-31T13:00:30
+published_at: 2017-03-31T13:00:30.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2017/03/31/recieve-sms-messages-with-asp-net-mvc-framework-dr
 redirect: https://www.nexmo.com/blog/2017/03/31/recieve-sms-messages-with-asp-net-mvc-framework-dr
 ---
+
 Content to be migrated...

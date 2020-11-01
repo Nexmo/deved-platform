@@ -5,10 +5,10 @@ description: At Vonage, we publish OpenAPI specifications for all our APIs.
   the Vonage APIs efficiently. As Lorna mentioned in her article on evaluating
   APIs using OpenAPI, downloading an OpenAPI Spec and exploring it in Postman is
   a great way to familiarize yourself with new APIs. […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/09/Blog_Postman_1200x600.png
+thumbnail: /content/blog/announcing-the-vonage-apis-postman-collection/Blog_Postman_1200x600.png
 author: julia
 published: true
-published_at: 2020-09-16T10:53:56
+published_at: 2020-09-16T10:53:56.000Z
 comments: true
 category: release
 tags:
@@ -17,4 +17,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/09/16/announcing-the-vonage-apis-postman-collection
 redirect: https://www.nexmo.com/blog/2020/09/16/announcing-the-vonage-apis-postman-collection
 ---
+
 Content to be migrated...

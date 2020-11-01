@@ -5,14 +5,15 @@ description: Working at a web agency brings a lot of challenges because we are
   those clients, to make sure their requirements are met and they are satisfied
   with the work we’re doing. So, something you probably do not want is outside
   distractions. This is […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/11/E_Phone-Status-Checker_1200x600.png
+thumbnail: /content/blog/creating-a-phone-status-checker-with-nexmo-and-php-dr/E_Phone-Status-Checker_1200x600.png
 author: liamhackett
 published: true
-published_at: 2019-11-14T17:01:35
+published_at: 2019-11-14T17:01:35.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
 redirect: https://www.nexmo.com/blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
 ---
+
 Content to be migrated...

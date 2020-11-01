@@ -5,10 +5,10 @@ description: Hi! My name is Greg Holmes, and I’m excited to be joining the
   painfully containing my excitement while working my notice period for my
   former employer. But, now the time has come! I am originally from London but
   now live in […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/03/Greg_1200_x_600_1.png
+thumbnail: /content/blog/greg-holmes-joins-the-vonage-developer-education-team/Greg_1200_x_600_1.png
 author: greg-holmes
 published: true
-published_at: 2020-03-24T09:11:17
+published_at: 2020-03-24T09:11:17.000Z
 comments: true
 category: team
 tags:
@@ -16,4 +16,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
 redirect: https://www.nexmo.com/blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
 ---
+
 Content to be migrated...

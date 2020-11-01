@@ -5,10 +5,10 @@ description: No-Panic! 🚀 A comprehensive and rewarding step-by-step tutorial
   Deployment to make an awesome panic button progressive web app! This app is
   not intended for use in cases of a real emergency. It should be used solely
   for educational purposes. No-Panic is an app built […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/07/Blog_Python-Firebase-GoogleMaps-SMS_1200x600.png
+thumbnail: /content/blog/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr/Blog_Python-Firebase-GoogleMaps-SMS_1200x600.png
 author: diana-rodriguez
 published: true
-published_at: 2020-07-16T16:54:44
+published_at: 2020-07-16T16:54:44.000Z
 comments: true
 category: tutorial
 tags:
@@ -18,4 +18,5 @@ tags:
 canonical: https://www.nexmo.com/blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
 redirect: https://www.nexmo.com/blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
 ---
+
 Content to be migrated...

@@ -5,14 +5,15 @@ description: How to Add Streaming Video on Linux with OpenTok Linux SDK As part
   Linux SDK. Using the Linux SDK, you will be able to create desktop
   applications that support video surveillance solutions on embedded Linux
   systems and other applications where audio […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/08/FB_OpenTokLinux.png
+thumbnail: /content/blog/opentok-linux/FB_OpenTokLinux.png
 author: jose-antonio
 published: true
-published_at: 2019-08-14T21:43:11
+published_at: 2019-08-14T21:43:11.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/08/14/opentok-linux
 redirect: https://www.nexmo.com/blog/2019/08/14/opentok-linux
 ---
+
 Content to be migrated...

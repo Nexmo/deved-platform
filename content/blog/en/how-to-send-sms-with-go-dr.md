@@ -5,14 +5,15 @@ description: In this blog post we’ll show you how to use the nexmo-go client
   follow along with this post you’ll need to have Golang installed on your
   development machine. Installation instructions can be found on the official
   Golang website. Alternatively, if […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2019/08/TW_Go.jpg
+thumbnail: /content/blog/how-to-send-sms-with-go-dr/TW_Go.jpg
 author: martyn
 published: true
-published_at: 2019-08-28T07:05:49
+published_at: 2019-08-28T07:05:49.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/08/28/how-to-send-sms-with-go-dr
 redirect: https://www.nexmo.com/blog/2019/08/28/how-to-send-sms-with-go-dr
 ---
+
 Content to be migrated...

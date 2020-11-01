@@ -5,14 +5,15 @@ description: Nexmo hosted an impressive group of female engineers from the Women
   careers. They connect amazing women with other like-minded women around the
   globe who unite under one simple notion – the world of technology is much
   better with women in it. We hosted 15 local […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-12.42.23-PM-1.png
+thumbnail: /content/blog/nexmo-women-who-code-host-meetup-for-females-in-tech/Screen-Shot-2015-08-04-at-12.42.23-PM-1.png
 author: elishahoffman
 published: true
-published_at: 2015-08-06T13:49:37
+published_at: 2015-08-06T13:49:37.000Z
 comments: true
 category: event
 tags: []
 canonical: https://www.nexmo.com/blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
 redirect: https://www.nexmo.com/blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
 ---
+
 Content to be migrated...

@@ -5,14 +5,15 @@ description: The latest version of our Video Client SDKs, OpenTok v2.17, is now
   and how you can use them. Microsoft Edge 18 Support Earlier this year,
   Microsoft launched the Chromium based Edge (Edgium) and leveraged the battle
   tested open source Chromium technology […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2020/05/Blog_SDK-Updates_1200x600.png
+thumbnail: /content/blog/opentok-version-2-17-whats-new-and-how-you-can-use-it-dr/Blog_SDK-Updates_1200x600.png
 author: manik-sachdeva
 published: true
-published_at: 2020-05-15T09:12:29
+published_at: 2020-05-15T09:12:29.000Z
 comments: true
 category: release
 tags: []
 canonical: https://www.nexmo.com/blog/2020/05/15/opentok-version-2-17-whats-new-and-how-you-can-use-it-dr
 redirect: https://www.nexmo.com/blog/2020/05/15/opentok-version-2-17-whats-new-and-how-you-can-use-it-dr
 ---
+
 Content to be migrated...

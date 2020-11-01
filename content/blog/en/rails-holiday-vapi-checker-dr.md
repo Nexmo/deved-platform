@@ -6,14 +6,15 @@ description: Nexmo’s Voice API allows you to build real-time voice
   calls, create conference calls, and send text-to-speech messages in 40
   languages and with a plethora of accents. Nowadays, people find themselves
   increasingly working […]
-thumbnail: https://www.nexmo.com/wp-content/uploads/2018/10/dialingtelephonekeypadco_536224original.jpg
+thumbnail: /content/blog/rails-holiday-vapi-checker-dr/dialingtelephonekeypadco_536224original.jpg
 author: ben-greenberg
 published: true
-published_at: 2019-02-27T11:15:05
+published_at: 2019-02-27T11:15:05.000Z
 comments: true
 category: tutorial
 tags: []
 canonical: https://www.nexmo.com/blog/2019/02/27/rails-holiday-vapi-checker-dr
 redirect: https://www.nexmo.com/blog/2019/02/27/rails-holiday-vapi-checker-dr
 ---
+
 Content to be migrated...
