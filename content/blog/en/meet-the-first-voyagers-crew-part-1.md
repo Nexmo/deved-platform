@@ -3,7 +3,7 @@ title: Meet The First Voyagers Crew (Part 1)
 description: Announcing the launch of Vonage Voyagers, a one-year program for developers.
 thumbnail: /content/blog/meet-the-first-voyagers-crew-part-1/blog_vonage-voyagers_1_1200x600.png
 author: myrsini
-published: false
+published: true
 published_at: 2020-11-02T15:28:00.000Z
 updated_at: ""
 category: announcement
