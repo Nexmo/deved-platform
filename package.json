@@ -36,7 +36,7 @@
     "nuxt-i18n": "^6.15.4",
     "reading-time": "^1.2.0",
     "showdown": "^1.9.1",
-    "slugify": "^1.4.5",
+    "slugify": "^1.4.6",
     "vue-disqus": "^3.0.5",
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^3.4.2",
