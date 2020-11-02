@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.5 - Fixes deploy-preview thumbnails on a post (02/11/2020)
+### Fixes
+
+- Deploy previews on a post preview page linked to localhost rather than the build URL.
+---
+
 ## v1.0.4 - Netlify CMS config fixes (02/11/2020)
 ### Fixes
 
