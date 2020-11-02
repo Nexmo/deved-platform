@@ -9,7 +9,6 @@ public_folder: '/content/images/'
 
 collections:
   - name: blog
-    i18n: true
     label: 'Blog Post'
     format: frontmatter
     folder: '/content/blog/en'
@@ -35,17 +34,16 @@ collections:
         name: title
         widget: string
         hint: "Post title and meta title. Soft limit 60 characters, hard limit 70 characters."
-        i18n: true
       - label: Description
         name: description
         widget: string
         hint: "Post meta description. Soft limit 120 characters, hard limit 160 characters."
-        i18n: true
       - label: 'Featured Image'
         name: thumbnail
         widget: image
         allow_multiple: false
         hint: "Featured image that appears at the top of the post."
+        required: false
       - label: Author
         name: author
         widget: relation
@@ -82,6 +80,12 @@ collections:
         name: tags
         widget: list
         hint: "Please include languages, platforms, products. i.e. nodejs, aws, messages-api"
+      - label: Comments
+        name: comments
+        widget: boolean
+        default: true
+        required: false
+        hint: "Turn off comments on a post."
       - label: Spotlight
         name: spotlight
         widget: boolean
@@ -115,7 +119,6 @@ collections:
       - label: Body
         name: body
         widget: markdown
-        i18n: true
   - name: pages
     label: Pages
     editor:
