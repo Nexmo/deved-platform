@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.4 - Netlify CMS config fixes (02/11/2020)
+### Fixes
+
+- Remove `required` from Featured Image
+- Add in Comments `boolean` switch
+---
+
 ## v1.0.3 - OG Data, tag fixes, external link icons (01/11/2020)
 ### Fixes
 
