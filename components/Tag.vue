@@ -21,6 +21,7 @@
 
 <script>
 const tagMap = {
+  voyagers: ['vonage-voyagers'],
   careers: ['career'],
   dotnet: ['dot-net', 'asp-dot-net', '.net', 'asp.net'],
   go: ['go-lang', 'golang'],

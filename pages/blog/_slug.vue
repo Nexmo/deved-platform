@@ -216,11 +216,10 @@ export default {
 
   methods: {
     postMeta() {
-      if (
-        typeof this.post.thumbnail !== 'undefined' &&
-        !this.post.thumbnail.startsWith('http')
-      ) {
-        this.post.thumbnail = `${this.baseUrl}${this.post.thumbnail}`
+      let thumbnail = this.post.thumbnail
+
+      if (typeof thumbnail !== 'undefined' && !thumbnail.startsWith('http')) {
+        thumbnail = `${this.baseUrl}${thumbnail}`
       }
 
       const meta = [
@@ -242,9 +241,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: `${
-            this.post.thumbnail || '/images/generic-social-card.png'
-          }`,
+          content: `${thumbnail || '/images/generic-social-card.png'}`,
         },
         {
           hid: 'twitter:image:alt',
@@ -269,9 +266,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `${
-            this.post.thumbnail || '/images/generic-social-card.png'
-          }`,
+          content: `${thumbnail || '/images/generic-social-card.png'}`,
         },
         {
           hid: 'og:image:alt',
