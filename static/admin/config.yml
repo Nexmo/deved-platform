@@ -79,6 +79,8 @@ collections:
       - label: Tags
         name: tags
         widget: list
+        max: 3
+        min: 1
         hint: "Please include languages, platforms, products. i.e. nodejs, aws, messages-api"
       - label: Comments
         name: comments
