@@ -15,7 +15,7 @@ comments: true
 redirect: ""
 canonical: ""
 ---
-In the [last tutorial](https://www.nexmo.com/blog/2017/05/03/send-sms-messages-with-java-dr/), we set up a Java web app that can send SMS messages using Vonage SMS API. This tutorial builds on that, adding an endpoint that will be called by Nexmo when someone sends an SMS message to your Vonage number.
+In the [last tutorial](https://www.nexmo.com/blog/2017/05/03/send-sms-messages-with-java-dr/), we set up a Java web app that can send SMS messages using Vonage SMS API. This tutorial builds on that, adding an endpoint that will be called by Vonage when someone sends an SMS message to your Vonage number.
 
 ## How Does It Work?
 
@@ -23,7 +23,7 @@ When Vonage receives an SMS message on a Vonage number, it looks up the webhook 
 
 ![Receiving an SMS message](/content/blog/how-to-receive-sms-messages-with-java/diagram-receive.png "Receiving an SMS message diagram")
 
-What we're going to do in this tutorial is write a Servlet that can handle the incoming SMS message. The problem is that while we're developing on our local machine, we are likely to be firewalled from the internet, so Nexmo's servers can't reach us! One way around this would be to continuously deploy to a public web server, but that is a complete pain. Fortunately there is an excellent tool called Ngrok that can help us with this problem.
+What we're going to do in this tutorial is write a Servlet that can handle the incoming SMS message. The problem is that while we're developing on our local machine, we are likely to be firewalled from the internet, so Vonage's servers can't reach us! One way around this would be to continuously deploy to a public web server, but that is a complete pain. Fortunately there is an excellent tool called Ngrok that can help us with this problem.
 
 ## Developing Webhooks With Ngrok
 
