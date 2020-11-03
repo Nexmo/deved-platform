@@ -27,7 +27,7 @@ A publically accessible webhook is required and configured with your Vonage acco
 * [Go installed locally](https://golang.org/)
 * [Ngrok](https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr)
 
-<sign-up number></signup>
+<sign-up number></sign-up>
 
 ## Set up the Code
 
