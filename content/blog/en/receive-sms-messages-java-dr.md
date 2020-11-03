@@ -21,7 +21,7 @@ In the [last tutorial](https://www.nexmo.com/blog/2017/05/03/send-sms-messages-w
 
 When Nexmo receives an SMS message on a Nexmo number, it looks up the webhook endpoint (URL) associated with that number and calls that URL with a big blob of JSON describing the message that was just received.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2016/10/diagram-receive.png" alt="Receiving an SMS message" />
+![Receiving an SMS message](/content/blog/how-to-receive-sms-messages-with-java/diagram-receive.png "Receiving an SMS message diagram")
 
 What we're going to do in this tutorial is write a Servlet that can handle the incoming SMS message. The problem is that while we're developing on our local machine, we are likely to be firewalled from the internet, so Nexmo's servers can't reach us! One way around this would be to continuously deploy to a public web server, but that is a complete pain. Fortunately there is an excellent tool called Ngrok that can help us with this problem.
 
@@ -37,7 +37,7 @@ ngrok http 8080
 
 Jetty uses the `8080` port by default, so we'll use that to make life easier. You can see from the screenshot that Ngrok has allocated me the random URL `http://8b771613.ngrok.io`, which is now tunneling to localhost:8080, where I'll be running Jetty in a moment.
 
-![Ngrok output](https://www.nexmo.com/wp-content/uploads/2017/05/ngrok-output.png)
+![Ngrok output](https://www.nexmo.com/wp-content/uploads/2017/05/ngrok-output.png "Ngrok output")
 
 Leave Ngrok running in a terminal window (it'll happily run until you shut it down), and we want to keep the URL and tunnel running for a while. What we'd like to do now is to configure Nexmo to point to our Ngrok URL, but it won't do so unless the URL is returning 200 messages. So we need to write a small stub servlet first.
 
@@ -112,6 +112,6 @@ So now you can receive SMS messages! At the moment, all we're doing is printing 
 
 The following documentation links will be useful for working with SMS messages:
 
-- [SMS Webhooks](https://docs.nexmo.com/messaging/setup-callbacks)
-- [Inbound Messages](https://docs.nexmo.com/messaging/sms-api/api-reference#inbound)
-Content to be migrated...
+* [SMS Webhooks](https://docs.nexmo.com/messaging/setup-callbacks)
+* [Inbound Messages](https://docs.nexmo.com/messaging/sms-api/api-reference#inbound)
+  Content to be migrated...
