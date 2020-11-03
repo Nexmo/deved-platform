@@ -1,0 +1,8 @@
+{
+  "alumni": true,
+  "username": "judy2k",
+  "name": "Mark Smith",
+  "image_url": "https://secure.gravatar.com/avatar/092806afba64c78f9a86dd03f2308348?s=96&d=mm&r=g",
+  "bio": "Mark was nominally responsible for Nexmo's client libraries (although he only writes the Python and Java libraries). He was originally a Java developer, has been a Python developer for 18 years, and is increasingly dabbling with Go and Rust. He likes pushing programming languages to the limit and then teaching these techniques to other programmers. He has a Viking hat, but he isn't a Viking, and he's Judy2k on Twitter for reasons he won't discuss.",
+  "website_url": ""
+}
