@@ -26,8 +26,6 @@ You’ll need PHP installed before working through this post. I’m running PHP 
 
 You'll also need [our CLI](https://github.com/Nexmo/nexmo-cli) installed. We'll use it to purchase a phone number and configure our Vonage account to point at our new application.
 
-## Vonage API Account
-
 <sign-up number></sign-up>
 
 ## Receiving an SMS with PHP
