@@ -15,11 +15,11 @@ comments: true
 redirect: ""
 canonical: ""
 ---
-In the [last tutorial](https://www.nexmo.com/blog/2017/05/03/send-sms-messages-with-java-dr/), we set up a Java web app that can send SMS messages using Nexmo's SMS API. This tutorial builds on that, adding an endpoint that will be called by Nexmo when someone sends an SMS message to your Nexmo number.
+In the [last tutorial](https://www.nexmo.com/blog/2017/05/03/send-sms-messages-with-java-dr/), we set up a Java web app that can send SMS messages using Vonage SMS API. This tutorial builds on that, adding an endpoint that will be called by Nexmo when someone sends an SMS message to your Vonage number.
 
 ## How Does It Work?
 
-When Nexmo receives an SMS message on a Nexmo number, it looks up the webhook endpoint (URL) associated with that number and calls that URL with a big blob of JSON describing the message that was just received.
+When Vonage receives an SMS message on a Vonage number, it looks up the webhook endpoint (URL) associated with that number and calls that URL with a big blob of JSON describing the message that was just received.
 
 ![Receiving an SMS message](/content/blog/how-to-receive-sms-messages-with-java/diagram-receive.png "Receiving an SMS message diagram")
 
@@ -39,7 +39,7 @@ Jetty uses the `8080` port by default, so we'll use that to make life easier. Yo
 
 ![Ngrok output](https://www.nexmo.com/wp-content/uploads/2017/05/ngrok-output.png "Ngrok output")
 
-Leave Ngrok running in a terminal window (it'll happily run until you shut it down), and we want to keep the URL and tunnel running for a while. What we'd like to do now is to configure Nexmo to point to our Ngrok URL, but it won't do so unless the URL is returning 200 messages. So we need to write a small stub servlet first.
+Leave Ngrok running in a terminal window (it'll happily run until you shut it down), and we want to keep the URL and tunnel running for a while. What we'd like to do now is to configure Vonage to point to our Ngrok URL, but it won't do so unless the URL is returning 200 messages. So we need to write a small stub servlet first.
 
 ## A Servlet To Receive The SMS Message
 
@@ -85,11 +85,11 @@ All the Servlet does is to print the received parameters to the console--useful 
 </servlet-mapping>
 ```
 
-Note that I've reconfigured the `send-sms` mapping so the url-pattern is now `/send` instead of the wildcard mapping it was before. Now if you run `gradle appRun`, Jetty should start up and you're ready to configure your Nexmo web-hook.
+Note that I've reconfigured the `send-sms` mapping so the url-pattern is now `/send` instead of the wildcard mapping it was before. Now if you run `gradle appRun`, Jetty should start up and you're ready to configure your Vonage web-hook.
 
-## Configure Nexmo To Call Your Webhook
+## Configure Vonage To Call Your Webhook
 
-Sign into your Nexmo account and go to [Your Numbers](https://dashboard.nexmo.com/your-numbers). Find the number you want to configure, hit 'Edit' and then enter the ngrok URL with `/YOUR_PROJECT_NAME/inbound` at the end.
+Sign into your Vonage account and go to [Your Numbers](https://dashboard.nexmo.com/your-numbers). Find the number you want to configure, hit 'Edit' and then enter the ngrok URL with `/YOUR_PROJECT_NAME/inbound` at the end.
 
 Now, if you send a text message to the number, you should see some lines printed on your console:
 
@@ -114,4 +114,3 @@ The following documentation links will be useful for working with SMS messages:
 
 * [SMS Webhooks](https://docs.nexmo.com/messaging/setup-callbacks)
 * [Inbound Messages](https://docs.nexmo.com/messaging/sms-api/api-reference#inbound)
-  Content to be migrated...
