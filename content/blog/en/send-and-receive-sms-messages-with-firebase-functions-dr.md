@@ -37,22 +37,31 @@ The first step is to set up a Firebase project. The following will walk you thro
 1. Go to [Firebase console](https://console.firebase.google.com/) 
 2. Click add project<br /><br />
 
- ![Click Add Project](https://www.nexmo.com/wp-content/uploads/2020/01/create-project.png)
+ 
+
+![The Create Project link](/content/blog/send-and-receive-sms-messages-with-firebase-functions/create-project.png "Click Add Project")
 
 1. Add a name and click continue
 
- ![Name Project](https://www.nexmo.com/wp-content/uploads/2020/01/name-project.png)
+ 
+
+![Naming your project](/content/blog/send-and-receive-sms-messages-with-firebase-functions/name-project.png "Name Project")
 
 1. Leave Google Analytics on and click continue (not required)
 2. Select a Google Analytics account and then click Create Project (if added)
 
- ![Add analytics](https://www.nexmo.com/wp-content/uploads/2020/01/add-analytics.png)
+ 
+
+![Configuring Google Analytics](/content/blog/send-and-receive-sms-messages-with-firebase-functions/add-analytics.png "Add analytics")
 
 1. Wait a bit for the project to be created - takes less than a minute
 2. Set the Billing type under *⚙️ -> Usage and Billing -> Details & Settings* to Blaze. The Pay-as-you-go plan is required to use a third-party API. For more details regarding billing with Google, go [here](https://cloud.google.com/billing/docs/how-to/payment-methods).
-   ![Change Billing](https://www.nexmo.com/wp-content/uploads/2020/01/update-billing.png)
+
+   ![Dialog to select a Firebase Pricing Plan](/content/blog/send-and-receive-sms-messages-with-firebase-functions/update-billing.png "Change Billing")
 3. Set the `Google Cloud Platform (GCP) resource location` in `⚙️ -> Project Settings`
-   ![Update Location](https://www.nexmo.com/wp-content/uploads/2020/01/update-location.png)
+
+
+   ![Setting a resource location in the resource location dialog](/content/blog/send-and-receive-sms-messages-with-firebase-functions/update-location.png "Update Location")
 
 ### Install Firebase Tools
 
