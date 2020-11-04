@@ -47,12 +47,11 @@ collections:
       - label: Author
         name: author
         widget: relation
-        collection: pages
-        file: authors
-        searchFields: ["authors.*.username", "authors.*.name", "authors.*.twitter"]
-        valueField: "authors.*.username"
-        displayFields: ["authors.*.name"]
-        hint: "Search for the post author. If not found, go add them at *Pages* » *Authors* first."
+        collection: authors
+        searchFields: ["username", "name", "twitter"]
+        valueField: "username"
+        displayFields: ["name"]
+        hint: "Search for the post author. If not found, go add them at *Authors* first."
       - label: Published
         name: published
         widget: boolean
