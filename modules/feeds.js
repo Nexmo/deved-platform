@@ -1,173 +1,97 @@
-import defu from 'defu'
-import { data } from './data'
 import config from './config'
 
-/**
- * Default options for processing a file.
- */
-const options = defu(
-  {
-    charType: 'utf8',
-    metaGlob: '*.json',
-    dir: 'content',
-    contentGlob: '**/*.md',
-  },
-  config
-)
-
-/**
- * Takes a meta data object and returns a route.
- *
- * @param {string} type A string to map how to format the route
- * @param {*} object Could be a string or object, or anything that the route
- *   type is expecting for formatting
- *
- * @return {string}
- */
-const metaRouteMap = (type, object) => {
-  const map = {
-    categories: `/${type}/${object.slug}`,
-    tags: `/${type}/${object}`,
-    authors: `/${type}/${object.username}`,
-  }
-
-  return map[type]
+const feedFormats = {
+  rss: { type: 'rss2', file: 'rss.xml' },
+  json: { type: 'json1', file: 'feed.json' },
 }
 
-/**
- * Get all possible feeds (rss, json-feed, atom) for @nuxtjs/feeds
- *
- * @return {array}
- */
-export const getFeeds = (posts) => {
-  const meta = data(options)
+export const getMainFeeds = (content) => {
+  const createFeedArticles = async function (feed) {
+    feed.options = {
+      title: `${config.indexTitle} » ${config.baseTitle}`,
+      link: `${config.baseUrl}/blog`,
+      description: config.baseDescription,
+    }
 
-  const callbacks = (item) => ({
-    authors: (post) => {
-      return post.author === item.username
-    },
-    categories: (post) => {
-      return post.category === item.slug
-    },
-  })
+    const posts = await content('blog')
+      .where({ published: { $ne: false } })
+      .sortBy('published_at', 'desc')
+      .limit(5)
+      .fetch()
 
-  const feeds = Object.keys(meta).flatMap((type) => {
-    return meta[type].map((item, key, array) => {
-      array[key].type = type
-      array[key].posts = posts.filter(callbacks(item)[type]).slice(0, 5)
-      return array[key]
-    })
-  })
-
-  const output = []
-
-  output.push(
-    ...feeds.map((f) => {
-      const route = `${metaRouteMap(f.type, f)}/rss.xml`
-
-      return {
-        path: route, // The route to your feed.
-        create(feed) {
-          feed.options = {
-            title: `${options.indexTitle} » ${options.baseTitle}`,
-            link: `${options.baseUrl}${route}`,
-            description: options.baseDescription,
-          }
-
-          f.posts.forEach((post) => {
-            feed.addItem({
-              title: post.title,
-              id: post.slug,
-              date: new Date(post.updated_at || post.published_at),
-              link: `${options.baseUrl}${post.route}`,
-              description: post.description,
-              content: post.description,
-            })
-          })
-        },
-        cacheTime: 1000 * 60 * 15,
-        type: 'rss2',
-      }
-    })
-  )
-
-  output.push(
-    ...feeds.map((f) => {
-      const route = `${metaRouteMap(f.type, f)}/feed.json`
-
-      return {
-        path: route, // The route to your feed.
-        create(feed) {
-          feed.options = {
-            title: `${options.indexTitle} » ${options.baseTitle}`,
-            link: `${options.baseUrl}${route}`,
-            description: options.baseDescription,
-          }
-
-          f.posts.forEach((post) => {
-            feed.addItem({
-              title: post.title,
-              id: post.slug,
-              date: new Date(post.updated_at || post.published_at),
-              link: `${options.baseUrl}${post.route}`,
-              description: post.description,
-              content: post.description,
-            })
-          })
-        },
-        cacheTime: 1000 * 60 * 15,
-        type: 'json1',
-      }
-    })
-  )
-
-  output.push({
-    path: '/blog/rss.xml', // The route to your feed.
-    create(feed) {
-      feed.options = {
-        title: `${options.indexTitle} » ${options.baseTitle}`,
-        link: `${options.baseUrl}/blog/rss.xml`,
-        description: options.baseDescription,
-      }
-
-      posts.slice(0, 5).forEach((post) => {
-        feed.addItem({
-          title: post.title,
-          id: post.slug,
-          date: new Date(post.updated_at || post.published_at),
-          link: `${options.baseUrl}${post.route}`,
-          description: post.description,
-          content: post.description,
-        })
+    posts.forEach((post) => {
+      feed.addItem({
+        title: post.title,
+        id: post.slug,
+        date: new Date(post.updated_at || post.published_at),
+        link: `${config.baseUrl}${post.route}`,
+        description: post.description,
+        content: post.description,
       })
-    },
-    cacheTime: 1000 * 60 * 15,
-    type: 'rss2',
-  })
+    })
+  }
 
-  output.push({
-    path: '/blog/feed.json', // The route to your feed.
-    create(feed) {
-      feed.options = {
-        title: `${options.indexTitle} » ${options.baseTitle}`,
-        link: `${options.baseUrl}/blog/feed.json`,
-        description: options.baseDescription,
-      }
+  return Object.values(feedFormats).map(({ file, type }) => ({
+    path: `/blog/${file}`,
+    type,
+    create: createFeedArticles,
+  }))
+}
 
-      posts.slice(0, 5).forEach((post) => {
-        feed.addItem({
-          title: post.title,
-          id: post.slug,
-          date: new Date(post.updated_at || post.published_at),
-          link: `${options.baseUrl}${post.route}`,
-          description: post.description,
-          content: post.description,
-        })
+const getAuthorFeed = (author, content) => {
+  const createFeedArticles = async function (feed) {
+    feed.options = {
+      title: `${author.name} » ${config.baseTitle}`,
+      link: `${config.baseUrl}/authors/${author.username}`,
+      description: author.bio,
+    }
+
+    const posts = await content('blog')
+      .where({
+        $and: [
+          { author: { $eq: author.username } },
+          { published: { $ne: false } },
+        ],
       })
-    },
-    cacheTime: 1000 * 60 * 15,
-    type: 'json1',
-  })
+      .sortBy('published_at', 'desc')
+      .limit(5)
+      .fetch()
 
-  return output
+    posts.forEach((post) => {
+      feed.addItem({
+        title: post.title,
+        id: post.slug,
+        date: new Date(post.updated_at || post.published_at),
+        link: `${config.baseUrl}${post.route}`,
+        description: post.description,
+        content: post.description,
+      })
+    })
+  }
+
+  return Object.values(feedFormats).map(({ file, type }) => ({
+    path: `/authors/${author.username}/${file}`,
+    type,
+    create: createFeedArticles,
+  }))
+}
+
+export const getAuthorFeeds = async (content) => {
+  const authors = await content('authors')
+    .where({ hidden: { $ne: true } })
+    .fetch()
+
+  return Object.values(authors).map((author) => {
+    return [...getAuthorFeed(author)]
+  })
+}
+
+const getCategoryFeed = (category, content) => {
+  return []
+}
+
+export const getCategoryFeeds = async (content) => {
+  const categories = await content('categories').fetch()
+
+  return [...getCategoryFeed(content)]
 }

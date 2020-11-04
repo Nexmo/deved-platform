@@ -36,8 +36,7 @@ import config from '~/modules/config'
 export default {
   async asyncData({ $content, params, error, app }) {
     try {
-      const { authors } = await $content('authors').fetch()
-      const author = authors.find((a) => a.username === params.author)
+      const author = await $content('authors', params.author).fetch()
 
       if (!author) {
         return error({ statusCode: 404, message: 'Page not found' })

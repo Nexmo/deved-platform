@@ -82,28 +82,67 @@
 <script>
 export default {
   async asyncData({ $content, app }) {
-    let { authors } = await $content('authors').fetch()
+    const team = await $content('authors')
+      .where({
+        $and: [
+          {
+            hidden: { $ne: true },
+          },
+          {
+            team: { $eq: true },
+          },
+        ],
+      })
+      .sortBy('name', 'asc')
+      .fetch()
 
-    authors = authors.filter((a) => a.hidden !== true)
+    const alumni = await $content('authors')
+      .where({
+        $and: [
+          {
+            hidden: { $ne: true },
+          },
+          {
+            alumni: { $eq: true },
+          },
+        ],
+      })
+      .sortBy('name', 'asc')
+      .fetch()
 
-    authors.sort((a, b) => {
-      const nameA = a.name.toUpperCase()
-      const nameB = b.name.toUpperCase()
-      return nameA < nameB ? -1 : nameA > nameB ? 1 : 0
-    })
+    const spotlight = await $content('authors')
+      .where({
+        $and: [
+          {
+            hidden: { $ne: true },
+          },
+          {
+            spotlight: { $eq: true },
+          },
+        ],
+      })
+      .sortBy('name', 'asc')
+      .fetch()
 
-    authors.sort((a, b) => {
-      return a.noteworthy === b.noteworthy ? 0 : a.noteworthy ? -1 : 1
-    })
-
-    const team = authors.filter((a) => a.team === true)
-    authors = authors.filter((a) => a.team !== true) // remove team from authors pool
-
-    const alumni = authors.filter((a) => a.alumni === true)
-    authors = authors.filter((a) => a.alumni !== true) // remove alumni from authors pool
-
-    const spotlight = authors.filter((a) => a.spotlight === true)
-    authors = authors.filter((a) => a.spotlight !== true) // remove spotlight from authors pool
+    const authors = await $content('authors')
+      .where({
+        $and: [
+          {
+            hidden: { $ne: true },
+          },
+          {
+            team: { $ne: true },
+          },
+          {
+            alumni: { $ne: true },
+          },
+          {
+            spotlight: { $ne: true },
+          },
+        ],
+      })
+      .sortBy('name', 'asc')
+      .fetch()
 
     return {
       team,
