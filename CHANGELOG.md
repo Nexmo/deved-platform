@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.1 - Fix bug introduced from v1.1.0 (04/11/2020)
+### Fixes
+
+- Fix authors not selectable editing/creating a blog post in Netlify CMS (#251)
+---
+
 ## v1.1.0 - Rearchitect author components, data, and CMS config (04/11/2020)
 ### Fixes
 - Text hint for tags is better than it was (#225)
