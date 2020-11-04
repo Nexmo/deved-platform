@@ -13,7 +13,7 @@ spotlight: false
 redirect: ""
 canonical: ""
 outdated: false
-outdated_url: ""
+replacement_url: ""
 ---
 Back in July, we announced the launch of [Vonage Voyagers](https://nexmo.dev/2AxZcP9), a one-year program for developers who want to get their hands on new communication technologies first and be part of a group of like-minded peers who support and learn from each other. It’s an opportunity for us to reward and recognise the valuable contributors in our community. You can become a Voyager by [applying directly](https://airtable.com/shrOGdDIjGXQYclXx) or [nominating](https://airtable.com/shrI1b8WWx4B85ZSZ) a colleague, friend, or another community member. 
 
