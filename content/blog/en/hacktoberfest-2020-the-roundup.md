@@ -62,7 +62,7 @@ In addition to our events, there were several official Hacktoberfest events, and
 
 [Lorna Mitchell](https://twitter.com/lornajane), one of our Senior Developer Advocates, spoke at the first official Hacktoberfest event earlier in the month:
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/pASY8b8QWcs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/pASY8b8QWcs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br/>
 
 Additionally, our colleagues took to the 'virtual' stage in a truly international manner:
 
@@ -88,7 +88,7 @@ On top of our regular live streams, we committed to streaming every single worki
 
 It was great to have so many regular viewers join us throughout the month. We celebrated with a special, chaotic, all-team stream on Friday, 30th October, where we took the time to highlight key moments, superb contributions, fantastic community members, and more.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/9T4SS1TceCg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/9T4SS1TceCg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br/>
 
 ## Contributions Always Welcome
 
