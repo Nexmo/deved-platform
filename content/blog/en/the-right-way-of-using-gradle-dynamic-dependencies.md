@@ -3,6 +3,7 @@ title: The Right Way of Using Gradle Dynamic Dependencies
 description: Gradle is a flexible build system that helps with dependency
   management. In this tutorial, we explore the best ways of using Gradle dynamic
   dependencies.
+thumbnail: /content/blog/the-right-way-of-using-gradle-dynamic-dependencies/blog_gradle-dynamic-dependencies_1200x600.png
 author: igor-wojda
 published: true
 published_at: 2020-11-04T15:53:38.567Z
