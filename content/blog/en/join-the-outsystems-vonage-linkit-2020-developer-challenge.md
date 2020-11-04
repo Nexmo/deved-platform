@@ -6,7 +6,7 @@ thumbnail: /content/blog/join-the-outsystems-vonage-linkit-2020-developer-challe
 author: martyn
 published: true
 published_at: 2020-10-29T14:00:07.000Z
-updated_at: 2020-11-04T20:15:16.245Z
+updated_at: ""
 category: event
 tags:
   - linkit
