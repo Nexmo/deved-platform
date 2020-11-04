@@ -81,7 +81,7 @@ collections:
         widget: list
         max: 3
         min: 1
-        hint: "Please include languages, platforms, products. i.e. nodejs, aws, messages-api"
+        hint: "Where applicable, include one language or framework (node, php, go), one product or programme (sms-api, spotlight, voyagers), and/or one relevant keyword (aws, opensource, jamstack, netlify). More info at https://nexmo.dev/3oWTM4M"
       - label: Comments
         name: comments
         widget: boolean
