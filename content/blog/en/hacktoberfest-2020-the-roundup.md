@@ -6,7 +6,7 @@ description: Hacktoberfest 2020 is an annual event built around open source
 thumbnail: /content/blog/hacktoberfest-2020-the-roundup/blog_writeup_hacktoberfest_2020_1200x600.png
 author: martyn
 published: true
-published_at: 2020-11-04T16:33:26.517Z
+published_at: 2020-11-05T08:30:26.517Z
 updated_at: 2020-11-04T16:33:26.555Z
 category: community
 tags:
