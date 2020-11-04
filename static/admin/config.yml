@@ -69,7 +69,7 @@ collections:
       - label: Category
         name: category
         widget: relation
-        collection: pages
+        collection: config
         file: categories
         searchFields: ["categories.*.name", "categories.*.slug", "categories.*.plural"]
         valueField: "categories.*.slug"
