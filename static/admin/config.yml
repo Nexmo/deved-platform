@@ -121,117 +121,132 @@ collections:
       - label: Body
         name: body
         widget: markdown
-  - name: pages
-    label: Pages
+  - name: authors
+    label: 'Authors'
+    format: json
+    folder: '/content/authors'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    sortable_fields: ['username', 'name', 'email']
+    identifier_field: username
+    view_filters: 
+      - label: "Spotlight Authors"
+        field: spotlight
+        pattern: true
+      - label: "Team Authors"
+        field: team
+        pattern: true
+      - label: "Alumni Authors"
+        field: alumni
+        pattern: true
+      - label: "Noteworthy Authors"
+        field: noteworthy
+        pattern: true
+    fields:
+      - label: Username
+        name: username
+        widget: string
+        hint: "Author username. i.e. lukeoliff (if copying from Wordpress, use the slug from your profile URL)"
+      - label: Name
+        name: name
+        widget: string
+        hint: "Visible full name. i.e. Luke Oliff"
+      - label: 'User Image'
+        name: 'image_url'
+        widget: 'image'
+        allow_multiple: false
+        hint: "Profile picture for authors list and author profile page"
+      - label: 'Twitter'
+        name: twitter
+        widget: string
+        hint: "Your twitter username WITHOUT the @"
+      - label: Bio
+        name: bio
+        widget: text
+        required: false
+        hint: "About you, your bio."
+      - label: 'Job Title'
+        name: title
+        widget: string
+        required: false
+        hint: "Job title"
+      - label: Email
+        name: email
+        widget: string
+        required: false
+        hint: "Email address (not required, but also not public)"
+      - label: Team Member
+        name: team
+        widget: boolean
+        default: false
+        required: false
+        hint: "Is this user part of the Vonage team?"
+      - label: Team Alumni (former member)
+        name: alumni
+        widget: boolean
+        default: false
+        required: false
+        hint: "Was this user part of the Vonage or Nexmo team in the past?"
+      - label: Spotlight
+        name: spotlight
+        widget: boolean
+        default: false
+        required: false
+        hint: "Is this user part of the Spotlight programme?"
+      - label: Noteworthy
+        name: noteworthy
+        widget: boolean
+        default: false
+        required: false
+        hint: "If not Spotlight or team, is this author otherwise noteworthy?"
+      - label: 'Website Url'
+        name: website_url
+        widget: string
+        required: false
+        hint: "Public URL, but will default to your author profile URL if not supplied (without UTMs we add those)"
+      - label: 'Facebook Url'
+        name: facebook_url
+        widget: string
+        required: false
+        hint: "Public profile URL (without UTMs we add those)"
+      - label: 'GitHub Url'
+        name: github_url
+        widget: string
+        required: false
+        hint: "Public profile URL (without UTMs we add those)"
+      - label: 'StackOverflow Url'
+        name: stackoverflow_url
+        widget: string
+        required: false
+        hint: "Public profile URL (without UTMs we add those)"
+      - label: 'LinkedIn Url'
+        name: linkedin_url
+        widget: string
+        required: false
+        hint: "Public profile URL (without UTMs we add those)"
+      - label: 'Twitch Url'
+        name: twitch_url
+        widget: string
+        required: false
+        hint: "Public profile URL (without UTMs we add those)"
+      - label: 'YouTube Url'
+        name: youtube_url
+        widget: string
+        required: false
+        hint: "Public profile URL (without UTMs we add those)"
+      - label: HIDDEN From Authors Page
+        name: hidden
+        widget: boolean
+        default: false
+        required: false
+        hint: "Do you want to hide this author profile from the authors page"
+  - name: config
+    label: Configuration
     editor:
       preview: false
     files:
-      - label: 'Authors'
-        name: authors
-        file: 'content/authors.json'
-        fields:
-          - label: Authors
-            name: authors
-            identifier_field: username
-            widget: list
-            fields:
-              - label: Username
-                name: username
-                widget: string
-                hint: "Author username. i.e. lukeoliff (if copying from Wordpress, use the slug from your profile URL)"
-              - label: Name
-                name: name
-                widget: string
-                hint: "Visible full name. i.e. Luke Oliff"
-              - label: 'User Image'
-                name: 'image_url'
-                widget: 'image'
-                allow_multiple: false
-                hint: "Profile picture for authors list and author profile page"
-              - label: 'Twitter'
-                name: twitter
-                widget: string
-                hint: "Your twitter username WITHOUT the @"
-              - label: Bio
-                name: bio
-                widget: text
-                required: false
-                hint: "About you, your bio."
-              - label: 'Job Title'
-                name: title
-                widget: string
-                required: false
-                hint: "Job title"
-              - label: Email
-                name: email
-                widget: string
-                required: false
-                hint: "Email address (not required, but also not public)"
-              - label: Team Member
-                name: team
-                widget: boolean
-                default: false
-                required: false
-                hint: "Is this user part of the Vonage team?"
-              - label: Team Alumni (former member)
-                name: alumni
-                widget: boolean
-                default: false
-                required: false
-                hint: "Was this user part of the Vonage or Nexmo team in the past?"
-              - label: Spotlight
-                name: spotlight
-                widget: boolean
-                default: false
-                required: false
-                hint: "Is this user part of the Spotlight programme?"
-              - label: Noteworthy
-                name: noteworthy
-                widget: boolean
-                default: false
-                required: false
-                hint: "If not Spotlight or team, is this author otherwise noteworthy?"
-              - label: 'Website Url'
-                name: website_url
-                widget: string
-                required: false
-                hint: "Public URL, but will default to your author profile URL if not supplied (without UTMs we add those)"
-              - label: 'Facebook Url'
-                name: facebook_url
-                widget: string
-                required: false
-                hint: "Public profile URL (without UTMs we add those)"
-              - label: 'GitHub Url'
-                name: github_url
-                widget: string
-                required: false
-                hint: "Public profile URL (without UTMs we add those)"
-              - label: 'StackOverflow Url'
-                name: stackoverflow_url
-                widget: string
-                required: false
-                hint: "Public profile URL (without UTMs we add those)"
-              - label: 'LinkedIn Url'
-                name: linkedin_url
-                widget: string
-                required: false
-                hint: "Public profile URL (without UTMs we add those)"
-              - label: 'Twitch Url'
-                name: twitch_url
-                widget: string
-                required: false
-                hint: "Public profile URL (without UTMs we add those)"
-              - label: 'YouTube Url'
-                name: youtube_url
-                widget: string
-                required: false
-                hint: "Public profile URL (without UTMs we add those)"
-              - label: HIDDEN From Authors Page
-                name: hidden
-                widget: boolean
-                default: false
-                required: false
-                hint: "Do you want to hide this author profile from the authors page"
       - label: 'Categories'
         name: categories
         file: 'content/categories.json'
