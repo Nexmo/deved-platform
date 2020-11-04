@@ -59,7 +59,7 @@
     "inquirer-autocomplete-prompt": "^1.3.0",
     "lodash": "^4.17.20",
     "lokijs": "^1.5.11",
-    "open-graph-scraper": "^4.6.0",
+    "open-graph-scraper": "^4.7.0",
     "prettier": "^2.1.2",
     "remark-cli": "^9.0.0",
     "remark-frontmatter": "^3.0.0",
