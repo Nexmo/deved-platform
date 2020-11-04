@@ -88,6 +88,7 @@ node_modules/webpack-log
 
 .vscode/*
 
-# build files
+# feed files
 rss.xml
 feed.json
+static/feeds

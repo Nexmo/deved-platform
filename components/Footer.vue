@@ -166,7 +166,7 @@
             </li>
             <li>
               <a
-                href="/blog/rss.xml"
+                href="/feeds/blog/rss.xml"
                 target="_blank"
                 :title="$t('component_footer_rssfeed')"
                 class=""
