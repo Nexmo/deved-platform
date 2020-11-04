@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.1.0 - Rearchitect author components, data, and CMS config (04/11/2020)
+### Fixes
+- Text hint for tags is better than it was (#225)
+- replacement_url doesn't display a link on the outdated banner (#242)
+- outdated_url changed to replacement_url (#243)
+
+### Features
+- Re-architect author components, data structure, and CMS config (#166)
+- Merged migration content (#244 #237 #236 #234)
+
+### Dependabot
+- Bump open-graph-scraper from 4.6.0 to 4.7.0 (#232) 
+- Bump algoliasearch from 4.5.1 to 4.6.0 (#233)
+---
+
 ## v1.0.6 - Fix config and hotfixes (02/11/2020)
 ### Fixes
 
