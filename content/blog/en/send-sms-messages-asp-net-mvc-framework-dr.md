@@ -16,7 +16,7 @@ tags:
   - dotnet
   - sms-api
 redirect: ""
-outdated_url: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
+replacement_url: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
 ---
 
 The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api) lets you send and receive text messages around the world. This tutorial shows you how to use the [Nexmo C# Client Library](https://github.com/Nexmo/nexmo-dotnet) to send SMS messages from your ASP.NET MVC web app.

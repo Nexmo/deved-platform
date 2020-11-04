@@ -94,10 +94,10 @@
               <Spotlight />
             </div>
             <div
-              v-if="post.outdated"
+              v-if="post.outdated || post.replacement_url"
               class="Vlt-card__content Vlt-margin--A-top1"
             >
-              <Outdated :outdated="post.outdated" />
+              <Outdated :outdated="post.outdated" :url="post.replacement_url" />
             </div>
             <div
               class="Vlt-card__content Vlt-margin--A-top3"

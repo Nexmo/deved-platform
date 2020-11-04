@@ -112,12 +112,12 @@ collections:
         default: false
         required: false
         hint: "WARNING: Mark the post as outdated. Adds an outdated banner to say the post is outdated."
-      - label: "Outdated Link"
-        name: outdated_url
+      - label: "Replacement Post URL"
+        name: replacement_url
         widget: string
         default: ""
         required: false
-        hint: "WARNING: Mark the post as outdated. Adds an outdated banner with a link to this URL for the newer version."
+        hint: "WARNING: This will mark the post as outdated. Adds an outdated banner with a link to this URL for the replacement post."
       - label: Body
         name: body
         widget: markdown
