@@ -1,5 +1,5 @@
 <template>
-  <fragment v-if="!!authorData">
+  <fragment v-if="!$fetchState.pending">
     <AuthorBubble v-if="type == 'bubble'" :author="authorData" />
     <AuthorCard v-else-if="type == 'card'" :author="authorData" />
     <AuthorMiniCard v-else-if="type == 'minicard'" :author="authorData" />
@@ -25,32 +25,17 @@ export default {
   },
 
   data() {
-    let authorData = this.$props.author
-
-    if (typeof authorData === 'string') {
-      authorData = this.getAuthor(authorData)
-    }
-
-    if (typeof authorData === 'undefined') {
-      authorData = {
-        name: this.$props.author,
-        username: this.$props.author,
-        error: true,
-      }
-    }
-
     return {
-      authorData,
+      authorData: {},
     }
   },
 
-  methods: {
-    getAuthor(authorName) {
-      const { authors } = require('../content/authors.json')
-      return authors.find((a) => {
-        return a.username === authorName
-      })
-    },
+  async fetch() {
+    this.authorData = this.author
+
+    if (typeof this.authorData === 'string') {
+      this.authorData = await this.$content('authors', this.author).fetch()
+    }
   },
 }
 </script>

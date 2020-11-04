@@ -1,6 +1,5 @@
 import config from './modules/config'
 import { getPostRoute, getPostRoutes, getCategory } from './modules/contenter'
-import { getFeeds } from './modules/feeds'
 import i18n from './i18n.config.js'
 
 const isPreviewBuild = () => {
@@ -77,21 +76,100 @@ export default {
 
   feed: async () => {
     const { $content } = require('@nuxt/content')
-    const posts = await $content('blog/en')
-      .only([
-        'author',
-        'category',
-        'title',
-        'slug',
-        'description',
-        'route',
-        'published_at',
-        'updated_at',
-      ])
-      .sortBy('published_at', 'desc')
-      .fetch()
 
-    return getFeeds(posts)
+    const baseFeedPath = '/feeds'
+
+    const feedFormats = {
+      rss: { type: 'rss2', file: 'rss.xml' },
+      json: { type: 'json1', file: 'feed.json' },
+    }
+
+    const getMainFeeds = () => {
+      const createFeedArticles = async function (feed) {
+        feed.options = {
+          title: `${config.indexTitle} » ${config.baseTitle}`,
+          link: `${config.baseUrl}/blog`,
+          description: config.baseDescription,
+        }
+
+        const posts = await $content('blog/en')
+          .where({ published: { $ne: false } })
+          .sortBy('published_at', 'desc')
+          .limit(5)
+          .fetch()
+
+        posts.forEach((post) => {
+          feed.addItem({
+            title: post.title,
+            id: post.slug,
+            date: new Date(post.updated_at || post.published_at),
+            link: `${config.baseUrl}${post.route}`,
+            description: post.description,
+            content: post.description,
+          })
+        })
+      }
+
+      return Object.values(feedFormats).map(({ file, type }) => ({
+        path: `${baseFeedPath}/blog/${file}`,
+        type,
+        create: createFeedArticles,
+      }))
+    }
+
+    const getAuthorFeed = (author) => {
+      const createFeedArticles = async function (feed) {
+        feed.options = {
+          title: `${author.name} » ${config.baseTitle}`,
+          link: `${config.baseUrl}/authors/${author.username}`,
+          description: author.bio,
+        }
+
+        const posts = await $content('blog/en')
+          .where({
+            $and: [
+              { author: { $eq: author.username } },
+              { published: { $ne: false } },
+            ],
+          })
+          .sortBy('published_at', 'desc')
+          .limit(5)
+          .fetch()
+
+        posts.forEach((post) => {
+          feed.addItem({
+            title: post.title,
+            id: post.slug,
+            date: new Date(post.updated_at || post.published_at),
+            link: `${config.baseUrl}${post.route}`,
+            description: post.description,
+            content: post.description,
+          })
+        })
+      }
+
+      return Object.values(feedFormats).map(({ file, type }) => ({
+        path: `${baseFeedPath}/authors/${author.username}/${file}`,
+        type,
+        create: createFeedArticles,
+      }))
+    }
+
+    const getAuthorFeeds = async () => {
+      const authors = await $content('authors')
+        .where({ hidden: { $ne: true } })
+        .fetch()
+
+      return Object.values(authors).map((author) => {
+        return [...getAuthorFeed(author)]
+      })
+    }
+
+    return [
+      ...getMainFeeds(),
+      ...(await getAuthorFeeds()).flat(),
+      // (await getAuthorFeeds($content)).flat(),
+    ]
   },
 
   hooks: {
