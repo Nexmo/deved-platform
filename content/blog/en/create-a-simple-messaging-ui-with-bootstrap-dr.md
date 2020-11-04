@@ -17,7 +17,6 @@ comments: true
 redirect: ""
 canonical: ""
 ---
-
 [Bootstrap](https://getbootstrap.com/), originally named Twitter Blueprint, was developed by [@mdo](https://github.com/mdo) (Mark Otto) and [@fat](https://github.com/fat) (Jacob Thornton) while working at Twitter as a way to encourage consistency across tooling. Now, it is one of the most popular front-end frameworks and open source projects in the world. While still considered a shortcut by many front-end developers, it has played an important role in bringing a consistent and friendly user experience into the clutches of all developers, globally.
 
 The design web is awash with all sorts of examples of messaging UIs, but developers lack choice on frameworks that give them messaging UIs that are quick and easy to implement, that lean on something as straightforward as  [Bootstrap](https://getbootstrap.com/), and that don't use a lot of custom CSS or JavaScript. You *can* find messaging UIs for [Bootstrap](https://getbootstrap.com/) in the wild, but none of them seem to ease you in by using simple standard components from the [Bootstrap](https://getbootstrap.com/) library.
@@ -118,9 +117,9 @@ npm run dev
 
 > ***Tip:*** If you're running the application with `nodemon` for the remainder of this tutorial, whenever I suggest restarting the application, you won't need to do that because `nodemon` does it for you. However, if you need to reauthenticate with the application, you will still need to do that, as the session information is stored in memory and not configured to use any other storage.
 
-Whichever way you choose to run the application, once it's running, you can try it out in your favourite browser, which should be able to find it running locally: [http://localhost:3000](http://localhost:3000).
+Whichever way you choose to run the application, once it's running, you can try it out in your favourite browser, which should be able to find it running locally: <http://localhost:3000>.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/1.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/1.png" alt="A blank, broken Chat application" width="1754" height="1116" class="alignnone size-full wp-image-30955" /></a>
+![A blank, broken Chat application](/content/blog/create-a-simple-messaging-ui-with-bootstrap/1.png "A blank, broken Chat application")
 
 It's mostly blank, you can't message anyone, and if you look in your browser console, you'll find Vonage API errors, because it's time to configure the application. 
 
@@ -152,7 +151,7 @@ nexmo conversation:create display_name="Bootstrap Chat"
 
 Now, create a user for yourself. 
 
-> ***Note:*** In this demo, you won't chat between two users. [Other guides]() [show you]() how to [create conversations]() between [multiple users](). This guide focusses on styling your message UI in a simple, yet appealing, way.
+> ***Note:*** In this demo, you won't chat between two users. [Other guides](<>) [show you](<>) how to [create conversations](<>) between [multiple users](<>). This guide focusses on styling your message UI in a simple, yet appealing, way.
 
 ```shell
 nexmo user:create name=<USER_NAME> display_name=<DISPLAY_NAME>
@@ -207,11 +206,11 @@ Now configured, restart the application. Access it using the [same application U
 
 The first thing you'll notice is a line saying you've joined the conversation with your user.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/2.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/2.png" alt="An almost blank, working Chat application" width="1754" height="1116" class="alignnone size-full wp-image-30956" /></a>
+![An almost blank, working Chat application](/content/blog/create-a-simple-messaging-ui-with-bootstrap/2.png "An almost blank, working Chat application")
 
 Then, you can send some messages using the form, where you'll be able to message yourself to your heart's content.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/3.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/3.png" alt="Sending some messages to our working Chat application" width="1754" height="1116" class="alignnone size-full wp-image-30957" /></a>
+![Sending some messages to our working Chat application](/content/blog/create-a-simple-messaging-ui-with-bootstrap/3.png "Sending some messages to our working Chat application")
 
 ## Simple Messaging UI with Bootstrap
 
@@ -259,7 +258,7 @@ Additionally, you'll need the recommended Bootstrap and JavaScript libraries. Th
 
 Restart the application and [take a look again](http://localhost:3000). You can see that these changes have had minimal effect.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/4.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/4.png" alt="Styled the working Chat application with Bootstrap" width="1754" height="1116" class="alignnone size-full wp-image-30958" /></a>
+![Styled the working Chat application with Bootstrap](/content/blog/create-a-simple-messaging-ui-with-bootstrap/4.png "Styled the working Chat application with Bootstrap")
 
 #### Adding Nav and Container Components
 
@@ -299,7 +298,7 @@ If you'd like to see the exact changes to the file, you can take a look at [the 
 
 You'll now see you've added a navbar, but the chat remains in unstyled, which causes some display issues. Restart the application to [see what it looks like now](http://localhost:3000).
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/5.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/5.png" alt="Added navbar and container to Chat application" width="1754" height="1116" class="alignnone size-full wp-image-30959" /></a>
+![Added navbar and container to Chat application](/content/blog/create-a-simple-messaging-ui-with-bootstrap/5.png "Added navbar and container to Chat application")
 
 #### Lists and Inputs
 
@@ -336,7 +335,9 @@ Take a look at [the commit](https://github.com/nexmo-community/bootstrap-styled-
 
 Restart the application and [take a look again](http://localhost:3000). While you've changed how the messages get added, it hasn't changed much about the styling. But, at least the form is closer to what you'd expect from a messaging UI.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/6.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/6.png" alt="Chat application now using list items and chat-style inputs" width="1754" height="1116" class="alignnone size-full wp-image-30960" /></a>
+![Chat application now using list items and chat-style inputs](/content/blog/create-a-simple-messaging-ui-with-bootstrap/6.png "Chat application now using list items and chat-style inputs")
+
+
 
 ### The CSS
 
@@ -358,7 +359,9 @@ The first CSS change is to add `padding-top` to the main content container, allo
 
 Restart the application and [try it](http://localhost:3000).
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/7.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/7.png" alt="Fixed header margins in chat application" width="1754" height="1116" class="alignnone size-full wp-image-30961" /></a>
+![Fixed header margins in chat application](/content/blog/create-a-simple-messaging-ui-with-bootstrap/7.png "Fixed header margins in chat application")
+
+
 
 #### Scrollable Message Feed
 
@@ -375,7 +378,9 @@ This change to `messageFeed` fixes the height of the element that contains out m
 
 Restart the application and [try it](http://localhost:3000). To see the overflow scrolling for the `messageFeed`, you'll need to send some more messages.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/8.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/8.png" alt="Chat application message feed now scrollable" width="1754" height="1118" class="alignnone size-full wp-image-30962" /></a>
+![Chat application message feed now scrollable](/content/blog/create-a-simple-messaging-ui-with-bootstrap/8.png "Chat application message feed now scrollable")
+
+
 
 #### Fixed Text Entry for Sending Messages
 
@@ -397,7 +402,9 @@ This last CSS change is for the `<footer>`, which contains the text entry and bu
 
 Restart the application and [try it](http://localhost:3000).
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/9.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/9.png" alt="Chat application inputs now fixed to footer" width="1754" height="1118" class="alignnone size-full wp-image-30963" /></a>
+![Chat application inputs now fixed to footer](/content/blog/create-a-simple-messaging-ui-with-bootstrap/9.png "Chat application inputs now fixed to footer")
+
+
 
 ### The JavaScript
 
@@ -427,15 +434,18 @@ To see how the JavaScript function is modified, take a look at [the commit](http
 
 Restart the application and try it again using the [application URL](http://localhost:3000). You'll now see that the user joined message is centred nicely in the message feed.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/10.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/10.png" alt="Chat application events now using line items" width="1754" height="1118" class="alignnone size-full wp-image-30964" /></a>
+![Chat application events now using line items](/content/blog/create-a-simple-messaging-ui-with-bootstrap/10.png "Chat application events now using line items")
+
+
 
 #### Markup for From-Me and To-Me Messages
 
 In the same file, find the `senderMessage` function. Edit it to return a list item `<li>` element that is a [Media object](https://getbootstrap.com/docs/4.4/components/media-object/). Media objects are similar to messages in that they have a title (for the author and metadata), contents (the message), and an optional image.
 
 In this instance, you have a condition that determines the output:
- - A standard Media object if the current `user.name` equals the message `user.name` - **From-Me**.
- - A Media object with text aligned to the right, if the current `user.name` doesn't equal the message `user.name` - **To-Me**.
+
+* A standard Media object if the current `user.name` equals the message `user.name` - **From-Me**.
+* A Media object with text aligned to the right, if the current `user.name` doesn't equal the message `user.name` - **To-Me**.
 
 ```javascript
 // public/javascripts/chat.js
@@ -470,15 +480,17 @@ In this instance, you have a condition that determines the output:
 
 To see how this JavaScript function is modified, take a look at [the commit](https://github.com/nexmo-community/bootstrap-styled-nexmo-chat/pull/1/commits/c5dc597f1a8f087f921be9212a7d329a1f3a952c).
 
-Restart the application and try it again using the default URL: [http://localhost:3000](http://localhost:3000). You'll now see that your messages styled nicely.
+Restart the application and try it again using the default URL: <http://localhost:3000>. You'll now see that your messages styled nicely.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/11.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/11.png" alt="Now using from-me and to-me message style in chat application" width="1754" height="1118" class="alignnone size-full wp-image-30965" /></a>
+![Now using from-me and to-me message style in chat application](/content/blog/create-a-simple-messaging-ui-with-bootstrap/11.png "Now using from-me and to-me message style in chat application")
+
+
 
 #### Add Adorable.io Avatars for Users
 
 With no user profiles in your application, the lack of avatars leaves it looking a bit empty. So, to complete the Media object look and to give it the effect of a modern-day chat application, you can use a placeholder avatar service like [adorable.io](https://adorable.io/) based on user information.
 
-Adorable will take any string as part of a URL, [https://api.adorable.io/avatars/64/my-string-here.png](https://api.adorable.io/avatars/64/my-string-here.png) and return a funny face. It's a great way to add a placeholder image that changes between users.
+Adorable will take any string as part of a URL, <https://api.adorable.io/avatars/64/my-string-here.png> and return a funny face. It's a great way to add a placeholder image that changes between users.
 
 So, still editing the same file, go back to the `senderMessage` function, and add this line after the opening line item `<li>` element, for messages **from-me**.
 
@@ -508,7 +520,9 @@ The critical difference between these lines is that one has the `mr-3` class, an
 
 Once you're happy with your changes, restart and [take a look at the application](http://localhost:3000). 
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/12.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/12.png" alt="Adorable.io avatars in chat application" width="1754" height="1118" class="alignnone size-full wp-image-30966" /></a>
+![Adorable.io avatars in chat application](/content/blog/create-a-simple-messaging-ui-with-bootstrap/12.png "Adorable.io avatars in chat application")
+
+
 
 #### Add Scroll-To-Bottom for Messages
 
@@ -597,7 +611,9 @@ To make sure you applied this change correctly, you can [view the commit](https:
 
 Once you're happy with your changes, restart and [take a look at the application](http://localhost:3000).
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/13.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/13.png" alt="Chat application message feed now scrolls to bottom]" width="1754" height="1118" class="alignnone size-full wp-image-30967" /></a>
+![Chat application message feed now scrolls to bottom](/content/blog/create-a-simple-messaging-ui-with-bootstrap/13.png "Chat application message feed now scrolls to bottom")
+
+
 
 ## The End
 
@@ -609,6 +625,6 @@ You could now apply these UI techniques in some other Vonage Conversation Client
 
 Some of our other guides include sending messages between multiple users! I challenge you to get multiple users messaging each other using a neat looking messaging UI and share your progress.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/12/14.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/12/14.png" alt="Chat application using multiple users" width="1754" height="1418" class="alignnone size-full wp-image-30968" /></a>
+![Chat application using multiple users](/content/blog/create-a-simple-messaging-ui-with-bootstrap/14.png "Chat application using multiple users")
 
 And don't forget, if you have any questions, advice or ideas you'd like to share with the broader community, then please feel free to jump on our [Community Slack](https://developer.nexmo.com/community/slack) workspace or pop a reply below 👇.
