@@ -113,7 +113,7 @@ req.end();
 
 Now you can save your code in a file called `app.js` and test it out. From the directory where the file is saved, run:
 
-```text
+```shell
 > node app.js
 ```
 
