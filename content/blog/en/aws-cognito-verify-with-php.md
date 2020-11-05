@@ -92,7 +92,7 @@ NEXMO_API_KEY=<nexmo-api-key>
 NEXMO_API_SECRET=<nexmo-api-secret>
 ```
 
-_*NOTE:* All placeholders noted by `<>` need to be updated. Update the others as needed._
+> All placeholders noted by `<>` in the example above need to be updated. Update the others as needed.
 
 ## Launch or Deploy
 
