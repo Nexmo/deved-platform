@@ -23,9 +23,7 @@ The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api) is a service that
 
 In this tutorial we'll cover how to send SMS messages with Java!
 
-![GitHub logo](/content/blog/how-to-send-sms-messages-with-java/github-mark-64px.png "GitHub logo")
-
-View [the source code on GitHub](https://github.com/nexmo-community/nexmo-java-quickstart/blob/master/src/main/java/com/nexmo/quickstart/sms/SendMessage.java)
+![GitHub logo](/content/blog/how-to-send-sms-messages-with-java/github-mark-64px.png "GitHub logo") View [the source code on GitHub](https://github.com/nexmo-community/nexmo-java-quickstart/blob/master/src/main/java/com/nexmo/quickstart/sms/SendMessage.java)
 
 ### Prerequisites
 
