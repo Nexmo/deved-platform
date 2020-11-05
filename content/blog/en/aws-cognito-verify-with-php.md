@@ -34,7 +34,7 @@ With a few web forms, [Vonage SDK](https://github.com/Nexmo/nexmo-php), and [AWS
 
 ## Setup Instructions
 
-Clone the [nexmo-community/verify-aws-cognito-php](https://github.com/nexmo-community/verify-aws-cognito-php) repo from GitHub, and navigate into the newly created directory to proceed.
+Clone the [verify-aws-cognito-php](https://github.com/nexmo-community/verify-aws-cognito-php) repo from GitHub, and navigate into the newly created directory to proceed.
 
 ### Install Dependencies
 
