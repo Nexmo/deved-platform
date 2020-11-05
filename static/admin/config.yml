@@ -17,7 +17,7 @@ collections:
     create: true
     slug: '{{slug}}'
     editor:
-      preview: false
+      preview: true
     sortable_fields: ['title', 'author', 'published_at', 'updated_at']
     view_filters: 
       - label: "Spotlight Posts"
