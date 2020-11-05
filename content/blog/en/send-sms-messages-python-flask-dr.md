@@ -16,19 +16,17 @@ comments: true
 redirect: ""
 canonical: ""
 ---
-*This is the first post in a series about using the [Vonage APIs](https://developer.nexmo.com/) with Python.*
-
-The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api/api-reference) is an HTTP-based API using either XML or JSON to describe how to send an SMS or understand a received SMS. Fortunately, you don't need to worry about that too much because Vonage provides a \[Python SDK] that takes care of a lot of the underlying detail for you.
+The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api/api-reference) is an HTTP-based API using either XML or JSON to describe how to send an SMS or understand a received SMS. Fortunately, you don't need to worry about that too much because Vonage provides a [Python SDK](https://github.com/Vonage/vonage-python-sdk) that takes care of a lot of the underlying detail for you.
 
 ## Prerequisites
 
-Before starting, you'll want to make sure you have Python installed. The code here was tested on Python 2.7 and 3.6. If you have the choice, use Python 3.6 - it's awesome! If you're running Python 2, make sure you also have \[virtualenv] installed.
+Before starting, you'll want to make sure you have Python installed. The code here was tested on Python 2.7 and 3.6. If you have the choice, use Python 3.6 - it's awesome! If you're running Python 2, make sure you also have [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html) installed.
 
 <sign-up number></sign-up>
 
 ## Install the Vonage Python SDK
 
-Just to keep everything neat and tidy, let's create a virtualenv and install the \[Nexmo python client library] into it:
+Just to keep everything neat and tidy, let's create a virtual environment and install the [Vonage Python SDK](https://github.com/Vonage/vonage-python-sdk) into it:
 
 ```bash
 $ python3 -m venv venv # use `virtualenv venv` on Python 2
@@ -50,7 +48,7 @@ Sending an SMS is so easy, let's just do it from the REPL. First, run `python` f
 
 Let's just quickly recap on what those three lines did:
 
-* The first line imported the \[Vonage Python SDK].
+* The first line imported the [Vonage Python SDK](https://github.com/Vonage/vonage-python-sdk).
 * The second line created a Vonage `Client` object, which can be re-used, and knows your Vonage API key and the secret associated with it.
 * The third line actually sends the SMS message.
 
@@ -70,7 +68,7 @@ I'll show you how to build a small Flask app with a form for a phone number and 
 
 So first let's install our dependencies. I'd recommend checking out the \[sample code] and running `pip install -r requirements.txt`. At the very least, you'll need to install Flask into your virtualenv.
 
-So next I create a Vonage Client object and an empty Flask app. I also like to create \[12-factor] apps, so I'm loading in configuration from environment variables (check out the helper function in `utils.py` in the sample code).
+So next I create a Vonage Client object and an empty Flask app. I also like to create [12-factor](https://12factor.net/) apps, so I'm loading in configuration from environment variables (check out the helper function in `utils.py` in the sample code).
 
 The problem with loading in environment variables is that it can make running the app a little bit more difficult, so I'm using the [python-dotenv library](https://github.com/theskumar/python-dotenv) to load a `.env` file for me. It copies the values into the env var dictionary, so I can still get the values using `getenv` as I would normally.
 
@@ -166,7 +164,7 @@ Don't press "Send SMS" just yet! We haven't told Flask what to do when you submi
 
 ### Handle the Form Post
 
-Add the following function to the bottom of your python file, to accept the POST request from the form:
+Add the following function to the bottom of your Python file, to accept the POST request from the form:
 
 ```python
 @app.route('/send_sms', methods=['POST'])
@@ -190,7 +188,7 @@ def send_sms():
 
 If your `FLASK_DEBUG` flag is set to true, then your changes should automatically be reloaded into the running server, so refresh your form, fill in your phone number and a message. Make sure the number is in international format without the '+' at the start. Hit "Send SMS" and check your phone!
 
-I hope it worked for you! If not, check out the extra lines in the \[sample code] in `server.py` and `index.html` that use Flask's flash message mechanism to report errors to the user.
+I hope it worked for you! If not, check out the extra lines in the [sample code](https://github.com/Nexmo/nexmo-python-code-snippets/blob/master/sms/send-an-sms.py) in `server.py` and `index.html` that use Flask's flash message mechanism to report errors to the user.
 
 ### And We're Done!
 
@@ -202,18 +200,3 @@ The following documentation may be useful:
 
 * [SMS API Reference](https://docs.nexmo.com/messaging/sms-api/api-reference)
 * [Using the Vonage API Dashboard](https://docs.nexmo.com/tools/dashboard)
-
-\[nexmo-sms-api]: https://docs.nexmo.com/messaging/sms-api/api-reference
-\[nexmo-developer-portal]: https://developer.nexmo.com/
-\[inbound-sms-docs]: https://developer.nexmo.com/messaging/sms/building-blocks/receiving-an-sms
-\[voice-api-docs]: https://developer.nexmo.com/voice/overview
-\[verify-docs]: https://developer.nexmo.com/verify/overview
-\[use-cases]: https://www.nexmo.com/use-cases
-\[developer-blog]: https://www.nexmo.com/blog/category/developers-2/
-\[virtualenv]: https://virtualenv.pypa.io/en/stable/
-\[python-sdk]: https://github.com/Vonage/vonage-python-sdk
-\[nexmo-homepage]: https://nexmo.com
-\[sms-error-codes]: https://help.nexmo.com/hc/en-us/articles/204014733-Nexmo-SMS-Delivery-Error-Codes
-\[sample-code]: https://github.com/Nexmo/nexmo-python-code-snippets/blob/master/sms/send-an-sms.py
-\[12-factor]: https://12factor.net/
-\[python-dotenv]: https://github.com/theskumar/python-dotenv
