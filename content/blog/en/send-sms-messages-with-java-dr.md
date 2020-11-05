@@ -21,9 +21,7 @@ outdated: true
 
 The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api) is a service that allows you to send and receive SMS messages anywhere in the world. Vonage provides REST APIs, but it's much easier to use the Java client library we've written for you.
 
-In this tutorial we'll cover how to send SMS messages with Java!
-
-![GitHub logo](/content/blog/how-to-send-sms-messages-with-java/github-mark-64px.png "GitHub logo") View [the source code on GitHub](https://github.com/nexmo-community/nexmo-java-quickstart/blob/master/src/main/java/com/nexmo/quickstart/sms/SendMessage.java)
+In this tutorial we'll cover how to send SMS messages with Java! View [the source code on GitHub](https://github.com/nexmo-community/nexmo-java-quickstart/blob/master/src/main/java/com/nexmo/quickstart/sms/SendMessage.java).
 
 ### Prerequisites
 
