@@ -58,7 +58,7 @@ dotnet add package Microsoft.AspNetCore.SignalR.Core --version 1.1.0
 
 Since we are dependant on the SignalR Client-Side library, we shall also need to add the SignalR Client-Side library.
 
-In Visual Studio, right-click on your projects `wwwrooot` got to `Add > Client-Side Library`. That will bring up a little dialog to help you add the library. For this demo, I used the following.
+In Visual Studio, right-click on your projects `wwwrooot` go to `Add > Client-Side Library`. That will bring up a little dialog to help you add the library. For this demo, I used the following.
 
 * **Provider:** unpkg
 * **Library:** @microsoft/signalr@latest
