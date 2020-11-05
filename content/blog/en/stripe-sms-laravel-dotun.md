@@ -14,8 +14,8 @@ tags:
   - stripe
 comments: true
 spotlight: true
-redirect: https://www.nexmo.com/blog/2019/04/11/stripe-sms-laravel-dotun
-canonical: https://www.nexmo.com/blog/2019/04/11/stripe-sms-laravel-dotun
+redirect: ""
+canonical: ""
 ---
 <a href="http://developer.nexmo.com/spotlight?utm_campaign=dev_spotlight&amp;utm_content=Stripe_SMS_Notifications_Laravel_Nexmo"><img src="https://www.nexmo.com/wp-content/uploads/2019/03/blog-top-banner.png" alt="Nexmo Developer Spotlight" width="810" height="150" class="aligncenter size-full wp-image-28699" /></a>
 
@@ -27,21 +27,13 @@ Let's get started!
 
 ## Prerequisites
 
-To follow along with this tutorial, you’ll need to [sign up for an account with Nexmo](https://dashboard.nexmo.com/sign-up&utm_content=Stripe_SMS_Notifications_Laravel_Nexmo) or use an existing account if you have one.
-
 We will be using [Laravel 5.8](https://laravel.com/) in this tutorial and using [Composer](https://getcomposer.org/) to install and manage all dependencies.
 
 You will also need to have an account with [Stripe](https://stripe.com/) so that we can send out test webhook events.
 
 Finally, you’ll need to have [Ngrok](https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr/) installed to allow the application we’ll be developing locally to be accessible over the web so we can receive webhook events. 
 
-## Setting up Nexmo
-
-Head over to your Nexmo Dashboard and take note of your API `key` and `secret` as we’ll be needing them shortly.
-
-You’ll also need a virtual phone number from which SMS messages will be sent from. You can buy a long virtual number (LVN) from the *Numbers* tab of your [Nexmo Dashboard](https://dashboard.nexmo.com).
-
-![Buy a number](/content/blog/stripe-sms-notifications-using-laravel-and-nexmo/buy-a-number.png "Buy a number")
+<sign-up number></sign-up>
 
 ## Setting up Laravel
 
