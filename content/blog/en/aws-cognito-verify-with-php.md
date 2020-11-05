@@ -7,19 +7,20 @@ thumbnail: /content/blog/aws-cognito-verify-with-php/Social_Amazon-Cognito_Verif
 author: adamculp
 published: true
 published_at: 2020-07-10T13:38:52.000Z
-canonical: ""
-comments: true
 updated_at: 2020-10-26T14:43:39.855Z
 category: tutorial
 tags:
   - aws
   - php
+  - verify
+comments: false
 redirect: ""
+canonical: ""
 ---
 
 Doing user management the right way is hard work. Allowing users to register themselves, and verifying their identity can be difficult. However, using [Amazon Cognito](https://aws.amazon.com/cognito/) and the [Vonage Verify API](https://www.vonage.com/communications-apis/verify/) help make it a bit easier by doing the heavy lifting.
 
-With a few web forms, [Vonage SDK](https://github.com/Nexmo/nexmo-php), and [AWS SDK](https://aws.amazon.com/sdk-for-php/), you can create a standard user management system allowing a user to register, update their credentials, validate their identity, and login. You'll use the code from the [nexmo-community/verify-aws-cognito-php](https://github.com/nexmo-community/verify-aws-cognito-php) code repo.
+With a few web forms, [Vonage SDK](https://github.com/Nexmo/nexmo-php), and [AWS SDK](https://aws.amazon.com/sdk-for-php/), you can create a standard user management system allowing a user to register, update their credentials, validate their identity, and login. You'll use the code from the [verify-aws-cognito-php](https://github.com/nexmo-community/verify-aws-cognito-php) code repo.
 
 > NOTE: For educational purposes, the example code in the repo above was kept simple. I did not use a framework, CSS, or Javascript. However, I recommend using a supported framework, and proper CSS styling for a better application observing the proper separation of concerns.
 
@@ -28,15 +29,12 @@ With a few web forms, [Vonage SDK](https://github.com/Nexmo/nexmo-php), and [AWS
 * PHP 7.4 (update `serverless.yml` for other versions)
 * Composer installed [globally](https://getcomposer.org/doc/00-intro.md#globally)
 * [AWS account](https://aws.amazon.com/)
-* [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2020-07-20-adding-2fa-to-amazon-cognito-using-verify-php-dr)
 
-## Vonage API Account
-
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2020-07-10-aws-cognito-verify-with-php). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2020-07-10-aws-cognito-verify-with-php) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2020-07-10-aws-cognito-verify-with-php).
+<sign-up></sign-up>
 
 ## Setup Instructions
 
-Clone the [nexmo-community/verify-aws-cognito-php](https://github.com/nexmo-community/verify-aws-cognito-php) repo from GitHub, and navigate into the newly created directory to proceed.
+Clone the [verify-aws-cognito-php](https://github.com/nexmo-community/verify-aws-cognito-php) repo from GitHub, and navigate into the newly created directory to proceed.
 
 ### Install Dependencies
 
@@ -94,7 +92,7 @@ NEXMO_API_KEY=<nexmo-api-key>
 NEXMO_API_SECRET=<nexmo-api-secret>
 ```
 
-_*NOTE:* All placeholders noted by `<>` need to be updated. Update the others as needed._
+> All placeholders noted by `<>` in the example above need to be updated. Update the others as needed.
 
 ## Launch or Deploy
 
