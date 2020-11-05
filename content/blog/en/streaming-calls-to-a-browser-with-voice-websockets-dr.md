@@ -20,14 +20,6 @@ outdated: true
 ---
 We recently announced [WebSocket support](https://www.nexmo.com/blog/2016/11/09/announcing-websocket-sip-early-access-integration-ibm-watson/) within our new Voice API. The initial use cases for this are around server-to-server communication between the Vonage Voice API and speech AI platforms such as IBM Watson or Amazon Alexa. However, I'd like to show you a little demo we built for our booth at AWS ReInvent that shows another use. It demonstrates streaming the audio of a conference call to a web browser and plays it back with the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 
-&nbsp;
-
-<blockquote class="twitter-video" data-lang="en">
-<p dir="ltr" lang="en">Voice is one of the most natural interfaces. Drop by <a href="https://twitter.com/hashtag/awsreinvent?src=hash">#awsreinvent</a> booth 2216 to find out how we can help you connect Voice to anything. <a href="https://t.co/t3C6yvNcpi">pic.twitter.com/t3C6yvNcpi</a></p>
-— Nexmo (@Nexmo) <a href="https://twitter.com/Nexmo/status/804411491826794496">December 1, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<small>Bryan Stokes of Vonage demoing the WebSocket Voice API Demo at AWS re:Invent</small>
-
 Why would you want to do this? Well, firstly it's a nice way to show off the new WebSocket feature, but as I started developing this I realized it's perfect for use cases where you might want to have a large number of people in "listen only" mode for a call. Take the typical large company "all hands" conference calls. If more than 5-10 people are talking it ends up in chaos. In these large-scale calls, most of the participants are just passive listeners who (hopefully) stay muted. But this is pretty inefficient and costly. It doesn't scale particularly well either. Those regular participants aren't really involved in a conference call; their participation is more like listening to a talk radio station. So why not hook them up with a more broadcast-like technology?
 
 The new [Vonage WebSocket Voice API](https://developer.nexmo.com/voice/voice-api/guides/websockets) is a great solution for this use case. I'll walk you through how to build an app that broadcasts the audio from a call to a number of connected browsers.
