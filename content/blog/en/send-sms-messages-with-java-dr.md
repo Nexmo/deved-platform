@@ -15,7 +15,7 @@ tags:
 comments: true
 redirect: ""
 canonical: ""
-outdated: false
+outdated: true
 ---
 *This is the first in a series of "Getting Started with Vonage and Java" tutorials.*
 
