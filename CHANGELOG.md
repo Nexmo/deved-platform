@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.2 - Fix bug introduced from v1.1.0 (04/11/2020)
+### Fixes
+- Fix category selection when editing a post
+---
+
 ## v1.1.1 - Fix bug introduced from v1.1.0 (04/11/2020)
 ### Fixes
 
