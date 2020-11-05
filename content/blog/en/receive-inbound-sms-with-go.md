@@ -1,5 +1,5 @@
 ---
-title: Receive Inbound Sms With Go
+title: Receive Inbound SMS With Go
 description: A tutorial that teaches how to receive SMS messages with Go from
   Vonage's SMS API.
 thumbnail: /content/blog/receive-inbound-sms-with-go/blog_go_sms_1200x600.png
@@ -11,7 +11,7 @@ category: tutorial
 tags:
   - sms-api
   - go
-comments: true
+comments: false
 spotlight: false
 redirect: ""
 canonical: ""
