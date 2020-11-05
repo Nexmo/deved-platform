@@ -12,7 +12,7 @@ tags:
   - blazor
   - dotnet
   - webassembly
-comments: true
+comments: false
 redirect: ""
 canonical: ""
 ---
