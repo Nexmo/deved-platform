@@ -24,8 +24,6 @@ The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api/api-reference) is 
 
 Before starting, you'll want to make sure you have Python installed. The code here was tested on Python 2.7 and 3.6. If you have the choice, use Python 3.6 - it's awesome! If you're running Python 2, make sure you also have \[virtualenv] installed.
 
-<sign-up></sign-up>
-
 <sign-up number></sign-up>
 
 ## Install the Vonage Python SDK
