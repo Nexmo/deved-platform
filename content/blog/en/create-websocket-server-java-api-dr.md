@@ -9,11 +9,13 @@ published: true
 published_at: 2018-10-22T14:54:57.000Z
 updated_at: 2020-10-27T08:53:09.102Z
 category: tutorial
-tags: []
+tags:
+  - java
+  - websockets
+comments: true
 redirect: ""
 canonical: ""
 outdated: false
-comments: true
 ---
 
 [WebSocket](https://en.wikipedia.org/wiki/WebSocket) is a protocol which enables communication between the server and the browser. It has an advantage over RESTful HTTP because communications are both bi-directional and real-time. This allows for the server to notify the client at any time instead of the client polling on a regular interval for updates.
@@ -182,7 +184,7 @@ Add the following to `index.html` inside of the `src/main/webapp` folder:
 
 ### Embed and Configure Tomcat
 
-Unlike [Creating a WebSocket Server with Spring Boot](https://www.nexmo.com/blog/2018/10/08/create-websocket-server-spring-boot-dr/), or \[Creating a WebSocket Server with the Spark Framework], there is initially no embedded server to run your application.
+Unlike [Creating a WebSocket Server with Spring Boot](https://www.nexmo.com/blog/2018/10/08/create-websocket-server-spring-boot-dr/), or [Creating a WebSocket Server with the Spark Framework](https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr), there is initially no embedded server to run your application.
 
 The [Gretty](http://akhikhl.github.io/gretty-doc/Getting-started.html) plugin for Gradle can be used to embed a variety of containers.
 
@@ -223,8 +225,8 @@ Try sending a text message by typing into the input field and clicking on the se
 
 In this tutorial you learned how to create a WebSocket server using JSR 356 which can receive both binary and text messages and run on any JSR 356 compliant container. Try removing the `servletContainer` setting and running in Jetty, or use the [Gradle WAR plugin](https://docs.gradle.org/current/userguide/war_plugin.html) to generate a WAR file and deploy it on a different container.
 
-The finished code for this tutorial can be found on the [nexmo-community/websocket-java-api](https://github.com/nexmo-community/websocket-java-api) repository.
+The finished code for this tutorial can be found in the [websocket-java-api](https://github.com/nexmo-community/websocket-java-api) repository.
 
-Did you know that you can use WebSocket as an endpoint in a [Nexmo Call Control Object](https://developer.nexmo.com/voice/voice-api/ncco-reference#websocket-the-websocket-to-connect-to)? Check out this post on [Real Time Call Transcription with IBM Watson](https://www.nexmo.com/blog/2017/10/03/real-time-call-transcription-ibm-watson-python-dr/) to learn how to use the [Vonage Voice API](https://developer.nexmo.com/voice/voice-api/overview), WebSockets, and [IBM Watson](https://console.bluemix.net/docs/services/speech-to-text/index.html#about) to perform real-time call transcription.
+Did you know that you can use WebSocket as an endpoint in a [Call Control Object](https://developer.nexmo.com/voice/voice-api/ncco-reference#websocket-the-websocket-to-connect-to)? Check out this post on [Real Time Call Transcription with IBM Watson](https://www.nexmo.com/blog/2017/10/03/real-time-call-transcription-ibm-watson-python-dr/) to learn how to use the [Vonage Voice API](https://developer.nexmo.com/voice/voice-api/overview), WebSockets, and [IBM Watson](https://console.bluemix.net/docs/services/speech-to-text/index.html#about) to perform real-time call transcription.
 
 Interested in reading more about WebSockets? Check out this post on [What are WebSockets? How Can They Enhance Digital Solutions?](https://www.nexmo.com/blog/2018/09/05/websockets-enhance-digital-solutions/)
