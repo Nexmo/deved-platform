@@ -58,7 +58,7 @@ Let's just quickly recap on what those three lines did:
 
 Hopefully, you received an SMS message! If not, check the contents of the response, [the error messages are quite helpful](https://help.nexmo.com/hc/en-us/articles/204014733-Nexmo-SMS-Delivery-Error-Codes).
 
-![SMS screenshot](/content/blog/how-to-send-sms-messages-with-python-flask-and-vonage/sms_received.png)
+![SMS screenshot](/content/blog/how-to-send-sms-messages-with-python-flask-and-vonage/sms_received.png "SMS screenshot")
 
 Notice that `send_message` returns a dictionary, which tells you how many messages your SMS was divided into, and how much it cost you to send the message. Because the message I sent was short enough to be sent as a single SMS and it was sent within the UK, it cost me only 3.33 Euro Cents, but longer messages will need to be sent as multiple messages. Vonage will divide them up for you, and the SMS client on the phone will automatically reassemble them into the original long message, but this costs more than a short message.
 
@@ -68,20 +68,18 @@ If anything, that was a bit too easy. So for extra credit, let's create a tiny w
 
 I'll show you how to build a small Flask app with a form for a phone number and an SMS message. When you press "Send SMS" it will post to a second view that will send the SMS using the Vonage SMS API.
 
-[![view on Github](https://www.nexmo.com/wp-content/uploads/2017/06/view-on-github-button.png)]
-
 ### Set Up Our SMS Sending Flask App
 
 So first let's install our dependencies. I'd recommend checking out the \[sample code] and running `pip install -r requirements.txt`. At the very least, you'll need to install Flask into your virtualenv.
 
-So next I create a Nexmo Client object and an empty Flask app. I also like to create \[12-factor] apps, so I'm loading in configuration from environment variables (check out the helper function in `utils.py` in the sample code).
+So next I create a Vonage Client object and an empty Flask app. I also like to create \[12-factor] apps, so I'm loading in configuration from environment variables (check out the helper function in `utils.py` in the sample code).
 
 The problem with loading in environment variables is that it can make running the app a little bit more difficult, so I'm using the [python-dotenv library](https://github.com/theskumar/python-dotenv) to load a `.env` file for me. It copies the values into the env var dictionary, so I can still get the values using `getenv` as I would normally.
 
 ```python
 from dotenv import load_dotenv
 from flask import Flask, flash, redirect, render_template, request, url_for
-import nexmo
+import vonage
 
 from .util import env_var, extract_error
 
@@ -89,13 +87,13 @@ from .util import env_var, extract_error
 load_dotenv('.env')
 
 # Load in configuration from environment variables:
-NEXMO_API_KEY = env_var('NEXMO_API_KEY')
-NEXMO_API_SECRET = env_var('NEXMO_API_SECRET')
-NEXMO_NUMBER = env_var('NEXMO_NUMBER')
+VONAGE_API_KEY = env_var('VONAGE_API_KEY')
+VONAGE_API_SECRET = env_var('VONAGE_API_SECRET')
+VONAGE_NUMBER = env_var('VONAGE_NUMBER')
 
 # Create a new Nexmo Client object:
-nexmo_client = nexmo.Client(
-    api_key=NEXMO_API_KEY, api_secret=NEXMO_API_SECRET
+vonage_client = vonage.Client(
+    api_key=VONAGE_API_KEY, api_secret=VONAGE_API_SECRET
 )
 
 # Initialize Flask:
@@ -146,11 +144,11 @@ FLASK_DEBUG=true
 FLASK_SECRET_KEY=RANDOM-STRING_CHANGE-THIS-Ea359
 
 # Get from https://dashboard.nexmo.com/your-numbers
-NEXMO_NUMBER=447700900025
+VONAGE_NUMBER=447700900025
 
 # Get the following from https://dashboard.nexmo.com/settings
-NEXMO_API_KEY=abcd1234
-NEXMO_API_SECRET=abcdef12345678
+VONAGE_API_KEY=abcd1234
+VONAGE_API_SECRET=abcdef12345678
 ```
 
 Now start your app with:
@@ -164,7 +162,7 @@ $ FLASK_APP=smsweb/server.py flask run
 
 Now if you load <http://localhost:5000/>, you should see something like this:
 
-![SMS Form Screenshot](https://www.nexmo.com/wp-content/uploads/2017/06/smsweb_send.png)
+![SMS Form Screenshot](/content/blog/how-to-send-sms-messages-with-python-flask-and-vonage/smsweb_send.png "SMS Form Screenshot")
 
 Don't press "Send SMS" just yet! We haven't told Flask what to do when you submit the form, so you'll get a 404 page not found error.
 
@@ -182,8 +180,8 @@ def send_sms():
     message = request.form['message']
 
     # Send the SMS message:
-    result = nexmo_client.send_message({
-        'from': NEXMO_NUMBER,
+    result = vonage_client.send_message({
+        'from': VONAGE_NUMBER,
         'to': to_number,
         'text': message,
     })
