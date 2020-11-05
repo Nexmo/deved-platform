@@ -41,6 +41,8 @@ Now that we have a UI laid out for us, we can start working on the server. To en
 
 **<sign-up></sign-up>**
 
+Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2020-05-26-add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr).
+
 ![The Vonage dashboard showing the API secrets](/content/blog/add-sms-verification-in-a-react-native-app-using-node-js-and-express/vonage_keys.png "The Vonage dashboard showing the API secrets")
 
 Once we have these values, let's store them in a `.env` file:
