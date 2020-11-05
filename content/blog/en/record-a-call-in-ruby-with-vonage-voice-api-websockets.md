@@ -17,7 +17,6 @@ comments: true
 redirect: ""
 canonical: ""
 ---
-
 The [Vonage Voice API WebSockets](https://developer.nexmo.com/voice/voice-api/guides/websockets) feature recently left Beta status and became generally available. WebSockets allows you to create two-way communication over a single persistent TCP connection. You do not need to handle multiple HTTP requests and responses with WebSockets. A single WebSocket connection can enable text and binary data communication continuously, with only a single connection opened.
 
 While WebSockets can simplify the HTTP response and request cycle, it is a different paradigm to build an application with. Thankfully, most commonly used programming languages have WebSocket tooling that can help take some complexity out of the process.
@@ -48,7 +47,7 @@ Our last step in setting up our API account is to create a Voice API Application
 
 From the Vonage API Dashboard navigate to *Your applications* and click on *Create a new application*. This will present you with the following page:
 
-![Dashboard Create Application](https://www.nexmo.com/wp-content/uploads/2020/08/create_application.png)
+![Dashboard Create Application](https://www.nexmo.com/wp-content/uploads/2020/08/create_application.png "Dashboard Create Application")
 
 The key areas to focus on to create your application are highlighted in purple:
 
@@ -64,7 +63,7 @@ Like before, navigate to *Your applications* in the Dashboard, click on the elli
 
 Within the *Capabiltiies* section of the page you will see the following options:
 
-![Application Webhook URL settings](https://www.nexmo.com/wp-content/uploads/2020/08/voice_app_url_settings.png)
+![Application Webhook URL settings](https://www.nexmo.com/wp-content/uploads/2020/08/voice_app_url_settings.png "Application Webhook URL settings")
 
 We need to fill out the *Event URL* and the *Answer URL*. The former is where Vonage will send all the event lifecycle data of the voice call to. The latter is where Vonage will send each new voice call to when it is initiated. The URLs provided here must be externally accessible so that Vonage can reach them. In other words, using `localhost` does not work. A popular development option is ngrok, and you can follow [our tutorial](https://developer.nexmo.com/tools/ngrok) on working with it.
 
@@ -116,7 +115,6 @@ You can now run `bundle install` from the command line to make all these gems av
 ### Dependencies and Variable Definition
 
 We are now ready to build our web server. The first item we will do in building the server is adding several `require` and `include` statements at the top to add the functionality of the gems mentioned above into our application:
-
 
 ```ruby
 require 'rack'
