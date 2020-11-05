@@ -87,7 +87,7 @@ VONAGE_API_KEY = env_var('VONAGE_API_KEY')
 VONAGE_API_SECRET = env_var('VONAGE_API_SECRET')
 VONAGE_NUMBER = env_var('VONAGE_NUMBER')
 
-# Create a new Nexmo Client object:
+# Create a new Vonage Client object:
 vonage_client = vonage.Client(
     api_key=VONAGE_API_KEY, api_secret=VONAGE_API_SECRET
 )
@@ -192,7 +192,7 @@ I hope it worked for you! If not, check out the extra lines in the [sample code]
 
 ### And We're Done!
 
-I hope you enjoyed this getting started guide. Stay tuned for our upcoming guide about receiving SMS messages with Python! In the meantime for more information on our APIs including [inbound SMS](https://developer.nexmo.com/messaging/sms/building-blocks/receiving-an-sms), [Voice](https://developer.nexmo.com/voice/overview), [2-Factor-Authentication](https://developer.nexmo.com/verify/overview) and others, [have a look at our developer portal](https://developer.nexmo.com/). Or to spark your imagination on what's possible with our APIs, make sure you check out our [use-cases](https://www.nexmo.com/use-cases/) and [Developer blog](https://www.nexmo.com/blog/category/developers-2/)!
+I hope you enjoyed this getting started guide. Stay tuned for our upcoming guide about receiving SMS messages with Python! In the meantime for more information on our APIs including [inbound SMS](https://developer.nexmo.com/messaging/sms/building-blocks/receiving-an-sms), [Voice](https://developer.nexmo.com/voice/overview), [2-Factor-Authentication](https://developer.nexmo.com/verify/overview) and others, [have a look at our developer portal](https://developer.nexmo.com/).
 
 ## Documentation
 
