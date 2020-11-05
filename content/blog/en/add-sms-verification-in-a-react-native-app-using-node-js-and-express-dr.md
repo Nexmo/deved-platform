@@ -18,7 +18,6 @@ spotlight: true
 redirect: ""
 canonical: ""
 ---
-
 Building a mobile app comes with many challenges. React Native can ease many of these challenges when it comes to cross-compatibility support, but obviously, there's still a significant amount of engineering effort involved in any app. You may want to implement SMS-based two-factor-authentication (2FA) to block [upwards of 100% of bot-based account takeovers](https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html), or even integrate a "share this app with your friends" marketing tool. 
 
 Luckily, Vonage makes integrating features like these into your app a cinch!
@@ -31,21 +30,22 @@ To enable this functionality, we're going to be using React Native for the UI an
 
 To keep this article focused, we're going to start with a UI that's been pre-built. This React Native app is not connected to any server but does have its UI laid out with mock data. The app in this state is relatively small (~300 LOC), and [is entirely open-sourced](https://github.com/crutchcorn/vonage-phone-verify-notificaitons-app/tree/mock-react-native).
 
-
+![A demo of the React Native app with mocked data and no server connectivity](/content/blog/add-sms-verification-in-a-react-native-app-using-node-js-and-express/no_sms_demo.gif "A demo of the React Native app with mocked data and no server connectivity")
 
 ### Setup Vonage Account
 
 Now that we have a UI laid out for us, we can start working on the server. To enable the functionalities we're looking for, we'll be using two of the Vonage APIs today:
 
-- [Verify API](https://www.vonage.com/communications-apis/verify/)
-- [SMS API](https://www.vonage.com/communications-apis/sms/)
+* [Verify API](https://www.vonage.com/communications-apis/verify/)
+* [SMS API](https://www.vonage.com/communications-apis/sms/)
 
-<a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2020-05-26-add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
+To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2020-05-26-add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr). 
 
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2020-05-26-add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2020-05-26-add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2020-05-26-add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr).
+**<sign-up></sign-up>**
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/05/vonage_keys.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/vonage_keys.png" alt="The Vonage dashboard showing the API secrets" width="1313" height="1101" class="aligncenter size-full wp-image-32503" /></a>
+Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2020-05-26-add-sms-verification-in-a-react-native-app-using-node-js-and-express-dr).
 
+![The Vonage dashboard showing the API secrets](/content/blog/add-sms-verification-in-a-react-native-app-using-node-js-and-express/vonage_keys.png "The Vonage dashboard showing the API secrets")
 
 Once we have these values, let's store them in a `.env` file:
 
@@ -56,9 +56,9 @@ NEXMO_API_SECRET=XXXXXXXXXXXXXXXX
 
 > Don't forget to add the `.env` file to your `.gitignore` rules! You don't want to end up in a scenario where you `git commit` your API secrets!
 
-We'll need one more value from the dashboard for our usage: The phone number associated with your Vonage account. You can find this under _Numbers > Your numbers_.
+We'll need one more value from the dashboard for our usage: The phone number associated with your Vonage account. You can find this under *Numbers > Your numbers*.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/05/my_numbers_vonage.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/my_numbers_vonage.png" alt="The numbers tab in the Vonage dashboard with the number area highlighted" width="1312" height="1104" class="aligncenter size-full wp-image-32504" /></a>
+![The numbers tab in the Vonage dashboard with the number area highlighted](/content/blog/add-sms-verification-in-a-react-native-app-using-node-js-and-express/my_numbers_vonage.png "The numbers tab in the Vonage dashboard with the number area highlighted")
 
 Once again, we'll be storing that value in the same `.env` file for usage later:
 
@@ -89,7 +89,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
 ```
 
-This code should allow us to use JSON as our request bodies and access them later through `req.body`. If we sent a _POST_ request to `/test` with the payload `{hello: "Hi there"}`, we could access `"Hi there"` through `req.body.hello`.
+This code should allow us to use JSON as our request bodies and access them later through `req.body`. If we sent a *POST* request to `/test` with the payload `{hello: "Hi there"}`, we could access `"Hi there"` through `req.body.hello`.
 
 Once we have our initial Express code running, we'll want to get set up with the Vonage Node SDK. This package provides all of the functionality we'll need to integrate with Vonage APIs into our application.
 
@@ -204,7 +204,7 @@ export const verify = ({ requestId, code }) => {
 
 Simply call these methods inside of the React code as you would any other API and voilà!
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/05/sms_demo.gif"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/sms_demo.gif" alt="A demo of the React Native app running with calls to the server" width="682" height="1080" class="aligncenter size-full wp-image-32518" /></a>
+![SMS Demo](/content/blog/add-sms-verification-in-a-react-native-app-using-node-js-and-express/sms_demo.gif "SMS Demo")
 
 ### Send an SMS
 
