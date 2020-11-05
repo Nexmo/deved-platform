@@ -15,10 +15,9 @@ comments: true
 redirect: ""
 canonical: ""
 ---
-
 In this blog post, I'm going to share the journey we went through when we migrated our [Developer Platform](https://developer.nexmo.com/) from [React](https://reactjs.org/) to [Vue.js](https://vuejs.org/). I'll go through the reasons behind the change, how we did it, and a few lessons we learned along the way.
 
-## The application
+## The Application
 
 The Vonage API Developer Platform is a Ruby on Rails application with a few React components we used in isolation to handle very specific use cases that involve a lot of user interaction. We migrated a total of four components, which were responsible for a feedback widget, the search bar, an SMS character counter, and a JWT (JSON Web Token) generator. The app is open source and you can find it on [Github](https://github.com/Nexmo/nexmo-developer/).
 
@@ -27,8 +26,6 @@ The reason behind the migration was that different teams within the company were
 React and Vue.js share some similarities: they both utilize a virtual DOM, provide reactive and composable view components, and focus on a small core library, leaving the routing and global state management to extra libraries. But what we really liked about Vue.js is how it builds on top of classic web technologies. In React, components express their UI using JSX and render functions. Vue.js, on the other hand, treats any valid HTML as a valid Vue template, separating the logic from the presentation (although they do support render functions and JSX as well 😉).
 
 There are a few other Vue.js features that made it attractive to us: the convenient and simple way it handles state management using `data` and `props` compared to React's `setState`, how Vue.js tracks changes and updates a component state accordingly using *reactive data*, and finally computed properties, which allow you to extract logic from the templates by defining properties that depend on other properties. 
-
-
 
 The approach that we took was an iterative one. We added Vue.js to the project, then we migrated one component at a time. Fortunately, Rails comes with webpack and with basic out-of-the-box integrations for React, Vue.js, and Elm. You can read more about it in the [docs](https://github.com/rails/webpacker#vue), but all we had to was to run:
 
@@ -69,19 +66,17 @@ describe('Concatenation', function() {
       expect(wrapper.find('#sms-composition').text()).toEqual('11 characters sent in 1 message part');
       expect(wrapper.find('code').text()).toContain('not unicode');
     });
-
 ```
 
 As you can see, there isn't anything framework specific. We mount the `Concatenation` component, then check that it renders some default values and updates the UI after an interaction.
 
 While we were rewriting the components, we spent time not only understanding their implementation, but also how they were supposed to work. In this process, we found several bugs that we fixed and wrote tests for. The test suite also acts as documentation 🎉🎉🎉, given that it describes how the components work and how they handle different interactions.
 
-
 ## Migration
 
 To illustrate our migration process, we'll focus on the SMS character counter component. The main functionality of this component is to tell if the user input text will span into several SMS messages based on its content, encoding, and length. You can refer to our [docs](https://developer.nexmo.com/messaging/sms/guides/concatenation-and-encoding) if you want to know more about how these things affect what gets sent. The component looks like this:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/02/component-image.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/02/component-image.png" alt="" width="2696" height="1448" class="alignnone size-full wp-image-31326" /></a>
+![SMS character counter component](/content/blog/migrating-react-components-to-vue-js/component-image.png "SMS character counter component")
 
 It has a `textarea` with a placeholder where the user can type/paste the content,. Then the component will tell you how many parts the message will be split into, its length, and the type of encoding used (whether it is `unicode` or `text`).
 
@@ -186,7 +181,6 @@ export default {
     wordBreak: break-all;
  }
 </style>
-
 ```
 
 First, we defined the template. You may have noticed that we used some Vue.js directives for [conditional rendering](https://vuejs.org/v2/guide/conditional.html), like `v-if` and `v-else`. This is one of the best features of Vue.js that React doesn't provide. React handles [conditional rendering](https://reactjs.org/docs/conditional-rendering.html) differently, by either using the ternary operator inline, inline if with the logical `&&` operator, or by invoking a function that returns different content based on the arguments. Below is a comparison of how we render that the encoding is `unicode` in Vue.js vs. React:
@@ -216,7 +210,6 @@ First, we defined the template. You may have noticed that we used some Vue.js di
 ```
 
 In both cases, the value of a property was used. In the case of Vue.js, the directives make it quite simple to render everything inline. With React, on the other hand, we had to create a helper method that returns the different content based on the property passed to it, which led to not only more code, but also having the markup split across the `render` function and helper methods. 
-
 
 The migration was fairly simple, given that the component kept all the information in its state without the need to share it with others. All that was needed was to implement a few methods, computed properties, and conditionals in the HTML.
 
