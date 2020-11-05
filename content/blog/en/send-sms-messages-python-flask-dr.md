@@ -18,30 +18,25 @@ canonical: ""
 ---
 *This is the first post in a series about using the [Vonage APIs](https://developer.nexmo.com/) with Python.*
 
-The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api/api-reference) is an HTTP-based API using either XML or JSON to describe how to send an SMS or understand a received SMS. Fortunately, you don't need to worry about that too much because Vonage provides a [Python client library called nexmo-python][nexmo-python] that takes care of a lot of the underlying detail for you.
+The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api/api-reference) is an HTTP-based API using either XML or JSON to describe how to send an SMS or understand a received SMS. Fortunately, you don't need to worry about that too much because Vonage provides a \[Python SDK] that takes care of a lot of the underlying detail for you.
 
 ## Prerequisites
 
-Before starting, you'll want to make sure you have Python installed. The code here was tested on Python 2.7 and 3.6. If you have the choice, use Python 3.6 - it's awesome! If you're running Python 2, make sure you also have [virtualenv][virtualenv] installed.
+Before starting, you'll want to make sure you have Python installed. The code here was tested on Python 2.7 and 3.6. If you have the choice, use Python 3.6 - it's awesome! If you're running Python 2, make sure you also have \[virtualenv] installed.
 
-## Vonage API Account
+<sign-up></sign-up>
 
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2017-06-22-send-sms-messages-python-flask-dr). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2017-06-22-send-sms-messages-python-flask-dr) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2017-06-22-send-sms-messages-python-flask-dr).
+<sign-up number></sign-up>
 
-This tutorial also uses a virtual phone number. To purchase one, go to *Numbers* > *Buy Numbers* and search for one that meets your needs. If you’ve just signed up, the initial cost of a number will be easily covered by your available credit.
+## Install the Vonage Python SDK
 
-<a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2017-06-22-send-sms-messages-python-flask-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
-
-
-## Install the Nexmo Python Library
-
-Just to keep everything neat and tidy, let's create a virtualenv and install the [Nexmo python client library][nexmo-python] into it:
+Just to keep everything neat and tidy, let's create a virtualenv and install the \[Nexmo python client library] into it:
 
 ```bash
 $ python3 -m venv venv # use `virtualenv venv` on Python 2
 source venv/bin/activate
 
-pip install nexmo
+pip install vonage
 ```
 
 ## Send an SMS from the Python REPL
@@ -49,21 +44,21 @@ pip install nexmo
 Sending an SMS is so easy, let's just do it from the REPL. First, run `python` from the command-line, and then enter the three lines below.
 
 ```python
->>> import nexmo
->>> client = nexmo.Client(key='YOUR-API-KEY', secret='YOUR-API-SECRET')
->>> client.send_message({'from': 'Nexmo', 'to': 'YOUR-PHONE-NUMBER', 'text': 'Hello world'})
+>>> import vonage
+>>> client = vonage.Client(key='YOUR-API-KEY', secret='YOUR-API-SECRET')
+>>> client.send_message({'from': 'Vonage', 'to': 'YOUR-PHONE-NUMBER', 'text': 'Hello world'})
 {'message-count': '1', 'messages': [{'to': 'YOUR-PHONE-NUMBER', 'message-id': '0D00000039FFD940', 'status': '0', 'remaining-balance': '14.62306950', 'message-price': '0.03330000', 'network': '12345'}]}
 ```
 
 Let's just quickly recap on what those three lines did:
 
-- The first line imported `nexmo-python`.
-- The second line created a Nexmo `Client` object, which can be re-used, and knows your Vonage API key and the secret associated with it.
-- The third line actually sends the SMS message.
+* The first line imported the \[Vonage Python SDK].
+* The second line created a Vonage `Client` object, which can be re-used, and knows your Vonage API key and the secret associated with it.
+* The third line actually sends the SMS message.
 
 Hopefully, you received an SMS message! If not, check the contents of the response, [the error messages are quite helpful](https://help.nexmo.com/hc/en-us/articles/204014733-Nexmo-SMS-Delivery-Error-Codes).
 
-![SMS screenshot](https://www.nexmo.com/wp-content/uploads/2017/06/sms_received.png)
+![SMS screenshot](/content/blog/how-to-send-sms-messages-with-python-flask-and-vonage/sms_received.png)
 
 Notice that `send_message` returns a dictionary, which tells you how many messages your SMS was divided into, and how much it cost you to send the message. Because the message I sent was short enough to be sent as a single SMS and it was sent within the UK, it cost me only 3.33 Euro Cents, but longer messages will need to be sent as multiple messages. Vonage will divide them up for you, and the SMS client on the phone will automatically reassemble them into the original long message, but this costs more than a short message.
 
@@ -73,13 +68,13 @@ If anything, that was a bit too easy. So for extra credit, let's create a tiny w
 
 I'll show you how to build a small Flask app with a form for a phone number and an SMS message. When you press "Send SMS" it will post to a second view that will send the SMS using the Vonage SMS API.
 
-[![view on Github](https://www.nexmo.com/wp-content/uploads/2017/06/view-on-github-button.png)][sample-code]
+[![view on Github](https://www.nexmo.com/wp-content/uploads/2017/06/view-on-github-button.png)]
 
 ### Set Up Our SMS Sending Flask App
 
-So first let's install our dependencies. I'd recommend checking out the [sample code][sample-code] and running `pip install -r requirements.txt`. At the very least, you'll need to install Flask into your virtualenv.
+So first let's install our dependencies. I'd recommend checking out the \[sample code] and running `pip install -r requirements.txt`. At the very least, you'll need to install Flask into your virtualenv.
 
-So next I create a Nexmo Client object and an empty Flask app. I also like to create [12-factor][12-factor] apps, so I'm loading in configuration from environment variables (check out the helper function in `utils.py` in the sample code).
+So next I create a Nexmo Client object and an empty Flask app. I also like to create \[12-factor] apps, so I'm loading in configuration from environment variables (check out the helper function in `utils.py` in the sample code).
 
 The problem with loading in environment variables is that it can make running the app a little bit more difficult, so I'm using the [python-dotenv library](https://github.com/theskumar/python-dotenv) to load a `.env` file for me. It copies the values into the env var dictionary, so I can still get the values using `getenv` as I would normally.
 
@@ -167,7 +162,7 @@ $ FLASK_APP=smsweb/server.py flask run
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Now if you load [http://localhost:5000/](http://localhost:5000/), you should see something like this:
+Now if you load <http://localhost:5000/>, you should see something like this:
 
 ![SMS Form Screenshot](https://www.nexmo.com/wp-content/uploads/2017/06/smsweb_send.png)
 
@@ -199,7 +194,7 @@ def send_sms():
 
 If your `FLASK_DEBUG` flag is set to true, then your changes should automatically be reloaded into the running server, so refresh your form, fill in your phone number and a message. Make sure the number is in international format without the '+' at the start. Hit "Send SMS" and check your phone!
 
-I hope it worked for you! If not, check out the extra lines in the [sample code][sample-code] in `server.py` and `index.html` that use Flask's flash message mechanism to report errors to the user.
+I hope it worked for you! If not, check out the extra lines in the \[sample code] in `server.py` and `index.html` that use Flask's flash message mechanism to report errors to the user.
 
 ### And We're Done!
 
@@ -209,20 +204,20 @@ I hope you enjoyed this getting started guide. Stay tuned for our upcoming guide
 
 The following documentation may be useful:
 
-- [SMS API Reference](https://docs.nexmo.com/messaging/sms-api/api-reference)
-- [Using the Vonage API Dashboard](https://docs.nexmo.com/tools/dashboard)
+* [SMS API Reference](https://docs.nexmo.com/messaging/sms-api/api-reference)
+* [Using the Vonage API Dashboard](https://docs.nexmo.com/tools/dashboard)
 
-[nexmo-sms-api]: https://docs.nexmo.com/messaging/sms-api/api-reference
-[nexmo-developer-portal]: https://developer.nexmo.com/
-[inbound-sms-docs]: https://developer.nexmo.com/messaging/sms/building-blocks/receiving-an-sms
-[voice-api-docs]: https://developer.nexmo.com/voice/overview
-[verify-docs]: https://developer.nexmo.com/verify/overview
-[use-cases]: https://www.nexmo.com/use-cases
-[developer-blog]: https://www.nexmo.com/blog/category/developers-2/
-[virtualenv]: https://virtualenv.pypa.io/en/stable/
-[nexmo-python]: https://github.com/Nexmo/nexmo-python
-[nexmo-homepage]: https://nexmo.com
-[sms-error-codes]: https://help.nexmo.com/hc/en-us/articles/204014733-Nexmo-SMS-Delivery-Error-Codes
-[sample-code]: https://github.com/Nexmo/nexmo-python-code-snippets/blob/master/sms/send-an-sms.py
-[12-factor]: https://12factor.net/
-[python-dotenv]: https://github.com/theskumar/python-dotenv
+\[nexmo-sms-api]: https://docs.nexmo.com/messaging/sms-api/api-reference
+\[nexmo-developer-portal]: https://developer.nexmo.com/
+\[inbound-sms-docs]: https://developer.nexmo.com/messaging/sms/building-blocks/receiving-an-sms
+\[voice-api-docs]: https://developer.nexmo.com/voice/overview
+\[verify-docs]: https://developer.nexmo.com/verify/overview
+\[use-cases]: https://www.nexmo.com/use-cases
+\[developer-blog]: https://www.nexmo.com/blog/category/developers-2/
+\[virtualenv]: https://virtualenv.pypa.io/en/stable/
+\[python-sdk]: https://github.com/Vonage/vonage-python-sdk
+\[nexmo-homepage]: https://nexmo.com
+\[sms-error-codes]: https://help.nexmo.com/hc/en-us/articles/204014733-Nexmo-SMS-Delivery-Error-Codes
+\[sample-code]: https://github.com/Nexmo/nexmo-python-code-snippets/blob/master/sms/send-an-sms.py
+\[12-factor]: https://12factor.net/
+\[python-dotenv]: https://github.com/theskumar/python-dotenv
