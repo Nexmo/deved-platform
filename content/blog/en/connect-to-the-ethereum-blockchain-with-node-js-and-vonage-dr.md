@@ -22,25 +22,24 @@ Blockchain is a commonly used term that has many innovations associated with it.
 Ethereum is a distributed ledger where users can conveniently agree upon code execution and data updates. The code being executed is a distributed application that contains logic to enable interaction between a user interface and data on the blockchain. A major facilitator for the interactions between the blockchain and a user interface are Events.
 
 Smart contracts emit events from the blockchain which a user interface can listen for to enable specific actions and write event logs (data) to the blockchain. These logs can also be requested by the user interface.
- 
+
 In this tutorial, we'll learn about blockchain events and how these events could be linked with the [Vonage Conversation API](https://developer.nexmo.com/conversation/overview) to build real-world applications.
 
 The code for this article is on [GitHub](https://github.com/calebikhuohon/nexmo-blockchain-event-listener).
 
 ## Prerequisites
 
-- A [Vonage APIs](https://dashboard.nexmo.com/sign-in) account
-- Basic understanding of the Blockchain
-- Basic understanding of JavaScript and Node.js
-- [Nodejs](https://nodejs.org/en/), [Ganache-cli](https://github.com/trufflesuite/ganache-cli), and [Truffle](https://github.com/trufflesuite/truffle) installed on your machine
+* Basic understanding of the Blockchain
+* Basic understanding of JavaScript and Node.js
+* [Nodejs](https://nodejs.org/en/), [Ganache-cli](https://github.com/trufflesuite/ganache-cli), and [Truffle](https://github.com/trufflesuite/truffle) installed on your machine
+
+**<sign-up></sign-up>**
 
 ## Create an Application
 
 To get started with the Vongage Conversation API, you first need to create an application. This can be done through your Vonage APIs dashboard by clicking on the "Create a New Application" Button.
 
-
-<a href="https://www.nexmo.com/wp-content/uploads/2020/04/vonage_apis_dashboard.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/04/vonage_apis_dashboard.png" alt="Create Vonage APIs Application" width="1549" height="310" class="alignnone size-full wp-image-32202" /></a>
-
+![Create Vonage APIs Application](/content/blog/connect-to-the-ethereum-blockchain-with-node-js-and-vonage/vonage_apis_dashboard.png "Create Vonage APIs Application")
 
 During the creation process, public and private keys are generated. The private key is automatically downloaded on your local machine and should be kept safe.
 
@@ -108,7 +107,7 @@ module.exports = {
     };
 ```
 
-The Nexmo Application ID, API key, and APP Secret can be found on the application's dashboard and should be stored in a `.env`  file within the current directory. These constants are initialized with our Nexmo SDK instance.   
+The Nexmo Application ID, API key, and APP Secret can be found on the application's dashboard and should be stored in a `.env`  file within the current directory. These constants are initialized with our Vonage SDK instance.   
 
 ```
 const { NEXMO_API_KEY, NEXMO_APPLICATION_ID, NEXMO_APP_SECRET, NEXMO_PRIVATE_KEY } = require('./config');
@@ -152,7 +151,7 @@ nexmo.conversations.members.create(CONVERSATION_ID,
         }
     });
 ```
-    
+
 ## Connect to the Ethereum Blockchain
 
 To interact with our local Ethereum Node (a program which connects to the Ethereum network, provided by [Ganache-cli](https://github.com/trufflesuite/ganache-cli) in this case for testing purposes) through Node.js, we use [Web3](https://web3js.readthedocs.io/en/v1.2.0/index.html), a set of libraries which provides APIs for JavaScript and Node.js applications to connect to an Ethereum Node.
@@ -184,7 +183,7 @@ const contract = new web3.eth.Contract(abi, senderAccount);
 
 You may notice in the code snippet above, we need an account from which transactions would be sent. `Ganache-cli` provides a couple of test accounts and their associated private keys which are used throughout the development process.
 
-![](https://paper-attachments.dropbox.com/s_7D49C4022D5C8EE1CD911307F43DBAC8FC65F6A90161AEB6BD94A53118116BD3_1583727450885_Screenshot+from+2020-03-09+05-16-57.png)
+![Ganache-cli provides a couple of test accounts and their associated private keys which are used throughout the development process](/content/blog/connect-to-the-ethereum-blockchain-with-node-js-and-vonage/s_7d49c4022d5c8ee1cd911307f43dbac8fc65f6a90161aeb6bd94a53118116bd3_1583727450885_screenshot-from-2020-03-09-05-16-57.png "Ganache-cli provides a couple of test accounts and their associated private keys which are used throughout the development process")
 
 ## Send a Message to the Network
 
@@ -221,26 +220,27 @@ contract.methods.sendMessage(senderAccount, receiverAccount, message).send({
 
 We could also listen to the `NewText` event emitted from the Blockchain. Once this event is successful, we could emit a custom Conversation event which could be used by a user interface to listen for messages from the blockchain. 
 
-
-    contract.events.NewText(function (error, event) {
+```
+contract.events.NewText(function (error, event) {
+    if (error) {
+        return error;
+    } 
+}).on('data', function (data) {
+    nexmo.conversations.events.create(NEXMO_CONVERSATION_ID, {
+        "type": "text:delivered",
+        "from": NEXMO_MEMBER_ID,
+        "body": {
+            "text": data
+        }
+    }, (error, result) => {
         if (error) {
-            return error;
-        } 
-    }).on('data', function (data) {
-        nexmo.conversations.events.create(NEXMO_CONVERSATION_ID, {
-            "type": "text:delivered",
-            "from": NEXMO_MEMBER_ID,
-            "body": {
-                "text": data
-            }
-        }, (error, result) => {
-            if (error) {
-              return error;
-            } else {
-              return event;
-            }
-        });
-    })
+          return error;
+        } else {
+          return event;
+        }
+    });
+})
+```
 
 ## Put Everything Together
 
@@ -248,11 +248,8 @@ It's now time to test our application! First, we ensure `Ganache-cli` is running
 
 A look at our `Ganache-cli` logs in the terminal should show the `eth_sendTransaction` and `eth_subscribe` APIs being called on our Ethereum Node, which indicates the start of a transaction and a subscription to an event by our Node.js application
 
-
-![](https://paper-attachments.dropbox.com/s_7D49C4022D5C8EE1CD911307F43DBAC8FC65F6A90161AEB6BD94A53118116BD3_1583741399346_Screenshot+from+2020-03-09+09-07-18.png)
-
+![Logs in the terminal](/content/blog/connect-to-the-ethereum-blockchain-with-node-js-and-vonage/s_7d49c4022d5c8ee1cd911307f43dbac8fc65f6a90161aeb6bd94a53118116bd3_1583741399346_screenshot-from-2020-03-09-09-07-18.png "Logs in the terminal")
 
 ## What's Next?
 
 We could build on this application by building out a fully-fledged chat application on the Blockchain, including more robust error handling, indexing messages on the blockchain, and much more!
-
