@@ -147,11 +147,11 @@ This method checks the database to see if the roomName already has a sessionId. 
 
 With the back end out of the way, let's get down to building the client. We're going to have two primary views—our **Join** view, where the user will input the room name they would like to join:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/05/JoinView.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/JoinView.png" alt="Chat App Join View" width="1125" height="802" class="aligncenter size-full wp-image-32401" /></a>
+![Chat App Join View](/content/blog/create-a-basic-video-chat-app-with-asp-net-and-angular/joinview.png "Chat App Join View")
 
 And a **Video** view that will contain the video call:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/05/VideoView.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/VideoView.png" alt="Chat App Video View" width="1641" height="1269" class="aligncenter size-full wp-image-32402" /></a>
+![Chat App Video View](/content/blog/create-a-basic-video-chat-app-with-asp-net-and-angular/videoview.png "Chat App Video View")
 
 ### Install npm Dependencies
 
@@ -203,7 +203,7 @@ export class StateService {
 }
 ```
 
-_**Note:** At this stage, you might get an IntelliSense error "Experimental support for decorators is a feature that is subject to change in a future release. Set the 'experimentalDecorators' option to remove this warning." To resolve this, you need to set the build action of `ClientApp\tsconfig.json` file to Content, and you may need to restart Visual Studio._
+***Note:** At this stage, you might get an IntelliSense error "Experimental support for decorators is a feature that is subject to change in a future release. Set the 'experimentalDecorators' option to remove this warning." To resolve this, you need to set the build action of `ClientApp\tsconfig.json` file to Content, and you may need to restart Visual Studio.*
 
 ### Build the Subscriber Component
 
