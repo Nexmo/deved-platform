@@ -17,8 +17,6 @@ spotlight: true
 redirect: ""
 canonical: ""
 ---
-<a href="http://developer.nexmo.com/spotlight?utm_campaign=dev_spotlight&amp;utm_content=Stripe_SMS_Notifications_Laravel_Nexmo"><img src="https://www.nexmo.com/wp-content/uploads/2019/03/blog-top-banner.png" alt="Nexmo Developer Spotlight" width="810" height="150" class="aligncenter size-full wp-image-28699" /></a>
-
 In this tutorial, we will create a simple application that sends SMS notifications using Nexmo whenever Stripe sends out a charge succeeded event.
 
 [Stripe](https://stripe.com/) sends out various webhook events whenever anything happens with your account occurs. Sometimes, for some of these events, such as a new purchase, you would like to be notified instantly when they occur.
