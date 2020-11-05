@@ -29,8 +29,6 @@ You would start off with a login page that asks your user for a mobile phone num
 * A basic understanding of Javascript
 * [Node.js](https://nodejs.org/en/download/) installed on your machine
 
-## Vonage API Account
-
 <sign-up number></sign-up>
 
 Once you have a Vonage API account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2019-04-15-how-to-add-two-factor-authentication-with-node-js-dr).
