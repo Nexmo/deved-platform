@@ -20,6 +20,7 @@ canonical: ""
 We recently announced [WebSocket support](https://www.nexmo.com/blog/2016/11/09/announcing-websocket-sip-early-access-integration-ibm-watson/) within our new Voice API. The initial use cases for this are around server-to-server communication between the Vonage Voice API and speech AI platforms such as IBM Watson or Amazon Alexa. However, I'd like to show you a little demo we built for our booth at AWS ReInvent that shows another use. It demonstrates streaming the audio of a conference call to a web browser and plays it back with the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 
 &nbsp;
+
 <blockquote class="twitter-video" data-lang="en">
 <p dir="ltr" lang="en">Voice is one of the most natural interfaces. Drop by <a href="https://twitter.com/hashtag/awsreinvent?src=hash">#awsreinvent</a> booth 2216 to find out how we can help you connect Voice to anything. <a href="https://t.co/t3C6yvNcpi">pic.twitter.com/t3C6yvNcpi</a></p>
 — Nexmo (@Nexmo) <a href="https://twitter.com/Nexmo/status/804411491826794496">December 1, 2016</a></blockquote>
@@ -36,11 +37,11 @@ I'm going to walk you through the technical details of how this works and hopefu
 
 Here's a diagram of how this fits together:
 
-<img class="alignnone size-full wp-image-11167" src="https://www.nexmo.com/wp-content/uploads/2016/12/audiosocket-arch.001.jpeg" alt="audiosocket-arch-001" />
+![architecture](/content/blog/streaming-calls-to-a-browser-with-voice-websockets/audiosocket-arch.001.jpeg "architecture")
 
 #### The Conference Call
 
-What we have are two "domains." There is a typical conference call hosted on the Vonage [Voice API](https://docs.nexmo.com/voice/voice-api), which the talkers dial into. The code for this is fairly simple as all we need to do is create a new Nexmo application and point the `answer_url` to an [NCCO that creates the conference](https://docs.nexmo.com/voice/voice-api/ncco-reference#conversation). We serve this from the web app server.
+What we have are two "domains." There is a typical conference call hosted on the Vonage [Voice API](https://docs.nexmo.com/voice/voice-api), which the talkers dial into. The code for this is fairly simple as all we need to do is create a new Vonage application and point the `answer_url` to an [NCCO that creates the conference](https://docs.nexmo.com/voice/voice-api/ncco-reference#conversation). We serve this from the web app server.
 
 The NCCO looks like:
 
@@ -62,7 +63,7 @@ So when users call a number linked to the application they are placed in a very 
 
 #### A WebSocket Participant
 
-Now comes the (slightly) complicated part. When interacting with the Vonage WebSocket API, your application is not a WebSocket client (e.g. a browser). Your application is a WebSocket server. So, your application server needs to make a request to the <a href="https://docs.nexmo.com/voice/voice-api/api-reference#calls">Nexmo REST API</a> to tell the voice platform to make your application a participant in the conference by making an outbound websocket connection to your web app server. To do this, we point the `answer_url` of the outbound call at the same NCCO we used for the phone calls.
+Now comes the (slightly) complicated part. When interacting with the Vonage WebSocket API, your application is not a WebSocket client (e.g. a browser). Your application is a WebSocket server. So, your application server needs to make a request to the <a href="https://developer.nexmo.com/api/voice?theme=dark#calls">Vonage REST API</a> to tell the voice platform to make your application a participant in the conference by making an outbound websocket connection to your web app server. To do this, we point the `answer_url` of the outbound call at the same NCCO we used for the phone calls.
 
 The request to make an outgoing call to the websocket looks like this:
 
@@ -88,13 +89,15 @@ Authorization: Bearer [YOUR_JWT_TOKEN]
 ```
 
 This sequence diagram shows the flows:
-<a href="https://www.nexmo.com/wp-content/uploads/2016/12/audiosocket-seq.002.jpeg"><img class="alignnone size-full wp-image-11326" src="https://www.nexmo.com/wp-content/uploads/2016/12/audiosocket-seq.002.jpeg" alt="audiosocket-seq-002" /></a>
 
-To ensure that only one websocket connection is established from Nexmo to the app server you need to keep track in your application of the state of this call and its call identifier (`callid`). I check the number of established client connections. When it's zero, I close down the websocket call again via the REST API. Only the first client connection initiates the connection from Nexmo.
+
+![sequence diagram](/content/blog/streaming-calls-to-a-browser-with-voice-websockets/audiosocket-seq.002.jpeg "sequence diagram")
+
+To ensure that only one websocket connection is established from Vonage to the app server you need to keep track in your application of the state of this call and its call identifier (`callid`). I check the number of established client connections. When it's zero, I close down the websocket call again via the REST API. Only the first client connection initiates the connection from Vonage.
 
 #### Handling Inbound WebSocket Data
 
-Once the websocket connection is established between Nexmo and the app server, we need to understand what it sends. On the initial connection, the Voice API will send a single text "message" that contains some JSON data. This is mostly describing the audio format along with any additional values you are passing from your application via the NCCO when the connection was created (in this case app : audiosocket).
+Once the websocket connection is established between Vonage and the app server, we need to understand what it sends. On the initial connection, the Voice API will send a single text "message" that contains some JSON data. This is mostly describing the audio format along with any additional values you are passing from your application via the NCCO when the connection was created (in this case app : audiosocket).
 
 ```json
 {
@@ -103,21 +106,22 @@ Once the websocket connection is established between Nexmo and the app server, w
 }
 ```
 
-After the initial text message, Nexmo will then send binary messages with each one containing 20ms of RAW Audio. (*Note: RAW audio isn't quite the same as a .wav file.*) This means that in your code you will need to determine if the received message is text or binary and handle accordingly.
+After the initial text message, Vonage will then send binary messages with each one containing 20ms of RAW Audio. (*Note: RAW audio isn't quite the same as a .wav file.*) This means that in your code you will need to determine if the received message is text or binary and handle accordingly.
 
 #### Sending Audio Data to the Browser
 
-In order to play this audio in a browser using `WebAudio`, we need to turn the RAW audio into a .wav file. This means adding a small 44byte header to the file. However, doing this for each 20ms frame would be quite a lot of overhead and given our use case we can tolerate a small amount of latency towards the listeners. To avoid this, we can buffer up 10 of the messages from Nexmo, concatenate them together, and stick the 44byte header on the top. This will leave us with a 200ms .wav file.
+In order to play this audio in a browser using `WebAudio`, we need to turn the RAW audio into a .wav file. This means adding a small 44byte header to the file. However, doing this for each 20ms frame would be quite a lot of overhead and given our use case we can tolerate a small amount of latency towards the listeners. To avoid this, we can buffer up 10 of the messages from Vonage, concatenate them together, and stick the 44byte header on the top. This will leave us with a 200ms .wav file.
 
 We can then broadcast those .wav files to the clients by iterating through a list of connected client websockets and sending each one the file as a binary message.
 
 #### Playing the Audio in a Browser
 
-On the web client, we need to create some JavaScript to connect to the websocket server and then handle the received audio messages. Because the audio format that we receive from Nexmo is 16bit 16Khz and most browsers' native format is 32bit 44.1Khz, we can't play back a constant stream with WebAudio. We need to ask the browser to transcode the audio to the appropriate playback rate. The [WebAudio bufferSource](https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode) does this very well and adds very little latency, but it can work with discrete files only and a new instance has to be created for each file. Therefore, when a new audio file arrives on the websocket, we need to pass it to a function that will create a new `bufferSource` and play it back on the main `audioContext`.
+On the web client, we need to create some JavaScript to connect to the websocket server and then handle the received audio messages. Because the audio format that we receive from Vonage is 16bit 16Khz and most browsers' native format is 32bit 44.1Khz, we can't play back a constant stream with WebAudio. We need to ask the browser to transcode the audio to the appropriate playback rate. The [WebAudio bufferSource](https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode) does this very well and adds very little latency, but it can work with discrete files only and a new instance has to be created for each file. Therefore, when a new audio file arrives on the websocket, we need to pass it to a function that will create a new `bufferSource` and play it back on the main `audioContext`.
 
 The other point to consider is timing. While moving to fewer but longer samples (200ms vs. 20ms) helps with jitter, the messages still won't arrive at exactly the right interval. Therefore, if we simply play them one after another there will be glitches. Fortunately, WebAudio has a very precise timing interface which can help. By taking the time of the first sample as `T0` and then counting the number of messages received and multiplying that by `0.2`, we can schedule each sample to be started at the correct time and reassemble the stream to be virtually glitch free.
 
 Those bits of the client code are detailed below with comments:
+
 ```js
 var startTime; // Make startTime a global var
 
@@ -149,15 +153,4 @@ Of course, there is still the scenario that a file will arrive too late for its 
 
 And there you have it: a low-latency, one-way audio stream of your conf call being played back directly in a browser.
 
-Checkout the code on the [Nexmo Community GitHub Organization](https://github.com/nexmo-community/audiosocket-demo) and find out more about the [Nexmo WebSocket Voice API in the docs](https://docs.nexmo.com/voice/voice-api/websockets).
-
-<script>
-window.addEventListener('load', function() {
-  var codeEls = document.querySelectorAll('code');
-  [].forEach.call(codeEls, function(el) {
-    el.setAttribute('style', 'font: normal 10pt Consolas, Monaco, monospace; color: #a31515;');
-  });
-});
-</script>
-
-<center><img style="margin: auto;" src="https://www.nexmo.com/wp-content/uploads/2016/04/Nexmo_O.png" alt="Nexmo Logo" width="100" /></center>
+Checkout the code on the [Vonage Community GitHub Organization](https://github.com/nexmo-community/audiosocket-demo) and find out more about the [Vonage WebSocket Voice API in the docs](https://developer.nexmo.com/voice/voice-api/guides/websockets).
