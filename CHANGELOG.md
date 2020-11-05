@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.3 - Content and blog previews in CMS (05/11/2020)
+### Fixes
+- Enables blog post previews in Netlify CMS editor screen (#260)
+---
+
 ## v1.1.2 - Fix bug introduced from v1.1.0 (04/11/2020)
 ### Fixes
 - Fix category selection when editing a post
