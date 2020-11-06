@@ -19,6 +19,7 @@ canonical: ""
 This blog post will show how to build your own “smart” video camera. It will show how to take an image from the frame of a web camera, detect if there is a human in the frame, and send out an SMS via Vonage Communication APIs to notify you about potential threats.
 
 ## Introduction
+
 This idea came to me after my parents' house was burglarized. They live in a remote location with no security cameras, and the police were never able to find who committed the crime. After this, my parents decided to equip the house with some security equipment. I was a college student at the time, so I decided to take it upon myself to use my skills to build a security system for them.
 
 Feel free to reach out to me as I have fully developed this into [a working prototype](https://github.com/behei/opencv_sms) that has been utilized by my family! 
@@ -116,7 +117,7 @@ We read each frame from our captured video stream. It is also a good idea to con
 
 Please see an example below of my face being detected: 
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/04/pasted-image-0.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/04/pasted-image-0.png" alt="" width="1600" height="898" class="alignnone size-full wp-image-32005" /></a>
+![Example below of my face being detected](/content/blog/real-time-human-detection-with-opencv-and-vonage-sms-api/pasted-image-0.png "Example below of my face being detected")
 
 If you load a different classifier, such as `upperbody.xml` or `fullbody.xm`l, you’ll be able to use the same code for the detection. 
 
@@ -126,7 +127,7 @@ This comes from a limitation in the classifiers provided by OpenCV. You can alwa
 
 Now, let’s add Vonage SMS API capabilities into our application so that the user can be notified if there is a stranger detected on their video frame.
 
-_**Note**: It is important to add delay to this (especially while testing) so that the user does not get a lot of SMS messages for one detection event._
+***Note**: It is important to add delay to this (especially while testing) so that the user does not get a lot of SMS messages for one detection event.*
 
 In our example, we will be using a `time.sleep(number of seconds)` method to do so; however, feel free to develop your own more sophisticated method if you have one. 
 
@@ -149,12 +150,13 @@ That's it! In just 50 lines of code, you are ready to detect people snooping on 
 The source code to this post can be found at the following [GitHub link](https://github.com/behei/opencv_sms). I have also included the Haar Cascade classifiers used in this project so you can get up and running quickly.
 
 ## Potential Improvements
+
 Of course, there is more that can be done to make this project more sophisticated and efficient.
 
 Firstly, the `time.sleep()` method means that there is at least a five-second gap between the frame analysis which is not an ideal situation and could be improved. It would also be a good idea to crop the video frame image that you receive from the camera down to just a specific detection area in order to improve the efficiency of the detection—less pixels to check means faster detections. 
 
 ### References
 
-[https://docs.opencv.org/master/db/d28/tutorial_cascade_classifier.html](https://docs.opencv.org/master/db/d28/tutorial_cascade_classifier.html)
-[https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_video_display/py_video_display.html](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_video_display/py_video_display.html)
-[https://github.com/opencv/opencv/tree/master/data/haarcascades](https://github.com/opencv/opencv/tree/master/data/haarcascades)
+<https://docs.opencv.org/master/db/d28/tutorial_cascade_classifier.html>
+<https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_video_display/py_video_display.html>
+<https://github.com/opencv/opencv/tree/master/data/haarcascades>
