@@ -53,11 +53,11 @@ This tutorial uses a Raspberry Pi 4 and the official Raspberry Pi Camera module,
 
 The photograph below is of the Raspberry Pi and a Camera Module used in this article:
 
-![Raspberry Pi][raspberrypi]
+![A Raspberry Pi with the Camera module](/content/blog/home-surveillance-system-with-node-and-a-raspberry-pi/raspberry-pi.jpeg "A Raspberry Pi with the Camera module")
 
 Connect the Camera Module via the ribbon cable into the Raspberry Pi's Camera Module port. The photograph below shows where you should install the Camera Module ribbon:
 
-![Raspberry Pi with Camera][raspberrypicamera]
+![Raspberry Pi with Camera Ribbon Installed](/content/blog/home-surveillance-system-with-node-and-a-raspberry-pi/raspberry-pi-camera-ribbon.jpeg "Raspberry Pi with Camera Ribbon Installed")
 
 ### Enabling SSH and Camera
 
@@ -71,12 +71,12 @@ sudo raspi-config
 
 You will see a screen like an image similar to what's shown below:
 
-![Enable SSH & Camera][raspi-config]
+![Raspberry Pi Configuration](/content/blog/home-surveillance-system-with-node-and-a-raspberry-pi/raspi-config.png "Raspberry Pi Configuration")
 
 Choose option 5 - `Interfacing Options`
 
-- From the next menu, choose Option P1 for `Camera`, then select `Yes`,
-- Following this choose Option P2 for `SSH`, again select `Yes`.
+* From the next menu, choose Option P1 for `Camera`, then select `Yes`,
+* Following this choose Option P2 for `SSH`, again select `Yes`.
 
 You have now enabled the Camera module and SSH on your Raspberry Pi.
 
@@ -86,17 +86,17 @@ The next step is to wire the Raspberry Pi to a motion sensor. This tutorial uses
 
 First, take the sensor and connect three wires to it. I've used red for the live, blue for the GPIO, and black for ground. For the sensor in this example, the first pin is ground, second GPIO and third live as shown:
 
-![Wiring Sensor to Raspberry Pi Pt1][wiringpt1]
+![Example of Motion Sensor](/content/blog/home-surveillance-system-with-node-and-a-raspberry-pi/sensor-wiring-pt1.jpeg "Example of Motion Sensor")
 
 A great example to describe each of the pins on the Raspberry Pi is on [The Raspberry Pi Website.](https://www.raspberrypi.org/documentation/usage/gpio/) The diagram illustrates the layout of the GPIO pins, as shown below:
 
-![GPIO Pinout Diagram][gpio-pinout]
+![Diagram of Raspberry Pi GPIO Pins](/content/blog/home-surveillance-system-with-node-and-a-raspberry-pi/gpio-pinout-diagram-2.png "Diagram of Raspberry Pi GPIO Pins")
 
 The final part is connecting the wires to the Raspberry Pi. The live (red) wire needs to be connected to one of the `5V power` pins on the Pi, referring to the diagram above I used pin 2. The ground (black) wire needs to be connected to one of the `GND` pins on the Pi, again referring to the diagram I used pin 6. The final wire to join is the GPIO (blue) wire, which needs to connect to one of the `GPIO` pins. In this example, I used pin 12, labelled "GPIO 18".
 
 The final wiring setup is shown below:
 
-![Wiring Sensor to Raspberry Pi Pt2][wiringpt2]
+![Sensor Writing Part 2](/content/blog/home-surveillance-system-with-node-and-a-raspberry-pi/sensor-wiring-pt2.jpeg "Sensor Writing Part 2")
 
 ### Testing Motion Detection
 
@@ -111,7 +111,6 @@ npm init
 Follow the instructions requested, set a name for the project and leave the rest of the inputs as defaults.
 
 The following commands create a new `index.js`, which will store the majority of your code, and install a new package called `onoff` that allows the controlling of the GPIO pins:
-
 
 ```bash
 touch index.js
@@ -232,6 +231,7 @@ In your Raspberry Pi's Terminal, change directory to your project path and run t
 ```bash
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
 ```
+
 Two files get created, `key.pem` and `cert.pem`, move these to a location your code can access. For this tutorial, they're in the project directory.
 
 ### The Web Server
@@ -377,8 +377,8 @@ const db = require('./models/index');
 
 When a Vonage Video session gets created, a session ID gets returned, this session ID needs to be stored somewhere for you to connect to it remotely. The best way to do this is a database table. Using the recently installed Sequelize CLI, run the command below. It creates a new table called Session, with two new columns:
 
-- sessionId (which is a string),
-- active (which is a boolean).
+* sessionId (which is a string),
+* active (which is a boolean).
 
 ```bash
 # Generate yourself a Session model, this is going to be used to store the sessionId of the video feed
@@ -387,18 +387,18 @@ sequelize model:generate --name Session --attributes sessionId:string,active:boo
 
 Two new files get created after this command is successful, these are:
 
-- `models/session.js`
-- `migrations/<timestamp>-Session.js`
+* `models/session.js`
+* `migrations/<timestamp>-Session.js`
 
 The new model, `session.js`, defines what the database expects in terms of column names, data types, among other things.
 
 The new migrations file defines what is to be persisted to the database when the migration is successful. In this instance, it creates a new database table called `sessions` with five new columns:
 
-- id
-- sessionId
-- active
-- createdAt
-- updatedAt
+* id
+* sessionId
+* active
+* createdAt
+* updatedAt
 
 Run this migration using the Sequelize CLI command with the parameters `db:migrate`:
 
@@ -431,9 +431,9 @@ npm install opentok puppeteer
 
 Copy the additions to the code in your `index.js` as shown below. This code imports three libraries into your project.
 
- - OpenTok (To publish/subscribe to video stream with Vonage Video)
- - Puppeteer (For your Raspberry Pi to open a browser in headless mode to publish the stream)
- - DotEnv (To access the .env variables)
+* OpenTok (To publish/subscribe to video stream with Vonage Video)
+* Puppeteer (For your Raspberry Pi to open a browser in headless mode to publish the stream)
+* DotEnv (To access the .env variables)
 
 An OpenTok object gets initialized using your Vonage API Key and Secret .env variables you have yet to add.
 
@@ -469,9 +469,9 @@ VONAGE_VIDEO_API_SECRET=<tokbox api secret>
 
 In your `index.js` file, find the part of the code that initializes the OpenTok object, and add three variables called:
 
-- `canCreateSession`, determines whether your project can create a session or not (if a session is already active)
-- `session`, is the variable to hold the current session object
-- `url` is the variable to keep the current URL of the session (in this case, a Ngrok URL)
+* `canCreateSession`, determines whether your project can create a session or not (if a session is already active)
+* `session`, is the variable to hold the current session object
+* `url` is the variable to keep the current URL of the session (in this case, a Ngrok URL)
 
 ```diff
 const opentok = new OpenTok(
@@ -541,7 +541,6 @@ mkdir public/config
 ```
 
 You're going to need some styling for your page that the client sees, so create a new `app.css` file inside `public/css/` and copy the code below into this file. The CSS below ensures the size of the content is 100% in height, the background colour is grey, and the video stream is full screen for maximum visibility.
-
 
 ```css
 body, html {
@@ -779,12 +778,12 @@ async function closeSession(currentPage, currentBrowser) {
 
 Now is the time to create the publishing of the stream in headless mode, the function below does the following all in headless mode:
 
-- Creates a new browser instance,
-- Opens a new page / tab,
-- Overrides permissions for the camera and microphone on the browser,
-- Directs the page to the `/serve` endpoint to publish the video stream,
-- Creates a new timer to stop the video stream after a certain length of time,
-- Creates another timer to provide a buffer between the stream ending and when another is allowed to start
+* Creates a new browser instance,
+* Opens a new page / tab,
+* Overrides permissions for the camera and microphone on the browser,
+* Directs the page to the `/serve` endpoint to publish the video stream,
+* Creates a new timer to stop the video stream after a certain length of time,
+* Creates another timer to provide a buffer between the stream ending and when another is allowed to start
 
 Copy the code below into your `index.js` file:
 
@@ -1010,10 +1009,10 @@ node index.js
 
 Your server is now running, and your Raspberry Pi is to detect motion, which it will then do the following:
 
-- Start an OpenTok session,
-- Save the Session ID to the database,
-- Send an SMS to your predetermined phone number with a link to the stream,
-- Start a publishing stream from the Raspberry pi.
+* Start an OpenTok session,
+* Save the Session ID to the database,
+* Send an SMS to your predetermined phone number with a link to the stream,
+* Start a publishing stream from the Raspberry pi.
 
 You've now built yourself a home surveillance system in a short time, which can be accessed anywhere in the world!
 
@@ -1021,16 +1020,8 @@ The finished code for this tutorial can be found on the [GitHub repository](http
 
 Below are a few other tutorials we've written implementing the Vonage Video API into projects:
 
-- [Stream a Video Chat With Vonage Video API](https://www.nexmo.com/blog/2020/04/28/stream-a-video-chat-with-vonage-video-api-dr)
-- [Add Texting Functionality to a Video Chat With Vonage Video API](https://www.nexmo.com/blog/2020/04/21/video-with-text-chat)
-- [Real-Time Face Detection in .NET with OpenTok and OpenCV](Real-Time Face Detection in .NET with OpenTok and OpenCV)
+* [Stream a Video Chat With Vonage Video API](https://www.nexmo.com/blog/2020/04/28/stream-a-video-chat-with-vonage-video-api-dr)
+* [Add Texting Functionality to a Video Chat With Vonage Video API](https://www.nexmo.com/blog/2020/04/21/video-with-text-chat)
+* \[Real-Time Face Detection in .NET with OpenTok and OpenCV](Real-Time Face Detection in .NET with OpenTok and OpenCV)
 
 Don’t forget, if you have any questions, advice or ideas you’d like to share with the community, then please feel free to jump on our [Community Slack workspace](https://developer.nexmo.com/community/slack) or pop a reply below 👇. I'd love to hear back from anyone that has implemented this tutorial and how your project works.
-
-[raspi-config]: https://www.nexmo.com/wp-content/uploads/2020/05/raspi-config.png "Raspi-config"
-[ssh-camera-enabling]: https://www.nexmo.com/wp-content/uploads/2020/05/enable-ssh-camera.png "Enable SSH & Camera"
-[raspberrypi]: https://www.nexmo.com/wp-content/uploads/2020/05/raspberry-pi.jpeg "Raspberry Pi"
-[raspberrypicamera]: https://www.nexmo.com/wp-content/uploads/2020/05/raspberry-pi-camera-ribbon.jpeg "Raspberry Pi with Camera"
-[wiringpt1]: https://www.nexmo.com/wp-content/uploads/2020/05/sensor-wiring-pt1.jpeg "Wiring a Motion Sensor Pt 1"
-[wiringpt2]: https://www.nexmo.com/wp-content/uploads/2020/05/sensor-wiring-pt2.jpeg "Wiring a Motion Sensor Pt 2"
-[gpio-pinout]: https://www.nexmo.com/wp-content/uploads/2020/05/GPIO-Pinout-Diagram-2.png "GPIO Pinout Diagram"
