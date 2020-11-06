@@ -420,7 +420,7 @@ Ensure your Vue.JS development server is still running (run `yarn serve` from wi
 
 ![JWT now present in browser and output via console.log](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/jwt-in-browser.png "JWT now present in browser and output via console.log")
 
-## Adding the Nexmo Stitch JS SDK for In-App Voice
+## Adding the Vonage Client SDK for JavaScript
 
 With the User JWT in the client we can move to include the Vonage Client SDK for JavaScript:
 
