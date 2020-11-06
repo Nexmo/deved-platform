@@ -43,7 +43,7 @@ N -> P: Call
 */
 </script>
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/08/component-diagram.png" width="90%" alt="Call from Web Browser Sequence Diagram" />
+![Call from Web Browser Sequence Diagram](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/component-diagram.png "Call from Web Browser Sequence Diagram")
 
 So, there are a few steps involved but the result is worthwhile.
 
@@ -102,7 +102,7 @@ With that we're ready to start building the UI.
 
 Vue.JS has a strong and growing ecosystem so it makes sense to utilize existing components if there are any. Luckily, there are a few options and we'll go with the [vue-tel-input component](https://github.com/EducationLink/vue-tel-input) by [Steven Dao](https://github.com/iamstevendao).
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/08/vue-tel-input.gif" alt="vue-tel-input example animation" width="500" height="282" class="aligncenter size-full wp-image-23020" />
+![vue-tel-input example animation](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/vue-tel-input.gif "vue-tel-input example animation")
 
 Install the component:
 
@@ -253,7 +253,7 @@ yarn serve
 
 With this running, navigating in a browser to `http://localhost:8080` and trying out entering phone numbers into the `vue-input-tel` component. We'll see the phone number validated at the bottom of the app UI.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/08/call-from-browser-ui.png" alt="Call from Browser simple user interface" width="70%" class="aligncenter size-medium" />
+![Call from Browser simple user interface](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/call-from-browser-ui.png "Call from Browser simple user interface")
 
 ## Creating a User JWT to login to the Vonage Platform
 
@@ -333,8 +333,7 @@ In the above code, we load in Express and set it up to parse inbound requests as
 
 You can now run `node index.js` and then access `http://localhost:3000/no-auth` to ensure the endpoint returns the expected JSON.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/08/userJWT-null.png" alt="User JWT with null value" width="70%" class="aligncenter size-medium" />
-
+![User JWT with null value](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/userjwt-null.png "User JWT with null value")
 
 Now, let's add the code to generate the User JWT to be used with the Vonage Client SDK for JavaScript.
 
@@ -366,11 +365,9 @@ The `userAcl` variables provide a set of claims or access rules that are used wh
 
 Restarting the node `index.js` processing and accessing `http://localhost:3000/no-auth` will show a real JWT having been generated.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/08/userJWT.png" alt="User JWT with real JWT value" width="70%" class="aligncenter size-medium" />
+![User JWT with real JWT value](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/userjwt.png "User JWT with real JWT value")
 
 > Note: It can sometimes be handy to take a look at [JWT Debugger](https://jwt.io/#debugger-io) to check the contents of your JWT.
-> 
-> <img src="https://www.nexmo.com/wp-content/uploads/2018/08/jwt-io-debugger.png" alt="JWT.io debugger with example User JWT" width="70%" class="aligncenter size-medium" />
 
 ## Fetching the User JWT from the Web Browser
 
@@ -391,7 +388,6 @@ Since it'd be bad practice to 100% hard code the server URL we'll make this sett
       default: process.env.VUE_APP_JWT_URL || "http://localhost:3000/no-auth"
     }
   },
-
 ```
 
 The `jwtUrl` value can then be overwritten by setting a `jwt-url` property on the `<CallFromBrowser>` element and the `default` can be changed when the component is built by having a `VUE_APP_JWT_URL` value set in a `.env` file in our top-level directory. For more info see [Vue.JS props](https://vuejs.org/v2/guide/components-props.html) and [Vue CLI 3 Environment Variables and Modes](https://cli.vuejs.org/guide/mode-and-env.html).
@@ -422,7 +418,7 @@ With the server URL set, we can now `fetch` the User JWT. Vue.JS has various [li
 
 Ensure your Vue.JS development server is still running (run `yarn serve` from within the `call-from-browser` directory if not) navigate to `http://localhost:8080` and open up your developer tools to check the console and make sure the User JWT us logged.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/08/jwt-in-browser.png" alt="JWT now present in browser and output via console.log" width="70%" class="aligncenter size-medium" />
+![JWT now present in browser and output via console.log](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/jwt-in-browser.png "JWT now present in browser and output via console.log")
 
 ## Adding the Nexmo Stitch JS SDK for In-App Voice
 
@@ -517,7 +513,7 @@ With all the client-side functionality in place, you can enter a valid phone num
 
 > conversation:error:not-found
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/08/conversation-not-found.png" alt="conversation-not-found message in browser console" width="70%" class="aligncenter size-medium" />
+![conversation-not-found message in browser console](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/conversation-not-found.png "conversation-not-found message in browser console")
 
 When a call is initiated or received by the Nexmo platform it makes an HTTP request to an `answer_url` for the relevant associated Nexmo application. The server that receives that HTTP request must return a Nexmo Conversation Control Object (NCCO); a set of instructions informing Nexmo how to proceed with the call.
 
@@ -543,6 +539,7 @@ app.get('/answer', (req, res) => {
 Nexmo expects a JSON structure, the NCCO, to be returned instructing it how to proceed with the call. The above `ncco` JSON structure that we return informs Nexmo to `connect` the call to a `phone` endpoint with the number identified by the value in `req.query.to` - the `to` query parameter in the inbound GET request. This number is the number we passed to `this.app.callPhone` in our Vue.JS app.
 
 _Notes:
+
 1. Please remember that we have no application-level authentication in our web app so you'll need to add this yourself e.g. within the answer URL endpoint you can check the `req.query.to` and `req.query.from` to ensure that the user (identified by `from`) is allowed to make the requested call.
 2. If you have a Nexmo virtual phone number you should add a `NEXMO_FROM_NUMBER` entry to the `.env` file so that recipient of phone calls see a number on their inbound call. Otherwise, it may come up as a "Private Number" or "Unknown"._
 
@@ -554,7 +551,7 @@ Finally, we need to make it possible for the Nexmo platform to reach the answer 
 $ ngrok http 3000
 ```
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/08/ngrok.png" alt="Ngrok output in a terminal" width="70%" class="aligncenter size-medium" />
+![Ngrok output in a terminal](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/ngrok.png "Ngrok output in a terminal")
 
 And update the `answer_url` for your Nexmo Application to utilise the Ngrok tunnel URLs using the Nexmo CLI.
 
@@ -562,18 +559,17 @@ And update the `answer_url` for your Nexmo Application to utilise the Ngrok tunn
 $ nexmo app:update NEXMO_APP_ID "call-from-browser" https://4ca73ac6.ngrok.io/answer https://4ca73ac6.ngrok.io/event
 ```
 
-_Note: you can find the `NEXMO_APP_ID` in `server/.env` or `server/.nexmo-app`_
+*Note: you can find the `NEXMO_APP_ID` in `server/.env` or `server/.nexmo-app`*
 
 Head back into the Vue.JS app in the browser, enter a phone number and click the button to make an outbound call from your web browser.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/08/working-app.png" alt="Full Vue.JS Call from Browser application working alongside screenshot of phone ringing" width="70%" class="aligncenter size-medium" />
+![Full Vue.JS Call from Browser application working alongside screenshot of phone ringing](/content/blog/making-phone-calls-from-a-web-browser-with-vue-js-and-vonage/working-app.png "Full Vue.JS Call from Browser application working alongside screenshot of phone ringing")
 
 ## Conclusion
 
 The purpose of this blog post is was to show how to to build an app that enables a user to call any phone on the planet directly from a web browser using Vue.JS and In-App Voice using the Vonage Client SDK for JavaScript. It provides the basics and has hopefully provided inspiration for what use cases this can enable. Oh, and you could also update the app to [support inbound phone calls](https://developer.nexmo.com/stitch/in-app-voice/inbound-pstn).
 
 As mentioned at the start of this post, In-App Voice is in Developer Preview so please let us know if you've any thoughts on the experience you've had whilst building this app or if you have any other feedback by joining the [Vonage Community Slack](https://developer.nexmo.com/community/slack).
-
 
 ## Where next
 
