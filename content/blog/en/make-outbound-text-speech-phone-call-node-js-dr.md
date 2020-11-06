@@ -16,17 +16,17 @@ comments: true
 redirect: ""
 canonical: ""
 ---
-*This is the first of a two-part Voice API tutorial on making and receiving phone calls with Node.js. It continues the "Getting Started with Nexmo and Node.js" series, which followed our Getting Started series on SMS APIs. See links to prior tutorials in these series at the bottom of the post.*
+*This is the first of a two-part Voice API tutorial on making and receiving phone calls with Node.js. It continues the "Getting Started with Vonage and Node.js" series, which followed our Getting Started series on SMS APIs. See links to prior tutorials in these series at the bottom of the post.*
 
-The Nexmo Voice API allows you to build high-quality programmable voice applications in The Cloud. With the Voice API, you can manage outbound and inbound calls in JSON, record and store calls, create a conference call, send text-to-speech messages in 23 languages with varieties of voices and accents, and so on.
+The Vonage Voice API allows you to build high-quality programmable voice applications in The Cloud. With the Voice API, you can manage outbound and inbound calls in JSON, record and store calls, create a conference call, send text-to-speech messages in 23 languages with varieties of voices and accents, and so on.
 
 In this tutorial, you will learn how to use the Application and Voice APIs to create a text-to-speech outbound phone call securely.
 
 View [the source code on GitHub](https://github.com/nexmo-community/nexmo-node-quickstart/blob/master/voice/make-call.js)
 
-## Securing Your Nexmo Application
+## Securing Your Vonage Application
 
-Some of Nexmo’s APIs use Nexmo [Applications](https://docs.nexmo.com/tools/application-api), which contain the security and configuration information you need to connect to the Voice API endpoints.
+Some of Vonage’s APIs use Nexmo [Applications](https://docs.nexmo.com/tools/application-api), which contain the security and configuration information you need to connect to the Voice API endpoints.
 
 An Application:
 
@@ -76,7 +76,7 @@ You can edit the app info with the Vonage `app:update` command later as you need
 
 ### Making a Call with Vonage Voice API
 
-Now you are going to use the Voice API to make a call with the Vonage Node.js client library. If you have not followed the [Getting Started with SMS using Node.js](https://www.nexmo.com/blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr/) guide, first make sure Node.js is installed on your machine and install the Nexmo Node.js library via npm:
+Now you are going to use the Voice API to make a call with the Vonage Node.js client library. If you have not followed the [Getting Started with SMS using Node.js](https://www.nexmo.com/blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr/) guide, first make sure Node.js is installed on your machine and install the Vonage Node.js library via npm:
 
 ```bash
 
@@ -125,7 +125,6 @@ When it is successful, it retrieves the NCCO from your webhook, executes the act
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 
 <div class="embed-container"><iframe width="300" height="150" src="https://www.youtube.com/embed/5TNF6HJ2GDw" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
-
 
 In this exercise, the phone number is taken from a command line but, of course, you can take the request from web via POST. Refer to [Getting Started with SMS with Node.js](https://www.nexmo.com/blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr/) for a simple example with Express.js.
 
