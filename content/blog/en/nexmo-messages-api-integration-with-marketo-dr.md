@@ -1,5 +1,5 @@
 ---
-title: Send WhatsApp and SMS Messages from Marketo with Nexmo
+title: Send WhatsApp and SMS Messages from Marketo
 description: Nexmo, Whatsapp, and SMS make it easy to leverage text messaging
   applications for customer outreach, appointment reminders, and mobile
   marketing. Nexmo Messages API supports native app features and multimedia
@@ -10,11 +10,15 @@ thumbnail: /content/blog/nexmo-messages-api-integration-with-marketo-dr/Nexmo-Me
 author: enrico-portolan
 published: true
 published_at: 2019-08-07T17:05:38.000Z
-comments: true
+updated_at: 2019-08-07T17:05:00.000Z
 category: tutorial
-tags: []
-canonical: https://www.nexmo.com/blog/2019/08/07/nexmo-messages-api-integration-with-marketo-dr
-redirect: https://www.nexmo.com/blog/2019/08/07/nexmo-messages-api-integration-with-marketo-dr
+tags:
+  - sms-api
+  - messaging-api
+  - marketo
+comments: true
+redirect: ""
+canonical: ""
 ---
 
 Content to be migrated...
