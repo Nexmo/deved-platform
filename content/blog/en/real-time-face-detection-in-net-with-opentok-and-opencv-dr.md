@@ -1,7 +1,7 @@
 ---
-title: Real-Time Face Detection in .NET with OpenCV and Video
+title: Real-Time Face Detection in .NET with OpenCV and Vonage Video API
 description: Learn how to build real time face detection functionality into your
-  Windows Presentation Framework (WPF) apps with OpenCV and Vonage Video.
+  Windows Presentation Framework (WPF) apps with OpenCV and Vonage Video API.
 thumbnail: /content/blog/real-time-face-detection-in-net-with-opentok-and-opencv-dr/E_Face-Detection_1200x600.png
 author: stevelorello
 published: true
@@ -20,7 +20,7 @@ Computer Vision is my favorite field in computer science. It combines my four fa
 
 ## Baseline
 
-To help us get started, we'll be working off of the [CustomVideoRender](https://github.com/opentok/opentok-windows-sdk-samples/tree/master/CustomVideoRenderer) OpenTok sample. Right now this sample adds a shade of blue to your video frame when you toggle the filter on. We are going to remove that blue shading and add face detection to the renderer instead. And if you believe it, that facial detection feature is going to be about 30 times faster than the blue filter. To accomplish this feat we are going to apply the [Viola-Jones](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf) method for feature detection using Emgu CV.
+To help us get started, we'll be working off of the [CustomVideoRender](https://github.com/opentok/opentok-windows-sdk-samples/tree/master/CustomVideoRenderer) Vonage Video sample. Right now this sample adds a shade of blue to your video frame when you toggle the filter on. We are going to remove that blue shading and add face detection to the renderer instead. And if you believe it, that facial detection feature is going to be about 30 times faster than the blue filter. To accomplish this feat we are going to apply the [Viola-Jones](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf) method for feature detection using Emgu CV.
 
 ### Just Give Me the Code
 
@@ -45,8 +45,8 @@ This method does an excellent job detecting faces in an image, but if not for th
 * Visual Studio - I'm using 2019, though older versions ought to work
 * Minimum .NET Framework 4.6.1 - you can use as far back as 4.5.2, but you'll have to use EmguCV instead of Emgu.CV for your OpenCV NuGet package.
 * [CustomVideoRenderer Sample](https://github.com/opentok/opentok-windows-sdk-samples/tree/master/CustomVideoRenderer) - this is the sample we will be adapting.
-* An OpenTok account - if you don't have one [sign up here](https://tokbox.com/account/user/signup).
-* An API Key, Session ID, and Token from your OpenTok account - see the [Quickstart](https://github.com/opentok/opentok-windows-sdk-samples#quick-start) guide in the repo for details.
+* A Vonage Video API account - if you don't have one [sign up here](https://tokbox.com/account/user/signup).
+* An API Key, Session ID, and Token from your Vonage Video API account - see the [Quickstart](https://github.com/opentok/opentok-windows-sdk-samples#quick-start) guide in the repo for details.
 
 ## Getting Started
 
@@ -81,7 +81,7 @@ copy $(ProjectDir)\haarcascade_frontalface_default.xml $(ProjectDir)$(OutDir)
 
 ![Displaying Post Build Events Screen](/content/blog/real-time-face-detection-in-net-with-opencv-and-video/post_build_event.png "Displaying Post Build Events Screen")
 
-At this point, you should be able to fire the app up and connect to a call. Since Windows stops you from having your camera accessed by more than one application at the same time you may need to join the call from another computer using the [OpenTok Playground](https://tokbox.com/developer/tools/playground/)
+At this point, you should be able to fire the app up and connect to a call. Since Windows stops you from having your camera accessed by more than one application at the same time you may need to join the call from another computer using the [Vonage Video API Playground](https://tokbox.com/developer/tools/playground/)
 
 ![Running in Playground](/content/blog/real-time-face-detection-in-net-with-opencv-and-video/joinwithplayground.gif "Running in Playground")
 
@@ -99,7 +99,7 @@ So far all that's happening is if you click the 'toggle filter' button the app w
 
 ### How Does This Happen
 
-Rather than using the standard VideoRenderer, we are creating our own custom renderer, `SampleVideoRenderer`, which extends Control and implements OpenTok's IVideoRenderer. That interface is fairly simple: it has one method, `RenderFrame`, which we are taking the frame from and drawing onto a bitmap in the control. This allows us to intervene whenever a frame appears, apply what we want to it, and have it render.
+Rather than using the standard VideoRenderer, we are creating our own custom renderer, `SampleVideoRenderer`, which extends Control and implements Vonage Video API's IVideoRenderer. That interface is fairly simple: it has one method, `RenderFrame`, which we are taking the frame from and drawing onto a bitmap in the control. This allows us to intervene whenever a frame appears, apply what we want to it, and have it render.
 
 ## Adding Computer Vision
 
@@ -314,6 +314,6 @@ We are going to leave this here for now, but I'm hoping this post inspires the r
 ## Resources
 
 * You can find a working sample from this tutorial in GitHub [here](https://github.com/opentok-community/WPF-Facial-Detection)
-* For anything you could ever want to know about OpenTok check out our [site](https://tokbox.com/developer/)
+* For anything you could ever want to know about Vonage Video API check out our [site](https://tokbox.com/developer/)
 * For anything you could ever want to know about OpenCV Check out their [docs](https://docs.opencv.org/master/index.html)
 * Check out [Emgu's wiki page](http://www.emgu.com/wiki/index.php/Main_Page) to learn more about using Emgu in particular. If you're an OpenCv Python fan like I am, you'll have no problem using Emgu
