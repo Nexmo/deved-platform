@@ -26,11 +26,11 @@ View [the source code on GitHub](https://github.com/nexmo-community/nexmo-node-q
 
 ## Securing Your Vonage Application
 
-Some of Vonage’s APIs use Nexmo [Applications](https://docs.nexmo.com/tools/application-api), which contain the security and configuration information you need to connect to the Voice API endpoints.
+Some of Vonage’s APIs use Vonage [Applications](https://docs.nexmo.com/tools/application-api), which contain the security and configuration information you need to connect to the Voice API endpoints.
 
 An Application:
 
-* holds [security information](https://docs.nexmo.com/tools/application-api/application-security) - to connect to Nexmo endpoints
+* holds [security information](https://docs.nexmo.com/tools/application-api/application-security) - to connect to Vonage endpoints
 * contains configuration data for your app and the URLs to your webhook endpoints
 * uses [Nexmo Call Control Objects](https://docs.nexmo.com/voice/voice-api#ncco) (NCCO) to control your calls
 
@@ -96,7 +96,7 @@ Then, make a call with the `calls.create` function:
 
 Let’s take a phone number to call as a command line argument. So when you run this code, run it with a number. The FROM_NUMBER should be your virtual number, which you can find in your [dashboard](https://dashboard.nexmo.com/your-numbers).
 
-The synthesized voice will read the text from your webhook endpoint at `answer_url`, which contains NCCO in JSON. You can use the example hosted on Nexmo’s Community [GitHub repo](https://github.com/nexmo-community/ncco-examples/), or create your own and host it on a server (or even on GitHub Gist) that the Vonage API can reach.
+The synthesized voice will read the text from your webhook endpoint at `answer_url`, which contains NCCO in JSON. You can use the example hosted on Vonage’s Community [GitHub repo](https://github.com/nexmo-community/ncco-examples/), or create your own and host it on a server (or even on GitHub Gist) that the Vonage API can reach.
 
 **my-greeting.json**:
 
