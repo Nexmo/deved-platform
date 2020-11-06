@@ -50,7 +50,8 @@ $ nexmo setup api_key api_secret
 
 <li>The middleware code from Github</li>
 </ul>
-### Getting the middleware code from Github
+
+\### Getting the middleware code from GitHub
 
 First, we’re going to clone the middleware source code and install the dependencies for it. We're going to write a Node.js application using Express that provides a level of abstraction between the Vonage API and the Angular code:
 
@@ -786,4 +787,4 @@ If you'd like to continue learning how to use the Vonage Client SDK for JavaScri
 <li><a href="https://developer.nexmo.com/stitch/in-app-messaging/guides/2-inviting-members?platform=javascript">invite and chat with another user</a>.</li>
 <li><a href="https://developer.nexmo.com/stitch/in-app-messaging/guides/3-utilizing-events?platform=javascript">use more event listeners</a> to show chat history and when a user is typing.</li>
 </ul>
-If you have more questions about using In-App SDK, we encourage you to join the \[Vonage Developer Community Slack](https://developer.nexmo.com/community/slack/) and check out our \[#nexmo-client-sdk](https://nexmo-community.slack.com/messages/C9H152ATW/) channel or email us directly at \[ea-support@nexmo.com](mailto:ea-support@nexmo.com).
+If you have more questions about using In-App SDK, we encourage you to join the \\[Vonage Developer Community Slack](https://developer.nexmo.com/community/slack/) and check out our \\[#nexmo-client-sdk](https://nexmo-community.slack.com/messages/C9H152ATW/) channel or email us directly at \\[ea-support@nexmo.com](mailto:ea-support@nexmo.com).
