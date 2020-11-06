@@ -10,13 +10,14 @@ thumbnail: /content/blog/build-chat-app-angular-material-stitch-javascript-dr/35
 author: laka
 published: true
 published_at: 2018-03-29T00:05:14.000Z
-comments: true
+updated_at: 2020-11-06T14:11:48.131Z
 category: tutorial
 tags:
   - angular
   - typescript
-canonical: https://www.nexmo.com/blog/2018/03/28/build-chat-app-angular-material-stitch-javascript-dr
+comments: true
 redirect: https://www.nexmo.com/blog/2018/03/28/build-chat-app-angular-material-stitch-javascript-dr
+canonical: https://www.nexmo.com/blog/2018/03/28/build-chat-app-angular-material-stitch-javascript-dr
 ---
 
 Content to be migrated...
