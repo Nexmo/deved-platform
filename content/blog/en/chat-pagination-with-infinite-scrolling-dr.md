@@ -110,11 +110,11 @@ npm run dev
 
 ### Configure The Demo App
 
-To connect to Nexmo, and send or receive messages from the service, you need to configure the demo application.
+To connect to Vonage, and send or receive messages from the service, you need to configure the demo application.
 
-#### Create a Nexmo Application
+#### Create a Vonage Application
 
-Firstly, create a Nexmo Application with RTC (real-time communication) capabilities. The event URL will be a live log of events happening on the Nexmo service, like users joining/leaving, sending messages, enabling audio (if you felt like enabling it).
+Firstly, create a Vonage Application with RTC (real-time communication) capabilities. The event URL will be a live log of events happening on the Nexmo service, like users joining/leaving, sending messages, enabling audio (if you felt like enabling it).
 
 ```bash
 nexmo app:create "Nexmo RTC Chat" --capabilities=rtc --rtc-event-url=http://example.com --keyfile=private.key
@@ -123,9 +123,9 @@ nexmo app:create "Nexmo RTC Chat" --capabilities=rtc --rtc-event-url=http://exam
 # Private Key saved to: private.key
 ```
 
-#### Create a Nexmo Conversation
+#### Create a Vonage Conversation
 
-Secondly, create a Nexmo Conversation, which acts like a chatroom. Or, a container for messages and events.
+Secondly, create a Vonage Conversation, which acts like a chatroom. Or, a container for messages and events.
 
 ```bash
 nexmo conversation:create display_name="Infinite Scrolling"
@@ -191,7 +191,7 @@ Now configured, start the application and access it using the [default applicati
 
 > ***Note:*** This is only a demo and you should not be hard coding credentials into any application, especially one that exposes them to the client.
 
-![Nexmo Chat Simple Messaging UI](/content/blog/chat-pagination-with-infinite-scrolling/nexmo-chat-simple-messaging-ui.png "Nexmo Chat Simple Messaging UI")
+![Vonage Chat Simple Messaging UI](/content/blog/chat-pagination-with-infinite-scrolling/nexmo-chat-simple-messaging-ui.png "Vonage Chat Simple Messaging UI")
 
 #### Prepare a Message History
 
@@ -203,7 +203,7 @@ The default settings for the application only returns 20 items from the conversa
 
 ### What Is Pagination?
 
-Pagination, or paging, is how an application divides the content into multiple pages. When implemented in an APIs design, it allows for the delivery of manageable collections of results, that can usually be navigated programmatically. SDKs like the Nexmo Conversation Client SDK are no different, often extending the APIs pagination functionality into friendly methods that make pagination more straightforward.
+Pagination, or paging, is how an application divides the content into multiple pages. When implemented in an APIs design, it allows for the delivery of manageable collections of results, that can usually be navigated programmatically. SDKs like the Vonage Conversation Client SDK are no different, often extending the APIs pagination functionality into friendly methods that make pagination more straightforward.
 
 ### The User Experience
 
@@ -263,7 +263,7 @@ So, change it slightly. Add the following code above the `setupUserEvents()` met
 
 This new change creates a new method that detects where the scroll position of the `messageFeed` is at `0`, zero, or the very start at the top of the message history. More useful! Now, you know when someone reaches the oldest message at the top of the message list.
 
-![Nexmo Chat Alert When Scrolling to the Top](/content/blog/chat-pagination-with-infinite-scrolling/nexmo-chat-alert-scrolling-to-top.png "Nexmo Chat Alert When Scrolling to the Top")
+![Vonage Chat Alert When Scrolling to the Top](/content/blog/chat-pagination-with-infinite-scrolling/nexmo-chat-alert-scrolling-to-top.png "Vonage Chat Alert When Scrolling to the Top")
 
 ### Who Are You
 
@@ -488,7 +488,7 @@ If it's not clear how the `"scroll"` event listener should look after the change
 
 With any luck, when you try it out, you'll discover messages will seemingly load above your scroll position, allowing you to scroll 'to infinity', or the top.
 
-![Nexmo Chat Infinite Scrolling to the Top](/content/blog/chat-pagination-with-infinite-scrolling/nexmo-chat-infinite-scrolling-to-the-top.png "Nexmo Chat Infinite Scrolling to the Top")
+![Vonage Chat Infinite Scrolling to the Top](/content/blog/chat-pagination-with-infinite-scrolling/nexmo-chat-infinite-scrolling-to-the-top.png "Vonage Chat Infinite Scrolling to the Top")
 
 ## The End
 
