@@ -105,7 +105,7 @@ Rather than using the standard VideoRenderer, we are creating our own custom ren
 
 So with this Custom Renderer, we have all we need to get started with adding the CV to our app. Let's open SampleVideoRenderer.cs and before we do anything else add the following imports:
 
-```csharp
+```clike
 using Emgu.CV;
 using Emgu.CV.Structure;
 using System.Diagnostics;
