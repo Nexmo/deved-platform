@@ -15,36 +15,38 @@ comments: true
 redirect: ""
 canonical: ""
 ---
-
 In this tutorial, we'll enable chat in an Angular web application using the [JavaScript SDK](https://developer.nexmo.com/sdk/stitch/javascript/) and the [In-App API](https://developer.nexmo.com/api/stitch) so that users can communicate in our application. If you'd like to check out the source code, it lives on our [community GitHub page](https://github.com/nexmo-community/nexmo-stitch-angular).
 
 This is what we're trying to build:
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/03/end-game.gif" alt="" class="alignnone wp-image-20092" />
+![Demo of the sample app](/content/blog/build-a-chat-application-with-angular-material-and-vonage/end-game.gif "Demo of the sample app")
 
 ## Vonage API Account
 
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2018-03-28-build-chat-app-angular-material-stitch-javascript-dr). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2018-03-28-build-chat-app-angular-material-stitch-javascript-dr) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2018-03-28-build-chat-app-angular-material-stitch-javascript-dr).
+**<sign-up></sign-up>**
 
-<a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2018-03-28-build-chat-app-angular-material-stitch-javascript-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
+Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2018-03-28-build-chat-app-angular-material-stitch-javascript-dr).
 
 ## Before You Begin
 
 Before we begin you’ll need a few things:
+
 <ul>
 <li>A basic understanding of <a href="https://angular.io" rel="noopener noreferrer" target="_blank">Angular</a>.</li>
 <li><a href="https://nodejs.org/en/" rel="noopener noreferrer" target="_blank">Node.js</a> installed on your machine.</li>
 <li>The Nexmo CLI. Install it as follows:
 
-    <pre>
-    $ npm install -g nexmo-cli@beta
-    </pre>
+```
+<pre>
+$ npm install -g nexmo-cli@beta
+</pre>
 
-    Setup the CLI to use your Vonage API Key and API Secret:
+Setup the CLI to use your Vonage API Key and API Secret:
 
-    <pre>
-    $ nexmo setup api_key api_secret
-    </pre></li>
+<pre>
+$ nexmo setup api_key api_secret
+</pre></li>
+```
 
 <li>The middleware code from Github</li>
 </ul>
@@ -62,7 +64,6 @@ $ npm install
 
 Before we can run the code, we'll need to create an RTC application within the Vonage platform to use within this code:
 
- 
 <pre class="lang:default highlight:0 decode:true " >$ nexmo app:create "My Conversation App" https://example.com/answer https://example.com/event --type=rtc --keyfile=private.key</pre> 
 
 The output of the above command will be something like this:
@@ -302,7 +303,6 @@ import { MessagingService } from './messaging.service';
 ...
     providers: [MessagingService],
 ...
-
 ```
 
 ## Login Component
@@ -519,7 +519,6 @@ We need to implement a helper method for building a conversations array out of t
 
 Let's add a method for selecting a conversation from the list. We'll need to take the ID from the view and pass it on to the controller, and then use the Vonage SDK to get data about the conversation. We'll store this in a class property, so it's available to the view later on. We're also using `Observable` to create an array from the `conversation.events` Map, so we can recreate chat history when the user comes back to the app. We'll also add an event listener using the SDK to listen for `text` events and add those to the events history as well:
 
-
 ```javascript
 selectConversation(conversationId: string) {
     this.ms.app.getConversation(conversationId).then(conversation => {
@@ -578,7 +577,7 @@ We're using a pipe called `keys` here to transform the `members` dictionary obje
 
 ```bash
 $ ng g pipe keys
-``` 
+```
 
 ```javascript
 import { Pipe, PipeTransform } from '@angular/core';
@@ -781,9 +780,10 @@ The app will run at "http://localhost:4200". I'd suggest opening the app in two 
 ## What's Next?
 
 If you'd like to continue learning how to use the Vonage Client SDK for JavaScript, check out our quickstarts where we show you how to: 
+
 <ul>
 <li><a href="https://developer.nexmo.com/stitch/in-app-messaging/guides/1-simple-conversation?platform=javascript">create a simple conversation</a>.</li>
 <li><a href="https://developer.nexmo.com/stitch/in-app-messaging/guides/2-inviting-members?platform=javascript">invite and chat with another user</a>.</li>
 <li><a href="https://developer.nexmo.com/stitch/in-app-messaging/guides/3-utilizing-events?platform=javascript">use more event listeners</a> to show chat history and when a user is typing.</li>
 </ul>
-If you have more questions about using In-App SDK, we encourage you to join the [Vonage Developer Community Slack](https://developer.nexmo.com/community/slack/) and check out our [#nexmo-client-sdk](https://nexmo-community.slack.com/messages/C9H152ATW/) channel or email us directly at [ea-support@nexmo.com](mailto:ea-support@nexmo.com).
+If you have more questions about using In-App SDK, we encourage you to join the \[Vonage Developer Community Slack](https://developer.nexmo.com/community/slack/) and check out our \[#nexmo-client-sdk](https://nexmo-community.slack.com/messages/C9H152ATW/) channel or email us directly at \[ea-support@nexmo.com](mailto:ea-support@nexmo.com).
