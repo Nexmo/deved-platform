@@ -25,6 +25,8 @@ But this time, in addition to the `talk` action for playing text-to-speech to th
 
 The [complete source code](https://github.com/Vonage/vonage-python-code-snippets/blob/master/voice/connect-callers-to-a-conference.py) is available on GitHub.
 
+<sign-up number></sign-up>
+
 Steps:
 
 1. [Install dependencies](#install-dependencies)
