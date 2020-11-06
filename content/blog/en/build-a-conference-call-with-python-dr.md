@@ -44,7 +44,7 @@ This tutorial is based on Python 3, so you'll need to have that installed. You'l
 
 You also need a mechanism for defining a webhook endpoint and handling inbound requests. We're going to use the [Flask framework](http://flask.pocoo.org/) for this. Install it using the **pip** package manager:
 
-```
+```bash
 pip3 install flask
 ```
 
@@ -86,7 +86,7 @@ A great tool for exposing your local development environment in this way is `ngr
 
 Launch `ngrok` using the following command:
 
-```
+```bash
 ngrok http 3000
 ```
 
@@ -105,25 +105,25 @@ You need a Vonage virtual number to receive phone calls. If you already have one
 
 You can purchase a number from the [developer dashboard](https://dashboard.nexmo.com/buy-numbers), but it's often quicker to perform administrative tasks like this from the command line instead, using the [Nexmo CLI](https://github.com/Nexmo/nexmo-cli). The CLI is a Node application so you need to install it with the [Node Package Manager](https://www.npmjs.com/get-npm), `npm`:
 
-```
+```bash
 npm install -g nexmo-cli
 ```
 
 Then, configure the Nexmo CLI with your API key and secret from the [developer dashboard](https://dashboard.nexmo.com):
 
-```
+```bash
 nexmo setup YOUR_API_KEY YOUR_API_SECRET
 ```
 
 To see which numbers are available for purchase, run `nexmo number:search`, passing it your two-character country code. For example, `GB` for Great Britain or `US` for the USA. You want to ensure that the number you purchase is able to receive voice calls:
 
-```
+```bash
 nexmo number:search COUNTRY_CODE --voice
 ```
 
 Choose a number from the list and buy it using the following command:
 
-```
+```bash
 nexmo number:buy <NUMBER>
 ```
 
@@ -142,7 +142,7 @@ You'll use the Nexmo CLI again for this. You need to specify the following infor
 
 In the same directory as  `confcall.py`, run the following command, supplying a name for your application as the first parameter and the URL for your inbound call webhook as the second. The third parameter defines another webhook that Nexmo can send call-related event data to. We're not capturing the event data in this example so you can supply any URL here.
 
-```
+```bash
 nexmo app:create “My Conf Call” ANSWER_URL https://example.com/events --keyfile private.key
 ```
 
@@ -154,13 +154,13 @@ Now you need to link your Voice API application to your Vonage number so that Vo
 
 Execute the following command, replacing `APPLICATION_ID` with your own unique application ID:
 
-```
+```bash
 nexmo link:app NEXMO_NUMBER APPLICATION_ID
 ```
 
 Verify that the number and application are linked by executing the `nexmo app:list` command. 
 
-```
+```bash
 nexmo app:list 
 ```
 
@@ -171,7 +171,7 @@ You can also see this information in the [developer dashboard](https://dashboard
 
 Ensure that `ngrok` is running on port 3000. Start your Python application in a new terminal window:
 
-```
+```bash
 python3 confcall.py
 ```
 
