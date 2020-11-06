@@ -41,7 +41,7 @@ To set up your application, you'll need to install the Nexmo CLI. Install it usi
 npm install -g nexmo-cli@beta
 ```
 
-[Sign up for a free Nexmo account](https://dashboard.nexmo.com/sign-up) and set up the Nexmo CLI with the API key and secret found on the dashboard.
+You can find your API key and secret on the [Dashboard](https://dashboard.nexmo.com/) which are used to set up the Nexmo CLI.
 
 ```bash
 nexmo setup <your_api_key> <your_api_secret>
