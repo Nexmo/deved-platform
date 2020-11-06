@@ -1,7 +1,8 @@
 ---
-title: Stripe SMS Notifications Using Laravel and Nexmo
+title: Stripe SMS Notifications Using Laravel
 description: In this tutorial you'll see how to build an SMS notifications
-  system for your Stripe account using the Laravel framework for PHP and Nexmo.
+  system for your Stripe account using the Laravel framework for PHP and SMS
+  API.
 thumbnail: /content/blog/stripe-sms-laravel-dotun/unnamed.png
 author: dotun
 published: true
@@ -204,7 +205,7 @@ ngrok http 8000
 
 This will generate a new terminal similar to the one below. 
 
-![The ngrok terminal](/content/blog/stripe-sms-notifications-using-laravel-and-nexmo/ngrok.png "The ngrok terminal")
+![The ngrok terminal](/content/blog/stripe-sms-notifications-using-laravel/ngrok.png "The ngrok terminal")
 
 Copy the first `forwarding` URL as this is what will be using to configure our Stripe webhook. 
 
@@ -214,7 +215,7 @@ The next step is to configure an endpoint in our Stripe account to send data to 
 
 Under the *Developers > Webhooks* section, select `Add Endpoint` and then configure it using the ngrok `url` you copied earlier. The complete URL will look like this, *http://6fb4323a.ngrok.io/api/stripe/webhook*, only your alphanumeric ID at the start of the address will be different.
 
-![Stripe Webhook Setup](/content/blog/stripe-sms-notifications-using-laravel-and-nexmo/stripe-768x737.png "Stripe Webhook Setup")
+![Stripe Webhook Setup](/content/blog/stripe-sms-notifications-using-laravel/stripe.png "Stripe Webhook Setup")
 
 ## Testing
 
@@ -222,7 +223,7 @@ Under Stripe webhook settings, click the *Send Test Webhook* button. This will s
 
 You should receive a text similar to the one below:
 
-![SMS Notification](/content/blog/stripe-sms-notifications-using-laravel-and-nexmo/sms-600x237.png "SMS Notification")
+![SMS Notification](/content/blog/stripe-sms-notifications-using-laravel/sms-600x237.png "SMS Notification")
 
 ## Conclusion
 
