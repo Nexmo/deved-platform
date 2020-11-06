@@ -134,7 +134,7 @@ nexmo conversation:create display_name="Infinite Scrolling"
 
 Now, create a user for yourself. 
 
-> ***Note:*** In this demo, you won't chat between two users. [Other guides]() [show you]() how to [create conversations]() between [multiple users](). This guide focusses on styling your message UI in a simple, yet appealing, way.
+> ***Note:*** In this demo, you won't chat between two users. [Other guides](<>) [show you](<>) how to [create conversations](<>) between [multiple users](<>). This guide focusses on styling your message UI in a simple, yet appealing, way.
 
 ```bash
 nexmo user:create name=<USER_NAME> display_name=<DISPLAY_NAME>
@@ -189,7 +189,7 @@ Now configured, start the application and access it using the [default applicati
 
 > ***Note:*** This is only a demo and you should not be hard coding credentials into any application, especially one that exposes them to the client.
 
-![Nexmo Chat Simple Messaging UI](https://www.nexmo.com/wp-content/uploads/2020/02/nexmo-chat-simple-messaging-ui.png)
+![Nexmo Chat Simple Messaging UI](/content/blog/chat-pagination-with-infinite-scrolling/nexmo-chat-simple-messaging-ui.png "Nexmo Chat Simple Messaging UI")
 
 #### Prepare a Message History
 
