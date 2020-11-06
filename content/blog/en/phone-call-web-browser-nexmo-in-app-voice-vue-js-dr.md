@@ -149,7 +149,7 @@ This imports the CSS and the component definition for the telephone input compon
 
 Next let's set up some properties for data binding such as the `callInProgress` property relied upon by the `template` and add any methods that are expected to be in place, as show, in the template:
 
-```js
+```javascript
 export default {
   name: 'CallFromBrowser',
   components: {
@@ -247,7 +247,7 @@ Replace `<template>` contents, import the `CallFromBrowser.vue` component defini
 
 We can now run the app:
 
-```sh
+```shell
 yarn serve
 ```
 
