@@ -6,7 +6,7 @@ thumbnail: /content/blog/real-time-face-detection-in-net-with-opentok-and-opencv
 author: stevelorello
 published: true
 published_at: 2020-03-18T16:56:50.000Z
-updated_at: 2020-11-06T11:17:25.127Z
+updated_at: 2020-03-18T16:56:00.000Z
 category: tutorial
 tags:
   - video-api
