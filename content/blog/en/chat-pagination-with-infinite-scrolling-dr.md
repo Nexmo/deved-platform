@@ -20,6 +20,8 @@ Following on from the previous post [Create a Simple Messaging UI with Bootstrap
 
 ## Prerequisites
 
+<sign-up></sign-up>
+
 ### Node & NPM
 
 To get started, you're going to need Node and NPM installed. This guide uses Node 8 and NPM 6. Check they're installed and up-to-date.
