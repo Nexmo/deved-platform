@@ -6,14 +6,14 @@ thumbnail: /content/blog/create-websocket-server-spring-boot-dr/websocket-server
 author: cr0wst
 published: true
 published_at: 2018-10-08T15:19:15.000Z
-canonical: ""
-comments: true
 updated_at: 2020-10-27T13:58:34.137Z
 category: tutorial
 tags:
-  - Java
-  - WebSockets
+  - java
+  - websockets
+comments: true
 redirect: ""
+canonical: ""
 ---
 
 [WebSocket](https://en.wikipedia.org/wiki/WebSocket) is a protocol which enables communication between the server and the browser. It has an advantage over RESTful HTTP because communications are both bi-directional and real-time. This allows for the server to notify the client at any time instead of the client polling on a regular interval for updates.
@@ -208,6 +208,6 @@ In this tutorial you learned how to create a WebSocket server using Spring Boot 
 
 Have you tried out the Spark Framework? You might want to see how to [Create a WebSocket server using the Spark Framework](https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr/).
 
-Did you know that you can use WebSocket as an endpoint in a [Nexmo Call Control Object](https://developer.nexmo.com/voice/voice-api/ncco-reference#websocket-the-websocket-to-connect-to)? Look at this example on [Streaming Calls to a Browser with Voice WebSockets](https://www.nexmo.com/blog/2016/12/19/streaming-calls-to-a-browser-with-voice-websockets-dr/).
+Did you know that you can use WebSocket as an endpoint in a [Call Control Object](https://developer.nexmo.com/voice/voice-api/ncco-reference#websocket-the-websocket-to-connect-to)? Look at this example on [Streaming Calls to a Browser with Voice WebSockets](https://www.nexmo.com/blog/2016/12/19/streaming-calls-to-a-browser-with-voice-websockets-dr/).
 
 Interested in reading more about WebSockets? Check out this post on [What are WebSockets? How Can They Enhance Digital Solutions?](https://www.nexmo.com/blog/2018/09/05/websockets-enhance-digital-solutions/)
