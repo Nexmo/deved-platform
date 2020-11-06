@@ -5,8 +5,8 @@ description: Meet Filippos Kyprianou, who joins the Vonage Community Team as a
 thumbnail: /content/blog/filippos-kyprianou-joins-the-vonage-community-team/filippos-kyprianou.png
 author: filippos.kyprianou
 published: true
-published_at: 2020-11-06T12:49:09.138Z
-updated_at: 2020-11-06T12:49:09.167Z
+published_at: 2020-11-06T12:52:57.984Z
+updated_at: 2020-11-06T12:52:58.011Z
 category: announcement
 tags:
   - new-joiner
