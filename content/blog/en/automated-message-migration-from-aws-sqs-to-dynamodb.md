@@ -9,7 +9,7 @@ thumbnail: /content/blog/automated-message-migration-from-aws-sqs-to-dynamodb/Bl
 author: adamculp
 published: true
 published_at: 2020-06-15T18:52:54.000Z
-updated_at: 2020-11-06T10:52:11.600Z
+updated_at: 2020-06-15T18:52:00.000Z
 category: tutorial
 tags:
   - aws
