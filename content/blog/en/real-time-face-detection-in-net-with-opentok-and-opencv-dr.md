@@ -55,7 +55,8 @@ This method does an excellent job detecting faces in an image, but if not for th
 First, let's open up the CustomVideoRenderer solution file. In MainWindow.xaml.cs put your credentials in if you haven't already. Then upgrade the csproj to target the .NET Framework 4.6.1.
 
 To do this open the solution in Visual Studio, right-click on the project file, and click 'properties'. Then in the Application tab change the target framework to 4.6.1.
-![upgrade .NET version](https://www.nexmo.com/wp-content/uploads/2020/03/project_upgrade.png)
+
+![Upgrade .NET version](/content/blog/real-time-face-detection-in-net-with-opencv-and-video/project_upgrade.png "Upgrade .NET version")
 
 ### Add NuGet Packages
 
@@ -78,19 +79,19 @@ copy $(ProjectDir)\haarcascade_profileface.xml $(ProjectDir)$(OutDir)
 copy $(ProjectDir)\haarcascade_frontalface_default.xml $(ProjectDir)$(OutDir)
 ```
 
-![Post Build Event](https://www.nexmo.com/wp-content/uploads/2020/03/post_build_event.png)
+![Displaying Post Build Events Screen](/content/blog/real-time-face-detection-in-net-with-opencv-and-video/post_build_event.png "Displaying Post Build Events Screen")
 
 At this point, you should be able to fire the app up and connect to a call. Since Windows stops you from having your camera accessed by more than one application at the same time you may need to join the call from another computer using the [OpenTok Playground](https://tokbox.com/developer/tools/playground/)
 
-![Running in Playground](https://www.nexmo.com/wp-content/uploads/2020/03/joinWithPlayground.gif)
+![Running in Playground](/content/blog/real-time-face-detection-in-net-with-opencv-and-video/joinwithplayground.gif "Running in Playground")
 
 Now if we connect our call it should look something like this in the Windows App:
 
-![Without Filter Windows App](https://www.nexmo.com/wp-content/uploads/2020/03/without_filter.png)
+![Display Without Filter Windows App](/content/blog/real-time-face-detection-in-net-with-opencv-and-video/without_filter.png "Display Without Filter Windows App")
 
 And if we toggle the filter button on it'll look more like:
 
-![With Blue Filter Windows App](https://www.nexmo.com/wp-content/uploads/2020/03/with_blue_filter.png)
+![Display With Blue Filter Windows App](/content/blog/real-time-face-detection-in-net-with-opencv-and-video/with_blue_filter.png "Display With Blue Filter Windows App")
 
 ## What's Happening So Far
 
@@ -288,7 +289,7 @@ I noticed the PublisherVideo element in the MainWindow is a bit small for me to 
 
 Now we're ready—fire up the app and hit the `Toggle Filter` button on the upper left-hand corner of the screen. That will activate the filter. You should see it on your preview, and if you connect to a call you'll be able to see it the facial detection working on the remote participants as well.
 
-![With Face Detection](https://www.nexmo.com/wp-content/uploads/2020/03/with_face_detection.png)
+![Display Example With Face Detection](/content/blog/real-time-face-detection-in-net-with-opencv-and-video/with_face_detection.png "Display Example With Face Detection")
 
 You'll see this means of feature detection is both accurate and quick. The filter runs in about 10ms, compared to the ~30ms for the blue filter that was modified. And since the main processing runs on a worker thread, and the actual drawing takes less than a millisecond, this is actually about thirty times faster, meaning adding facial detection is virtually free from a UX perspective.
 
