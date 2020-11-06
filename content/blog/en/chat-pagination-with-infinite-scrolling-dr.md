@@ -261,7 +261,7 @@ So, change it slightly. Add the following code above the `setupUserEvents()` met
 
 This new change creates a new method that detects where the scroll position of the `messageFeed` is at `0`, zero, or the very start at the top of the message history. More useful! Now, you know when someone reaches the oldest message at the top of the message list.
 
-![Nexmo Chat Alert When Scrolling to the Top](https://www.nexmo.com/wp-content/uploads/2020/04/nexmo-chat-alert-scrolling-to-top.png)
+![Nexmo Chat Alert When Scrolling to the Top](/content/blog/chat-pagination-with-infinite-scrolling/nexmo-chat-alert-scrolling-to-top.png "Nexmo Chat Alert When Scrolling to the Top")
 
 ### Who Are You
 
@@ -486,7 +486,7 @@ If it's not clear how the `"scroll"` event listener should look after the change
 
 With any luck, when you try it out, you'll discover messages will seemingly load above your scroll position, allowing you to scroll 'to infinity', or the top.
 
-![Nexmo Chat Infinite Scrolling to the Top](https://www.nexmo.com/wp-content/uploads/2020/02/nexmo-chat-infinite-scrolling-to-the-top.png)
+![Nexmo Chat Infinite Scrolling to the Top](/content/blog/chat-pagination-with-infinite-scrolling/nexmo-chat-infinite-scrolling-to-the-top.png "Nexmo Chat Infinite Scrolling to the Top")
 
 ## The End
 
