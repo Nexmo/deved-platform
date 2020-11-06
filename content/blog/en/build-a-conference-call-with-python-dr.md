@@ -129,7 +129,7 @@ nexmo number:buy <NUMBER>
 
 Confirm your purchase and make a note of the number that you bought.
 
-<h2 id="create-a-nexmo-voice-api-application">Create a Vonage Voice API Application</h2>
+<h2 id="create-a-vonage-voice-api-application">Create a Vonage Voice API Application</h2>
 
 You now need to create a Vonage Voice API Application. An application in this context is not the same as the application you have just written the code for. Instead, it is a container for the configuration and security information you need to use the Voice API.
 
@@ -148,7 +148,7 @@ nexmo app:create “My Conf Call” ANSWER_URL https://example.com/events --keyf
 
 Running this command configures a Voice API application with your webhook and downloads your security credentials in a file called `private.key`. It also returns a unique Application ID: make a note of this as you will need it in the next step.
 
-<h2 id="link-the-application-to-your-nexmo-number">Link the Application to Your Vonage Number</h2>
+<h2 id="link-the-application-to-your-vonage-number">Link the Application to Your Vonage Number</h2>
 
 Now you need to link your Voice API application to your Vonage number so that Vonage knows to use that specific configuration when your number receives a call.
 
