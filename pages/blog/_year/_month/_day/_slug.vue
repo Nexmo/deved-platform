@@ -11,8 +11,8 @@
     >
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
+        <div class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs :title="post.title" />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
@@ -140,7 +140,6 @@
 </template>
 
 <script>
-import moment from 'moment'
 import config from '~/modules/config'
 
 export default {
@@ -153,28 +152,10 @@ export default {
           error({ statusCode: 404, message: 'Page not found', err })
         })
 
-      const postDate = moment(post.published_at)
-
       return {
         post,
         disqusShortname: config.disqusShortname,
         baseUrl: config.baseUrl,
-        routes: [
-          { route: `/${post.type}`, title: app.i18n.t('page_blog_breadcrumb') },
-          {
-            route: `/${post.type}/${postDate.format('YYYY')}`,
-            title: postDate.format('YYYY'),
-          },
-          {
-            route: `/${post.type}/${postDate.format('YYYY/MM')}`,
-            title: postDate.format('MMMM'),
-          },
-          {
-            route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`,
-            title: postDate.format('Do'),
-          },
-          { route: post.route, title: post.title, current: true },
-        ],
       }
     } catch (err) {
       error({ statusCode: 404, message: 'Page not found', err })

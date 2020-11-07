@@ -8,8 +8,8 @@
     <main class="Vlt-container">
       <div class="Vlt-grid">
         <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
+        <div class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
@@ -20,21 +20,17 @@
 </template>
 
 <script>
-import moment from 'moment'
-
 export default {
   validate({ params: { year } }) {
     return /^\d{4}$/.test(year)
   },
 
   async asyncData({ $content, app, error, params: { year } }) {
-    const date = moment(`${year}`, 'YYYY')
-
     try {
       const posts = await $content(`blog/${app.i18n.locale}`)
         .where({
           $and: [
-            { routes: { $contains: `/blog/${date.format('YYYY')}` } },
+            { routes: { $contains: `/blog/${year}` } },
             { published: { $ne: false } },
           ],
         })
@@ -46,16 +42,8 @@ export default {
       }
 
       return {
-        year: date.format('YYYY'),
+        year,
         posts,
-        routes: [
-          { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb') },
-          {
-            route: `/blog/${date.format('YYYY')}`,
-            title: date.format('YYYY'),
-            current: true,
-          },
-        ],
       }
     } catch (e) {
       return error(e)

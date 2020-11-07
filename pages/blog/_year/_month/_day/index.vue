@@ -2,14 +2,16 @@
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
       <PageHero class="Category-hero">
-        {{ $t('page_blog_yearmonthday_title') }} {{ year }}.
+        {{ $t('page_blog_yearmonthday_title') }} {{ year }}/{{ month }}/{{
+          day
+        }}.
       </PageHero>
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
         <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
+        <div class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
@@ -20,24 +22,19 @@
 </template>
 
 <script>
-import moment from 'moment'
 import config from '~/modules/config'
 
 export default {
-  async asyncData({ $content, app, params, error }) {
-    const { day, month, year } = params
+  validate({ params: { year, month, day } }) {
+    return /^\d{4}$/.test(year) && /^\d{2}$/.test(month) && /^\d{2}$/.test(day)
+  },
 
-    if (isNaN(year) || isNaN(month) || isNaN(day)) {
-      return error({ statusCode: 404, message: 'Page not found' })
-    }
-
-    const date = moment(`${year}/${month}/${day}`, 'YYYY/MM/DD')
-
+  async asyncData({ $content, app, error, params: { year, month, day } }) {
     try {
       const posts = await $content(`blog/${app.i18n.locale}`)
         .where({
           $and: [
-            { routes: { $contains: `/blog/${date.format('YYYY/MM/DD')}` } },
+            { routes: { $contains: `/blog/${year}/${month}/${day}` } },
             { published: { $ne: false } },
           ],
         })
@@ -50,23 +47,10 @@ export default {
       }
 
       return {
-        dayTh: date.format('Do'),
-        monthName: date.format('MMMM'),
-        year: date.format('YYYY'),
+        day,
+        month,
+        year,
         posts,
-        routes: [
-          { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb') },
-          { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY') },
-          {
-            route: `/blog/${date.format('YYYY/MM')}`,
-            title: date.format('MMMM'),
-          },
-          {
-            route: `/blog/${date.format('YYYY/MM/DD')}`,
-            title: date.format('Do'),
-            current: true,
-          },
-        ],
       }
     } catch (e) {
       return error(e)

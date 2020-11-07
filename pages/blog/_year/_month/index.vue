@@ -2,14 +2,14 @@
   <section class="Blog__Full-width">
     <header class="Blog__Full-width">
       <PageHero class="Category-hero">
-        {{ $t('page_blog_yearmonthday_title') }} {{ year }}.
+        {{ $t('page_blog_yearmonthday_title') }} {{ year }}/{{ month }}.
       </PageHero>
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
         <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
+        <div class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
@@ -20,24 +20,19 @@
 </template>
 
 <script>
-import moment from 'moment'
 import config from '~/modules/config'
 
 export default {
-  async asyncData({ $content, app, params, error }) {
-    const { month, year } = params
+  validate({ params: { year, month } }) {
+    return /^\d{4}$/.test(year) && /^\d{2}$/.test(month)
+  },
 
-    if (isNaN(year) || isNaN(month)) {
-      return error({ statusCode: 404, message: 'Page not found' })
-    }
-
-    const date = moment(`${year}/${month}`, 'YYYY/MM')
-
+  async asyncData({ $content, app, error, params: { year, month } }) {
     try {
       const posts = await $content(`blog/${app.i18n.locale}`)
         .where({
           $and: [
-            { routes: { $contains: `/blog/${date.format('YYYY/MM')}` } },
+            { routes: { $contains: `/blog/${year}/${month}` } },
             { published: { $ne: false } },
           ],
         })
@@ -50,18 +45,9 @@ export default {
       }
 
       return {
-        monthName: date.format('MMMM'),
-        year: date.format('YYYY'),
+        month,
+        year,
         posts,
-        routes: [
-          { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb') },
-          { route: `/blog/${date.format('YYYY')}`, title: date.format('YYYY') },
-          {
-            route: `/blog/${date.format('YYYY/MM')}`,
-            title: date.format('MMMM'),
-            current: true,
-          },
-        ],
       }
     } catch (e) {
       return error(e)

@@ -8,6 +8,12 @@
       <div class="Vlt-grid Vlt-grid--stack-flush">
         <div class="Vlt-col" />
         <div class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs />
+        </div>
+        <div class="Vlt-col" />
+        <div class="Vlt-grid__separator" />
+        <div class="Vlt-col" />
+        <div class="Vlt-col Vlt-col--2of3">
           <div
             class="Vlt-card Vlt-card--lesspadding"
             property="mainEntityOfPage"
@@ -53,9 +59,9 @@
 
 <script>
 export default {
-  async asyncData({ $content, app: { i18n }, params, error }) {
+  async asyncData({ $content, app: { i18n }, error }) {
     try {
-      const post = await $content(`page/${i18n.locale}`, params.page)
+      const post = await $content(`page/${i18n.locale}`, 'contributing')
         .where({ published: { $ne: false } })
         .fetch()
         .catch((err) => {

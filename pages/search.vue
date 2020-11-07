@@ -9,8 +9,8 @@
         >
           <div class="Vlt-grid Vlt-grid--stack-flush">
             <div class="Vlt-col" />
-            <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-              <Breadcrumbs :routes="routes" />
+            <div class="Vlt-col Vlt-col--2of3">
+              <Breadcrumbs title="Search Results" />
             </div>
             <div class="Vlt-col" />
             <div class="Vlt-grid__separator" />
@@ -114,19 +114,6 @@ export default {
         process.env.algoliaApplicationId,
         process.env.algoliaSearchKey
       ),
-      routes: [
-        {
-          route: `/search`,
-          title: this.$t('page_search_title'),
-        },
-        {
-          route: `/search?query=${this.$route.query.query}`,
-          title: this.$route.query.query
-            ? `${this.$t('page_search_title')}: ${this.$route.query.query}`
-            : 'All posts',
-          current: true,
-        },
-      ],
       routing: {
         router: historyRouter(),
         stateMapping: singleIndexMapping(process.env.algoliaIndex),

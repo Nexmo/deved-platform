@@ -5,48 +5,61 @@
     typeof="BreadcrumbList"
   >
     <li property="itemListElement" typeof="ListItem">
-      <NLink property="item" typeof="WebPage" :to="localePath('index')">
+      <NLink property="item" typeof="WebPage" to="/">
         <span property="name">Vonage Learn</span>
       </NLink>
       <meta property="position" content="1" />
     </li>
     <li
-      v-for="(route, index) in allRoutes"
-      :key="route.route"
+      v-for="(crumb, index) in crumbs"
+      :key="index"
       property="itemListElement"
       typeof="ListItem"
     >
-      <NLink property="item" typeof="WebPage" :to="localePath(route.route)">
-        <span property="name">{{ route.title }}</span>
+      <NLink property="item" typeof="WebPage" :to="crumb.path">
+        <span property="name">{{
+          $route.fullPath === crumb.path && title !== null ? title : crumb.title
+        }}</span>
       </NLink>
       <meta property="position" :content="index + 2" />
-    </li>
-    <li vproperty="itemListElement" typeof="ListItem" class="current">
-      <a property="item" typeof="WebPage" href="#">
-        <span property="name">{{
-          currentRoute.title | truncate(40, '...')
-        }}</span>
-      </a>
-      <meta property="position" :content="allRoutes.length + 1" />
     </li>
   </ol>
 </template>
 
 <script>
+const titleCase = require('ap-style-title-case')
+
 export default {
   props: {
-    routes: {
-      type: Array,
-      required: true,
+    title: {
+      type: String,
+      default: null,
     },
   },
 
   computed: {
-    allRoutes() {
-      return this.routes.filter((r) => !r.current)
-    },
-    currentRoute() {
-      return this.routes.filter((r) => !!r.current)[0]
+    crumbs() {
+      const fullPath = this.$route.fullPath
+      const params = fullPath.startsWith('/')
+        ? fullPath.substring(1).split('/')
+        : fullPath.split('/')
+      const crumbs = []
+
+      let path = ''
+
+      params.forEach((param, index) => {
+        path = `${path}/${param}`
+        const match = this.$router.match(path)
+
+        if (match.name !== null) {
+          crumbs.push({
+            title: titleCase(param.replace(/-/g, ' ')),
+            ...match,
+          })
+        }
+      })
+
+      return crumbs
     },
   },
 }
@@ -78,7 +91,7 @@ li a {
   color: black;
 }
 
-li.current a {
+li a.nuxt-link-exact-active.nuxt-link-active {
   color: grey;
 }
 </style>
