@@ -6,8 +6,8 @@
     <main class="Vlt-container">
       <div class="Vlt-grid">
         <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
+        <div class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
@@ -149,13 +149,6 @@ export default {
       alumni,
       spotlight,
       authors,
-      routes: [
-        {
-          route: `/authors`,
-          title: app.i18n.t('page_authors_title'),
-          current: true,
-        },
-      ],
     }
   },
 }

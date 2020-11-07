@@ -201,6 +201,11 @@ export default {
     },
   },
 
+  // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#base
+  router: {
+    routeNameSplitter: '/',
+  },
+
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
     liveEdit: false,
