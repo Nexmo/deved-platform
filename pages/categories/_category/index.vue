@@ -3,14 +3,13 @@
     <header class="Blog__Full-width">
       <PageHero class="Category-hero">
         <Category :category="category" plural />
-        {{ $t('page_categorytag_title') }}
       </PageHero>
     </header>
     <main class="Vlt-container">
       <div class="Vlt-grid">
         <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
+        <div class="Vlt-col Vlt-col--2of3">
+          <Breadcrumbs />
         </div>
         <div class="Vlt-col" />
         <div class="Vlt-grid__separator" />
@@ -44,13 +43,6 @@ export default {
       return {
         category,
         posts,
-        routes: [
-          {
-            route: `/categories/${category.slug}`,
-            title: `Category: ${category.plural}`,
-            current: true,
-          },
-        ],
       }
     } catch (e) {
       return error(e)
