@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2.2 - Demo button on preview-deploy (07/11/2020)
+### Features
+
+- Add preview post button to deploy-preview build (banner at top of the page in deploy previews) (#326) 
+---
+
 ## v1.2.1 - Fixes to author cards and and author twitter field  (07/11/2020)
 ### Fixes
 
