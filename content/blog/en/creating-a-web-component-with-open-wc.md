@@ -11,7 +11,7 @@ category: tutorial
 tags:
   - javascript
 comments: true
-redirect: https://www.nexmo.com/blog/2020/08/13/creating-a-web-component-with-open-wc
+redirect: ""
 canonical: https://www.nexmo.com/blog/2020/08/13/creating-a-web-component-with-open-wc
 ---
 Previously in this series we covered [what Web Components are](https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr) and [some tools](https://www.nexmo.com/blog/2020/05/20/web-components-tools-a-comparison) used to create them. Now, we will be creating a Web Component, publishing it, and use it on a web page.
