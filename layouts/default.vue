@@ -1,5 +1,6 @@
 <template>
   <div class="Vlt-template Vlt-bg-grey-lighter">
+    <DemoBar v-if="isDemo" :link="demoLink" />
     <Header />
     <Nuxt />
     <Footer />
@@ -32,6 +33,16 @@ export default {
         },
       ],
     }
+  },
+
+  computed: {
+    isDemo() {
+      return process.env.demo !== null
+    },
+
+    demoLink() {
+      return process.env.demo
+    },
   },
 
   methods: {
