@@ -6,7 +6,7 @@ description: The Vonage SMS API allows you to send an SMS and receive an SMS by
 thumbnail: /content/blog/sending-sms-messages-with-php-dr/sending-sms-featured.png
 author: mheap
 published: true
-published_at: 2020-11-06T13:29:00.000Z
+published_at: 2017-09-20T13:29:00.000Z
 updated_at: 2020-11-06T13:29:25.414Z
 category: tutorial
 tags:
