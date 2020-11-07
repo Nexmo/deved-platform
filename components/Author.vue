@@ -34,7 +34,15 @@ export default {
     this.authorData = this.author
 
     if (typeof this.authorData === 'string') {
-      this.authorData = await this.$content('authors', this.author).fetch()
+      try {
+        this.authorData = await this.$content('authors', this.author).fetch()
+      } catch (error) {
+        this.authorData = {
+          username: this.author,
+          name: this.author,
+          error,
+        }
+      }
     }
   },
 }
