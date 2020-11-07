@@ -67,7 +67,9 @@
         </div>
         <div class="Vlt-card__content Vlt-center">
           <TwitterSocialButton
-            :link="`https://twitter.com/${author.twitter}`"
+            :link="
+              author.twitter ? `https://twitter.com/${author.twitter}` : ''
+            "
             class="Vlt-btn--small"
           />
           <FacebookSocialButton

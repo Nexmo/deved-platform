@@ -160,6 +160,7 @@ collections:
       - label: 'Twitter'
         name: twitter
         widget: string
+        required: false
         hint: "Your twitter username WITHOUT the @"
       - label: Bio
         name: bio

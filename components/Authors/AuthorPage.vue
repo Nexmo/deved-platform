@@ -34,7 +34,7 @@
       </div>
       <div class="Vlt-center">
         <TwitterSocialButton
-          :link="`https://twitter.com/${author.twitter}`"
+          :link="author.twitter ? `https://twitter.com/${author.twitter}` : ''"
           class="Vlt-btn--small"
         />
         <FacebookSocialButton
