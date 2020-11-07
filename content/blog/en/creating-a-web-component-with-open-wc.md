@@ -83,7 +83,7 @@ The code for the Web Component can be found in this [GitHub repository](https://
 
 First are the imports. Open-WC recommends using [lit-html](https://lit-html.polymer-project.org/) and the [lit-element](https://lit-element.polymer-project.org/) base class to build and render the Web Component.  We also import the Material Design button and textfield to use in the Web Component.
 
-```js
+```javascript
 import { html, css, LitElement } from 'lit-element';
 import '@material/mwc-button/mwc-button';
 import '@material/mwc-textfield/mwc-textfield';
@@ -91,13 +91,13 @@ import '@material/mwc-textfield/mwc-textfield';
 
 We base our new Web Component on LitElement.
 
-```js
+```javascript
 export class WhateverYouLikeKeypad extends LitElement {
 ```
 
 Styling the Web Component
 
-```js
+```javascript
   static get styles() {
     return css`
       :host {
@@ -136,7 +136,7 @@ Styling the Web Component
 
 Here the attributes and properties that the Web Component accepts are set along with their Types. This way, lit-html knows how to handle the values passed in.
 
-```js
+```javascript
   static get properties() {
     return {
       noAsterisk: { attribute: 'no-asterisk', type: Boolean },
@@ -152,7 +152,7 @@ Here the attributes and properties that the Web Component accepts are set along 
 
 The Web Component inherits all the “super” powers of the LitElement and defines the default values.
 
-```js
+```javascript
   constructor() {
     super();
     this.noAsterisk = false;
@@ -167,7 +167,7 @@ The Web Component inherits all the “super” powers of the LitElement and defi
 
 Next up are the various methods of the Web Component. Things like dispatching custom events when adding or sending digits, and ending an action.  There is also the method that can be called on the Web Component that lets it know that an action has started.
 
-```js
+```javascript
   __addDigit(digit){
     this.digits += digit;
     const digitAdded = new CustomEvent('digit-added', {
