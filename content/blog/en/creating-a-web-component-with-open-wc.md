@@ -22,17 +22,18 @@ The idea is to be able to insert a keypad into a project with as little hassle a
 
 Let’s list the features of the keypad component that will be built:
 
-- The out-of-the-box Web Component will render a display and below it, buttons with digits 0-9, *, and #.
-- The user will be able to hide the display and the *,# buttons by setting attributes and properties.
-- When a user clicks a button, a character will be added to a display. At the same time, a custom event will be sent so that the application outside of the component will know that a button has been pressed.
-- There will be an ‘Action’ button that will send all the digits pressed as a custom event for the greater application to process it how it sees fit. The text of the button can be set by the user through a property.
-- Another button will be available to the user to ‘End’ the action. Its text will also be customizable. When pressed, the display will be cleared and yet another custom event will be sent to the application to be made aware.
-- The Web Component will have a public method made available so the application can switch to the ‘active’ state which then displays the ‘End’ button.
-- To add some styling to the Web Component, the Material Design button and textfield components will be used.
+* The out-of-the-box Web Component will render a display and below it, buttons with digits 0-9, *, and #.
+* The user will be able to hide the display and the *,# buttons by setting attributes and properties.
+* When a user clicks a button, a character will be added to a display. At the same time, a custom event will be sent so that the application outside of the component will know that a button has been pressed.
+* There will be an ‘Action’ button that will send all the digits pressed as a custom event for the greater application to process it how it sees fit. The text of the button can be set by the user through a property.
+* Another button will be available to the user to ‘End’ the action. Its text will also be customizable. When pressed, the display will be cleared and yet another custom event will be sent to the application to be made aware.
+* The Web Component will have a public method made available so the application can switch to the ‘active’ state which then displays the ‘End’ button.
+* To add some styling to the Web Component, the Material Design button and textfield components will be used.
 
 ## See the Web Component in Action
 
 Here’s a working example on CodePen
+
 <p class="codepen" data-height="475" data-theme-id="light" data-default-tab="result" data-user="conshus" data-slug-hash="BajMObV" style="height: 475px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="whatever-you-like-keypad">
   <span>See the Pen <a href="https://codepen.io/conshus/pen/BajMObV">
   whatever-you-like-keypad</a> by conshus de OUR show (<a href="https://codepen.io/conshus">@conshus</a>)
@@ -58,15 +59,15 @@ Then, type `npm init @open-wc`. This will launch the Open-WC setup process.
 
 Here are the options I used for the project in this blog post:
 
-- What would you like to do today?: Scaffold a new project
-- What would you like to scaffold?: Web Component
-- What would you like to add?: Linting (eslint & prettier)
-- Would you like to use typescript? No
-- What is the tag name of your application/web component? whatever-you-like-keypad (You can name the Web Component whatever you like as long as it’s at least 2 words separated by a ‘-’)
-- Do you want to write this file structure to disk? Yes
-- Do you want to install dependencies? Yes, with npm (if you prefer yarn, you can choose that)
+* What would you like to do today?: Scaffold a new project
+* What would you like to scaffold?: Web Component
+* What would you like to add?: Linting (eslint & prettier)
+* Would you like to use typescript? No
+* What is the tag name of your application/web component? whatever-you-like-keypad (You can name the Web Component whatever you like as long as it’s at least 2 words separated by a ‘-’)
+* Do you want to write this file structure to disk? Yes
+* Do you want to install dependencies? Yes, with npm (if you prefer yarn, you can choose that)
 
-<img src="https://www.nexmo.com/wp-content/uploads/2020/08/npm-init-open-wc-720.gif" alt="Open-WC cli tool setup process" width="1152" height="720" class="aligncenter size-full wp-image-33113" />
+![Open-WC cli tool setup process](/content/blog/creating-a-web-component-with-open-wc/npm-init-open-wc-720.gif "Open-WC cli tool setup process")
 
 To install the Material Design button and textfield. Go into the new folder created by the Open-WC setup process and type in the following:
 
@@ -74,8 +75,7 @@ To install the Material Design button and textfield. Go into the new folder crea
 
 `npm i @material/mwc-textfield`
 
-<img src="https://www.nexmo.com/wp-content/uploads/2020/08/npm-i-material-720.gif" alt="Installing Material Design button and textfield" width="1152" height="720" class="aligncenter size-full wp-image-33114" />
-
+![Installing Material Design button and text field](/content/blog/creating-a-web-component-with-open-wc/npm-i-material-720.gif "Installing Material Design button and text field")
 
 ## The Component Code
 
@@ -90,11 +90,13 @@ import '@material/mwc-textfield/mwc-textfield';
 ```
 
 We base our new Web Component on LitElement.
+
 ```js
 export class WhateverYouLikeKeypad extends LitElement {
 ```
 
 Styling the Web Component
+
 ```js
   static get styles() {
     return css`
@@ -133,6 +135,7 @@ Styling the Web Component
 ```
 
 Here the attributes and properties that the Web Component accepts are set along with their Types. This way, lit-html knows how to handle the values passed in.
+
 ```js
   static get properties() {
     return {
@@ -148,6 +151,7 @@ Here the attributes and properties that the Web Component accepts are set along 
 ```
 
 The Web Component inherits all the “super” powers of the LitElement and defines the default values.
+
 ```js
   constructor() {
     super();
@@ -162,6 +166,7 @@ The Web Component inherits all the “super” powers of the LitElement and defi
 ```
 
 Next up are the various methods of the Web Component. Things like dispatching custom events when adding or sending digits, and ending an action.  There is also the method that can be called on the Web Component that lets it know that an action has started.
+
 ```js
   __addDigit(digit){
     this.digits += digit;
@@ -202,6 +207,7 @@ You may have noticed that the `__addDigit` function, just adds the digit to the 
 Now, as an exercise, let's allow new digits to be added wherever the cursor is. Here is a [hint](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange) on where to `start`. 
 
 The markup to render the Web Component. Depending on the state and what attributes/properties are set, the Web Component will render or hide different elements.
+
 ```js
   render() {
     return html`
@@ -275,7 +281,7 @@ Save your changes.
 Now, let’s publish the Web Component. Type into the terminal: 
 
 `npm publish --access public`
- 
+
 <img src="https://www.nexmo.com/wp-content/uploads/2020/08/npm-publish-access-public-720.gif" alt="Publishing the project to npm" width="1152" height="720" class="aligncenter size-full wp-image-33117" />
 
 If successful, you should be able to find the Web Component on the npm website at `https://www.npmjs.com/package/@your-npm-username/whatever-you-like-keypad`.
@@ -305,7 +311,6 @@ Again replacing the username and component name placeholders with your own in bo
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-
 Try adding some of the attributes and properties for the Web Component we created (no-asterisk no-hash no-display) and set the values for the button’s text (actionText="Something" cancelText="Something else"). 
 
 > Note: When using no-display, to see the digits, an input or textarea HTML element will be needed. Like in this example:
@@ -317,7 +322,7 @@ Try adding some of the attributes and properties for the Web Component we create
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-## What Next? 
+## What Next?
 
 Now that you have a shiny new Web Component, what else can you add to it? Maybe, add a backspace button that will delete a character or maybe allow the user to set their own buttons. Or maybe just create something brand new.
 
