@@ -262,7 +262,7 @@ In your terminal in the project directory, type (replacing your-npm-username wit
 
 `npm init --scope=@your-npm-username`
 
-Accept all the default choices or change as you see fit for each step
+Accept all the default choices or change as you see fit for each step.
 
 ![Using the command line to set the scope of the project](/content/blog/creating-a-web-component-with-open-wc/npm-init-scope-your-npm-username-720.gif "Using the command line to set the scope of the project")
 
