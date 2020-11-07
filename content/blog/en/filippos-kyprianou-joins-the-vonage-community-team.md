@@ -3,15 +3,13 @@ title: Filippos Kyprianou Joins the Vonage Community Team
 description: Meet Filippos Kyprianou, who joins the Vonage Community Team as a
   Startup Community Manager. Here he introduces himself and his background.
 thumbnail: /content/blog/filippos-kyprianou-joins-the-vonage-community-team/filippos-kyprianou.png
-author: filippos.kyprianou
+author: filippos-kyprianou
 published: true
 published_at: 2020-11-06T12:52:57.984Z
 updated_at: 2020-11-06T12:52:58.011Z
-category: announcement
+category: team
 tags:
-  - new-joiner
-  - new-hire
-  - community-manager
+  - careers
 comments: true
 spotlight: false
 redirect: ""
