@@ -75,15 +75,17 @@ export default {
     },
 
     slug() {
+      const tag = this.tag.toLowerCase()
+
       const match = Object.entries(tagMap).filter(([, value]) =>
-        value.includes(this.tag)
+        value.includes(tag)
       )
 
       if (match[0]) {
         return match[0][0]
       }
 
-      return this.tag
+      return tag
     },
   },
 }
