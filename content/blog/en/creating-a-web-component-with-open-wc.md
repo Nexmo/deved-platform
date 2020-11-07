@@ -282,7 +282,7 @@ Now, let’s publish the Web Component. Type into the terminal:
 
 `npm publish --access public`
 
-<img src="https://www.nexmo.com/wp-content/uploads/2020/08/npm-publish-access-public-720.gif" alt="Publishing the project to npm" width="1152" height="720" class="aligncenter size-full wp-image-33117" />
+![Publishing the project to npm](/content/blog/creating-a-web-component-with-open-wc/npm-publish-access-public-720.gif "Publishing the project to npm")
 
 If successful, you should be able to find the Web Component on the npm website at `https://www.npmjs.com/package/@your-npm-username/whatever-you-like-keypad`.
 
