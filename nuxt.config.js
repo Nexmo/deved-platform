@@ -3,13 +3,24 @@ import { getPostRoute, getPostRoutes, getCategory } from './modules/contenter'
 import i18n from './i18n.config.js'
 
 const isPreviewBuild = () => {
-  return process.env.PULL_REQUEST && process.env.HEAD.startsWith('cms/')
+  return (
+    process.env.PULL_REQUEST &&
+    process.env.HEAD &&
+    process.env.HEAD.startsWith('cms/')
+  )
 }
 
 const previewRoute = () => {
   const [, type, slug] = process.env.HEAD.split('/')
+  const today = new Date()
 
-  return [`/${type}/${slug}`]
+  if (type === 'blog') {
+    return `/${type}/${today.getFullYear()}/${('0' + today.getMonth()).slice(
+      -2
+    )}/${('0' + today.getDay()).slice(-2)}/${slug}`
+  } else {
+    return null
+  }
 }
 
 export default {
@@ -18,6 +29,7 @@ export default {
 
   // Env (https://nuxtjs.org/api/configuration-env/)
   env: {
+    demo: isPreviewBuild() ? previewRoute() : null,
     signer: config.signer,
     baseUrl: config.baseUrl,
     repoUrl: config.repoUrl,
@@ -197,7 +209,7 @@ export default {
     crawler: !isPreviewBuild(),
     fallback: true,
     routes() {
-      return isPreviewBuild() ? previewRoute() : []
+      return isPreviewBuild() ? [previewRoute()] : []
     },
   },
 
