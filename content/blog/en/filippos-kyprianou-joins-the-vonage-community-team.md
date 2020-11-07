@@ -7,11 +7,9 @@ author: filippos.kyprianou
 published: true
 published_at: 2020-11-06T12:52:57.984Z
 updated_at: 2020-11-06T12:52:58.011Z
-category: announcement
+category: team
 tags:
-  - new-joiner
-  - new-hire
-  - community-manager
+  - careers
 comments: true
 spotlight: false
 redirect: ""
