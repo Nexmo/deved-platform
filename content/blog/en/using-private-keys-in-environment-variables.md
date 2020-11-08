@@ -85,7 +85,6 @@ nexmo.calls.create({
   if (error) console.error(error)
   if (response) console.log(response)
 })
-
 ```
 
 Take a look at the code sample, and you will spot that there are quite a few places where it refers to environment variables with `process.env.*`.
@@ -110,6 +109,7 @@ NEXMO_APPLICATION_PRIVATE_KEY64=LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlC
 > If you are setting environment variables by another means, such as via a web interface, you can re-use these values there too.
 
 The values should be:
+
 * `TO_NUMBER` the number to call, I used my cellphone number
 * `NEXMO_NUMBER` a number that I own on the Vonage platform
 * `NEXMO_APPLICATION_ID` the ID of the application that I created in the first section
@@ -126,4 +126,3 @@ cat private.key | base64 -w 0
 By encoding the environment variables with newlines in, we can safely transfer them as strings. Using the configuration above with the `index.js` file we brought earlier, I can run my code locally (by adding `dotenv` into my application), or on any other platform.
 
 It's a small thing but I run into it in unexpected places when handling the private key files, so I'll be referring back to this post myself I am sure.
-
