@@ -187,11 +187,11 @@ Now run the Angular App
 $ ng serve
 ```
 
-![ng serve](https://www.nexmo.com/wp-content/uploads/2018/07/ng-serve.png#no-border)
+![ng serve](/content/blog/how-to-show-sms-notifications-in-the-browser-with-angular-node-js-and-ably/ng-serve.png "ng serve")
 
 The app is now running on [http://localhost:4200](http://localhost:4200 "localhost"), and you can load it in a browser. It's been generated using the Angular CLI, but I’ve also added Materialize.css and branding to it. It should look like this:
 
-![booilerplate app](https://www.nexmo.com/wp-content/uploads/2018/07/boilerplate-app.png#no-border)
+![booilerplate app](/content/blog/how-to-show-sms-notifications-in-the-browser-with-angular-node-js-and-ably/boilerplate-app.png "booilerplate app")
 
 ## Creating an Angular component to display incoming SMS notifications
 
@@ -203,9 +203,9 @@ $ ng generate component sms-notifications
 
 The CLI created four files for us; the component TypeScript file, the HTML template, the CSS style, and the testing spec.
 
-![generated files](https://www.nexmo.com/wp-content/uploads/2018/07/generated-files.png#no-border)
+![generated files](/content/blog/how-to-show-sms-notifications-in-the-browser-with-angular-node-js-and-ably/generated-files.png "generated files")
 
-We're going to update the component TypeScript file (`src/app/sms-notifications/sms-notifications.component.ts`) to import Ably
+We're going to update the component TypeScript file (`src/app/sms-notifications/sms-notifications.component.ts`) to import Ably.
 
 ```javascript
 import * as Ably from 'ably';
@@ -253,11 +253,11 @@ For the component to render on the screen, we're going to need to update the App
 
 Now that everything is up and running, let's send a message to the Vonage number, and see it displayed in the Angular Single Page Application:
 
-![demo](https://www.nexmo.com/wp-content/uploads/2018/07/demo.gif#no-border)
+![demo](/content/blog/how-to-show-sms-notifications-in-the-browser-with-angular-node-js-and-ably/demo.gif "demo")
 
 When you're tunneling with ngrok, you can also see the requests in the browser at [http://127.0.0.1:4040/](http://127.0.0.1:4040/ "ngrok inspector")
 
-!\[ngrok requests]https://www.nexmo.com/wp-content/uploads/2018/07/ngrok-requests.png#no-border)
+![ngrok requests](/content/blog/how-to-show-sms-notifications-in-the-browser-with-angular-node-js-and-ably/ngrok-requests.png "ngrok requests")
 
 So we managed to send an SMS notification to a Vonage number, that our Express server then received via a Webhook, which in turn sent the message via Ably to our Angular application, and we get the notification in the browser.
 
