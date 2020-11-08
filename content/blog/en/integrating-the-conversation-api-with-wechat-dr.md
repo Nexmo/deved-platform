@@ -144,7 +144,10 @@ Our Vonage client, in turn, will receive the custom event and parse it as a WeCh
 
 The following video demonstrates the flow we've just implemented; notice how WeChat could be replaced by a different platform. 
 
-\[video width="2880" height="1800" mp4="https://www.nexmo.com/wp-content/uploads/2019/10/blogvideo-1.mp4" loop="off" autoplay="off"]
+<video controls width="100%">
+    <source src="https://www.nexmo.com/wp-content/uploads/2019/10/blogvideo-1.mp4>
+    Sorry, your browser doesn't support embedded videos.
+</video>
 
 ## Recap
 
