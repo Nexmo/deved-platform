@@ -11,6 +11,7 @@ updated_at: 2020-11-08T19:59:39.423Z
 category: tutorial
 tags:
   - web-components
+  - javascript
 comments: true
 redirect: ""
 canonical: https://www.nexmo.com/blog/2020/05/20/web-components-tools-a-comparison
