@@ -31,9 +31,9 @@ Get this flow from the [Node-RED Library](https://flows.nodered.org/flow/570cfee
 Before getting started, you’ll need a few things:
 
 - [Node.js](https://nodejs.org/en/) and [Node-RED](https://nodered.org/docs/getting-started/installation) installed on your machine
-- A Vonage account 
-<sign-up></sign-up>
 - [ngrok](https://ngrok.com/download) - get up to speed with [Aaron's blog post](https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr/)
+
+<sign-up></sign-up>
 
 ## Getting Your Credentials
 
