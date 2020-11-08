@@ -28,7 +28,7 @@ Then go ahead and create an application with Voice capabilities; you will need t
 You can either use your [account dashboard](https://dashboard.nexmo.com) for this part, or you can use the CLI like this:
 
 ```bash
-
+nexmo app:create MyVoiceApp --keyfile private.key https://example.com https://example.com
 ```
 
 The command will print the application ID, and write the private key to the imaginatively named `private.key` file. Both these items are used in the next step.
@@ -54,12 +54,35 @@ Today's example uses Node.js and makes a phone call with a simple Text-To-Speech
 Before I write the code I'll install the [Nexmo Node SDK](https://github.com/nexmo/nexmo-node) dependency:
 
 ```bash
-
+npm install nexmo
 ```
 
 Now it's time for code! For such a simple application I usually just put the whole thing into `index.js`, something like this:
 
 ```js
+const Nexmo = require('nexmo')
+const nexmo = new Nexmo({
+  applicationId: process.env.NEXMO_APPLICATION_ID,
+  privateKey: Buffer.from(process.env.NEXMO_APPLICATION_PRIVATE_KEY64, 'base64')
+})
+
+nexmo.calls.create({
+  to: [{
+    type: 'phone',
+    number: process.env.TO_NUMBER
+  }],
+  from: {
+    type: 'phone',
+    number: process.env.NEXMO_NUMBER
+  },
+  ncco: [{
+    "action": "talk",
+    "text": "Safely handling environment variables makes coding even more fun."
+  }]
+}, (error, response) => {
+  if (error) console.error(error)
+  if (response) console.log(response)
+})
 
 ```
 
@@ -76,13 +99,15 @@ For local platforms, I use [dotenv](https://github.com/motdotla/dotenv) to load 
 For local use of `dotenv`, or for a platform that doesn't handle multiline environment variables, I prepare a `.env` file like this:
 
 ```
-
+TO_NUMBER=44777000777
+NEXMO_NUMBER=44777000888
+NEXMO_APPLICATION_ID=abcd1234-aaaa-bbbb-cccc-0987654321ef
+NEXMO_APPLICATION_PRIVATE_KEY64=LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ25VaFp3N214cTljZHUKU21oL1UrekovdGRZSUxRVDF5VExjWnFETk11OW44WUVHMmMyR1JUbmR2a2cxeXlBVCtqTk45Zmp5eTg1Zi9EOG9zTzhPdnhRS0Y0aWpoblJlVTVDQStnU0o3UEhLa3U5YjJsMzZ2TmN5WFFCdWRJVk8KV2tBOERraTlFVHpqaG8rRnh0SGJuWGZHa3o3emtzUTJvMjVMemorblFkendCQlc3aXVrNVNqdkdYSkFEK0xQRUIveHhUVEhSRFZJRjNxYWM2dmM5L3NPUStYa0MvVzB4MzgKUDg0T3JpdjhNdytCdktOZlMwMU94Y05PWU9yMENvYWM4Z1VxazljQ2dZRUFtYmFMYjROeEE3ckdkc1B1YU9UOEpSSjN6L2J0VzdnMXF4NUxvCkZ0b1c2Qm9vSnhmb2lhV1YrTURtcEFsL2FJZzRqMGJ1cXFwajU3UjlZWlhTK0xhdU1HUWl0azRPWi9ZS1lZSDUKK3psWTJ0VjhHUTdqM29CWURDd2puWWc9Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K
 ```
 
 > If you are setting environment variables by another means, such as via a web interface, you can re-use these values there too.
 
 The values should be:
-
 * `TO_NUMBER` the number to call, I used my cellphone number
 * `NEXMO_NUMBER` a number that I own on the Vonage platform
 * `NEXMO_APPLICATION_ID` the ID of the application that I created in the first section
@@ -91,7 +116,7 @@ The values should be:
 The command I use to get the base64 value is:
 
 ```
-
+cat private.key | base64 -w 0
 ```
 
 ## Put it All Together
@@ -99,3 +124,4 @@ The command I use to get the base64 value is:
 By encoding the environment variables with newlines in, we can safely transfer them as strings. Using the configuration above with the `index.js` file we brought earlier, I can run my code locally (by adding `dotenv` into my application), or on any other platform.
 
 It's a small thing but I run into it in unexpected places when handling the private key files, so I'll be referring back to this post myself I am sure.
+
