@@ -19,17 +19,13 @@ Many of our newer APIs use JWTs (JSON Web Tokens) for authentication, which is g
 
 This post will show how you can use a private key in an environment variable, and show an example of this in action with the Vonage Voice API and a Netlify function.
 
-
-
 <sign-up></sign-up>
-
-
 
 Then go ahead and create an application with Voice capabilities; you will need the Application ID and the private key file for the next step.
 
 You can either use your [account dashboard](https://dashboard.nexmo.com) for this part, or you can use the CLI like this:
 
-```bash
+```shell
 nexmo app:create MyVoiceApp --keyfile private.key https://example.com https://example.com
 ```
 
@@ -55,13 +51,13 @@ Today's example uses Node.js and makes a phone call with a simple Text-To-Speech
 
 Before I write the code I'll install the [Vonage Node SDK](https://github.com/Vonage/vonage-node-sdk) dependency:
 
-```bash
+```shell
 npm install @vonage/server-sdk
 ```
 
 Now it's time for code! For such a simple application I usually just put the whole thing into `index.js`, something like this:
 
-```js
+```javascript
 const Vonage = require('@vonage/server-sdk');
 
 const vonage = new Vonage({
@@ -100,7 +96,7 @@ For local platforms, I use [dotenv](https://github.com/motdotla/dotenv) to load 
 
 For local use of `dotenv`, or for a platform that doesn't handle multiline environment variables, I prepare a `.env` file like this:
 
-```
+```shell
 TO_NUMBER=44777000777
 VONAGE_NUMBER=44777000888
 VONAGE_APPLICATION_ID=abcd1234-aaaa-bbbb-cccc-0987654321ef
@@ -118,7 +114,7 @@ The values should be:
 
 The command I use to get the base64 value is:
 
-```
+```shell
 cat private.key | base64 -w 0
 ```
 
