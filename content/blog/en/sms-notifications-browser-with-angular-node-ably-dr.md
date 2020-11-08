@@ -11,6 +11,8 @@ updated_at: 2020-11-08T18:02:10.140Z
 category: tutorial
 tags:
   - javascript
+  - angular
+  - node
 comments: true
 redirect: ""
 canonical: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
