@@ -37,13 +37,13 @@ Before getting started, you’ll need a few things:
 
 ## Getting Your Credentials
 
-In order to interact with the SMS API, you'll need to make note of a couple of things. Once you've created a Nexmo account, go to the [dashboard](https://dashboard.nexmo.com) to find your API key and secret.
+In order to interact with the SMS API, you'll need to make note of a couple of things. Once you've created a Vonage account, go to the [dashboard](https://dashboard.nexmo.com) to find your API key and secret.
 
 Next, you'll need an SMS enabled virtual number. Go to Numbers > Buy numbers to get it.
 
 <img src="https://www.nexmo.com/wp-content/uploads/2019/04/buy-number-nexmo-dashboard.gif" alt="" width="100%" height="100%" class="alignnone gif-player size-medium wp-image-28897" />
 
-While in some countries you can send an SMS without buying a Nexmo Number, other countries like the USA will require you to own the number your SMS messages originate from.
+While in some countries you can send an SMS without renting a Vonage Number, other countries like the USA will require you to own the number your SMS messages originate from.
 
 ## Setting Up Your Node-RED Editor
 
@@ -57,7 +57,7 @@ You can then access the Node-RED editor by pointing your browser at [http://loca
 Once you have your editor open, you'll need to install the Nexmo nodes. You can do so under the _Manage palette_ menu, by searching for the `node-red-contrib-nexmo` package and clicking install. 
 
 <img src="https://www.nexmo.com/wp-content/uploads/2019/04/install-nexmo-nodered.gif" alt="" width="100%" height="100%" class="alignnone gif-player size-medium wp-image-28901" />
-Now you should see all of the Nexmo nodes appear on the left side of your screen, among the other default nodes.
+Now you should see all of the Nexmo nodes appear on the left side of your screen, among the default nodes.
 
 ## Sending an SMS with Node-RED
 
@@ -67,8 +67,8 @@ You can set up this node by double clicking on it and filling in the parameters 
 
 | KEY           | DESCRIPTION |
 | --------------- | --- |
-| `API KEY`     | Your Nexmo API key, shown in your [account overview](https://dashboard.nexmo.com/getting-started-guide). |
-| `API SECRET`  | Your Nexmo API secret, shown in your [account overview](https://dashboard.nexmo.com/getting-started-guide).    |
+| `API KEY`     | Your API key, shown in your [account overview](https://dashboard.nexmo.com/getting-started-guide). |
+| `API SECRET`  | Your API secret, shown in your [account overview](https://dashboard.nexmo.com/getting-started-guide).    |
 | `TO`     | The number you are sending the SMS to in E.164 format. For example 447401234567.|
 | `FROM`     | The number or text shown on a handset when it displays your message. You can set a custom alphanumeric FROM to better represent your brand, if this feature is [supported in your country](https://help.nexmo.com/hc/en-us/articles/115011781468).| 
 | `TEXT`     | The content of your message. Feel free to get creative, but a 'Hello World!' will do just as well.
@@ -98,13 +98,13 @@ When you make a successful request to the SMS API, it returns an array of messag
 
 You can have a look at this response object in the debug area in the right side of your Node-RED editor.
 
-While inspecting this output is quite helpful in determining what the Nexmo SMS API did, there is no guarantee that the message reached the recipient's handset. 
+While inspecting this output is quite helpful in determining what the SMS API did, there is no guarantee that the message reached the recipient's handset. 
 
-When the message gets delivered, the mobile phone carrier returns a [**Delivery Receipt**](https://developer.nexmo.com/messaging/sms/guides/delivery-receipts) to Nexmo. This will contain the delivery status.
+When the message gets delivered, the mobile phone carrier returns a [**Delivery Receipt**](https://developer.nexmo.com/messaging/sms/guides/delivery-receipts) to Vonage. This will contain the delivery status.
 
 ## Receiving a Delivery Receipt from a Mobile Carrier
 
-To find out the `status` of your outbound message, you'll need to set up a webhook endpoint that Nexmo can forward the **Delivery Receipt** to.
+To find out the `status` of your outbound message, you'll need to set up a webhook endpoint that Vonage can forward the **Delivery Receipt** to.
 
 ### Defining a Webhook Endpoint
 
@@ -116,7 +116,7 @@ The `http response` node should have `200` set as `Status code`, but don't worry
 <img src="https://www.nexmo.com/wp-content/uploads/2019/04/delivery-receipt-flow.gif" alt="" width="100%" height="100%" class="alignnone gif-player size-medium wp-image-28899" />
 ### Exposing Your Local Server to the Internet
 
-Next you'll have to expose your local server to the internet, so that Nexmo can access it. A convenient way to do this is by using a tunneling service like [ngrok](https://ngrok.com).
+Next you'll have to expose your local server to the internet, so that Vonage can access it. A convenient way to do this is by using a tunneling service like [ngrok](https://ngrok.com).
 
 [Download](https://ngrok.com/download) and install **ngrok**, then run it in the terminal to start a tunnel on port `1880`.
 ```bash
@@ -125,9 +125,9 @@ $ ./ngrok http 1880
 <img src="https://www.nexmo.com/wp-content/uploads/2019/04/ngrok-1880.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-28902" />
 Your local server now has a ngrok URL that can be used as your webhook endpoint.
 
-### Setting Up the Endpoint with Nexmo
+### Setting Up the Endpoint with Vonage
 
-The last step is letting the Nexmo SMS API know where it should forward the delivery receipts. You can do so under your [API settings](https://dashboard.nexmo.com/settings) in the **Default SMS Setting** section.
+The last step is letting the Vonage SMS API know where it should forward the delivery receipts. You can do so under your [API settings](https://dashboard.nexmo.com/settings) in the **Default SMS Setting** section.
 
 Set the default webhook URL for delivery receipts to `YOUR_NGROK_URL/receipt`, then `Save changes`.
 
@@ -135,7 +135,7 @@ Set the default webhook URL for delivery receipts to `YOUR_NGROK_URL/receipt`, t
 Now when you go back into your Node-RED editor and send another message, you'll see the delivery receipt appear in the debug area:
 
 <img src="https://www.nexmo.com/wp-content/uploads/2019/04/delivery-receipt-in-debug.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-28900" />
-The `status` and `err-code` parameters both indicate that the message has successfully been delivered. Learn more about delivery receipt status messages and error codes in the Nexmo [docs](https://developer.nexmo.com/messaging/sms/guides/delivery-receipts).
+The `status` and `err-code` parameters both indicate that the message has successfully been delivered. Learn more about delivery receipt status messages and error codes in the [docs](https://developer.nexmo.com/messaging/sms/guides/delivery-receipts).
 
 ## Where next?
 - [Send Group Notifications with Google Sheets and Node-RED](https://www.nexmo.com/blog/2020/03/06/sms-notifications-google-sheets-nodered-dr)
@@ -144,26 +144,3 @@ The `status` and `err-code` parameters both indicate that the message has succes
 - Learn more about the Nexmo [SMS API](https://developer.nexmo.com/api/sms)
 - Get a better understanding of [delivery receipts](https://developer.nexmo.com/messaging/sms/guides/delivery-receipts)
 - Have a closer look at [Node-RED](https://nodered.org/docs/)
-
-<script>
-window.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll(".gif-player").forEach(image => {
-        image.src = image.src.replace(/\.gif$/g, ".png")
-        image.addEventListener("click", (event) => {
-            if (event.target.src.indexOf(".gif") > 0) {
-                image.src = image.src.replace(/\.gif$/g, ".png")
-            } else {
-                image.src = image.src.replace(/\.png$/g, ".gif")
-            }
-        })
-    })
-});
-</script>
-<style>
-.gif-player {
-  cursor: pointer;
-}
-img.alignnone {
-  border-width: 0px !important;
-}
-</style>
