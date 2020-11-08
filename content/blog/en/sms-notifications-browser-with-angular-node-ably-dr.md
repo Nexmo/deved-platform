@@ -1,9 +1,8 @@
 ---
 title: How to Show SMS Notifications in the Browser with Angular, Node.JS, and Ably
-description: The Nexmo SMS API allows you to send and receive messages around
-  the world using a virtual number that you can buy from Nexmo. In this
-  tutorial, we’ll see how you can use Node.js and Express to receive an SMS,
-  send it via Ably to a web browser, and then use Angular to display it […]
+description: Use Node.js and Express to receive an SMS, send it via Ably to a
+  web browser, and then use Angular to display it as a notification in a Single
+  Page Application.
 thumbnail: /content/blog/sms-notifications-browser-with-angular-node-ably-dr/2018-08-07-11.20.15.jpg
 author: laka
 published: true
