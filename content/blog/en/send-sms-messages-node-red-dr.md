@@ -9,7 +9,7 @@ published_at: 2019-04-17T08:46:47.000Z
 updated_at: 2020-11-08T15:53:25.602Z
 category: tutorial
 tags:
-  - nodered
+  - node-red
 comments: true
 redirect: ""
 canonical: https://www.nexmo.com/blog/2019/04/17/send-sms-messages-node-red-dr
