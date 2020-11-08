@@ -17,7 +17,7 @@ canonical: https://www.nexmo.com/blog/2019/11/01/integrating-the-conversation-ap
 ---
 In this blog post, we’ll show you how to use the Conversation API to establish an external communication channel with your application and demonstrate how to do so using WeChat.
 
-We will use WeChat’s public API and connect it to the Conversation API to enable two-way messaging between a WeChat client and a Nexmo client, using **custom events**. 
+We will use WeChat’s public API and connect it to the Conversation API to enable two-way messaging between a WeChat client and a Vonage client, using **custom events**. 
 
 Please refer to this [GitHub repository](https://github.com/nexmo-community/conversation-api-wechat-integration) for our reference integration. 
 
@@ -27,7 +27,7 @@ We will be using [custom events](https://developer.nexmo.com/conversation/code-s
 
 When a client wishes to send a message using WeChat, it will create a custom event of type ‘custom:message:wechat’ with direction outbound. In turn, our middleware server will pick up that event [using RTC events](https://developer.nexmo.com/application/code-snippets/update-application) and translate it into an HTTP request to WeChat’s API, notifying in a message. 
 
-In the case of an inbound message (A WeChat client to a Nexmo client), our middleware server will implement WeChat’s messaging webhook and get notified by WeChat on the new message. The server will create a ‘custom:message:wechat’ event with direction inbound and dispatch it. The client will pick up that event and display it as a WeChat message.
+In the case of an inbound message (A WeChat client to a Vonage client), our middleware server will implement WeChat’s messaging webhook and get notified by WeChat on the new message. The server will create a ‘custom:message:wechat’ event with direction inbound and dispatch it. The client will pick up that event and display it as a WeChat message.
 
 <a href="https://www.nexmo.com/wp-content/uploads/2019/10/wechat1.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/10/wechat1.png" alt="architecture" width="879" height="414" class="alignnone size-full wp-image-30627" /></a>
 
@@ -82,7 +82,7 @@ After setting up all the required parameters, simply run the code by using ‘np
 
 ### Sending and Receiving a WeChat Message
 
-To send an **outbound** message (from a **Nexmo client** to a **WeChat client**) we will need to create the following custom event: 
+To send an **outbound** message (from a **Vonage client** to a **WeChat client**) we will need to create the following custom event: 
 
 
 ```
@@ -91,13 +91,13 @@ To send an **outbound** message (from a **Nexmo client** to a **WeChat client**)
 	"body":{
 		"to":"we_chat_client_id",
 		"from":"we_chat_integration_id",
-		"content":"Hello from Nexmo!",
+		"content":"Hello from Vonage!",
 		"direction":"outbound"
 	}
 }
 ```
 
-For an **inbound** message (from a **WeChat client** to a **Nexmo client**) we will need to create the same event but reverse its direction. 
+For an **inbound** message (from a **WeChat client** to a **Vonage client**) we will need to create the same event but reverse its direction. 
 
 
 ```
@@ -144,7 +144,7 @@ const dispatchWeChatEvent = (wechat, direction = 'inbound') => {
 };
 ```
 
-Our Nexmo client, in turn, will receive the custom event and parse it as a WeChat message. 
+Our Vonage client, in turn, will receive the custom event and parse it as a WeChat message. 
 
 The following video demonstrates the flow we've just implemented; notice how WeChat could be replaced by a different platform. 
 
@@ -159,4 +159,4 @@ The flexibility that the Conversation API brings with its custom events allows y
 
 For a completed version of this tutorial, you can find it at on [GitHub](https://github.com/nexmo-community/conversation-api-wechat-integration)
 
-If you want to learn more about what you can do with our APIs, please visit [Nexmo.com](https://www.nexmo.com/blog/category/developer) for more! 
+If you want to learn more about what you can do with our APIs, please visit our [developer portal](https://developer.nexmo.com/) for more! 
