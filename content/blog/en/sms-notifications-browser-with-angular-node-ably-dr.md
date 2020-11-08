@@ -35,7 +35,7 @@ Before we begin you'll need a few things:
 
 First, we're going to clone the tutorial source code and switch to the getting-started branch
 
-```bash
+```shell
 $ git clone https://github.com/nexmo-community/nexmo-angular-sms.git
 cd nexmo-angular-sms/
 git checkout getting-started
@@ -43,7 +43,7 @@ git checkout getting-started
 
 Next, we're going to install the dependencies our code needs. There is a Node.js application using Express, body-parser and Ably and an Angular App generated with the Angular CLI.
 
-```bash
+```shell
 $ npm install
 ```
 
@@ -109,7 +109,7 @@ Now that you've written your Webhook endpoint, it’s time to associate it with 
 
 Once you installed ngrok it, run it on port 3000, same port as the Express server:
 
-```bash
+```shell
 $ ngrok http 3000
 ```
 
@@ -121,7 +121,7 @@ Your Express server (localhost:3000) now has a ngrok URL ([https://3be084f6.ngro
 
 For the Vonage dashboard to recognise the URL as a Webhook endpoint, it has to return a 200 OK status code, so make sure your server is running. If it's not, you can go to the root of the code you downloaded from Github, and use the terminal to run it:
 
-```bash
+```shell
 $ npm run server
 ```
 
@@ -177,13 +177,13 @@ function handleParams(params, res) {
 
 If you don't have the Angular CLI installed, you’ll need to install that first:
 
-```bash
+```shell
 $ npm install -g @angular/cli
 ```
 
 Now run the Angular App
 
-```bash
+```shell
 $ ng serve
 ```
 
@@ -197,7 +197,7 @@ The app is now running on [http://localhost:4200](http://localhost:4200 "localho
 
 Now it's time to create our Angular component, which we’ll use to display incoming SMS notifications. We’ll use the CLI to generate it
 
-```bash
+```shell
 $ ng generate component sms-notifications
 ```
 
