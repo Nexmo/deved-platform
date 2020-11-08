@@ -60,13 +60,17 @@ Scroll down to the **`sendsms`** node and drag it into your workspace. This will
 
 You can set up this node by double clicking on it and filling in the parameters below. You'll find `API KEY` and `API SECRET` by clicking on the edit button next to `Nexmo Credentials`. 
 
+
 | KEY          | DESCRIPTION                                                                                                                                                                                                                                        |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `API KEY`    | Your API key, shown in your [account overview](https://dashboard.nexmo.com/getting-started-guide).                                                                                                                                                 |
 | `API SECRET` | Your API secret, shown in your [account overview](https://dashboard.nexmo.com/getting-started-guide).                                                                                                                                              |
 | `TO`         | The number you are sending the SMS to in E.164 format. For example 447401234567.                                                                                                                                                                   |
 | `FROM`       | The number or text shown on a handset when it displays your message. You can set a custom alphanumeric FROM to better represent your brand, if this feature is [supported in your country](https://help.nexmo.com/hc/en-us/articles/115011781468). |
-| `TEXT`       | The content of your message. Feel free to get creative, but a 'Hello World!' will do just as well.                                                                                                                                                 |
+| `TEXT`       | The content of your message. Feel free to get creative, but a 'Hello World!' will do just as well.                                                                                                                                               |
+
+
+
 
 Next, add an **`inject`** node to the flow and wire it as an input for **`sendsms`**. 
 
@@ -108,7 +112,8 @@ First, connect a `http` input node to a `http response` node, as well as to a `d
 In the `http` input node, select `POST` as a `Method` and fill in the `URL` field with something like `/receipt`.
 The `http response` node should have `200` set as `Status code`, but don't worry about it, this is the default value as well.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/04/delivery-receipt-flow.gif" alt="" width="100%" height="100%" class="alignnone gif-player size-medium wp-image-28899" />
+![Setting up a webhook for delivery receipts](/content/blog/how-to-send-sms-messages-with-node-red/delivery-receipt-flow.gif "Setting up a webhook for delivery receipts")
+
 ### Exposing Your Local Server to the Internet
 
 Next you'll have to expose your local server to the internet, so that Vonage can access it. A convenient way to do this is by using a tunneling service like [ngrok](https://ngrok.com).
@@ -119,7 +124,9 @@ Next you'll have to expose your local server to the internet, so that Vonage can
 $ ./ngrok http 1880
 ```
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/04/ngrok-1880.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-28902" />
+![Starting an ngrok tunnel in a terminal window](/content/blog/how-to-send-sms-messages-with-node-red/ngrok-1880.png "Starting an ngrok tunnel in a terminal window")
+
+
 Your local server now has a ngrok URL that can be used as your webhook endpoint.
 
 ### Setting Up the Endpoint with Vonage
@@ -128,10 +135,14 @@ The last step is letting the Vonage SMS API know where it should forward the del
 
 Set the default webhook URL for delivery receipts to `YOUR_NGROK_URL/receipt`, then `Save changes`.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/04/delivery-receipt-endpoint-url.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-28898" />
+![Delivery receipt endpoint URL in dashboard](/content/blog/how-to-send-sms-messages-with-node-red/delivery-receipt-endpoint-url.png "Delivery receipt endpoint URL in dashboard")
+
+
 Now when you go back into your Node-RED editor and send another message, you'll see the delivery receipt appear in the debug area:
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/04/delivery-receipt-in-debug.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-28900" />
+![Delivery receipt in debug sidebar](/content/blog/how-to-send-sms-messages-with-node-red/delivery-receipt-in-debug.png "Delivery receipt in debug sidebar")
+
+
 
 The `status` and `err-code` parameters both indicate that the message has successfully been delivered. Learn more about delivery receipt status messages and error codes in the [docs](https://developer.nexmo.com/messaging/sms/guides/delivery-receipts).
 
