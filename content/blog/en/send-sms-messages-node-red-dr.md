@@ -132,6 +132,7 @@ Set the default webhook URL for delivery receipts to `YOUR_NGROK_URL/receipt`, t
 Now when you go back into your Node-RED editor and send another message, you'll see the delivery receipt appear in the debug area:
 
 <img src="https://www.nexmo.com/wp-content/uploads/2019/04/delivery-receipt-in-debug.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-28900" />
+
 The `status` and `err-code` parameters both indicate that the message has successfully been delivered. Learn more about delivery receipt status messages and error codes in the [docs](https://developer.nexmo.com/messaging/sms/guides/delivery-receipts).
 
 ## Where next?
