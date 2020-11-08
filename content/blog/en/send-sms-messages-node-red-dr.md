@@ -1,10 +1,7 @@
 ---
 title: How to Send SMS Messages with Node-RED
-description: This is the first article in a series of “Getting Started with
-  Nexmo and Node-RED” tutorials. The Nexmo SMS API allows you to send and
-  receive SMS worldwide, using a simple HTTP-based API. The good news is,
-  interacting with this API—and many others—just got easier with the addition of
-  Nexmo nodes to the Node-RED palette. […]
+description: The Vonage SMS API allows you to send and receive SMS worldwide. In
+  this article, you will learn how to send SMS messages with Node-RED.
 thumbnail: /content/blog/send-sms-messages-node-red-dr/send-sms-messages-node-red.png
 author: julia
 published: true
