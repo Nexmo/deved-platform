@@ -8,11 +8,13 @@ thumbnail: /content/blog/sms-notifications-browser-with-angular-node-ably-dr/201
 author: laka
 published: true
 published_at: 2018-08-07T10:17:39.000Z
-comments: true
+updated_at: 2020-11-08T18:02:10.140Z
 category: tutorial
-tags: []
-canonical: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
+tags:
+  - javascript
+comments: true
 redirect: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
+canonical: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
 ---
 
 Content to be migrated...
