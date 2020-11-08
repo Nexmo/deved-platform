@@ -21,6 +21,8 @@ This post will show how you can use a private key in an environment variable, an
 
 ## Vonage API Account
 
+
+
 <sign-up></sign-up>
 
 To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2020-07-29-using-private-keys-in-environment-variables). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2020-07-29-using-private-keys-in-environment-variables) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2020-07-29-using-private-keys-in-environment-variables).
