@@ -51,7 +51,6 @@ Once you have your editor open, you'll need to install the Nexmo nodes. You can 
 
 ![Install the Nexmo Node-RED package](/content/blog/how-to-send-sms-messages-with-node-red/install-nexmo-nodered.gif "Install the Nexmo Node-RED package")
 
-
 Now you should see all of the Nexmo nodes appear on the left side of your screen, among the default nodes.
 
 ## Sending an SMS with Node-RED
@@ -60,15 +59,13 @@ Scroll down to the **`sendsms`** node and drag it into your workspace. This will
 
 You can set up this node by double clicking on it and filling in the parameters below. You'll find `API KEY` and `API SECRET` by clicking on the edit button next to `Nexmo Credentials`. 
 
-
 | KEY          | DESCRIPTION                                                                                                                                                                                                                                        |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `API KEY`    | Your API key, shown in your [account overview](https://dashboard.nexmo.com/getting-started-guide).                                                                                                                                                 |
 | `API SECRET` | Your API secret, shown in your [account overview](https://dashboard.nexmo.com/getting-started-guide).                                                                                                                                              |
 | `TO`         | The number you are sending the SMS to in E.164 format. For example 447401234567.                                                                                                                                                                   |
 | `FROM`       | The number or text shown on a handset when it displays your message. You can set a custom alphanumeric FROM to better represent your brand, if this feature is [supported in your country](https://help.nexmo.com/hc/en-us/articles/115011781468). |
-| `TEXT`       | The content of your message. Feel free to get creative, but a 'Hello World!' will do just as well.                                                                                                                                               |
-
+| `TEXT`       | The content of your message. Feel free to get creative, but a 'Hello World!' will do just as well.                                                                                                                                                 |
 
 
 
@@ -91,7 +88,6 @@ To have a bit more insight into what's happening when you send an SMS, wire the 
 Hit **Deploy** and click the **`inject`** node's button - your SMS should be on its way!
 
 ![Sending an SMS in Node-RED](/content/blog/how-to-send-sms-messages-with-node-red/send-sms-flow.gif "Sending an SMS in Node-RED")
-
 
 When you make a successful request to the SMS API, it returns an array of message objects. Ideally each of these have a \`status\` of \`0\`, indicating that your message has successfully been scheduled for sending, and a few other details like recipient number, message-id, remaining balance, price and the carrier network that will be used for sending the SMS. 
 
@@ -126,7 +122,6 @@ $ ./ngrok http 1880
 
 ![Starting an ngrok tunnel in a terminal window](/content/blog/how-to-send-sms-messages-with-node-red/ngrok-1880.png "Starting an ngrok tunnel in a terminal window")
 
-
 Your local server now has a ngrok URL that can be used as your webhook endpoint.
 
 ### Setting Up the Endpoint with Vonage
@@ -137,12 +132,9 @@ Set the default webhook URL for delivery receipts to `YOUR_NGROK_URL/receipt`, t
 
 ![Delivery receipt endpoint URL in dashboard](/content/blog/how-to-send-sms-messages-with-node-red/delivery-receipt-endpoint-url.png "Delivery receipt endpoint URL in dashboard")
 
-
 Now when you go back into your Node-RED editor and send another message, you'll see the delivery receipt appear in the debug area:
 
 ![Delivery receipt in debug sidebar](/content/blog/how-to-send-sms-messages-with-node-red/delivery-receipt-in-debug.png "Delivery receipt in debug sidebar")
-
-
 
 The `status` and `err-code` parameters both indicate that the message has successfully been delivered. Learn more about delivery receipt status messages and error codes in the [docs](https://developer.nexmo.com/messaging/sms/guides/delivery-receipts).
 
