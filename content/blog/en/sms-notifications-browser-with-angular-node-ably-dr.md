@@ -12,10 +12,10 @@ category: tutorial
 tags:
   - javascript
 comments: true
-redirect: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
+redirect: ""
 canonical: https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr
 ---
-The [Nexmo SMS API](https://developer.nexmo.com/messaging/sms/overview "Nexmo SMS API Overview") allows you to send and receive messages around the world using a virtual number that you can buy from Nexmo. In this tutorial, we'll see how you can use Node.js and Express to receive an SMS, send it via Ably to a web browser, and then use Angular to display it as a notification in a Single Page Application.
+The [Vonage SMS API](https://developer.nexmo.com/messaging/sms/overview "Nexmo SMS API Overview") allows you to send and receive messages around the world using a virtual number that you can rent from Vonage. In this tutorial, we'll see how you can use Node.js and Express to receive an SMS, send it via Ably to a web browser, and then use Angular to display it as a notification in a Single Page Application.
 
 ## Before you begin
 
@@ -29,9 +29,9 @@ Before we begin you'll need a few things:
 
 * An [Ably](https://www.ably.io/signup "Ably") account
 
-* A [Nexmo number](https://dashboard.nexmo.com/your-numbers "Your Nexmo numbers")
-
 * The starter code from Github
+
+<sign-up number></sign-up>
 
 ### Getting the starter code from Github
 
@@ -51,11 +51,11 @@ $ npm install
 
 ## Writing Webhook Endpoints with Express
 
-To receive an SMS from Nexmo, you need to define a Webhook endpoint (URL) and then associate it with your virtual number from Nexmo. Whenever your number receives an SMS, Nexmo is going to send it to the Webhook endpoint. So we're going to proceed in creating that endpoint with [Express](https://expressjs.com/ "express.js").
+To receive an SMS from Vonage, you need to define a Webhook endpoint (URL) and then associate it with your virtual number from Vonage. Whenever your number receives an SMS, Vonage is going to send it to the Webhook endpoint. So we're going to proceed in creating that endpoint with [Express](https://expressjs.com/ "express.js").
 
 In the code you just downloaded, there is a file called `server.js`, which comes with a boilerplate Express server listening on port 3000. It should look like this:
 
-```js
+```javascript
 'use strict';
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -70,15 +70,15 @@ const server = app.listen(3000, () => {
 ```
 Now we're going to create an HTTP POST route to handle requests to the server. At the end of the file, just add:
 
-```js
+```javascript
 app.post('/inbound', (req, res) => {
 	handleParams(req.body, res);
 });
 ```
 
-The `handleParams` method isn't yet defined, so we’ll go ahead and implement that. We’re going to add some validations to see if we’ve received a valid SMS message, and if that’s the case, we’re going to map incoming data before sending it. We need to return a `200 OK` status code in the end, for the Nexmo dashboard to be able to recognise it as a valid Webhook URL.
+The `handleParams` method isn't yet defined, so we’ll go ahead and implement that. We’re going to add some validations to see if we’ve received a valid SMS message, and if that’s the case, we’re going to map incoming data before sending it. We need to return a `200 OK` status code in the end, for the Vonage dashboard to be able to recognise it as a valid Webhook URL.
 
-```js
+```javascript
 function handleParams(params, res) {
 	if (!params.to || !params.msisdn) {
     		console.log('This is not a valid inbound SMS message!');
@@ -100,13 +100,13 @@ function handleParams(params, res) {
 
 You can now run the server which will become available on localhost:3000:
 
-```js
+```javascript
 $ node server.js
 ```
 
-## Registering a Webhook Endpoint with Nexmo
+## Registering a Webhook Endpoint with Vonage
 
-Now that you've written your Webhook endpoint, it’s time to associate it with your Nexmo number. While developing, it’s a pain to keep having to redeploy your work in progress though. So let’s use [ngrok](https://ngrok.com/ "ngrok") to expose the Webhook endpoint we just wrote on our local machine as a public URL! For more detailed instructions see [Aaron’s](https://twitter.com/aaronbassett "Aaron Bassett") post explaining [how to connect your local development server to the Nexmo API using an ngrok tunnel](https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr/ "setting up ngrok").
+Now that you've written your Webhook endpoint, it’s time to associate it with your Vonage number. While developing, it’s a pain to keep having to redeploy your work in progress though. So let’s use [ngrok](https://ngrok.com/ "ngrok") to expose the Webhook endpoint we just wrote on our local machine as a public URL! For more detailed instructions see [Aaron’s](https://twitter.com/aaronbassett "Aaron Bassett") post explaining [how to connect your local development server to the Vonage API using an ngrok tunnel](https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr/ "setting up ngrok").
 
 Once you installed ngrok it, run it on port 3000, same port as the Express server:
 
@@ -118,15 +118,15 @@ $ ngrok http 3000
 
 Your Express server (localhost:3000) now has a ngrok URL ([https://3be084f6.ngrok.io](https://3be084f6.ngrok.io "ngrok instance")), that can be used as a public Webhook endpoint during this tutorial.
 
-### Setting the Webhook Endpoint with Nexmo
+### Setting the Webhook Endpoint with Vonage
 
-For the Nexmo dashboard to recognise the URL as a Webhook endpoint, it has to return a 200 OK status code, so make sure your server is running. If it's not, you can go to the root of the code you downloaded from Github, and use the terminal to run it:
+For the Vonage dashboard to recognise the URL as a Webhook endpoint, it has to return a 200 OK status code, so make sure your server is running. If it's not, you can go to the root of the code you downloaded from Github, and use the terminal to run it:
 
 ```bash
 $ npm run server
 ```
 
-Sign into your Nexmo account and go to [your Numbers](https://dashboard.nexmo.com/your-numbers "your Nexmo numbers"). From the Manage section of your number, go ahead and click Edit. In the modal that appears we'll set the Webhook we just created. In the SMS section, input the ngrok URL with the inbound route ([https://3be084f6.ngrok.io/inbound](https://3be084f6.ngrok.io/inbound "inbound ngrok route")) in the "Webhook URL" field.
+Sign into your Vonage account and go to [your Numbers](https://dashboard.nexmo.com/your-numbers "your Nexmo numbers"). From the Manage section of your number, go ahead and click Edit. In the modal that appears we'll set the Webhook we just created. In the SMS section, input the ngrok URL with the inbound route ([https://3be084f6.ngrok.io/inbound](https://3be084f6.ngrok.io/inbound "inbound ngrok route")) in the "Webhook URL" field.
 
 ![set webhook](https://www.nexmo.com/wp-content/uploads/2018/07/set-webhook.png#no-border)
 
@@ -138,11 +138,11 @@ _Note: this method sets up the SMS Webhook at a Number level. But you can set up
 
 When you create a Ably account, you'll get an API key. If you already have an account, login to Ably and get the API Key first. We’ll need to pass it to the Express server and the Angular application later on.
 
-Now we're going to update our Express server so that when it receives an SMS from the Nexmo API, it sends it via Ably to a channel.
+Now we're going to update our Express server so that when it receives an SMS from the Vonage API, it sends it via Ably to a channel.
 
 Still in `server.js`, import the Ably package first and get the `sms-notification` channel
 
-```js
+```javascript
 var ably = new require('ably').Realtime('ABLY_KEY');
 
 var channel = ably.channels.get('sms-notification');
@@ -150,7 +150,7 @@ var channel = ably.channels.get('sms-notification');
 
 And then we'll modify the `handleParams` method to publish on that Ably channel when there is an inbound SMS.
 
-```js
+```javascript
 function handleParams(params, res) {
 	if (!params.to || !params.msisdn) {
     	console.log('This is not a valid inbound SMS message!');
@@ -190,7 +190,7 @@ $ ng serve
 
 ![ng serve](https://www.nexmo.com/wp-content/uploads/2018/07/ng-serve.png#no-border)
 
-The app is now running on [http://localhost:4200](http://localhost:4200 "localhost"), and you can load it in a browser. It's been generated using the Angular CLI, but I’ve also added Materialize.css and Nexmo branding to it. It should look like this:
+The app is now running on [http://localhost:4200](http://localhost:4200 "localhost"), and you can load it in a browser. It's been generated using the Angular CLI, but I’ve also added Materialize.css and branding to it. It should look like this:
 
 ![booilerplate app](https://www.nexmo.com/wp-content/uploads/2018/07/boilerplate-app.png#no-border)
 
@@ -208,13 +208,13 @@ The CLI created four files for us; the component TypeScript file, the HTML templ
 
 We're going to update the component TypeScript file (`src/app/sms-notifications/sms-notifications.component.ts`) to import Ably
 
-```js
+```javascript
 import * as Ably from 'ably';
 ```
 
 `ngOnInit` is a lifecycle hook function in Angular, and it runs when a component is being  initiated. We're going to update `ngOnInit` to receive the Ably notification. We’re going to instantiate Ably and then get to the `sms-notification` channel, subscribing for `new-sms` events. When a new SMS is coming, we’re going to push that to our component model, `smsNotifications`.
 
-```js
+```javascript
 ngOnInit() {
 	let options: Ably.Types.ClientOptions = { key: 'ABLY_KEY' };
   let client = new Ably.Realtime(options);
@@ -251,7 +251,7 @@ For the component to render on the screen, we're going to need to update the App
 <app-sms-notifications></app-sms-notifications>
 ```
 
-Now that everything is up and running, let's send a message to the Nexmo number, and see it displayed in the Angular Single Page Application:
+Now that everything is up and running, let's send a message to the Vonage number, and see it displayed in the Angular Single Page Application:
 
 ![demo](https://www.nexmo.com/wp-content/uploads/2018/07/demo.gif#no-border)
 
@@ -259,7 +259,7 @@ When you're tunneling with ngrok, you can also see the requests in the browser a
 
 ![ngrok requests]https://www.nexmo.com/wp-content/uploads/2018/07/ngrok-requests.png#no-border)
 
-So we managed to send an SMS notification to a Nexmo number, that our Express server then received via a Webhook, which in turn sent the message via Ably to our Angular application, and we get the notification in the browser.
+So we managed to send an SMS notification to a Vonage number, that our Express server then received via a Webhook, which in turn sent the message via Ably to our Angular application, and we get the notification in the browser.
 
 You can take a look at the [code sample on GitHub](https://github.com/nexmo-community/nexmo-angular-sms "code samples on GitHub") if you want to see the finished product.
 
@@ -267,11 +267,11 @@ I hope you found this useful. You can let me know [on twitter, I'm @lakatos88.](
 
 ## Further reading
 
-* If you want to know more about the Nexmo SMS API, take a look at [https://developer.nexmo.com/api/sms](https://developer.nexmo.com/api/sms "Nexmo SMS API")
+* If you want to know more about the Vonage SMS API, take a look at [https://developer.nexmo.com/api/sms](https://developer.nexmo.com/api/sms "Vonage SMS API")
 
-* If you want to configure the Webhook differently, take a look at [https://developer.nexmo.com/concepts/guides/webhooks](https://developer.nexmo.com/concepts/guides/webhooks "Nexmo Webhooks guide")
+* If you want to configure the Webhook differently, take a look at [https://developer.nexmo.com/concepts/guides/webhooks](https://developer.nexmo.com/concepts/guides/webhooks "Vonage Webhooks guide")
 
-* If you want to play with the Nexmo APIs some more, here is a blog post from [Phil](https://twitter.com/leggetter "Phil Leggetter") going into SMS and Voice [https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr/](https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr/ "Nexmo SMS & Voice")
+* If you want to play with the Vonage APIs some more, here is a blog post from [Phil](https://twitter.com/leggetter "Phil Leggetter") going into SMS and Voice [https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr/](https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr/ "Vonage SMS & Voice")
 
 * If you want to learn more about Ably, how to publish events and subscribe to events, it's all in their Quick Start guide [https://www.ably.io/documentation/quick-start-guide](https://www.ably.io/documentation/quick-start-guide "Ably Quick Start")
 
