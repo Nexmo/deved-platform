@@ -67,8 +67,6 @@ You can set up this node by double clicking on it and filling in the parameters 
 | `FROM`       | The number or text shown on a handset when it displays your message. You can set a custom alphanumeric FROM to better represent your brand, if this feature is [supported in your country](https://help.nexmo.com/hc/en-us/articles/115011781468). |
 | `TEXT`       | The content of your message. Feel free to get creative, but a 'Hello World!' will do just as well.                                                                                                                                                 |
 
-
-
 Next, add an **`inject`** node to the flow and wire it as an input for **`sendsms`**. 
 
 This is quite a powerful one, it can initiate the flow with a specific payload value. It supports injecting strings, numbers, booleans, JavaScript objects, or flow/global context values, having the timestamp of the current time in millisecs since January 1st, 1970 as default.
@@ -116,7 +114,7 @@ Next you'll have to expose your local server to the internet, so that Vonage can
 
 [Download](https://ngrok.com/download) and install **ngrok**, then run it in the terminal to start a tunnel on port `1880`.
 
-```bash
+```shell
 $ ./ngrok http 1880
 ```
 
