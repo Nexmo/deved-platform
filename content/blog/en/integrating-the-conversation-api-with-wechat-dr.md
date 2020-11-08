@@ -29,11 +29,11 @@ When a client wishes to send a message using WeChat, it will create a custom eve
 
 In the case of an inbound message (A WeChat client to a Vonage client), our middleware server will implement WeChat’s messaging webhook and get notified by WeChat on the new message. The server will create a ‘custom:message:wechat’ event with direction inbound and dispatch it. The client will pick up that event and display it as a WeChat message.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/10/wechat1.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/10/wechat1.png" alt="architecture" width="879" height="414" class="alignnone size-full wp-image-30627" /></a>
+![An illustration showing the described architecture](/content/blog/integrating-the-conversation-api-with-wechat/wechat1.png "An illustration showing the described architecture")
 
 ## Prerequisites
 
-### WeChat 
+### WeChat
 
 **WeChat** is a Chinese multi-purpose messaging, social media, and mobile payment app developed by Tencent. It has a user base of over one billion people, making it impossible to ignore as a leading messaging channel. One can relate WeChat in China with Facebook in the United States.
 
@@ -43,12 +43,12 @@ You can follow this step-by-step guide to set up your WeChat API. This step-by-s
 
 1. Register your sandbox account from this [link](http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)
 2. Run your server. In this example, we will use ngrok
-3. Use your ngrok address to fill up the webhook information. Our server endpoint will be `https://[$NGROK_ADDRESS].com/weChatEvent` _Replace [$NGROK_ADDRESS] with your ngrok address_
+3. Use your ngrok address to fill up the webhook information. Our server endpoint will be `https://[$NGROK_ADDRESS].com/weChatEvent` *Replace \[$NGROK_ADDRESS] with your ngrok address*
 4. Fill any token
 5. Click the submit button, and wait until WeChat verifies your webhook
 6. You are now ready to receive incoming messages! 
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/10/wechat2.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/10/wechat2.png" alt="wechat screenshot" width="1600" height="998" class="alignnone size-full wp-image-30628" /></a>
+![WeChat Screenshot](/content/blog/integrating-the-conversation-api-with-wechat/wechat2.png "WeChat Screenshot")
 
 To start sending messages from WeChat to our server, you need to add the official account to your WeChat. To do so, you will need to:
 
@@ -57,22 +57,21 @@ To start sending messages from WeChat to our server, you need to add the officia
 3. Scan the QR code using your WeChat
 4. Start chatting! 
 
-<a href="https://www.nexmo.com/wp-content/uploads/2019/10/wechat3.png"><img src="https://www.nexmo.com/wp-content/uploads/2019/10/wechat3.png" alt="screen shot wechat" width="1600" height="442" class="alignnone size-full wp-image-30629" /></a>
+![WeChat Screenshot](/content/blog/integrating-the-conversation-api-with-wechat/wechat3.png "WeChat Screenshot")
 
 You should now be able to send messages from your WeChat client to our WeChat account and receive them on your running instance of our server on the `/weChatEvent` route. 
 
-### Conversation API 
+### Conversation API
 
 The Conversation API is a low-level API that allows you to create various objects such as Users, Members, and Conversations. Conversations are the fundamental concept the API revolves around. Conversations are containers of communications exchanged between two or more Users which could be a single interaction or the history of all interactions between them.
 
 To read more about the API you can visit our [documentation](https://developer.nexmo.com/conversation/overview). You will need: 
 
-
 1. An application
 2. A conversation 
 3. Access to your API key and secret
 
-## Setup 
+## Setup
 
 The example.env file contains all the required parameters to get the integration up and running. We will use a hard-coded conversation id to simplify this example, however, that is not mandatory.
 
@@ -84,8 +83,7 @@ After setting up all the required parameters, simply run the code by using ‘np
 
 To send an **outbound** message (from a **Vonage client** to a **WeChat client**) we will need to create the following custom event: 
 
-
-```
+```javascript
 {
 	"type":"custom:wechat:message",
 	"body":{
@@ -99,8 +97,7 @@ To send an **outbound** message (from a **Vonage client** to a **WeChat client**
 
 For an **inbound** message (from a **WeChat client** to a **Vonage client**) we will need to create the same event but reverse its direction. 
 
-
-```
+```javascript
 {
 	"type":"custom:wechat:message",
 	"body":{
@@ -110,12 +107,11 @@ For an **inbound** message (from a **WeChat client** to a **Vonage client**) we 
 		"direction":"outbound"
 	}
 }
-``` 
+```
 
 Please take a look at the following snippet that shows how to dispatch a WeChat event: 
 
-
-```
+```javascript
 const dispatchWeChatEvent = (wechat, direction = 'inbound') => {
   var options = {
     uri: `https://api.nexmo.com/beta/conversations/${conversationId}/events`,
@@ -148,10 +144,9 @@ Our Vonage client, in turn, will receive the custom event and parse it as a WeCh
 
 The following video demonstrates the flow we've just implemented; notice how WeChat could be replaced by a different platform. 
 
-[video width="2880" height="1800" mp4="https://www.nexmo.com/wp-content/uploads/2019/10/blogvideo-1.mp4" loop="off" autoplay="off"][/video]
+\[video width="2880" height="1800" mp4="https://www.nexmo.com/wp-content/uploads/2019/10/blogvideo-1.mp4" loop="off" autoplay="off"]
 
-
-## Recap 
+## Recap
 
 We have learned in the previous sections how to integrate WeChat with your application using our Conversation API. However, WeChat is just an example of what you can integrate with the Conversation API; it could have been a different messaging channel, such as WhatsApp, or even a different communication channel, such as Email. 
 
@@ -159,4 +154,4 @@ The flexibility that the Conversation API brings with its custom events allows y
 
 For a completed version of this tutorial, you can find it at on [GitHub](https://github.com/nexmo-community/conversation-api-wechat-integration)
 
-If you want to learn more about what you can do with our APIs, please visit our [developer portal](https://developer.nexmo.com/) for more! 
+If you want to learn more about what you can do with our APIs, please visit our [developer portal](https://developer.nexmo.com/) for more!
