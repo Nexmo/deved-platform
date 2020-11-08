@@ -13,7 +13,7 @@ tags:
   - javascript
 comments: true
 redirect: ""
-canonical: https://www.nexmo.com/blog/2019/11/01/integrating-the-conversation-api-with-wechat-dr
+canonical: ""
 ---
 In this blog post, we’ll show you how to use the Conversation API to establish an external communication channel with your application and demonstrate how to do so using WeChat.
 
