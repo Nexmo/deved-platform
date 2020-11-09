@@ -247,21 +247,21 @@ First you need to log into your Azure account by running `az login`. It'll load 
 az login
 ```
 
-Now, you'll run the three `az` commands below - I've added a comment to each of them, so you can see what they do. The only thing you'll need to change is to replace `MYNEXMOFUNCTIONSTORE` with something globally unique. The actual name you pick isn't important - it's just a place to store the data for your running functions, and won't be seen by users. You'll also need to change `moodfeedbackapp` to something globally unique.
+Now, you'll run the three `az` commands below - I've added a comment to each of them, so you can see what they do. The only thing you'll need to change is to replace `MYVONAGEFUNCTIONSTORE` with something globally unique. The actual name you pick isn't important - it's just a place to store the data for your running functions, and won't be seen by users. You'll also need to change `moodfeedbackapp` to something globally unique.
 
 ``` shell
-# Create a resource group. (This is analagous to a Nexmo 'Application'):
+# Create a resource group. (This is analagous to a Vonage 'Application'):
 az group create --name myResourceGroup --location westeurope
 
 # Create a storage account for storing your function data:
-az storage account create --name "MYNEXMOFUNCTIONSTORE" \
+az storage account create --name "MYVONAGEFUNCTIONSTORE" \
     --location westeurope --resource-group myResourceGroup \
     --sku Standard_LRS
 
 # Create a function app for grouping your functions together:
 az functionapp create --resource-group myResourceGroup --os-type Linux \
     --consumption-plan-location westeurope  --runtime python \
-    --name "moodfeedbackapp" --storage-account  "MYNEXMOFUNCTIONSTORE"
+    --name "moodfeedbackapp" --storage-account  "MYVONAGEFUNCTIONSTORE"
 ```
 
 ## Publish Your Function to Azure
@@ -295,9 +295,9 @@ Functions in moodfeedback:
 
 You can check that your functions are deployed okay by going to [https://moodfeedback.azurewebsites.net/api/answer_inbound](https://moodfeedbackapp.azurewebsites.net/api/answer_inbound) (you'll need to replace "moodfeedback" with your own function app name that you chose above.) in the browser and confirming that the NCCO JSON output is being produced.
 
-## Update Your Nexmo App
+## Update Your Vonage App
 
-Nexmo still thinks it should call your development server when someone calls your Nexmo number! To fix this, update your Nexmo app to point to the new URL. Run the following command, replacing the application ID with your own, and replacing "moodfeedbackapp" with your own function app name.
+Vonage still thinks it should call your development server when someone calls your virtual number! To fix this, update your Vonage app to point to the new URL. Run the following command, replacing the application ID with your own, and replacing "moodfeedbackapp" with your own function app name.
 
 ```shell
 nexmo app:update 4f33ff5e-dbbc-11e9-8656-6bdabe7b8258 "Mood Feedback" "https://moodfeedbackapp.azurewebsites.net/api/answer_inbound" "https://api.example.org/events" --answer_method POST
@@ -305,18 +305,18 @@ nexmo app:update 4f33ff5e-dbbc-11e9-8656-6bdabe7b8258 "Mood Feedback" "https://m
 
 ## Next Steps
 
-The aim of this tutorial was to show you how to build webhook handlers for Nexmo Voice calls with Azure Functions.
+The aim of this tutorial was to show you how to build webhook handlers for Vonage Voice API calls with Azure Functions.
 Although this example doesn't do that much, you will be able to build much more interesting, practical examples with the
 aid of Azure storage and other APIs.
 
 If you'd like to build interesting capabilities into your app, you could:
 
-* Send feedback results to a researcher, via the Nexmo SMS API.
+* Send feedback results to a researcher, via the Vonage SMS API.
 * Integrate a speech-to-text API to handle voice input, instead of numeric codes.
 * Store the feedback of each caller in a database, to analyse trends over time.
 
 ## Other Resources
-* Check out the [NCCO reference docs](https://developer.nexmo.com/voice/voice-api/ncco-reference) to see what you can do with Nexmo Voice calls.
+* Check out the [NCCO reference docs](https://developer.nexmo.com/voice/voice-api/ncco-reference) to see what you can do with Vonage Voice calls.
 * Learn how to [Write an Azure Function in Python](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-python)
 * The [Azure Functions Reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-python) is very useful.
 * As is the [Azure Python documentation](https://docs.microsoft.com/en-us/python/api/azure-functions/azure.functions?view=azure-python)
