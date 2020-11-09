@@ -1,10 +1,7 @@
 ---
 title: How to Send an SMS with Ionic
-description: Developing cross-platform mobile applications and connecting to
-  3rd-party APIs are highly in-demand skills in tech. Today I’ll show you how to
-  build a basic Ionic mobile application that connects to the Vonage SMS API to
-  send SMS messages! We’ll also build a barebones hapi back end to help our
-  Ionic application send SMS messages. Prerequisites […]
+description: Learn how to build a cross-platform mobile application for sending
+  SMS messages with the Ionic framework and a Hapi back end.
 thumbnail: /content/blog/how-to-send-an-sms-with-ionic-dr/Blog_Ionic_SMS_1200x600.png
 author: james-hickey
 published: true
