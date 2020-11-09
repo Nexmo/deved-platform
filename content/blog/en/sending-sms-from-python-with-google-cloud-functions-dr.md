@@ -1,18 +1,21 @@
 ---
 title: Sending SMS from Python with Google Cloud Functions
-description: This tutorial teaches how to deploy a function on Google Cloud
-  Platform using Python 3.7, showing how to send a message inviting the user to
-  download an app
+description: This tutorial shows how to deploy a function on Google Cloud
+  Platform using Python 3.7 and the Vonage SMS API to send a text message to a
+  user.
 thumbnail: /content/blog/sending-sms-from-python-with-google-cloud-functions-dr/Blog_Google-Cloud_SMS_1200x600-1.png
 author: tom
 published: true
 published_at: 2019-03-21T20:21:36.000Z
-comments: true
+updated_at: 2020-11-09T15:54:43.540Z
 category: tutorial
-tags: []
+tags:
+  - python
+  - sms-api
+  - google-cloud
+comments: true
 spotlight: true
 ---
-
 The tutorial below shows how to deploy a function on [Google Cloud Platform](https://cloud.google.com/) using [Python 3.7](https://www.python.org/).
 
 The function uses the Vonage SMS API to send a text message to a user. The use case is to send a message inviting the user to download an app. This function can then be called from a JavaScript front-end. You can do more sophisticated things with a Google Cloud Function, but this is a simple demonstration of how to get to a simple working function.
@@ -39,7 +42,7 @@ One thing you’ll need to handle is Cross-Origin Resource Sharing (CORS). We ca
 
 The first step in building our function is to go to click "Create a function" in the Cloud Functions section of the Google Cloud Platform console. You’ll then be prompted to set a name for your function and choose some options.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/03/creating-function.png" alt="Creating a function" width="464" height="431" class="aligncenter size-full wp-image-28707" />
+![Create a Google Cloud Function](/content/blog/sending-sms-from-python-with-google-cloud-functions/creating-function.png "Create a Google Cloud Function")
 
 Let’s quickly run through these:
 
@@ -53,7 +56,7 @@ Below the code editor, there are a number of advanced options that are worth loo
 
 * The region: it is set to us-central1 (Iowa, USA) as the default, but if the majority of your visitors are from Europe or Asia, you might want to set it to europe-west1 (Belgium) or asia-northeast1 (Tokyo) as appropriate. Changing this will change the URL.
 * The timeout is set to 60 seconds: this should be fine for our purposes, but you can adjust this. Remember, your use of Cloud Functions is billed by the millisecond.
-* The environment variables: you will need to set two environment variables: NEXMO_API_KEY and NEXMO_API_SECRET.
+* The environment variables: you will need to set two environment variables: VONAGE_API_KEY and VONAGE_API_SECRET.
 
 ## Creating Our Function
 
@@ -63,15 +66,15 @@ What your individual function does is up to you. I've written a simple example w
 * `platform`: the OS of the user's device—this will either be ios or android. This will determine whether they receive a message linking them to the Apple App Store or the Google Play Store.
 
 ```python
-import nexmo
+import vonage
 from flask import jsonify
 
 def send_sms(request):
     data = request.get_json()
 
-    # NEXMO_API_KEY and NEXMO_API_SECRET are in env vars
+    # VONAGE_API_KEY and VONAGE_API_SECRET are in env vars
     # which are set in the Google Cloud function
-    client = nemxo.Client()
+    client = vonage.Client()
 
     # you may prefer to use link shorteners to see how many clickthroughs happen
     ios_msg = "Download our iOS app from https://example.org/apple"
@@ -92,9 +95,9 @@ def send_sms(request):
     return jsonify(response)
 ```
 
-Once you've written your function, the simplest way to deploy it is to copy and paste it into the code editor on the Google Cloud Functions website. Underneath the code editor, you need to set the name of the function to execute—this tells Cloud Functions which function in your file to call. In the Advanced section, you also need to set the environment variables, `NEXMO_API_KEY` and `NEXMO_API_SECRET`.
+Once you've written your function, the simplest way to deploy it is to copy and paste it into the code editor on the Google Cloud Functions website. Underneath the code editor, you need to set the name of the function to execute—this tells Cloud Functions which function in your file to call. In the Advanced section, you also need to set the environment variables, `VONAGE_API_KEY` and `VONAGE_API_SECRET`.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/03/advanced-settings.png" alt="Nexmo Settings" width="912" height="312" class="aligncenter size-full wp-image-28705" />
+![Set environment variables](/content/blog/sending-sms-from-python-with-google-cloud-functions/advanced-settings.png "Set environment variables")
 
 Once you are done, press ‘Save’, wait a few moments for the magic robots at Google to deploy the function, and then you can test it.
 
