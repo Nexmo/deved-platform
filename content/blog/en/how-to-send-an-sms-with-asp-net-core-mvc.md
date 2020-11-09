@@ -13,8 +13,8 @@ tags:
   - sms-api
   - mvc
 comments: true
-redirect: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
-canonical: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
+redirect: ""
+canonical: ""
 ---
 I still remember the first time I started working with MVC. It was, by far, the most intuitive experience I'd ever had with a framework in my career, to that point. Mind you, I came from writing OS Services using WCF to traverse internal network topographies, so take my praises with a grain of salt, but MVCs always had a special place in my heart. With the release of the new [.NET 5.0.0 SDK](https://www.nexmo.com/blog/2020/06/22/announcing-net-sdk-version-5-0-0), I'd like to take a step back and start working through the basics again. And what better place to start than sending an SMS with ASP.NET Core MVC?
 
