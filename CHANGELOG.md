@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/Nexmo/dev-education-poc/compare/v1.2.2...v1.3.0) (2020-11-10)
+
+
+### Bug Fixes
+
+* **cms:** fix unclosed html tag in admin static page ([9eb6c5a](https://github.com/Nexmo/dev-education-poc/commit/9eb6c5ac60db8da7edcc0fecfbbf81093967c62b))
+* **repo:** match package version to github release ([04a268f](https://github.com/Nexmo/dev-education-poc/commit/04a268f6889a059425e55e9b6f32e95135832ce9))
+
+
+### Features
+
+* **repo:** add changelog plugin for release-it ([f849884](https://github.com/Nexmo/dev-education-poc/commit/f8498849beef066dab168821a4790401d3997151))
+* **repo:** configure release-it for conventionalcommits to drive semver ([1c95999](https://github.com/Nexmo/dev-education-poc/commit/1c95999bd433b1fae989be6d5c8384ae3bb08ff0))
+
 # Changelog
 
 ## v1.2.2 - Demo button on preview-deploy (07/11/2020)
