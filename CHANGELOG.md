@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Nexmo/deved-platform/compare/v1.3.2...v1.4.0) (2020-11-10)
+
+
+### Features
+
+* **comments:** remove disqus while we think of which comments platform to use ([90c2548](https://github.com/Nexmo/deved-platform/commit/90c25486c6aec7697938589874498d7f97cdd7b5))
+
 ## [1.3.2](https://github.com/Nexmo/deved-platform/compare/v1.3.1...v1.3.2) (2020-11-10)
 
 
