@@ -179,7 +179,7 @@ The structure of the web form is fairly straightforward, and you are free to spr
 
 This form will post the user inputs to the `/verify` route and you can use the phone number in the input to trigger the verification code request. A similar form can be used for the other 2 routes for `/check` and `/cancel` as well.
 
-```html
+```twig
 <form method="post" action="check">
   <input name="pin" placeholder="Enter PIN">
   <input name="reqId" type="hidden" value="{{ reqId }}">
@@ -187,7 +187,7 @@ This form will post the user inputs to the `/verify` route and you can use the p
 </form>
 ```
 
-```html
+```twig
 <form method="post" action="cancel">
   <input name="reqId" type="hidden" value="{{ reqId }}">
   <button class="inline">Cancel verification</button>
@@ -309,15 +309,17 @@ router.post('/verify/', async (ctx, next) => {
 The `ctx.request.body` will look something like this:
 
 ```json
-{ phone: '+40987654321' }
+{ 
+  "phone": "+40987654321"
+}
 ```
 
 You can grab that phone number and pass it to the `verify()` function. As long as it is a valid phone number, the verification code will be fired off and you will receive a response containing a `request_id` and `status`.
 
 ```json
 { 
-  request_id: '1bf002ecd1e94d8aa81ba7463b19f583',
-  status: '0'
+  "request_id": "1bf002ecd1e94d8aa81ba7463b19f583",
+  "status": "0"
 }
 ```
 
@@ -343,16 +345,18 @@ router.post('/check/', async (ctx, next) => {
 Again, both those values can be obtained from the `ctx.request.body` and if the PIN is validated to be correct, you will receive a response that looks like this:
 
 ```json
-{ request_id: '1bf002ecd1e94d8aa81ba7463b19f583',
-  status: '0',
-  event_id: '150000001AC57AB2',
-  price: '0.10000000',
-  currency: 'EUR' }
+{ 
+  "request_id": "1bf002ecd1e94d8aa81ba7463b19f583",
+  "status": "0",
+  "event_id": "150000001AC57AB2",
+  "price": "0.10000000",
+  "currency": "EUR" 
+}
 ```
 
 You can then make use of the status code to determine what message you would like to display to your user. This example uses Nunjucks, so the markup on the results page could look something like this:
 
-```html
+```twig
 {% if status == 0 %}
 <p>Code verified successfully. ¯\_(ツ)_/¯</p>
 {% else %}
