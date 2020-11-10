@@ -52,7 +52,7 @@ There are other strategies—fixed, linear, polynomial—but for the sake of thi
 
 I don’t want to trigger Vonage’s API rate limit just to demonstrate the Backoff package; instead, let’s create some mock code with [asyncio](https://docs.python.org/3/library/asyncio.html).
 
-```
+```python
 import asyncio
 from datetime import datetime
  
@@ -102,7 +102,7 @@ In the graph, we can see the calls are now bunching together around the end of t
 
 Jitter adds a random factor to delay duration calculation in our backoff.
 
-```
+```python
 sleep = random.uniform(0, delay)
 ```
 
@@ -128,7 +128,7 @@ To ensure that network latency on any one request doesn’t block our entire app
 
 We can look at the [Messages API example request](https://developer.nexmo.com/messages/code-snippets/sms/send-sms) from the documentation to get an idea of what the Vonage Python SDK is doing for us:
 
-```
+```sh
 curl -X POST https://api.nexmo.com/v0.1/messages \
   -H 'Authorization: Bearer '$JWT\
   -H 'Content-Type: application/json' \
@@ -145,7 +145,7 @@ curl -X POST https://api.nexmo.com/v0.1/messages \
   }'
 ```
 
-In this code snippet, we can see that we’re issuing a POST request to the endpoint “https://api.nexmo.com/v0.1/message”. The request includes some information about the type of content we’re sending and expecting as a response. But, the essential parts to note is the Authorization header and the data (-d) option.
+In this code snippet, we can see that we’re issuing a POST request to the endpoint `https://api.nexmo.com/v0.1/message`. The request includes some information about the type of content we’re sending and expecting as a response. But, the essential parts to note is the Authorization header and the data (-d) option.
 
 The request is Authorized using [JSON Web Tokens (JWT)](https://jwt.io/). JWT is an open industry standard, and there are several Python packages available to help with their generation. But, handily the Vonage Python SDK already has a function we can call to create a valid JWT for the request. As the JWT generation is swift, does not require any Network I/O, and is only performed once at the start of the script, it doesn’t matter that it is not asynchronous.
 
@@ -153,13 +153,13 @@ The request is Authorized using [JSON Web Tokens (JWT)](https://jwt.io/). JWT is
 
 Before we can use the Messages API, we will need to [create a new application](https://developer.nexmo.com/messages/code-snippets/create-an-application). You can do this via the Vonage API Dashboard or with the [Nexmo CLI](https://github.com/Nexmo/nexmo-cli). It’s worth noting at the time of writing you will need the beta version of the Nexmo CLI to create a Messages application.
 
-```
+```sh
 npm install -g nexmo-cli@0.4.9-beta-3
 ```
 
 If using the CLI, the `--messages-status-url` and `--messages-inbound-url` flags are not relevant for these examples, but they are required. You can set them to `https://example.com`.
 
-```
+```sh
 nexmo app:create "Messages App with Backoff" --capabilities=messages --messages-inbound-url=https://example.com/ --messages-status-url=https://example.com/ --keyfile=private.key
 ```
 
@@ -167,7 +167,7 @@ This command will store your private key in the file `private.key`. We’ll need
 
 ### Sending the SMS
 
-```
+```python
 vonage_client = vonage.Client(
    application_id=os.environ["VONAGE_APPLICATION_ID"],
    private_key=os.environ["VONAGE_PRIVATE_KEY"],
@@ -208,7 +208,7 @@ Finally, we check the HTTP status code returned by the Messages API to the reque
 
 In my example script, I have just hardcoded a list of recipients.
 
-```
+```python
 async def main(loop):
    recipients = [
        "13055550157",
@@ -230,7 +230,7 @@ But this is where you could use a task queue or a broker. Also, I’m also not b
 
 My script will attempt to make the API calls with no delay between them, very quickly triggering the rate-limiting. While the backoff helps us manage when we do exceed the maximum throughput allowed, it should be a last resort. Ideally, to be most efficient, we want to get as close to the rate limit, but without exceeding it. The addition of a short sleep when adding tasks to the loop should help with this.
 
-```
+```python
 for recipient in recipients:
        asyncio.ensure_future(send_sms(recipient, message), loop=loop)
        await asyncio.sleep(1)
