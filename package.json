@@ -1,6 +1,6 @@
 {
   "name": "vonage-dev-blog",
-  "version": "0.0.0",
+  "version": "1.2.2",
   "description": "Vonage Learn - Nuxt.js/Netlify CMS/Algolia/Volta",
   "author": "@VonageDev",
   "private": true,
