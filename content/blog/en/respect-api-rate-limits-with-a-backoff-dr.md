@@ -6,7 +6,7 @@ thumbnail: /content/blog/respect-api-rate-limits-with-a-backoff-dr/Social_API-Ra
 author: aaron
 published: true
 published_at: 2020-10-22T14:24:31.000Z
-updated_at: 2020-11-10T15:14:57.728Z
+updated_at: ""
 category: tutorial
 tags:
   - api-development
@@ -17,14 +17,11 @@ spotlight: true
 redirect: ""
 canonical: ""
 ---
-
 When working with the [Vonage Communication APIs](https://www.vonage.com/communications-apis/)—or [any API really](https://developer.twitter.com/en/docs/basics/rate-limiting)—you should be cognizant of their rate limits. Rate limits are one of the ways service providers can reduce the load on their servers, prevent malicious activity, or ensure a single user is not monopolizing the available resources.
 
 In this article, we will look at how you can best manage your API calls to ensure you are a “good API citizen”. We will look at how you can respect the Vonage Communication API [rate limits](https://help.nexmo.com/hc/en-us/articles/203993598-What-is-the-Throughput-Limit-for-Outbound-SMS-), while also being efficient and completing your API calls as quickly as allowed.
 
-## Vonage API Account
-
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2021-10-21-respect-api-rate-limits-with-a-backoff-dr). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2021-10-21-respect-api-rate-limits-with-a-backoff-dr) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2021-10-21-respect-api-rate-limits-with-a-backoff-dr).
+<sign-up number></sign-up>
 
 This tutorial also uses a virtual phone number. To purchase one, go to *Numbers* > *Buy Numbers* and search for one that meets your needs.
 
@@ -38,17 +35,16 @@ When this happens, it can be tempting to try again immediately, but doing so is 
 
 A backoff is where you wait before taking an action. The amount of time to wait can be calculated using many different strategies, but a few of the most common are:
 
-- Constant: wait a constant amount of time between each attempt. For example if we have a constant delay of 1 seconds then our attempts will happen at 1s, 2s, 3s, 4s, 5s, 6s, 7s, etc
-- Fibonaccial: here we use the Fibonacci number corresponding to the current attempt, making our delays 1s, 1s, 2s, 3s, 5s, 8s, 13s, etc
-- Exponential: the delay is calculated as 2 to the power of the number of unsuccessful attempts that have been made. For example:
-
- - 2^1 = 2 = 2
- - 2^2 = 2 * 2 = 4
- - 2^3 = 2 * 2 * 2 = 8
- - 2^4 = 2 * 2 * 2 * 2 = 16
- - 2^5 = 2 * 2 * 2 * 2 * 2 = 32
- - 2^6 = 2 * 2 * 2 * 2 * 2 * 2 = 64
- - 2^7 = 2 * 2 * 2 * 2 * 2 * 2 * 2 = 128
+* Constant: wait a constant amount of time between each attempt. For example if we have a constant delay of 1 seconds then our attempts will happen at 1s, 2s, 3s, 4s, 5s, 6s, 7s, etc
+* Fibonaccial: here we use the Fibonacci number corresponding to the current attempt, making our delays 1s, 1s, 2s, 3s, 5s, 8s, 13s, etc
+* Exponential: the delay is calculated as 2 to the power of the number of unsuccessful attempts that have been made. For example:
+* 2^1 = 2 = 2
+* 2^2 = 2 * 2 = 4
+* 2^3 = 2  *2*  2 = 8
+* 2^4 = 2  *2*  2 * 2 = 16
+* 2^5 = 2  *2*  2  *2*  2 = 32
+* 2^6 = 2  *2*  2  *2*  2 * 2 = 64
+* 2^7 = 2  *2*  2  *2*  2  *2*  2 = 128
 
 There are other strategies—fixed, linear, polynomial—but for the sake of this article, we’re going to stick with the Exponential backoff strategy provided by the [Python backoff package](https://github.com/litl/backoff).
 
@@ -84,20 +80,19 @@ if __name__ == "__main__":
    loop.run_forever()
 ```
 
-
 In this example the `slow_operation()` function logs the milliseconds since the epoch and then returns `False`, ensuring the backoff decorator runs each time we call the function. Backoff will keep executing `slow_operation()` until the delay reaches the `max_time` of 300 seconds, at which point it will give up.
 
 To generate plenty of data points for the graph, we queue up the `slow_operation()` function 500 times within our asyncio loop.
 
 If we graph the number of function calls attempted per second, this is what it looks like when we use a constant strategy:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/10/image2.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/10/image2.png" alt="" width="2000" height="1400" class="aligncenter size-full wp-image-33622" /></a>
+![A constant traffic pattern visualised](/content/blog/respect-api-rate-limits-with-a-backoff/image2.png "A constant traffic pattern visualised")
 
 There is a thick band in the 40 to 60 function calls range, so a constant backoff is not appropriate for our needs. Each second we’re flooding the API with requests keeping our throughput far too high, and we’re likely to continue to be rate limited.
 
 But if we run the same code with the exponential strategy, we get a very different graph.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/10/image1.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/10/image1.png" alt="" width="2000" height="1400" class="aligncenter size-full wp-image-33621" /></a>
+![A visualisation of a traffic pattern using exponential backoff](/content/blog/respect-api-rate-limits-with-a-backoff/image1.png "A visualisation of a traffic pattern using exponential backoff")
 
 This graph is much better. We can see where the backoff strategy has increased the delay reducing the throughput and hopefully giving us enough time to end the rate-limiting. But now we have another issue.
 
@@ -113,7 +108,7 @@ sleep = random.uniform(0, delay)
 
 The [Python backoff package includes this jitter by default](https://github.com/litl/backoff#jitter). In the code examples above I’m removing it with a lambda function, so let’s generate the exponential graph again, but this time with jitter.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/10/image4.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/10/image4.png" alt="" width="2000" height="1400" class="aligncenter size-full wp-image-33623" /></a>
+![An exponential backoff traffic pattern visualised](/content/blog/respect-api-rate-limits-with-a-backoff/image4.png "An exponential backoff traffic pattern visualised")
 
 As we’re still using an exponential strategy, we can see that the number of calls drops off very quickly, but thanks to the added randomness of the jitter, we don’t see any bunching. Instead, the function calls per second are low and more evenly distributed.
 
@@ -123,7 +118,7 @@ Rate limits vary depending upon the Vonage Communications API you are using. For
 
 ### Task Queues and Brokers
 
-Python has a large number of task queues to choose from—[Celery](https://docs.celeryproject.org/en/stable/getting-started/introduction.html), [huey²], [RQ](https://python-rq.org/), [Kuyruk](https://kuyruk.readthedocs.io/en/latest/), [Taskmaster](https://github.com/dcramer/taskmaster), [Dramatiq](https://dramatiq.io/), [WorQ](https://worq.readthedocs.io/en/latest/)—and almost as many brokers—[MongoDB](https://www.mongodb.com/), [Redis](https://redis.io/), [RabbitMQ](https://www.rabbitmq.com/), [SQS](https://aws.amazon.com/sqs/). Some of these task queues come with support for backoff built-in, but they also add a lot of complexity, making them out of scope for this article.
+Python has a large number of task queues to choose from—[Celery](https://docs.celeryproject.org/en/stable/getting-started/introduction.html), \[huey²], [RQ](https://python-rq.org/), [Kuyruk](https://kuyruk.readthedocs.io/en/latest/), [Taskmaster](https://github.com/dcramer/taskmaster), [Dramatiq](https://dramatiq.io/), [WorQ](https://worq.readthedocs.io/en/latest/)—and almost as many brokers—[MongoDB](https://www.mongodb.com/), [Redis](https://redis.io/), [RabbitMQ](https://www.rabbitmq.com/), [SQS](https://aws.amazon.com/sqs/). Some of these task queues come with support for backoff built-in, but they also add a lot of complexity, making them out of scope for this article.
 
 However, once you’re comfortable with the underlying techniques and the reasoning behind using a task queue, backoff, jitter, and so on, then I recommend you revisit the links to the task queues above. The code examples we will be looking at in the rest of this article are intentionally succinct so we can focus on only throughput management; where-as the packages above are much more robust and production-ready. 
 
@@ -198,7 +193,6 @@ async def send_sms(recipient, message):
  
         return response.status_code == 202
 ```
- 
 
 At the top of our script, outside of the async function, we instantiate our Vonage client with the application id and private key. I’ve stored these in environmental variables, so they’re not hard-coded within my script.
 
@@ -246,7 +240,7 @@ for recipient in recipients:
 
 In this recording I’ve removed the sleep and modified the example so that it attempts to make several hundred requests at a time, causing it to nearly instantly trigger throttling by Vonage. But watch what happens after a few seconds.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/10/image3.gif"><img src="https://www.nexmo.com/wp-content/uploads/2020/10/image3.gif" alt="" width="489" height="272" class="aligncenter size-full wp-image-33624" /></a>
+![Traffic to an API being backed off over time until blocked requests end](/content/blog/respect-api-rate-limits-with-a-backoff/image3.gif "Traffic to an API being backed off over time until blocked requests end")
 
 Almost as soon as the script begins, we see it exceeds the Messages API rate limit, and the endpoint begins to return an HTTP status of 429 “Too Many Requests”. So, the script starts to backoff. At first, the number of failed requests seems to remain about the same, but as the delay increases exponentially the number of failed requests drops off within a few seconds, and our script can begin sending again.
 
