@@ -17,7 +17,7 @@
 - `nuxt/content` for loading of markdown and json files
 - Algolia search with `vue-instantsearch` and `algoliasearch` (requires some configuration)
 - RSS and author RSS feeds using `nuxtjs/feeds`
-- DISQUS comments on post pages using `vue-disqus`
+- ~~DISQUS comments on post pages using `vue-disqus`~~ # disabled
 - Netlify CMS for content management
 
 ***Table of contents***

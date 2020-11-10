@@ -24,7 +24,6 @@ const config = {
     'communication apis',
   ],
   postsPerPage: 12,
-  disqusShortname: process.env.DISQUS_SHORTNAME || 'vonage-dev-blog-dev',
   repoUrl:
     process.env.REPOSITORY_URL || 'https://github.com/Nexmo/deved-platform',
   repoBranch: process.env.BRANCH || 'main',
