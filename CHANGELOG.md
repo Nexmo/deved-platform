@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/Nexmo/deved-platform/compare/v1.3.1...v1.3.2) (2020-11-10)
+
+
+### Bug Fixes
+
+* supposedly fixes issue generating i18n pages... ([#346](https://github.com/Nexmo/deved-platform/issues/346)) ([e0d2b0b](https://github.com/Nexmo/deved-platform/commit/e0d2b0b6a97843c7fbd018798e37aa80d22504db))
+
 ## [1.3.1](https://github.com/Nexmo/deved-platform/compare/v1.3.0...v1.3.1) (2020-11-10)
 
 # [1.3.0](https://github.com/Nexmo/deved-platform/compare/v1.2.2...v1.3.0) (2020-11-10)
