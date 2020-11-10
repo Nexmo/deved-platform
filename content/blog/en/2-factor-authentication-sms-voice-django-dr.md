@@ -8,13 +8,14 @@ thumbnail: /content/blog/2-factor-authentication-sms-voice-django-dr/python-djan
 author: aaron
 published: true
 published_at: 2017-07-13T13:34:35.000Z
-comments: true
+updated_at: 2020-11-10T15:20:41.116Z
 category: tutorial
 tags:
   - 2fa
   - python
-canonical: https://www.nexmo.com/blog/2017/07/13/2-factor-authentication-sms-voice-django-dr
-redirect: https://www.nexmo.com/blog/2017/07/13/2-factor-authentication-sms-voice-django-dr
+comments: true
+redirect: ""
+canonical: ""
 ---
 
 Content to be migrated...
