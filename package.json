@@ -1,8 +1,8 @@
 {
-  "name": "vonage-dev-blog",
+  "name": "@vonage/deved-platform",
   "version": "1.3.0",
-  "description": "Vonage Learn - Nuxt.js/Netlify CMS/Algolia/Volta",
-  "author": "@VonageDev",
+  "description": "Vonage Learn: The Developer Education platform from Vonage",
+  "author": "@VonageDev <deved@vonage.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
