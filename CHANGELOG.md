@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/Nexmo/deved-platform/compare/v1.4.2...v1.4.3) (2020-11-11)
+
+
+### Bug Fixes
+
+* **authors:** remove wp-content urls from authors ([b68be9d](https://github.com/Nexmo/deved-platform/commit/b68be9d8e72b43cee69cd077fee1568352d865a5))
+
 ## [1.4.2](https://github.com/Nexmo/deved-platform/compare/v1.4.1...v1.4.2) (2020-11-11)
 
 
