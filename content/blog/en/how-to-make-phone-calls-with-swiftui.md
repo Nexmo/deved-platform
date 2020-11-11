@@ -24,17 +24,14 @@ In this tutorial, you will create a SwiftUI application that can make calls to a
 
 ## Prerequisites
 
-+ Xcode 12 and Swift 5 or greater.
-
-+ [Cocoapods](https://cocoapods.org) to install the Vonage Client SDK for iOS.
-
-+ [ngrok](https://ngrok.com) for exposing your local machine to the internet.
-
-+ Our Command Line Interface. It can be installed with `npm install nexmo-cli@beta -g`.
+* Xcode 12 and Swift 5 or greater.
+* [Cocoapods](https://cocoapods.org) to install the Vonage Client SDK for iOS.
+* [ngrok](https://ngrok.com) for exposing your local machine to the internet.
+* Our Command Line Interface. It can be installed with `npm install nexmo-cli@beta -g`.
 
 <sign-up></sign-up>
 
-## Overview 
+## Overview
 
 This project has three parts, the Vonage application, an AWS Lambda function, and the iOS application.
 
@@ -42,7 +39,7 @@ In this case, we will be using the Conversation API so the Vonage application yo
 
 The `answer_url` needs to return a Call Control Object (NCCO) which will tell Vonage how to handle the call. The AWS Lambda function will return an NCCO based on the number that is specified in the iOS application.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2020/11/projectdiagram.jpg" alt="The outline of the project" width="362" height="232" class="aligncenter size-full wp-image-33842" />
+![Diagram that outlines how this project will be built](/content/blog/how-to-make-phone-calls-with-swiftui/projectdiagram.jpg "Diagram that outlines how this project will be built")
 
 ## Creating the Lambda Function
 
@@ -52,7 +49,7 @@ In your terminal enter `git clone git@github.com:nexmo-community/swift-ncco-aws-
 
 To do so run `ngrok http 7000` in your terminal. The forwarding URL that ngrok provides is what is needed for the `answer_url` of the Vonage application.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2020/11/ngrok.png" alt="Ngrok running in the terminal" width="672" height="277" class="aligncenter size-full wp-image-33843" />
+![Ngrok running in the terminal window](/content/blog/how-to-make-phone-calls-with-swiftui/ngrok.png "Ngrok running in the terminal window")
 
 ## Scaffolding the Application
 
@@ -96,19 +93,17 @@ Now that the Lambda function and Vonage application are set up, it is time to bu
 
 ### Create an Xcode Project
 
-To get started, open Xcode and create a new project by going to _File_ > _New_ > _Project_. Select an _App template_ and give it a name. Select, SwiftUI for the _interface_, SwiftUI App for the _life cycle_, and Swift for the _language_. Finally, a location to save your project. 
+To get started, open Xcode and create a new project by going to *File* > *New* > *Project*. Select an *App template* and give it a name. Select, SwiftUI for the *interface*, SwiftUI App for the *life cycle*, and Swift for the *language*. Finally, a location to save your project. 
 
-<img src="https://www.nexmo.com/wp-content/uploads/2020/11/xcodeproject.png" alt="Setting up an XCode Project" width="741" height="532" class="aligncenter size-full wp-image-33844" />
+![Setting up a project in XCode](/content/blog/how-to-make-phone-calls-with-swiftui/xcodeproject.png "Setting up a project in XCode")
 
 ### Install Client SDK
 
 Now that the project is created you can add the Vonage Client SDK as a dependency. Navigate to the location where you saved the project in your terminal and run the following commands.
 
 1. Run the `pod init` command to create a new Podfile for your project.
-
-1. Open the Podfile in Xcode using `open -a Xcode Podfile`.
-
-1. Update the Podfile to have `NexmoClient` as a dependency. 
+2. Open the Podfile in Xcode using `open -a Xcode Podfile`.
+3. Update the Podfile to have `NexmoClient` as a dependency. 
 
 ```ruby
 # Uncomment the next line to define a global platform for your project
@@ -122,9 +117,9 @@ target 'SwiftUICall' do
   pod 'NexmoClient'
 end
 ```
-1. Install the SDK using `pod install`.
 
-1. Open the new *xcworkspace* file in Xcode using `open SwiftUICall.xcworkspace`.
+1. Install the SDK using `pod install`.
+2. Open the new *xcworkspace* file in Xcode using `open SwiftUICall.xcworkspace`.
 
 ### Microphone Permissions
 
@@ -300,7 +295,7 @@ If the client is connected, the `TextField` will animate onto the view. The valu
 
 If you run the project (CMD + R), you will first be prompted to allow microphone permissions you will be able to enter a number and call it! The format of numbers should be in the [E.164](https://developer.nexmo.com/concepts/guides/glossary#e-164-format) format. 
 
-<img src="https://www.nexmo.com/wp-content/uploads/2020/11/call.gif" alt="Making a call" width="400" height="804" class="aligncenter size-full wp-image-33845" />
+![A call being made in the app](/content/blog/how-to-make-phone-calls-with-swiftui/call.gif "A call being made in the app")
 
 ### What Is Next?
 
