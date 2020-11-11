@@ -35,7 +35,7 @@ To authorize a payment, the API sends a code to the phone number recorded on the
 
 Authorization can be by text message, telephone call, or usually a combination of both to reach the largest possible number of users. The user receives the pin along with information about the transaction: who they are paying and the amount of the payment.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2020/06/sms_shot.png" alt="Screenshot from phone with message: Your code 2393 is for payment to Acme Inc. in the amount of 12.34€. Valid for 5 minutes." width="760" height="236" class="aligncenter size-full wp-image-32727" />
+![Screenshot from phone with message: Your code 2393 is for payment to Acme Inc. in the amount of 12.34€. Valid for 5 minutes](/content/blog/add-strong-psd2-authentication-to-your-application/sms_shot.png)
 
 The user then provides the pin that they received; this is sent back to the Verify API to check if the pin code is correct. If it is, the request is confirmed, and you can proceed with the payment.
 

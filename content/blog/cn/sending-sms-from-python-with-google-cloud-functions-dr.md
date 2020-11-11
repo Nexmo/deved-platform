@@ -40,7 +40,7 @@ Google Cloud Functions 可以编写为在 Node.js 或 Python 3 上运行。如�
 
 建立函数的第一步是在 Google Cloud Platform 控制台的“Cloud Functions”部分中单击“创建函数”。然后，系统会提示您设置函数名称并选择一些选项。
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/03/creating-function.png" alt="创建函数" width="464" height="431" class="aligncenter size-full wp-image-28707" />
+![创建函数](/content/blog/sending-sms-from-python-with-google-cloud-functions-dr/creating-function.png)
 
 我们来快速浏览以下内容：
 
@@ -100,7 +100,7 @@ def send_sms(request):
 
 编写函数后，最简单的部署方法是将其复制并粘贴到 Google Cloud Functions 网站上的代码编辑器中。在代码编辑器下面，您需要设置要执行的函数名称——这将告诉 Cloud Functions 要调用文件中的哪个函数。在“高级”部分，您还需要设置环境变量 Nexmo 设置 和 912。
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/03/advanced-settings.png" alt="Nexmo 设置" width="912" height="312" class="aligncenter size-full wp-image-28705" />
+![Nexmo 设置](/content/blog/sending-sms-from-python-with-google-cloud-functions-dr/advanced-settings.png)
 
 完成后，请按下“保存”，稍等片刻，让 Google 的神奇机器人部署该函数，然后就可以对其进行测试。
 

@@ -1,6 +1,6 @@
 {
   "name": "@vonage/deved-platform",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Vonage Learn: The Developer Education platform from Vonage",
   "author": "@VonageDev <deved@vonage.com>",
   "private": true,

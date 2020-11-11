@@ -75,11 +75,11 @@ They have added this dependency to their project by merely copying the above cod
 
 Modern IDEs like IntelliJ IDEA will warn us about dynamic dependency usage by usage:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/avoid-using-plus-character.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/avoid-using-plus-character.png" alt="Avid using plus character" width="1171" height="90" class="alignnone size-full wp-image-33785" /></a>
+![Avoid using plus character](/content/blog/the-right-way-of-using-gradle-dynamic-dependencies/avoid-using-plus-character.png)
 
 To avoid unpredictability, we can specify dependency versions explicitly and update them manually when a need occurs. This will allow you to have full control over version updates and take a closer look at the dependency changelog and review the changes. IDE will also display a warning about outdated dependency and provides intention to change the version it:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/change-dependency-version.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/change-dependency-version.png" alt="Change dependency version" width="965" height="90" class="alignnone size-full wp-image-33784" /></a>
+![Change dependency version](/content/blog/the-right-way-of-using-gradle-dynamic-dependencies/change-dependency-version.png)
 
 This strategy works fine for small projects, but manual updates can be time-consuming when your project contains a large number of dependencies. We can use [gradle-versions-plugin](https://github.com/ben-manes/gradle-versions-plugin) to determine how many dependencies need to be updated:
 

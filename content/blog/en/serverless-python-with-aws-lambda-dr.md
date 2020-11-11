@@ -124,7 +124,7 @@ serverless invoke -f function --data='{"name": "Adam"}'
 ```
 
 Example result:
-![serverless_lambda_function_execution](https://www.nexmo.com/wp-content/uploads/2020/03/serverless_lambda_function_execution.png "Serverless Lambda Function Execution")
+![Serverless Lambda Function Execution](/content/blog/serverless-python-with-aws-lambda-dr/serverless_lambda_function_execution.png "Serverless Lambda Function Execution")
 
 ### Testing An HTTP Function
 

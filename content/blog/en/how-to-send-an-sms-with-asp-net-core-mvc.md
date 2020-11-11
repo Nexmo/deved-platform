@@ -129,7 +129,7 @@ In the `index.cshtml` file, the only thing we need to do is create the form that
 
 When this is created, it will look something like this.
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/07/MainForm.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/07/MainForm.png" alt="Send SMS form" width="1098" height="336" class="alignnone size-full wp-image-32846" /></a>
+![Send SMS form](/content/blog/how-to-send-an-sms-with-asp-net-core-mvc/MainForm.png)
 
 ## C is for Controller
 
