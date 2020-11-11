@@ -35,15 +35,7 @@
 </template>
 
 <script>
-const tagMap = {
-  voyagers: ['vonage-voyagers'],
-  careers: ['career'],
-  dotnet: ['dot-net', 'asp-dot-net', '.net', 'asp.net'],
-  go: ['go-lang', 'golang'],
-  javascript: ['js'],
-  node: ['nodejs', 'node.js'],
-  opensource: ['open-source'],
-}
+import config from '~/modules/config'
 
 export default {
   props: {
@@ -92,7 +84,7 @@ export default {
     slug() {
       const tag = this.tag.toLowerCase()
 
-      const match = Object.entries(tagMap).filter(([, value]) =>
+      const match = Object.entries(config.tagMap).filter(([, value]) =>
         value.includes(tag)
       )
 
