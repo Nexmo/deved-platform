@@ -2,6 +2,7 @@
 title: Audit Phone Calls with Event Sourcing in .NET
 description: Build a .NET Core application that stores and displays phone call
   information using event sourcing with the Vonage Voice API.
+thumbnail: /content/blog/audit-phone-calls-with-event-sourcing-in-net/blog_asp-net_callauditing_1200x600.png
 author: james-hickey
 published: true
 published_at: 2020-11-10T15:33:43.670Z
