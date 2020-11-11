@@ -24,8 +24,75 @@
         }
       });
 
+      // Standard preview CSS.
       CMS.registerPreviewStyle("netlify-preview.css");
+
+      // Blog preview config.
       CMS.registerPreviewTemplate("blog", PostPreview);
+
+      // Sign up custom editor component.
+      CMS.registerEditorComponent({
+        // Internal id of the component
+        id: "signup",
+        // Visible label
+        label: "Sign up",
+        // Fields the user need to fill out when adding an instance of the component
+        fields: [{name: 'number', label: 'Number Required', widget: 'boolean'}],
+        // Pattern to identify a block as being an instance of this component
+        pattern: /^<sign-up ?(number)?><\/sign-up>$/,
+        // Function to extract data elements from the regexp match
+        fromBlock: function(match) {
+          return {
+            number: match[1]
+          };
+        },
+        // Function to create a text block from an instance of this component
+        toBlock: function(obj) {
+          if (obj.number) {
+            return '<sign-up number></sign-up>';
+          } else {
+            return '<sign-up></sign-up>';
+          }
+        },
+        // Preview output for this component. Can either be a string or a React component
+        // (component gives better render performance)
+        toPreview: function(obj) {
+          if (obj.number) {
+            return '<center><img src="/admin/signup-number-preview.png" alt="Vonage API Account"/></center>';
+          } else {
+            return '<center><img src="/admin/signup-preview.png" alt="Vonage API Account"/></center>';
+          }
+        }
+      });
+
+      // YouTube custom editor component.
+      CMS.registerEditorComponent({
+        // Internal id of the component
+        id: "youtube",
+        // Visible label
+        label: "Youtube",
+        // Fields the user need to fill out when adding an instance of the component
+        fields: [{name: 'id', label: 'Youtube Video ID', widget: 'string'}],
+        // Pattern to identify a block as being an instance of this component
+        pattern: /^<youtube id="(\S+)"><\/youtube>$/,
+        // Function to extract data elements from the regexp match
+        fromBlock: function(match) {
+          return {
+            id: match[1]
+          };
+        },
+        // Function to create a text block from an instance of this component
+        toBlock: function(obj) {
+          return '<youtube id="' + obj.id + '"></youtube>';
+        },
+        // Preview output for this component. Can either be a string or a React component
+        // (component gives better render performance)
+        toPreview: function(obj) {
+          return (
+            '<center><img src="http://img.youtube.com/vi/' + obj.id + '/0.jpg" alt="Youtube Video"/></center>'
+          );
+        }
+      });
     </script>  
   </body>
 </html>
