@@ -129,6 +129,7 @@ export default {
 .Tag-tests >>> a {
   font-size: 1.1rem !important;
 }
+
 .Tag-tests >>> .Tag-test {
   font-size: 3rem !important;
   border-radius: 27px;
