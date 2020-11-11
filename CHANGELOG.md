@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/Nexmo/deved-platform/compare/v1.4.1...v1.4.2) (2020-11-11)
+
+
+### Bug Fixes
+
+* fixes [#238](https://github.com/Nexmo/deved-platform/issues/238) move map to site config and use map from config in tag query AND tag component ([#360](https://github.com/Nexmo/deved-platform/issues/360)) ([6ecf7a0](https://github.com/Nexmo/deved-platform/commit/6ecf7a02b7719932a8b1d4c28baa8e654256c2d8))
+
 ## [1.4.1](https://github.com/Nexmo/deved-platform/compare/v1.4.0...v1.4.1) (2020-11-11)
 
 
