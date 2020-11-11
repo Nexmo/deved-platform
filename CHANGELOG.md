@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/Nexmo/deved-platform/compare/v1.4.0...v1.4.1) (2020-11-11)
+
+
+### Bug Fixes
+
+* tag link and backtotop issues  ([#359](https://github.com/Nexmo/deved-platform/issues/359)) ([69edc24](https://github.com/Nexmo/deved-platform/commit/69edc24828c0f1e60e82821a9da5ece5205ee3e3)), closes [#224](https://github.com/Nexmo/deved-platform/issues/224) [#223](https://github.com/Nexmo/deved-platform/issues/223)
+
 # [1.4.0](https://github.com/Nexmo/deved-platform/compare/v1.3.2...v1.4.0) (2020-11-10)
 
 
