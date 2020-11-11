@@ -24,11 +24,15 @@ import config from '~/modules/config'
 
 export default {
   async asyncData({ $content, app, params, error }) {
+    const searchTags = config.tagMap[params.tag]
+      ? [params.tag, ...config.tagMap[params.tag]]
+      : [params.tag]
+
     try {
       const posts = await $content(`blog/${app.i18n.locale}`)
         .where({
           $and: [
-            { tags: { $contains: params.tag } },
+            { tags: { $containsAny: searchTags } },
             { published: { $ne: false } },
           ],
         })

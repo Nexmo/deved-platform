@@ -31,6 +31,15 @@ const config = {
   algoliaSearchKey: process.env.ALGOLIA_SEARCH_KEY,
   algoliaIndex: process.env.ALGOLIA_INDEX,
   signer: process.env.SIGNING_SECRET || 'secret',
+  tagMap: {
+    voyagers: ['vonage-voyagers'],
+    careers: ['career'],
+    dotnet: ['dot-net', 'asp-dot-net', '.net', 'asp.net'],
+    go: ['go-lang', 'golang'],
+    javascript: ['js'],
+    node: ['nodejs', 'node.js'],
+    opensource: ['open-source'],
+  },
   get headMeta() {
     return [
       { charset: 'utf-8' },
