@@ -1,19 +1,21 @@
 ---
 title: How to Build a Dashboard of Live Conversations with Flask and React
-description: Nexmo recently introduced the Conversation API. This API enables
-  you to have different styles of communication (voice, messaging, and video)
-  and connect them all to each other. It’s now possible for multiple
-  conversations within an app to coincide and to retain context across all of
-  those channels! Being able to record and work with the […]
+description: Introduction to Vonage's Conversation API and how to build a
+  dashboard application to view data connected to live conversations with Flask
+  and React.
 thumbnail: /content/blog/how-to-build-a-dashboard-of-live-conversations-with-flask-and-react-dr/How-to-Build-a-Dashboard-of-Live-Conversations-with-Flask-and-React-2.png
 author: laurenlee
 published: true
 published_at: 2019-09-24T12:54:23.000Z
-comments: true
+updated_at: 2020-11-11T19:55:19.103Z
 category: tutorial
-tags: []
-canonical: https://www.nexmo.com/blog/2019/09/24/how-to-build-a-dashboard-of-live-conversations-with-flask-and-react-dr
-redirect: https://www.nexmo.com/blog/2019/09/24/how-to-build-a-dashboard-of-live-conversations-with-flask-and-react-dr
+tags:
+  - react
+  - conversations-api
+  - ""
+comments: true
+redirect: ""
+canonical: ""
 ---
 
 Content to be migrated...
