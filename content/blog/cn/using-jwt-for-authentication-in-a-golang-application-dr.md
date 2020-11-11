@@ -12,9 +12,8 @@ tags:
   - go
   - jwt
   - messages-api
+spotlight: true
 ---
-
-<a href="https://developer.nexmo.com/spotlight" target="_blank" rel="noopener noreferrer"><img src="https://www.nexmo.com/wp-content/uploads/2020/09/Banner_Dev_Spotlight_CN.png" alt="博客聚焦横幅 " width="810" height="150" class="alignnone size-full wp-image-29837" /></a>
 
 <h2>介绍</h2>
 
@@ -49,7 +48,7 @@ token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX3V1aWQiOiIxZGQ5MDEwYy00MzI
 
 您可以导航到 <a href="https://jwt.io">jwt.to</a> 并测试 token 签名是否已验证。使用“HS512”作为算法。您将收到消息“签名已验证”：
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image9.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image9.png" alt="" width="1211" height="829" class="alignnone size-full wp-image-31629" /></a>
+![](/content/blog/using-jwt-for-authentication-in-a-golang-application-dr/image9.png)
 
 要进行签名，您的应用程序需要提供<strong>密钥</strong>。此密钥使签名能够保持安全性——即使在对 JWT 进行解码时，签名仍保持加密状态。强烈建议在创建 JWT 时始终使用密码。
 
@@ -250,9 +249,9 @@ atClaims["exp"] = time.Now().Add(time.Minute* 15).Unix()
 <pre><code class="notranslate">go run main.go
 </code></pre>
 
-现在我们可以尝试一下，看看效果如何！启动您喜欢的 API 工具并点击 <https://www.nexmo.com/wp-content/uploads/2020/03/image8.png>端点：
+现在我们可以尝试一下，看看效果如何！启动您喜欢的 API 工具并点击 端点：
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image8.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image8.png" alt="" width="1999" height="1145" class="alignnone size-full wp-image-31628" /></a>
+![](/content/blog/using-jwt-for-authentication-in-a-golang-application-dr/image8.png)
 
 如上所示，我们生成了一个可持续 15 分钟的 JWT。
 
@@ -412,7 +411,7 @@ td.AtExpires = time.Now().Add(time.Minute* 15).Unix()
 
 我个人使用 <a href="https://www.redily.app">Redily</a> (redis GUI)。这是一款很好的工具。您可以在下面查看如何在键值对中存储 JWT 元数据。
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image2.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image2.png" alt="" width="1030" height="764" class="alignnone size-full wp-image-31622" /></a>
+![](/content/blog/using-jwt-for-authentication-in-a-golang-application-dr/image2.png)
 
 在再次测试登录之前，我们需要在 {7} 函数中调用 {7} 函数。更新登录函数：
 
@@ -444,9 +443,9 @@ td.AtExpires = time.Now().Add(time.Minute* 15).Unix()
 }
 </code></pre>
 
-我们可以尝试再次登录。保存 <https://www.nexmo.com/wp-content/uploads/2020/03/image3.png> 文件并将其运行。当邮递员点击登录时，我们应该具有：
+我们可以尝试再次登录。保存 文件并将其运行。当邮递员点击登录时，我们应该具有：
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image3.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image3.png" alt="" width="1999" height="1190" class="alignnone size-full wp-image-31623" /></a>
+![](/content/blog/using-jwt-for-authentication-in-a-golang-application-dr/image3.png)
 
 太棒了！我们既有 <strong>access_token</strong> 和 <strong>refresh_token</strong>，也有 token 元数据持久保存在 redis 中。
 
@@ -601,17 +600,17 @@ td.UserID = userId
 }
 </code></pre>
 
-要测试 <https://www.nexmo.com/wp-content/uploads/2020/03/image6.png>，请登录并复制 <https://www.nexmo.com/wp-content/uploads/2020/03/image6.png>，然后将其添加到<strong>Authorization Bearer Token</strong> 字段，如下所示：
+要测试，请登录并复制，然后将其添加到<strong>Authorization Bearer Token</strong> 字段，如下所示：
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image6.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image6.png" alt="" width="1999" height="768" class="alignnone size-full wp-image-31626" /></a>
+![](/content/blog/using-jwt-for-authentication-in-a-golang-application-dr/image6.png)
 
-然后在请求正文中添加标题以创建待办事项并向 <https://www.nexmo.com/wp-content/uploads/2020/03/image4.png> 端点发出 POST 请求，如下所示：
+然后在请求正文中添加标题以创建待办事项并向 端点发出 POST 请求，如下所示：
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image4.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image4.png" alt="" width="1999" height="1050" class="alignnone size-full wp-image-31624" /></a>
+![](/content/blog/using-jwt-for-authentication-in-a-golang-application-dr/image4.png)
 
-在没有 <https://www.nexmo.com/wp-content/uploads/2020/03/image5.png> 的情况下尝试创建待办事项是未经授权的行为：
+在没有 的情况下尝试创建待办事项是未经授权的行为：
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image5.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image5.png" alt="" width="1999" height="1062" class="alignnone size-full wp-image-31625" /></a>
+![](/content/blog/using-jwt-for-authentication-in-a-golang-application-dr/image5.png)
 
 <h3>注销请求</h3>
 
@@ -660,9 +659,9 @@ td.UserID = userId
 }
 </code></pre>
 
-提供与用户关联的有效 <https://www.nexmo.com/wp-content/uploads/2020/03/image1.png>，然后注销该用户。记得将 <https://www.nexmo.com/wp-content/uploads/2020/03/image1.png> 添加到 <https://www.nexmo.com/wp-content/uploads/2020/03/image1.png>，然后单击注销端点：
+提供与用户关联的有效，然后注销该用户。记得将 添加到，然后单击注销端点：
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image1.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image1.png" alt="" width="1999" height="1069" class="alignnone size-full wp-image-31621" /></a>
+![](/content/blog/using-jwt-for-authentication-in-a-golang-application-dr/image1.png)
 
 现在用户已注销，由于该 JWT 立即失效，因此无法再次对该 JWT 执行进一步的请求。这种实施方式比在用户注销后等待 JWT 到期更为安全。
 
@@ -793,9 +792,9 @@ saveErr := CreateAuth(userId, ts)
 
 </code></pre>
 
-使用有效的 <https://www.nexmo.com/wp-content/uploads/2020/03/image7.png> 测试端点：
+使用有效的 测试端点：
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/03/image7.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/03/image7.png" alt="" width="1999" height="1180" class="alignnone size-full wp-image-31627" /></a>
+![](/content/blog/using-jwt-for-authentication-in-a-golang-application-dr/image7.png)
 
 我们已成功创建了新的 token 对。太好了😎。
 

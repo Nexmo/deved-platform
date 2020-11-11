@@ -3,7 +3,7 @@
     <div class="Vlt-col Blog-error">
       <h1>Bad request</h1>
       <p>
-        Don't worry you definately typed the correct URL, it's the keyboard's
+        Don't worry you definitely typed the correct URL, it's the keyboard's
         fault.
       </p>
       <NLink to="/" no-prefetch class="Vlt-btn Vlt-btn--app Vlt-btn--secondary">

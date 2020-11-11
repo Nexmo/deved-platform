@@ -77,7 +77,7 @@ We're going to make a HTTP `POST` request to `http://localhost:8000/sms/` using 
 
 When we click on `Send`, we should get a response that says "Sending an SMS to [number]". This lets us know that our Slim application is running correctly and that we can move on to building our SMS functionality.
 
-<img class="alignnone size-full wp-image-16210" src="https://www.nexmo.com/wp-content/uploads/2017/09/send-sms-postman.gif" alt="Make a HTTP request with Postman" />
+![Make an HTTP request with Postman](/content/blog/sending-sms-messages-with-php-dr/send-sms-postman.gif)
 
 As we already have our route set up, we can take our existing code that sends an SMS and drop it in to place.
 
@@ -126,6 +126,3 @@ window.addEventListener('load', function() {
   });
 });
 </script>
-
-<center><a href="https://twitter.com/intent/user?screen_name=VonageDev"><img src="https://www.nexmo.com/wp-content/uploads/2017/09/nexmodev-circle.png" alt="Nexmo Developer Logo" width="100" />
-@VonageDev</a></center><style>.twitter-follow-button.twitter-follow-button-rendered { vertical-align: top; }</style>

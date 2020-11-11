@@ -34,13 +34,7 @@ Before you begin, make  sure you have:
 * [ngrok](https://ngrok.com/) to make the code on our local machine accessible to the outside world
 * The [Nexmo CLI](https://developer.nexmo.com/tools): `npm install -g nexmo-cli`
 
-## Vonage API Account
-
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2019-09-16-how-to-send-and-receive-sms-messages-with-node-js-and-express-dr). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2019-09-16-how-to-send-and-receive-sms-messages-with-node-js-and-express-dr) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2019-09-16-how-to-send-and-receive-sms-messages-with-node-js-and-express-dr).
-
-This tutorial also uses a virtual phone number. To purchase one, go to *Numbers* > *Buy Numbers* and search for one that meets your needs. If you’ve just signed up, the initial cost of a number will be easily covered by your available credit.
-
-<a href="http://developer.nexmo.com/ed?c=blog_banner&ct=2019-09-16-how-to-send-and-receive-sms-messages-with-node-js-and-express-dr"><img src="https://www.nexmo.com/wp-content/uploads/2020/05/StartBuilding_Footer.png" alt="Start building with Vonage" width="1200" height="369" class="aligncenter size-full wp-image-32500" /></a>
+<sign-up number></sign-up>
 
 ## Send an SMS Message With the SMS API
 
