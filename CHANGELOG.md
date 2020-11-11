@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Nexmo/deved-platform/compare/v1.4.3...v1.5.0) (2020-11-11)
+
+
+### Features
+
+* **cms:** add editor components for youtube and sign-up ([#365](https://github.com/Nexmo/deved-platform/issues/365)) ([f46ecec](https://github.com/Nexmo/deved-platform/commit/f46ececae656467bbb28929975e685260f89505e))
+
 ## [1.4.3](https://github.com/Nexmo/deved-platform/compare/v1.4.2...v1.4.3) (2020-11-11)
 
 
