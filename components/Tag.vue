@@ -1,22 +1,37 @@
 <template>
-  <NLink
-    :to="link ? localePath(`/tags/${slug}`) : ''"
+  <div
     class="Vlt-badge Vlt-badge--small Vlt-badge--grey Vlt-badge--transparent"
     :class="'Blog-badge--' + slug"
   >
-    <svg
-      v-if="isProduct"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="white"
-      viewBox="0 0 24 24"
-      style="width: 0.8em; margin: 0 4px -1px 0"
-    >
-      <path
-        d="M9.3 11.6L4.7 1.5H0l6.8 15.3s.1.1.1 0l2.4-5.2zm9.9-10.1s-6.1 13.9-6.9 15.6c-1.8 4.1-3.2 5.1-4.6 5.3H12c1.9 0 3.2-1.3 5.1-5.3.6-1.4 6.9-15.6 6.9-15.6h-4.8z"
-      />
-    </svg>
-    <span v-else>#</span>{{ slug }}
-  </NLink>
+    <nuxt-link v-if="link" :to="localePath(`/tags/${slug}`)">
+      <svg
+        v-if="isProduct"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="white"
+        viewBox="0 0 24 24"
+        style="width: 0.8em; margin: 0 4px -1px 0"
+      >
+        <path
+          d="M9.3 11.6L4.7 1.5H0l6.8 15.3s.1.1.1 0l2.4-5.2zm9.9-10.1s-6.1 13.9-6.9 15.6c-1.8 4.1-3.2 5.1-4.6 5.3H12c1.9 0 3.2-1.3 5.1-5.3.6-1.4 6.9-15.6 6.9-15.6h-4.8z"
+        />
+      </svg>
+      <span v-else>#</span>{{ slug }}
+    </nuxt-link>
+    <template v-else>
+      <svg
+        v-if="isProduct"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="white"
+        viewBox="0 0 24 24"
+        style="width: 0.8em; margin: 0 4px -1px 0"
+      >
+        <path
+          d="M9.3 11.6L4.7 1.5H0l6.8 15.3s.1.1.1 0l2.4-5.2zm9.9-10.1s-6.1 13.9-6.9 15.6c-1.8 4.1-3.2 5.1-4.6 5.3H12c1.9 0 3.2-1.3 5.1-5.3.6-1.4 6.9-15.6 6.9-15.6h-4.8z"
+        />
+      </svg>
+      <span v-else>#</span>{{ slug }}
+    </template>
+  </div>
 </template>
 
 <script>
@@ -329,5 +344,18 @@ export default {
   color: black;
   text-shadow: 1px 1px 2px #ffffff80, -1px -1px 2px #ffffff80,
     -1px 1px 2px #ffffff80, 1px -1px 2px #ffffff80;
+}
+
+.Vlt-badge {
+  cursor: pointer;
+}
+
+.Vlt-badge a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
 }
 </style>

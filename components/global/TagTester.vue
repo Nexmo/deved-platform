@@ -126,13 +126,10 @@ export default {
 </script>
 
 <style scoped>
-.Tag-tests >>> a {
-  font-size: 1.1rem !important;
-}
 .Tag-tests >>> .Tag-test {
   font-size: 3rem !important;
   border-radius: 27px;
-  padding: 4px 16px;
+  padding: 16px 24px;
   margin-bottom: 20px;
 }
 </style>
