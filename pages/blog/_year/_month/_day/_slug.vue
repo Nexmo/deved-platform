@@ -154,8 +154,6 @@ export default {
       }
     } catch (err) {
       error({ statusCode: 404, message: 'Page not found', err })
-
-      return false
     }
   },
 

@@ -25,9 +25,10 @@ export default {
 
   async fetch() {
     if (this.$route.name) {
-      if (this.$route.name.startsWith('blog')) {
+      if (this.$route.name.startsWith('blog/year/month/day/slug___')) {
         const { slug } = this.$route.params
         this.translations = await this.$content('blog', { deep: true })
+          .only(['title', 'locale', 'route'])
           .where({
             $and: [{ slug }, { published: { $ne: false } }],
           })
