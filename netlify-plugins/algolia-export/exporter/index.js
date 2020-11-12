@@ -21,7 +21,7 @@ const exporter = async (index, newIndex) => {
 
   await Promise.all(exports)
     .then((results) => {
-      console.info(
+      console.info( // eslint-disable-line
         `${chalk.green('@netlify/plugin-algolia-index:')} made ${chalk.cyan(
           results.length
         )} requests to Algolia`
@@ -39,7 +39,7 @@ const saveObjects = (index, objects) => {
     })
     .then(({ objectIDs }) => {
       objectIDs.forEach((objectID) => {
-        console.info(
+        console.info( // eslint-disable-line
           `${chalk.green(
             '@netlify/plugin-algolia-index:'
           )} indexing ${chalk.cyan(objectID)}`
