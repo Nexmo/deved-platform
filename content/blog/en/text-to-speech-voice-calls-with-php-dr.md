@@ -1,10 +1,7 @@
 ---
 title: Text-to-Speech Voice Calls with PHP
-description: For years, making and receiving phone calls in your code was tough
-  to do (and usually involved writing some Java and plugging an old phone into
-  your laptop to serve as a gateway!). Fortunately, it’s not nearly as hard
-  today thanks to services such as Vonage (Formerly Nexmo). Voice calls are an
-  excellent communication method […]
+description: In this tutorial, we’re going to build a small Slim app that we can
+  use to trigger an outbound phone call using the PHP client for Vonage.
 thumbnail: /content/blog/text-to-speech-voice-calls-with-php-dr/Blog_Text-to-Speech_PHP_1200x600.png
 author: mheap
 published: true
