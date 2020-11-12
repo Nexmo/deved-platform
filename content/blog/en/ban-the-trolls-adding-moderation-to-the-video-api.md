@@ -6,7 +6,7 @@ thumbnail: /content/blog/ban-the-trolls-adding-moderation-to-the-video-api/blog_
 author: michaeljolley
 published: true
 published_at: 2020-11-12T13:08:25.891Z
-updated_at: 2020-11-11T15:27:52.652Z
+updated_at: 2020-11-12T13:09:22.628Z
 category: tutorial
 tags:
   - javascript
