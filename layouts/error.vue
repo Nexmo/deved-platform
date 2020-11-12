@@ -39,8 +39,6 @@ export default {
   computed: {
     errorType() {
       if (this.translations.length > 0) {
-        this.error.statusCode = 200
-
         return 'i18n'
       }
 
