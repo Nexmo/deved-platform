@@ -1,3 +1,16 @@
+# [1.6.0](https://github.com/Nexmo/deved-platform/compare/v1.5.0...v1.6.0) (2020-11-12)
+
+
+### Bug Fixes
+
+* 404 error handling on slugs ([2f83b37](https://github.com/Nexmo/deved-platform/commit/2f83b37d29ec5802e9fd7b156f0fc6f77cffbad7))
+* i18n switch issue ([71ff2ba](https://github.com/Nexmo/deved-platform/commit/71ff2ba6553153bf149c0dca0520376f3c8741f5))
+
+
+### Features
+
+* **i18n:** better 404 handling for missing translations ([#366](https://github.com/Nexmo/deved-platform/issues/366)) ([806a387](https://github.com/Nexmo/deved-platform/commit/806a38786587e522487bf96750e4ad06c5f72da9))
+
 # [1.5.0](https://github.com/Nexmo/deved-platform/compare/v1.4.3...v1.5.0) (2020-11-11)
 
 
