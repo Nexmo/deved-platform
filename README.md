@@ -27,9 +27,8 @@
 - [Components](#components)
 - [Writing Style](#writing-style)
 - [Tools](#tools)
-  - [Blog Posts](#blog-posts)
-  - [Legacy Content Importer](#legacy-content-importer)
-  - [Legacy Author Importer](#legacy-author-importer)
+  - [Create a Blog Post](#create-a-blog-post)
+  - [Translate a Blog Post](#translate-a-blog-post)
 - [License](#license)
 - [Change log](#change-log)
 
@@ -53,7 +52,7 @@ Taken from our developer education writing styleguide, we've included our [writi
 
 ## Tools
 
-### Blog Posts
+### Create a Blog Post
 
 Create a new blog post using the CLI.
 
@@ -77,6 +76,8 @@ npm run blog
 # ✔ Saved demo file to content/blog/en/an-awesome-title-for-your-post.md ...
 ```
 
+### Translate a Blog Post
+
 You can also start a translation with the same tool.
 
 ```bash
@@ -95,26 +96,6 @@ npm run blog
 # ? What's the description? <max 240 chars> Scopri come aggiungere alla tua app l&#39;autenticazione dei pagamenti online "Secure Customer Authentication", noto anche come PSD2, con Vonage Verify API
 # ✔ Saved demo file to content/blog/it/add-strong-psd2-authentication-to-your-application.md ...
 ```
-
-### Legacy Content Importer
-
-Imports content from a WordPress WP API instance.
-
-```bash
-WP_USERNAME={username} WP_PASSWORD={password} node bin/exporter
-```
-
-Shouldn't be used unless importing content from WordPress.
-
-### Legacy Author Importer
-
-Imports authors from a WordPress WP API instance.
-
-```bash
-WP_USERNAME={username} WP_PASSWORD={password} node bin/authors
-```
-
-Shouldn't be used unless importing authors from WordPress.
 
 ## License
 
