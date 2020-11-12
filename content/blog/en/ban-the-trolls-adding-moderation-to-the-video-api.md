@@ -2,10 +2,11 @@
 title: Ban the Trolls! Adding Moderation to the Video API
 description: Bad actors can disrupt meetings and presentations if left to their
   own devices. Find out how to keep your Video API sessions safe for all.
+thumbnail: /content/blog/ban-the-trolls-adding-moderation-to-the-video-api/blog_video-api_moderation_1200x600.png
 author: michaeljolley
 published: true
-published_at: 2020-11-12T15:27:52.615Z
-updated_at: 2020-11-11T15:27:52.652Z
+published_at: 2020-11-12T13:08:25.891Z
+updated_at: 2020-11-12T13:09:22.628Z
 category: tutorial
 tags:
   - javascript
