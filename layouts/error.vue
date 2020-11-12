@@ -1,7 +1,8 @@
 <template>
   <div class="Vlt-error-page">
     <div class="Vlt-container">
-      <Error404 v-if="error.statusCode === 404" />
+      <ErrorI18N v-if="errorType === 'i18n'" :translations="translations" />
+      <Error404 v-else-if="errorType === '404'" />
       <Error400 v-else />
     </div>
   </div>
@@ -9,13 +10,47 @@
 
 <script>
 export default {
-  layout: 'default',
   props: {
     error: {
       type: Object,
       required: true,
     },
-  }, // you can set a custom layout for the error page
+  },
+
+  data() {
+    return {
+      translations: [],
+    }
+  },
+
+  async fetch() {
+    if (this.$route.name) {
+      if (this.$route.name.startsWith('blog')) {
+        const { slug } = this.$route.params
+        this.translations = await this.$content('blog', { deep: true })
+          .where({
+            $and: [{ slug }, { published: { $ne: false } }],
+          })
+          .fetch()
+      }
+    }
+  },
+
+  computed: {
+    errorType() {
+      if (this.translations.length > 0) {
+        this.error.statusCode = 200
+
+        return 'i18n'
+      }
+
+      if (this.error.statusCode === 404) {
+        return '404'
+      }
+
+      return '400'
+    },
+  },
 }
 </script>
 
