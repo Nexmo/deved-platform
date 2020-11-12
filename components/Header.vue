@@ -104,18 +104,18 @@
           </TwitterSocialButton>
         </li>
         <li class="Blog-nav__item Vlt-center">
-          <nuxt-link :to="switchLocalePath(currentLocale.code)">
+          <a :href="switchLocalePath(currentLocale.code)">
             &gt; {{ currentLocale.name }} &lt;
-          </nuxt-link>
+          </a>
         </li>
         <li
           v-for="(locale, index) in availableLocales"
           :key="index"
           class="Blog-nav__item Vlt-center"
         >
-          <nuxt-link :to="switchLocalePath(locale.code)">
+          <a :href="switchLocalePath(locale.code)">
             {{ locale.name }}
-          </nuxt-link>
+          </a>
         </li>
       </ul>
     </nav>
@@ -142,7 +142,7 @@ export default {
 
   methods: {
     switchLocale(event) {
-      this.$router.replace(this.switchLocalePath(event))
+      window.location.href = this.switchLocalePath(event)
     },
   },
 }
