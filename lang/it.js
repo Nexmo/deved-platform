@@ -27,7 +27,7 @@ export default {
   page_authors_alumni: 'Vonage Alumni',
   page_authors_other: 'Altri Scrittori',
 
-  page_blog_title: 'Contenuti per sviluppatori dagli archivi',
+  page_blog_title: 'Archivio dei nostri contenuti per sviluppatori',
   page_blog_breadcrumb: 'Blog',
 
   page_blog_yearmonthday_title: 'Contenuti per sviluppatori da',
