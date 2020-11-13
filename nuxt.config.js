@@ -6,7 +6,7 @@ const isPreviewBuild = () => {
   return (
     process.env.PULL_REQUEST &&
     process.env.HEAD &&
-    process.env.HEAD.startsWith('cms/')
+    process.env.HEAD.startsWith('cms/blog')
   )
 }
 
