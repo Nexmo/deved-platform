@@ -2,7 +2,8 @@
 title: Implement Multi-factor Authentication In Go with Verify
 description: Follow this tutorial to build a Go application that uses the Vonage
   Verify API to implement multi-factor authentication via SMS.
-author: zachwalchuk
+thumbnail: /content/blog/implement-multi-factor-authentication-in-go-with-verify/blog_go_verify2_1200x600.png
+author: oluwatobi-okewole
 published: true
 published_at: 2020-11-13T03:00:56.782Z
 updated_at: 2020-11-13T03:00:56.795Z
