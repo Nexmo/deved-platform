@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/Nexmo/deved-platform/compare/v1.6.0...v1.7.0) (2020-11-13)
+
+
+### Bug Fixes
+
+* fixes [#357](https://github.com/Nexmo/deved-platform/issues/357) preview builds for non-blog posts fail ([e52a677](https://github.com/Nexmo/deved-platform/commit/e52a677a91051ab7889818ddd6bb8e39143a6574))
+* **opensearch:** fix search.xml contents ([5b79a9b](https://github.com/Nexmo/deved-platform/commit/5b79a9bbdb3bd9f855b597b6be77ae51742f6692))
+* fix lint warnings in PRs ([1a6f2e0](https://github.com/Nexmo/deved-platform/commit/1a6f2e04f76e18da3153707bf8f2604965e33887))
+
+
+### Features
+
+* **i18n:** fix [#375](https://github.com/Nexmo/deved-platform/issues/375) translation issue for italian blog page title ([b702427](https://github.com/Nexmo/deved-platform/commit/b7024272692a7734bbe68c0744357d6eca2d4ff2))
+
 # [1.6.0](https://github.com/Nexmo/deved-platform/compare/v1.5.0...v1.6.0) (2020-11-12)
 
 
