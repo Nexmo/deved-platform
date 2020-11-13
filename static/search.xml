@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>Vonage</ShortName>
+  <ShortName>Vonage » Learn</ShortName>
   <Description>Developer Education team content.</Description>
   <Tags>node vue nuxt web communications api apis javascript python ruby rails dot net asp php java tutorials streams videos courses</Tags>
   <Contact>community@vonage.com</Contact>
   <Url type="text/html"
-       template="http://example.com/?q={searchTerms}&amp;pw={startPage?}"/>
-  <LongName>Vonage Learn</LongName>
+       template="http://learn.vonage.com/?q={searchTerms}"/>
+  <LongName>Developer Education at Vonage</LongName>
   <Image height="32" width="32" type="image/png">/favicon-32x32.png</Image>
   <Image height="16" width="16" type="image/vnd.microsoft.icon">/favicon-16x16.png</Image>
-  <Query role="example" searchTerms="cat" />
-  <Developer>Vonage.com Developer Education team</Developer>
+  <Developer>@VonageDevs</Developer>
   <Attribution>
     Search data Copyright, Vonage.com, All Rights Reserved
   </Attribution>
