@@ -20,7 +20,7 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-*Note: This project was designed with the collaborative effort of Yolanda McFadden, Matthew Farley, and Chrystie Calderon Patmon*
+> Note: This project was designed with the collaborative effort of Yolanda McFadden, Matthew Farley, and Chrystie Calderon Patmon
 
 Maintaining continuous candidate engagement is a goal for every recruiting team. In this tutorial, you'll see how the [Vonage SMS API Zapier integration](https://zapier.com/apps/vonage-sms-api/integrations) allows you to text candidates from the Greenhouse recruiting platform, which enhances the candidate experience and improves communication to and from a talent acquisition team.
 
