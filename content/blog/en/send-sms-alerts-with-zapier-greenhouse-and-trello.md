@@ -50,57 +50,79 @@ For every Zap, the first step is to determine what would need to be the “trigg
 
 Log in to your Zapier account, and from the *Home* screen select *Create Zap*:
 
-
-
 ![Zapier Home Screen](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image15.png "Zapier Home Screen")
 
 Name your Zap:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image2-3.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image2-3.png" alt="Name your Zap" width="571" height="58" class="aligncenter size-full wp-image-33897" /></a>
+
+
+![Name Zap](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image2.png "Name Zap")
 
 Choose your *Application* (Greenhouse) & *Trigger Event* (New Candidate Application):
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image4.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image4.png" alt="Choose App and Event" width="904" height="402" class="aligncenter size-full wp-image-33899" /></a>
+
+
+![Choose app and event](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image4.png "Choose app and event")
 
 At this point, you'll need to connect your Greenhouse account:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image3-3.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image3-3.png" alt="Connect Greenhouse account" width="898" height="421" class="aligncenter size-full wp-image-33898" /></a>
+
+
+![connect Greenhouse account](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image3.png "connect Greenhouse account")
 
 After connecting to your Greenhouse account, run a test to ensure everything is set up properly:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image7.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image7.png" alt="Run Greenhouse test" width="799" height="628" class="aligncenter size-full wp-image-33902" /></a>
+
+
+![Run Greenhouse test](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image7.png "Run Greenhouse test")
 
 Now you need to tell your Zap what to do when someone applies. This is where your Trello account comes in. When a new Greenhouse candidate applies, your Zap should tell Trello to create a new Trello card:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image6.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image6.png" alt="Create Trello card" width="904" height="402" class="aligncenter size-full wp-image-33901" /></a>
+
+
+![Create card in Trello](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image6.png "Create card in Trello")
 
 Connect your Trello account:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image14.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image14.png" alt="Connect Trello account" width="904" height="420" class="aligncenter size-full wp-image-33909" /></a>
+
+
+![Connect Trello account](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image14.png "Connect Trello account")
 
 Now you'll customize your Trello card. Select the board you have designated for your Greenhouse candidates and enter all the information from Greenhouse you want to pull into the card (i.e Candidate Name, Candidate Phone Number, and Job Title Applied For):
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image10.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image10.png" alt="Customize Trello card" width="727" height="806" class="aligncenter size-full wp-image-33905" /></a>
+
+
+![Customize Trello card](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image10.png "Customize Trello card")
 
 Test your Trello Connection to ensure you have everything connected correctly:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image1-3.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image1-3.png" alt="Test Trello connection" width="743" height="725" class="aligncenter size-full wp-image-33896" /></a>
+
+
+![Test Trello connection](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image1.png "Test Trello connection")
 
 Once you've set up your Trello connection, you will also need to tell the Vonage SMS API what to do when a candidate applies. Connect the app and choose the action *Send SMS*:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image11.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image11.png" alt="Choose Vonage SMS API" width="717" height="485" class="aligncenter size-full wp-image-33906" /></a>
+
+
+![Choose Vonage app and event](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image11.png "Choose Vonage app and event")
 
 Connect your Vonage SMS API account:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image13.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image13.png" alt="Connect Vonage account" width="721" height="328" class="aligncenter size-full wp-image-33908" /></a>
+
+
+![Connect Vonage account](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image13.png "Connect Vonage account")
 
 Now you can customize the text message you want sent to the candidate:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image5.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image5.png" alt="customize text message" width="722" height="602" class="aligncenter size-full wp-image-33900" /></a>
+
+
+![Customize text message](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image5.png "Customize text message")
 
 Test your connection, and if everything is working correctly, click *Turn On Zap*!:
 
-<a href="https://www.nexmo.com/wp-content/uploads/2020/11/image8.png"><img src="https://www.nexmo.com/wp-content/uploads/2020/11/image8.png" alt="Turn on Zap" width="718" height="712" class="aligncenter size-full wp-image-33903" /></a>
+
+
+![Turn on Zap](/content/blog/send-sms-alerts-with-zapier-greenhouse-and-trello/image8.png "Turn on Zap")
 
 You're all set to send an automated “Thank you for Applying” message to every new candidate that submits an application.
 
