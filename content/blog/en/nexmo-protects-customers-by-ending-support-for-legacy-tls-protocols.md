@@ -12,8 +12,8 @@ published_at: 2018-06-13T16:54:23.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2018/06/13/nexmo-protects-customers-by-ending-support-for-legacy-tls-protocols
-redirect: https://www.nexmo.com/blog/2018/06/13/nexmo-protects-customers-by-ending-support-for-legacy-tls-protocols
+canonical: https://www.nexmo.com/legacy-blog/2018/06/13/nexmo-protects-customers-by-ending-support-for-legacy-tls-protocols
+redirect: https://www.nexmo.com/legacy-blog/2018/06/13/nexmo-protects-customers-by-ending-support-for-legacy-tls-protocols
 ---
 
 Content to be migrated...

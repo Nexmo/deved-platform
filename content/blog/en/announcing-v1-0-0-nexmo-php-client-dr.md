@@ -15,8 +15,8 @@ comments: true
 category: release
 tags:
   - php
-canonical: https://www.nexmo.com/blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
-redirect: https://www.nexmo.com/blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/08/29/announcing-v1-0-0-nexmo-php-client-dr
 ---
 
 Content to be migrated...

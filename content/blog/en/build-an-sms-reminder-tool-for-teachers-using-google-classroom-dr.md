@@ -13,8 +13,8 @@ comments: true
 category: tutorial
 tags:
   - node
-canonical: https://www.nexmo.com/blog/2020/06/04/build-an-sms-reminder-tool-for-teachers-using-google-classroom-dr
-redirect: https://www.nexmo.com/blog/2020/06/04/build-an-sms-reminder-tool-for-teachers-using-google-classroom-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/06/04/build-an-sms-reminder-tool-for-teachers-using-google-classroom-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/06/04/build-an-sms-reminder-tool-for-teachers-using-google-classroom-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2017-07-21T15:54:50.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/07/21/get-sms-delivery-receipt-asp-net-mvc-dr
-redirect: https://www.nexmo.com/blog/2017/07/21/get-sms-delivery-receipt-asp-net-mvc-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/07/21/get-sms-delivery-receipt-asp-net-mvc-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/07/21/get-sms-delivery-receipt-asp-net-mvc-dr
 ---
 
 Content to be migrated...

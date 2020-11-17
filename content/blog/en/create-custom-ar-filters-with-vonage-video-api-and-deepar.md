@@ -12,8 +12,8 @@ published_at: 2020-09-01T12:24:51.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
-redirect: https://www.nexmo.com/blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
+canonical: https://www.nexmo.com/legacy-blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
+redirect: https://www.nexmo.com/legacy-blog/2020/09/01/create-custom-ar-filters-with-vonage-video-api-and-deepar
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-10-07T21:52:57.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/10/07/conference-call-node-red-dr
-redirect: https://www.nexmo.com/blog/2019/10/07/conference-call-node-red-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/10/07/conference-call-node-red-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/10/07/conference-call-node-red-dr
 ---
 
 Content to be migrated...

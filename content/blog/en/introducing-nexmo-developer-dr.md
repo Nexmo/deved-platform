@@ -12,8 +12,8 @@ published_at: 2017-07-25T13:53:37.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2017/07/25/introducing-nexmo-developer-dr
-redirect: https://www.nexmo.com/blog/2017/07/25/introducing-nexmo-developer-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/07/25/introducing-nexmo-developer-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/07/25/introducing-nexmo-developer-dr
 ---
 
 Content to be migrated...

@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - dotnet
   - voice-api
-canonical: https://www.nexmo.com/blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
-redirect: https://www.nexmo.com/blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/05/16/build-a-conference-call-with-nexmo-voice-api-and-csharp-dr
 ---
 
 Content to be migrated...

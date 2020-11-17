@@ -12,8 +12,8 @@ published_at: 2017-09-21T19:12:09.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/09/21/voice-text-ai-bot-interface
-redirect: https://www.nexmo.com/blog/2017/09/21/voice-text-ai-bot-interface
+canonical: https://www.nexmo.com/legacy-blog/2017/09/21/voice-text-ai-bot-interface
+redirect: https://www.nexmo.com/legacy-blog/2017/09/21/voice-text-ai-bot-interface
 ---
 
 Content to be migrated...

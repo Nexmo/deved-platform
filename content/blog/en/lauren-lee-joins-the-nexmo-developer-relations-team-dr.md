@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
-redirect: https://www.nexmo.com/blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/05/20/lauren-lee-joins-the-nexmo-developer-relations-team-dr
 ---
 
 Content to be migrated...

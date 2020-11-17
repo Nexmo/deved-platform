@@ -12,8 +12,8 @@ published_at: 2018-08-14T10:59:40.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/08/14/serverless-sms-nexmo-ibm-dr
-redirect: https://www.nexmo.com/blog/2018/08/14/serverless-sms-nexmo-ibm-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/08/14/serverless-sms-nexmo-ibm-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/08/14/serverless-sms-nexmo-ibm-dr
 ---
 
 Content to be migrated...

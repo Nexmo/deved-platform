@@ -12,8 +12,8 @@ published_at: 2020-09-17T12:30:55.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/09/17/use-python-and-the-number-insights-api-to-analyze-leads-dr
-redirect: https://www.nexmo.com/blog/2020/09/17/use-python-and-the-number-insights-api-to-analyze-leads-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/09/17/use-python-and-the-number-insights-api-to-analyze-leads-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/09/17/use-python-and-the-number-insights-api-to-analyze-leads-dr
 ---
 
 Content to be migrated...

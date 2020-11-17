@@ -12,8 +12,8 @@ published_at: 2018-12-05T14:09:43.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/05/christmas-poetry-reading-using-text-to-speech-dr
-redirect: https://www.nexmo.com/blog/2018/12/05/christmas-poetry-reading-using-text-to-speech-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/05/christmas-poetry-reading-using-text-to-speech-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/05/christmas-poetry-reading-using-text-to-speech-dr
 ---
 
 Content to be migrated...

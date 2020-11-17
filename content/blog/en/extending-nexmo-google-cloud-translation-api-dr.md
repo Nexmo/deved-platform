@@ -12,8 +12,8 @@ published_at: 2019-10-24T12:12:44.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/10/24/extending-nexmo-google-cloud-translation-api-dr
-redirect: https://www.nexmo.com/blog/2019/10/24/extending-nexmo-google-cloud-translation-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/10/24/extending-nexmo-google-cloud-translation-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/10/24/extending-nexmo-google-cloud-translation-api-dr
 ---
 
 Content to be migrated...

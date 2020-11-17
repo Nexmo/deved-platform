@@ -15,8 +15,8 @@ tags:
   - 2fa
   - laravel
   - php
-canonical: https://www.nexmo.com/blog/2017/07/26/2fa-logins-laravel-nexmo-dr
-redirect: https://www.nexmo.com/blog/2017/07/26/2fa-logins-laravel-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/07/26/2fa-logins-laravel-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/07/26/2fa-logins-laravel-nexmo-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2017-05-11T15:40:25.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2017/05/11/nexmo-aws-lex-connector-in-public-beta-dr
-redirect: https://www.nexmo.com/blog/2017/05/11/nexmo-aws-lex-connector-in-public-beta-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/05/11/nexmo-aws-lex-connector-in-public-beta-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/05/11/nexmo-aws-lex-connector-in-public-beta-dr
 ---
 
 Content to be migrated...

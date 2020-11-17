@@ -11,8 +11,8 @@ published_at: 2020-02-27T16:37:10.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/02/27/how-to-build-a-nightscout-notifier-with-nexmo-messages-and-python-part-two-dr
-redirect: https://www.nexmo.com/blog/2020/02/27/how-to-build-a-nightscout-notifier-with-nexmo-messages-and-python-part-two-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/02/27/how-to-build-a-nightscout-notifier-with-nexmo-messages-and-python-part-two-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/02/27/how-to-build-a-nightscout-notifier-with-nexmo-messages-and-python-part-two-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2017-08-15T20:29:48.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2017/08/15/laracon-2017-nyc-conference-report-dr
-redirect: https://www.nexmo.com/blog/2017/08/15/laracon-2017-nyc-conference-report-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/08/15/laracon-2017-nyc-conference-report-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/08/15/laracon-2017-nyc-conference-report-dr
 ---
 
 Content to be migrated...

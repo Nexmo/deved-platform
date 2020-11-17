@@ -12,8 +12,8 @@ published_at: 2019-07-08T15:00:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/07/08/how-to-build-a-voicemail-with-asp-net-core-and-nancyfx-dr
-redirect: https://www.nexmo.com/blog/2019/07/08/how-to-build-a-voicemail-with-asp-net-core-and-nancyfx-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/07/08/how-to-build-a-voicemail-with-asp-net-core-and-nancyfx-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/07/08/how-to-build-a-voicemail-with-asp-net-core-and-nancyfx-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2018-11-06T17:09:17.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr
-redirect: https://www.nexmo.com/blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2018-11-27T18:15:47.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/11/27/serverless-paging-amazon-transcribe-dr
-redirect: https://www.nexmo.com/blog/2018/11/27/serverless-paging-amazon-transcribe-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/11/27/serverless-paging-amazon-transcribe-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/11/27/serverless-paging-amazon-transcribe-dr
 ---
 
 Content to be migrated...

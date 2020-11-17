@@ -12,8 +12,8 @@ published_at: 2016-05-23T15:08:03.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2016/05/23/phptek-2016-livestream
-redirect: https://www.nexmo.com/blog/2016/05/23/phptek-2016-livestream
+canonical: https://www.nexmo.com/legacy-blog/2016/05/23/phptek-2016-livestream
+redirect: https://www.nexmo.com/legacy-blog/2016/05/23/phptek-2016-livestream
 ---
 
 Content to be migrated...

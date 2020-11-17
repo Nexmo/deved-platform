@@ -11,8 +11,8 @@ published_at: 2020-05-18T07:10:21.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/05/18/download-vonage-voice-api-recordings-with-golang
-redirect: https://www.nexmo.com/blog/2020/05/18/download-vonage-voice-api-recordings-with-golang
+canonical: https://www.nexmo.com/legacy-blog/2020/05/18/download-vonage-voice-api-recordings-with-golang
+redirect: https://www.nexmo.com/legacy-blog/2020/05/18/download-vonage-voice-api-recordings-with-golang
 ---
 
 Content to be migrated...

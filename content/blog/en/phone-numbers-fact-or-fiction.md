@@ -12,8 +12,8 @@ published_at: 2016-06-22T12:39:08.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/06/22/phone-numbers-fact-or-fiction
-redirect: https://www.nexmo.com/blog/2016/06/22/phone-numbers-fact-or-fiction
+canonical: https://www.nexmo.com/legacy-blog/2016/06/22/phone-numbers-fact-or-fiction
+redirect: https://www.nexmo.com/legacy-blog/2016/06/22/phone-numbers-fact-or-fiction
 ---
 
 Content to be migrated...

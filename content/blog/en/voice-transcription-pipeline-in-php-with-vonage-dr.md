@@ -12,8 +12,8 @@ published_at: 2020-06-19T15:27:51.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/06/19/voice-transcription-pipeline-in-php-with-vonage-dr
-redirect: https://www.nexmo.com/blog/2020/06/19/voice-transcription-pipeline-in-php-with-vonage-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/06/19/voice-transcription-pipeline-in-php-with-vonage-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/06/19/voice-transcription-pipeline-in-php-with-vonage-dr
 ---
 
 Content to be migrated...

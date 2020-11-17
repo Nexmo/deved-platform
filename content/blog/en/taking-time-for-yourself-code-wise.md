@@ -12,8 +12,8 @@ published_at: 2020-07-22T14:54:13.000Z
 comments: true
 category: devlife
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/22/taking-time-for-yourself-code-wise
-redirect: https://www.nexmo.com/blog/2020/07/22/taking-time-for-yourself-code-wise
+canonical: https://www.nexmo.com/legacy-blog/2020/07/22/taking-time-for-yourself-code-wise
+redirect: https://www.nexmo.com/legacy-blog/2020/07/22/taking-time-for-yourself-code-wise
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2020-09-30T13:44:24.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/09/30/go-explore-the-vonage-apis-with-vonage-go-sdk
-redirect: https://www.nexmo.com/blog/2020/09/30/go-explore-the-vonage-apis-with-vonage-go-sdk
+canonical: https://www.nexmo.com/legacy-blog/2020/09/30/go-explore-the-vonage-apis-with-vonage-go-sdk
+redirect: https://www.nexmo.com/legacy-blog/2020/09/30/go-explore-the-vonage-apis-with-vonage-go-sdk
 ---
 
 Content to be migrated...

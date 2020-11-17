@@ -12,8 +12,8 @@ published_at: 2018-06-19T14:25:13.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/06/19/next-web-voice-journal-python-vue-javascript-dr
-redirect: https://www.nexmo.com/blog/2018/06/19/next-web-voice-journal-python-vue-javascript-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/06/19/next-web-voice-journal-python-vue-javascript-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/06/19/next-web-voice-journal-python-vue-javascript-dr
 ---
 
 Content to be migrated...

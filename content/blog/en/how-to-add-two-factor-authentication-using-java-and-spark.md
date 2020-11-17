@@ -12,8 +12,8 @@ published_at: 2020-08-18T13:26:46.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/08/18/how-to-add-two-factor-authentication-using-java-and-spark
-redirect: https://www.nexmo.com/blog/2020/08/18/how-to-add-two-factor-authentication-using-java-and-spark
+canonical: https://www.nexmo.com/legacy-blog/2020/08/18/how-to-add-two-factor-authentication-using-java-and-spark
+redirect: https://www.nexmo.com/legacy-blog/2020/08/18/how-to-add-two-factor-authentication-using-java-and-spark
 ---
 
 Content to be migrated...

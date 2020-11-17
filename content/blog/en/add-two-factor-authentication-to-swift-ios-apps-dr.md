@@ -15,8 +15,8 @@ tags:
   - 2fa
   - ios
   - verify-api
-canonical: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-swift-ios-apps-dr
-redirect: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-swift-ios-apps-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/05/10/add-two-factor-authentication-to-swift-ios-apps-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/05/10/add-two-factor-authentication-to-swift-ios-apps-dr
 ---
 
 Content to be migrated...

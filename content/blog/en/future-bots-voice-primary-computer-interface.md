@@ -12,8 +12,8 @@ published_at: 2017-12-01T07:12:24.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2017/11/30/future-bots-voice-primary-computer-interface
-redirect: https://www.nexmo.com/blog/2017/11/30/future-bots-voice-primary-computer-interface
+canonical: https://www.nexmo.com/legacy-blog/2017/11/30/future-bots-voice-primary-computer-interface
+redirect: https://www.nexmo.com/legacy-blog/2017/11/30/future-bots-voice-primary-computer-interface
 ---
 
 Content to be migrated...

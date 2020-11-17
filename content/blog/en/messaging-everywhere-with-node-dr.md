@@ -12,8 +12,8 @@ published_at: 2020-05-27T14:35:10.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/05/27/messaging-everywhere-with-node-dr
-redirect: https://www.nexmo.com/blog/2020/05/27/messaging-everywhere-with-node-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/05/27/messaging-everywhere-with-node-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/05/27/messaging-everywhere-with-node-dr
 ---
 
 Content to be migrated...

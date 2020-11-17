@@ -15,8 +15,8 @@ tags:
   - git
   - github
   - hacktoberfest
-canonical: https://www.nexmo.com/blog/2020/09/29/an-introduction-to-git-dr
-redirect: https://www.nexmo.com/blog/2020/09/29/an-introduction-to-git-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/09/29/an-introduction-to-git-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/09/29/an-introduction-to-git-dr
 ---
 
 Content to be migrated...

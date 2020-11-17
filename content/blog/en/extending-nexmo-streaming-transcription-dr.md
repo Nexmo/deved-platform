@@ -12,8 +12,8 @@ published_at: 2019-09-10T11:00:12.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/09/10/extending-nexmo-streaming-transcription-dr
-redirect: https://www.nexmo.com/blog/2019/09/10/extending-nexmo-streaming-transcription-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/09/10/extending-nexmo-streaming-transcription-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/09/10/extending-nexmo-streaming-transcription-dr
 ---
 
 Content to be migrated...

@@ -15,8 +15,8 @@ tags:
   - react
   - voice-api
   - web-components
-canonical: https://www.nexmo.com/blog/2020/10/07/using-web-components-in-a-react-application-dr
-redirect: https://www.nexmo.com/blog/2020/10/07/using-web-components-in-a-react-application-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/10/07/using-web-components-in-a-react-application-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/10/07/using-web-components-in-a-react-application-dr
 ---
 
 Content to be migrated...

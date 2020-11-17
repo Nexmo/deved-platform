@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - video-api
   - zendesk
-canonical: https://www.nexmo.com/blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api
-redirect: https://www.nexmo.com/blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api
+canonical: https://www.nexmo.com/legacy-blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api
+redirect: https://www.nexmo.com/legacy-blog/2020/09/08/add-video-capabilities-to-zendesk-with-vonage-video-api
 ---
 
 Content to be migrated...

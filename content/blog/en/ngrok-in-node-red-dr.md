@@ -12,8 +12,8 @@ published_at: 2019-07-03T15:34:57.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/07/03/ngrok-in-node-red-dr
-redirect: https://www.nexmo.com/blog/2019/07/03/ngrok-in-node-red-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/07/03/ngrok-in-node-red-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/07/03/ngrok-in-node-red-dr
 ---
 
 Content to be migrated...

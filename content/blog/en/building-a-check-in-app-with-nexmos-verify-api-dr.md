@@ -12,8 +12,8 @@ published_at: 2019-06-27T07:01:59.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/06/27/building-a-check-in-app-with-nexmos-verify-api-dr
-redirect: https://www.nexmo.com/blog/2019/06/27/building-a-check-in-app-with-nexmos-verify-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/06/27/building-a-check-in-app-with-nexmos-verify-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/06/27/building-a-check-in-app-with-nexmos-verify-api-dr
 ---
 
 Content to be migrated...

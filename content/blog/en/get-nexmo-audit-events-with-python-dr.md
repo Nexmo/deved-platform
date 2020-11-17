@@ -12,8 +12,8 @@ published_at: 2018-10-09T16:02:27.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/10/09/get-nexmo-audit-events-with-python-dr
-redirect: https://www.nexmo.com/blog/2018/10/09/get-nexmo-audit-events-with-python-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/10/09/get-nexmo-audit-events-with-python-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/10/09/get-nexmo-audit-events-with-python-dr
 ---
 
 Content to be migrated...

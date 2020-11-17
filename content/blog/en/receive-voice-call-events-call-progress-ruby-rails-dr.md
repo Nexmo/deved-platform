@@ -12,8 +12,8 @@ published_at: 2017-12-19T21:44:18.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/12/19/receive-voice-call-events-call-progress-ruby-rails-dr
-redirect: https://www.nexmo.com/blog/2017/12/19/receive-voice-call-events-call-progress-ruby-rails-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/12/19/receive-voice-call-events-call-progress-ruby-rails-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/12/19/receive-voice-call-events-call-progress-ruby-rails-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-07-05T12:07:42.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/07/05/javascript-hotline-with-opentok-and-nodejs-dr
-redirect: https://www.nexmo.com/blog/2019/07/05/javascript-hotline-with-opentok-and-nodejs-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/07/05/javascript-hotline-with-opentok-and-nodejs-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/07/05/javascript-hotline-with-opentok-and-nodejs-dr
 ---
 
 Content to be migrated...

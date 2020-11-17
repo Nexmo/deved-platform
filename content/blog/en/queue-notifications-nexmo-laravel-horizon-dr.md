@@ -13,8 +13,8 @@ published_at: 2018-11-13T17:28:37.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/11/13/queue-notifications-nexmo-laravel-horizon-dr
-redirect: https://www.nexmo.com/blog/2018/11/13/queue-notifications-nexmo-laravel-horizon-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/11/13/queue-notifications-nexmo-laravel-horizon-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/11/13/queue-notifications-nexmo-laravel-horizon-dr
 ---
 
 Content to be migrated...

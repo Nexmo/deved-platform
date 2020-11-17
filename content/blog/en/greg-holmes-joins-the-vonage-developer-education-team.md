@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
-redirect: https://www.nexmo.com/blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
+canonical: https://www.nexmo.com/legacy-blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
+redirect: https://www.nexmo.com/legacy-blog/2020/03/24/greg-holmes-joins-the-vonage-developer-education-team
 ---
 
 Content to be migrated...

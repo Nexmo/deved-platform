@@ -13,8 +13,8 @@ published_at: 2019-09-19T08:58:06.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2019/09/19/nexmo-client-sdks-move-to-beta-dr
-redirect: https://www.nexmo.com/blog/2019/09/19/nexmo-client-sdks-move-to-beta-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/09/19/nexmo-client-sdks-move-to-beta-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/09/19/nexmo-client-sdks-move-to-beta-dr
 ---
 
 Content to be migrated...

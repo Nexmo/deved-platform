@@ -15,8 +15,8 @@ category: tutorial
 tags:
   - hacktoberfest
   - open-source
-canonical: https://www.nexmo.com/blog/2020/10/09/other-ways-to-contribute-to-opensource-this-hacktoberfest
-redirect: https://www.nexmo.com/blog/2020/10/09/other-ways-to-contribute-to-opensource-this-hacktoberfest
+canonical: https://www.nexmo.com/legacy-blog/2020/10/09/other-ways-to-contribute-to-opensource-this-hacktoberfest
+redirect: https://www.nexmo.com/legacy-blog/2020/10/09/other-ways-to-contribute-to-opensource-this-hacktoberfest
 ---
 
 Content to be migrated...

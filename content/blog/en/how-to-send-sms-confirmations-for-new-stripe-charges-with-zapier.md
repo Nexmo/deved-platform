@@ -13,8 +13,8 @@ published_at: 2020-04-03T12:13:28.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
-redirect: https://www.nexmo.com/blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
+canonical: https://www.nexmo.com/legacy-blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
+redirect: https://www.nexmo.com/legacy-blog/2020/04/03/how-to-send-sms-confirmations-for-new-stripe-charges-with-zapier
 ---
 
 Content to be migrated...

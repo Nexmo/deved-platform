@@ -11,8 +11,8 @@ published_at: 2017-10-19T20:25:20.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/10/19/receive-sms-delivery-receipt-ruby-on-rails-dr
-redirect: https://www.nexmo.com/blog/2017/10/19/receive-sms-delivery-receipt-ruby-on-rails-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/10/19/receive-sms-delivery-receipt-ruby-on-rails-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/10/19/receive-sms-delivery-receipt-ruby-on-rails-dr
 ---
 
 Content to be migrated...

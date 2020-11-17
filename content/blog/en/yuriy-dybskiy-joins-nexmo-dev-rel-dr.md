@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2019/02/04/yuriy-dybskiy-joins-nexmo-dev-rel-dr
-redirect: https://www.nexmo.com/blog/2019/02/04/yuriy-dybskiy-joins-nexmo-dev-rel-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/02/04/yuriy-dybskiy-joins-nexmo-dev-rel-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/02/04/yuriy-dybskiy-joins-nexmo-dev-rel-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2016-11-08T15:07:36.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2016/11/08/nexmo-elephpants-at-zendcon
-redirect: https://www.nexmo.com/blog/2016/11/08/nexmo-elephpants-at-zendcon
+canonical: https://www.nexmo.com/legacy-blog/2016/11/08/nexmo-elephpants-at-zendcon
+redirect: https://www.nexmo.com/legacy-blog/2016/11/08/nexmo-elephpants-at-zendcon
 ---
 
 Content to be migrated...

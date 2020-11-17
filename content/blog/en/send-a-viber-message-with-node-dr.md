@@ -12,8 +12,8 @@ published_at: 2020-04-22T13:48:26.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/22/send-a-viber-message-with-node-dr
-redirect: https://www.nexmo.com/blog/2020/04/22/send-a-viber-message-with-node-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/22/send-a-viber-message-with-node-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/22/send-a-viber-message-with-node-dr
 ---
 
 Content to be migrated...

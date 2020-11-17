@@ -12,8 +12,8 @@ published_at: 2018-06-25T22:41:33.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/06/25/receiving-sms-delivery-receipts-with-php-dr
-redirect: https://www.nexmo.com/blog/2018/06/25/receiving-sms-delivery-receipts-with-php-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/06/25/receiving-sms-delivery-receipts-with-php-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/06/25/receiving-sms-delivery-receipts-with-php-dr
 ---
 
 Content to be migrated...

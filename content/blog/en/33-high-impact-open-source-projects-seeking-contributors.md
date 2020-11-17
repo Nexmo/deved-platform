@@ -15,8 +15,8 @@ tags:
   - hacktoberfest
   - open-source
   - social-impact
-canonical: https://www.nexmo.com/blog/2020/10/16/33-high-impact-open-source-projects-seeking-contributors
-redirect: https://www.nexmo.com/blog/2020/10/16/33-high-impact-open-source-projects-seeking-contributors
+canonical: https://www.nexmo.com/legacy-blog/2020/10/16/33-high-impact-open-source-projects-seeking-contributors
+redirect: https://www.nexmo.com/legacy-blog/2020/10/16/33-high-impact-open-source-projects-seeking-contributors
 ---
 
 Content to be migrated...

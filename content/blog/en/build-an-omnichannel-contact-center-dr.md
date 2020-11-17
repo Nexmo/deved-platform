@@ -14,8 +14,8 @@ comments: true
 category: tutorial
 tags:
   - conversation-api
-canonical: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
-redirect: https://www.nexmo.com/blog/2019/06/24/build-an-omnichannel-contact-center-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/06/24/build-an-omnichannel-contact-center-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/06/24/build-an-omnichannel-contact-center-dr
 ---
 
 Content to be migrated...

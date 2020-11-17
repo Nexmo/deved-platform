@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - nuxt
   - verify-api
-canonical: https://www.nexmo.com/blog/2018/09/11/add-2fa-to-nuxt-with-nexmo-verify-dr
-redirect: https://www.nexmo.com/blog/2018/09/11/add-2fa-to-nuxt-with-nexmo-verify-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/09/11/add-2fa-to-nuxt-with-nexmo-verify-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/09/11/add-2fa-to-nuxt-with-nexmo-verify-dr
 ---
 
 Content to be migrated...

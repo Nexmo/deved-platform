@@ -12,8 +12,8 @@ published_at: 2020-03-04T18:22:53.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/04/how-to-send-sms-reminders-of-google-calendar-events-with-zapier-dr
-redirect: https://www.nexmo.com/blog/2020/03/04/how-to-send-sms-reminders-of-google-calendar-events-with-zapier-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/03/04/how-to-send-sms-reminders-of-google-calendar-events-with-zapier-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/03/04/how-to-send-sms-reminders-of-google-calendar-events-with-zapier-dr
 ---
 
 Content to be migrated...

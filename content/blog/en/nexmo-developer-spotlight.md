@@ -13,8 +13,8 @@ published_at: 2018-10-11T16:38:50.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2018/10/11/nexmo-developer-spotlight
-redirect: https://www.nexmo.com/blog/2018/10/11/nexmo-developer-spotlight
+canonical: https://www.nexmo.com/legacy-blog/2018/10/11/nexmo-developer-spotlight
+redirect: https://www.nexmo.com/legacy-blog/2018/10/11/nexmo-developer-spotlight
 ---
 
 Content to be migrated...

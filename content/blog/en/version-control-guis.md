@@ -12,8 +12,8 @@ published_at: 2020-10-02T07:25:52.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/10/02/version-control-guis
-redirect: https://www.nexmo.com/blog/2020/10/02/version-control-guis
+canonical: https://www.nexmo.com/legacy-blog/2020/10/02/version-control-guis
+redirect: https://www.nexmo.com/legacy-blog/2020/10/02/version-control-guis
 ---
 
 Content to be migrated...

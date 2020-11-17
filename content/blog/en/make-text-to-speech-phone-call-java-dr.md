@@ -12,8 +12,8 @@ published_at: 2019-03-21T20:18:28.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/03/21/make-text-to-speech-phone-call-java-dr
-redirect: https://www.nexmo.com/blog/2019/03/21/make-text-to-speech-phone-call-java-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/03/21/make-text-to-speech-phone-call-java-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/03/21/make-text-to-speech-phone-call-java-dr
 ---
 
 Content to be migrated...

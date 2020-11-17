@@ -12,8 +12,8 @@ published_at: 2020-02-24T18:09:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/02/24/nightscout-notification-nexmo-dr
-redirect: https://www.nexmo.com/blog/2020/02/24/nightscout-notification-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/02/24/nightscout-notification-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/02/24/nightscout-notification-nexmo-dr
 ---
 
 Content to be migrated...

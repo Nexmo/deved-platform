@@ -12,8 +12,8 @@ published_at: 2018-12-20T16:10:26.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/20/custom-video-streams-opentok-api-dr
-redirect: https://www.nexmo.com/blog/2018/12/20/custom-video-streams-opentok-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/20/custom-video-streams-opentok-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/20/custom-video-streams-opentok-api-dr
 ---
 
 Content to be migrated...

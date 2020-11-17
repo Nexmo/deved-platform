@@ -12,8 +12,8 @@ published_at: 2017-01-04T17:18:08.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/01/04/extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api-dr
-redirect: https://www.nexmo.com/blog/2017/01/04/extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/01/04/extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/01/04/extending-ibm-watson-project-intu-to-the-phone-network-with-the-nexmo-voice-api-dr
 ---
 
 Content to be migrated...

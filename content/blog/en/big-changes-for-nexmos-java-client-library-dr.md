@@ -13,8 +13,8 @@ comments: true
 category: release
 tags:
   - java
-canonical: https://www.nexmo.com/blog/2017/03/23/big-changes-for-nexmos-java-client-library-dr
-redirect: https://www.nexmo.com/blog/2017/03/23/big-changes-for-nexmos-java-client-library-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/03/23/big-changes-for-nexmos-java-client-library-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/03/23/big-changes-for-nexmos-java-client-library-dr
 ---
 
 Content to be migrated...

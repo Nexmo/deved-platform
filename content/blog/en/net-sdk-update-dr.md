@@ -11,8 +11,8 @@ published_at: 2019-11-19T09:50:22.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2019/11/19/net-sdk-update-dr
-redirect: https://www.nexmo.com/blog/2019/11/19/net-sdk-update-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/11/19/net-sdk-update-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/11/19/net-sdk-update-dr
 ---
 
 Content to be migrated...

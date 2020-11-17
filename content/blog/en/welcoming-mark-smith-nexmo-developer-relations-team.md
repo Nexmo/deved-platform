@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
-redirect: https://www.nexmo.com/blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
+canonical: https://www.nexmo.com/legacy-blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
+redirect: https://www.nexmo.com/legacy-blog/2016/10/18/welcoming-mark-smith-nexmo-developer-relations-team
 ---
 
 Content to be migrated...

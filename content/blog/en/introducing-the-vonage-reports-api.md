@@ -14,8 +14,8 @@ tags:
   - node
   - python
   - reports-api
-canonical: https://www.nexmo.com/blog/2020/10/14/introducing-the-vonage-reports-api
-redirect: https://www.nexmo.com/blog/2020/10/14/introducing-the-vonage-reports-api
+canonical: https://www.nexmo.com/legacy-blog/2020/10/14/introducing-the-vonage-reports-api
+redirect: https://www.nexmo.com/legacy-blog/2020/10/14/introducing-the-vonage-reports-api
 ---
 
 Content to be migrated...

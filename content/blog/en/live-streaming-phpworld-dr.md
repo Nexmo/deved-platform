@@ -12,8 +12,8 @@ published_at: 2016-11-16T13:51:24.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2016/11/16/live-streaming-phpworld-dr
-redirect: https://www.nexmo.com/blog/2016/11/16/live-streaming-phpworld-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/11/16/live-streaming-phpworld-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/11/16/live-streaming-phpworld-dr
 ---
 
 Content to be migrated...

@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - python
   - voice-api
-canonical: https://www.nexmo.com/blog/2018/11/20/build-a-family-hotline-dr
-redirect: https://www.nexmo.com/blog/2018/11/20/build-a-family-hotline-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/11/20/build-a-family-hotline-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/11/20/build-a-family-hotline-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-02-08T19:51:08.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/02/08/send-sms-github-actions-dr
-redirect: https://www.nexmo.com/blog/2019/02/08/send-sms-github-actions-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/02/08/send-sms-github-actions-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/02/08/send-sms-github-actions-dr
 ---
 
 Content to be migrated...

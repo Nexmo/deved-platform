@@ -12,8 +12,8 @@ published_at: 2018-07-10T16:55:46.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/07/10/voice-classification-nlp-google-cloud-dr
-redirect: https://www.nexmo.com/blog/2018/07/10/voice-classification-nlp-google-cloud-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/07/10/voice-classification-nlp-google-cloud-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/07/10/voice-classification-nlp-google-cloud-dr
 ---
 
 Content to be migrated...

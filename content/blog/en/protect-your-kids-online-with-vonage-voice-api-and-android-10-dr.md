@@ -12,8 +12,8 @@ published_at: 2020-04-30T13:37:52.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10-dr
-redirect: https://www.nexmo.com/blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/30/protect-your-kids-online-with-vonage-voice-api-and-android-10-dr
 ---
 
 Content to be migrated...

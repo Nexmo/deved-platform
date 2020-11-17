@@ -12,8 +12,8 @@ published_at: 2017-10-12T16:48:15.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2017/10/12/techcrunch-disrupt-hackathon-focus-rescue
-redirect: https://www.nexmo.com/blog/2017/10/12/techcrunch-disrupt-hackathon-focus-rescue
+canonical: https://www.nexmo.com/legacy-blog/2017/10/12/techcrunch-disrupt-hackathon-focus-rescue
+redirect: https://www.nexmo.com/legacy-blog/2017/10/12/techcrunch-disrupt-hackathon-focus-rescue
 ---
 
 Content to be migrated...

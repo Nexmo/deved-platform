@@ -15,8 +15,8 @@ tags:
   - hackathon
   - health
   - wellness
-canonical: https://www.nexmo.com/blog/2018/11/29/7-wellness-tips-for-hackathons
-redirect: https://www.nexmo.com/blog/2018/11/29/7-wellness-tips-for-hackathons
+canonical: https://www.nexmo.com/legacy-blog/2018/11/29/7-wellness-tips-for-hackathons
+redirect: https://www.nexmo.com/legacy-blog/2018/11/29/7-wellness-tips-for-hackathons
 ---
 
 Content to be migrated...

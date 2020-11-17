@@ -12,8 +12,8 @@ published_at: 2017-02-06T18:17:06.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/02/06/full-voice-api-support-coming-nexmo-java-client-v2-0-dr
-redirect: https://www.nexmo.com/blog/2017/02/06/full-voice-api-support-coming-nexmo-java-client-v2-0-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/02/06/full-voice-api-support-coming-nexmo-java-client-v2-0-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/02/06/full-voice-api-support-coming-nexmo-java-client-v2-0-dr
 ---
 
 Content to be migrated...

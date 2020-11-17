@@ -12,8 +12,8 @@ published_at: 2017-07-04T15:29:57.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr
-redirect: https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr
 ---
 
 Content to be migrated...

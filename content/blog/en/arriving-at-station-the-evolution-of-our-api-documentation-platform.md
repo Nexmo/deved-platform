@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - open-api
   - station
-canonical: https://www.nexmo.com/blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform
-redirect: https://www.nexmo.com/blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform
+canonical: https://www.nexmo.com/legacy-blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform
+redirect: https://www.nexmo.com/legacy-blog/2020/09/02/arriving-at-station-the-evolution-of-our-api-documentation-platform
 ---
 
 Content to be migrated...

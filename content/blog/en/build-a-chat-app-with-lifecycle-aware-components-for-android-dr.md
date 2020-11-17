@@ -13,8 +13,8 @@ comments: true
 category: tutorial
 tags:
   - android
-canonical: https://www.nexmo.com/blog/2018/03/28/build-a-chat-app-with-lifecycle-aware-components-for-android-dr
-redirect: https://www.nexmo.com/blog/2018/03/28/build-a-chat-app-with-lifecycle-aware-components-for-android-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/03/28/build-a-chat-app-with-lifecycle-aware-components-for-android-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/03/28/build-a-chat-app-with-lifecycle-aware-components-for-android-dr
 ---
 
 Content to be migrated...

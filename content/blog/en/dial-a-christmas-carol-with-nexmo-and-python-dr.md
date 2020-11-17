@@ -12,8 +12,8 @@ published_at: 2018-12-03T21:27:21.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/03/dial-a-christmas-carol-with-nexmo-and-python-dr
-redirect: https://www.nexmo.com/blog/2018/12/03/dial-a-christmas-carol-with-nexmo-and-python-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/03/dial-a-christmas-carol-with-nexmo-and-python-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/03/dial-a-christmas-carol-with-nexmo-and-python-dr
 ---
 
 Content to be migrated...

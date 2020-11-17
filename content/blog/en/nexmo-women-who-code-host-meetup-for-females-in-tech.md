@@ -12,8 +12,8 @@ published_at: 2015-08-06T13:49:37.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
-redirect: https://www.nexmo.com/blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
+canonical: https://www.nexmo.com/legacy-blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
+redirect: https://www.nexmo.com/legacy-blog/2015/08/06/nexmo-women-who-code-host-meetup-for-females-in-tech
 ---
 
 Content to be migrated...

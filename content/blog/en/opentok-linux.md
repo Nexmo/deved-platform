@@ -12,8 +12,8 @@ published_at: 2019-08-14T21:43:11.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/08/14/opentok-linux
-redirect: https://www.nexmo.com/blog/2019/08/14/opentok-linux
+canonical: https://www.nexmo.com/legacy-blog/2019/08/14/opentok-linux
+redirect: https://www.nexmo.com/legacy-blog/2019/08/14/opentok-linux
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2016-05-03T11:23:28.000Z
 comments: true
 category: devlife
 tags: []
-canonical: https://www.nexmo.com/blog/2016/05/03/developer-relations-at-nexmo
-redirect: https://www.nexmo.com/blog/2016/05/03/developer-relations-at-nexmo
+canonical: https://www.nexmo.com/legacy-blog/2016/05/03/developer-relations-at-nexmo
+redirect: https://www.nexmo.com/legacy-blog/2016/05/03/developer-relations-at-nexmo
 ---
 
 Content to be migrated...

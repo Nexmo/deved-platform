@@ -11,8 +11,8 @@ published_at: 2018-12-12T15:43:05.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/12/real-time-number-insight-dashboard-dr
-redirect: https://www.nexmo.com/blog/2018/12/12/real-time-number-insight-dashboard-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/12/real-time-number-insight-dashboard-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/12/real-time-number-insight-dashboard-dr
 ---
 
 Content to be migrated...

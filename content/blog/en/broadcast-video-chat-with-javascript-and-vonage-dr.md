@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - javascript
   - video-api
-canonical: https://www.nexmo.com/blog/2020/05/14/broadcast-video-chat-with-javascript-and-vonage-dr
-redirect: https://www.nexmo.com/blog/2020/05/14/broadcast-video-chat-with-javascript-and-vonage-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/05/14/broadcast-video-chat-with-javascript-and-vonage-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/05/14/broadcast-video-chat-with-javascript-and-vonage-dr
 ---
 
 Content to be migrated...

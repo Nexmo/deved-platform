@@ -12,8 +12,8 @@ published_at: 2019-08-21T16:27:57.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/08/21/incident-reporting-with-pagerduty-and-nexmo-dr
-redirect: https://www.nexmo.com/blog/2019/08/21/incident-reporting-with-pagerduty-and-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/08/21/incident-reporting-with-pagerduty-and-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/08/21/incident-reporting-with-pagerduty-and-nexmo-dr
 ---
 
 Content to be migrated...

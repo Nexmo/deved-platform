@@ -12,8 +12,8 @@ published_at: 2019-04-03T07:46:45.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/04/03/snapchat-filters-opentok-tracking-js-dr
-redirect: https://www.nexmo.com/blog/2019/04/03/snapchat-filters-opentok-tracking-js-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/04/03/snapchat-filters-opentok-tracking-js-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/04/03/snapchat-filters-opentok-tracking-js-dr
 ---
 
 Content to be migrated...

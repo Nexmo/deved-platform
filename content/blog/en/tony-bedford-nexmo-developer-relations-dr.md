@@ -12,8 +12,8 @@ published_at: 2018-07-11T11:27:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/07/11/tony-bedford-nexmo-developer-relations-dr
-redirect: https://www.nexmo.com/blog/2018/07/11/tony-bedford-nexmo-developer-relations-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/07/11/tony-bedford-nexmo-developer-relations-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/07/11/tony-bedford-nexmo-developer-relations-dr
 ---
 
 Content to be migrated...

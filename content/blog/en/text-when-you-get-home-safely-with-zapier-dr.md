@@ -11,8 +11,8 @@ published_at: 2020-04-09T12:00:45.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/09/text-when-you-get-home-safely-with-zapier-dr
-redirect: https://www.nexmo.com/blog/2020/04/09/text-when-you-get-home-safely-with-zapier-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/09/text-when-you-get-home-safely-with-zapier-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/09/text-when-you-get-home-safely-with-zapier-dr
 ---
 
 Content to be migrated...

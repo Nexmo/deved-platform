@@ -14,8 +14,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2016/12/05/welcome-newest-developer-advocate-nexmo-devrel-team-chris-guzman-dr
-redirect: https://www.nexmo.com/blog/2016/12/05/welcome-newest-developer-advocate-nexmo-devrel-team-chris-guzman-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/12/05/welcome-newest-developer-advocate-nexmo-devrel-team-chris-guzman-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/12/05/welcome-newest-developer-advocate-nexmo-devrel-team-chris-guzman-dr
 ---
 
 Content to be migrated...

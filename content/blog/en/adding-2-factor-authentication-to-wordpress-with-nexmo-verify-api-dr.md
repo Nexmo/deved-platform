@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - verify-api
   - wordpress
-canonical: https://www.nexmo.com/blog/2019/10/09/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr
-redirect: https://www.nexmo.com/blog/2019/10/09/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/10/09/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/10/09/adding-2-factor-authentication-to-wordpress-with-nexmo-verify-api-dr
 ---
 
 Content to be migrated...

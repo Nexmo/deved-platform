@@ -11,8 +11,8 @@ published_at: 2018-02-28T14:58:49.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2018/02/28/nexmo-dotnet-client-library-new-release-dr
-redirect: https://www.nexmo.com/blog/2018/02/28/nexmo-dotnet-client-library-new-release-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/02/28/nexmo-dotnet-client-library-new-release-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/02/28/nexmo-dotnet-client-library-new-release-dr
 ---
 
 Content to be migrated...

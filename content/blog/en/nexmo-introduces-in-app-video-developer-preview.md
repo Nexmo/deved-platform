@@ -12,8 +12,8 @@ published_at: 2018-07-24T16:00:23.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2018/07/24/nexmo-introduces-in-app-video-developer-preview
-redirect: https://www.nexmo.com/blog/2018/07/24/nexmo-introduces-in-app-video-developer-preview
+canonical: https://www.nexmo.com/legacy-blog/2018/07/24/nexmo-introduces-in-app-video-developer-preview
+redirect: https://www.nexmo.com/legacy-blog/2018/07/24/nexmo-introduces-in-app-video-developer-preview
 ---
 
 Content to be migrated...

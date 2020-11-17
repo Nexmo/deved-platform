@@ -12,8 +12,8 @@ published_at: 2016-08-10T22:34:18.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
-redirect: https://www.nexmo.com/blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/08/10/securing-asp-net-app-2fa-using-nexmo-sms-sendgrid-email-dr
 ---
 
 Content to be migrated...

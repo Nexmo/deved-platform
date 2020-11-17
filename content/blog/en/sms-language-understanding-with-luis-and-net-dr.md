@@ -11,8 +11,8 @@ published_at: 2020-04-09T13:05:33.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/09/sms-language-understanding-with-luis-and-net-dr
-redirect: https://www.nexmo.com/blog/2020/04/09/sms-language-understanding-with-luis-and-net-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/09/sms-language-understanding-with-luis-and-net-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/09/sms-language-understanding-with-luis-and-net-dr
 ---
 
 Content to be migrated...

@@ -13,8 +13,8 @@ category: tutorial
 tags:
   - php
   - sms-api
-canonical: https://www.nexmo.com/blog/2018/09/18/anything-to-sms-ifttt-nexmo-dr
-redirect: https://www.nexmo.com/blog/2018/09/18/anything-to-sms-ifttt-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/09/18/anything-to-sms-ifttt-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/09/18/anything-to-sms-ifttt-nexmo-dr
 ---
 
 Content to be migrated...

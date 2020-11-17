@@ -13,8 +13,8 @@ category: tutorial
 tags:
   - ruby-on-rails
   - voice-api
-canonical: https://www.nexmo.com/blog/2019/06/17/build-a-voicemail-with-ruby-on-rails-dr
-redirect: https://www.nexmo.com/blog/2019/06/17/build-a-voicemail-with-ruby-on-rails-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/06/17/build-a-voicemail-with-ruby-on-rails-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/06/17/build-a-voicemail-with-ruby-on-rails-dr
 ---
 
 Content to be migrated...

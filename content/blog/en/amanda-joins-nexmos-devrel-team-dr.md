@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2017/07/06/amanda-joins-nexmos-devrel-team-dr
-redirect: https://www.nexmo.com/blog/2017/07/06/amanda-joins-nexmos-devrel-team-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/07/06/amanda-joins-nexmos-devrel-team-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/07/06/amanda-joins-nexmos-devrel-team-dr
 ---
 
 Content to be migrated...

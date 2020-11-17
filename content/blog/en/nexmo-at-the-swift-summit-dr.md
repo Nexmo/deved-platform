@@ -12,8 +12,8 @@ published_at: 2017-11-08T19:17:56.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2017/11/08/nexmo-at-the-swift-summit-dr
-redirect: https://www.nexmo.com/blog/2017/11/08/nexmo-at-the-swift-summit-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/11/08/nexmo-at-the-swift-summit-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/11/08/nexmo-at-the-swift-summit-dr
 ---
 
 Content to be migrated...

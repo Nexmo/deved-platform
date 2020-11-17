@@ -10,7 +10,7 @@ published_at: 2017-12-21T17:23:30
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/12/21/handle-inbound-phone-calls-ruby-rails-dr
-redirect: https://www.nexmo.com/blog/2017/12/21/handle-inbound-phone-calls-ruby-rails-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/12/21/handle-inbound-phone-calls-ruby-rails-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/12/21/handle-inbound-phone-calls-ruby-rails-dr
 ---
 Content to be migrated...

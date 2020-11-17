@@ -12,8 +12,8 @@ published_at: 2019-07-18T08:00:33.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/07/18/dial-ynab-dr
-redirect: https://www.nexmo.com/blog/2019/07/18/dial-ynab-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/07/18/dial-ynab-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/07/18/dial-ynab-dr
 ---
 
 Content to be migrated...

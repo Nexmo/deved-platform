@@ -12,8 +12,8 @@ published_at: 2018-10-10T13:01:50.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2018/10/10/nexmo-messages-dispatch-apis-dr
-redirect: https://www.nexmo.com/blog/2018/10/10/nexmo-messages-dispatch-apis-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/10/10/nexmo-messages-dispatch-apis-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/10/10/nexmo-messages-dispatch-apis-dr
 ---
 
 Content to be migrated...

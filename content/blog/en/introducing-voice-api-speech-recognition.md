@@ -12,8 +12,8 @@ published_at: 2020-06-02T14:03:46.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2020/06/02/introducing-voice-api-speech-recognition
-redirect: https://www.nexmo.com/blog/2020/06/02/introducing-voice-api-speech-recognition
+canonical: https://www.nexmo.com/legacy-blog/2020/06/02/introducing-voice-api-speech-recognition
+redirect: https://www.nexmo.com/legacy-blog/2020/06/02/introducing-voice-api-speech-recognition
 ---
 
 Content to be migrated...

@@ -13,8 +13,8 @@ category: tutorial
 tags:
   - android
   - firebase
-canonical: https://www.nexmo.com/blog/2018/09/25/a-strawberry-or-not-classify-an-image-with-mlkit-for-android-dr
-redirect: https://www.nexmo.com/blog/2018/09/25/a-strawberry-or-not-classify-an-image-with-mlkit-for-android-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/09/25/a-strawberry-or-not-classify-an-image-with-mlkit-for-android-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/09/25/a-strawberry-or-not-classify-an-image-with-mlkit-for-android-dr
 ---
 
 Content to be migrated...

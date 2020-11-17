@@ -13,8 +13,8 @@ published_at: 2018-12-06T17:29:19.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/06/nearest-postbox-with-node-js-nexmo-messages-api-dr
-redirect: https://www.nexmo.com/blog/2018/12/06/nearest-postbox-with-node-js-nexmo-messages-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/06/nearest-postbox-with-node-js-nexmo-messages-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/06/nearest-postbox-with-node-js-nexmo-messages-api-dr
 ---
 
 Content to be migrated...

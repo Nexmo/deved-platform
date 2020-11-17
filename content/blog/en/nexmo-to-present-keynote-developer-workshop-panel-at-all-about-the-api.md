@@ -12,8 +12,8 @@ published_at: 2016-07-12T14:12:12.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2016/07/12/nexmo-to-present-keynote-developer-workshop-panel-at-all-about-the-api
-redirect: https://www.nexmo.com/blog/2016/07/12/nexmo-to-present-keynote-developer-workshop-panel-at-all-about-the-api
+canonical: https://www.nexmo.com/legacy-blog/2016/07/12/nexmo-to-present-keynote-developer-workshop-panel-at-all-about-the-api
+redirect: https://www.nexmo.com/legacy-blog/2016/07/12/nexmo-to-present-keynote-developer-workshop-panel-at-all-about-the-api
 ---
 
 Content to be migrated...

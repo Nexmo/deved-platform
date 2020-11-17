@@ -11,8 +11,8 @@ published_at: 2016-06-29T10:30:23.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2016/06/29/introducing-the-nexmo-command-line-interface-cli
-redirect: https://www.nexmo.com/blog/2016/06/29/introducing-the-nexmo-command-line-interface-cli
+canonical: https://www.nexmo.com/legacy-blog/2016/06/29/introducing-the-nexmo-command-line-interface-cli
+redirect: https://www.nexmo.com/legacy-blog/2016/06/29/introducing-the-nexmo-command-line-interface-cli
 ---
 
 Content to be migrated...

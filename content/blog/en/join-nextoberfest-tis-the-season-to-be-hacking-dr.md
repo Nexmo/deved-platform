@@ -12,8 +12,8 @@ published_at: 2018-10-09T15:23:17.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr
-redirect: https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr
 ---
 
 Content to be migrated...

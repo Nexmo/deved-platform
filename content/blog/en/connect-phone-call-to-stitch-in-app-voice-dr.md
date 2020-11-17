@@ -12,8 +12,8 @@ published_at: 2018-05-14T03:00:00.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/05/13/connect-phone-call-to-stitch-in-app-voice-dr
-redirect: https://www.nexmo.com/blog/2018/05/13/connect-phone-call-to-stitch-in-app-voice-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/05/13/connect-phone-call-to-stitch-in-app-voice-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/05/13/connect-phone-call-to-stitch-in-app-voice-dr
 ---
 
 Content to be migrated...

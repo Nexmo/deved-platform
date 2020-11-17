@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - ai
   - chatbots
-canonical: https://www.nexmo.com/blog/2017/09/14/ai-bot-messaging-push-notifications-sms-dr
-redirect: https://www.nexmo.com/blog/2017/09/14/ai-bot-messaging-push-notifications-sms-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/09/14/ai-bot-messaging-push-notifications-sms-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/09/14/ai-bot-messaging-push-notifications-sms-dr
 ---
 
 Content to be migrated...

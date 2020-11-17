@@ -12,8 +12,8 @@ published_at: 2020-03-05T09:00:44.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/05/save-received-sms-messages-with-airtable-and-node-js-dr
-redirect: https://www.nexmo.com/blog/2020/03/05/save-received-sms-messages-with-airtable-and-node-js-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/03/05/save-received-sms-messages-with-airtable-and-node-js-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/03/05/save-received-sms-messages-with-airtable-and-node-js-dr
 ---
 
 Content to be migrated...

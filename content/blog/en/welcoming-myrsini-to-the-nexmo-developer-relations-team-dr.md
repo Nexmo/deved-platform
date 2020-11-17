@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
-redirect: https://www.nexmo.com/blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/08/27/welcoming-myrsini-to-the-nexmo-developer-relations-team-dr
 ---
 
 Content to be migrated...

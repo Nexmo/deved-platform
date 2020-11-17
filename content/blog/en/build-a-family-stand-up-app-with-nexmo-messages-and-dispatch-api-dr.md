@@ -15,8 +15,8 @@ tags:
   - glitch
   - dispatch-api
   - messages-api
-canonical: https://www.nexmo.com/blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
-redirect: https://www.nexmo.com/blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/09/18/build-a-family-stand-up-app-with-nexmo-messages-and-dispatch-api-dr
 ---
 
 Content to be migrated...

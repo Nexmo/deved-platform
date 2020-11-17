@@ -12,8 +12,8 @@ published_at: 2020-01-03T18:44:28.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/01/03/use-python-and-flask-to-manage-queues-via-sms-dr
-redirect: https://www.nexmo.com/blog/2020/01/03/use-python-and-flask-to-manage-queues-via-sms-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/03/use-python-and-flask-to-manage-queues-via-sms-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/03/use-python-and-flask-to-manage-queues-via-sms-dr
 ---
 
 Content to be migrated...

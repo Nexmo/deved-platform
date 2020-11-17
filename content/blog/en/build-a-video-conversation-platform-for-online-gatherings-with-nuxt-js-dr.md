@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - nuxt
   - video-api
-canonical: https://www.nexmo.com/blog/2020/04/08/build-a-video-conversation-platform-for-online-gatherings-with-nuxt-js-dr
-redirect: https://www.nexmo.com/blog/2020/04/08/build-a-video-conversation-platform-for-online-gatherings-with-nuxt-js-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/08/build-a-video-conversation-platform-for-online-gatherings-with-nuxt-js-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/08/build-a-video-conversation-platform-for-online-gatherings-with-nuxt-js-dr
 ---
 
 Content to be migrated...

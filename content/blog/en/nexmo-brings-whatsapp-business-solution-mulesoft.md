@@ -12,8 +12,8 @@ published_at: 2018-09-26T15:45:31.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2018/09/26/nexmo-brings-whatsapp-business-solution-mulesoft
-redirect: https://www.nexmo.com/blog/2018/09/26/nexmo-brings-whatsapp-business-solution-mulesoft
+canonical: https://www.nexmo.com/legacy-blog/2018/09/26/nexmo-brings-whatsapp-business-solution-mulesoft
+redirect: https://www.nexmo.com/legacy-blog/2018/09/26/nexmo-brings-whatsapp-business-solution-mulesoft
 ---
 
 Content to be migrated...

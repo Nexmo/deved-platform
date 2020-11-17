@@ -16,8 +16,8 @@ tags:
   - aws
   - php
   - voice-api
-canonical: https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr
-redirect: https://www.nexmo.com/blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/02/14/aws-transcribe-with-nexmo-voice-using-php-dr
 ---
 
 Content to be migrated...

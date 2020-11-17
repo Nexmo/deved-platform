@@ -13,8 +13,8 @@ published_at: 2015-03-06T03:24:34.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users
-redirect: https://www.nexmo.com/blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users
+canonical: https://www.nexmo.com/legacy-blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users
+redirect: https://www.nexmo.com/legacy-blog/2015/03/05/how-to-build-sms-2fa-that-wont-scare-away-your-users
 ---
 
 Content to be migrated...

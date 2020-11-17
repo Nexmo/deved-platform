@@ -12,8 +12,8 @@ published_at: 2020-03-03T12:51:07.000Z
 comments: true
 category: community
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/03/running-off-sites-remote-teams-dr
-redirect: https://www.nexmo.com/blog/2020/03/03/running-off-sites-remote-teams-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/03/03/running-off-sites-remote-teams-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/03/03/running-off-sites-remote-teams-dr
 ---
 
 Content to be migrated...

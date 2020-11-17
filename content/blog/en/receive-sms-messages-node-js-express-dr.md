@@ -12,8 +12,8 @@ published_at: 2016-10-27T18:35:15.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/10/27/receive-sms-messages-node-js-express-dr
-redirect: https://www.nexmo.com/blog/2016/10/27/receive-sms-messages-node-js-express-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/10/27/receive-sms-messages-node-js-express-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/10/27/receive-sms-messages-node-js-express-dr
 ---
 
 Content to be migrated...

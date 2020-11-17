@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - node
   - video-api
-canonical: https://www.nexmo.com/blog/2020/03/30/basic-video-chat
-redirect: https://www.nexmo.com/blog/2020/03/30/basic-video-chat
+canonical: https://www.nexmo.com/legacy-blog/2020/03/30/basic-video-chat
+redirect: https://www.nexmo.com/legacy-blog/2020/03/30/basic-video-chat
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-09-13T08:00:46.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/09/13/evaluate-apis-quickly-and-easily-with-openapi-dr
-redirect: https://www.nexmo.com/blog/2019/09/13/evaluate-apis-quickly-and-easily-with-openapi-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/09/13/evaluate-apis-quickly-and-easily-with-openapi-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/09/13/evaluate-apis-quickly-and-easily-with-openapi-dr
 ---
 
 Content to be migrated...

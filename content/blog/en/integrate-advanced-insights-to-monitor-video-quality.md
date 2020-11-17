@@ -12,8 +12,8 @@ published_at: 2020-06-30T13:39:26.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/06/30/integrate-advanced-insights-to-monitor-video-quality
-redirect: https://www.nexmo.com/blog/2020/06/30/integrate-advanced-insights-to-monitor-video-quality
+canonical: https://www.nexmo.com/legacy-blog/2020/06/30/integrate-advanced-insights-to-monitor-video-quality
+redirect: https://www.nexmo.com/legacy-blog/2020/06/30/integrate-advanced-insights-to-monitor-video-quality
 ---
 
 Content to be migrated...

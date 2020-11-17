@@ -11,8 +11,8 @@ published_at: 2020-07-01T13:55:12.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/01/learn-and-apply-xstate-with-vonage-video
-redirect: https://www.nexmo.com/blog/2020/07/01/learn-and-apply-xstate-with-vonage-video
+canonical: https://www.nexmo.com/legacy-blog/2020/07/01/learn-and-apply-xstate-with-vonage-video
+redirect: https://www.nexmo.com/legacy-blog/2020/07/01/learn-and-apply-xstate-with-vonage-video
 ---
 
 Content to be migrated...

@@ -11,8 +11,8 @@ published_at: 2020-05-13T13:26:24.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/05/13/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-2-building-the-frontend-dr
-redirect: https://www.nexmo.com/blog/2020/05/13/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-2-building-the-frontend-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/05/13/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-2-building-the-frontend-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/05/13/create-a-party-with-ruby-on-rails-and-the-vonage-video-api-part-2-building-the-frontend-dr
 ---
 
 Content to be migrated...

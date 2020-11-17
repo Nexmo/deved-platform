@@ -12,8 +12,8 @@ published_at: 2020-07-21T13:29:30.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/21/create-a-code-of-conduct-incident-line-with-node-js
-redirect: https://www.nexmo.com/blog/2020/07/21/create-a-code-of-conduct-incident-line-with-node-js
+canonical: https://www.nexmo.com/legacy-blog/2020/07/21/create-a-code-of-conduct-incident-line-with-node-js
+redirect: https://www.nexmo.com/legacy-blog/2020/07/21/create-a-code-of-conduct-incident-line-with-node-js
 ---
 
 Content to be migrated...

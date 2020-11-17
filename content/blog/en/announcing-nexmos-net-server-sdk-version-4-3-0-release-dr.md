@@ -13,8 +13,8 @@ comments: true
 category: release
 tags:
   - dotnet
-canonical: https://www.nexmo.com/blog/2020/01/15/announcing-nexmos-net-server-sdk-version-4-3-0-release-dr
-redirect: https://www.nexmo.com/blog/2020/01/15/announcing-nexmos-net-server-sdk-version-4-3-0-release-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/15/announcing-nexmos-net-server-sdk-version-4-3-0-release-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/15/announcing-nexmos-net-server-sdk-version-4-3-0-release-dr
 ---
 
 Content to be migrated...

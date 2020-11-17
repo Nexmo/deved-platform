@@ -12,8 +12,8 @@ published_at: 2020-07-28T13:27:54.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/28/how-to-receive-sms-delivery-receipts-with-asp-net-core-mvc-dr
-redirect: https://www.nexmo.com/blog/2020/07/28/how-to-receive-sms-delivery-receipts-with-asp-net-core-mvc-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/07/28/how-to-receive-sms-delivery-receipts-with-asp-net-core-mvc-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/07/28/how-to-receive-sms-delivery-receipts-with-asp-net-core-mvc-dr
 ---
 
 Content to be migrated...

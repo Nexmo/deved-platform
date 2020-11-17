@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2019/06/13/fabian-joins-the-nexmo-developer-experience-team-dr
-redirect: https://www.nexmo.com/blog/2019/06/13/fabian-joins-the-nexmo-developer-experience-team-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/06/13/fabian-joins-the-nexmo-developer-experience-team-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/06/13/fabian-joins-the-nexmo-developer-experience-team-dr
 ---
 
 Content to be migrated...

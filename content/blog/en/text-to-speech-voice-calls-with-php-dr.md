@@ -12,8 +12,8 @@ tags:
   - php
   - voice-api
 comments: true
-redirect: https://www.nexmo.com/blog/2017/10/20/text-to-speech-voice-calls-with-php-dr
-canonical: https://www.nexmo.com/blog/2017/10/20/text-to-speech-voice-calls-with-php-dr
+redirect: ""
+canonical: ""
 ---
 For years, making and receiving phone calls in your code was tough to do (and usually involved writing some Java and plugging an old phone into your laptop to serve as a gateway!). Fortunately, it's not nearly as hard today thanks to services such as [Vonage](https://developer.nexmo.com/) ([Formerly Nexmo](https://twitter.com/VonageDev/status/1237835302200389633)).
 

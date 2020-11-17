@@ -14,8 +14,8 @@ comments: true
 category: tutorial
 tags:
   - bots
-canonical: https://www.nexmo.com/blog/2017/11/16/bots-ai-personal-assistants-voice-assistants
-redirect: https://www.nexmo.com/blog/2017/11/16/bots-ai-personal-assistants-voice-assistants
+canonical: https://www.nexmo.com/legacy-blog/2017/11/16/bots-ai-personal-assistants-voice-assistants
+redirect: https://www.nexmo.com/legacy-blog/2017/11/16/bots-ai-personal-assistants-voice-assistants
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2016-08-03T10:16:49.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2016/08/03/nexmo-tilda-emf-camp-badge
-redirect: https://www.nexmo.com/blog/2016/08/03/nexmo-tilda-emf-camp-badge
+canonical: https://www.nexmo.com/legacy-blog/2016/08/03/nexmo-tilda-emf-camp-badge
+redirect: https://www.nexmo.com/legacy-blog/2016/08/03/nexmo-tilda-emf-camp-badge
 ---
 
 Content to be migrated...

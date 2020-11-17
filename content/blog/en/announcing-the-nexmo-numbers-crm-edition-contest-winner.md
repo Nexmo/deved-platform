@@ -13,8 +13,8 @@ comments: true
 category: community
 tags:
   - contest
-canonical: https://www.nexmo.com/blog/2015/04/17/announcing-the-nexmo-numbers-crm-edition-contest-winner
-redirect: https://www.nexmo.com/blog/2015/04/17/announcing-the-nexmo-numbers-crm-edition-contest-winner
+canonical: https://www.nexmo.com/legacy-blog/2015/04/17/announcing-the-nexmo-numbers-crm-edition-contest-winner
+redirect: https://www.nexmo.com/legacy-blog/2015/04/17/announcing-the-nexmo-numbers-crm-edition-contest-winner
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2016-05-04T20:29:12.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/05/04/ruby-gem
-redirect: https://www.nexmo.com/blog/2016/05/04/ruby-gem
+canonical: https://www.nexmo.com/legacy-blog/2016/05/04/ruby-gem
+redirect: https://www.nexmo.com/legacy-blog/2016/05/04/ruby-gem
 ---
 
 Content to be migrated...

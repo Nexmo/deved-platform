@@ -12,8 +12,8 @@ published_at: 2017-07-28T13:13:24.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/07/28/text-to-speech-phone-call-dr
-redirect: https://www.nexmo.com/blog/2017/07/28/text-to-speech-phone-call-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/07/28/text-to-speech-phone-call-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/07/28/text-to-speech-phone-call-dr
 ---
 
 Content to be migrated...

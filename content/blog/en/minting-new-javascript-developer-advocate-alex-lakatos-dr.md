@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
-redirect: https://www.nexmo.com/blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/06/05/minting-new-javascript-developer-advocate-alex-lakatos-dr
 ---
 
 Content to be migrated...

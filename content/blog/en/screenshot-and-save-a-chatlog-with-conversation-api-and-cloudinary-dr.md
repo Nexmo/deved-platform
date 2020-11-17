@@ -12,8 +12,8 @@ published_at: 2019-11-29T13:50:18.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/11/29/screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary-dr
-redirect: https://www.nexmo.com/blog/2019/11/29/screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/11/29/screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/11/29/screenshot-and-save-a-chatlog-with-conversation-api-and-cloudinary-dr
 ---
 
 Content to be migrated...

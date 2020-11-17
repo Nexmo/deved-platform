@@ -11,8 +11,8 @@ published_at: 2019-08-09T15:13:23.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/08/09/forward-telephone-call-voice-proxy-python-starlette-dr
-redirect: https://www.nexmo.com/blog/2019/08/09/forward-telephone-call-voice-proxy-python-starlette-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/08/09/forward-telephone-call-voice-proxy-python-starlette-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/08/09/forward-telephone-call-voice-proxy-python-starlette-dr
 ---
 
 Content to be migrated...

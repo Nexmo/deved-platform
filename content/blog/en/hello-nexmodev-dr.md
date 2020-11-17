@@ -12,8 +12,8 @@ published_at: 2017-09-14T12:42:54.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2017/09/14/hello-nexmodev-dr
-redirect: https://www.nexmo.com/blog/2017/09/14/hello-nexmodev-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/09/14/hello-nexmodev-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/09/14/hello-nexmodev-dr
 ---
 
 Content to be migrated...

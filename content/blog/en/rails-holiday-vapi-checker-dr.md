@@ -13,8 +13,8 @@ published_at: 2019-02-27T11:15:05.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/02/27/rails-holiday-vapi-checker-dr
-redirect: https://www.nexmo.com/blog/2019/02/27/rails-holiday-vapi-checker-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/02/27/rails-holiday-vapi-checker-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/02/27/rails-holiday-vapi-checker-dr
 ---
 
 Content to be migrated...

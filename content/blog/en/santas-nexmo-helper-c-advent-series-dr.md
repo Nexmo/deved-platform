@@ -11,8 +11,8 @@ published_at: 2019-12-19T09:01:01.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/12/19/santas-nexmo-helper-c-advent-series-dr
-redirect: https://www.nexmo.com/blog/2019/12/19/santas-nexmo-helper-c-advent-series-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/12/19/santas-nexmo-helper-c-advent-series-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/12/19/santas-nexmo-helper-c-advent-series-dr
 ---
 
 Content to be migrated...

@@ -11,8 +11,8 @@ published_at: 2015-05-12T17:08:04.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2015/05/12/nexmo-disrupting-nyc
-redirect: https://www.nexmo.com/blog/2015/05/12/nexmo-disrupting-nyc
+canonical: https://www.nexmo.com/legacy-blog/2015/05/12/nexmo-disrupting-nyc
+redirect: https://www.nexmo.com/legacy-blog/2015/05/12/nexmo-disrupting-nyc
 ---
 
 Content to be migrated...
