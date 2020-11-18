@@ -37,13 +37,17 @@ This tutorial requires Ruby v2.7 or higher to be installed on your machine. Also
 
 We can now move on to begin our application implementation.
 
-<sign-up number></sign-up>
+## Vonage API Account
+
+<sign-up></sign-up>
+
+This tutorial also uses a virtual phone number. To purchase one, go to *Numbers > [Buy Numbers](https://dashboard.nexmo.com/buy-numbers)* and search for one that meets your needs. 
 
 Our last step in setting up our API account is to create a Voice API Application. We will link the virtual phone number we provisioned to this application and set the webhook URLs.
 
 From the Vonage API Dashboard navigate to *Your applications* and click on *Create a new application*. This will present you with the following page:
 
-![Dashboard Create Application](/content/blog/record-a-call-in-ruby-with-vonage-voice-api-websockets/create_application.png "Dashboard Create Application")
+![Dashboard Create Application](https://www.nexmo.com/wp-content/uploads/2020/08/create_application.png "Dashboard Create Application")
 
 The key areas to focus on to create your application are highlighted in purple:
 
@@ -59,7 +63,7 @@ Like before, navigate to *Your applications* in the Dashboard, click on the elli
 
 Within the *Capabiltiies* section of the page you will see the following options:
 
-![Application Webhook URL settings](/content/blog/record-a-call-in-ruby-with-vonage-voice-api-websockets/voice_app_url_settings.png "Application Webhook URL settings")
+![Application Webhook URL settings](https://www.nexmo.com/wp-content/uploads/2020/08/voice_app_url_settings.png "Application Webhook URL settings")
 
 We need to fill out the *Event URL* and the *Answer URL*. The former is where Vonage will send all the event lifecycle data of the voice call to. The latter is where Vonage will send each new voice call to when it is initiated. The URLs provided here must be externally accessible so that Vonage can reach them. In other words, using `localhost` does not work. A popular development option is ngrok, and you can follow [our tutorial](https://developer.nexmo.com/tools/ngrok) on working with it.
 
