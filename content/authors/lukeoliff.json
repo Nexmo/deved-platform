@@ -1,12 +1,16 @@
 {
-  "team": true,
+  "twitch_url": "https://twitch.tv/lukeocodes",
   "bio": "Friendly tech educator, family man, diversity champion, probably argue a bit too much. Formerly a backend engineer. Talk to me about JavaScript (frontend or backend), the amazing Vue.js, DevOps, DevSecOps, anything JamStack. Writer on DEV.to",
   "image_url": "https://github.com/lukeocodes.png",
   "name": "Luke Oliff",
+  "website_url": "https://lukeocodes.dev",
+  "linkedin_url": "https://www.linkedin.com/in/lukeocodes/",
   "twitter": "lukeocodes",
   "github_url": "https://twitter.com/lukeocodes",
-  "facebook_url": "https://twitter.com/lukeocodes",
+  "facebook_url": "https://facebook.com/lukeocodes",
   "username": "lukeoliff",
   "title": "Vonage Developer Educator",
-  "email": "luke.oliff@vonage.com"
+  "stackoverflow_url": "https://stackoverflow.com/users/2114771/lukeocodes",
+  "email": "luke.oliff@vonage.com",
+  "team": true
 }
