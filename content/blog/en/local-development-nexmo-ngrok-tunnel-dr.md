@@ -1,6 +1,6 @@
 ---
-title: Connect Your Local Development Server to the Nexmo API Using an Ngrok Tunnel
-description: How to easily develop with the Nexmo API and inbound web hooks on
+title: Connect Your Local Development Server to the Vonage API Using an Ngrok Tunnel
+description: How to easily develop with the Vonage API and inbound web hooks on
   your local server using ngrok and a secure tunnel to your local development
   environment.
 thumbnail: /content/blog/local-development-nexmo-ngrok-tunnel-dr/nexmo-ngrok-tunnel.jpg
