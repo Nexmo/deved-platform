@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/Nexmo/deved-platform/compare/v1.7.0...v1.7.1) (2020-11-19)
+
+
+### Bug Fixes
+
+* remove query strings and anchor links from breadcrumbs ([c86aaff](https://github.com/Nexmo/deved-platform/commit/c86aaff94bb4cfde69685b5209bf97947f8f0cca))
+
 # [1.7.0](https://github.com/Nexmo/deved-platform/compare/v1.6.0...v1.7.0) (2020-11-13)
 
 
