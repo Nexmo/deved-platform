@@ -2,7 +2,7 @@
 title: " SMS Spam Detection with Machine Learning in Python"
 description: Use Python to build a machine learning model for detecting spam SMS
   messages and incorporate the model into Flask application.
-author: zachwalchuk
+author: aboze-brain-john
 published: true
 published_at: 2020-11-18T21:08:12.568Z
 updated_at: 2020-11-18T21:08:12.589Z
