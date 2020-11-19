@@ -12,8 +12,8 @@ published_at: 2019-02-21T17:16:35.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2019/02/21/nexmo-node-red-package-dr
-redirect: https://www.nexmo.com/blog/2019/02/21/nexmo-node-red-package-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/02/21/nexmo-node-red-package-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/02/21/nexmo-node-red-package-dr
 ---
 
 Content to be migrated...

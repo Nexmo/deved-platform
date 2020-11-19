@@ -12,8 +12,8 @@ published_at: 2018-12-13T16:39:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/13/sms-bot-glitch-hapi-js-nexmo-messages-api-dr
-redirect: https://www.nexmo.com/blog/2018/12/13/sms-bot-glitch-hapi-js-nexmo-messages-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/13/sms-bot-glitch-hapi-js-nexmo-messages-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/13/sms-bot-glitch-hapi-js-nexmo-messages-api-dr
 ---
 
 Content to be migrated...

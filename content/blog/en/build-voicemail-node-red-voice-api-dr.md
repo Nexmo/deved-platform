@@ -12,8 +12,8 @@ published_at: 2019-11-14T12:54:36.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/11/14/build-voicemail-node-red-voice-api-dr
-redirect: https://www.nexmo.com/blog/2019/11/14/build-voicemail-node-red-voice-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/11/14/build-voicemail-node-red-voice-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/11/14/build-voicemail-node-red-voice-api-dr
 ---
 
 Content to be migrated...

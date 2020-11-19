@@ -12,8 +12,8 @@ published_at: 2019-07-02T20:58:34.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2019/07/02/opentok-v2-16-new-release
-redirect: https://www.nexmo.com/blog/2019/07/02/opentok-v2-16-new-release
+canonical: https://www.nexmo.com/legacy-blog/2019/07/02/opentok-v2-16-new-release
+redirect: https://www.nexmo.com/legacy-blog/2019/07/02/opentok-v2-16-new-release
 ---
 
 Content to be migrated...

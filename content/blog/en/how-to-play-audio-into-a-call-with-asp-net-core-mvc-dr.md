@@ -12,8 +12,8 @@ published_at: 2020-08-07T13:30:55.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/08/07/how-to-play-audio-into-a-call-with-asp-net-core-mvc-dr
-redirect: https://www.nexmo.com/blog/2020/08/07/how-to-play-audio-into-a-call-with-asp-net-core-mvc-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/08/07/how-to-play-audio-into-a-call-with-asp-net-core-mvc-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/08/07/how-to-play-audio-into-a-call-with-asp-net-core-mvc-dr
 ---
 
 Content to be migrated...

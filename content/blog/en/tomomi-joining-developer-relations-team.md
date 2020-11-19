@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2016/08/31/tomomi-joining-developer-relations-team
-redirect: https://www.nexmo.com/blog/2016/08/31/tomomi-joining-developer-relations-team
+canonical: https://www.nexmo.com/legacy-blog/2016/08/31/tomomi-joining-developer-relations-team
+redirect: https://www.nexmo.com/legacy-blog/2016/08/31/tomomi-joining-developer-relations-team
 ---
 
 Content to be migrated...

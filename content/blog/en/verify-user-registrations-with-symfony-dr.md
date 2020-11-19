@@ -12,8 +12,8 @@ published_at: 2020-04-20T16:53:59.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/20/verify-user-registrations-with-symfony-dr
-redirect: https://www.nexmo.com/blog/2020/04/20/verify-user-registrations-with-symfony-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/20/verify-user-registrations-with-symfony-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/20/verify-user-registrations-with-symfony-dr
 ---
 
 Content to be migrated...

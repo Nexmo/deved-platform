@@ -14,8 +14,8 @@ category: release
 tags:
   - open-api
   - postman
-canonical: https://www.nexmo.com/blog/2020/09/16/announcing-the-vonage-apis-postman-collection
-redirect: https://www.nexmo.com/blog/2020/09/16/announcing-the-vonage-apis-postman-collection
+canonical: https://www.nexmo.com/legacy-blog/2020/09/16/announcing-the-vonage-apis-postman-collection
+redirect: https://www.nexmo.com/legacy-blog/2020/09/16/announcing-the-vonage-apis-postman-collection
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2020-05-11T16:08:59.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/05/11/how-to-send-a-facebook-messenger-message-with-node-js
-redirect: https://www.nexmo.com/blog/2020/05/11/how-to-send-a-facebook-messenger-message-with-node-js
+canonical: https://www.nexmo.com/legacy-blog/2020/05/11/how-to-send-a-facebook-messenger-message-with-node-js
+redirect: https://www.nexmo.com/legacy-blog/2020/05/11/how-to-send-a-facebook-messenger-message-with-node-js
 ---
 
 Content to be migrated...

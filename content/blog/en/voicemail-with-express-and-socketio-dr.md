@@ -12,8 +12,8 @@ published_at: 2019-04-02T09:00:11.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/04/02/voicemail-with-express-and-socketio-dr
-redirect: https://www.nexmo.com/blog/2019/04/02/voicemail-with-express-and-socketio-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/04/02/voicemail-with-express-and-socketio-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/04/02/voicemail-with-express-and-socketio-dr
 ---
 
 Content to be migrated...

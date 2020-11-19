@@ -11,8 +11,8 @@ published_at: 2018-12-19T14:38:39.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/19/santa-delivery-notifications-via-facebook-messenger-dr
-redirect: https://www.nexmo.com/blog/2018/12/19/santa-delivery-notifications-via-facebook-messenger-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/19/santa-delivery-notifications-via-facebook-messenger-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/19/santa-delivery-notifications-via-facebook-messenger-dr
 ---
 
 Content to be migrated...

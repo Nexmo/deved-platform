@@ -12,8 +12,8 @@ published_at: 2018-05-25T11:22:55.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/05/25/how-to-get-advanced-number-insights-within-an-asp-net-app-dr
-redirect: https://www.nexmo.com/blog/2018/05/25/how-to-get-advanced-number-insights-within-an-asp-net-app-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/05/25/how-to-get-advanced-number-insights-within-an-asp-net-app-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/05/25/how-to-get-advanced-number-insights-within-an-asp-net-app-dr
 ---
 
 Content to be migrated...

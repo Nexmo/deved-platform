@@ -12,8 +12,8 @@ published_at: 2019-03-20T17:43:20.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/03/20/building-a-machine-learning-model-for-answering-machine-detection-dr
-redirect: https://www.nexmo.com/blog/2019/03/20/building-a-machine-learning-model-for-answering-machine-detection-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/03/20/building-a-machine-learning-model-for-answering-machine-detection-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/03/20/building-a-machine-learning-model-for-answering-machine-detection-dr
 ---
 
 Content to be migrated...

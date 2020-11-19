@@ -12,8 +12,8 @@ published_at: 2019-11-12T15:18:17.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/11/12/translate-sms-messages-with-ibm-watson-dr
-redirect: https://www.nexmo.com/blog/2019/11/12/translate-sms-messages-with-ibm-watson-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/11/12/translate-sms-messages-with-ibm-watson-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/11/12/translate-sms-messages-with-ibm-watson-dr
 ---
 
 Content to be migrated...

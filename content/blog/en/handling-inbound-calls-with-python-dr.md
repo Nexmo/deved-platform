@@ -12,8 +12,8 @@ published_at: 2019-03-28T16:41:32.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/03/28/handling-inbound-calls-with-python-dr
-redirect: https://www.nexmo.com/blog/2019/03/28/handling-inbound-calls-with-python-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/03/28/handling-inbound-calls-with-python-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/03/28/handling-inbound-calls-with-python-dr
 ---
 
 Content to be migrated...

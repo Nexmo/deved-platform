@@ -12,8 +12,8 @@ published_at: 2018-10-15T15:16:13.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr
-redirect: https://www.nexmo.com/blog/2018/10/15/create-websocket-server-spark-framework-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/10/15/create-websocket-server-spark-framework-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/10/15/create-websocket-server-spark-framework-dr
 ---
 
 Content to be migrated...

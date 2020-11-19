@@ -12,8 +12,8 @@ published_at: 2020-02-28T18:06:06.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/02/28/create-preact-netlify-cms-opentok-health-app-dr
-redirect: https://www.nexmo.com/blog/2020/02/28/create-preact-netlify-cms-opentok-health-app-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/02/28/create-preact-netlify-cms-opentok-health-app-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/02/28/create-preact-netlify-cms-opentok-health-app-dr
 ---
 
 Content to be migrated...

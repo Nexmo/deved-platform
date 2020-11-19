@@ -12,8 +12,8 @@ published_at: 2020-05-04T15:53:35.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/05/04/stream-video-chat-with-texting-using-vonage-video-api-dr
-redirect: https://www.nexmo.com/blog/2020/05/04/stream-video-chat-with-texting-using-vonage-video-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/05/04/stream-video-chat-with-texting-using-vonage-video-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/05/04/stream-video-chat-with-texting-using-vonage-video-api-dr
 ---
 
 Content to be migrated...

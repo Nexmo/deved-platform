@@ -12,8 +12,8 @@ published_at: 2016-10-19T16:53:39.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr
-redirect: https://www.nexmo.com/blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/10/19/how-to-send-sms-messages-with-node-js-and-express-dr
 ---
 
 Content to be migrated...

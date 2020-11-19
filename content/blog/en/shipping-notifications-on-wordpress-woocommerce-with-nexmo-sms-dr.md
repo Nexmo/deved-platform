@@ -13,8 +13,8 @@ published_at: 2020-01-11T13:03:13.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/01/11/shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr
-redirect: https://www.nexmo.com/blog/2020/01/11/shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/11/shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/11/shipping-notifications-on-wordpress-woocommerce-with-nexmo-sms-dr
 ---
 
 Content to be migrated...

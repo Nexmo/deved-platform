@@ -12,8 +12,8 @@ published_at: 2020-04-16T13:25:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
-redirect: https://www.nexmo.com/blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/16/building-a-slack-clone-using-vue-js-part-1-dr
 ---
 
 Content to be migrated...

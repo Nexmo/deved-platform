@@ -12,8 +12,8 @@ published_at: 2015-02-21T00:27:36.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2015/02/21/what-is-voicexml
-redirect: https://www.nexmo.com/blog/2015/02/21/what-is-voicexml
+canonical: https://www.nexmo.com/legacy-blog/2015/02/21/what-is-voicexml
+redirect: https://www.nexmo.com/legacy-blog/2015/02/21/what-is-voicexml
 ---
 
 Content to be migrated...

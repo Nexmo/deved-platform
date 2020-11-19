@@ -12,8 +12,8 @@ published_at: 2018-05-10T16:06:53.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/05/10/nexmo-verify-api-implementation-guide-dr
-redirect: https://www.nexmo.com/blog/2018/05/10/nexmo-verify-api-implementation-guide-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/05/10/nexmo-verify-api-implementation-guide-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/05/10/nexmo-verify-api-implementation-guide-dr
 ---
 
 Content to be migrated...

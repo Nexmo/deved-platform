@@ -12,8 +12,8 @@ published_at: 2020-04-07T12:13:19.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/07/getting-started-with-advanced-insights
-redirect: https://www.nexmo.com/blog/2020/04/07/getting-started-with-advanced-insights
+canonical: https://www.nexmo.com/legacy-blog/2020/04/07/getting-started-with-advanced-insights
+redirect: https://www.nexmo.com/legacy-blog/2020/04/07/getting-started-with-advanced-insights
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2020-02-07T18:33:00.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr
-redirect: https://www.nexmo.com/blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/02/07/dockerize-python-queue-manager-project-for-easy-deployment-dr
 ---
 
 Content to be migrated...

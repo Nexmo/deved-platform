@@ -12,8 +12,8 @@ published_at: 2019-01-23T21:39:18.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/01/23/how-to-send-sms-from-a-spreadsheet-dr
-redirect: https://www.nexmo.com/blog/2019/01/23/how-to-send-sms-from-a-spreadsheet-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/01/23/how-to-send-sms-from-a-spreadsheet-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/01/23/how-to-send-sms-from-a-spreadsheet-dr
 ---
 
 Content to be migrated...

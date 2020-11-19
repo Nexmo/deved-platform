@@ -11,8 +11,8 @@ published_at: 2019-04-05T08:39:13.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/04/05/how-to-build-a-voicemail-with-python-flask-dr
-redirect: https://www.nexmo.com/blog/2019/04/05/how-to-build-a-voicemail-with-python-flask-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/04/05/how-to-build-a-voicemail-with-python-flask-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/04/05/how-to-build-a-voicemail-with-python-flask-dr
 ---
 
 Content to be migrated...

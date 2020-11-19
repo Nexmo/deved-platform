@@ -11,8 +11,8 @@ published_at: 2017-06-14T18:31:46.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/06/14/using-aws-iot-button-with-nexmo-phone-call-dr
-redirect: https://www.nexmo.com/blog/2017/06/14/using-aws-iot-button-with-nexmo-phone-call-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/06/14/using-aws-iot-button-with-nexmo-phone-call-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/06/14/using-aws-iot-button-with-nexmo-phone-call-dr
 ---
 
 Content to be migrated...

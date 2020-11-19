@@ -15,8 +15,8 @@ tags:
   - 2fa
   - swift
   - verify-api
-canonical: https://www.nexmo.com/blog/2017/01/18/adding-phone-sms-tts-biometric-verification-ios-application-dr
-redirect: https://www.nexmo.com/blog/2017/01/18/adding-phone-sms-tts-biometric-verification-ios-application-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/01/18/adding-phone-sms-tts-biometric-verification-ios-application-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/01/18/adding-phone-sms-tts-biometric-verification-ios-application-dr
 ---
 
 Content to be migrated...

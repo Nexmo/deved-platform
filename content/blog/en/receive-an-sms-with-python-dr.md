@@ -12,8 +12,8 @@ published_at: 2019-05-31T09:57:29.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/05/31/receive-an-sms-with-python-dr
-redirect: https://www.nexmo.com/blog/2019/05/31/receive-an-sms-with-python-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/05/31/receive-an-sms-with-python-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/05/31/receive-an-sms-with-python-dr
 ---
 
 Content to be migrated...

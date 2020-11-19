@@ -12,8 +12,8 @@ published_at: 2020-07-15T13:16:59.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/15/introducing-the-vonage-voyagers-developer-champions-program
-redirect: https://www.nexmo.com/blog/2020/07/15/introducing-the-vonage-voyagers-developer-champions-program
+canonical: https://www.nexmo.com/legacy-blog/2020/07/15/introducing-the-vonage-voyagers-developer-champions-program
+redirect: https://www.nexmo.com/legacy-blog/2020/07/15/introducing-the-vonage-voyagers-developer-champions-program
 ---
 
 Content to be migrated...

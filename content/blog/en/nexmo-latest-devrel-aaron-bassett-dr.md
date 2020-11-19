@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2017/06/08/nexmo-latest-devrel-aaron-bassett-dr
-redirect: https://www.nexmo.com/blog/2017/06/08/nexmo-latest-devrel-aaron-bassett-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/06/08/nexmo-latest-devrel-aaron-bassett-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/06/08/nexmo-latest-devrel-aaron-bassett-dr
 ---
 
 Content to be migrated...

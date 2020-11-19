@@ -12,8 +12,8 @@ published_at: 2019-06-11T20:26:14.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/06/11/how-to-build-a-magic-8-ball-voice-app-with-ruby-dr
-redirect: https://www.nexmo.com/blog/2019/06/11/how-to-build-a-magic-8-ball-voice-app-with-ruby-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/06/11/how-to-build-a-magic-8-ball-voice-app-with-ruby-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/06/11/how-to-build-a-magic-8-ball-voice-app-with-ruby-dr
 ---
 
 Content to be migrated...

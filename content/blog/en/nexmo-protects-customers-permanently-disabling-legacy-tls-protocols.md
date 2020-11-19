@@ -12,8 +12,8 @@ published_at: 2018-07-25T16:00:54.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2018/07/25/nexmo-protects-customers-permanently-disabling-legacy-tls-protocols
-redirect: https://www.nexmo.com/blog/2018/07/25/nexmo-protects-customers-permanently-disabling-legacy-tls-protocols
+canonical: https://www.nexmo.com/legacy-blog/2018/07/25/nexmo-protects-customers-permanently-disabling-legacy-tls-protocols
+redirect: https://www.nexmo.com/legacy-blog/2018/07/25/nexmo-protects-customers-permanently-disabling-legacy-tls-protocols
 ---
 
 Content to be migrated...

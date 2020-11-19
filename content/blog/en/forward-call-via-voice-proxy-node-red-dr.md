@@ -11,8 +11,8 @@ published_at: 2019-10-17T08:09:37.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/10/17/forward-call-via-voice-proxy-node-red-dr
-redirect: https://www.nexmo.com/blog/2019/10/17/forward-call-via-voice-proxy-node-red-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/10/17/forward-call-via-voice-proxy-node-red-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/10/17/forward-call-via-voice-proxy-node-red-dr
 ---
 
 Content to be migrated...

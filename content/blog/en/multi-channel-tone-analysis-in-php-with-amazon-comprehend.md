@@ -12,8 +12,8 @@ published_at: 2020-07-02T13:30:32.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/02/multi-channel-tone-analysis-in-php-with-amazon-comprehend
-redirect: https://www.nexmo.com/blog/2020/07/02/multi-channel-tone-analysis-in-php-with-amazon-comprehend
+canonical: https://www.nexmo.com/legacy-blog/2020/07/02/multi-channel-tone-analysis-in-php-with-amazon-comprehend
+redirect: https://www.nexmo.com/legacy-blog/2020/07/02/multi-channel-tone-analysis-in-php-with-amazon-comprehend
 ---
 
 Content to be migrated...

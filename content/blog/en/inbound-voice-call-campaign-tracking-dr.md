@@ -12,8 +12,8 @@ published_at: 2017-08-03T12:10:05.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/08/03/inbound-voice-call-campaign-tracking-dr
-redirect: https://www.nexmo.com/blog/2017/08/03/inbound-voice-call-campaign-tracking-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/08/03/inbound-voice-call-campaign-tracking-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/08/03/inbound-voice-call-campaign-tracking-dr
 ---
 
 Content to be migrated...

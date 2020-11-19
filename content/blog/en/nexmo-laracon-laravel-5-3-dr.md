@@ -12,8 +12,8 @@ published_at: 2016-07-29T22:22:07.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2016/07/29/nexmo-laracon-laravel-5-3-dr
-redirect: https://www.nexmo.com/blog/2016/07/29/nexmo-laracon-laravel-5-3-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/07/29/nexmo-laracon-laravel-5-3-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/07/29/nexmo-laracon-laravel-5-3-dr
 ---
 
 Content to be migrated...

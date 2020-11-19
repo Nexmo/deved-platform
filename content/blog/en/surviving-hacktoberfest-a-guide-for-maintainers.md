@@ -13,8 +13,8 @@ comments: true
 category: tutorial
 tags:
   - hacktoberfest
-canonical: https://www.nexmo.com/blog/2020/10/13/surviving-hacktoberfest-a-guide-for-maintainers
-redirect: https://www.nexmo.com/blog/2020/10/13/surviving-hacktoberfest-a-guide-for-maintainers
+canonical: https://www.nexmo.com/legacy-blog/2020/10/13/surviving-hacktoberfest-a-guide-for-maintainers
+redirect: https://www.nexmo.com/legacy-blog/2020/10/13/surviving-hacktoberfest-a-guide-for-maintainers
 ---
 
 Content to be migrated...

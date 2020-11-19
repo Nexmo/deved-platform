@@ -12,8 +12,8 @@ published_at: 2019-08-28T07:05:49.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/08/28/how-to-send-sms-with-go-dr
-redirect: https://www.nexmo.com/blog/2019/08/28/how-to-send-sms-with-go-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/08/28/how-to-send-sms-with-go-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/08/28/how-to-send-sms-with-go-dr
 ---
 
 Content to be migrated...

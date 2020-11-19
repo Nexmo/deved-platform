@@ -12,8 +12,8 @@ published_at: 2019-09-04T21:57:28.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2019/09/04/vonage-launches-spotlight-for-donations-program-dr
-redirect: https://www.nexmo.com/blog/2019/09/04/vonage-launches-spotlight-for-donations-program-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/09/04/vonage-launches-spotlight-for-donations-program-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/09/04/vonage-launches-spotlight-for-donations-program-dr
 ---
 
 Content to be migrated...

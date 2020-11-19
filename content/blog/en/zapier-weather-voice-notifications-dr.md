@@ -12,8 +12,8 @@ published_at: 2020-07-13T13:31:34.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/13/zapier-weather-voice-notifications-dr
-redirect: https://www.nexmo.com/blog/2020/07/13/zapier-weather-voice-notifications-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/07/13/zapier-weather-voice-notifications-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/07/13/zapier-weather-voice-notifications-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2020-08-06T16:46:54.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/08/06/track-device-data-in-real-time-with-vonage-messages-api-and-ubidots-dr
-redirect: https://www.nexmo.com/blog/2020/08/06/track-device-data-in-real-time-with-vonage-messages-api-and-ubidots-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/08/06/track-device-data-in-real-time-with-vonage-messages-api-and-ubidots-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/08/06/track-device-data-in-real-time-with-vonage-messages-api-and-ubidots-dr
 ---
 
 Content to be migrated...

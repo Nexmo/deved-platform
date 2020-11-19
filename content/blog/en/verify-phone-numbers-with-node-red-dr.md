@@ -12,8 +12,8 @@ published_at: 2019-09-25T08:00:13.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/09/25/verify-phone-numbers-with-node-red-dr
-redirect: https://www.nexmo.com/blog/2019/09/25/verify-phone-numbers-with-node-red-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/09/25/verify-phone-numbers-with-node-red-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/09/25/verify-phone-numbers-with-node-red-dr
 ---
 
 Content to be migrated...

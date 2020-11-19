@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - 2fa
   - verify-api
-canonical: https://www.nexmo.com/blog/2018/07/11/add-two-factor-authentication-to-a-microsoft-bot-with-nexmos-verify-api-dr
-redirect: https://www.nexmo.com/blog/2018/07/11/add-two-factor-authentication-to-a-microsoft-bot-with-nexmos-verify-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/07/11/add-two-factor-authentication-to-a-microsoft-bot-with-nexmos-verify-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/07/11/add-two-factor-authentication-to-a-microsoft-bot-with-nexmos-verify-api-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2016-03-25T15:31:25.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/03/25/build-rest-implementation-scales-better-smpp
-redirect: https://www.nexmo.com/blog/2016/03/25/build-rest-implementation-scales-better-smpp
+canonical: https://www.nexmo.com/legacy-blog/2016/03/25/build-rest-implementation-scales-better-smpp
+redirect: https://www.nexmo.com/legacy-blog/2016/03/25/build-rest-implementation-scales-better-smpp
 ---
 
 Content to be migrated...

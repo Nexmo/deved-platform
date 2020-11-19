@@ -12,8 +12,8 @@ published_at: 2016-06-02T18:23:36.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
-redirect: https://www.nexmo.com/blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
+canonical: https://www.nexmo.com/legacy-blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
+redirect: https://www.nexmo.com/legacy-blog/2016/06/02/claim-nexmo-credit-help-disrupt-travel-industry-skyscanner
 ---
 
 Content to be migrated...

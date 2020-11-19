@@ -13,8 +13,8 @@ published_at: 2018-06-20T15:00:34.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2018/06/20/nexmo-integrations-ai-vendors-real-time-intelligence
-redirect: https://www.nexmo.com/blog/2018/06/20/nexmo-integrations-ai-vendors-real-time-intelligence
+canonical: https://www.nexmo.com/legacy-blog/2018/06/20/nexmo-integrations-ai-vendors-real-time-intelligence
+redirect: https://www.nexmo.com/legacy-blog/2018/06/20/nexmo-integrations-ai-vendors-real-time-intelligence
 ---
 
 Content to be migrated...

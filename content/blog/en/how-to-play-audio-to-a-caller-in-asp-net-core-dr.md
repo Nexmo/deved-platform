@@ -11,8 +11,8 @@ published_at: 2017-11-29T16:17:12.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/11/29/how-to-play-audio-to-a-caller-in-asp-net-core-dr
-redirect: https://www.nexmo.com/blog/2017/11/29/how-to-play-audio-to-a-caller-in-asp-net-core-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/11/29/how-to-play-audio-to-a-caller-in-asp-net-core-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/11/29/how-to-play-audio-to-a-caller-in-asp-net-core-dr
 ---
 
 Content to be migrated...

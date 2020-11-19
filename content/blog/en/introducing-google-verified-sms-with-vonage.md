@@ -20,8 +20,8 @@ tags:
   - messages-api
   - verify-api
   - verified-sms
-canonical: https://www.nexmo.com/blog/2020/10/15/introducing-google-verified-sms-with-vonage
-redirect: https://www.nexmo.com/blog/2020/10/15/introducing-google-verified-sms-with-vonage
+canonical: https://www.nexmo.com/legacy-blog/2020/10/15/introducing-google-verified-sms-with-vonage
+redirect: https://www.nexmo.com/legacy-blog/2020/10/15/introducing-google-verified-sms-with-vonage
 ---
 
 Content to be migrated...

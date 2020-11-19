@@ -12,8 +12,8 @@ published_at: 2016-09-29T20:00:31.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr
-redirect: https://www.nexmo.com/blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr
 ---
 
 Content to be migrated...

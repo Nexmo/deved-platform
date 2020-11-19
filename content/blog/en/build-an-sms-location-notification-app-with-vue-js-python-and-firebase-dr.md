@@ -15,8 +15,8 @@ tags:
   - firebase
   - python
   - vue
-canonical: https://www.nexmo.com/blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
-redirect: https://www.nexmo.com/blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/07/16/build-an-sms-location-notification-app-with-vue-js-python-and-firebase-dr
 ---
 
 Content to be migrated...

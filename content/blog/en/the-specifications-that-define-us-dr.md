@@ -11,8 +11,8 @@ published_at: 2020-03-09T13:09:44.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/09/the-specifications-that-define-us-dr
-redirect: https://www.nexmo.com/blog/2020/03/09/the-specifications-that-define-us-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/03/09/the-specifications-that-define-us-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/03/09/the-specifications-that-define-us-dr
 ---
 
 Content to be migrated...

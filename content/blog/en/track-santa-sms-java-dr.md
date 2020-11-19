@@ -12,8 +12,8 @@ published_at: 2018-12-07T19:11:13.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/07/track-santa-sms-java-dr
-redirect: https://www.nexmo.com/blog/2018/12/07/track-santa-sms-java-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/07/track-santa-sms-java-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/07/track-santa-sms-java-dr
 ---
 
 Content to be migrated...

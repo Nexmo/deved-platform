@@ -15,8 +15,8 @@ category: tutorial
 tags:
   - facial-id
   - video-api
-canonical: https://www.nexmo.com/blog/2020/10/21/build-a-secure-facial-id-application-using-the-vonage-video-api
-redirect: https://www.nexmo.com/blog/2020/10/21/build-a-secure-facial-id-application-using-the-vonage-video-api
+canonical: https://www.nexmo.com/legacy-blog/2020/10/21/build-a-secure-facial-id-application-using-the-vonage-video-api
+redirect: https://www.nexmo.com/legacy-blog/2020/10/21/build-a-secure-facial-id-application-using-the-vonage-video-api
 ---
 
 Content to be migrated...

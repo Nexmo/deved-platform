@@ -12,8 +12,8 @@ published_at: 2019-04-17T16:01:15.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/04/17/integrating-multichannel-messaging-into-salesforce-with-nexmo-messages-api
-redirect: https://www.nexmo.com/blog/2019/04/17/integrating-multichannel-messaging-into-salesforce-with-nexmo-messages-api
+canonical: https://www.nexmo.com/legacy-blog/2019/04/17/integrating-multichannel-messaging-into-salesforce-with-nexmo-messages-api
+redirect: https://www.nexmo.com/legacy-blog/2019/04/17/integrating-multichannel-messaging-into-salesforce-with-nexmo-messages-api
 ---
 
 Content to be migrated...

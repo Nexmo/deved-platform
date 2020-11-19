@@ -14,7 +14,7 @@ tags:
   - javascript
 comments: true
 redirect: ""
-canonical: https://www.nexmo.com/blog/2020/05/20/web-components-tools-a-comparison
+canonical: https://www.nexmo.com/legacy-blog/2020/05/20/web-components-tools-a-comparison
 ---
 In the [last post](https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr), we learned about the basics of Web Components. We ended with the code needed to build a basic example. With development, things are rarely ever ‘simple’. Building Web Components can involve a lot of boilerplate code. If your plan is to create multiple components, this can get to be pretty cumbersome.
 

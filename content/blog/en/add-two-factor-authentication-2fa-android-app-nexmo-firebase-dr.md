@@ -16,8 +16,8 @@ tags:
   - 2fa
   - firebase
   - verify-api
-canonical: https://www.nexmo.com/blog/2017/01/30/add-two-factor-authentication-2fa-android-app-nexmo-firebase-dr
-redirect: https://www.nexmo.com/blog/2017/01/30/add-two-factor-authentication-2fa-android-app-nexmo-firebase-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/01/30/add-two-factor-authentication-2fa-android-app-nexmo-firebase-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/01/30/add-two-factor-authentication-2fa-android-app-nexmo-firebase-dr
 ---
 
 Content to be migrated...

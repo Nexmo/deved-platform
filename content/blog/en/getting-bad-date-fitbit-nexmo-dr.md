@@ -11,8 +11,8 @@ published_at: 2018-03-02T10:08:22.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/03/02/getting-bad-date-fitbit-nexmo-dr
-redirect: https://www.nexmo.com/blog/2018/03/02/getting-bad-date-fitbit-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/03/02/getting-bad-date-fitbit-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/03/02/getting-bad-date-fitbit-nexmo-dr
 ---
 
 Content to be migrated...

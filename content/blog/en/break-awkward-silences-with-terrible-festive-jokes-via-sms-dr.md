@@ -15,8 +15,8 @@ tags:
   - javascript
   - messages-api
   - node
-canonical: https://www.nexmo.com/blog/2018/12/18/break-awkward-silences-with-terrible-festive-jokes-via-sms-dr
-redirect: https://www.nexmo.com/blog/2018/12/18/break-awkward-silences-with-terrible-festive-jokes-via-sms-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/18/break-awkward-silences-with-terrible-festive-jokes-via-sms-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/18/break-awkward-silences-with-terrible-festive-jokes-via-sms-dr
 ---
 
 Content to be migrated...

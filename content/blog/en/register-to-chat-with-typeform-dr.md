@@ -12,8 +12,8 @@ published_at: 2019-11-20T13:46:48.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr
-redirect: https://www.nexmo.com/blog/2019/11/20/register-to-chat-with-typeform-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/11/20/register-to-chat-with-typeform-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/11/20/register-to-chat-with-typeform-dr
 ---
 
 Content to be migrated...

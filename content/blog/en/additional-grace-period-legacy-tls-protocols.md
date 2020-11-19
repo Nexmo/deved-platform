@@ -15,8 +15,8 @@ tags:
   - http
   - security
   - tls
-canonical: https://www.nexmo.com/blog/2018/08/09/additional-grace-period-legacy-tls-protocols
-redirect: https://www.nexmo.com/blog/2018/08/09/additional-grace-period-legacy-tls-protocols
+canonical: https://www.nexmo.com/legacy-blog/2018/08/09/additional-grace-period-legacy-tls-protocols
+redirect: https://www.nexmo.com/legacy-blog/2018/08/09/additional-grace-period-legacy-tls-protocols
 ---
 
 Content to be migrated...

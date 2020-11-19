@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2020/01/16/nahrin-jalal-joins-the-nexmo-developer-education-team-dr
-redirect: https://www.nexmo.com/blog/2020/01/16/nahrin-jalal-joins-the-nexmo-developer-education-team-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/16/nahrin-jalal-joins-the-nexmo-developer-education-team-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/16/nahrin-jalal-joins-the-nexmo-developer-education-team-dr
 ---
 
 Content to be migrated...

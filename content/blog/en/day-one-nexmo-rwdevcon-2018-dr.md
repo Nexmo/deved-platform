@@ -12,8 +12,8 @@ published_at: 2018-04-06T19:39:48.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2018/04/06/day-one-nexmo-rwdevcon-2018-dr
-redirect: https://www.nexmo.com/blog/2018/04/06/day-one-nexmo-rwdevcon-2018-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/04/06/day-one-nexmo-rwdevcon-2018-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/04/06/day-one-nexmo-rwdevcon-2018-dr
 ---
 
 Content to be migrated...

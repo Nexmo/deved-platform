@@ -12,8 +12,8 @@ published_at: 2020-04-23T13:59:34.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/23/manage-a-pool-of-phone-numbers-with-node-js
-redirect: https://www.nexmo.com/blog/2020/04/23/manage-a-pool-of-phone-numbers-with-node-js
+canonical: https://www.nexmo.com/legacy-blog/2020/04/23/manage-a-pool-of-phone-numbers-with-node-js
+redirect: https://www.nexmo.com/legacy-blog/2020/04/23/manage-a-pool-of-phone-numbers-with-node-js
 ---
 
 Content to be migrated...

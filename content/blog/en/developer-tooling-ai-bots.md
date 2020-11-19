@@ -12,8 +12,8 @@ published_at: 2017-10-26T02:30:08.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2017/10/25/developer-tooling-ai-bots
-redirect: https://www.nexmo.com/blog/2017/10/25/developer-tooling-ai-bots
+canonical: https://www.nexmo.com/legacy-blog/2017/10/25/developer-tooling-ai-bots
+redirect: https://www.nexmo.com/legacy-blog/2017/10/25/developer-tooling-ai-bots
 ---
 
 Content to be migrated...

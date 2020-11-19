@@ -13,8 +13,8 @@ published_at: 2016-06-07T22:25:29.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify-dr
-redirect: https://www.nexmo.com/blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify-dr
 ---
 
 Content to be migrated...

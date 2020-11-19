@@ -12,8 +12,8 @@ published_at: 2019-03-18T09:25:41.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/03/18/speech-to-text-with-nexmo-and-azure-speech-dr
-redirect: https://www.nexmo.com/blog/2019/03/18/speech-to-text-with-nexmo-and-azure-speech-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/03/18/speech-to-text-with-nexmo-and-azure-speech-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/03/18/speech-to-text-with-nexmo-and-azure-speech-dr
 ---
 
 Content to be migrated...

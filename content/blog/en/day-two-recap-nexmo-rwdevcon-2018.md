@@ -12,8 +12,8 @@ published_at: 2018-04-11T13:00:24.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2018/04/11/day-two-recap-nexmo-rwdevcon-2018
-redirect: https://www.nexmo.com/blog/2018/04/11/day-two-recap-nexmo-rwdevcon-2018
+canonical: https://www.nexmo.com/legacy-blog/2018/04/11/day-two-recap-nexmo-rwdevcon-2018
+redirect: https://www.nexmo.com/legacy-blog/2018/04/11/day-two-recap-nexmo-rwdevcon-2018
 ---
 
 Content to be migrated...

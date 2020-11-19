@@ -12,8 +12,8 @@ published_at: 2018-01-04T17:38:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/01/04/nexmo-ssml-support-natural-text-speech
-redirect: https://www.nexmo.com/blog/2018/01/04/nexmo-ssml-support-natural-text-speech
+canonical: https://www.nexmo.com/legacy-blog/2018/01/04/nexmo-ssml-support-natural-text-speech
+redirect: https://www.nexmo.com/legacy-blog/2018/01/04/nexmo-ssml-support-natural-text-speech
 ---
 
 Content to be migrated...

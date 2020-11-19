@@ -12,8 +12,8 @@ published_at: 2018-10-23T10:14:46.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/10/23/send-sms-from-php-with-failover-dr
-redirect: https://www.nexmo.com/blog/2018/10/23/send-sms-from-php-with-failover-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/10/23/send-sms-from-php-with-failover-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/10/23/send-sms-from-php-with-failover-dr
 ---
 
 Content to be migrated...

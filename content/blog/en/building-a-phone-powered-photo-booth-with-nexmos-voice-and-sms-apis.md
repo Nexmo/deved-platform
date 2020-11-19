@@ -12,8 +12,8 @@ published_at: 2015-09-01T16:33:02.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2015/09/01/building-a-phone-powered-photo-booth-with-nexmos-voice-and-sms-apis
-redirect: https://www.nexmo.com/blog/2015/09/01/building-a-phone-powered-photo-booth-with-nexmos-voice-and-sms-apis
+canonical: https://www.nexmo.com/legacy-blog/2015/09/01/building-a-phone-powered-photo-booth-with-nexmos-voice-and-sms-apis
+redirect: https://www.nexmo.com/legacy-blog/2015/09/01/building-a-phone-powered-photo-booth-with-nexmos-voice-and-sms-apis
 ---
 
 Content to be migrated...

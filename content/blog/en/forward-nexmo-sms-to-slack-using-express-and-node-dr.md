@@ -12,8 +12,8 @@ published_at: 2020-01-01T09:00:24.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/01/01/forward-nexmo-sms-to-slack-using-express-and-node-dr
-redirect: https://www.nexmo.com/blog/2020/01/01/forward-nexmo-sms-to-slack-using-express-and-node-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/01/forward-nexmo-sms-to-slack-using-express-and-node-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/01/forward-nexmo-sms-to-slack-using-express-and-node-dr
 ---
 
 Content to be migrated...

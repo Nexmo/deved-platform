@@ -13,8 +13,8 @@ comments: true
 category: tutorial
 tags:
   - messages-api
-canonical: https://www.nexmo.com/blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
-redirect: https://www.nexmo.com/blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
+canonical: https://www.nexmo.com/legacy-blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
+redirect: https://www.nexmo.com/legacy-blog/2020/08/12/build-a-simple-customer-support-channel-with-whatsapp
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2016-05-30T18:59:38.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2016/05/30/developer-new-nexmo-python-library-released-pycon
-redirect: https://www.nexmo.com/blog/2016/05/30/developer-new-nexmo-python-library-released-pycon
+canonical: https://www.nexmo.com/legacy-blog/2016/05/30/developer-new-nexmo-python-library-released-pycon
+redirect: https://www.nexmo.com/legacy-blog/2016/05/30/developer-new-nexmo-python-library-released-pycon
 ---
 
 Content to be migrated...

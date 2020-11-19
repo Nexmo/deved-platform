@@ -12,8 +12,8 @@ published_at: 2020-01-13T20:40:39.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/01/13/sentiment-analysis-using-ibm-watson-tone-analyzer-in-php-dr
-redirect: https://www.nexmo.com/blog/2020/01/13/sentiment-analysis-using-ibm-watson-tone-analyzer-in-php-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/13/sentiment-analysis-using-ibm-watson-tone-analyzer-in-php-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/13/sentiment-analysis-using-ibm-watson-tone-analyzer-in-php-dr
 ---
 
 Content to be migrated...

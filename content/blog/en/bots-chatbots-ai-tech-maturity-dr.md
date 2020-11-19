@@ -13,8 +13,8 @@ category: tutorial
 tags:
   - bots
   - chatbots
-canonical: https://www.nexmo.com/blog/2017/08/24/bots-chatbots-ai-tech-maturity-dr
-redirect: https://www.nexmo.com/blog/2017/08/24/bots-chatbots-ai-tech-maturity-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/08/24/bots-chatbots-ai-tech-maturity-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/08/24/bots-chatbots-ai-tech-maturity-dr
 ---
 
 Content to be migrated...

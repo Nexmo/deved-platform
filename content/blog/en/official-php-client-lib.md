@@ -12,8 +12,8 @@ published_at: 2016-05-25T18:36:30.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2016/05/25/official-php-client-lib
-redirect: https://www.nexmo.com/blog/2016/05/25/official-php-client-lib
+canonical: https://www.nexmo.com/legacy-blog/2016/05/25/official-php-client-lib
+redirect: https://www.nexmo.com/legacy-blog/2016/05/25/official-php-client-lib
 ---
 
 Content to be migrated...

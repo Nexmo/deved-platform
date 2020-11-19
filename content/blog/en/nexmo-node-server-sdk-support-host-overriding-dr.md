@@ -12,8 +12,8 @@ published_at: 2020-01-17T18:14:46.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2020/01/17/nexmo-node-server-sdk-support-host-overriding-dr
-redirect: https://www.nexmo.com/blog/2020/01/17/nexmo-node-server-sdk-support-host-overriding-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/17/nexmo-node-server-sdk-support-host-overriding-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/17/nexmo-node-server-sdk-support-host-overriding-dr
 ---
 
 Content to be migrated...

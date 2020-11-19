@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - dot-net
   - voice-api
-canonical: https://www.nexmo.com/blog/2020/10/20/how-to-handle-handset-input-dtmf-from-a-phone-call-in-asp-net-core
-redirect: https://www.nexmo.com/blog/2020/10/20/how-to-handle-handset-input-dtmf-from-a-phone-call-in-asp-net-core
+canonical: https://www.nexmo.com/legacy-blog/2020/10/20/how-to-handle-handset-input-dtmf-from-a-phone-call-in-asp-net-core
+redirect: https://www.nexmo.com/legacy-blog/2020/10/20/how-to-handle-handset-input-dtmf-from-a-phone-call-in-asp-net-core
 ---
 
 Content to be migrated...

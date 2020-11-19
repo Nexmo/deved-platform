@@ -12,8 +12,8 @@ published_at: 2017-10-13T17:12:16.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2017/10/13/cross-platform-bot-development
-redirect: https://www.nexmo.com/blog/2017/10/13/cross-platform-bot-development
+canonical: https://www.nexmo.com/legacy-blog/2017/10/13/cross-platform-bot-development
+redirect: https://www.nexmo.com/legacy-blog/2017/10/13/cross-platform-bot-development
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2017-02-06T14:00:17.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/02/06/how-to-record-audio-from-phone-call-node-js-dr
-redirect: https://www.nexmo.com/blog/2017/02/06/how-to-record-audio-from-phone-call-node-js-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/02/06/how-to-record-audio-from-phone-call-node-js-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/02/06/how-to-record-audio-from-phone-call-node-js-dr
 ---
 
 Content to be migrated...

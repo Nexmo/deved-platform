@@ -12,8 +12,8 @@ published_at: 2018-05-22T16:19:25.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/05/22/how-to-get-basic-number-insights-within-an-asp-net-app-dr
-redirect: https://www.nexmo.com/blog/2018/05/22/how-to-get-basic-number-insights-within-an-asp-net-app-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/05/22/how-to-get-basic-number-insights-within-an-asp-net-app-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/05/22/how-to-get-basic-number-insights-within-an-asp-net-app-dr
 ---
 
 Content to be migrated...

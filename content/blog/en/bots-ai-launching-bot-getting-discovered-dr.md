@@ -13,8 +13,8 @@ category: tutorial
 tags:
   - voice-api
   - bots
-canonical: https://www.nexmo.com/blog/2017/08/31/bots-ai-launching-bot-getting-discovered-dr
-redirect: https://www.nexmo.com/blog/2017/08/31/bots-ai-launching-bot-getting-discovered-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/08/31/bots-ai-launching-bot-getting-discovered-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/08/31/bots-ai-launching-bot-getting-discovered-dr
 ---
 
 Content to be migrated...

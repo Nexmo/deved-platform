@@ -11,8 +11,8 @@ published_at: 2020-06-12T12:30:15.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2020/06/12/comparing-cli-building-libraries
-redirect: https://www.nexmo.com/blog/2020/06/12/comparing-cli-building-libraries
+canonical: https://www.nexmo.com/legacy-blog/2020/06/12/comparing-cli-building-libraries
+redirect: https://www.nexmo.com/legacy-blog/2020/06/12/comparing-cli-building-libraries
 ---
 
 Content to be migrated...

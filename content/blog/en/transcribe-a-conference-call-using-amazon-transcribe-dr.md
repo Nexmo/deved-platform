@@ -12,8 +12,8 @@ published_at: 2019-08-26T14:55:53.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/08/26/transcribe-a-conference-call-using-amazon-transcribe-dr
-redirect: https://www.nexmo.com/blog/2019/08/26/transcribe-a-conference-call-using-amazon-transcribe-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/08/26/transcribe-a-conference-call-using-amazon-transcribe-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/08/26/transcribe-a-conference-call-using-amazon-transcribe-dr
 ---
 
 Content to be migrated...

@@ -13,8 +13,8 @@ published_at: 2017-05-16T13:00:40.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2017/05/16/ibm-bluemix-nexmo-api-platform-available
-redirect: https://www.nexmo.com/blog/2017/05/16/ibm-bluemix-nexmo-api-platform-available
+canonical: https://www.nexmo.com/legacy-blog/2017/05/16/ibm-bluemix-nexmo-api-platform-available
+redirect: https://www.nexmo.com/legacy-blog/2017/05/16/ibm-bluemix-nexmo-api-platform-available
 ---
 
 Content to be migrated...

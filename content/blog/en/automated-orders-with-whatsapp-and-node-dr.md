@@ -15,8 +15,8 @@ tags:
   - messages-api
   - node
   - messages-api-sandbox
-canonical: https://www.nexmo.com/blog/2020/05/07/automated-orders-with-whatsapp-and-node-dr
-redirect: https://www.nexmo.com/blog/2020/05/07/automated-orders-with-whatsapp-and-node-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/05/07/automated-orders-with-whatsapp-and-node-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/05/07/automated-orders-with-whatsapp-and-node-dr
 ---
 
 Content to be migrated...

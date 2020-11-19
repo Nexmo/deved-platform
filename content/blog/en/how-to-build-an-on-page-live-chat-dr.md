@@ -12,8 +12,8 @@ published_at: 2019-10-18T12:06:38.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/10/18/how-to-build-an-on-page-live-chat-dr
-redirect: https://www.nexmo.com/blog/2019/10/18/how-to-build-an-on-page-live-chat-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/10/18/how-to-build-an-on-page-live-chat-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/10/18/how-to-build-an-on-page-live-chat-dr
 ---
 
 Content to be migrated...

@@ -14,8 +14,8 @@ category: inspiration
 tags:
   - http
   - nodejs
-canonical: https://www.nexmo.com/blog/2020/09/23/5-ways-to-make-http-requests-in-node-js-2020-edition
-redirect: https://www.nexmo.com/blog/2020/09/23/5-ways-to-make-http-requests-in-node-js-2020-edition
+canonical: https://www.nexmo.com/legacy-blog/2020/09/23/5-ways-to-make-http-requests-in-node-js-2020-edition
+redirect: https://www.nexmo.com/legacy-blog/2020/09/23/5-ways-to-make-http-requests-in-node-js-2020-edition
 ---
 
 Content to be migrated...

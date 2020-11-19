@@ -12,8 +12,8 @@ published_at: 2018-12-03T17:01:49.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/03/multitrack-call-transcription-split-recording-voice-dr
-redirect: https://www.nexmo.com/blog/2018/12/03/multitrack-call-transcription-split-recording-voice-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/03/multitrack-call-transcription-split-recording-voice-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/03/multitrack-call-transcription-split-recording-voice-dr
 ---
 
 Content to be migrated...

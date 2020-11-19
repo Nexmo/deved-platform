@@ -13,8 +13,8 @@ comments: true
 category: tutorial
 tags:
   - bots
-canonical: https://www.nexmo.com/blog/2017/09/28/bots-ai-user-privacy-environments-bots-listening
-redirect: https://www.nexmo.com/blog/2017/09/28/bots-ai-user-privacy-environments-bots-listening
+canonical: https://www.nexmo.com/legacy-blog/2017/09/28/bots-ai-user-privacy-environments-bots-listening
+redirect: https://www.nexmo.com/legacy-blog/2017/09/28/bots-ai-user-privacy-environments-bots-listening
 ---
 
 Content to be migrated...

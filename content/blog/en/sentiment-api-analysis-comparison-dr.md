@@ -13,8 +13,8 @@ published_at: 2019-10-17T09:20:06.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/10/17/sentiment-api-analysis-comparison-dr
-redirect: https://www.nexmo.com/blog/2019/10/17/sentiment-api-analysis-comparison-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/10/17/sentiment-api-analysis-comparison-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/10/17/sentiment-api-analysis-comparison-dr
 ---
 
 Content to be migrated...

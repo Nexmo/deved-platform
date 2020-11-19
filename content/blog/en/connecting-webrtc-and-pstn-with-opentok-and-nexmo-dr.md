@@ -12,8 +12,8 @@ published_at: 2019-04-23T16:01:14.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/04/23/connecting-webrtc-and-pstn-with-opentok-and-nexmo-dr
-redirect: https://www.nexmo.com/blog/2019/04/23/connecting-webrtc-and-pstn-with-opentok-and-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/04/23/connecting-webrtc-and-pstn-with-opentok-and-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/04/23/connecting-webrtc-and-pstn-with-opentok-and-nexmo-dr
 ---
 
 Content to be migrated...

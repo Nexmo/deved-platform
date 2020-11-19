@@ -13,8 +13,8 @@ published_at: 2020-03-25T13:03:43.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/25/how-permissions-work-in-aws-lambda-dr
-redirect: https://www.nexmo.com/blog/2020/03/25/how-permissions-work-in-aws-lambda-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/03/25/how-permissions-work-in-aws-lambda-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/03/25/how-permissions-work-in-aws-lambda-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-06-13T10:21:06.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/06/13/play-the-game-of-telephone-with-the-nexmo-voice-api-ruby-on-rails-and-google-cloud-platform-dr
-redirect: https://www.nexmo.com/blog/2019/06/13/play-the-game-of-telephone-with-the-nexmo-voice-api-ruby-on-rails-and-google-cloud-platform-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/06/13/play-the-game-of-telephone-with-the-nexmo-voice-api-ruby-on-rails-and-google-cloud-platform-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/06/13/play-the-game-of-telephone-with-the-nexmo-voice-api-ruby-on-rails-and-google-cloud-platform-dr
 ---
 
 Content to be migrated...

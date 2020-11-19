@@ -14,8 +14,8 @@ published_at: 2019-06-25T16:59:26.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2019/06/25/nexmo-dotnet-4-release-dr
-redirect: https://www.nexmo.com/blog/2019/06/25/nexmo-dotnet-4-release-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/06/25/nexmo-dotnet-4-release-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/06/25/nexmo-dotnet-4-release-dr
 ---
 
 Content to be migrated...

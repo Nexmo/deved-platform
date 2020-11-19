@@ -15,8 +15,8 @@ tags:
   - git
   - github
   - hacktoberfest
-canonical: https://www.nexmo.com/blog/2020/10/08/hacktoberfest-using-github-desktop
-redirect: https://www.nexmo.com/blog/2020/10/08/hacktoberfest-using-github-desktop
+canonical: https://www.nexmo.com/legacy-blog/2020/10/08/hacktoberfest-using-github-desktop
+redirect: https://www.nexmo.com/legacy-blog/2020/10/08/hacktoberfest-using-github-desktop
 ---
 
 Content to be migrated...

@@ -13,8 +13,8 @@ published_at: 2016-05-19T15:55:16.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2016/05/19/real-time-web-apps-net-options
-redirect: https://www.nexmo.com/blog/2016/05/19/real-time-web-apps-net-options
+canonical: https://www.nexmo.com/legacy-blog/2016/05/19/real-time-web-apps-net-options
+redirect: https://www.nexmo.com/legacy-blog/2016/05/19/real-time-web-apps-net-options
 ---
 
 Content to be migrated...

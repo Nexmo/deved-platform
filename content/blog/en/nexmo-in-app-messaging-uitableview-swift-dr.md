@@ -12,8 +12,8 @@ published_at: 2018-07-18T19:31:47.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/07/18/nexmo-in-app-messaging-uitableview-swift-dr
-redirect: https://www.nexmo.com/blog/2018/07/18/nexmo-in-app-messaging-uitableview-swift-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/07/18/nexmo-in-app-messaging-uitableview-swift-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/07/18/nexmo-in-app-messaging-uitableview-swift-dr
 ---
 
 Content to be migrated...

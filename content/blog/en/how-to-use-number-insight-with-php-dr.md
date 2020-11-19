@@ -12,8 +12,8 @@ published_at: 2019-03-29T09:00:52.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/03/29/how-to-use-number-insight-with-php-dr
-redirect: https://www.nexmo.com/blog/2019/03/29/how-to-use-number-insight-with-php-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/03/29/how-to-use-number-insight-with-php-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/03/29/how-to-use-number-insight-with-php-dr
 ---
 
 Content to be migrated...

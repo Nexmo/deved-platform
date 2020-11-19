@@ -12,8 +12,8 @@ published_at: 2019-08-23T08:33:03.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/08/23/create-a-conference-call-with-java-dr
-redirect: https://www.nexmo.com/blog/2019/08/23/create-a-conference-call-with-java-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/08/23/create-a-conference-call-with-java-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/08/23/create-a-conference-call-with-java-dr
 ---
 
 Content to be migrated...

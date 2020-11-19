@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - react-native
   - video-api
-canonical: https://www.nexmo.com/blog/2020/10/12/build-a-video-conference-app-with-react-native-and-vonage-video-api
-redirect: https://www.nexmo.com/blog/2020/10/12/build-a-video-conference-app-with-react-native-and-vonage-video-api
+canonical: https://www.nexmo.com/legacy-blog/2020/10/12/build-a-video-conference-app-with-react-native-and-vonage-video-api
+redirect: https://www.nexmo.com/legacy-blog/2020/10/12/build-a-video-conference-app-with-react-native-and-vonage-video-api
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2015-02-26T23:52:51.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2015/02/26/memories-of-confoo
-redirect: https://www.nexmo.com/blog/2015/02/26/memories-of-confoo
+canonical: https://www.nexmo.com/legacy-blog/2015/02/26/memories-of-confoo
+redirect: https://www.nexmo.com/legacy-blog/2015/02/26/memories-of-confoo
 ---
 
 Content to be migrated...

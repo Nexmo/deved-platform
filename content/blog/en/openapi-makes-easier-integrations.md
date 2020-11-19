@@ -13,8 +13,8 @@ published_at: 2020-06-03T07:31:23.000Z
 comments: true
 category: community
 tags: []
-canonical: https://www.nexmo.com/blog/2020/06/03/openapi-makes-easier-integrations
-redirect: https://www.nexmo.com/blog/2020/06/03/openapi-makes-easier-integrations
+canonical: https://www.nexmo.com/legacy-blog/2020/06/03/openapi-makes-easier-integrations
+redirect: https://www.nexmo.com/legacy-blog/2020/06/03/openapi-makes-easier-integrations
 ---
 
 Content to be migrated...

@@ -14,8 +14,8 @@ category: release
 tags:
   - ruby
   - ruby-on-rails
-canonical: https://www.nexmo.com/blog/2019/04/30/announcing-the-nexmo-rails-gem-dr
-redirect: https://www.nexmo.com/blog/2019/04/30/announcing-the-nexmo-rails-gem-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/04/30/announcing-the-nexmo-rails-gem-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/04/30/announcing-the-nexmo-rails-gem-dr
 ---
 
 Content to be migrated...

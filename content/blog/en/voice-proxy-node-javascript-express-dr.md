@@ -13,8 +13,8 @@ published_at: 2018-05-22T14:53:51.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/05/22/voice-proxy-node-javascript-express-dr
-redirect: https://www.nexmo.com/blog/2018/05/22/voice-proxy-node-javascript-express-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/05/22/voice-proxy-node-javascript-express-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/05/22/voice-proxy-node-javascript-express-dr
 ---
 
 Content to be migrated...

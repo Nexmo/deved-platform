@@ -12,7 +12,7 @@ tags:
   - node-red
 comments: true
 redirect: ""
-canonical: https://www.nexmo.com/blog/2019/04/17/send-sms-messages-node-red-dr
+canonical: ""
 outdated: true
 ---
 *This is the first article in a series of “Getting Started with Vonage and Node-RED” tutorials.*

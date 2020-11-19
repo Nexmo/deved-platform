@@ -12,8 +12,8 @@ published_at: 2020-02-05T08:28:27.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2020/02/05/introducing-custom-channel-in-conversations-dr
-redirect: https://www.nexmo.com/blog/2020/02/05/introducing-custom-channel-in-conversations-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/02/05/introducing-custom-channel-in-conversations-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/02/05/introducing-custom-channel-in-conversations-dr
 ---
 
 Content to be migrated...

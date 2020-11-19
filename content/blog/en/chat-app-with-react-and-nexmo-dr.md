@@ -12,8 +12,8 @@ published_at: 2019-08-30T19:29:59.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/08/30/chat-app-with-react-and-nexmo-dr
-redirect: https://www.nexmo.com/blog/2019/08/30/chat-app-with-react-and-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/08/30/chat-app-with-react-and-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/08/30/chat-app-with-react-and-nexmo-dr
 ---
 
 Content to be migrated...
