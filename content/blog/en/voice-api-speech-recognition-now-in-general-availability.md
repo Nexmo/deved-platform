@@ -22,7 +22,7 @@ We’re happy to announce that [Speech Recognition](https://developer.nexmo.com/
 
 ### Call ID Is Now Optional
 
-Unlike DTMF input, call (also known as _leg_) ID was a mandatory parameter for ASR. That was a bit inconvenient since you had to construct NCCO dynamically on the fly.
+Unlike DTMF input, call (also known as _leg_) ID was a mandatory parameter for ASR. That was a bit inconvenient since you had to construct the NCCO dynamically on the fly.
 
 Now the `uuid` parameter is optional, with the first leg in the call as the default, which fits the majority of ASR use-cases like IVR or voice bots. These use cases typically have a single leg in the call, either inbound from PSTN to the application, or outbound from application to the PSTN phone number.
 
