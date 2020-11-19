@@ -24,9 +24,9 @@ In this tutorial, you’re going to build an SMS spam detection web application.
 
 In order to follow and fully understand this tutorial, you’ll need:
 
-- [Python 3.6](https://python.org) or newer. The [Anaconda](https://www.anaconda.com/products/individual) includes a number of useful libraries for data science.
-- A basic knowledge of [Flask](https://flask.palletsprojects.com/), HTML, and CSS
-- A basic understanding of building machine learning models.
+* [Python 3.6](https://python.org) or newer. The [Anaconda](https://www.anaconda.com/products/individual) includes a number of useful libraries for data science.
+* A basic knowledge of [Flask](https://flask.palletsprojects.com/), HTML, and CSS
+* A basic understanding of building machine learning models.
 
 <sign-up number></sign-up>
 
@@ -57,7 +57,7 @@ An overview of the file directory for this project is shown below:
 	├── static
 	└── templates
 ```
-    
+
 We will create all the files in the above directory tree through the steps of this tutorial.
 
 ## Set Up a Python Virtual Environment
@@ -118,18 +118,18 @@ pip  install jupyterlab Flask==1.1.2 lightgbm==3.0.0 nexmo==2.5.2 matplotlib==3.
 
 Here are some details about these packages:
 
-- [jupyterlab]('https://jupyter.org/') is for model building and data exploration.
-- [flask]('https://flask.palletsprojects.com/en/1.1.x/') is for creating the application server and pages.
-- [lightgbm]('https://lightgbm.readthedocs.io/en/latest/') is the machine learning algorithm for building our model
-- [nexmo]('https://developer.nexmo.com/') is a Python library for interacting with your Vonage account
-- [matplotlib]('https://matplotlib.org/'), [plotly]('https://plotly.com/'), [plotly-express]('https://plotly.com/python/plotly-express/') are for data visualization
-- [python-dotenv]('https://pypi.org/project/python-dotenv/') is a package for managing environment variables such as API keys and other configuration values.
-- [nltk]('https://www.nltk.org/') is for natural language operations
-- [numpy]('https://numpy.org/') is for arrays computation
-- [pandas]('https://pandas.pydata.org/') is for manipulating and wrangling structured data.
-- [regex]('https://pypi.org/project/regex/') is for regular expression operations
-- [scikit-learn]('https://scikit-learn.org/') is a machine learning toolkit
-- [wordcloud]('https://pypi.org/project/wordcloud/') is used to create word cloud images from text
+* [jupyterlab]('https://jupyter.org/') is for model building and data exploration.
+* [flask]('https://flask.palletsprojects.com/en/1.1.x/') is for creating the application server and pages.
+* [lightgbm]('https://lightgbm.readthedocs.io/en/latest/') is the machine learning algorithm for building our model
+* [nexmo]('https://developer.nexmo.com/') is a Python library for interacting with your Vonage account
+* [matplotlib]('https://matplotlib.org/'), [plotly]('https://plotly.com/'), [plotly-express]('https://plotly.com/python/plotly-express/') are for data visualization
+* [python-dotenv]('https://pypi.org/project/python-dotenv/') is a package for managing environment variables such as API keys and other configuration values.
+* [nltk]('https://www.nltk.org/') is for natural language operations
+* [numpy]('https://numpy.org/') is for arrays computation
+* [pandas]('https://pandas.pydata.org/') is for manipulating and wrangling structured data.
+* [regex]('https://pypi.org/project/regex/') is for regular expression operations
+* [scikit-learn]('https://scikit-learn.org/') is a machine learning toolkit
+* [wordcloud]('https://pypi.org/project/wordcloud/') is used to create word cloud images from text
 
 After installation, start your Jupyter lab by running:
 
@@ -138,7 +138,6 @@ jupyter lab
 ```
 
 This opens the popular Jupyter lab interface in your web browser, where you are going to carry out some interactive data exploration and model building.
-
 
 Jupyter lab interface is shown here [Jupyterlab]('https://photos.app.goo.gl/QZxB3AdWdjoQfLLm6')
 
@@ -170,6 +169,7 @@ The spam dataset located in the dataset directory named `spam.csv` can be import
 ```python
 df = pd.read_csv("../dataset/spam.csv", encoding='latin-1')
 ```
+
 > Note: The character encoding of this dataset character set is latin-1(ISO/IEC 8859-1).
 
 Next, we get an overview of the dataset:
@@ -177,6 +177,8 @@ Next, we get an overview of the dataset:
 ```python
 df.head()
 ```
+
+![Dataset overview](/content/blog/sms-spam-detection-with-machine-learning-in-python/image6.png "Dataset overview")
 
 The dataset contains 5 columns. Column v1 is the dataset label (“ham” or “spam”) and column v2 contains the text of the SMS message. Columns “Unnamed: 2”, “Unnamed: 3”, and “Unnamed: 4” contain "NaN" (not a number) signifying missing values. They are not needed, so they can be dropped as they are not going to be useful in building the model. The following code snippet will drop and rename the columns to improve understandability of the dataset:
 
@@ -186,6 +188,7 @@ df.rename(columns = {'v1':'class_label','v2':'message'},inplace=True)
 df.head()
 ```
 
+![Rename columns](/content/blog/sms-spam-detection-with-machine-learning-in-python/image12.png "Rename columns")
 
 Let's look at the distribution of labels:
 
@@ -194,6 +197,7 @@ fig = px.histogram(df, x="class_label", color="class_label", color_discrete_sequ
 fig.show()
 ```
 
+![Distributions of labels](/content/blog/sms-spam-detection-with-machine-learning-in-python/image1.png "Distributions of labels")
 
 We have an imbalanced dataset, with 747 messages being spam messages and 4825 messages being ham.
 
@@ -202,7 +206,9 @@ fig = px.pie(df.class_label.value_counts(),labels='index', values='class_label',
 fig.show()
 ```
 
-The spam makes 13.4% of the dataset while ham composes 86.6% of the dataset.
+![Labels pie chart](/content/blog/sms-spam-detection-with-machine-learning-in-python/image5.png "Labels pie chart")
+
+The spam makes up 13.4% of the dataset while ham composes 86.6% of the dataset.
 
 Next, we will delve into a little feature engineering. The length of the messages might provide some insights. Let's take a look:
 
@@ -211,12 +217,16 @@ df['length'] = df['message'].apply(len)
 df.head()
 ```
 
+![Message length](/content/blog/sms-spam-detection-with-machine-learning-in-python/image17.png "Message length")
+
 ```python
 fig = px.histogram(df, x="length", color="class_label", color_discrete_sequence=["#871fff","#ffa78c"] )
 fig.show()
 ```
 
+![length distribution - ham](/content/blog/sms-spam-detection-with-machine-learning-in-python/image16.png "length distribution - ham")
 
+![Length distribution - spam](/content/blog/sms-spam-detection-with-machine-learning-in-python/image19.png "Length distribution - spam")
 
 It can be seen that ham messages are shorter than spam messages as the distribution of ham and spam message lengths are centered around 30-40 and 155-160 characters, respectively.
 
@@ -246,6 +256,7 @@ Below is the code that displays a word cloud for spam SMS:
 show_wordcloud(data_spam, "Spam messages")
 ```
 
+![word cloud spam](/content/blog/sms-spam-detection-with-machine-learning-in-python/image8.png "word cloud spam")
 
 You can display the word cloud for ham SMS as well:
 
@@ -253,8 +264,9 @@ You can display the word cloud for ham SMS as well:
 show_wordcloud(data_ham, "ham messages")
 ```
 
+![word cloud ham](/content/blog/sms-spam-detection-with-machine-learning-in-python/image13.png "word cloud ham")
 
-#### Preprocess the Data'
+#### Preprocess the Data
 
 The process of converting data to something a computer can understand is referred to as pre-processing. In the context of this article, this involves processes and techniques to prepare our text data for our machine learning algorithm 
 
@@ -296,7 +308,7 @@ df['message'] = df['message'].str.lower()
 ```
 
 Going forward, we'll remove stopwords from the message content. Stop words are words that search engines have been programmed to ignore, both when indexing entries for searching and when retrieving them as the result of a search query such as “the”, “a”, “an”, “in”, "but", "because" etc.
- 
+
 ```python
 from nltk.corpus import stopwords
 stop_words = set(stopwords.words('english'))
@@ -305,14 +317,14 @@ df['message'] = df['message'].apply(lambda x: ' '.join(term for term in x.split(
 
 Next, we will extract the base form of words by removing affixes from them. This called stemming, as it can be illustrated as cutting down the branches of a tree to its stems. There are numerous stemming algorithms, such as:
 
-- Porter’s Stemmer algorithm
-- Lovins Stemmer
-- Dawson Stemmer
-- Krovetz Stemmer
-- Xerox Stemmer
-- N-Gram Stemmer
-- Snowball Stemmer
-- Lancaster Stemmer
+* Porter’s Stemmer algorithm
+* Lovins Stemmer
+* Dawson Stemmer
+* Krovetz Stemmer
+* Xerox Stemmer
+* N-Gram Stemmer
+* Snowball Stemmer
+* Lancaster Stemmer
 
 Some of these stemming algorithms are aggressive and dynamic. Some apply to languages other than English and the text data size affects various efficiencies. For this article, the Snowball Stemmer was utilized due to its computational speed.
 
@@ -345,11 +357,15 @@ Let's take a look at the total number of words:
 print('Number of words: {}'.format(len(all_words)))
 ```
 
+![Number of words 6526](/content/blog/sms-spam-detection-with-machine-learning-in-python/image15.png "Number of words 6526")
+
 Now plot the top 10 common words in the text data:
 
 ```python
 all_words.plot(10, title='Top 10 Most Common Words in Corpus');
 ```
+
+![Most common words](/content/blog/sms-spam-detection-with-machine-learning-in-python/image2.png "Most common words")
 
 Next, we will implement an NLP technique—term frequency-inverse document frequency—to evaluate how important words are in the text data. In short, this technique simply defines what a “relevant word” is. The tfidf_model created from this NLP technique will be saved (serialized) to the local disk for transforming the test data for our web application later:
 
@@ -363,6 +379,8 @@ pickle.dump(tfidf_model, open("../model/tfidf_model.pkl","wb"))
 tfidf_data=pd.DataFrame(tfidf_vec.toarray())
 tfidf_data.head()
 ```
+
+![tfidf](/content/blog/sms-spam-detection-with-machine-learning-in-python/image14.png "tfidf")
 
 The shape of the resulting dataframe is 5572 by 6506. In order to train and validate the performance of our machine learning model, we need to split the data into training and test dataset respectively. The training set should be later split into a train and validation set.
 
@@ -388,11 +406,11 @@ The split ratio for the validation set is 20% of the training data.
 
 We will be utilizing a machine learning algorithm known as LightGBM. It is a gradient boosting framework that uses tree based learning algorithms. It has the following benefits:
 
-- Faster training speed and higher efficiency
-- Lower memory usage
-- Better accuracy
-- Support of parallel and GPU learning
-- Capable of handling large-scale data
+* Faster training speed and higher efficiency
+* Lower memory usage
+* Better accuracy
+* Support of parallel and GPU learning
+* Capable of handling large-scale data
 
 The performance metric for this project is the F1 score. This metric considers both precision and recall to compute the score. The F1 score reaches its best value at 1 and worst value at 0.
 
@@ -413,7 +431,7 @@ for depth in [1,2,3,4,5,6,7,8,9,10]:
 	train_and_test(lgbmodel, "Light GBM")
 ```
 
-
+![F1 score](/content/blog/sms-spam-detection-with-machine-learning-in-python/image18.png "F1 score")
 
 From this iteration, it can be seen that the Max Depth of six (6) has the highest F1 score of 0.9285714285714285. We will further perform a random grid search for the best parameters for the model:
 
@@ -439,6 +457,7 @@ search = model.fit(X_train, y_train)
 search.best_params_
 ```
 
+![best parameters search](/content/blog/sms-spam-detection-with-machine-learning-in-python/image10.png "best parameters search")
 
 We'll use the best parameters to the train the model:
 
@@ -459,12 +478,16 @@ best_model = lgb.LGBMClassifier(subsample=0.5,
 best_model.fit(X_train,y_train)
 ```
 
+![Trained model](/content/blog/sms-spam-detection-with-machine-learning-in-python/image4.png "Trained model")
+
 Let's check the performance of the model by its prediction:
 
 ```python
 prediction = best_model.predict(X_test)
 print(f'F1 score is: {f1_score(prediction, y_test)}')
 ```
+
+![Model prediction](/content/blog/sms-spam-detection-with-machine-learning-in-python/image11.png "Model prediction")
 
 As a last step, we'll do a full training on the dataset so our web app can make predictions for data it hasn't seen. We'll save the model to our local machine:
 
@@ -526,7 +549,6 @@ warnings.filterwarnings("ignore")
 app = Flask(__name__)
 # secret key is needed for session
 app.secret_key = os.getenv('SECRET_KEY')
-
 ```
 
 After the Flask application instance, we utilize Flask sessions to aid data retention at various server logging intervals. These sessions require you to have a secret key—you can save the secret key value in the `.env` file and load it as we did the API credentials.
@@ -539,14 +561,11 @@ The home/index route provides the interface to send the message:
 @app.route('/',  methods=['GET', 'POST'])
 def home():
 	return render_template('index.html')
-
 ```
 
 The interface is shown below:
 
-
-
-
+![Home interface](/content/blog/sms-spam-detection-with-machine-learning-in-python/image7.png "Home interface")
 
 The supporting `index.html` file in the `templates` directory should look like this:
 
@@ -588,7 +607,6 @@ The supporting `index.html` file in the `templates` directory should look like t
 </section>
 </body>
 </html>
-
 ```
 
 The next route is the inbox route, where the messages sent and sender phone number from the index is stored. The Vonage SMS API is utilized here to initiate the client object and send the message:
@@ -611,14 +629,11 @@ def inbox():
     	'text': message,
 	})
 	return render_template('inbox.html', number=to_number, msg=message)
-
 ```
 
 The interface is shown below:
 
-
-
-
+![Inbox interface](/content/blog/sms-spam-detection-with-machine-learning-in-python/image20.png "Inbox interface")
 
 The supporting `inbox.html` file in the `templates` directory looks like this:
 
@@ -673,7 +688,6 @@ The supporting `inbox.html` file in the `templates` directory looks like this:
 The last route is for our prediction. It applies all the previous preprocessing techniques used to train the machine learning model to the new data in the form of inbox messages:
 
 ```python
-
 @app.route('/predict', methods=['POST'])
 def predict():
 	model = pickle.load(open("../model/spam_model.pkl", "rb"))
@@ -713,6 +727,7 @@ def predict():
 
 The interface is shown below:
 
+![Prediction interface](/content/blog/sms-spam-detection-with-machine-learning-in-python/image3.png "Prediction interface")
 
 The supporting `predict.html` file in the `templates` directory looks like this:
 
@@ -781,8 +796,9 @@ Now you can test your application! To start your server, open your root folder i
 python app.py
 ```
 
-If you’ve followed all the steps above, then you should see your server running as shown below.
+If you’ve followed all the steps above, then you should see your server running as shown below:
 
+![Server output](/content/blog/sms-spam-detection-with-machine-learning-in-python/image9.png "Server output")
 
 Enter `http://localhost:5000/` in the address bar to connect to the application.
 
