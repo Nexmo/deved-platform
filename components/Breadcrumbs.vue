@@ -40,16 +40,15 @@ export default {
   computed: {
     crumbs() {
       const fullPath = this.$route.fullPath
-      const params = fullPath.startsWith('/')
-        ? fullPath.substring(1).split('/')
-        : fullPath.split('/')
+      const path = fullPath.startsWith('/') ? fullPath.substring(1) : fullPath
+      const params = path.split('#').shift().split('?').shift().split('/')
       const crumbs = []
 
-      let path = ''
+      let newPath = ''
 
       params.forEach((param, index) => {
-        path = `${path}/${param}`
-        const match = this.$router.match(path)
+        newPath = `${newPath}/${param}`
+        const match = this.$router.match(newPath)
 
         if (match.name !== null) {
           crumbs.push({
