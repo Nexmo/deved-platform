@@ -5,7 +5,7 @@ description: Use Python to build a machine learning model for detecting spam SMS
 thumbnail: /content/blog/sms-spam-detection-with-machine-learning-in-python/python_flash_ml-sms_spam1200x600.png
 author: aboze-brain-john
 published: true
-published_at: 2020-11-18T21:08:12.568Z
+published_at: 2020-11-19T16:36:16.715Z
 updated_at: 2020-11-18T21:08:12.589Z
 category: tutorial
 tags:
