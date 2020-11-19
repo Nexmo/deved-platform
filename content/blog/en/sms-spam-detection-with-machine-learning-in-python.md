@@ -6,7 +6,7 @@ thumbnail: /content/blog/sms-spam-detection-with-machine-learning-in-python/pyth
 author: aboze-brain-john
 published: true
 published_at: 2020-11-19T16:36:16.715Z
-updated_at: 2020-11-18T21:08:12.589Z
+updated_at: ""
 category: tutorial
 tags:
   - python
