@@ -25,8 +25,8 @@ In this tutorial, you’re going to build an SMS spam detection web application.
 
 In order to follow and fully understand this tutorial, you’ll need:
 
-* [Python 3.6](https://python.org) or newer. The [Anaconda](https://www.anaconda.com/products/individual) includes a number of useful libraries for data science.
-* A basic knowledge of [Flask](https://flask.palletsprojects.com/), HTML, and CSS
+* [Python 3.6](https://python.org) or newer. The [Anaconda](https://www.anaconda.com/products/individual) distribution includes a number of useful libraries for data science.
+* A basic knowledge of [Flask](https://flask.palletsprojects.com/), HTML, and CSS.
 * A basic understanding of building machine learning models.
 
 <sign-up number></sign-up>
