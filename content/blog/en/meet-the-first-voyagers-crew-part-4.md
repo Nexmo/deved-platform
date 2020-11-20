@@ -39,7 +39,7 @@ This week, we’re staying in the Americas region to highlight two Voyagers and 
 
 In one of our training sessions, me and a friend were talking about how we count time nowadays and we agreed that it was super weird. I mean, our whole counting system is base 10. Most exams have a total score of 10 points and other measurement units (like liters and centiliters or grams and kilograms) are also based on 10s. But, for some weird reason, a minute has 60 seconds and an hour has 60 minutes! That is just outrageous.
 
-Introducing [cclock](https://github.com/gmelodie/cclock). Cclock is just a time converting CLI (for now) that converts our weird time system to a system that \*actually\* makes sense: one centhute has 100 centhconds and one centhour has 100 centhute. That's it. Super dumb hack, hacked it in 3h tops (because I wanted to practice Go and I'm not very proficient at it), and it's not much. Still, love it (and my friend from Parkour also does!).
+Introducing [cclock](https://github.com/gmelodie/cclock). Cclock is just a time converting CLI (for now) that converts our weird time system to a system that *actually* makes sense: one centhute has 100 centhconds and one centhour has 100 centhute. That's it. Super dumb hack, hacked it in 3h tops (because I wanted to practice Go and I'm not very proficient at it), and it's not much. Still, love it (and my friend from Parkour also does!).
 
 *Matthew:* I recently co-designed a 6-week-long online puzzle hunt to celebrate the 15th anniversary of a Michelin 3-star restaurant. Over 10,000 people worked on solving the puzzles!
 
