@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/Nexmo/deved-platform/compare/v1.7.1...v2.0.0) (2020-11-21)
+
+
+* refactor!: new frontend using Tailwindcss (#411) ([1e67d67](https://github.com/Nexmo/deved-platform/commit/1e67d67482e3a701e6ef4b8b7e9b70964ed7437a)), closes [#411](https://github.com/Nexmo/deved-platform/issues/411)
+
+
+### BREAKING CHANGES
+
+* removes volta and introduces tailwindcss as the frontend framework
+
 ## [1.7.1](https://github.com/Nexmo/deved-platform/compare/v1.7.0...v1.7.1) (2020-11-19)
 
 
