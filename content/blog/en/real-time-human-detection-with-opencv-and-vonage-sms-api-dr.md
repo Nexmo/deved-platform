@@ -1,18 +1,18 @@
 ---
-title: Real-Time Human Detection with OpenCV and Vonage SMS API
+title: Real-Time Human Detection with OpenCV
 description: In this tutorial, learn how to build your own “smart” video camera
   with real-time human detection using OpenCV and Vonage SMS API.
 thumbnail: /content/blog/real-time-human-detection-with-opencv-and-vonage-sms-api-dr/Blog_Human-Detection_1200x600.png
 author: misha-behei
 published: true
 published_at: 2020-04-15T14:08:48.000Z
-updated_at: 2020-11-06T14:36:25.750Z
+updated_at: ""
 category: tutorial
 tags:
   - sms-api
   - python
   - open-cv
-comments: true
+comments: false
 redirect: ""
 canonical: ""
 ---
