@@ -1,10 +1,8 @@
 <template>
-  <div class="Vlt-error-page">
-    <div class="Vlt-container">
-      <ErrorI18N v-if="errorType === 'i18n'" :translations="translations" />
-      <Error404 v-else-if="errorType === '404'" />
-      <Error400 v-else />
-    </div>
+  <div>
+    <ErrorI18N v-if="errorType === 'i18n'" :translations="translations" />
+    <Error404 v-else-if="errorType === '404'" />
+    <Error400 v-else />
   </div>
 </template>
 
@@ -52,11 +50,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.Vlt-error-page .Vlt-container {
-  height: 75vh;
-  margin: 0 auto;
-  position: relative;
-}
-</style>

@@ -1,49 +1,64 @@
 <template>
-  <div class="Vlt-col Vlt-col--1of2">
-    <div class="Vlt-card Vlt-bg-white">
-      <NLink
+  <article class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+    <figure class="flex-shrink-0">
+      <nuxt-link
         :to="localePath(post.route, post.locale)"
+        class="card-figure"
         :title="post.title"
-        class="Vlt-card__image"
-        :style="`background-image: url('${post.thumbnail}'); background-size: cover; background-position: center; height: 200px`"
-      />
-      <div class="Vlt-card__header">
-        <NLink :to="localePath(post.route, post.locale)" :title="post.title">
-          <h2
-            class="Blog-truncate"
-            :class="{ 'Vlt-title--icon': post.redirect }"
-          >
-            <svg v-if="post.redirect">
-              <use
-                xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-open-full"
-              />
-            </svg>
-            {{ post.title | truncate(73, '...') }}
-          </h2>
-        </NLink>
-      </div>
-      <div class="Vlt-card__content Vlt-grey-dark">
-        <small v-if="post.published_at">
-          Published
-          <strong>{{
-            post.published_at | moment('dddd, MMMM Do YYYY')
-          }}</strong>
-        </small>
-        <small v-if="post.author">
-          by
-          <Author :author="post.author" type="name" />
-        </small>
-      </div>
-      <div class="Vlt-card__footer Vlt-card__footer--short Vlt-left">
-        <Tags :tags="post.tags" />
-      </div>
-      <div
-        class="Vlt-card__footer Vlt-card__footer--short Vlt-card__footer--noborder Vlt-right"
       >
-        <Category :category="post.categoryObject" class="Category--border" />
-      </div>
-    </div>
-  </div>
+        <img :src="post.thumbnail" alt="post.title" />
+      </nuxt-link>
+    </figure>
+    <section class="flex flex-col justify-between flex-1 p-6 bg-white">
+      <header class="flex-1">
+        <p class="text-sm font-medium">
+          <Category :category="post.categoryObject" class="text-sm" />
+        </p>
+        <h3 class="block mt-2 text-lg">
+          <svg
+            v-if="post.redirect"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block mr-1 stroke-current stroke-2 icon-size"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="{2}"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
+          </svg>
+          <nuxt-link
+            :to="localePath(post.route, post.locale)"
+            :title="post.title"
+          >
+            {{ post.title }}
+          </nuxt-link>
+        </h3>
+      </header>
+      <footer class="flex items-center mt-6">
+        <div class="flex-shrink-0">
+          <span class="sr-only"
+            ><Author :author="post.author" type="name"
+          /></span>
+          <Author :author="post.author" type="img" />
+        </div>
+        <div class="ml-3">
+          <p class="text-sm font-medium text-gray-900">
+            <Author :author="post.author" type="name" />
+          </p>
+          <div class="flex space-x-1 text-sm text-gray-500">
+            <time datetime="2020-03-16">
+              {{ post.published_at | moment('MMM D, YYYY') }}
+            </time>
+            <ReadingTime :reading-time="post.readingTime" />
+          </div>
+        </div>
+      </footer>
+    </section>
+  </article>
 </template>
 
 <script>
@@ -56,65 +71,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.Vlt-card__footer {
-  line-height: 30px;
-}
-
-.Vlt-card__footer + .Vlt-card__footer--noborder {
-  margin-top: -37px;
-}
-
-.Vlt-card__footer >>> .Vlt-badge-group {
-  width: 75%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.Vlt-card__corner {
-  padding: 0;
-}
-
-.Vlt-card__content small >>> a.Author__Name {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.Vlt-card__content small >>> a.Author__Name:visited {
-  color: #202020;
-}
-
-.Vlt-card__header {
-  padding-bottom: 8px;
-}
-
-.Category--border {
-  border: 1px solid rgba(19, 20, 21, 0.2);
-}
-
-@media only screen and (min-width: 575px) {
-  .Vlt-card__header h2.Blog-truncate {
-    display: block;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-
-h2 {
-  margin-bottom: 0;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 8px;
-}
-
-h2 svg {
-  width: 15px;
-}
-</style>

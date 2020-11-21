@@ -1,22 +1,23 @@
 <template>
-  <footer class="Vlt-footer Vlt-bg-black Vlt-white">
-    <div class="Vlt-container">
-      <div class="Vlt-grid">
-        <div class="Vlt-col">
-          <h2>
+  <footer class="text-white bg-black">
+    <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+      <div
+        class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+      >
+        <div>
+          <h4>
             <client-only>
               <img
                 v-if="!!token"
                 :src="`/Vonage-footer-logo.svg?token=${token}`"
-                width="100"
+                class="w-32"
                 :alt="$t('component_footer_strapline')"
               />
             </client-only>
-          </h2>
+          </h4>
           <ul>
             <li>
               <a
-                class="Vlt-text-link Vlt-white"
                 href="https://www.vonage.com/legal/"
                 target="_blank"
                 rel="noreferrer"
@@ -25,7 +26,6 @@
             </li>
             <li>
               <a
-                class="Vlt-text-link Vlt-white"
                 href="https://www.vonage.com/legal/privacy-policy/"
                 target="_blank"
                 rel="noreferrer"
@@ -34,39 +34,19 @@
             </li>
             <li>
               <a
-                class="Vlt-text-link Vlt-white"
                 href="https://www.vonage.com/copyright-policy"
                 target="_blank"
                 rel="noreferrer"
                 >{{ $t('component_footer_copyright') }}</a
               >
             </li>
-            <li>
-              <a
-                class="Vlt-text-link Vlt-white"
-                href="https://www.vonage.com/about-us/patents/"
-                target="_blank"
-                rel="noreferrer"
-                >{{ $t('component_footer_patents') }}</a
-              >
-            </li>
           </ul>
         </div>
-        <div class="Vlt-col">
-          <h2>{{ $t('component_footer_service') }}</h2>
+        <div>
+          <h4>{{ $t('component_footer_service') }}</h4>
           <ul>
             <li>
               <a
-                class="Vlt-text-link Vlt-white"
-                href="https://www.vonage.com/partners/"
-                target="_blank"
-                rel="noreferrer"
-                >{{ $t('component_footer_partners') }}</a
-              >
-            </li>
-            <li>
-              <a
-                class="Vlt-text-link Vlt-white"
                 href="https://www.vonage.com/system-status/"
                 target="_blank"
                 rel="noreferrer"
@@ -75,7 +55,6 @@
             </li>
             <li>
               <a
-                class="Vlt-text-link Vlt-white"
                 href="https://www.vonage.com/support/"
                 target="_blank"
                 rel="noreferrer"
@@ -84,7 +63,6 @@
             </li>
             <li>
               <a
-                class="Vlt-text-link Vlt-white"
                 href="https://rewards.vonagebusiness.com/index.html"
                 target="_blank"
                 rel="noreferrer"
@@ -93,90 +71,65 @@
             </li>
           </ul>
         </div>
-        <div class="Vlt-col">
-          <h2>{{ $t('component_footer_corporate') }}</h2>
+        <div>
+          <h4>Content</h4>
+          <ul>
+            <li><nuxt-link to="/authors">Authors</nuxt-link></li>
+            <li><nuxt-link to="/blog">Blog Posts</nuxt-link></li>
+            <li><nuxt-link to="/blog/spotlight">Spotlight Posts</nuxt-link></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contributing</h4>
           <ul>
             <li>
+              <nuxt-link to="/contributing">Guidelines</nuxt-link>
+            </li>
+            <li>
               <a
-                class="Vlt-text-link Vlt-white"
-                href="https://ir.vonage.com/"
                 target="_blank"
                 rel="noreferrer"
-                >{{ $t('component_footer_investors') }}</a
+                href="https://github.com/Nexmo/deved-platform"
+                >GitHub</a
               >
             </li>
             <li>
               <a
-                class="Vlt-text-link Vlt-white"
-                href="https://www.vonage.com/events/?icmp=footer_corporate_events"
                 target="_blank"
                 rel="noreferrer"
-                >{{ $t('component_footer_events') }}</a
-              >
-            </li>
-            <li>
-              <a
-                class="Vlt-text-link Vlt-white"
-                href="https://www.vonage.com/careers/?icmp=footer_corporate_careers"
-                target="_blank"
-                rel="noreferrer"
-                >{{ $t('component_footer_careers') }}</a
+                href="https://developer.nexmo.com/community/slack"
+                >Slack</a
               >
             </li>
           </ul>
         </div>
-        <div class="Vlt-col">
-          <h2>{{ $t('component_footer_social') }}</h2>
-          <ul>
+        <div>
+          <ul
+            class="flex flex-row items-end space-x-2 text-xl lg:flex-col lg:space-x-0"
+          >
             <li>
-              <a
-                class="Vlt-text-link Vlt-white"
-                href="https://facebook.com/vonage"
-                target="_blank"
-                rel="noreferrer"
-                >{{ $t('component_footer_facebook') }}</a
-              >
+              <twitter-social-button
+                class="text-white"
+                link="https://twitter.com/vonagedev"
+              ></twitter-social-button>
             </li>
             <li>
-              <a
-                class="Vlt-text-link Vlt-white"
-                href="https://www.linkedin.com/company/vonage"
-                target="_blank"
-                rel="noreferrer"
-                >{{ $t('component_footer_linkedin') }}</a
-              >
+              <twitch-social-button
+                class="text-white"
+                link="https://twitch.tv/vonagedevs"
+              ></twitch-social-button>
             </li>
             <li>
-              <a
-                class="Vlt-text-link Vlt-white"
-                href="https://twitter.com/Vonage"
-                target="_blank"
-                rel="noreferrer"
-                >{{ $t('component_footer_twitter') }}</a
-              >
+              <you-tube-social-button
+                class="text-white"
+                link="https://www.youtube.com/channel/UCHQnbTiun_Wn7nDxkQavrYQ"
+              ></you-tube-social-button>
             </li>
             <li>
-              <a
-                class="Vlt-text-link Vlt-white"
-                href="https://www.youtube.com/channel/UCHQnbTiun_Wn7nDxkQavrYQ"
-                target="_blank"
-                rel="noreferrer"
-                >{{ $t('component_footer_youtube') }}</a
-              >
-            </li>
-            <li>
-              <a
-                href="/feeds/blog/rss.xml"
-                target="_blank"
-                :title="$t('component_footer_rssfeed')"
-                class=""
-              >
-                <svg class="Vlt-icon Vlt-icon--smaller Vlt-white">
-                  <use
-                    xlink:href="../node_modules/@vonagevolta/volta2/dist/symbol/volta-icons.svg#Vlt-icon-rss"
-                  />
-                </svg>
-              </a>
+              <rss-social-button
+                class="text-white"
+                link="/feeds/blog/rss.xml"
+              ></rss-social-button>
             </li>
           </ul>
         </div>
@@ -184,7 +137,6 @@
     </div>
   </footer>
 </template>
-
 <script>
 import jwt from 'jsonwebtoken'
 
@@ -239,24 +191,22 @@ export default {
 </script>
 
 <style scoped>
-.Vlt-footer {
-  width: 100vw;
-  min-height: 200px;
-  margin-top: 50px;
-  padding: 50px 0;
-}
-.Vlt-container {
-  margin: auto;
-  padding: 12px;
+footer {
+  @apply mt-12;
+  @apply py-12;
+  @apply sm:mt-24;
+  @apply sm:py-24;
+  @apply md:mt-36;
+  @apply md:py-36;
 }
 
-.Vlt-footer h2 {
-  color: white;
-  text-transform: uppercase;
-  color: #868994;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
+h4 {
+  @apply uppercase;
+  @apply text-grey-dark;
+  @apply tracking-widest;
+}
+
+ul > li {
+  @apply my-2;
 }
 </style>

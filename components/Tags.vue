@@ -1,6 +1,6 @@
 <template>
-  <div class="Vlt-badge-group">
-    <Tag v-for="tag in tags" :key="tag" :tag="tag" />
+  <div class="flex space-x-2 truncate">
+    <Tag v-for="tag in tags.slice(0, 3)" :key="tag" :tag="tag" />
   </div>
 </template>
 
@@ -14,9 +14,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.Vlt-badge-group {
-  min-height: 27px;
-}
-</style>

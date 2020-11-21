@@ -25,3 +25,9 @@
   to = "/.netlify/functions/image-svg"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/api/live-on-twitch"
+  to = "/.netlify/functions/live-on-twitch"
+  status = 200
+  force = true

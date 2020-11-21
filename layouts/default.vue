@@ -1,9 +1,10 @@
 <template>
-  <div class="Vlt-template Vlt-bg-grey-lighter">
-    <DemoBar v-if="isDemo" :link="demoLink" />
+  <div>
+    <DeployContext :env="env" />
     <Header />
     <Nuxt />
     <Footer />
+    <BackToTop />
   </div>
 </template>
 
@@ -13,7 +14,7 @@ export default {
     if (process.client) {
       this.log(
         `%c${this.$t('layout_default_careers_title')}`,
-        'font-family: Gill Sans, sans-serif; font-size: 40px; color: #dd0d00'
+        'font-family: Gill Sans, sans-serif; font-size: 40px; color: #e84545'
       )
       this.log(
         `%c${this.$t('layout_default_careers_body')}`,
@@ -36,12 +37,14 @@ export default {
   },
 
   computed: {
-    isDemo() {
-      return process.env.demo !== null
-    },
-
-    demoLink() {
-      return process.env.demo
+    env() {
+      return {
+        nodeEnv: process.env.nodeEnv,
+        netlifyContext: process.env.netlifyContext,
+        netlifyHead: process.env.netlifyHead,
+        previewRoute: process.env.previewRoute,
+        repoUrl: process.env.repoUrl,
+      }
     },
   },
 

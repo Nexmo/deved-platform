@@ -1,67 +1,60 @@
 <template>
-  <section class="Blog__Full-width">
-    <article
-      class="Blog__post Vlt-container"
-      vocab="http://schema.org/"
-      typeof="BlogPosting"
-    >
-      <div class="Vlt-grid Vlt-grid--stack-flush">
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs />
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <div
-            class="Vlt-card Vlt-card--lesspadding"
-            property="mainEntityOfPage"
-          >
-            <div class="Vlt-card__header Vlt-margin--A-top3">
-              <h1 property="headline">
-                {{ post.title }}
-              </h1>
-              <BackToTop />
-            </div>
-            <hr class="hr--short Vlt-gradient--blue-to-pink" />
-            <div
-              v-if="post.show_toc"
-              class="Vlt-card__header Vlt-margin--A-top3"
-            >
-              <h2>Table of Contents</h2>
-              <ul class="Vlt-list Vlt-list--simple Vlt-margin--A-top2">
-                <li
-                  v-for="link of post.toc"
-                  :key="link.id"
-                  :class="{
-                    'Vlt-list--item2': link.depth === 2,
-                    'Vlt-list--item3': link.depth === 3,
-                  }"
+  <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+    <Breadcrumbs />
+    <section class="grid grid-cols-1 gap-6 md:grid-cols-4 xl:grid-cols-5">
+      <div class="col-span-3 col-start-2 row-span-5">
+        <article
+          class="bg-white rounded-lg shadow"
+          vocab="http://schema.org/"
+          typeof="BlogPosting"
+          property="mainEntityOfPage"
+        >
+          <header class="px-4 pt-4 mb-4">
+            <h1 class="flex text-5xl font-bold truncate" property="headline">
+              {{ page.title }}
+              <meta property="publisher" content="@VonageDev" />
+            </h1>
+            <main class="mt-4 text-grey-darker">
+              <div class="text-sm text-grey-dark">
+                <svg
+                  class="inline w-3 fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="Vlt-card__content Vlt-margin--A-top3"
+                  <title>GitHub icon</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  /></svg
+                ><ImproveLink :post="page" /> (<RevisionsLink :post="page" />)
+              </div>
+            </main>
+          </header>
+          <main class="py-4 mx-4 border-t">
+            <nuxt-content
               property="articleBody"
-            >
-              <nuxt-content :document="post" />
-            </div>
-          </div>
-        </div>
-        <div class="Vlt-col" />
+              class="mx-auto prose-sm prose sm:prose lg:prose-lg"
+              :document="page"
+            />
+          </main>
+        </article>
       </div>
-    </article>
-  </section>
+      <aside
+        class="sticky col-span-1 p-4 bg-white rounded-lg shadow top-4 asides"
+      >
+        <section>
+          <TableOfContents :toc="page.toc" />
+        </section>
+      </aside>
+    </section>
+  </main>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, app: { i18n }, error }) {
     try {
-      const post = await $content(`page/${i18n.locale}`, 'contributing')
+      const page = await $content(`page/${i18n.locale}`, 'contributing')
         .where({ published: { $ne: false } })
         .fetch()
         .catch((err) => {
@@ -69,7 +62,7 @@ export default {
         })
 
       return {
-        post,
+        page,
       }
     } catch (e) {
       error(e)
@@ -78,168 +71,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.Blog__post .nuxt-content {
-  padding: auto 50px;
-}
-
-.Blog__post .nuxt-content >>> a,
-.Blog__post .nuxt-content >>> li,
-.Blog__post .nuxt-content >>> p {
-  font-size: 16px;
-  line-height: 1.55em;
-}
-
-.Blog__post .nuxt-content >>> ol,
-.Blog__post .nuxt-content >>> ul {
-  list-style: none;
-  margin-bottom: 16px;
-  padding-left: 16px;
-}
-
-.Blog__post .nuxt-content >>> ol {
-  counter-reset: list;
-  padding-left: 20px;
-}
-
-.Blog__post .nuxt-content >>> li {
-  margin-bottom: 0.2em;
-  position: relative;
-  margin-left: 24px;
-}
-
-.Vlt-list li.Vlt-list--item2 {
-  margin-left: 10px;
-}
-.Vlt-list li.Vlt-list--item3 {
-  margin-left: 30px;
-}
-
-.Blog__post .nuxt-content >>> ul li:before {
-  color: #000;
-  content: '•';
-  left: -16px;
-  position: absolute;
-  top: 0em;
-}
-
-.Blog__post .nuxt-content >>> ol li:before {
-  color: #000;
-  content: counter(list) '.';
-  counter-increment: list;
-  font-weight: 600;
-  left: -20px;
-  position: absolute;
-  top: 0em;
-}
-
-.Blog__post .nuxt-content >>> h2 {
-  margin-top: 25px;
-}
-
-.Blog__post .nuxt-content >>> h3 {
-  margin-top: 25px;
-}
-
-.Blog__post .nuxt-content >>> pre {
-  border-radius: 8px;
-  padding: 1em;
-  background: #131415;
-  color: #c2c4cc;
-  margin: 35px -30px;
-  font-size: 16px;
-  line-height: 1.4;
-  padding-left: 27px;
-}
-
-.Blog__post .nuxt-content >>> pre code {
-  background: #131415;
-  color: #c2c4cc;
-}
-
-.Blog__post .nuxt-content >>> p {
-  text-align: justify;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  -ms-word-break: normal;
-  word-break: normal;
-}
-
-.Blog__post .nuxt-content >>> blockquote {
-  margin: 24px auto;
-  background-color: #ffffff;
-  border-radius: 6px;
-  box-shadow: inset 0 0 0 1px #9b9da3;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 1;
-  overflow: hidden;
-  padding: 20px;
-  padding-left: 21px;
-  position: relative;
-  text-align: left;
-  transition: all 0.3s ease-out;
-}
-
-.Blog__post .nuxt-content >>> blockquote:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 5px;
-  background-color: #871fff;
-}
-
-.Blog__post .nuxt-content >>> blockquote p {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -ms-flex: 2;
-  flex: 2;
-  margin-left: 4px;
-  word-break: break-word;
-}
-
-.Blog__post .nuxt-content >>> p code {
-  border: 1px solid silver;
-  background: #f9f9fa;
-}
-
-.Blog__post .nuxt-content >>> .language-diff .token {
-  width: 100%;
-  display: inherit;
-  white-space: pre-wrap;
-}
-
-.Blog__post .nuxt-content >>> .language-diff .token.inserted {
-  color: #e84545;
-  background: #270404;
-}
-
-.Blog__post .nuxt-content >>> .language-diff .token.deleted {
-  color: #86d8b9;
-  background: #021a10;
-}
-
-.Blog__post .nuxt-content >>> p img {
-  display: block;
-  margin: 24px auto;
-  max-height: 50vh;
-  max-width: 100%;
-}
-
-@media only screen and (max-width: 767px) {
-  .Blog__post .nuxt-content >>> pre[class*='language-'] {
-    margin: 24px 10px;
-    padding-left: 12px;
-  }
-}
-
-.Vlt-grid >>> .Author-col {
-  flex: 0 0 66.66%;
-  max-width: 66.66%;
-}
-</style>

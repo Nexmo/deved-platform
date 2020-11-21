@@ -1,0 +1,15 @@
+{
+  "name": "live-on-twitch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jlengstorf/get-twitch-oauth": "^1.0.1",
+    "axios": "^0.21.0"
+  }
+}
