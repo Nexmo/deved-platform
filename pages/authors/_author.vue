@@ -1,38 +1,21 @@
 <template>
-  <section class="Blog__Full-width">
-    <header class="Blog__Full-width">
-      <Author :author="author" type="page" />
-    </header>
-    <main class="Vlt-container">
-      <div class="Vlt-grid">
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :title="author.name" />
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <Card
-          v-for="(post, index) in posts"
-          :key="index"
-          :post="post"
-          show-language
-        />
-        <div class="Vlt-grid__separator" />
-        <template v-if="author.spotlight">
-          <div class="Vlt-col" />
-          <div class="Vlt-col Vlt-col--2of3">
-            <SpotlightFooter />
-          </div>
-          <div class="Vlt-col" />
-        </template>
-      </div>
-    </main>
-  </section>
+  <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+    <Breadcrumbs />
+    <section
+      class="grid grid-flow-row-dense grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"
+    >
+      <Author :author="author" type="page" class="row-span-3" />
+      <CardAuthor
+        v-for="(post, index) in posts"
+        :key="index"
+        :post="post"
+        show-language
+      />
+    </section>
+  </main>
 </template>
 
 <script>
-import config from '~/modules/config'
-
 export default {
   async asyncData({ $content, params, error, app }) {
     try {
@@ -47,7 +30,6 @@ export default {
           $and: [{ author: author.username }, { published: { $ne: false } }],
         })
         .sortBy('published_at', 'desc')
-        .limit(config.postsPerPage)
         .fetch()
 
       return {
@@ -86,10 +68,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.Vlt-grid >>> .Author-col {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-}
-</style>

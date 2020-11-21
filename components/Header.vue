@@ -1,125 +1,180 @@
 <template>
-  <header class="Blog-header">
-    <div class="Vlt-header">
-      <NLink :to="localePath('index')" no-prefetch class="Vlt-header__logo">
-        <img
-          class="Vlt-M-plus"
-          src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-wordmark.svg"
-          :alt="$t('component_header_strapline')"
-        />
-        <img
-          class="Vlt-S-only"
-          src="../node_modules/@vonagevolta/volta2/images/logos/Vonage-lettermark.svg"
-          :alt="$t('component_header_strapline')"
-        />
-        <div
-          class="Vlt-badge Vlt-M-plus Vlt-badge--small Vlt-badge--transparent"
-          style="margin: 8px"
-        >
-          {{ $t('component_header_badge') }}
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center justify-items-end">
+          <nuxt-link :to="localePath('/')" class="flex-shrink-0">
+            <img
+              class="h-6"
+              src="@/assets/images/vonage/wordmark.svg"
+              :alt="$t('component_header_badge')"
+            />
+          </nuxt-link>
+          <span class="ml-4 badge badge--small badge--purple">{{
+            $t('component_header_badge')
+          }}</span>
         </div>
-        <div
-          class="Vlt-badge Vlt-S-only Vlt-badge--small Vlt-badge--transparent"
-          style="margin: 8px"
-        >
-          {{ $t('component_header_badge') }}
-        </div>
-      </NLink>
-      <div class="Vlt-header__menu Vlt-header__menu--right Vlt-M-plus">
-        <div class="Vlt-native-dropdown Vlt-native-dropdown--small">
-          <select
-            v-model="selectedLocale"
-            @change="switchLocale(selectedLocale)"
-          >
-            <option :value="currentLocale.code" selected="selected">
-              {{ currentLocale.name }}
-            </option>
-            <option
-              v-for="(locale, index) in availableLocales"
-              :key="index"
-              :value="locale.code"
-            >
-              {{ locale.name }}
-            </option>
-          </select>
-        </div>
+        <div class="hidden md:block">
+          <div class="flex ml-10 space-x-2 items-middle">
+            <twitch-social-button
+              class="button button--round button--small button--twitch"
+              link="https://twitch.tv/vonagedevs"
+            />
+            <twitter-social-button
+              class="button button--round button--small button--twitter"
+              link="https://twitter.com/VonageDev"
+            />
 
-        <SlackSocialButton
-          link="https://developer.nexmo.com/community/slack"
-          class="Vlt-btn--small"
-        >
-          {{ $t('component_header_slack_button') }}
-        </SlackSocialButton>
-        <TwitterSocialButton
-          link="https://twitter.com/VonageDev"
-          class="Vlt-btn--small"
-        />
-        <a
-          href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
-          class="Vlt-btn Vlt-btn--small Vlt-btn--secondary"
-          rel="noreferrer"
-          >{{ $t('component_header_signup_button') }}</a
-        >
+            <a
+              class="button button--pill button--small button--primary"
+              href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
+              >{{ $t('component_header_signup_button') }}</a
+            >
+
+            <div class="relative inline-flex">
+              <svg
+                class="absolute top-0 right-0 w-2 h-2 m-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 412 232"
+              >
+                <path
+                  d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+                  fill="#ffffff"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <select
+                v-model="selectedLocale"
+                class="button button--pill button--small button--primary"
+                @change="switchLocale(selectedLocale)"
+              >
+                <option :value="currentLocale.code" selected="selected">
+                  {{ currentLocale.name }}
+                </option>
+                <option
+                  v-for="(locale, index) in availableLocales"
+                  :key="index"
+                  :value="locale.code"
+                >
+                  {{ locale.name }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="flex -mr-2 md:hidden">
+          <!-- Mobile menu button -->
+          <button
+            class="inline-flex items-center justify-center p-2 mr-6 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+            @click="isOpen = !isOpen"
+          >
+            <!-- Menu open: "hidden", Menu closed: "block" -->
+            <svg
+              class="block w-6 h-6"
+              :class="{
+                'hidden ': isOpen,
+              }"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <!-- Menu open: "block", Menu closed: "hidden" -->
+            <svg
+              class="w-6 h-6"
+              :class="{
+                'hidden ': !isOpen,
+              }"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="Vlt-header__menu Vlt-header__menu--right Vlt-S-only">
-        <a
-          href="#"
-          class="Vlt-btn Vlt-btn--small Vlt-btn--white"
-          @click="isOpen = !isOpen"
+    </div>
+
+    <!--
+      Mobile menu, toggle classes based on menu state.
+
+      Open: "block", closed: "hidden"
+    -->
+    <div
+      class="md:hidden"
+      :class="{
+        'hidden ': !isOpen,
+      }"
+    >
+      <div
+        class="flex flex-col justify-center w-3/4 px-2 pt-2 pb-3 mx-auto space-y-4 sm:px-3"
+      >
+        <twitch-social-button link="https://twitch.tv/vonagedevs"
+          >Watch on Twitch</twitch-social-button
         >
-          <svg>
-            <image
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              xlink:href="../node_modules/@vonagevolta/volta2/images/icons/Vlt-icon-menu.svg"
+        <slack-social-button link="https://developer.nexmo.com/community/slack"
+          >Join us on Slack</slack-social-button
+        >
+        <twitter-social-button link="https://twitter.com/VonageDev"
+          >Follow us on Twitter</twitter-social-button
+        >
+
+        <a
+          class="button button--pill"
+          :href="switchLocalePath(currentLocale.code)"
+        >
+          <svg
+            class="w-4 h-4 mr-2 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7 2a1 1 0 011 1v1h3a1 1 0 110 2H9.578a18.87 18.87 0 01-1.724 4.78c.29.354.596.696.914 1.026a1 1 0 11-1.44 1.389c-.188-.196-.373-.396-.554-.6a19.098 19.098 0 01-3.107 3.567 1 1 0 01-1.334-1.49 17.087 17.087 0 003.13-3.733 18.992 18.992 0 01-1.487-2.494 1 1 0 111.79-.89c.234.47.489.928.764 1.372.417-.934.752-1.913.997-2.927H3a1 1 0 110-2h3V3a1 1 0 011-1zm6 6a1 1 0 01.894.553l2.991 5.982a.869.869 0 01.02.037l.99 1.98a1 1 0 11-1.79.895L15.383 16h-4.764l-.724 1.447a1 1 0 11-1.788-.894l.99-1.98.019-.038 2.99-5.982A1 1 0 0113 8zm-1.382 6h2.764L13 11.236 11.618 14z"
+              clip-rule="evenodd"
             />
           </svg>
+          {{ currentLocale.name }}
+        </a>
+
+        <a
+          v-for="(locale, index) in availableLocales"
+          :key="index"
+          class="button button--pill button--primary"
+          :href="switchLocalePath(locale.code)"
+        >
+          <svg
+            class="w-4 h-4 mr-2 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          {{ locale.name }}
         </a>
       </div>
     </div>
-    <nav
-      class="Blog-nav Blog-nav__elevation--1"
-      :class="{
-        'Blog-nav__expandable': !isOpen,
-      }"
-    >
-      <ul class="Blog-nav__list">
-        <li class="Blog-nav__item Vlt-center">
-          <SlackSocialButton link="https://developer.nexmo.com/community/slack">
-            {{ $t('component_header_slack_button') }}
-          </SlackSocialButton>
-        </li>
-        <li class="Blog-nav__item Vlt-center">
-          <a
-            href="https://dashboard.nexmo.com/sign-up?utm_source=blog&utm_medium=deved&utm_campaign=sign-up-link"
-            class="Vlt-btn Vlt-btn--secondary Vlt-text-white"
-            rel="noreferrer"
-            >{{ $t('component_header_signup_button') }}</a
-          >
-        </li>
-        <li class="Blog-nav__item Vlt-center">
-          <TwitterSocialButton link="https://twitter.com/VonageDev">
-            {{ $t('component_header_follow_button') }}
-          </TwitterSocialButton>
-        </li>
-        <li class="Blog-nav__item Vlt-center">
-          <a :href="switchLocalePath(currentLocale.code)">
-            &gt; {{ currentLocale.name }} &lt;
-          </a>
-        </li>
-        <li
-          v-for="(locale, index) in availableLocales"
-          :key="index"
-          class="Blog-nav__item Vlt-center"
-        >
-          <a :href="switchLocalePath(locale.code)">
-            {{ locale.name }}
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  </nav>
 </template>
 
 <script>
@@ -147,183 +202,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.Blog-header {
-  width: 100%;
-  min-height: 64px;
-  box-shadow: 0 4px 4px rgba(19, 20, 21, 0.1);
-  margin-bottom: 12px;
-}
-
-.Blog-nav {
-  transition: margin 700ms;
-  margin-top: 74px;
-}
-
-.Blog-nav__expandable {
-  margin-top: calc(-100%);
-}
-
-.Blog-nav__list {
-  display: block;
-  margin-bottom: 12px;
-}
-
-.Blog-nav__item {
-  display: block;
-  font-size: 1.1em;
-  font-weight: 600;
-  line-height: 48px;
-  border-left: 5px solid white;
-}
-
-.Blog-nav__item .Vlt-btn {
-  width: 80vw;
-}
-
-@media only screen and (max-width: 575px) {
-  .Vlt-header__logo {
-    flex: 0 0 120px;
-  }
-}
-
-.Vlt-tabs__header {
-  border-bottom: none;
-}
-
-.Vlt-header__menu .Vlt-btn svg:only-child {
-  margin-right: 0;
-}
-
-.Vlt-tabs__link_active span {
-  background: 0 0;
-  color: #131415;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.Vlt-tabs__link:not(.Vlt-tabs__link_active) span {
-  font-size: 15px;
-  color: #616266;
-}
-
-@media only screen and (min-width: 768px) {
-  .Vlt-tabs__link:hover:not(.Vlt-tabs__link_active) span {
-    background: 0 0;
-    color: #131415;
-  }
-}
-
-.Vlt-tabs__link.Tabs__Node:after {
-  background: rgba(61, 136, 54, 0.5);
-}
-
-.Vlt-tabs__link_active.Tabs__Node:after {
-  background: rgb(61, 136, 54);
-}
-
-.Vlt-tabs__link.Tabs__DotNet:after {
-  background: rgba(93, 37, 144, 0.5);
-}
-
-.Vlt-tabs__link_active.Tabs__DotNet:after {
-  background: rgb(93, 37, 144);
-}
-
-.Vlt-tabs__link.Tabs__Ruby:after {
-  background: rgba(204, 52, 45, 0.5);
-}
-
-.Vlt-tabs__link_active.Tabs__Ruby:after {
-  background: rgb(204, 52, 45);
-}
-
-.Vlt-tabs__link.Tabs__Python:after {
-  background: rgba(30, 56, 187, 0.5);
-}
-
-.Vlt-tabs__link_active.Tabs__Python:after {
-  background: rgb(30, 56, 187);
-}
-
-.Vlt-tabs__link.Tabs__PHP:after {
-  background: rgba(35, 161, 170, 0.5);
-}
-
-.Vlt-tabs__link_active.Tabs__PHP:after {
-  background: rgb(35, 161, 170);
-}
-
-.Vlt-tabs__link.Tabs__Java:after {
-  background: rgba(1, 71, 110, 0.5);
-}
-
-.Vlt-tabs__link_active.Tabs__Java:after {
-  background: rgb(1, 71, 110);
-}
-
-.Vlt-header .Vlt-composite .Vlt-composite__prepend--icon {
-  padding: 8px 12px;
-}
-
-.Blog-search__form {
-  display: inline-block;
-  padding: 8px 0;
-}
-
-@media only screen and (max-width: 1099px) {
-  .Blog-search__form {
-    display: none !important;
-  }
-}
-
-.Blog-search__button {
-  display: none !important;
-}
-
-@media only screen and (max-width: 1099px) {
-  .Blog-search__button {
-    display: inline-block !important;
-  }
-}
-
-.Vlt-header .Vlt-composite input {
-  height: 32px;
-  border: none;
-  width: 150px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.Vlt-header .Vlt-composite:hover input {
-  background: #d0d2d8;
-}
-
-.Vlt-header .Vlt-composite input:focus {
-  background: #fff;
-  border: 1px solid #c2c4cc;
-  width: 250px;
-}
-
-.Vlt-header .Vlt-composite input::-webkit-input-placeholder,
-.Vlt-header .Vlt-composite input::-moz-placeholder,
-.Vlt-header .Vlt-composite input::-ms-input-placeholder,
-.Vlt-header .Vlt-composite input::placeholder {
-  font-size: 12px;
-  font-weight: 600;
-  color: #131415;
-  line-height: 1.6rem;
-}
-
-.Vlt-native-dropdown--small {
-  margin-right: 8px;
-}
-.Vlt-native-dropdown--small select {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  min-height: 32px;
-  min-width: 32px;
-}
-</style>

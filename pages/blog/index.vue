@@ -1,35 +1,34 @@
 <template>
-  <section class="Blog__Full-width">
-    <header class="Blog__Full-width">
-      <PageHero class="Category-hero">
-        {{ $t('page_blog_title') }}
-      </PageHero>
-    </header>
-    <main class="Vlt-container">
-      <div class="Vlt-grid">
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs />
+  <div>
+    <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+      <Breadcrumbs />
+      <section class="index-section">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <CardFeatured
+            v-for="(post, i) in latestPosts"
+            :key="i"
+            :post="post"
+          />
         </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <CardFeatured
-          v-for="post in latestPosts"
-          :key="`featured-${post.route}`"
-          :post="post"
-        />
-      </div>
+      </section>
+      <template v-for="(category, j) in categories">
+        <section
+          v-if="category.posts && category.posts.length > 0"
+          :key="j"
+          class="index-section"
+        >
+          <h2>
+            <nuxt-link :to="localePath(`/categories/${category.slug}`)">
+              {{ category.plural }}
+            </nuxt-link>
+          </h2>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Card v-for="(post, k) in category.posts" :key="k" :post="post" />
+          </div>
+        </section>
+      </template>
     </main>
-    <footer class="Blog__Full-width Vlt-center">
-      <NLink
-        :to="localePath('blog')"
-        no-prefetch
-        class="Vlt-btn Vlt-btn--quaternary Vlt-btn--small"
-      >
-        {{ $t('page_index_view_all_posts') }}
-      </NLink>
-    </footer>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -38,31 +37,29 @@ export default {
     const latestPosts = await $content(`blog/${app.i18n.locale}`)
       .where({ published: { $ne: false } })
       .sortBy('published_at', 'desc')
-      .limit(20)
+      .limit(2)
       .fetch()
 
+    const { categories } = await $content('categories').fetch()
+
+    categories.forEach(async (category, index, array) => {
+      array[index].posts = await $content(`blog/${app.i18n.locale}`)
+        .where({
+          $and: [
+            { category: category.slug },
+            { route: { $nin: latestPosts.map((f) => f.route) } },
+            { published: { $ne: false } },
+          ],
+        })
+        .sortBy('published_at', 'desc')
+        .limit(6)
+        .fetch()
+    })
+
     return {
+      categories,
       latestPosts,
     }
   },
 }
 </script>
-
-<style scoped>
-.Vlt-text-separator {
-  margin: 50px 5%;
-}
-
-.Vlt-grid + .Vlt-text-separator {
-  margin-top: 26px;
-}
-
-.Vlt-text-separator a,
-.Vlt-text-separator span {
-  text-transform: uppercase;
-  color: #868994;
-  font-size: 1.4rem;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-}
-</style>

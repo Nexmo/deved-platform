@@ -1,82 +1,47 @@
 <template>
-  <section class="Blog__Full-width">
-    <header class="Blog__Full-width">
-      <AuthorHero />
-    </header>
-    <main class="Vlt-container">
-      <div class="Vlt-grid">
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs />
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--3of4">
-          <h3 id="team-authors" class="Vlt-center Vlt-margin--A-top3">
-            {{ $t('page_authors_team') }}
-          </h3>
-          <div class="Vlt-grid Authors-grid">
-            <Author
-              v-for="author in team"
-              :key="author.username"
-              :author="author"
-              type="bubble"
-            />
-          </div>
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--3of4">
-          <h3 id="spotlight-authors" class="Vlt-center Vlt-margin--A-top3">
-            {{ $t('page_authors_spotlight') }}
-          </h3>
-          <div class="Vlt-grid Authors-grid">
-            <Author
-              v-for="author in spotlight"
-              :key="author.username"
-              :author="author"
-              type="bubble"
-            />
-          </div>
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--3of4">
-          <h3 id="alumni-authors" class="Vlt-center Vlt-margin--A-top3">
-            {{ $t('page_authors_alumni') }}
-          </h3>
-          <div class="Vlt-grid Authors-grid">
-            <Author
-              v-for="author in alumni"
-              :key="author.username"
-              :author="author"
-              type="bubble"
-            />
-          </div>
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--3of4">
-          <h3 id="other-authors" class="Vlt-center Vlt-margin--A-top3">
-            {{ $t('page_authors_other') }}
-          </h3>
-          <div class="Vlt-grid Authors-grid">
-            <Author
-              v-for="author in authors"
-              :key="author.username"
-              :author="author"
-              type="bubble"
-            />
-          </div>
-        </div>
-        <div class="Vlt-col" />
-      </div>
-    </main>
-  </section>
+  <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+    <Breadcrumbs />
+    <h2 class="mb-6 text-3xl text-center uppercase">
+      {{ $t('page_authors_team') }}
+    </h2>
+    <ul
+      class="grid grid-cols-2 mx-auto text-center gap-x-4 gap-y-8 md:gap-x-6 lg:gap-x-8 lg:gap-y-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+    >
+      <li v-for="(author, i) in team" :key="i">
+        <Author :author="author" type="bubble" />
+      </li>
+    </ul>
+    <h2 class="mt-12 mb-6 text-3xl text-center uppercase">
+      {{ $t('page_authors_spotlight') }}
+    </h2>
+    <ul
+      class="grid grid-cols-2 mx-auto text-center gap-x-4 gap-y-8 md:gap-x-6 lg:gap-x-8 lg:gap-y-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+    >
+      <li v-for="(author, i) in spotlight" :key="i">
+        <Author :author="author" type="bubble" />
+      </li>
+    </ul>
+    <h2 class="mt-12 mb-6 text-3xl text-center uppercase">
+      {{ $t('page_authors_alumni') }}
+    </h2>
+    <ul
+      class="grid grid-cols-2 mx-auto text-center gap-x-4 gap-y-8 md:gap-x-6 lg:gap-x-8 lg:gap-y-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+    >
+      <li v-for="(author, i) in alumni" :key="i">
+        <Author :author="author" type="bubble" />
+      </li>
+    </ul>
+    <h2 class="mt-12 mb-6 text-3xl text-center uppercase">
+      {{ $t('page_authors_other') }}
+    </h2>
+    <ul
+      class="grid grid-cols-2 mx-auto text-center gap-x-4 gap-y-8 md:gap-x-6 lg:gap-x-8 lg:gap-y-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+    >
+      <li v-for="(author, i) in authors" :key="i">
+        <AuthorBubble :author="author" type="bubble" />
+      </li>
+    </ul>
+  </main>
 </template>
 
 <script>
@@ -153,14 +118,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.Vlt-grid >>> .Author-col {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-}
-
-.Authors-grid {
-  justify-content: center;
-}
-</style>

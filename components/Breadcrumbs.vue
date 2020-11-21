@@ -1,26 +1,27 @@
 <template>
   <ol
-    class="breadcrumb Vlt-margin--A-top1 Vlt-margin--A-bottom2"
+    class="my-4 text-sm truncate list-none"
     vocab="http://schema.org/"
     typeof="BreadcrumbList"
   >
-    <li property="itemListElement" typeof="ListItem">
-      <NLink property="item" typeof="WebPage" to="/">
+    <li class="inline-block" property="itemListElement" typeof="ListItem">
+      <nuxt-link property="item" typeof="WebPage" to="/">
         <span property="name">Vonage Learn</span>
-      </NLink>
+      </nuxt-link>
       <meta property="position" content="1" />
     </li>
     <li
       v-for="(crumb, index) in crumbs"
       :key="index"
+      class="inline-block"
       property="itemListElement"
       typeof="ListItem"
     >
-      <NLink property="item" typeof="WebPage" :to="crumb.path">
+      <nuxt-link property="item" typeof="WebPage" :to="crumb.path">
         <span property="name">{{
           $route.fullPath === crumb.path && title !== null ? title : crumb.title
         }}</span>
-      </NLink>
+      </nuxt-link>
       <meta property="position" :content="index + 2" />
     </li>
   </ol>
@@ -65,32 +66,27 @@ export default {
 </script>
 
 <style scoped>
-ol {
-  list-style: none;
-}
-
-li {
-  display: inline;
-}
-
 li:after {
-  content: ' » ';
-  display: inline;
-  font-size: 0.9em;
-  color: #aaa;
-
-  padding: 0 0.0725em 0 0.15em;
+  content: '»';
+  @apply inline;
+  @apply text-xs;
+  @apply text-grey;
 }
 
 li:last-child:after {
   content: '';
 }
 
+li:not(:first-child) a {
+  @apply pl-1;
+}
+
 li a {
-  color: black;
+  @apply text-grey-darker;
+  @apply pr-1;
 }
 
 li a.nuxt-link-exact-active.nuxt-link-active {
-  color: grey;
+  @apply text-grey-dark;
 }
 </style>

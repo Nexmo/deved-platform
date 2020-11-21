@@ -1,33 +1,28 @@
 <template>
-  <div class="Vlt-grid">
-    <div class="Vlt-col Blog-error">
-      <h1>Ooops, we've not translated that post yet!</h1>
-      <p>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl gap-6 p-6 mx-auto my-16 md:flex-row"
+  >
+    <div>
+      <h1 class="text-3xl font-bold">Ooops, we've not translated that yet!</h1>
+      <p class="my-2">
         You've boldly gone where no one has <strike>gone</strike> translated
-        before. <br />
+        before.<br />
         The page you requested could not be found.
       </p>
-      <h2>Alternative Translations</h2>
-      <ol class="Vlt-list Vlt-list--simple">
+      <ol class="mb-2 list-bullet">
         <li v-for="(translation, index) in translations" :key="index">
-          <NLink
+          <nuxt-link
             :to="localePath(translation.route, translation.locale)"
-            class="Vlt-link"
+            class="text-purple-dark"
             >({{ localeName(translation.locale) }})
-            {{ translation.title }}</NLink
+            {{ translation.title }}</nuxt-link
           >
         </li>
       </ol>
-      <NLink to="/" no-prefetch class="Vlt-btn Vlt-btn--app Vlt-btn--secondary">
-        Home page
-      </NLink>
+      <nuxt-link to="/" class="button button--primary"> Home page </nuxt-link>
     </div>
-
-    <div class="Vlt-col Blog-error">
-      <img
-        src="../../node_modules/@vonagevolta/volta2/demo/templates/assets/img/error-400.svg"
-        alt="An image showing that an error has occured"
-      />
+    <div class="max-w-md object-fit">
+      <img class="" src="~/assets/images/illustrations/Error-i18n.svg" />
     </div>
   </div>
 </template>
@@ -48,9 +43,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.Vlt-error-page .Blog-error {
-  margin-top: 100px;
-}
-</style>

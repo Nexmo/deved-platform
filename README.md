@@ -13,8 +13,10 @@
 - [Components](#components)
 - [Writing Style](#writing-style)
 - [Tools](#tools)
-  - [Create a Blog Post](#create-a-blog-post)
-  - [Translate a Blog Post](#translate-a-blog-post)
+  - [Capitalize My Title](#capitalize-my-title)
+  - [Tag Tester](#tag-tester)
+  - [Create a Blog Post CLI](#create-a-blog-post-cli)
+  - [Translate a Blog Post CLI](#translate-a-blog-post-cli)
 - [License](#license)
 - [Change log](#change-log)
 
@@ -52,7 +54,7 @@ Please checkout [the local setup guide](.github/LOCAL_SETUP.md) for more informa
 
 ## Writing For Vonage
 
-Teach others, grow as a writer, and help us build the next go-to destination for developers in search of [high quality technical content](https://learn.vonage.com/categories/tutorial) and inspiring development stories.
+Teach others, grow as a writer, and help us build the next go-to destination for developers in search of [high quality technical content](https://learn.vonage.com/blog/spotlight) and inspiring development stories.
 
 ![Isometric shapes showing people working on computers with Developer Spotlight logo](.github/spotlightBanner.png)
 
@@ -62,24 +64,34 @@ Check out the [Vonage Developer Spotlight Programme](https://developer.nexmo.com
 
 ## Contributing
 
-Please read our [Contributing Guide](.github/CONTRIBUTING.md) and [Code of Conduct](.github/CODE_OF_CONDUCT.md) before making a pull request.
+Please read our [contributing guide](https://learn.vonage.com/contributing#making-a-contribution) and [Code of Conduct](https://github.com/Nexmo/deved-platform/blob/develop/.github/CODE_OF_CONDUCT.md) before making a pull request.
 
 ## Components
 
-Global components can be included in posts to help produce consistent content and tracking mechanisms. For e.g. `<sign-up></sign-up>` component will automatically generate sign-up links that can be tracked back to an individuals post.
+Global components can be included in posts to help produce consistent content.
 
 - `<sign-up></sign-up>`
 - `<youtube></youtube>`
 
-Check out the Nuxt.js `@nuxt/content` module [documentation for writing content with Vue components](https://content.nuxtjs.org/writing#vue-components).
-
 ## Writing Style
 
-Taken from our developer education writing styleguide, we've included our [writing style guide](.github/WRITING_STYLE.md) to help with contributing content.
+Taken from our developer education writing styleguide, we've included our [contributing guide](https://learn.vonage.com/contributing#writing-style-guide) to help with contributing content.
 
 ## Tools
 
-### Create a Blog Post
+### Capitalize My Title
+
+We've built-in our own version of capitalizemytitle.com, which you can [find here](https://learn.vonage.com/contributing#capitalize-my-title)
+
+![Capitalize My Title](.github/capsMyTitle.png)
+
+### Tag Tester
+
+We've built our own content tag generator which you can [find here](https://learn.vonage.com/contributing#tag-tester)
+
+![Tag Tester](.github/tagTester.png)
+
+### Create a Blog Post CLI
 
 Create a new blog post using the CLI.
 
@@ -103,7 +115,7 @@ npm run blog
 # ✔ Saved demo file to content/blog/en/an-awesome-title-for-your-post.md ...
 ```
 
-### Translate a Blog Post
+### Translate a Blog Post CLI
 
 You can also start a translation with the same tool.
 

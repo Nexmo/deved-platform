@@ -1,31 +1,17 @@
 <template>
-  <div class="Vlt-grid">
-    <div class="Vlt-col Blog-error">
-      <h1>Ooops, wrong way</h1>
-      <p>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl gap-6 p-6 mx-auto my-16 md:flex-row"
+  >
+    <div>
+      <h1 class="text-3xl font-bold">Ooops, wrong way!</h1>
+      <p class="my-2">
         You've reached the edge of the ocean. <br />
         The page you requested could not be found.
       </p>
-      <NLink to="/" no-prefetch class="Vlt-btn Vlt-btn--app Vlt-btn--secondary">
-        Home page
-      </NLink>
+      <nuxt-link to="/" class="button button--primary"> Home page </nuxt-link>
     </div>
-
-    <div class="Vlt-col Blog-error">
-      <img
-        src="../../node_modules/@vonagevolta/volta2/demo/templates/assets/img/error-404.svg"
-        alt="An image showing that an error has occured"
-      />
+    <div class="max-w-md object-fit">
+      <img class="" src="~/assets/images/illustrations/Error-404.svg" />
     </div>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style scoped>
-.Vlt-error-page .Blog-error {
-  margin-top: 100px;
-}
-</style>

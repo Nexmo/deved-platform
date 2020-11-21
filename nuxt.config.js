@@ -11,15 +11,17 @@ const isPreviewBuild = () => {
 }
 
 const previewRoute = () => {
-  const [, type, slug] = process.env.HEAD.split('/')
-  const today = new Date()
+  if (process.env.HEAD) {
+    const [, type, slug] = process.env.HEAD.split('/')
+    const today = new Date()
 
-  if (type === 'blog') {
-    return `/${type}/${today.getFullYear()}/${('0' + today.getMonth()).slice(
-      -2
-    )}/${('0' + today.getDay()).slice(-2)}/${slug}`
-  } else {
-    return null
+    if (type === 'blog') {
+      return `/${type}/${today.getFullYear()}/${('0' + today.getMonth()).slice(
+        -2
+      )}/${('0' + today.getDay()).slice(-2)}/${slug}`
+    } else {
+      return null
+    }
   }
 }
 
@@ -29,7 +31,11 @@ export default {
 
   // Env (https://nuxtjs.org/api/configuration-env/)
   env: {
-    demo: isPreviewBuild() ? previewRoute() : null,
+    nodeEnv: config.nodeEnv,
+    netlifyContext: config.netlifyContext,
+    netlifyHead: config.repoBranch,
+    previewRoute: previewRoute(),
+    isPreviewBuild: isPreviewBuild(),
     signer: config.signer,
     baseUrl: config.baseUrl,
     repoUrl: config.repoUrl,
@@ -57,13 +63,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-    '@vonagevolta/volta2/dist/css/volta.min.css',
-    '@vonagevolta/volta2/dist/css/volta-error-page.min.css',
-    '@vonagevolta/volta2/dist/css/volta-templates.min.css',
-    '@/assets/css/volta-prism-dark.css',
-    '@/assets/css/main.css',
-  ],
+  css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
@@ -78,12 +78,46 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/dotenv',
+    // https://tailwindcss.nuxtjs.org/tailwind-config
+    '@nuxtjs/tailwindcss',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['nuxt-i18n', '@nuxt/content', '@nuxtjs/feed'],
+  modules: [
+    'nuxt-i18n',
+    '@nuxt/content',
+    '@nuxtjs/feed',
+    '@nuxtjs/axios',
+    'nuxt-clipboard2',
+  ],
+
+  axios: {
+    baseURL: 'http://localhost:8888', // Used as fallback if no runtime config is provided
+  },
+
+  // Content module configuration (https://go.nuxtjs.dev/config-content)
+  content: {
+    liveEdit: false,
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-vsc-dark-plus.css',
+      },
+    },
+  },
 
   i18n,
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: config.baseUrl,
+    },
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      browserBaseURL: config.baseUrl,
+    },
+  },
 
   feed: async () => {
     const { $content } = require('@nuxt/content')
@@ -192,7 +226,7 @@ export default {
         document.type = type
         document.locale = locale
 
-        const { time } = require('reading-time')(document.text)
+        const time = require('reading-time')(document.text)
         document.readingTime = time
         document.raw = document.text
 
@@ -215,11 +249,6 @@ export default {
   // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#base
   router: {
     routeNameSplitter: '/',
-  },
-
-  // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {
-    liveEdit: false,
   },
 
   build: {

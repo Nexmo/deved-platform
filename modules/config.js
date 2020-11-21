@@ -6,7 +6,7 @@ const config = {
   baseUrl:
     (process.env.CONTEXT === 'production'
       ? process.env.URL
-      : process.env.DEPLOY_PRIME_URL) || 'http://localhost:3000',
+      : process.env.DEPLOY_PRIME_URL) || 'http://localhost:8888',
   indexTitle: 'We ♥ content',
   baseBrand: 'Vonage',
   baseTitle: 'Developer content from Vonage',
@@ -26,11 +26,13 @@ const config = {
   postsPerPage: 12,
   repoUrl:
     process.env.REPOSITORY_URL || 'https://github.com/Nexmo/deved-platform',
-  repoBranch: process.env.BRANCH || 'main',
+  repoBranch: process.env.HEAD || process.env.GIT_BRANCH || 'main',
   algoliaApplicationId: process.env.ALGOLIA_APPLICATION_ID,
   algoliaSearchKey: process.env.ALGOLIA_SEARCH_KEY,
   algoliaIndex: process.env.ALGOLIA_INDEX,
   signer: process.env.SIGNING_SECRET || 'secret',
+  nodeEnv: process.env.NODE_ENV || 'development',
+  netlifyContext: process.env.CONTEXT || null,
   tagMap: {
     voyagers: ['vonage-voyagers'],
     careers: ['career'],
@@ -85,7 +87,7 @@ const config = {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: `${this.baseUrl}/images/generic-social-card.png`,
+        content: `${this.baseUrl}/images/Vonage-learn.png`,
       },
       {
         hid: 'twitter:image:width',
@@ -116,7 +118,7 @@ const config = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: `${this.baseUrl}/images/generic-social-card.png`,
+        content: `${this.baseUrl}/images/Vonage-learn.png`,
       },
       {
         hid: 'og:image:width',
