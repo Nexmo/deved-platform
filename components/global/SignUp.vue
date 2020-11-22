@@ -6,7 +6,7 @@
     <p>
       <a
         :href="`http://developer.nexmo.com/ed?c=${prefix}blog_banner&amp;ct=${slug}`"
-        ><nuxt-image
+        ><img
           :src="require(`@/assets/images/${prefix}StartBuilding_Footer.png`)"
           :alt="$t('global_signup_alt')"
           width="1200"
