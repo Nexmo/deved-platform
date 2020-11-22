@@ -51,16 +51,16 @@
       </p>
     </main>
     <footer class="py-2 mx-4 mt-2 border-t">
-      <TwitterSocialButton
+      <twitter-social-button
         :link="author.twitter ? `https://twitter.com/${author.twitter}` : ''"
       />
-      <FacebookSocialButton :link="author.facebook_url" />
-      <GitHubSocialButton :link="author.github_url" />
-      <StackOverflowSocialButton :link="author.stackoverflow_url" />
-      <LinkedInSocialButton :link="author.linkedin_url" />
-      <TwitchSocialButton :link="author.twitch_url" />
-      <YouTubeSocialButton :link="author.youtube_url" />
-      <WebsiteSocialButton
+      <facebook-social-button :link="author.facebook_url" />
+      <github-social-button :link="author.github_url" />
+      <stackoverflow-social-button :link="author.stackoverflow_url" />
+      <linkedin-social-button :link="author.linkedin_url" />
+      <twitch-social-button :link="author.twitch_url" />
+      <youtube-social-button :link="author.youtube_url" />
+      <website-social-button
         :link="author.website_url || localePath(`/authors/${author.username}`)"
       />
     </footer>

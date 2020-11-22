@@ -47,6 +47,7 @@
               class="px-2 py-1 my-2 text-white rounded bg-brand-twitch"
               href="https://twitch.tv/vonagedevs"
               target="_blank"
+              rel="noreferrer"
               >Watch now</a
             >
           </footer>
