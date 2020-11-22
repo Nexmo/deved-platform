@@ -16,7 +16,11 @@
         >
           <figure class="overflow-hidden rounded-t-lg">
             <div class="card-figure">
-              <img property="image" :src="post.thumbnail" :alt="post.title" />
+              <nuxt-image
+                property="image"
+                :src="post.thumbnail"
+                :alt="post.title"
+              />
             </div>
           </figure>
           <header class="flex-1 px-4 mt-4 md:px-6 md:mt-6">

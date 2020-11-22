@@ -6,7 +6,7 @@
         class="card-figure"
         :title="post.title"
       >
-        <img :src="post.thumbnail" alt="post.title" />
+        <nuxt-image placeholder="true" :src="post.thumbnail" alt="post.title" />
       </nuxt-link>
     </figure>
     <section class="flex flex-col justify-between flex-1 p-6 bg-white">

@@ -6,7 +6,16 @@
     typeof="Person"
   >
     <img
+      v-if="author.image_url.startsWith('http')"
       class="object-cover w-24 h-24 mx-auto rounded-full"
+      :src="author.image_url"
+      property="image"
+      :alt="`Profile pic of ${author.name}`"
+    />
+    <nuxt-image
+      v-else
+      class="object-cover w-24 h-24 mx-auto rounded-full"
+      placeholder="true"
       :src="author.image_url"
       property="image"
       :alt="`Profile pic of ${author.name}`"

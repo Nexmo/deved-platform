@@ -7,10 +7,19 @@
     <figure>
       <nuxt-link :to="localePath(`/authors/${author.username}`)">
         <img
+          v-if="author.image_url.startsWith('http')"
           :src="author.image_url"
           property="image"
           class="object-cover w-full h-64"
-          alt="post.title"
+          :alt="`Profile pic of ${author.name}`"
+        />
+        <nuxt-image
+          v-else
+          :src="author.image_url"
+          property="image"
+          placeholder="true"
+          class="object-cover w-full h-64"
+          :alt="`Profile pic of ${author.name}`"
         />
       </nuxt-link>
     </figure>

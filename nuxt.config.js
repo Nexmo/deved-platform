@@ -89,8 +89,15 @@ export default {
     '@nuxtjs/feed',
     '@nuxtjs/axios',
     'nuxt-clipboard2',
+    '@nuxt/image',
   ],
 
+  // https://image.nuxtjs.org/
+  image: {
+    // Options
+  },
+
+  // https://axios.nuxtjs.org/
   axios: {
     baseURL: 'http://localhost:8888', // Used as fallback if no runtime config is provided
   },
