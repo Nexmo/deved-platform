@@ -1,3 +1,19 @@
+# [2.1.0](https://github.com/Nexmo/deved-platform/compare/v2.0.0...v2.1.0) (2020-11-22)
+
+
+### Bug Fixes
+
+* certain import in typescript/js breaks page building - issue raised with nuxt content team ([7c29908](https://github.com/Nexmo/deved-platform/commit/7c299089155728914b289b4758a3f2453ce8097a))
+* fix social links for noreferrer ([92c40ef](https://github.com/Nexmo/deved-platform/commit/92c40ef2c8f20aa335b75c1dd3e1fea6cc8cb6dc))
+* missing placeholder for post images ([ea21dd0](https://github.com/Nexmo/deved-platform/commit/ea21dd0846a0107d9c1664e9c4bc45f9a86e221f))
+* nuxt/image url issues ([6492dde](https://github.com/Nexmo/deved-platform/commit/6492dde302678029cfaf0446ea23adbece4f53f3))
+* remove og:url - when set it overrides the derived URL ([62884eb](https://github.com/Nexmo/deved-platform/commit/62884ebcd7c39bcfbdc698b9cd1237d8299146c8))
+
+
+### Features
+
+* nuxt/image for responsive image optimization ([08aeb51](https://github.com/Nexmo/deved-platform/commit/08aeb51128acfd38b2be4080ff2d7b21d62f38f5))
+
 # [2.0.0](https://github.com/Nexmo/deved-platform/compare/v1.7.1...v2.0.0) (2020-11-21)
 
 
