@@ -51,6 +51,8 @@
 </template>
 
 <script>
+import config from '~/modules/config'
+
 export default {
   async asyncData({ $content, app: { i18n }, error }) {
     try {
@@ -67,6 +69,26 @@ export default {
     } catch (e) {
       error(e)
       return false
+    }
+  },
+
+  head() {
+    return {
+      title: `Contributing Guidelines`,
+      meta: [
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          // Team Members & Authors » Developer Content from Vonage ♥
+          content: `Contributing Guidelines${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `Contributing Guidelines${config.baseSplitter}${config.baseTitle}`,
+        },
+      ],
     }
   },
 }

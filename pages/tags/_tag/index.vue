@@ -39,5 +39,25 @@ export default {
       return error(e)
     }
   },
+
+  head() {
+    return {
+      title: `#${this.tag} Blog Posts and Tutorials`,
+      meta: [
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          // Team Members & Authors » Developer Content from Vonage ♥
+          content: `#${this.tag} Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `#${this.tag} Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+      ],
+    }
+  },
 }
 </script>

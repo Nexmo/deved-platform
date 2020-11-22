@@ -25,7 +25,6 @@ export default {
           ],
         })
         .sortBy('published_at', 'desc')
-        .limit(config.postsPerPage)
         .fetch()
 
       if (posts.length === 0) {
@@ -37,6 +36,26 @@ export default {
       }
     } catch (e) {
       return error(e)
+    }
+  },
+
+  head() {
+    return {
+      title: 'Blog Posts and Tutorials',
+      meta: [
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          // Team Members & Authors » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+      ],
     }
   },
 }

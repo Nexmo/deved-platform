@@ -45,6 +45,8 @@
 </template>
 
 <script>
+import config from '~/modules/config'
+
 export default {
   async asyncData({ $content, app }) {
     const team = await $content('authors')
@@ -114,6 +116,44 @@ export default {
       alumni,
       spotlight,
       authors,
+    }
+  },
+
+  head() {
+    return {
+      title: 'Team Members & Authors',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Blog Posts, Tutorials, Streams, and more from Vonage Team Members, Spotlight Authors, Alumni, and more',
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          // Team Members & Authors » Developer Content from Vonage ♥
+          content: `Team Members & Authors${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content:
+            'Blog Posts, Tutorials, Streams, and more from Vonage Team Members, Spotlight Authors, Alumni, and more',
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `Team Members & Authors${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            'Blog Posts, Tutorials, Streams, and more from Vonage Team Members, Spotlight Authors, Alumni, and more',
+        },
+      ],
     }
   },
 }

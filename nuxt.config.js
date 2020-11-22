@@ -47,8 +47,8 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: config.indexTitle,
-    titleTemplate: `%s${config.baseSplitter}${config.baseTitle}`,
+    title: config.indexTitle, // Posts, Tutorials, and Streams
+    titleTemplate: `%s${config.baseSplitter}${config.baseTitle}`, // {title} » Developer Content from Vonage ♥
     meta: config.headMeta,
     link: config.headLinks,
   },

@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import config from '~/modules/config'
+
 export default {
   async asyncData({ $content, app }) {
     const latestPosts = await $content(`blog/${app.i18n.locale}`)
@@ -59,6 +61,26 @@ export default {
     return {
       categories,
       latestPosts,
+    }
+  },
+
+  head() {
+    return {
+      title: 'Blog Posts and Tutorials',
+      meta: [
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          // Team Members & Authors » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+      ],
     }
   },
 }

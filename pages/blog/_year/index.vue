@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import config from '~/modules/config'
+
 export default {
   validate({ params: { year } }) {
     return /^\d{4}$/.test(year)
@@ -34,6 +36,26 @@ export default {
       }
     } catch (e) {
       return error(e)
+    }
+  },
+
+  head() {
+    return {
+      title: 'Blog Posts and Tutorials',
+      meta: [
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          // Team Members & Authors » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+      ],
     }
   },
 }
