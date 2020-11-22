@@ -17,6 +17,7 @@
           <figure class="overflow-hidden rounded-t-lg">
             <div class="card-figure">
               <nuxt-image
+                placeholder="true"
                 property="image"
                 :src="post.thumbnail"
                 :alt="post.title"
