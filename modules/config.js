@@ -131,7 +131,6 @@ const config = {
         // Posts, Tutorials, and Streams » Developer Content from Vonage ♥
         content: `${this.indexTitle}${this.baseSplitter}${this.baseTitle}`,
       },
-      { hid: 'og:url', property: 'og:url', content: this.baseUrl },
       {
         hid: 'og:title',
         property: 'og:title',
