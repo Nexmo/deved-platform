@@ -162,7 +162,7 @@ Next, we need to hook up our UI page to our back-end. Open up the file at `src/a
 Again, I've done the heavy lifting for you! Just replace the contents of the file with the following:
 
 ```typescript
-import { HttpClient, HttpParams, HttpErrorResponse } from '@angular/common/http';
+// import { HttpClient, HttpParams, HttpErrorResponse } from '@angular/common/http';
 import { AlertController } from '@ionic/angular';
 import { Component } from '@angular/core';
 import { throwError } from 'rxjs';
