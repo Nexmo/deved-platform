@@ -3,7 +3,7 @@
     <span v-if="author.error">
       <img
         class="w-10 h-10 rounded-full"
-        src="/images/Placeholder-avatar.png"
+        src="~/assets/images/placeholder.gif"
         :alt="`Profile pic of ${author.name}`"
       />
     </span>

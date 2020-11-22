@@ -7,7 +7,7 @@
       <a
         :href="`http://developer.nexmo.com/ed?c=${prefix}blog_banner&amp;ct=${slug}`"
         ><img
-          :src="`/images/${prefix}StartBuilding_Footer.png`"
+          :src="require(`@/assets/images/${prefix}StartBuilding_Footer.png`)"
           :alt="$t('global_signup_alt')"
           width="1200"
           height="369"
