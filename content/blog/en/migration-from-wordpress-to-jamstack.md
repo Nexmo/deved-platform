@@ -44,3 +44,47 @@ Lastly, this WordPress site represented a piece of our infrastructure unknown to
 Our Developer Education team sits inside Developer Relations, itself inside the Product Org. So we're not focussed full-time engineers, and we don't own large amounts of infrastructure.
 
 Choosing Netlify allows us to fire-and-forget our content. We didn't need the complexity, maintenance, security, and reliability concerns that WordPress provides. With Netlify, as long as our site could build, it could deploy.
+
+## Workflow
+
+As I mentioned already, our content creation process was split across three platforms. This was frustrating, inaccessible, and made worse when involving external writers who didn't have access to our content repository–like writers from our [Spotlight programme](https://developer.nexmo.com/spotlight).
+
+One of the goals of this project was to find a way to simplify our workflow, hopefully impacting us as little as possible. Netlify CMS allowed us to do this. \
+\
+The editorial workflow Netlify CMS provided reflected our existing JIRA workflow quite closely, giving me hopes of automation (or, another opportunity to log into JIRA less). At the same time, the git-based storage of Netlify CMS allowed also reflected our existing review process in our blog-posts repository.
+
+Using Netlify CMS allowed for a significant amount of the process to be consolidated.
+
+Migrating from WordPress ended up the biggest hurdle we'd face. We had the WP REST API available, so off I went making API call after API call to try and identify the best way to extract our content from WordPress. We edited content in WordPress as Markdown, so surely it was stored as such? I was getting excited to think that I would make some API calls to retrieve our Markdown, and save it as markdown files.
+
+But was it stored as Markdown? Owing to its unique nature of unmaintained community driven plugins, nothing ends up being straightforward.\
+\
+Our WordPress stored posts rendered as HTML. Crayon, the old and abandoned syntax highlighter plugin, seemed to store code in tables, with columns for line numbers and rows per lines of code. The last version of Crayon before deprecation actually cited moving to storing code in `<pre><code>` tags much like other syntax highlighters. The goal of the last update was to make moving from it easier, as it would be compatible with converters or even other highlighters. But sadly, the plugin was so old and the site so badly maintained we were facing a huge obstacle to update everything just to get the content out.\
+\
+The incredible irony of Crayon is that the maintainer had also had enough of WordPress and decided to move his site and focus to Jekyll, a Jamstack platform.
+
+We made a decision to manually review all our content. We don't have the thousands of articles of Smashing Magazine, but we have over 500 pieces of content. I mentioned rebranding earlier. The decision gave us the opportunity to revisit every piece of content to update the branding, update SDK versions, request new artwork, and bring them into 2020 (the poor things).
+
+But, how do you plan to produce new content AND review all content in a matter of weeks? Well, you don't. The plan would be to do the content review over a few months. In the meantime, I devised a plan.
+
+### The Plan
+
+Using rewrite rules, we would stop folks from being able to access the old site. They would be redirected to the same post on the new [new domain](https://learn.vonage.com), where the metadata would have been imported into markdown files. 
+
+The old site will be moved to a new "legacy" domain, with a link to this domain in each post we import. 
+
+The new site would then provide a nice note to the effect of "We're still migrating this content", with a countdown to redirect them to the new legacy link. 
+
+![Screenshot showing a message that the content hasn't been migrated yet and that the reader will be redirected to the old post](/content/blog/migration-from-wordpress-to-jamstack/screenshot-2020-11-23-at-13.59.12.png)
+
+As we migrate content, the markdown file we already imported is edited, removing the legacy link and adding the migrated content. Slotting the content in the middle of the user experience, limiting the impact on the user and hopefully reducing the strain on the team to migrate all our content quickly.
+
+To limit the impact on users, we prioritised our most read and most recent content for migration, most of which were migrated before we went live.
+
+## Framework Choices
+
+I'd had some experience working with Jekyll in a similar workflow in the past, where we edited and reviewed all our content as branches and PRs on the blog repository. Jekyll, configured correctly, is blisteringly fast to render. I'd guess it's still right at the top for build speed when compared to other Jamstack platforms.
+
+I'd also been experimenting with Nuxt, because Vue.js is amazing and I'm a huge fan of Jamstack in general. Combing my two favourite things (Vumstack? Jamue?), I found Nuxt.js! Vonage also had a design system named Volta, which was based on Bootstrap, applied all our branding guidelines, and was available as a Vue library.
+
+So, I built two proof of concepts, one in Jekyll and one in Nuxt
