@@ -1,3 +1,11 @@
+## [2.1.1](https://github.com/Nexmo/deved-platform/compare/v2.1.0...v2.1.1) (2020-11-23)
+
+
+### Bug Fixes
+
+* fallback on img, not nuxt-image, if image isn't suitable for optimization ([9b01a27](https://github.com/Nexmo/deved-platform/commit/9b01a278a42d70f9736d17d7449f139583f73deb))
+* minify js and css ([82dab04](https://github.com/Nexmo/deved-platform/commit/82dab04a8855c6ede1332dfecd8d06f4f2e282c9))
+
 # [2.1.0](https://github.com/Nexmo/deved-platform/compare/v2.0.0...v2.1.0) (2020-11-22)
 
 
