@@ -265,11 +265,5 @@ export default {
         fs: 'empty',
       }
     },
-    html: {
-      minify: {
-        minifyCSS: false,
-        minifyJS: false,
-      },
-    },
   },
 }
