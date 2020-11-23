@@ -5,7 +5,13 @@
   >
     <div class="px-4 mx-auto pointer-events-none md:p-0 max-w-screen-2xl">
       <div class="flex xl:justify-end">
-        <section class="bg-black rounded-lg shadow-xl sm:mx-6 lg:mx-8">
+        <section
+          :class="{
+            'pointer-events-auto': open,
+            'pointer-events-none': !open,
+          }"
+          class="bg-black rounded-lg shadow-xl sm:mx-6 lg:mx-8"
+        >
           <header class="flex justify-between px-4 py-2">
             <span class="flex w-3 h-3 py-1">
               <span
