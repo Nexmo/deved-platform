@@ -5,18 +5,18 @@
     typeof="Person"
   >
     <figure>
-      <img
-        v-if="author.image_url.startsWith('http')"
-        :src="author.image_url"
-        property="image"
-        class="object-cover w-full h-64"
-        :alt="`Profile pic of ${author.name}`"
-      />
       <nuxt-image
-        v-else
+        v-if="author.image_url.startsWith('/')"
         :src="author.image_url"
         property="image"
         placeholder="true"
+        class="object-cover w-full h-64"
+        :alt="`Profile pic of ${author.name}`"
+      />
+      <img
+        v-else
+        :src="author.image_url"
+        property="image"
         class="object-cover w-full h-64"
         :alt="`Profile pic of ${author.name}`"
       />
