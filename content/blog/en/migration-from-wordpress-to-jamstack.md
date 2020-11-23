@@ -23,11 +23,11 @@ replacement_url: ""
 
 If you do some development, editing, or writing on the internet, you've probably heard of WordPress. To say it's prolific is an understatement.
 
-Every time we talk about the market share of different frameworks, someone magics a new number out of the air for WordPress, a great point made by [Sarah Drasner](https://dev.to/sarah_edo) when she wrote about when [Smashing Magazine moved from WordPress to Preact/Hugo](https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/) at the beginning of this year.
+Every time we talk about the market share of different frameworks, someone magics a new number out of the air for WordPress, a great point made by [Sarah Drasner](https://dev.to/sarah_edo) as she wrote about when [Smashing Magazine moved from WordPress to Preact/Hugo](https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/) at the beginning of this year.
 
 I've been quite public about my issues with WordPress–Security/Speed/bloat/UX. Not to take anything away from WordPress developers, or the folks who are maintaining it. I feel like we transcend its benefits as an organisation with engineers, writers, and user experience professionals. In these circumstances, living with a platform–widely accepted as being clunky and heavy–for the benefit of a good backend, always felt a bit counter-intuitive.
 
-So, similarly to Sarah's post, I'm going to explore the whats/whys/wheres of this journey, since that meeting we had in Miami, early in 2020, before the world seemed to go to well, COVID.
+So, similarly to Sarah's post, I'm going to explore the whats/whys/wheres of this journey, since that meeting we had in Miami, early in 2020, before the world seemed to go to, well, COVID.
 
 ## Why?
 
@@ -51,7 +51,7 @@ As I mentioned already, we were across three platforms. It could be frustrating,
 
 One of the goals of this project was to find a way to simplify our workflow, hopefully impacting us as little as possible. Netlify CMS allowed us to do this. 
 
- The editorial workflow Netlify CMS provided reflected our existing JIRA workflow quite closely, giving me hopes of automation (or, another opportunity to log into JIRA less). At the same time, the git-based storage of Netlify CMS allowed also reflected our existing review process in our blog-posts repository.
+The editorial workflow Netlify CMS provided reflected our existing JIRA workflow quite closely, giving me hopes of automation (or, another opportunity to log into JIRA less). At the same time, the git-based storage of Netlify CMS also reflected our existing review process.
 
 Using Netlify CMS allowed for a significant amount of the process to be consolidated.
 
@@ -59,13 +59,13 @@ Migrating from WordPress ended up the most significant hurdle we'd face. We had 
 
 But was it stored as Markdown? Due to the nature of unmaintained community-driven plugins, nothing ends up being straightforward.
 
-Our WordPress stored posts rendered as HTML. Crayon, the old and abandoned syntax highlighter plugin, seemed to keep code in tables, with columns for line numbers and rows per lines of code. The last version of Crayon before deprecation cited moving to store code in `<pre><code>` tags much like other syntax highlighters. The goal of the last update was to make moving from it more manageable, as it would be compatible with converters or even other highlighters. But sadly, the plugin was so old, and the site so severely maintained we were facing an unrealistic obstacle updating everything, to get the content out.
+Our WordPress stored posts rendered as HTML. Crayon, the old and abandoned syntax highlighter plugin, seemed to keep code in tables, with columns for line numbers and rows per lines of code. The last version of Crayon before deprecation cited moving to store code in `<pre><code>` tags much like other syntax highlighters. The goal of the last update was to make moving from it more manageable, as it would be compatible with converters or even other highlighters. But sadly, the plugin was so old, and the site so severely unmaintained we were facing an unrealistic obstacle updating everything to get the content out.
 
- The incredible irony of Crayon is that the maintainer had also had enough of WordPress and decided to move his site and focus to Jekyll, a Jamstack platform.
+The incredible irony of Crayon is that the maintainer had also had enough of WordPress and decided to move his site and focus to Jekyll, a Jamstack platform.
 
 We decided to review all our content manually. We don't have the thousands of articles of Smashing Magazine, but we have over 500 pieces of content. I mentioned rebranding earlier. The decision allowed us to revisit every piece of content to update the branding, update SDK versions, request new artwork, and bring them into 2020 (the poor things).
 
-But, how do you plan to produce new content AND review all content in a matter of weeks? Well, you don't. The plan would be to do the content review over a few months. In the meantime, I devised a plan.
+But, how do you plan to produce new content AND review all content in a matter of weeks? Well, you don't. The plan would be to do the content review over a few months.
 
 ### The Plan
 
@@ -83,7 +83,7 @@ To limit the impact further, we prioritised our most read and most recent conten
 
 ## Framework Choices
 
-I'd had some experience working with Jekyll in a similar workflow in the past. There, we edited and reviewed all our content as branches and PRs on the blog repository. Jekyll, configured correctly, is blisteringly fast to render. I'd guess it's still right at the top for build speed when compared to other Jamstack platforms. It felt right to start here, with something I knew worked.
+I'd had some experience working with Jekyll and a similar workflow in the past. Jekyll, configured correctly, is blisteringly fast to render. I'd guess it's still right at the top for build speed when compared to other Jamstack platforms. It felt right to start there, with something I knew worked.
 
 I'd also been experimenting with Nuxt.js because Vue.js is terrific and I'm a massive fan of Jamstack in general. Combing my two favourite things (Vumstack? Jamue?), I found Nuxt.js! Vonage also had a design system named Volta, based on Bootstrap, applied all our branding guidelines, and was available as a Vue.js library.
 
@@ -91,7 +91,7 @@ So, I built two proof of concepts, one in Jekyll and one in Nuxt.js. Despite liq
 
 Nuxt.js was the way to go!
 
-Two weeks after our proof-of-concept was finished, Volta was deprecated by the design team! We replaced it using TailwindCSS, which allowed us to achieve design parity with Volta, but with more predictable breakpoints and a larger number of utilities for responsive sites.
+> Two weeks after our proof-of-concept was finished, Volta was deprecated by the design team! We replaced it using TailwindCSS, which allowed us to achieve design parity with Volta, but with more predictable breakpoints and a larger number of utilities for responsive sites.
 
 ## Conclusion
 
