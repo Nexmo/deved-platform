@@ -85,6 +85,20 @@ To limit the impact on users, we prioritised our most read and most recent conte
 
 I'd had some experience working with Jekyll in a similar workflow in the past, where we edited and reviewed all our content as branches and PRs on the blog repository. Jekyll, configured correctly, is blisteringly fast to render. I'd guess it's still right at the top for build speed when compared to other Jamstack platforms.
 
-I'd also been experimenting with Nuxt, because Vue.js is amazing and I'm a huge fan of Jamstack in general. Combing my two favourite things (Vumstack? Jamue?), I found Nuxt.js! Vonage also had a design system named Volta, which was based on Bootstrap, applied all our branding guidelines, and was available as a Vue library.
+I'd also been experimenting with Nuxt.js, because Vue.js is amazing and I'm a huge fan of Jamstack in general. Combing my two favourite things (Vumstack? Jamue?), I found Nuxt.js! Vonage also had a design system named Volta, which was based on Bootstrap, applied all our branding guidelines, and was available as a Vue.js library.
 
-So, I built two proof of concepts, one in Jekyll and one in Nuxt
+So, I built two proof of concepts, one in Jekyll and one in Nuxt.js. Despite liquid templates being much easier to work with, I found myself prototyping Nuxt.js far more quickly due to Volta, and with a frontend already looking great with our branding, server-side rending making the site lightning quick, we were very excited about this Nuxt.js prototype. In a few weeks of tweaking and applying feedback, we had something close to what we have today.
+
+Nuxt.js was the way to go!
+
+> About 2 weeks after our proof-of-concept was accepted, Volta was deprecated by the design team! What we have live now, is TailwindCSS, allowing us to achieve parity with Volta, but with more predictable breakpoints and a larger number of utilities for responsive sites.
+
+## Conclusion
+
+The result for us, has been transformative. We're going to be able to deliver more content types, more quickly, more reliably. We now have a platform that support all our immediate goals for 2021 and the future. It also looks AMAZING, If I do say so myself.
+
+Migration continues, but the go-live day had no hiccups. We smoothly transitioned folks to the new platform, with redirects in place to legacy if necessary. 
+
+We've seen more accurate tracking achieved through server-side analytics that previously, and we've got access to much more granular data to inform our writing goals for the future.
+
+![Screenshot of the new learn.vonage.com homepage](/content/blog/migration-from-wordpress-to-jamstack/screenshot-2020-11-23-at-14.40.57.png)
