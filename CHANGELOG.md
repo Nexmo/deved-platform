@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/Nexmo/deved-platform/compare/v2.1.1...v2.1.2) (2020-11-23)
+
+
+### Bug Fixes
+
+* fix twitch pointer-events-none bug ([280b510](https://github.com/Nexmo/deved-platform/commit/280b510e81a471592ff23f2f5d203324f2989f2e))
+
 ## [2.1.1](https://github.com/Nexmo/deved-platform/compare/v2.1.0...v2.1.1) (2020-11-23)
 
 
