@@ -6,8 +6,15 @@
   >
     <figure>
       <nuxt-link :to="localePath(`/authors/${author.username}`)">
+        <img
+          v-if="!author.image_url"
+          class="object-cover w-full h-64"
+          src="~/assets/images/placeholder.gif"
+          property="image"
+          :alt="`Profile pic of ${author.name}`"
+        />
         <nuxt-image
-          v-if="author.image_url.startsWith('/')"
+          v-else-if="author.image_url.startsWith('/')"
           :src="author.image_url"
           property="image"
           placeholder="true"
