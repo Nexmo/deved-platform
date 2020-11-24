@@ -60,13 +60,13 @@ Also, install python scheduler by typing `pip install scheduler`.
 
 We will install a package called Django CORS headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other.
 
-## **Creating our app**
+## **Creating Our App**
 
 To create the app type `django-admin startproject vonage`
 
 This will create our project boilerplate with all the code.
 
-Navigate into your app and type `Django-admin start project myapp`
+Navigate into your app and type `django-admin start project myapp`
 
 This will create our project which we will be using.
 
@@ -101,7 +101,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 ```
 
-## **Configuring models**
+## **Configuring Models**
 
 Next, we need to create our database models. Models are the tables that we will populate in the database. We will create two models which are TextMessage and UserActivity. TextMessage model will be used to store the Text Message object details and the UserActivity model will be used to store and track user activity.
 
@@ -129,7 +129,7 @@ class UserActivity(models.Model):
    time_stamp = models.DateField(auto_now=True)
 ```
 
-## **Creating our API**
+## **Creating Our API**
 
 API stands for Application Programming Interface. It is a set of protocols(rules) defined that tell you how to access and use data. For example, a REST API uses GET/POST/DELETE/PUT. These are the protocols of a REST API. An API allows you to access data in a database using HTTP requests.
 
@@ -162,7 +162,7 @@ import datetime
 import requests
 ```
 
-### **Landing page view**
+### **Landing Page View**
 
 ```python
 #landing page
@@ -172,7 +172,7 @@ def landing(request):
 
 This function will render our landing page template.
 
-### **Dashboard page view**
+### **Dashboard Page View**
 
 ```python
 #dashboard view
@@ -410,7 +410,7 @@ This page will allow the user to log in or sign in to the app using a username a
 
 Also called the registration page, this page allows the user to create a new account. After authentication the page has access to the other pages.
 
-## Testing the app
+## Testing the App
 
 Now that we have connected everything we need to run our Django application we just need to see if everything works well. In terminal type `python manage.py runserver` and navigate to localhost:8000. Navigate using side nav buttons to see what each page looks like. We haven't put any data in our database yet so no data will be displayed. Clicking on the buttons won't work either as we haven't connected our frontend system to the Rasa API just yet. Now that the design is done we can start developing our Rasa bot.
 
