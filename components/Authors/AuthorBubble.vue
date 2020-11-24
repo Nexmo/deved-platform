@@ -5,13 +5,20 @@
     vocab="http://schema.org/"
     typeof="Person"
   >
-    <nuxt-image
-      v-if="author.image_url.startsWith('/')"
+    <img
+      v-if="!author.image_url"
       class="object-cover w-24 h-24 mx-auto rounded-full"
-      placeholder="true"
+      src="~/assets/images/placeholder.gif"
+      property="image"
+      :alt="`Profile pic of ${author.name}`"
+    />
+    <nuxt-image
+      v-else-if="author.image_url.startsWith('/')"
+      class="object-cover w-24 h-24 mx-auto rounded-full"
       :src="author.image_url"
       property="image"
       :alt="`Profile pic of ${author.name}`"
+      placeholder="true"
     />
     <img
       v-else
