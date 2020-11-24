@@ -3,13 +3,13 @@
     :is="link ? 'nuxt-link' : 'span'"
     :to="localePath(`/tags/${slug}`)"
     no-prefetch
-    class="inline-flex badge badge--small"
+    class="inline-block badge badge--small"
     :class="'badge--' + slug"
     ><svg
       v-if="isProduct"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      class="w-3 mr-2 fill-current"
+      class="inline mr-2 fill-current icon-size"
     >
       <path
         d="M9.3 11.6L4.7 1.5H0l6.8 15.3s.1.1.1 0l2.4-5.2zm9.9-10.1s-6.1 13.9-6.9 15.6c-1.8 4.1-3.2 5.1-4.6 5.3H12c1.9 0 3.2-1.3 5.1-5.3.6-1.4 6.9-15.6 6.9-15.6h-4.8z"
