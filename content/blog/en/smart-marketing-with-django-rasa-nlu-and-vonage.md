@@ -712,19 +712,19 @@ Next type `git push Heroku master` and your project will be uploaded to Heroku.
 
 Type `_heroku ope_n` and this will open your project in a web browser.
 
-**<span style="text-decoration:underline;">Deploying to Docker</span>**
+## Deploying to Docker
 
-The final task is deploying our Rasa project using docker.
+The final task is deploying our Rasa project using Docker.
 
-**<span style="text-decoration:underline;">Installing Docker</span>**
+### Installing Docker
 
 In terminal type these commands:
 
-***$ sudo apt-get update***
+`sudo apt-get update`
 
- ***$ sudo apt-get install docker-ce docker-ce-cli containerd.io***
+`sudo apt-get install docker-ce docker-ce-cli containerd.io`
 
-This will install Docker on your machine(ubuntu)
+This will install Docker on your machine (if you're running Ubuntu).
 
 Next, confirm installation by typing ***sudo docker run hello-world***
 
