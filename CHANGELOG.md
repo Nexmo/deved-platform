@@ -1,3 +1,10 @@
+## [2.1.6](https://github.com/Nexmo/deved-platform/compare/v2.1.5...v2.1.6) (2020-11-24)
+
+
+### Bug Fixes
+
+* add redirect file for handling adhoc redirects ([beae008](https://github.com/Nexmo/deved-platform/commit/beae0084f4094dc34ec4660ffb645325c9924898))
+
 ## [2.1.5](https://github.com/Nexmo/deved-platform/compare/v2.1.4...v2.1.5) (2020-11-24)
 
 
