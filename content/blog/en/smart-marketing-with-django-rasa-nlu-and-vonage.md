@@ -56,7 +56,7 @@ Type `pip install Django rest framework`
 
 Also, install python scheduler by typing `pip install scheduler`.
 
-### **Installing Django corsheaders**
+### **Installing Django CORS Headers**
 
 We will install a package called Django CORS headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other.
 
@@ -387,7 +387,6 @@ new Vue({
 ## Dashboard Page
 
 This is the page that keeps track of all user activities in the app. In this app, the user will see all their activity stream and the corresponding dates. This is important so that the user can be able to have a reference for what they did on a specific date and time. We render activities using Django's templating syntax and rendering actions via the views.
-
 
 ```html
 <h2 class="mb-4">Activity Dashboard</h2>
