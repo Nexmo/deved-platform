@@ -32,7 +32,7 @@ export default {
 }
 
 .YouTube-Container {
-  margin: 35px -30px;
+  margin: 30px -30px;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
