@@ -726,17 +726,13 @@ In terminal type these commands:
 
 This will install Docker on your machine (if you're running Ubuntu).
 
-Next, confirm installation by typing ***sudo docker run hello-world***
+Next, confirm installation by typing `sudo docker run hello-world`.
 
-**<span style="text-decoration:underline;">Rasa container</span>**
+## Rasa Container
 
-Using the rasa docs we will deploy our bot with docker-compose
+Using the Rasa docs we will deploy our bot with docker-compose. Navigate to your Rasa bot root and create a new file docker-compose.yml. Put the following data in the file:
 
-Navigate to your Rasa bot root and create a new file docker-compose.yml
-
-Put the following data in the file.
-
-```
+```yaml
 version: '3.0'
 services:
  rasa:
@@ -751,19 +747,19 @@ services:
 
 To run the services configured in your docker-compose.yml execute:
 
-***sudo docker-compose up***
+`sudo docker-compose up`
 
-This will start the docker container for rasa. Now you can run rasa in a container.
+This will start the Docker container for Rasa. Now you can run Rasa in a container.
 
-**<span style="text-decoration:underline;">Action server</span>**
+## Action Server
 
 Since we have configured actions, we should also have an action server available.
 
-We need to first build the image then reference it in our docker-compose file. So first in the bot's root folder make an actions directory then move your actions.py file into that folder. In the same folder create an **init**.py file.
+We need to first build the image, then reference it in our docker-compose file. So first, in the bot's root folder, make an actions directory. Then move your actions.py file into that folder. In the same folder create an **init**.py file.
 
 Next, create a Dockerfile in the root of your bot project and put the following:
 
-```
+```yaml
 # Extend the official Rasa SDK image
 FROM rasa/rasa-sdk:1.10.2
 
@@ -786,24 +782,24 @@ COPY ./actions /app/actions
 USER 1001
 ```
 
-The next thing you must do is create a free docker account on[ https://www.docker.com](https://www.docker.com/)
+The next thing you must do is create a free Docker account on [https://www.docker.com](https://www.docker.com/). You will then create a repository where your image will live, similar to Github.
 
-You will then create a repository where your image will live similar to Github.
+After you've created your repo run the following command, replacing it with your username, repository name, and the name of your image:
 
-After you've created your repo run the following command replacing it with your username, repository name, and the name of your image.
-
-***docker build . -t <account_username>/<repository_name>:<custom_image_tag>***
+`docker build . -t <account_username>/<repository_name>:<custom_image_tag>`
 
 When this command executes successfully your image will be available in that repository. You can then go back to the docker-compose.yml file and add the following:
 
- ** *app:***
+```yaml
+app:
 
- ***image: <image:tag>***
+image: <image:tag>
 
- ***expose: 5055***
+expose: 5055
+```
 
-This command will tell docker to run your actions image on port 5055.
+This command will tell Docker to run your actions image on port 5055.
 
-You can execute docker-compose up and both the rasa HTTP server and actions will run using docker and you will able to communicate with them
+You can execute `docker-compose up` and both the Rasa HTTP server and actions will run using Docker and you will able to communicate with them.
 
-We have successfully created and deployed our marketing tool using the Vonage api, Django, and rasa nlu.
+We have successfully created and deployed our marketing tool using the Vonage API, Django, and Rasa NLU.
