@@ -18,7 +18,7 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-**<span style="text-decoration:underline;">Prerequisites</span>**
+## **Prerequisites**
 
 For this app we are going to be using the following:
 
@@ -40,27 +40,27 @@ For this app we are going to be using the following:
 
 Next, we will be looking at how to install each of these packages.
 
-**<span style="text-decoration:underline;">Installation</span>**
+## **Installation**
 
 First, we will start to install a virtual environment. A virtual environment will be like a storehouse for all our packages. We are using Linux so go to cmd and type virtualenv vonenv
 
 This will create a new virtual environment called vonenv. Activate it by typing source/vonenv/bin/activate
 
-**<span style="text-decoration:underline;">Installing Django</span>**
+### **Installing Django**
 
 We will use Django as our app framework. Install Django by typing pip install Django. You can specify the version using == and giving the version name.
 
-**<span style="text-decoration:underline;">Installing Django Rest Framework</span>**
+### **Installing Django Rest Framework**
 
 Type pip install Django rest framework
 
 Also, install python scheduler by typing pip install scheduler.
 
-**<span style="text-decoration:underline;">Installing django corsheaders</span>**
+### **Installing Django corsheaders**
 
-We will install a package called Django cors headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other.
+We will install a package called Django CORS headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other.
 
-**<span style="text-decoration:underline;">Creating our app</span>**
+## **Creating our app**
 
 To create the app type django-admin startproject vonage
 
@@ -72,7 +72,7 @@ This will create our project which we will be using.
 
 To test the app simply type python manage.py runserver and navigate to localhost 8000 in your browser.
 
-**<span style="text-decoration:underline;">Configuring Settings</span>**
+## **Configuring Settings**
 
 Navigate to the root folder of your project and open the settings.py file. This is the file that will be used to set up the backend configuration of our app.
 
@@ -101,7 +101,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 ```
 
-**<span style="text-decoration:underline;">Configuring models</span>**
+## **Configuring models**
 
 Next, we need to create our database models. Models are the tables that we will populate in the database. We will create two models which are TextMessage and UserActivity. TextMessage model will be used to store the Text Message object details and the UserActivity model will be used to store and track user activity.
 
@@ -129,9 +129,7 @@ class UserActivity(models.Model):
    time_stamp = models.DateField(auto_now=True)
 ```
 
-**<span style="text-decoration:underline;">Creating our api</span>**
-
-**<span style="text-decoration:underline;">What is an API?</span>**
+## **Creating our API**
 
 API stands for Application Programming Interface. It is a set of protocols(rules) defined that tell you how to access and use data. For example, a REST API uses get/post/delete/put. These are the protocols of a rest API. An API allows you to access data in a database using HTTP requests.
 
@@ -139,7 +137,7 @@ We will be creating two rest API's, TextMessage API and UserActivity API. Why us
 
 If you haven't done so already install the Django rest framework package by typing pip install Django-rest-framework. Then add the package to installed apps and run python manage.py migrate to register the changes in our database.
 
-**<span style="text-decoration:underline;">Configuring Views</span>**
+## **Configuring Views**
 
 The views file will be responsible for storing our functions. These functions will be able to render data, catch errors, enable us to make get, post, put, edit, and delete requests to our APIs.
 
@@ -164,7 +162,7 @@ import datetime
 import requests
 ```
 
-**<span style="text-decoration:underline;">Landing page view</span>**
+### **Landing page view**
 
 ```
 #landing page
@@ -174,7 +172,7 @@ def landing(request):
 
 This function will render our landing page template.
 
-**<span style="text-decoration:underline;">Dashboard page view</span>**
+### **Dashboard page view**
 
 ```
 #dashboard view
@@ -185,7 +183,7 @@ def index(request):
 
 This function will render our dashboard page template.
 
-**<span style="text-decoration:underline;">Sms scheduling</span>**
+## **SMS Scheduling**
 
 We will be scheduling the SMS using a Django package called python scheduler. We are using this package as it is easy to set up and efficient.
 
@@ -218,7 +216,7 @@ for s in sms:
    schedule.every(total_days).days.at(daytime).do(job)
 ```
 
-**<span style="text-decoration:underline;">Configuring Urls</span>**
+## **Configuring Urls**
 
 The URL file is used to define routes for our app. We will add the view functions as our routes to navigate through each template.
 
@@ -243,9 +241,9 @@ urlpatterns = [
 ]
 ```
 
-**<span style="text-decoration:underline;">Serializers</span>**
+## **Serializers**
 
-**When using API's we need to first serialize data. Serialization is the process of converting data into small bytes for use by software or physical devices. In our API framework, it is easy to serialize data. We create a serializers.py file, import our models and define our serializers.**
+When using API's we need to first serialize data. Serialization is the process of converting data into small bytes for use by software or physical devices. In our API framework, it is easy to serialize data. We create a serializers.py file, import our models and define our serializers.
 
 ```
 from rest_framework import serializers
@@ -263,14 +261,15 @@ class UserActivitySerializer(serializers.ModelSerializer):
 	fields = '__all__'
 ```
 
-**<span style="text-decoration:underline;">Configuring Templates</span>**
+## **Configuring Templates**
 
 Now that we know the pages that will be used in our app, we now need to hook up our templates to connect to our backend systems. We do this by using javascript and also use our APIs as our source of data.
 
-**<span style="text-decoration:underline;">Assistant Page</span>**
+## **Assistant Page**
 
 This page will act as our chatbot UI page. This is the page users will use when talking to our chatbot and passing data. We will use angular to interact with our bot by sending HTTP requests to the Rasa API. We will then manage the response data using jquery. The page is designed as a chat application and all the user has to do is answer the bot's questions.
 
+```html
 <script>
  //start chat on button click
  var app = angular.module('myApp', []);
@@ -331,13 +330,13 @@ axios.post("http://localhost:5005/webhooks/rest/webhook",{"message":$("#time").v
    $("#op2").click()
 })
 </script>
-
 ```
-**<span style="text-decoration:underline;">Schedule Page</span>**
+
+## Schedule Page
 
 This page is used to show all scheduled SMS in our database. The user will be able to keep track of the data in the database and to view each SMS detail by clicking on any of the values. When the user clicks the view button he/she will be redirected to the details page of the SMS. On this page we use vue.js to make a simple HTTP: get request to our API at localhost:8000.
-```
 
+```html
 <!--render api data-->
 
  <h2 class="mb-4">Schedule</h2>
@@ -383,50 +382,48 @@ new Vue({
  }
 })
  </script>
-
 ```
-**<span style="text-decoration:underline;">Dashboard Page</span>**
+
+## Dashboard Page
 
 This is the page that keeps track of all user activities in the app. In this app, the user will see all his/her activity stream and the corresponding dates. This is important so that the user can be able to have a reference for what he/she did on a specific date and time. We render activities using Django's templating syntax and rendering actions via the views.
-```
 
-```
+
+```html
 <h2 class="mb-4">Activity Dashboard</h2>
-```
+
 
 <!--loop through actions-->
 
-```
+
 {% for a in act %}
-```
+
 
 <h3>{{a.user}} {{a.verb}} <span style="color:blue">{{a.target}}</span> at {{a.time_stamp}}</h3>
 {% endfor %}
-\`\``
+```
 
-**<span style="text-decoration:underline;">Login Page</span>**
+## Login Page
 
 This page will allow the user to log in or sign in to the app using a username and password.
 
-**<span style="text-decoration:underline;">Signup Page</span>**
+## Signup Page
 
 Also called the registration page this page allows the user to create a new account and after authentication has access to the other pages.
 
-**<span style="text-decoration:underline;">Testing the app</span>**
+## Testing the app
 
 Now that we have connected everything we need to run our Django application just to see if everything works well. In terminal type python manage.py runserver and navigate to localhost:8000. Navigate using side nav buttons to see what each page looks like. We haven't put any data in our database yet so no data will be displayed. Clicking on the buttons won't work either as we haven't connected our frontend system to the Rasa API just yet, Now that the design is done we can now start developing our Rasa bot.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image1.png "image_tooltip")
 
-***<span style="text-decoration:underline;">Installing Rasa</span>***
+## Installing Rasa
 
 Rasa is an open-source AI platform that enables developers to create their own custom chatbots and voice assistants using a set of AI APIs.Rasa using a lot of NLP so it is best suited for creating NLP applications. We will be using Rasa to make our own custom AI chatbot backend which will be plugged into our UI.
 
 To install rasa open a new terminal and create a new virtual environment or reactivate the previous one. Then type pip install rasa. This command will download rasa from the rasa website and install it on your machine. When the installation is done a basic bot will be available for you to talk to. In the same terminal type rasa shell to interact with your bot. Type hi or hello and press enter. The bot will respond according to its training.
 
-**<span style="text-decoration:underline;">Configuring domain</span>**
+## Configuring domain
 
 Now let's program our bot to respond to our use case here. The goal of our bot is to take in user data and store it in a database. The data will then be used to send an SMS to a specific number at a certain time. So we need to configure our bot record data. Using NLP the bot can respond appropriately and follow a specific response flow.
 
@@ -508,7 +505,7 @@ templates:
   payload: '/send_date{"send_date": "send_date"}'
 ```
 
-**<span style="text-decoration:underline;">Configuring Stories</span>**
+## Configuring Stories
 
 Stories refer to the user input that the user may give. E.g we tell the bot to expect a phone number 55512345 from a user or a number that is similar so that the bot is familiar with the user input. We write the stories and specify which slot they're related to. Slots are inputs for the form
 
@@ -572,7 +569,7 @@ Stories refer to the user input that the user may give. E.g we tell the bot to e
  - utter_deny
 ```
 
-**<span style="text-decoration:underline;">Configuring Nlu</span>**
+## Configuring Nlu
 
 In the NLU file, we write the intents of the user and examples of each intent. It is advisable to write as many examples as possible for each intent so that the bot is more intelligent and can identify more inputs.
 
@@ -620,11 +617,11 @@ In the NLU file, we write the intents of the user and examples of each intent. I
 - [20-01-2021](send_date)
 ```
 
-**<span style="text-decoration:underline;">Configuring Actions</span>**
+## Configuring Actions
 
 The actions file is where we now put all the data together and decide how all the user input will be processed. IN our case we are taking user input as form data so we need to submit the data given by the user. This data will be sent to the TextMessage API that we made earlier in the post. The data will be used as the parameters in the Voyage Messages API when making a post request.
 
-**<span style="text-decoration:underline;">Config File</span>**
+## Config File
 
 Before we proceed we need to tell Rasa that we are taking responses in a form format. To do that open config.yml and add FormPolicy at the bottom of the policy list. Policies are important in that they tell your bot how to use the data, what format to use, and determine the flow type of data, in this case, the data flow is that of a form.
 
@@ -643,27 +640,27 @@ policies:
  - name: FormPolicy
 ```
 
-Now that we've configured everything we need to train our bot. We train the bot so that it uses all our custom configurations from every file. So in the terminal type ***rasa train.*** The bot will take a few seconds to analyze, validate, and apply the changes to the bot. If there is an error in the files the training will not work.
+Now that we've configured everything we need to train our bot. We train the bot so that it uses all our custom configurations from every file. So in the terminal type `rasa train`. The bot will take a few seconds to analyze, validate, and apply the changes to the bot. If there is an error in the files the training will not work.
 
-**<span style="text-decoration:underline;">Testing the new bot</span>**
+## Testing the new bot
 
 It Is now time to test our bot configuration. Open a new terminal window and type rasa run actions.
 
 In another terminal type rasa shell. We will be using a shell to test the bot. In the shell type hi and answer the bot's questions. If all is in order your bot should be asking you question after question taking in all the data. This is FormPolicy in action. Once you've provided all the information the bot will submit the data to your rest API using requests as we configured in our actions.py file.
 
-**<span style="text-decoration:underline;">Connecting Rasa and django</span>**
+## Connecting Rasa and django
 
 We have finally finished our Django app and our Rasa bot but now we need to connect the two so that our bot can be used from our Django frontend. We only need to change a few things in our JavaScript code. We are going to make HTTP post requests to our bot and displaying the response data.
 
 In the terminal where we opened the rasa shell we need to now run the rasa server for HTTP requests using the following command:
 
- ***rasa run -m-enable-api --cors ''*' --debug***
+`rasa run -m-enable-api --cors ''*' --debug`
 
 This command will ensure that rasa can receive HTTP requests from a remote server using our rest channel.
 
 In the terminal, you must now have 3 servers running, one for rasa actions, rasa HTTP, and Django server for the frontend.
 
-Navigate to URL ***localhost:8000/von*** where our bot UI lives and click on start campaign. This will send an HTTP post request to rasa by saying hi. You will see the bot response in the UI.
+Navigate to URL `localhost:8000/von` where our bot UI lives and click on start campaign. This will send an HTTP post request to rasa by saying hi. You will see the bot response in the UI.
 
 We can interact with our bot now using the input box at the bottom, so respond to the bot's question by typing a number and clicking send. The bot will start a sequence where it will be storing each input in the form fields and submitting it to our TextMessage rest api.
 
@@ -671,7 +668,7 @@ If you open the Django terminal you will see that an HTTP post request was succe
 
 Our app is now in working order however we need to change a few things. At the time the app is only available on our local machines therefore we need to make it available to the public. We will be using Heroku for Django deployment and Docker containers for the bot deployment.
 
-**<span style="text-decoration:underline;">Deploying to heroku</span>**
+## Deploying to heroku
 
 In this post, we will only be focusing on deploying the app so we won't teach about Heroku specifics. The first thing to do is to create a Heroku account so head on over to[ https://www.heroku.com](https://www.heroku.com/) to create a free account.
 
