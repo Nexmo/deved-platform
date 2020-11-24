@@ -414,7 +414,7 @@ Also called the registration page, this page allows the user to create a new acc
 
 Now that we have connected everything we need to run our Django application we just need to see if everything works well. In terminal type `python manage.py runserver` and navigate to localhost:8000. Navigate using side nav buttons to see what each page looks like. We haven't put any data in our database yet so no data will be displayed. Clicking on the buttons won't work either as we haven't connected our frontend system to the Rasa API just yet. Now that the design is done we can start developing our Rasa bot.
 
-![alt_text](images/image1.png "image_tooltip")
+
 
 ## Installing Rasa
 
