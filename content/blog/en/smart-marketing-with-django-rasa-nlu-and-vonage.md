@@ -18,7 +18,7 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-## **Prerequisites**
+## Prerequisites
 
 For this app we are going to be using the following:
 
@@ -42,19 +42,19 @@ Next, we will be looking at how to install each of these packages.
 
 ## **Installation**
 
-First, we will start to install a virtual environment. A virtual environment will be like a storehouse for all our packages. We are using Linux so go to cmd and type virtualenv vonenv
+First, we will start to install a virtual environment. A virtual environment will be like a storehouse for all our packages. We are using Linux so go to cmd and type `virtualenv vonenv`
 
-This will create a new virtual environment called vonenv. Activate it by typing source/vonenv/bin/activate
+This will create a new virtual environment called vonenv. Activate it by typing `source/vonenv/bin/activate`
 
 ### **Installing Django**
 
-We will use Django as our app framework. Install Django by typing pip install Django. You can specify the version using == and giving the version name.
+We will use Django as our app framework. Install Django by typing `pip install Django`. You can specify the version using `==` and giving the version name.
 
 ### **Installing Django Rest Framework**
 
-Type pip install Django rest framework
+Type `pip install Django rest framework`
 
-Also, install python scheduler by typing pip install scheduler.
+Also, install python scheduler by typing `pip install scheduler`.
 
 ### **Installing Django corsheaders**
 
@@ -62,15 +62,15 @@ We will install a package called Django CORS headers which will help to prevent 
 
 ## **Creating our app**
 
-To create the app type django-admin startproject vonage
+To create the app type `django-admin startproject vonage`
 
 This will create our project boilerplate with all the code.
 
-Navigate into your app and type Django-admin start project myapp
+Navigate into your app and type `Django-admin start project myapp`
 
 This will create our project which we will be using.
 
-To test the app simply type python manage.py runserver and navigate to localhost 8000 in your browser.
+To test the app simply type `python manage.py runserver` and navigate to localhost:8000 in your browser.
 
 ## **Configuring Settings**
 
@@ -78,9 +78,9 @@ Navigate to the root folder of your project and open the settings.py file. This 
 
 In the installed apps list add myapp, and rest framework at the bottom. This will register the packages and inform Django that we want to use them.
 
-In the terminal run, python manage.py migrate. This will run the initial migrations of our app and create new tables in the database.
+In the terminal run, `python manage.py migrate`. This will run the initial migrations of our app and create new tables in the database.
 
-```
+```python
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -105,7 +105,7 @@ SITE_ID = 1
 
 Next, we need to create our database models. Models are the tables that we will populate in the database. We will create two models which are TextMessage and UserActivity. TextMessage model will be used to store the Text Message object details and the UserActivity model will be used to store and track user activity.
 
-```
+```python
 from django.db import models
 from django.contrib.auth import get_user_model
 from django.db.models.signals import post_save
@@ -131,19 +131,19 @@ class UserActivity(models.Model):
 
 ## **Creating our API**
 
-API stands for Application Programming Interface. It is a set of protocols(rules) defined that tell you how to access and use data. For example, a REST API uses get/post/delete/put. These are the protocols of a rest API. An API allows you to access data in a database using HTTP requests.
+API stands for Application Programming Interface. It is a set of protocols(rules) defined that tell you how to access and use data. For example, a REST API uses GET/POST/DELETE/PUT. These are the protocols of a REST API. An API allows you to access data in a database using HTTP requests.
 
-We will be creating two rest API's, TextMessage API and UserActivity API. Why use APIs? An API is important for making HTTP requests and make interacting with the database much easier. With APIs, we can make HTTP requests to our API endpoints and to use any javascript framework we choose. This makes our frontend choices flexible and easier to integrate.
+We will be creating two REST API's, TextMessage API and UserActivity API. Why use APIs? An API is important for making HTTP requests and make interacting with the database much easier. With APIs, we can make HTTP requests to our API endpoints and to use any JavaScript framework we choose. This makes our frontend choices flexible and easier to integrate.
 
-If you haven't done so already install the Django rest framework package by typing pip install Django-rest-framework. Then add the package to installed apps and run python manage.py migrate to register the changes in our database.
+If you haven't done so already install the Django REST framework package by typing `pip install Django-rest-framework`. Then add the package to installed apps and run `python manage.py migrate` to register the changes in our database.
 
 ## **Configuring Views**
 
-The views file will be responsible for storing our functions. These functions will be able to render data, catch errors, enable us to make get, post, put, edit, and delete requests to our APIs.
+The views file will be responsible for storing our functions. These functions will be able to render data, catch errors, enable us to make GET, POST, PUT, EDIT, and DELETE requests to our APIs.
 
 We will need to import some functions and methods which will be used by our functions and classes. These are built-in methods from our installed packages including Django.
 
-```
+```python
 from django.shortcuts import render
 from .models import TextMessage, UserActivity
 from .serializers import TextMessageSerializer, UserActivitySerializer
@@ -164,7 +164,7 @@ import requests
 
 ### **Landing page view**
 
-```
+```python
 #landing page
 def landing(request):
    return render(request,'myapp/landing.html')
@@ -174,7 +174,7 @@ This function will render our landing page template.
 
 ### **Dashboard page view**
 
-```
+```python
 #dashboard view
 def index(request):
    act = UserActivity.objects.all()
@@ -187,7 +187,7 @@ This function will render our dashboard page template.
 
 We will be scheduling the SMS using a Django package called python scheduler. We are using this package as it is easy to set up and efficient.
 
-```
+```python
 # extract dates and time from model
 sms = TextMessage.objects.all()
 for s in sms:
