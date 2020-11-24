@@ -216,11 +216,11 @@ for s in sms:
    schedule.every(total_days).days.at(daytime).do(job)
 ```
 
-## **Configuring Urls**
+## **Configuring URLs**
 
 The URL file is used to define routes for our app. We will add the view functions as our routes to navigate through each template.
 
-```
+```python
 from django.contrib import admin
 from django.urls import path, include
 from myapp import views
@@ -243,9 +243,9 @@ urlpatterns = [
 
 ## **Serializers**
 
-When using API's we need to first serialize data. Serialization is the process of converting data into small bytes for use by software or physical devices. In our API framework, it is easy to serialize data. We create a serializers.py file, import our models and define our serializers.
+When using APIs we need to first serialize data. Serialization is the process of converting data into small bytes for use by software or physical devices. In our API framework, it is easy to serialize data. We create a serializers.py file, import our models, and define our serializers.
 
-```
+```python
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
 from .models import TextMessage,UserActivity
@@ -263,11 +263,11 @@ class UserActivitySerializer(serializers.ModelSerializer):
 
 ## **Configuring Templates**
 
-Now that we know the pages that will be used in our app, we now need to hook up our templates to connect to our backend systems. We do this by using javascript and also use our APIs as our source of data.
+Now that we know the pages that will be used in our app, we now need to hook up our templates to connect to our backend systems. We do this by using JavaScript and also use our APIs as our source of data.
 
 ## **Assistant Page**
 
-This page will act as our chatbot UI page. This is the page users will use when talking to our chatbot and passing data. We will use angular to interact with our bot by sending HTTP requests to the Rasa API. We will then manage the response data using jquery. The page is designed as a chat application and all the user has to do is answer the bot's questions.
+This page will act as our chatbot UI page. This is the page users will use when talking to our chatbot and passing data. We will use Angular to interact with our bot by sending HTTP requests to the Rasa API. We will then manage the response data using jQuery. The page is designed as a chat application and all the user has to do is answer the bot's questions.
 
 ```html
 <script>
@@ -334,7 +334,7 @@ axios.post("http://localhost:5005/webhooks/rest/webhook",{"message":$("#time").v
 
 ## Schedule Page
 
-This page is used to show all scheduled SMS in our database. The user will be able to keep track of the data in the database and to view each SMS detail by clicking on any of the values. When the user clicks the view button he/she will be redirected to the details page of the SMS. On this page we use vue.js to make a simple HTTP: get request to our API at localhost:8000.
+This page is used to show all scheduled SMSes in our database. The user will be able to keep track of the data in the database and to view each SMS detail by clicking on any of the values. When the user clicks the view button they will be redirected to the details page of the SMS. On this page we use Vue.js to make a simple HTTP GET request to our API at localhost:8000.
 
 ```html
 <!--render api data-->
@@ -386,7 +386,7 @@ new Vue({
 
 ## Dashboard Page
 
-This is the page that keeps track of all user activities in the app. In this app, the user will see all his/her activity stream and the corresponding dates. This is important so that the user can be able to have a reference for what he/she did on a specific date and time. We render activities using Django's templating syntax and rendering actions via the views.
+This is the page that keeps track of all user activities in the app. In this app, the user will see all their activity stream and the corresponding dates. This is important so that the user can be able to have a reference for what they did on a specific date and time. We render activities using Django's templating syntax and rendering actions via the views.
 
 
 ```html
@@ -409,7 +409,7 @@ This page will allow the user to log in or sign in to the app using a username a
 
 ## Signup Page
 
-Also called the registration page this page allows the user to create a new account and after authentication has access to the other pages.
+Also called the registration page, this page allows the user to create a new account. After authentication the page has access to the other pages.
 
 ## Testing the app
 
