@@ -1,3 +1,10 @@
+## [2.1.3](https://github.com/Nexmo/deved-platform/compare/v2.1.2...v2.1.3) (2020-11-24)
+
+
+### Bug Fixes
+
+* ios issues with relative height to width inside flexbox ([5aeddfa](https://github.com/Nexmo/deved-platform/commit/5aeddfa5056a3eff0d078bdf7cd5ba76af8d2707))
+
 ## [2.1.2](https://github.com/Nexmo/deved-platform/compare/v2.1.1...v2.1.2) (2020-11-23)
 
 
