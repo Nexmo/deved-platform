@@ -2,6 +2,7 @@
 title: How to Add Two-Factor Authentication with Swift and Vapor
 description: In this tutorial, you will use the Vonage Verify APIs and Vapor to
   implement 2FA then test it using an iOS application.
+thumbnail: /content/blog/how-to-add-two-factor-authentication-with-swift-and-vapor/blog_2fa_swift-vapor_1200x600.png
 author: abdul-ajetunmobi
 published: true
 published_at: 2020-11-24T13:33:00.000Z
