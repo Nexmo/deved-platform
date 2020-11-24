@@ -690,29 +690,27 @@ It is highly recommended to store your code both online and offline, so we shall
 
 Once you've created your account you can click on 'new repository' (name it anything you want) and click 'initiate with a README', then click 'create'. Now that your repo has been created we can link the GitHub repo to our Django project.
 
-In your project root folder type `git remote add origin 'your/Github/URL'`. This command will add the GitHub repo as your remote master branch for your project. Once this is done upload your Django project by typing
+In your project root folder type `git remote add origin 'your/Github/URL'`. This command will add the GitHub repo as your remote master branch for your project. Once this is done upload your Django project by typing:
 
- ***git push origin master***
+`git push origin master`
 
 This command will push your project files to the remote branch master on Github.
 
-Now that we need to do one more thing which is to configure our app for Heroku.
-
-We will need to add a Procfile and requirements.txt file, so in your terminal type ***echo>>Procfile*** then ***pip freeze>requirements.txt***
+Now we need to do one more thing, which is to configure our app for Heroku. We will need to add a Procfile and requirements.txt file, so in your terminal type `echo>>Procfile` then `pip freeze>requirements.txt`
 
 Open Procfile and add the following:
 
- ***web: vonage.wsgi***
+`web: vonage.wsgi`
 
-And that's it! Update your git and GitHub repos accordingly
+And that's it! Update your Git and GitHub repos accordingly.
 
-**<span style="text-decoration:underline;">Deployment</span>**
+## Deployment
 
-Now to deploy to Heroku type ***heroku create vonbot***, this will create your Heroku app.
+Now to deploy to Heroku type `heroku create vonbot`, this will create your Heroku app.
 
-Next type ***git push Heroku master*** and your project will be uploaded to Heroku.
+Next type `git push Heroku master` and your project will be uploaded to Heroku.
 
-Type **_heroku ope_n** and this will open your project in a web browser.
+Type `_heroku ope_n` and this will open your project in a web browser.
 
 **<span style="text-decoration:underline;">Deploying to Docker</span>**
 
