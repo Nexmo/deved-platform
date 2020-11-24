@@ -660,53 +660,37 @@ This command will ensure that Rasa can receive HTTP requests from a remote serve
 
 In the terminal, you must now have 3 servers running, one for Rasa actions, Rasa HTTP, and Django server for the frontend.
 
-Navigate to URL `localhost:8000/von` where our bot UI lives and click on start campaign. This will send an HTTP post request to rasa by saying hi. You will see the bot response in the UI.
+Navigate to URL `localhost:8000/von` where our bot UI lives and click on start campaign. This will send an HTTP POST request to Rasa by saying hi. You will see the bot response in the UI.
 
-We can interact with our bot now using the input box at the bottom, so respond to the bot's question by typing a number and clicking send. The bot will start a sequence where it will be storing each input in the form fields and submitting it to our TextMessage rest api.
+We can interact with our bot now using the input box at the bottom, so respond to the bot's question by typing a number and clicking send. The bot will start a sequence where it will be storing each input in the form fields and submitting it to our TextMessage REST API.
 
-If you open the Django terminal you will see that an HTTP post request was successfully made to ***api/texts*** which means that our form was submitted successfully.! Based on the time and date you submitted to the bot you should be expecting to receive SMS on the recipient number you provided.
+If you open the Django terminal you will see that an HTTP POST request was successfully made to ***api/texts***, which means that our form was submitted successfully! Based on the time and date you submitted to the bot you should receive an SMS on the recipient number you provided.
 
-Our app is now in working order however we need to change a few things. At the time the app is only available on our local machines therefore we need to make it available to the public. We will be using Heroku for Django deployment and Docker containers for the bot deployment.
+Our app is now in working order however we need to change a few things. At the moment the app is only available on our local machines. Therefore, we need to make it available to the public. We will be using Heroku for Django deployment and Docker containers for the bot deployment.
 
-## Deploying to heroku
+## Deploying to Heroku
 
-In this post, we will only be focusing on deploying the app so we won't teach about Heroku specifics. The first thing to do is to create a Heroku account so head on over to[ https://www.heroku.com](https://www.heroku.com/) to create a free account.
+In this post, we will only be focusing on deploying the app so we won't teach about Heroku specifics. The first thing to do is to create a Heroku account, so head on over to[ https://www.heroku.com](https://www.heroku.com/) to create a free account.
 
-After creating the account we need to install Heroku in our machine so we can use it from the terminal. Once you've created your account head on over to[ https://devcenter.heroku.com/articles/heroku-cli](https://devcenter.heroku.com/articles/heroku-cli) and follow instructions on how to install the CLI based on your operating system.
+After creating the account we need to install Heroku on our machine so we can use it from the terminal. Once you've created your account head on over to[ https://devcenter.heroku.com/articles/heroku-cli](https://devcenter.heroku.com/articles/heroku-cli) and follow instructions on how to install the CLI, based on your operating system.
 
-Next, you need to login to Heroku using the CLI as it is much easier. If everything is installed properly we can now deploy our Django app to Heroku.
+Next, you need to login to Heroku using the CLI, as it is much easier. If everything is installed properly we can now deploy our Django app to Heroku.
 
-Before we deal with Heroku we need to install git for version control. Git will help us to keep track of any changes we make to our app without losing any data.
+Before we deal with Heroku we need to install Git for version control. Git will help us to keep track of any changes we make to our app without losing any data.
 
-To **install Git**, navigate to your command prompt shell and run the following command: Sudo dnf **install git**-all . Once the command output has been completed, you can verify the **installation** by typing: **git** version.
+To install Git, navigate to your command prompt shell and run the following command: `sudo dnf install git-all`. Once the command output has been completed, you can verify the **installation** by typing: `git version`.
 
-In your project folder type git init
+In your project folder type `git init`, then `git add` or `git add –all`. Next, type:
 
-Then ***git add .*** 
-
-***Or*** 
-
-***git add –all***
-
-Next type
-
-***git commit -m "commit message"***
+`git commit -m "commit message"`
 
 These 3 commands will create a local git repo on your machine.
 
-It is highly recommended to store your code both online and offline so we shall all upload our code to GitHub an online repository.
+It is highly recommended to store your code both online and offline, so we shall all upload our code to GitHub, an online repository. First, we need to create a GitHub account so head on to[ https://github.com](https://github.com/) to get started.
 
-First, we need to create a GitHub account so head on to[ https://github.com](https://github.com/) to get started.
+Once you've created your account you can click on 'new repository' (name it anything you want) and click 'initiate with a README', then click 'create'. Now that your repo has been created we can link the GitHub repo to our Django project.
 
-Once you've created your account you can click on the new repository( name it anything you want) and click initiate with a README then click create.
-
-Now that your repo has been created we can now link the GitHub repo to our Django project.
-
-In your project root folder type git remote add origin 'your/Github/URL'
-
-This command will add the GitHub repo as your remote master branch for your project.
-
-Once this is done upload your Django project by typing
+In your project root folder type `git remote add origin 'your/Github/URL'`. This command will add the GitHub repo as your remote master branch for your project. Once this is done upload your Django project by typing
 
  ***git push origin master***
 
