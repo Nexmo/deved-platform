@@ -413,25 +413,25 @@ Also called the registration page, this page allows the user to create a new acc
 
 ## Testing the app
 
-Now that we have connected everything we need to run our Django application just to see if everything works well. In terminal type python manage.py runserver and navigate to localhost:8000. Navigate using side nav buttons to see what each page looks like. We haven't put any data in our database yet so no data will be displayed. Clicking on the buttons won't work either as we haven't connected our frontend system to the Rasa API just yet, Now that the design is done we can now start developing our Rasa bot.
+Now that we have connected everything we need to run our Django application we just need to see if everything works well. In terminal type `python manage.py runserver` and navigate to localhost:8000. Navigate using side nav buttons to see what each page looks like. We haven't put any data in our database yet so no data will be displayed. Clicking on the buttons won't work either as we haven't connected our frontend system to the Rasa API just yet. Now that the design is done we can start developing our Rasa bot.
 
 ![alt_text](images/image1.png "image_tooltip")
 
 ## Installing Rasa
 
-Rasa is an open-source AI platform that enables developers to create their own custom chatbots and voice assistants using a set of AI APIs.Rasa using a lot of NLP so it is best suited for creating NLP applications. We will be using Rasa to make our own custom AI chatbot backend which will be plugged into our UI.
+Rasa is an open-source AI platform that enables developers to create their own custom chatbots and voice assistants using a set of AI APIs. Rasa uses a lot of natural language processing (NLP) so it is best suited for creating NLP applications. We will be using Rasa to make our own custom AI chatbot backend which will be plugged into our UI.
 
-To install rasa open a new terminal and create a new virtual environment or reactivate the previous one. Then type pip install rasa. This command will download rasa from the rasa website and install it on your machine. When the installation is done a basic bot will be available for you to talk to. In the same terminal type rasa shell to interact with your bot. Type hi or hello and press enter. The bot will respond according to its training.
+To install Rasa open a new terminal and create a new virtual environment or reactivate the previous one. Then type `pip install rasa`. This command will download Rasa from the Rasa website and install it on your machine. When the installation is done a basic bot will be available for you to talk to. In the same terminal type `rasa shell` to interact with your bot. Type hi or hello and press enter. The bot will respond according to its training.
 
-## Configuring domain
+## Configuring Domain
 
 Now let's program our bot to respond to our use case here. The goal of our bot is to take in user data and store it in a database. The data will then be used to send an SMS to a specific number at a certain time. So we need to configure our bot record data. Using NLP the bot can respond appropriately and follow a specific response flow.
 
-Open the domain file and in it, you will see some headings. The headings are intents, actions, and templates. We need to change these so the bot response is specific and relevant to our app. For example, we add intent ask_message and ask_recipient_number so that the bot can detect that input is the recipient number.
+Open the domain file and in it, you will see some headings. The headings are intents, actions, and templates. We need to change these so the bot response is specific and relevant to our app. For example, we add `intent ask_message` and `ask_recipient_number` so that the bot can detect that input is the recipient number.
 
 We also need to add slots and entities to our file. Slots are the input fields that will be used by the bot when taking in data. Instead of simply responding the bot will store the data as form input and submit when done.
 
-```
+```python
 slots:
  from:
    type: text
@@ -507,9 +507,9 @@ templates:
 
 ## Configuring Stories
 
-Stories refer to the user input that the user may give. E.g we tell the bot to expect a phone number 55512345 from a user or a number that is similar so that the bot is familiar with the user input. We write the stories and specify which slot they're related to. Slots are inputs for the form
+Stories refer to the user input that the user may give. For example, we tell the bot to expect a phone number 55512345 from a user, or a number that is similar, so that the bot is familiar with the user input. We write the stories and specify which slot they're related to. Slots are inputs for the form.
 
-```
+```python
 ## happy path
 * greet
  - utter_ask_from
@@ -569,11 +569,11 @@ Stories refer to the user input that the user may give. E.g we tell the bot to e
  - utter_deny
 ```
 
-## Configuring Nlu
+## Configuring NLU
 
 In the NLU file, we write the intents of the user and examples of each intent. It is advisable to write as many examples as possible for each intent so that the bot is more intelligent and can identify more inputs.
 
-```
+```python
 ## intent:from
 - [350123456789](from)
 - [230123456789](from)
@@ -619,13 +619,13 @@ In the NLU file, we write the intents of the user and examples of each intent. I
 
 ## Configuring Actions
 
-The actions file is where we now put all the data together and decide how all the user input will be processed. IN our case we are taking user input as form data so we need to submit the data given by the user. This data will be sent to the TextMessage API that we made earlier in the post. The data will be used as the parameters in the Voyage Messages API when making a post request.
+The actions file is where we now put all the data together and decide how all the user input will be processed. In our case we are taking user input as form data so we need to submit the data given by the user. This data will be sent to the TextMessage API that we made earlier in the post. The data will be used as the parameters in the Vonage Messages API when making a POST request.
 
 ## Config File
 
-Before we proceed we need to tell Rasa that we are taking responses in a form format. To do that open config.yml and add FormPolicy at the bottom of the policy list. Policies are important in that they tell your bot how to use the data, what format to use, and determine the flow type of data, in this case, the data flow is that of a form.
+Before we proceed we need to tell Rasa that we are taking responses in a form format. To do that open config.yml and add FormPolicy at the bottom of the policy list. Policies are important in that they tell your bot how to use the data, what format to use, and determine the flow type of data. In this case, the data flow is that of a form.
 
-```
+```python
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
 language: en
@@ -640,25 +640,25 @@ policies:
  - name: FormPolicy
 ```
 
-Now that we've configured everything we need to train our bot. We train the bot so that it uses all our custom configurations from every file. So in the terminal type `rasa train`. The bot will take a few seconds to analyze, validate, and apply the changes to the bot. If there is an error in the files the training will not work.
+Now that we've configured everything we need to train our bot, we train the bot so that it uses all our custom configurations from every file. So in the terminal type `rasa train`. The bot will take a few seconds to analyze, validate, and apply the changes to the bot. If there is an error in the files the training will not work.
 
-## Testing the new bot
+## Testing the New Bot
 
-It Is now time to test our bot configuration. Open a new terminal window and type rasa run actions.
+It is now time to test our bot configuration. Open a new terminal window and type `rasa run actions`.
 
-In another terminal type rasa shell. We will be using a shell to test the bot. In the shell type hi and answer the bot's questions. If all is in order your bot should be asking you question after question taking in all the data. This is FormPolicy in action. Once you've provided all the information the bot will submit the data to your rest API using requests as we configured in our actions.py file.
+In another terminal type `rasa shell`. We will be using a shell to test the bot. In the shell type `hi` and answer the bot's questions. If all is in order your bot should be asking you question after question, taking in all the data. This is FormPolicy in action. Once you've provided all the information, the bot will submit the data to your REST API using requests we configured in our actions.py file.
 
-## Connecting Rasa and django
+## Connecting Rasa and Django
 
-We have finally finished our Django app and our Rasa bot but now we need to connect the two so that our bot can be used from our Django frontend. We only need to change a few things in our JavaScript code. We are going to make HTTP post requests to our bot and displaying the response data.
+We have finally finished our Django app and our Rasa bot but now we need to connect the two so that our bot can be used from our Django frontend. We only need to change a few things in our JavaScript code. We are going to make HTTP POST requests to our bot and display the response data.
 
-In the terminal where we opened the rasa shell we need to now run the rasa server for HTTP requests using the following command:
+In the terminal where we opened the Rasa shell we need to now run the Rasa server for HTTP requests using the following command:
 
 `rasa run -m-enable-api --cors ''*' --debug`
 
-This command will ensure that rasa can receive HTTP requests from a remote server using our rest channel.
+This command will ensure that Rasa can receive HTTP requests from a remote server using our REST channel.
 
-In the terminal, you must now have 3 servers running, one for rasa actions, rasa HTTP, and Django server for the frontend.
+In the terminal, you must now have 3 servers running, one for Rasa actions, Rasa HTTP, and Django server for the frontend.
 
 Navigate to URL `localhost:8000/von` where our bot UI lives and click on start campaign. This will send an HTTP post request to rasa by saying hi. You will see the bot response in the UI.
 
