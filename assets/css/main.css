@@ -131,6 +131,10 @@ select.button {
   @apply text-purple-dark;
 }
 
+.nuxt-content iframe:not(.Youtube) {
+  @apply max-w-full;
+}
+
 .index-section > h2 {
   @apply my-6;
   @apply md:my-10;
