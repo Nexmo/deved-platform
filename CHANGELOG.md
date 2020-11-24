@@ -1,3 +1,10 @@
+## [2.1.5](https://github.com/Nexmo/deved-platform/compare/v2.1.4...v2.1.5) (2020-11-24)
+
+
+### Bug Fixes
+
+* fix youtube width in mobile when using embed snippet instead of util component ([#431](https://github.com/Nexmo/deved-platform/issues/431)) ([85fb7c5](https://github.com/Nexmo/deved-platform/commit/85fb7c55fea92d296d7f08edfcc06a8a5e766840))
+
 ## [2.1.4](https://github.com/Nexmo/deved-platform/compare/v2.1.3...v2.1.4) (2020-11-24)
 
 
