@@ -27,10 +27,11 @@ This tutorial will cover how to implement a verification token system with the V
 
 ## Prerequisites
 
-* A Vonage API account. If you don't have one already, you can [sign up today](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=2020-11-24-how-to-addtwo-factor-authentication-with-swift-and-vapor).
 * Xcode 12 and Swift 5 or greater.
 * [Vapor 4.0](https://vapor.codes) installed on your machine.
 * [ngrok](https://ngrok.com) for exposing your local machine to the internet.
+
+<sign-up></sign-up> 
 
 ## Create a Vapor Project
 
