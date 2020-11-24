@@ -1,3 +1,10 @@
+## [2.1.4](https://github.com/Nexmo/deved-platform/compare/v2.1.3...v2.1.4) (2020-11-24)
+
+
+### Bug Fixes
+
+* add check for text before checking length in truncate plugin ([#430](https://github.com/Nexmo/deved-platform/issues/430)) ([3cf6568](https://github.com/Nexmo/deved-platform/commit/3cf656800d464a98d6fe749faf6722e1cb17ced9))
+
 ## [2.1.3](https://github.com/Nexmo/deved-platform/compare/v2.1.2...v2.1.3) (2020-11-24)
 
 
