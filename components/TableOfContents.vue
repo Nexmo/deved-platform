@@ -1,5 +1,5 @@
 <template>
-  <fragment v-if="links.length > 0">
+  <section v-if="links.length > 0">
     <h4>Table of Contents</h4>
     <ul>
       <li
@@ -13,7 +13,7 @@
         <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
       </li>
     </ul>
-  </fragment>
+  </section>
 </template>
 
 <script>

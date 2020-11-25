@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <section>
     <h4>Related Posts</h4>
     <p v-if="$fetchState.error">
       There has been an error fetching related posts...
@@ -16,7 +16,7 @@
       </li>
     </ul>
     <p v-else>Fetching related posts...</p>
-  </fragment>
+  </section>
 </template>
 
 <script>

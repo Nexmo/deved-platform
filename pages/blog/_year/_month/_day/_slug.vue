@@ -80,20 +80,17 @@
         </article>
       </div>
       <aside
-        class="sticky col-span-1 p-4 bg-white rounded-lg shadow-lg top-4 asides"
+        class="sticky flex flex-col col-span-1 p-4 space-y-4 bg-white rounded-lg shadow-lg top-4 asides"
       >
-        <section v-if="post.toc.length > 0">
-          <TableOfContents
-            :toc="post.toc"
-            :levels="post.toc.length > 10 ? [2] : [2, 3]"
-          />
-        </section>
-        <section>
-          <RelatedPosts
-            :slug="post.slug"
-            :terms="[...post.tags, post.category]"
-          />
-        </section>
+        <TableOfContents
+          v-if="post.toc.length > 0"
+          :toc="post.toc"
+          :levels="post.toc.length > 10 ? [2] : [2, 3]"
+        />
+        <RelatedPosts
+          :slug="post.slug"
+          :terms="[...post.tags, post.category]"
+        />
       </aside>
     </section>
   </main>
@@ -270,10 +267,6 @@ export default {
   @apply rounded-lg;
   @apply mx-auto;
   @apply mb-4;
-}
-
-.asides section:not(:first-child) >>> h4 {
-  @apply mt-4;
 }
 
 .asides >>> h4 {
