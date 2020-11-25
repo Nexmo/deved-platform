@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{ 'opacity-100': showButton, 'opacity-0': !showButton }"
-    class="fixed inset-x-auto bottom-0 w-screen mb-4 transition-opacity duration-500 ease-in-out pointer-events-none md:mb-16"
+    class="fixed inset-x-auto bottom-0 z-30 w-screen mb-4 transition-opacity duration-500 ease-in-out pointer-events-none md:mb-16"
   >
     <div
       class="max-w-screen-xl px-4 mx-auto pointer-events-none sm:px-6 lg:px-8"
@@ -13,7 +13,7 @@
             'pointer-events-auto': showButton,
             'pointer-events-none': !showButton,
           }"
-          class="z-50 flex items-center justify-center w-12 h-12 text-white rounded-full sm:text-2xl sm:w-16 sm:h-16 bg-purple-dark hover:bg-purple"
+          class="flex items-center justify-center w-12 h-12 text-white rounded-full sm:text-2xl sm:w-16 sm:h-16 bg-purple-dark hover:bg-purple"
         >
           <svg
             class="inline stroke-current stroke-2 icon-size"

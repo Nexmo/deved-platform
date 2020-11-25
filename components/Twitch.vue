@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{ hidden: !open }"
-    class="fixed inset-x-auto top-0 w-screen mt-4 transition-opacity duration-500 ease-in-out pointer-events-none md:mt-16"
+    class="fixed inset-x-auto top-0 z-30 w-screen mt-4 transition-opacity duration-500 ease-in-out pointer-events-none md:mt-16"
   >
     <div class="px-4 mx-auto pointer-events-none md:p-0 max-w-screen-2xl">
       <div class="flex xl:justify-end">
@@ -12,7 +12,7 @@
           }"
           class="bg-black rounded-lg shadow-xl sm:mx-6 lg:mx-8"
         >
-          <header class="flex justify-between px-4 py-2">
+          <header class="flex justify-between p-2 pl-4 text-sm text-white">
             <span class="flex w-3 h-3 py-1">
               <span
                 class="absolute inline-flex w-3 h-3 bg-pink-400 rounded-full opacity-75 animate-ping"
@@ -27,7 +27,7 @@
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              class="w-6 h-6 text-white cursor-pointer"
+              class="text-white cursor-pointer icon-size hover:bg-gray-700"
               @click.prevent="close()"
             >
               <path
@@ -69,18 +69,18 @@ export default {
     const url = new URL(process.env.baseUrl)
 
     return {
-      open: false,
+      open: true,
       video: `https://player.twitch.tv/?channel=vonagedevs&parent=${url.hostname}&autoplay=true`,
     }
   },
 
   async mounted() {
-    try {
-      const { status } = await this.$axios.$get('/api/live-on-twitch')
-      this.open = status === 'online'
-    } catch (error) {
-      this.open = false
-    }
+    // try {
+    //   const { status } = await this.$axios.$get('/api/live-on-twitch')
+    //   this.open = status === 'online'
+    // } catch (error) {
+    //   this.open = false
+    // }
   },
 
   methods: {
