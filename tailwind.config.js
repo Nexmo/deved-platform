@@ -30,9 +30,16 @@ module.exports = {
         black: '#000000',
         white: '#ffffff',
         brand: {
+          facebook: '#3b5998',
+          hackernews: '#f75500',
+          linkedin: '#0072b1',
+          pocket: '#f83153',
+          reddit: '#ff4301',
           slack: '#4a154b',
+          twitch: '#9146ff',
           twitter: '#1da1f2',
-          twitch: '#9146FF',
+          vk: '#4a76a8',
+          weibo: '#e6162d',
         },
         orange: {
           lighter: '#fee3dd',

@@ -91,6 +91,7 @@
           :slug="post.slug"
           :terms="[...post.tags, post.category]"
         />
+        <SocialSharing :post="post" />
       </aside>
     </section>
   </main>
