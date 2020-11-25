@@ -56,9 +56,9 @@ Type `pip install Django rest framework`
 
 Also, install python scheduler by typing `pip install scheduler`.
 
-### **Installing Django CORS Headers**
+### **Installing Django-cors-headers**
 
-We will install a package called Django CORS headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other.
+We will install a package called django-cors-headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other.
 
 ## **Creating Our App**
 
@@ -414,8 +414,6 @@ Also called the registration page, this page allows the user to create a new acc
 
 Now that we have connected everything we need to run our Django application we just need to see if everything works well. In terminal type `python manage.py runserver` and navigate to localhost:8000. Navigate using side nav buttons to see what each page looks like. We haven't put any data in our database yet so no data will be displayed. Clicking on the buttons won't work either as we haven't connected our frontend system to the Rasa API just yet. Now that the design is done we can start developing our Rasa bot.
 
-
-
 ## Installing Rasa
 
 Rasa is an open-source AI platform that enables developers to create their own custom chatbots and voice assistants using a set of AI APIs. Rasa uses a lot of natural language processing (NLP) so it is best suited for creating NLP applications. We will be using Rasa to make our own custom AI chatbot backend which will be plugged into our UI.
@@ -669,9 +667,9 @@ Our app is now in working order however we need to change a few things. At the m
 
 ## Deploying to Heroku
 
-In this post, we will only be focusing on deploying the app so we won't teach about Heroku specifics. The first thing to do is to create a Heroku account, so head on over to[ https://www.heroku.com](https://www.heroku.com/) to create a free account.
+In this post, we will only be focusing on deploying the app so we won't teach about Heroku specifics. The first thing to do is to create a Heroku account, so head on over to <https://www.heroku.com> to create a free account.
 
-After creating the account we need to install Heroku on our machine so we can use it from the terminal. Once you've created your account head on over to[ https://devcenter.heroku.com/articles/heroku-cli](https://devcenter.heroku.com/articles/heroku-cli) and follow instructions on how to install the CLI, based on your operating system.
+After creating the account we need to install Heroku on our machine so we can use it from the terminal. Once you've created your account head on over to [https://devcenter.heroku.com/articles/heroku-cli](https://devcenter.heroku.com/articles/heroku-cli) and follow instructions on how to install the CLI, based on your operating system.
 
 Next, you need to login to Heroku using the CLI, as it is much easier. If everything is installed properly we can now deploy our Django app to Heroku.
 
@@ -679,13 +677,13 @@ Before we deal with Heroku we need to install Git for version control. Git will 
 
 To install Git, navigate to your command prompt shell and run the following command: `sudo dnf install git-all`. Once the command output has been completed, you can verify the **installation** by typing: `git version`.
 
-In your project folder type `git init`, then `git add` or `git add –all`. Next, type:
+In your project folder type `git init`, then `git add –all`. Next, type:
 
 `git commit -m "commit message"`
 
 These 3 commands will create a local git repo on your machine.
 
-It is highly recommended to store your code both online and offline, so we shall all upload our code to GitHub, an online repository. First, we need to create a GitHub account so head on to[ https://github.com](https://github.com/) to get started.
+It is highly recommended to store your code both online and offline, so we shall all upload our code to GitHub, an online repository. First, we need to create a GitHub account so head on to [https://github.com](https://github.com/) to get started.
 
 Once you've created your account you can click on 'new repository' (name it anything you want) and click 'initiate with a README', then click 'create'. Now that your repo has been created we can link the GitHub repo to our Django project.
 
@@ -707,9 +705,9 @@ And that's it! Update your Git and GitHub repos accordingly.
 
 Now to deploy to Heroku type `heroku create vonbot`, this will create your Heroku app.
 
-Next type `git push Heroku master` and your project will be uploaded to Heroku.
+Next type `git push heroku master` and your project will be uploaded to Heroku.
 
-Type `_heroku ope_n` and this will open your project in a web browser.
+Type `heroku open` and this will open your project in a web browser.
 
 ## Deploying to Docker
 
