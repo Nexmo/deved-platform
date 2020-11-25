@@ -69,18 +69,18 @@ export default {
     const url = new URL(process.env.baseUrl)
 
     return {
-      open: true,
+      open: false,
       video: `https://player.twitch.tv/?channel=vonagedevs&parent=${url.hostname}&autoplay=true`,
     }
   },
 
   async mounted() {
-    // try {
-    //   const { status } = await this.$axios.$get('/api/live-on-twitch')
-    //   this.open = status === 'online'
-    // } catch (error) {
-    //   this.open = false
-    // }
+    try {
+      const { status } = await this.$axios.$get('/api/live-on-twitch')
+      this.open = status === 'online'
+    } catch (error) {
+      this.open = false
+    }
   },
 
   methods: {
