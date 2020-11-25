@@ -28,17 +28,7 @@ You can find the code shown in this tutorial on the [Go code snippets repository
 * [Go installed locally](https://golang.org/)
 * [Ngrok](https://learn.vonage.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr)
 
-<sign-up></sign-up>
-
-## Purchase a Vonage Number
-
-You will need a Vonage virtual phone number, so log in to the Dashboard and [buy a number](https://dashboard.nexmo.com/buy-numbers). Choose the country you want a number in, and make sure to search for numbers with the "Voice" feature, as shown in the image:
-
-![Ticking the voice feature when buying a number.](/content/blog/text-to-speech-voice-calls-with-go/voice-feature.png)
-
-Choose one of the phone numbers from the list of phone numbers that are listed when you submit the search, then click on the "Buy" button next to that number.
-
-Make a note of your recently purchased phone number as you'll be putting this into your code further along in the tutorial.
+<sign-up number></sign-up>
 
 ## Configure Your Vonage Account
 
