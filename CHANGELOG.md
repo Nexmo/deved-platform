@@ -1,3 +1,11 @@
+## [2.2.2](https://github.com/Nexmo/deved-platform/compare/v2.2.1...v2.2.2) (2020-11-25)
+
+
+### Bug Fixes
+
+* exclude certain urls from sitemaps ([107fb79](https://github.com/Nexmo/deved-platform/commit/107fb79c7c57ddbcdd2f2ea3c678f043ffb13b3e))
+* remove errant backtick from the end of the Vonage.com link ([9284ae4](https://github.com/Nexmo/deved-platform/commit/9284ae4d2d87cbfabb02718e6baf836cc63d1ecc))
+
 ## [2.2.1](https://github.com/Nexmo/deved-platform/compare/v2.2.0...v2.2.1) (2020-11-25)
 
 
