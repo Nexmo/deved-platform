@@ -1,6 +1,7 @@
 ---
 title: Text-to-Speech Voice Calls With Go
 description: Learn how to make Text-to-Speech voice calls with the Go SDK
+thumbnail: /content/blog/text-to-speech-voice-calls-with-go/blog_go_text-to-speech_1200x600.png
 author: greg-holmes
 published: true
 published_at: 2020-11-25T14:00:00.000Z
