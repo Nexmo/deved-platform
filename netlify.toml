@@ -14,6 +14,18 @@
     [plugins.inputs]
       exclude = ['''^\/(?!blog\/[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/(?!index.html)).*''']
 
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+    [plugins.inputs]
+    exclude = [
+      './dist/404.html',
+      './dist/googledd87c7542bc7fce5.html',
+      './dist/admin'
+    ]
+    changeFreq = "daily"
+    priority = 0.5
+
 [[redirects]]
   from = "/admin"
   to = "/admin/"

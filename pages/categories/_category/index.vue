@@ -1,6 +1,6 @@
 <template>
   <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
-    <Breadcrumbs />
+    <Breadcrumbs :title="category.plural" />
     <section class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
       <Card v-for="(post, i) in posts" :key="i" :post="post" />
     </section>
@@ -38,19 +38,19 @@ export default {
 
   head() {
     return {
-      title: `${this.category} Blog Posts and Tutorials`,
+      title: `${this.category.plural}`,
       meta: [
         {
           hid: 'twitter:title',
           name: 'twitter:title',
           // Team Members & Authors » Developer Content from Vonage ♥
-          content: `${this.category} Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+          content: `${this.category.plural}${config.baseSplitter}${config.baseTitle}`,
         },
         {
           hid: 'og:title',
           property: 'og:title',
           // {author name} » Developer Content from Vonage ♥
-          content: `${this.category} Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+          content: `${this.category.plural}${config.baseSplitter}${config.baseTitle}`,
         },
       ],
     }

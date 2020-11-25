@@ -1,3 +1,36 @@
+## [2.2.2](https://github.com/Nexmo/deved-platform/compare/v2.2.1...v2.2.2) (2020-11-25)
+
+
+### Bug Fixes
+
+* exclude certain urls from sitemaps ([107fb79](https://github.com/Nexmo/deved-platform/commit/107fb79c7c57ddbcdd2f2ea3c678f043ffb13b3e))
+* remove errant backtick from the end of the Vonage.com link ([9284ae4](https://github.com/Nexmo/deved-platform/commit/9284ae4d2d87cbfabb02718e6baf836cc63d1ecc))
+
+## [2.2.1](https://github.com/Nexmo/deved-platform/compare/v2.2.0...v2.2.1) (2020-11-25)
+
+
+### Bug Fixes
+
+* add google verification file ([cf071c4](https://github.com/Nexmo/deved-platform/commit/cf071c4f3c352f8cb6257497cdb85ee1a81298f9))
+* twitch test code removed ([a095f8e](https://github.com/Nexmo/deved-platform/commit/a095f8e2ae8e6e00f70aab14b7f23240439a73e3))
+
+# [2.2.0](https://github.com/Nexmo/deved-platform/compare/v2.1.6...v2.2.0) (2020-11-25)
+
+
+### Bug Fixes
+
+* add authors name to breadcrumb title ([#436](https://github.com/Nexmo/deved-platform/issues/436)) ([da85215](https://github.com/Nexmo/deved-platform/commit/da852159da56914a542e2b99367858825491d53a))
+* don't put links in quotes they become string literals and not treated as URLs ([#442](https://github.com/Nexmo/deved-platform/issues/442)) ([33b11ec](https://github.com/Nexmo/deved-platform/commit/33b11ec6eba1225b672a14ccd116ca36e92fead2))
+* error using object rather than object property for category name ([#438](https://github.com/Nexmo/deved-platform/issues/438)) ([fffa4aa](https://github.com/Nexmo/deved-platform/commit/fffa4aae61c48d25218c4b33eb87663931f1baf4))
+* tune z-index util classes to layer the overlays, buttons and images correctly ([#440](https://github.com/Nexmo/deved-platform/issues/440)) ([7a9a7f7](https://github.com/Nexmo/deved-platform/commit/7a9a7f7981046186a13c65b2a3f23c1080a6cd47))
+* use flex flex-col space-y-4 to achieve vertical spacing on aside child elements ([#439](https://github.com/Nexmo/deved-platform/issues/439)) ([a77e1e7](https://github.com/Nexmo/deved-platform/commit/a77e1e7462ea3f72a0b6a74e58f3cde06836b22e))
+
+
+### Features
+
+* add social network sharing buttons to blog aside ([#441](https://github.com/Nexmo/deved-platform/issues/441)) ([b3ee989](https://github.com/Nexmo/deved-platform/commit/b3ee989713325fd63fb61643bc2fea83c0c2a267))
+* add vonage.com link in header ([#437](https://github.com/Nexmo/deved-platform/issues/437)) ([cc25870](https://github.com/Nexmo/deved-platform/commit/cc258701910e7713ea33043248202d414e70470d))
+
 ## [2.1.6](https://github.com/Nexmo/deved-platform/compare/v2.1.5...v2.1.6) (2020-11-24)
 
 

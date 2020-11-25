@@ -77,6 +77,10 @@ select.button {
   @apply text-xs;
 }
 
+.button--block {
+  @apply w-full;
+}
+
 .button--primary {
   @apply bg-black;
   @apply text-white;
@@ -87,8 +91,43 @@ select.button {
   @apply text-black;
 }
 
+.button--facebook {
+  @apply bg-brand-facebook;
+  @apply text-white;
+}
+
 .button--twitter {
   @apply bg-brand-twitter;
+  @apply text-white;
+}
+
+.button--linkedin {
+  @apply bg-brand-linkedin;
+  @apply text-white;
+}
+
+.button--reddit {
+  @apply bg-brand-reddit;
+  @apply text-white;
+}
+
+.button--pocket {
+  @apply bg-brand-pocket;
+  @apply text-white;
+}
+
+.button--hackernews {
+  @apply bg-brand-hackernews;
+  @apply text-white;
+}
+
+.button--weibo {
+  @apply bg-brand-weibo;
+  @apply text-white;
+}
+
+.button--vk {
+  @apply bg-brand-vk;
   @apply text-white;
 }
 

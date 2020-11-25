@@ -1,5 +1,5 @@
 ---
-title: " SMS Spam Detection with Machine Learning in Python"
+title: "SMS Spam Detection with Machine Learning in Python"
 description: Use Python to build a machine learning model for detecting spam SMS
   messages and incorporate the model into Flask application.
 thumbnail: /content/blog/sms-spam-detection-with-machine-learning-in-python/python_flash_ml-sms_spam1200x600.png
@@ -119,18 +119,18 @@ pip  install jupyterlab Flask==1.1.2 lightgbm==3.0.0 nexmo==2.5.2 matplotlib==3.
 
 Here are some details about these packages:
 
-* [jupyterlab]('https://jupyter.org/') is for model building and data exploration.
-* [flask]('https://flask.palletsprojects.com/en/1.1.x/') is for creating the application server and pages.
-* [lightgbm]('https://lightgbm.readthedocs.io/en/latest/') is the machine learning algorithm for building our model
-* [nexmo]('https://developer.nexmo.com/') is a Python library for interacting with your Vonage account
-* [matplotlib]('https://matplotlib.org/'), [plotly]('https://plotly.com/'), [plotly-express]('https://plotly.com/python/plotly-express/') are for data visualization
-* [python-dotenv]('https://pypi.org/project/python-dotenv/') is a package for managing environment variables such as API keys and other configuration values.
-* [nltk]('https://www.nltk.org/') is for natural language operations
-* [numpy]('https://numpy.org/') is for arrays computation
-* [pandas]('https://pandas.pydata.org/') is for manipulating and wrangling structured data.
-* [regex]('https://pypi.org/project/regex/') is for regular expression operations
-* [scikit-learn]('https://scikit-learn.org/') is a machine learning toolkit
-* [wordcloud]('https://pypi.org/project/wordcloud/') is used to create word cloud images from text
+* [jupyterlab](https://jupyter.org/) is for model building and data exploration.
+* [flask](https://flask.palletsprojects.com/en/1.1.x/) is for creating the application server and pages.
+* [lightgbm](https://lightgbm.readthedocs.io/en/latest/) is the machine learning algorithm for building our model
+* [nexmo](https://developer.nexmo.com/) is a Python library for interacting with your Vonage account
+* [matplotlib](https://matplotlib.org/), [plotly](https://plotly.com/), [plotly-express](https://plotly.com/python/plotly-express/) are for data visualization
+* [python-dotenv](https://pypi.org/project/python-dotenv/) is a package for managing environment variables such as API keys and other configuration values.
+* [nltk](https://www.nltk.org/) is for natural language operations
+* [numpy](https://numpy.org/) is for arrays computation
+* [pandas](https://pandas.pydata.org/) is for manipulating and wrangling structured data.
+* [regex](https://pypi.org/project/regex/) is for regular expression operations
+* [scikit-learn](https://scikit-learn.org/) is a machine learning toolkit
+* [wordcloud](https://pypi.org/project/wordcloud/) is used to create word cloud images from text
 
 After installation, start your Jupyter lab by running:
 
@@ -140,11 +140,11 @@ jupyter lab
 
 This opens the popular Jupyter lab interface in your web browser, where you are going to carry out some interactive data exploration and model building.
 
-Jupyter lab interface is shown here [Jupyterlab]('https://photos.app.goo.gl/QZxB3AdWdjoQfLLm6')
+Jupyter lab interface is shown here [Jupyterlab](https://photos.app.goo.gl/QZxB3AdWdjoQfLLm6)
 
 ## Build and Train the SMS Detection Model
 
-Now that your environment is ready, you’re going to download the SMS training data and build a simple machine learning model to classify the SMS messages. The spam dataset for this project can be downloaded [here]('https://www.kaggle.com/uciml/sms-spam-collection-dataset'). The datasets contain 5574 messages with respective labels of spam and ham (legitimate). More about the dataset can be found [here]('http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/'). With this data, we will train a machine learning model that can correctly classify SMS as ham or spam. These procedures will be carried out in a Jupyter notebook, which from our file directory is named 'project_notebok'
+Now that your environment is ready, you’re going to download the SMS training data and build a simple machine learning model to classify the SMS messages. The spam dataset for this project can be downloaded [here](https://www.kaggle.com/uciml/sms-spam-collection-dataset). The datasets contain 5574 messages with respective labels of spam and ham (legitimate). More about the dataset can be found [here](http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/). With this data, we will train a machine learning model that can correctly classify SMS as ham or spam. These procedures will be carried out in a Jupyter notebook, which from our file directory is named 'project_notebok'
 
 ### Exploratory Data Analysis (EDA)
 
