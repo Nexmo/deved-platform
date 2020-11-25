@@ -42,9 +42,9 @@ Next, we will be looking at how to install each of these packages.
 
 ## **Installation**
 
-First, we will start to install a virtual environment. A virtual environment will be like a storehouse for all our packages. We are using Linux so go to cmd and type `virtualenv vonenv`
+First, we will start to install a virtual environment. A virtual environment will be like a storehouse for all our packages. We are using Linux so go to cmd and type `virtualenv vonenv`.
 
-This will create a new virtual environment called vonenv. Activate it by typing `source/vonenv/bin/activate`
+This will create a new virtual environment called vonenv. Activate it by typing `source/vonenv/bin/activate`.
 
 ### **Installing Django**
 
@@ -52,9 +52,7 @@ We will use Django as our app framework. Install Django by typing `pip install D
 
 ### **Installing Django Rest Framework**
 
-Type `pip install Django rest framework`
-
-Also, install python scheduler by typing `pip install scheduler`.
+Type `pip install Django rest framework`. Also, install python scheduler by typing `pip install scheduler`.
 
 ### **Installing Django-cors-headers**
 
@@ -62,13 +60,9 @@ We will install a package called django-cors-headers which will help to prevent 
 
 ## **Creating Our App**
 
-To create the app type `django-admin startproject vonage`
+To create the app type `django-admin startproject vonage`. This will create our project boilerplate with all the code.
 
-This will create our project boilerplate with all the code.
-
-Navigate into your app and type `django-admin start project myapp`
-
-This will create our project which we will be using.
+Navigate into your app and type `django-admin start project myapp`. This will create our project which we will be using.
 
 To test the app simply type `python manage.py runserver` and navigate to localhost:8000 in your browser.
 
