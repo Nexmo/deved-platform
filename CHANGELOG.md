@@ -1,3 +1,11 @@
+## [2.2.1](https://github.com/Nexmo/deved-platform/compare/v2.2.0...v2.2.1) (2020-11-25)
+
+
+### Bug Fixes
+
+* add google verification file ([cf071c4](https://github.com/Nexmo/deved-platform/commit/cf071c4f3c352f8cb6257497cdb85ee1a81298f9))
+* twitch test code removed ([a095f8e](https://github.com/Nexmo/deved-platform/commit/a095f8e2ae8e6e00f70aab14b7f23240439a73e3))
+
 # [2.2.0](https://github.com/Nexmo/deved-platform/compare/v2.1.6...v2.2.0) (2020-11-25)
 
 
