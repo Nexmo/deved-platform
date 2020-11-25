@@ -28,19 +28,7 @@ You can find the code shown in this tutorial on the [Go code snippets repository
 * [Go installed locally](https://golang.org/)
 * [Ngrok](https://learn.vonage.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr)
 
-## Vonage API Account
-
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2020-11-25-make-text-to-speech-call-with-go). If you don't have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2020-11-25-make-text-to-speech-call-with-go) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2020-11-25-make-text-to-speech-call-with-go).
-
-## Purchase a Vonage Number
-
-You will need a Vonage virtual phone number, so log in to the Dashboard and [buy a number](https://dashboard.nexmo.com/buy-numbers). Choose the country you want a number in, and make sure to search for numbers with the "Voice" feature, as shown in the image:
-
-![Ticking the voice feature when buying a number.](/content/blog/text-to-speech-voice-calls-with-go/voice-feature.png)
-
-Choose one of the phone numbers from the list of phone numbers that are listed when you submit the search, then click on the "Buy" button next to that number.
-
-Make a note of your recently purchased phone number as you'll be putting this into your code further along in the tutorial.
+<sign-up number></sign-up>
 
 ## Configure Your Vonage Account
 
@@ -124,4 +112,4 @@ Below are a few other tutorials we've written either involving using our service
 * [Receive an SMS with Go](https://learn.vonage.com/blog/2020/11/03/receive-inbound-sms-with-go)
 * [Receive SMS Delivery Receipts with Go](https://learn.vonage.com/blog/2020/11/18/receive-sms-delivery-receipts-with-go)
 
-Don't forget, if you have any questions, advice or ideas you'd like to share with the community, then please feel free to jump on our [Community Slack workspace](https://developer.nexmo.com/community/slack), or pop a reply below 👇. I'd love to hear back from anyone that has implemented this tutorial and how your project works.
+Don't forget, if you have any questions, advice or ideas you'd like to share with the community, then please feel free to jump on our [Community Slack workspace](https://developer.nexmo.com/community/slack). I'd love to hear back from anyone that has implemented this tutorial and how your project works.
