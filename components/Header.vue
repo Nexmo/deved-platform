@@ -18,7 +18,7 @@
           <div class="flex ml-10 space-x-2 items-middle">
             <a
               class="inline-block font-bold button button--small"
-              href="https://www.vonage.com/communications-apis?utm_source=blog&utm_medium=deved&utm_campaign=vonage-homepage-link`"
+              href="https://www.vonage.com/communications-apis?utm_source=blog&utm_medium=deved&utm_campaign=vonage-homepage-link"
               target="_blank"
               rel="noreferrer"
             >
