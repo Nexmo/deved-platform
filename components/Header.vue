@@ -16,6 +16,27 @@
         </div>
         <div class="hidden md:block">
           <div class="flex ml-10 space-x-2 items-middle">
+            <a
+              class="inline-block font-bold button button--small"
+              href="https://www.vonage.com/communications-apis?utm_source=blog&utm_medium=deved&utm_campaign=vonage-homepage-link`"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="inline-block mr-1 stroke-current stroke-2 icon-size"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+              Vonage.com
+            </a>
             <twitch-social-button
               class="button button--round button--small button--twitch"
               link="https://twitch.tv/vonagedevs"
