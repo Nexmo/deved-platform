@@ -1,6 +1,6 @@
 <template>
   <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
-    <Breadcrumbs />
+    <Breadcrumbs :title="author.name ? author.name : null" />
     <section
       class="grid grid-flow-row-dense grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"
     >
