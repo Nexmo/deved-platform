@@ -28,7 +28,7 @@ You can find the code shown in this tutorial on the [Go code snippets repository
 * [Go installed locally](https://golang.org/)
 * [Ngrok](https://learn.vonage.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr)
 
-<sign-up number></sign-up>
+<sign-up></sign-up>
 
 ## Purchase a Vonage Number
 
