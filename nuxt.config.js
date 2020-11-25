@@ -2,6 +2,10 @@ import config from './modules/config'
 import { getPostRoute, getPostRoutes, getCategory } from './modules/contenter'
 import i18n from './i18n.config.js'
 
+const isProduction = () => {
+  return process.env.CONTEXT && process.env.CONTEXT === 'production'
+}
+
 const isPreviewBuild = () => {
   return (
     process.env.PULL_REQUEST &&
@@ -247,7 +251,7 @@ export default {
 
   // https://nuxtjs.org/guides/configuration-glossary/configuration-generate
   generate: {
-    crawler: !isPreviewBuild(),
+    crawler: isProduction(),
     fallback: true,
     routes() {
       return isPreviewBuild() ? [previewRoute()] : []
