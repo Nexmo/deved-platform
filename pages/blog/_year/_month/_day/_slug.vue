@@ -19,6 +19,7 @@
               <nuxt-image
                 placeholder="true"
                 property="image"
+                class="h-36 sm:h-48 md:h-64 lg:h-80"
                 :src="post.thumbnail"
                 :alt="post.title"
               />
