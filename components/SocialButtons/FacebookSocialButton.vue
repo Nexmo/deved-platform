@@ -1,6 +1,6 @@
 <template>
   <a
-    v-if="!!link"
+    v-if="link"
     class="inline-block"
     :href="`${link}?utm_source=blog&utm_medium=deved&utm_campaign=facebook-social-link`"
     target="_blank"

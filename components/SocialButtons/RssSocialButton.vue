@@ -1,6 +1,6 @@
 <template>
   <a
-    v-if="!!link"
+    v-if="link"
     class="inline-block"
     :href="link"
     target="_blank"

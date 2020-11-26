@@ -48,18 +48,38 @@
         {{ author.bio }}
       </p>
     </main>
-    <footer class="py-2 mx-4 mt-2 border-t">
+    <footer class="flex flex-wrap gap-2 p-4 text-xs">
       <twitter-social-button
         :link="author.twitter ? `https://twitter.com/${author.twitter}` : ''"
+        class="button button--round button--small button--twitter"
       />
-      <facebook-social-button :link="author.facebook_url" />
-      <github-social-button :link="author.github_url" />
-      <stackoverflow-social-button :link="author.stackoverflow_url" />
-      <linkedin-social-button :link="author.linkedin_url" />
-      <twitch-social-button :link="author.twitch_url" />
-      <youtube-social-button :link="author.youtube_url" />
+      <facebook-social-button
+        :link="author.facebook_url"
+        class="button button--round button--small button--facebook"
+      />
+      <git-hub-social-button
+        :link="author.github_url"
+        class="button button--round button--small button--github"
+      />
+      <stack-overflow-social-button
+        :link="author.stackoverflow_url"
+        class="button button--round button--small button--stackoverflow"
+      />
+      <linked-in-social-button
+        :link="author.linkedin_url"
+        class="button button--round button--small button--linkedin"
+      />
+      <twitch-social-button
+        :link="author.twitch_url"
+        class="button button--round button--small button--twitch"
+      />
+      <you-tube-social-button
+        :link="author.youtube_url"
+        class="button button--round button--small button--youtube"
+      />
       <website-social-button
         :link="author.website_url || localePath(`/authors/${author.username}`)"
+        class="button button--round button--small button--primary"
       />
     </footer>
   </div>

@@ -145,6 +145,21 @@ select.button {
   @apply text-brand-twitch;
 }
 
+.button--stackoverflow {
+  @apply bg-brand-stackoverflow;
+  @apply text-white;
+}
+
+.button--youtube {
+  @apply bg-brand-youtube;
+  @apply text-white;
+}
+
+.button--github {
+  @apply bg-brand-github;
+  @apply text-white;
+}
+
 .icon-size {
   width: 1em;
   height: 1em;

@@ -40,6 +40,9 @@ module.exports = {
           twitter: '#1da1f2',
           vk: '#4a76a8',
           weibo: '#e6162d',
+          stackoverflow: '#ff9900',
+          github: '#24292e',
+          youtube: '#ff0000',
         },
         orange: {
           lighter: '#fee3dd',
