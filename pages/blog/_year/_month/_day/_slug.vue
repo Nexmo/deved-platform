@@ -29,7 +29,7 @@
             <p class="text-sm font-medium">
               <Category :category="post.categoryObject" class="text-sm" />
             </p>
-            <h3 class="block mt-2">
+            <h3 class="block my-4 text-5xl font-black">
               <svg
                 v-if="post.redirect"
                 xmlns="http://www.w3.org/2000/svg"
