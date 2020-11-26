@@ -19,7 +19,8 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-# The Great Migration: Migrating WordPress to Jamstack
+
+## The Great Migration: Migrating WordPress to Jamstack
 
 If you do some development, editing, or writing on the internet, you've probably heard of WordPress. To say it's prolific is an understatement.
 
