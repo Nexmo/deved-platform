@@ -1,8 +1,8 @@
 {
-  "team": true,
+  "alumni": true,
   "username": "tony-hung",
   "name": "Tony Hung",
-  "image_url": "https://secure.gravatar.com/avatar/8788a00f333ed9ce6d7e5b9cefd4a1c4?s=96&d=mm&r=g",
+  "image_url": "/content/images/placeholder.svg",
   "bio": "IOS Developer turned Data Science / Machine Learning enthusiast. I want people to understand what machine learning is and how we can use it in our applications.",
   "website_url": ""
 }

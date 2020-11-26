@@ -1,7 +1,7 @@
 {
   "username": "eric_giannini",
   "name": "Eric Giannini",
-  "image_url": "https://secure.gravatar.com/avatar/6382115829110db51dc679eb556fb316?s=96&d=mm&r=g",
+  "image_url": "/content/images/placeholder.svg",
   "bio": "Eric Giannini is the iOS developer advocate at Nexmo. He is really passionate about both Objective-C and Swift, especially the latter. Eric blogs often about this, that or the other iOS thing, hacking apps, building SDKs, or rapidly prototyping. He also meets with iOS developers or other strongly typed Swift types at conferences, Meetups, and other variadic functions.",
   "website_url": ""
 }

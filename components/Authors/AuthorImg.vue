@@ -2,7 +2,7 @@
   <span>
     <span v-if="author.error">
       <img
-        src="~/assets/images/placeholder.gif"
+        src="/content/images/placeholder.svg"
         property="image"
         class="w-10 h-10 rounded-full"
         :alt="`Profile pic of ${author.name}`"
@@ -13,7 +13,7 @@
         v-if="author.image_url.startsWith('/')"
         :src="author.image_url"
         property="image"
-        placeholder="true"
+        placeholder="/content/images/placeholder.svg"
         class="w-10 h-10 rounded-full"
         :alt="`Profile pic of ${author.name}`"
       />

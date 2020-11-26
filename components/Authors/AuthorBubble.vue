@@ -8,7 +8,7 @@
     <img
       v-if="!author.image_url"
       class="object-cover w-24 h-24 mx-auto rounded-full"
-      src="~/assets/images/placeholder.gif"
+      src="/content/images/placeholder.svg"
       property="image"
       :alt="`Profile pic of ${author.name}`"
     />
@@ -18,7 +18,7 @@
       :src="author.image_url"
       property="image"
       :alt="`Profile pic of ${author.name}`"
-      placeholder="true"
+      placeholder="/content/images/placeholder.svg"
     />
     <img
       v-else

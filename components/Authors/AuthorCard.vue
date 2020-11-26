@@ -9,7 +9,7 @@
         <img
           v-if="!author.image_url"
           class="object-cover w-full h-64"
-          src="~/assets/images/placeholder.gif"
+          src="/content/images/placeholder.svg"
           property="image"
           :alt="`Profile pic of ${author.name}`"
         />
@@ -17,7 +17,7 @@
           v-else-if="author.image_url.startsWith('/')"
           :src="author.image_url"
           property="image"
-          placeholder="true"
+          placeholder="/content/images/placeholder.svg"
           class="object-cover w-full h-64"
           :alt="`Profile pic of ${author.name}`"
         />
