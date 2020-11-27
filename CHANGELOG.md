@@ -1,3 +1,20 @@
+# [2.3.0](https://github.com/Nexmo/deved-platform/compare/v2.2.2...v2.3.0) (2020-11-27)
+
+
+### Bug Fixes
+
+* author images and placeholders ([ff76fd7](https://github.com/Nexmo/deved-platform/commit/ff76fd786fc1cee3779db7212e9aed8ff435ee52))
+* builds should be as short as possible if not production ([5daf7cf](https://github.com/Nexmo/deved-platform/commit/5daf7cfb7f3516c632bca68a045c85c8a82e6c3b))
+* image height on post page ([ebb4150](https://github.com/Nexmo/deved-platform/commit/ebb4150b6bc4760a5b4980a72be6f45937f12bf8))
+* increase sizse of title on post view page ([c41cd06](https://github.com/Nexmo/deved-platform/commit/c41cd063e922f6ba6d08959954ff319dc18e856b))
+* post heading size ([67cf33b](https://github.com/Nexmo/deved-platform/commit/67cf33babd1fdb9679248ef2ee827bf1a33ef7a5))
+* social button styling ([68dc637](https://github.com/Nexmo/deved-platform/commit/68dc637e2eaed314f945a94cf94a72a29295dbf9))
+
+
+### Features
+
+* updates to author page & card ([#454](https://github.com/Nexmo/deved-platform/issues/454)) ([c74537b](https://github.com/Nexmo/deved-platform/commit/c74537bd9f6e2813ebce6ce3c8aa523f52085abd))
+
 ## [2.2.2](https://github.com/Nexmo/deved-platform/compare/v2.2.1...v2.2.2) (2020-11-25)
 
 

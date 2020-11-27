@@ -7,14 +7,14 @@
     <figure>
       <img
         v-if="!author.image_url"
-        class="object-cover w-full h-64"
+        class="object-cover w-full"
         src="/content/images/placeholder.svg"
         property="image"
         :alt="`Profile pic of ${author.name}`"
       />
       <nuxt-image
         v-else-if="author.image_url.startsWith('/')"
-        class="object-cover w-full h-64"
+        class="object-cover w-full"
         :src="author.image_url"
         property="image"
         :alt="`Profile pic of ${author.name}`"
@@ -22,7 +22,7 @@
       />
       <img
         v-else
-        class="object-cover w-full h-64"
+        class="object-cover w-full"
         :src="author.image_url"
         property="image"
         :alt="`Profile pic of ${author.name}`"
