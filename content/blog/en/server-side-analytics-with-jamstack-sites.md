@@ -118,7 +118,7 @@ exports.handler = (event, context, callback) => {
 }
 ```
 
-Now, from your browser you can send off data from the URL straight to Google: `https://your-app.netlify.app/.netlify/functions/hello-world?dp=/my-custom-page`
+Now, from your browser, you can send off data from the URL straight to Google: `https://your-app.netlify.app/.netlify/functions/hello-world?dp=/my-custom-page`
 
 Data you can send off includes—but isn't limited to—these parameters:
 
@@ -254,7 +254,7 @@ You can encode the query string however you like, just remember to decode it ins
 
 ## Conclusion
 
-Analytics are a super power for marketing and content creators. It allows us to better serve the community, by tuning our goals based on the data we can collect.
+Analytics is a superpower for marketing and content creators. It allows us to better serve the community, by tuning our goals based on the data we can collect.
 
 There are often privacy and speed concerns around trackers. But as long as you're acting in good faith, as I believe we are, analytics benefits viewers as much as anyone else.
 
