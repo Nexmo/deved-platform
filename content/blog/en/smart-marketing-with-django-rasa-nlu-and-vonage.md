@@ -56,7 +56,9 @@ Type `pip install Django rest framework`. Also, install python scheduler by typi
 
 ### **Installing Django-cors-headers**
 
-We will install a package called django-cors-headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other.
+We will install a package called django-cors-headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other. To install the package, type:
+
+`pip install django-cors-headers`
 
 ## **Creating Our App**
 
@@ -715,7 +717,7 @@ In terminal type these commands:
 
 `sudo apt-get install docker-ce docker-ce-cli containerd.io`
 
-This will install Docker on your machine (if you're running Ubuntu).
+This will install Docker on your machine if you're running Ubuntu. For other operating systems, refer to Docker's instructions.
 
 Next, confirm installation by typing `sudo docker run hello-world`.
 
