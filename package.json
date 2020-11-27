@@ -42,7 +42,7 @@
     "postcss": "^8.1.7",
     "prism-themes": "^1.5.0",
     "prismjs": "^1.22.0",
-    "reading-time": "^1.2.0",
+    "reading-time": "^1.2.1",
     "showdown": "^1.9.1",
     "slugify": "^1.4.6",
     "tailwindcss": "^2.0.1",
