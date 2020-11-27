@@ -36,7 +36,7 @@ This still doesn't help us accurately determine if our content is being viewed, 
 
 ## The Solution
 
-Server-side analytics has become a popular way to track user activity. It doesn't have the scope of traditional analytics (it can't easy track on-page interactions), but it can capture important details, like unique page views.
+Server-side analytics has become a popular way to track user activity. It doesn't have the scope of traditional analytics (it can't easily track on-page interactions), but it can capture important details, like unique page views.
 
 Hosting platforms such as [Netlify](https://www.netlify.com/), or Edge providers like Cloudflare and Fastly, offer Server-side analytics as part of their solutions. But, when using a provider for analytics, you're often restricted in how you can warehouse that information, limiting internal reporting.
 
@@ -46,7 +46,7 @@ Here, we'll roll our own using `universal-analytics` and a Netlify Function.
 
 ### Netlify Function
 
-Netlify Functions are basically AWS Lambda functions, without the AWS. The AWS developer experience leaves A LOT to be desired, and Netlify have turned user experience into a business model. Netlify Function are no exception, allowing folks to write JavaScript or Go to a configured directory, and publish it in a few steps. The endpoint is derived by the file or folder name, and it can use the dependencies from the parent application, or be responsible for its own.
+Netlify Functions are basically AWS Lambda functions, without the AWS. The AWS developer experience leaves A LOT to be desired, and Netlify have turned user experience into a business model. Netlify Functions are no exception, allowing folks to write JavaScript or Go to a configured directory, and publish it in a few steps. The endpoint is derived by the file or folder name, and it can use the dependencies from the parent application, or be responsible for its own.
 
 A super simple function might look like this:
 
@@ -215,7 +215,7 @@ And add it to your site using the URL we used before:
   alt="An SVG file of a very smiley Emoji"
   title="An SVG Emoji"
   width="128" 
-  src="https://your-app.netlify.app/.netlify/functions/hello-world?dp=/my-custom-page"
+  src="/.netlify/functions/hello-world?dp=/my-custom-page"
 />
 ```
 
@@ -229,8 +229,33 @@ So, the most ~~devious~~ inventive part of my ~~evil plan~~ idea, might be this 
 
 Enter [Netlify Redirects](https://docs.netlify.com/routing/redirects/).
 
-Using the `netlify.toml` in the root of your project, you can return any path from
+Using the `netlify.toml` in the root of your project, you can proxy one path with another.
 
+```toml
+[[redirects]]
+  from = "/images/smiley-face.svg"
+  to = "/.netlify/functions/hello-world"
+  status = 200
+  force = true
+```
 
+Now, you can use an image path to include your smiley face.
+
+```html
+<img 
+  alt="An SVG file of a very smiley Emoji"
+  title="An SVG Emoji"
+  width="128" 
+  src="/images/smiley-face.svg?dp=/my-custom-page"
+/>
+```
+
+You can encode the query string however you like, just remember to decode it inside the function.
 
 ## Conclusion
+
+Analytics are a super power for marketing and content creators. It allows us to better serve the community, by tuning our goals based on the data we can collect.
+
+There are often privacy and speed concerns around trackers. But as long as you're acting in good faith, as I believe we are, analytics benefits viewers as much as anyone else.
+
+This is a nice little way to achieve server-side analytics (which blockers can't block), when you don't have a server-side at your disposal.
