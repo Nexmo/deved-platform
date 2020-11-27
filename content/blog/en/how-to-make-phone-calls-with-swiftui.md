@@ -10,9 +10,9 @@ published_at: 2020-11-11T10:46:58.437Z
 updated_at: 2020-11-11T10:46:58.462Z
 category: tutorial
 tags:
-  - client-sdk
-  - swift
-  - voice
+  - ios
+  - conversation-api
+  - aws
 comments: false
 spotlight: false
 redirect: ""
