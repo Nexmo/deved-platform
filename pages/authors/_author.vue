@@ -1,16 +1,17 @@
 <template>
   <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
     <Breadcrumbs :title="author.name ? author.name : null" />
-    <section
-      class="grid grid-flow-row-dense grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"
-    >
-      <Author :author="author" type="page" class="row-span-3" />
-      <CardAuthor
-        v-for="(post, index) in posts"
-        :key="index"
-        :post="post"
-        show-language
-      />
+    <section class="grid gap-6 grid-cols-1 md:grid-cols-3">
+      <Author :author="author" type="page" class="col-span-1" />
+      <div class="grid grid-cols-2 gap-6 col-span-1 md:col-span-2">
+        <CardAuthor
+          v-for="(post, index) in posts"
+          :key="index"
+          :post="post"
+          show-language
+          class="col-span-2 lg:col-span-1"
+        />
+      </div>
     </section>
   </main>
 </template>
