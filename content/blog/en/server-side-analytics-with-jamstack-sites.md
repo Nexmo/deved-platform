@@ -149,9 +149,7 @@ A (typically over-engineered) solution that I decided to use was similar to a tr
 
 I'm going to return an SVG image from the Netlify Function and place it on my page using an image tag.
 
-<img src="/content/blog/server-side-analytics-with-jamstack-sites/718smiley.svg" />
-
-![An SVG file of a very smiley Emoji](/content/blog/server-side-analytics-with-jamstack-sites/718smiley.svg "An SVG Emoji")
+<img alt="An SVG file of a very smiley Emoji" title="An SVG Emoji" width="128" src="/content/blog/server-side-analytics-with-jamstack-sites/718smiley.svg" />
 
 ### Redirect Rule
 
