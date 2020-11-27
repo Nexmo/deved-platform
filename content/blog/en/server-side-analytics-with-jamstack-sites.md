@@ -63,6 +63,8 @@ exports.handler = (event, context) => {
 }
 ```
 
+Once deployed, you would be able to access it at a URL like this one: `https://your-app.netlify.app/.netlify/functions/hello-world`
+
 But you can also continue to do things after you send a response back, like this:
 
 ```js
@@ -115,6 +117,41 @@ exports.handler = (event, context, callback) => {
   }
 }
 ```
+
+Now, from your browser you can send off data from the URL straight to Google: `https://your-app.netlify.app/.netlify/functions/hello-world?dp=/my-custom-page`
+
+Data you can send off includes—but isn't limited to—these parameters:
+
+```js
+{
+  dp, // path e.g. /my-custom-page
+  dt, // title of the page
+  dh, // hostname e.g. https://netlify.com
+  dr, // referrer e.g. https://netlify.com/as-a-referrer or /a-link
+  ua, // user agent e.g. very obscure string meaning "chrome on mac"
+  cs, // utm_source
+  cm, // utm_medium
+  cn, // utm_campaign
+  ck, // utm_term
+  cc, // utm_content
+}
+```
+
+Here is a [full list of acceptable parameters](https://github.com/peaksandpies/universal-analytics/blob/HEAD/AcceptableParams.md).
+
+### Add the "Image"
+
+Calling this script alone, with something like a router middleware or AJAX request, might be enough in a lot of instances for decent reporting, But, it could still be recognised as an XHR request by a browser or browser ad-blocker, and blocked.
+
+A (typically over-engineered) solution that I decided to use was similar to a tracking pixel method. But, because we return a visible structural image, ad-blockers have completely ignored it so-far.
+
+![Screenshot of AdBlock Plus ignoring the tracker on Vonage Learn](/content/blog/server-side-analytics-with-jamstack-sites/screenshot-of-adblock-plus-ignoring-tracker-on-vonage-learn.png "Screenshot of AdBlock Plus")
+
+I'm going to return an SVG image from the Netlify Function and place it on my page using an image tag.
+
+<img src="/content/blog/server-side-analytics-with-jamstack-sites/718smiley.svg" />
+
+![An SVG file of a very smiley Emoji](/content/blog/server-side-analytics-with-jamstack-sites/718smiley.svg "An SVG Emoji")
 
 ### Redirect Rule
 
