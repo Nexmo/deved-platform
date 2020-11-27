@@ -225,7 +225,7 @@ With any luck, it'll look like this:
 
 ### Redirect Rule
 
-So, the most ~~devious~~ inventive part of my ~~evil plan~~ idea, might be this next bit. I was slightly paranoid that an ad-blocker might sense a non-image URL with query string parameters as an image source might be a little suspect and block it anyway.
+So, the most ~~devious~~ inventive part of my ~~evil plan~~ idea might be this next bit. I was slightly paranoid that an ad-blocker might sense a non-image URL with query string parameters as little suspect as an image source, and block it anyway.
 
 Enter [Netlify Redirects](https://docs.netlify.com/routing/redirects/).
 
