@@ -28,7 +28,7 @@ This example includes a [Netlify Function](https://www.netlify.com/products/func
 
 Trackers and tracking pixels are HTML code designed to capture user behaviour or visits when they visit a website or open an email. It is useful for tracking usage of your website, and sometimes conversions.
 
-The problem is, that some trackers are slow or invasive! Ad-blockers were first dreamt up to stop ads and tracking pixels slowing down webpage performance, or to improve a user's experience, and have been expanded to improve privacy for users.
+The problem is, that some trackers are slow and often invasive. Ad-blockers were first dreamt up to stop ads and tracking pixels slowing down webpage performance, or to improve a user's experience, but have subsequently been expanded to improve privacy for users.
 
 A side-effect was, that a lot of site owners lost visibility of what worked and didn't work on their sites. Physical tracking characteristics can still be used to track certain metrics, e.g. adding an article's identifier on a sign-up link to see where the sign-up originated.
 
@@ -84,7 +84,7 @@ Now, we could use this functionality to send off our analytics to Google.
 
 > ***Note***: If you're adding dependencies to a function, you'll need to add the `@netlify/plugin-functions-install-core` plugin to your `netlify.toml` configuration. This plugin will ensure all the function's dependencies are installed when the function is deployed.
 
-We need to install `universal-analytics` first, so make sure you're in your function's directory first.
+We need to install `universal-analytics` first, so make sure you're in your function's directory before you run the following command.
 
 ```bash
 npm install universal-analytics
@@ -141,7 +141,7 @@ Here is a [full list of acceptable parameters](https://github.com/peaksandpies/u
 
 ### Add the "Image"
 
-Calling this script alone, with something like a router middleware or AJAX request, might be enough in a lot of instances for decent reporting, But, it could still be recognised as an XHR request by a browser or browser ad-blocker, and blocked.
+Calling this script alone, with something like a router middleware or AJAX request, might be enough in a lot of instances for decent reporting, but it could still be recognised as an XHR request by a browser or browser ad-blocker, and blocked.
 
 A (typically over-engineered) solution that I decided to use was similar to a tracking pixel method. But, because we return a visible structural image, ad-blockers have completely ignored it so-far.
 
@@ -208,7 +208,7 @@ exports.handler = (event, context, callback) => {
 }
 ```
 
-And add it to your site using the URL we used before:
+Add it to your site using the URL we used before:
 
 ```html
 <img 
