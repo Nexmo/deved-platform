@@ -6,8 +6,8 @@ description: Jamstack sites don't have a backend. That makes their ability to
 thumbnail: /content/blog/server-side-analytics-with-jamstack-sites/blog_nuxt_server-side-analytics_1200x600.png
 author: lukeoliff
 published: true
-published_at: 2020-11-26T18:03:20.518Z
-updated_at: 2020-11-26T18:03:20.549Z
+published_at: 2020-11-30T14:33:44.792Z
+updated_at: ""
 category: tutorial
 tags:
   - nuxt
