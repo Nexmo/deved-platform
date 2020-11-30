@@ -197,7 +197,7 @@ for s in sms:
 #function to send sms using requests
 # here i used my own credentials for demo purposes
 def job():
-   r = requests.post("https://rest.nexmo.com/sms/json",data ={"from":s.ffrom,"text":s.text,"to":s.to,"api_key":"84053de6", "api_secret":"858ea23fe6817f6c"})
+   r = requests.post("https://rest.nexmo.com/sms/json",data ={"from":s.ffrom,"text":s.text,"to":s.to,"api_key":"[YOUR API KEY]", "api_secret":"[YOUR API SECRET]"})
    print(r)
 
 sms = TextMessage.objects.all()
