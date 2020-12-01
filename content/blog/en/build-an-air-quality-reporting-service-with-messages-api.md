@@ -3,7 +3,8 @@ title: Build an Air Quality Reporting Service With Messages API
 description: Learn how to build a service powered by Node.js and Vonage Messages
   API to send information about air quality over Whatsapp and Facebook
   Messenger.
-author: greg-holmes
+thumbnail: /content/blog/build-an-air-quality-reporting-service-with-messages-api/blog_air-quality-reporting_1200x600.png
+author: sudipto-ghosh
 published: true
 published_at: 2020-12-03T10:18:00.000Z
 updated_at: 2020-12-03T10:18:00.000Z
@@ -12,7 +13,7 @@ tags:
   - messages-api
   - node
 comments: true
-spotlight: false
+spotlight: true
 redirect: ""
 canonical: ""
 outdated: false
