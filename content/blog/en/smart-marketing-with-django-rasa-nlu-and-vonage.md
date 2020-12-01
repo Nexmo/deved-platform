@@ -193,9 +193,12 @@ for s in sms:
    print(days_left)
    days_left = str(days_left)
    daytime = str(s.send_time)
+```
 
-#function to send sms using requests
-# here i used my own credentials for demo purposes
+This function is responsible for sending the SMS to the recipient. It uses the requests library to make post requests to the Vonage API endpoint, using data from the TextMessage API as parameters. The function when called then sends the SMS using data from the TextMessage API.
+
+```
+# here I used my own credentials for demo purposes
 def job():
    r = requests.post("https://rest.nexmo.com/sms/json",data ={"from":s.ffrom,"text":s.text,"to":s.to,"api_key":"[YOUR API KEY]", "api_secret":"[YOUR API SECRET]"})
    print(r)
