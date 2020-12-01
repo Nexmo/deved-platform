@@ -6,8 +6,8 @@ description: "Text-to-Speech is an essential feature of Vonage's Voice API.
 thumbnail: /content/blog/text-to-speech-let-your-application-speak—now-in-50-languages/text-to-speech1200x600.png
 author: victorshisterov
 published: true
-published_at: 2020-11-30T14:39:01.684Z
-updated_at: 2020-11-30T14:39:01.718Z
+published_at: 2020-12-01T14:16:17.738Z
+updated_at: ""
 category: announcement
 tags:
   - voice-api
