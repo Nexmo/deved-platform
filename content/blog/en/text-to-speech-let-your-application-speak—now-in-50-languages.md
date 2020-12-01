@@ -1,5 +1,5 @@
 ---
-title: "Text-To-Speech: Let Your Application Speak—Now in 50 Languages!"
+title: "Text-To-Speech: Let Your Application Speak, Now in 50 Languages!"
 description: "Text-to-Speech is an essential feature of Vonage's Voice API.
   Recently we have improved the feature so that it's even easier to use now and
   extended the list of supported languages, dialects and voices. "
