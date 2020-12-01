@@ -18,6 +18,8 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
+Modern companies are turning to SMART technology such as chatbots to automate work processes. SMART technology can automate things such as accounting, recruiting and marketing. Using Artificial Intelligence, businesses can make work easier and improve customer engagement and interactions. The best example of SMART technology usage is virtual assistants and chatbots. These SMART tools help businesses to be more productive without doing all the work manually.
+
 ## Prerequisites
 
 For this app we are going to be using the following:
