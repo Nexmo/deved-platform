@@ -5,13 +5,13 @@ description: "Text-to-Speech is an essential feature of Vonage's Voice API.
   extended the list of supported languages, dialects and voices. "
 thumbnail: /content/blog/text-to-speech-let-your-application-speak-now-in-50-languages/text-to-speech1200x600.png
 author: victorshisterov
-published: false
+published: true
 published_at: 2020-12-01T14:16:17.738Z
 updated_at: ""
 category: announcement
 tags:
   - voice-api
-comments: true
+comments: false
 spotlight: false
 redirect: ""
 canonical: ""
@@ -28,11 +28,11 @@ Let's take a closer look at improvements.
 
 To use the Text-to-Speech in your application, you should use talk NCCO action (or talk REST API operation depending on the use case). To select the appropriate language for the message, you had to learn the "voice names" we were using, for example:
 
-![To select the appropriate language for the message, you had to learn the "voice names" we were using for NCCO.](/content/blog/text-to-speech-let-your-application-speak—now-in-50-languages/victor1.png)
+![To select the appropriate language for the message, you had to learn the "voice names" we were using for NCCO.](/content/blog/text-to-speech-let-your-application-speak-now-in-50-languages/victor1.png)
 
 Now you don't have to operate "voice names": we have supported [standard](https://tools.ietf.org/html/bcp47) language codes, so all you have to do is set the desired language:
 
-![Voice API has supported language codes, so all you have to do is set the desired language.](/content/blog/text-to-speech-let-your-application-speak—now-in-50-languages/victor2.png)
+![Voice API has supported language codes, so all you have to do is set the desired language.](/content/blog/text-to-speech-let-your-application-speak-now-in-50-languages/victor2.png)
 
 Note: for backwards compatibility reasons, we have the `voiceName` parameter still supported, so you don't have to update any of your existing apps—unless you want to use any of the newly supported languages or voices.
 
@@ -40,7 +40,7 @@ Note: for backwards compatibility reasons, we have the `voiceName` parameter sti
 
 For most of the languages, we have a few voices which you can use. To select a specific voice, use the new `style` parameter:
 
-![To select a specific voice, use the new style parameter.](/content/blog/text-to-speech-let-your-application-speak—now-in-50-languages/victor3.png)
+![To select a specific voice, use the new style parameter.](/content/blog/text-to-speech-let-your-application-speak-now-in-50-languages/victor3.png)
 
 How to know which style you can use? It's simple: visit our [guide](https://developer.nexmo.com/voice/voice-api/guides/text-to-speech#supported-languages), play the sample greeting in all the supported styles and choose which one sounds best for you!
 
