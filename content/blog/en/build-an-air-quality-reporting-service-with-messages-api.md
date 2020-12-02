@@ -27,9 +27,9 @@ In this example, we will build a service, powered by Node.js — a JavaScript Ru
 
 The source code for the example we will build can also be found on [GitHub](https://github.com/sudiptog81/vonage-aqi).
 
-## Set Up the Development Environment
+<sign-up></sign-up>
 
-To build this service, we'll need access to a Vonage API Account. In case you do not have an account with Vonage API already, you can sign up for a new account and get some credits!
+## Set Up the Development Environment
 
 We will need to open an `ngrok` tunnel to our application to expose it over the Internet with minimal configuration. After installing `ngrok`, open up a terminal and execute `ngrok http 3070` to expose your local port 3070 to the Internet. Make sure you override this using the `PORT` variable in `.env`. Copy the HTTPS URL as printed by `ngrok` to the console and note it down.
 
