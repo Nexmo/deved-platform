@@ -78,11 +78,11 @@ Lesson 2: Do not advise your library users to use dynamic dependency versions be
 
 Modern IDEs like IntelliJ IDEA will warn us about dynamic dependency usage by usage:
 
-![Avid using plus character](img/avoid-using-plus-character.png "Avid using plus character")
+![Avoid using plus character](/content/blog/the-right-way-of-using-gradle-dynamic-dependencies/avoid-using-plus-character.png "Avoid using plus character")
 
 To avoid unpredictability, we can specify dependency versions explicitly and update them manually when a need occurs. This will allow you to have full control over version updates and take a closer look at the dependency changelog and review the changes. IDE will also display a warning about outdated dependency and provides intention to change the version it:
 
-![Change dependency version](img/change-dependency-version.png "Change dependency version")
+![Change dependency version](/content/blog/the-right-way-of-using-gradle-dynamic-dependencies/change-dependency-version.png "Change dependency version")
 
 This strategy works fine for small projects, but manual updates can be time-consuming when your project contains a large number of dependencies. We can use [gradle-versions-plugin](https://github.com/ben-manes/gradle-versions-plugin) to determine how many dependencies need to be updated:
 
