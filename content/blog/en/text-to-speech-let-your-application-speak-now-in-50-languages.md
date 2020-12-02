@@ -7,7 +7,7 @@ thumbnail: /content/blog/text-to-speech-let-your-application-speak-now-in-50-lan
 author: victorshisterov
 published: true
 published_at: 2020-12-01T14:57:00.000Z
-updated_at: ""
+updated_at: 2020-12-02T15:07:47.404Z
 category: announcement
 tags:
   - voice-api
