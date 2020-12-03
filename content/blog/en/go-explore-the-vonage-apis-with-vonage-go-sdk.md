@@ -1,10 +1,8 @@
 ---
 title: Go Explore the Vonage APIs with Vonage Go SDK
-description: We’re delighted to announce the immediate availability of the
-  Vonage Go SDK. We love our developer communities, and it is our mission to
-  make tools that make life easier for them. We know that more and more
-  “gophers” are picking up this excellent Go stack and starting to use our APIs.
-  You can do that […]
+description: The Vonage Go SDK gives greater programmatic access to the Vonage
+  Communications APIs. Find out more more how to use it and how you can
+  contribute.
 thumbnail: /content/blog/go-explore-the-vonage-apis-with-vonage-go-sdk/Blog_Vonage_GoSDK_1200x600.png
 author: lornajane
 published: true
