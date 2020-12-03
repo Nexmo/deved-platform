@@ -11,7 +11,6 @@ updated_at: ""
 category: release
 tags:
   - go
-  - ""
 comments: true
 redirect: ""
 canonical: ""
@@ -31,7 +30,7 @@ In addition to the [package documentation](https://pkg.go.dev/mod/github.com/von
 
 I will never get tired of typing code and then having a message arrive on my phone! Sending an SMS is usually our quickstart example, and with the Go SDK, it's pretty straightforward:
 
-```golang
+```go
 package main
 
 import (
