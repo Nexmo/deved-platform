@@ -4,8 +4,8 @@ description: Learn how to build a server to handle incoming voice calls with Go.
 thumbnail: /content/blog/handle-an-incoming-call-with-go/blog_go_phone-call_1200x600.png
 author: greg-holmes
 published: true
-published_at: 2020-12-03T10:34:39.918Z
-updated_at: 2020-12-03T10:34:39.951Z
+published_at: 2020-12-03T13:59:38.162Z
+updated_at: ""
 category: tutorial
 tags:
   - voice-api
