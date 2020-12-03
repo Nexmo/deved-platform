@@ -1,6 +1,7 @@
 ---
 title: Handle an Incoming Call With Go
 description: Learn how to build a server to handle incoming voice calls with Go.
+thumbnail: /content/blog/handle-an-incoming-call-with-go/blog_go_phone-call_1200x600.png
 author: greg-holmes
 published: true
 published_at: 2020-12-03T10:34:39.918Z
@@ -25,7 +26,7 @@ You can find the code shown in this tutorial on the [Go code snippets repository
 ## Prerequisites
 
 * A phone number
-* [A Vonage Account](http://developer.nexmo.com/ed?c=blog_text&ct=2020-12-01-handle-incoming-voice-calls-with-go)
+* A Vonage Account
 * [Go installed locally](https://golang.org/)
 
 <sign-up number></sign-up>
