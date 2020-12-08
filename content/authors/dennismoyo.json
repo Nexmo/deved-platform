@@ -1,10 +1,11 @@
 {
-  "team": false,
-  "alumni": false,
-  "spotlight": false,
-  "noteworthy": false,
+  "bio": "Dennis is a Python Developer with a background in Human Resources, Marketing, and Finance. He likes to build web and mobile applications. He's the author of \"A Comprehensive Guide to Chatbots\" and the creator of digital labs. He lives in Zimbabwe in the city of Kings and Queens. ",
   "hidden": false,
-  "username": "DennisMoyo",
+  "image_url": "/content/images/github.png",
   "name": "Dennis Moyo",
-  "image_url": "/content/images/github.png"
+  "spotlight": false,
+  "username": "dennis-moyo",
+  "noteworthy": false,
+  "team": false,
+  "alumni": false
 }
