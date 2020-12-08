@@ -5,8 +5,8 @@ description: How to build a custom automated marketing solution to send messages
 thumbnail: /content/blog/smart-marketing-with-django-rasa-nlu-and-vonage/blog_automated-marketing_django_1200x600.png
 author: dennis-moyo
 published: false
-published_at: 2020-11-23T14:15:54.670Z
-updated_at: 2020-11-23T14:15:54.706Z
+published_at: 2020-12-08T16:29:47.107Z
+updated_at: 2020-12-08T16:29:48.765Z
 category: tutorial
 tags:
   - django
