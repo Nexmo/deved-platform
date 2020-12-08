@@ -152,4 +152,4 @@ Below are a few other tutorials we've written either involving using our service
 - [Text-To-Speech Voice Calls With Go](https://learn.vonage.com/blog/2020/11/25/make-text-to-speech-call-with-go)
 - [Receive an SMS with Go](https://learn.vonage.com/blog/2020/11/03/receive-inbound-sms-with-gog)
 
-If you have any questions, advice or ideas you'd like to share with the community, then please feel free to jump on our [Community Slack workspace](https://developer.nexmo.com/community/slack), or pop a reply below 👇. I'd love to hear back from anyone that has implemented this tutorial and how your project works.
+If you have any questions, advice or ideas you'd like to share with the community, then please feel free to jump on our [Community Slack workspace](https://developer.nexmo.com/community/slack). I'd love to hear back from anyone that has implemented this tutorial and how your project works.
