@@ -11,7 +11,6 @@ updated_at: ""
 category: tutorial
 tags:
   - voice-api
-  - ""
 comments: false
 spotlight: false
 redirect: ""
@@ -35,7 +34,9 @@ Before Vonage tries to use your fallback URL, the platform will retry the reques
 
 ## WebSocket Disconnection
 
-Suppose you're using WebSockets for connecting your customer to an AI engine for a voice bot or any kind of media capturing scenario. In that case, you may consider adding some fallback options here as well. If the WebSocket connection is unintentionally closed, you'll get a [specific disconnected event](https://developer.nexmo.com/voice/voice-api/guides/websockets#websocket-disconnected) callback request to your application. This request expects an NCCO back in the response, so you may reconnect your service or do fallback actions like redirecting the user to a human agent or capturing a voicemail message.
+Suppose you're using WebSockets for connecting your customer to an AI engine for a voice bot or any kind of media capturing scenario. In that case, you may consider adding some fallback options here as well.
+
+If the WebSocket connection is unintentionally closed, you'll get a [specific disconnected event](https://developer.nexmo.com/voice/voice-api/guides/websockets#websocket-disconnected) callback request to your application. This request expects an NCCO back in the response, so you may reconnect your service or do fallback actions like redirecting the user to a human agent or capturing a voicemail message.
 
 The event callback supports the fallback URL mentioned above, so even if you have both your voice app and WebSocket connection to the same server or data center which is experiencing availability issues, you can provide a fallback scenario for your users so that they don't have to hear silence or have the call suddenly dropped.
 
