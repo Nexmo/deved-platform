@@ -43,6 +43,8 @@ For this app we are going to be using the following:
 
 Next, we will be looking at how to install each of these packages.
 
+<sign-up></sign-up> 
+
 ## **Installation**
 
 First, we will start to install a virtual environment. A virtual environment will be like a storehouse for all our packages. We are using Linux so go to cmd and type `virtualenv vonenv`.
