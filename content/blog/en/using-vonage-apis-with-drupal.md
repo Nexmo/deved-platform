@@ -55,7 +55,7 @@ We will be using a basic install, so go through the installation wizard and sele
 
 Drupal will finish the installation up. You will be automatically logged in and ready to start playing around!
 
-A> If you are using PHP 7.4 or 8.0, you may encounter an error about your SQLite version being too low. PHP unbundled SQLite starting with 7.4 and uses whatever your operating system has installed. If you are using Ubuntu 18.04 or older versions of Fedora or CentOS, you may not be able to install Drupal 9 using SQLite. If you run into this, you may want to look at using MySQL or MariaDB as the database instead of SQLite.
+If you are using PHP 7.4 or 8.0, you may encounter an error about your SQLite version being too low. PHP unbundled SQLite starting with 7.4 and uses whatever your operating system has installed. If you are using Ubuntu 18.04 or older versions of Fedora or CentOS, you may not be able to install Drupal 9 using SQLite. If you run into this, you may want to look at using MySQL or MariaDB as the database instead of SQLite.
 
 ![drupal is installed](/content/blog/using-vonage-apis-with-drupal/first-page.png)
 
