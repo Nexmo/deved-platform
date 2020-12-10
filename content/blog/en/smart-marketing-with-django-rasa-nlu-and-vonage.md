@@ -45,27 +45,27 @@ Next, we will be looking at how to install each of these packages.
 
 <sign-up></sign-up> 
 
-## **Installation**
+## Installation
 
 First, we will start to install a virtual environment. A virtual environment will be like a storehouse for all our packages. We are using Linux so go to cmd and type `virtualenv vonenv`.
 
 This will create a new virtual environment called vonenv. Activate it by typing `source/vonenv/bin/activate`.
 
-### **Installing Django**
+### Installing Django
 
 We will use Django as our app framework. Install Django by typing `pip install Django`. You can specify the version using `==` and giving the version name.
 
-### **Installing Django Rest Framework**
+### Installing Django Rest Framework
 
 Type `pip install Django rest framework`. Also, install python scheduler by typing `pip install scheduler`.
 
-### **Installing Django-cors-headers**
+### Installing django-cors-headers
 
 We will install a package called django-cors-headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other. To install the package, type:
 
 `pip install django-cors-headers`
 
-## **Creating Our App**
+## Creating Our App
 
 To create the app type `django-admin startproject vonage`. This will create our project boilerplate with all the code.
 
@@ -73,7 +73,7 @@ Navigate into your app and type `django-admin start project myapp`. This will cr
 
 To test the app simply type `python manage.py runserver` and navigate to localhost:8000 in your browser.
 
-## **Configuring Settings**
+## Configuring Settings
 
 Navigate to the root folder of your project and open the settings.py file. This is the file that will be used to set up the backend configuration of our app.
 
@@ -102,7 +102,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 ```
 
-## **Configuring Models**
+## Configuring Models
 
 Next, we need to create our database models. Models are the tables that we will populate in the database. We will create two models which are TextMessage and UserActivity. TextMessage model will be used to store the Text Message object details and the UserActivity model will be used to store and track user activity.
 
@@ -130,15 +130,15 @@ class UserActivity(models.Model):
    time_stamp = models.DateField(auto_now=True)
 ```
 
-## **Creating Our API**
+## Creating Our API
 
 API stands for Application Programming Interface. It is a set of protocols(rules) defined that tell you how to access and use data. For example, a REST API uses GET/POST/DELETE/PUT. These are the protocols of a REST API. An API allows you to access data in a database using HTTP requests.
 
-We will be creating two REST API's, TextMessage API and UserActivity API. Why use APIs? An API is important for making HTTP requests and make interacting with the database much easier. With APIs, we can make HTTP requests to our API endpoints and to use any JavaScript framework we choose. This makes our frontend choices flexible and easier to integrate.
+We will be creating two REST APIs, TextMessage API and UserActivity API. Why use APIs? An API is important for making HTTP requests and make interacting with the database much easier. With APIs, we can make HTTP requests to our API endpoints and to use any JavaScript framework we choose. This makes our frontend choices flexible and easier to integrate.
 
 If you haven't done so already install the Django REST framework package by typing `pip install Django-rest-framework`. Then add the package to installed apps and run `python manage.py migrate` to register the changes in our database.
 
-## **Configuring Views**
+## Configuring Views
 
 The views file will be responsible for storing our functions. These functions will be able to render data, catch errors, enable us to make GET, POST, PUT, EDIT, and DELETE requests to our APIs.
 
@@ -163,7 +163,7 @@ import datetime
 import requests
 ```
 
-### **Landing Page View**
+### Landing Page View
 
 ```python
 #landing page
@@ -173,7 +173,7 @@ def landing(request):
 
 This function will render our landing page template.
 
-### **Dashboard Page View**
+### Dashboard Page View
 
 ```python
 #dashboard view
@@ -184,7 +184,7 @@ def index(request):
 
 This function will render our dashboard page template.
 
-## **SMS Scheduling**
+## SMS Scheduling
 
 We will be scheduling the SMS using a Django package called python scheduler. We are using this package as it is easy to set up and efficient.
 
@@ -202,7 +202,7 @@ for s in sms:
 
 This function is responsible for sending the SMS to the recipient. It uses the requests library to make post requests to the Vonage API endpoint, using data from the TextMessage API as parameters. The function when called then sends the SMS using data from the TextMessage API.
 
-```
+```python
 # here I used my own credentials for demo purposes
 def job():
    r = requests.post("https://rest.nexmo.com/sms/json",data ={"from":s.ffrom,"text":s.text,"to":s.to,"api_key":"[YOUR API KEY]", "api_secret":"[YOUR API SECRET]"})
@@ -220,7 +220,7 @@ for s in sms:
    schedule.every(total_days).days.at(daytime).do(job)
 ```
 
-## **Configuring URLs**
+## Configuring URLs
 
 The URL file is used to define routes for our app. We will add the view functions as our routes to navigate through each template.
 
@@ -245,7 +245,7 @@ urlpatterns = [
 ]
 ```
 
-## **Serializers**
+## Serializers
 
 When using APIs we need to first serialize data. Serialization is the process of converting data into small bytes for use by software or physical devices. In our API framework, it is easy to serialize data. We create a serializers.py file, import our models, and define our serializers.
 
@@ -265,11 +265,11 @@ class UserActivitySerializer(serializers.ModelSerializer):
 	fields = '__all__'
 ```
 
-## **Configuring Templates**
+## Configuring Templates
 
 Now that we know the pages that will be used in our app, we now need to hook up our templates to connect to our backend systems. We do this by using JavaScript and also use our APIs as our source of data.
 
-## **Assistant Page**
+## Assistant Page
 
 This page will act as our chatbot UI page. This is the page users will use when talking to our chatbot and passing data. We will use Angular to interact with our bot by sending HTTP requests to the Rasa API. We will then manage the response data using jQuery. The page is designed as a chat application and all the user has to do is answer the bot's questions.
 
