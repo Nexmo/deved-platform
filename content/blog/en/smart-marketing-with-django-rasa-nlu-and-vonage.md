@@ -1,5 +1,5 @@
 ---
-title: Smart Marketing with Django, Rasa Nlu, and Vonage
+title: Smart Marketing with Django, Rasa NLU, and Vonage
 description: How to build a custom automated marketing solution to send messages
   and receive feedback quickly
 thumbnail: /content/blog/smart-marketing-with-django-rasa-nlu-and-vonage/blog_automated-marketing_django_1200x600.png
