@@ -3,6 +3,7 @@ title: Using Vonage APIs with Drupal
 description: In this tutorial Chris takes you through the process of setting up
   a new Drupal installation and creating modules to communicate with the Vonage
   APIs
+thumbnail: /content/blog/using-vonage-apis-with-drupal/blog_vonageapi_drupal_1200x600.png
 author: christankersley
 published: true
 published_at: 2020-12-11T15:39:00.000Z
