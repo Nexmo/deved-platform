@@ -6,7 +6,7 @@ thumbnail: /content/blog/smart-marketing-with-django-rasa-nlu-and-vonage/blog_au
 author: dennis-moyo
 published: true
 published_at: 2020-12-08T16:29:47.107Z
-updated_at: 2020-12-08T16:29:48.765Z
+updated_at: ""
 category: tutorial
 tags:
   - django
