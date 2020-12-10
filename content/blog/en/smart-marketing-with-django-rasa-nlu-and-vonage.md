@@ -11,7 +11,7 @@ category: tutorial
 tags:
   - django
   - rasa-nlu
-  - angular
+  - sms-api
 comments: true
 spotlight: true
 redirect: ""
@@ -39,17 +39,17 @@ For this app we are going to be using the following:
 
 [Heroku](https://www.heroku.com) – A web hosting platform
 
-[Vonage Messages API](https://www.vonage.com/) – An API for sending Voice or Text Messages
+[Vonage SMS API](https://developer.nexmo.com/messaging/sms/overview) – An API for sending SMS Text Messages
 
 Next, we will be looking at how to install each of these packages.
 
-<sign-up></sign-up> 
+<sign-up></sign-up>
 
 ## Installation
 
 First, we will start to install a virtual environment. A virtual environment will be like a storehouse for all our packages. We are using Linux so go to cmd and type `virtualenv vonenv`.
 
-This will create a new virtual environment called vonenv. Activate it by typing `source/vonenv/bin/activate`.
+This will create a new virtual environment called `vonenv`. Activate it by typing `source/vonenv/bin/activate`.
 
 ### Installing Django
 
@@ -59,9 +59,9 @@ We will use Django as our app framework. Install Django by typing `pip install D
 
 Type `pip install Django rest framework`. Also, install python scheduler by typing `pip install scheduler`.
 
-### Installing django-cors-headers
+### Installing Django-cors-headers
 
-We will install a package called django-cors-headers which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other. To install the package, type:
+We will install a package called `django-cors-headers` which will help to prevent any cross-origin errors. This means we will be able to send and receive HTTP requests from one server to the other. To install the package, type:
 
 `pip install django-cors-headers`
 
@@ -673,7 +673,7 @@ Our app is now in working order however we need to change a few things. At the m
 
 In this post, we will only be focusing on deploying the app so we won't teach about Heroku specifics. The first thing to do is to create a Heroku account, so head on over to <https://www.heroku.com> to create a free account.
 
-After creating the account we need to install Heroku on our machine so we can use it from the terminal. Once you've created your account head on over to [https://devcenter.heroku.com/articles/heroku-cli](https://devcenter.heroku.com/articles/heroku-cli) and follow instructions on how to install the CLI, based on your operating system.
+After creating the account we need to install Heroku on our machine so we can use it from the terminal. Once you've created your account head on over to <https://devcenter.heroku.com/articles/heroku-cli> and follow instructions on how to install the CLI, based on your operating system.
 
 Next, you need to login to Heroku using the CLI, as it is much easier. If everything is installed properly we can now deploy our Django app to Heroku.
 
