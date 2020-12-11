@@ -3,10 +3,11 @@ title: Creating an Online Classroom in Laravel With Vonage Video API
 description: Learn how to create a virtual classroom where the teacher can be in
   any location in the world and still teach student in real-time using Laravel
   and the Vonage Video API.
+thumbnail: /content/blog/creating-an-online-classroom-in-laravel-with-vonage-video-api/blog_online-classroom_laravel_1200x600.png
 author: nahrinjalal
 published: true
 published_at: 2020-12-10T14:05:04.744Z
-updated_at: 2020-12-10T14:05:04.779Z
+updated_at: ""
 category: tutorial
 tags:
   - video-api
