@@ -91,7 +91,9 @@ The first step in creating our virtual class is setting up a Laravel Project.
 
 
 
-`composer create-project --prefer-dist laravel/laravel:^7.0 virtual_classroom`
+```bash
+composer create-project --prefer-dist laravel/laravel:^7.0 virtual_classroom
+```
 
 
 
@@ -103,7 +105,9 @@ The next step is installing the Vonage API PHP SDK. We do that by installing the
 
 
 
-`composer require opentok/opentok 4.4.x -W`
+```bash
+composer require opentok/opentok 4.4.x -W
+```
 
 
 
@@ -117,84 +121,81 @@ Open the users migration at database/migrations/xxxxxx_create_users_xxxx.php
 
 
 
-`<?php`
+```<?php
 
-`use Illuminate\Database\Migrations\Migration;`
+use Illuminate\Database\Migrations\Migration;
 
-`use Illuminate\Database\Schema\Blueprint;`
+use Illuminate\Database\Schema\Blueprint;
 
-`use Illuminate\Support\Facades\Schema;`
+use Illuminate\Support\Facades\Schema;
 
-`
-`
 
-`class CreateUsersTable extends Migration`
 
-`{`
+class CreateUsersTable extends Migration
 
-`    /**`
+{
 
-`     * Run the migrations.`
+    /**
 
-`     *`
+     * Run the migrations.
 
-`     * @return void`
+     *
 
-`     */`
+     * @return void
 
-`    public function up()`
+     */
 
-`    {`
+    public function up()
 
-`        Schema::create('users', function (Blueprint $table) {`
+    {
 
-`            $table->id();`
+        Schema::create('users', function (Blueprint $table) {
 
-`            $table->string('name');`
+            $table->id();
 
-`            $table->string('email')->unique();`
+            $table->string('name');
 
-`            $table->timestamp('email_verified_at')->nullable();`
+            $table->string('email')->unique();
 
-`            // This enum field tells us if the current user is a teacher or student`
+            $table->timestamp('email_verified_at')->nullable();
 
-`            $table->enum('user_type', ['Student', 'Teacher']);`
+            // This enum field tells us if the current user is a teacher or student
 
-`            $table->string('password');`
+            $table->enum('user_type', ['Student', 'Teacher']);
 
-`            $table->rememberToken();`
+            $table->string('password');
 
-`            $table->timestamps();`
+            $table->rememberToken();
 
-`        });`
+            $table->timestamps();
 
-`    }`
+        });
 
-`
-`
+    }
 
-`    /**`
 
-`     * Reverse the migrations.`
 
-`     *`
 
-`     * @return void`
+    /**
 
-`     */`
+     * Reverse the migrations.
 
-`    public function down()`
+     *
 
-`    {`
+     * @return void
 
-`        Schema::dropIfExists('users');`
+     */
 
-`    }`
+    public function down()
 
-`}`
+    {
 
-`
-`
+        Schema::dropIfExists('users');
+
+    }
+
+}
+```
 
 
 
@@ -202,81 +203,78 @@ Open the virtual_classes migration at database/migrations/xxxxxx_create_virtual_
 
 
 
-`<?php`
+```<?php
 
-`
-`
 
-`use Illuminate\Database\Migrations\Migration;`
 
-`use Illuminate\Database\Schema\Blueprint;`
+use Illuminate\Database\Migrations\Migration;
 
-`use Illuminate\Support\Facades\Schema;`
+use Illuminate\Database\Schema\Blueprint;
 
-`
-`
+use Illuminate\Support\Facades\Schema;
 
-`class CreateVirtualClassesTable extends Migration`
 
-`{`
 
-`    /**`
 
-`     * Run the migrations.`
+class CreateVirtualClassesTable extends Migration
 
-`     *`
+{
 
-`     * @return void`
+   /**
 
-`     */`
+     * Run the migrations.
 
-`    public function up()`
+     *
 
-`    {`
+     * @return void
 
-`        Schema::create('virtual_classes', function (Blueprint $table) {`
+     */
 
-`            $table->id();`
+    public function up()
 
-`            $table->string("name");`
+    {
 
-`            // User id to know which teacher created the class`
+        Schema::create('virtual_classes', function (Blueprint $table) {
 
-`            $table->integer("user_id");            `
+            $table->id();
 
-`            $table->string("session_id");`
+            $table->string("name");
 
-`            $table->timestamps();`
+            // User id to know which teacher created the class
 
-`        });`
+            $table->integer("user_id");            `
 
-`    }`
+            $table->string("session_id");
 
-`
-`
+            $table->timestamps();
 
-`    /**`
+        });
 
-`     * Reverse the migrations.`
+    }
 
-`     *`
 
-`     * @return void`
 
-`     */`
 
-`    public function down()`
+    /**
 
-`    {`
+     * Reverse the migrations.
 
-`        Schema::dropIfExists('classes');`
+     *
 
-`    }`
+     * @return void
 
-`}`
+     */
 
-`
-`
+    public function down()
+
+    {
+
+        Schema::dropIfExists('classes');
+
+    }
+
+}
+```
 
 
 
@@ -288,143 +286,142 @@ Open the User model at app/Models/Users.php
 
 
 
-`<?php`
+```<?php
 
-`
-`
 
-`//REMEMBER TO UPDATE THE NAMESPACE AFTER MOVING THE FILE`
 
-`namespace App\Models;`
+//REMEMBER TO UPDATE THE NAMESPACE AFTER MOVING THE FILE
 
-`
-`
+namespace App\Models;
 
-`use Illuminate\Contracts\Auth\MustVerifyEmail;`
 
-`use Illuminate\Foundation\Auth\User as Authenticatable;`
 
-`use Illuminate\Notifications\Notifiable;`
 
-`
-`
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 
-`class User extends Authenticatable`
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-`{`
+use Illuminate\Notifications\Notifiable;
 
-`    use Notifiable;`
 
-`
-`
 
-`    /**`
 
-`     * The attributes that are mass assignable.`
+class User extends Authenticatable
 
-`     *`
+{
 
-`     * @var array`
+    use Notifiable;
 
-`     */`
 
-`
-`
 
-`    // DON'T FORGET TO ADD THE USER_TYPE TO THIS ARRAY`
 
-`    protected $fillable = [`
+    /**
 
-`        'name', 'email', 'password', 'user_type'`
+     * The attributes that are mass assignable.
 
-`    ];`
+     *
 
-`
-`
+     * @var array
 
-`    /**`
+     */
 
-`     * The attributes that should be hidden for arrays.`
 
-`     *`
 
-`     * @var array`
 
-`     */`
+    // DON'T FORGET TO ADD THE USER_TYPE TO THIS ARRAY
 
-`    protected $hidden = [`
+    protected $fillable = [
 
-`        'password', 'remember_token',`
+        'name', 'email', 'password', 'user_type'
 
-`    ];`
+    ];
 
-`
-`
 
-`    /**`
 
-`     * The attributes that should be cast to native types.`
 
-`     *`
+    /**
 
-`     * @var array`
+     * The attributes that should be hidden for arrays.
 
-`     */`
+     *
 
-`    protected $casts = [`
+     * @var array
 
-`        'email_verified_at' => 'datetime',`
+     */
 
-`    ];`
+    protected $hidden = [
 
-`
-`
+        'password', 'remember_token',
 
-`    // Relationship tying a virtual class to a user (teacher in our case)`
+    ];
 
-`    public function myClass() {`
 
-`        return $this->hasOne(VirtualClass::class);`
 
-`    }`
 
-`}`
+    /**
 
-`
-`
+     * The attributes that should be cast to native types.
+
+     *
+
+     * @var array
+
+     */
+
+    protected $casts = [
+
+        'email_verified_at' => 'datetime',
+
+    ];
+
+
+
+
+    // Relationship tying a virtual class to a user (teacher in our case)
+
+    public function myClass() {
+
+        return $this->hasOne(VirtualClass::class);
+
+    }
+
+}
+```
 
 
 
 ## 4. Authentication
 
-Now that we have our model architecture setup, we need to allow users to register and login. The first thing to do is to edit the providers in our project configuration. Since we changed the location of the User model, we need to reflect the change. We first go to config/auth.php and edit the providers array and run the commands to scaffold the authentication.
+Now that we have our model architecture setup, we need to allow users to register and log in. The first thing to do is to edit the providers in our project configuration. Since we changed the location of the User model, we need to reflect the change. We first go to config/auth.php and edit the providers array and run the commands to scaffold the authentication.
 
 
 
-`    'providers' => [`
+```php    
+'providers' => [
 
-`        'users' => [`
+        'users' => [
 
-`            'driver' => 'eloquent',`
+            'driver' => 'eloquent',
 
-`            'model' => App\Models\User::class, // New location of User model`
+            'model' => App\Models\User::class, // New location of User model
 
-`        ],`
+        ],
 
-`
-`
 
-`        // 'users' => [`
 
-`        //     'driver' => 'database',`
 
-`        //     'table' => 'users',`
+        // 'users' => [
 
-`        // ],`
+        //     'driver' => 'database',
 
-`    ],`
+        //     'table' => 'users',
 
-`// Rest of auth.php file`
+        // ],
+
+    ],
+
+// Rest of auth.php file
+```
 
 
 
@@ -432,28 +429,28 @@ After doing this, we simply run the Laravel default authentication scaffold:
 
 
 
-`/** Run these four commands in your terminal in that order **/`
+```bash
+/** Run these four commands in your terminal in that order **/
 
-`
-`
 
-`composer require laravel/ui:^2.4`
 
-`
-`
+composer require laravel/ui:^2.4
 
-`php artisan ui vue --auth`
 
-`
-`
 
-`npm install`
 
-`
-`
+php artisan ui vue --auth
 
-`npm run dev`
 
+
+
+npm install
+
+
+
+
+npm run dev
+```
 
 
 
@@ -466,172 +463,168 @@ First, the app/Http/Controllers/Auth/RegisterController file:
 
 
 
-`<?php`
+```<?php
 
-`
-`
 
-`namespace App\Http\Controllers\Auth;`
 
-`
-`
 
-`use App\Http\Controllers\Controller;`
+namespace App\Http\Controllers\Auth;
 
-`use App\Providers\RouteServiceProvider;`
 
-`// PLEASE REMEMBER TO CHANGE THE IMPORT STATEMENT HERE`
 
-`use App\Models\User;`
 
-`use Illuminate\Foundation\Auth\RegistersUsers;`
+use App\Http\Controllers\Controller;
 
-`use Illuminate\Support\Facades\Hash;`
+use App\Providers\RouteServiceProvider;
 
-`use Illuminate\Support\Facades\Validator;`
+// PLEASE REMEMBER TO CHANGE THE IMPORT STATEMENT HERE
 
-`use Illuminate\Validation\Rule;`
+use App\Models\User;
 
-`
-`
+use Illuminate\Foundation\Auth\RegistersUsers;
 
-`class RegisterController extends Controller`
+use Illuminate\Support\Facades\Hash;
 
-`{`
+use Illuminate\Support\Facades\Validator;
 
-`    /*`
+use Illuminate\Validation\Rule;
 
-`    |--------------------------------------------------------------------------`
 
-`    | Register Controller`
 
-`    |--------------------------------------------------------------------------`
+class RegisterController extends Controller
 
-`    |`
+{
 
-`    | This controller handles the registration of new users as well as their`
+    /*
 
-`    | validation and creation. By default, this controller uses a trait to`
+    |--------------------------------------------------------------------------
 
-`    | provide this functionality without requiring any additional code.`
+    | Register Controller
 
-`    |`
+    |--------------------------------------------------------------------------
 
-`    */`
+    |
 
-`
-`
+    | This controller handles the registration of new users as well as their
 
-`    use RegistersUsers;`
+    | validation and creation. By default, this controller uses a trait to
 
-`
-`
+    | provide this functionality without requiring any additional code.
 
-`    /**`
+    |
 
-`     * Where to redirect users after registration.`
+    */
 
-`     *`
 
-`     * @var string`
 
-`     */`
 
-`    protected $redirectTo = RouteServiceProvider::HOME;`
+    use RegistersUsers;
 
-`
-`
 
-`    /**`
 
-`     * Create a new controller instance.`
 
-`     *`
+    /**
 
-`     * @return void`
+     * Where to redirect users after registration.
 
-`     */`
+     *
 
-`    public function __construct()`
+     * @var string
 
-`    {`
+     */
 
-`        $this->middleware('guest');`
+    protected $redirectTo = RouteServiceProvider::HOME;
 
-`    }`
 
-`
-`
 
-`    /**`
+    /**
 
-`     * Get a validator for an incoming registration request.`
+     * Create a new controller instance.
 
-`     *`
+     *
 
-`     * @param array $data`
+     * @return void
 
-`     * @return \Illuminate\Contracts\Validation\Validator`
+     */
 
-`     */`
+    public function __construct()
 
-`    protected function validator(array $data)`
+    {
 
-`    {`
+        $this->middleware('guest');
 
-`        return Validator::make($data, [`
+    }
 
-`            'name' => ['required', 'string', 'max:255'],`
 
-`            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],`
 
-`            // Add the user_type here for validation.`
+    /**
 
-`            'user_type' => ['required', 'string', 'in:Student,Teacher'],`
+     * Get a validator for an incoming registration request.
 
-`            'password' => ['required', 'string', 'min:8', 'confirmed'],`
+     *
 
-`        ]);`
+     * @param array $data
 
-`    }`
+     * @return \Illuminate\Contracts\Validation\Validator
 
-`
-`
+     */
 
-`    /**`
+    protected function validator(array $data)
 
-`     * Create a new user instance after a valid registration.`
+    {
 
-`     *`
+        return Validator::make($data, [
 
-`     * @param array $data`
+            'name' => ['required', 'string', 'max:255'],
 
-`     * @return \App\User`
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
 
-`     */`
+            // Add the user_type here for validation.
 
-`    protected function create(array $data)`
+            'user_type' => ['required', 'string', 'in:Student,Teacher'],
 
-`    {`
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
 
-`        return User::create([`
+        ]);
 
-`            'name' => $data['name'],`
+    }
 
-`            'email' => $data['email'],`
 
-`            'user_type' => $data['user_type'],`
 
-`            'password' => Hash::make($data['password']),`
 
-`        ]);`
+    /**
 
-`    }`
+     * Create a new user instance after a valid registration.
 
-`}`
+     *
 
-`
-`
+     * @param array $data
+
+     * @return \App\User
+
+     */
+
+    protected function create(array $data)
+
+    {
+
+        return User::create([
+
+            'name' => $data['name'],
+
+            'email' => $data['email'],
+
+            'user_type' => $data['user_type'],
+
+            'password' => Hash::make($data['password']),
+
+        ]);
+
+    }
+
+}
+
+```
 
 
 
@@ -639,218 +632,218 @@ Then the register view. It’s found in resources/views/auth/register.blade.php:
 
 
 
-`@extends('layouts.app')`
+```php
+@extends('layouts.app')
 
-`
-`
 
-`@section('content')`
 
-`<div class="container">`
 
-`    <div class="row justify-content-center">`
+@section('content')
 
-`        <div class="col-md-8">`
+<div class="container">
 
-`            <div class="card">`
+    <div class="row justify-content-center">
 
-`                <div class="card-header">{{ __('Register') }}</div>`
+        <div class="col-md-8">
 
-`
-`
+            <div class="card">
 
-`                <div class="card-body">`
+                <div class="card-header">{{ __('Register') }}</div>
 
-`                    <form method="POST" action="{{ route('register') }}">`
 
-`                        @csrf`
 
-`
-`
 
-`                        <div class="form-group row">`
+                <div class="card-body">
 
-`                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>`
+                    <form method="POST" action="{{ route('register') }}">
 
-`
-`
+                        @csrf
 
-`                            <div class="col-md-6">`
 
-`                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>`
 
-`
-`
 
-`                                @error('name')`
+                        <div class="form-group row">
 
-`                                    <span class="invalid-feedback" role="alert">`
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
-`                                        <strong>{{ $message }}</strong>`
 
-`                                    </span>`
 
-`                                @enderror`
 
-`                            </div>`
+                            <div class="col-md-6">
 
-`                        </div>`
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
-`
-`
 
-`                        <div class="form-group row">`
 
-`                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>`
 
-`
-`
+                                @error('name')
 
-`                            <div class="col-md-6">`
+                                    <span class="invalid-feedback" role="alert">
 
-`                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">`
+                                        <strong>{{ $message }}</strong>
 
-`
-`
+                                    </span>
 
-`                                @error('email')`
+                                @enderror
 
-`                                    <span class="invalid-feedback" role="alert">`
+                            </div>
 
-`                                        <strong>{{ $message }}</strong>`
+                        </div>
 
-`                                    </span>`
 
-`                                @enderror`
 
-`                            </div>`
 
-`                        </div>`
+                        <div class="form-group row">
 
-`
-`
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
-`                        <div class="form-group row">`
 
-`                            <label for="user_type" class="col-md-4 col-form-label text-md-right">{{ __('User Type') }}</label>`
 
-`
-`
 
-`{{--                        Note the select box here???--}}`
+                            <div class="col-md-6">
 
-`
-`
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
-`                            <div class="col-md-6">`
 
-`                                <select id="user_type" type="text" class="form-control @error('user_type') is-invalid @enderror" name="user_type" required>`
 
-`                                    <option value="Student">Student</option>`
 
-`                                    <option value="Teacher">Teacher</option>`
+                                @error('email')
 
-`                                </select>`
+                                    <span class="invalid-feedback" role="alert">
 
-`
-`
+                                        <strong>{{ $message }}</strong>
 
-`                                @error('user_type')`
+                                    </span>
 
-`                                <span class="invalid-feedback" role="alert">`
+                                @enderror
 
-`                                        <strong>{{ $message }}</strong>`
+                            </div>
 
-`                                    </span>`
+                        </div>
 
-`                                @enderror`
 
-`                            </div>`
 
-`                        </div>`
 
-`
-`
+                        <div class="form-group row">
 
-`                        <div class="form-group row">`
+                            <label for="user_type" class="col-md-4 col-form-label text-md-right">{{ __('User Type') }}</label>
 
-`                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>`
 
-`
-`
 
-`                            <div class="col-md-6">`
 
-`                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">`
+{{--                        Note the select box here???--}}
 
-`
-`
 
-`                                @error('password')`
 
-`                                    <span class="invalid-feedback" role="alert">`
 
-`                                        <strong>{{ $message }}</strong>`
+                            <div class="col-md-6">
 
-`                                    </span>`
+                                <select id="user_type" type="text" class="form-control @error('user_type') is-invalid @enderror" name="user_type" required>
 
-`                                @enderror`
+                                    <option value="Student">Student</option>
 
-`                            </div>`
+                                    <option value="Teacher">Teacher</option>
 
-`                        </div>`
+                                </select>
 
-`
-`
 
-`                        <div class="form-group row">`
 
-`                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>`
 
-`
-`
+                                @error('user_type')
 
-`                            <div class="col-md-6">`
+                                <span class="invalid-feedback" role="alert">
 
-`                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">`
+                                        <strong>{{ $message }}</strong>
 
-`                            </div>`
+                                    </span>
 
-`                        </div>`
+                                @enderror
 
-`
-`
+                            </div>
 
-`                        <div class="form-group row mb-0">`
+                        </div>
 
-`                            <div class="col-md-6 offset-md-4">`
 
-`                                <button type="submit" class="btn btn-primary">`
 
-`                                    {{ __('Register') }}`
 
-`                                </button>`
+                        <div class="form-group row">
 
-`                            </div>`
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
-`                        </div>`
 
-`                    </form>`
 
-`                </div>`
 
-`            </div>`
+                            <div class="col-md-6">
 
-`        </div>`
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-`    </div>`
 
-`</div>`
 
-`@endsection`
 
-`
-`
+                                @error('password')
+
+                                    <span class="invalid-feedback" role="alert">
+
+                                        <strong>{{ $message }}</strong>
+
+                                    </span>
+
+                                @enderror
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="form-group row">
+
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+
+
+
+
+                            <div class="col-md-6">
+
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="form-group row mb-0">
+
+                            <div class="col-md-6 offset-md-4">
+
+                                <button type="submit" class="btn btn-primary">
+
+                                    {{ __('Register') }}
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@endsection
+
+```
 
 
 
@@ -868,27 +861,28 @@ First, let’s store our API key and API secret in our .env file in our Laravel 
 
 
 
-`### ADD THESE LINES AT THE BOTTOM OF YOUR .env FILE, OR WHEREVER REALLY ###`
+```
+### ADD THESE LINES AT THE BOTTOM OF YOUR .env FILE, OR WHEREVER REALLY ###
 
-`
-`
 
-`VONAGE_API_KEY=your_api_key`
 
-`VONAGE_API_SECRET=your_api_secret`
+VONAGE_API_KEY=your_api_key
 
-`
-`
+VONAGE_API_SECRET=your_api_secret
 
-`### REST OF .ENV FILE ###`
 
+
+### REST OF .ENV FILE ###
+```
 
 
 Now, we'll need to set up a controller actually to set up sessions and generate tokens for new users. Let’s create one and call it SessionsController:
 
 
 
-`php artisan make:controller SessionsController`
+```bash
+php artisan make:controller SessionsController
+```
 
 
 
@@ -896,141 +890,136 @@ Let’s fill it with the necessary methods in app/Http/Controllers/SessionsContr
 
 
 
-`<?php`
+```
+<?php
 
-`
-`
 
-`namespace App\Http\Controllers;`
 
-`
-`
 
-`use Illuminate\Http\Request;`
+namespace App\Http\Controllers;
 
-`use App\Models\VirtualClass;`
 
-`    `
 
-`#Import necessary classes from the Vonage API (AKA OpenTok)`
 
-`use OpenTok\OpenTok;`
+use Illuminate\Http\Request;
 
-`use OpenTok\MediaMode;`
+use App\Models\VirtualClass;
 
-`use OpenTok\Role;`
+    
 
-`
-`
+#Import necessary classes from the Vonage API (AKA OpenTok)
 
-`
-`
+use OpenTok\OpenTok;
 
-`class SessionsController extends Controller`
+use OpenTok\MediaMode;
 
-`{`
+use OpenTok\Role;
 
-`
-`
 
-`    /** Creates a new virtual class for teachers`
 
-`     *`
 
-`     * @param Request $request`
 
-`     * @return \Illuminate\Http\RedirectResponse`
 
-`     */`
+class SessionsController extends Controller
 
-`    public function createClass(Request $request)`
+{
 
-`    {`
 
-`        // Get the currently signed in user`
 
-`        $user = $request->user();`
+    /** Creates a new virtual class for teachers
 
-`        // Throw 403 if student tries to create a class`
+     *
 
-`        if ($user->user_type === "Student") return back(403);`
+     * @param Request $request
 
-`        // Instantiate a new OpenTok object with our api key & secret`
+     * @return \Illuminate\Http\RedirectResponse
 
-`        $opentok = new OpenTok(env('VONAGE_API_KEY'), env('VONAGE_API_SECRET'));`
+     */
 
-`        // Creates a new session (Stored in the Vonage API cloud)`
+    public function createClass(Request $request)
 
-`        $session = $opentok->createSession(array('mediaMode' => MediaMode::ROUTED));`
+    {
 
-`        // Create a new virtual class that would be stored in db`
+        // Get the currently signed-in user
 
-`        $class = new VirtualClass();`
+        $user = $request->user();
 
-`        // Generate a name based on the name the teacher entered`
+        // Throw 403 if student tries to create a class
 
-`        $class->name = $user->name . "'s " . $request->input("name") . " class";`
+        if ($user->user_type === "Student") return back(403);
 
-`        // Store the unique ID of the session`
+        // Instantiate a new OpenTok object with our api key & secret
 
-`        $class->session_id = $session->getSessionId();`
+        $opentok = new OpenTok(env('VONAGE_API_KEY'), env('VONAGE_API_SECRET'));
 
-`        // Save this class as a relationship to the teacher`
+        // Creates a new session (Stored in the Vonage API cloud)
 
-`        $user->myClass()->save($class);`
+        $session = $opentok->createSession(array('mediaMode' => MediaMode::ROUTED));
 
-`        // Send the teacher to the classroom where real-time video goes on`
+        // Create a new virtual class that would be stored in db
 
-`        return redirect()->route('classroom', ['id' => $class->id]);`
+        $class = new VirtualClass();
 
-`    }`
+        // Generate a name based on the name the teacher entered
 
-`
-`
+        $class->name = $user->name . "'s " . $request->input("name") . " class";
 
-`    public function showClassRoom(Request $request, $id)`
+        // Store the unique ID of the session
 
-`    {`
+        $class->session_id = $session->getSessionId();
 
-`        // Get the currently authenticated user`
+        // Save this class as a relationship to the teacher
 
-`        $user = $request->user();`
+        $user->myClass()->save($class);
 
-`        // Find the virutal class associated by provided id`
+        // Send the teacher to the classroom where real-time video goes on
 
-`        $virtualClass = VirtualClass::findOrFail($id);`
+        return redirect()->route('classroom', ['id' => $class->id]);
 
-`        // Gets the session ID`
+    }
 
-`        $sessionId = $virtualClass->session_id;`
 
-`        // Instantiates new OpenTok object`
 
-`        $opentok = new OpenTok(env('VONAGE_API_KEY'), env('VONAGE_API_SECRET'));`
 
-`        // Generates token for client as a publisher that lasts for one week`
+    public function showClassRoom(Request $request, $id)
 
-`        $token = $opentok->generateToken($sessionId, ['role' => Role::PUBLISHER, 'expireTime' => time() + (7 * 24 * 60 * 60)]);`
+    {
 
-`        // Open the classroom with all needed info for clients to connect`
+        // Get the currently authenticated user
 
-`        return view('classroom', compact('token', 'user', 'sessionId'));`
+        $user = $request->user();
 
-`
-`
+        // Find the virtual class associated by provided id
 
-`    }`
+        $virtualClass = VirtualClass::findOrFail($id);
 
-`
-`
+        // Gets the session ID
 
-`}`
+        $sessionId = $virtualClass->session_id;
 
-`
-`
+        // Instantiates new OpenTok object
 
-`
-`
+        $opentok = new OpenTok(env('VONAGE_API_KEY'), env('VONAGE_API_SECRET'));
+
+        // Generates token for client as a publisher that lasts for one week
+
+        $token = $opentok->generateToken($sessionId, ['role' => Role::PUBLISHER, 'expireTime' => time() + (7 * 24 * 60 * 60)]);
+
+        // Open the classroom with all needed info for clients to connect
+
+        return view('classroom', compact('token', 'user', 'sessionId'));
+
+
+
+
+    }
+
+
+
+
+}
+
+```
 
 
 
@@ -1046,91 +1035,88 @@ We’ll also need to create routes for the controller. We’ll add these routes 
 
 
 
-`<?php`
+```
+<?php
 
-`
-`
 
-`use Illuminate\Support\Facades\Route;`
+use Illuminate\Support\Facades\Route;
 
-`
-`
 
-`/*`
 
-`|--------------------------------------------------------------------------`
 
-`| Web Routes`
+/*
+|--------------------------------------------------------------------------
 
-`|--------------------------------------------------------------------------`
+| Web Routes
 
-`|`
+|--------------------------------------------------------------------------
 
-`| Here is where you can register web routes for your application. These`
+|
 
-`| routes are loaded by the RouteServiceProvider within a group which`
+| Here is where you can register web routes for your application. These
 
-`| contains the "web" middleware group. Now create something great!`
+| routes are loaded by the RouteServiceProvider within a group which
 
-`|`
+| contains the "web" middleware group. Now create something great!
 
-`*/`
+|
 
-`
-`
+*/
 
-`Route::get('/', function () {`
 
-`    return view('welcome');`
 
-`});`
 
-`
-`
+Route::get('/', function () {
 
-`Auth::routes();`
+    return view('welcome');
 
-`
-`
+});
 
-`Route::get('/home', 'HomeController@index')->name('home');`
 
-`
-`
 
-`// Add this to your web.php file`
 
-`
-`
+Auth::routes();
 
-`// This line makes all routes in it to use the auth middleware, meaning only signed-in users can access these routes`
 
-`Route::middleware('auth')->group(function () {`
 
-`
-`
 
-`    // This route creates classes for teachers`
+Route::get('/home', 'HomeController@index')->name('home');
 
-`    Route::post("/create_class", 'SessionsController@createClass')`
 
-`        ->name('create_class');`
 
-`
-`
 
-`    // This route is used by both teachers and students to join a class`
+// Add this to your web.php file
 
-`    Route::get("/classroom/{id}", 'SessionsController@showClassRoom')`
 
-`        ->where('id', '[0-9]+')`
 
-`        ->name('classroom');`
 
-`});`
+// This line makes all routes in it to use the auth middleware, meaning only signed-in users can access these routes
 
-`
-`
+Route::middleware('auth')->group(function () {
+
+
+
+
+    // This route creates classes for teachers
+
+    Route::post("/create_class", 'SessionsController@createClass')
+
+        ->name('create_class');
+
+
+
+
+    // This route is used by both teachers and students to join a class
+
+    Route::get("/classroom/{id}", 'SessionsController@showClassRoom')
+
+        ->where('id', '[0-9]+')
+
+        ->name('classroom');
+
+});
+
+```
 
 
 
@@ -1142,82 +1128,80 @@ We’ll start with the app/Http/Controllers/HomeController:
 
 
 
-`<?php`
+```
+<?php
 
-`
-`
 
-`namespace App\Http\Controllers;`
 
-`
-`
+namespace App\Http\Controllers;
 
-`use Illuminate\Http\Request;`
 
-`use App\ClassModel as VirtualClass;`
 
-`
-`
 
-`class HomeController extends Controller`
+use Illuminate\Http\Request;
 
-`{`
+use App\ClassModel as VirtualClass;
 
-`    /**`
 
-`     * Create a new controller instance.`
 
-`     *`
 
-`     * @return void`
+class HomeController extends Controller
 
-`     */`
+{
 
-`    public function __construct()`
+    /**
 
-`    {`
+     * Create a new controller instance.
 
-`        $this->middleware('auth');`
+     *
 
-`    }`
+     * @return void
 
-`
-`
+     */
 
-`    /**`
+    public function __construct()
 
-`     * Show the application dashboard.`
+    {
 
-`     *`
+        $this->middleware('auth');
 
-`     * @return \Illuminate\Contracts\Support\Renderable`
+    }
 
-`     */`
 
-`    public function index(Request $request)`
 
-`    {`
 
-`        $user = $request->user();`
+    /**
 
-`        $classes = [];`
+     * Show the application dashboard.
 
-`        // If user is a student, give her a list of virtual classes`
+     *
 
-`        if ($user->user_type === "Student") {`
+     * @return \Illuminate\Contracts\Support\Renderable
 
-`            $classes = VirtualClass::orderBy('name', 'asc')->get();`
+     */
 
-`        }`
+    public function index(Request $request)
 
-`        return view('home', compact('user', 'classes'));`
+    {
 
-`    }`
+        $user = $request->user();
 
-`}`
+        $classes = [];
 
-`
-`
+        // If user is a student, give her a list of virtual classes
+
+        if ($user->user_type === "Student") {
+
+            $classes = VirtualClass::orderBy('name', 'asc')->get();
+
+        }
+
+        return view('home', compact('user', 'classes'));
+
+    }
+
+}
+```
 
 
 
@@ -1225,134 +1209,133 @@ Next resources/views/home.blade.php:
 
 
 
-`@extends('layouts.app')`
+```
+@extends('layouts.app')
 
-`
-`
 
-`@section('content')`
 
-`    <div class="container">`
+@section('content')
 
-`        <div class="row justify-content-center">`
+    <div class="container">
 
-`            <div class="col-md-8">`
+        <div class="row justify-content-center">
 
-`                <div class="card">`
+            <div class="col-md-8">
 
-`                    <div class="card-header">{{$user->user_type}} {{ __('Dashboard') }}</div>`
+                <div class="card">
 
-`
-`
+                    <div class="card-header">{{$user->user_type}} {{ __('Dashboard') }}</div>
 
-`                    <div class="card-body">`
 
-`                        @if (session('status'))`
 
-`                            <div class="alert alert-success" role="alert">`
 
-`                                {{ session('status') }}`
+                    <div class="card-body">
 
-`                            </div>`
+                        @if (session('status'))
 
-`                        @endif`
+                            <div class="alert alert-success" role="alert">
 
-`                        @if($user->user_type === "Student")`
+                                {{ session('status') }}
 
-`                            <h3>These are the ongoing classes available on the system</h3>`
+                            </div>
 
-`                            @foreach($classes as $key=>$class)`
+                        @endif
 
-`                                <a href="{{route('classroom', ['id' => $class->id])}}">{{$key + 1}}. {{$class->name}}</a>`
+                        @if($user->user_type === "Student")
 
-`                                <br />`
+                            <h3>These are the ongoing classes available on the system</h3>
 
-`                            @endforeach`
+                            @foreach($classes as $key=>$class)
 
-`                        @else`
+                                <a href="{{route('classroom', ['id' => $class->id])}}">{{$key + 1}}. {{$class->name}}</a>
 
-`                            <h4>Welcome {{$user->name}}. Fill the form below to create a class</h4>`
+                                <br />
 
-`                            <form method="POST" action="{{ route('create_class') }}">`
+                            @endforeach
 
-`                                @csrf`
+                        @else
 
-`
-`
+                            <h4>Welcome {{$user->name}}. Fill the form below to create a class</h4>
 
-`                                <div class="form-group row">`
+                            <form method="POST" action="{{ route('create_class') }}">
 
-`                                    <label for="name" class="col-md-12 col-form-label">{{ __('Class Name') }}</label>`
+                                @csrf
 
-`
-`
 
-`                                    <div class="col-md-6">`
 
-`                                        <input id="name" type="text"`
 
-`                                               class="form-control @error('name') is-invalid @enderror" name="name"`
+                                <div class="form-group row">
 
-`                                               value="{{ old('name') }}" required autocomplete="name" autofocus>`
+                                    <label for="name" class="col-md-12 col-form-label">{{ __('Class Name') }}</label>
 
-`
-`
 
-`                                        @error('name')`
 
-`                                        <span class="invalid-feedback" role="alert">`
 
-`                                        <strong>{{ $message }}</strong>`
+                                    <div class="col-md-6">
 
-`                                    </span>`
+                                        <input id="name" type="text"
 
-`                                        @enderror`
+                                               class="form-control @error('name') is-invalid @enderror" name="name"
 
-`                                    </div>`
+                                               value="{{ old('name') }}" required autocomplete="name" autofocus>
 
-`                                </div>`
 
-`
-`
 
-`                                <div class="form-group row mb-0">`
 
-`                                    <div class="col-md-6">`
+                                        @error('name')
 
-`                                        <button type="submit" class="btn btn-primary">`
+                                        <span class="invalid-feedback" role="alert">
 
-`                                            {{ __('Create Class') }}`
+                                        <strong>{{ $message }}</strong>
 
-`                                        </button>`
+                                    </span>
 
-`                                    </div>`
+                                        @enderror
 
-`                                </div>`
+                                    </div>
 
-`                            </form>`
+                                </div>
 
-`
-`
 
-`                        @endif`
 
-`
-`
 
-`                    </div>`
+                                <div class="form-group row mb-0">
 
-`                </div>`
+                                    <div class="col-md-6">
 
-`            </div>`
+                                        <button type="submit" class="btn btn-primary">
 
-`        </div>`
+                                            {{ __('Create Class') }}
 
-`    </div>`
+                                        </button>
 
-`@endsection`
+                                    </div>
 
-`
-`
+                                </div>
+
+                            </form>
+
+
+
+
+                        @endif
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+@endsection
+
+```
 
 
 
@@ -1364,245 +1347,246 @@ This either provides a form to create a class if the user is a teacher or a virt
 
 
 
-In order to setup the client (which would be using the web SDK), we’ll need to create a blade file called resources/views/classroom.blade.php to match the showClassroom() method on our SessionsController. The file would need to have a link to the SDK’s CDN. Our frontend should look just like this:
+In order to set up the client (which would be using the web SDK), we’ll need to create a blade file called resources/views/classroom.blade.php to match the showClassroom() method on our SessionsController. The file would need to have a link to the SDK’s CDN. Our frontend should look just like this:
 
 
 
-`<html>`
+```
+<html>
 
-`    <head>`
+    <head>
 
-`        <title> OpenTok Getting Started </title>`
+        <title> OpenTok Getting Started </title>
 
-`        <style>`
+        <style>
 
-`          body, html {`
+          body, html {
 
-`              background-color: gray;`
+              background-color: gray;
 
-`              height: 100%;`
+              height: 100%;
 
-`          }`
+          }
 
-`          `
+          
 
-`          #videos {`
+          #videos {
 
-`              position: relative;`
+              position: relative;
 
-`              width: 100%;`
+              width: 100%;
 
-`              height: 100%;`
+              height: 100%;
 
-`              margin-left: auto;`
+              margin-left: auto;
 
-`              margin-right: auto;`
+              margin-right: auto;
 
-`          }`
+          }
 
-`          `
+          
 
-`          #subscriber {`
+          #subscriber {
 
-`              position: absolute;`
+              position: absolute;
 
-`              left: 0;`
+              left: 0;
 
-`              top: 0;`
+              top: 0;
 
-`              width: 100%;`
+              width: 100%;
 
-`              height: 100%;`
+              height: 100%;
 
-`              z-index: 10;`
+              z-index: 10;
 
-`          }`
+          }
 
-`          `
+          
 
-`          #publisher {`
+          #publisher {
 
-`              position: absolute;`
+              position: absolute;
 
-`              width: 360px;`
+              width: 360px;
 
-`              height: 240px;`
+              height: 240px;
 
-`              bottom: 10px;`
+              bottom: 10px;
 
-`              left: 10px;`
+              left: 10px;
 
-`              z-index: 100;`
+              z-index: 100;
 
-`              border: 3px solid white;`
+              border: 3px solid white;
 
-`              border-radius: 3px;`
+              border-radius: 3px;
 
-`          }`
+          }
 
-`        </style>`
+        </style>
 
-`        <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>`
+        <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
 
-`    </head>`
+    </head>
 
-`    <body>`
+    <body>
 
-`        <div id="videos">`
+        <div id="videos">
 
-`            <div id="subscriber"></div>`
+            <div id="subscriber"></div>
 
-`            <div id="publisher"></div>`
+            <div id="publisher"></div>
 
-`        </div>`
+        </div>
 
-`
-`
 
-`        <script type="text/javascript">`
 
-`            var session;`
 
-`            var connectionCount = 0;`
+        <script type="text/javascript">
 
-`            var apiKey = "{{env('VONAGE_API_KEY')}}";`
+            var session;
 
-`            var sessionId = "{{$sessionId}}";`
+            var connectionCount = 0;
 
-`            var token = "{{$token}}";`
+            var apiKey = "{{env('VONAGE_API_KEY')}}";
 
-`            var publisher;`
+            var sessionId = "{{$sessionId}}";
 
-`
-`
+            var token = "{{$token}}";
 
-`            function connect() {`
+            var publisher;
 
-`                // Replace apiKey and sessionId with your own values:`
 
-`                session = OT.initSession(apiKey, sessionId);`
 
-`                session.on("streamCreated", function (event) {`
 
-`                    console.log("New stream in the session: " + event.stream.streamId);`
+            function connect() {
 
-`                    session.subscribe(event.stream, 'subscriber', {`
+                // Replace apiKey and sessionId with your own values:
 
-`                        insertMode: 'append',`
+                session = OT.initSession(apiKey, sessionId);
 
-`                        width: '100%',`
+                session.on("streamCreated", function (event) {
 
-`                        height: '100%'`
+                    console.log("New stream in the session: " + event.stream.streamId);
 
-`                    });`
+                    session.subscribe(event.stream, 'subscriber', {
 
-`                });`
+                        insertMode: 'append',
 
-`                session.on({`
+                        width: '100%',
 
-`                    connectionCreated: function (event) {`
+                        height: '100%'
 
-`                        connectionCount++;`
+                    });
 
-`                        alert(connectionCount + ' connections.');`
+                });
 
-`                    },`
+                session.on({
 
-`                    connectionDestroyed: function (event) {`
+                    connectionCreated: function (event) {
 
-`                        connectionCount--;`
+                        connectionCount++;
 
-`                        alert(connectionCount + ' connections.');`
+                        alert(connectionCount + ' connections.');
 
-`                    },`
+                    },
 
-`                    sessionDisconnected: function sessionDisconnectHandler(event) {`
+                    connectionDestroyed: function (event) {
 
-`                        // The event is defined by the SessionDisconnectEvent class`
+                        connectionCount--;
 
-`                        alert('Disconnected from the session.');`
+                        alert(connectionCount + ' connections.');
 
-`                        document.getElementById('disconnectBtn').style.display = 'none';`
+                    },
 
-`                        if (event.reason == 'networkDisconnected') {`
+                    sessionDisconnected: function sessionDisconnectHandler(event) {
 
-`                            alert('Your network connection terminated.')`
+                        // The event is defined by the SessionDisconnectEvent class
 
-`                        }`
+                        alert('Disconnected from the session.');
 
-`                    }`
+                        document.getElementById('disconnectBtn').style.display = 'none';
 
-`                });`
+                        if (event.reason == 'networkDisconnected') {
 
-`                var publisher = OT.initPublisher('publisher', {`
+                            alert('Your network connection terminated.')
 
-`                    insertMode: 'append',`
+                        }
 
-`                    width: '100%',`
+                    }
 
-`                    height: '100%'`
+                });
 
-`                }, error => {`
+                var publisher = OT.initPublisher('publisher', {
 
-`                    if (error) {`
+                    insertMode: 'append',
 
-`                        alert(error.message);`
+                    width: '100%',
 
-`                    }`
+                    height: '100%'
 
-`                });`
+                }, error => {
 
-`                // Replace token with your own value:`
+                    if (error) {
 
-`                session.connect(token, function (error) {`
+                        alert(error.message);
 
-`                    if (error) {`
+                    }
 
-`                        alert('Unable to connect: ', error.message);`
+                });
 
-`                    } else {`
+                // Replace token with your own value:
 
-`                        // document.getElementById('disconnectBtn').style.display = 'block';`
+                session.connect(token, function (error) {
 
-`                        alert('Connected to the session.');`
+                    if (error) {
 
-`                        connectionCount = 1;`
+                        alert('Unable to connect: ', error.message);
 
-`                        if (session.capabilities.publish == 1) {`
+                    } else {
 
-`                            session.publish(publisher);`
+                        // document.getElementById('disconnectBtn').style.display = 'block';
 
-`                        } else {`
+                        alert('Connected to the session.');
 
-`                            alert("You cannot publish an audio-video stream.");`
+                        connectionCount = 1;
 
-`                        }`
+                        if (session.capabilities.publish == 1) {
 
-`                    }`
+                            session.publish(publisher);
 
-`                });`
+                        } else {
 
-`            }`
+                            alert("You cannot publish an audio-video stream.");
 
-`
-`
+                        }
 
-`            connect();`
+                    }
 
-`
-`
+                });
 
-`
-`
+            }
 
-`        </script>`
 
-`    </body>`
 
-`</html>`
 
-`
-`
+            connect();
+
+
+
+
+
+
+
+        </script>
+
+    </body>
+
+</html>
+```
+
+
 
 
 
@@ -1610,13 +1594,9 @@ To test the application, run the following command your project root directory.
 
 
 
-`
-`
-
-`php artisan serve`
-
-`
-`
+```bash
+php artisan serve
+```
 
 
 
