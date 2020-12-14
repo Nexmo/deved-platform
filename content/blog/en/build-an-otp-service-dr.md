@@ -13,10 +13,10 @@ updated_at: 2020-10-23T14:16:58.643Z
 category: tutorial
 tags:
   - dispatch-api
+comments: true
 spotlight: true
 redirect: ""
 canonical: ""
-comments: true
 ---
 
 One-time passwords (OTPs) have become quite familiar in recent times, mainly due to a security requirement that traditional passwords do not guarantee. While the protection of the traditional password is the responsibility of the user, who as we well know often does not care enough, the OTP is practically self-protected because it is generated randomly, and its validity is limited in time.
@@ -25,8 +25,8 @@ You can use OTPs instead of traditional passwords, or to reinforce the tradition
 
 In this article we will see how to implement a basic OTP service based on two Web APIs:
 
-* the first API allows you to create the OTP and to send it to the user via Facebook Messenger as the primary medium, or via SMS as a fallback medium</li>
-* the second API allows the user to verify the OTP he received</li>
+* the first API allows you to create the OTP and to send it to the user via Facebook Messenger as the primary medium, or via SMS as a fallback medium
+* the second API allows the user to verify the OTP he received
 
 The OTP service has no user interface. It is conceived as a microservice you can invoke from your application to generate and verify OTPs.
 
@@ -38,9 +38,7 @@ In order to use the OTP service shown in this article, you need:
 * A [Messenger](https://www.messenger.com/) account and a phone enabled to receive SMS
 * An application to send HTTP request, such as [curl](https://curl.haxx.se/) or [Postman](https://www.getpostman.com/)
 
-## Vonage API Account
-
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2019-02-07-build-an-otp-service-dr). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2019-02-07-build-an-otp-service-dr) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2019-02-07-build-an-otp-service-dr).
+<sign-up></sign-up>
 
 ## Setup the Project
 
