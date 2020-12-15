@@ -6,16 +6,16 @@ description: Build a learning platform with video/audio capabilities, SMS
   and Vonage's APIs.
 thumbnail: /content/blog/how-to-build-a-learning-platform-using-vonage-javascript-typescript-react-express-and-apollo-graphql/blog_remote-learning-platform_1200x600.jpg
 author: hector-zelaya
-published: false
-published_at: 2020-12-13T22:45:10.157Z
-updated_at: 2020-12-13T22:45:10.183Z
+published: true
+published_at: 2020-12-15T13:12:37.951Z
+updated_at: 2020-12-15T13:12:39.218Z
 category: tutorial
 tags:
   - video-api
   - react
   - graphql
 comments: true
-spotlight: false
+spotlight: true
 redirect: ""
 canonical: ""
 outdated: false
