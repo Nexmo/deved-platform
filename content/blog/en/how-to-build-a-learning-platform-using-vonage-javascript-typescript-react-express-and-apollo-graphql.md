@@ -4,7 +4,8 @@ title: How to Build a Learning Platform using Vonage, JavaScript/TypeScript,
 description: Build a learning platform with video/audio capabilities, SMS
   notifications, and passwordless authentication using React, Apollo GraphQL,
   and Vonage's APIs.
-author: garann-means
+thumbnail: /content/blog/how-to-build-a-learning-platform-using-vonage-javascript-typescript-react-express-and-apollo-graphql/blog_remote-learning-platform_1200x600.jpg
+author: hector-zelaya
 published: false
 published_at: 2020-12-13T22:45:10.157Z
 updated_at: 2020-12-13T22:45:10.183Z
