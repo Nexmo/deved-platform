@@ -2,7 +2,7 @@
 title: Receiving an SMS with PHP
 description: Go from zero to being able to receive inbound SMS messages in your
   PHP application—in just 20 lines of code—with the Vonage SMS API.
-thumbnail: /content/blog/receiving-an-sms-with-php-dr/inbound-sms-messages.png
+thumbnail: /content/blog/receiving-an-sms-with-php/blog_php_sms_1200x600.png
 author: mheap
 published: true
 published_at: 2018-06-19T09:20:00.000Z
