@@ -1,7 +1,7 @@
 ---
 title: Play an Audio File Into a Voice Call With PHP
 description: Learn how to play an MP3 audio file into a voice call with PHP
-thumbnail: /content/blog/play-audio-voice-call-php-dr/play-audio-file-php-1.png
+thumbnail: /content/blog/play-an-audio-file-into-a-voice-call-with-php/blog_php_audiofile_1200x600.png
 author: mheap
 published: true
 published_at: 2019-04-12T08:25:54.000Z
