@@ -31,13 +31,15 @@ Today we'll take a look at how it's possible to build our own learning platform 
 
 To build and run the application you'll need the following resources:
 
-* A Vonage API account. [Sign up free here](https://dashboard.nexmo.com/sign-up).
+* A Vonage API account.
 * A Vonage Video API account. [Sign up free here](https://tokbox.com/account/user/signup).
 * A Virtual Phone Number. Once you have your Vonage API account [see how you can get a number here](https://developer.nexmo.com/numbers/guides/number-management#rent-a-virtual-number).
 * A pair of key & secret for a Vonage Video API project. You can create a project from your [Vonage Video API account page](https://tokbox.com/account/).
 * An AWS account and a key & secret pair.
 * An AWS S3 bucket to upload files.
 * Node 12 and NPM 6 installed in your system.
+
+<sign-up></sign-up>
 
 ## What We Will Build
 
