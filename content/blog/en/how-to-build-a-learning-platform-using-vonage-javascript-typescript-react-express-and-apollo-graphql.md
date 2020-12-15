@@ -1,6 +1,5 @@
 ---
-title: How to Build a Learning Platform using Vonage, JavaScript/TypeScript,
-  React, Express, and Apollo GraphQL
+title: How to Build a Learning Platform With React, Express and Apollo GraphQL
 description: Build a learning platform with video/audio capabilities, SMS
   notifications, and passwordless authentication using React, Apollo GraphQL,
   and Vonage's APIs.
