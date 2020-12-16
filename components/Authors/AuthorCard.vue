@@ -1,6 +1,6 @@
 <template>
   <div
-    class="overflow-hidden bg-white rounded-lg shadow-lg flex flex-row md:block"
+    class="overflow-hidden bg-white rounded-lg shadow-lg flex flex-col sm:flex-row md:block"
     vocab="http://schema.org/"
     typeof="Person"
   >
@@ -8,7 +8,7 @@
       <nuxt-link :to="localePath(`/authors/${author.username}`)">
         <img
           v-if="!author.image_url"
-          class="object-cover w-32 md:w-full rounded-full md:rounded-none md:block"
+          class="object-cover w-24 sm:w-32 md:w-full rounded-full md:rounded-none md:block"
           src="/content/images/placeholder.svg"
           property="image"
           :alt="`Profile pic of ${author.name}`"
@@ -18,20 +18,20 @@
           :src="author.image_url"
           property="image"
           placeholder="/content/images/placeholder.svg"
-          class="object-cover w-32 md:w-full rounded-full md:rounded-none md:block"
+          class="object-cover w-24 sm:w-32 md:w-full rounded-full md:rounded-none md:block"
           :alt="`Profile pic of ${author.name}`"
         />
         <img
           v-else
           :src="author.image_url"
           property="image"
-          class="object-cover w-32 md:w-full rounded-full md:rounded-none md:block"
+          class="object-cover w-24 sm:w-32 md:w-full rounded-full md:rounded-none md:block"
           :alt="`Profile pic of ${author.name}`"
         />
       </nuxt-link>
     </figure>
     <div>
-      <header class="px-4 my-4">
+      <header class="px-4 mb-4 sm:my-4">
         <h3 property="name" class="flex text-lg font-medium">
           <nuxt-link :to="localePath(`/authors/${author.username}`)">
             {{ author.name }}
