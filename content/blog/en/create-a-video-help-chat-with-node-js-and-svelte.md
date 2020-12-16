@@ -3,10 +3,11 @@ title: Create a Video Help Chat With Node.js and Svelte
 description: Svelte is an approachable choice for building a video help chat in
   a component with the Vonage Video API, powered by Express on the backend. This
   tutorial gets you started.
+thumbnail: /content/blog/create-a-video-help-chat-with-node-js-and-svelte/blog_node-js_svelte_video_1200x600.png
 author: garann-means
-published: false
-published_at: 2020-12-01T21:32:31.359Z
-updated_at: 2020-12-01T21:32:31.377Z
+published: true
+published_at: 2020-12-16T14:30:35.574Z
+updated_at: 2020-12-16T14:30:37.775Z
 category: tutorial
 tags:
   - node
