@@ -139,7 +139,7 @@ While you have `App.svelte` open, go ahead and add references to the component w
 </script>
 ```
 
-At the bottom of your page, above the `<script>` tag, add the component itself:
+At the bottom of your page, above the `<style>` tag, add the component itself:
 
 ```html
 <main>
@@ -364,7 +364,7 @@ Last, with your publisher ready to go, connect to the session with `session.conn
 
 ## Try It Out
 
-If your server's been running this whole time, you should be able to see some or all of your code working in your open browser tab. You probably need to restart your server, though. In your terminal, shut things down by pressing Ctrl+C, then start Express and Svelte again with `npm run serve'. 
+If your server's been running this whole time, you should be able to see some or all of your code working in your open browser tab. You probably need to restart your server, though. In your terminal, shut things down by pressing Ctrl+C, then start Express and Svelte again with `npm run serve`. 
 
 Open or return to `localhost:5000` in your browser. The easiest way to try the chat is to open another browser and also go to `localhost:5000`. This is not very sophisticated, but the echo you hear should confirm for you the chat is working.
 
