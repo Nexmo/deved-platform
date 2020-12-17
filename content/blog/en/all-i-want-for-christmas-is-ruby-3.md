@@ -7,7 +7,7 @@ author: ben-greenberg
 published: true
 published_at: 2020-12-17T14:59:40.300Z
 updated_at: 2020-12-17T14:59:40.318Z
-category: tutorial
+category: inspiration
 tags:
   - ruby
   - ruby-sdk
