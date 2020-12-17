@@ -39,6 +39,12 @@
   force = true
 
 [[redirects]]
+  from = "/onehack"
+  to = "/courses/onehack"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/api/live-on-twitch"
   to = "/.netlify/functions/live-on-twitch"
   status = 200

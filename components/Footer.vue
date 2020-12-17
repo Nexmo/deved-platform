@@ -75,7 +75,7 @@
           <h4>Content</h4>
           <ul>
             <li><nuxt-link to="/authors">Authors</nuxt-link></li>
-            <li><nuxt-link to="/blog">Blog Posts</nuxt-link></li>
+            <li><nuxt-link to="/courses/onehack">Learn to Code</nuxt-link></li>
             <li><nuxt-link to="/blog/spotlight">Spotlight Posts</nuxt-link></li>
           </ul>
         </div>
