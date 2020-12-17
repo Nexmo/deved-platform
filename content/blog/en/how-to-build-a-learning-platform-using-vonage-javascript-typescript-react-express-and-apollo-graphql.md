@@ -54,7 +54,7 @@ The demo code is divided into a `server` folder that contains an [Apollo GraphQL
 
 Before you start make sure to go into each folder and install dependencies using npm, as shown below:
 
-```shellbash
+```shell
 cd server/
 npm install
 cd ../client
@@ -67,7 +67,7 @@ In the `server` folder, on the other hand, rename `app.envs` file to `.env` you 
 
 If you want to run the finished product, open two separate terminal windows and use npm to start both applications as shown below:
 
-```shellbash
+```shell
 # In Terminal 1 start the server in development mode
 cd server/
 npm run dev
@@ -91,6 +91,7 @@ Now let's say you want to create an assignment where students have to upload a P
 
 To do so, head to the `Homeworks` page and create a new Homework by setting a description. Then, as a student, click on the `Upload` link.
 
+<<<<<<< HEAD
 ![Creating an Assignment](/content/blog/how-to-build-a-learning-platform-with-react-express-and-apollo-graphql/creating_assignment.png "Creating an Assignment")
 
 To upload the file, the student has to provide the same phone number that was used by the teacher at creation time. A verification code will be sent to the phone number and after providing it to the application, the student can upload the file.
@@ -102,6 +103,19 @@ To upload the file, the student has to provide the same phone number that was us
 The teacher can see the files each student has uploaded per assignment by clicking the automatically generated UUID of the homework.
 
 ![Seeing assignments](/content/blog/how-to-build-a-learning-platform-with-react-express-and-apollo-graphql/seeing_assignments.png "Seeing assignments")
+=======
+![Creating an Assignment](/content/blog/how-to-build-a-learning-platform-using-vonage-javascript-typescript-react-express-and-apollo-graphql/creating_assignment.png "Creating an Assignment")
+
+To upload the file, the student has to provide the same phone number that was used by the teacher at creation time. A verification code will be sent to the phone number and after providing it to the application, the student can upload the file.
+
+![Passwordless Login](/content/blog/how-to-build-a-learning-platform-using-vonage-javascript-typescript-react-express-and-apollo-graphql/passwordless_login.png "Passwordless Login")
+
+![Uploading a File](/content/blog/how-to-build-a-learning-platform-using-vonage-javascript-typescript-react-express-and-apollo-graphql/uploading_files.png "Uploading a File")
+
+The teacher can see the files each student has uploaded per assignment by clicking the automatically generated UUID of the homework.
+
+![Seeing assignments](/content/blog/how-to-build-a-learning-platform-using-vonage-javascript-typescript-react-express-and-apollo-graphql/seeing_assignments.png "Seeing assignments")
+>>>>>>> stage
 
 ## Getting Familiar with the Starting Code
 
@@ -117,7 +131,7 @@ The server folder is composed of a GraphQL server powered by Express. The config
 
 Type Definitions is where GraphQL describes the data that a client can consume. This is done using types. Type Definitions are configured in the `server/src/typeDefs.js` file. Below are some examples of the types for the demo code:
 
-```javascriptjs
+```js
 type Student {
   phoneNumber: String!
   firstName: String!
@@ -134,7 +148,7 @@ The most important types are the `Query` and `Mutation` types, which actually ex
 
 Below are the queries and mutations defined for the demo code:
 
-```javascriptjs
+```js
 type Query {
   homeworks: [Homework]
   homework(uuid: String): Homework
@@ -165,7 +179,7 @@ The beauty with GraphQL is that you define the behavior of these queries and mut
 
 In the demo code, resolvers are assigned to each query and mutation in the `server/src/resolvers.js` file, while the actual resolver functions are located under the `server/src/graphql` folder. Currently, the resolvers are only throwing a `NOT_IMPLEMENTED` exception, but we will change that throughout this article.
 
-```javascriptjs
+```js
 const saveHomework = async (_, { description }, __, ___) => {
   throw new Error(NOT_IMPLEMENTED);
 };
@@ -214,7 +228,7 @@ To create an audio/video session in the Vonage Video API we will be using the `o
 
 In the `server/src/services/vonage/videoApi.js` file, let's populate the `initializeOpentok` function. We will return a singleton instance of the `opentok` variable, this will ensure that the same instance is returned every time we call the function. Note how we are importing the key and secret we defined previously as an environment variable using the `apiKey` and `apiSecret` values from an already configured `../../utils/envs` file.
 
-```javascriptjs
+```js
 // server/src/services/vonage/videoApi.js
 ...
 const { vonageVideoApiKey : apiKey, vonageVideoApiSecret : apiSecret } = require('../../util/envs');
@@ -228,7 +242,7 @@ const initializeOpentok = () => {
 
 The next step is to actually create the session. To do so we will use the `opentok.createSession` function. This function receives an object that sets the session as `routed`. A `routed` session means that we will use Vonage's Media Servers, which allows decreasing bandwidth usage in multiparty sessions and also permits us to enable advanced capabilities such as recordings and SIP interconnect.
 
-```javascriptjs
+```js
 // server/src/services/vonage/videoApi.js
 ...
 const opentokSessionArgs = {
@@ -250,7 +264,7 @@ const createSession = () => {
 
 Finally, we will be adding a function for generating JWT tokens that will be used to authenticate users in the context of a session and also set permissions.
 
-```javascriptjs
+```js
 // server/src/services/vonage/videoApi.js
 ...
 const generateToken = (sessionId) => {
@@ -272,7 +286,7 @@ For creating sessions these are the steps we will follow:
 5. Generate a token for the session.
 6. Return the data, honoring the format defined in the type definition for the mutation response.
 
-```javascriptjs
+```js
 // server/src/graphql/videoApi.js
 ...
 const startSession = async (_, __, ___, ____) => {
@@ -314,7 +328,7 @@ const startSession = async (_, __, ___, ____) => {
 
 The Mutation for starting the session, along with the response type, is already defined at `server/src/typeDefs.js`.
 
-```javascriptjs
+```js
 // server/src/typeDefs.js
 ...
 type SessionResponse {
@@ -333,7 +347,7 @@ type Mutation {
 
 The resolver function is already assigned too. We can see this in the `server/src/resolver.js` file:
 
-```javascriptjs
+```js
 // server/src/resolvers.js
 const {
   ...,
@@ -360,7 +374,7 @@ Next, we need to create a resolver function that allows students to join an alre
 4. Use the session to generate a token for the student.
 5. Return data, honoring the format set in the type definition for the mutation.
 
-```javascriptjs
+```js
 // server/src/graphql/videoApi.js
 ...
 const joinSession = async (_, { uuid }, __, ___) => {
@@ -391,7 +405,7 @@ const joinSession = async (_, { uuid }, __, ___) => {
 
 Same as with the previous function, the resolver is already connected with the type definition. The only difference is that this time instead of a mutation, it's a query.
 
-```javascriptjs
+```js
 // server/src/typeDefs.js
 type Query {
   ...
@@ -610,7 +624,7 @@ Let's start working on the server code by allowing a teacher to create a student
 
 Open the `server/src/graphql/student.js` file, and populate the resolver functions as follows:
 
-```javascriptjs
+```js
 // server/src/graphql/student.js
 // import the "database" service
 const { students } = require('../services/db');
@@ -636,7 +650,7 @@ const getStudents = (_, __, ___, ____) => {
 
 Next, let's add the Vonage magic to send notifications. To do so we will use the `@vonage/server-sdk` npm package which is already preinstalled and initialized as a singleton instance in the `server/src/services/vonage/vonage.js` file:
 
-```javascriptjs
+```js
 // server/src/services/vonage/vonage.js
 // import the npm package
 const Vonage = require('@vonage/server-sdk');
@@ -667,7 +681,7 @@ module.exports = {
 
 Open the `server/src/services/vonage/sms.js` file and populate the `sendSms` function as follows:
 
-```javascriptjs
+```js
 // server/src/services/vonage/sms.js
 ...
 const sendSms = (to, text) => {
@@ -1006,7 +1020,7 @@ The first thing we need to do is allow for actual homework and homework files to
 
 Let's start with the resolvers for creating and retrieving homework and homework files. Open the `server/src/graphql/homework.js` file, under `server`, and populate the resolvers as follow:
 
-```javascriptjs
+```js
 // src/graphql/homework.js
 ...
 const saveHomework = async (_, { description }, __, ___) => {
@@ -1067,7 +1081,7 @@ const getHomeworkFiles = (_, { uuid }, __, ___) => {
 
 Next, let's add a mutation for pre-signing a POST request that can be used later in the client-side code to upload the file to S3. To do so, we are using the `aws-sdk` npm package. The service is already configured in `server/src/services/aws/s3.js`.
 
-```javascriptjs
+```js
 // server/src/services/aws/s3.js
 ...
 const presignedPostDocument = (keyName, isPublic = false) => {
@@ -1099,7 +1113,7 @@ const presignedPostDocument = (keyName, isPublic = false) => {
 
 So all we need to do is to actually consume the service in a new mutation. Open the `server/src/graphql/s3.js` file, and populate the `presignDocument` resolver function as follows:
 
-```javascriptjs
+```js
 // server/src/graphql/s3.js
 ...
 const presignDocument = async (_, { fileName, isPublic, token }, __, ___) => {
@@ -1128,7 +1142,7 @@ const presignDocument = async (_, { fileName, isPublic, token }, __, ___) => {
 
 Now it's time to set up the Vonage magic for passwordless authentication. To do this, we will use the Verify API. First, let's create the service. Open the `server/src/services/vonage/verify.js` file, and populate the `verifyRequest` and `checkCode` functions as follows:
 
-```javascriptjs
+```js
 // server/src/services/vonage/verify.js
 ...
 const verifyRequest = (number) => {
@@ -1177,7 +1191,7 @@ const checkCode = (code, request_id) => {
 
 Finally, let's expose these services through GraphQL. Open the `server/src/graphql/vonage.js` file and populate the `verifyRequestResolver` and `checkCodeResolver` resolver functions as follows:
 
-```javascriptjs
+```js
 // server/src/graphql/vonage.js
 ...
 const verifyRequestResolver = async (_, { number }, __, ___) => {

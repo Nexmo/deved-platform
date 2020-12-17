@@ -1,3 +1,15 @@
+# [2.4.0](https://github.com/Nexmo/deved-platform/compare/v2.3.0...v2.4.0) (2020-12-17)
+
+
+### Bug Fixes
+
+* image urls never changed for uploaded images ([#552](https://github.com/Nexmo/deved-platform/issues/552)) ([d921c92](https://github.com/Nexmo/deved-platform/commit/d921c92a012b4ca93ab1a53a5fcc49cd12d5a955))
+
+
+### Features
+
+* Added Course Functionality ([#289](https://github.com/Nexmo/deved-platform/issues/289)) ([b610c50](https://github.com/Nexmo/deved-platform/commit/b610c501b00c2eac8a2260bba00956049a241731))
+
 # [2.3.0](https://github.com/Nexmo/deved-platform/compare/v2.2.2...v2.3.0) (2020-11-27)
 
 
