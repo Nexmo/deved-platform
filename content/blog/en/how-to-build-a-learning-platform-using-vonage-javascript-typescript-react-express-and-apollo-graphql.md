@@ -91,17 +91,17 @@ Now let's say you want to create an assignment where students have to upload a P
 
 To do so, head to the `Homeworks` page and create a new Homework by setting a description. Then, as a student, click on the `Upload` link.
 
-![Creating an Assignment](images/creating_assignment.png "Creating an Assignment")
+![Creating an Assignment](/content/blog/how-to-build-a-learning-platform-with-react-express-and-apollo-graphql/creating_assignment.png "Creating an Assignment")
 
 To upload the file, the student has to provide the same phone number that was used by the teacher at creation time. A verification code will be sent to the phone number and after providing it to the application, the student can upload the file.
 
-![Passwordless Login](images/passwordless_login.png "Passwordless Login")
+![Passwordless Login](/content/blog/how-to-build-a-learning-platform-with-react-express-and-apollo-graphql/passwordless_login.png "Passwordless Login")
 
-![Uploading a File](images/uploading_files.png "Uploading a File")
+![Uploading a File](/content/blog/how-to-build-a-learning-platform-with-react-express-and-apollo-graphql/uploading_files.png "Uploading a File")
 
 The teacher can see the files each student has uploaded per assignment by clicking the automatically generated UUID of the homework.
 
-![Seeing assignments](images/seeing_assignments.png "Seeing assignments")
+![Seeing assignments](/content/blog/how-to-build-a-learning-platform-with-react-express-and-apollo-graphql/seeing_assignments.png "Seeing assignments")
 
 ## Getting Familiar with the Starting Code
 
