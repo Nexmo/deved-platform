@@ -2,6 +2,7 @@
 title: All I Want For Christmas Is Ruby 3
 description: The upcoming release of Ruby 3 includes many things to be excited
   about, including Ruby Signatures, Ruby Actors, and more pattern matching.
+thumbnail: /content/blog/all-i-want-for-christmas-is-ruby-3/blog_ruby-christmas_1200x600.jpg
 author: ben-greenberg
 published: true
 published_at: 2020-12-17T14:59:40.300Z
