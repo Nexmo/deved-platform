@@ -11,7 +11,6 @@ category: inspiration
 tags:
   - ruby
   - ruby-sdk
-  - release
 comments: true
 spotlight: false
 redirect: ""
