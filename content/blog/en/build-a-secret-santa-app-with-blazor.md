@@ -738,5 +738,5 @@ And that's it! Now you can run the app by either hitting the play button in IIS 
 ## Other Resources
 
 * A comprehensive overview of the Verify API is available on our [documentation website](https://developer.nexmo.com/verify/overview).
-* You can see further users of our SMS API [here](https://developer.nexmo.com/messaging/sms/overview)
+* You can see further uses of our SMS API [here](https://developer.nexmo.com/messaging/sms/overview)
 * All the source code from this demo can be found in [GitHub](https://github.com/nexmo-community/secret-santas-blazor)
