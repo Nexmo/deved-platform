@@ -6,8 +6,8 @@ description: In this tutorial Chris takes you through the process of setting up
 thumbnail: /content/blog/using-vonage-apis-with-drupal/blog_vonageapi_drupal_1200x600.png
 author: christankersley
 published: true
-published_at: 2020-12-11T15:39:00.000Z
-updated_at: 2020-12-11T15:39:00.000Z
+published_at: 2020-12-10T15:39:00.000Z
+updated_at: 2020-12-10T15:39:00.000Z
 category: tutorial
 tags:
   - sms-api
