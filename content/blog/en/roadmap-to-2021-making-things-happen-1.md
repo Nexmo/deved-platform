@@ -3,6 +3,7 @@ title: "Roadmap to 2021: Making Things Happen!"
 description: 2020 was also a year of many improvements for our SDKs and of a
   more prominent presence in the global community through conferences and
   various events in different latitudes.
+thumbnail: /content/blog/roadmap-to-2021-making-things-happen/roadmap-2021.png
 author: diana-rodriguez
 published: true
 published_at: 2020-12-15T14:13:25.391Z
