@@ -28,7 +28,7 @@
     "autoprefixer": "^10.0.3",
     "defu": "^3.2.2",
     "dotenv": "^8.2.0",
-    "fontsource-roboto": "^3.0.3",
+    "fontsource-roboto": "^4.0.0",
     "front-matter": "^4.0.2",
     "globby": "^11.0.1",
     "image-downloader": "^4.0.1",
