@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <ShortName>Vonage » Learn</ShortName>
-  <Description>Developer Education team content.</Description>
+  <Description>Search Vonage Developer content</Description>
   <Tags>node vue nuxt web communications api apis javascript python ruby rails dot net asp php java tutorials streams videos courses</Tags>
   <Contact>community@vonage.com</Contact>
-  <Url type="text/html"
-       template="http://learn.vonage.com/?q={searchTerms}"/>
-  <LongName>Developer Education at Vonage</LongName>
-  <Image height="32" width="32" type="image/png">/favicon-32x32.png</Image>
-  <Image height="16" width="16" type="image/vnd.microsoft.icon">/favicon-16x16.png</Image>
+  <Url type="text/html" template="http://learn.vonage.com/">
+    <Param name="q" value="{searchTerms}"/>
+    <Param name="opensearch" value="true"/>
+  </Url>
+  <LongName>Vonage » Learn » Developer Content from Vonage</LongName>
+  <Image height="32" width="32" type="image/png">http://learn.vonage.com/favicon-32x32.png</Image>
+  <Image height="16" width="16" type="image/vnd.microsoft.icon">http://learn.vonage.com/favicon-16x16.png</Image>
   <Developer>@VonageDevs</Developer>
   <Attribution>
     Search data Copyright, Vonage.com, All Rights Reserved
