@@ -1,10 +1,8 @@
 ---
 title: 12 Bots To Better Your Open Source Project
-description: The longer an open source project exists and grows, the more issues
-  and unmerged pull requests it will accumulate. Keeping up with new
-  contributions, especially if there are still unresolved problems from the
-  past, is no easy task. Enter, bots! Automating and outsourcing labour to bots
-  eases maintainers’ burden, freeing up time for more impactful […]
+description: 12 ways to improve your open source project with Probot and GitHub
+  Actions—enabling you to extend your workflow and customize the way GitHub
+  functions.
 thumbnail: /content/blog/12-bots-to-better-your-open-source-project/Blog_Bots-Better-Opensource_1200x600.png
 author: nahrinjalal
 published: true
