@@ -193,7 +193,7 @@ const config = {
       {
         rel: 'alternative',
         type: 'application/rss+xml',
-        href: '/feed.xml',
+        href: '/feeds/blog/rss.xml',
         title: 'RSS',
       },
       {
