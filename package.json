@@ -41,7 +41,7 @@
     "nuxt-i18n": "^6.15.4",
     "postcss": "^8.1.10",
     "prism-themes": "^1.5.0",
-    "prismjs": "^1.22.0",
+    "prismjs": "^1.23.0",
     "reading-time": "^1.2.1",
     "showdown": "^1.9.1",
     "slugify": "^1.4.6",
