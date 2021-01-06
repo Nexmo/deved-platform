@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@jlengstorf/get-twitch-oauth": "^1.0.1",
-    "axios": "^0.21.0"
+    "axios": "^0.21.1"
   }
 }
