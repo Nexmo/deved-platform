@@ -2,7 +2,8 @@
 title: Visual Studio Code Extensions To Enhance Productivity in 2021
 description: A list of Visual Studio Code extensions that are suitable for all
   languages that will help you save time and enhance productivity
-author: alyssa-mazzina
+thumbnail: /content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/blog_visualstudioextensions.png
+author: nahrinjalal
 published: true
 published_at: 2021-01-06T16:27:33.698Z
 updated_at: 2021-01-06T16:27:33.739Z
