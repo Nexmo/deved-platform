@@ -86,6 +86,8 @@ Better Comments will help you create more human-friendly comments in your code. 
 * Commented out code can also be styled to make it clear the code shouldn't be there
 * Any other comment styles you'd like can be specified in the settings
 
+  ![Better comments](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/better-comments.png "Better comments")
+
 ### [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
 Settings Sync synchronizes settings, snippets, themes, file icons, launch, keybindings, workspaces, and extensions across multiple machines using GitHub Gist.
