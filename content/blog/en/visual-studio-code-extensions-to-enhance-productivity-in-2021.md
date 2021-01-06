@@ -17,8 +17,6 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-**Visual Studio Code Extensions To Enhance Productivity in 2021**
-
 Visual Studio Code is a simple yet highly extensible code editor. As developers, we spend a lot of time here—which is why it's so important to get the most out of our editors and streamline and automate where possible.
 
 As we enter 2021, I've compiled a list of extensions that I personally use daily in the hopes that it will help you save time and enhance productivity this year. Do note that while the extensions highlighted below are suitable for all languages, there are language-specific plugins that are also worth exploring.
