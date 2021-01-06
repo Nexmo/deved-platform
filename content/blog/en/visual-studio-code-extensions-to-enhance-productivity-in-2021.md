@@ -109,6 +109,8 @@ No source code needs to be on your local machine to gain these benefits since th
 
 This last extension is a fun one—create a Polaroid for your code! If you were planning on taking a screenshot of your code to share on Twitter or a blog post, I highly recommend using this tool for a more aesthetically appealing result.
 
+![Polacode](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/ezgif-7-d4104f999b25.gif "Polacode")
+
 ## What Are Your Favorite Extensions?
 
 That concludes my list of most-used extensions! I hope you came across one that will improve your developer productivity this year. What are your favorite VS Code extensions that help you while developing? Please share them in the comments or let me know on [Twitter](https://twitter.com/NahrinJalal)!
