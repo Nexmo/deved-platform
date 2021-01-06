@@ -73,6 +73,8 @@ Prettier is an opinionated code formatter. It enforces a consistent style by par
 
 Quokka.js is a developer productivity tool for rapid JavaScript / TypeScript prototyping. Runtime values are updated and displayed in your IDE next to your code as you type.
 
+![Quokka](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/quokka.gif "Quokka")
+
 ### [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 
 Better Comments will help you create more human-friendly comments in your code. With this extension, you will be able to categorize your annotations into:
