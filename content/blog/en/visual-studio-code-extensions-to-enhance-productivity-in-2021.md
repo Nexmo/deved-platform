@@ -34,6 +34,8 @@ As we enter 2021, I've compiled a list of extensions that I personally use daily
 
 Bracket Pair Colorizer 2 allows matching brackets to be identified with colors. The user can define which tokens to match and which colors to use.
 
+![Bracket Pair Colorizer 2](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/bracket-pair.png "Bracket Pair Colorizer 2")
+
 ### [Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 Remote Containers lets you use a Docker container as a full-featured development environment. Whether you deploy to containers or not, containers make a great development environment because you can:
@@ -96,8 +98,6 @@ No source code needs to be on your local machine to gain these benefits since th
 ### [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 
 This last extension is a fun one—create a Polaroid for your code! If you were planning on taking a screenshot of your code to share on Twitter or a blog post, I highly recommend using this tool for a more aesthetically appealing result.
-
-
 
 ## What Are Your Favorite Extensions?
 
