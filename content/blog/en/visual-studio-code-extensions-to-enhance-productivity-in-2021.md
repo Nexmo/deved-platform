@@ -63,6 +63,8 @@ Live Share provides you with the ability to co-edit, co-debug, have an audio cal
 
 Peacock subtly changes the color of your Visual Studio Code workspace. It's udeal when you have multiple VS Code instances, use VS Live Share, or use VS Code's Remote features, and you want to identify your editor quickly.
 
+![Peacock](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/peacock.jpg "Peacock")
+
 ### [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
