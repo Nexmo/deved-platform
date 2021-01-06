@@ -103,6 +103,8 @@ Remote - SSH lets you use any remote machine with an SSH server as your developm
 
 No source code needs to be on your local machine to gain these benefits since the extension runs commands and other extensions directly on the remote machine. You can open any folder on the remote machine and work with it just as you would if the folder were on your machine.
 
+![Remote - SSH](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/ezgif-7-aaf2a4583f1d.gif "Remote - SSH")
+
 ### [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 
 This last extension is a fun one—create a Polaroid for your code! If you were planning on taking a screenshot of your code to share on Twitter or a blog post, I highly recommend using this tool for a more aesthetically appealing result.
