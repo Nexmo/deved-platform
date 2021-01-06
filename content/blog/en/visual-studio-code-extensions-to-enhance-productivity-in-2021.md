@@ -53,6 +53,8 @@ Import Cost will display inline in the editor the size of the imported package. 
 
 Path Intellisense helps to autocomplete filenames. This extension supports developers to define file paths with accuracy.
 
+![Path Intellisense](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/intellisense.gif "Path Intellisense")
+
 ### [Live Share](https://visualstudio.microsoft.com/services/live-share/?rr=https%3A%2F%2Fcode.visualstudio.com%2Fblogs%2F2017%2F11%2F15%2Flive-share)
 
 Live Share provides you with the ability to co-edit, co-debug, have an audio call, chat with your peers, share terminals, servers, look at comments, and more.
