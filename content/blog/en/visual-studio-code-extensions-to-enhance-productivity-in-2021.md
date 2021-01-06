@@ -45,6 +45,8 @@ Remote Containers lets you use a Docker container as a full-featured development
 * Make it easy for new team members/contributors to get up and running in a consistent development environment.
 * Try out new technologies or clone a copy of a codebase without impacting your local setup.
 
+![Remote Containers](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/ezgif-7-aaf2a4583f1d.gif "Remote Containers")
+
 ### [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 
 Import Cost will display inline in the editor the size of the imported package. The extension utilizes webpack with babili-webpack-plugin to detect the imported size.
@@ -103,7 +105,7 @@ Remote - SSH lets you use any remote machine with an SSH server as your developm
 
 No source code needs to be on your local machine to gain these benefits since the extension runs commands and other extensions directly on the remote machine. You can open any folder on the remote machine and work with it just as you would if the folder were on your machine.
 
-![Remote - SSH](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/ezgif-7-aaf2a4583f1d.gif "Remote - SSH")
+![Remote SSH](/content/blog/visual-studio-code-extensions-to-enhance-productivity-in-2021/ezgif-7-ec603a36edab.gif "Remote SSH")
 
 ### [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 
