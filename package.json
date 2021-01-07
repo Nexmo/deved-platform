@@ -30,7 +30,7 @@
     "dotenv": "^8.2.0",
     "fontsource-roboto": "^3.0.3",
     "front-matter": "^4.0.2",
-    "globby": "^11.0.1",
+    "globby": "^11.0.2",
     "image-downloader": "^4.0.1",
     "instantsearch.css": "^7.4.5",
     "jsonwebtoken": "^8.5.1",
