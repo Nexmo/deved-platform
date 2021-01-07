@@ -2,9 +2,10 @@
 title: Introducing the iOS Push Certificate Uploader
 description: We've released a new tool to help with the uploading of iOS Push
   Certificates to Vonage. It's open source and you can use it today!
+thumbnail: /content/blog/introducing-the-ios-push-certificate-uploader/blog_ios_push_certificate.png
 author: abdul-ajetunmobi
 published: true
-published_at: 2021-01-06T16:38:31.217Z
+published_at: 2021-01-07T14:15:49.586Z
 updated_at: ""
 category: announcement
 tags:
