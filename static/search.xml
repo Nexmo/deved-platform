@@ -5,7 +5,7 @@
   <Description>Search Vonage Developer content</Description>
   <Tags>node vue nuxt web communications api apis javascript python ruby rails dot net asp php java tutorials streams videos courses</Tags>
   <Contact>community@vonage.com</Contact>
-  <Url type="text/html" template="http://learn.vonage.com/">
+  <Url type="text/html" template="http://learn.vonage.com/search">
     <Param name="q" value="{searchTerms}"/>
     <Param name="opensearch" value="true"/>
   </Url>
