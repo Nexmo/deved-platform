@@ -21,9 +21,12 @@ replacement_url: ""
 
 The [Vonage SMS API](https://developer.nexmo.com/messaging/sms/overview) allows you to send text messages programmatically. This tutorial covers how to use the Vonage SMS API with Vapor to send an SMS.
 
+
+
 ## Prerequisites
 
-* A Vonage API account. If you don't have one already, you can [sign up today](https://dashboard.nexmo.com/sign-up).
+<sign-up></sign-up>
+
 * Xcode 12 and Swift 5 or greater.
 * [Vapor 4.0](https://vapor.codes) installed on your machine.
 
