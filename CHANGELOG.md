@@ -1,3 +1,11 @@
+## [2.5.1](https://github.com/Nexmo/deved-platform/compare/v2.5.0...v2.5.1) (2021-01-11)
+
+
+### Bug Fixes
+
+* clear algolia index before adding records to it ([#587](https://github.com/Nexmo/deved-platform/issues/587)) ([7e737c0](https://github.com/Nexmo/deved-platform/commit/7e737c00907f3166ff0d0c665c4c682fa6ec20c1))
+* opensearch url still wrong ([#588](https://github.com/Nexmo/deved-platform/issues/588)) ([6adc4ab](https://github.com/Nexmo/deved-platform/commit/6adc4abd41f28574dc43b4bc9b555daac018bd9c))
+
 # [2.5.0](https://github.com/Nexmo/deved-platform/compare/v2.4.1...v2.5.0) (2021-01-11)
 
 
