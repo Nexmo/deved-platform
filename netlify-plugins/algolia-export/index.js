@@ -73,6 +73,12 @@ module.exports = {
       try {
         const client = algoliasearch(algoliaAppId, algoliaAdminKey)
         const index = client.initIndex(algoliaIndex)
+
+        index.clearObjects()
+        console.info( // eslint-disable-line
+          `${chalk.green('@netlify/plugin-algolia-index:')} cleared index`
+        )
+
         await exporter(index, newIndex)
       } catch (error) {
         // Not exporting to search index doesn't fail the entire build
