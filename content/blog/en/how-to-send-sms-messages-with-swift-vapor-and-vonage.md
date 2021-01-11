@@ -23,16 +23,16 @@ The [Vonage SMS API](https://developer.nexmo.com/messaging/sms/overview) allows 
 
 ## Prerequisites
 
-* A Vonage API account. If you don't have one already, you can [sign up today](https://dashboard.nexmo.com/sign-up)
+* A Vonage API account. If you don't have one already, you can [sign up today](https://dashboard.nexmo.com/sign-up).
 * Xcode 12 and Swift 5 or greater.
 * [Vapor 4.0](https://vapor.codes) installed on your machine.
 
 ## Create a Vapor Project
 
-You can create a Vapor project using the new project command `vapor new SwiftTextMessage` in your terminal. It will first prompt you whether you would like to Fluent—press `n` to skip, then whether you will want to use Leaf. [Leaf](https://docs.vapor.codes/4.0/leaf/getting-started) is a templating language that you will use to generate dynamic HTML pages, so press `y` to include it. 
+You can create a Vapor project using the new project command `vapor new SwiftTextMessage` in your terminal. It will first prompt you whether you would like to Fluent (press `n` to skip), then whether you want to use Leaf. [Leaf](https://docs.vapor.codes/4.0/leaf/getting-started) is a templating language that you will use to generate dynamic HTML pages, so press `y` to include it. 
 Once the command has finished, change directory into the folder it created for you using `cd SwiftTextMessage`. 
 
-You will also need to create a `.env` file to store your Vonage API account credentials. In your terminal use the following command to create the file replacing `X` and `Y` with your API key and secret respectively:
+You will also need to create a `.env` file to store your Vonage API account credentials. In your terminal, use the following command to create the file replacing `X` and `Y` with your API key and secret, respectively:
 
 ```shell
 echo "APIKEY=X \nAPISECRET=Y" > .env
@@ -48,7 +48,7 @@ By default, Xcode runs your application from a randomized local directory. Since
 
 ## Create a Web Page
 
-Now that your project is set up, next you will create an interface to enter a phone number and message for the SMS. Open the `index.leaf` file under *Resources/Views* and update it: 
+Now that your project is set up, you will create an interface to enter a phone number and message for the SMS. Open the `index.leaf` file under *Resources/Views* and update it: 
 
 ```html
 <!doctype html>
@@ -122,7 +122,7 @@ struct Response: Content {
 
 ## Send the SMS
 
-To send the SMS you need to make a call to the `/sms` endpoint of the Vonage SMS API. To do this, you need to define the `/send` route used by the web form, parse the form data, and then make the call. Start off by defining the new route in the `routes` function:
+To send the SMS you need to make a call to the `/sms` endpoint of the Vonage SMS API. To do this, you need to define the `/send` route used by the web form, parse the form data, and then make the call. Start by defining the new route in the `routes` function:
 
 ```swift
 app.post("send") { req -> EventLoopFuture<View> in
