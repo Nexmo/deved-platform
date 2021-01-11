@@ -23,11 +23,9 @@ The [Vonage SMS API](https://developer.nexmo.com/messaging/sms/overview) allows 
 
 ## Prerequisites
 
-+ A Vonage API account. If you don't have one already, you can [sign up today](https://dashboard.nexmo.com/sign-up)
-
-+ Xcode 12 and Swift 5 or greater.
-
-+ [Vapor 4.0](https://vapor.codes) installed on your machine.
+* A Vonage API account. If you don't have one already, you can [sign up today](https://dashboard.nexmo.com/sign-up)
+* Xcode 12 and Swift 5 or greater.
+* [Vapor 4.0](https://vapor.codes) installed on your machine.
 
 ## Create a Vapor Project
 
@@ -36,21 +34,21 @@ Once the command has finished, change directory into the folder it created for y
 
 You will also need to create a `.env` file to store your Vonage API account credentials. In your terminal use the following command to create the file replacing `X` and `Y` with your API key and secret respectively:
 
-```sh
+```shell
 echo "APIKEY=X \nAPISECRET=Y" > .env
 ```
 
 Now you can open the project in Xcode using `vapor xcode`. Once Xcode opens, it will start downloading the dependencies that Vapor relies on using Swift Package Manager (SPM). To view the dependencies, you can open the `Package.swift` file. 
 
-By default, Xcode runs your application from a randomized local directory. Since you will be loading local resources, you need to set a custom working directory. Go to _Product > Scheme > Edit Scheme..._ and set the working directory to your project's root folder.
+By default, Xcode runs your application from a randomized local directory. Since you will be loading local resources, you need to set a custom working directory. Go to *Product > Scheme > Edit Scheme...* and set the working directory to your project's root folder.
 
-![Setting custom working directory](workingdir.png)
+![Setting custom working directory](/content/blog/how-to-send-sms-messages-with-swift-vapor-and-vonage/workingdir.png "Setting custom working directory")
 
  Press CMD+R to build and run. Once complete, find your web page at `localhost:8080`.
 
 ## Create a Web Page
 
-Now that your project is set up, next you will create an interface to enter a phone number and message for the SMS. Open the `index.leaf` file under _Resources/Views_ and update it: 
+Now that your project is set up, next you will create an interface to enter a phone number and message for the SMS. Open the `index.leaf` file under *Resources/Views* and update it: 
 
 ```html
 <!doctype html>
@@ -122,7 +120,7 @@ struct Response: Content {
 }
 ```
 
-## Send the SMS 
+## Send the SMS
 
 To send the SMS you need to make a call to the `/sms` endpoint of the Vonage SMS API. To do this, you need to define the `/send` route used by the web form, parse the form data, and then make the call. Start off by defining the new route in the `routes` function:
 
@@ -157,12 +155,11 @@ The `client.post` function call has a return type of `EventLoopFuture<ClientResp
 
 Build and run (CMD + R) the project, open `localhost:8080` in your browser, then fill in a phone number and a message.
 
-![Index page of the project](input.png)
+![Index page of the project](/content/blog/how-to-send-sms-messages-with-swift-vapor-and-vonage/input.png "Index page of the project")
 
 Clicking the *send* button will send the data to the route you defined earlier, make the call to the Vonage SMS API, and then return to the initial page with its status.
 
-![Index page with ok status](response.png)
-
+![Index page with ok status](/content/blog/how-to-send-sms-messages-with-swift-vapor-and-vonage/response.png "Index page with ok status")
 
 ## What Next?
 
