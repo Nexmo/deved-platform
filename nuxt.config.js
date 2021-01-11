@@ -2,10 +2,12 @@ import config from './modules/config'
 import { getPostRoute, getPostRoutes, getCategory } from './modules/contenter'
 import i18n from './i18n.config.js'
 
+// is production build
 const isProduction = () => {
   return process.env.CONTEXT && process.env.CONTEXT === 'production'
 }
 
+// is preview build
 const isPreviewBuild = () => {
   return (
     process.env.PULL_REQUEST &&
@@ -260,7 +262,7 @@ export default {
 
   // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#base
   router: {
-    routeNameSplitter: '/',
+    trailingSlash: true,
   },
 
   build: {

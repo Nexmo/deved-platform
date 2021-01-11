@@ -48,14 +48,16 @@ export default {
       let newPath = ''
 
       params.forEach((param, index) => {
-        newPath = `${newPath}/${param}`
-        const match = this.$router.match(newPath)
+        if (param) {
+          newPath = `${newPath}/${param}`
+          const match = this.$router.match(`${newPath}/`)
 
-        if (match.name !== null) {
-          crumbs.push({
-            title: titleCase(param.replace(/-/g, ' ')),
-            ...match,
-          })
+          if (match.name !== null) {
+            crumbs.push({
+              title: titleCase(param.replace(/-/g, ' ')),
+              ...match,
+            })
+          }
         }
       })
 
