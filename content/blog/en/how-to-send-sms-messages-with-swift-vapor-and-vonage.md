@@ -1,10 +1,11 @@
 ---
 title: How to send SMS Messages with Swift, Vapor and Vonage
 description: Learn how to use the Vonage SMS API with Vapor to send an SMS.
+thumbnail: /content/blog/how-to-send-sms-messages-with-swift-vapor-and-vonage/blog_sms_swift-vapor_1200x600.png
 author: abdul-ajetunmobi
 published: true
-published_at: 2021-01-11T11:04:56.140Z
-updated_at: 2021-01-11T11:04:56.179Z
+published_at: 2021-01-12T11:07:22.686Z
+updated_at: ""
 category: tutorial
 tags:
   - swift
