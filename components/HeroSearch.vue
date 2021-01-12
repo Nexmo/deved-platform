@@ -85,7 +85,7 @@ export default {
 
   methods: {
     search() {
-      this.$router.push({ path: 'search', query: { query: this.query } })
+      this.$router.push({ path: 'search/', query: { query: this.query } })
     },
   },
 }
