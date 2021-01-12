@@ -81,7 +81,7 @@ func main() {
 }
 ```
 
-First, we've created a new Go application with a single webhook URL,  `/webhooks/answer`, to handle any incoming calls. The application also runs as a server via the line `http.ListenAndServe(":3000", nil)`, to ensure it runs until you wish to stop the server.
+First, we've created a new Go application with a single webhook URL, `/webhooks/answer`, to handle any incoming calls. The application also runs as a server via the line `http.ListenAndServe(":3000", nil)`, to ensure it runs until you wish to stop the server.
 
 The `answer` function creates two call control objects (NCCOs). The first one is `TalkAction`, which relays a predetermined string to the person on the phone. The second one adds the call leg to a conference call, which maintains the line and allows us to pass an audio stream into the call.
 
