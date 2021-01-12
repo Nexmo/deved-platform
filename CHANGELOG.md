@@ -1,3 +1,10 @@
+## [2.5.2](https://github.com/Nexmo/deved-platform/compare/v2.5.1...v2.5.2) (2021-01-12)
+
+
+### Bug Fixes
+
+* search path updates for trailingSlash changes ([#606](https://github.com/Nexmo/deved-platform/issues/606)) ([6c97c10](https://github.com/Nexmo/deved-platform/commit/6c97c101ae3b55d42b1d447daf6666372ca082bf))
+
 ## [2.5.1](https://github.com/Nexmo/deved-platform/compare/v2.5.0...v2.5.1) (2021-01-11)
 
 
