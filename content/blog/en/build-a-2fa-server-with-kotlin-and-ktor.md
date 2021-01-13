@@ -29,13 +29,13 @@ The complete source code is available on [GitHub](https://github.com/nexmo-commu
 To follow along with this tutorial, you will need:
 
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) IDE installed (paid or free, community edition).
-* [Ktor](https://ktor.io/docs/intellij-idea.html) plugin for IntelliJ IDEA. This plugin allows you to create a Ktor project using a new project wizard. Open `IntelliJ IDEA`, go to `Preferences`, then `Plugins`, and install a `Ktor` plugin from the marketplace.
+* [Ktor](https://ktor.io/docs/intellij-idea.html) plugin for IntelliJ IDEA. This plugin allows you to create a Ktor project using a new project wizard. Open *IntelliJ IDEA*, go to *Preferences*, then *Plugins*, and install a *Ktor* plugin from the marketplace.
 
 <sign-up number></sign-up>
 
 ## Create A Ktor Project
 
-* Open `IntelliJ IDEA`, then go to *File > New > Project*. 
+* Open *IntelliJ IDEA*, then go to *File > New > Project*. 
 * In the *New Project* window, select the *Ktor* project on the left side and press the *Next* button.
 * On the next screen, leave the default values and press the *Next* button.
 * On the final screen, enter `ktor-2fa-server` as the application name and press the *Finish* button.
