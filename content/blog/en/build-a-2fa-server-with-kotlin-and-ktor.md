@@ -29,20 +29,21 @@ The complete source code is available on [GitHub](https://github.com/nexmo-commu
 To follow along with this tutorial, you will need:
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) IDE installed (paid or free, community edition).
 - [Ktor](https://ktor.io/docs/intellij-idea.html) plugin for IntelliJ IDEA. This plugin allows you to create a Ktor project using a new project wizard. Open `IntelliJ IDEA`, go to `Preferences`, then `Plugins`, and install a `Ktor` plugin from the marketplace.
-- the Vonage account. [Sign up here](https://dashboard.nexmo.com/sign-up). 
 
-## Create Ktor project
+<sign-up number></sign-up>
 
-- Open `IntelliJ IDEA`, go to `File | New | Project...`. 
-- In the `New Project` window, select the `Ktor` project on the left side and press the `Next` button.
-- On the next screen, leave the default values and press the `Next` button.
-- On the final screen, enter `ktor-2fa-server` as the application name and press the `Finish` button.
+## Create A Ktor Project
 
-You have created `Ktor` application project.
+- Open `IntelliJ IDEA`, then go to *File > New > Project*. 
+- In the *New Project* window, select the *Ktor* project on the left side and press the *Next* button.
+- On the next screen, leave the default values and press the *Next* button.
+- On the final screen, enter `ktor-2fa-server` as the application name and press the *Finish* button.
+
+You have created a Ktor application project.
 
 ## First endpoint
 
-Open the `src/Application.kt` file and add a new `routing` to verify that the application is working.
+Open the `src/Application.kt` file and add a new `routing` to verify that the application is working:
 
 ```kotlin
 fun Application.module(testing: Boolean = false) {
@@ -54,20 +55,21 @@ fun Application.module(testing: Boolean = false) {
 }
 ```
 
-> In this tutorial whole Ktor application code will be stored in the `Application.kt` file.
+> In this tutorial, all the Ktor application code will be stored in the `Application.kt` file.
 
-Click on a green arrow next to the `main` function to run the application (this will create a new run configuration in the IDE):
+Click on the green arrow next to the `main` function to run the application (this will create a new run configuration in the IDE):
 
 ![Run app](run-app.png)
 
-Open the `http://localhost:8080/` URL in your browser to test if the application is working correctly - "2FA app is working" will be displayed:
+Navigate to `http://localhost:8080/` in your browser to test if the application is working correctly—"2FA app is working" should be displayed:
 
 ![App is working](app-is-working.png)
 
-## Set developement mode
+## Set Developement Mode
 
-Enabling `development` mode allows the `Ktor` application to display more detailed debugging information in the IDE, e.g. call-stack. It will help with development and diagnosing issues.
-Open `resources/application.conf` file and add `development = true`:
+Enabling development mode allows the Ktor application to display more detailed debugging information in the IDE, such as call-stack. It will help with development and diagnosing issues.
+
+Open the `resources/application.conf` file and add `development = true`:
 
 ```
 ktor {
@@ -76,11 +78,11 @@ ktor {
     ...
 ```
 
-## Add dependencies
+## Add Dependencies
 
 ### Vonage Java SDK
 
-Kotlin language provides [interoperability with Java](https://kotlinlang.org/docs/reference/java-interop.html) that allows calling Java code from Kotlin code so that you can use [Vonage Java SDK](https://github.com/Vonage/vonage-java-sdk) for the Kotlin/Ktor project.
+The Kotlin language provides [interoperability with Java](https://kotlinlang.org/docs/reference/java-interop.html), which allows you to call Java code from Kotlin code so that you can use [Vonage Java SDK](https://github.com/Vonage/vonage-java-sdk) for the Kotlin/Ktor project.
 
 Open the `build.gradle` file and add the following dependency:
 
@@ -93,7 +95,7 @@ dependencies {
 }
 ```
 
-### Serialisation
+### Serialization
 
 You will use JSON as a data format to communicate with the clients. You will serialize Kotlin objects using [Kotlin serialization](https://github.com/Kotlin/kotlinx.serialization).
 
@@ -109,7 +111,7 @@ dependencies {
 }
 ```
 
-The Kotlin serialization library use preprocessing (at compile time), so you have to add `org.jetbrains.kotlin.plugin.serialization` Gradle plugin. At the time of this writing, this article `Ktor` is using [using the old way of applying Gradle plugins](https://youtrack.jetbrains.com/issue/KTOR-1620), so we have to replace it with the new configuration.
+The Kotlin serialization library uses preprocessing (at compile time), so you have to add the `org.jetbrains.kotlin.plugin.serialization` Gradle plugin. At the time of writing this article, Ktor is using [using the old way of applying Gradle plugins](https://youtrack.jetbrains.com/issue/KTOR-1620), so we have to replace it with the new configuration.
 
 Open the `build.gradle` file and remove plugins:
 
@@ -146,7 +148,7 @@ plugins {
 }
 ```
 
-After all the modifiations the `build.gradle` file should look like this:
+After all the modifiations, the `build.gradle` file should look like this:
 
 ```groovy
 buildscript {
@@ -192,9 +194,9 @@ dependencies {
 }
 ```
 
-> `kotlin_version` and `ktor_version` properties are defined inside `gradle.properties` file.
+> The `kotlin_version` and `ktor_version` properties are defined inside `gradle.properties` file.
 
-To enable serializatin JSON Converter has to be enabled for the Ktor application. Open the `Application.kt` file and add `install` block inside `Application.module` function:
+To enable serializatin, the JSON Converter has to be enabled for the Ktor application. Open the `Application.kt` file and add an `install` block inside `Application.module` function:
 
 ```kotlin
 fun Application.module(testing: Boolean = false) {
@@ -207,17 +209,17 @@ fun Application.module(testing: Boolean = false) {
 }
 ```
 
-> IDE will mark all classes and extensions that have import missing with the red color. Rollover on the class or method name, wait for a window to appear, and select `import...` to add class import and fix the error.
+> The IDE will mark all classes and extensions that have import missing with the red color. Rollover on the class or method name, wait for a window to appear, and select `import...` to add class import and fix the error.
 
-## Create Vonage application
+## Create a Vonage Application
 
-Vonage application will provide F2A capabilities for the API. Create Vonage application in the [dashboard](https://dashboard.nexmo.com/applications). Click the `Create a new application` button, enter `name` and click the `Generate new application` button.
+A Vonage application will provide 2FA capabilities for the API. Create a Vonage application in the [dashboard](https://dashboard.nexmo.com/applications). Click the *Create a new application* button, enter a name, and click the *Generate new application* button.
 
-Go to [settngs](https://dashboard.nexmo.com/settings) and make a note of `API key` and `API secret`.
+Go to [settings](https://dashboard.nexmo.com/settings) and make a note of `API key` and `API secret`.
 
 ## Initialize Vonage Client
 
-Add `client` property inside `Application.module` function to intialize a Vonage client:
+Add the `client` property inside `Application.module` function to initialize a Vonage client:
 
 ```kotlin
 fun Application.module(testing: Boolean = false) {
@@ -235,17 +237,17 @@ fun Application.module(testing: Boolean = false) {
 }
 ```
 
-Repleace `API_KEY` and `API_SECRET` using values from the [dashbard](https://dashboard.nexmo.com/settings).
+Replace `API_KEY` and `API_SECRET` using the values from the [dashboard](https://dashboard.nexmo.com/settings).
 
-## API functionality
+## API Functionality
 
 You will build two API endpoints:
-`verifyNumber` - the client will first hit this endpoint to start the verification process by processing the phone number to be verified. 
-- `verifyCode` - then after receiving code (via SMS or voice call) client will send the code, and application will perform a 2FA check to determine if the client is verified.
+- `verifyNumber` - the client will first hit this endpoint to start the verification process by processing the phone number to be verified. 
+- `verifyCode` - after receiving code (via SMS or voice call), the client will send the code, and the application will perform a 2FA check to determine if the client is verified.
 
-### Create verifyNumber API endpoint
+### Create verifyNumber API Endpoint
 
-Define a new route handler `get("/verifyNumber")` inside `routing` block of `Application.module` function:
+Define a new route handler, `get("/verifyNumber")`, inside the `routing` block of the `Application.module` function:
 
 ```kotlin
 fun Application.module(testing: Boolean = false) {
@@ -263,14 +265,14 @@ fun Application.module(testing: Boolean = false) {
 }
 ```
 
-> The code within `get("/verifyNumber")` route handler will be executed when the client makes a call to the `http://localhost:8080/verifyNumber` URL.
+> The code within the `get("/verifyNumber")` route handler will be executed when the client makes a call to the `http://localhost:8080/verifyNumber` URL.
 
 The `verifyNumber` endpoint will contain the following logic:
 - retrieve `phoneNumber` parameter from the query string (`http://localhost:8080/verifyNumber?phoneNumber=1234`)
-- start F2A verification using the Vonage SDK
-- return `requestId` as a JSON (in a production application, you would typically store id on the server-side)
+- start 2FA verification using the Vonage SDK
+- return `requestId` as a JSON (in a production application, you would typically store ID on the server-side)
 
-Add following logic to the `get("/verifyNumber")` route handler:
+Add the following logic to the `get("/verifyNumber")` route handler:
 
 ```kotlin
 get("/verifyNumber") {
@@ -284,26 +286,25 @@ get("/verifyNumber") {
 }
 ```
 
-Define `VerifyNumberResponse` class that will be serialized to JSON and returned to the API client. Add the following code at the end of `Application.kt` file:
-
-> Kotlin allows defining multiple top-level members (classes, properties, etc.) within the single file.
+Define a `VerifyNumberResponse` class that will be serialized to JSON and returned to the API client. Add the following code at the end of `Application.kt` file:
 
 ```kotlin
 @Serializable
 data class VerifyNumberResponse(val requestId: String)
 ```
+> Kotlin allows defining multiple top-level members (classes, properties, etc.) within a single file.
 
-Due to a [bug](https://youtrack.jetbrains.com/issue/KT-30161) in the Kotlin plugin you need to add the import statement for `Serializable` annotation manually. Add the following code at the top of the file, just below the last import statement:
-
-> Instead of using Vonage build-in verification, you could generate the code by yourself and send SMS using Vonage Java SDK. However, the Vonage verification mechanism provides an easy way to use more complex [workflows](https://developer.nexmo.com/verify/guides/workflows-and-events), e.g.: default workflow will make a phone call and read the code to the user if the client did not provide SMS code within a specific period.
+Due to a [bug](https://youtrack.jetbrains.com/issue/KT-30161) in the Kotlin plugin, you need to add the import statement for `Serializable` annotation manually. Add the following code at the top of the file, just below the last import statement:
 
 ```kotlin
 import kotlinx.serialization.Serializable
 ```
 
-### Create verifyCode API endpoint
+> Instead of using Vonage build-in verification, you could generate the code by yourself and send an SMS using Vonage Java SDK. However, the Vonage verification mechanism provides an easy way to use more complex [workflows](https://developer.nexmo.com/verify/guides/workflows-and-events), e.g.: default workflow will make a phone call and read the code to the user if the client did not provide SMS code within a specific period.
 
-Define a new route handler `get("/verifyCode")` inside `routing` block of `Application.module` function:
+### Create verifyCode API Endpoint
+
+Define a new route handler, `get("/verifyCode")`, inside the `routing` block of the `Application.module` function:
 
 ```kotlin
 fun Application.module(testing: Boolean = false) {
@@ -321,11 +322,11 @@ fun Application.module(testing: Boolean = false) {
 
 The `verifyCode` endpoint will contain the following logic:
 - retrieve `code` parameter from the query string (`code` will be delivered to the user after hitting the `verifyNumber` endpoint)
-- retrieve a verification `requested` parameter from the query string (value retrieved from `verifyNumber` endpoint)
+- retrieve a verification `requestId` parameter from the query string (value retrieved from `verifyNumber` endpoint)
 - verify code using Vonage SDK
 - return verification status to the client
 
-Add following logic to the `get("/verifyCode")` route handler:
+Add the following logic to the `get("/verifyCode")` route handler:
 
 ```kotlin
 get("/verifyCode") {
@@ -346,14 +347,14 @@ get("/verifyCode") {
 }
 ```
 
-Define `VerifyCodeResponse` class that will be serialized to JSON and returned to the API client. Add the following code at the end of `Application.kt` file:
+Define a `VerifyCodeResponse` class that will be serialized to JSON and returned to the API client. Add the following code at the end of `Application.kt` file:
 
 ```kotlin
 @Serializable
 data class VerifyCodeResponse(val status: String)
 ```
 
-Ater all modifications `Application.kt` file should look like this:
+After all the modifications, `Application.kt` file should look like this:
 
 ```kotlin
 package com.example
@@ -421,37 +422,37 @@ data class VerifyNumberResponse(val requestId: String)
 data class VerifyCodeResponse(val status: String)
 ```
 
-## Using the API
+## Use the API
 
 The API implementation is complete, so let's test it. 
 
-Any client can use the API, including desktop and mobile clients, but you will perform simple testing by using a web browser to keep it.
+Any client can use the API, including desktop and mobile clients, but you will perform simple testing by using a web browser.
 
 Launch the Ktor application.
 
-Replace `PHONE_NUMBER` with actual phone number and open the following URL in the browser:
-
->  Vonage phone numbers are in [E.164](https://developer.nexmo.com/concepts/guides/glossary#e-164-format) format, '+' and '-' are not valid. Make sure you specify your country code when entering your number, for example, US: 14155550100 and UK: 447700900001
-
-> [Whilst on trial](https://help.nexmo.com/hc/en-us/articles/204014853-Nexmo-trial-period-How-to-add-numbers-to-list-of-permitted-destinations), you will only be able to send SMS and make Voice calls to the number you registered with and up to 4 other test numbers of your choice (you can top-up Vonage account to remove this restriction).
+Replace `PHONE_NUMBER` with an actualphone number and open the following URL in the browser:
 
 ```
 http://localhost:8080/verifyNumber?phoneNumber=PHONE_NUMBER
 ```
 
-You will receive SMS with code and see a similar response:
+>  Vonage phone numbers are in [E.164](https://developer.nexmo.com/concepts/guides/glossary#e-164-format) format, '+' and '-' are not valid. Make sure you specify your country code when entering your number, for example, US: 14155550100 and UK: 447700900001
+
+> [As a trial user](https://help.nexmo.com/hc/en-us/articles/204014853-Nexmo-trial-period-How-to-add-numbers-to-list-of-permitted-destinations), you will only be able to send SMS and make voice calls to the number you registered with and up to 4 other test numbers of your choice (you can top up your Vonage account to remove this restriction).
+
+You should receive an SMS with a code and see a similar response:
 
 ```
 {"requestId":"9ac76db7971b4ea4a49f2e061432c6fe"}
 ```
 
-Compose second request. Replace `REQUEST_ID` (in above example it's `9ac76db7971b4ea4a49f2e061432c6fe`) wiht value returned from server and replace `CODE` with recived verification code:
+Compose a second request. Replace `REQUEST_ID`  with the value returned from server (in the above example, it's `9ac76db7971b4ea4a49f2e061432c6fe`) and replace `CODE` with the received verification code:
 
 ```
 http://localhost:8080/verifyCode?requestId=REQUEST_ID&code=CODE
 ```
 
-The client phone number is verified, and you should see the following response:
+If the client phone number is verified, you should see the following response:
 ```
 {"status":"OK"}
 ```
