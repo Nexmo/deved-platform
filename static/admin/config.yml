@@ -33,7 +33,8 @@ collections:
       - label: Title
         name: title
         widget: string
-        hint: "Post title and meta title. Soft limit 60 characters, hard limit 70 characters."
+        pattern: ['^[^–—]{12,70}$', "Must be between 12 and 70 characters and must not contain em/en dash"]
+        hint: "Soft limit 60 characters (Google mobile results), hard limit 70 characters (Google web results). No em/en dashes."
       - label: Description
         name: description
         widget: string
