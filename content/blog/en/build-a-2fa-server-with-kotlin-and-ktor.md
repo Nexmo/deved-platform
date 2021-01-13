@@ -27,17 +27,18 @@ The complete source code is available on [GitHub](https://github.com/nexmo-commu
 ## Prerequisites
 
 To follow along with this tutorial, you will need:
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) IDE installed (paid or free, community edition).
-- [Ktor](https://ktor.io/docs/intellij-idea.html) plugin for IntelliJ IDEA. This plugin allows you to create a Ktor project using a new project wizard. Open `IntelliJ IDEA`, go to `Preferences`, then `Plugins`, and install a `Ktor` plugin from the marketplace.
+
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) IDE installed (paid or free, community edition).
+* [Ktor](https://ktor.io/docs/intellij-idea.html) plugin for IntelliJ IDEA. This plugin allows you to create a Ktor project using a new project wizard. Open `IntelliJ IDEA`, go to `Preferences`, then `Plugins`, and install a `Ktor` plugin from the marketplace.
 
 <sign-up number></sign-up>
 
 ## Create A Ktor Project
 
-- Open `IntelliJ IDEA`, then go to *File > New > Project*. 
-- In the *New Project* window, select the *Ktor* project on the left side and press the *Next* button.
-- On the next screen, leave the default values and press the *Next* button.
-- On the final screen, enter `ktor-2fa-server` as the application name and press the *Finish* button.
+* Open `IntelliJ IDEA`, then go to *File > New > Project*. 
+* In the *New Project* window, select the *Ktor* project on the left side and press the *Next* button.
+* On the next screen, leave the default values and press the *Next* button.
+* On the final screen, enter `ktor-2fa-server` as the application name and press the *Finish* button.
 
 You have created a Ktor application project.
 
@@ -59,11 +60,11 @@ fun Application.module(testing: Boolean = false) {
 
 Click on the green arrow next to the `main` function to run the application (this will create a new run configuration in the IDE):
 
-![Run app](run-app.png)
+![Run app](/content/blog/build-a-2fa-server-with-kotlin-and-ktor/run-app.png)
 
 Navigate to `http://localhost:8080/` in your browser to test if the application is working correctly—"2FA app is working" should be displayed:
 
-![App is working](app-is-working.png)
+![App is working](/content/blog/build-a-2fa-server-with-kotlin-and-ktor/app-is-working.png)
 
 ## Set Developement Mode
 
@@ -242,8 +243,9 @@ Replace `API_KEY` and `API_SECRET` using the values from the [dashboard](https:/
 ## API Functionality
 
 You will build two API endpoints:
-- `verifyNumber` - the client will first hit this endpoint to start the verification process by processing the phone number to be verified. 
-- `verifyCode` - after receiving code (via SMS or voice call), the client will send the code, and the application will perform a 2FA check to determine if the client is verified.
+
+* `verifyNumber` - the client will first hit this endpoint to start the verification process by processing the phone number to be verified. 
+* `verifyCode` - after receiving code (via SMS or voice call), the client will send the code, and the application will perform a 2FA check to determine if the client is verified.
 
 ### Create verifyNumber API Endpoint
 
@@ -268,9 +270,10 @@ fun Application.module(testing: Boolean = false) {
 > The code within the `get("/verifyNumber")` route handler will be executed when the client makes a call to the `http://localhost:8080/verifyNumber` URL.
 
 The `verifyNumber` endpoint will contain the following logic:
-- retrieve `phoneNumber` parameter from the query string (`http://localhost:8080/verifyNumber?phoneNumber=1234`)
-- start 2FA verification using the Vonage SDK
-- return `requestId` as a JSON (in a production application, you would typically store ID on the server-side)
+
+* retrieve `phoneNumber` parameter from the query string (`http://localhost:8080/verifyNumber?phoneNumber=1234`)
+* start 2FA verification using the Vonage SDK
+* return `requestId` as a JSON (in a production application, you would typically store ID on the server-side)
 
 Add the following logic to the `get("/verifyNumber")` route handler:
 
@@ -292,6 +295,7 @@ Define a `VerifyNumberResponse` class that will be serialized to JSON and return
 @Serializable
 data class VerifyNumberResponse(val requestId: String)
 ```
+
 > Kotlin allows defining multiple top-level members (classes, properties, etc.) within a single file.
 
 Due to a [bug](https://youtrack.jetbrains.com/issue/KT-30161) in the Kotlin plugin, you need to add the import statement for `Serializable` annotation manually. Add the following code at the top of the file, just below the last import statement:
@@ -321,10 +325,11 @@ fun Application.module(testing: Boolean = false) {
 ```
 
 The `verifyCode` endpoint will contain the following logic:
-- retrieve `code` parameter from the query string (`code` will be delivered to the user after hitting the `verifyNumber` endpoint)
-- retrieve a verification `requestId` parameter from the query string (value retrieved from `verifyNumber` endpoint)
-- verify code using Vonage SDK
-- return verification status to the client
+
+* retrieve `code` parameter from the query string (`code` will be delivered to the user after hitting the `verifyNumber` endpoint)
+* retrieve a verification `requestId` parameter from the query string (value retrieved from `verifyNumber` endpoint)
+* verify code using Vonage SDK
+* return verification status to the client
 
 Add the following logic to the `get("/verifyCode")` route handler:
 
@@ -430,14 +435,14 @@ Any client can use the API, including desktop and mobile clients, but you will p
 
 Launch the Ktor application.
 
-Replace `PHONE_NUMBER` with an actualphone number and open the following URL in the browser:
+Replace `PHONE_NUMBER` with an actual phone number and open the following URL in the browser:
 
 ```
 http://localhost:8080/verifyNumber?phoneNumber=PHONE_NUMBER
 ```
 
 >  Vonage phone numbers are in [E.164](https://developer.nexmo.com/concepts/guides/glossary#e-164-format) format, '+' and '-' are not valid. Make sure you specify your country code when entering your number, for example, US: 14155550100 and UK: 447700900001
-
+>
 > [As a trial user](https://help.nexmo.com/hc/en-us/articles/204014853-Nexmo-trial-period-How-to-add-numbers-to-list-of-permitted-destinations), you will only be able to send SMS and make voice calls to the number you registered with and up to 4 other test numbers of your choice (you can top up your Vonage account to remove this restriction).
 
 You should receive an SMS with a code and see a similar response:
@@ -453,6 +458,7 @@ http://localhost:8080/verifyCode?requestId=REQUEST_ID&code=CODE
 ```
 
 If the client phone number is verified, you should see the following response:
+
 ```
 {"status":"OK"}
 ```
@@ -465,10 +471,10 @@ You can find the code shown in this tutorial on the [Github](https://github.com/
 
 Below are a few other tutorials we've written either involving using our services with Go:
 
-- [Vonage Java SDK](https://github.com/Vonage/vonage-java-sdk)
-- [Vonage API Developer](https://developer.vonage.com/)
-- [Kotlin](https://kotlinlang.org/)
-- [Ktor docs](https://ktor.io/docs/welcome.html)
-- [Kotlin Serialization](https://kotlinlang.org/docs/reference/serialization.html)
+* [Vonage Java SDK](https://github.com/Vonage/vonage-java-sdk)
+* [Vonage API Developer](https://developer.vonage.com/)
+* [Kotlin](https://kotlinlang.org/)
+* [Ktor docs](https://ktor.io/docs/welcome.html)
+* [Kotlin Serialization](https://kotlinlang.org/docs/reference/serialization.html)
 
 If you have any questions, advice, or ideas you'd like to share with the community, please feel free to jump on our [Community Slack workspace](https://developer.nexmo.com/community/slack). I'd love to hear back from anyone that has implemented this tutorial and how your project works.
