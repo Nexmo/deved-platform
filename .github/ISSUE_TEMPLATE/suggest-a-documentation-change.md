@@ -2,7 +2,7 @@
 name: Suggest a Documentation Change ✏️
 about: Suggest an change for the site documentation
 title: ''
-labels: "✏️  documentation"
+labels: "documentation"
 assignees: ''
 
 ---
