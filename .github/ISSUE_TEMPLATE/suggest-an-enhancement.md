@@ -2,7 +2,7 @@
 name: "Suggest an Enhancement \U0001F9D9‍♂️"
 about: Suggest an enhancement for this project
 title: ''
-labels: "\U0001F9D9‍♂️  enhancement"
+labels: "enhancement"
 assignees: ''
 
 ---
