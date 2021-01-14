@@ -185,6 +185,20 @@ select.button {
   @apply text-purple-dark;
 }
 
+.nuxt-content p > code {
+  @apply font-normal;
+  @apply text-red-600;
+  @apply border;
+  @apply bg-grey-lighter;
+  @apply border-grey-light;
+  @apply px-1;
+}
+
+.nuxt-content p > code::before,
+.nuxt-content p > code::after {
+  content: "";
+}
+
 .nuxt-content iframe:not(.Youtube) {
   @apply max-w-full;
 }
@@ -240,3 +254,4 @@ select.button {
   @apply lg:h-64;
   @apply w-full;
 }
+

@@ -1,3 +1,10 @@
+## [2.5.3](https://github.com/Nexmo/deved-platform/compare/v2.5.2...v2.5.3) (2021-01-13)
+
+
+### Bug Fixes
+
+* prevent em/en dash in titles and subsequently slugs ([#611](https://github.com/Nexmo/deved-platform/issues/611)) ([a62f9af](https://github.com/Nexmo/deved-platform/commit/a62f9af8c3256bf91d5f8d98af91a1c27be5fd50))
+
 ## [2.5.2](https://github.com/Nexmo/deved-platform/compare/v2.5.1...v2.5.2) (2021-01-12)
 
 
