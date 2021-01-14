@@ -14,12 +14,7 @@
         >
           <figure class="overflow-hidden rounded-t-lg">
             <div class="card-figure">
-              <nuxt-image
-                placeholder="true"
-                property="image"
-                :src="post.thumbnail"
-                :alt="post.title"
-              />
+              <img property="image" :src="post.thumbnail" :alt="post.title" />
             </div>
           </figure>
           <header class="flex-1 px-4 mt-4 md:px-6 md:mt-6">
@@ -27,7 +22,7 @@
               <Category :category="post.categoryObject" class="text-sm" />
             </p>
             <h3
-              class="block my-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black"
+              class="block my-4 text-xl font-black sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
             >
               <svg
                 v-if="post.redirect"

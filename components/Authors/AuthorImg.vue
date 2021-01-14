@@ -9,12 +9,11 @@
       />
     </span>
     <nuxt-link v-else :to="localePath(`/authors/${author.username}`)">
-      <nuxt-image
-        v-if="author.image_url.startsWith('/')"
-        :src="author.image_url"
-        property="image"
-        placeholder="/content/images/placeholder.svg"
+      <img
+        v-if="!author.image_url"
         class="w-10 h-10 rounded-full"
+        src="/content/images/placeholder.svg"
+        property="image"
         :alt="`Profile pic of ${author.name}`"
       />
       <img

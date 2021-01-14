@@ -12,14 +12,6 @@
         property="image"
         :alt="`Profile pic of ${author.name}`"
       />
-      <nuxt-image
-        v-else-if="author.image_url.startsWith('/')"
-        class="object-cover w-full"
-        :src="author.image_url"
-        property="image"
-        :alt="`Profile pic of ${author.name}`"
-        placeholder="/content/images/placeholder.svg"
-      />
       <img
         v-else
         class="object-cover w-full"

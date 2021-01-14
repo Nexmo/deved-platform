@@ -54,7 +54,6 @@
   },
   "keywords": [],
   "devDependencies": {
-    "@nuxt/image": "0.0.4",
     "@nuxtjs/eslint-config": "^4.0.0",
     "@nuxtjs/eslint-module": "^3.0.1",
     "@release-it/conventional-changelog": "^2.0.0",

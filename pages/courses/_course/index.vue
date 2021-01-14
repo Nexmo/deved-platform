@@ -7,25 +7,20 @@
       <aside class="static col-span-1 row-span-2">
         <Author :author="course.author" type="card" />
       </aside>
-      <article class="col-span-4 flex-1 bg-white shadow-xl rounded-xl">
+      <article class="flex-1 col-span-4 bg-white shadow-xl rounded-xl">
         <figure
           v-if="course.show_thumbnail"
           class="overflow-hidden rounded-t-lg"
         >
           <div class="card-figure">
-            <nuxt-image
-              placeholder="true"
-              property="image"
-              :src="course.thumbnail"
-              :alt="course.title"
-            />
+            <img property="image" :src="course.thumbnail" :alt="course.title" />
           </div>
         </figure>
-        <header class="p-4 md:p-6 border-gray-200 border-b-2">
+        <header class="p-4 border-b-2 border-gray-200 md:p-6">
           <h2 property="headline" class="text-3xl font-medium">
             {{ course.title }}
           </h2>
-          <p class="text-lg my-2">{{ course.summary }}</p>
+          <p class="my-2 text-lg">{{ course.summary }}</p>
           <div class="meta">
             <p>
               {{ classes.length }} Classes &bull; {{ chapters.length }} Chapters

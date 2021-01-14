@@ -8,8 +8,7 @@
         <div class="overflow-hidden bg-white rounded-lg shadow-lg">
           <figure class="overflow-hidden rounded-t-lg">
             <div class="card-figure">
-              <nuxt-image
-                placeholder="true"
+              <img
                 property="image"
                 :src="course.thumbnail"
                 :alt="course.title"
@@ -26,10 +25,10 @@
           </header>
           <main>
             <Listing :links="classes" :border="false" />
-            <div v-if="course.glossary" class="glossary m-2 text-center">
+            <div v-if="course.glossary" class="m-2 text-center glossary">
               <nuxt-link
                 :to="`/courses/${course.slug}/glossary`"
-                class="block w-full bg-black p-2 text-white text-sm rounded"
+                class="block w-full p-2 text-sm text-white bg-black rounded"
                 >Glossary</nuxt-link
               >
             </div>
@@ -37,12 +36,12 @@
         </div>
       </aside>
 
-      <article class="col-span-4 flex-1 bg-white shadow-xl rounded-xl">
-        <header class="p-4 md:p-6 border-gray-200 border-b-2">
+      <article class="flex-1 col-span-4 bg-white shadow-xl rounded-xl">
+        <header class="p-4 border-b-2 border-gray-200 md:p-6">
           <h2 property="headline" class="text-3xl font-medium">
             {{ singleClass.title }}
           </h2>
-          <p class="text-lg my-2">{{ singleClass.description }}</p>
+          <p class="my-2 text-lg">{{ singleClass.description }}</p>
           <div class="meta">
             <p>
               {{ chapters.length }} Chapters &bull; {{ runTime }} Minutes Total

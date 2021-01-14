@@ -1,6 +1,6 @@
 <template>
   <div
-    class="overflow-hidden bg-white rounded-lg shadow-lg flex flex-col sm:flex-row md:block"
+    class="flex flex-col overflow-hidden bg-white rounded-lg shadow-lg sm:flex-row md:block"
     vocab="http://schema.org/"
     typeof="Person"
   >
@@ -8,24 +8,16 @@
       <nuxt-link :to="localePath(`/authors/${author.username}`)">
         <img
           v-if="!author.image_url"
-          class="object-cover w-24 sm:w-32 md:w-full rounded-full md:rounded-none md:block"
+          class="object-cover w-24 rounded-full sm:w-32 md:w-full md:rounded-none md:block"
           src="/content/images/placeholder.svg"
           property="image"
-          :alt="`Profile pic of ${author.name}`"
-        />
-        <nuxt-image
-          v-else-if="author.image_url.startsWith('/')"
-          :src="author.image_url"
-          property="image"
-          placeholder="/content/images/placeholder.svg"
-          class="object-cover w-24 sm:w-32 md:w-full rounded-full md:rounded-none md:block"
           :alt="`Profile pic of ${author.name}`"
         />
         <img
           v-else
           :src="author.image_url"
           property="image"
-          class="object-cover w-24 sm:w-32 md:w-full rounded-full md:rounded-none md:block"
+          class="object-cover w-24 rounded-full sm:w-32 md:w-full md:rounded-none md:block"
           :alt="`Profile pic of ${author.name}`"
         />
       </nuxt-link>

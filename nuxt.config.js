@@ -91,18 +91,12 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxt/content',
-    '@nuxt/image',
     '@nuxtjs/axios',
     '@nuxtjs/feed',
     'nuxt-clipboard2',
     'nuxt-i18n',
     'vue-social-sharing/nuxt',
   ],
-
-  // https://image.nuxtjs.org/
-  image: {
-    // Options
-  },
 
   // https://axios.nuxtjs.org/
   axios: {

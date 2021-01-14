@@ -8,8 +8,7 @@
         <div class="overflow-hidden bg-white rounded-lg shadow-lg">
           <figure class="overflow-hidden rounded-t-lg">
             <div class="card-figure">
-              <nuxt-image
-                placeholder="true"
+              <img
                 property="image"
                 :src="course.thumbnail"
                 :alt="course.title"
@@ -26,10 +25,10 @@
           </header>
           <main>
             <Listing :links="classes" :border="false" />
-            <div v-if="course.glossary" class="glossary m-2 text-center">
+            <div v-if="course.glossary" class="m-2 text-center glossary">
               <nuxt-link
                 :to="`/courses/${course.slug}/glossary`"
-                class="block w-full bg-black p-2 text-white text-sm rounded"
+                class="block w-full p-2 text-sm text-white bg-black rounded"
                 >Glossary</nuxt-link
               >
             </div>
@@ -37,7 +36,7 @@
         </div>
       </aside>
 
-      <article class="col-span-4 flex-1 bg-white shadow-xl rounded-xl">
+      <article class="flex-1 col-span-4 bg-white shadow-xl rounded-xl">
         <main class="p-4 md:p-6">
           <Glossary :terms="course.glossary" />
         </main>

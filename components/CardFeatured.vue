@@ -6,13 +6,7 @@
         class="card-figure"
         :title="post.title"
       >
-        <nuxt-image
-          v-if="post.thumbnail.startsWith('/')"
-          placeholder="true"
-          :src="post.thumbnail"
-          alt="post.title"
-        />
-        <img v-else :src="post.thumbnail" alt="post.title" />
+        <img :src="post.thumbnail" :alt="post.title" />
       </nuxt-link>
     </figure>
     <section class="flex flex-col justify-between flex-1 p-6 bg-white">
