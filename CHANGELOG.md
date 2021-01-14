@@ -1,3 +1,10 @@
+## [2.5.5](https://github.com/Nexmo/deved-platform/compare/v2.5.4...v2.5.5) (2021-01-14)
+
+
+### Bug Fixes
+
+* image loading problems related to nuxt-image automatic optimisation. manually optimised images ([#617](https://github.com/Nexmo/deved-platform/issues/617)) ([c856ae8](https://github.com/Nexmo/deved-platform/commit/c856ae889821478ede7a99e48c26958ba33eaa49))
+
 ## [2.5.4](https://github.com/Nexmo/deved-platform/compare/v2.5.2...v2.5.4) (2021-01-14)
 
 
