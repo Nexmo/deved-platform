@@ -1,3 +1,11 @@
+## [2.5.4](https://github.com/Nexmo/deved-platform/compare/v2.5.2...v2.5.4) (2021-01-14)
+
+
+### Bug Fixes
+
+* add styling to inline code ([#616](https://github.com/Nexmo/deved-platform/issues/616)) ([aedadc0](https://github.com/Nexmo/deved-platform/commit/aedadc086bd20222c7ed144d5ecfc4eb5e85633e))
+* prevent em/en dash in titles and subsequently slugs ([#611](https://github.com/Nexmo/deved-platform/issues/611)) ([a62f9af](https://github.com/Nexmo/deved-platform/commit/a62f9af8c3256bf91d5f8d98af91a1c27be5fd50))
+
 ## [2.5.3](https://github.com/Nexmo/deved-platform/compare/v2.5.2...v2.5.3) (2021-01-13)
 
 
