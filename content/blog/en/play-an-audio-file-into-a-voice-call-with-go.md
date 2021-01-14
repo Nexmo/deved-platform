@@ -3,10 +3,11 @@ title: Play an Audio File Into a Voice Call With Go
 description: This tutorial will take you through the process of receiving a
   voice call and then playing an audio file into the call, using Go and the
   Vonage Voice API.
+thumbnail: /content/blog/play-an-audio-file-into-a-voice-call-with-go/go_audioincall1200x600.png
 author: greg-holmes
 published: true
-published_at: 2021-01-12T15:03:33.257Z
-updated_at: 2021-01-12T15:03:33.281Z
+published_at: 2021-01-14T14:04:04.099Z
+updated_at: ""
 category: tutorial
 tags:
   - go
