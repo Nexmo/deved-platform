@@ -8,7 +8,7 @@
     <section class="flex flex-col justify-between flex-1 p-6 bg-white">
       <header class="flex-1">
         <h3 class="block mt-2 text-lg">
-          <nuxt-link :to="item.path" :title="item.title">
+          <nuxt-link :to="item.path.replace(/\/?$/, '/')" :title="item.title">
             {{ item.title }}
           </nuxt-link>
         </h3>
