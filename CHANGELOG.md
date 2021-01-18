@@ -1,3 +1,10 @@
+## [2.5.6](https://github.com/Nexmo/deved-platform/compare/v2.5.5...v2.5.6) (2021-01-18)
+
+
+### Bug Fixes
+
+* add trailing where none exists for search ([#622](https://github.com/Nexmo/deved-platform/issues/622)) ([88934a2](https://github.com/Nexmo/deved-platform/commit/88934a23911795efdbf0d4f1a2e77eb79814922c))
+
 ## [2.5.5](https://github.com/Nexmo/deved-platform/compare/v2.5.4...v2.5.5) (2021-01-14)
 
 
