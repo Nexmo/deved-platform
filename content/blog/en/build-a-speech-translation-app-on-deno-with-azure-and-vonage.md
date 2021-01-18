@@ -15,8 +15,8 @@ tags:
   - deno
   - azure
   - voice-api
-canonical: https://www.nexmo.com/blog/2020/06/09/build-a-speech-translation-app-on-deno-with-azure-and-vonage
-redirect: https://www.nexmo.com/blog/2020/06/09/build-a-speech-translation-app-on-deno-with-azure-and-vonage
+canonical: https://www.nexmo.com/legacy-blog/2020/06/09/build-a-speech-translation-app-on-deno-with-azure-and-vonage
+redirect: https://www.nexmo.com/legacy-blog/2020/06/09/build-a-speech-translation-app-on-deno-with-azure-and-vonage
 ---
 
 Content to be migrated...

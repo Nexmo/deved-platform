@@ -12,8 +12,8 @@ comments: true
 category: release
 tags:
   - php
-canonical: https://www.nexmo.com/blog/2020/08/03/announcing-the-php-server-sdk-version-2-2-0-release
-redirect: https://www.nexmo.com/blog/2020/08/03/announcing-the-php-server-sdk-version-2-2-0-release
+canonical: https://www.nexmo.com/legacy-blog/2020/08/03/announcing-the-php-server-sdk-version-2-2-0-release
+redirect: https://www.nexmo.com/legacy-blog/2020/08/03/announcing-the-php-server-sdk-version-2-2-0-release
 ---
 
 Content to be migrated...

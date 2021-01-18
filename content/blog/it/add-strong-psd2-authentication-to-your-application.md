@@ -39,7 +39,7 @@ Per autorizzare un pagamento, l'API invia un codice al numero di telefono regist
 
 L'autorizzazione può avvenire tramite messaggio di testo, telefonata o, solitamente, una combinazione di entrambi; quest’ultima opzione consente di raggiungere il maggior numero possibile di utenti. L'utente riceverà il PIN insieme alle informazioni sulla transazione: l'importo del pagamento e a chi è destinato.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2020/06/sms_shot.png" alt="Screenshot from phone with message: Your code 2393 is for payment to Acme Inc. in the amount of 12.34€. Valid for 5 minutes." width="760" height="236" class="aligncenter size-full wp-image-32727" />
+![Screenshot from phone with message: Your code 2393 is for payment to Acme Inc. in the amount of 12.34€. Valid for 5 minutes](/content/blog/add-strong-psd2-authentication-to-your-application/sms_shot.png)
 
 L'utente fornisce quindi il PIN che ha ricevuto; questo viene inviato di nuovo alla Verify API per verificare che sia corretto. In caso affermativo, la richiesta viene confermata e l’utente può  procedere con il pagamento.
 

@@ -12,8 +12,8 @@ published_at: 2020-02-26T12:01:14.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2020/02/26/nexmo-ruby-new-release-host-overriding-dr
-redirect: https://www.nexmo.com/blog/2020/02/26/nexmo-ruby-new-release-host-overriding-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/02/26/nexmo-ruby-new-release-host-overriding-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/02/26/nexmo-ruby-new-release-host-overriding-dr
 ---
 
 Content to be migrated...

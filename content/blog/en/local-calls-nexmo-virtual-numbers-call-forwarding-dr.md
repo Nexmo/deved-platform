@@ -13,8 +13,8 @@ published_at: 2018-12-10T14:04:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/10/local-calls-nexmo-virtual-numbers-call-forwarding-dr
-redirect: https://www.nexmo.com/blog/2018/12/10/local-calls-nexmo-virtual-numbers-call-forwarding-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/10/local-calls-nexmo-virtual-numbers-call-forwarding-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/10/local-calls-nexmo-virtual-numbers-call-forwarding-dr
 ---
 
 Content to be migrated...

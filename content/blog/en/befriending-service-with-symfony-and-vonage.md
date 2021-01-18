@@ -18,8 +18,8 @@ tags:
   - php
   - verify-api
   - voice-api
-canonical: https://www.nexmo.com/blog/2020/06/08/befriending-service-with-symfony-and-vonage
-redirect: https://www.nexmo.com/blog/2020/06/08/befriending-service-with-symfony-and-vonage
+canonical: https://www.nexmo.com/legacy-blog/2020/06/08/befriending-service-with-symfony-and-vonage
+redirect: https://www.nexmo.com/legacy-blog/2020/06/08/befriending-service-with-symfony-and-vonage
 ---
 
 Content to be migrated...

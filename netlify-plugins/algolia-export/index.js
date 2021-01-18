@@ -43,7 +43,7 @@ module.exports = {
     }
 
     if (debugMode) {
-      console.warn(
+      console.warn( // eslint-disable-line
         `${chalk.yellow('@netlify/plugin-algolia-index:')} ${chalk.blueBright(
           'debugMode'
         )} is not implemented yet for this plugin`
@@ -73,20 +73,26 @@ module.exports = {
       try {
         const client = algoliasearch(algoliaAppId, algoliaAdminKey)
         const index = client.initIndex(algoliaIndex)
+
+        index.clearObjects()
+        console.info( // eslint-disable-line
+          `${chalk.green('@netlify/plugin-algolia-index:')} cleared index`
+        )
+
         await exporter(index, newIndex)
       } catch (error) {
         // Not exporting to search index doesn't fail the entire build
         build.failPlugin('Export to Algolia failed', { error })
       }
     } else {
-      console.info(
+      console.info( // eslint-disable-line
         `${chalk.green('@netlify/plugin-algolia-index:')} export skipped for '${
           process.env.CONTEXT
         }'`
       )
     }
 
-    console.info(
+    console.info( // eslint-disable-line
       `${chalk.green('@netlify/plugin-algolia-index:')} export to ${chalk.cyan(
         algoliaAppId
       )}/${chalk.cyan(algoliaIndex)} finished`

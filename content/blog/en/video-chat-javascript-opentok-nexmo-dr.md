@@ -12,8 +12,8 @@ published_at: 2019-01-09T00:12:20.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/01/08/video-chat-javascript-opentok-nexmo-dr
-redirect: https://www.nexmo.com/blog/2019/01/08/video-chat-javascript-opentok-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/01/08/video-chat-javascript-opentok-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/01/08/video-chat-javascript-opentok-nexmo-dr
 ---
 
 Content to be migrated...

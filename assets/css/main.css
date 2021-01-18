@@ -1,26 +1,257 @@
+@import '../fonts/spezia/spezia.css';
+@import 'fontsource-roboto/index.css';
+
+body {
+  @apply bg-grey-lighter;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Spezia, Roboto, sans-serif;
+}
+
 div.nuxt-progress {
   background: linear-gradient(to right, #7fc6f4, #d5279b);
 }
 
-.Blog__Full-width {
-  width: 100%;
-  max-width: 100%;
+.badge {
+  @apply font-semibold;
+  @apply px-3;
+  @apply py-1;
+  @apply rounded-full;
+  @apply text-sm;
+  @apply bg-grey-light;
+  @apply text-grey-darker;
 }
 
-.Vlt-container {
-  margin: auto;
-  max-width: 1200px;
-  width: 100%;
+.badge--small {
+  @apply px-2;
+  @apply text-xs;
 }
 
-.Vlt-container .Vlt-grid {
-  margin-left: 0;
-  margin-right: 0;
+.badge--large {
+  @apply px-4;
+  @apply text-base;
 }
 
-a.Clickable-header__Link {
-  font-size: 20px;
-  color: silver;
-  margin-left: 8px;
-  line-height: 1;
+.badge--purple {
+  @apply bg-purple-lighter;
+  @apply text-purple-dark;
 }
+
+.button {
+  @apply font-semibold;
+  @apply py-2;
+  @apply px-4;
+  @apply rounded;
+  @apply inline-flex;
+  @apply items-center;
+  @apply text-sm;
+}
+
+select.button {
+  @apply pr-10;
+  @apply appearance-none;
+  @apply outline-none;
+}
+
+.button--pill {
+  @apply rounded-full;
+}
+
+.button--round {
+  @apply p-0;
+  @apply rounded-full;
+  @apply h-8;
+  @apply w-8;
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+}
+
+.button--small {
+  @apply text-xs;
+}
+
+.button--block {
+  @apply w-full;
+}
+
+.button--primary {
+  @apply bg-black;
+  @apply text-white;
+}
+
+.button--white {
+  @apply bg-white;
+  @apply text-black;
+}
+
+.button--facebook {
+  @apply bg-brand-facebook;
+  @apply text-white;
+}
+
+.button--twitter {
+  @apply bg-brand-twitter;
+  @apply text-white;
+}
+
+.button--linkedin {
+  @apply bg-brand-linkedin;
+  @apply text-white;
+}
+
+.button--reddit {
+  @apply bg-brand-reddit;
+  @apply text-white;
+}
+
+.button--pocket {
+  @apply bg-brand-pocket;
+  @apply text-white;
+}
+
+.button--hackernews {
+  @apply bg-brand-hackernews;
+  @apply text-white;
+}
+
+.button--weibo {
+  @apply bg-brand-weibo;
+  @apply text-white;
+}
+
+.button--vk {
+  @apply bg-brand-vk;
+  @apply text-white;
+}
+
+.button--slack {
+  @apply bg-brand-slack;
+  @apply text-white;
+}
+
+.button--twitch {
+  @apply bg-gray-800;
+  @apply text-white;
+}
+
+.button--twitch svg {
+  @apply text-brand-twitch;
+}
+
+.button--stackoverflow {
+  @apply bg-brand-stackoverflow;
+  @apply text-white;
+}
+
+.button--youtube {
+  @apply bg-brand-youtube;
+  @apply text-white;
+}
+
+.button--github {
+  @apply bg-brand-github;
+  @apply text-white;
+}
+
+.icon-size {
+  width: 1em;
+  height: 1em;
+}
+
+@screen md {
+  .nuxt-content .nuxt-content-highlight {
+    margin: 0 -30px;
+  }
+
+  .nuxt-content .nuxt-content-highlight pre {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.nuxt-content img {
+  @apply rounded-lg;
+  margin: 0 auto;
+}
+
+.nuxt-content p a {
+  @apply text-purple-dark;
+}
+
+.nuxt-content p > code {
+  @apply font-normal;
+  @apply text-red-600;
+  @apply border;
+  @apply bg-grey-lighter;
+  @apply border-grey-light;
+  @apply px-1;
+}
+
+.nuxt-content p > code::before,
+.nuxt-content p > code::after {
+  content: "";
+}
+
+.nuxt-content iframe:not(.Youtube) {
+  @apply max-w-full;
+}
+
+.index-section > h2 {
+  @apply my-6;
+  @apply md:my-10;
+  @apply text-sm;
+  @apply font-light;
+  @apply text-center;
+  @apply uppercase;
+  @apply text-grey-dark;
+  @apply relative;
+  @apply z-20;
+  @apply tracking-widest;
+}
+
+.index-section > h2:before {
+  @apply border-t;
+  @apply border-grey-light;
+  @apply my-0;
+  @apply mx-auto;
+  @apply absolute;
+  @apply left-0;
+  @apply right-0;
+  @apply bottom-0;
+  @apply w-11/12;
+  z-index: -1;
+  content: '';
+  top: 50%;
+}
+
+.index-section > h2 > span,
+.index-section > h2 > a {
+  @apply bg-grey-lighter;
+  @apply z-10;
+  @apply py-0;
+  @apply px-4;
+}
+
+.card-figure {
+  @apply block;
+  @apply w-full;
+  @apply overflow-hidden;
+}
+
+.card-figure img {
+  @apply object-cover;
+  @apply object-center;
+  @apply h-24;
+  @apply sm:h-36;
+  @apply md:h-48;
+  @apply lg:h-64;
+  @apply w-full;
+}
+

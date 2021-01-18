@@ -1,0 +1,111 @@
+@font-face {
+	font-family:'Spezia';
+  src: url("./Spezia-Regular.otf") format("opentype");
+	src: url('./Spezia_Web_Regular/SpeziaWeb-Regular.eot'); /* IE9 Compat Modes */
+	src: url('./Spezia_Web_Regular/SpeziaWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('./Spezia_Web_Regular/SpeziaWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./Spezia_Web_Regular/SpeziaWeb-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB04;
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'Spezia';
+  src: url("./Spezia-RegularItalic.otf") format("opentype");
+	src: url('./Spezia_Web_RegularItalic/SpeziaWeb-RegularItalic.eot'); /* IE9 Compat Modes */
+	src: url('./Spezia_Web_RegularItalic/SpeziaWeb-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('./Spezia_Web_RegularItalic/SpeziaWeb-RegularItalic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./Spezia_Web_RegularItalic/SpeziaWeb-RegularItalic.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+	unicode-range: U+000D-FB04;
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'Spezia';
+  src: url("./Spezia-SemiBold.otf") format("opentype");
+	src: url('./Spezia_Web_SemiBold/SpeziaWeb-SemiBold.eot'); /* IE9 Compat Modes */
+	src: url('./Spezia_Web_SemiBold/SpeziaWeb-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('./Spezia_Web_SemiBold/SpeziaWeb-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./Spezia_Web_SemiBold/SpeziaWeb-SemiBold.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB04;
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'Spezia';
+  src: url("./Spezia-SemiBoldItalic.otf") format("opentype");
+	src: url('./Spezia_Web_SemiBoldItalic/SpeziaWeb-SemiBoldItalic.eot'); /* IE9 Compat Modes */
+	src: url('./Spezia_Web_SemiBoldItalic/SpeziaWeb-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('./Spezia_Web_SemiBoldItalic/SpeziaWeb-SemiBoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./Spezia_Web_SemiBoldItalic/SpeziaWeb-SemiBoldItalic.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 600;
+	font-style: italic;
+	font-stretch: normal;
+	unicode-range: U+000D-FB04;
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'Spezia';
+  src: url("./Spezia-SemiMonoRegular.otf") format("opentype");
+	src: url('./Spezia_Web_SemiMono_Regular/SpeziaWeb-SemiMonoRegular.eot'); /* IE9 Compat Modes */
+	src: url('./Spezia_Web_SemiMono_Regular/SpeziaWeb-SemiMonoRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('./Spezia_Web_SemiMono_Regular/SpeziaWeb-SemiMonoRegular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./Spezia_Web_SemiMono_Regular/SpeziaWeb-SemiMonoRegular.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB04;
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'Spezia';
+  src: url("./Spezia-SemiMonoSemiBold.otf") format("opentype");
+	src: url('./Spezia_Web_SemiMono_SemiBold/SpeziaWeb-SemiMonoSemiBold.eot'); /* IE9 Compat Modes */
+	src: url('./Spezia_Web_SemiMono_SemiBold/SpeziaWeb-SemiMonoSemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('./Spezia_Web_SemiMono_SemiBold/SpeziaWeb-SemiMonoSemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./Spezia_Web_SemiMono_SemiBold/SpeziaWeb-SemiMonoSemiBold.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB04;
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SpeziaWide';
+  src: url("./Spezia-WideMedium.otf") format("opentype");
+	src: url('./Spezia_Web_WideMedium/SpeziaWeb-WideMedium.eot'); /* IE9 Compat Modes */
+	src: url('./Spezia_Web_WideMedium/SpeziaWeb-WideMedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('./Spezia_Web_WideMedium/SpeziaWeb-WideMedium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./Spezia_Web_WideMedium/SpeziaWeb-WideMedium.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB04;
+	font-display: swap;
+}
+
+@font-face {
+	font-family:'SpeziaWide';
+  src: url("./Spezia-WideMediumItalic.otf") format("opentype");
+	src: url('./Spezia_Web_WideMediumItalic/SpeziaWeb-WideMediumItalic.eot'); /* IE9 Compat Modes */
+	src: url('./Spezia_Web_WideMediumItalic/SpeziaWeb-WideMediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('./Spezia_Web_WideMediumItalic/SpeziaWeb-WideMediumItalic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./Spezia_Web_WideMediumItalic/SpeziaWeb-WideMediumItalic.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: normal;
+	unicode-range: U+000D-FB04;
+	font-display: swap;
+}

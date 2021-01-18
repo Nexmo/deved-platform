@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - ai
   - chatbots
-canonical: https://www.nexmo.com/blog/2017/10/05/ai-bot-platform
-redirect: https://www.nexmo.com/blog/2017/10/05/ai-bot-platform
+canonical: https://www.nexmo.com/legacy-blog/2017/10/05/ai-bot-platform
+redirect: https://www.nexmo.com/legacy-blog/2017/10/05/ai-bot-platform
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2018-02-16T14:14:06.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
-redirect: https://www.nexmo.com/blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/02/16/text-speech-prompt-calls-using-python-aws-lambda-dr
 ---
 
 Content to be migrated...

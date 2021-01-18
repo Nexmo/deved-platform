@@ -12,8 +12,8 @@ published_at: 2018-10-02T16:24:26.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/10/02/image-classifier-in-tensorflow-dr
-redirect: https://www.nexmo.com/blog/2018/10/02/image-classifier-in-tensorflow-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/10/02/image-classifier-in-tensorflow-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/10/02/image-classifier-in-tensorflow-dr
 ---
 
 Content to be migrated...

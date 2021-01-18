@@ -12,8 +12,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2018/07/03/martyn-davies-joins-nexmo-dr
-redirect: https://www.nexmo.com/blog/2018/07/03/martyn-davies-joins-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/07/03/martyn-davies-joins-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/07/03/martyn-davies-joins-nexmo-dr
 ---
 
 Content to be migrated...

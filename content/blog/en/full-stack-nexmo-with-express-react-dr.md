@@ -12,8 +12,8 @@ published_at: 2019-03-15T12:04:59.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/03/15/full-stack-nexmo-with-express-react-dr
-redirect: https://www.nexmo.com/blog/2019/03/15/full-stack-nexmo-with-express-react-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/03/15/full-stack-nexmo-with-express-react-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/03/15/full-stack-nexmo-with-express-react-dr
 ---
 
 Content to be migrated...

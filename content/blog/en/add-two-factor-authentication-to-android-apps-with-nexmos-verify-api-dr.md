@@ -15,8 +15,8 @@ tags:
   - 2fa
   - android
   - verify-api
-canonical: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-android-apps-with-nexmos-verify-api-dr
-redirect: https://www.nexmo.com/blog/2018/05/10/add-two-factor-authentication-to-android-apps-with-nexmos-verify-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/05/10/add-two-factor-authentication-to-android-apps-with-nexmos-verify-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/05/10/add-two-factor-authentication-to-android-apps-with-nexmos-verify-api-dr
 ---
 
 Content to be migrated...

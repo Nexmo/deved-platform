@@ -12,8 +12,8 @@ published_at: 2019-12-30T14:00:13.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/12/30/building-a-real-time-net-transcription-service-dr
-redirect: https://www.nexmo.com/blog/2019/12/30/building-a-real-time-net-transcription-service-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/12/30/building-a-real-time-net-transcription-service-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/12/30/building-a-real-time-net-transcription-service-dr
 ---
 
 Content to be migrated...

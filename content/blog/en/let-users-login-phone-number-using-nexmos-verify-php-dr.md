@@ -12,8 +12,8 @@ published_at: 2016-06-28T15:21:43.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/06/28/let-users-login-phone-number-using-nexmos-verify-php-dr
-redirect: https://www.nexmo.com/blog/2016/06/28/let-users-login-phone-number-using-nexmos-verify-php-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/06/28/let-users-login-phone-number-using-nexmos-verify-php-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/06/28/let-users-login-phone-number-using-nexmos-verify-php-dr
 ---
 
 Content to be migrated...

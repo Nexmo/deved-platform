@@ -12,8 +12,8 @@ published_at: 2018-07-12T16:00:47.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/07/12/swipedon-developer-story
-redirect: https://www.nexmo.com/blog/2018/07/12/swipedon-developer-story
+canonical: https://www.nexmo.com/legacy-blog/2018/07/12/swipedon-developer-story
+redirect: https://www.nexmo.com/legacy-blog/2018/07/12/swipedon-developer-story
 ---
 
 Content to be migrated...

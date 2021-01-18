@@ -13,8 +13,8 @@ published_at: 2020-01-22T14:02:06.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2020/01/22/nexmo-at-birmingham-on-rails-dr
-redirect: https://www.nexmo.com/blog/2020/01/22/nexmo-at-birmingham-on-rails-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/22/nexmo-at-birmingham-on-rails-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/22/nexmo-at-birmingham-on-rails-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-04-10T22:46:47.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/04/10/forward-phone-call-voice-proxy-java-dr
-redirect: https://www.nexmo.com/blog/2019/04/10/forward-phone-call-voice-proxy-java-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/04/10/forward-phone-call-voice-proxy-java-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/04/10/forward-phone-call-voice-proxy-java-dr
 ---
 
 Content to be migrated...

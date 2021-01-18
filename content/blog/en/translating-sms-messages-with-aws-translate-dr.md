@@ -12,8 +12,8 @@ published_at: 2019-11-04T16:40:01.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/11/04/translating-sms-messages-with-aws-translate-dr
-redirect: https://www.nexmo.com/blog/2019/11/04/translating-sms-messages-with-aws-translate-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/11/04/translating-sms-messages-with-aws-translate-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/11/04/translating-sms-messages-with-aws-translate-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2020-01-08T08:01:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/01/08/interactive-voice-response-node-red-dr
-redirect: https://www.nexmo.com/blog/2020/01/08/interactive-voice-response-node-red-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/08/interactive-voice-response-node-red-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/08/interactive-voice-response-node-red-dr
 ---
 
 Content to be migrated...

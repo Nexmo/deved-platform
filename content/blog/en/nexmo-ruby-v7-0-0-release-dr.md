@@ -12,8 +12,8 @@ published_at: 2020-04-06T11:34:05.000Z
 comments: true
 category: release
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/06/nexmo-ruby-v7-0-0-release-dr
-redirect: https://www.nexmo.com/blog/2020/04/06/nexmo-ruby-v7-0-0-release-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/06/nexmo-ruby-v7-0-0-release-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/06/nexmo-ruby-v7-0-0-release-dr
 ---
 
 Content to be migrated...

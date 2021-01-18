@@ -12,8 +12,8 @@ published_at: 2017-02-28T14:00:00.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/02/28/sending-receiving-sms-node-js
-redirect: https://www.nexmo.com/blog/2017/02/28/sending-receiving-sms-node-js
+canonical: https://www.nexmo.com/legacy-blog/2017/02/28/sending-receiving-sms-node-js
+redirect: https://www.nexmo.com/legacy-blog/2017/02/28/sending-receiving-sms-node-js
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2018-12-15T01:00:25.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/14/onehack-devrel-internal-hackathon-dr
-redirect: https://www.nexmo.com/blog/2018/12/14/onehack-devrel-internal-hackathon-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/14/onehack-devrel-internal-hackathon-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/14/onehack-devrel-internal-hackathon-dr
 ---
 
 Content to be migrated...

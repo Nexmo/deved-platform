@@ -13,8 +13,8 @@ published_at: 2018-09-11T12:09:56.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2018/09/11/how-we-powered-emf-camp-dr
-redirect: https://www.nexmo.com/blog/2018/09/11/how-we-powered-emf-camp-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/09/11/how-we-powered-emf-camp-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/09/11/how-we-powered-emf-camp-dr
 ---
 
 Content to be migrated...

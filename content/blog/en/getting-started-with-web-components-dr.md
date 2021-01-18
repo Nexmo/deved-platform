@@ -12,8 +12,8 @@ published_at: 2020-03-24T14:13:02.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr
-redirect: https://www.nexmo.com/blog/2020/03/24/getting-started-with-web-components-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/03/24/getting-started-with-web-components-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/03/24/getting-started-with-web-components-dr
 ---
 
 Content to be migrated...

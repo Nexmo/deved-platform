@@ -1,31 +1,17 @@
 <template>
-  <div class="Vlt-grid">
-    <div class="Vlt-col Blog-error">
-      <h1>Bad request</h1>
-      <p>
-        Don't worry you definately typed the correct URL, it's the keyboard's
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl gap-6 p-6 mx-auto my-16 md:flex-row"
+  >
+    <div>
+      <h1 class="text-3xl font-bold">Our bad!</h1>
+      <p class="my-2">
+        Don't worry you definitely typed the correct URL, it's the keyboard's
         fault.
       </p>
-      <NLink to="/" no-prefetch class="Vlt-btn Vlt-btn--app Vlt-btn--secondary">
-        Home page
-      </NLink>
+      <nuxt-link to="/" class="button button--primary"> Home page </nuxt-link>
     </div>
-
-    <div class="Vlt-col Blog-error">
-      <img
-        src="../../node_modules/@vonagevolta/volta2/demo/templates/assets/img/error-400.svg"
-        alt="An image showing that an error has occured"
-      />
+    <div class="max-w-md object-fit">
+      <img class="" src="~/assets/images/illustrations/Error-400.svg" />
     </div>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style scoped>
-.Vlt-error-page .Blog-error {
-  margin-top: 100px;
-}
-</style>

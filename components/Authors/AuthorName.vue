@@ -1,14 +1,14 @@
 <template>
-  <fragment>
+  <span>
     <span v-if="author.error">{{ author.name }}</span>
-    <NLink
+    <nuxt-link
       v-else
+      class="font-bold"
       :to="localePath(`/authors/${author.username}`)"
-      class="Author__Name Vlt-black"
     >
       {{ author.name }}
-    </NLink>
-  </fragment>
+    </nuxt-link>
+  </span>
 </template>
 
 <script>

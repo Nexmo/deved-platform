@@ -15,8 +15,8 @@ tags:
   - ruby
   - ruby-on-rails
   - voice-api
-canonical: https://www.nexmo.com/blog/2019/05/10/build-a-conference-call-with-the-nexmo-voice-api-and-ruby-on-rails-dr
-redirect: https://www.nexmo.com/blog/2019/05/10/build-a-conference-call-with-the-nexmo-voice-api-and-ruby-on-rails-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/05/10/build-a-conference-call-with-the-nexmo-voice-api-and-ruby-on-rails-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/05/10/build-a-conference-call-with-the-nexmo-voice-api-and-ruby-on-rails-dr
 ---
 
 Content to be migrated...

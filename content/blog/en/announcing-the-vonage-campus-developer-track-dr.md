@@ -13,8 +13,8 @@ comments: true
 category: community
 tags:
   - vonage-campus
-canonical: https://www.nexmo.com/blog/2019/09/11/announcing-the-vonage-campus-developer-track-dr
-redirect: https://www.nexmo.com/blog/2019/09/11/announcing-the-vonage-campus-developer-track-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/09/11/announcing-the-vonage-campus-developer-track-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/09/11/announcing-the-vonage-campus-developer-track-dr
 ---
 
 Content to be migrated...

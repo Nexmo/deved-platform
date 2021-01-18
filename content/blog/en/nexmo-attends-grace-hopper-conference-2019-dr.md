@@ -12,8 +12,8 @@ published_at: 2019-09-30T15:58:26.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
-redirect: https://www.nexmo.com/blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/09/30/nexmo-attends-grace-hopper-conference-2019-dr
 ---
 
 Content to be migrated...

@@ -11,8 +11,8 @@ published_at: 2020-03-27T17:55:30.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/27/is-it-the-weekend-yet-build-a-web-scraping-app-with-sms-to-find-out-dr
-redirect: https://www.nexmo.com/blog/2020/03/27/is-it-the-weekend-yet-build-a-web-scraping-app-with-sms-to-find-out-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/03/27/is-it-the-weekend-yet-build-a-web-scraping-app-with-sms-to-find-out-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/03/27/is-it-the-weekend-yet-build-a-web-scraping-app-with-sms-to-find-out-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2020-08-10T18:10:07.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/08/10/how-to-build-a-voicemail-app-with-asp-net-core-dr
-redirect: https://www.nexmo.com/blog/2020/08/10/how-to-build-a-voicemail-app-with-asp-net-core-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/08/10/how-to-build-a-voicemail-app-with-asp-net-core-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/08/10/how-to-build-a-voicemail-app-with-asp-net-core-dr
 ---
 
 Content to be migrated...

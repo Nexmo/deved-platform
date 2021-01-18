@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - php
   - voice-api
-canonical: https://www.nexmo.com/blog/2019/05/08/build-a-conference-call-with-php-dr
-redirect: https://www.nexmo.com/blog/2019/05/08/build-a-conference-call-with-php-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/05/08/build-a-conference-call-with-php-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/05/08/build-a-conference-call-with-php-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2017-04-03T13:55:00.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/04/03/nexmo-ride-hailing-chatbot
-redirect: https://www.nexmo.com/blog/2017/04/03/nexmo-ride-hailing-chatbot
+canonical: https://www.nexmo.com/legacy-blog/2017/04/03/nexmo-ride-hailing-chatbot
+redirect: https://www.nexmo.com/legacy-blog/2017/04/03/nexmo-ride-hailing-chatbot
 ---
 
 Content to be migrated...

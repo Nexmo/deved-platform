@@ -12,8 +12,8 @@ published_at: 2020-01-17T13:08:45.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/01/17/using-github-repository-guidelines-to-enhance-developer-experience-dr
-redirect: https://www.nexmo.com/blog/2020/01/17/using-github-repository-guidelines-to-enhance-developer-experience-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/17/using-github-repository-guidelines-to-enhance-developer-experience-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/17/using-github-repository-guidelines-to-enhance-developer-experience-dr
 ---
 
 Content to be migrated...

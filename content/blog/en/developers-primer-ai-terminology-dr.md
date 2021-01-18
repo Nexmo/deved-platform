@@ -12,8 +12,8 @@ published_at: 2018-11-12T17:01:29.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2018/11/12/developers-primer-ai-terminology-dr
-redirect: https://www.nexmo.com/blog/2018/11/12/developers-primer-ai-terminology-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/11/12/developers-primer-ai-terminology-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/11/12/developers-primer-ai-terminology-dr
 ---
 
 Content to be migrated...

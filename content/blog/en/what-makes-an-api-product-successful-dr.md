@@ -12,8 +12,8 @@ published_at: 2019-12-06T09:00:46.000Z
 comments: true
 category: inspiration
 tags: []
-canonical: https://www.nexmo.com/blog/2019/12/06/what-makes-an-api-product-successful-dr
-redirect: https://www.nexmo.com/blog/2019/12/06/what-makes-an-api-product-successful-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/12/06/what-makes-an-api-product-successful-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/12/06/what-makes-an-api-product-successful-dr
 ---
 
 Content to be migrated...

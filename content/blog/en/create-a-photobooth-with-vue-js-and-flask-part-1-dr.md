@@ -12,8 +12,8 @@ published_at: 2020-06-25T07:32:27.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/06/25/create-a-photobooth-with-vue-js-and-flask-part-1-dr
-redirect: https://www.nexmo.com/blog/2020/06/25/create-a-photobooth-with-vue-js-and-flask-part-1-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/06/25/create-a-photobooth-with-vue-js-and-flask-part-1-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/06/25/create-a-photobooth-with-vue-js-and-flask-part-1-dr
 ---
 
 Content to be migrated...

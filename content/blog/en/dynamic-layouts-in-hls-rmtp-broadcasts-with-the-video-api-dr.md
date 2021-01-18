@@ -12,8 +12,8 @@ published_at: 2020-09-22T13:00:32.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/09/22/dynamic-layouts-in-hls-rmtp-broadcasts-with-the-video-api-dr
-redirect: https://www.nexmo.com/blog/2020/09/22/dynamic-layouts-in-hls-rmtp-broadcasts-with-the-video-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/09/22/dynamic-layouts-in-hls-rmtp-broadcasts-with-the-video-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/09/22/dynamic-layouts-in-hls-rmtp-broadcasts-with-the-video-api-dr
 ---
 
 Content to be migrated...

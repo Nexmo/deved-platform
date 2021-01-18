@@ -11,8 +11,8 @@ published_at: 2019-10-02T08:00:01.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/10/02/flexible-workflows-for-verify-api-dr
-redirect: https://www.nexmo.com/blog/2019/10/02/flexible-workflows-for-verify-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/10/02/flexible-workflows-for-verify-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/10/02/flexible-workflows-for-verify-api-dr
 ---
 
 Content to be migrated...

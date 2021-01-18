@@ -12,8 +12,8 @@ published_at: 2018-08-14T22:49:18.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/08/14/record-a-phone-message-with-php-dr
-redirect: https://www.nexmo.com/blog/2018/08/14/record-a-phone-message-with-php-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/08/14/record-a-phone-message-with-php-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/08/14/record-a-phone-message-with-php-dr
 ---
 
 Content to be migrated...

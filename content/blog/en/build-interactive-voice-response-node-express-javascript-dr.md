@@ -12,8 +12,8 @@ published_at: 2019-04-08T08:00:29.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
-redirect: https://www.nexmo.com/blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/04/08/build-interactive-voice-response-node-express-javascript-dr
 ---
 
 Content to be migrated...

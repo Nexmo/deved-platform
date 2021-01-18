@@ -1,71 +1,87 @@
 <template>
-  <section class="Blog__Full-width">
-    <header class="Blog__Full-width">
-      <PageHero class="Category-hero">
-        {{ $t('page_blog_title') }}
-      </PageHero>
-    </header>
-    <main class="Vlt-container">
-      <div class="Vlt-grid">
-        <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
+  <div>
+    <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+      <Breadcrumbs />
+      <section class="index-section">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <CardFeatured
+            v-for="(post, i) in latestPosts"
+            :key="i"
+            :post="post"
+          />
         </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <Card v-for="post in posts" :key="post.route" :post="post" />
-      </div>
+      </section>
+      <template v-for="(category, j) in categories">
+        <section
+          v-if="category.posts && category.posts.length > 0"
+          :key="j"
+          class="index-section"
+        >
+          <h2>
+            <nuxt-link :to="localePath(`/categories/${category.slug}`)">
+              {{ category.plural }}
+            </nuxt-link>
+          </h2>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Card v-for="(post, k) in category.posts" :key="k" :post="post" />
+          </div>
+        </section>
+      </template>
     </main>
-  </section>
+  </div>
 </template>
 
 <script>
 import config from '~/modules/config'
 
 export default {
-  async asyncData({ $content, app, error }) {
-    const page = 1
+  async asyncData({ $content, app }) {
+    const latestPosts = await $content(`blog/${app.i18n.locale}`)
+      .where({ published: { $ne: false } })
+      .sortBy('published_at', 'desc')
+      .limit(2)
+      .fetch()
 
-    try {
-      const postCount = (
-        await $content(`blog/${app.i18n.locale}`)
-          .where({ published: { $ne: false } })
-          .sortBy('published_at', 'desc')
-          .only(['title'])
-          .fetch()
-      ).length
+    const { categories } = await $content('categories').fetch()
 
-      const postsQuery = $content(`blog/${app.i18n.locale}`)
-        .where({ published: { $ne: false } })
+    categories.forEach(async (category, index, array) => {
+      array[index].posts = await $content(`blog/${app.i18n.locale}`)
+        .where({
+          $and: [
+            { category: category.slug },
+            { route: { $nin: latestPosts.map((f) => f.route) } },
+            { published: { $ne: false } },
+          ],
+        })
         .sortBy('published_at', 'desc')
-        .skip(config.postsPerPage * (page - 1))
-        .limit(config.postsPerPage)
+        .limit(6)
+        .fetch()
+    })
 
-      const posts = await postsQuery.fetch()
+    return {
+      categories,
+      latestPosts,
+    }
+  },
 
-      return {
-        page,
-        postCount,
-        posts,
-        routes: [
-          {
-            route: `/blog`,
-            title: app.i18n.t('page_blog_breadcrumb'),
-            current: true,
-          },
-        ],
-      }
-    } catch (e) {
-      return error(e)
+  head() {
+    return {
+      title: 'Blog Posts and Tutorials',
+      meta: [
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          // Team Members & Authors » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+      ],
     }
   },
 }
 </script>
-
-<style scoped>
-.Category-hero >>> .Blog-hero__content h3 .Vlt-badge {
-  font-size: 21px;
-  padding: 0 4px 0 0;
-  line-height: 1;
-}
-</style>

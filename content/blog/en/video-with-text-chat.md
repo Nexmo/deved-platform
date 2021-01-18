@@ -12,8 +12,8 @@ published_at: 2020-04-21T13:43:27.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/21/video-with-text-chat
-redirect: https://www.nexmo.com/blog/2020/04/21/video-with-text-chat
+canonical: https://www.nexmo.com/legacy-blog/2020/04/21/video-with-text-chat
+redirect: https://www.nexmo.com/legacy-blog/2020/04/21/video-with-text-chat
 ---
 
 Content to be migrated...

@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - messages-api
   - vue
-canonical: https://www.nexmo.com/blog/2020/10/05/introduction-to-gpt-3
-redirect: https://www.nexmo.com/blog/2020/10/05/introduction-to-gpt-3
+canonical: https://www.nexmo.com/legacy-blog/2020/10/05/introduction-to-gpt-3
+redirect: https://www.nexmo.com/legacy-blog/2020/10/05/introduction-to-gpt-3
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-06-28T07:01:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
-redirect: https://www.nexmo.com/blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/06/28/using-message-signatures-to-ensure-secure-incoming-webhooks-dr
 ---
 
 Content to be migrated...

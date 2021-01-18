@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - github
   - hacktoberfest
-canonical: https://www.nexmo.com/blog/2020/10/06/opening-multiple-pull-requests-dr
-redirect: https://www.nexmo.com/blog/2020/10/06/opening-multiple-pull-requests-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/10/06/opening-multiple-pull-requests-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/10/06/opening-multiple-pull-requests-dr
 ---
 
 Content to be migrated...

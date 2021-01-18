@@ -12,8 +12,8 @@ published_at: 2020-03-10T13:05:12.000Z
 comments: true
 category: community
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/10/in-celebration-of-international-womens-day-2020
-redirect: https://www.nexmo.com/blog/2020/03/10/in-celebration-of-international-womens-day-2020
+canonical: https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-international-womens-day-2020
+redirect: https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-international-womens-day-2020
 ---
 
 Content to be migrated...

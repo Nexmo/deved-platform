@@ -13,8 +13,8 @@ published_at: 2019-10-31T14:39:44.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
-redirect: https://www.nexmo.com/blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/10/31/how-to-add-machine-learning-to-facebook-messenger-dr
 ---
 
 Content to be migrated...

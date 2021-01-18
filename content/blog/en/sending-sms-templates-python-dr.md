@@ -11,8 +11,8 @@ published_at: 2018-12-17T19:19:26.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/17/sending-sms-templates-python-dr
-redirect: https://www.nexmo.com/blog/2018/12/17/sending-sms-templates-python-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/17/sending-sms-templates-python-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/17/sending-sms-templates-python-dr
 ---
 
 Content to be migrated...

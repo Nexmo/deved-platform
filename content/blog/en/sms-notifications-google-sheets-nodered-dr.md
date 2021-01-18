@@ -12,8 +12,8 @@ published_at: 2020-03-06T13:16:53.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/06/sms-notifications-google-sheets-nodered-dr
-redirect: https://www.nexmo.com/blog/2020/03/06/sms-notifications-google-sheets-nodered-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/03/06/sms-notifications-google-sheets-nodered-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/03/06/sms-notifications-google-sheets-nodered-dr
 ---
 
 Content to be migrated...

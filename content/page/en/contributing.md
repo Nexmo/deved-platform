@@ -265,7 +265,7 @@ end
 Outputs:
 
 ```css
-.Vlt-container {
+.container {
   margin: auto;
   max-width: 1200px;
   width: 100%;

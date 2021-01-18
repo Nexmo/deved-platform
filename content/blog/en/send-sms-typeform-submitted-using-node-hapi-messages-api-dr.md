@@ -13,8 +13,8 @@ published_at: 2018-10-30T16:07:40.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/10/30/send-sms-typeform-submitted-using-node-hapi-messages-api-dr
-redirect: https://www.nexmo.com/blog/2018/10/30/send-sms-typeform-submitted-using-node-hapi-messages-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/10/30/send-sms-typeform-submitted-using-node-hapi-messages-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/10/30/send-sms-typeform-submitted-using-node-hapi-messages-api-dr
 ---
 
 Content to be migrated...

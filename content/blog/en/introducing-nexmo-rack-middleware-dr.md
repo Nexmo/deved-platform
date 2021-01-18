@@ -12,8 +12,8 @@ published_at: 2019-12-04T09:00:56.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2019/12/04/introducing-nexmo-rack-middleware-dr
-redirect: https://www.nexmo.com/blog/2019/12/04/introducing-nexmo-rack-middleware-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/12/04/introducing-nexmo-rack-middleware-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/12/04/introducing-nexmo-rack-middleware-dr
 ---
 
 Content to be migrated...

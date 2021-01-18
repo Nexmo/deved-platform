@@ -12,8 +12,8 @@ published_at: 2019-06-14T10:14:23.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
-redirect: https://www.nexmo.com/blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/06/14/make-text-to-speech-phone-calls-node-red-dr
 ---
 
 Content to be migrated...

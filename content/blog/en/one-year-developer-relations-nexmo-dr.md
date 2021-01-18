@@ -12,8 +12,8 @@ published_at: 2017-03-14T12:07:35.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2017/03/14/one-year-developer-relations-nexmo-dr
-redirect: https://www.nexmo.com/blog/2017/03/14/one-year-developer-relations-nexmo-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/03/14/one-year-developer-relations-nexmo-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/03/14/one-year-developer-relations-nexmo-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-02-25T17:01:23.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/02/25/build-watson-enhanced-voice-agents-on-ibm-cloud-with-nexmo
-redirect: https://www.nexmo.com/blog/2019/02/25/build-watson-enhanced-voice-agents-on-ibm-cloud-with-nexmo
+canonical: https://www.nexmo.com/legacy-blog/2019/02/25/build-watson-enhanced-voice-agents-on-ibm-cloud-with-nexmo
+redirect: https://www.nexmo.com/legacy-blog/2019/02/25/build-watson-enhanced-voice-agents-on-ibm-cloud-with-nexmo
 ---
 
 Content to be migrated...

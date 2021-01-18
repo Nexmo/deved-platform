@@ -12,8 +12,8 @@ published_at: 2019-01-24T20:46:22.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/01/24/play-streaming-audio-to-a-call-with-ruby-dr
-redirect: https://www.nexmo.com/blog/2019/01/24/play-streaming-audio-to-a-call-with-ruby-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/01/24/play-streaming-audio-to-a-call-with-ruby-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/01/24/play-streaming-audio-to-a-call-with-ruby-dr
 ---
 
 Content to be migrated...

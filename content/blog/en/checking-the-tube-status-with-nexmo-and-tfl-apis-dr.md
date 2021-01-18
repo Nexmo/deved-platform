@@ -12,8 +12,8 @@ published_at: 2019-07-31T22:42:36.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/07/31/checking-the-tube-status-with-nexmo-and-tfl-apis-dr
-redirect: https://www.nexmo.com/blog/2019/07/31/checking-the-tube-status-with-nexmo-and-tfl-apis-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/07/31/checking-the-tube-status-with-nexmo-and-tfl-apis-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/07/31/checking-the-tube-status-with-nexmo-and-tfl-apis-dr
 ---
 
 Content to be migrated...

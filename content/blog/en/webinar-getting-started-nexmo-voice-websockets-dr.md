@@ -12,8 +12,8 @@ published_at: 2017-02-15T14:00:09.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
-redirect: https://www.nexmo.com/blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/02/15/webinar-getting-started-nexmo-voice-websockets-dr
 ---
 
 Content to be migrated...

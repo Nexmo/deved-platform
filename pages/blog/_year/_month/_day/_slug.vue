@@ -1,146 +1,98 @@
 <template>
-  <section class="Blog__Full-width">
-    <div v-if="post && post.redirect">
-      <Redirector :url="post.redirect" />
-    </div>
-    <article
-      v-else
-      class="Blog__post Vlt-container"
-      vocab="http://schema.org/"
-      typeof="BlogPosting"
-    >
-      <div class="Vlt-grid Vlt-grid--stack-flush">
-        <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <div
-            class="Vlt-card Vlt-card--lesspadding"
-            property="mainEntityOfPage"
-          >
-            <div v-if="post.thumbnail" class="Vlt-card__header">
-              <img
-                property="image"
-                :src="post.thumbnail"
-                :alt="post.title"
-                width="100%"
-              />
-            </div>
-            <div
-              v-if="post.categoryObject"
-              class="Vlt-card__corner Vlt-margin--A-top3"
-            >
-              <Category :category="post.categoryObject" />
-            </div>
-            <div class="Vlt-card__header Vlt-margin--A-top3">
-              <h1 property="headline">
-                {{ post.title }}
-              </h1>
-              <BackToTop />
-            </div>
-            <div
-              v-if="post.author"
-              class="Vlt-card__content Vlt-margin--A-top3"
-            >
-              <Author :author="post.author" type="minicard" property="author" />
-              <meta property="publisher" content="@VonageDev" />
-            </div>
-            <div
-              v-if="post.published_at"
-              class="Vlt-card__content Vlt-margin--A-top1"
-            >
-              <template v-if="post.updated_at">
-                <span property="dateModified" :content="post.updated_at"
-                  >Updated
-                  <strong>{{
-                    post.updated_at | moment('dddd, MMMM Do YYYY')
-                  }}</strong></span
-                ><br />
-                <small property="datePublished" :content="post.published_at"
-                  >Originally Published
-                  <strong>{{
-                    post.published_at | moment('dddd, MMMM Do YYYY')
-                  }}</strong></small
-                >
-              </template>
-              <template v-else>
-                <span property="datePublished" :content="post.published_at"
-                  >Published
-                  <strong>{{
-                    post.published_at | moment('dddd, MMMM Do YYYY')
-                  }}</strong></span
-                >
-              </template>
-            </div>
-            <div class="Vlt-card__content">
-              <small
-                ><ImproveLink :post="post" /> (<RevisionsLink
-                  :post="post"
-                />)</small
-              >
-            </div>
-            <div v-if="post.tags" class="Vlt-card__content Vlt-margin--A-top1">
-              <Tags :tags="post.tags" />
-            </div>
-            <hr class="hr--short Vlt-gradient--blue-to-pink" />
-            <div
-              v-if="post.spotlight"
-              class="Vlt-card__content Vlt-margin--A-top1"
-            >
-              <Spotlight />
-            </div>
-            <div
-              v-if="post.outdated"
-              class="Vlt-card__content Vlt-margin--A-top1"
-            >
-              <Outdated :outdated="post.outdated" />
-            </div>
-            <div
-              class="Vlt-card__content Vlt-margin--A-top3"
-              property="articleBody"
-            >
-              <nuxt-content :document="post" />
-            </div>
-          </div>
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
-        <div class="Vlt-col Vlt-col--2of3">
-          <div v-if="post.comments" class="Vlt-card Vlt-bg-white">
-            <div id="comments" class="Vlt-card__content">
-              <vue-disqus
-                :shortname="disqusShortname"
-                :identifier="`${baseUrl}${post.route}`"
-                :url="`${baseUrl}${post.route}`"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="Vlt-col" />
-        <template v-if="post.spotlight">
-          <div class="Vlt-grid__separator" />
-          <div class="Vlt-col" />
-          <div class="Vlt-col Vlt-col--2of3">
-            <SpotlightFooter />
-          </div>
-          <div class="Vlt-col" />
-        </template>
-        <div class="Vlt-grid__separator" />
-        <div class="Vlt-col" />
+  <main class="max-w-screen-xl px-6 mx-auto sm:px-6 lg:px-8">
+    <Breadcrumbs />
+    <section class="grid grid-cols-1 gap-y-6 md:gap-6 xl:grid-cols-5">
+      <aside class="static col-span-1 row-span-2">
         <Author :author="post.author" type="card" />
-        <div class="Vlt-col" />
+      </aside>
+      <div class="col-span-3 row-span-5">
+        <article
+          class="flex flex-col justify-between flex-1 bg-white shadow-xl rounded-xl"
+          vocab="http://schema.org/"
+          typeof="BlogPosting"
+          property="mainEntityOfPage"
+        >
+          <figure class="overflow-hidden rounded-t-lg">
+            <div class="card-figure">
+              <img property="image" :src="post.thumbnail" :alt="post.title" />
+            </div>
+          </figure>
+          <header class="flex-1 px-4 mt-4 md:px-6 md:mt-6">
+            <p class="text-sm font-medium">
+              <Category :category="post.categoryObject" class="text-sm" />
+            </p>
+            <h3
+              class="block my-4 text-xl font-black sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+            >
+              <svg
+                v-if="post.redirect"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="inline-block mr-1 stroke-current stroke-2 icon-size"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+              <nuxt-link
+                :to="localePath(post.route, post.locale)"
+                :title="post.title"
+              >
+                {{ post.title }}
+              </nuxt-link>
+            </h3>
+            <Tags class="mt-2 text-sm font-medium" :tags="post.tags" />
+          </header>
+          <main v-if="!post.redirect" class="px-4 my-4 md:px-6">
+            <section v-if="post.spotlight" class="mb-4">
+              <Spotlight class="spotlight" />
+            </section>
+            <section v-if="post.outdated || post.replacement_url">
+              <Outdated :url="post.replacement_url" />
+            </section>
+            <nuxt-content
+              property="articleBody"
+              class="mx-auto prose-sm prose sm:prose lg:prose-lg"
+              :document="post"
+            />
+          </main>
+          <main v-else class="px-4 py-4 md:px-6">
+            <Redirector :url="post.redirect" />
+          </main>
+          <footer v-if="!post.redirect" class="p-4 md:p-6">
+            <section v-if="post.comments" class="py-4 border-t">
+              Comments currently disabled.
+            </section>
+            <section v-if="post.spotlight" class="pt-4 border-t">
+              <SpotlightFooter class="spotlight" />
+            </section>
+          </footer>
+        </article>
       </div>
-    </article>
-  </section>
+      <aside
+        class="sticky flex flex-col col-span-1 p-4 space-y-4 bg-white rounded-lg shadow-lg top-4 asides"
+      >
+        <TableOfContents
+          v-if="post.toc.length > 0"
+          :toc="post.toc"
+          :levels="post.toc.length > 10 ? [2] : [2, 3]"
+        />
+        <RelatedPosts
+          :slug="post.slug"
+          :terms="[...post.tags, post.category]"
+        />
+        <SocialSharing :post="post" />
+      </aside>
+    </section>
+  </main>
 </template>
 
 <script>
-import moment from 'moment'
 import config from '~/modules/config'
 
 export default {
@@ -153,33 +105,12 @@ export default {
           error({ statusCode: 404, message: 'Page not found', err })
         })
 
-      const postDate = moment(post.published_at)
-
       return {
         post,
-        disqusShortname: config.disqusShortname,
         baseUrl: config.baseUrl,
-        routes: [
-          { route: `/${post.type}`, title: app.i18n.t('page_blog_breadcrumb') },
-          {
-            route: `/${post.type}/${postDate.format('YYYY')}`,
-            title: postDate.format('YYYY'),
-          },
-          {
-            route: `/${post.type}/${postDate.format('YYYY/MM')}`,
-            title: postDate.format('MMMM'),
-          },
-          {
-            route: `/${post.type}/${postDate.format('YYYY/MM/DD')}`,
-            title: postDate.format('Do'),
-          },
-          { route: post.route, title: post.title, current: true },
-        ],
       }
     } catch (err) {
       error({ statusCode: 404, message: 'Page not found', err })
-
-      return false
     }
   },
 
@@ -216,11 +147,10 @@ export default {
 
   methods: {
     postMeta() {
-      if (
-        typeof this.post.thumbnail !== 'undefined' &&
-        !this.post.thumbnail.startsWith('http')
-      ) {
-        this.post.thumbnail = `${this.baseUrl}${this.post.thumbnail}`
+      let thumbnail = this.post.thumbnail
+
+      if (typeof thumbnail !== 'undefined' && !thumbnail.startsWith('http')) {
+        thumbnail = `${this.baseUrl}${thumbnail}`
       }
 
       const meta = [
@@ -242,9 +172,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: `${
-            this.post.thumbnail || '/images/generic-social-card.png'
-          }`,
+          content: `${thumbnail || '/images/Vonage-learn.png'}`,
         },
         {
           hid: 'twitter:image:alt',
@@ -269,9 +197,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `${
-            this.post.thumbnail || '/images/generic-social-card.png'
-          }`,
+          content: `${thumbnail || '/images/Vonage-learn.png'}`,
         },
         {
           hid: 'og:image:alt',
@@ -333,183 +259,17 @@ export default {
 </script>
 
 <style scoped>
-.Blog__Category {
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 1rem auto;
-  display: inline-block;
+.spotlight >>> img {
+  @apply rounded-lg;
+  @apply mx-auto;
+  @apply mb-4;
 }
 
-.Redirect {
-  margin: 3rem auto 1rem auto;
+.asides >>> h4 {
+  @apply uppercase;
 }
 
-.Blog__post h1 {
-  margin: 1rem auto;
-  font-size: 3rem;
-}
-
-.Blog__post header {
-  margin-bottom: 24px;
-}
-
-.Blog__post img {
-  border-radius: 6px;
-}
-
-.Blog__post .nuxt-content {
-  padding: auto 50px;
-}
-
-.Blog__post .nuxt-content >>> a,
-.Blog__post .nuxt-content >>> li,
-.Blog__post .nuxt-content >>> p {
-  font-size: 16px;
-  line-height: 1.55em;
-}
-
-.Blog__post .nuxt-content >>> ol,
-.Blog__post .nuxt-content >>> ul {
-  list-style: none;
-  margin-bottom: 16px;
-  padding-left: 16px;
-}
-
-.Blog__post .nuxt-content >>> ol {
-  counter-reset: list;
-  padding-left: 20px;
-}
-
-.Blog__post .nuxt-content >>> li {
-  margin-bottom: 0.2em;
-  position: relative;
-  margin-left: 24px;
-}
-
-.Blog__post .nuxt-content >>> ul li:before {
-  color: #000;
-  content: '•';
-  left: -16px;
-  position: absolute;
-  top: 0em;
-}
-
-.Blog__post .nuxt-content >>> ol li:before {
-  color: #000;
-  content: counter(list) '.';
-  counter-increment: list;
-  font-weight: 600;
-  left: -20px;
-  position: absolute;
-  top: 0em;
-}
-
-.Blog__post .nuxt-content >>> h2 {
-  margin-top: 25px;
-}
-
-.Blog__post .nuxt-content >>> h3 {
-  margin-top: 25px;
-}
-
-.Blog__post .nuxt-content >>> pre {
-  border-radius: 8px;
-  padding: 1em;
-  background: #131415;
-  color: #c2c4cc;
-  margin: 35px -30px;
-  font-size: 16px;
-  line-height: 1.4;
-  padding-left: 27px;
-}
-
-.Blog__post .nuxt-content >>> pre code {
-  background: #131415;
-  color: #c2c4cc;
-}
-
-.Blog__post .nuxt-content >>> p {
-  text-align: justify;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  -ms-word-break: normal;
-  word-break: normal;
-}
-
-.Blog__post .nuxt-content >>> blockquote {
-  margin: 24px auto;
-  background-color: #ffffff;
-  border-radius: 6px;
-  box-shadow: inset 0 0 0 1px #9b9da3;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 1;
-  overflow: hidden;
-  padding: 20px;
-  padding-left: 21px;
-  position: relative;
-  text-align: left;
-  transition: all 0.3s ease-out;
-}
-
-.Blog__post .nuxt-content >>> blockquote:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 5px;
-  background-color: #871fff;
-}
-
-.Blog__post .nuxt-content >>> blockquote p {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -ms-flex: 2;
-  flex: 2;
-  margin-left: 4px;
-  word-break: break-word;
-}
-
-.Blog__post .nuxt-content >>> p code {
-  border: 1px solid silver;
-  background: #f9f9fa;
-}
-
-.Blog__post .nuxt-content >>> .language-diff .token {
-  width: 100%;
-  display: inherit;
-  white-space: pre-wrap;
-}
-
-.Blog__post .nuxt-content >>> .language-diff .token.inserted {
-  color: #e84545;
-  background: #270404;
-}
-
-.Blog__post .nuxt-content >>> .language-diff .token.deleted {
-  color: #86d8b9;
-  background: #021a10;
-}
-
-.Blog__post .nuxt-content >>> p img {
-  display: block;
-  margin: 24px auto;
-  max-height: 50vh;
-  max-width: 100%;
-}
-
-@media only screen and (max-width: 767px) {
-  .Blog__post .nuxt-content >>> pre[class*='language-'] {
-    margin: 24px 10px;
-    padding-left: 12px;
-  }
-}
-
-.Vlt-grid >>> .Author-col {
-  flex: 0 0 66.66%;
-  max-width: 66.66%;
+.top-4 {
+  top: 1rem;
 }
 </style>

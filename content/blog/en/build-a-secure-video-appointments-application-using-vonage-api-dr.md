@@ -15,8 +15,8 @@ tags:
   - node
   - video-api
   - vue
-canonical: https://www.nexmo.com/blog/2020/04/09/build-a-secure-video-appointments-application-using-vonage-api-dr
-redirect: https://www.nexmo.com/blog/2020/04/09/build-a-secure-video-appointments-application-using-vonage-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/09/build-a-secure-video-appointments-application-using-vonage-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/09/build-a-secure-video-appointments-application-using-vonage-api-dr
 ---
 
 Content to be migrated...

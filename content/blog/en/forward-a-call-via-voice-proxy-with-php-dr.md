@@ -12,8 +12,8 @@ published_at: 2019-05-15T08:11:33.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/05/15/forward-a-call-via-voice-proxy-with-php-dr
-redirect: https://www.nexmo.com/blog/2019/05/15/forward-a-call-via-voice-proxy-with-php-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/05/15/forward-a-call-via-voice-proxy-with-php-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/05/15/forward-a-call-via-voice-proxy-with-php-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2017-02-23T21:53:43.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/02/23/eliminate-failed-calls-with-dynamic-connection-capabilities
-redirect: https://www.nexmo.com/blog/2017/02/23/eliminate-failed-calls-with-dynamic-connection-capabilities
+canonical: https://www.nexmo.com/legacy-blog/2017/02/23/eliminate-failed-calls-with-dynamic-connection-capabilities
+redirect: https://www.nexmo.com/legacy-blog/2017/02/23/eliminate-failed-calls-with-dynamic-connection-capabilities
 ---
 
 Content to be migrated...

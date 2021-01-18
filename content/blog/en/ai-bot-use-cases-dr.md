@@ -16,8 +16,8 @@ tags:
   - ai
   - chatbots
   - voice-api
-canonical: https://www.nexmo.com/blog/2017/09/07/ai-bot-use-cases-dr
-redirect: https://www.nexmo.com/blog/2017/09/07/ai-bot-use-cases-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/09/07/ai-bot-use-cases-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/09/07/ai-bot-use-cases-dr
 ---
 
 Content to be migrated...

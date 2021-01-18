@@ -12,8 +12,8 @@ published_at: 2019-09-30T08:00:36.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/09/30/sending-gitlab-ci-pipeline-notifications-with-nexmo-messages-dr
-redirect: https://www.nexmo.com/blog/2019/09/30/sending-gitlab-ci-pipeline-notifications-with-nexmo-messages-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/09/30/sending-gitlab-ci-pipeline-notifications-with-nexmo-messages-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/09/30/sending-gitlab-ci-pipeline-notifications-with-nexmo-messages-dr
 ---
 
 Content to be migrated...

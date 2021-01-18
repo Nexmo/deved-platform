@@ -15,8 +15,8 @@ tags:
   - javascript
   - postman
   - voice-api
-canonical: https://www.nexmo.com/blog/2020/10/19/variables-and-chaining-requests-in-postman
-redirect: https://www.nexmo.com/blog/2020/10/19/variables-and-chaining-requests-in-postman
+canonical: https://www.nexmo.com/legacy-blog/2020/10/19/variables-and-chaining-requests-in-postman
+redirect: https://www.nexmo.com/legacy-blog/2020/10/19/variables-and-chaining-requests-in-postman
 ---
 
 Content to be migrated...

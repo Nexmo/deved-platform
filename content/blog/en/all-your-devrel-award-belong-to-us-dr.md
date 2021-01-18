@@ -13,8 +13,8 @@ comments: true
 category: announcement
 tags:
   - awards
-canonical: https://www.nexmo.com/blog/2018/11/28/all-your-devrel-award-belong-to-us-dr
-redirect: https://www.nexmo.com/blog/2018/11/28/all-your-devrel-award-belong-to-us-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/11/28/all-your-devrel-award-belong-to-us-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/11/28/all-your-devrel-award-belong-to-us-dr
 ---
 
 Content to be migrated...

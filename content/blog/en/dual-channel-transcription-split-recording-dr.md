@@ -12,8 +12,8 @@ published_at: 2018-04-17T10:00:54.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/04/17/dual-channel-transcription-split-recording-dr
-redirect: https://www.nexmo.com/blog/2018/04/17/dual-channel-transcription-split-recording-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/04/17/dual-channel-transcription-split-recording-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/04/17/dual-channel-transcription-split-recording-dr
 ---
 
 Content to be migrated...

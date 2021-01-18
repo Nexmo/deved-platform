@@ -12,8 +12,8 @@ published_at: 2019-01-10T10:06:55.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/01/10/how-to-handle-user-input-with-asp-net-core-dr
-redirect: https://www.nexmo.com/blog/2019/01/10/how-to-handle-user-input-with-asp-net-core-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/01/10/how-to-handle-user-input-with-asp-net-core-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/01/10/how-to-handle-user-input-with-asp-net-core-dr
 ---
 
 Content to be migrated...

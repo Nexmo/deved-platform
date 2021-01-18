@@ -12,8 +12,8 @@ published_at: 2017-01-26T14:00:49.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/01/26/handle-inbound-text-speech-phone-call-node-js-dr
-redirect: https://www.nexmo.com/blog/2017/01/26/handle-inbound-text-speech-phone-call-node-js-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/01/26/handle-inbound-text-speech-phone-call-node-js-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/01/26/handle-inbound-text-speech-phone-call-node-js-dr
 ---
 
 Content to be migrated...

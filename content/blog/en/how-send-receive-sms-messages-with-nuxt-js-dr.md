@@ -12,8 +12,8 @@ published_at: 2020-02-19T09:53:24.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
-redirect: https://www.nexmo.com/blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/02/19/how-send-receive-sms-messages-with-nuxt-js-dr
 ---
 
 Content to be migrated...

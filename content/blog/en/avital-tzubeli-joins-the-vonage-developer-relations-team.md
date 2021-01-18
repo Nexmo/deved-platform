@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2020/07/24/avital-tzubeli-joins-the-vonage-developer-relations-team
-redirect: https://www.nexmo.com/blog/2020/07/24/avital-tzubeli-joins-the-vonage-developer-relations-team
+canonical: https://www.nexmo.com/legacy-blog/2020/07/24/avital-tzubeli-joins-the-vonage-developer-relations-team
+redirect: https://www.nexmo.com/legacy-blog/2020/07/24/avital-tzubeli-joins-the-vonage-developer-relations-team
 ---
 
 Content to be migrated...

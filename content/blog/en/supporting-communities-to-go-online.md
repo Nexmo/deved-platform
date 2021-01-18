@@ -12,8 +12,8 @@ published_at: 2020-04-08T12:00:20.000Z
 comments: true
 category: community
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/08/supporting-communities-to-go-online
-redirect: https://www.nexmo.com/blog/2020/04/08/supporting-communities-to-go-online
+canonical: https://www.nexmo.com/legacy-blog/2020/04/08/supporting-communities-to-go-online
+redirect: https://www.nexmo.com/legacy-blog/2020/04/08/supporting-communities-to-go-online
 ---
 
 Content to be migrated...

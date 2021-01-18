@@ -12,8 +12,8 @@ published_at: 2019-08-15T02:42:29.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/08/14/how-to-create-an-interactive-scavenger-hunt-with-nexmos-sms-and-voice-api-dr
-redirect: https://www.nexmo.com/blog/2019/08/14/how-to-create-an-interactive-scavenger-hunt-with-nexmos-sms-and-voice-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/08/14/how-to-create-an-interactive-scavenger-hunt-with-nexmos-sms-and-voice-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/08/14/how-to-create-an-interactive-scavenger-hunt-with-nexmos-sms-and-voice-api-dr
 ---
 
 Content to be migrated...

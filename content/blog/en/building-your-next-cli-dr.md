@@ -12,8 +12,8 @@ published_at: 2020-06-05T13:30:58.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/06/05/building-your-next-cli-dr
-redirect: https://www.nexmo.com/blog/2020/06/05/building-your-next-cli-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/06/05/building-your-next-cli-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/06/05/building-your-next-cli-dr
 ---
 
 Content to be migrated...

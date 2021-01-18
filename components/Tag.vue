@@ -1,33 +1,25 @@
 <template>
-  <NLink
-    :to="link ? localePath(`/tags/${slug}`) : ''"
-    class="Vlt-badge Vlt-badge--small Vlt-badge--grey Vlt-badge--transparent"
-    :class="'Blog-badge--' + slug"
-  >
-    <svg
+  <component
+    :is="link ? 'nuxt-link' : 'span'"
+    :to="localePath(`/tags/${slug}`)"
+    no-prefetch
+    class="inline-block mb-2 mr-2 badge badge--small"
+    :class="'badge--' + slug"
+    ><svg
       v-if="isProduct"
       xmlns="http://www.w3.org/2000/svg"
-      fill="white"
       viewBox="0 0 24 24"
-      style="width: 0.8em; margin: 0 4px -1px 0"
+      class="inline mr-2 fill-current icon-size"
     >
       <path
         d="M9.3 11.6L4.7 1.5H0l6.8 15.3s.1.1.1 0l2.4-5.2zm9.9-10.1s-6.1 13.9-6.9 15.6c-1.8 4.1-3.2 5.1-4.6 5.3H12c1.9 0 3.2-1.3 5.1-5.3.6-1.4 6.9-15.6 6.9-15.6h-4.8z"
-      />
-    </svg>
-    <span v-else>#</span>{{ slug }}
-  </NLink>
+      /></svg
+    ><span v-else>#</span><span>{{ slug }}</span></component
+  >
 </template>
 
 <script>
-const tagMap = {
-  careers: ['career'],
-  dotnet: ['dot-net', 'asp-dot-net', '.net', 'asp.net'],
-  go: ['go-lang', 'golang'],
-  javascript: ['js'],
-  node: ['nodejs', 'node.js'],
-  opensource: ['open-source'],
-}
+import config from '~/modules/config'
 
 export default {
   props: {
@@ -74,257 +66,259 @@ export default {
     },
 
     slug() {
-      const match = Object.entries(tagMap).filter(([, value]) =>
-        value.includes(this.tag)
+      const tag = this.tag.toLowerCase()
+
+      const match = Object.entries(config.tagMap).filter(([, value]) =>
+        value.includes(tag)
       )
 
       if (match[0]) {
         return match[0][0]
       }
 
-      return this.tag
+      return tag
     },
   },
 }
 </script>
 
 <style scoped>
-.Blog-badge--dispatch-api,
-.Blog-badge--messages-api,
-.Blog-badge--messages-api-sandbox,
-.Blog-badge--number-insight-api,
-.Blog-badge--number-api,
-.Blog-badge--reports-api,
-.Blog-badge--account-api,
-.Blog-badge--pricing-api,
-.Blog-badge--external-accounts-api,
-.Blog-badge--redact-api,
-.Blog-badge--audit-api,
-.Blog-badge--verify-api,
-.Blog-badge--media-api,
-.Blog-badge--voice-api,
-.Blog-badge--conversation-api,
-.Blog-badge--video-api,
-.Blog-badge--sms-api,
-.Blog-badge--station {
-  background: #000;
-  color: #fff;
+.badge--dispatch-api,
+.badge--messages-api,
+.badge--messages-api-sandbox,
+.badge--number-insight-api,
+.badge--number-api,
+.badge--reports-api,
+.badge--account-api,
+.badge--pricing-api,
+.badge--external-accounts-api,
+.badge--redact-api,
+.badge--audit-api,
+.badge--verify-api,
+.badge--media-api,
+.badge--voice-api,
+.badge--conversation-api,
+.badge--video-api,
+.badge--sms-api,
+.badge--station {
+  background: black;
+  color: white;
+}
+.badge--spotlight {
+  background-color: rgba(135, 31, 255, 1);
+  color: white;
 }
 
-.Blog-badge--slack {
-  background: #4a154b;
-  color: #fff;
+.badge--voyagers {
+  background-color: rgba(135, 31, 255, 1);
+  color: white;
 }
 
-.Blog-badge--faunadb {
-  background: #323fcb;
-  color: #fff;
+.badge--slack {
+  background: rgba(74, 21, 75, 0.4);
+  color: black;
 }
 
-.Blog-badge--vue {
-  background-color: #41b883;
-  color: #35495e;
+.badge--faunadb {
+  background: rgba(50, 63, 203, 0.4);
+  color: black;
 }
 
-.Blog-badge--nuxt {
-  background-color: #00c58e;
-  color: #ffffff;
+.badge--vue {
+  background-color: rgba(65, 184, 131, 0.4);
+  color: rgba(53, 73, 94, 1);
 }
 
-.Blog-badge--ruby-on-rails,
-.Blog-badge--ruby {
-  background-color: #cc342d;
-  color: #fff;
+.badge--nuxt {
+  background-color: rgba(0, 197, 142, 0.4);
+  color: black;
 }
 
-.Blog-badge--javascript {
-  background-color: #f7df1e;
-  color: #000000;
+.badge--ruby-on-rails,
+.badge--ruby {
+  background-color: rgba(204, 52, 45, 0.4);
+  color: black;
 }
 
-.Blog-badge--typescript {
-  background-color: #3178c6;
-  color: #fff;
+.badge--javascript {
+  background-color: rgba(247, 223, 30, 0.4);
+  color: black;
 }
 
-.Blog-badge--dotnet {
-  background-color: #5d2590;
-  color: #fff;
+.badge--typescript {
+  background-color: rgba(49, 120, 198, 0.4);
+  color: black;
 }
 
-.Blog-badge--node {
-  background-color: #3d8836;
-  color: #fff;
+.badge--dotnet {
+  background-color: rgba(93, 37, 144, 0.4);
+  color: black;
 }
 
-.Blog-badge--deno {
-  background: #161e2e;
-  color: #fff;
+.badge--node {
+  background-color: rgba(61, 136, 54, 0.4);
+  color: black;
 }
 
-.Blog-badge--node-red {
-  background-color: #8e0100;
-  color: #fff;
+.badge--deno {
+  background: rgba(22, 30, 46, 0.4);
+  color: black;
 }
 
-.Blog-badge--azure {
-  background-color: #007fff;
-  color: #fff;
+.badge--node-red {
+  background-color: rgba(142, 1, 0, 0.4);
+  color: black;
 }
 
-.Blog-badge--zapier {
-  background-color: #ff4a00;
-  color: #fff;
+.badge--azure {
+  background-color: rgba(0, 127, 255, 0.4);
+  color: black;
 }
 
-.Blog-badge--go {
-  background-color: #e0ebf5;
-  color: #043c6f;
+.badge--zapier {
+  background-color: rgba(255, 74, 0, 0.4);
+  color: black;
 }
 
-.Blog-badge--spotlight {
-  background-color: #871fff;
-  color: #fff;
+.badge--go {
+  @apply shadow-inner;
+  background-color: rgba(224, 235, 245, 0.4);
+  color: black;
 }
 
-.Blog-badge--voyagers {
-  background-color: #871fff;
-  color: #fff;
+.badge--php {
+  background-color: rgba(35, 161, 170, 0.4);
+  color: black;
 }
 
-.Blog-badge--php {
-  background-color: #23a1aa;
-  color: #fff;
+.badge--aws {
+  background-color: rgba(33, 43, 58, 0.4);
+  color: black;
 }
 
-.Blog-badge--aws {
-  background-color: #212b3a;
-  color: #faaf34;
+.badge--firebase {
+  background-color: rgba(255, 202, 40, 0.4);
+  color: black;
 }
 
-.Blog-badge--firebase {
-  background-color: #ffca28;
-  color: #2c384a;
+.badge--zendesk {
+  background-color: rgba(3, 54, 61, 0.4);
+  color: black;
 }
 
-.Blog-badge--zendesk {
-  background-color: #03363d;
-  color: #f8f9f9;
+.badge--ibm-watson {
+  background-color: rgba(0, 98, 255, 0.4);
+  color: black;
 }
 
-.Blog-badge--zendesk {
-  background-color: #03363d;
-  color: #f8f9f9;
+.badge--git {
+  background-color: rgba(241, 78, 50, 0.4);
+  color: black;
 }
 
-.Blog-badge--ibm-watson {
-  background-color: #0062ff;
-  color: #ffffff;
-}
-
-.Blog-badge--git {
-  background-color: #f14e32;
-  color: #ffffff;
-}
-
-.Blog-badge--github {
+.badge--github {
   content: 'GitHub';
-  background-color: #333333;
-  color: #ffffff;
-}
-
-.Blog-badge--hacktoberfest {
-  background-color: #072540;
-  color: #ffffff;
-}
-
-.Blog-badge--digitalocean {
-  background-color: #0069ff;
-  color: #ffffff;
-}
-
-.Blog-badge--java {
-  background-color: #01476e;
-  color: #ff8f8f;
-}
-
-.Blog-badge--python {
-  background-color: #1e38bb;
-  color: #ffdf5b;
-}
-
-.Blog-badge--mongodb {
-  background-color: #13aa52;
-  color: #ffffff;
-}
-
-.Blog-badge--netlify {
-  background: linear-gradient(to bottom, #23c2b8, #37afbc);
-  color: white;
-}
-
-.Blog-badge--postman {
-  background: rgb(255, 108, 55);
-  color: white;
-}
-
-.Blog-badge--opensource {
-  background: #3da639;
-  color: white;
-}
-
-.Blog-badge--react-native,
-.Blog-badge--react {
-  background: #61dafb;
+  background-color: rgba(51, 51, 51, 0.4);
   color: black;
 }
 
-.Blog-badge--open-api {
-  background: #38b832;
-  color: #ffffff;
+.badge--hacktoberfest {
+  background-color: rgba(7, 37, 64, 0.4);
+  color: black;
 }
 
-.Blog-badge--inclusion {
-  background: linear-gradient(
-    90deg,
-    #000000,
-    #000000 12.5%,
-    #754d15 12.5%,
-    #754d15 25%,
-    #f00000 25%,
-    #f00000 37.5%,
-    #ff8000 37.5%,
-    #ff8000 50%,
-    #ffff00 50%,
-    #ffff00 62.5%,
-    #007940 62.5%,
-    #007940 75%,
-    #4040ff 75%,
-    #4040ff 87.5%,
-    #a000c0 87.5%,
-    #a000c0
-  );
-  color: white;
-  text-shadow: 1px 1px 2px #00000080, -1px -1px 2px #00000080,
-    -1px 1px 2px #00000080, 1px -1px 2px #00000080;
+.badge--digitalocean {
+  background-color: rgba(0, 105, 255, 0.4);
+  color: black;
 }
 
-.Blog-badge--diversity {
+.badge--java {
+  background-color: rgba(1, 71, 110, 0.4);
+  color: black;
+}
+
+.badge--python {
+  background-color: rgba(30, 56, 187, 0.4);
+  color: black;
+}
+
+.badge--mongodb {
+  background-color: rgba(19, 170, 82, 0.4);
+  color: black;
+}
+
+.badge--netlify {
   background: linear-gradient(
-    90deg,
-    #55cdfc,
-    #55cdfc 20%,
-    #f7a8b8 20%,
-    #f7a8b8 40%,
-    #fff 40%,
-    #fff 60%,
-    #f7a8b8 60%,
-    #f7a8b8 80%,
-    #55cdfc 80%,
-    #55cdfc 100%
+    to bottom,
+    rgba(35, 194, 184, 0.4),
+    rgba(55, 175, 188, 0.4)
   );
   color: black;
-  text-shadow: 1px 1px 2px #ffffff80, -1px -1px 2px #ffffff80,
-    -1px 1px 2px #ffffff80, 1px -1px 2px #ffffff80;
+}
+
+.badge--postman {
+  background: rgba(255, 108, 55, 0.4);
+  color: black;
+}
+
+.badge--opensource {
+  background: rgba(61, 166, 57, 0.4);
+  color: black;
+}
+
+.badge--react-native,
+.badge--react {
+  background: rgba(97, 218, 251, 0.4);
+  color: black;
+}
+
+.badge--open-api {
+  background: rgba(56, 184, 50, 0.4);
+  color: black;
+}
+
+.badge--inclusion {
+  background: linear-gradient(
+    90deg,
+    black,
+    black 12.5%,
+    rgba(117, 77, 21, 1) 12.5%,
+    rgba(117, 77, 21, 1) 25%,
+    rgba(240, 0, 0, 1) 25%,
+    rgba(240, 0, 0, 1) 37.5%,
+    rgba(255, 128, 0, 1) 37.5%,
+    rgba(255, 128, 0, 1) 50%,
+    rgba(255, 255, 0, 1) 50%,
+    rgba(255, 255, 0, 1) 62.5%,
+    rgba(0, 121, 64, 1) 62.5%,
+    rgba(0, 121, 64, 1) 75%,
+    rgba(64, 64, 255, 1) 75%,
+    rgba(64, 64, 255, 1) 87.5%,
+    rgba(160, 0, 192, 1) 87.5%,
+    rgba(160, 0, 192, 1)
+  );
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(0, 0, 0, 0.5),
+    -1px 1px 2px rgba(0, 0, 0, 0.5), 1px -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.badge--diversity {
+  background: linear-gradient(
+    90deg,
+    rgba(85, 205, 252, 1),
+    rgba(85, 205, 252, 1) 20%,
+    rgba(247, 168, 184, 1) 20%,
+    rgba(247, 168, 184, 1) 40%,
+    white 40%,
+    white 60%,
+    rgba(247, 168, 184, 1) 60%,
+    rgba(247, 168, 184, 1) 80%,
+    rgba(85, 205, 252, 1) 80%,
+    rgba(85, 205, 252, 1) 100%
+  );
+  color: black;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5),
+    -1px -1px 2px rgba(255, 255, 255, 0.5),
+    -1px 1px 2px rgba(255, 255, 255, 0.5), 1px -1px 2px rgba(255, 255, 255, 0.5);
 }
 </style>

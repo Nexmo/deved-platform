@@ -12,8 +12,8 @@ published_at: 2020-07-06T13:34:54.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/06/validating-inbound-messages-from-the-vonage-messages-api-dr
-redirect: https://www.nexmo.com/blog/2020/07/06/validating-inbound-messages-from-the-vonage-messages-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/07/06/validating-inbound-messages-from-the-vonage-messages-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/07/06/validating-inbound-messages-from-the-vonage-messages-api-dr
 ---
 
 Content to be migrated...

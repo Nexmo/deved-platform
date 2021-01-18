@@ -1,33 +1,49 @@
 <template>
   <div>
-    <div class="Vlt-form__element">
-      <label class="Vlt-label" for="tag-tester"
-        >Test your tags!
-        <small class="Vlt-grey-dark">(pop in your tag name)</small></label
+    <label for="title-maker">
+      Test your tag
+      <small>(by writing it in the box)</small>
+    </label>
+    <div class="flex h-12 border border-gray-500 rounded-lg">
+      <input id="tag-tester" v-model="testTag" type="text" class="tag-tester" />
+      <button
+        type="button"
+        class="bg-gray-100 tag-button"
+        @click.stop.prevent="copySomething(testTag)"
       >
-      <div class="Vlt-input">
-        <input id="tag-tester" v-model="testTag" type="text" />
-      </div>
-      <small class="Vlt-form__element__hint"
-        >Text will automatically lowercase and slugify.</small
-      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="{2}"
+            d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"
+          />
+        </svg>
+      </button>
     </div>
-    <div class="Tag-tests">
-      <div class="Vlt-center">
-        <span @click="setTag(testTag)">
-          <Tag :tag="testTag" class="Tag-test" :link="false" />
-        </span>
-      </div>
+    <div class="my-8 text-center">
+      <Tag :tag="testTag" :link="false" @click.native="setTag(testTag)" />
+    </div>
 
-      <div v-for="(tags, type) in tagTypes" :key="type">
-        <h4 class="Vlt-margin--A-top2">
-          {{ title(type.replace('Tags', ' Tags')) }}
-        </h4>
-        <div class="Vlt-badge-group">
-          <span v-for="(tag, i) in tags" :key="i" @click="setTag(tag)">
-            <Tag :tag="tag" :link="false" />
-          </span>
-        </div>
+    <div v-for="(tags, type) in tagTypes" :key="type">
+      <h4>
+        {{ title(type.replace('Tags', ' Tags')) }}
+      </h4>
+      <div class="my-8 text-center">
+        <Tag
+          v-for="(tag, i) in tags"
+          :key="i"
+          class="mx-1"
+          :tag="tag"
+          :link="false"
+          @click.native="setTag(tag)"
+        />
       </div>
     </div>
   </div>
@@ -121,18 +137,68 @@ export default {
     title(word) {
       return titleCase(word)
     },
+
+    async copySomething(text) {
+      try {
+        await this.$copyText(text)
+      } catch (e) {
+        console.error(e)
+      }
+    },
   },
 }
 </script>
 
 <style scoped>
-.Tag-tests >>> a {
-  font-size: 1.1rem !important;
+.tag-tester {
+  @apply rounded-l-lg;
+  @apply outline-none;
+  @apply block;
+  @apply w-full;
+  @apply pl-2;
+  @apply transition;
+  @apply ease-in-out;
+  @apply duration-150;
+  @apply text-sm;
+  @apply leading-5;
 }
-.Tag-tests >>> .Tag-test {
-  font-size: 3rem !important;
-  border-radius: 27px;
-  padding: 4px 16px;
-  margin-bottom: 20px;
+
+.tag-tester:focus {
+  @apply outline-none;
+}
+
+@screen md {
+  .tag-tester {
+    @apply text-base;
+    @apply leading-normal;
+  }
+}
+
+.tag-button {
+  @apply px-4;
+  @apply py-2;
+  @apply -ml-px;
+  @apply text-gray-700;
+  @apply transition;
+  @apply duration-150;
+  @apply ease-in-out;
+  @apply border-l;
+  @apply border-gray-300;
+  @apply rounded-r-lg;
+  @apply outline-none;
+}
+
+.tag-button:focus {
+  @apply outline-none;
+}
+
+.tag-button:hover {
+  @apply text-gray-500;
+  @apply bg-white;
+}
+
+.tag-button:active {
+  @apply bg-gray-100;
+  @apply text-gray-700;
 }
 </style>

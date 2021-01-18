@@ -12,8 +12,8 @@ published_at: 2019-02-05T10:08:57.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/02/05/forward-call-with-koa-js-dr
-redirect: https://www.nexmo.com/blog/2019/02/05/forward-call-with-koa-js-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/02/05/forward-call-with-koa-js-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/02/05/forward-call-with-koa-js-dr
 ---
 
 Content to be migrated...

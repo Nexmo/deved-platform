@@ -12,8 +12,8 @@ published_at: 2019-11-25T13:57:00.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/11/25/send-messages-with-nexmo-through-golang-and-aws-lambda-dr
-redirect: https://www.nexmo.com/blog/2019/11/25/send-messages-with-nexmo-through-golang-and-aws-lambda-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/11/25/send-messages-with-nexmo-through-golang-and-aws-lambda-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/11/25/send-messages-with-nexmo-through-golang-and-aws-lambda-dr
 ---
 
 Content to be migrated...

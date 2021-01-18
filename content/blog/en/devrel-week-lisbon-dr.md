@@ -12,8 +12,8 @@ published_at: 2018-02-02T13:52:46.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2018/02/02/devrel-week-lisbon-dr
-redirect: https://www.nexmo.com/blog/2018/02/02/devrel-week-lisbon-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/02/02/devrel-week-lisbon-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/02/02/devrel-week-lisbon-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2018-03-14T11:51:00.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/03/14/speech-voice-translation-microsoft-dr
-redirect: https://www.nexmo.com/blog/2018/03/14/speech-voice-translation-microsoft-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/03/14/speech-voice-translation-microsoft-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/03/14/speech-voice-translation-microsoft-dr
 ---
 
 Content to be migrated...

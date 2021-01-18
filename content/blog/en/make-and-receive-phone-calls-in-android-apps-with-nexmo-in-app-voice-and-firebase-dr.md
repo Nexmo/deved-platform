@@ -13,8 +13,8 @@ published_at: 2018-07-03T15:39:14.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/07/03/make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase-dr
-redirect: https://www.nexmo.com/blog/2018/07/03/make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/07/03/make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/07/03/make-and-receive-phone-calls-in-android-apps-with-nexmo-in-app-voice-and-firebase-dr
 ---
 
 Content to be migrated...

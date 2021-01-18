@@ -13,8 +13,8 @@ published_at: 2018-02-27T20:23:26.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
-redirect: https://www.nexmo.com/blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/02/27/conversational-ui-nexmo-in-app-messaging-safe-layout-ios-11-dr
 ---
 
 Content to be migrated...

@@ -13,8 +13,8 @@ published_at: 2016-11-30T21:23:41.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/11/30/nexmo-voice-api-demo-telephony-ai-platforms-websockets
-redirect: https://www.nexmo.com/blog/2016/11/30/nexmo-voice-api-demo-telephony-ai-platforms-websockets
+canonical: https://www.nexmo.com/legacy-blog/2016/11/30/nexmo-voice-api-demo-telephony-ai-platforms-websockets
+redirect: https://www.nexmo.com/legacy-blog/2016/11/30/nexmo-voice-api-demo-telephony-ai-platforms-websockets
 ---
 
 Content to be migrated...

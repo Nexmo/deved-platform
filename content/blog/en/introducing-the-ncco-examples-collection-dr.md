@@ -12,8 +12,8 @@ published_at: 2019-10-25T08:00:57.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2019/10/25/introducing-the-ncco-examples-collection-dr
-redirect: https://www.nexmo.com/blog/2019/10/25/introducing-the-ncco-examples-collection-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/10/25/introducing-the-ncco-examples-collection-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/10/25/introducing-the-ncco-examples-collection-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2020-01-27T22:27:30.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/01/27/sentiment-analysis-with-opentok-and-azure-face-api-dr
-redirect: https://www.nexmo.com/blog/2020/01/27/sentiment-analysis-with-opentok-and-azure-face-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/27/sentiment-analysis-with-opentok-and-azure-face-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/01/27/sentiment-analysis-with-opentok-and-azure-face-api-dr
 ---
 
 Content to be migrated...

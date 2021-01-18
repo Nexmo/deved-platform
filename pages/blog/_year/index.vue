@@ -1,26 +1,14 @@
 <template>
-  <section class="Blog__Full-width">
-    <header class="Blog__Full-width">
-      <PageHero class="Category-hero">
-        {{ $t('page_blog_yearmonthday_title') }} {{ year }}.
-      </PageHero>
-    </header>
-    <main class="Vlt-container">
-      <div class="Vlt-grid">
-        <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <Card v-for="post in posts" :key="post.route" :post="post" />
-      </div>
-    </main>
-  </section>
+  <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+    <Breadcrumbs />
+    <section class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <Card v-for="(post, i) in posts" :key="i" :post="post" />
+    </section>
+  </main>
 </template>
 
 <script>
-import moment from 'moment'
+import config from '~/modules/config'
 
 export default {
   validate({ params: { year } }) {
@@ -28,13 +16,11 @@ export default {
   },
 
   async asyncData({ $content, app, error, params: { year } }) {
-    const date = moment(`${year}`, 'YYYY')
-
     try {
       const posts = await $content(`blog/${app.i18n.locale}`)
         .where({
           $and: [
-            { routes: { $contains: `/blog/${date.format('YYYY')}` } },
+            { routes: { $contains: `/blog/${year}` } },
             { published: { $ne: false } },
           ],
         })
@@ -46,19 +32,30 @@ export default {
       }
 
       return {
-        year: date.format('YYYY'),
         posts,
-        routes: [
-          { route: `/blog`, title: app.i18n.t('page_blog_breadcrumb') },
-          {
-            route: `/blog/${date.format('YYYY')}`,
-            title: date.format('YYYY'),
-            current: true,
-          },
-        ],
       }
     } catch (e) {
       return error(e)
+    }
+  },
+
+  head() {
+    return {
+      title: 'Blog Posts and Tutorials',
+      meta: [
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          // Team Members & Authors » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `Blog Posts and Tutorials${config.baseSplitter}${config.baseTitle}`,
+        },
+      ],
     }
   },
 }

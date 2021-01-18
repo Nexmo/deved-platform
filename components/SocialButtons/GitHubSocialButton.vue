@@ -1,32 +1,34 @@
 <template>
   <a
-    v-if="!!link"
-    class="Vlt-btn Vlt-btn--tertiary"
-    :class="{ 'Vlt-btn--icon': !hasDefaultSlot }"
+    v-if="link"
+    class="inline-block"
     :href="`${link}?utm_source=blog&utm_medium=deved&utm_campaign=github-social-link`"
     target="_blank"
     rel="noreferrer"
   >
-    <svg>
-      <image
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        xlink:href="../../node_modules/@vonagevolta/volta2/images/brand-icons/Brand-icon-github-color.svg"
-      />
-    </svg>
+    <GitHubIcon
+      class="inline fill-current icon-size"
+      :class="{ 'mr-2': hasDefaultSlot }"
+    />
     <slot />
   </a>
 </template>
 
 <script>
+import { GitHubIcon } from 'vue-simple-icons'
+
 export default {
+  components: {
+    GitHubIcon,
+  },
+
   props: {
     link: {
       type: String,
       default: '',
     },
   },
+
   computed: {
     hasDefaultSlot() {
       return !!this.$slots.default

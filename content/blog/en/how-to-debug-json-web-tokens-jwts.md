@@ -12,8 +12,8 @@ published_at: 2020-08-26T13:13:19.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/08/26/how-to-debug-json-web-tokens-jwts
-redirect: https://www.nexmo.com/blog/2020/08/26/how-to-debug-json-web-tokens-jwts
+canonical: https://www.nexmo.com/legacy-blog/2020/08/26/how-to-debug-json-web-tokens-jwts
+redirect: https://www.nexmo.com/legacy-blog/2020/08/26/how-to-debug-json-web-tokens-jwts
 ---
 
 Content to be migrated...

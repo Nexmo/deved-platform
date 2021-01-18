@@ -13,8 +13,8 @@ comments: true
 category: event
 tags:
   - hacktoberfest
-canonical: https://www.nexmo.com/blog/2020/09/28/vonage-joins-hacktoberfest-2020
-redirect: https://www.nexmo.com/blog/2020/09/28/vonage-joins-hacktoberfest-2020
+canonical: https://www.nexmo.com/legacy-blog/2020/09/28/vonage-joins-hacktoberfest-2020
+redirect: https://www.nexmo.com/legacy-blog/2020/09/28/vonage-joins-hacktoberfest-2020
 ---
 
 Content to be migrated...

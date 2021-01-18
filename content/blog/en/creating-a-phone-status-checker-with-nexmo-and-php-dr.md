@@ -12,8 +12,8 @@ published_at: 2019-11-14T17:01:35.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
-redirect: https://www.nexmo.com/blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/11/14/creating-a-phone-status-checker-with-nexmo-and-php-dr
 ---
 
 Content to be migrated...

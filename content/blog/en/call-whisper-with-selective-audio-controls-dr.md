@@ -12,8 +12,8 @@ published_at: 2018-12-13T17:01:23.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/13/call-whisper-with-selective-audio-controls-dr
-redirect: https://www.nexmo.com/blog/2018/12/13/call-whisper-with-selective-audio-controls-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/13/call-whisper-with-selective-audio-controls-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/13/call-whisper-with-selective-audio-controls-dr
 ---
 
 Content to be migrated...

@@ -15,8 +15,8 @@ tags:
   - chatbots
   - javascript
   - messaging-api
-canonical: https://www.nexmo.com/blog/2018/10/16/build-a-facebook-messenger-bot-with-messages-api-and-dialogflow-dr
-redirect: https://www.nexmo.com/blog/2018/10/16/build-a-facebook-messenger-bot-with-messages-api-and-dialogflow-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/10/16/build-a-facebook-messenger-bot-with-messages-api-and-dialogflow-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/10/16/build-a-facebook-messenger-bot-with-messages-api-and-dialogflow-dr
 ---
 
 Content to be migrated...

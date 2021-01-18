@@ -14,8 +14,8 @@ category: tutorial
 tags:
   - bots
   - chatbots
-canonical: https://www.nexmo.com/blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
-redirect: https://www.nexmo.com/blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
+canonical: https://www.nexmo.com/legacy-blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
+redirect: https://www.nexmo.com/legacy-blog/2020/09/09/build-a-whatsapp-currency-conversion-bot-with-node-js
 ---
 
 Content to be migrated...

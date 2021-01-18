@@ -2,7 +2,6 @@
   <a
     :href="`${repoUrl}/commits/${repoBranch}/content${post.path}${post.extension}`"
     target="_blank"
-    class="Vlt-text-link"
     >View revision history</a
   >
 </template>

@@ -12,8 +12,8 @@ published_at: 2020-04-17T10:10:33.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/17/make-calls-with-a-custom-call-button-in-your-ios-app-dr
-redirect: https://www.nexmo.com/blog/2020/04/17/make-calls-with-a-custom-call-button-in-your-ios-app-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/04/17/make-calls-with-a-custom-call-button-in-your-ios-app-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/04/17/make-calls-with-a-custom-call-button-in-your-ios-app-dr
 ---
 
 Content to be migrated...

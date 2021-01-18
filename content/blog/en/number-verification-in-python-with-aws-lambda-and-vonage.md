@@ -12,8 +12,8 @@ published_at: 2020-05-06T07:01:03.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/05/06/number-verification-in-python-with-aws-lambda-and-vonage
-redirect: https://www.nexmo.com/blog/2020/05/06/number-verification-in-python-with-aws-lambda-and-vonage
+canonical: https://www.nexmo.com/legacy-blog/2020/05/06/number-verification-in-python-with-aws-lambda-and-vonage
+redirect: https://www.nexmo.com/legacy-blog/2020/05/06/number-verification-in-python-with-aws-lambda-and-vonage
 ---
 
 Content to be migrated...

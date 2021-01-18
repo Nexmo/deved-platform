@@ -12,8 +12,8 @@ published_at: 2019-03-19T09:42:35.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2019/03/19/nexmo-goes-to-devrelcon-tokyo-2019-dr
-redirect: https://www.nexmo.com/blog/2019/03/19/nexmo-goes-to-devrelcon-tokyo-2019-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/03/19/nexmo-goes-to-devrelcon-tokyo-2019-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/03/19/nexmo-goes-to-devrelcon-tokyo-2019-dr
 ---
 
 Content to be migrated...

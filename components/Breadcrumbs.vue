@@ -1,84 +1,94 @@
 <template>
   <ol
-    class="breadcrumb Vlt-margin--A-top1 Vlt-margin--A-bottom2"
+    class="my-4 text-sm truncate list-none"
     vocab="http://schema.org/"
     typeof="BreadcrumbList"
   >
-    <li property="itemListElement" typeof="ListItem">
-      <NLink property="item" typeof="WebPage" :to="localePath('index')">
+    <li class="inline-block" property="itemListElement" typeof="ListItem">
+      <nuxt-link property="item" typeof="WebPage" to="/">
         <span property="name">Vonage Learn</span>
-      </NLink>
+      </nuxt-link>
       <meta property="position" content="1" />
     </li>
     <li
-      v-for="(route, index) in allRoutes"
-      :key="route.route"
+      v-for="(crumb, index) in crumbs"
+      :key="index"
+      class="inline-block"
       property="itemListElement"
       typeof="ListItem"
     >
-      <NLink property="item" typeof="WebPage" :to="localePath(route.route)">
-        <span property="name">{{ route.title }}</span>
-      </NLink>
-      <meta property="position" :content="index + 2" />
-    </li>
-    <li vproperty="itemListElement" typeof="ListItem" class="current">
-      <a property="item" typeof="WebPage" href="#">
+      <nuxt-link property="item" typeof="WebPage" :to="crumb.path">
         <span property="name">{{
-          currentRoute.title | truncate(40, '...')
+          $route.fullPath === crumb.path && title !== null ? title : crumb.title
         }}</span>
-      </a>
-      <meta property="position" :content="allRoutes.length + 1" />
+      </nuxt-link>
+      <meta property="position" :content="index + 2" />
     </li>
   </ol>
 </template>
 
 <script>
+const titleCase = require('ap-style-title-case')
+
 export default {
   props: {
-    routes: {
-      type: Array,
-      required: true,
+    title: {
+      type: String,
+      default: null,
     },
   },
 
   computed: {
-    allRoutes() {
-      return this.routes.filter((r) => !r.current)
-    },
-    currentRoute() {
-      return this.routes.filter((r) => !!r.current)[0]
+    crumbs() {
+      const fullPath = this.$route.fullPath
+      const path = fullPath.startsWith('/') ? fullPath.substring(1) : fullPath
+      const params = path.split('#').shift().split('?').shift().split('/')
+      const crumbs = []
+
+      let newPath = ''
+
+      params.forEach((param, index) => {
+        if (param) {
+          newPath = `${newPath}/${param}`
+          const match = this.$router.match(`${newPath}/`)
+
+          if (match.name !== null) {
+            crumbs.push({
+              title: titleCase(param.replace(/-/g, ' ')),
+              ...match,
+            })
+          }
+        }
+      })
+
+      return crumbs
     },
   },
 }
 </script>
 
 <style scoped>
-ol {
-  list-style: none;
-}
-
-li {
-  display: inline;
-}
-
 li:after {
-  content: ' » ';
-  display: inline;
-  font-size: 0.9em;
-  color: #aaa;
-
-  padding: 0 0.0725em 0 0.15em;
+  content: '»';
+  @apply inline;
+  @apply text-xs;
+  @apply text-grey;
 }
 
 li:last-child:after {
   content: '';
 }
 
-li a {
-  color: black;
+li:not(:first-child) a {
+  @apply pl-1;
 }
 
-li.current a {
-  color: grey;
+li a {
+  @apply text-grey-darker;
+  @apply pr-1;
+}
+
+li a.nuxt-link-exact-active.nuxt-link-active {
+  @apply text-grey-dark;
 }
 </style>

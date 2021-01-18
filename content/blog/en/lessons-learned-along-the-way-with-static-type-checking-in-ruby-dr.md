@@ -12,8 +12,8 @@ published_at: 2020-03-23T16:02:04.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/03/23/lessons-learned-along-the-way-with-static-type-checking-in-ruby-dr
-redirect: https://www.nexmo.com/blog/2020/03/23/lessons-learned-along-the-way-with-static-type-checking-in-ruby-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/03/23/lessons-learned-along-the-way-with-static-type-checking-in-ruby-dr
+redirect: https://www.nexmo.com/legacy-blog/2020/03/23/lessons-learned-along-the-way-with-static-type-checking-in-ruby-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-04-16T09:58:17.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/04/16/forward-a-call-via-voice-proxy-with-ruby-on-rails-dr
-redirect: https://www.nexmo.com/blog/2019/04/16/forward-a-call-via-voice-proxy-with-ruby-on-rails-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/04/16/forward-a-call-via-voice-proxy-with-ruby-on-rails-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/04/16/forward-a-call-via-voice-proxy-with-ruby-on-rails-dr
 ---
 
 Content to be migrated...

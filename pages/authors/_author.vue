@@ -1,33 +1,19 @@
 <template>
-  <section class="Blog__Full-width">
-    <header class="Blog__Full-width">
-      <Author :author="author" type="page" />
-    </header>
-    <main class="Vlt-container">
-      <div class="Vlt-grid">
-        <div class="Vlt-col" />
-        <div v-if="routes" class="Vlt-col Vlt-col--2of3">
-          <Breadcrumbs :routes="routes" />
-        </div>
-        <div class="Vlt-col" />
-        <div class="Vlt-grid__separator" />
-        <Card
+  <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+    <Breadcrumbs :title="author.name ? author.name : null" />
+    <section class="grid gap-6 grid-cols-1 md:grid-cols-3">
+      <Author :author="author" type="page" class="col-span-1" />
+      <div class="grid grid-cols-2 gap-6 col-span-1 md:col-span-2">
+        <CardAuthor
           v-for="(post, index) in posts"
           :key="index"
           :post="post"
           show-language
+          class="col-span-2 lg:col-span-1"
         />
-        <div class="Vlt-grid__separator" />
-        <template v-if="author.spotlight">
-          <div class="Vlt-col" />
-          <div class="Vlt-col Vlt-col--2of3">
-            <SpotlightFooter />
-          </div>
-          <div class="Vlt-col" />
-        </template>
       </div>
-    </main>
-  </section>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -36,8 +22,7 @@ import config from '~/modules/config'
 export default {
   async asyncData({ $content, params, error, app }) {
     try {
-      const { authors } = await $content('authors').fetch()
-      const author = authors.find((a) => a.username === params.author)
+      const author = await $content('authors', params.author).fetch()
 
       if (!author) {
         return error({ statusCode: 404, message: 'Page not found' })
@@ -48,20 +33,11 @@ export default {
           $and: [{ author: author.username }, { published: { $ne: false } }],
         })
         .sortBy('published_at', 'desc')
-        .limit(config.postsPerPage)
         .fetch()
 
       return {
         author,
         posts,
-        routes: [
-          { route: `/authors`, title: app.i18n.t('page_authors_title') },
-          {
-            route: `/authors/${author.username}`,
-            title: `${author.name}`,
-            current: true,
-          },
-        ],
       }
     } catch (e) {
       return error(e)
@@ -79,6 +55,77 @@ export default {
     authorMeta() {
       const meta = [
         {
+          hid: 'description',
+          name: 'description',
+          content: this.author.bio,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `${this.author.name}${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.author.bio,
+        },
+        // {
+        //   hid: 'twitter:image',
+        //   name: 'twitter:image',
+        //   // https://learn.vonage.com/images/Vonage-learn.png
+        //   content: `${config.baseUrl}/images/Vonage-learn.png`,
+        // },
+        // {
+        //   hid: 'twitter:image:width',
+        //   name: 'twitter:image:width',
+        //   content: '1200',
+        // },
+        // {
+        //   hid: 'twitter:image:height',
+        //   name: 'twitter:image:height',
+        //   content: '420',
+        // },
+        // {
+        //   hid: 'twitter:image:alt',
+        //   name: 'twitter:image:alt',
+        //   // Posts, Tutorials, and Streams » Developer Content from Vonage ♥
+        //   content: `${config.indexTitle}${config.baseSplitter}${config.baseTitle}`,
+        // },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // {author name} » Developer Content from Vonage ♥
+          content: `${this.author.name}${config.baseSplitter}${config.baseTitle}`,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.author.bio,
+        },
+        // {
+        //   hid: 'og:image',
+        //   property: 'og:image',
+        //   // https://learn.vonage.com/images/Vonage-learn.png
+        //   content: `${config.baseUrl}/images/Vonage-learn.png`,
+        // },
+        // {
+        //   hid: 'og:image:width',
+        //   name: 'og:image:width',
+        //   content: '300',
+        // },
+        // {
+        //   hid: 'og:image:height',
+        //   name: 'og:image:height',
+        //   content: '300',
+        // },
+        // {
+        //   hid: 'og:image:alt',
+        //   name: 'og:image:alt',
+        //   // Posts, Tutorials, and Streams » Developer Content from Vonage ♥
+        //   content: `${config.indexTitle}${config.baseSplitter}${config.baseTitle}`,
+        // },
+        {
           hid: 'article:author',
           property: 'article:author',
           content: this.author.username,
@@ -95,10 +142,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.Vlt-grid >>> .Author-col {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-}
-</style>

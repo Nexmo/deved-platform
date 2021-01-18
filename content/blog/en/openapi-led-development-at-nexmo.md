@@ -12,8 +12,8 @@ published_at: 2018-11-05T17:01:25.000Z
 comments: true
 category: community
 tags: []
-canonical: https://www.nexmo.com/blog/2018/11/05/openapi-led-development-at-nexmo
-redirect: https://www.nexmo.com/blog/2018/11/05/openapi-led-development-at-nexmo
+canonical: https://www.nexmo.com/legacy-blog/2018/11/05/openapi-led-development-at-nexmo
+redirect: https://www.nexmo.com/legacy-blog/2018/11/05/openapi-led-development-at-nexmo
 ---
 
 Content to be migrated...

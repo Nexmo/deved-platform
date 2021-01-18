@@ -12,8 +12,8 @@ published_at: 2018-11-15T16:58:53.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/11/15/pycascades-code-of-conduct-hotline-nexmo-voice-api-dr
-redirect: https://www.nexmo.com/blog/2018/11/15/pycascades-code-of-conduct-hotline-nexmo-voice-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/11/15/pycascades-code-of-conduct-hotline-nexmo-voice-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/11/15/pycascades-code-of-conduct-hotline-nexmo-voice-api-dr
 ---
 
 Content to be migrated...

@@ -13,8 +13,8 @@ published_at: 2016-06-21T10:23:50.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api-dr
-redirect: https://www.nexmo.com/blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api-dr
 ---
 
 Content to be migrated...

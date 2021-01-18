@@ -1,0 +1,21 @@
+{
+  "git": {
+    "commitMessage": "chore: release v${version}"
+  },
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "publish": false
+  },
+  "hooks": {
+    "before:init": ["npm run lint", "npm test"],
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  }
+}

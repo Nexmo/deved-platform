@@ -13,8 +13,8 @@ comments: true
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/blog/2020/02/06/kevin-joins-the-nexmo-developer-relations-team
-redirect: https://www.nexmo.com/blog/2020/02/06/kevin-joins-the-nexmo-developer-relations-team
+canonical: https://www.nexmo.com/legacy-blog/2020/02/06/kevin-joins-the-nexmo-developer-relations-team
+redirect: https://www.nexmo.com/legacy-blog/2020/02/06/kevin-joins-the-nexmo-developer-relations-team
 ---
 
 Content to be migrated...

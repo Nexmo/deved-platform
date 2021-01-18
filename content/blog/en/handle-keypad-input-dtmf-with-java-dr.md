@@ -12,8 +12,8 @@ published_at: 2018-08-15T18:54:33.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/08/15/handle-keypad-input-dtmf-with-java-dr
-redirect: https://www.nexmo.com/blog/2018/08/15/handle-keypad-input-dtmf-with-java-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/08/15/handle-keypad-input-dtmf-with-java-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/08/15/handle-keypad-input-dtmf-with-java-dr
 ---
 
 Content to be migrated...

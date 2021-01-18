@@ -9,14 +9,14 @@ published: true
 published_at: 2017-03-23T14:00:21.000Z
 updated_at: 2020-10-27T15:23:54.148Z
 category: tutorial
-canonical: ""
-outdated: true
-comments: true
 tags:
   - dotnet
   - sms-api
+comments: true
 redirect: ""
-outdated_url: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
+canonical: ""
+outdated: true
+replacement_url: https://www.nexmo.com/blog/2020/07/09/how-to-send-an-sms-with-asp-net-core-mvc
 ---
 
 The [Vonage SMS API](https://docs.nexmo.com/messaging/sms-api) lets you send and receive text messages around the world. This tutorial shows you how to use the [Nexmo C# Client Library](https://github.com/Nexmo/nexmo-dotnet) to send SMS messages from your ASP.NET MVC web app.
@@ -30,13 +30,7 @@ To get started with the Nexmo Client Library for .NET, you will need:
 * Visual Studio 2017 RC
 * Windows machine
 
-## Vonage API Account
-
-To complete this tutorial, you will need a [Vonage API account](http://developer.nexmo.com/ed?c=blog_text&ct=2017-03-23-send-sms-messages-asp-net-mvc-framework-dr). If you don’t have one already, you can [sign up today](http://developer.nexmo.com/ed?c=blog_text&ct=2017-03-23-send-sms-messages-asp-net-mvc-framework-dr) and start building with free credit. Once you have an account, you can find your API Key and API Secret at the top of the [Vonage API Dashboard](http://developer.nexmo.com/ed?c=blog_text&ct=2017-03-23-send-sms-messages-asp-net-mvc-framework-dr).
-
-This tutorial also uses a virtual phone number. To purchase one, go to *Numbers* > *Buy Numbers* and search for one that meets your needs. If you’ve just signed up, the initial cost of a number will be easily covered by your available credit.
-
-![Start Building with Vonage](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/startbuilding_footer.png "Start Building with Vonage")
+<sign-up number></sign-up>
 
 ## ASP.NET Project Setup
 
@@ -48,9 +42,9 @@ Select the **MVC Template** and ensure the Authentication type is set to **No Au
 
 ![MVC Template](/content/blog/how-to-send-sms-messages-with-asp-net-mvc-framework/mvc.png "MVC Template")
 
-Next, install the Nexmo C# Client Library via the NuGet Package Manager Console.
+Next, install the Vonage C# Client Library via the NuGet Package Manager Console.
 
-```
+```bash
 Install-Package Nexmo.Csharp.Client -Version 2.2.0’
 ```
 
@@ -58,7 +52,7 @@ Install-Package Nexmo.Csharp.Client -Version 2.2.0’
 
 Also, add the following package to enable debug logging in the output window via the Package Manager Console:
 
-```
+```bash
 Install-Package Microsoft.Extensions.Logging -Version 1.0.1
 ```
 
@@ -70,7 +64,7 @@ Next, under the **Tools** dropdown menu, locate **NuGet Package Manager** and cl
 
 Add a JSON file [appsettings.json](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/32a25f7dbf7f71e4af3181c872f208e41f726ea3/NexmoDotNetQuickStarts/appsettings.json) to your project. Inside this file, add your Vonage API credentials.
 
-```
+```aspnet
 {
 "appSettings": {
 "Nexmo.UserAgent": "NEXMOQUICKSTART/1.0",
@@ -85,7 +79,7 @@ Add a JSON file [appsettings.json](https://github.com/nexmo-community/nexmo-dotn
 
 Create a new controller (`SMSController.cs`). In this controller, create an [action method](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/488a97c576c882aeef8a7cf327bade27750f4856/NexmoDotNetQuickStarts/Controllers/SMSController.cs#L20-24) called **Send**. Above the method, add a **HttpGetAttribute** to allow the user to navigate to the corresponding view.
 
-```
+```aspnet
 [System.Web.Mvc.HttpGet]
 public ActionResult Send()
 {
@@ -95,7 +89,7 @@ return View();
 
 Afterwards, click on the **Views** folder and add a new folder called **SMS**. Within this folder, create a new view. (`Send.cshtml'). Then, [add a form](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/42bf24b26e461d4c90283e823ab9a3e92a518cb9/NexmoDotNetQuickStarts/Views/SMS/Send.cshtml#L4-L10) to the view with two input tags (type = “text”) for the destination number and the message to be sent. Lastly, add an input tag (type = “submit”) to submit the form.
 
-```
+```aspnet
 @using (Html.BeginForm("Send", "SMS", FormMethod.Post))
 {
 
@@ -107,13 +101,13 @@ Afterwards, click on the **Views** folder and add a new folder called **SMS**. W
 
 Back in the `SMSController`, add the following using statement to the top of the file.
 
-```
+```aspnet
 using Nexmo.Api;
 ```
 
 Add another [action method](https://github.com/nexmo-community/nexmo-dotnet-quickstart/blob/488a97c576c882aeef8a7cf327bade27750f4856/NexmoDotNetQuickStarts/Controllers/SMSController.cs#L26-L38) named **Send** with two string parameters: **to** and **text**. Within this method, add the code below to send the text using the parameters as the **to** and **text** values. The **from** number is your Vonage virtual number (retrieved from the `appsettings.json`).
 
-```
+```aspnet
 [System.Web.Mvc.HttpPost]
 public ActionResult Send(string to, string text)
 {

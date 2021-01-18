@@ -12,8 +12,8 @@ published_at: 2020-04-08T15:50:34.000Z
 comments: true
 category: announcement
 tags: []
-canonical: https://www.nexmo.com/blog/2020/04/08/introducing-the-messages-api-sandbox
-redirect: https://www.nexmo.com/blog/2020/04/08/introducing-the-messages-api-sandbox
+canonical: https://www.nexmo.com/legacy-blog/2020/04/08/introducing-the-messages-api-sandbox
+redirect: https://www.nexmo.com/legacy-blog/2020/04/08/introducing-the-messages-api-sandbox
 ---
 
 Content to be migrated...

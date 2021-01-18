@@ -12,8 +12,8 @@ published_at: 2020-07-08T07:15:14.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/08/how-to-send-an-sms-with-blazor
-redirect: https://www.nexmo.com/blog/2020/07/08/how-to-send-an-sms-with-blazor
+canonical: https://www.nexmo.com/legacy-blog/2020/07/08/how-to-send-an-sms-with-blazor
+redirect: https://www.nexmo.com/legacy-blog/2020/07/08/how-to-send-an-sms-with-blazor
 ---
 
 Content to be migrated...

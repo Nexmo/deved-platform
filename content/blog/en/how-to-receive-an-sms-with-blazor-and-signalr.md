@@ -12,8 +12,8 @@ published_at: 2020-07-14T13:39:13.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2020/07/14/how-to-receive-an-sms-with-blazor-and-signalr
-redirect: https://www.nexmo.com/blog/2020/07/14/how-to-receive-an-sms-with-blazor-and-signalr
+canonical: https://www.nexmo.com/legacy-blog/2020/07/14/how-to-receive-an-sms-with-blazor-and-signalr
+redirect: https://www.nexmo.com/legacy-blog/2020/07/14/how-to-receive-an-sms-with-blazor-and-signalr
 ---
 
 Content to be migrated...

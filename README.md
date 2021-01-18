@@ -1,4 +1,26 @@
-# Vonage Developer Education Content Platform
+# Developer Education Platform
+
+![Superhero with avocado hoody walking to laptop on desk](.github/splashImage.png)
+<small>The [Developer Education Platform](https://learn.vonage.com) from Vonage</small>
+
+**Table of Contents**
+
+- [Introduction](#introduction)
+  - [Related Content](#related-content)
+- [Installation](#installation)
+- [Writing For Vonage](#writing-for-vonage)
+- [Contributing](#contributing)
+- [Components](#components)
+- [Writing Style](#writing-style)
+- [Tools](#tools)
+  - [Capitalize My Title](#capitalize-my-title)
+  - [Tag Tester](#tag-tester)
+  - [Create a Blog Post CLI](#create-a-blog-post-cli)
+  - [Translate a Blog Post CLI](#translate-a-blog-post-cli)
+- [License](#license)
+- [Change log](#change-log)
+
+## Introduction
 
 ![Netlify Build](https://img.shields.io/netlify/00bdc529-eecc-4b9b-9fa7-915f5c3717a4)
 ![GitHub](https://img.shields.io/github/license/Nexmo/deved-platform)
@@ -6,54 +28,70 @@
 ![GitHub release](https://img.shields.io/github/v/release/Nexmo/deved-platform)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Nexmo/deved-platform)
 ![GitHub release date](https://img.shields.io/github/release-date/Nexmo/deved-platform)
-![Made with <3](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
-![Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)
 ![Twitch Status](https://img.shields.io/twitch/status/vonagedevs)
 [![Join us on Slack](https://img.shields.io/badge/chat-on_slack-informational?style=flat&color=6e33ba)](https://developer.nexmo.com/community/slack)
 
-***The source and content for the Vonage Developer Education Content Platform, based on Nuxt.js***
+A Nuxt based content platform for content from the Vonage Developer Education Team.
 
-- Zero configuration local builds (without search)
-- `nuxt/content` for loading of markdown and json files
-- Algolia search with `vue-instantsearch` and `algoliasearch` (requires some configuration)
-- RSS and author RSS feeds using `nuxtjs/feeds`
-- DISQUS comments on post pages using `vue-disqus`
+- "Zero configuration" local builds - no search
+- Algolia search with `vue-instantsearch` and `algoliasearch` - requires some configuration
+- Markdown content using official `@nuxt/content` module
+- RSS2 and JSON1 feeds using `@nuxtjs/feeds`
 - Netlify CMS for content management
+- Bespoke command line developer experience using the Blog CLI
+- Serverless Server-side Analytics
+- Global components like `<Youtube/>` and `<SignUp/>`
 
-***Table of contents***
+### Related Content
 
-- [Installation](#installation)
-- [Contributing](#contributing)
-- [Components](#components)
-- [Writing Style](#writing-style)
-- [Tools](#tools)
-  - [Blog Posts](#blog-posts)
-  - [Legacy Content Importer](#legacy-content-importer)
-  - [Legacy Author Importer](#legacy-author-importer)
-- [License](#license)
-- [Change log](#change-log)
+- [Export WordPress Posts to Nuxt](https://dev.to/vonagedev/export-wordpress-posts-to-jamstack-static-sites-m32)
+- [Fast Nuxt Builds on Netlify](https://dev.to/vonagedev/make-nuxt-js-go-brrrrrrrr-30-minute-to-1-minute-builds-on-netlify-f6e)
+- [The Perfect Breadcrumbs in Nuxt](https://dev.to/vonagedev/breadcrumbs-in-nuxt-5f2m)
 
 ## Installation
 
-Please checkout [the local setup guide](./.github/LOCAL_SETUP.md) for more information on installation and usage.
+Please checkout [the local setup guide](.github/LOCAL_SETUP.md) for more information on installation and usage.
+
+## Writing For Vonage
+
+Teach others, grow as a writer, and help us build the next go-to destination for developers in search of [high quality technical content](https://learn.vonage.com/blog/spotlight) and inspiring development stories.
+
+![Isometric shapes showing people working on computers with Developer Spotlight logo](.github/spotlightBanner.png)
+
+We pay $500 USD per post. Your tutorial will be published on our platform, on syndication sites, on social media, and may even be shared featured in our newsletters.
+
+Check out the [Vonage Developer Spotlight Programme](https://developer.nexmo.com/spotlight) today.
 
 ## Contributing
 
-Please read our [Contributing Guide](./.github/CONTRIBUTING.md) and [Code of Conduct](./.github/CODE_OF_CONDUCT.md) before making a pull request.
+Please read our [contributing guide](https://learn.vonage.com/contributing#making-a-contribution) and [Code of Conduct](https://github.com/Nexmo/deved-platform/blob/develop/.github/CODE_OF_CONDUCT.md) before making a pull request.
 
 ## Components
 
-Components can be included in posts but should not be expected to appear as part of RSS based exports or readers.
+Global components can be included in posts to help produce consistent content.
 
-Check out the Nuxt.js `@nuxt/content` module [documentation for writing content with Vue components](https://content.nuxtjs.org/writing#vue-components).
+- `<sign-up></sign-up>`
+- `<youtube></youtube>`
 
 ## Writing Style
 
-Taken from our developer education writing styleguide, we've included our [writing style guide](././.github/WRITING_STYLE.md) to help with contributing content.
+Taken from our developer education writing styleguide, we've included our [contributing guide](https://learn.vonage.com/contributing#writing-style-guide) to help with contributing content.
 
 ## Tools
 
-### Blog Posts
+### Capitalize My Title
+
+We've built-in our own version of capitalizemytitle.com, which you can [find here](https://learn.vonage.com/contributing#capitalize-my-title)
+
+![Capitalize My Title](.github/capsMyTitle.png)
+
+### Tag Tester
+
+We've built our own content tag generator which you can [find here](https://learn.vonage.com/contributing#tag-tester)
+
+![Tag Tester](.github/tagTester.png)
+
+### Create a Blog Post CLI
 
 Create a new blog post using the CLI.
 
@@ -77,6 +115,8 @@ npm run blog
 # ✔ Saved demo file to content/blog/en/an-awesome-title-for-your-post.md ...
 ```
 
+### Translate a Blog Post CLI
+
 You can also start a translation with the same tool.
 
 ```bash
@@ -95,26 +135,6 @@ npm run blog
 # ? What's the description? <max 240 chars> Scopri come aggiungere alla tua app l&#39;autenticazione dei pagamenti online "Secure Customer Authentication", noto anche come PSD2, con Vonage Verify API
 # ✔ Saved demo file to content/blog/it/add-strong-psd2-authentication-to-your-application.md ...
 ```
-
-### Legacy Content Importer
-
-Imports content from a WordPress WP API instance.
-
-```bash
-WP_USERNAME={username} WP_PASSWORD={password} node bin/exporter
-```
-
-Shouldn't be used unless importing content from WordPress.
-
-### Legacy Author Importer
-
-Imports authors from a WordPress WP API instance.
-
-```bash
-WP_USERNAME={username} WP_PASSWORD={password} node bin/authors
-```
-
-Shouldn't be used unless importing authors from WordPress.
 
 ## License
 

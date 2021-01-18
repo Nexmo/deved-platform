@@ -12,8 +12,8 @@ published_at: 2016-07-01T14:01:32.000Z
 comments: true
 category: community
 tags: []
-canonical: https://www.nexmo.com/blog/2016/07/01/win-tickets-electromagnetic-field-2016
-redirect: https://www.nexmo.com/blog/2016/07/01/win-tickets-electromagnetic-field-2016
+canonical: https://www.nexmo.com/legacy-blog/2016/07/01/win-tickets-electromagnetic-field-2016
+redirect: https://www.nexmo.com/legacy-blog/2016/07/01/win-tickets-electromagnetic-field-2016
 ---
 
 Content to be migrated...

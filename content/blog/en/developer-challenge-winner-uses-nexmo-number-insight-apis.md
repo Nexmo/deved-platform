@@ -12,7 +12,7 @@ published_at: 2015-08-14T15:45:51
 comments: true
 category: community
 tags: []
-canonical: https://www.nexmo.com/blog/2015/08/14/developer-challenge-winner-uses-nexmo-number-insight-apis
-redirect: https://www.nexmo.com/blog/2015/08/14/developer-challenge-winner-uses-nexmo-number-insight-apis
+canonical: https://www.nexmo.com/legacy-blog/2015/08/14/developer-challenge-winner-uses-nexmo-number-insight-apis
+redirect: https://www.nexmo.com/legacy-blog/2015/08/14/developer-challenge-winner-uses-nexmo-number-insight-apis
 ---
 Content to be migrated...

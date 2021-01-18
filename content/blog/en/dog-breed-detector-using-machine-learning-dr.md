@@ -12,8 +12,8 @@ published_at: 2018-12-04T12:47:23.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/12/04/dog-breed-detector-using-machine-learning-dr
-redirect: https://www.nexmo.com/blog/2018/12/04/dog-breed-detector-using-machine-learning-dr
+canonical: https://www.nexmo.com/legacy-blog/2018/12/04/dog-breed-detector-using-machine-learning-dr
+redirect: https://www.nexmo.com/legacy-blog/2018/12/04/dog-breed-detector-using-machine-learning-dr
 ---
 
 Content to be migrated...

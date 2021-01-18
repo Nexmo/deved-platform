@@ -12,8 +12,8 @@ published_at: 2018-10-05T16:00:58.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2018/10/05/secret-managing-api-security-credentials-nexmo-easy
-redirect: https://www.nexmo.com/blog/2018/10/05/secret-managing-api-security-credentials-nexmo-easy
+canonical: https://www.nexmo.com/legacy-blog/2018/10/05/secret-managing-api-security-credentials-nexmo-easy
+redirect: https://www.nexmo.com/legacy-blog/2018/10/05/secret-managing-api-security-credentials-nexmo-easy
 ---
 
 Content to be migrated...

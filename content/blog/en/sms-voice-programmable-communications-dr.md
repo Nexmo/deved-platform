@@ -12,8 +12,8 @@ published_at: 2017-03-03T14:04:35.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr
-redirect: https://www.nexmo.com/blog/2017/03/03/sms-voice-programmable-communications-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/03/03/sms-voice-programmable-communications-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/03/03/sms-voice-programmable-communications-dr
 ---
 
 Content to be migrated...

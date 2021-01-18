@@ -12,8 +12,8 @@ published_at: 2019-04-01T10:30:40.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/04/01/send-text-message-cobol-dr
-redirect: https://www.nexmo.com/blog/2019/04/01/send-text-message-cobol-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/04/01/send-text-message-cobol-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/04/01/send-text-message-cobol-dr
 ---
 
 Content to be migrated...

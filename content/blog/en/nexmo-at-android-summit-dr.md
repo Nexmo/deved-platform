@@ -12,8 +12,8 @@ published_at: 2017-09-05T09:21:31.000Z
 comments: true
 category: event
 tags: []
-canonical: https://www.nexmo.com/blog/2017/09/05/nexmo-at-android-summit-dr
-redirect: https://www.nexmo.com/blog/2017/09/05/nexmo-at-android-summit-dr
+canonical: https://www.nexmo.com/legacy-blog/2017/09/05/nexmo-at-android-summit-dr
+redirect: https://www.nexmo.com/legacy-blog/2017/09/05/nexmo-at-android-summit-dr
 ---
 
 Content to be migrated...

@@ -12,8 +12,8 @@ published_at: 2019-03-26T16:01:19.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2019/03/26/how-to-send-mms-with-node-js-dr
-redirect: https://www.nexmo.com/blog/2019/03/26/how-to-send-mms-with-node-js-dr
+canonical: https://www.nexmo.com/legacy-blog/2019/03/26/how-to-send-mms-with-node-js-dr
+redirect: https://www.nexmo.com/legacy-blog/2019/03/26/how-to-send-mms-with-node-js-dr
 ---
 
 Content to be migrated...

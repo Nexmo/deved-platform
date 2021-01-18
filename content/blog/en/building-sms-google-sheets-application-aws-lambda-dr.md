@@ -12,8 +12,8 @@ published_at: 2016-05-31T21:07:32.000Z
 comments: true
 category: tutorial
 tags: []
-canonical: https://www.nexmo.com/blog/2016/05/31/building-sms-google-sheets-application-aws-lambda-dr
-redirect: https://www.nexmo.com/blog/2016/05/31/building-sms-google-sheets-application-aws-lambda-dr
+canonical: https://www.nexmo.com/legacy-blog/2016/05/31/building-sms-google-sheets-application-aws-lambda-dr
+redirect: https://www.nexmo.com/legacy-blog/2016/05/31/building-sms-google-sheets-application-aws-lambda-dr
 ---
 
 Content to be migrated...
