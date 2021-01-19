@@ -1,14 +1,14 @@
 <template>
   <div
-    class="flex flex-col overflow-hidden bg-white rounded-lg shadow-lg sm:flex-row md:block"
+    class="flex flex-col overflow-hidden bg-white rounded-lg shadow-lg sm:flex-row xl:block"
     vocab="http://schema.org/"
     typeof="Person"
   >
-    <figure class="flex flex-col justify-center p-4 md:p-0 md:block">
+    <figure class="flex flex-col justify-center p-4 xl:p-0 xl:block">
       <nuxt-link :to="localePath(`/authors/${author.username}`)">
         <img
           v-if="!author.image_url"
-          class="object-cover w-24 rounded-full sm:w-32 md:w-full md:rounded-none md:block"
+          class="object-cover w-24 rounded-full sm:w-32 xl:block xl:w-full xl:rounded-none"
           src="/content/images/placeholder.svg"
           property="image"
           :alt="`Profile pic of ${author.name}`"
@@ -17,7 +17,7 @@
           v-else
           :src="author.image_url"
           property="image"
-          class="object-cover w-24 rounded-full sm:w-32 md:w-full md:rounded-none md:block"
+          class="object-cover w-24 rounded-full sm:w-32 xl:block xl:w-full xl:rounded-none"
           :alt="`Profile pic of ${author.name}`"
         />
       </nuxt-link>
@@ -42,7 +42,7 @@
       </header>
       <main class="px-4 pb-4 sm:flex-row sm:space-x-1">
         <p class="text-sm text-justify text-grey-dark" property="description">
-          {{ author.bio | truncate(100, '...') }}
+          {{ author.bio | truncate(160, '...') }}
         </p>
         <p class="text-xs text-right">
           <nuxt-link :to="localePath(`/authors/${author.username}`)"

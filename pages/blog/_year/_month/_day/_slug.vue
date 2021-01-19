@@ -2,7 +2,7 @@
   <main class="max-w-screen-xl px-6 mx-auto sm:px-6 lg:px-8">
     <Breadcrumbs />
     <section class="grid grid-cols-1 gap-y-6 md:gap-6 xl:grid-cols-5">
-      <aside class="static col-span-1 row-span-2">
+      <aside class="static col-span-3 xl:col-span-1 row-span-2">
         <Author :author="post.author" type="card" />
       </aside>
       <div class="col-span-3 row-span-5">
