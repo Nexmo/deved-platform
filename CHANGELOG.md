@@ -1,3 +1,10 @@
+## [2.5.7](https://github.com/Nexmo/deved-platform/compare/v2.5.6...v2.5.7) (2021-01-19)
+
+
+### Bug Fixes
+
+* author component in blog & courses [#623](https://github.com/Nexmo/deved-platform/issues/623) ([#624](https://github.com/Nexmo/deved-platform/issues/624)) ([0d3778d](https://github.com/Nexmo/deved-platform/commit/0d3778d82cca270316423caf0018a89f21bc62f3))
+
 ## [2.5.6](https://github.com/Nexmo/deved-platform/compare/v2.5.5...v2.5.6) (2021-01-18)
 
 
