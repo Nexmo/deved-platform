@@ -2,10 +2,11 @@
 title: Build A 2FA Server With Kotlin and Ktor
 description: Follow this tutorial to build a server for two-factor
   authentication, using the Vonage Verify API, Kotlin, and Ktor.
+thumbnail: /content/blog/build-a-2fa-server-with-kotlin-and-ktor/kotlin_ktor_2fa_1200x600_white.png
 author: igor-wojda
 published: true
-published_at: 2021-01-13T16:12:57.784Z
-updated_at: 2021-01-13T16:12:57.802Z
+published_at: 2021-01-20T15:39:22.022Z
+updated_at: ""
 category: tutorial
 tags:
   - kotlin
