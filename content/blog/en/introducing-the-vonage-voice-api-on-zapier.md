@@ -2,7 +2,7 @@
 title: Introducing the Vonage Voice API on Zapier
 description: An introduction into how to integrate the Vonage Voice API into
   your project using Zapier
-thumbnail: /content/blog/introducing-the-vonage-voice-api-on-zapier/kotlin_ktor_2fa_1200x600_white.png
+thumbnail: ""
 author: julia
 published: true
 published_at: 2021-01-20T13:41:36.115Z
