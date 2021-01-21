@@ -85,6 +85,8 @@ Start building today and let us know how it goes!
 
 <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=162876"></script>
 
+<script src="https://zapier.com/apps/embed/widget.js?services=vonage-voice-api&limit=20"></script>
+
 If you have any questions, advice or ideas you'd like to share with the community, please feel free to jump on our [Community Slack workspace](https://developer.nexmo.com/community/slack). I'd love to hear back from you.
 
 ### Further Reading
