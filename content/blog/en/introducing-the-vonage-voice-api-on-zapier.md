@@ -18,8 +18,6 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-# Introducing the Vonage Voice API on Zapier
-
 Some of you might already be familiar with our [SMS API integration](https://zapier.com/apps/vonage-sms-api/integrations) in Zapier. It allows you to trigger a Zap when receiving an SMS, or send an SMS message as an action—for example, a reminder or notification of sorts.
 
 In this article, we're exploring the [Voice API integrations](https://zapier.com/apps/vonage-voice-api/integrations), the various events it offers, and we'll learn how to add more versatile ways of communication to your workflows.
@@ -85,7 +83,7 @@ If you're looking to create a call with more participants, use the **Create Conf
 
 Start building today and let us know how it goes!
 
-<script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=1234,9876,3456"></script>
+<script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=162876"></script>
 
 If you have any questions, advice or ideas you'd like to share with the community, please feel free to jump on our [Community Slack workspace](https://developer.nexmo.com/community/slack). I'd love to hear back from you.
 
