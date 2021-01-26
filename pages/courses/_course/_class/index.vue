@@ -27,7 +27,7 @@
             <Listing :links="classes" :border="false" />
             <div v-if="course.glossary" class="m-2 text-center glossary">
               <nuxt-link
-                :to="`/courses/${course.slug}/glossary`"
+                :to="`/courses/${course.slug}/glossary/`"
                 class="block w-full p-2 text-sm text-white bg-black rounded"
                 >Glossary</nuxt-link
               >
