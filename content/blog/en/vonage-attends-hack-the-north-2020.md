@@ -3,6 +3,7 @@ title: Vonage Attends Hack the North 2020++
 description: "Vonage is a proud sponsor of Hack the North! We received 50+
   project submissions for our Best Use of Vonage API Challenge and are excited
   to share the most innovative projects in this article. "
+thumbnail: /content/blog/vonage-attends-hack-the-north-2020/hackthenorth1200x600.png
 author: nahrinjalal
 published: true
 published_at: 2021-01-26T17:43:21.673Z
