@@ -27,7 +27,7 @@ For this app we are going to be using the following:
 
 [Django](https://docs.djangoproject.com/en/3.1/) – A web framework for web development
 
-[Rasa NLU ](https://docs.djangoproject.com/en/3.1/)– An open-source Natural Language Processing platform
+[Rasa NLU ](https://rasa.com/)– An open-source Natural Language Processing platform
 
 [Django Rest Framework ](https://www.django-rest-framework.org/)– A Django package used to make APIs
 
