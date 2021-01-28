@@ -2,6 +2,7 @@
 title: Handling VoIP Push Notifications with CallKit
 description: In this tutorial, you will use CallKit to handle the VoIP push
   notifications sent to an iOS device when using the Vonage Client SDK for iOS
+thumbnail: /content/blog/handling-voip-push-notifications-with-callkit/callkit-push-notifications1200x600.png
 author: abdul-ajetunmobi
 published: true
 published_at: 2021-01-28T10:48:29.179Z
