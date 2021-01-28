@@ -24,17 +24,11 @@ In this tutorial, you will use [CallKit](https://developer.apple.com/documentati
 
 ## Prerequisites
 
-+ A Vonage API account. If you don't have one already, you can [sign up today](https://dashboard.nexmo.com/sign-up)
-
-+ An Apple Developer account and test device.
-
-+ A GitHub account.
-
-+ Xcode 12 and Swift 5 or greater.
-
-+ [Cocoapods](https://cocoapods.org) to install the Vonage Client SDK for iOS.
-
-+ Our Command Line Interface. You can install it with `npm install nexmo-cli@beta -g`.
+* An Apple Developer account and test device.
+* A GitHub account.
+* Xcode 12 and Swift 5 or greater.
+* [Cocoapods](https://cocoapods.org) to install the Vonage Client SDK for iOS.
+* Our Command Line Interface. You can install it with `npm install nexmo-cli@beta -g`.
 
 ## The Starter Project
 
@@ -44,7 +38,7 @@ This tutorial will be building on top of the ["Receiving a phone call in-app"](h
 
 A [Nexmo Call Control Object (NCCO)](https://developer.nexmo.com/voice/voice-api/ncco-reference) is a JSON array that you use to control the flow of a Voice API call. The NCCO must be public and accessible by the internet. To accomplish that, you will be using a GitHub Gist that provides a convenient way to host the configuration.
 
-Go to https://gist.github.com/ and enter `ncco.json` into "Filename including extension" box. The contents of the gist will be the following JSON:
+Go to <https://gist.github.com> and enter `ncco.json` into "Filename including extension" box. The contents of the gist will be the following JSON:
 
 ```json
 [
@@ -66,7 +60,7 @@ Go to https://gist.github.com/ and enter `ncco.json` into "Filename including ex
 
 Create the gist, then click the "Raw" button to get a URL for your NCCO. Keep note of it for the next step.
 
-![ncco raw button](gist.png)
+![The Raw button as show in a GitHub Gist](/content/blog/handling-voip-push-notifications-with-callkit/gist.png)
 
 ### Set up a Vonage Application
 
@@ -96,27 +90,27 @@ There are two types of push notifications that you can use in an iOS app, VoIP p
 
 ### Adding a Push Notification Capability
 
-To use push notifications, you are required to add the push notification capability to your Xcode project. Make sure you are logged into your Apple developer account in Xcode via preferences. If so, select your target and then choose _Signing & Capabilities_:
+To use push notifications, you are required to add the push notification capability to your Xcode project. Make sure you are logged into your Apple developer account in Xcode via preferences. If so, select your target and then choose *Signing & Capabilities*:
 
-![signing and capabilities tag](signing.png)
+![Signing and capabilities tag](/content/blog/handling-voip-push-notifications-with-callkit/signing.png)
 
-Then select add capability and add the _Push Notifications_ capability:
+Then select add capability and add the *Push Notifications* capability:
 
-![add capability button](add-capability.png)
+![Add capability button](/content/blog/handling-voip-push-notifications-with-callkit/add-capability.png)
 
-If Xcode is automatically managing your app's signing, it will update the provisioning profile linked to your Bundle Identifier to include the capability. Repeat the process for the _Background Modes_ capability and select Voice over IP:
+If Xcode is automatically managing your app's signing, it will update the provisioning profile linked to your Bundle Identifier to include the capability. Repeat the process for the *Background Modes* capability and select Voice over IP:
 
-![add background voip mode](background-modes.png)
+![Add background voip mode](/content/blog/handling-voip-push-notifications-with-callkit/background-modes.png)
 
-When using VoIP push notifications, you have to use the CallKit framework. Link it to your project by adding it under _Frameworks, Libraries, and Embedded Content_ under General:
+When using VoIP push notifications, you have to use the CallKit framework. Link it to your project by adding it under *Frameworks, Libraries, and Embedded Content* under General:
 
-![add callkit framework](callkitframework.png)
+![Add callkit framework](/content/blog/handling-voip-push-notifications-with-callkit/callkitframework.png)
 
 ### Generating a Push Certificate
 
 To generate a push certificate, you will need to log in to your Apple developer account and head to the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/certificates/list) page and add a new certificate:
 
-![add certificate button](add-certificate.png)
+![Add certificate button](/content/blog/handling-voip-push-notifications-with-callkit/add-certificate.png)
 
 Choose a VoIP Services Certificate and continue. You will now need to choose the App ID for the app that you want to add VoIP push notifications to and continue. If your app is not listed, you will have to create an App ID. Xcode can do this for you if it automatically manages your signing. Otherwise, you can create a new App ID on the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/certificates/list) page under Identifiers. Make sure to select the push notifications capability when doing so.
 
@@ -124,7 +118,7 @@ You will be prompted to upload a Certificate Signing Request (CSR). You can foll
 
 To get the push certificate in the format that is needed by the Vonage servers, you will need to export it. Locate your VoIP Services certificate in Keychain Access and right-click to export it. Name the export `applecert` and select `.p12` as the format:
 
-![keychain access export](keychain-export.png)
+![Keychain access export](/content/blog/handling-voip-push-notifications-with-callkit/keychain-export.png)
 
 ### Upload Your Push Certificate
 
@@ -132,7 +126,7 @@ Now that you have a push certificate linked to your iOS application, you need to
 
 Enter your Vonage Application ID, private key, and certificate file and upload. The page will show the status of your upload on the page once it is complete.
 
-![upload tool success](pushupload.png)
+![Our upload tool success notification](/content/blog/handling-voip-push-notifications-with-callkit/pushupload.png)
 
 ## The ClientManager Class
 
@@ -160,7 +154,8 @@ final class ClientManager: NSObject {
     }
 }
 ```
-Replace `ALICE_JWT` with the JWT you generated earlier, in a production environment this is where you would fetch a JWT fro your authentication server/endpoint. With this new class, you will need to move the call Client SDK code from the `ViewController` class to the `ClientManager` class. The two classes will communicate with `NotificationCenter` observers. Make the following changes to your `ViewController` class:
+
+Replace `ALICE_JWT` with the JWT you generated earlier, in a production environment, this is where you would fetch a JWT fro your authentication server/endpoint. With this new class, you will need to move the call Client SDK code from the `ViewController` class to the `ClientManager` class. The two classes will communicate with `NotificationCenter` observers. Make the following changes to your `ViewController` class:
 
 ```swift
 class ViewController: UIViewController {
@@ -237,7 +232,7 @@ class ViewController: UIViewController {
 
 Rather than logging being the delegate for the Client SDK, the `ViewController` class now listens for updates and reacts to them. Now update the `ClientManager` class to send these updates. Add the following to the end of the `ClientManager.swift` file:
 
-```swift 
+```swift
 extension ClientManager: NXMClientDelegate {
     func client(_ client: NXMClient, didChange status: NXMConnectionStatus, reason: NXMConnectionStatusReason) {
         let statusText: String
@@ -403,9 +398,9 @@ func client(_ client: NXMClient, didChange status: NXMConnectionStatus, reason: 
 
 ## Handle Incoming Push Notifications
 
-With the device registered, it can now receive push notifications from Vonage. The Client SDK has functions for checking is a push notification payload is the expected payload and for processing the payload. You can view the JSON Vonage sends in the push payload on [GitHub]https://github.com/nexmo-community/client-sdk-push-payload). When `processNexmoPushPayload` is called, it converts the payload into an NXMCall which is received on the `didReceive` function of the `NXMClientDelegate`.  Implement the functions on the `ClientManager` class alongside a local variable to store an incoming push: 
+With the device registered, it can now receive push notifications from Vonage. The Client SDK has functions for checking is a push notification payload is the expected payload and for processing the payload. You can view the JSON Vonage sends in the push payload on \[GitHub]https://github.com/nexmo-community/client-sdk-push-payload). When `processNexmoPushPayload` is called, it converts the payload into an NXMCall which is received on the `didReceive` function of the `NXMClientDelegate`.  Implement the functions on the `ClientManager` class alongside a local variable to store an incoming push: 
 
-```swift 
+```swift
 typealias PushInfo = (payload: PKPushPayload, completion: () -> Void)
 
 final class ClientManager: NSObject {
@@ -473,7 +468,7 @@ func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload
 
 When your iOS application has an incoming VoIP push notification, you must handle it using the [`CXProvider`](https://developer.apple.com/documentation/callkit/cxprovider) class in the CallKit framework. Create a new Swift file (CMD + N) called `ProviderDelegate`:
 
-```swift 
+```swift
 import CallKit
 import NexmoClient
 import AVFoundation
@@ -589,10 +584,9 @@ When the CallKit UI answers the call, it calls the `CXAnswerCallAction` delegate
 
 The `callReceived` function would be called after the push payload is processed so you will store it and call the `answerBlock` function if it is not nil. It will not be nil if the device has picked up the call before the Client SDK has not had enough time to set up and process the push notification payload.
 
-
 The `handledCallCallKit` notification is sent so that the `ViewController` class knows that the call has been handled by CallKit UI and can dismiss the alert shown to pick up a call. Add an extension to keep track of the status of the ongoing call using the `NXMCallDelegate`:
 
-```swift 
+```swift
 extension ProviderDelegate: NXMCallDelegate {
     func call(_ call: NXMCall, didReceive error: Error) {
         print(error)
@@ -659,9 +653,9 @@ extension AppDelegate: PKPushRegistryDelegate {
 
 Build and Run (CMD + R) the project onto your iOS device, accept the microphone permissions and lock the device. Then call the number linked to your Vonage Application from earlier. You will see the incoming call directly on your lock screen; then once you pick up it will go into the familiar iOS call screen: 
 
-|   |   |
-|---|---|
-|![incoming call with locked screen](lockedcall.png)|![active call from locked screen](activecall.png)| 
+|                                                     |                                                   |
+| --------------------------------------------------- | ------------------------------------------------- |
+| ![incoming call with locked screen](lockedcall.png) | ![active call from locked screen](activecall.png) |
 
 If you check the call logs on the device, you will also see the call listed there.
 
