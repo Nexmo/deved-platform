@@ -18,11 +18,13 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-In this tutorial, you will use [CallKit](https://developer.apple.com/documentation/callkit) to handle the VoIP push notifications sent to an iOS device when using the Vonage Client SDK for iOS. CallKit allows you to integrate your iOS application into the system so your application can look like a native iOS phone call.
+In this tutorial, you will use [CallKit](https://developer.apple.com/documentation/callkit) to handle the VoIP push notifications sent to an iOS device when using the Vonage Client SDK for iOS. CallKit allows you to integrate your iOS application into the system so your application can look like a native iOS phone call. 
 
-<sign-up number></sign-up> 
+<sign-up number></sign-up>
 
 ## Prerequisites
+
++ A Vonage API account. If you don't have one already, you can [sign up today](https://dashboard.nexmo.com/sign-up)
 
 + An Apple Developer account and test device.
 
@@ -224,6 +226,7 @@ class ViewController: UIViewController {
             
         }))
         alert.addAction(UIAlertAction(title: "Reject", style: .default, handler: { _ in
+            NotificationCenter.default.post(name: .handledCallApp, object: nil)
             call.reject(nil)
         }))
         
@@ -403,6 +406,8 @@ func client(_ client: NXMClient, didChange status: NXMConnectionStatus, reason: 
 With the device registered, it can now receive push notifications from Vonage. The Client SDK has functions for checking is a push notification payload is the expected payload and for processing the payload. You can view the JSON Vonage sends in the push payload on [GitHub]https://github.com/nexmo-community/client-sdk-push-payload). When `processNexmoPushPayload` is called, it converts the payload into an NXMCall which is received on the `didReceive` function of the `NXMClientDelegate`.  Implement the functions on the `ClientManager` class alongside a local variable to store an incoming push: 
 
 ```swift 
+typealias PushInfo = (payload: PKPushPayload, completion: () -> Void)
+
 final class ClientManager: NSObject {
     ...
     public var pushInfo: PushInfo?
@@ -414,7 +419,7 @@ final class ClientManager: NSObject {
     }
 
     private func processNexmoPushPayload(with pushInfo: PushInfo) {
-        guard let _ = NXMClient.shared.processNexmoPushPayload(pushInfo.token.dictionaryPayload) else {
+        guard let _ = NXMClient.shared.processNexmoPushPayload(pushInfo.payload.dictionaryPayload) else {
             print("Nexmo push processing error")
             return
         }
