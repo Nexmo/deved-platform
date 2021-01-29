@@ -7,14 +7,15 @@ description: Hi! I am Daniela, and I am really excited to be joining Nexmo as
   […]
 thumbnail: /content/blog/daniela-joins-the-nexmo-developer-relations-team-dr/city-731219_1920-1.jpg
 author: daniela-facchinetti
-published: true
+published: false
 published_at: 2020-01-14T14:51:53.000Z
-comments: true
+updated_at: 2021-01-29T21:52:55.766Z
 category: team
 tags:
   - careers
-canonical: https://www.nexmo.com/legacy-blog/2020/01/14/daniela-joins-the-nexmo-developer-relations-team-dr
+comments: true
 redirect: https://www.nexmo.com/legacy-blog/2020/01/14/daniela-joins-the-nexmo-developer-relations-team-dr
+canonical: https://www.nexmo.com/legacy-blog/2020/01/14/daniela-joins-the-nexmo-developer-relations-team-dr
 ---
 
 Content to be migrated...
