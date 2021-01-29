@@ -9,7 +9,7 @@ thumbnail: /content/blog/daniela-joins-the-nexmo-developer-relations-team-dr/cit
 author: daniela-facchinetti
 published: false
 published_at: 2020-01-14T14:51:53.000Z
-updated_at: 2021-01-29T21:52:55.766Z
+updated_at: ""
 category: team
 tags:
   - careers
