@@ -6,7 +6,7 @@
     <ul class="divide-y divide-gray-200">
       <li v-for="link in links" :key="link.url">
         <nuxt-link
-          :to="link.url"
+          :to="`${link.url}/`"
           class="block"
           :class="{ 'text-indigo': link.highlight }"
         >

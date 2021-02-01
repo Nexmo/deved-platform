@@ -1,3 +1,12 @@
+## [2.5.8](https://github.com/Nexmo/deved-platform/compare/v2.5.7...v2.5.8) (2021-02-01)
+
+
+### Bug Fixes
+
+* **blocker:** remove icon files (unused) to fix windows cloning bug ([f8136bf](https://github.com/Nexmo/deved-platform/commit/f8136bfe7f5583bda334a768dc541fc510bf557d))
+* **blocker:** remove icon files (unused) to fix windows cloning bug ([21cad2b](https://github.com/Nexmo/deved-platform/commit/21cad2b1da8c2271988c2d1744dfe334141cde5a))
+* **prettier:** linting issues for release ([27509cf](https://github.com/Nexmo/deved-platform/commit/27509cf9db76e9aa83e28c1d8a99313c6a0aafbc))
+
 ## [2.5.7](https://github.com/Nexmo/deved-platform/compare/v2.5.6...v2.5.7) (2021-01-19)
 
 
