@@ -14,7 +14,8 @@
     "lint:md": "remark .",
     "release": "release-it",
     "blog": "node bin/blog",
-    "opengraph": "node bin/opengraph"
+    "opengraph": "node bin/opengraph",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
     "@nuxt/content": "^1.10.0",
