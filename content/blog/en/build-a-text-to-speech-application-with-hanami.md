@@ -2,9 +2,10 @@
 title: Build a Text-to-Speech Application With Hanami
 description: This tutorial will show how to make a text-to-speech voice
   application using Hanami, the Vonage Ruby SDK, and the Voice API
+thumbnail: /content/blog/build-a-text-to-speech-application-with-hanami/ruby-hanami_voice_1200x627.jpg
 author: ben-greenberg
 published: true
-published_at: 2021-02-01T15:06:11.836Z
+published_at: 2021-02-02T14:19:50.729Z
 updated_at: ""
 category: tutorial
 tags:
