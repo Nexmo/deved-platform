@@ -44,9 +44,7 @@ GitHub Actions can be used in various ways, some of which are:
 The Messages API allows you to send messages to a WhatsApp number via the WhatsApp channel. 
 To access the API, you need to create an account on [the Vonage Developer  dashboard](https://dashboard.nexmo.com/). Afterward, you'll be given free credits to start testing the API. To use the WhatsApp channel, you need to [set up a sandbox](https://dashboard.nexmo.com/messages/sandbox).
 
-
-
-![Vonage Developer dashboard for setting up a sandbox](/content/blog/building-github-actions-with-the-vonage-messages-api/1.-vonage-developer-dashboard-for-setting-up-a-sandbox.png "Vonage Developer dashboard for setting up a sandbox")
+![Vonage Developer dashboard for setting up a sandbox](/content/blog/building-github-actions-with-the-vonage-messages-api/1.-setup-sandbox.png "Vonage Developer dashboard for setting up a sandbox")
 
 Then, add the WhatsApp channel to the sandbox. You'll be given a link that navigates to the WhatsApp application, with a default message in the input field ready to send to Vonage. The default message varies. For this tutorial, the message generated was  **"Join yam slice"**. For the WhatsApp web app, here's a screenshot:
 
@@ -58,7 +56,7 @@ If you want to add more numbers, you can simply send the same text to the same r
 
 On the same page, you'll find something similar to this:
 
-![Example code for using the WhatsApp API](/content/blog/building-github-actions-with-the-vonage-messages-api/3.-example-code-for-using-the-whatsapp-api.png "Example code for using the WhatsApp API")
+![Example code for using the WhatsApp API](/content/blog/building-github-actions-with-the-vonage-messages-api/3.-example-code-for-using-the-api.png "Example code for using the WhatsApp API")
 
 This shows how to call the API to send a message to a whitelisted number. This POST request shows:
 
