@@ -130,7 +130,7 @@ Initialize a Git repo using `git init`, commit changes, and push to a new GitHub
 
 When running GitHub Actions, you need an **[action runner](https://github.com/actions/runner)**. The action runner provides the implementation for the Messages API we want to use. Action runners require two files:
 
-* [`Action.yml`](https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/metadata-syntax-for-github-actions) which provides the schema for the runner such as inputs to receive, outputted variables, and many more.
+* [`action.yml`](https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/metadata-syntax-for-github-actions) which provides the schema for the runner such as inputs to receive, outputted variables, and many more.
 * The main file (can be `dist/index.js`) which provides the actual implementation referenced by the `action.yml`.
 
 For this example, create an `action.yml` file with the following configuration:
