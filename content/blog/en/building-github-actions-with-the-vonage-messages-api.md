@@ -3,6 +3,7 @@ title: Building Github Actions With the Vonage Messages API
 description: GitHub Actions is a beautiful integration in GitHub which allows
   you to trigger actions based on specific events that occur. This can be useful
   for many purposes, one of which is sending messages via Communication APIs.
+thumbnail: /content/blog/building-github-actions-with-the-vonage-messages-api/github-whatsapp-1200x600.png
 author: "dillion-megida "
 published: true
 published_at: 2021-02-02T23:13:27.402Z
@@ -13,7 +14,7 @@ tags:
   - github
   - whatsapp
 comments: true
-spotlight: false
+spotlight: true
 redirect: ""
 canonical: ""
 outdated: false
