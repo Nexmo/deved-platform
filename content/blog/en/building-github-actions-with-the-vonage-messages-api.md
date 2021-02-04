@@ -6,8 +6,8 @@ description: GitHub Actions is a beautiful integration in GitHub which allows
 thumbnail: /content/blog/building-github-actions-with-the-vonage-messages-api/github-whatsapp-1200x600.png
 author: "dillion-megida "
 published: true
-published_at: 2021-02-02T23:13:27.402Z
-updated_at: 2021-02-02T23:13:27.440Z
+published_at: 2021-02-04T14:38:40.899Z
+updated_at: ""
 category: tutorial
 tags:
   - messages-api
