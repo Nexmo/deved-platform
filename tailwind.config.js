@@ -1,6 +1,13 @@
 // tailwind.config.js
 
 module.exports = {
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+      borderColor: ['active'],
+      textColor: ['active'],
+    },
+  },
   theme: {
     fontFamily: {
       display: ['spezia', 'sans-serif'],
