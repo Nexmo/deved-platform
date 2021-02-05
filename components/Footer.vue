@@ -77,7 +77,7 @@
             <li><nuxt-link to="/authors/">Authors</nuxt-link></li>
             <li><nuxt-link to="/courses/onehack/">Learn to Code</nuxt-link></li>
             <li>
-              <nuxt-link to="/blog/spotlight/">Spotlight Posts</nuxt-link>
+              <nuxt-link to="/spotlight/">Developer Spotlight</nuxt-link>
             </li>
           </ul>
         </div>
