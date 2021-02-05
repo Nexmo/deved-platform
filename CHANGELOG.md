@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/Nexmo/deved-platform/compare/v2.5.8...v2.6.0) (2021-02-05)
+
+
+### Features
+
+* **spotlight:** add developer spotlight landing page and form ([#634](https://github.com/Nexmo/deved-platform/issues/634)) ([67f243c](https://github.com/Nexmo/deved-platform/commit/67f243c11d954555106a4a20bd5ad997fe31a5c3))
+
 ## [2.5.8](https://github.com/Nexmo/deved-platform/compare/v2.5.7...v2.5.8) (2021-02-01)
 
 
