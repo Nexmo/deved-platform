@@ -20,6 +20,8 @@ replacement_url: ""
 ---
 
 
+
+
 In this post, we will take the Web Component used in this [series](https://learn.vonage.com/authors/dwanehemmings/) and incorporate it into an Angular application. From their [site](https://angular.io/), “We're building a platform for the future.”. And anyone that has used it knows that there’s an Angular way to develop applications and pretty much has everything you need already built-in.
 
 Are Web Components a part of that platform for the future?
@@ -46,4 +48,10 @@ In the previous posts in this series, there were 2 possible options to include t
 * npm install the package
 * link to a CDN hosting the package
 
-With Angular, only installing the package via npm worked. If anyone has any ideas as to why linking to a CDN did not work, please let me know. For now, npm install it is.
+With Angular, only installing the package via npm worked for me. If anyone has any ideas as to why linking to a CDN did not work, please let me know. For now, npm install it is.
+
+```javascript
+npm install @dwane-vonage/dwanes-keypad
+```
+
+Make Angular aware of the Web Component
