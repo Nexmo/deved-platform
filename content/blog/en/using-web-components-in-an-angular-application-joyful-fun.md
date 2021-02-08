@@ -61,3 +61,9 @@ Now that it is installed, all we have to do is put the Web Component’s element
 Do that and you may see an error similar to this:
 
 ![Error when trying to just place a Web Component into an Angular application without some other steps.](/content/blog/using-web-components-in-an-angular-application-joyful-fun/custom_elements_schema-error.jpg "Template parse error")
+
+Angular wants to know about everything that’s going on in the application so it can optimize and run as performantly as possible. If it’s not a standard HTML element or an Angular component, that will throw an error.
+
+> **“We believe that writing beautiful apps should be joyful and fun.”**
+>
+> **\- Angular**
