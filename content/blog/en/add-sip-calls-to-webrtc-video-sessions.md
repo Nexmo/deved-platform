@@ -35,8 +35,8 @@ Once the session is over, the call should be hung up to avoid additional Voice o
 
 To follow along with this tutorial, you will need:
 
-- A Vonage Video API account. [Click here](https://tokbox.com/account/user/signup) to get one for free.
-- Optional: [Ngrok](https://ngrok.com/) for testing locally
+* A Vonage Video API account. [Click here](https://tokbox.com/account/user/signup) to get one for free.
+* Optional: [Ngrok](https://ngrok.com/) for testing locally
 
 <sign-up number></sign-up>
 
@@ -241,9 +241,10 @@ voiceApiSecret=
 conferenceNumber=
 serverUrl=
 ```
+
 To set `videoApiKey` and `videoApiSecret`, create a new project from the Video API dashboard.
 
-![Project created dialog within the Vonage Video API dashboard](ot-project-created.png)
+![Project created dialog within the Vonage Video API dashboard](/content/blog/add-sip-calls-to-webrtc-video-sessions/ot-project-created.png "Project created dialog within the Vonage Video API dashboard")
 
 Once it's created, copy the API Key &amp; SECRET and paste them into your `.env` file as the `videoApiKey` and `videoApiSecret` respectively.
 
@@ -257,5 +258,5 @@ Now you can join a video session and others can dial your number and enter a PIN
 
 Want to learn more about the SIP Interconnect feature of the Video API? Below are some links you might find useful.
 
-- [SIP Interconnect Developer Guide](https://tokbox.com/developer/guides/sip/)
-- [Vonage Voice SIP Samples](https://github.com/opentok/opentok-nexmo-sip)
+* [SIP Interconnect Developer Guide](https://tokbox.com/developer/guides/sip/)
+* [Vonage Voice SIP Samples](https://github.com/opentok/opentok-nexmo-sip)
