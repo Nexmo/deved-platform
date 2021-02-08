@@ -223,6 +223,6 @@ Now, let’s get meta. Throughout this series, we’ve been discussing how to us
 
 ## Conclusion
 
-Angular has lowered the barrier to get Web Components working in its applications. It lives up to “The modern web developer's platform” statement on their homepage. So much so that if you are really into Angular, you can use it to build Web Components!
+Angular has lowered the barrier to get Web Components working in its applications. It lives up to "The modern web developer's platform" statement on their homepage. So much so that if you are really into Angular, you can use it to build Web Components!
 
 Have you tried incorporating Web Components into Angular or created them using Angular Elements? Let us know on our [Community Slack Channel](https://developer.nexmo.com/slack).
