@@ -71,14 +71,42 @@ Angular wants to know about everything that’s going on in the application so i
 Getting errors is neither joyful nor fun and Angular tries to ease the pain with helpful messages in those errors. They suggest two possible answers to fix our issue. The second suggestion is exactly what we have and offers the solution. That was both joyful and fun!
 
 In the app.module.ts file, import the CUSTOM_ELEMENTS_SCHEMA:
+```javascript
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
+```
 
 Then include it in the @NgModule decorator object:
+```javascript
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+})
+```
 
 The final file should look something like this:
+```javascript
+import { BrowserModule } from "@angular/platform-browser";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
+
+import { AppComponent } from "./app.component";
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+})
+export class AppModule {}
+```
 
 This lets Angular know that if it comes across an element that it does not know how to handle, not to worry about it.
 
 Now in the app.component.html file, we place the keypad component like so:
+
 
 We will discuss the parts inside later, but for now, take note of #keypad.
 
