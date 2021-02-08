@@ -67,3 +67,24 @@ Angular wants to know about everything that’s going on in the application so i
 > **“We believe that writing beautiful apps should be joyful and fun.”**
 >
 > **\- Angular**
+
+Getting errors is neither joyful nor fun and Angular tries to ease the pain with helpful messages in those errors. They suggest two possible answers to fix our issue. The second suggestion is exactly what we have and offers the solution. That was both joyful and fun!
+
+In the app.module.ts file, import the CUSTOM_ELEMENTS_SCHEMA:
+
+Then include it in the @NgModule decorator object:
+
+The final file should look something like this:
+
+This lets Angular know that if it comes across an element that it does not know how to handle, not to worry about it.
+
+Now in the app.component.html file, we place the keypad component like so:
+
+We will discuss the parts inside later, but for now, take note of #keypad.
+
+In the app.component.ts, we import ElementRef, ViewChild, and our Web Component:
+
+The ViewChild Decorator is used to find the keypad component using the #keypad mentioned earlier and create a keypadComponent reference of Class ElementRef.
+
+Angular now has a reference to the Web Component and can [bind to data and events](https://angular.io/guide/binding-syntax). Let’s look at that next.
+
