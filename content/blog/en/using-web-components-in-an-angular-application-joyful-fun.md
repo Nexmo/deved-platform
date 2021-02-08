@@ -132,6 +132,18 @@ Angular now has a reference to the Web Component and can [bind to data and event
 
 Handling Data
 
-The syntax to bind the data that goes into your Web Component is square brackets \[]. For properties, it looks like \[property]="data". If it’s an attribute, \[attr.attribute]=”data”. There is a whole section in the documentation on the binding syntax dedicated to [HTML attributes and DOM properties](https://angular.io/guide/binding-syntax#html-attributes-and-dom-properties).
+The syntax to bind the data that goes into your Web Component is square brackets \[]. For properties, it looks like \[property]="data". If it’s an attribute, \[attr.attribute]="data". There is a whole section in the documentation on the binding syntax dedicated to [HTML attributes and DOM properties](https://angular.io/guide/binding-syntax#html-attributes-and-dom-properties).
 
-Just like the custom-elements-everywhere.com results mention: “This works well for rich data, like objects and arrays, and also works well for primitive values so long as the Custom Element author has mapped any exposed attributes to corresponding properties.”
+Just like the custom-elements-everywhere.com results mention: "This works well for rich data, like objects and arrays, and also works well for primitive values so long as the Custom Element author has mapped any exposed attributes to corresponding properties."
+
+Let’s take a look at our keypad component:
+In app.component.html
+(code snippet)
+
+The properties keys, placeholder, and `actionText` are bound to variables with the same name (for convenience). `cancelText` is set to the string `Quit`.
+
+Then, in app.component.ts, we set the initial values of the data for the properties/attributes. Notice how the keys data is an array (rich data) being passed into the property with nothing extra needed to be done.
+(code snippet)
+ 
+Here is an example of how to change the data of a property:
+(code snippet)
