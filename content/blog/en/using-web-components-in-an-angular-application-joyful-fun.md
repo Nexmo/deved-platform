@@ -127,10 +127,13 @@ import "@dwane-vonage/dwanes-keypad/dwanes-keypad.js";
 ```
 
 The ViewChild Decorator is used to find the keypad component using the `#keypad` mentioned earlier and create a `keypadComponent` reference of Class ElementRef.
+```javascript
+@ViewChild("keypad") keypadComponent: ElementRef;
+```
 
 Angular now has a reference to the Web Component and can [bind to data and events](https://angular.io/guide/binding-syntax). Let’s look at that next.
 
-Handling Data
+## Handling Data
 
 The syntax to bind the data that goes into your Web Component is square brackets \[]. For properties, it looks like \[property]="data". If it’s an attribute, \[attr.attribute]="data". There is a whole section in the documentation on the binding syntax dedicated to [HTML attributes and DOM properties](https://angular.io/guide/binding-syntax#html-attributes-and-dom-properties).
 
@@ -138,12 +141,29 @@ Just like the custom-elements-everywhere.com results mention: "This works well f
 
 Let’s take a look at our keypad component:
 In app.component.html
-(code snippet)
+
+```javascript
+<dwanes-keypad
+  #keypad
+  [keys]="keys"
+  [placeholder]="placeholder"
+  [actionText]="actionText"
+  cancelText="Quit"
+  (digits-sent)="answerSubmitted($event)"
+></dwanes-keypad>
+```
 
 The properties keys, placeholder, and `actionText` are bound to variables with the same name (for convenience). `cancelText` is set to the string `Quit`.
 
 Then, in app.component.ts, we set the initial values of the data for the properties/attributes. Notice how the keys data is an array (rich data) being passed into the property with nothing extra needed to be done.
-(code snippet)
- 
+```javascript
+title = "CodeSandbox";
+keys = ["", "1", "", "", "2", "", "", "3", "", "", "4", ""];
+actionText = "submit answer";
+placeholder = "Enter your answer.";
+```
+
 Here is an example of how to change the data of a property:
-(code snippet)
+```javascript
+this.placeholder = "🎉 You got it right!";
+```
