@@ -106,6 +106,16 @@ export class AppModule {}
 This lets Angular know that if it comes across an element that it does not know how to handle, not to worry about it.
 
 Now in the app.component.html file, we place the keypad component like so:
+```javascript
+    <dwanes-keypad
+      #keypad
+      [keys]="keys"
+      [placeholder]="placeholder"
+      [actionText]="actionText"
+      cancelText="Quit"
+      (digits-sent)="answerSubmitted($event)"
+    ></dwanes-keypad>
+```
 
 
 We will discuss the parts inside later, but for now, take note of #keypad.
