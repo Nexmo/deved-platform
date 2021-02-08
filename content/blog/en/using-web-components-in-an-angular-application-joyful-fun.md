@@ -171,7 +171,7 @@ Here is an example of how to change the data of a property:
 this.placeholder = "🎉 You got it right!";
 ```
 
-Handling Events
+## Handling Events
 
 You may have noticed the parenthesis () around `digits-sent`. 
 In `app.component.html`
@@ -217,3 +217,6 @@ this.keypadComponent.nativeElement.cancelAction();
 
 The application is calling the keypad component’s `cancelAction()` method. Take note of `nativeElement`. That is needed and comes from ElementRef.
 
+## Using Angular to create Web Components
+
+Now, let’s get meta. Throughout this series, we’ve been discussing how to use Web Components in various frameworks, but what if the framework could be used to create Web Components. That is what is accomplished with [Angular Elements](https://angular.io/guide/elements). So if you really like Angular, you never have to leave the ecosystem.
