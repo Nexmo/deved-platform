@@ -246,9 +246,9 @@ To set `videoApiKey` and `videoApiSecret`, create a new project from the Video A
 
 ![Project created dialog within the Vonage Video API dashboard](/content/blog/add-sip-calls-to-webrtc-video-sessions/ot-project-created.png "Project created dialog within the Vonage Video API dashboard")
 
-Once it's created, copy the API Key &amp; SECRET and paste them into your `.env` file as the `videoApiKey` and `videoApiSecret` respectively.
+Once it's created, copy the API Key and Secret and paste them into your `.env` file as the `videoApiKey` and `videoApiSecret` respectively.
 
-Now create a voice application and use the API Key &amp; Secret as the `voiceApiKey` and `voiceApiSecret`. You'll need to purchase a number and associate it with your voice application. Use that number as the `conferenceNumber` variable.
+Now create a voice application and use the API Key and Secret as the `voiceApiKey` and `voiceApiSecret`. You'll need to purchase a number and associate it with your voice application. Use that number as the `conferenceNumber` variable.
 
 Finally, enter the ngrok or Heroku url as the serverUrl.
 
