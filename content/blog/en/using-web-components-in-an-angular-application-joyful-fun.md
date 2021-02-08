@@ -52,7 +52,7 @@ npm install @dwane-vonage/dwanes-keypad
 
 ## Make Angular aware of the Web Component
 
-Now that it is installed, all we have to do is put the Web Component’s element tag in the app.component.html and that’s it, right?
+Now that it is installed, all we have to do is put the Web Component’s element tag in the `app.component.html` and that’s it, right?
 
 Do that and you may see an error similar to this:
 
@@ -104,7 +104,7 @@ export class AppModule {}
 
 This lets Angular know that if it comes across an element that it does not know how to handle, not to worry about it.
 
-Now in the app.component.html file, we place the keypad component like so:
+Now in the `app.component.html` file, we place the keypad component like so:
 
 ```javascript
 <dwanes-keypad
@@ -119,7 +119,7 @@ Now in the app.component.html file, we place the keypad component like so:
 
 We will discuss the parts inside later, but for now, take note of `#keypad`.
 
-In the app.component.ts, we import ElementRef, ViewChild, and our Web Component:
+In the `app.component.ts`, we import ElementRef, ViewChild, and our Web Component:
 
 ```javascript
 import { Component, ElementRef, ViewChild } from "@angular/core";
@@ -127,6 +127,7 @@ import "@dwane-vonage/dwanes-keypad/dwanes-keypad.js";
 ```
 
 The ViewChild Decorator is used to find the keypad component using the `#keypad` mentioned earlier and create a `keypadComponent` reference of Class ElementRef.
+
 ```javascript
 @ViewChild("keypad") keypadComponent: ElementRef;
 ```
@@ -140,7 +141,7 @@ The syntax to bind the data that goes into your Web Component is square brackets
 Just like the custom-elements-everywhere.com results mention: "This works well for rich data, like objects and arrays, and also works well for primitive values so long as the Custom Element author has mapped any exposed attributes to corresponding properties."
 
 Let’s take a look at our keypad component:
-In app.component.html
+In `app.component.html`
 
 ```javascript
 <dwanes-keypad
@@ -155,7 +156,8 @@ In app.component.html
 
 The properties keys, placeholder, and `actionText` are bound to variables with the same name (for convenience). `cancelText` is set to the string `Quit`.
 
-Then, in app.component.ts, we set the initial values of the data for the properties/attributes. Notice how the keys data is an array (rich data) being passed into the property with nothing extra needed to be done.
+Then, in `app.component.ts`, we set the initial values of the data for the properties/attributes. Notice how the keys data is an array (rich data) being passed into the property with nothing extra needed to be done.
+
 ```javascript
 title = "CodeSandbox";
 keys = ["", "1", "", "", "2", "", "", "3", "", "", "4", ""];
@@ -164,6 +166,54 @@ placeholder = "Enter your answer.";
 ```
 
 Here is an example of how to change the data of a property:
+
 ```javascript
 this.placeholder = "🎉 You got it right!";
 ```
+
+Handling Events
+
+You may have noticed the parenthesis () around `digits-sent`. 
+In `app.component.html`
+
+```javascript
+<dwanes-keypad
+  #keypad
+  [keys]="keys"
+  [placeholder]="placeholder"
+  [actionText]="actionText"
+  cancelText="Quit"
+  (digits-sent)="answerSubmitted($event)"
+></dwanes-keypad>
+```
+
+This is the syntax Angular uses to bind to events coming from the element. It’s telling Angular to pass the data coming from the keypad component’s `digits-sent` custom event to our `answerSubmitted` function, which can be seen here:
+In `app.component.ts`
+
+```javascript
+answerSubmitted(event) {
+  console.log("event", event);
+  this.keypadComponent.nativeElement.cancelAction();
+  if (event.detail.digits) {
+    if (event.detail.digits === this.correctAnswer) {
+      console.log("got it right!");
+      this.placeholder = "🎉 You got it right!";
+      this.actionText = "Congrats!";
+    } else {
+      console.log("got it wrong");
+      this.placeholder = "❌ Wrong answer.";
+      this.actionText = "Try again.";
+    }
+  }
+}
+```
+
+What if we want to call a method that the Web Component has made available? In our example that would look like this:
+In `app.component.ts`
+
+```javascript
+this.keypadComponent.nativeElement.cancelAction();
+```
+
+The application is calling the keypad component’s `cancelAction()` method. Take note of `nativeElement`. That is needed and comes from ElementRef.
+
