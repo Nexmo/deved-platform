@@ -41,7 +41,7 @@ Let’s take a look at some code. Here is the application we will build: Angular
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-### Getting the Web Component into Angular
+## Getting the Web Component into Angular
 
 In the previous posts in this series, there were 2 possible options to include the Web Component:
 
@@ -54,4 +54,10 @@ With Angular, only installing the package via npm worked for me. If anyone has a
 npm install @dwane-vonage/dwanes-keypad
 ```
 
-Make Angular aware of the Web Component
+## Make Angular aware of the Web Component
+
+Now that it is installed, all we have to do is put the Web Component’s element tag in the app.component.html and that’s it, right?
+
+Do that and you may see an error similar to this:
+
+![Error when trying to just place a Web Component into an Angular application without some other steps.](/content/blog/using-web-components-in-an-angular-application-joyful-fun/custom_elements_schema-error.jpg "Template parse error")
