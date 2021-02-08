@@ -220,3 +220,9 @@ The application is calling the keypad component’s `cancelAction()` method. Tak
 ## Using Angular to create Web Components
 
 Now, let’s get meta. Throughout this series, we’ve been discussing how to use Web Components in various frameworks, but what if the framework could be used to create Web Components. That is what is accomplished with [Angular Elements](https://angular.io/guide/elements). So if you really like Angular, you never have to leave the ecosystem.
+
+## Conclusion
+
+Angular has lowered the barrier to get Web Components working in its applications. It lives up to “The modern web developer's platform” statement on their homepage. So much so that if you are really into Angular, you can use it to build Web Components!
+
+Have you tried incorporating Web Components into Angular or created them using Angular Elements? Let us know on our [Community Slack Channel](https://developer.nexmo.com/slack).
