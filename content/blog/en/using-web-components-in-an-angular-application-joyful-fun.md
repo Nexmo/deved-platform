@@ -18,10 +18,6 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-
-
-
-
 In this post, we will take the Web Component used in this [series](https://learn.vonage.com/authors/dwanehemmings/) and incorporate it into an Angular application. From their [site](https://angular.io/), “We're building a platform for the future.”. And anyone that has used it knows that there’s an Angular way to develop applications and pretty much has everything you need already built-in.
 
 Are Web Components a part of that platform for the future?
@@ -71,11 +67,13 @@ Angular wants to know about everything that’s going on in the application so i
 Getting errors is neither joyful nor fun and Angular tries to ease the pain with helpful messages in those errors. They suggest two possible answers to fix our issue. The second suggestion is exactly what we have and offers the solution. That was both joyful and fun!
 
 In the app.module.ts file, import the CUSTOM_ELEMENTS_SCHEMA:
+
 ```javascript
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 ```
 
 Then include it in the @NgModule decorator object:
+
 ```javascript
 @NgModule({
   declarations: [AppComponent],
@@ -87,6 +85,7 @@ Then include it in the @NgModule decorator object:
 ```
 
 The final file should look something like this:
+
 ```javascript
 import { BrowserModule } from "@angular/platform-browser";
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
@@ -106,23 +105,33 @@ export class AppModule {}
 This lets Angular know that if it comes across an element that it does not know how to handle, not to worry about it.
 
 Now in the app.component.html file, we place the keypad component like so:
+
 ```javascript
-    <dwanes-keypad
-      #keypad
-      [keys]="keys"
-      [placeholder]="placeholder"
-      [actionText]="actionText"
-      cancelText="Quit"
-      (digits-sent)="answerSubmitted($event)"
-    ></dwanes-keypad>
+<dwanes-keypad
+  #keypad
+  [keys]="keys"
+  [placeholder]="placeholder"
+  [actionText]="actionText"
+  cancelText="Quit"
+  (digits-sent)="answerSubmitted($event)"
+></dwanes-keypad>
 ```
 
-
-We will discuss the parts inside later, but for now, take note of #keypad.
+We will discuss the parts inside later, but for now, take note of `#keypad`.
 
 In the app.component.ts, we import ElementRef, ViewChild, and our Web Component:
 
-The ViewChild Decorator is used to find the keypad component using the #keypad mentioned earlier and create a keypadComponent reference of Class ElementRef.
+```javascript
+import { Component, ElementRef, ViewChild } from "@angular/core";
+import "@dwane-vonage/dwanes-keypad/dwanes-keypad.js";
+```
+
+The ViewChild Decorator is used to find the keypad component using the `#keypad` mentioned earlier and create a `keypadComponent` reference of Class ElementRef.
 
 Angular now has a reference to the Web Component and can [bind to data and events](https://angular.io/guide/binding-syntax). Let’s look at that next.
 
+Handling Data
+
+The syntax to bind the data that goes into your Web Component is square brackets \[]. For properties, it looks like \[property]="data". If it’s an attribute, \[attr.attribute]=”data”. There is a whole section in the documentation on the binding syntax dedicated to [HTML attributes and DOM properties](https://angular.io/guide/binding-syntax#html-attributes-and-dom-properties).
+
+Just like the custom-elements-everywhere.com results mention: “This works well for rich data, like objects and arrays, and also works well for primitive values so long as the Custom Element author has mapped any exposed attributes to corresponding properties.”
