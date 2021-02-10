@@ -19,13 +19,13 @@ A2P messaging changes are happening in the industry in the next six months. Vona
 
 As a result, as of March 1, 2021, US carriers will no longer support shared shortcode (SSC) traffic. Please note that this does not impact dedicated shortcodes.
 
-## What all this means for customers using USSC API
+## What This Means for Customers Using US Shared Short Code API
 
 Customers using Vonage's US Shared Short Code API will need to migrate over to one of the other available APIs. If you are using the US Shared Short Code API for communications via SMS, you will need to make adjustments to your code and configurations to use the [SMS API](https://developer.nexmo.com/messaging/sms/overview). Furthermore, if you're using it for Two-Factor authentication, you'll need to make adjustments to your code to use either the [SMS API](https://developer.nexmo.com/messaging/sms/overview) or the [Verify API](https://developer.nexmo.com/verify/overview). 
 
 If you do not wish to use the SDKs supported by Vonage, the API's themselves are readily available. For more information on these API's please check the [SMS API reference](https://developer.nexmo.com/api/sms) and the [Verify API reference](https://developer.nexmo.com/api/verify).
 
-## How migrate to SMS API and implications
+## How To Migrate To SMS API and Implications
 
 Vonage has libraries to support various languages, which you can find on the [Developer Dashboard SMS overview](https://developer.nexmo.com/messaging/sms/overview). However, for this page, we'll show some examples using Node.js.
 
@@ -100,27 +100,27 @@ app.listen(process.env.PORT || 3000)
 
 The SMS API does not have the functionality to allow users to opt-in or opt-out of communications. This change means developers will be required to handle this functionality on their end by making adjustments to the example above and setting up a method of storing the users' contact preferences, such as in a database.
 
-## How can I get a new number?
+## How Can I Get a New Number?
 
 With the removal of US Shared Short Codes, customers will need to buy a new number to send and receive SMS messages. You can purchase numbers in the [Developer Dashboard](https://dashboard.nexmo.com/buy-numbers). Please make sure you choose a number with SMS capabilities.
 
 You can find the available [migration options](https://help.nexmo.com/hc/en-us/articles/360050905592-10DLC-Preparation) with the guidelines from our domain experts. 
 
-## How can I register templates to use in my SMS messages?
+## How Can I Register Templates To Use in My SMS Messages?
 
 US Shared Short Code API has functionality in the dashboard to register templates for using different alert types, such as alerts, marketing or 2-factor authentication. This feature is no longer available, and you will need to build these templates within your project.
 
-## Any other information
+## Any Other Information
 
 For further information on using the SMS API, you can find all of the information required on the [Developer Dashboard](https://developer.nexmo.com/messaging/sms/overview).
 
 If you wish to know any information regarding the pricing for the SMS API, please refer to the [Pricing page](https://www.vonage.co.uk/communications-apis/messages/pricing/).
 
-## How to migrate to Verify API and implications
+## How To Migrate To Verify API and Implications
 
 Vonage has libraries to support various languages, which you can see on the Developer Docs Verify overview. However, for this page, we'll show some examples using Node.js.
 
-### Making a verification request
+### Making a Verification Request
 
 First, the project requires the Vonage Node SDK `@vonage/server-sdk`, which you can install by running the following:
 
@@ -155,7 +155,7 @@ vonage.verify.request({
 });
 ```
 
-### Check the verification code
+### Check The Verification Code
 
 The code below also requires the Vonage instantiation in the example found in the previous step. But to check the verification code input from the user the code snippet below shows this functionality.
 
@@ -178,11 +178,11 @@ Please note, the Verify API does offer the capability to manage a disallow list 
 
 If you were a Vonage customer using your 2FA template using the USSC API, you might be able to customize a template using the Verify API. Please review our [Verify documentation](https://developer.nexmo.com/api/verify/templates/curl) to understand the template requirements.
 
-## How can I register templates to use in my SMS messages?
+## How Can I Register Templates To Use in My Sms Messages?
 
 US Shared Short Code API has functionality in the dashboard to register templates for using different alert types, such as alerts, marketing or 2-factor authentication. This feature is no longer available, and you will need to build these templates within your project.
 
-## Any other information
+## Any Other Information
 
 For further information on using the Verify API, you can find all of the information required on the [Developer Dashboard](https://developer.nexmo.com/messaging/sms/overview).
 
