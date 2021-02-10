@@ -83,7 +83,6 @@ export default {
     API Dashboard</a>.`,
   global_signup_number: `This tutorial also uses a virtual phone number. To 
     purchase one, go to <em>Numbers</em> &gt; <em>Buy Numbers</em> and search
-    for one that meets your needs. If you’ve just signed up, the initial cost
-    of a number will be easily covered by your available credit.`,
+    for one that meets your needs.`,
   global_signup_alt: 'Start building with Vonage',
 }
