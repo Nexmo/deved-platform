@@ -38,7 +38,7 @@ It is not uncommon to find extensive models and controllers in a Ruby on Rails a
 
 <sign-up number></sign-up>
 
-## Create a Voice Voice Application
+## Create a Vonage Voice Application
 
 To create a web application that utilizes the Vonage Voice API, we will need to create a Vonage Voice Application in the Dashboard. Navigate to *Your Applications* from the menu in the side nav. Generate a new application with any name you choose and then select "Generate public and private key". This will download the `private.key` file to your computer. Once we begin creating our Hanami application, we will move that file to its root folder.
 
@@ -118,7 +118,7 @@ You can save the file and then run the following command to create our database 
 $ bundle exec hanami db prepare
 ```
 
-Lastly, let's add some languages to our database. The fastest way for us to do this now is to drop into the Hanami console from the terminal and add a few. You can choose from the list of [available languages]() on the Vonage API Developer Portal or use the ones in the sample code below. First, to enter the console, run `bundle exec hanami console` from the command line. Then, to create the data, run the following code, either using the sample languages in the code snippet below or changing them from the ones you chose:
+Lastly, let's add some languages to our database. The fastest way for us to do this now is to drop into the Hanami console from the terminal and add a few. You can choose from the list of [available languages](<>) on the Vonage API Developer Portal or use the ones in the sample code below. First, to enter the console, run `bundle exec hanami console` from the command line. Then, to create the data, run the following code, either using the sample languages in the code snippet below or changing them from the ones you chose:
 
 ```ruby
 >> repository = LanguageRepository.new
