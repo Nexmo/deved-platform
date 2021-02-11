@@ -475,6 +475,6 @@ The ngrok URL is what the iOS application will use to communicate with the serve
 
 The [second part](LINKHERE) of the tutorial will build a drop-in audio iOS application, with SwiftUI and the Client SDK, which uses the server you have just created.
 
-![Image of the completed iOS application](LINKHERE)
+![Image of the completed iOS application](/content/blog/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-1/simulator-screen-shot-iphone-11-pro-2021-02-11-at-13.13.35.png)
 
 You can find the completed project on [GitHub](https://github.com/nexmo-community/swift-vapor-drop-in-audio). Learn more about the Conversation API on [developer.nexmo.com](https://developer.nexmo.com/conversation/overview), and Vapor on [vapor.codes](https://vapor.codes). Additional Vapor materials can be found on [raywenderlich.com](https://www.raywenderlich.com/server-side-swift)
