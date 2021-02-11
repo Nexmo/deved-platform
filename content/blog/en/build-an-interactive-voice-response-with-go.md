@@ -2,10 +2,11 @@
 title: Build an Interactive Voice Response with Go
 description: Learn how to build an Interactive Voice Response with Go and
   Vonage's Voice API using DTMF
+thumbnail: /content/blog/build-an-interactive-voice-response-with-go/go_ivr_1200x627.png
 author: greg-holmes
 published: true
-published_at: 2021-02-08T15:54:59.159Z
-updated_at: 2021-02-08T15:54:59.185Z
+published_at: 2021-02-11T12:59:16.400Z
+updated_at: 2021-02-11T12:59:19.046Z
 category: tutorial
 tags:
   - go
