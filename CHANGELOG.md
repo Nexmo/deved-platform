@@ -1,3 +1,5 @@
+## [2.6.1](https://github.com/Nexmo/deved-platform/compare/v2.6.0...v2.6.1) (2021-02-10)
+
 # [2.6.0](https://github.com/Nexmo/deved-platform/compare/v2.5.8...v2.6.0) (2021-02-05)
 
 
