@@ -1,0 +1,12 @@
+{
+  "live_at": "2021-02-16T17:00:00.000Z",
+  "show": "the-dev-lounge",
+  "title": "How To Build a 2FA Server With Kotlin and Ktor",
+  "description": "Join Nahrin and guest, Igor Wojda to learn how to build a 2FA server with Kotlin and Ktor.",
+  "link_text": "https://www.twitch.tv/vonagedevs",
+  "tags": [
+    "2fa",
+    "kotlin"
+  ],
+  "link_name": "Vonage Devs Twitch"
+}
