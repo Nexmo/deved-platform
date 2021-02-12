@@ -85,7 +85,7 @@ export default {
         this.relatedPosts = this.relatedPosts.concat(morePosts)
       }
     } catch (error) {
-      console.error(error)
+      console.error(error) // eslint-disable-line no-console
     }
   },
 }

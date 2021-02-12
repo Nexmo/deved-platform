@@ -7,3 +7,11 @@ Vue.filter('truncate', function (text, length, suffix) {
     return text
   }
 })
+
+Vue.filter('dateParse', (dateString) => {
+  return new Date(dateString)
+})
+
+Vue.filter('dateFormat', (dateObject, options) => {
+  return new Intl.DateTimeFormat('default', options).format(dateObject)
+})

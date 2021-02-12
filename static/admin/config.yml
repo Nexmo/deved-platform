@@ -19,105 +19,110 @@ collections:
     editor:
       preview: true
     sortable_fields: ['title', 'author', 'published_at', 'updated_at']
-    view_filters: 
-      - label: "Spotlight Posts"
+    view_filters:
+      - label: 'Spotlight Posts'
         field: spotlight
         pattern: true
-      - label: "Unpublished"
+      - label: 'Unpublished'
         field: published
         pattern: false
-      - label: "Outdated"
+      - label: 'Outdated'
         field: outdated
         pattern: false
     fields:
       - label: Title
         name: title
         widget: string
-        pattern: ['^[^–—]{12,70}$', "Must be between 12 and 70 characters and must not contain em/en dash"]
-        hint: "Soft limit 60 characters (Google mobile results), hard limit 70 characters (Google web results). No em/en dashes."
+        pattern:
+          [
+            '^[^–—]{12,70}$',
+            'Must be between 12 and 70 characters and must not contain em/en dash',
+          ]
+        hint: 'Soft limit 60 characters (Google mobile results), hard limit 70 characters (Google web results). No em/en dashes.'
       - label: Description
         name: description
         widget: string
-        hint: "Post meta description. Soft limit 120 characters, hard limit 160 characters."
+        hint: 'Post meta description. Soft limit 120 characters, hard limit 160 characters.'
       - label: 'Featured Image'
         name: thumbnail
         widget: image
         allow_multiple: false
-        hint: "Featured image that appears at the top of the post."
+        hint: 'Featured image that appears at the top of the post.'
         required: false
       - label: Author
         name: author
         widget: relation
         collection: authors
-        searchFields: ["username", "name", "twitter"]
-        valueField: "username"
-        displayFields: ["name"]
-        hint: "Search for the post author. If not found, go add them at *Authors* first."
+        searchFields: ['username', 'name', 'twitter']
+        valueField: 'username'
+        displayFields: ['name']
+        hint: 'Search for the post author. If not found, go add them at *Authors* first.'
       - label: Published
         name: published
         widget: boolean
         default: true
-        hint: "Always true, unless you want to create an UNPUBLISHED post. Setting to false after publish will not remove it from Algolia."
+        hint: 'Always true, unless you want to create an UNPUBLISHED post. Setting to false after publish will not remove it from Algolia.'
       - label: 'Published At'
         name: published_at
         widget: datetime
-        hint: "Date and time post is published."
+        hint: 'Date and time post is published.'
       - label: 'Updated At'
         name: updated_at
         widget: datetime
         required: false
-        hint: "Date and time post was last updated."
+        hint: 'Date and time post was last updated.'
       - label: Category
         name: category
         widget: relation
         collection: config
         file: categories
-        searchFields: ["categories.*.name", "categories.*.slug", "categories.*.plural"]
-        valueField: "categories.*.slug"
-        displayFields: ["categories.*.plural"]
-        hint: "Search for the post category. Pre-approved categories, but can be edited at *Pages* » *Categories*."
+        searchFields:
+          ['categories.*.name', 'categories.*.slug', 'categories.*.plural']
+        valueField: 'categories.*.slug'
+        displayFields: ['categories.*.plural']
+        hint: 'Search for the post category. Pre-approved categories, but can be edited at *Pages* » *Categories*.'
       - label: Tags
         name: tags
         widget: list
         max: 3
         min: 1
-        hint: "Where applicable, include one language or framework (node, php, go), one product or programme (sms-api, spotlight, voyagers), and/or one relevant keyword (aws, opensource, jamstack, netlify). More info at https://nexmo.dev/3oWTM4M"
+        hint: 'Where applicable, include one language or framework (node, php, go), one product or programme (sms-api, spotlight, voyagers), and/or one relevant keyword (aws, opensource, jamstack, netlify). More info at https://nexmo.dev/3oWTM4M'
       - label: Comments
         name: comments
         widget: boolean
         default: true
         required: false
-        hint: "Turn off comments on a post."
+        hint: 'Turn off comments on a post.'
       - label: Spotlight
         name: spotlight
         widget: boolean
         default: false
         required: false
-        hint: "Whether the post is part of the Spotlight programme."
+        hint: 'Whether the post is part of the Spotlight programme.'
       - label: Redirect
         name: redirect
         widget: string
-        default: ""
+        default: ''
         required: false
-        hint: "WARNING: Blocks a post from being viewed. If a post is accessed, it will direct to this URL."
-      - label: "Canonical Link"
+        hint: 'WARNING: Blocks a post from being viewed. If a post is accessed, it will direct to this URL.'
+      - label: 'Canonical Link'
         name: canonical
         widget: string
-        default: ""
+        default: ''
         required: false
-        hint: "WARNING: May have negative impact on SEO. Modifies the rel-canonical link to this URL. "
+        hint: 'WARNING: May have negative impact on SEO. Modifies the rel-canonical link to this URL. '
       - label: Outdated
         name: outdated
         widget: boolean
         default: false
         required: false
-        hint: "WARNING: Mark the post as outdated. Adds an outdated banner to say the post is outdated."
-      - label: "Replacement Post URL"
+        hint: 'WARNING: Mark the post as outdated. Adds an outdated banner to say the post is outdated.'
+      - label: 'Replacement Post URL'
         name: replacement_url
         widget: string
-        default: ""
+        default: ''
         required: false
-        hint: "WARNING: This will mark the post as outdated. Adds an outdated banner with a link to this URL for the replacement post."
+        hint: 'WARNING: This will mark the post as outdated. Adds an outdated banner with a link to this URL for the replacement post.'
       - label: Body
         name: body
         widget: markdown
@@ -131,118 +136,118 @@ collections:
       preview: true
     sortable_fields: ['username', 'name', 'email']
     identifier_field: username
-    view_filters: 
-      - label: "Spotlight Authors"
+    view_filters:
+      - label: 'Spotlight Authors'
         field: spotlight
         pattern: true
-      - label: "Team Authors"
+      - label: 'Team Authors'
         field: team
         pattern: true
-      - label: "Alumni Authors"
+      - label: 'Alumni Authors'
         field: alumni
         pattern: true
-      - label: "Noteworthy Authors"
+      - label: 'Noteworthy Authors'
         field: noteworthy
         pattern: true
     fields:
       - label: Username
         name: username
         widget: string
-        hint: "Author username. i.e. lukeoliff (if copying from Wordpress, use the slug from your profile URL)"
+        hint: 'Author username. i.e. lukeoliff (if copying from Wordpress, use the slug from your profile URL)'
       - label: Name
         name: name
         widget: string
-        hint: "Visible full name. i.e. Luke Oliff"
+        hint: 'Visible full name. i.e. Luke Oliff'
       - label: 'User Image'
         name: 'image_url'
         widget: 'image'
         allow_multiple: false
-        hint: "Profile picture for authors list and author profile page"
+        hint: 'Profile picture for authors list and author profile page'
       - label: 'Twitter'
         name: twitter
         widget: string
         required: false
-        hint: "Your twitter username WITHOUT the @"
+        hint: 'Your twitter username WITHOUT the @'
       - label: Bio
         name: bio
         widget: text
         required: false
-        hint: "About you, your bio."
+        hint: 'About you, your bio.'
       - label: 'Job Title'
         name: title
         widget: string
         required: false
-        hint: "Job title"
+        hint: 'Job title'
       - label: Email
         name: email
         widget: string
         required: false
-        hint: "Email address (not required, but also not public)"
+        hint: 'Email address (not required, but also not public)'
       - label: Team Member
         name: team
         widget: boolean
         default: false
         required: false
-        hint: "Is this user part of the Vonage team?"
+        hint: 'Is this user part of the Vonage team?'
       - label: Team Alumni (former member)
         name: alumni
         widget: boolean
         default: false
         required: false
-        hint: "Was this user part of the Vonage or Nexmo team in the past?"
+        hint: 'Was this user part of the Vonage or Nexmo team in the past?'
       - label: Spotlight
         name: spotlight
         widget: boolean
         default: false
         required: false
-        hint: "Is this user part of the Spotlight programme?"
+        hint: 'Is this user part of the Spotlight programme?'
       - label: Noteworthy
         name: noteworthy
         widget: boolean
         default: false
         required: false
-        hint: "If not Spotlight or team, is this author otherwise noteworthy?"
+        hint: 'If not Spotlight or team, is this author otherwise noteworthy?'
       - label: 'Website Url'
         name: website_url
         widget: string
         required: false
-        hint: "Public URL, but will default to your author profile URL if not supplied (without UTMs we add those)"
+        hint: 'Public URL, but will default to your author profile URL if not supplied (without UTMs we add those)'
       - label: 'Facebook Url'
         name: facebook_url
         widget: string
         required: false
-        hint: "Public profile URL (without UTMs we add those)"
+        hint: 'Public profile URL (without UTMs we add those)'
       - label: 'GitHub Url'
         name: github_url
         widget: string
         required: false
-        hint: "Public profile URL (without UTMs we add those)"
+        hint: 'Public profile URL (without UTMs we add those)'
       - label: 'StackOverflow Url'
         name: stackoverflow_url
         widget: string
         required: false
-        hint: "Public profile URL (without UTMs we add those)"
+        hint: 'Public profile URL (without UTMs we add those)'
       - label: 'LinkedIn Url'
         name: linkedin_url
         widget: string
         required: false
-        hint: "Public profile URL (without UTMs we add those)"
+        hint: 'Public profile URL (without UTMs we add those)'
       - label: 'Twitch Url'
         name: twitch_url
         widget: string
         required: false
-        hint: "Public profile URL (without UTMs we add those)"
+        hint: 'Public profile URL (without UTMs we add those)'
       - label: 'YouTube Url'
         name: youtube_url
         widget: string
         required: false
-        hint: "Public profile URL (without UTMs we add those)"
+        hint: 'Public profile URL (without UTMs we add those)'
       - label: HIDDEN From Authors Page
         name: hidden
         widget: boolean
         default: false
         required: false
-        hint: "Do you want to hide this author profile from the authors page"
+        hint: 'Do you want to hide this author profile from the authors page'
   - name: config
     label: Configuration
     editor:
@@ -273,3 +278,96 @@ collections:
                 name: color
                 widget: string
                 hint: "The html hex color code i.e. '#6544b8'"
+  - name: shows
+    label: 'DevTV Shows'
+    format: json
+    folder: '/content/shows'
+    media_folder: '/static/content/shows/{{slug}}/'
+    public_folder: '/content/shows/{{slug}}/'
+    editor:
+      preview: false
+    create: true
+    slug: '{{slug}}'
+    sortable_fields: ['title']
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        pattern:
+          [
+            '^[^–—]{10,70}$',
+            'Must be between 10 and 70 characters and must not contain em/en dash',
+          ]
+        hint: 'Soft limit 60 characters (Google mobile results), hard limit 70 characters (Google web results). No em/en dashes.'
+      - label: Description
+        name: description
+        widget: string
+        hint: 'Show meta description. Soft limit 120 characters, hard limit 160 characters.'
+      - label: 'Featured Image'
+        name: thumbnail
+        widget: image
+        allow_multiple: false
+        hint: 'Featured image that appears for the show.'
+        required: false
+      - label: Host
+        name: host
+        widget: relation
+        collection: authors
+        search_fields: ['{{slug}}', 'name', 'twitter']
+        value_field: '{{slug}}'
+        display_fields: ['name']
+        hint: 'Search for the host. If not found, go add them at *Authors* first.'
+  - name: episodes
+    label: 'DevTV Episodes'
+    format: json
+    folder: '/content/shows/episodes'
+    media_folder: '/static/content/shows/episodes/{{slug}}/'
+    public_folder: '/content/shows/episodes/{{slug}}/'
+    create: true
+    editor:
+      preview: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - label: Show
+        name: show
+        widget: relation
+        collection: shows
+        search_fields: ['title']
+        value_field: '{{slug}}'
+        display_fields: ['title']
+        hint: 'Search for the show. If not found, go add it at *DevTV Shows* first.'
+      - label: 'Day/Time of Episode'
+        name: live_at
+        widget: datetime
+        hint: 'Date and time episode is live.'
+      - label: Title
+        name: title
+        widget: string
+        pattern:
+          [
+            '^[^–—]{12,70}$',
+            'Must be between 12 and 70 characters and must not contain em/en dash',
+          ]
+        hint: 'Soft limit 60 characters (Google mobile results), hard limit 70 characters (Google web results). No em/en dashes.'
+      - label: Summary
+        name: description
+        widget: string
+        hint: 'Episode summary, also used as meta description. Soft limit 120 characters, hard limit 160 characters.'
+      - label: 'Featured Image'
+        name: thumbnail
+        widget: image
+        allow_multiple: false
+        hint: 'Featured image that appears for the episode. If blank, defaults to the show image'
+        required: false
+      - label: 'Link Text'
+        name: link_name
+        widget: string
+      - label: 'Link URL'
+        name: link_text
+        widget: string
+      - label: Tags
+        name: tags
+        widget: list
+        max: 3
+        min: 1
+        hint: 'Where applicable, include one language or framework (node, php, go), one product or programme (sms-api, spotlight, voyagers), and/or one relevant keyword (aws, opensource, jamstack, netlify). More info at https://nexmo.dev/3oWTM4M'
