@@ -251,11 +251,7 @@ The `ContentView` struct has an instance of the `AuthModel` class. The loading p
 
 The input view also has a hidden `NavigationLink` which will push the next view, `RoomListView`, when the Client SDK successfully connects. If you comment out the `NavigationLink` line and run the project (CMD + R), you will see the login screen:
 
-|                                                            |                                   |
-| ---------------------------------------------------------- | --------------------------------- |
-| ![The application requesting permissions](permissions.png) | ![The login interface](login.png) |
-
-Uncomment the `NavigationLink` line, then continue to build the `RoomListView` struct.
+![Two screenshots, the first the iOS app requesting permissions, the second the login screen.](/content/blog/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-2/screenshot-2021-02-12-at-14.14.15.png)
 
 ## Create the Room List Screen
 
