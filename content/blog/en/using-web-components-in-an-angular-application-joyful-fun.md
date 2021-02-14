@@ -18,7 +18,9 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-In this post, we will take the Web Component used in this [series](https://learn.vonage.com/authors/dwanehemmings/) and incorporate it into an Angular application. From their [site](https://angular.io/), “We're building a platform for the future.”. And anyone that has used it knows that there’s an Angular way to develop applications and pretty much has everything you need already built-in.
+This tutorial is part of our Web Components [series](https://learn.vonage.com/authors/dwanehemmings/)! We'll use the same Web Component we created for the series, and show you how to use it in an Angular application. 
+
+According to the Angular [website](https://angular.io/), “We're building a platform for the future.” There’s an Angular way to develop applications, and it pretty much has everything you need already built-in.
 
 Are Web Components a part of that platform for the future?
 
@@ -26,9 +28,9 @@ According to the tests done by [custom-elements-everywhere.com](https://custom-e
 
 ![Results of tests Custom Elements Everywhere .com ran on the compatibility of Web Components in an Angular application with descriptions on how Angular handles data and events.](/content/blog/using-web-components-in-an-angular-application-joyful-fun/custom-elements-everywhere-angular.jpg "Custom-Elements-Everywhere.com Angular results")
 
-Angular passes all tests with a total score of 100%. This means that the way Angular handles data and events are fully compatible with Web Components.
+Angular passes all tests with a total score of 100%. This means that the way Angular handles data and events is fully compatible with Web Components.
 
-Let’s take a look at some code. Here is the application we will build: Angular Answers. Do you know the answer?
+Let’s take a look at some code. Here is the application we're going to build: Angular Answers. Do you know the answer?
 
 <iframe src="https://codesandbox.io/embed/agitated-leavitt-rzs14?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fapp%2Fapp.component.ts&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -39,7 +41,7 @@ Let’s take a look at some code. Here is the application we will build: Angular
 
 ## Getting the Web Component into Angular
 
-In the previous posts in this series, there were 2 possible options to include the Web Component:
+In the previous posts in this series, there were two possible ways to include the Web Component:
 
 * npm install the package
 * link to a CDN hosting the package
@@ -52,11 +54,11 @@ npm install @dwane-vonage/dwanes-keypad
 
 ## Make Angular aware of the Web Component
 
-Now that it is installed, all we have to do is put the Web Component’s element tag in the `app.component.html` and that’s it, right?
+Once installed, all there's left to do is put the Web Component’s element tag in the `app.component.html`, right?
 
-Do that and you may see an error similar to this:
+Do that, and you may see an error similar to this:
 
-![Error when trying to just place a Web Component into an Angular application without some other steps.](/content/blog/using-web-components-in-an-angular-application-joyful-fun/custom_elements_schema-error.jpg "Template parse error")
+![Error when trying to only place a Web Component into an Angular application without some other steps.](/content/blog/using-web-components-in-an-angular-application-joyful-fun/custom_elements_schema-error.jpg "Template parse error")
 
 Angular wants to know about everything that’s going on in the application so it can optimize and run as performantly as possible. If it’s not a standard HTML element or an Angular component, that will throw an error.
 
@@ -64,7 +66,7 @@ Angular wants to know about everything that’s going on in the application so i
 >
 > **\- Angular**
 
-Getting errors is neither joyful nor fun and Angular tries to ease the pain with helpful messages in those errors. They suggest two possible answers to fix our issue. The second suggestion is exactly what we have and offers the solution. That was both joyful and fun!
+Getting errors is neither joyful, nor fun and Angular tries to ease the pain with helpful messages in those errors. They suggest two possible answers to fix our issue. The second suggestion is exactly what we have, and it offers the solution. That was both joyful and fun!
 
 In the app.module.ts file, import the CUSTOM_ELEMENTS_SCHEMA:
 
@@ -102,7 +104,7 @@ import { AppComponent } from "./app.component";
 export class AppModule {}
 ```
 
-This lets Angular know that if it comes across an element that it does not know how to handle, not to worry about it.
+Making these changes lets Angular know that if it comes across an element that it does not know how to handle, not to worry about it.
 
 Now in the `app.component.html` file, we place the keypad component like so:
 
@@ -156,7 +158,7 @@ In `app.component.html`
 
 The properties keys, placeholder, and `actionText` are bound to variables with the same name (for convenience). `cancelText` is set to the string `Quit`.
 
-Then, in `app.component.ts`, we set the initial values of the data for the properties/attributes. Notice how the keys data is an array (rich data) being passed into the property with nothing extra needed to be done.
+Then, in `app.component.ts`, we set the initial values of the data for the properties/attributes. Notice how the keys data is an array (rich data) being passed into the property with nothing extra needed.
 
 ```javascript
 title = "CodeSandbox";
@@ -187,7 +189,7 @@ In `app.component.html`
 ></dwanes-keypad>
 ```
 
-This is the syntax Angular uses to bind to events coming from the element. It’s telling Angular to pass the data coming from the keypad component’s `digits-sent` custom event to our `answerSubmitted` function, which can be seen here:
+This is the syntax Angular uses to bind to events coming from the element. It’s telling Angular to pass the data coming from the keypad component’s `digits-sent` custom event to our `answerSubmitted` function featured below:
 In `app.component.ts`
 
 ```javascript
@@ -208,7 +210,7 @@ answerSubmitted(event) {
 }
 ```
 
-What if we want to call a method that the Web Component has made available? In our example that would look like this:
+What if we want to call a method that the Web Component has made available? In our example, that would look like this:
 In `app.component.ts`
 
 ```javascript
@@ -219,7 +221,7 @@ The application is calling the keypad component’s `cancelAction()` method. Tak
 
 ## Using Angular to create Web Components
 
-Now, let’s get meta. Throughout this series, we’ve been discussing how to use Web Components in various frameworks, but what if the framework could be used to create Web Components. That is what is accomplished with [Angular Elements](https://angular.io/guide/elements). So if you really like Angular, you never have to leave the ecosystem.
+Now, let’s get meta. Throughout this series, we’ve discussed using Web Components in various frameworks, but what if we could use the framework to create Web Components? That is where [Angular Elements](https://angular.io/guide/elements) come into play. So if you really like Angular, you never have to leave the ecosystem.
 
 ## Conclusion
 
