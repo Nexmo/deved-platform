@@ -1,0 +1,6 @@
+{
+  "title": "Vonage Gems",
+  "description": "This will be a regular Ruby language stream of building Vonage API powered apps in Ruby. We'll be covering the full breadth of Vonage APIs with Ruby and different Ruby tooling and frameworks, although primarily Rails for the framework aspect.",
+  "thumbnail": "/content/shows/vonage-gems/vonage_gems.png",
+  "host": "ben-greenberg"
+}
