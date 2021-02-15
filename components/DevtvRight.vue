@@ -21,7 +21,7 @@
     >
       <DevtvLine />
       <div class="col-start-6 col-end-10 mr-auto">
-        <CardDevtv :episode="episode" />
+        <CardDevtvEpisode :episode="episode" />
       </div>
     </div>
   </fragment>

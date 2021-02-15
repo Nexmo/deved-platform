@@ -20,7 +20,7 @@
       class="flex flex-row-reverse md:contents"
     >
       <div class="col-start-1 col-end-5 ml-0 mr-auto md:mr-0 md:ml-auto">
-        <CardDevtv :episode="episode" />
+        <CardDevtvEpisode :episode="episode" />
       </div>
       <DevtvLine />
     </div>

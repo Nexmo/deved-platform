@@ -86,7 +86,6 @@ export default {
 
   computed: {
     description() {
-      console.log(this.episode.description)
       return this.episode.description
         ? this.episode.description
         : this.show.description
