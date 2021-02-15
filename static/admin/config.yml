@@ -298,17 +298,16 @@ collections:
             '^[^–—]{10,70}$',
             'Must be between 10 and 70 characters and must not contain em/en dash',
           ]
-        hint: 'Soft limit 60 characters (Google mobile results), hard limit 70 characters (Google web results). No em/en dashes.'
+        hint: 'e.g. Lauren Learns Things. Soft limit 60 characters (Google mobile results), hard limit 70 characters (Google web results). No em/en dashes.'
       - label: Description
         name: description
         widget: string
-        hint: 'Show meta description. Soft limit 120 characters, hard limit 160 characters.'
+        hint: 'e.g. Weekly, each Tuesday Lauren is joined by a PDX team member who is there to teach her (and the viewers) how to build an app or implement one of our APIs. They may be following along a recent blog post or working through a new demo the Developer Advocate is excited about. The app is always built from scratch and is accessible to all levels of developers, from experts to beginners!'
       - label: 'Featured Image'
         name: thumbnail
         widget: image
         allow_multiple: false
         hint: 'Featured image that appears for the show.'
-        required: false
       - label: Host
         name: host
         widget: relation
@@ -340,7 +339,7 @@ collections:
         name: live_at
         widget: datetime
         hint: 'Date and time episode is live.'
-      - label: Title
+      - label: Topic
         name: title
         widget: string
         pattern:
@@ -348,23 +347,17 @@ collections:
             '^[^–—]{12,70}$',
             'Must be between 12 and 70 characters and must not contain em/en dash',
           ]
-        hint: 'Soft limit 60 characters (Google mobile results), hard limit 70 characters (Google web results). No em/en dashes.'
+        hint: 'e.g. Adding Screen Sharing to a Video API Screenshare. Soft limit 60 characters (Google mobile results), hard limit 70 characters (Google web results). No em/en dashes.'
       - label: Summary
         name: description
         widget: string
-        hint: 'Episode summary, also used as meta description. Soft limit 120 characters, hard limit 160 characters.'
+        hint: 'e.g. In this episode, we will write a server that provides an API for Two-factor Authentication (2FA). This API will allow desktop clients, mobile clients, and web clients to utilize two-factor authentication. To build the application, we will use the Kotlin language and Ktor, an asynchronous framework for creating microservices and web applications.'
       - label: 'Featured Image'
         name: thumbnail
         widget: image
         allow_multiple: false
         hint: 'Featured image that appears for the episode. If blank, defaults to the show image'
         required: false
-      - label: 'Link Text'
-        name: link_name
-        widget: string
-      - label: 'Link URL'
-        name: link_text
-        widget: string
       - label: Tags
         name: tags
         widget: list
