@@ -51,7 +51,7 @@
     "vue-instantsearch": "^3.4.2",
     "vue-moment": "^4.1.0",
     "vue-simple-icons": "^3.10.0",
-    "vue-social-sharing": "^3.0.4"
+    "vue-social-sharing": "^3.0.5"
   },
   "keywords": [],
   "devDependencies": {
