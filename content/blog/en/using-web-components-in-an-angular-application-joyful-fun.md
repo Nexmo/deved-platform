@@ -2,6 +2,7 @@
 title: "Using Web Components in an Angular application: Joyful & Fun"
 description: Walkthrough on how to use Web Components in an Angular application.
   Details how to integrate the custom element, pass data, and handle events.
+thumbnail: /content/blog/using-web-components-in-an-angular-application-joyful-fun/web-components_angular_1200x600.png
 author: dwanehemmings
 published: true
 published_at: 2021-02-08T17:58:49.277Z
