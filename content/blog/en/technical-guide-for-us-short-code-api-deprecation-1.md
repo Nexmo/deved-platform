@@ -16,8 +16,6 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-
-
 A2P messaging changes are happening in the industry in the next six months. Vonage is deprecating the [US Shared Short Code API](https://developer.nexmo.com/messaging/us-short-codes/overview) with a target completion date of **March 1, 2021.** This deprecation is in conjunction with the new [A2P 10DLC](https://nexmoinc.atlassian.net/wiki/spaces/MSG/pages/2220163442/) standard, which provides more flexibility for long codes and limits shortcodes use by businesses.
 
 As a result, as of March 1, 2021, US carriers will no longer support shared shortcode (SSC) traffic. Please note that this does not impact dedicated shortcodes.
