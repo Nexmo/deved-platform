@@ -1,11 +1,9 @@
 {
-  "live_at": "2021-03-01T14:00:41.747Z",
-  "show": "week-init",
-  "title": "Conversation APIs",
-  "description": "Conversation APIs: Building a NodeJS-base API for the Client SDK clients",
+  "live_at": "2021-03-24T15:00:41.747Z",
+  "show": "low-code-hour",
+  "title": "Exploring new low-code tools",
+  "description": "Explore a new low-code tool/platform Maybe bubble.io ? Want to see some new tool? Tell Julia!",
   "tags": [
-    "conversation-api",
-    "javascript",
-    "node"
+    "low-code"
   ]
 }
