@@ -1,0 +1,11 @@
+{
+  "live_at": "2021-02-22T14:00:41.747Z",
+  "show": "week-init",
+  "title": "Conversation APIs",
+  "description": "Conversation APIs: Building a NodeJS-base API for the Client SDK clients",
+  "tags": [
+    "conversation-api",
+    "javascript",
+    "node"
+  ]
+}
