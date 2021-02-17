@@ -1,13 +1,15 @@
 ---
 title: Announcing Vonage Ruby SDK Version 7.3.0
 description: Vonage Ruby SDK v7.3.0 has been released with a new auto-pagination feature
+thumbnail: /content/blog/announcing-vonage-ruby-sdk-version-7-3-0/blog_ruby-sdk-update_1200x600.png
 author: ben-greenberg
 published: false
-published_at: 2021-02-12T07:58:53.023Z
-updated_at: 2021-02-12T07:58:53.055Z
+published_at: 2021-02-17T08:43:32.807Z
+updated_at: ""
 category: release
 tags:
   - ruby
+  - ruby-sdk
 comments: true
 spotlight: false
 redirect: ""
