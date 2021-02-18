@@ -46,28 +46,7 @@ You can create a Vapor project using the new project command `vapor new VaporCon
 
 ![Vapor project setup terminal output](/content/blog/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-1/vapor.png)
 
-You can set up the database either with Postgres:
-
-```sh
-createuser -d vapor_username; createdb -h localhost -p 5432 -U vapor_username vapor_database
-```
-
-This command creates a new user, then creates a new database. Make sure to start the Postgres service, if you installed Postgres with brew you can start it with `brew services start postgresql`.
-
-Or Docker:
-
-```sh
-# Excerpt From: Server-Side Swift with Vapor, Tim Condon
-docker run --name postgres \
-  -e POSTGRES_DB=vapor_database \
-  -e POSTGRES_USER=vapor_username \
-  -e POSTGRES_PASSWORD=vapor_password \
-  -p 5432:5432 -d postgres”
-```
-
-This command creates a new Docker container using the Docker Postgres image, which will be downloaded if you do not already have it, with some environment variables as the database's credentials. You can check if the database is running by running `docker ps`.
-
-Next, copy your `private.key` file from your projects root directory to the Vapor project's `Sources/App/` folder. Once done, you can open the project in Xcode using `vapor xcode`.  When Xcode opens, it will start downloading the dependencies that Vapor relies on using Swift Package Manager (SPM). To view the dependencies, you can open the `Package.swift` file. By default, Xcode runs your application from a randomized local directory. Since you will be loading the `private.key` file, you need to set a custom working directory. Go to *Product > Scheme > Edit Scheme...* and set the working directory to your project's root folder.
+Next, copy your `private.key` file from your project's root directory to the Vapor project's `Sources/App/` folder. Once done, you can open the project in Xcode using `vapor xcode`.  When Xcode opens, it will start downloading the dependencies that Vapor relies on using Swift Package Manager (SPM). To view the dependencies, you can open the `Package.swift` file. By default, Xcode runs your application from a randomized local directory. Since you will be loading the `private.key` file, you need to set a custom working directory. Go to *Product > Scheme > Edit Scheme...* and set the working directory to your project's root folder.
 
 ![Setting custom working directory](/content/blog/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-1/workingdir.png)
 
@@ -131,11 +110,11 @@ app.migrations.add(CreateUser())
 try app.autoMigrate().wait()
 ```
 
-This will run the `CreateUser` migration automatically for you when your server starts and only when needed. As you can see in the `configure.swift` file, the server is using a database with the credentials that were specified when creating the Docker Postgres container.
+This will run the `CreateUser` migration automatically for you when your server starts and only when needed.
 
 ### Generate the JWT
 
-Both the Conversation API and the Vonage Client SDKs use JWTs for authentication. JWTs are a method for representing claims securely between two parties. You can read more about JWTs on [JWT.io](https://jwt.io) or the claims that the Conversation API supports on the [Conversation API documentation](https://developer.nexmo.com/conversation/guides/jwt-acl). Open the `Package.swift` file and add a dependency for `Swift-JWT` in the top-level `dependencies` array as well as the the `dependencies` array for the target:
+Both the Conversation API and the Vonage Client SDKs use JWTs for authentication. JWTs are a method for representing claims securely between two parties. You can read more about JWTs on [JWT.io](https://jwt.io) or the claims that the Conversation API supports on the [Conversation API documentation](https://developer.nexmo.com/conversation/guides/jwt-acl). Open the `Package.swift` file and add a dependency for `Swift-JWT` in the top-level `dependencies` array as well as the `dependencies` array for the target:
 
 ```swift
 ...
@@ -143,7 +122,7 @@ dependencies: [
     // 💧 A server-side Swift web framework.
     .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0"),
     .package(url: "https://github.com/vapor/fluent.git", from: "4.0.0"),
-    .package(url: "https://github.com/vapor/fluent-postgres-driver.git", from: "2.0.0"),
+    .package(url: "https://github.com/vapor/fluent-sqlite-driver.git", from: "4.0.0"),
     .package(name: "SwiftJWT", url: "https://github.com/Kitura/Swift-JWT.git", from: "3.0.0")
 ],
 targets: [
@@ -151,7 +130,7 @@ targets: [
         name: "App",
         dependencies: [
             .product(name: "Fluent", package: "fluent"),
-            .product(name: "FluentPostgresDriver", package: "fluent-postgres-driver"),
+            .product(name: "FluentSQLiteDriver", package: "fluent-sqlite-driver"),
             .product(name: "Vapor", package: "vapor"),
             .product(name: "SwiftJWT", package: "SwiftJWT")
         ],
