@@ -1,10 +1,11 @@
 ---
 title: Technical Guide for US Short Code API Deprecation
 description: A technical guide to migrate from US Short Code API to SMS and Verify APIs.
+thumbnail: /content/blog/technical-guide-for-us-short-code-api-deprecation/shortcode_deprecation_1200x600.png
 author: greg-holmes
 published: true
-published_at: 2021-02-17T14:42:33.000Z
-updated_at: 2021-02-17T14:42:33.031Z
+published_at: 2021-02-18T13:43:38.756Z
+updated_at: ""
 category: release
 tags:
   - sms-api
