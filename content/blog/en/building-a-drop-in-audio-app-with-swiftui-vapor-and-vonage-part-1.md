@@ -42,7 +42,7 @@ Create your a directory using `mkdir vonageapi`, then change into the directory 
 
 ## Create a Vapor Project
 
-You can create a Vapor project using the new project command `vapor new VaporConvAPI` in your terminal. The terminal will prompt a few times, first asking whether you would like to use Fluent say yes to this and choose Postgres as the database. Next, you will be asked if you would like to use Leaf, say no to this. [Fluent](https://docs.vapor.codes/4.0/fluent/overview) is an Object-relational mapping framework that will be used to store user information in the database. Once the command has finished change directory into the project folder using `cd VaporConvAPI`. 
+You can create a Vapor project using the new project command `vapor new VaporConvAPI` in your terminal. The terminal will prompt a few times, first asking whether you would like to use Fluent say yes to this and choose SQLite as the database. Next, you will be asked if you would like to use Leaf, say no to this. [Fluent](https://docs.vapor.codes/4.0/fluent/overview) is an Object-relational mapping framework that will be used to store user information in the database. Once the command has finished change directory into the project folder using `cd VaporConvAPI`. 
 
 ![Vapor project setup terminal output](/content/blog/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-1/vapor.png)
 
