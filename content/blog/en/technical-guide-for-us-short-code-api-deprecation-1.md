@@ -41,7 +41,7 @@ npm install @vonage/server-sdk
 
 The code snippet below is an example of how to send an SMS to a predetermined phone number:
 
-```node
+```js
 const Vonage = require('@vonage/server-sdk')
 const vonage = new Vonage({
   apiKey: VONAGE_API_KEY,
@@ -75,7 +75,7 @@ npm install express body-parser
 
 The code snippet below shows an example on how to handle receiving an inbound-sms with the webhook: `/webhooks/inbound-sms`
 
-```node
+```js
 const app = require('express')()
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())
@@ -129,7 +129,7 @@ The code snippet below shows an example of how to request the verification of a 
 * the Recipient Number
 * and your Brand Name / Your Number
 
-```node
+```js
 const Vonage = require('@vonage/server-sdk');
 const vonage = new Vonage({
   apiKey: VONAGE_API_KEY,
@@ -154,7 +154,7 @@ The code below also requires the Vonage instantiation in the example found in th
 
 Be sure to update the `REQUEST_ID` and `CODE` with valid values.
 
-```node
+```js
 vonage.verify.check({
   request_id: REQUEST_ID,
   code: CODE
