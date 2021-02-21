@@ -155,9 +155,11 @@ Close this window, and you’ll automatically return to the node editor.
 Rename the node’s headline from “Function” to “Extract words” by clicking the name, editing it, and clicking the ✔ (checkmark).
 
 Return to the *Extract words* node and click on *Execute Node*. 
-![Function node to extract words](https://i.imgur.com/pOdIQbx.png)
 
-## 4. Translate the Words With the LingvaNex Node
+![Function Node to Extract Words](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/function-node-extract.png "Function Node to Extract Words")
+
+## 
+4. Translate the Words With the LingvaNex Node
 
 The LingvaNex node translates the extracted words into a [language of your choice](https://lingvanex.com/language-features/).
 
