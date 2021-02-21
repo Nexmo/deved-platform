@@ -227,7 +227,10 @@ Rename the default columns to “English word” and “Translated word” by se
 Change the field type to “Single line text” for both columns. Delete the rest of the pre-existing columns. The table name can remain “Table 1”.
 
 Here’s how your base should look like:
-![Airtable base for your vocabulary backlog](https://i.imgur.com/Py2Bwjt.png)
+
+![Airtable Base for Your Vocabulary Backlog](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/airtable-backlog.png "Airtable Base for Your Vocabulary Backlog")
+
+
 After you’ve created the base, you’ll need to find its Base ID for later usage. You’ll be able to retrieve your Base ID from [Airtables API](https://airtable.com/api) page.
 
 Next, add an Airtable node to your workflow, then in the *Credentials* field, select “- Create New -” from the drop-down list. As the Create New Credentials: "Airtable API" window opens, in the *Credentials Name* field, enter your preferred name, like “Airtable”.
