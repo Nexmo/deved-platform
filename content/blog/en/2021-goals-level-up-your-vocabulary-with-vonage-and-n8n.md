@@ -246,6 +246,10 @@ Enter the table name in the *Table* field—"Table 1" if you haven’t changed t
 Rename the node’s headline from “Airtable” to “Save today's words” by clicking the name, editing it, and clicking the ✔ (checkmark) to the right of the name. This will finish the configuration of the node and close the parameters window.
 
 Return to the *Save today's words* node and click on *Execute Node*.
+
+![Airtable Node for Saving the Vocabulary](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/airtable-save.png "Airtable Node for Saving the Vocabulary")
+
+
 ![Airtable node for saving the vocabulary](https://i.imgur.com/gFzYiDU.png)
 
 Head over to Airtable to find the words added into "Table 1":
