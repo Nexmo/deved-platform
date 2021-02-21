@@ -30,13 +30,15 @@ Let's get started!
 
 ## Requirements
 
+<sign-up></sign-up>
+
 To build this handy vocabulary improver, you’ll need the following:
 
--   n8n – You can find details on how to install n8n on the [Quickstart](https://docs.n8n.io/getting-started/quickstart.html) page.
--   LingvaNex account – Create a free [account](https://lingvanex.com/registration/). Up to 200,000 characters are included in the free plan when you generate your API key.
--   Airtable account – [Register](https://airtable.com/signup) for free.
+* n8n – You can find details on how to install n8n on the [Quickstart](https://docs.n8n.io/getting-started/quickstart.html) page.
+* LingvaNex account – Create a free [account](https://lingvanex.com/registration/). Up to 200,000 characters are included in the free plan when you generate your API key.
+* Airtable account – [Register](https://airtable.com/signup) for free.
 
-![Completed workflow for automated vocabulary improvement](https://i.imgur.com/dtZUSxM.png)
+![Completed workflow for automated vocabulary improvement](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/dtzusxm.png "Completed Workflow for Automated Vocabulary Improvement")
 
 ## Creating the n8n workflow
 
@@ -47,15 +49,15 @@ If you prefer to download the finished [workflow](https://n8n.io/workflows/888),
 
 A [workflow](https://docs.n8n.io/reference/glossary.html#workflow) is a collection of [nodes](https://docs.n8n.io/reference/glossary.html#Node) systematically connected to produce a specific outcome. The following eight nodes will be used:
 
-1.  [Cron Trigger](https://docs.n8n.io/nodes/n8n-nodes-base.cron/) – Starts workflow daily at 8 AM
-2.  [Hacker News](https://docs.n8n.io/nodes/n8n-nodes-base.hackerNews/) – Pulls the titles of the daily top three stories in Hacker News
-3.  [Function](https://docs.n8n.io/nodes/n8n-nodes-base.function/) – Singles out words and filters duplicates from the titles
-4.  [LingvaNex](https://docs.n8n.io/nodes/n8n-nodes-base.lingvaNex/) – Translates extracted words into the preferred language
-5.  [Set](https://docs.n8n.io/nodes/n8n-nodes-base.set/) – Filters relevant data from LingvaNex
-6.  [Airtable](https://docs.n8n.io/nodes/n8n-nodes-base.airtable/) – Saves vocabulary to Airtable
-7.  Function – Crafts the messages
-8.  [Vonage](https://docs.n8n.io/nodes/n8n-nodes-base.vonage/) – Sends out vocabulary through Vonage’s SMS API
-    
+1. [Cron Trigger](https://docs.n8n.io/nodes/n8n-nodes-base.cron/) – Starts workflow daily at 8 AM
+2. [Hacker News](https://docs.n8n.io/nodes/n8n-nodes-base.hackerNews/) – Pulls the titles of the daily top three stories in Hacker News
+3. [Function](https://docs.n8n.io/nodes/n8n-nodes-base.function/) – Singles out words and filters duplicates from the titles
+4. [LingvaNex](https://docs.n8n.io/nodes/n8n-nodes-base.lingvaNex/) – Translates extracted words into the preferred language
+5. [Set](https://docs.n8n.io/nodes/n8n-nodes-base.set/) – Filters relevant data from LingvaNex
+6. [Airtable](https://docs.n8n.io/nodes/n8n-nodes-base.airtable/) – Saves vocabulary to Airtable
+7. Function – Crafts the messages
+8. [Vonage](https://docs.n8n.io/nodes/n8n-nodes-base.vonage/) – Sends out vocabulary through Vonage’s SMS API
+
 As you add these node types, you can rename them so their names reflect their functional role.
 
 ## Getting started with n8n
@@ -72,7 +74,7 @@ Alternatively, you can try this out on [n8n.cloud](https://n8n.io/cloud), which 
 
 ### Saving a Workflow
 
-Open the left side panel of n8n by clicking the *>* (expand) icon. Click *Save As* and name your workflow, then *Save*.
+Open the left side panel of n8n by clicking the *\>* (expand) icon. Click *Save As* and name your workflow, then *Save*.
 
 Don’t forget to save your workflow regularly. Click *Save* in the Workflows section of this panel to update your saved copy.
 
@@ -88,7 +90,7 @@ Rename the node’s headline from “Cron” to “Daily trigger” by clicking 
 
 Return to the *Daily trigger* node and click on  *Execute Node*. Here’s what the Cron Trigger parameters window should look like:
 
-![Cron Trigger node to start workflow](https://lh5.googleusercontent.com/GYS9PPnVyFS9hUiMMuwx7NEDltdTAeXVKSpAFq52MbuLAU_Ec-IBixk2t9-BzvARk_fdWhOf50n-rTALcCBDnOcVQdDTZZtiwJd5g6oMmRvSZgU7C6L7UHF7kEbmlrfxl09ZkjMO)
+![Cron Trigger Node to Start Workflow](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/cron-trigger.png "Cron Trigger Node to Start Workflow")
 
 ## 2. Retrieving the Top Three Articles With the Hacker News Node
 
@@ -102,11 +104,11 @@ Rename the node’s headline from “Hacker News” to “Get top 3 articles” 
 
 Return to the *Get top 3 articles* node and click on *Execute Node*. The node should look like this:
 
-![Hacker News node to retrieve articles from Hacker News](https://i.imgur.com/TGv6aVJ.png)
+![Hacker News Node to Retrieve Articles From Hacker News](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/hacker-news.png "Hacker News Node to Retrieve Articles From Hacker News")
 
 ## 3. Extracting Words From Articles With the Function Node
 
-Function nodes are used to add custom snippets of JavaScript code, transform data from other nodes, or implement custom functionality that n8n doesn’t support.  
+Function nodes are used to add custom snippets of JavaScript code, transform data from other nodes, or implement custom functionality that n8n doesn’t support.\
 Since the previous node retrieved some additional content, you’ll need a *Function* node to format and extract only the necessary data. Add one to your workflow.
 
 This Function node will split the titles into words. It will also remove any numeral format with the help of [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). Duplicates are removed by converting the array of words into a set, then back into an array again. Finally, we transform the array into the [data structure](https://docs.n8n.io/reference/data/data-structure.html) expected by n8n.
@@ -160,7 +162,7 @@ Return to the *Extract words* node and click on *Execute Node*.
 The LingvaNex node translates the extracted words into a [language of your choice](https://lingvanex.com/language-features/).
 
 Add it to your workflow, then under the Credentials section of the *LingvaNex API* field, select “- Create New -”.
-In the _Credentials Name_ field, enter a name for your credentials, like “LingvaNex”, then provide your LingvaNex key in the API Key field, and click the *Create* button. Go to your [LingvaNex account page](https://lingvanex.com/account/) and click the *Generate key* button to get one.
+In the *Credentials Name* field, enter a name for your credentials, like “LingvaNex”, then provide your LingvaNex key in the API Key field, and click the *Create* button. Go to your [LingvaNex account page](https://lingvanex.com/account/) and click the *Generate key* button to get one.
 
 Add an expression by clicking on the gears symbol next to the Text field, and select “Add Expression”.
 
@@ -193,7 +195,7 @@ Your expression in the Expression field should look like this:
 
 Click on the Add value button and select “String” from the drop-down list, then type “Translated word” into the “Name” field.
 
-Add an expression by clicking on the gears symbol next to the *Value *field, and select “Add Expression”. 
+Add an expression by clicking on the gears symbol next to the *Value* field, and select “Add Expression”. 
 
 In the Variable Selector section, select the following:
 
@@ -212,7 +214,7 @@ Return to the *Filter data* node and click  *Execute Node*.
 
 To save the translated vocabulary daily in your Airtable sheet, you’ll need to retrieve your Airtable credentials.
 
-Navigate to your [dashboard](https://airtable.com/) and click on your user icon in the top right of the window. In the drop-down list, click on the *Account* button. Under the API section of your _Account Overview_, click *Generate API key*.
+Navigate to your [dashboard](https://airtable.com/) and click on your user icon in the top right of the window. In the drop-down list, click on the *Account* button. Under the API section of your *Account Overview*, click *Generate API key*.
 
 You'll also need to create an Airtable base and use it to automatically save the vocabulary here.
 Visit your workspace dashboard on Airtable and create a new base by clicking on the *+* icon by the *“Add a base”* field. In the drop-down list, select *“Start from scratch”* to create an empty base.
@@ -309,7 +311,7 @@ Rename the node’s headline from “Vonage” to “Send SMS” by clicking the
 Return to the *Send SMS* node and click on *Execute Node*. You’ll find the final results with your personalized message.
 ![Vonage node for sending out daily vocabulary messages](https://i.imgur.com/BTpq8eF.png)
 
-Save your workflow and toggle *Active* to *on *(green) in the top right of the workflow editor.
+Save your workflow and toggle *Active* to *on* (green) in the top right of the workflow editor.
 
 Well done, your workflow is finished! No more excuses for procrastinating to learn your dream language. 📖🍎
 
@@ -330,4 +332,3 @@ You can replace the HackerNews node with other news or dictionary APIs. You can 
 You can use the data stored in Airtable to create a vocabulary dashboard. Try using the [Retool](https://retool.com/) or the no-code mobile [Bravo Studio](https://www.bravostudio.app/) app. This will add a helpful visual aspect to your studies.
 
 Your options to explore further are endless. Go for it!
-
