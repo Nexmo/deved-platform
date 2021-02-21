@@ -249,11 +249,9 @@ Return to the *Save today's words* node and click on *Execute Node*.
 
 ![Airtable Node for Saving the Vocabulary](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/airtable-save.png "Airtable Node for Saving the Vocabulary")
 
-
-![Airtable node for saving the vocabulary](https://i.imgur.com/gFzYiDU.png)
-
 Head over to Airtable to find the words added into "Table 1":
-![Airtable after executing the node](https://i.imgur.com/ceeecXq.png)
+
+![Airtable After Executing the Node](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/airtable-after-exec.png "Airtable After Executing the Node")
 
 ## 7. Crafting the Message With the Function Node
 
