@@ -286,7 +286,7 @@ Rename the node’s headline from “Function” to “Craft message” by click
 
 Return to the *Craft message* node and click on *Execute Node*.
 
-![Function node for crafting the message](https://i.imgur.com/LO8HgcV.png)
+![Function Node for Crafting the Message](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/function-crafting.png "Function Node for Crafting the Message")
 
 ## 8. Sending the SMS Message With the Vonage Node
 
