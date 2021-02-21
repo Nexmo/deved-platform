@@ -179,7 +179,8 @@ Your expression in the Expression field will look like this:
 Select the desired language to learn from the drop-down list in the “Translate To” field, then rename the node’s headline from “LingvaNex” to “Translate” by clicking the name.
 
 Return to the Translate node and click on Execute Node. 
-![LingvaNex node for translation of the extracted words](https://i.imgur.com/pzswNPy.png)
+
+![Lingvanex Node for Translation of the Extracted Words](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/lingvanex.png "Lingvanex Node for Translation of the Extracted Words")
 
 ## 5. Filter Data With the Set Node
 
@@ -209,7 +210,8 @@ Your expression should look like this:
 Rename the node’s headline from “Set” to “Filter data” by clicking the name, editing it, and clicking the ✔ (checkmark) to the right of the name. This will finish the configuration of the node and close the parameters window.
 
 Return to the *Filter data* node and click  *Execute Node*. 
-![Filter data node for retrieving vocabulary data](https://i.imgur.com/nsf3CQv.png)  
+
+![Filter Data Node for Retrieving Vocabulary Data](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/filter-data.png "Filter Data Node for Retrieving Vocabulary Data")
 
 ## 6. Saving Vocabulary With the Airtable Node
 
