@@ -317,13 +317,14 @@ Close the Edit Expression window once you’re satisfied with your message.
 Rename the node’s headline from “Vonage” to “Send SMS” by clicking the name, editing it, and clicking the ✔ (checkmark) to the right of the name. This will finish the configuration of the node and close the parameters window.
 
 Return to the *Send SMS* node and click on *Execute Node*. You’ll find the final results with your personalized message.
-![Vonage node for sending out daily vocabulary messages](https://i.imgur.com/BTpq8eF.png)
+
+![Vonage Node for Sending Out Daily Vocabulary Messages](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/vonage-sendsms.png "Vonage Node for Sending Out Daily Vocabulary Messages")
 
 Save your workflow and toggle *Active* to *on* (green) in the top right of the workflow editor.
 
 Well done, your workflow is finished! No more excuses for procrastinating to learn your dream language. 📖🍎
 
-![End result: Smart vocabulary learning send via Vonage SMS API](https://i.imgur.com/fVVlJL7.jpg)
+![End Result: Smart Vocabulary Learning Send via Vonage Sms API](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/vocabulary-sms.jpg "End Result: Smart Vocabulary Learning Send via Vonage Sms API")
 
 ## Conclusion
 
