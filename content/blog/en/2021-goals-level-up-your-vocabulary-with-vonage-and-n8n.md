@@ -1,5 +1,5 @@
 ---
-title: "2021 Goals: Level Up Your Vocabulary With Vonage and n8n"
+title: "2021 Goals: Level up Your Vocabulary With Vonage and n8n"
 description: This n8n workflow automates sending out tech-related vocabulary in
   SMS messages using Vonage.
 author: aaron
@@ -18,8 +18,6 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-# 2021 Goals: Level Up Your Vocabulary With Vonage and n8n
-
 Let's be honest. Learning new languages is challenging. Paradoxically it becomes even more challenging when you choose it as a part of your new year resolution. If your language learning apps lack current and technical vocabulary, this tutorial might hit the right nerve and transform your goals into reality.
 
 You'll learn how to automate sending vocabulary through Vonage. Prior programming knowledge is not required to build the solution: [n8n](https://n8n.io/) provides a visual workflow designer.
@@ -40,7 +38,7 @@ To build this handy vocabulary improver, you’ll need the following:
 
 ![Completed workflow for automated vocabulary improvement](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/dtzusxm.png "Completed Workflow for Automated Vocabulary Improvement")
 
-## Creating the n8n workflow
+## Creating the n8n Workflow
 
 This n8n workflow automates sending out tech-related vocabulary in SMS messages using Vonage. 
 If you prefer to download the finished [workflow](https://n8n.io/workflows/888), you’ll have to configure it by filling out the missing information. An exclamation mark will appear on the nodes requiring modification.
@@ -60,7 +58,7 @@ A [workflow](https://docs.n8n.io/reference/glossary.html#workflow) is a collecti
 
 As you add these node types, you can rename them so their names reflect their functional role.
 
-## Getting started with n8n
+## Getting Started With n8n
 
 To start n8n, open a console window and type the following command:
 
@@ -158,7 +156,7 @@ Return to the *Extract words* node and click on *Execute Node*.
 
 ![Function Node to Extract Words](/content/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-n8n/function-node-extract.png "Function Node to Extract Words")
 
-## 4. Translate the Words With the LingvaNex Node
+## 4. Translate the Words With the Lingvanex Node
 
 The LingvaNex node translates the extracted words into a [language of your choice](https://lingvanex.com/language-features/).
 
