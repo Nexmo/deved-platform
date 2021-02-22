@@ -1,7 +1,8 @@
 ---
 title: Building a Drop-in Audio App With SwiftUI, Vapor and Vonage - Part 2
-description: The second half of a two part tutorial that will use the
-  Conversation API with the Client SDK to build your very own drop-in audio app.
+description: The second half of a two-part tutorial that will use
+  the   Conversation API with the Client SDK to build your very own drop-in
+  audio app.
 author: abdul-ajetunmobi
 published: true
 published_at: 2021-02-11T17:04:06.166Z
@@ -20,7 +21,8 @@ replacement_url: ""
 ---
 ## Introduction
 
-The [first part](LINKHERE) of this tutorial used the [Conversation API](https://developer.nexmo.com/conversation/overview) to create a server for a drop-in audio app. The server supports creating new users, creating new chat rooms, and listing all the open chat rooms. In this tutorial, you will build an iOS application that uses the Vonage Client SDK to consume and start chatting. If you like to jump straight into this tutorial, you can follow the instructions in the [GitHub repository](<>) for the server to get everything set up.
+The [first part](LINK HERE) of this tutorial used the [Conversation API](https://developer.nexmo.com/conversation/overview) to create a server for a drop-in audio app. The server supports creating new users, creating new chat rooms, and listing all the open chat rooms. In this tutorial, you will build an iOS application that uses the Vonage Client SDK to consume and start chatting. 
+If you like to jump straight into this tutorial, you can follow the instructions in the [GitHub repository](https://github.com/nexmo-community/swift-vapor-drop-in-audio) for the server to get everything set up.
 
 ## Prerequisites
 
@@ -28,17 +30,17 @@ Additionally, from the first part's prerequisites, you will need [Cocoapods](htt
 
 ## Creating the iOS Application
 
-Time to get the iOS application set up. Once the is created, you will install the Client SDK and ask for microphone permissions.
+Time to get the iOS application set up. Once it is created, you will install the Client SDK and ask for microphone permissions.
 
 ### Create an Xcode Project
 
-To get started, open Xcode and create a new project by going to *File* > *New* > *Project*. Select an *App template* and give it a name. Select, SwiftUI for the *interface*, SwiftUI App for the *life cycle*, and Swift for the *language*. Finally, a location to save your project. 
+To get started, open Xcode and create a new project by going to *File* > *New* > *Project*. Select an *App template* and give it a name. Select SwiftUI for the *interface*, SwiftUI App for the *life cycle*, and Swift for the *language*. Finally, a location to save your project. 
 
 ![Xcode project creation](/content/blog/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-2/xcodeproject.png)
 
 ### Install the Client SDK
 
-Now that the project is created you can add the Vonage Client SDK as a dependency. Navigate to the location where you saved the project in your terminal and run the following commands.
+Now that you've created the project, you can add the Vonage Client SDK as a dependency. Navigate to the location where you saved the project in your terminal and run the following commands.
 
 1. Run the `pod init` command to create a new Podfile for your project.
 2. Open the Podfile in Xcode using `open -a Xcode Podfile`.
@@ -64,13 +66,14 @@ end
 
 Since the application will be using the microphone to place calls, you need to ask for permission to do so explicitly.
 
-The first step is to edit the `Info.plist` file. The `Info.plist` is a file that contains all the metadata required for the application. Add a new entry to the file by hovering your mouse over the last entry in the list and click the little `+` button that appears. From the dropdown list, pick `Privacy - Microphone Usage Description` and add `Microphone access required to take part in audio rooms.` for its value.
+The first step is to edit the `Info.plist` file. The `Info.plist` is a file that contains all the metadata required for the application. Add a new entry to the file by hovering your mouse over the last entry in the list and click the little `+` button that appears. From the dropdown list, pick `Privacy - Microphone Usage Description` and add `Microphone access required to take part in audio rooms` for its value.
 
 You will do the second step for requesting microphone permissions later on in the tutorial.
 
 ## Create the Login Screen
 
-The Client SDK needs a JWT to connect to the Vonage servers. The iOS application needs to send a username to the `/auth` endpoint of the server. Create a new file called `Models.swift` by going to *File > New > File* (CMD + N). Similar to the backend, there is a struct for the request's body and a struct for server response. Add the following structs to the `Models.swift` file:
+The Client SDK needs a JWT to connect to the Vonage servers. The iOS application needs to send a username to the `/auth` endpoint of the server. Create a new file called `Models.swift` by going to *File > New > File* (CMD + N). Similar to the backend, there is a struct for the request's body and a struct for server response.  
+Add the following structs to the `Models.swift` file:
 
 ```swift
 struct Auth: Codable {
@@ -123,9 +126,12 @@ final class RemoteLoader {
 }
 ```
 
-The `RemoteLoader` class consists of an error enum and a static `load` function. The load function is generic over two types, `T` and `U`, which conform to the `Codeable` protocol. `T` represents the struct that will be used as the body of a request that this function sends. `T` is optional as some requests may not require a body. `U` represents the type of response struct. When making a network request you supply the URL, body, and the response type and the `load` function returns a result. 
+The `RemoteLoader` class consists of an error enum and a static `load` function. The load function is generic over two types, `T` and `U`, which conform to the `Codeable` protocol.  
+`T` represents the struct that will be used as the body of a request that this function sends. It is optional as some requests may not require a body. `U` represents the type of response struct.  
+When making a network request, you supply the URL, body, and response type, and the `load` function returns a result. 
 
-Before you start building the user interface (UI) for the app, you will build a model class first. This class is used to separate the logic of the app from the view code. In this case, the model class will handle the Client SDK delegate calls and make the login network request. At the top of the `ContentView.swift` file, import the Client SDK and AVFoundation:
+Before you start building the user interface (UI) for the app, you will build a model class first. This class is used to separate the logic of the app from the view code. In this case, the model class will handle the Client SDK delegate calls and make the login network request.  
+At the top of the `ContentView.swift` file, import the Client SDK and AVFoundation:
 
 ```swift
 import SwiftUI
@@ -154,7 +160,8 @@ final class AuthModel: NSObject, ObservableObject, NXMClientDelegate {
 }
 ```
 
-The `@Published` property wrapper is how the UI will know when to react to changes from the model class, this is all handled for you as the class conforms to the `ObservedObject` protocol. The `audioSession` property is used to request the microphone permissions. To complete requesting microphone permissions for the app add the following function to the `AuthModel` class:
+The `@Published` property wrapper is how the UI will know when to react to changes from the model class; this is all handled for you as the class conforms to the `ObservedObject` protocol.  
+The `audioSession` property is used to request the microphone permissions. To complete requesting microphone permissions for the app, add the following function to the `AuthModel` class:
 
 ```swift
 func requestPermissionsIfNeeded() {
@@ -166,7 +173,8 @@ func requestPermissionsIfNeeded() {
 }
 ```
 
-This function will first check if the permissions have already been granted, if not it will request them and print the outcome to the console. Next, you can add the function that makes the request to the backend server using the `RemoteLoader` class:
+This function will first check if the permissions have already been granted; if not, it will request them and print the outcome to the console.  
+Next, you can add the function that makes the request to the backend server using the `RemoteLoader` class:
 
 ```swift
 func login() {
@@ -186,7 +194,8 @@ func login() {
 }
 ```
 
-Replace the `urlString` string with your URL from ngrok. Once the response is received, the function will use the JWT to log in to the Client SDK and set the SDK's delegate to this class. In a production environment, you would want to have the server also pass along information about the TTL of the JWT and perform further checks in the application about the validity of the JWT before performing actions that require the Client SDK. 
+Replace the `urlString` string with your ngrok URL. Once the response is received, the function will use the JWT to log in to the Client SDK and set the SDK's delegate to this class.  
+In a production environment, you would want to have the server also pass along information about the TTL of the JWT and perform further checks in the application about the validity of the JWT before performing actions that require the Client SDK. 
 
 The `NXMClientDelegate` is how the Client SDK communicates changes with the Vonage servers back to your application. Next, implement the required delegate functions in the `AuthModel` class:
 
@@ -208,7 +217,7 @@ func client(_ client: NXMClient, didReceiveError error: Error) {
 }
 ```
 
-When there is a change in the SDK's status or an error, the booleans `connected` and `loading` will change. This will cause changes to the UI. The final function that you need to add to the `AuthModel` calls `requestPermissionsIfNeeded`: 
+When there is a change in the SDK's status or an error, the booleans `connected` and `loading` will change, which will cause changes to the UI. The final function that you need to add to the `AuthModel` calls `requestPermissionsIfNeeded`: 
 
 ```swift
 func setup() {
@@ -216,7 +225,7 @@ func setup() {
 }
 ```
 
-With the model class complete you can now create the UI. Update the `ContentView` struct:
+With the model class complete, you can now create the UI. Update the `ContentView` struct:
 
 ```swift
 struct ContentView: View {
@@ -247,9 +256,9 @@ struct ContentView: View {
 }
 ```
 
-The `ContentView` struct has an instance of the `AuthModel` class. The loading property of the `authModel` will determine if the `ContentView` renders a loading state or the input view, where there is a `Textfield` for a username to be entered and a button which will trigger the `login` function from earlier. 
+The `ContentView` struct has an instance of the `AuthModel` class. The loading property of the `authModel` will determine if the `ContentView` renders a loading state or the input view, which has a `Textfield` for a username to be entered and a button that triggers the `login` function from earlier. 
 
-The input view also has a hidden `NavigationLink` which will push the next view, `RoomListView`, when the Client SDK successfully connects. If you comment out the `NavigationLink` line and run the project (CMD + R), you will see the login screen:
+The input view also has a hidden `NavigationLink` that will push the next view, `RoomListView`, when the Client SDK successfully connects. If you comment out the `NavigationLink` line and run the project (CMD + R), you will see the login screen:
 
 ![Two screenshots, the first the iOS app requesting permissions, the second the login screen.](/content/blog/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-2/screenshot-2021-02-12-at-14.14.15.png)
 
@@ -328,7 +337,8 @@ final class RoomModel: ObservableObject {
 }
 ```
 
-This model class handles loading the list of rooms and sending the request to create a new room, replace the `urlString` string with your own URL from ngrok. The UI will observe the `results` property. Next, create the UI that will observe this model class. Add the `RoomListView` struct to the same file:
+This model class handles loading the list of rooms and sending the request to create a new room; replace the `urlString` string with your URL from ngrok. The UI will observe the `results` property.  
+Next, create the UI that will observe this model class. Add the `RoomListView` struct to the same file:
 
 ```swift
 struct RoomListView: View {
@@ -363,7 +373,7 @@ struct RoomListView: View {
 }
 ```
 
-The `RoomListView` struct has a `List` component that will display the list of open rooms and a refresh button in the navigation bar. There is also a `Button` component that toggles a boolean that shows a `CreateRoomModal` view. Add the view to the same file:
+The `RoomListView` struct has a `List` component that will display the list of open rooms and a refresh button in the navigation bar. There is also a `Button` component, which toggles a boolean that shows a `CreateRoomModal` view. Add the view to the same file:
 
 ```swift
 struct CreateRoomModal: View {
@@ -401,7 +411,7 @@ struct Member: Hashable {
 }
 ```
 
-This struct will represent how a member of a room is displayed in the UI. Next, create a new file called `RoomView.swift` and within that file, create a `ConversationModel` class:
+This struct will represent how a member of a room is displayed in the UI. Next, create a new file called `RoomView.swift`, and within that file, create a `ConversationModel` class:
 
 ```swift
 import SwiftUI
@@ -439,7 +449,11 @@ final class ConversationModel: NSObject, ObservableObject, NXMConversationDelega
 }
 ```
 
-The `ConversationModel` class conforms to `NXMConversationDelegate` in addition to the `ObservableObject` protocol like the other model classes. The two functions from the `NXMConversationDelegate` that you will be using are `didReceive:event` and `didReceive:error`. The `didReceive:event` function is how the iOS application will be notified of users leaving and joining the conversation. When this happens, members are added and removed from the `members` array, which the UI observes. Now you can add the functions that handle loading and leaving conversations to the `ConversationModel` class:
+The `ConversationModel` class conforms to `NXMConversationDelegate` in addition to the `ObservableObject` protocol like the other model classes. The two functions from the `NXMConversationDelegate` that you will be using are `didReceive:event` and `didReceive:error`.  
+
+The `didReceive:event` function is how the iOS application will be notified of users leaving and joining the conversation. When this happens, members are added and removed from the `members` array, which the UI observes.  
+
+Now you can add the functions that handle loading and leaving conversations to the `ConversationModel` class:
 
 ```swift
 final class ConversationModel: NSObject, ObservableObject, NXMConversationDelegate {
@@ -477,7 +491,11 @@ final class ConversationModel: NSObject, ObservableObject, NXMConversationDelega
 }
 ```
 
-The `loadConversation` function calls `getConversationWithUuid` on the Client SDK, returning the conversation object. Which is stored in a local property. Now that you have the conversation object, you can join the conversation. Once that is complete, you can enable media for the user, allowing the user to speak and hear other users in the conversation. `leaveConversation` does the opposite. It disables media, leaves the conversation, and calls a completion handler passed to the function. The UI for this screen is split into two structs, a smaller view for a single member and a bigger view with a grid of members and handles navigation. Create the `MemberView` struct in the same file:
+The `loadConversation` function calls `getConversationWithUuid` on the Client SDK, returning the conversation object stored in a local property.  
+Now that you have the conversation object, you can join the conversation. Once that is complete, you can enable media for the user, allowing them to speak and hear other users in the conversation.  
+`leaveConversation` does the opposite. It disables media, leaves the conversation, and calls a completion handler passed to the function.  
+
+The UI for this screen is split into two structs, a smaller view for a single member and a bigger view with a grid of members and handles navigation. Create the `MemberView` struct in the same file:
 
 ```swift
 struct MemberView: View {
@@ -538,14 +556,16 @@ struct RoomView: View {
 }
 ```
 
-This view has a `presentationMode` property that will allow the view to be dismissed when the user leaves the conversation/room and a three-column wide grid where the room members will be displayed.
+This view has a `presentationMode` property that will allow the view to be dismissed when the user leaves the conversation/room, and a three-column wide grid where the room members will be displayed.
 
 ### Run Your Application
 
-If you run the project (CMD + R), you will first be prompted to allow microphone permissions if you have not already. Log in with a username, and you will be taken to the room list screen where you can create a room. Creating a room will take you to the room view. Repeat the same steps with a different username and device, and you will be able to chat in the room!
+If you run the project (CMD + R), you will first be prompted to allow microphone permissions if you have not already.  
+
+Log in with a username, and you will be taken to the room list screen where you can create a room. Creating a room will take you to the room view. Repeat the same steps with a different username and device, and you will be able to chat in the room!
 
 ![Gif of the app flow](/content/blog/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-2/flow.gif)
 
 ### What Is Next?
 
-You can find the completed iOS application project on [GitHub](https://github.com/nexmo-community/swift-client-sdk-drop-in-audio). You can do a lot more with the Client SDK, learn more on [developer.nexmo.com](https://developer.nexmo.com/client-sdk/overview).
+You can find the completed iOS application project on [GitHub](https://github.com/nexmo-community/swift-client-sdk-drop-in-audio). You can do a lot more with the Client SDK, learn more on [developer.vonage.com](https://developer.vonage.com/client-sdk/overview).
