@@ -10,7 +10,12 @@
               :alt="$t('component_header_badge')"
             />
           </nuxt-link>
-          <span class="ml-4 badge badge--small badge--purple">{{
+          <span
+            v-if="engineering"
+            class="ml-4 badge badge--small badge--blue"
+            >{{ $t('component_header_badge_engineering') }}</span
+          >
+          <span v-else class="ml-4 badge badge--small badge--purple">{{
             $t('component_header_badge')
           }}</span>
         </div>
@@ -200,6 +205,13 @@
 
 <script>
 export default {
+  props: {
+    engineering: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
   data() {
     return {
       selectedLocale: this.$i18n.locale,
@@ -223,3 +235,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.badge--blue {
+  @apply bg-blue-lighter;
+  @apply text-blue-dark;
+}
+</style>

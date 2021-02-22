@@ -47,6 +47,12 @@
       "plural": "Events",
       "slug": "event",
       "color": "#e6ae00"
+    },
+    {
+      "name": "Engineering",
+      "plural": "Posts by Engineering",
+      "slug": "engineering",
+      "color": "#669fc4"
     }
   ]
 }
