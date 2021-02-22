@@ -45,7 +45,7 @@
     "prismjs": "^1.22.0",
     "reading-time": "^1.2.1",
     "showdown": "^1.9.1",
-    "slugify": "^1.4.6",
+    "slugify": "^1.4.7",
     "tailwindcss": "^2.0.1",
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^3.4.2",
