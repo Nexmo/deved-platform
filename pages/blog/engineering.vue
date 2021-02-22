@@ -63,37 +63,34 @@ export default {
 
   head() {
     return {
-      title: 'Developer Spotlight Programme',
+      title: 'Engineering Blog',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content:
-            'Tutorials and Blog Posts from our Spotlight Authors. Earn up to $500 USD and get featured on our platform.',
+          content: 'Blog Posts from our Engineering team.',
         },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          // Team Members & Authors » Developer Content from Vonage ♥
-          content: `Developer Spotlight Programme${config.baseSplitter}${config.baseTitle}`,
+          // Engineering Blog » Developer Content from Vonage ♥
+          content: `Engineering Blog${config.baseSplitter}${config.baseTitle}`,
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content:
-            'Tutorials and Blog Posts from our Spotlight Authors. Earn up to $500 USD and get featured on our platform.',
+          content: 'Blog Posts from our Engineering team.',
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          // {author name} » Developer Content from Vonage ♥
-          content: `Developer Spotlight Programme${config.baseSplitter}${config.baseTitle}`,
+          // Engineering Blog » Developer Content from Vonage ♥
+          content: `Engineering Blog${config.baseSplitter}${config.baseTitle}`,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content:
-            'Tutorials and Blog Posts from our Spotlight Authors. Earn up to $500 USD and get featured on our platform.',
+          content: 'Blog Posts from our Engineering team.',
         },
       ],
     }
