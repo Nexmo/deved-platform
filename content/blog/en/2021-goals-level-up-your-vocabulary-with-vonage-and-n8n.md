@@ -2,7 +2,7 @@
 title: "2021 Goals: Level up Your Vocabulary With Vonage and n8n"
 description: This n8n workflow automates sending out tech-related vocabulary in
   SMS messages using Vonage.
-author: aaron
+author: "isabel-hildebrand "
 published: true
 published_at: 2021-02-21T23:05:54.238Z
 updated_at: 2021-02-21T23:05:54.272Z
