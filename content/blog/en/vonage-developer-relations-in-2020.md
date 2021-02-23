@@ -18,7 +18,7 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-Continuing our annual tradition of looking back on the year just gone, today we release our annual Developer Relations infographic for 2020.
+Continuing our annual tradition of looking back on the year gone by, today we release our  Developer Relations infographic for 2020.
 
 It was a different year for us all but despite the challenges, we're extremely proud of what we achieved and are excited about building on what the past year taught us about how to approach our developer relations efforts and support the amazing developer community we've been building.
 
