@@ -2,7 +2,7 @@
 title: Setting up CI/CD with Github Actions
 description: This article walks you through the process of using github actions to build CI/CD flows.
 thumbnail: /content/blog/setting-up-ci-cd-with-github-actions/Blog_GitHub-Desktop_1200x600.png
-author: avital-tzubelivonage-com
+author: yonatankra
 published: true
 published_at: 2021-02-17T13:34:35.000Z
 updated_at: 2021-02-17T13:34:35.000Z

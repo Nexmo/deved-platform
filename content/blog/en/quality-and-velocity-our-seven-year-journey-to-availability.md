@@ -2,7 +2,7 @@
 title: "Quality and Velocity: Our Seven Year Journey to 99.999% Availability"
 description: How can your teams take a stronger approach to software testing without compromising on speed and product growth? The growing software developer in test team defined a solution.
 thumbnail: /content/blog/quality-and-velocity-our-seven-year-journey-to-availability/Blog_1200x600-1.png
-author: avital-tzubelivonage-com
+author: yuvalgolan
 published: true
 published_at: 2021-02-17T13:34:35.000Z
 updated_at: 2021-02-17T13:34:35.000Z
