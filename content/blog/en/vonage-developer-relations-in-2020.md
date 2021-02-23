@@ -38,7 +38,9 @@ Thanks to the 29.3% increase in developers using Vonage Communications APIs in 2
 
 Despite a lack of travel, our team virtually visited a more globally diverse set of countries than ever before—from their very own homes.
 
-117 talks were given in 2020, all around the world, with a huge range of time differences, topics, and audiences to interact with on a variety of new platforms. In addition, we also supported 68 events worldwide which all led to a massive 86% increase in our online audience.
+117 talks were given in 2020, all around the world, with a huge range of time differences, topics, and audiences to interact with on a variety of new platforms.
+
+In addition, we also supported 68 events worldwide which, combined with [Twitter](https://twitter.com/vonagedev), [Twitch](https://twitch.tv/vonagedevs), and every other place we 'virtually' found ourselves in 2020, led to a massive 86% increase in our online audience.
 
 ## In With The New
 
