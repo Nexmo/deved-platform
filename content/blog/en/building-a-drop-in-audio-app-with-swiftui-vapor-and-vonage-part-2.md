@@ -1,5 +1,5 @@
 ---
-title: Building a Drop-in Audio App With SwiftUI, Vapor and Vonage - Part 2
+title: Building a Drop-in Audio App With SwiftUI and Vapor - Part 2
 description: The second half of a two-part tutorial that will use
   the   Conversation API with the Client SDK to build your very own drop-in
   audio app.
