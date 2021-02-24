@@ -79,6 +79,9 @@
             <li>
               <nuxt-link to="/spotlight/">Developer Spotlight</nuxt-link>
             </li>
+            <li>
+              <nuxt-link to="/blog/engineering/">Engineering Blog</nuxt-link>
+            </li>
           </ul>
         </div>
         <div>
