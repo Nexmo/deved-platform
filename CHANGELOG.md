@@ -1,3 +1,10 @@
+## [2.7.1](https://github.com/Nexmo/deved-platform/compare/v2.7.0...v2.7.1) (2021-02-24)
+
+
+### Bug Fixes
+
+* **engineering:** add link to blog in footer ([7dc0a19](https://github.com/Nexmo/deved-platform/commit/7dc0a19d884b14a02636558abb6718adb98513ec))
+
 # [2.7.0](https://github.com/Nexmo/deved-platform/compare/v2.6.1...v2.7.0) (2021-02-24)
 
 
