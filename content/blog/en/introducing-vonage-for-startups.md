@@ -29,13 +29,13 @@ Alongside our own workshops and content, we have partnered with [Startup Grind](
 ## What Do Startups Receive As Part of the Program? 
 The program has been built with a founder-first approach. We recognize that each startup has different needs and can benefit from Communications APIs in a variety of ways. The program has been designed based on 4-pillars:
 
-* Learning - - Startups will gain access to Vonage technical resources and curated startup content to learn how to use our APIs and save valuable time.
+* **Learning** - - Startups will gain access to Vonage technical resources and curated startup content to learn how to use our APIs and save valuable time.
 
-* Building - Startups will utilize our products through a credits package and tailored technical sessions to build their MVP, reach more customers and grow their business.
+* **Building** - Startups will utilize our products through a credits package and tailored technical sessions to build their MVP, reach more customers and grow their business.
 
-* Supporting - Selected startups can leverage Vonage resources tailored to their needs to solve challenges they are facing.
+* **Supporting** - Selected startups can leverage Vonage resources tailored to their needs to solve challenges they are facing.
 
-* Connecting - Startups will join our community and have the opportunity to engage with other founders, developers and advocates.
+* **Connecting** - Startups will join our community and have the opportunity to engage with other founders, developers and advocates.
 
 ## How can I participate? 
 
