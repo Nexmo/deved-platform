@@ -5,8 +5,8 @@ description: Vonage is thrilled to launch "Vonage for Startups", our dedicated
 thumbnail: /content/blog/introducing-vonage-for-startups/vonageforstartups_1200x600.png
 author: filippos-kyprianou
 published: true
-published_at: 2021-02-23T13:03:25.831Z
-updated_at: 2021-02-23T13:03:25.852Z
+published_at: 2021-02-24T13:53:54.940Z
+updated_at: ""
 category: announcement
 tags:
   - startups
