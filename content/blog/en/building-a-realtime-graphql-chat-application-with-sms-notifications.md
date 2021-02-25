@@ -18,38 +18,43 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-With the emergence of [GraphQL](https://graphql.org/) came a new way for developers to develop client/server applications. The benefits of developing GraphQL applications are numerous, from explicitly requesting what you need from the server to real-time event-driven communication through subscription. This article focuses on code-first GraphQL and its superpowers and how we can develop a chat application powered by [Next.js](https://nextjs.org/) and Apollo on the frontend and [Prisma 2](https://www.prisma.io/blog/prisma-2-beta-b7bcl0gd8d8e), [Graphql-yoga](https://github.com/prisma-labs/graphql-yoga/blob/master/README.md) and SMS notification using the excellent [Vonage SMS API](https://www.vonage.com/communications-apis/sms/) on the backend.
+With the emergence of [GraphQL](https://graphql.org/) came a new way for developers to develop client/server applications. The benefits of developing GraphQL applications are numerous, from explicitly requesting what you need from the server to real-time event-driven communication through subscription. This article highlights code-first GraphQL and its superpowers. The article will also outline how to develop a chat application powered by [Next.js](https://nextjs.org/) and [Apollo](https://www.apollographql.com/) on the frontend, and [Prisma 2](https://www.prisma.io/blog/prisma-2-beta-b7bcl0gd8d8e), [Graphql-yoga](https://github.com/prisma-labs/graphql-yoga/blob/master/README.md) and SMS notification using the excellent [Vonage SMS API](https://www.vonage.com/communications-apis/sms/) on the backend.
 
 ## Code-First GraphQL
-It is an approach to developing GraphQL servers by writing your resolvers and outsourcing the schema definition to be generated programmatically. It’s often referred to as the resolver first approach. The generation of the schema is handled by a tool that traverses your resolvers and generates the schema. Schema first is the opposite of code-first-approach, and it involves defining the types, response etc., of your server. 
+
+Code-first GraphQL is an approach to developing GraphQL servers by writing your resolvers and outsourcing the schema definition to be generated programmatically. It’s often referred to as the resolver first approach. The generation of the schema is handled by a tool that traverses your resolvers and generates the schema. Schema first is the opposite of code-first-approach, and it involves defining the types, response etc., of your server. 
 
 ## Backend Development
-We’d be building a realtime chat application with SMS notifications.
 
-Clone this [repository](https://github.com/themmyloluwaa/nextjs-graphql-prisma-starter). It contains the basic setup you need to follow along with this article. 
+We’ll be building a real-time chat application with SMS notifications.
+
+To start, clone this [repository](https://github.com/themmyloluwaa/nextjs-graphql-prisma-starter). It contains the basic setup you need to follow along with this article. 
 
 #### Prerequisites
--   Node.js >=10.0.0
--   Previous understanding of Prisma
--   Understanding of Graphql
--   A database, e.g. MySQL
--   Prisma CLI
--   A Vonage Account
+
+* Node.js >=10.0.0
+* Previous understanding of Prisma
+* Understanding of GraphQL
+* A database, e.g. MySQL
+* Prisma CLI
+* A Vonage Account
 
 <signup></signup>
 
 Now, let’s understand the project directory.
 
-There are two folders contained in the root directory. The backend directory contains A Prisma folder that holds the Prisma configuration. There's a schema.prisma file in the Prisma folder that includes the database setup configuration and an SQLite db called dev.db.  Navigate to the backend directory and run **`npm install`** to install all the necessary dependencies. 
+There are two folders contained in the root directory. The backend directory contains A Prisma folder that holds the Prisma configuration. There's a schema.prisma file in the Prisma folder that includes the database setup configuration and an SQLite db called dev.db. Navigate to the backend directory and run **`npm install`** to install all the necessary dependencies. 
 
-Also, create a .env file in the backend directory; this would contain the necessary environmental variables like database URL and variables and all that. For the database URL, paste this in the env file. 
+Also, create a .env file in the backend directory; this would contain the necessary environmental variables like database URL and variables and all that. For the database URL, paste this in the env file: 
 
 ```javascript
 DATABASE_URL="file:./dev.db"
 ```
- The pages directory in the frontend folder is where NextJS would serve the pages of the application. The pages directory contains an _app.js that’s been set up to work with bootstrap. Navigate to the frontend directory and run npm install. This folder also includes an src directory with assets, components and utils subdirectories. 
 
-Navigate to the prisma/schema.prisma file. We need two models, one for User and one for Chat. Below is the generator client configuration: 
+The pages directory in the frontend folder is where Next.js will serve the pages of the application. The pages directory contains an _app.js that’s been set up to work with Bootstrap. Navigate to the frontend directory and run `npm install`. This folder also includes an src directory with assets, components and utils subdirectories. 
+
+Next, navigate to the prisma/schema.prisma file. We need two models, one for User and one for Chat. Below is the generator client configuration: 
+
 ```javascript
 model  User {
 
@@ -76,13 +81,15 @@ createdAt DateTime  @default(now())
 updatedAt DateTime  @default(now())
 }
 ```
-The model represents the table name that would be created in the database, while the fields represent column names and the data types that would be stored there. In addition to the data types available in Prisma, a model can also be a data type. This is what defines the relationship between two or more models or a self-relationship for a model. We annotate each model with Prisma keywords. If you don't understand these keywords used, please consult the Prisma [documentation](https://www.prisma.io/docs/concepts).
 
-Run `prisma migrate save --experimental`.  Name your migration and run `prisma migrate up --experimental`. The command will create the tables based on the model definitions in the schema. Lastly, run `prisma generate` to expose the database schema mapped to Prisma methods and features that enable CRUD functionalities.
+The model represents the table name that will be created in the database, while the fields represent column names and the data types that will be stored there. In addition to the data types available in Prisma, a model can also be a data type. This is what defines the relationship between two or more models or a self-relationship for a model. We annotate each model with Prisma keywords. If you don't understand the keywords used, please consult the Prisma [documentation](https://www.prisma.io/docs/concepts).
 
-Navigate to the **src/types** directory and create a User and Chat file. Four files already exist, a Mutation.js, Query.js, Subscription.js and an index.js file that combines all the resolvers as one. 
+Run `prisma migrate save --experimental`. Name your migration and run `prisma migrate up --experimental`. The command will create the tables based on the model definitions in the schema. Lastly, run `prisma generate` to expose the database schema mapped to Prisma methods and features that enable CRUD functionalities.
+
+Navigate to the **src/types** directory and create a User and Chat file. Four files already exist, Mutation.js, Query.js, Subscription.js and an index.js file that combines all the resolvers as one. 
 
 In the User.js file, add:
+
 ```javascript
 const { objectType } = require("@nexus/schema");
 
@@ -106,6 +113,7 @@ module.exports = {
 ```
 
 In the Chat.js file, add:
+
 ```javascript
 const { objectType } = require("@nexus/schema");
 
@@ -125,7 +133,8 @@ module.exports = {
   Chat,
 };
 ```
-We import an ***objectType*** from nexus because the User and Chat model are of type object. We access the fields we defined in our schema using the model method and the name of the field. This is made possible through the ***nexus-plugin-prisma*** we installed. This helps us cut through the need to start defining each field one by one and configuring it. The code below is an example of doing the configuration manually
+
+We import an ***objectType*** from nexus because the User and Chat model are of type object. We access the fields we defined in our schema using the model method and the name of the field. This is made possible through the ***nexus-plugin-prisma*** we installed. This helps us cut through the need to start defining each field one by one and configuring it. The code below is an example of doing the configuration manually:
 
 ```javascript
 t.id("id", { description: "The ID (Primary Key) of the table or model" });
@@ -133,9 +142,10 @@ t.id("id", { description: "The ID (Primary Key) of the table or model" });
    t.boolean("isAdmin");
    // ... the rest
 ```
+
 In the mutation file, let’s handle the login and signup. Create a new file in the src/types directory called **AuthPayload.js**. This is an object type that represents what authentication payload type would return to the client.
 
-In AuthPayload.js:
+In AuthPayload.js, add:
 
 ```javascript
 const { objectType } = require("@nexus/schema'");
@@ -151,7 +161,7 @@ const AuthPayload = objectType({
 module.exports = { AuthPayload };
 ```
 
-In the src/utils directory, create an helper.js file and make these methods. 
+In the src/utils directory, create a helper.js file and make these methods. 
 
 ```javascript
 const jwt = require("jsonwebtoken");
@@ -199,9 +209,11 @@ module.exports = {
   hashPassword,
 };
 ```
+
 **NOTE**: By now you should have environmental variables set in your .env file for these methods. 
 
-Now we have a way to get the user’s ID using a getUser method. Let’s modify the script.js file. Import the getUser method from src/utils/helpers and uncomment this part of the context method on the server configuration file.
+Now, we have a way to get the user’s ID using a getUser method. Let’s modify the script.js file. Import the getUser method from src/utils/helpers and uncomment this part of the context method on the server configuration file.
+
 ```javascript
  // const userId = getUserId(sConfig);
     // const user = await prisma.user.findOne({ where: { id: Number(userId) } });
@@ -209,6 +221,7 @@ Now we have a way to get the user’s ID using a getUser method. Let’s modify 
     //   data.user = user;
     // }
 ```
+
 In mutation.js file, add the code for signing up:
 
 ```javascript
@@ -280,9 +293,10 @@ const Mutation = mutationType({
 },
 });
 ```
+
 We first check if the database contains a user with the email or phone, we throw an error if the user exists, else we create the user, generate a token using the user’s id and set the token as a cookie. We also return the signup payload.
 
-For login.js, just below the signup resolver,
+Add the following to login.js, just below the signup resolver:
 
 ```javascript
 t.field("login", {
@@ -356,9 +370,10 @@ t.field("login", {
    },
  });
 ```
-We verify that the user exists, validate their login credentials,  set the token as a cookie, and return the auth payload mutation type. We also send them an SMS notification through the Vonage SMS API instance we created in the server configuration. 
 
-To handle SMS notifications to users on the application, I bought a virtual number from Vonage.   You should follow this [article](https://learn.vonage.com/blog/2019/09/16/how-to-send-and-receive-sms-messages-with-node-js-and-express-dr) to get started on creating a Vonage SMS application. Once you've created an application, a private key file would be auto-downloaded to your computer. Move this file to the backend directory. You should also have an ADMIN_PHONE environmental variable set in your .env file, the virtual number I bought from the Vonage account. 
+We verify that the user exists, validate their login credentials, set the token as a cookie, and return the auth payload mutation type. We also send them an SMS notification through the Vonage SMS API instance we created in the server configuration. 
+
+To handle SMS notifications to users on the application, I bought a virtual number from Vonage. You should follow this [article](https://learn.vonage.com/blog/2019/09/16/how-to-send-and-receive-sms-messages-with-node-js-and-express-dr) to get started on creating a Vonage SMS application. Once you've created an application, a private key file would be auto-downloaded to your computer. Move this file to the backend directory. You should also have an ADMIN_PHONE environmental variable set in your .env file, the virtual number I bought from the Vonage account. 
 
 Proceed to **types/index.js file** and comment out the Query and Subscription imports as we don't have anything there. For now, import your User.js and Chat.js file.
 
@@ -384,11 +399,12 @@ definition(t) {
    }
 })
 ```
+
 Because we’ve handled querying for the user on every request we receive in the context field of the server configuration, we can access the user if they exist on the ctx object. If the user does not exist on the ctx object, it means the user needs to log in. In the types/index.js file, uncomment the imported Query.js file.
 
 Let’s create two more query resolvers; One to query one user and one to query multiple users. We’d be using nexus-plugin-prisma crud functionalities; this is an experimental feature, so we need to turn it on. In the **script.js** file, in the plugins field, add `{experimentalCRUD: true}` to the nexusPrisma function if it's not added.
 
-In Query.js:
+In Query.js, add:
 
 ```javascript
    t.crud.user();
@@ -398,6 +414,7 @@ In Query.js:
      pagination: true,
    });
 ```
+
 To use this functionality, ensure you named your schema models in singular like **User** and not **Users**. Let’s also use this feature to handle the update one user and delete one user resolvers in the mutation file. 
 
 ```javascript
@@ -469,8 +486,9 @@ const sendNewMessageNotification = async (lastMessage, vonage) => {
   }
 };
 ```
+
 This method checks that the last message sent is less than 1 hour. If it is, we send the recipient of the message an SMS notification, and if not, we do nothing. 
-Export the sendNewMessageNotification method and import it in the Mutation.js file. Let's handle the createChat resolver,
+Export the sendNewMessageNotification method and import it in the Mutation.js file. Let's now handle the createChat resolver.
 
 In Mutation.js, add:
 
@@ -620,7 +638,7 @@ We import intArg and subScriptionFIeld objects from nexus/schema, and we also im
 Now, let’s add updateChat and deleteChat mutations— which is slightly different from creating a chat. First, we need to check that the user is authenticated. Secondly, we have to check that the message exists; lastly, we need to check that it’s the sender of the message that can update or delete it. A user who didn’t send the message should not have access to deleting the message. If these conditions pass, we update or delete the chat then notify our subscribers. 
 
 For the updateChat mutation, add:
- 
+
 ```javascript
 t.field("updateChat", {
      type: "Chat",
@@ -738,7 +756,7 @@ We've been working on the mutation, query, and subscription aspects of the appli
 
 Ideally, we don’t want to make all features in the application private or inaccessible to non-authenticated users. We also don’t want to make everything accessible, so how do we solve this?
 
-For now, we’d make queries for the user list accessible to non-authenticated users while other features would be protected. We’d also be adding extra permissions for some resolvers to ensure that only admins can perform certain operations like deletion of a user. Let’s get started. We’d be making use of Graphql-shield. Here’s a good [tutorial](https://medium.com/@maticzav/graphql-shield-9d1e02520e35) that covers the basics of Graphql-shield. 
+For now, we’ll make queries for the user list accessible to non-authenticated users while other features would be protected. We’ll also be adding extra permissions for some resolvers to ensure that only admins can perform certain operations like deletion of a user. Let’s get started. We’ll be making use of Graphql-shield. Here’s a good [tutorial](https://medium.com/@maticzav/graphql-shield-9d1e02520e35) that covers the basics of Graphql-shield. 
 
 In permissions/rules.js, add:
 
@@ -835,8 +853,8 @@ The GitHub repository already comes with the needed packages and default setup n
 
 Navigate to the pages folder and create a login, signup.js and index.js file.
 
-Let's work on users signing in and signing up. 
-Before we proceed, let's create a Layout.js file to wrap our pages with reusable functionalities like site title, fav icon etc..
+Now, let's work on users signing in and signing up. 
+Before we proceed, let's create a Layout.js file to wrap our pages with reusable functionalities like site title, favicon etc.
 
 In the components folder, create a Layout.js file.
 
@@ -1187,6 +1205,7 @@ const SignUp = (props) => {
 };
 export default SignUp;
 ```
+
 Now, navigate to your browser and test logging in and signing up.
 
 Next, create an index.js and chat.js file. In index.js, add:
@@ -1313,11 +1332,12 @@ export async function getServerSideProps(context) {
 }
 export default UserPage;
 ```
+
 In the getServerSideProps, we check for the token cookie. If the token doesn't exist, the user is redirected to the login page. If the token exists, the logged-in user is filtered out before returning the data as props. The array filter method is used to handle client-side searching, and the useMemo React hook to memoize the user data to prevent rerendering unnecessarily.
 
-You can find the Graphql queries used for these pages in the gql folder of the project directory.
+You can find the GraphQL queries used for these pages in the gql folder of the project directory.
 
-Next, create a ChatBubble component in the component folder. We'll be making use of a dayjs package to handle message timestamps. Install the package `npm install dayjs` and create a formatDate file in utils. In formatDate.js, add:
+Next, create a ChatBubble component in the component folder. We'll be making use of a day.js package to handle message timestamps. Install the package `npm install dayjs` and create a formatDate file in utils. In formatDate.js, add:
 
 ```javascript
 import dayjs from "dayjs";
@@ -1425,7 +1445,7 @@ const ChatBubble = React.forwardRef((props, ref) => {
 export default ChatBubble;
 ```
 
-Depending on the chat object received, we apply various styles like the direction of the chat bubble if the sender is the currently logged in user. 
+Depending on the chat object received, we apply various styles like the direction of the chat bubble if the sender is the currently logged-in user. 
 
 In chat.js, add:
 
@@ -1827,14 +1847,15 @@ export default ProfilePage;
 We make only the name and email fields editable. If the update is successful, we show the user a toast message and redirect the user to the login page after 1.3 seconds to login with the new credentials. 
 
 ## Deployment
-We've handled creating the Graphql server, and we've also developed an application built with NextJS to consume these endpoints. The server APIs are protected, and so are the pages. As we've been developing locally, it’s now time to expose the application to the world. We'll be deploying the server on Heroku and the client app on Vercel. I'll be showing you two ways to deploy the application. One using the command line interface and the second using the Vercel dashboard. Create a Vercel account  [here](https://vercel.com/). Create a Heroku account [here](https://www.heroku.com/).
+
+We've handled creating the GraphQL server, and we've also developed an application built with NextJS to consume these endpoints. The server APIs are protected, and so are the pages. As we've been developing locally, it’s now time to expose the application to the world. We'll be deploying the server on Heroku and the client app on Vercel. I'll be showing you two ways to deploy the application. One using the command line interface and the second using the Vercel dashboard. Create a Vercel account [here](https://vercel.com/). Create a Heroku account [here](https://www.heroku.com/).
 
 Also, install the Vercel CLI with `npm i -g vercel`. Install the Heroku CLI by following the instructions [here](https://devcenter.heroku.com/articles/heroku-cli).
 
 Create two new branches. One called production/server and another called production/client. Let's work on deploying the server first.
 
 Let's delete the files we don't need to be on production. In the Prisma folder, delete the dev.db file and also the migration folder. We'll be making use of a Postgres database instead for production. We can get a free PostgreSQL database from ElephantSql. Create an [account](https://www.elephantsql.com/) and create a new Postgres database. 
-Navigate to the backend directory and copy the database url and replace it in your .env file. In prisma/schema.prisma file, replace the data source db setup with:
+Navigate to the backend directory and copy the database URL and replace it in your .env file. In prisma/schema.prisma file, replace the data source db setup with:
 
 ```javascript
 datasource db {
@@ -1853,10 +1874,10 @@ In the terminal, run heroku login and input your credentials. Then, run
 Since our root directory contains both the client and the server code, and Heroku doesn't support subdirectory deployment easily, we'll have to deploy using a different buildpack. Do so by following this article [here](https://medium.com/@timanovsky/heroku-buildpack-to-support-deployment-from-subdirectory-e743c2c838dd). After adding your required config variables, 
 run:
 
-- **`heroku buildpacks:clear`**
-- **`heroku buildpacks:set https://github.com/timanovsky/subdir-heroku-buildpack`**
-- **`heroku buildpacks:add heroku/nodejs`**
-- **`heroku config:set PROJECT_PATH=Backend`**
+* **`heroku buildpacks:clear`**
+* **`heroku buildpacks:set https://github.com/timanovsky/subdir-heroku-buildpack`**
+* **`heroku buildpacks:add heroku/nodejs`**
+* **`heroku config:set PROJECT_PATH=Backend`**
 
 Then, add this to your scripts in the package.json file:
 
@@ -1869,24 +1890,26 @@ Confirm that Heroku is part of the remote repository by running `git remote -v`.
 Lastly, run git `git push heroku master`. This will push your code and build it. If you run into any issues, ensure you've set all the env variables your application uses and that you follow the instructions carefully. Next, run `heroku apps:open /playground`.
 
 ### Frontend
-Ensure you've pushed all your changes to GitHub in the production/server branch. Create a new branch from there called production/client and replace the respective Graphql endpoints for the queries and mutation to your production url. For subscriptions, replace the HTTPS protocol with WSS. Push the changes to GitHub and navigate to your Vercel account. 
+
+Ensure you've pushed all your changes to GitHub in the production/server branch. Create a new branch from there called production/client and replace the respective Graphql endpoints for the queries and mutation to your production URL. For subscriptions, replace the HTTPS protocol with WSS. Push the changes to GitHub and navigate to your Vercel account. 
 
 In your dashboard, 
 
-- Click import project, copy your GitHub repository link and paste
-- Chose the frontend directory as the root directory for your project and a name
-- It should automatically detect NextJS as the framework of choice. We're not using any env variable so leave that part empty. Then click deploy.
-- Once your project has deployed completely, navigate to the settings tab. In git change the deployment branch from main to production/client. 
-- Navigate to your code and make a change to your files, commit it, and push to the production/client branch. It will automatically build your project and start it. 
-- Once the deployment is complete, navigate to your Heroku dashboard. In your server application, navigate to the settings tab and change the FRONTEND_ORIGIN url to the production client url we just deployed on Vercel. Ensure you don't add a trailing slash to the end of the url. For example, it should be www.example.com, not www.example.com/
-- Voila, we're done. 
+* Click import project, copy your GitHub repository link and paste
+* Chose the frontend directory as the root directory for your project and a name
+* It should automatically detect NextJS as the framework of choice. We're not using any env variable so leave that part empty. Then click deploy.
+* Once your project has deployed completely, navigate to the settings tab. In git change the deployment branch from main to production/client. 
+* Navigate to your code and make a change to your files, commit it, and push to the production/client branch. It will automatically build your project and start it. 
+* Once the deployment is complete, navigate to your Heroku dashboard. In your server application, navigate to the settings tab and change the FRONTEND_ORIGIN URL to the production client URL we just deployed on Vercel. Ensure you don't add a trailing slash to the end of the URL. For example, it should be www.example.com, not www.example.com/
+* Voila, we're done. 
 
 ## Conclusion
 
-A long article, but I am confident it was worth it. To summarize, we've covered how to create a QraphQL server that also works with subscriptions using the code-first approach. We dove into the Vonage SMS API and used it to send SMS notifications to users. We used the fantastic Prisma 2 database ORM to handle the db queries. Not to forget, we consumed the endpoints using Apollo and NextJS. Finally, we deployed on Vercel hosting service and Heroku using the CLI and the GUI. I firmly believe I've armed you with all you need to build that next big idea using these tools. My challenge for you is to take this application to the next level by adding more functionalities like password reset, the addition of friends, posts etc. Thank you for committing your time to trying this tutorial. If you get stuck, don't hesitate to reach me on twitter at [@codekagei](https://twitter.com/themmyloluwaaa) or drop a comment. Happy hacking!
+A long article, but I am confident it will be worth trying. To summarize, we've covered how to create a GraphQL server that also works with subscriptions using the code-first approach. We dove into the Vonage SMS API and used it to send SMS notifications to users. We used the fantastic Prisma 2 database ORM to handle the db queries. Not to forget, we consumed the endpoints using Apollo and NextJS. Finally, we deployed on Vercel hosting service and Heroku using the CLI and the GUI. I firmly believe I've armed you with all you need to build that next big idea using these tools. My challenge for you is to take this application to the next level by adding more functionalities like password reset, the addition of friends, posts etc. 
+
+Thank you for taking the time to try this tutorial. If you get stuck, don't hesitate to reach me on Twitter at [@codekagei](https://twitter.com/themmyloluwaaa) or drop a comment. Happy hacking!
 
 Reference the code:
+
 * [Frontend](https://vonage-nextjs-client.vercel.app/login?redirectTo=/)
 * [Backend](https://vonage-graphql-server.herokuapp.com/playground)
-
-
