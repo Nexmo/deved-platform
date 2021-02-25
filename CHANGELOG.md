@@ -1,3 +1,20 @@
+# [2.8.0](https://github.com/Nexmo/deved-platform/compare/v2.7.1...v2.8.0) (2021-02-25)
+
+
+### Bug Fixes
+
+* **devtv:** change date field name ([2af635d](https://github.com/Nexmo/deved-platform/commit/2af635dd12b36c79ce5ac5f9d1190c494924cfd6))
+
+
+### Features
+
+* **devtv:** add heading to devtv page ([d3a523f](https://github.com/Nexmo/deved-platform/commit/d3a523f9c1b4cf55321bd8d2f6881c8b165ce95d))
+* **devtv:** add icon and change selected colour ([8f48350](https://github.com/Nexmo/deved-platform/commit/8f48350148be593cc3338b67c20e72e2fcb77395))
+* **devtv:** add time to bottom of card ([cfc6145](https://github.com/Nexmo/deved-platform/commit/cfc6145cf305a81132471326a02c4a84e02c19a2))
+* **devtv:** applying feedback from ben/lauren ([bbe177d](https://github.com/Nexmo/deved-platform/commit/bbe177d33ee4d22c34236ef23141ead69d6910b8))
+* **devtv:** first commit for this feature ([a90050e](https://github.com/Nexmo/deved-platform/commit/a90050e11d4367e8d62ed3512af68e480ea8b0a3))
+* **devtv:** shows page done ([3cfb2ba](https://github.com/Nexmo/deved-platform/commit/3cfb2bade5a6d92590fc70965d6bcac45429740e))
+
 ## [2.7.1](https://github.com/Nexmo/deved-platform/compare/v2.7.0...v2.7.1) (2021-02-24)
 
 
