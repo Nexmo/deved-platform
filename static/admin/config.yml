@@ -336,7 +336,7 @@ collections:
         display_fields: ['title']
         hint: 'Search for the show. If not found, go add it at *DevTV Shows* first.'
       - label: 'Day/Time of Episode'
-        name: live_at
+        name: date
         widget: datetime
         hint: 'Date and time episode is live.'
       - label: Topic
