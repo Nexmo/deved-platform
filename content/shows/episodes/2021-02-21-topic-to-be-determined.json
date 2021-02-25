@@ -1,9 +1,11 @@
 {
   "date": "2021-03-10T19:00:39.616Z",
   "show": "mistakes-were-made",
-  "title": "Topic: To Be Determined",
-  "description": "Mistakes will be made!",
+  "title": "Building NPM packages with TypeScript",
+  "description": "We're rebuilding our Video API accelerator packages in TypeScript. These packages make adding video, text chat, screen sharing and more super fast. Let's make them even easier to use!",
   "tags": [
-    "video-api"
+    "video-api",
+    "typescript",
+    "opensource"
   ]
 }
