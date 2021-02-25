@@ -17,9 +17,9 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-A2P messaging changes are happening in the industry in the next six months. Vonage is deprecating the [US Shared Short Code API](https://developer.nexmo.com/messaging/us-short-codes/overview) with a target completion date of **March 1, 2021.** This deprecation is in conjunction with the new [A2P 10DLC](https://help.nexmo.com/hc/en-us/articles/360027503992-What-is-A2P-US-10-DLC-Messaging-/) standard, which provides more flexibility for long codes and limits shortcodes use by businesses.
+Application to Person (A2P) messaging changes are happening in the industry. Vonage is deprecating the [US Shared Short Code API](https://developer.nexmo.com/messaging/us-short-codes/overview) due to T-Mobile and AT&T's new code of conduct probiting the user of shared originators of A2P traffic. This deprecation is in conjunction with the new [A2P 10DLC](https://help.nexmo.com/hc/en-us/articles/360027503992-What-is-A2P-US-10-DLC-Messaging-/) standard, which provides more flexibility for long codes and limits shortcodes use by businesses.
 
-As a result, as of March 1, 2021, US carriers will no longer support shared shortcode (SSC) traffic. Please note that this does not impact dedicated shortcodes.
+As a result, US carriers will no longer support shared shortcode (SSC) traffic. Please note that this does not impact dedicated shortcodes. 
 
 ## What This Means for Customers Using US Shared Short Code API
 
