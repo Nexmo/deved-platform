@@ -3,6 +3,7 @@ title: Building a Realtime GraphQL Chat Application With SMS Notifications
 description: Learn how to develop a chat application powered by Next.js and
   Apollo on the frontend, and Prisma 2, Graphql-yoga, and Vonage's SMS API on
   the backend.
+thumbnail: /content/blog/building-a-realtime-graphql-chat-application-with-sms-notifications/nextjs_prisma-2_graphql_sms-1200x600.png
 author: nahrinjalal
 published: true
 published_at: 2021-02-25T14:46:31.233Z
@@ -11,7 +12,7 @@ category: tutorial
 tags:
   - sms-api
 comments: true
-spotlight: false
+spotlight: true
 redirect: ""
 canonical: ""
 outdated: false
