@@ -1,12 +1,9 @@
 {
-  "date": "2021-02-22T14:00:45.009Z",
-  "show": "week-init",
-  "title": "Conversation APIs",
-  "description": "Building a NodeJS-base API for the Client SDK clients",
-  "thumbnail": "/content/shows/episodes/conversation-apis/week.init_twitter_gt26mi.png",
-  "link_name": "Vonage Conversation APIs",
-  "link_text": "https://developer.nexmo.com/conversation/overview",
+  "live_at": "2021-03-24T15:00:41.747Z",
+  "show": "low-code-hour",
+  "title": "Exploring New Low-Code Tools",
+  "description": "Explore a new low-code tool/platform Maybe bubble.io ? Want to see some new tool? Tell Julia!",
   "tags": [
-    "conversation-api"
+    "low-code"
   ]
 }

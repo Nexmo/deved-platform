@@ -42,7 +42,9 @@ GitHub Actions can be used in various ways, some of which are:
 ## Vonage Messages API - WhatsApp Channel
 
 The Messages API allows you to send messages to a WhatsApp number via the WhatsApp channel. 
-To access the API, you need to create an account on [the Vonage Developer  dashboard](https://dashboard.nexmo.com/). Afterward, you'll be given free credits to start testing the API. To use the WhatsApp channel, you need to [set up a sandbox](https://dashboard.nexmo.com/messages/sandbox).
+To access the API, you need to create an account on the Vonage Developer dashboard. Afterward, you'll be given free credits to start testing the API. To use the WhatsApp channel, you need to set up a sandbox.
+
+<sign-up></sign-up>
 
 ![Vonage Developer dashboard for setting up a sandbox](/content/blog/building-github-actions-with-the-vonage-messages-api/1.-setup-sandbox.png "Vonage Developer dashboard for setting up a sandbox")
 

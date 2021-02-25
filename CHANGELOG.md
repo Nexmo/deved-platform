@@ -1,3 +1,24 @@
+## [2.7.1](https://github.com/Nexmo/deved-platform/compare/v2.7.0...v2.7.1) (2021-02-24)
+
+
+### Bug Fixes
+
+* **engineering:** add link to blog in footer ([7dc0a19](https://github.com/Nexmo/deved-platform/commit/7dc0a19d884b14a02636558abb6718adb98513ec))
+
+# [2.7.0](https://github.com/Nexmo/deved-platform/compare/v2.6.1...v2.7.0) (2021-02-24)
+
+
+### Features
+
+* **engineering:** add author profiles ([94408f6](https://github.com/Nexmo/deved-platform/commit/94408f63f288d8755ec44ba93d29f793461fb196))
+* **engineering:** add engineering architecture with 1 test post ([0fbe80d](https://github.com/Nexmo/deved-platform/commit/0fbe80dc8b56a29b63ce4c4de527822453ed7a39))
+* **engineering:** add redirect from category page ([dde4c61](https://github.com/Nexmo/deved-platform/commit/dde4c61c576af391fcc4e12ab340bc88381cf6a2))
+* **engineering:** change redirect for trailing slash ([742032f](https://github.com/Nexmo/deved-platform/commit/742032f64bda807bb56f43018585ad08734ae805))
+* **engineering:** fix meta ([59e2acb](https://github.com/Nexmo/deved-platform/commit/59e2acb6164eebbc1fb7947205f5d7ae53e2a1fd))
+* **engineering:** import post ([a62d860](https://github.com/Nexmo/deved-platform/commit/a62d86050f9c429af87dbd30b8e82642cef4c0d2))
+* **engineering:** import post ([7e4f57a](https://github.com/Nexmo/deved-platform/commit/7e4f57aa299620bd86774142246940f84923ec76))
+* **engineering:** unpublish unfinished test post ([640f4aa](https://github.com/Nexmo/deved-platform/commit/640f4aa4df453d965c5b28de4630b6c1dacff21c))
+
 ## [2.6.1](https://github.com/Nexmo/deved-platform/compare/v2.6.0...v2.6.1) (2021-02-10)
 
 # [2.6.0](https://github.com/Nexmo/deved-platform/compare/v2.5.8...v2.6.0) (2021-02-05)
