@@ -1,0 +1,11 @@
+{
+  "date": "2021-03-31T18:00:00.000Z",
+  "show": "mistakes-were-made",
+  "description": "We're rebuilding our Video API accelerator packages in TypeScript. These packages make adding video, text chat, screen sharing and more super fast. Let's make them even easier to use!",
+  "title": "Building NPM Packages with TypeScript",
+  "tags": [
+    "video-api",
+    "javascript",
+    "open-source"
+  ]
+}
