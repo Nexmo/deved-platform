@@ -241,6 +241,8 @@ fun Application.module(testing: Boolean = false) {
 
 Replace `API_KEY` and `API_SECRET` using the values from the [dashboard](https://dashboard.nexmo.com/settings).
 
+NOTE: in production  `API_KEY` and `API_SECRET` shuld be retrieved from [environment variables](https://en.wikipedia.org/wiki/Environment_variable).
+
 ## API Functionality
 
 You will build two API endpoints:
@@ -382,8 +384,8 @@ fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 fun Application.module(testing: Boolean = false) {
 
     val client: VonageClient = VonageClient.builder()
-        .apiKey("75a99818")
-        .apiSecret("lRFEd2zOuMEE0ChJ")
+        .apiKey("API_KEY")
+        .apiSecret("API_KEY")
         .build()
 
     install(ContentNegotiation) {
