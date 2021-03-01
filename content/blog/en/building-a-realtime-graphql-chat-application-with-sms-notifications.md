@@ -39,7 +39,7 @@ To start, clone this [repository](https://github.com/themmyloluwaa/nextjs-graphq
 * Prisma CLI
 * A Vonage Account
 
-<signup></signup>
+<sign-up></sign-up>
 
 Now, let’s understand the project directory.
 
