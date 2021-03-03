@@ -22,7 +22,7 @@ replacement_url: ""
 ## Introduction
 
 Drop-in audio apps are becoming very popular, with Clubhouse, Soapbox, Twitter Spaces and others gaining significant traction. 
-In this tutorial, you will use the [Conversation API](https://developer.nexmo.com/conversation/overview) with the [Client SDK](https://developer.nexmo.com/client-sdk/overview) to build your very own drop-in audio app. The tutorial is in two parts: this first part will cover the backend server, and the second part will cover the iOS application. 
+In this tutorial, you will use the [Conversation API](https://developer.nexmo.com/conversation/overview) with the [Client SDK](https://developer.nexmo.com/client-sdk/overview) to build your very own drop-in audio app. The tutorial is in two parts: this first part will cover the backend server, and [the second part](https://learn.vonage.com/blog/2021/03/03/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-2/) will cover the iOS application. 
 
 <sign-up></sign-up>
 
