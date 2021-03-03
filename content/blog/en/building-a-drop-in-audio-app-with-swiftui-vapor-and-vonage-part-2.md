@@ -21,7 +21,7 @@ replacement_url: ""
 ---
 ## Introduction
 
-The \[first part](LINK HERE) of this tutorial used the [Conversation API](https://developer.nexmo.com/conversation/overview) to create a server for a drop-in audio app. The server supports creating new users, creating new chat rooms, and listing all the open chat rooms. In this tutorial, you will build an iOS application that uses the Vonage Client SDK to consume and start chatting. 
+The [first part](https://learn.vonage.com/blog/2021/03/02/building-a-drop-in-audio-app-with-swiftui-vapor-and-vonage-part-1/) of this tutorial used the [Conversation API](https://developer.nexmo.com/conversation/overview) to create a server for a drop-in audio app. The server supports creating new users, creating new chat rooms, and listing all the open chat rooms. In this tutorial, you will build an iOS application that uses the Vonage Client SDK to consume and start chatting. 
 If you like to jump straight into this tutorial, you can follow the instructions in the [GitHub repository](https://github.com/nexmo-community/swift-vapor-drop-in-audio) for the server to get everything set up.
 
 ## Prerequisites
