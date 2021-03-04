@@ -5,7 +5,7 @@ description: Find out more about why communications APIs are useful for startups
 thumbnail: /content/blog/why-should-your-startup-use-communications-apis/startups_commapis_1200x627.png
 author: filippos-kyprianou
 published: true
-published_at: 2021-03-03T13:29:40.392Z
+published_at: 2021-03-04T13:32:07.808Z
 updated_at: ""
 category: community
 tags:
