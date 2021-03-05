@@ -1,7 +1,8 @@
 ---
-title: Filippos Kyprianou Joins the Vonage Community Team
-description: Meet Filippos Kyprianou, who joins the Vonage Community Team as a
-  Startup Community Manager. Here he introduces himself and his background.
+title: Filippos Kyprianou Joins the Vonage Developer Relations Team
+description: Meet Filippos Kyprianou, who joins the Vonage Developer Relations
+  Team as a Startup Community Manager. Here he introduces himself and his
+  background.
 thumbnail: /content/blog/filippos-kyprianou-joins-the-vonage-community-team/filippos-kyprianou.png
 author: filippos-kyprianou
 published: true
