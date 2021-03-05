@@ -3,7 +3,7 @@ title: Cory Althoff Joins the Vonage Developer Relations Team
 description: Meet Cory Althoff, who joins the Developer Relations Team as a
   Regional Developer Advocate. Here he introduces himself and his background.
 thumbnail: /content/blog/cory-althoff-joins-the-vonage-developer-relations-team/blog_cory-althoff_1200x600.png
-author: aaron
+author: cory-althoff
 published: true
 published_at: 2021-03-05T09:08:48.672Z
 updated_at: 2021-03-05T09:08:48.741Z
