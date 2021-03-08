@@ -17,7 +17,9 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-Each year, in honour of International Women's Day, the global Vonage community comes together to celebrate the incredible journeys, stories and voices of our colleagues and the amazing people around us. 2021 is no exception.
+Each year, in honour of [International Women's Day](https://www.internationalwomensday.com/), the global Vonage community comes together to celebrate the incredible journeys, stories and voices of our colleagues and the amazing people around us. 
+
+The official theme of International Women's Day 2021 is "Choose to Challenge." At Vonage, we believe that together, we can **choose to challenge** and call out gender bias and inequity. We can choose to seek out and celebrate women's achievements. Collectively, we can *all* help create a more inclusive world.
 
 ## Stories and Journeys From Our Colleagues
 
@@ -103,4 +105,4 @@ To kick off the celebrations for International Women's Day 2021, we held a panel
 
 ## In Closing
 
-We are proud to be elevating voices and shining a light on issues women and non-binary folks face in the software industry this International Women's Day. Together, we can **choose to challenge** and call out gender bias and inequity. We can choose to seek out and celebrate women's achievements. Collectively, we can *all* help create a more inclusive world.
+We are proud to be elevating voices and shining a light on issues women and non-binary folks face in the software industry this International Women's Day. At Vonage, we will continue to choose to seek out and celebrate women's achievements in an effort to help create a more inclusive world.
