@@ -1,9 +1,10 @@
 ---
 title: In Celebration of International Women's Day 2021
 description: "Highlights from Vonage's International Women's Day 2021 celebrations. "
+thumbnail: /content/blog/in-celebration-of-international-womens-day-2021/idw_1200x627.png
 author: nahrinjalal
 published: true
-published_at: 2021-03-08T03:51:44.141Z
+published_at: 2021-03-08T16:13:14.995Z
 updated_at: 2021-03-08T03:51:44.176Z
 category: community
 tags:
