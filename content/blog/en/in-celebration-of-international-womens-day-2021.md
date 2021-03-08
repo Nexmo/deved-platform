@@ -23,7 +23,7 @@ The official theme of International Women's Day 2021 is "Choose to Challenge." A
 
 ## Stories and Journeys From Our Colleagues
 
-In [2020](https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-international-womens-day-2020), we began the tradition of collecting personal stories from the Vonage community for Dev.to's "[Nevertheless, She Coded](https://dev.to/devteam/shecoded-2021-stories-from-women-building-software-and-the-allies-supporting-them-49pf)" initiative. Dev.to's annual celebration has blossomed into a beautiful collection of experiences, with each voice adding powerful perspective, wisdom, and advice. We're proud to help amplify the voices of the Vonage community and support members in participating in this incredible program this International Women's Day.
+In [2020](https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-international-womens-day-2020), we began the tradition of collecting personal stories from the Vonage community for Dev.to's "[Nevertheless, She Coded](https://dev.to/devteam/shecoded-2021-stories-from-women-building-software-and-the-allies-supporting-them-49pf)" initiative. Dev.to's annual celebration has blossomed into a beautiful collection of experiences, with each voice adding powerful perspective, wisdom, and advice. We're proud to help amplify the voices of the Vonage community and support members in participating in this incredible program.
 
 ### [Biochemist turned Solutions Engineer](https://dev.to/vonagedev/biochemist-turned-solutions-engineer-23k3)
 
