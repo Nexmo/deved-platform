@@ -18,9 +18,9 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-Each year, in honour of [International Women's Day](https://www.internationalwomensday.com/), the global Vonage community comes together to celebrate the incredible journeys, stories and voices of our colleagues and the amazing people around us. 
+The official theme of [International Women's Day](https://www.internationalwomensday.com/) 2021 is "Choose to Challenge." At Vonage, we believe that together, we can choose to challenge and call out gender bias and inequity. We can choose to seek out and celebrate women's achievements. Collectively, we can *all* help create a more inclusive world.
 
-The official theme of International Women's Day 2021 is "Choose to Challenge." At Vonage, we believe that together, we can **choose to challenge** and call out gender bias and inequity. We can choose to seek out and celebrate women's achievements. Collectively, we can *all* help create a more inclusive world.
+Each year, in honour of International Women's Day, the global Vonage community comes together to celebrate the incredible journeys, stories and voices of our colleagues and the amazing people around us. 2021 is no exception.
 
 ## Stories and Journeys From Our Colleagues
 
