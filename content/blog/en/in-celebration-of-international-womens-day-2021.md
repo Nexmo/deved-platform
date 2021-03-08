@@ -77,10 +77,6 @@ In [2020](https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-interna
 
 > "Last year I wrote about things I advocated that we can all do to further equality in tech. This year, I'd rather give space to those in tech who have or do inspire me"
 
-### []()
-
-**Nahrin Jalal** is a **Developer Educator** for Vonage. Nahrin reflects on how her upbringing inspired her to follow an engineering path.
-
 ## International Women's Day 2021 Panel
 
 To kick off the celebrations for International Women's Day 2021, we held a panel discussion with some of our Vonage leaders on March 2, 2021. Featured speakers Amitha Pulijala, Danielle Vergara, Lauren Lee, Marina Serrano Montes, and Nahrin Jalal provided insight into their experiences, both as women and as advocates for women in technology. Through their stories, we learned how they navigated the tech industry and what their experience has taught them. Watch the recording on [YouTube](https://youtu.be/d-cvjT4lROs)!
