@@ -64,7 +64,7 @@ In [2020](https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-interna
 
 ### [Nevertheless, Lauren Focused on Community](https://dev.to/lolocoding/nevertheless-lauren-focused-on-her-coding-community-13h8)
 
-**Lauren Lee** is a **Developer Education Manager** for Vonage. On the second anniversary of Lauren's [#WeBelongHere podcast](https://webelongpodcast.com/), she shares key lessons learned from those conversations and the community of career changers and those diversifying the tech industry.
+**Lauren Lee** is a **Developer Education Manager** for Vonage. On the second anniversary of Lauren's [\#WeBelongHere podcast](https://webelongpodcast.com/), she shares key lessons learned from those conversations and the community of career changers and those diversifying the tech industry.
 
 > "As a bootcamp grad and career changer myself, I remember craving community and wanting to know that I was not alone in my journey to tech"
 
@@ -100,9 +100,9 @@ In [2020](https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-interna
 
 ## International Women's Day 2021 Panel
 
-To kick off the celebrations for International Women's Day 2021, we held a panel discussion with some of our Vonage leaders on March 2, 2021. Featured speakers Amitha Pulijala, Danielle Vergara, Lauren Lee, Marina Serrano Montes, and Nahrin Jalal provided insight into their experiences, both as women and as advocates for women in technology. Through their stories, we learned how they navigated the tech industry and what their experience has taught them. Watch the recording on [YouTube](https://youtu.be/d-cvjT4lROs)!
+![International Women's Day 2021 Panel](/content/blog/in-celebration-of-international-womens-day-2021/evaeertxiai-sz5.jpg "International Women's Day 2021 Panel")
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d-cvjT4lROs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+To kick off the celebrations for International Women's Day 2021, we held a panel discussion with some of our Vonage leaders on March 2, 2021. Featured speakers Amitha Pulijala, Danielle Vergara, Lauren Lee, Marina Serrano Montes, and Nahrin Jalal provided insight into their experiences, both as women and as advocates for women in technology. Through their stories, we learned how they navigated the tech industry and what their experience has taught them.
 
 ## In Closing
 
