@@ -37,7 +37,7 @@ In [2020](https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-interna
 
 ### [Nevertheless, I changed my goals](https://dev.to/bb_loft/nevertheless-i-changed-my-goals-3hnf)
 
-**Bethany Loft** is a **Support Engineer** for Vonage. Bethany reflects on the previous year and emphasizes the importance of normalizing goals changing to adapt and accommodate new interests.  
+**Bethany Loft** is a **Community Manager** for Vonage. Bethany reflects on the previous year and emphasizes the importance of normalizing goals changing to adapt and accommodate new interests.  
 
 > "My message for others is to take time to rest amongst challenging situations, protect your energy and if you have some to lend, spread it around your community to those who could benefit"
 
