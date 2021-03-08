@@ -21,7 +21,7 @@ Each year, in honour of International Women's Day, the global Vonage community c
 
 ## Stories and Journeys From Our Colleagues
 
-In [2020](https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-international-womens-day-2020), we began the tradition of collecting personal stories from the Vonage community for Dev.to's "[Nevertheless, She Coded](https://dev.to/devteam/shecoded-2021-stories-from-women-building-software-and-the-allies-supporting-them-49pf)" initiative. Dev.to's annual celebration has blossomed into a beautiful collection of experiences, with each voice adding powerful perspective, wisdom, and advice. We're proud to help amplify the voices of the Vonage community this International Women's Day.
+In [2020](https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-international-womens-day-2020), we began the tradition of collecting personal stories from the Vonage community for Dev.to's "[Nevertheless, She Coded](https://dev.to/devteam/shecoded-2021-stories-from-women-building-software-and-the-allies-supporting-them-49pf)" initiative. Dev.to's annual celebration has blossomed into a beautiful collection of experiences, with each voice adding powerful perspective, wisdom, and advice. We're proud to help amplify the voices of the Vonage community and support members in participating in this incredible program this International Women's Day.
 
 ### [Biochemist turned Solutions Engineer](https://dev.to/vonagedev/biochemist-turned-solutions-engineer-23k3)
 
@@ -71,11 +71,29 @@ In [2020](https://www.nexmo.com/legacy-blog/2020/03/10/in-celebration-of-interna
 
 > "My message to others is that life is shorter than we think, so we should do what we like and enjoy the path to achieve our goals"
 
+### [The Importance of Self-Advocacy for Career Advancement](https://dev.to/nahrinjalal/the-importance-of-self-advocacy-for-career-advancement-2nh6)
+
+**Nahrin Jalal** is a **Developer Educator** for Vonage. Nahrin shares the practice that has made the most significant impact for her career advancement to date: consistent self-advocacy.
+
+> "It's time to think about yourself as the protagonist of this story and share it with others"
+
+### [My Journey in Tech](https://dev.to/imclarisseng/my-journey-in-tech-2263)
+
+**Clarisse Ng** is an **APAC Community Manager** for Vonage. Clarisse reflects on how she ended up in tech by pure coincidence. She also discusses the importance of caring for yourself while working towards goals.
+
+> "It was the constant struggle of getting stuff done, making sure I remain creative, relevant, and giving meaning to my work, while staying on top of everything else going on in my life, including my role as a daughter, sister, friend, etc."
+
 ### [I'm Luke, and I support women in tech.](https://dev.to/lukeocodes/i-m-luke-and-i-support-women-in-tech-23gk)
 
 **Luke Oliff** is a **Developer Educator** for Vonage. Luke shares the work and content of some of the folks who have inspired him.
 
 > "Last year I wrote about things I advocated that we can all do to further equality in tech. This year, I'd rather give space to those in tech who have or do inspire me"
+
+### [Resilience is key to my success](https://dev.to/vonagedev/resilience-is-key-to-my-success-2ajo)
+
+**Tatiana Xyda** is an **Enterprise Relationship Manager** for Vonage. Tatiana reflects on her journey to tech, the struggles she has had to overcome along the way, and an important message for others.
+
+> "I deserve credit for never giving up on what I wanted and the path I took to get there. I learned to receive a ‘No’ and learn from it"
 
 ## International Women's Day 2021 Panel
 
