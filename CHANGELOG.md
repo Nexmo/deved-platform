@@ -1,3 +1,11 @@
+## [2.8.2](https://github.com/Nexmo/deved-platform/compare/v2.8.1...v2.8.2) (2021-03-10)
+
+
+### Bug Fixes
+
+* **authors:** profile bug fixed by using slug not username field ([#791](https://github.com/Nexmo/deved-platform/issues/791)) ([2889323](https://github.com/Nexmo/deved-platform/commit/2889323e70ba5cd61a11213cc7089826e5d6fad1))
+* disabled temporarily - closed fails [skip ci] ([b1170dd](https://github.com/Nexmo/deved-platform/commit/b1170dd7859b02a8a8df18cd167036a3a54e1e5e))
+
 ## [2.8.1](https://github.com/Nexmo/deved-platform/compare/v2.8.0...v2.8.1) (2021-03-01)
 
 # [2.8.0](https://github.com/Nexmo/deved-platform/compare/v2.7.1...v2.8.0) (2021-02-25)
