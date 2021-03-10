@@ -8,7 +8,7 @@
         :alt="`Profile pic of ${author.name}`"
       />
     </span>
-    <nuxt-link v-else :to="localePath(`/authors/${author.username}`)">
+    <nuxt-link v-else :to="localePath(`/authors/${author.slug}`)">
       <img
         v-if="!author.image_url"
         class="w-10 h-10 rounded-full"

@@ -6,7 +6,7 @@ description: In this tutorial, we’re going to add video, screen sharing and
   you as you don’t use Zendesk, but, in fact, there are many other ticketing
   systems where you […]
 thumbnail: /content/blog/add-video-capabilities-to-zendesk-with-vonage-video-api/Blog_Zendesk_VideoAPI_1200x600.png
-author: javiermolinasanz-svetlananazareno
+author: javier-molina-sanz
 published: true
 published_at: 2020-09-08T13:27:09.000Z
 comments: true

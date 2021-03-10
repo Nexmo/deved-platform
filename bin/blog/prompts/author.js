@@ -9,7 +9,7 @@ module.exports = () => ({
 
     if (input !== undefined) {
       opts = authors.filter(
-        (a) => a.name.includes(input) || a.username.includes(input)
+        (a) => a.name.includes(input) || a.slug.includes(input)
       )
     }
 

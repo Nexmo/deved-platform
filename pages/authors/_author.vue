@@ -1,9 +1,9 @@
 <template>
   <main class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
     <Breadcrumbs :title="author.name ? author.name : null" />
-    <section class="grid gap-6 grid-cols-1 md:grid-cols-3">
+    <section class="grid grid-cols-1 gap-6 md:grid-cols-3">
       <Author :author="author" type="page" class="col-span-1" />
-      <div class="grid grid-cols-2 gap-6 col-span-1 md:col-span-2">
+      <div class="grid grid-cols-2 col-span-1 gap-6 md:col-span-2">
         <CardAuthor
           v-for="(post, index) in posts"
           :key="index"
@@ -30,7 +30,7 @@ export default {
 
       const posts = await $content(`blog`, { deep: true })
         .where({
-          $and: [{ author: author.username }, { published: { $ne: false } }],
+          $and: [{ author: author.slug }, { published: { $ne: false } }],
         })
         .sortBy('published_at', 'desc')
         .fetch()
@@ -128,12 +128,12 @@ export default {
         {
           hid: 'article:author',
           property: 'article:author',
-          content: this.author.username,
+          content: this.author.slug,
         },
         {
           hid: 'profile:username',
           property: 'profile:username',
-          content: this.author.username,
+          content: this.author.slug,
         },
       ]
 

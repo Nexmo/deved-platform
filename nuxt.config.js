@@ -174,14 +174,14 @@ export default {
       const createFeedArticles = async function (feed) {
         feed.options = {
           title: `${author.name} » ${config.baseTitle}`,
-          link: `${config.baseUrl}/authors/${author.username}`,
+          link: `${config.baseUrl}/authors/${author.slug}`,
           description: author.bio,
         }
 
         const posts = await $content('blog/en')
           .where({
             $and: [
-              { author: { $eq: author.username } },
+              { author: { $eq: author.slug } },
               { published: { $ne: false } },
             ],
           })
@@ -202,7 +202,7 @@ export default {
       }
 
       return Object.values(feedFormats).map(({ file, type }) => ({
-        path: `${baseFeedPath}/authors/${author.username}/${file}`,
+        path: `${baseFeedPath}/authors/${author.slug}/${file}`,
         type,
         create: createFeedArticles,
       }))

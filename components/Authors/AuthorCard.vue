@@ -5,7 +5,7 @@
     typeof="Person"
   >
     <figure class="flex flex-col justify-center p-4 xl:p-0 xl:block">
-      <nuxt-link :to="localePath(`/authors/${author.username}`)">
+      <nuxt-link :to="localePath(`/authors/${author.slug}`)">
         <img
           v-if="!author.image_url"
           class="object-cover w-24 rounded-full sm:w-32 xl:block xl:w-full xl:rounded-none"
@@ -25,7 +25,7 @@
     <div>
       <header class="px-4 mb-4 sm:my-4">
         <h3 property="name" class="flex text-lg font-medium">
-          <nuxt-link :to="localePath(`/authors/${author.username}`)">
+          <nuxt-link :to="localePath(`/authors/${author.slug}`)">
             {{ author.name }}
           </nuxt-link>
         </h3>
@@ -45,7 +45,7 @@
           {{ author.bio | truncate(160, '...') }}
         </p>
         <p class="text-xs text-right">
-          <nuxt-link :to="localePath(`/authors/${author.username}`)"
+          <nuxt-link :to="localePath(`/authors/${author.slug}`)"
             >[Read more]</nuxt-link
           >
         </p>

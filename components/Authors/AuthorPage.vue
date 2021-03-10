@@ -70,7 +70,7 @@
         class="button button--round button--small button--youtube"
       />
       <website-social-button
-        :link="author.website_url || localePath(`/authors/${author.username}`)"
+        :link="author.website_url || localePath(`/authors/${author.slug}`)"
         class="button button--round button--small button--primary"
       />
     </footer>

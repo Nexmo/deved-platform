@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="localePath(`/authors/${author.username}`)"
+    :to="localePath(`/authors/${author.slug}`)"
     class="block space-y-4"
     vocab="http://schema.org/"
     typeof="Person"

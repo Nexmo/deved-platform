@@ -6,7 +6,7 @@ description: The Vonage Video API team recently released a new version of the
   of our latest Linux SDK, IP Proxy feature, updates to WebRTC stats,
   improvements to […]
 thumbnail: /content/blog/opentok-version-2-18-whats-new-and-how-you-can-use-it/Blog_SDK-Updates_1200x600-1.png
-author: manik-sachdeva
+author: manik
 published: true
 published_at: 2020-09-03T13:16:58.000Z
 comments: true

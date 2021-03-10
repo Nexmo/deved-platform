@@ -4,7 +4,7 @@
     <nuxt-link
       v-else
       class="font-bold"
-      :to="localePath(`/authors/${author.username}`)"
+      :to="localePath(`/authors/${author.slug}`)"
     >
       {{ author.name }}
     </nuxt-link>

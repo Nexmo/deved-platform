@@ -53,9 +53,9 @@ collections:
         name: author
         widget: relation
         collection: authors
-        searchFields: ['username', 'name', 'twitter']
-        valueField: 'username'
-        displayFields: ['name']
+        search_fields: ['{{slug}}', 'name', 'twitter']
+        value_field: '{{slug}}'
+        display_fields: ['name']
         hint: 'Search for the post author. If not found, go add them at *Authors* first.'
       - label: Published
         name: published
@@ -134,8 +134,7 @@ collections:
     slug: '{{slug}}'
     editor:
       preview: true
-    sortable_fields: ['username', 'name', 'email']
-    identifier_field: username
+    sortable_fields: ['{{slug}}', 'name', 'email']
     view_filters:
       - label: 'Spotlight Authors'
         field: spotlight
@@ -150,10 +149,6 @@ collections:
         field: noteworthy
         pattern: true
     fields:
-      - label: Username
-        name: username
-        widget: string
-        hint: 'Author username. i.e. lukeoliff (if copying from Wordpress, use the slug from your profile URL)'
       - label: Name
         name: name
         widget: string

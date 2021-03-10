@@ -4,7 +4,7 @@ description: GitHub Actions is a beautiful integration in GitHub which allows
   you to trigger actions based on specific events that occur. This can be useful
   for many purposes, one of which is sending messages via Communication APIs.
 thumbnail: /content/blog/building-github-actions-with-the-vonage-messages-api/github-whatsapp-1200x600.png
-author: "dillion-megida "
+author: dillion-megida
 published: true
 published_at: 2021-02-04T14:38:40.899Z
 updated_at: ""
