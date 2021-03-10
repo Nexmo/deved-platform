@@ -247,11 +247,11 @@ export default {
 
   // https://nuxtjs.org/guides/configuration-glossary/configuration-generate
   generate: {
-    crawler: isProduction(),
+    crawler: true,
     fallback: true,
-    routes() {
-      return isPreviewBuild() ? [previewRoute()] : []
-    },
+    // routes() {
+    //   return isPreviewBuild() ? [previewRoute()] : []
+    // },
   },
 
   // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#base
