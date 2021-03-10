@@ -5,7 +5,7 @@ description: The Firebase platform allows developers to build an application
   wanted to start using it for some SMS messaging with Nexmo. After this
   walk-through, you will be able to create an SMS message log, and a response to
   the sender using Firebase Functions […]
-thumbnail: /content/blog/send-and-receive-sms-messages-with-firebase-functions-dr/E_SMS-with-Firebase_1200x600.png
+thumbnail: /content/blog/send-and-receive-sms-messages-with-firebase-functions/firebase_sms_1200x600.png
 author: kellyjandrews
 published: true
 published_at: 2020-01-24T13:03:31.000Z
