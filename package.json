@@ -18,7 +18,7 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
-    "@nuxt/content": "^1.10.0",
+    "@nuxt/content": "^1.14.0",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/feed": "^1.1.0",
