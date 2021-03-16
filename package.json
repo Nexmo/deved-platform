@@ -22,7 +22,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/feed": "^1.1.0",
-    "@nuxtjs/tailwindcss": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^4.0.1",
     "@tailwindcss/typography": "^0.2.0",
     "algoliasearch": "^4.8.2",
     "ap-style-title-case": "^1.1.2",
