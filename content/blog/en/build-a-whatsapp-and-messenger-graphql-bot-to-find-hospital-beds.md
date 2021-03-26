@@ -9,7 +9,7 @@ author: shreyas-sreenivas
 published: true
 published_at: 2021-03-25T14:33:06.329Z
 updated_at: 2021-03-03T22:27:19.527Z
-category: tutorial
+category: release
 tags:
   - messages-api
   - nodejs
