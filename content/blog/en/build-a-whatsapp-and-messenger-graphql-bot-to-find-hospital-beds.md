@@ -14,7 +14,7 @@ tags:
   - messages-api
   - nodejs
   - graphql
-comments: true
+comments: false
 spotlight: true
 redirect: ""
 canonical: ""
