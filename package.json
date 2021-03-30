@@ -1,6 +1,6 @@
 {
   "name": "@vonage/deved-platform",
-  "version": "2.8.2",
+  "version": "2.8.3",
   "description": "Vonage Learn: The Developer Education platform from Vonage",
   "author": "@VonageDev <deved@vonage.com>",
   "private": true,
@@ -39,7 +39,7 @@
     "netlify-plugin-opensearch": "^1.0.4",
     "nuxt": "^2.14.7",
     "nuxt-clipboard2": "^0.2.1",
-    "nuxt-i18n": "^6.15.4",
+    "nuxt-i18n": "^6.22.3",
     "postcss": "^8.1.10",
     "prism-themes": "^1.5.0",
     "prismjs": "^1.22.0",
