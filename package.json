@@ -48,7 +48,7 @@
     "slugify": "^1.4.6",
     "tailwindcss": "^2.0.1",
     "vue-fragment": "^1.5.1",
-    "vue-instantsearch": "^3.4.2",
+    "vue-instantsearch": "^3.6.0",
     "vue-moment": "^4.1.0",
     "vue-simple-icons": "^3.10.0",
     "vue-social-sharing": "^3.0.4"
