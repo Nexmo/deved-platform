@@ -46,7 +46,7 @@
     "reading-time": "^1.2.1",
     "showdown": "^1.9.1",
     "slugify": "^1.4.6",
-    "tailwindcss": "^2.0.1",
+    "tailwindcss": "^2.1.1",
     "vue-fragment": "^1.5.1",
     "vue-instantsearch": "^3.4.2",
     "vue-moment": "^4.1.0",
