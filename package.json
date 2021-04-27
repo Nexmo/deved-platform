@@ -24,7 +24,7 @@
     "@nuxtjs/feed": "^1.1.0",
     "@nuxtjs/tailwindcss": "^3.2.0",
     "@tailwindcss/typography": "^0.2.0",
-    "algoliasearch": "^4.8.2",
+    "algoliasearch": "^4.9.1",
     "ap-style-title-case": "^1.1.2",
     "autoprefixer": "^10.0.3",
     "defu": "^3.2.2",
