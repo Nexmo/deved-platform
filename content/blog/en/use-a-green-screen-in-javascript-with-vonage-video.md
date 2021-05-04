@@ -20,7 +20,7 @@ When creating a Vonage Video publisher, the stream can be sourced directly from 
 
 In this tutorial, you'll learn how to remove a green screen and replace it with a new, custom image that you can include in your video calls. 
 
-![Overview of the project components](https://www.nexmo.com/wp-content/uploads/2020/06/overview.png)
+![Overview of the project components](/content/blog/use-a-green-screen-in-javascript-with-vonage-video/overview.png "Overview of the project components")
 
 Several components are required to make the project work. Firstly, a `<video>` element will take a stream from the user's camera. Each frame, the video element content will be drawn on a canvas, where we will loop through pixels to remove those which are green. On a second canvas, we will draw the replacement background image and then layer the first canvas' non-green pixels on top. 
 
@@ -101,7 +101,7 @@ Refresh your page, and you should see your `<video>` element, your first `<canva
 
 In a canvas, the entire image represented in a single long array of pixels. While you may initially believe that our 320x240 image will have 76,800 entries in the array, you'd be mistaken. 
 
-![](https://www.nexmo.com/wp-content/uploads/2020/06/canvas-pixels.png)
+![Canvas pixels](/content/blog/use-a-green-screen-in-javascript-with-vonage-video/canvas-pixels.png "Canvas pixels")
 
 Each visible pixel is made up of four array items - one for its red value, one for green, one for blue, and the final to set its opacity. These values are important as we build and use the loop. 
 
@@ -122,7 +122,7 @@ Notice that the counter is set to increment by 4. Each time this loop runs, `i` 
 
 Before green pixels can be removed, I'd like to introduce you to the Hue Saturation Lightness (HSL) color format.
 
-![Hue is a color wheel, sauturation is the amount of grey, lightness is a scale of black to white](https://www.nexmo.com/wp-content/uploads/2020/06/hsl.png)
+![Hue is a color wheel, sauturation is the amount of grey, lightness is a scale of black to white](/content/blog/use-a-green-screen-in-javascript-with-vonage-video/hsl.png "Hue is a color wheel, sauturation is the amount of grey, lightness is a scale of black to white")
 
 You can think of hue as a color wheel - and use the position on the wheel to specify a color, from 0 to 360. The green 'range' might be different for each person, but 90 to 200 works well for me. 
 
@@ -171,7 +171,7 @@ c1Ctx.putImageData(frame, 0, 0)
 
 You may find that `90` and `200` needs updating, given the color of your screen and lighting. 
 
-![The first canvas has no background - appearing white](https://www.nexmo.com/wp-content/uploads/2020/06/removing-green.png)
+![The first canvas has no background - appearing white](/content/blog/use-a-green-screen-in-javascript-with-vonage-video/removing-green.png "The first canvas has no background - appearing white")
 
 ## Draw Remaining Pixels on Replacement Background
 
@@ -190,7 +190,7 @@ if(h > 90 && h < 200) {
 
 The `x` and `y` values are the visual pixels, so the `i` value should be divided by 4.
 
-![The second canvas now has the non-removed pixels](https://www.nexmo.com/wp-content/uploads/2020/06/replacement-bg.png)
+![The second canvas now has the non-removed pixels](/content/blog/use-a-green-screen-in-javascript-with-vonage-video/replacement-bg.png "The second canvas now has the non-removed pixels")
 
 ## Include Canvas in Video API Session
 
