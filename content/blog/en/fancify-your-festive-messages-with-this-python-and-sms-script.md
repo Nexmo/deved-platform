@@ -19,7 +19,7 @@ replacement_url: ""
 ---
 ???? ???? ??????? ??? ?????-??? ???? ???? ???? ? ?????? ??? ?? ??????? ????????!
 
----
+- - -
 
 Telecoms providers see some of the highest volume of SMS on Christmas Day and New Year's Eve. So it's likely your friends, and family members are going to be receiving many messages, not just yours. However, with a little Python, the Nexmo SMS API, and some Unicode trickery we can make your message stand out from the crowd.
 
@@ -41,7 +41,9 @@ python fancy_sms.py <font name> <number to> <sender> <message>
 
 I've added [6 different fonts](https://gist.github.com/aaronbassett/1cdee3106f09f65d4f4d821d64d37d94#file-fancy_sms-py-L19-L26) to the script as examples, but a search for "Unicode fancy text" turns up [plenty of others](https://lingojam.com/FancyTextGenerator) you can add.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2018/12/IMG_E4245AD49ADF-1.jpeg" alt="Screeenshot of SMS messages with custom fonts" width="1242" height="1786" class="alignnone size-full wp-image-26344" />
+![Screeenshot of SMS messages with custom fonts](/content/blog/fancify-your-festive-messages-with-this-python-and-sms-script/img_e4245ad49adf-1.jpeg "Screeenshot of SMS messages with custom fonts")
+
+
 
 ## ???????? ??????? ??? ℂ???
 
@@ -106,9 +108,8 @@ client.send_message(
 )
 ```
 
-
 Finally, we send our SMS. You can supply [any alphanumeric string for the `sender`](https://developer.nexmo.com/messaging/sms/guides/custom-sender-id), but if you would like the message to appear as though you've sent it from your phone, and to ensure that the recipient can reply, you should set the sender to be your mobile number in the [E.164 international format](https://help.nexmo.com/hc/en-us/articles/204015593).
 
 ## ℱ???????ℊ ??
 
-This Unicode text also [works on Facebook and WhatsApp using our Messages API](https://developer.nexmo.com/messages/overview), so you could make your Facebook Messenger bot seem a bit more ƈʏɮɛʀքʊռӄ, or add a ????? ?? ????? to your WhatsApp messages. 
+This Unicode text also [works on Facebook and WhatsApp using our Messages API](https://developer.nexmo.com/messages/overview), so you could make your Facebook Messenger bot seem a bit more ƈʏɮɛʀքʊռӄ, or add a ????? ?? ????? to your WhatsApp messages.
