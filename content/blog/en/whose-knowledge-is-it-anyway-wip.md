@@ -2,7 +2,7 @@
 title: Whose Knowledge is it Anyway? (WIP)
 description: Ideas and thoughts on how this Technical Writer uses and,
   hopefully, understands knowledge
-thumbnail: /content/blog/whose-knowledge-is-it-anyway-wip/screenshot-2021-06-14-at-15.30.20.png
+thumbnail: https://www.nypl.org/sites/default/files/idVJPE5Hk_l3IWSEXXYs_vvjXC13mMPXJoq_4r7WXYTad1UZw3SScYs_OXsAnXhw8XKEvcmYLwXdCj8paqJ0eRBcmbqbG09OYpBR-L5YWqaBnQhF_EQj6jM8u8TaSB7X52vzG5xG.png
 author: nick-anderson-1
 published: false
 published_at: 2021-06-14T14:53:19.427Z
@@ -17,13 +17,9 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-The image above shows a few of the Merriam Webster definitions of knowledge. 
+I thought it would be good to share what I think about knowledge and how we might increase our knowledge to better ourselves as people and employees. 
 
-I thought it would be good to share what I think about knowledge and how we might increase our knowledge to better ourselves as people and employees. I hope this is a discussion rather than a clashing of opinions.
-
-**Question**. Are opinions knowledge? My best guess is not until those opinions are used in the real world, except to the holder of said opinions.*
-
-I know my knowledge is limited by the quality of information I have ingested. Like everyone else, I will have some fake news waiting to be corrected. Information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. 
+**Question**. *Are opinions knowledge*? I know my knowledge is limited by the quality of information I have ingested. Like everyone else, I will have some fake news waiting to be corrected. Information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. I don't know.
 
 **What is Knowledge**? Knowledge is awareness of facts, data, information, skills etc.. A state of mind reached when one one knows *something* about a subject domain. So I, as a Technical Author hope to increase my knowledge of docs as code over the next few months whilst also increasing my understanding of all of the applications I need to render markdown into front end content. Sometimes the unknown is as scary as a bag of rattlesnakes, but with good study processes we can overcome the lack of knowledge. *Learning is the process of getting more knowledge*.
 
@@ -40,5 +36,7 @@ I know my knowledge is limited by the quality of information I have ingested. Li
 **What can we do to improve our Learning**?
 
 **How do I benefit from Increasing my Knowledge**?
+
+**Why Share our Knowledge**? 
 
 **Never Stop Learning**!
