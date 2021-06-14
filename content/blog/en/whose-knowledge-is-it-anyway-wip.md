@@ -27,12 +27,18 @@ I know my knowledge is limited by the quality of information I have ingested. Li
 
 **What is Knowledge**? Knowledge is awareness of facts, data, information, skills etc.. A state of mind reached when one one knows *something* about a subject domain. So I, as a Technical Author hope to increase my knowledge of docs as code over the next few months whilst also increasing my understanding of all of the applications I need to render markdown into front end content. Sometimes the unknown is as scary as a bag of rattlesnakes, but with good study processes we can overcome the lack of knowledge. *Learning is the process of getting more knowledge*.
 
-**What is the scope**? Everything is knowledge as we strive to understand the information that is the universe. .
+**What is the scope**? Everything is knowledge as we strive to understand the information that is the universe.
+
+**Where is Knowledge**? It's something to do with the brain
 
 **How much do I know**? Big, medium, small, important, trivial, permanent, transient....etc.
 
 **How can we Represent Knowledge**? Images, text, charts, smells, feelings, colours, mind, collaboration.. etc. for larger process based knowledge we have books, videos.... etc
 
 **Fake News**? Other people, and oneself, can be the source of bad information or fake news. Ho it works, how to stop it and what on earth does that have to do with my job. "We always do it that way", "Reinventing the wheel", "Firefighting" and other excuses for not changing.
+
+**What can we do to improve our Learning**?
+
+**How do I benefit from Increasing my Knowledge**?
 
 **Never Stop Learning**!
