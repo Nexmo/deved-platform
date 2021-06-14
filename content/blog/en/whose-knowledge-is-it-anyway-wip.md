@@ -21,7 +21,7 @@ The image above shows a few of the Merriam Webster definitions of knowledge.
 
 I thought it would be good to share what I think about knowledge and how we might increase our knowledge to better ourselves as people and employees. I hope this is a discussion rather than a clashing of opinions.
 
-***Question**. Are opinions knowledge? My best guess is not until those opinions are used in the real world, except to the holder of said opinions.*
+**Question**. Are opinions knowledge? My best guess is not until those opinions are used in the real world, except to the holder of said opinions.*
 
 I know my knowledge is limited by the quality of information I have ingested. Like everyone else, I will have some fake news waiting to be corrected. Information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. 
 
