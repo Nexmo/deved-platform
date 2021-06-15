@@ -17,15 +17,19 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-**About**: My views on knowledge. *This is a free flow essay which I will come back to from time to time.*
-
-**What is Knowledge**? Knowledge is awareness of facts, data, information, skills etc. A state of mind reached when one one knows *something* about a subject domain. So I, as a Technical Author hope to increase my knowledge of docs as code over the next few months whilst also increasing my understanding of the apps I need to process raw content into front end web pages. *Learning is the process of getting more knowledge*. 
+**About**: My views on knowledge. *This is a free flow essay to which I will come back to from time to time.*
 
 Merriam Webster definition of knowledge: <https://www.merriam-webster.com/dictionary/knowledge>
 
-**Where is Knowledge**? I know my knowledge is limited by the quality and quantity of information I have ingested. Like everyone else, I will have some incorrect or old data. But, information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. [](https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information)
+**What is Knowledge**? Knowledge is awareness of facts, data, information, skills, etc. A state of mind reached when one knows *something* about *something*. So, as a Technical Author I hope to increase my knowledge of Docs as Code over the next few months whilst also  my understanding of the DocOps process. 
 
-Some scientists think the universe is composed of information. <https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information>.
+At Vonage we have many libraries and repositories for many different knowledge media. For example, blogs, videos, tutorials, guides, social media channels, onboarding resources, and technical help. 
+
+**Where is Knowledge**? I know my knowledge is limited by the quality and quantity of information I have ingested. Like everyone else, I will have some incorrect or old data. But, information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge.
+
+There is a lot of very useful information and guidance at Vonage to help me gather knowledge about products and technical writing.[](https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information)
+
+***Note***: Some scientists think the universe is composed of information. <https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information>.
 
 My own feeling is that the mind is not located in the brain, which acts as a communicator rather than a repository.
 
