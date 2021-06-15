@@ -21,19 +21,19 @@ replacement_url: ""
 
 **What is Knowledge**? Knowledge is awareness of facts, data, information, skills etc. A state of mind reached when one one knows *something* about a subject domain. So I, as a Technical Author hope to increase my knowledge of docs as code over the next few months whilst also increasing my understanding of the apps I need to process raw content into front end web pages. *Learning is the process of getting more knowledge*. 
 
-**Where is Knowledge**? I know my knowledge is limited by the quality of information I have ingested. Like everyone else, I will have some incorrect or old data. But, information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. [](https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information)
+**Where is Knowledge**? I know my knowledge is limited by the quality and quantity of information I have ingested. Like everyone else, I will have some incorrect or old data. But, information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. [](https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information)
 
 Some scientists think the universe is composed of information. <https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information>.
 
 My own feeling is that the mind is not located in the brain, which acts as a communicator rather than a repository.
 
-**How much do I know**? Big, medium, small, important, trivial, permanent, transient....etc.
+**How do we Measure Knowledge**? Big, medium, small, important, trivial, permanent, transient....etc.
 
 **How can we Represent Knowledge**? Images, text, charts, smells, feelings, colours, mind, collaboration.. etc. for larger process based knowledge we have books, videos.... etc.
 
 **How do We Share Knowledge**? Spoken, awareness of each other and the universe etc.
 
-**Fake News**? Other people, and oneself, can be the source of bad information or fake news. Ho it works, how to stop it and what on earth does that have to do with my job. "We always do it that way", "Reinventing the wheel", "Firefighting" and other excuses for not changing.
+**Fake Knowledge**? Other people, and oneself, can be the source of bad information or fake news. Ho it works, how to stop it and what on earth does that have to do with my job. "We always do it that way", "Reinventing the wheel", "Firefighting" and other excuses for not changing.
 
 **What can we do to improve our Learning**?
 
