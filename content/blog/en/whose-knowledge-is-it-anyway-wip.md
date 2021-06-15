@@ -21,11 +21,11 @@ replacement_url: ""
 
 **What is Knowledge**? Knowledge is awareness of facts, data, information, skills etc. A state of mind reached when one one knows *something* about a subject domain. So I, as a Technical Author hope to increase my knowledge of docs as code over the next few months whilst also increasing my understanding of the apps I need to process raw content into front end web pages. *Learning is the process of getting more knowledge*. 
 
-I know my knowledge is limited by the quality of information I have ingested. Like everyone else, I will have some incorrect or old data. But, information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. [](https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information)
+**Where is Knowledge**? I know my knowledge is limited by the quality of information I have ingested. Like everyone else, I will have some incorrect or old data. But, information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. [](https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information)
 
-**What is the scope**? Everything is knowledge which we strive to understand the universe. Some scientists think the universe is not  <https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information>.
+Some scientists think the universe is composed of information. <https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information>.
 
-**Where is Knowledge**? It's something to do with the brain
+It's something to do with the brain
 
 **How much do I know**? Big, medium, small, important, trivial, permanent, transient....etc.
 
