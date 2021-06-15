@@ -17,13 +17,13 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-**About**: I thought it would be good to share with you what I think about knowledge  in personal and business life. *This is a free flow essay which I will come back to from time to time.*
+**About**: My views on knowledge. *This is a free flow essay which I will come back to from time to time.*
 
-**What is Knowledge**? Knowledge is awareness of facts, data, information, skills etc.. A state of mind reached when one one knows *something* about a subject domain. So I, as a Technical Author hope to increase my knowledge of docs as code over the next few months whilst also increasing my understanding of all of the applications I need to render markdown into front end content. Sometimes the unknown is as scary as a bag of rattlesnakes, but with good study processes we can overcome the lack of knowledge. *Learning is the process of getting more knowledge*. 
+**What is Knowledge**? Knowledge is awareness of facts, data, information, skills etc. A state of mind reached when one one knows *something* about a subject domain. So I, as a Technical Author hope to increase my knowledge of docs as code over the next few months whilst also increasing my understanding of the apps I need to process raw content into front end web pages. *Learning is the process of getting more knowledge*. 
 
-I know my knowledge is limited by the quality of information I have ingested. Like everyone else, I will have some fake news waiting to be corrected. Information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. I don't know, see <https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information>.
+I know my knowledge is limited by the quality of information I have ingested. Like everyone else, I will have some incorrect or old data. But, information is neither good nor bad, it's just there. What matters is how we express ourselves in the real world using that information as knowledge. [](https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information)
 
-**What is the scope**? Everything is knowledge as we strive to understand the information that is the universe.
+**What is the scope**? Everything is knowledge which we strive to understand the universe. Some scientists think the universe is not  <https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information>.
 
 **Where is Knowledge**? It's something to do with the brain
 
