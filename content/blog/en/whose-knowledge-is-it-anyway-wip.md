@@ -25,11 +25,13 @@ replacement_url: ""
 
 Some scientists think the universe is composed of information. <https://bigthink.com/philip-perry/the-basis-of-the-universe-may-not-be-energy-or-matter-but-information>.
 
-It's something to do with the brain
+My own feeling is that the mind is not located in the brain, which acts as a communicator rather than a repository.
 
 **How much do I know**? Big, medium, small, important, trivial, permanent, transient....etc.
 
-**How can we Represent Knowledge**? Images, text, charts, smells, feelings, colours, mind, collaboration.. etc. for larger process based knowledge we have books, videos.... etc
+**How can we Represent Knowledge**? Images, text, charts, smells, feelings, colours, mind, collaboration.. etc. for larger process based knowledge we have books, videos.... etc.
+
+**How do We Share Knowledge**? Spoken, awareness of each other and the universe etc.
 
 **Fake News**? Other people, and oneself, can be the source of bad information or fake news. Ho it works, how to stop it and what on earth does that have to do with my job. "We always do it that way", "Reinventing the wheel", "Firefighting" and other excuses for not changing.
 
