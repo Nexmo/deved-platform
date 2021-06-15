@@ -17,7 +17,7 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-**About**: I thought it would be good to share what we think about knowledge and how we might increase our knowledge to better ourselves in personal and business life. *This is a free flow essay which I will come back to from time to time.*
+**About**: I thought it would be good to share with you what I think about knowledge  in personal and business life. *This is a free flow essay which I will come back to from time to time.*
 
 **What is Knowledge**? Knowledge is awareness of facts, data, information, skills etc.. A state of mind reached when one one knows *something* about a subject domain. So I, as a Technical Author hope to increase my knowledge of docs as code over the next few months whilst also increasing my understanding of all of the applications I need to render markdown into front end content. Sometimes the unknown is as scary as a bag of rattlesnakes, but with good study processes we can overcome the lack of knowledge. *Learning is the process of getting more knowledge*. 
 
