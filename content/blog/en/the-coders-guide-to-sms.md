@@ -83,15 +83,17 @@ Now all you have to do is call *send_message* on your *sms* object and pass 
 
 `"to": number_to_text, `
 
-`"text": "Hello! You are receiving a songogram of the song {} by {} from your friend {}".format(song_name, artist, your_name), } )`
+`"text": "Hello!" } )`
 
 The last thing we need is a few lines of code to let us know if the message was successfully delivered or if there was an error, in which case we print out the error message.
 
+`if response_data["messages"]["status"] == "0": `
 
+`    print("Message sent successfully.") `
 
- 
+`else: `
 
-
+`    print(f"Message failed with error: {response_data['messages']['error-text']}")`
 
 That’s all it takes! With just a few lines of code, you were able to send an SMS message programmatically. 
 
