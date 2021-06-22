@@ -28,6 +28,8 @@ Because so many companies use SMS, as a programmer, it is essential to understan
 
 ### The SMS Standard
 
+![Drawing on a whiteboard](/content/blog/the-coders-guide-to-sms/mark-516279_640.jpg)
+
 The SMS protocol sends messages using VoIP or Voice over IP. VoIP is a group of technologies that enable you to send and receive voice communications over the internet. 
 
 SMS lets you send 160 characters of text or 70 characters SMS in Unicode. Of course, you’ve probably sent a message longer than 160 characters before, so how is that possible? When you send an SMS message longer than 160 characters, your phone carrier breaks the messages up and sends multiple messages. However, your phone carrier makes sure they arrive in order, which is why you’ve probably never noticed the 160 character limit. 
@@ -55,6 +57,8 @@ The instant messaging service WhatsApp also does not use SMS. However, when you 
 The advantage of OTT applications is that they are free and not only allow users to send videos and other multi-media, they also often have additional features like video chatting. The disadvantage of OTT is that they are "walled gardens," which means someone on Facebook messenger cannot message someone on WhatsApp.  
 
 ### What Do Companies Use SMS For? 
+
+![Charts on a computer](/content/blog/the-coders-guide-to-sms/digital-marketing-1433427_640.jpg)
 
 Companies use SMS to communicate with their customers. One of the most common use cases for SMS is two-factor authentication, which is the most popular form of authentication. 
 
