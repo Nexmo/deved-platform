@@ -22,7 +22,7 @@ replacement_url: ""
 ---
 SMS stands for short message service and is a communication protocol for sending short messages over wireless networks. Neil Papworth sent the first SMS message on December 3, 1992. He wrote Merry Christmas to his co-worker Richard Jarvis, despite Christmas being almost a month away. 
 
-Today, over six billion people send text messages a year using technologies like SMS and MMS (another way to send messages). Companies are increasingly using SMS to reach their customers because SMS messages have a 98% open rate, which is significantly higher than other forms of communication like email.
+Today, over [six billion people send text messages a year](https://www.cnn.com/2012/12/03/tech/mobile/sms-text-message-20/index.html) using technologies like SMS and MMS (another way to send messages). Companies are increasingly using SMS to reach their customers because SMS messages have a 98% open rate, which is significantly higher than other forms of communication like email.
 
 Because so many companies use SMS, as a programmer, it is essential to understand how SMS messages work and know how to send an SMS message programmatically. In this guide, you will learn what SMS is, how companies are using it, and learn to send a text message programmatically with less than 20 lines of code. 
 
@@ -44,6 +44,8 @@ Unlike SMS, which has a 160 character limit, you can send an MMS message with up
 
 ### Do iMessage and WhatsApp Use SMS?
 
+Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT appliations like WhatsApp do not require the user to have a connection to a cellular network. 
+
 Apple’s service iMessage does not use SMS. You can only send an iMessage if you have an iPhone, and you can only send one to another iPhone user. If you send a message on your iPhone to another Apple user, your iPhone will highlight the message in blue. If you send a message to another device (like Android), you will send it using SMS, and the message will be in green. 
 
 WhatsApp, on the other hand, is an instant messaging service and does not use SMS. However, when you use WhatsApp, you cannot send messages to phone numbers: you are limited to sending messages to people who have downloaded the WhatsApp app. 
@@ -52,9 +54,7 @@ WhatsApp, on the other hand, is an instant messaging service and does not use SM
 
 Companies use SMS to communicate with their customers. One of the most common use cases for SMS is two-factor authentication, which is the most popular form of authentication. 
 
-Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, flash sales, and any other essential things customers need to know. 
-
-Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
+Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, sales, and any other important things customers need to know. SMS messages also are read quickly: 90% of all text messages are read within 3 seconds, which means they are great for things like flash sales. Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
 
 Another critical use case for SMS messages is alerts and reminders. For example, hair salons often remind customers about their upcoming appointments using SMS messages, and banks send alerts via SMS when they think a customer’s card might be compromised. 
 
