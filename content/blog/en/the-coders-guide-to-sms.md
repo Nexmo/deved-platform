@@ -41,3 +41,19 @@ When people say the word text message, they are referring to SMS and MMS. MMS st
 When you send a message with text, you are using SMS, but you are using MMS if you include a picture or video in your message. Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. Many people also have unlimited texting plans, so often using SMS means your subscribers won’t have to pay anything. 
 
 Unlike SMS, which has a 160 character limit, you can send an MMS message with up to 1,000 characters.
+
+### Do iMessage and WhatsApp Use SMS?
+
+Apple’s service iMessage does not use SMS. You can only send an iMessage if you have an iPhone, and you can only send one to another iPhone user. If you send a message on your iPhone to another Apple user, your iPhone will highlight the message in blue. If you send a message to another device (like Android), you will send it using SMS, and the message will be in green. 
+
+WhatsApp, on the other hand, is an instant messaging service and does not use SMS. However, when you use WhatsApp, you cannot send messages to phone numbers: you are limited to sending messages to people who have downloaded the WhatsApp app. 
+
+### What Do Companies Use SMS For? 
+
+Companies use SMS to communicate with their customers. One of the most common use cases for SMS is two-factor authentication, which is the most popular form of authentication. 
+
+Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, flash sales, and any other essential things customers need to know. 
+
+Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
+
+Another critical use case for SMS messages is alerts and reminders. For example, hair salons often remind customers about their upcoming appointments using SMS messages, and banks send alerts via SMS when they think a customer’s card might be compromised.
