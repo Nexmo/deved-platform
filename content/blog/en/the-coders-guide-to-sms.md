@@ -44,6 +44,8 @@ Unlike SMS, which has a 160 character limit, you can send an MMS message with up
 
 ### Do iMessage and WhatsApp Use SMS?
 
+![Video conferencing](/content/blog/the-coders-guide-to-sms/video-conference-5167472_640.jpg)
+
 Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT appliations like WhatsApp do not require the user to have a connection to a cellular network. 
 
 Apple’s service iMessage does not use SMS. You can only send an iMessage if you have an iPhone, and you can only send one to another iPhone user. If you send a message on your iPhone to another Apple user, your iPhone will highlight the message in blue. If you send a message to another device (like Android), you will send it using SMS, and the message will be in green. 
