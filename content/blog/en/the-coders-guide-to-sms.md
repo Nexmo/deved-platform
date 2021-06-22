@@ -62,39 +62,30 @@ Another critical use case for SMS messages is alerts and reminders. For example,
 
 You can easily send an SMS message programmatically using an API like the ones we offer at Vonage. 
 
-
-
 First, import the *sms* module from the *vonage* library.     
 
-
-
-from vonage import Sms
-
-
+`from vonage import Sms`
 
 Next, create a *client* object and pass in your Vonage API key and Vonage secret. 
 
-
-
-client = Client(key=VONAGE_API_KEY, secret=VONAGE_API_SECRET)
-
-
+`client = Client(key=VONAGE_API_KEY, secret=VONAGE_API_SECRET)`
 
 Once you’ve done that, create an instance of Sms and pass in your client. 
 
-
-
 `sms = Sms(client)`
-
-``
 
 Now all you have to do is call *send_message* on your *sms* object and pass in your Vonage number, the number to text, and your message. 
 
+\
+`response_data = sms.send_message( `
 
+`    { "from": VONAGE_NUMBER, `
 
+`"to": number_to_text, `
 
+`"text": "Hello! You are receiving a songogram of the song {} by {} from your friend {}".format(song_name, artist, your_name), } )`
 
- The last thing we need is a few lines of code to let us know if the message was successfully delivered or if there was an error, in which case we print out the error message.
+The last thing we need is a few lines of code to let us know if the message was successfully delivered or if there was an error, in which case we print out the error message.
 
 
 
@@ -102,4 +93,8 @@ Now all you have to do is call *send_message* on your *sms* object and pass 
 
 
 
-That’s all it takes! With just a few lines of code, you were able to send an SMS message programmatically.
+That’s all it takes! With just a few lines of code, you were able to send an SMS message programmatically. 
+
+### Final Thoughts
+
+SMS is one of the most
