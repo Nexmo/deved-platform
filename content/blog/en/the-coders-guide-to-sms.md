@@ -44,7 +44,7 @@ Unlike SMS, which has a 160 character limit, you can send an MMS message with up
 
 ### Do iMessage and WhatsApp Use SMS?
 
-![Video conferencing](/content/blog/the-coders-guide-to-sms/video-conference-5167472_640.jpg)
+![Video conferencing](/content/blog/the-coders-guide-to-sms/video-conference-5167472_640.jpg "OTT apps can do things like make video calls")
 
 Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT appliations like WhatsApp do not require the user to have a connection to a cellular network. 
 
