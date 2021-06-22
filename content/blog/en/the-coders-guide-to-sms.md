@@ -84,9 +84,9 @@ Once you’ve done that, create an instance of Sms and pass in your client. 
 
 
 
-sms = Sms(client)
+`sms = Sms(client)`
 
-
+``
 
 Now all you have to do is call *send_message* on your *sms* object and pass in your Vonage number, the number to text, and your message. 
 
