@@ -38,6 +38,8 @@ You can learn more about the SMS standard by reading the [short message peer-to
 
 ### SMS VS. MMS
 
+![Video conferencing](/content/blog/the-coders-guide-to-sms/video-conference-5167472_640.jpg)
+
 When people say the word text message, they are referring to SMS and MMS. MMS stands for Multimedia Messaging Service and allows you to send text messages and messages that include multimedia content over wireless networks. 
 
 When you send a message with text, you are using SMS, but you are using MMS if you include a picture or video in your message. Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. Many people also have unlimited texting plans, so often using SMS means your subscribers won’t have to pay anything. 
@@ -46,7 +48,7 @@ Unlike SMS, which has a 160 character limit, you can send an MMS message with up
 
 ### Do iMessage and WhatsApp Use SMS?
 
-![Video conferencing](/content/blog/the-coders-guide-to-sms/video-conference-5167472_640.jpg)
+![Whatsapp icon](/content/blog/the-coders-guide-to-sms/whatsapp-892926_640.jpg)
 
 Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT appliations like WhatsApp do not require the user to have a connection to a cellular network. 
 
