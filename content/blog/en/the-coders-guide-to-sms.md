@@ -97,4 +97,8 @@ That’s all it takes! With just a few lines of code, you were able to send an S
 
 ### Final Thoughts
 
-SMS is one of the most
+With its convenience, ubiquity, and high open rates, SMS is a cornerstone of business communication. Because of its frequent use in the business world, all programmers need to have at least a basic understanding of what SMS is and how to send an SMS message. 
+
+Now that you've read this guide, I hope you have a basic understanding of SMS and are ready to continue learning more about this communication method that is only growing more important.
+
+I hope you enjoyed this guide, and [please reach out to us on Twitter](https://twitter.com/VonageDev) if you have any questions!
