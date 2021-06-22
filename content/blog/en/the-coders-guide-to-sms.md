@@ -56,4 +56,50 @@ Companies also use SMS to send marketing messages. With a 98% open rate, SMS mes
 
 Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
 
-Another critical use case for SMS messages is alerts and reminders. For example, hair salons often remind customers about their upcoming appointments using SMS messages, and banks send alerts via SMS when they think a customer’s card might be compromised.
+Another critical use case for SMS messages is alerts and reminders. For example, hair salons often remind customers about their upcoming appointments using SMS messages, and banks send alerts via SMS when they think a customer’s card might be compromised. 
+
+### Sending an SMS Programmatically
+
+You can easily send an SMS message programmatically using an API like the ones we offer at Vonage. 
+
+
+
+First, import the *sms* module from the *vonage* library.     
+
+
+
+from vonage import Sms
+
+
+
+Next, create a *client* object and pass in your Vonage API key and Vonage secret. 
+
+
+
+client = Client(key=VONAGE_API_KEY, secret=VONAGE_API_SECRET)
+
+
+
+Once you’ve done that, create an instance of Sms and pass in your client. 
+
+
+
+sms = Sms(client)
+
+
+
+Now all you have to do is call *send_message* on your *sms* object and pass in your Vonage number, the number to text, and your message. 
+
+
+
+
+
+ The last thing we need is a few lines of code to let us know if the message was successfully delivered or if there was an error, in which case we print out the error message.
+
+
+
+ 
+
+
+
+That’s all it takes! With just a few lines of code, you were able to send an SMS message programmatically.
