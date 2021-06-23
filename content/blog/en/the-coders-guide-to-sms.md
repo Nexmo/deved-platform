@@ -60,7 +60,7 @@ When people say the word text message, they are referring to SMS and MMS. MMS st
 
 When you send a message with text, you use SMS, but if you include a picture or video in your message you are using MMS. 
 
-Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. In addition, many people in the U.S. also have unlimited texting plans, so often using SMS means your users won't have to pay anything. Unlike SMS, which has a 160 character limit, you can send an MMS message with up to 1,000 characters.
+Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. In addition, many people in the U.S. also have unlimited texting plans, so using SMS often means your users won't have to pay anything. Unlike SMS, which has a 160 character limit, you can send an MMS message with up to 1,000 characters.
 
 Another thing to keep in mind when deciding whether to use SSM or MMS messages is that while most people have a smartphone, not everyone does, and your customers without one can not recieve MMS messages. 
 
@@ -72,7 +72,7 @@ MMS messages do have some advantages, though. Because MMS messages can include v
 
 Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT applications like WhatsApp do not require the user to connect to a cellular network. 
 
-OTT applications like iMessage and WhatsApp do not use SMS. However, that does not mean iPhones do not send SMS messages: they do. You can only send an iMessage if you and the recipient both have an iPhone. If you send a message on your iPhone to another Apple user, Apple will send the text using iMessage, and your iPhone will highlight the message in blue. If you send a message to another device (like Android), Apple will send it using SMS, and the message will be green. 
+OTT applications like iMessage and WhatsApp do not use SMS. However, that does not mean iPhones do not send SMS messages: they do. You can only send an iMessage if you and the recipient both have an iPhone. If you send a text message on your iPhone to another Apple user, Apple will send the text using iMessage, and your iPhone will highlight the message in blue. If you send a text message (without multimedia) to another device (like Android), Apple will send it using SMS, and the message will be green. 
 
 The advantages of OTT applications are they are free, allow users to send videos and other multimedia, and often have additional features like video chatting. 
 
@@ -80,7 +80,7 @@ SMS has several advantages over OTT. OTT applications are "walled gardens," whic
 
 ### Sending an SMS Message Programmatically
 
-You can easily send an SMS message programmatically using an API like the ones we offer at Vonage. 
+You can easily send an SMS message programmatically using an API like the one we have at Vonage. 
 
 <sign-up number></sign-up>
 
