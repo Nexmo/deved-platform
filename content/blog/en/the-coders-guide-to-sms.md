@@ -118,7 +118,11 @@ That’s all it takes! With just a few lines of code, you were able to send an S
 
 ### SMS Verification
 
+As I mentioned earlier, one of the most common use cases for SMS is for two-factor authentication. The goal of two-factor authentication is to verify the person using your product's identity by checking it more than one way. So for, example, your website might require a username and password but also send an SMS message to the user's phone to add another layer of security to your login process. 
 
+You can use Vonage's Verify API to add two-factor authentication to your application in a few lines of code. 
+
+ 
 
 ### Final Thoughts
 
