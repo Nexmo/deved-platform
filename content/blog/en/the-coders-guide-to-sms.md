@@ -80,7 +80,7 @@ SMS has several advantages over OTT. OTT applications are "walled gardens," whic
 
 ### Sending an SMS Message Programmatically
 
-You can easily send an SMS message programmatically using an API like the one we have at Vonage. In this section, I will show you how to send an SMS message in less than twenty lines of code. 
+You can easily send an SMS message programmatically using an API like the one we have at Vonage. I will now show you how to send an SMS message in less than twenty lines of code. 
 
 <sign-up number></sign-up>
 
