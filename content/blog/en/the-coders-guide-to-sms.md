@@ -87,7 +87,7 @@ You can easily send an SMS message programmatically using an API like the one we
 First, install the Vonage module using pip.
 
 ```
-pip install Vonage
+pip install vonage
 ```
 
 Next, import the *sms* module from it.     
