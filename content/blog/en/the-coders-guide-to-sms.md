@@ -74,6 +74,8 @@ Another critical use case for SMS messages is alerts and reminders. For example,
 
 ### Sending an SMS Programmatically
 
+<sign-up number></sign-up>
+
 You can easily send an SMS message programmatically using an API like the ones we offer at Vonage. 
 
 First, install the Vonage module using pip.
@@ -102,7 +104,7 @@ sms = Sms(client)
 
 
 
-Now all you have to do is call *send_message* on your *sms* object and replace vonage_number with your Vonage number, number_to_text with the number you want to text, and change "Hello!" to whatever you want your message to be. ``
+Now all you have to do is call *send_message* on your *sms* object and replace vonage_number with your Vonage number, number_to_text with the number you want to text, and change "Hello!" to whatever you want your message to be. 
 
 ```python
 response_data = sms.send_message(
@@ -124,9 +126,28 @@ That’s all it takes! With just a few lines of code, you were able to send an S
 
 ### SMS Verification
 
+<sign-up number></sign-up>
+
 As I mentioned earlier, one of the most common use cases for SMS is for two-factor authentication. The goal of two-factor authentication is to verify the person using your product's identity by checking it more than one way. So for, example, your website might require a username and password but also send an SMS message to the user's phone to add another layer of security to your login process. 
 
 You can use Vonage's Verify API to add two-factor authentication to your application in a few lines of code. 
+
+First, make sure you've used pip to install the Vonage module (if you didn't install it in the previous example).
+
+```
+pip install vonage
+```
+
+Next, initialize the library (make sure to replace your_key and  your_secret with your Vonage API key and secret. 
+
+```
+client = vonage.Client(key=your_key, secret=your_secret)
+verify = vonage.Verify(client)
+```
+
+
+
+
 
  
 
