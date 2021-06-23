@@ -138,14 +138,23 @@ First, make sure you've used pip to install the Vonage module (if you didn't ins
 pip install vonage
 ```
 
-Next, initialize the library (make sure to replace your_key and  your_secret with your Vonage API key and secret. 
+Next, initialize the library (make sure to replace *"your_key"* and *"your_secret"* with your Vonage API key and secret. 
 
-```
-client = vonage.Client(key=your_key, secret=your_secret)
+```python
+client = vonage.Client(key="your_key", secret="your_secret")
 verify = vonage.Verify(client)
 ```
 
+Now you can make a verification request. Make sure to replace *"your_number"* with the phone number you want to send the verification to.  
 
+```python
+response = verify.start_verification(number="your_number", brand="AcmeInc")
+
+if response["status"] == "0":
+    print("Started verification request_id is %s" % (response["request_id"]))
+else:
+    print("Error: %s" % response["error_text"])
+```
 
 
 
