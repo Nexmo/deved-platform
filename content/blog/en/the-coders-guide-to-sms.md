@@ -78,15 +78,23 @@ You can easily send an SMS message programmatically using an API like the ones w
 
 First, import the *sms* module from the *vonage* library.     
 
-`from vonage import Sms`
+```
+from vonage import Sms
+```
 
 Next, create a *client* object and pass in your Vonage API key and Vonage secret. 
 
-`client = Client(key=VONAGE_API_KEY, secret=VONAGE_API_SECRET)`
+```
+client = Client(key=VONAGE_API_KEY, secret=VONAGE_API_SECRET)
+```
 
 Once you’ve done that, create an instance of Sms and pass in your client. 
 
-`sms = Sms(client)`
+```
+sms = Sms(client)
+```
+
+
 
 Now all you have to do is call *send_message* on your *sms* object and replace vonage_number with your Vonage number, number_to_text with the number you want to text, and change "Hello!" to whatever you want your message to be. ``
 
@@ -99,13 +107,12 @@ response_data = sms.send_message(
 
 The last thing we need is a few lines of code to let us know if the message was successfully delivered or if there was an error, in which case we print out the error message.
 
-`if response_data["messages"]["status"] == "0":`
-
-`print("Message sent successfully.")`
-
-`else:`
-
-`print(f"Message failed with error: {response_data['messages']['error-text']}")`
+```
+if response_data["messages"]["status"] == "0":
+    print("Message sent successfully.")
+else:
+    print(f"Message failed with error: {response_data['messages']['error-text']}")
+```
 
 That’s all it takes! With just a few lines of code, you were able to send an SMS message programmatically. 
 
