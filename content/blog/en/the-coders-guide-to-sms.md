@@ -76,7 +76,7 @@ OTT applications like iMessage and WhatsApp do not use SMS. However, that does n
 
 The advantages of OTT applications are they are free, allow users to send videos and other multimedia, and often have additional features like video chatting. 
 
-SMS has several advantages over OTT. OTT applications are "walled gardens," which means someone on Facebook messenger cannot message someone on WhatsApp. It also means you cannot send messages to phone numbers with OTT applications: you can only send messages to people who have downloaded that app. With SMS, you can send a message to anyone with a phone number. Plus, SMS does not rely on internet connectivity as OTT applications do. Unlike OTT applications, with SMS you can send a message to anyone connected to a cellular network.
+SMS has several advantages over OTT. OTT applications are "walled gardens," which means someone on Facebook messenger cannot message someone on WhatsApp. It also means you cannot send messages to phone numbers with OTT applications: you can only send messages to people who have downloaded that app. With SMS, you can send a message to anyone with a phone number. Plus, SMS does not rely on internet connectivity as OTT applications do. Unlike OTT applications, with SMS, you can send a message to anyone connected to a cellular network.
 
 ### Sending an SMS Message Programmatically
 
@@ -173,7 +173,7 @@ else:
     print("Error: %s" % response["error_text"])
 ```
 
-Suppose the user has verified their identity using their phone. When you run this code, and you pass in the code generated in the previous step, Python will print a message letting you know the verification was successful. Otherwise, your code will throw an error. 
+Suppose the user has verified their identity using their phone. When you run this code and pass in the code generated in the previous step, Python will print a message to let you know the verification was successful.  Otherwise, your code will throw an error. 
 
 ### Final Thoughts
 
