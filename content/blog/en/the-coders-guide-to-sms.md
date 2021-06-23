@@ -3,7 +3,7 @@ title: The Coder's Guide to SMS
 description: " In this guide, you will learn what SMS is, how companies are
   using it, and learn to send a text message programmatically with less than 20
   lines of code. "
-thumbnail: /content/blog/the-coders-guide-to-sms/iphone-830480_1920.jpg
+thumbnail: /content/blog/the-coders-guide-to-sms/technology-690675_1280.jpg
 author: cory-althoff
 published: true
 published_at: 2021-06-22T20:09:30.827Z
