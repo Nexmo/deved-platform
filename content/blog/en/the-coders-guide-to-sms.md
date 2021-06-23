@@ -26,6 +26,22 @@ Today, over [six billion people send text messages a year](https://www.cnn.com/2
 
 Because so many companies use SMS, as a programmer, it is essential to understand how SMS messages work. In this guide, you will learn more about what SMS is, how companies use SMS messages to communicate with their customers, learn to send a text message programmatically with less than 20 lines of code, and learn to verify a customer's identity using SMS messages. 
 
+### What Do Companies Use SMS For? 
+
+![Charts on a computer](/content/blog/the-coders-guide-to-sms/digital-marketing-1433427_640.jpg)
+
+More and more companies are using SMS to communicate with their customers because customers prefer SMS over other forms of communication. 
+
+According to Gallup, [texting is the most prevalent form of communication for Americans under 50](https://news.gallup.com/poll/179288/new-era-communication-americans.aspx).
+
+One of the most common use cases for SMS is two-factor authentication, which is the most popular form of authentication. 
+
+Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, sales, and any other essential things customers need to know. SMS messages also are read quickly: [90% of all text messages are read within three seconds](https://blog.adobe.com/en/publish/2015/07/27/marketing-with-98-percent-read-rate-and-10-more-compelling-stats.html#gs.437c55), which means SMS is perfect for things like flash sales. 
+
+Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
+
+Another critical use case for SMS messages is alerts and reminders. For example, hair salons often remind customers about their upcoming appointments using SMS messages, and banks send alerts via SMS when they think a customer’s card might be compromised. 
+
 ### The SMS Standard
 
 ![Drawing on a whiteboard](/content/blog/the-coders-guide-to-sms/mark-516279_640.jpg)
@@ -48,6 +64,8 @@ Unlike SMS, which has a 160 character limit, you can send an MMS message with up
 
 Another thing to keep in mind when deciding whether to use SSM or MMS messages is that while most people have a smartphone, not everyone does, and your users without one can not recieve MMS messages. 
 
+MMS messages do have some advantages for companies, though. Because MMS messages can include videos and pictures, they often have higher engagement rates. 
+
 ### Do iMessage and WhatsApp Use SMS?
 
 ![Whatsapp icon](/content/blog/the-coders-guide-to-sms/whatsapp-892926_640.jpg)
@@ -60,21 +78,7 @@ The advantages of OTT applications are they are free, allow users to send videos
 
 SMS has several advantages over OTT. With OTT messaging apps like WhatsApp, you cannot send messages to phone numbers: you can only send messages to people who have downloaded the WhatsApp app. With SMS, you can send a message to anyone with a phone number. Plus, SMS does not rely on internet connectivity as OTT applications do. You can send an SMS message to anyone connected to a cellular network.
 
-### What Do Companies Use SMS For? 
 
-![Charts on a computer](/content/blog/the-coders-guide-to-sms/digital-marketing-1433427_640.jpg)
-
-More and more companies are using SMS to communicate with their customers because customers prefer SMS over other forms of communication. 
-
-According to Gallup, [texting is the most prevalent form of communication for Americans under 50](https://news.gallup.com/poll/179288/new-era-communication-americans.aspx).
-
-One of the most common use cases for SMS is two-factor authentication, which is the most popular form of authentication. 
-
-Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, sales, and any other essential things customers need to know. SMS messages also are read quickly: [90% of all text messages are read within three seconds](https://blog.adobe.com/en/publish/2015/07/27/marketing-with-98-percent-read-rate-and-10-more-compelling-stats.html#gs.437c55), which means SMS is perfect for things like flash sales. 
-
-Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
-
-Another critical use case for SMS messages is alerts and reminders. For example, hair salons often remind customers about their upcoming appointments using SMS messages, and banks send alerts via SMS when they think a customer’s card might be compromised. 
 
 ### Sending an SMS Message Programmatically
 
