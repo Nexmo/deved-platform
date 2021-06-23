@@ -156,7 +156,7 @@ else:
     print("Error: %s" % response["error_text"])
 ```
 
-
+The code above prints out a code you can use to check whether or not the person with the phone number you passed in as *"your_number"* has successfully verified themselves yet. If they have, 
 
  
 
