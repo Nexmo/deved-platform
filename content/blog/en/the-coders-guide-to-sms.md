@@ -32,7 +32,7 @@ Because so many companies use SMS, as a programmer, it is essential to understan
 
 The SMS protocol sends messages using VoIP or Voice over IP. VoIP is a group of technologies that enable you to send and receive voice communications over the internet. 
 
-SMS lets you send 160 characters of text or 70 characters SMS in Unicode. Of course, you’ve probably sent a message longer than 160 characters before, so how is that possible? When you send an SMS message longer than 160 characters, your phone carrier breaks the messages up and sends multiple messages. However, your phone carrier makes sure they arrive in order, which is why you’ve probably never noticed the 160 character limit. 
+SMS lets you send 160 characters of text or 70 characters SMS in Unicode. But, of course, you’ve probably sent a message longer than 160 characters before, so how is that possible? When you send an SMS message longer than 160 characters, your phone carrier breaks the messages up and sends multiple messages. However, your phone carrier makes sure they arrive in order, which is why you’ve probably never noticed the 160 character limit. 
 
 You can learn more about the SMS standard by reading the [short message peer-to-peer protocol specification](http://docs.nimta.com/smppv50.pdf).
 
@@ -42,7 +42,7 @@ You can learn more about the SMS standard by reading the [short message peer-to
 
 When people say the word text message, they are referring to SMS and MMS. MMS stands for multimedia messaging service and allows you to send text messages and messages that include multimedia content over wireless networks. 
 
-When you send a message with text, you are using SMS, but you are using MMS if you include a picture or video in your message. Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. Many people also have unlimited texting plans, so often using SMS means your subscribers won’t have to pay anything. 
+When you send a message with text, you use SMS, but you are using MMS if you include a picture or video in your message. Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. In addition, many people also have unlimited texting plans, so often using SMS means your subscribers won't have to pay anything. 
 
 Unlike SMS, which has a 160 character limit, you can send an MMS message with up to 1,000 characters.
 
@@ -50,13 +50,13 @@ Unlike SMS, which has a 160 character limit, you can send an MMS message with up
 
 ![Whatsapp icon](/content/blog/the-coders-guide-to-sms/whatsapp-892926_640.jpg)
 
-Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT applications like WhatsApp do not require the user to have a connection to a cellular network. 
+Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT applications like WhatsApp do not require the user to connect to a cellular network. 
 
 Apple’s service iMessage does not use SMS. You can only send an iMessage if you have an iPhone, and you can only send one to another iPhone user. If you send a message on your iPhone to another Apple user, your iPhone will highlight the message in blue. If you send a message to another device (like Android), you will send it using SMS, and the message will be in green. The messaging app WhatsApp also does not use SMS. 
 
-The advantage of OTT applications is that they are free, allow users to send videos and other multi-media, and also often have additional features like video chatting. The disadvantage of OTT is that they are "walled gardens," which means someone on Facebook messenger cannot message someone on WhatsApp.  
+The advantage of OTT applications is that they are free, allow users to send videos and other multimedia, and  often have additional features like video chatting. The disadvantage of OTT is that they are "walled gardens," which means someone on Facebook messenger cannot message someone on WhatsApp.  
 
-SMS has several advantages over OTT.  With OTT messaging apps like WhatsApp, you cannot send messages to phone numbers: you are limited to sending messages to people who have downloaded the WhatsApp app. With SMS, you can send a message to anyone with a phone number. Plus, SMS does not rely on internet connectivity like OTT applications do. You can send an SMS message to anyone connected to a cellular network, regardless of whether their device is connected to the internet. 
+SMS has several advantages over OTT.  With OTT messaging apps like WhatsApp, you cannot send messages to phone numbers: you can only send messages to people who have downloaded the WhatsApp app. With SMS, you can send a message to anyone with a phone number. Plus, SMS does not rely on internet connectivity as OTT applications do. You can send an SMS message to anyone connected to a cellular network.
 
 ### What Do Companies Use SMS For? 
 
@@ -68,7 +68,7 @@ According to Gallup, [texting is the most prevalent form of communication for Am
 
 One of the most common use cases for SMS is two-factor authentication, which is the most popular form of authentication. 
 
-Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, sales, and any other important things customers need to know. SMS messages also are read quickly: 90% of all text messages are read within three seconds, which means SMS is perfect for things like flash sales. Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
+Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, sales, and any other essential things customers need to know. SMS messages also are read quickly: 90% of all text messages are read within three seconds, which means SMS is perfect for things like flash sales. Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
 
 Another critical use case for SMS messages is alerts and reminders. For example, hair salons often remind customers about their upcoming appointments using SMS messages, and banks send alerts via SMS when they think a customer’s card might be compromised. 
 
@@ -126,7 +126,7 @@ That’s all it takes! With just a few lines of code, you were able to send an S
 
 ### SMS Verification
 
-As I mentioned earlier, one of the most common use cases for SMS is for two-factor authentication. The goal of two-factor authentication is to verify the person using your product's identity by checking it more than one way. So for, example, your website might require a username and password but also send an SMS message to the user's phone to add another layer of security to your login process. 
+As I mentioned earlier, one of the most common use cases for SMS is for two-factor authentication. The goal of two-factor authentication is to verify the person using your product's identity by checking it more than one way. So for, example, your website might require a username and password and also send an SMS message to the user's phone to add another layer of security to your login process. 
 
 You can use Vonage's Verify API to add two-factor authentication to your application in a few lines of code. 
 
@@ -169,11 +169,9 @@ else:
     print("Error: %s" % response["error_text"])
 ```
 
-If the user has verified their identity using their phone, when you run this code and pass in the code generated in the previous step as *CODE*, your program will print  a message letting you now the verification was succesful. Otherwise, your code will throw an error. 
+Suppose the user has verified their identity using their phone when you run this code and pass in the code generated in the previous step. In that case, your program will print a message letting you know the verification was successful. Otherwise, your code will throw an error. With its convenience, ubiquity, and high open rates, SMS is a cornerstone of business communication. Because of its frequent use in the business world, all programmers need to be familiar with SMS is and how to send an SMS message. 
 
 ### Final Thoughts
-
-With its convenience, ubiquity, and high open rates, SMS is a cornerstone of business communication. Because of its frequent use in the business world, all programmers need to be familiar with SMS is and how to send an SMS message. 
 
 Now that you've read this guide, I hope you have a basic understanding of SMS and are ready to continue learning more about this communication method that is only growing more important.
 
