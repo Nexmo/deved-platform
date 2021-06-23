@@ -68,7 +68,9 @@ According to Gallup, [texting is the most prevalent form of communication for Am
 
 One of the most common use cases for SMS is two-factor authentication, which is the most popular form of authentication. 
 
-Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, sales, and any other essential things customers need to know. SMS messages also are read quickly: [90% of all text messages are read within three seconds](https://blog.adobe.com/en/publish/2015/07/27/marketing-with-98-percent-read-rate-and-10-more-compelling-stats.html#gs.437c55), which means SMS is perfect for things like flash sales. Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
+Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, sales, and any other essential things customers need to know. SMS messages also are read quickly: [90% of all text messages are read within three seconds](https://blog.adobe.com/en/publish/2015/07/27/marketing-with-98-percent-read-rate-and-10-more-compelling-stats.html#gs.437c55), which means SMS is perfect for things like flash sales. 
+
+Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
 
 Another critical use case for SMS messages is alerts and reminders. For example, hair salons often remind customers about their upcoming appointments using SMS messages, and banks send alerts via SMS when they think a customer’s card might be compromised. 
 
@@ -96,15 +98,13 @@ Next, create a *client* object and pass in your Vonage API key and Vonage secr
 client = Client(key=VONAGE_API_KEY, secret=VONAGE_API_SECRET)
 ```
 
-Once you’ve done that, create an instance of Sms and pass in your client. 
+Once you’ve done that, create an instance of Sms and pass it your client. 
 
 ```python
 sms = Sms(client)
 ```
 
-
-
-Now all you have to do is call *send_message* on your *sms* object and replace vonage_number with your Vonage number, number_to_text with the number you want to text, and change "Hello!" to whatever you want your message to be. 
+Now all you have to do is call *send_message* on your *sms* object and replace *vonage_number* with your Vonage number, *number_to_text* with the number you want to text, and change "*Hello!"* to whatever you want your message to be. 
 
 ```python
 response_data = sms.send_message(
@@ -113,7 +113,7 @@ response_data = sms.send_message(
       "text": "Hello!" } )
 ```
 
-The last thing we need is a few lines of code to let us know if the message was successfully delivered or if there was an error, in which case we print out the error message.
+The last thing you need is a few lines of code to let you know if the message was successfully delivered or if there was an error, in which case we print out the error message.
 
 ```python
 if response_data["messages"]["status"] == "0":
@@ -122,7 +122,7 @@ else:
     print(f"Message failed with error: {response_data['messages']['error-text']}")
 ```
 
-That’s all it takes! With just a few lines of code, you were able to send an SMS message programmatically. 
+That’s all it takes! When you run your code, your program will deliver your SMS message. With just a few lines of code, you were able to send an SMS message programmatically! 
 
 ### SMS Verification
 
