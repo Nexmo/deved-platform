@@ -156,7 +156,18 @@ else:
     print("Error: %s" % response["error_text"])
 ```
 
-The code above prints out a code you can use to check whether or not the person with the phone number you passed in as *"your_number"* has successfully verified themselves yet. If they have, 
+The code above prints out a code you can use to check whether or not the person with the phone number you passed in as *"your_number"* has successfully verified themselves yet. 
+
+You can use this code to check the status of their verification:
+
+```python
+response = verify.check(REQUEST_ID, code=CODE)
+
+if response["status"] == "0":
+    print("Verification successful, event_id is %s" % (response["event_id"]))
+else:
+    print("Error: %s" % response["error_text"])
+```
 
  
 
