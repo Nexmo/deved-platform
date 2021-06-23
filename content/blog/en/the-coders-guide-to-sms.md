@@ -72,7 +72,7 @@ Companies also use SMS to send marketing messages. With a 98% open rate, SMS mes
 
 Another critical use case for SMS messages is alerts and reminders. For example, hair salons often remind customers about their upcoming appointments using SMS messages, and banks send alerts via SMS when they think a customer’s card might be compromised. 
 
-### Sending an SMS Programmatically
+### Sending an SMS Message Programmatically
 
 You can easily send an SMS message programmatically using an API like the ones we offer at Vonage. 
 
