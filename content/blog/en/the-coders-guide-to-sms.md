@@ -78,19 +78,19 @@ You can easily send an SMS message programmatically using an API like the ones w
 
 First, import the *sms* module from the *vonage* library.     
 
-```
+```python
 from vonage import Sms
 ```
 
 Next, create a *client* object and pass in your Vonage API key and Vonage secret. 
 
-```
+```python
 client = Client(key=VONAGE_API_KEY, secret=VONAGE_API_SECRET)
 ```
 
 Once you’ve done that, create an instance of Sms and pass in your client. 
 
-```
+```python
 sms = Sms(client)
 ```
 
@@ -98,7 +98,7 @@ sms = Sms(client)
 
 Now all you have to do is call *send_message* on your *sms* object and replace vonage_number with your Vonage number, number_to_text with the number you want to text, and change "Hello!" to whatever you want your message to be. ``
 
-```
+```python
 response_data = sms.send_message(
     { "from": vonage_number,
       "to": number_to_text,
