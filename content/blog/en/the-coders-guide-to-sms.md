@@ -169,7 +169,7 @@ else:
     print("Error: %s" % response["error_text"])
 ```
 
- 
+If the user has verified their identity using their phone, when you run this code and pass in the code generated in the previous step as *CODE*, your program will print  a message letting you now the verification was succesful. Otherwise, your code will throw an error. 
 
 ### Final Thoughts
 
