@@ -52,11 +52,11 @@ Unlike SMS, which has a 160 character limit, you can send an MMS message with up
 
 Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT applications like WhatsApp do not require the user to have a connection to a cellular network. 
 
-Apple’s service iMessage does not use SMS. You can only send an iMessage if you have an iPhone, and you can only send one to another iPhone user. If you send a message on your iPhone to another Apple user, your iPhone will highlight the message in blue. If you send a message to another device (like Android), you will send it using SMS, and the message will be in green. 
+Apple’s service iMessage does not use SMS. You can only send an iMessage if you have an iPhone, and you can only send one to another iPhone user. If you send a message on your iPhone to another Apple user, your iPhone will highlight the message in blue. If you send a message to another device (like Android), you will send it using SMS, and the message will be in green. The messaging app WhatsApp also does not use SMS. 
 
-The messaging app WhatsApp also does not use SMS. However, when you use WhatsApp, you cannot send messages to phone numbers: you are limited to sending messages to people who have downloaded the WhatsApp app. 
+The advantage of OTT applications is that they are free, allow users to send videos and other multi-media, and also often have additional features like video chatting. The disadvantage of OTT is that they are "walled gardens," which means someone on Facebook messenger cannot message someone on WhatsApp.  
 
-The advantage of OTT applications is that they are free and not only allow users to send videos and other multi-media, they also often have additional features like video chatting. The disadvantage of OTT is that they are "walled gardens," which means someone on Facebook messenger cannot message someone on WhatsApp.  
+SMS has several advantages over OTT.  With OTT messaging apps like WhatsApp, you cannot send messages to phone numbers: you are limited to sending messages to people who have downloaded the WhatsApp app. With SMS, you can send a message to anyone with a phone number. Plus, SMS does not rely on internet connectivity like OTT applications do. You can send an SMS message to anyone connected to a cellular network, regardless of whether their device has internet connectivity.  
 
 ### What Do Companies Use SMS For? 
 
