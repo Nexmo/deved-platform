@@ -107,7 +107,7 @@ response_data = sms.send_message(
 
 The last thing we need is a few lines of code to let us know if the message was successfully delivered or if there was an error, in which case we print out the error message.
 
-```
+```python
 if response_data["messages"]["status"] == "0":
     print("Message sent successfully.")
 else:
