@@ -24,7 +24,7 @@ As a programmer, you may have come across SMS, but you may not fully understand 
 
 Today, over [six billion people send text messages a year](https://www.cnn.com/2012/12/03/tech/mobile/sms-text-message-20/index.html) using technologies like SMS and MMS (another way to send text messages). Companies are increasingly using SMS to reach their customers on their mobile phones because SMS messages are convenient, and customers prefer them. SMS messages also have a 98% open rate, which is significantly higher than other forms of communication like email.
 
-Because so many companies use SMS, it is essential to understand how SMS messages work as a programmer. In this guide, you will learn more about what SMS is, how companies use SMS messages to communicate with their customers, learn to send a text message programmatically with less than 20 lines of code, and verify a customer's identity SMS messages.
+Because so many companies use SMS, it is essential to understand how SMS messages work as a programmer. In this guide, you will learn more about what SMS is, how companies use SMS messages to communicate with their customers, learn to send a text message programmatically with less than 20 lines of code, and verify a customer's identity with SMS messages.
 
 ### How Do Companies Use SMS? 
 
@@ -177,7 +177,7 @@ Suppose the user has verified their identity using their phone. When you run thi
 
 ### Final Thoughts
 
-With its convenience, ubiquity, and high open rates, SMS is a cornerstone of business communication. Because of its frequent use in the business world, all programmers need to be familiar with SMS is and how to send an SMS message. 
+With its convenience, ubiquity, and high open rates, SMS is a cornerstone of business communication. Because of its frequent use in the business world, all programmers need to be familiar with SMS and how to send an SMS message. 
 
 Now that you've read this guide, I hope you have a basic understanding of SMS and are ready to continue learning more about this communication method that is only growing more important.
 
