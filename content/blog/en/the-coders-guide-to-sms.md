@@ -58,9 +58,9 @@ You can learn more about the SMS standard by reading the [short message peer-to
 
 When people say the word text message, they are referring to SMS and MMS. MMS stands for multimedia messaging service and allows you to send messages that include multimedia content over wireless networks. 
 
-When you send a message with text, you use SMS, but if you include a picture or video in your message you are using MMS. Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. In addition, many people in the U.S. also have unlimited texting plans, so often using SMS means your users won't have to pay anything. 
+When you send a message with text, you use SMS, but if you include a picture or video in your message you are using MMS. 
 
-Unlike SMS, which has a 160 character limit, you can send an MMS message with up to 1,000 characters.
+Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. In addition, many people in the U.S. also have unlimited texting plans, so often using SMS means your users won't have to pay anything. Unlike SMS, which has a 160 character limit, you can send an MMS message with up to 1,000 characters.
 
 Another thing to keep in mind when deciding whether to use SSM or MMS messages is that while most people have a smartphone, not everyone does, and your customers without one can not recieve MMS messages. 
 
