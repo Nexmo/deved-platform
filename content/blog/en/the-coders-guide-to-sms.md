@@ -24,7 +24,7 @@ As a programmer, you may have come across SMS, but you may not fully understand 
 
 Today, over [six billion people send text messages a year](https://www.cnn.com/2012/12/03/tech/mobile/sms-text-message-20/index.html) using technologies like SMS and MMS (another way to send messages). Companies are increasingly using SMS to reach their customers on their mobile phones because SMS messages are convenient, and customers prefer them. SMS messages also have a 98% open rate, which is significantly higher than other forms of communication like email.
 
-Because so many companies use SMS, as a programmer, it is essential to understand how SMS messages work and know how to send an SMS message programmatically. In this guide, you will learn what SMS is, how companies use SMS messages to communicate with their customers, learn to send a text message programmatically with less than 20 lines of code, and learn to verify a customer's identity using SMS. 
+Because so many companies use SMS, as a programmer, it is essential to understand how SMS messages work. In this guide, you will learn what SMS is, how companies use SMS messages to communicate with their customers, learn to send a text message programmatically with less than 20 lines of code, and learn to verify a customer's identity using SMS. 
 
 ### The SMS Standard
 
