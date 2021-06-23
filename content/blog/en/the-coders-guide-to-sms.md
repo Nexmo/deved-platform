@@ -62,7 +62,7 @@ When you send a message with text, you use SMS, but you are using MMS if you inc
 
 Unlike SMS, which has a 160 character limit, you can send an MMS message with up to 1,000 characters.
 
-Another thing to keep in mind when deciding whether to use SSM or MMS messages is that while most people have a smartphone, not everyone does, and your users without one can not recieve MMS messages. 
+Another thing to keep in mind when deciding whether to use SSM or MMS messages is that while most people have a smartphone, not everyone does, and anyone without one can not recieve MMS messages. 
 
 MMS messages do have some advantages for companies, though. Because MMS messages can include videos and pictures, they often have higher engagement rates. 
 
