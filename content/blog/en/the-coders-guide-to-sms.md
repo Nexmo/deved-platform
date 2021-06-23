@@ -56,7 +56,7 @@ Apple’s service iMessage does not use SMS. You can only send an iMessage if yo
 
 The advantage of OTT applications is that they are free, allow users to send videos and other multi-media, and also often have additional features like video chatting. The disadvantage of OTT is that they are "walled gardens," which means someone on Facebook messenger cannot message someone on WhatsApp.  
 
-SMS has several advantages over OTT.  With OTT messaging apps like WhatsApp, you cannot send messages to phone numbers: you are limited to sending messages to people who have downloaded the WhatsApp app. With SMS, you can send a message to anyone with a phone number. Plus, SMS does not rely on internet connectivity like OTT applications do. You can send an SMS message to anyone connected to a cellular network, regardless of whether their device has internet connectivity.  
+SMS has several advantages over OTT.  With OTT messaging apps like WhatsApp, you cannot send messages to phone numbers: you are limited to sending messages to people who have downloaded the WhatsApp app. With SMS, you can send a message to anyone with a phone number. Plus, SMS does not rely on internet connectivity like OTT applications do. You can send an SMS message to anyone connected to a cellular network, regardless of whether their device is connected to the internet. 
 
 ### What Do Companies Use SMS For? 
 
@@ -88,14 +88,14 @@ Once you’ve done that, create an instance of Sms and pass in your client. 
 
 `sms = Sms(client)`
 
-Now all you have to do is call *send_message* on your *sms* object and replace vonage_number with your Vonage number, number_to_text with the number you want to text, and change "Hello!" to whatever you want your message to be. \
-`response_data = sms.send_message(`
+Now all you have to do is call *send_message* on your *sms* object and replace vonage_number with your Vonage number, number_to_text with the number you want to text, and change "Hello!" to whatever you want your message to be. ``
 
-`{ "from": vonage_number,`
-
-`"to": number_to_text,`
-
-`"text": "Hello!" } )`
+```
+response_data = sms.send_message(
+    { "from": vonage_number,
+      "to": number_to_text,
+      "text": "Hello!" } )
+```
 
 The last thing we need is a few lines of code to let us know if the message was successfully delivered or if there was an error, in which case we print out the error message.
 
