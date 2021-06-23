@@ -19,11 +19,11 @@ Vonage has a couple of APIs that allow you to send and receive a high volume of 
 
 We will first send an SMS with Node.js and the old [SMS API](https://developer.nexmo.com/messaging/sms/overview) and then rewrite that code to use the new [Vonage Messages API](https://developer.nexmo.com/messages/overview) to send the same SMS.
 
-We'll then build a Webhook that can receive SMS messages using Express. We'll focus in this article on sending and receiving SMS messages, but if you want to send and receive messages with Facebook Messenger, Viber or Whatsapp, you can do that as well with the [Messages API](https://developer.nexmo.com/messages/overview).
+We'll then build a Webhook that can receive SMS messages using Express. We'll focus in this article on sending and receiving SMS messages, but if you want to send and receive messages with Facebook Messenger, Viber or WhatsApp, you can do that as well with the [Messages API](https://developer.nexmo.com/messages/overview).
 
 You can extend the application we're building here to reply to incoming SMS messages as well, or to include more complex, interactive elements and give you a head start building autoresponders for your SMS needs.
 
-The code for this tutorial can be found on [GitxHub](https://github.com/nexmo-community/nexmo-sms-autoresponder-node/) & [Glitch](https://glitch.com/edit/#!/nexmo-sms-autoresponder?path=README.md:1:0).
+The code for this tutorial can be found on [GitHub](https://github.com/nexmo-community/nexmo-sms-autoresponder-node/) & [Glitch](https://glitch.com/edit/#!/vonage-sms-autoresponder).
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ Before you begin, make  sure you have:
 
 * [Node.js](https://nodejs.org/en/download/) installed on your machine
 * [ngrok](https://ngrok.com/) to make the code on our local machine accessible to the outside world
-* The [Nexmo CLI](https://developer.nexmo.com/tools): `npm install -g nexmo-cli`
+* The [Vonage CLI](https://developer.nexmo.com/tools): `npm install -g @vonage/cli`
 
 <sign-up number></sign-up>
 
@@ -78,9 +78,9 @@ The response data contains an array for all the messages that were sent, with in
 Because my text has an emoji in it, I'm setting the type `unicode` in the options object, otherwise, that emoji is going to be sent on the network as `?`.
 
 ```javascript
-let text = "👋Hello from Vonage";
+const text = "👋Hello from Vonage";
 
-vonage.message.sendSms("Vonage", "TO_NUMBER", text, {
+vonage.message.sendSms("Vonage", process.env.TO_NUMBER, text, {
   type: "unicode"
 }, (err, responseData) => {
   if (err) {
@@ -92,7 +92,7 @@ vonage.message.sendSms("Vonage", "TO_NUMBER", text, {
       console.log(`Message failed with error: ${responseData.messages[0]['error-text']}`);
     }
   }
-})
+});
 ```
 
 If your carrier network supports alphanumeric sender IDs, `FROM` can be text instead of a phone number(for my example it's `Vonage`. If your network doesn't support alphanumeric sender IDs ([for example in the US](https://help.nexmo.com/hc/en-us/articles/115011781468)) it has to be a phone number.
@@ -100,7 +100,8 @@ If your carrier network supports alphanumeric sender IDs, `FROM` can be text ins
 [Depending on the country](https://help.nexmo.com/hc/en-us/sections/200622473-Country-Specific-Features-and-Restrictions) you're trying to send the SMS to, there are regulations that require you to own the phone number you're sending the SMS from, so you'll have to buy a phone number. You can do so in the [Vonage API Dashboard](https://dashboard.nexmo.com/buy-numbers) or via the CLI:
 
 ```
-nexmo number:buy  --country_code US --confirm
+vonage number:search US
+vonage number:buy US 12013316236
 ```
 
 You can run the code and receive the SMS message with:
@@ -111,10 +112,10 @@ node index.js
 
 ## Send an SMS Message With the Messages API
 
-There is a newer API that deals with sending text messages called the Vonage Messages API. It is a multi-channel API, that can send a message via different channels, such as SMS, Facebook Messenger, Viber, and Whatsapp. The API is in Beta right now, so if we want to use it to send the same SMS message, we'll need to install the beta version of the Nexmo Node.js SDK.
+There is a newer API that deals with sending text messages called the Vonage Messages API. It is a multi-channel API, that can send a message via different channels, such as SMS, Facebook Messenger, Viber, and WhatsApp. The API is in Beta right now, so if we want to use it to send the same SMS message, we'll need to install the beta version of the Vonage Node.js SDK.
 
 ```
-npm install nexmo@beta
+npm install @vonage/server-sdk@beta
 ```
 
 ### Run ngrok
@@ -129,13 +130,13 @@ After ngrok runs, it will give you a random-looking URL, that we'll use as the b
 
 ### Create a Messages Application
 
-To interact with the Messages API, we'll need to create a messages application on the Vonage API platform to authenticate our requests. Think of applications more like containers, metadata to group all your data on the Nexmo platform. We'll [create one using the Vonage API Dashboard](https://dashboard.nexmo.com/messages/create-application), and that needs a name, and inbound URL and a status URL.
+To interact with the Messages API, we'll need to create a messages application on the Vonage API platform to authenticate our requests. Think of applications more like containers, metadata to group all your data on the Vonage platform. We'll [create one using the Vonage API Dashboard](https://dashboard.nexmo.com/messages/create-application), and that needs a name, and inbound URL and a status URL.
 
 We'll also save a keyfile on disk. Applications work on a public / private key system, so when you create an application, a public key is generated and kept with Vonage, and a private key is generated, not kept with Vonage, and returned to you via the creation of the application. We'll use the private key to authenticate our library calls later on.
 
 Use the ngrok URL you got in the previous step and fill in the fields, appending `/webhooks/status` and `/webhooks/inbound`, for the respective fields. When a message is coming to the Messages API, the data about the message is sent to the inbound URL. When you send a message with the API, the data about the message status gets sent to the status URL.
 
-![Create Vonage Messages Application](/content/blog/how-to-send-and-receive-sms-messages-with-node-js-and-express/create-messages-application.gif)
+![Create Vonage Messages Application](/content/blog/how-to-send-and-receive-sms-messages-with-node-js-and-express/tutorial.gif)
 
 #### Initialize Dependencies
 
@@ -156,15 +157,15 @@ Replace the values in there with your actual API key and secret, the application
 
 ### Send the Same SMS Message
 
-In order to send an SMS message with the Messages API, we'll use the `nexmo.channel.send` method the Nexmo node library. The method accepts objects as parameters, with information about the recipient, sender, and content. They vary for the different channels, you'll need to check the [API documentation](https://developer.nexmo.com/api/messages-olympus) for the other channels mentioned.
+In order to send an SMS message with the Messages API, we'll use the `vonage.channel.send` method the Vonage node library. The method accepts objects as parameters, with information about the recipient, sender, and content. They vary for the different channels, you'll need to check the [API documentation](https://developer.nexmo.com/api/messages-olympus) for the other channels mentioned.
 
 For SMS, the type of recipient and sender is `sms`, and the object has to contain a number property as well. The content object accepts a type of text and a text message. The callback returns an error and response object, and we'll log messages about the success or failure of the operation.
 
 ```javascript
-let text = "👋Hello from Vonage";
+const text = "👋Hello from Vonage";
 
-nexmo.channel.send(
-  { "type": "sms", "number": "TO_NUMBER" },
+vonage.channel.send(
+  { "type": "sms", "number": process.env.TO_NUMBER },
   { "type": "sms", "number": "Vonage" },
   {
     "content": {
@@ -194,7 +195,7 @@ That's it, you've sent the same SMS message using two different Vonage APIs. You
 
 When a Vonage phone number receives an SMS message, Vonage will pass that message to a Webhook you have specified in the Vonage API dashboard. In order to set up the webhook URL, go to the little gear icon next to [your phone numbers in the Vonage API Dashboard](https://dashboard.nexmo.com/your-numbers) and fill in the "Inbound Webhook URL" field with `YOUR_NGROK_URL/webhooks/inbound`. Don't forget to replace your actual ngrok URL.
 
-![Set Inbound Webhook URL on the Vonage API Dashboard](/content/blog/how-to-send-and-receive-sms-messages-with-node-js-and-express/set-inbound-webhook.gif)
+![Set Inbound Webhook URL on the Vonage API Dashboard](/content/blog/how-to-send-and-receive-sms-messages-with-node-js-and-express/numbers.gif)
 
 ### Create a Web Server
 
@@ -214,12 +215,12 @@ We'll create a basic `express` application, that uses the JSON parser from `body
 
 ```javascript
 const express = require("express");
-const app = require('express')();
+const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.listen(3000)
+app.listen(3000);
 ```
 
 ### Create Webhook for the Inbound URL
