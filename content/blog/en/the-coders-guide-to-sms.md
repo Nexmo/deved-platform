@@ -26,7 +26,7 @@ Today, over [six billion people send text messages a year](https://www.cnn.com/2
 
 Because so many companies use SMS, as a programmer, it is essential to understand how SMS messages work. In this guide, you will learn more about what SMS is, how companies use SMS messages to communicate with their customers, learn to send a text message programmatically with less than 20 lines of code, and learn to verify a customer's identity using SMS messages. 
 
-### What Do Companies Use SMS For? 
+### How Do Companies Use SMS? 
 
 ![Charts on a computer](/content/blog/the-coders-guide-to-sms/digital-marketing-1433427_640.jpg)
 
