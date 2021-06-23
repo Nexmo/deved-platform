@@ -126,7 +126,7 @@ That’s all it takes! When you run your code, your program will deliver your SM
 
 ### SMS Verification
 
-As I mentioned earlier, one of the most common use cases for SMS is for two-factor authentication. The goal of two-factor authentication is to verify the person using your product's identity by checking it more than one way. So for, example, your website might require a username and password and also send an SMS message to the user's phone to add another layer of security to your login process. 
+As I mentioned earlier, one of the most common use cases for SMS is for two-factor authentication. The goal of two-factor authentication is to confirm the person using your product's identity by verifying it more than one way. So for, example, your website might require a username and password and also send an SMS message to the user's phone to add another layer of security to your login process. 
 
 You can use Vonage's Verify API to add two-factor authentication to your application in a few lines of code. 
 
@@ -169,9 +169,11 @@ else:
     print("Error: %s" % response["error_text"])
 ```
 
-Suppose the user has verified their identity using their phone when you run this code and pass in the code generated in the previous step. In that case, your program will print a message letting you know the verification was successful. Otherwise, your code will throw an error. With its convenience, ubiquity, and high open rates, SMS is a cornerstone of business communication. Because of its frequent use in the business world, all programmers need to be familiar with SMS is and how to send an SMS message. 
+Suppose the user has verified their identity using their phone when you run this code and you pass in the code generated in the previous step to these new lines of code. In that case, Python will print a message letting you know the verification was successful. Otherwise, your code will throw an error. 
 
 ### Final Thoughts
+
+With its convenience, ubiquity, and high open rates, SMS is a cornerstone of business communication. Because of its frequent use in the business world, all programmers need to be familiar with SMS is and how to send an SMS message. 
 
 Now that you've read this guide, I hope you have a basic understanding of SMS and are ready to continue learning more about this communication method that is only growing more important.
 
