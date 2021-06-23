@@ -76,7 +76,13 @@ Another critical use case for SMS messages is alerts and reminders. For example,
 
 You can easily send an SMS message programmatically using an API like the ones we offer at Vonage. 
 
-First, import the *sms* module from the *vonage* library.     
+First, install the Vonage module using pip.
+
+```
+pip install Vonage
+```
+
+Next, import the *sms* module from it.     
 
 ```python
 from vonage import Sms
