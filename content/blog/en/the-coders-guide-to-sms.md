@@ -130,7 +130,7 @@ As I mentioned earlier, one of the most common use cases for SMS is for two-fact
 
 You can use Vonage's Verify API to add two-factor authentication to your application in a few lines of code. 
 
-<sign-up number></sign-up>
+<sign-up></sign-up>
 
 First, make sure you've used pip to install the Vonage module (if you didn't install it in the previous example).
 
