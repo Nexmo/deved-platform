@@ -40,7 +40,7 @@ You can learn more about the SMS standard by reading the [short message peer-to
 
 ![Video conferencing](/content/blog/the-coders-guide-to-sms/video-conference-5167472_640.jpg)
 
-When people say the word text message, they are referring to SMS and MMS. MMS stands for Multimedia Messaging Service and allows you to send text messages and messages that include multimedia content over wireless networks. 
+When people say the word text message, they are referring to SMS and MMS. MMS stands for multimedia messaging service and allows you to send text messages and messages that include multimedia content over wireless networks. 
 
 When you send a message with text, you are using SMS, but you are using MMS if you include a picture or video in your message. Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. Many people also have unlimited texting plans, so often using SMS means your subscribers won’t have to pay anything. 
 
@@ -50,11 +50,11 @@ Unlike SMS, which has a 160 character limit, you can send an MMS message with up
 
 ![Whatsapp icon](/content/blog/the-coders-guide-to-sms/whatsapp-892926_640.jpg)
 
-Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT appliations like WhatsApp do not require the user to have a connection to a cellular network. 
+Apple's iMessage, WhatsApp, WeChat, and Facebook Messenger are examples of "Over the Top" or OTT applications. Unlike SMS, OTT applications like WhatsApp do not require the user to have a connection to a cellular network. 
 
 Apple’s service iMessage does not use SMS. You can only send an iMessage if you have an iPhone, and you can only send one to another iPhone user. If you send a message on your iPhone to another Apple user, your iPhone will highlight the message in blue. If you send a message to another device (like Android), you will send it using SMS, and the message will be in green. 
 
-The instant messaging service WhatsApp also does not use SMS. However, when you use WhatsApp, you cannot send messages to phone numbers: you are limited to sending messages to people who have downloaded the WhatsApp app. 
+The messaging app WhatsApp also does not use SMS. However, when you use WhatsApp, you cannot send messages to phone numbers: you are limited to sending messages to people who have downloaded the WhatsApp app. 
 
 The advantage of OTT applications is that they are free and not only allow users to send videos and other multi-media, they also often have additional features like video chatting. The disadvantage of OTT is that they are "walled gardens," which means someone on Facebook messenger cannot message someone on WhatsApp.  
 
