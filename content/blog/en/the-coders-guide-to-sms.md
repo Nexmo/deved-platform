@@ -74,9 +74,9 @@ Another critical use case for SMS messages is alerts and reminders. For example,
 
 ### Sending an SMS Programmatically
 
-<sign-up number></sign-up>
-
 You can easily send an SMS message programmatically using an API like the ones we offer at Vonage. 
+
+<sign-up number></sign-up>
 
 First, install the Vonage module using pip.
 
