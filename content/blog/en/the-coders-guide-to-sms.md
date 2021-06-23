@@ -40,7 +40,7 @@ You can learn more about the SMS standard by reading the [short message peer-to
 
 ![Video conferencing](/content/blog/the-coders-guide-to-sms/video-conference-5167472_640.jpg)
 
-When people say the word text message, they are referring to SMS and MMS. MMS stands for multimedia messaging service and allows you to send text messages and messages that include multimedia content over wireless networks. 
+When people say the word text message, they are referring to SMS and MMS. MMS stands for multimedia messaging service and allows you to send messages that include multimedia content over wireless networks. 
 
 When you send a message with text, you use SMS, but you are using MMS if you include a picture or video in your message. Because SMS messages only contain text and have a 160 character limit, they are cheaper to send than MMS messages. In addition, many people also have unlimited texting plans, so often using SMS means your subscribers won't have to pay anything. 
 
