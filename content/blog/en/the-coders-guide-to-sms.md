@@ -20,7 +20,7 @@ canonical: ""
 outdated: false
 replacement_url: ""
 ---
-SMS stands for short message service and is a communication protocol for sending short messages over wireless networks. Neil Papworth sent the first SMS message on December 3, 1992. He wrote Merry Christmas to his co-worker Richard Jarvis, despite Christmas being almost a month away. 
+As a programmer, you may have come across SMS but you may not have a full understanding of what SMS is. SMS stands for short message service and is a communication protocol for sending short messages over wireless networks. Neil Papworth sent the first SMS message on December 3, 1992. He wrote Merry Christmas to his co-worker Richard Jarvis, despite Christmas being almost a month away. 
 
 Today, over [six billion people send text messages a year](https://www.cnn.com/2012/12/03/tech/mobile/sms-text-message-20/index.html) using technologies like SMS and MMS (another way to send messages). Companies are increasingly using SMS to reach their customers because SMS messages are convenient and customers prefer them. SMS messages also have a 98% open rate, which is significantly higher than other forms of communication like email.
 
@@ -85,29 +85,33 @@ Once you’ve done that, create an instance of Sms and pass in your client. 
 `sms = Sms(client)`
 
 Now all you have to do is call *send_message* on your *sms* object and replace vonage_number with your Vonage number, number_to_text with the number you want to text, and change "Hello!" to whatever you want your message to be. \
-`response_data = sms.send_message( `
+`response_data = sms.send_message(`
 
-`    { "from": vonage_number, `
+`{ "from": vonage_number,`
 
-`"to": number_to_text, `
+`"to": number_to_text,`
 
 `"text": "Hello!" } )`
 
 The last thing we need is a few lines of code to let us know if the message was successfully delivered or if there was an error, in which case we print out the error message.
 
-`if response_data["messages"]["status"] == "0": `
+`if response_data["messages"]["status"] == "0":`
 
-`    print("Message sent successfully.") `
+`print("Message sent successfully.")`
 
-`else: `
+`else:`
 
-`    print(f"Message failed with error: {response_data['messages']['error-text']}")`
+`print(f"Message failed with error: {response_data['messages']['error-text']}")`
 
 That’s all it takes! With just a few lines of code, you were able to send an SMS message programmatically. 
 
+### SMS Verification
+
+
+
 ### Final Thoughts
 
-With its convenience, ubiquity, and high open rates, SMS is a cornerstone of business communication. Because of its frequent use in the business world, all programmers need to have at least a basic understanding of what SMS is and how to send an SMS message. 
+With its convenience, ubiquity, and high open rates, SMS is a cornerstone of business communication. Because of its frequent use in the business world, all programmers need to be familiar with SMS is and how to send an SMS message. 
 
 Now that you've read this guide, I hope you have a basic understanding of SMS and are ready to continue learning more about this communication method that is only growing more important.
 
