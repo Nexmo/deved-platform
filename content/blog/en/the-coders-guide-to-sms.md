@@ -24,7 +24,7 @@ As a programmer, you may have come across SMS, but you may not fully understand 
 
 Today, over [six billion people send text messages a year](https://www.cnn.com/2012/12/03/tech/mobile/sms-text-message-20/index.html) using technologies like SMS and MMS (another way to send text messages). Companies are increasingly using SMS to reach their customers on their mobile phones because SMS messages are convenient, and customers prefer them. SMS messages also have a 98% open rate, which is significantly higher than other forms of communication like email.
 
-Because so many companies use SMS, as a programmer, it is essential to understand how SMS messages work. In this guide, you will learn more about what SMS is, how companies use SMS messages to communicate with their customers, learn to send a text message programmatically with less than 20 lines of code, and learn to verify a customer's identity using SMS messages. 
+Because so many companies use SMS, it is essential to understand how SMS messages work as a programmer. In this guide, you will learn more about what SMS is, how companies use SMS messages to communicate with their customers, learn to send a text message programmatically with less than 20 lines of code, and verify a customer's identity SMS messages.
 
 ### How Do Companies Use SMS? 
 
@@ -160,7 +160,7 @@ else:
     print("Error: %s" % response["error_text"])
 ```
 
-When you run this program it prints out a code you can use to check whether or not the person with the phone number you passed in as *"your_number"* has successfully verified themselves yet. 
+When you run this program, it prints out a code you can use to check whether or not the person with the phone number you passed in as *"your_number"* has successfully verified themselves yet. 
 
 Now you can use this code to check the status of their verification:
 
@@ -173,7 +173,7 @@ else:
     print("Error: %s" % response["error_text"])
 ```
 
-Suppose the user has verified their identity using their phone. When you run this code and you pass in the code generated in the previous step, Python will print a message letting you know the verification was successful. Otherwise, your code will throw an error. 
+Suppose the user has verified their identity using their phone. When you run this code, and you pass in the code generated in the previous step, Python will print a message letting you know the verification was successful. Otherwise, your code will throw an error. 
 
 ### Final Thoughts
 
