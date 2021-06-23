@@ -181,4 +181,8 @@ With its convenience, ubiquity, and high open rates, SMS is a cornerstone of bus
 
 Now that you've read this guide, I hope you have a basic understanding of SMS and are ready to continue learning more about this communication method that is only growing more important.
 
+If you want to learn more about sending SMS messages, you can [read our SMS API documentation here](https://developer.nexmo.com/messaging/sms/overview).
+
+And here is [more information about our Verify API for two-factor authentification.](https://www.vonage.com/communications-apis/verify/)
+
 I hope you enjoyed this guide, and [please reach out to us on Twitter](https://twitter.com/VonageDev) if you have any questions!
