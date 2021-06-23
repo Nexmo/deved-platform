@@ -108,7 +108,7 @@ Once you’ve done that, create an instance of Sms and pass it your client. 
 sms = Sms(client)
 ```
 
-Now all you have to do is call *send_message* on your *sms* object and replace *vonage_number* with your Vonage number, *number_to_text* with the number you want to text, and change "*Hello!"* to whatever you want your message to be. 
+Now all you have to do is call *send_message* on your *sms* object, replace *vonage_number* with your Vonage number, *number_to_text* with the number you want to text, and change "*Hello!"* to whatever you want your message to be. 
 
 ```python
 response_data = sms.send_message(
