@@ -62,7 +62,11 @@ The advantage of OTT applications is that they are free and not only allow users
 
 ![Charts on a computer](/content/blog/the-coders-guide-to-sms/digital-marketing-1433427_640.jpg)
 
-Companies use SMS to communicate with their customers. One of the most common use cases for SMS is two-factor authentication, which is the most popular form of authentication. 
+More and more companies are using SMS to communicate with their customers because customers prefer SMS over other forms of communication. 
+
+According to Gallup, [texting is the most prevalent form of communication for Americans under 50](https://news.gallup.com/poll/179288/new-era-communication-americans.aspx).
+
+One of the most common use cases for SMS is two-factor authentication, which is the most popular form of authentication. 
 
 Companies also use SMS to send marketing messages. With a 98% open rate, SMS messages are one of the most effective ways to keep customers updated about the status of their order, sales, and any other important things customers need to know. SMS messages also are read quickly: 90% of all text messages are read within three seconds, which means SMS is perfect for things like flash sales. Some companies also use SMS for customer service. For example, many hotels are adopting SMS as a way to better communicate with their guests. 
 
