@@ -44,7 +44,7 @@ Another critical use case for SMS messages is alerts and reminders. For example,
 
 ### The SMS Standard
 
-![Drawing on a whiteboard](/content/blog/the-coders-guide-to-sms/mark-516279_640.jpg)
+![Earth](/content/blog/the-coders-guide-to-sms/earth-2254769_640.jpg)
 
 The SMS protocol sends messages using VoIP or Voice over IP. VoIP is a group of technologies that enable you to send and receive voice communications over the internet. 
 
