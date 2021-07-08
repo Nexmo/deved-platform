@@ -2,6 +2,7 @@
 title: Buid an SMS Web Service With Java
 description: Learn how to build an SMS Web Service using JDK 11, Gradle 7.1,
   Gretty 3.0.5 and the Vonage Java SDK
+thumbnail: /content/blog/buid-an-sms-web-service-with-java/websocket-server_1200x600.png
 author: julia
 published: true
 published_at: 2021-07-08T20:43:27.831Z
@@ -23,6 +24,8 @@ replacement_url: ""
 The [Vonage SMS API](https://developer.vonage.com/messaging/sms/overview) is a service that allows you to send and receive SMS messages anywhere in the world. Vonage provides REST APIs, but it's much easier to use the Java SDK we've written for you.
 
 You've already learned how to [send SMS messages with Java](https://learn.vonage.com/blog/2017/05/03/send-sms-messages-with-java-dr/). In this tutorial, we are taking it one step further and building a Web service around it! 
+
+View the source code on [GitHub](https://github.com/nexmo-community/java-send-sms-webservice).
 
 ### Prerequisites
 
@@ -170,7 +173,6 @@ public class SendSMSServlet extends HttpServlet {
         }
     }
 }
-
 ```
 
 And then we need to configure the servlet in our servlet container by creating the following at `src/main/webapp/WEB-INF/web.xml`:
@@ -206,7 +208,7 @@ Fill in `VONAGE_API_KEY` and `VONAGE_API_SECRET` with the values found in your [
 
 Next, run `gradle appRun`. If everything builds correctly, let's fire up [Postman](https://www.getpostman.com/) and make a POST request to `http://localhost:8080/send-sms/`, specifying `message` and `to` in the body as shown below:
 
-![Making a request with Postman](/content/blog/how-to-send-sms-messages-with-java/postman-request.png "Making a request with Postman")
+![Making a request with Postman](/content/blog/buid-an-sms-web-service-with-java/postman-request.png "Making a request with Postman")
 
 I hope it worked! So now you've built a REST Web service for sending SMS messages! In reality, there are lots more things you'd want to do before deploying this. You could consider adding authentication (otherwise, anyone could send a message using your Vonage API account!), a nice Webform for posting to the service, and improving the error handling - but this is a good start!
 
