@@ -1,5 +1,5 @@
 ---
-title: Buid an SMS Web Service With Java
+title: Build an SMS Web Service With Java
 description: Learn how to build an SMS Web Service using JDK 11, Gradle 7.1,
   Gretty 3.0.5 and the Vonage Java SDK
 thumbnail: /content/blog/buid-an-sms-web-service-with-java/websocket-server_1200x600.png
