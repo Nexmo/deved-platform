@@ -184,7 +184,7 @@ The headers contain metadata from the Nexmo server, telling us it uses nginx as 
 
 The `Connection: keep-alive` part lets us know that TCP's `keepalive` feature is being used. cURL does this by default, so that "ping frames" are being sent back and forth when the connection would otherwise be totally idle. It helps idle connections to detect breakage even in lack of traffic and helps intermediate systems understand that the connection is still alive.
 
-There are a few security related headers in there as well, `X-Frame-Options: deny` doesn't allow a browser to render this URL in a <frame>, <iframe> or <object>. Nexmo uses this to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites. `X-XSS-Protection: 1; mode=block;` enables XSS filtering, so that the browser will prevent rendering of the page if an attack is detected.
+There are a few security related headers in there as well, `X-Frame-Options: deny` doesn't allow a browser to render this URL in a `<frame>`, `<iframe>` or `<object>`. Nexmo uses this to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites. `X-XSS-Protection: 1; mode=block;` enables XSS filtering, so that the browser will prevent rendering of the page if an attack is detected.
 
 The last line is empty, that is the marker used for the HTTP protocol to signal the end of the headers.
 
