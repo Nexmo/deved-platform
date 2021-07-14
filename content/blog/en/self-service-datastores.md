@@ -26,8 +26,8 @@ The VCC ([Vonage Contact Center](https://www.vonage.co.uk/contact-centers/)) tec
 
 A datastore is “[a repository for persistently storing and managing collections of data](https://en.wikipedia.org/wiki/Data_store).” For us, this covers:
 
-*  Relational Database e.g., MySQL
-*  NoSQL database e.g., DynamoDB
+* Relational Database e.g., MySQL
+* NoSQL database e.g., DynamoDB
 * Caches e.g., Redis
 * Other stores like Elasticsearch
 
